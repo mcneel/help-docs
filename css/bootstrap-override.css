@@ -1,0 +1,185 @@
+
+/* Mimicing GitHub's font styling, but puttin Segou UI higher (the Grasshopper font) for Windows users */
+body {
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-style: normal;
+  font-variant: normal;
+  color: #111;
+  background-color: white;
+  -webkit-text-size-adjust: 100%;
+}
+
+.tab-content .tab-pane {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-danger {
+    border-left-color: #ce4844;
+}
+
+/*
+##############################################################################
+##  Index.md Page
+##############################################################################
+*/
+.index_use_images {
+/* Use only width to control an img-responsive img.  Bootstrap will float the height. */
+	width:130px;
+}
+tbody.index_table tr td{
+	vertical-align:middle;
+}
+.index_table_icon {
+	width:32px;
+	height:32px;
+}
+.index_table_primary_use {
+	margin:10px;
+	font-size:0.85em;
+}
+
+/*
+##############################################################################
+##  guides.md Page
+##############################################################################
+*/
+
+.guide_icon {
+	width:36px;
+	height:36px;
+}
+
+
+/*
+##############################################################################
+##  bootstrap docs sidebar - table of contents (toc)
+##############################################################################
+*/
+
+.toc-title {
+  background: white;
+}
+.toc-header {
+  background: white;
+}
+.toc-header .toc-subheader {
+  background: white;
+}
+.fixed {
+    position: fixed;
+}
+
+
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bs-docs-sidebar .nav {
+  margin-left:10px;
+}
+
+.bs-docs-sidebar .nav .nav {
+  margin-left:20px;
+}
+
+.bs-docs-sidebar .nav .nav .nav {
+  margin-left:20px;
+}
+
+.bs-docs-sidebar .nav .nav .nav .nav {
+  margin-left:20px;
+}
+
+/* title links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 1px solid transparent;
+    padding: 4px 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+/* sub-nested links */
+.bs-docs-sidebar .nav .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+/* sub-sub-nested links */
+.bs-docs-sidebar .nav .nav .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left-color: #563d7c;
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* sub-nested active links */
+.bs-docs-sidebar .nav .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;
+}
+
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;
+}
+
+@media screen and (max-width: 990px) { .bs-docs-sidebar {
+    display: none;
+} }
