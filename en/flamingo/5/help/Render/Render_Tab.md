@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-Render.png"/>Render
-{: toc-title }
+{: .toc-title }
 
 
 ## Viewport to render
@@ -26,19 +26,19 @@ The image size and resolution are saved in the Rhino file.
 
 
 ### Total pixels
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the number of total pixels in the rendered image.
 
 
 ### Viewport Resolution
-{: .toc-header }
+{: .toc-subheader }
 
 Uses the viewport size in pixels to determine the rendered image size.
 
 
 ### Image size
-{: .toc-header }
+{: .toc-subheader }
 
 
 #### Pixels
@@ -106,25 +106,25 @@ This effect creates a depth of field blur that mimics a photographer's lens. A l
 
 
 ### Enabled
-{: .toc-header }
+{: .toc-subheader }
 
 Turns on the depth-of-field effect.
 
 
 ### Strength
-{: .toc-header }
+{: .toc-subheader }
 
 Controls the size of the focus area. Setting **Strength** to zero makes the entire image is sharp. Increasing the **Strength** makes the areas outside the focal distance more blurry and makes the area in focus smaller.
 
 
 ### Focal distance
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If theFocal distanceis set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
 
 
 ### Pick
-{: .toc-header }
+{: .toc-subheader }
 
 Pick a point in the model for the focal distance.
 
@@ -134,13 +134,13 @@ Pick a point in the model for the focal distance.
 
 
 ### Default
-{: .toc-header }
+{: .toc-subheader }
 
 The default algorithm produces a very high-quality simulation. The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
 
 
 ### Path Tracer
-{: .toc-header }
+{: .toc-subheader }
 
 The path tracer begins by displaying a very grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation.
 
@@ -158,7 +158,7 @@ The path tracer begins by displaying a very grainy image that gradually refines 
  * Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer.
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the Document Properties dialog box at the [Flamingo nXt](DocumentProperties_Flamingo.html) page.
 

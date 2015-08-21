@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-Materials.png"/>Simple Material Properties
-{: toc-title }
+{: .toc-title }
 
 The Simple Material Properties dialog box give easy access to the properties you will usually want to change to make a material look different without changing the material style from, say Solid Color to Glass. For most materials, changing the color is all that is necessary to get a different look. You can change the advanced properties. These are pre-set by the material template to help you quickly achieve the appearance you want.
 
@@ -16,7 +16,7 @@ Solid Color materials have only a [name](Advanced_Material_Properties_Main.html#
 
 
 ### <img src="3-SolidColor.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog box:
 
@@ -26,7 +26,7 @@ All other properties are set to a default (usually off or zero).
 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 
@@ -38,7 +38,7 @@ Metal materials have a highlight whose color matches the [color](Advanced_Materi
 
 
 ### <img src="3-Metal.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog box:
 
@@ -53,7 +53,7 @@ Properties pre-set by the template:
  *  [Type](Advanced_Material_Properties_Main.html#Type) 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 
@@ -65,7 +65,7 @@ Glass materials have an [Index of Refraction](Advanced_Material_Properties_Trans
 
 
 ### <img src="3-Glass.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog box:
 
@@ -81,7 +81,7 @@ Properties pre-set by the template:
  *  [Transparency](Advanced_Material_Properties_Transparency.html) 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 
@@ -93,7 +93,7 @@ Plastic materials have a white [highlight](Advanced_Material_Properties_Main.htm
 
 
 ### <img src="3-Plastic.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog box:
 
@@ -107,7 +107,7 @@ Properties pre-set by the template:
  *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 
@@ -119,7 +119,7 @@ The ClearFinish material simulates car paint, porcelain, ceramics, varnished woo
 
 
 ### <img src="3-ClearFinish.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog box:
 
@@ -133,7 +133,7 @@ Properties pre-set by the template:
  *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 
@@ -145,7 +145,7 @@ Glossy materials have a highlight with low Highlight [Intensity](Advanced_Materi
 
 
 ### <img src="3-Glossy.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog box:
 
@@ -159,7 +159,7 @@ Properties pre-set by the template:
  *  [Type](Advanced_Material_Properties_Main.html#Type) 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 
@@ -171,7 +171,7 @@ Textured materials use images to create colored and patterned materials. The ima
 
 
 ### <img src="3-Texture.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog box:
 
@@ -183,7 +183,7 @@ Properties available from the **Simple Material Properties** dialog box:
  *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 
@@ -195,7 +195,7 @@ Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html)
 
 
 ### <img src="TextureSet.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 Properties available from the **Simple Material Properties** dialog:
 
@@ -205,7 +205,7 @@ Properties available from the **Simple Material Properties** dialog:
  *  [Map Properties](Texture_Properties_Main.html) 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html) dialog box.
 

@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-Materials.png"/>Advanced Material Properties: Transparency
-{: toc-title }
+{: .toc-title }
 
 The Transparency settings control&#160;properties associated with light passing through a material.
 
@@ -12,7 +12,7 @@ The Transparency settings control&#160;properties associated with light passing 
 
 
 ### Transparency
-{: .toc-header }
+{: .toc-subheader }
 
 Changes the material from opaque to transparent. Transparent materials increase rendering time.
 
@@ -20,7 +20,7 @@ Changes the material from opaque to transparent. Transparent materials increase 
 
 
 ### Index of Refraction
-{: .toc-header }
+{: .toc-subheader }
 
 Determines how much refraction occurs when looking through the material at objects beyond.
 
@@ -30,11 +30,11 @@ The following table shows some examples of index of refraction:
 
 
 ### Material
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### IOR
-{: .toc-header }
+{: .toc-subheader }
 
 Vacuum
 
@@ -70,7 +70,7 @@ Diamond
 
 
 ### Translucency
-{: .toc-header }
+{: .toc-subheader }
 
 A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material.
 
@@ -78,7 +78,7 @@ A measure of diffusion. High translucency produces a “sandblasted” effect, s
 
 
 ### Scattering
-{: .toc-header }
+{: .toc-subheader }
 
 Controls the probability of the light encountering a particle per unit length.
 
@@ -92,7 +92,7 @@ The material must have some transparency in order for sub-surface scattering to 
 
 
 ### Attenuation
-{: .toc-header }
+{: .toc-subheader }
 
 Determines how much light is absorbed as it passes through the object— greater values produce a more cloudy appearance. Use **Attenuation** to model liquids. Clear liquids have low **Attenuation** ; murky liquids have higher **Attenuation** values.
 
@@ -100,7 +100,7 @@ Determines how much light is absorbed as it passes through the object— greater
 
 
 ### Dispersion
-{: .toc-header }
+{: .toc-subheader }
 
 Controls how much light is split into its component wavelengths.
 
@@ -108,7 +108,7 @@ Controls how much light is split into its component wavelengths.
 
 
 ### Saturation
-{: .toc-header }
+{: .toc-subheader }
 
 Determines the amount of dispersion.
 
@@ -116,7 +116,7 @@ Determines the amount of dispersion.
 
 
 ### Blurry Transparency
-{: .toc-header }
+{: .toc-subheader }
 
 When a material is partially transparent, a little noise is introduced into the transparency, to make the material look more natural.
 
@@ -129,7 +129,7 @@ Controls the amount of noise added.
 
 
 ### Glow
-{: .toc-header }
+{: .toc-subheader }
 
 Creates the illusion of illumination.
 

@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Glossary
-{: toc-title }
+{: .toc-title }
 
 &#160;
 

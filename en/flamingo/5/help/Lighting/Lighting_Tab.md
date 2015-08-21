@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-spotlight.png"/>Lighting
-{: toc-title }
+{: .toc-title }
 
 Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
 
@@ -30,13 +30,13 @@ To improve lighting techniques, be aware of the light and how it affects various
 
 
 ### <img src="SaveSchemeIcon.png"/>Save lighting scheme
-{: .toc-header }
+{: .toc-subheader }
 
 Saves the current lighting scheme.
 
 
 ### <img src="OpenSchemeIcon.png"/>Open lighting scheme
-{: .toc-header }
+{: .toc-subheader }
 
 Opens a saved lighting scheme.
 
@@ -52,7 +52,7 @@ Choose the Preset scheme that most closely resembles your scene.
 
 
 ## <img src="StudioLightingIcon.png"/>Studio lighting
-{: toc-header }
+{: .toc-header }
 
 <img src="StudioLighting-001.png"/>
 
@@ -68,7 +68,7 @@ Lighting techniques for photography are generally the same as lighting for rende
 
 
 ## <img src="ExteriorLightingIcon.png"/>Exterior daylight
-{: toc-header }
+{: .toc-header }
 
 <img src="ExteriorLighting-001.png"/>
 
@@ -88,7 +88,7 @@ Exploded views, sections, and axonometric drawings from above also pose a specia
 
 
 ## <img src="InteriorDaylightIcon.png"/>Interior daylight
-{: toc-header }
+{: .toc-header }
 
 <img src="InteriorDaylightNoPortals.png"/>
 
@@ -108,7 +108,7 @@ The direct sunlight component of day lighting involves a straightforward calcula
  * A [multi-channel](Lights_Tab.html#Channel) rendering may help you get the picture you want, while still preserving accurate data.
 
 ## <img src="ArtificialLightingIcon.png"/>Artificial lighting
-{: toc-header }
+{: .toc-header }
 
 This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](Lights_Tab.html) or [Rhino light commands](Lights_Tab.html#Rhino_Light_commands) to insert and manage light objects in your model.
 
@@ -116,7 +116,7 @@ This scheme provides a simulation of an architectural interior at night, lit by 
 
 
 ## <img src="CustomLighting.png"/>Custom
-{: toc-header }
+{: .toc-header }
 
 When the values on the [Advanced tab](Lighting_Advanced_Tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.
 
@@ -126,19 +126,19 @@ When the values on the [Advanced tab](Lighting_Advanced_Tab.html) change from th
 
 
 ###  [Sky](Sun_and_Sky_Tabs.html#Sky) 
-{: .toc-header }
+{: .toc-subheader }
 
 The [Sky tab](Sun_and_Sky_Tabs.html#Sky) has one mode for HDR image sky (studio lighting) and one for daylight lighting modes.
 
 
 ###  [Sun](Sun_and_Sky_Tabs.html#Sun) 
-{: .toc-header }
+{: .toc-subheader }
 
 The [Sun tab](Sun_and_Sky_Tabs.html#Sun) contains the controls for altering the parameters of the automatic sky. The sun is a very bright directional light source infinitely far from the model. The controls for the sun specify its direction using spherical coordinates.
 
 
 ###  [Advanced](Lighting_Advanced_Tab.html) 
-{: .toc-header }
+{: .toc-subheader }
 
 The [Advanced tab](Lighting_Advanced_Tab.html) lets you override all of the preset scheme settings to create custom lighting conditions.
 

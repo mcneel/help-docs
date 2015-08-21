@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Decals
-{: toc-title }
+{: .toc-title }
 
 Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps.
 
@@ -26,7 +26,7 @@ Some uses for decals include:
 
 
 ###  <kbd>Add</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 1.
 
@@ -60,7 +60,7 @@ The precise sequence depends on the type of decal selected: [Planar](#Decal_Plan
 
 
 ###  <kbd>Edit Placement</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 1.
 
@@ -76,7 +76,7 @@ Press **Enter** when finished.
 
 
 ###  <kbd>Properties</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 1.
 
@@ -88,12 +88,12 @@ In the **Decal Properties** dialog box, use the controls to change the decal's p
 
 
 ###  <kbd>Delete</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
  * Click the **Delete** button.
 
 ###  <kbd>Move up</kbd> / <kbd>Move down</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
 
@@ -177,11 +177,11 @@ The mapping style determines how to project the decal onto the object. It is a g
 
 
 ### Cylindrical
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### &#160;
-{: .toc-header }
+{: .toc-subheader }
 
 The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
 
@@ -189,11 +189,11 @@ The cylindrical projection maps the bitmap onto the cylinder with the bitmap's v
 
 <img src="CylindricalDecal-002.png"/>
 ### Planar
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### &#160;
-{: .toc-header }
+{: .toc-subheader }
 
 Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
 
@@ -203,11 +203,11 @@ When using planar mapping on a curved object, the entire bitmap projection must 
 
 <img src="Decal-Planar-001.png"/>
 ### UV Map
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### &#160;
-{: .toc-header }
+{: .toc-subheader }
 
 Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
 
@@ -217,7 +217,7 @@ UV mapping uses the u- and v-parameterization of the surface to bend and stretch
 
 <img src="UVMapDecal-00.png"/>
 ### <img src="browsebutton.png"/>Browse
-{: .toc-header }
+{: .toc-subheader }
 
 Change the image file.
 
@@ -227,13 +227,13 @@ Change the image file.
 
 
 ### Color
-{: .toc-header }
+{: .toc-subheader }
 
 Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](../Materials/Texture_Properties_Main.html#Color).
 
 
 ### Bump
-{: .toc-header }
+{: .toc-subheader }
 
 Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](../Materials/Texture_Properties_Main.html#Bump).
 
@@ -245,19 +245,19 @@ Controls the same properties that are controlled by a material definition. Apply
 
 
 ### Intensity
-{: .toc-header }
+{: .toc-subheader }
 
 Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](../Materials/Advanced_Material_Properties_Main.html#Intensity).
 
 
 ### Sharpness
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](../Materials/Advanced_Material_Properties_Main.html#Sharpness).
 
 
 ### Metallic
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](../Materials/Advanced_Material_Properties_Main.html#Metallic).
 
@@ -269,13 +269,13 @@ Sets the highlight color to match the base color. See [Advanced Material Propert
 
 
 ### Double Sided
-{: .toc-header }
+{: .toc-subheader }
 
 Causes the decal to appear on the back face of the surface on which it is placed as well as the front face.
 
 
 ### Mirror
-{: .toc-header }
+{: .toc-subheader }
 
 Mirrors the decal image.
 
@@ -285,7 +285,7 @@ Mirrors the decal image.
 
 
 ### Backward
-{: .toc-header }
+{: .toc-subheader }
 
 Projects the decal away from the back of the decal image.
 
@@ -293,7 +293,7 @@ Projects the decal away from the back of the decal image.
 
 
 ### Forward
-{: .toc-header }
+{: .toc-subheader }
 
 Projects the decal away from the front of the decal image.
 
@@ -301,7 +301,7 @@ Projects the decal away from the front of the decal image.
 
 
 ### Forward &amp; Backward
-{: .toc-header }
+{: .toc-subheader }
 
 Projects the decal away from both the front and the back of the decal image.
 
@@ -309,7 +309,7 @@ Projects the decal away from both the front and the back of the decal image.
 
 
 ### Transparency
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the transparency for the decal. See [Transparency](../Materials/Advanced_Material_Properties_Transparency.html).
 

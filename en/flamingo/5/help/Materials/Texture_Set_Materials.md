@@ -4,13 +4,13 @@ layout: toc-page
 
 
 # Texture Set Materials
-{: toc-title }
+{: .toc-title }
 
 Texture set materials support&#160;third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. The image names, tile size, and map properties are controlled from the Simple Materials Properties control.
 
 
 ### <img src="TextureSet.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 
 ## Simple Editor
@@ -18,7 +18,7 @@ Texture set materials support&#160;third-party texture maps that contain informa
 
 
 ### Name
-{: .toc-header }
+{: .toc-subheader }
 
 See [Advanced Material Properties: Main](Advanced_Material_Properties_Main.html#Name).
 
@@ -56,25 +56,25 @@ See [Texture Properties: Advanced](Texture_Properties_Main.html#Advanced).
 
 
 ### Map
-{: .toc-header }
+{: .toc-subheader }
 
 The map name and type.
 
 
 ### Link
-{: .toc-header }
+{: .toc-subheader }
 
 The linked style and file name if applicable.
 
 
 ### Image Resolution
-{: .toc-header }
+{: .toc-subheader }
 
 The image resolution.
 
 
 ###  <kbd>Advanced</kbd> 
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Advanced Material Properties: Main](Advanced_Material_Properties_Main.html) dialog box.
 

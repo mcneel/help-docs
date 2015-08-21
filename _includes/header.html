@@ -1,7 +1,7 @@
 <header class="site-header">
 
 
-    <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/lifering.png" alt="Rhino User Docs" height="48" width="56"></a><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}{% if page.product %}: {{page.product}} {% endif %}</a>
 
     <nav class="site-nav">
 

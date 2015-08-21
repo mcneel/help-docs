@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Options.png"/>Options: Flamingo nXt
-{: toc-title }
+{: .toc-title }
 
 
 ## Library folders
@@ -43,13 +43,13 @@ In the **Browse for Folder** dialog box, select a folder.
  * Select a folder name from the list, and click the Move Down icon.
 
 ### Allow modeling while rendering
-{: .toc-header }
+{: .toc-subheader }
 
 Lets you keep working on the model while rendering is underway.
 
 
 ### Insert plants as point clouds
-{: .toc-header }
+{: .toc-subheader }
 
 Uses a point cloud to represent a plant. Using point clouds generally make smaller file sizes.
 
@@ -63,19 +63,19 @@ Otherwise, plants are represented by mesh objects.
 
 
 ### Decal drag transparency
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies how transparent a decal is while it is being dragged during placement.
 
 
 ### Default material preview size
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the default size of the material preview sphere in the [Material Editor](../Materials/Advanced_Material_Properties_Main.html#Preview).
 
 
 ### Farm output folder
-{: .toc-header }
+{: .toc-subheader }
 
 The output folder for render farm jobs.
 

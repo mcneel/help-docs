@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Studio Lighting Basics
-{: toc-title }
+{: .toc-title }
 
 Studio lighting must be set up similar to a photographer's studio. For greater control, use light sources to light the scene.
 
@@ -28,7 +28,11 @@ Lighting setups always depend on the angle of the camera to the subject. It is a
 
 A basic studio lighting setup includes three lights, a key light, a fill light, and a backlight.
 
-Key LightThe key light is the dominant light in the scene. It sets the mood, provides direction, shows dimension and texture, and creates the darkest shadows. A key light is usually set 30 to 45 degrees to the side of and above the object depending on the subject matter.
+
+### Key Light
+{: .toc-subheader }
+
+The key light is the dominant light in the scene. It sets the mood, provides direction, shows dimension and texture, and creates the darkest shadows. A key light is usually set 30 to 45 degrees to the side of and above the object depending on the subject matter.
 
 The closer the key light is to the camera, the less modeling and texture it produces. A key light is usually higher than the lens, and throws shadows down. As the key light moves to the side, the three-dimensional quality of the object increases. In a classic portraiture setup, the key light is set at about a 45-degree angle between the subject and the camera and high enough to throw shadows down, but not so high that the subject's eyes are in shadow.
 
@@ -38,13 +42,21 @@ The shadow cast by the key light will be visible on the subject. In images of fa
 
 <img src="../image/StudioLighting-001.png"/>
 
-Fill LightThe fill light is placed just above the lens on the opposite side from the key light. Its purpose is to reduce contrast and bring out detail in the shadows by simulating light reflected off nearby objects. The key light and fill light may be of equal intensity for a low-contrast result, but the key light is usually brighter and harder than the fill light. The fill light is the secondary light in the scene. It should not introduce any more dark shadows into the scene.
+
+### Fill Light
+{: .toc-subheader }
+
+The fill light is placed just above the lens on the opposite side from the key light. Its purpose is to reduce contrast and bring out detail in the shadows by simulating light reflected off nearby objects. The key light and fill light may be of equal intensity for a low-contrast result, but the key light is usually brighter and harder than the fill light. The fill light is the secondary light in the scene. It should not introduce any more dark shadows into the scene.
 
 In the illustration, notice that the shadow to the left of the nose and along the left side is lighter and softer than the image with the key light alone.
 
 <img src="../image/StudioLighting-002.png"/>
 
-BacklightThe backlight effect is subtle but can define the edges of objects in the scene and add depth by preventing objects from blending into the background. Backlights are usually placed behind and above the object and are pointed toward the camera.
+
+### Backlight
+{: .toc-subheader }
+
+The backlight effect is subtle but can define the edges of objects in the scene and add depth by preventing objects from blending into the background. Backlights are usually placed behind and above the object and are pointed toward the camera.
 
 The effectiveness of backlights depends in part on the reflectivity of the surfaces they are lighting.
 
@@ -65,7 +77,11 @@ Some of the qualities to consider include:
  * Separation of objects from the background
  * Whether the lighting should be hard of soft
  * Whether the lighting should be warm or cool in color
-Contrast RangeContrast range is the difference between the brightest and the darkest areas with detail in a given scene. The human eye is capable of dealing with a far greater contrast range than film and can locally compensate to see detail in the extreme areas. This effect can be seen in snapshots taken on a sunny day.
+
+### Contrast Range
+{: .toc-subheader }
+
+Contrast range is the difference between the brightest and the darkest areas with detail in a given scene. The human eye is capable of dealing with a far greater contrast range than film and can locally compensate to see detail in the extreme areas. This effect can be seen in snapshots taken on a sunny day.
 
 Typically, the highlight side is too bright or the shadow side is too dark, yet you had no trouble seeing detail in both the dark and light areas. The contrast range is just too great for the film to record. This is also true of rendered images, as there is a limit to the colors the computer can display.
 
@@ -75,11 +91,19 @@ A lower contrast image prevents details from being obscured in the highlight or 
 
 <img src="../image/LowContrast-001.png"/>
 
-Three-Dimensional QualityRepresenting three dimensions in a two-dimensional space requires an illusion of depth. An opaque object lit from the side implies depth because there is a bright highlight side and a darker shadow side. A box showing three sides will have more dimension if each side is a different value. Often the top plane will be the brightest because light usually comes from above in real life situations.
+
+### Three-Dimensional Quality
+{: .toc-subheader }
+
+Representing three dimensions in a two-dimensional space requires an illusion of depth. An opaque object lit from the side implies depth because there is a bright highlight side and a darker shadow side. A box showing three sides will have more dimension if each side is a different value. Often the top plane will be the brightest because light usually comes from above in real life situations.
 
 <img src="../image/LightBox-001.png"/>
 
-Separation from the BackgroundFor a product to pop off the page, in addition to a three-dimensional quality and using the full contrast range, there must be good separation. That is, the edges of our subject must be decidedly lighter or darker than the background. Without separation, the subject blends into the background.
+
+### Separation from the Background
+{: .toc-subheader }
+
+For a product to pop off the page, in addition to a three-dimensional quality and using the full contrast range, there must be good separation. That is, the edges of our subject must be decidedly lighter or darker than the background. Without separation, the subject blends into the background.
 
 In the illustration, the highlight at the top of the object helps separate it from the background
 
@@ -87,7 +111,11 @@ The subject's shadow can sometimes aid separation and sometimes cause objects to
 
 <img src="../image/BlackEggs-003.png"/>
 
-Hard or Soft LightOne way to categorize light is hard (direct) or soft (diffused).
+
+### Hard or Soft Light
+{: .toc-subheader }
+
+One way to categorize light is hard (direct) or soft (diffused).
 
 A hard light casts a clearly defined hard-edged shadow.
 

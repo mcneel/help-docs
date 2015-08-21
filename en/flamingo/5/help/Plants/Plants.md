@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="PlantIcon.png"/>Plants
-{: toc-title }
+{: .toc-title }
 
 <img src="Plants-001.png"/>
 
@@ -64,7 +64,7 @@ At the prompt, pick a location for your plant in the model.
 
 
 ### New
-{: .toc-header }
+{: .toc-subheader }
 
 Create a new plant definition.
 
@@ -112,19 +112,19 @@ Opens a complex plant template. This template can also be used to create fountai
 
 
 ### Open
-{: .toc-header }
+{: .toc-subheader }
 
 Opens an existing tree definition.
 
 
 ### Save
-{: .toc-header }
+{: .toc-subheader }
 
 Saves the current tree definition.
 
 
 ### Save As
-{: .toc-header }
+{: .toc-subheader }
 
 Saves the current tree definition to a different name.
 
@@ -140,13 +140,13 @@ Renders the preview image.
  *Default (left) and raytraced (right) view.* 
 
 ### Start
-{: .toc-header }
+{: .toc-subheader }
 
 Start rendering the preview image.
 
 
 ### Stop
-{: .toc-header }
+{: .toc-subheader }
 
 Stop rendering the preview image.
 
@@ -162,13 +162,13 @@ Scroll with the mouse wheel to zoom in and out.
 
 
 ### Restore Default
-{: .toc-header }
+{: .toc-subheader }
 
 Restores the default shaded view.
 
 
 ### Show Leaves
-{: .toc-header }
+{: .toc-subheader }
 
 Shows the tree preview with leaves.
 

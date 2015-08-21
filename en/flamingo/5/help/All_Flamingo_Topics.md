@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # All Flamingo Topics
-{: toc-title }
+{: .toc-title }
 
 
 ## Environment

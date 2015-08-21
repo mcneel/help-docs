@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/flamingogrey.png"/>Undocumented Feature
-{: toc-title }
+{: .toc-title }
 
 This topic has not been documented.
 

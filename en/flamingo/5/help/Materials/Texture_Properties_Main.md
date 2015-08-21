@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-Materials.png"/>Texture Properties: Main
-{: toc-title }
+{: .toc-title }
 
 <img src="3-Texture.png"/>
 
@@ -20,25 +20,25 @@ Image maps can be used many ways. A common method is to use a picture of a real-
 
 
 ### File name
-{: .toc-header }
+{: .toc-subheader }
 
 The name of the image file.
 
 
 ### Image preview
-{: .toc-header }
+{: .toc-subheader }
 
 Displays a preview of the selected image file.
 
 
 ### Image resolution
-{: .toc-header }
+{: .toc-subheader }
 
 Displays the resolution in pixels of the image file.
 
 
 ### Tiles
-{: .toc-header }
+{: .toc-subheader }
 
 Image maps used in material definitions are always repeated (tiled). These settings specify how large each instance (tile) will be in current model units.
 
@@ -56,7 +56,7 @@ Mirrors the map in both directions as it is tiled. This can sometimes produce ad
 
 
 ### Show masked colors
-{: .toc-header }
+{: .toc-subheader }
 
 Graphically displays the effects of masking as the parameters change. Use the'../General/select_color.htm');" ehlpsource="robohelp classic" class="hcp1" id="a169" style="position: relative;">color swatch
 
@@ -70,7 +70,7 @@ provided to select the display color of the masked pixels. Changing this color o
 
 
 ### Standard
-{: .toc-header }
+{: .toc-subheader }
 
 The image provides color and visual bump to the material.
 
@@ -93,7 +93,7 @@ Simulates bumps and wrinkles on the surface of an object by perturbing the&#160;
 
 
 ### Normal
-{: .toc-header }
+{: .toc-subheader }
 
 Fakes the lighting of bumps and dents without using more&#160;polygons to the render mesh. See: [Wikipedia article: Normal mapping](http://en.wikipedia.org/wiki/Normal_mapping).
 
@@ -101,7 +101,7 @@ Normal maps work similar to bump maps, in that they modify the normal of the sur
 
 
 ### Displacement
-{: .toc-header }
+{: .toc-subheader }
 
 Causes an effect where the actual geometric position of the surface isdisplaced, often along the&#160;local&#160;surface normal. See: [Wikipedia article: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
 
@@ -154,41 +154,41 @@ Select the color component of the material that will be affected by the bitmap.
 
 
 ###  [Base color](Advanced_Material_Properties_Main.html#Color) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ###  [Specular color](Advanced_Material_Properties_Main.html#Highlight_color) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ###  [Specular intensity](Advanced_Material_Properties_Main.html#Intensity) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ###  [Highlight sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Highlight shape
-{: .toc-header }
+{: .toc-subheader }
 
 Affects the shape of the highlight.
 
 
 ###  [Transparency](Advanced_Material_Properties_Transparency.html) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ###  [Translucency](Advanced_Material_Properties_Transparency.html#Translucency) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ###  [Attenuation](Advanced_Material_Properties_Transparency.html#Attenuation) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Normal
-{: .toc-header }
+{: .toc-subheader }
 
 Affects the direction of the surface normals.
 
@@ -198,11 +198,11 @@ Affects the direction of the surface normals.
 
 
 ### X/Y Offset
-{: .toc-header }
+{: .toc-subheader }
 
 Offsets the material from the x- and y-axis.
 
 
 ###  [Rotation](Advanced_Material_Properties_Textures.html#Rotation) 
-{: .toc-header }
+{: .toc-subheader }
 

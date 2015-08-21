@@ -4,11 +4,11 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-spotlight.png"/>Lighting: Advanced
-{: toc-title }
+{: .toc-title }
 
 
 ### Sun
-{: .toc-header }
+{: .toc-subheader }
 
 The sun is a very bright directional light source infinitely far away from the model.
 
@@ -21,7 +21,7 @@ Turns the sun on and off.
 
 
 ### Sky
-{: .toc-header }
+{: .toc-subheader }
 
 Defines a hemispherical light source infinitely far away from the model.
 
@@ -62,7 +62,7 @@ Uses an image background with a planar, cylindrical, or spherical projection sim
 
 
 ### Studio Brightness
-{: .toc-header }
+{: .toc-subheader }
 
 Reduces the brightness of the [sun](Sun_and_Sky_Tabs.html) and sky to mimic the interior lighting levels of a photographer's studio.
 
@@ -70,7 +70,7 @@ Reduces the brightness of the [sun](Sun_and_Sky_Tabs.html) and sky to mimic the 
 
 
 ### Lights
-{: .toc-header }
+{: .toc-subheader }
 
 
 #### On/Off
@@ -119,7 +119,7 @@ Specifies the amount of color transfer associated with each indirect bounce.
 
 
 ### Ambient
-{: .toc-header }
+{: .toc-subheader }
 
 Ambient light is a constant light added to the rendering. These settings control&#160;the intensity of the ambient light as a percentage of the total estimated ambient light in the scene.
 
@@ -147,7 +147,7 @@ Optimizes ambient light for studio scenes.
 
 
 ### Monte Carlo reflections
-{: .toc-header }
+{: .toc-subheader }
 
 Tries to resolve blurry reflections containing small, bright areas. This is normally slower than the standard reflection algorithm. See: [Wikipedia article: Monte Carlo method](http://en.wikipedia.org/wiki/Monte_Carlo_method).
 

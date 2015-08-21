@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Sun
-{: toc-title }
+{: .toc-title }
 
 The **Sun** is a powerful invisible parallel light. Factors simulating real-world conditions such as latitude and longitude, time of day, and season control the Sun's direction and brightness.
 
@@ -42,25 +42,25 @@ Sets the sun's height in the sky in angle degrees from the Equator (0).
 
 
 ### Date
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the date.
 
 
 ### Time
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the local time of day.
 
 
 ### Daylight savings time
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the time forward by one hour.
 
 
 ### Latitude/Longitude
-{: .toc-header }
+{: .toc-subheader }
 
 Enter a latitude and longitude or pick a location on the map.
 
@@ -68,17 +68,17 @@ The numbers will also update to display the latitude and longitude of the a loca
 
 
 ### Time zone
-{: .toc-header }
+{: .toc-subheader }
 
  1. Displays the time zone for the specified location.
 
 ### City list
-{: .toc-header }
+{: .toc-subheader }
 
  1. Select a city to set the location.
 
 ### Map
-{: .toc-header }
+{: .toc-subheader }
 
 Click the map to specify a location.
 
@@ -86,13 +86,13 @@ Click the map to specify a location.
 
 
 ### Sun intensity
-{: .toc-header }
+{: .toc-subheader }
 
 Modifies the brightness of the sun (direct) daylight component. The intensity of sun is automatically calculated based on solar angles and sky conditions, but can be modified, to balance with other lights.
 
 
 ### Sun highlight
-{: .toc-header }
+{: .toc-subheader }
 
 The sharpness of the sun highlight.
 
@@ -112,7 +112,7 @@ The lighting preset schemes for [Exterior](Lighting_Tab.html#Exterior_daylight) 
 
 
 ## High-Dynamic-Range Image Sky
-{: toc-header }
+{: .toc-header }
 
 A high-dynamic-range (HDR) image is a 2-D image file. These images contain a much broader range of values a standard image file, such as a .jpg or .png. This extra data can be used to light models. If the values contained in the HDR are accurate, then the lighting will be accurate.
 
@@ -128,7 +128,7 @@ The preset Studio Lighting scheme uses HDR images for the sky. If you are thinki
 
 
 ### Image
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the HDR image file.
 
@@ -136,7 +136,7 @@ Specifies the HDR image file.
 
 
 ### Intensity
-{: .toc-header }
+{: .toc-subheader }
 
 Modifies the brightness of the HDR image light.
 
@@ -154,7 +154,7 @@ In the illustration, the image has been rotated so the reflection of the sun app
  *Image rotated so the sun appears on the object.* 
 
 ### Saturation
-{: .toc-header }
+{: .toc-subheader }
 
 The color saturation for the light. Since the light from an HDR image is the color of the pixels in the image, this sometimes produces unwanted color effects. Set the saturation low if you want the light from the image, but not the color.
 
@@ -164,7 +164,7 @@ The color saturation for the light. Since the light from an HDR image is the col
  *Low (left) and high (right) saturation.* 
 
 ## Automatic Sky
-{: toc-header }
+{: .toc-header }
 
 Automatic sky uses settings from the [Sun tab](Sun_and_Sky_Tabs.html) to specify the location of the sun and its intensity.
 
@@ -174,7 +174,7 @@ Automatic sky uses settings from the [Sun tab](Sun_and_Sky_Tabs.html) to specify
  *Automatic sky: sun high (left) and low (right) in the sky.* 
 
 ### Cloudiness
-{: .toc-header }
+{: .toc-subheader }
 
 When **Cloudiness** is turned off, strong shadows are created. The greater the cloudiness, the less contrast there will be between the light and shadows.
 
@@ -186,7 +186,7 @@ The **Cloudiness** setting affects many aspects of the daylight calculation, inc
  *Cloudiness 0 (left) and 1 (right).* 
 
 ### Sky intensity
-{: .toc-header }
+{: .toc-subheader }
 
 Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified.
 

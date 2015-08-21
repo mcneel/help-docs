@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Progress Form
-{: toc-title }
+{: .toc-title }
 
 This process may take some time. Please be patient.
 

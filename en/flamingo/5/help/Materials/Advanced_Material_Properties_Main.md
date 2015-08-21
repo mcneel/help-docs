@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-Materials.png"/>Advanced Material Properties: Main
-{: toc-title }
+{: .toc-title }
 
 <img src="BunchofMaterials.png"/>
 
@@ -24,7 +24,7 @@ These settings vary the way a material reflects light and objects. The highlight
 
 
 ### Highlight color
-{: .toc-header }
+{: .toc-subheader }
 
 
 #### White
@@ -51,7 +51,7 @@ Specify any color for the highlight.
 
 
 ### Intensity
-{: .toc-header }
+{: .toc-subheader }
 
 Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight.
 
@@ -59,7 +59,7 @@ Adjusts the strength of the highlight. Larger values increase the size and stren
 
 
 ### Fresnel
-{: .toc-header }
+{: .toc-subheader }
 
 Pronounced (fray-NELL) Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations) .The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
 
@@ -69,7 +69,7 @@ Reduce the value for very dark materials to prevent too much reflection.&#160;In
 
 
 ### Sharpness
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area.
 
@@ -77,7 +77,7 @@ Sets the size of the highlight. Lower numbers specify a broader highlight; highe
 
 
 ### Type
-{: .toc-header }
+{: .toc-subheader }
 
 Changes how reflections are calculated when artificial light sources are reflected.
 
@@ -131,13 +131,13 @@ Excludes raycast reflections of light sources, only the highlight is used. This 
 
 
 ### Template
-{: .toc-header }
+{: .toc-subheader }
 
 Indicates the template used with the [Simple Material Properties](Simple_Material_Properties.html) dialog box.
 
 
 ### Simple Editor
-{: .toc-header }
+{: .toc-subheader }
 
 Opens the [Simple Material Properties](Simple_Material_Properties.html) dialog box. The more commonly used settings are available in this editor.
 
@@ -147,7 +147,7 @@ Opens the [Simple Material Properties](Simple_Material_Properties.html) dialog b
 
 
 ### Base
-{: .toc-header }
+{: .toc-subheader }
 
 The **Procedures** tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: **Base**.
 
@@ -189,37 +189,37 @@ On the menu, click **Remove**.
 
 
 ## Angular Blend
-{: toc-header }
+{: .toc-header }
 
 Blends between two different materials to create materials that change characteristics based on the angle of view to the surface of the object.
 
 
 ### <img src="AngularBlendMaterials.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 The **Angular Blend** procedure blends between two different materials to create special effects. Use **Angular Blend** to create materials that change characteristics based on the angle of view to the surface of the object.
 
 
 ### Inner
-{: .toc-header }
+{: .toc-subheader }
 
 From 0 degrees from the viewpoint to the **Start angle**, the **Inner** component will show completely. Think of this as a base material.
 
 
 ### Outer
-{: .toc-header }
+{: .toc-subheader }
 
 From the **Stop angle** to 90 degrees from the view, the **Outer** component will be the only material showing. Think of this as a coating.
 
 
 ### Start angle
-{: .toc-header }
+{: .toc-subheader }
 
 The angle from the viewpoint at which the **Outer** component material starts.
 
 
 ### Stop angle
-{: .toc-header }
+{: .toc-subheader }
 
 The angle from the viewpoint at which the **Outer** component material stops.
 
@@ -236,7 +236,7 @@ The **Inner** material is white, and the **Outer** material is black.
  * Between 60 and 90 degrees&#160;from the viewpoint, you see black.
 <img src="AngularBlend-001.png"/>
 ## Blend
-{: toc-header }
+{: .toc-header }
 
 The **Blend** procedure combines two base components and controls the proportions of each. All of the standard library wood materials use a **Blend** procedure to change the finish of the wood from clear matte to dark shiny.
 
@@ -246,7 +246,7 @@ Blends work well changing an entire material definition by adding an overall col
 
 
 ### Blend
-{: .toc-header }
+{: .toc-subheader }
 
 Varies the amount of each component material used.
 
@@ -254,7 +254,7 @@ Varies the amount of each component material used.
 
 
 ### Use image
-{: .toc-header }
+{: .toc-subheader }
 
 Bitmap images usually consisting of grayscale patterns define where two component materials will show. The materials are blended by the value of the gray pixels in the image. Use a grayscale image map to mediate between the first and second components. The **First** component will be placed where there is black in the bitmap pattern, and the **Second** component will be placed where there is white in the bitmap pattern.
 
@@ -286,19 +286,19 @@ Mirrors the bitmap image in both the x- and y-directions. This sometimes helps t
 
 
 ### Use Alpha channel
-{: .toc-header }
+{: .toc-subheader }
 
 If the image has an alpha channel, this can be used instead of the bitmap grayscale to determine where the colors blend.
 
 
 ### Reverse
-{: .toc-header }
+{: .toc-subheader }
 
 The **First** component will be placed where there is white in the bitmap pattern, and the **Second** component will be placed where there is black in the bitmap pattern.
 
 
 ## Granite
-{: toc-header }
+{: .toc-header }
 
 Creates a 3-D material with solid pockets of a second material embedded in the **Base** component. The **Granite** procedure combines a randomly distributed **Spot** component in a **Base** component. The **Granite** procedure defines how the **Base** and **Spot** components combine. **Granite** procedures can be used for a variety of different materials including rust, sparkly plastic, and other randomly spotted materials.
 
@@ -306,7 +306,7 @@ Creates a 3-D material with solid pockets of a second material embedded in the *
 
 
 ### Base/Spot
-{: .toc-header }
+{: .toc-subheader }
 
 The **Base** and **Spot** components are two materials. Their properties are specified in the same way as any material.
 
@@ -314,7 +314,7 @@ The **Base** and **Spot** components are two materials. Their properties are spe
 
 
 ### Density
-{: .toc-header }
+{: .toc-subheader }
 
 A fraction of the whole pattern. Increasing this setting increases the relative size of the spots.
 
@@ -324,13 +324,13 @@ A fraction of the whole pattern. Increasing this setting increases the relative 
 
 
 ## Marble
-{: toc-header }
+{: .toc-header }
 
 Creates alternating slabs of **Base** and **Vein** components.
 
 
 ### <img src="MarbleMaterials.png"/>
-{: .toc-header }
+{: .toc-subheader }
 
 The **Marble** procedure defines how the **Base** and **Vein** components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object. Texture [mapping](..\ObjectProperties\properties_object.html#Mapping) for the objects controls the orientation of the material on the object.
 
@@ -340,7 +340,7 @@ No texture mapping (left). With texture mapping (right).
 
 
 ### Base/Vein
-{: .toc-header }
+{: .toc-subheader }
 
 The **Base** and **Vein** components are two materials. Their properties are specified in the same way as any material.
 
@@ -348,7 +348,7 @@ The **Base** and **Vein** components are two materials. Their properties are spe
 
 
 ### Vein Width
-{: .toc-header }
+{: .toc-subheader }
 
 Alters the relative size of the slabs to each other. **Vein Width** is a fraction of the distance from one **Base** stripe to the next. Values range from 0 (zero) for no **Vein** component to 1 for no **Base** component.
 
@@ -362,7 +362,7 @@ Alters the relative size of the slabs to each other. **Vein Width** is a fractio
 
 
 ## Tile
-{: toc-header }
+{: .toc-header }
 
 Tile is a 2-D material.&#160;Texture [mapping](..\ObjectProperties\properties_object.html#Mapping) for the objects controls the orientation of the material on the object. The **Tile** material combines a **Base** component and a **Joint** component. Each of these materials can also include any other material.
 
@@ -427,7 +427,7 @@ Offsets the material from the world origin. Do this if a seam that marks the beg
 
 
 ## Wood
-{: toc-header }
+{: .toc-header }
 
 Creates concentric cylinders of alternating **Base** and **Ring** components.
 
@@ -441,7 +441,7 @@ One of the advantages of using a wood material is that when rendering different 
 
 
 ### Base/Ring
-{: .toc-header }
+{: .toc-subheader }
 
 The **Base** and **Ring** components are two materials. Their properties are specified in the same way as any material.
 
@@ -449,7 +449,7 @@ The **Base** and **Ring** components are two materials. Their properties are spe
 
 
 ### Ring Width
-{: .toc-header }
+{: .toc-subheader }
 
 A fraction of the distance between one **Base** stripe and the next. Values range from 0 (zero) for no **Ring** component to 1 for no **Base** component.
 

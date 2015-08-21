@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="ImageEditorLogo.png"/>Image Editor
-{: toc-title }
+{: .toc-title }
 
 The nXt Image Editor can edit native image files (.nXtImage) produced by any of the nXt platforms. These native files retain all of the information gathered during rendering.
 
@@ -29,25 +29,25 @@ Using the nXt Image Editor, you can:
 
 
 ### Open
-{: .toc-header }
+{: .toc-subheader }
 
 Opens a file saved in nXtImage format for editing.
 
 
 ### Save Source Image
-{: .toc-header }
+{: .toc-subheader }
 
 Saves the nXtImage file.
 
 
 ### Save Source Image As
-{: .toc-header }
+{: .toc-subheader }
 
 Saves the nXtImage file under a different name.
 
 
 ### Save Tonemapped Image As
-{: .toc-header }
+{: .toc-subheader }
 
 Saves the edited image as a bitmap image file.
 
@@ -61,7 +61,7 @@ Piranesi is a 3-D painting tool that creates images with a hand-painted appearan
 
 
 ### Save HDR Image As
-{: .toc-header }
+{: .toc-subheader }
 
 HDR File (.hdr)
 
@@ -71,7 +71,7 @@ EXR with Alpha Channel (.exr)
 
 
 ### Save Mask
-{: .toc-header }
+{: .toc-subheader }
 
 nXtImage files contain three additional channels that can be used as masks for advanced compositing in most bitmap editors. These channels carry alpha, distance, and material information for each pixel, encoded in a gray-scale image. Each channel can be viewed and saved to a .png file.
 
@@ -105,7 +105,7 @@ Saves the distance channel mask.
 
 
 ### Save Lighting Settings As
-{: .toc-header }
+{: .toc-subheader }
 
 Saves the [lighting scheme](..\Lighting\Lighting_Tab.html#Open_lighting_scheme).
 
@@ -115,13 +115,13 @@ Saves the [lighting scheme](..\Lighting\Lighting_Tab.html#Open_lighting_scheme).
 
 
 ### Info
-{: .toc-header }
+{: .toc-subheader }
 
 Displays information about the image.
 
 
 ### Arithmetic
-{: .toc-header }
+{: .toc-subheader }
 
 Allows piecing together or overlaying segments of images rendered using the [Render Farm Single Image](Automate_Rendering.html#Single_Images) function.
 
@@ -173,13 +173,13 @@ Combines images rendered using the Path Tracer engine so that for example, combi
  *<img src="CombinedPathTrace200.png"/> *Rendered with 20 passes (left), ten 20-pass images combined to create a 200-pass image (right).* * 
 
 ### Apply Patch
-{: .toc-header }
+{: .toc-subheader }
 
 Inserts an image rendered as a selected portion into the rendered image.
 
 
 ### Animation
-{: .toc-header }
+{: .toc-subheader }
 
 You can animate changing the image information.
 
@@ -218,7 +218,7 @@ Specifies what to display in the image.
 
 
 ### Image
-{: .toc-header }
+{: .toc-subheader }
 
 Displays the original rendered image.
 
@@ -226,7 +226,7 @@ Displays the original rendered image.
 
 
 ### Image and Alpha Mask
-{: .toc-header }
+{: .toc-subheader }
 
 Displays the image and the alpha channel mask together.
 
@@ -234,7 +234,7 @@ Displays the image and the alpha channel mask together.
 
 
 ### Material Mask
-{: .toc-header }
+{: .toc-subheader }
 
 Displays the [material mask](Image_Editor.html#Material_Channel).
 
@@ -242,7 +242,7 @@ Displays the [material mask](Image_Editor.html#Material_Channel).
 
 
 ### Distance Mask
-{: .toc-header }
+{: .toc-subheader }
 
 Displays the [distance mask](Image_Editor.html#Distance_Channel).
 
@@ -269,7 +269,7 @@ In the **nXt Image Editor**, on the File menu, click **Open** to load the image 
 
 
 ## Tone mapping
-{: toc-header }
+{: .toc-header }
 
 Tone mapping is the process of converting the luminance data used by nXt into&#160;RGB pixels that can be displayed or printed.
 
@@ -279,25 +279,25 @@ Tone mapping is the process of converting the luminance data used by nXt into&#1
 
 
 ### Brightness
-{: .toc-header }
+{: .toc-subheader }
 
 See [Render Window: Brightness](Render_Window.html#Brightness).
 
 
 ### Burn
-{: .toc-header }
+{: .toc-subheader }
 
 See [Render Window: Burn](Render_Window.html#Burn) 
 
 
 ### Saturation
-{: .toc-header }
+{: .toc-subheader }
 
 See [Render Window: Saturation](Render_Window.html#Saturation) 
 
 
 ### Histogram
-{: .toc-header }
+{: .toc-subheader }
 
 See [Render Window: Histogram](Render_Window.html#Histogram) 
 
@@ -309,43 +309,43 @@ The status fields are located at the bottom of the screen. As you move your curs
 
 
 ### Pixel
-{: .toc-header }
+{: .toc-subheader }
 
 The pixel coordinate, measured from the lower left corner.
 
 
 ### Color
-{: .toc-header }
+{: .toc-subheader }
 
 The first three fields display the RGB colors&#160;displayed in the image after tonemapping. The fourth field shows the alpha (transparency) channel, which is used for compositing.
 
 
 ### Value
-{: .toc-header }
+{: .toc-subheader }
 
 The luminance value for each of the red, green, and blue sub-channels.
 
 
 ### Lum
-{: .toc-header }
+{: .toc-subheader }
 
 A weighted average of the luminance values stored in each pixel.
 
 
 ### Depth
-{: .toc-header }
+{: .toc-subheader }
 
 The distance of each pixel from the viewer in meters. Negative values indicate a background pixel.
 
 
 ### Material
-{: .toc-header }
+{: .toc-subheader }
 
 The name of the material used to render the pixel.
 
 
 ## FX Settings
-{: toc-header }
+{: .toc-header }
 
 
 ## Haze
@@ -357,13 +357,13 @@ Adds color to pixels farther from the camera. This effect can be used to add a h
  *<img src="golden gate.png"/>Original image (left) and with haze (right).* 
 
 ### Strength
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the intensity of the haze color.
 
 
 ### Near
-{: .toc-header }
+{: .toc-subheader }
 
 The distance from the camera where haze will start adding color to each pixel.
 
@@ -374,7 +374,7 @@ Pick a point on the image to specify the distance.
 
 
 ### Far
-{: .toc-header }
+{: .toc-subheader }
 
 The distance at which the haze effect will be its maximum.&#160;All pixels beyond this point will have the maximum haze effect added to each pixel.
 
@@ -387,7 +387,7 @@ Pick a point on the image to specify the distance.
 
 
 ### Color
-{: .toc-header }
+{: .toc-subheader }
 
 The haze color.
 
@@ -408,13 +408,13 @@ Since each pixel in the image contains a distance value, this can be used to blu
  *Original image (left) and with depth blur (right).* 
 
 ### Strength
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the amount of blur.
 
 
 ### Focus
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies a distance in the image that will be in focus.
 
@@ -425,13 +425,13 @@ Pick a point on the image to specify the focus distance.
 
 
 ### In-Focus Zone
-{: .toc-header }
+{: .toc-subheader }
 
 The distance around the **Focus** that is sharp.&#160;This value is in meters.&#160;All pixels within this distance will be sharp and will be ignored by the Blur filter.&#160;Pixels beyond this distance will be progressively blurred with neighboring pixels to give the illusion of depth of field.
 
 
 ### Blur
-{: .toc-header }
+{: .toc-subheader }
 
 Controls which direction the blur filter will work.&#160;The default value is **Background** .&#160;This means all pixels farther away from the camera than the **In-Focus Zone** will progressively blur.
 
@@ -464,13 +464,13 @@ Hold the cursor over the pixels to see glare and read the total lumens of that p
  *<img src="Glare-001.png"/>Original image (left) and with glare (right).* 
 
 ### Strength
-{: .toc-header }
+{: .toc-subheader }
 
 Adjusts the amount of halo that affects the surrounding pixels.
 
 
 ### Threshold
-{: .toc-header }
+{: .toc-subheader }
 
 The lower limit of&#160;the&#160;value affected by the glare filter.&#160;All pixels brighter than this value will be affected.
 

@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-Materials.png"/>Advanced Material Properties: Textures
-{: toc-title }
+{: .toc-title }
 
 Two types of maps can be added to a material: image maps and bump patterns. Image mapping uses bitmap images to add detail to the material. Images can alter many attributes of the materials surface including its color and apparent three-dimensional surface quality (bump). Bumps add a random roughness or knurled quality to the surface.
 
@@ -31,7 +31,7 @@ Materials like stucco, concrete, and clay have a fine texture. It is probably no
 
 
 ### Sandpaper
-{: .toc-header }
+{: .toc-subheader }
 
 Provides a random, finely textured appearance.
 
@@ -39,7 +39,7 @@ Provides a random, finely textured appearance.
 
 
 ### Rubble
-{: .toc-header }
+{: .toc-subheader }
 
 Gives the appearance of a lumpy, pitted surface. It can be scaled up and used for water, dirt, and smudges on surfaces. **Rubble** bump has a larger size range than **Sandpaper**.
 
@@ -47,7 +47,7 @@ Gives the appearance of a lumpy, pitted surface. It can be scaled up and used fo
 
 
 ### Pyramid
-{: .toc-header }
+{: .toc-subheader }
 
 Gives the appearance of small pyramidal protrusions like a knurl pattern.
 
@@ -55,7 +55,7 @@ Gives the appearance of small pyramidal protrusions like a knurl pattern.
 
 
 ### Wrinkled
-{: .toc-header }
+{: .toc-subheader }
 
 Gives a wrinkled appearance.
 
@@ -63,7 +63,7 @@ Gives a wrinkled appearance.
 
 
 ### Marbled
-{: .toc-header }
+{: .toc-subheader }
 
 Gives a marbled appearance
 

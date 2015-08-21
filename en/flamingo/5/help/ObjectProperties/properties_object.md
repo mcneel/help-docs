@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Properties.png"/>Object Properties
-{: toc-title }
+{: .toc-title }
 
 Flamingo nXt object properties only affect the way objects are rendered in Flamingo nXt.
 
@@ -74,7 +74,7 @@ Once a specific mapping type has been set, the object can be rotated, moved, and
 
 
 ### Place/Edit Placement
-{: .toc-header }
+{: .toc-subheader }
 
 Sets the origin point and rotation direction of the material mapping for the object. This controls where the bitmap image starts.
 
@@ -82,7 +82,7 @@ A different control icon activates for each mapping type. For cylindrical and sp
 
 
 ### Default
-{: .toc-header }
+{: .toc-subheader }
 
 Maps patterns orthographically to the world axes. The pattern begins at world 0,0,0. the origin or orientation cannot be changed. This means that the pattern may begin or end somewhere outside the boundaries of the object.
 
@@ -90,7 +90,7 @@ Maps patterns orthographically to the world axes. The pattern begins at world 0,
 
 
 ### Planar
-{: .toc-header }
+{: .toc-subheader }
 
 Mapping will not change orientation as the sides of the object change. If&#160;the object has faces that are perpendicular to the mapping plane, the material appears to be &quot;extruded&quot; or &quot;projected.&quot; In some cases, the **Planar** mapping can result in the pattern switching orientation suddenly in areas of high curvature.
 
@@ -98,7 +98,7 @@ Mapping will not change orientation as the sides of the object change. If&#160;t
 
 
 ### Cube
-{: .toc-header }
+{: .toc-subheader }
 
 Maps patterns orthographically to the object. The origin and orientation of the material mapping can be changed.
 
@@ -106,7 +106,7 @@ Maps patterns orthographically to the object. The origin and orientation of the 
 
 
 ### Cylindrical
-{: .toc-header }
+{: .toc-subheader }
 
 Maps patterns as if they were applied to a cylinder centered at the specified origin. The center, rotation, and axis of the mapping can be changed.
 
@@ -116,7 +116,7 @@ Use the material size or override the material size and specify the number of ti
 
 
 ### Spherical
-{: .toc-header }
+{: .toc-subheader }
 
 Maps patterns as if they were applied to a sphere centered at the specified origin.
 
@@ -124,7 +124,7 @@ Maps patterns as if they were applied to a sphere centered at the specified orig
 
 
 ### Surface
-{: .toc-header }
+{: .toc-subheader }
 
 The material does not tile, but only one instance of the material is placed on each surface regardless of the material size.
 

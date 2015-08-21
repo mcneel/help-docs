@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/PropertiesButton.png"/>Lights
-{: toc-title }
+{: .toc-title }
 
 Artificial light sources use normal Rhino lights with added properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
 
@@ -15,7 +15,7 @@ Artificial light sources use normal Rhino lights with added properties to contro
  1. <img src="../image/directionallightButton.png"/>Rhino **Directional Lights** are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
 
 ### <img src="LinearLight-01.png"/>LinearLight
-{: .toc-header }
+{: .toc-subheader }
 
 Distributes light in a cylindrical pattern that imitates a fluorescent tube.
 
@@ -23,7 +23,7 @@ Distributes light in a cylindrical pattern that imitates a fluorescent tube.
 
 
 ### <img src="PointLight-01.png"/>PointLight
-{: .toc-header }
+{: .toc-subheader }
 
 Distributes light equally in all directions.
 
@@ -31,7 +31,7 @@ Distributes light equally in all directions.
 
 
 ### <img src="RectangularLight-01.png"/>RectangularLight
-{: .toc-header }
+{: .toc-subheader }
 
 Provides an approximation of a recessed light with a diffuser or baffles.
 
@@ -39,7 +39,7 @@ Provides an approximation of a recessed light with a diffuser or baffles.
 
 
 ### <img src="SpotLight-01.png"/>Spotlight
-{: .toc-header }
+{: .toc-subheader }
 
 Provides a beam angle and direction.
 
@@ -47,7 +47,7 @@ Provides a beam angle and direction.
 
 
 ### <img src="TagObjectsAsLights.png"/>Tag objects as lights
-{: .toc-header }
+{: .toc-subheader }
 
 Any renderable object (surface, solid, etc.) can be tagged as a light and given light properties.
 
@@ -67,25 +67,25 @@ Some light properties are displayed on the Lights tab as a matrix: [On/Off](Ligh
 
 
 ### Name
-{: .toc-header }
+{: .toc-subheader }
 
 The name of the light object.
 
 
 ### On
-{: .toc-header }
+{: .toc-subheader }
 
 Toggles the light on and off.
 
 
 ### Visible
-{: .toc-header }
+{: .toc-subheader }
 
 The light object itself will be visible in the rendered image.
 
 
 ### Light distribution *( [Tagged objects only](#Tag_objects_as_lights) )* 
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the light distribution pattern.
 
@@ -106,31 +106,31 @@ Simulates a spotlight.
 
 
 ### Aim light *( [Tagged objects only](#Tag_objects_as_lights) )* 
-{: .toc-header }
+{: .toc-subheader }
 
 Drag the light target into position.
 
 
 ### Watts
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies the electrical power usage.
 
 
 ### Beam angle *( [Spotlights only](Lights_Tab.html#Spotlight) )* 
-{: .toc-header }
+{: .toc-subheader }
 
 The degree of width that light emanates from a light source.
 
 
 ### Radius *( [Spotlights only](Lights_Tab.html#Spotlight) )* 
-{: .toc-header }
+{: .toc-subheader }
 
 The size of the light. Smaller lights cast sharper shadows.
 
 
 ### Color
-{: .toc-header }
+{: .toc-subheader }
 
 The color for the light.
 
@@ -141,7 +141,7 @@ Uses the color of the material assigned to the light object for the light it pro
 
 
 ### Channel
-{: .toc-header }
+{: .toc-subheader }
 
 Specifies one of eight channels for the light.
 
@@ -197,7 +197,7 @@ IES (Illuminating Engineering Society) files are photometry files that define th
  * IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
 
 ### Brightness from file
-{: .toc-header }
+{: .toc-subheader }
 
 Use the intensity stored in the IES file. If this is not checked, the ** [Watts](Lights_Tab.html#Watts) ** setting is used.
 

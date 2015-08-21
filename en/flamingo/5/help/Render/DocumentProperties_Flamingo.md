@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/DocumentPropertiesButton.png"/>Document Properties: Flamingo nXt
-{: toc-title }
+{: .toc-title }
 
 These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
 
@@ -18,13 +18,13 @@ These settings apply to the current model only. There is a trade-off between the
 
 
 ### Use materials
-{: .toc-header }
+{: .toc-subheader }
 
 Renders using materials created in Flamingo nXt and Rhino materials. Objects that have no material assignment render white.
 
 
 ### Use object color
-{: .toc-header }
+{: .toc-subheader }
 
 Renders using the colors assigned through Rhino object or layer color.
 
@@ -36,19 +36,19 @@ Renders using the colors assigned through Rhino object or layer color.
 
 
 ### Reflective
-{: .toc-header }
+{: .toc-subheader }
 
 Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times.
 
 
 ### Refractive
-{: .toc-header }
+{: .toc-subheader }
 
 Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times.
 
 
 ### Indirect
-{: .toc-header }
+{: .toc-subheader }
 
 Determines how many levels of indirect light are permitted; in other words, how many times an indirect light ray will bounce off objects. A setting of 0 disables reflections. Higher values cause longer rendering times.
 
@@ -60,25 +60,25 @@ Determines how many levels of indirect light are permitted; in other words, how 
 
 
 ### Curves
-{: .toc-header }
+{: .toc-subheader }
 
 Curves display in rendered viewports.
 
 
 ### Dimensions and text
-{: .toc-header }
+{: .toc-subheader }
 
 Dimensions and text display in rendered viewports.
 
 
 ### Isocurves
-{: .toc-header }
+{: .toc-subheader }
 
 Isocurves display in rendered viewports.
 
 
 ### Mesh edges
-{: .toc-header }
+{: .toc-subheader }
 
 Mesh edges display in rendered viewports.
 
@@ -88,7 +88,7 @@ Mesh edges display in rendered viewports.
 
 
 ### Use lights on layers that are off
-{: .toc-header }
+{: .toc-subheader }
 
 Uses lights on layers that are turned off and hidden lights.
 

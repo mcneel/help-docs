@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # <img src="../Image/Icon-Materials.png"/>Materials
-{: toc-title }
+{: .toc-title }
 
 Materials can be assigned to layers or individual objects from materials either saved in the current model or from material libraries.
 
@@ -177,7 +177,7 @@ In the **Control Panel**, click the **Materials** tab.
 
 
 ### <img src="NewMaterial.png"/>Create new material
-{: .toc-header }
+{: .toc-subheader }
 
 Choose a material template. Templates provide preset values to help start a material.
 
@@ -210,15 +210,15 @@ Choose a material template. Templates provide preset values to help start a mate
 
 
 ### <img src="AssignToObject.png"/> [Assign to selected objects](#ByObject) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="AssignToLayer.png"/> [Assign material to layers](#ByLayer) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="ViewMenu.png"/>View menu
-{: .toc-header }
+{: .toc-subheader }
 
 
 #### <img src="LargeThumbnailView.png"/>Large thumbnail view
@@ -234,51 +234,51 @@ Choose a material template. Templates provide preset values to help start a mate
 
 
 ### <img src="ListView.png"/>List View
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="SmallThumbnailView.png"/>Thumbnail View
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="LargeThumbnailView.png"/>Large Thumbnail View
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="ExportToFolder.png"/>Export Materials to Folder
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="ImportFromFile.png"/>Import from File
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="AssignToObject.png"/> [Assign to Selected objects](#ByLayer) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="AssignToLayer.png"/> [Assign to Layer](#ByObject) 
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="SelectObjects.png"/>Select Objects with this Material
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="Duplicate.png"/>Duplicate
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="Delete.png"/>Delete
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Rename
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="Properties.png"/>Properties
-{: .toc-header }
+{: .toc-subheader }
 
 
 ## Library panel
@@ -286,23 +286,23 @@ Choose a material template. Templates provide preset values to help start a mate
 
 
 ### <img src="HideLibraryPanel.png"/>Hide Library panel
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="ShowLibraryPanel.png"/>Show Library panel
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="GoUpOneLevel.png"/>Go up one level
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="ViewMenu.png"/>View menu
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="Folder.png"/>Folder name
-{: .toc-header }
+{: .toc-subheader }
 
 
 ## Right-click panel to
@@ -310,49 +310,49 @@ Choose a material template. Templates provide preset values to help start a mate
 
 
 ### <img src="ListView.png"/>List View
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="SmallThumbnailView.png"/>Thumbnail View
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="LargeThumbnailView.png"/>Large Thumbnail View
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="GoUpOneLevel.png"/>Up One Level
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="Back.png"/>Back
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="Forward.png"/>Forward
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Browse for Folder
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Default Folder
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Add to Library List
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Remove from Library List
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### Rename
-{: .toc-header }
+{: .toc-subheader }
 
 
 ### <img src="Delete.png"/>Delete
-{: .toc-header }
+{: .toc-subheader }
 
