@@ -22,7 +22,7 @@ The Flamingo nXt **Render Farm** uses the power of several computers to render s
 ## <img src="FarmMonitorIcon.png"/>The Farm Process
 {: .toc-header }
 
-When rendering using Flamingo nXt, instead of rendering a single image with the **Render** command, use the **Render Farm**  *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](../General/Options_Flamingo.htm#Farm_output_folder). All materials and support information will automatically be submitted along with the job.
+When rendering using Flamingo nXt, instead of rendering a single image with the **Render** command, use the **Render Farm**  *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](../General/Options_Flamingo.html#Farm_output_folder). All materials and support information will automatically be submitted along with the job.
 
 The **Render Farm** clients continuously check the farm output folder for a new job. Each client will pick up a part of the job and start to render. The **Farm Monitor**  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* keeps track of the job's progress.
 
@@ -70,7 +70,7 @@ The **Render Farmer** will appear as an icon in the system tray.
 
 In the **nXt Farmer** window, on the **Options** menu, click **Path** and select the path to the **Render Farm** folder.
 
- * On the computer with Rhino and Flamingo nXt where you will ready the models to render and submit jobs to the farm, in Rhino, from the **Tools** menu, click **Options**, set the common farm location to the [Farm output folder](../General/Options_Flamingo.htm#Farm_output_folder).
+ * On the computer with Rhino and Flamingo nXt where you will ready the models to render and submit jobs to the farm, in Rhino, from the **Tools** menu, click **Options**, set the common farm location to the [Farm output folder](../General/Options_Flamingo.html#Farm_output_folder).
 The Render Farm is now configured.
 
 
@@ -91,9 +91,9 @@ Currently, the farm can be used three ways for processing renderings on multiple
 
 When rendering single images, each image is split into &quot;slices&quot; and distributed to multiple computers.
 
-The progress of jobs can be viewed with the [Farm Monitor](Automate_Rendering.htm#Render_Farm_monitor). As soon as the job is sent, another farm job may be submitted. Newly submitted jobs will queue up in the render farm shared folder. By default, the farm will render the jobs in the order they were received.
+The progress of jobs can be viewed with the [Farm Monitor](Automate_Rendering.html#Render_Farm_monitor). As soon as the job is sent, another farm job may be submitted. Newly submitted jobs will queue up in the render farm shared folder. By default, the farm will render the jobs in the order they were received.
 
-To reconstruct the output into a single image, use the [nXt Image Editor, Arithmetic](Image_Editor.htm#Arithmetic) function.
+To reconstruct the output into a single image, use the [nXt Image Editor, Arithmetic](Image_Editor.html#Arithmetic) function.
 
 
 #### To submit a single image job to the render farm
@@ -140,7 +140,7 @@ Start the job at a specified date and time.
 ### Render constraints
 
 
-####  [Passes](DocumentProperties_Flamingo.htm#Number_of_passes) 
+####  [Passes](DocumentProperties_Flamingo.html#Number_of_passes) 
 
 
 ## Batch Jobs
@@ -179,7 +179,7 @@ Delete a viewport from the batch list.
 ### <img src="BatchRender_Properties.png"/>Properties
 {: .toc-header }
 
-Set the [Batch Render Properties](Automate_Rendering.htm#Batch_Render_Properties).
+Set the [Batch Render Properties](Automate_Rendering.html#Batch_Render_Properties).
 
 
 ### <img src="BatchRender_MoveUp.png"/>Move Up
@@ -225,7 +225,7 @@ Uses only the current computer to render the batch jobs. The rendered images wil
 ###  <kbd>Send Batch To Farm</kbd> 
 {: .toc-header }
 
-Sends the batch jobs to the [Render Farm](Automate_Rendering.htm#Render_Farm). The jobs will be rendered by all available Farm clients. The render images will be output to the shared Farm folder.
+Sends the batch jobs to the [Render Farm](Automate_Rendering.html#Render_Farm). The jobs will be rendered by all available Farm clients. The render images will be output to the shared Farm folder.
 
 
 ## Batch Render Properties
@@ -235,7 +235,7 @@ Sends the batch jobs to the [Render Farm](Automate_Rendering.htm#Render_Farm). T
 ### Viewport to render
 {: .toc-header }
 
-See: [Render tab, Viewport to render](Render_Tab.htm#ViewToRender).
+See: [Render tab, Viewport to render](Render_Tab.html#ViewToRender).
 
 
 ## Output file
@@ -251,7 +251,7 @@ Click the **Save** button and specify a file name for the rendered image.
 ### Alpha channel
 {: .toc-header }
 
- [Use alpha channel background.](../Environment/Environment_Tab.htm#Alpha) 
+ [Use alpha channel background.](../Environment/Environment_Tab.html#Alpha) 
 
 
 ## Rendering resolution
@@ -261,14 +261,14 @@ Click the **Save** button and specify a file name for the rendered image.
 ### Use document settings
 {: .toc-header }
 
-See [Render tab, Resolution](Render_Tab.htm#Resolution).
+See [Render tab, Resolution](Render_Tab.html#Resolution).
 
 
 ## Rendering constraints
 {: .toc-header }
 
 
-###  [Passes](DocumentProperties_Flamingo.htm#Number_of_passes) 
+###  [Passes](DocumentProperties_Flamingo.html#Number_of_passes) 
 {: .toc-header }
 
 
@@ -282,7 +282,7 @@ Animations in Rhino can be configured using Rhino's **Animation toolbar**.
 
 1.
 
-Run the [FlamingoNXtAutomateRender](Automate_Rendering.htm#FlamingoNXtAutomateRender) command.
+Run the [FlamingoNXtAutomateRender](Automate_Rendering.html#FlamingoNXtAutomateRender) command.
 
 2.
 
@@ -458,7 +458,7 @@ Redirects the **Render** command to render to the farm.
 ### Job name
 {: .toc-header }
 
-Specifies the **Render Farm**  [Job name](Automate_Rendering.htm#Job_Name).
+Specifies the **Render Farm**  [Job name](Automate_Rendering.html#Job_Name).
 
 
 ## Render constraints
@@ -468,13 +468,13 @@ Specifies the **Render Farm**  [Job name](Automate_Rendering.htm#Job_Name).
 ### Number of render passes to render
 {: .toc-header }
 
-Specifies the [number of passes](DocumentProperties_Flamingo.htm#Number_of_passes).
+Specifies the [number of passes](DocumentProperties_Flamingo.html#Number_of_passes).
 
 
 ### Save alpha channel
 {: .toc-header }
 
-Saves the [alpha channel](Render_Window.htm#Save_with_alpha_channel) background.
+Saves the [alpha channel](Render_Window.html#Save_with_alpha_channel) background.
 
 
 ## Farm generated output files

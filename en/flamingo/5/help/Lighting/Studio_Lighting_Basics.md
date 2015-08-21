@@ -107,5 +107,5 @@ When lighting a studio setup, dramatic, high contrast lighting is important. Thi
 
 Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting.
 
-Flamingo nXt includes pre-set [lighting schemes](Lighting_Tab.htm#Lighting_Presets) to help you get started lighting your model. The settings on the [Advanced tab](Lighting_Advanced_Tab.html) are optimized for each lighting method.
+Flamingo nXt includes pre-set [lighting schemes](Lighting_Tab.html#Lighting_Presets) to help you get started lighting your model. The settings on the [Advanced tab](Lighting_Advanced_Tab.html) are optimized for each lighting method.
 

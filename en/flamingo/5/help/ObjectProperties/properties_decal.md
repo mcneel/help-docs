@@ -229,13 +229,13 @@ Change the image file.
 ### Color
 {: .toc-header }
 
-Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](../Materials/Texture_Properties_Main.htm#Color).
+Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](../Materials/Texture_Properties_Main.html#Color).
 
 
 ### Bump
 {: .toc-header }
 
-Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](../Materials/Texture_Properties_Main.htm#Bump).
+Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](../Materials/Texture_Properties_Main.html#Bump).
 
 
 ## Reflective finish
@@ -247,19 +247,19 @@ Controls the same properties that are controlled by a material definition. Apply
 ### Intensity
 {: .toc-header }
 
-Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](../Materials/Advanced_Material_Properties_Main.htm#Intensity).
+Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](../Materials/Advanced_Material_Properties_Main.html#Intensity).
 
 
 ### Sharpness
 {: .toc-header }
 
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](../Materials/Advanced_Material_Properties_Main.htm#Sharpness).
+Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](../Materials/Advanced_Material_Properties_Main.html#Sharpness).
 
 
 ### Metallic
 {: .toc-header }
 
-Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](../Materials/Advanced_Material_Properties_Main.htm#Metallic).
+Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](../Materials/Advanced_Material_Properties_Main.html#Metallic).
 
 
 
@@ -315,5 +315,5 @@ Sets the transparency for the decal. See [Transparency](../Materials/Advanced_Ma
 
 IOR
 
-Sets the index of refraction for the transparent decal. See [Index of Refraction](../Materials/Advanced_Material_Properties_Transparency.htm#Index_Of_Refraction) 
+Sets the index of refraction for the transparent decal. See [Index of Refraction](../Materials/Advanced_Material_Properties_Transparency.html#Index_Of_Refraction) 
 

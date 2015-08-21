@@ -48,7 +48,7 @@ In Rhino, open the **Layers** dialog box.
 
 2.
 
-In the **Flamingo nXt [Control Panel](..\General\Welcome.htm#Control_Panel) **, on the **Materials** tab, drag a material either from the **Materials in Model** palette or from the **Material Libraries** on to a layer name.
+In the **Flamingo nXt [Control Panel](..\General\Welcome.html#Control_Panel) **, on the **Materials** tab, drag a material either from the **Materials in Model** palette or from the **Material Libraries** on to a layer name.
 
 
 #### <img src="../Image/Icon-Layer.png"/>Remove a material from a layer
@@ -99,7 +99,7 @@ In the **Flamingo Materials** dialog box, select a material either from the **Ma
 
 #### <img src="../Image/DragNDrop.png"/>Drag a material onto a single object
 
- * In the **Flamingo nXt [Control Panel](..\General\Welcome.htm#Control_Panel) **, on the **Materials tab**, drag a material either from the **Materials in Model** palette or from the material library onto an object.
+ * In the **Flamingo nXt [Control Panel](..\General\Welcome.html#Control_Panel) **, on the **Materials tab**, drag a material either from the **Materials in Model** palette or from the material library onto an object.
 
 #### <img src="AssignToObject.png"/>Assign a material to selected objects
 
@@ -109,7 +109,7 @@ Select objects.
 
 2.
 
-In the **Flamingo nXt [Control Panel](..\General\Welcome.htm#Control_Panel) **, on the **Materials** tab, right-click a material from the **Materials in Model** palette.
+In the **Flamingo nXt [Control Panel](..\General\Welcome.html#Control_Panel) **, on the **Materials** tab, right-click a material from the **Materials in Model** palette.
 
 3.
 
@@ -121,7 +121,7 @@ On the menu, click **Assign to Selected Objects**.
 
 1.
 
-In the **Flamingo nXt [Control Panel](..\General\Welcome.htm#Control_Panel) **, on the **Materials** tab, right-click a material from the **Materials in Model** palette.
+In the **Flamingo nXt [Control Panel](..\General\Welcome.html#Control_Panel) **, on the **Materials** tab, right-click a material from the **Materials in Model** palette.
 
 2.
 
@@ -182,28 +182,28 @@ In the **Control Panel**, click the **Materials** tab.
 Choose a material template. Templates provide preset values to help start a material.
 
 
-#### <img src="NewSolidColorMaterial.png"/>New [Solid Color Material](Simple_Material_Properties.htm#Solid_Color) 
+#### <img src="NewSolidColorMaterial.png"/>New [Solid Color Material](Simple_Material_Properties.html#Solid_Color) 
 
 
-#### <img src="NewMetalMaterial.png"/>New [Metal Material](Simple_Material_Properties.htm#Metal) 
+#### <img src="NewMetalMaterial.png"/>New [Metal Material](Simple_Material_Properties.html#Metal) 
 
 
-#### <img src="NewPlasticMaterial.png"/>New [Plastic Material](Simple_Material_Properties.htm#Plastic) 
+#### <img src="NewPlasticMaterial.png"/>New [Plastic Material](Simple_Material_Properties.html#Plastic) 
 
 
-#### <img src="NewGlassMaterial.png"/>New [Glass Material](Simple_Material_Properties.htm#Glass) 
+#### <img src="NewGlassMaterial.png"/>New [Glass Material](Simple_Material_Properties.html#Glass) 
 
 
-#### <img src="NewClearFinishMaterial.png"/>New [ClearFinish Material](Simple_Material_Properties.htm#ClearFinish) 
+#### <img src="NewClearFinishMaterial.png"/>New [ClearFinish Material](Simple_Material_Properties.html#ClearFinish) 
 
 
-#### <img src="NewGlossyMaterial.png"/>New [Glossy Material](Simple_Material_Properties.htm#Glossy) 
+#### <img src="NewGlossyMaterial.png"/>New [Glossy Material](Simple_Material_Properties.html#Glossy) 
 
 
-#### <img src="NewTexturedMaterial.png"/>New [Textured Material](Simple_Material_Properties.htm#Textured) 
+#### <img src="NewTexturedMaterial.png"/>New [Textured Material](Simple_Material_Properties.html#Textured) 
 
 
-#### <img src="NewTextureSetMaterial.png"/>New [Texture Set Material](Simple_Material_Properties.htm#Texture_Set) 
+#### <img src="NewTextureSetMaterial.png"/>New [Texture Set Material](Simple_Material_Properties.html#Texture_Set) 
 
 
 #### <img src="NewAdvancedMaterial.png"/>New [Advanced Material](Advanced_Material_Properties_Main.html) 

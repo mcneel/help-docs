@@ -48,11 +48,11 @@ A space-enclosing, transparent object is normally treated as a solid for transpa
 ## Daylight portal
 {: .toc-header }
 
-A daylight portal is an opening for [Sun and Sky lighting](../Lighting/Lighting_Tab.htm#Interior_daylight) for an interior rendering.
+A daylight portal is an opening for [Sun and Sky lighting](../Lighting/Lighting_Tab.html#Interior_daylight) for an interior rendering.
 
-A Daylight portal pulls sun, sky, and ground light into an interior space in a natural way. Daylight portals only have an effect when the [Sun](..\Lighting\Sun_and_Sky_Tabs.htm#Sun) is turned on.
+A Daylight portal pulls sun, sky, and ground light into an interior space in a natural way. Daylight portals only have an effect when the [Sun](..\Lighting\Sun_and_Sky_Tabs.html#Sun) is turned on.
 
-When the lighting scheme is set to [Interior daylight](../Lighting/Lighting_Tab.htm#Interior_daylight), all transparent surfaces act as daylight portals automatically. It is only when the lighting scheme is set to Studio or Exterior daylight and you still want to bring outside sun and sky light into an interior space that you must manually tag the windows as daylight portals.
+When the lighting scheme is set to [Interior daylight](../Lighting/Lighting_Tab.html#Interior_daylight), all transparent surfaces act as daylight portals automatically. It is only when the lighting scheme is set to Studio or Exterior daylight and you still want to bring outside sun and sky light into an interior space that you must manually tag the windows as daylight portals.
 
 <img src="DaylightPortal-001.png"/>
 
@@ -68,7 +68,7 @@ One common example is a Wood material on objects arranged in a circular pattern 
 
 <img src="Mapping-001.png"/>Default mapping (left) and mapping orientation set per object (right).
 
-Five mapping types position a material on an object: [Planar](#Planar), [Cube](#Cube), [Cylindrical](#Cylindrical), and [Spherical](#Spherical), and [Surface](properties_object.htm#Surface_mapping). The [Default](#DefaultMapping) setting maps materials the same as cube, but the origin and orientation are not adjustable.
+Five mapping types position a material on an object: [Planar](#Planar), [Cube](#Cube), [Cylindrical](#Cylindrical), and [Spherical](#Spherical), and [Surface](properties_object.html#Surface_mapping). The [Default](#DefaultMapping) setting maps materials the same as cube, but the origin and orientation are not adjustable.
 
 Once a specific mapping type has been set, the object can be rotated, moved, and otherwise edited, and the orientation of the material will follow the object. When specifying points on an object, it is important to use object snaps or set the construction plane to the object before mapping the material.
 

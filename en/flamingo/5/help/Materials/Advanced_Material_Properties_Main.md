@@ -85,7 +85,7 @@ Reflections are calculated using two methods: *raycasting* and *highlight*. Thes
 
 In the illustration below for **Balanced** type, the object on the left has a bright white reflection that overpowers the material's appearance.
 
- **Note** : Blurry reflections of light sources can be associated with interior renderings where the light sources are small. The surfaces exhibiting the artifact typically have blurry reflections. Changing the type to [Glossy](Advanced_Material_Properties_Main.htm#Glossy), [No Light Source Reflections](Advanced_Material_Properties_Main.htm#No_Light_Source_Reflection), or [Monte Carlo](Advanced_Material_Properties_Main.htm#Monte_Carlo) can help alleviate this problem.
+ **Note** : Blurry reflections of light sources can be associated with interior renderings where the light sources are small. The surfaces exhibiting the artifact typically have blurry reflections. Changing the type to [Glossy](Advanced_Material_Properties_Main.html#Glossy), [No Light Source Reflections](Advanced_Material_Properties_Main.html#No_Light_Source_Reflection), or [Monte Carlo](Advanced_Material_Properties_Main.html#Monte_Carlo) can help alleviate this problem.
 
 
 #### Balanced
@@ -151,7 +151,7 @@ Opens the [Simple Material Properties](Simple_Material_Properties.html) dialog b
 
 The **Procedures** tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: **Base**.
 
-Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [angular blend](Advanced_Material_Properties_Main.htm#Angular_Blend), [blend](Advanced_Material_Properties_Main.htm#Blend), [marble,](Advanced_Material_Properties_Main.htm#Marble)  [granite](Advanced_Material_Properties_Main.htm#Granite), [tile](Advanced_Material_Properties_Main.htm#Tile), and [wood](Advanced_Material_Properties_Main.htm#Wood).
+Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [angular blend](Advanced_Material_Properties_Main.html#Angular_Blend), [blend](Advanced_Material_Properties_Main.html#Blend), [marble,](Advanced_Material_Properties_Main.html#Marble)  [granite](Advanced_Material_Properties_Main.html#Granite), [tile](Advanced_Material_Properties_Main.html#Tile), and [wood](Advanced_Material_Properties_Main.html#Wood).
 
 
 #### To add a procedure
@@ -164,17 +164,17 @@ href="javascript:BSSCPopup('../mouse_button_right.htm');" id="a11" style="positi
 
 On the menu, click a procedure type.
 
- [Angular Blend](Advanced_Material_Properties_Main.htm#Angular_Blend) 
+ [Angular Blend](Advanced_Material_Properties_Main.html#Angular_Blend) 
 
- [Blend](Advanced_Material_Properties_Main.htm#Blend) 
+ [Blend](Advanced_Material_Properties_Main.html#Blend) 
 
- [Granite](Advanced_Material_Properties_Main.htm#Granite) 
+ [Granite](Advanced_Material_Properties_Main.html#Granite) 
 
- [Marble](Advanced_Material_Properties_Main.htm#Marble) 
+ [Marble](Advanced_Material_Properties_Main.html#Marble) 
 
- [Tile](Advanced_Material_Properties_Main.htm#Tile) 
+ [Tile](Advanced_Material_Properties_Main.html#Tile) 
 
- [Wood](Advanced_Material_Properties_Main.htm#Wood) 
+ [Wood](Advanced_Material_Properties_Main.html#Wood) 
 
 
 #### To remove a procedure
@@ -332,7 +332,7 @@ Creates alternating slabs of **Base** and **Vein** components.
 ### <img src="MarbleMaterials.png"/>
 {: .toc-header }
 
-The **Marble** procedure defines how the **Base** and **Vein** components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object. Texture [mapping](..\ObjectProperties\properties_object.htm#Mapping) for the objects controls the orientation of the material on the object.
+The **Marble** procedure defines how the **Base** and **Vein** components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object. Texture [mapping](..\ObjectProperties\properties_object.html#Mapping) for the objects controls the orientation of the material on the object.
 
 <img src="MaterialUnmapped.png"/>
 
@@ -364,7 +364,7 @@ Alters the relative size of the slabs to each other. **Vein Width** is a fractio
 ## Tile
 {: toc-header }
 
-Tile is a 2-D material.&#160;Texture [mapping](..\ObjectProperties\properties_object.htm#Mapping) for the objects controls the orientation of the material on the object. The **Tile** material combines a **Base** component and a **Joint** component. Each of these materials can also include any other material.
+Tile is a 2-D material.&#160;Texture [mapping](..\ObjectProperties\properties_object.html#Mapping) for the objects controls the orientation of the material on the object. The **Tile** material combines a **Base** component and a **Joint** component. Each of these materials can also include any other material.
 
 <img src="Tile Materials.png"/>
 

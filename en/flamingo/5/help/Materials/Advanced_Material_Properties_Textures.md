@@ -27,7 +27,7 @@ Textures can consist of more than one image. Sometimes one image controls the co
 
 Bumps create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. When one of the bump maps is checked, additional controls become available. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. More than one bump pattern can be added to a material.
 
-Materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a **Sandpaper** procedural bump on a ** [Base Color](Advanced_Material_Properties_Main.htm#Color) ** emulates this kind of fine pattern. Create a ** [Base Color](Advanced_Material_Properties_Main.htm#Color) ** that is the color of the material. Then add a procedural bump to the material. Use **Sandpaper** for a fine texture and **Rubble** for a coarser texture.
+Materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a **Sandpaper** procedural bump on a ** [Base Color](Advanced_Material_Properties_Main.html#Color) ** emulates this kind of fine pattern. Create a ** [Base Color](Advanced_Material_Properties_Main.html#Color) ** that is the color of the material. Then add a procedural bump to the material. Use **Sandpaper** for a fine texture and **Rubble** for a coarser texture.
 
 
 ### Sandpaper

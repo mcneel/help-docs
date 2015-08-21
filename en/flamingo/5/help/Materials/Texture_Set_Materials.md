@@ -20,13 +20,13 @@ Texture set materials support&#160;third-party texture maps that contain informa
 ### Name
 {: .toc-header }
 
-See [Advanced Material Properties: Main](Advanced_Material_Properties_Main.htm#Name).
+See [Advanced Material Properties: Main](Advanced_Material_Properties_Main.html#Name).
 
 
 ## Tiles
 {: .toc-header }
 
-See [Texture Properties: Main: Tiles](Texture_Properties_Main.htm#Tiles).
+See [Texture Properties: Main: Tiles](Texture_Properties_Main.html#Tiles).
 
 
 ## Map Properties
@@ -42,17 +42,17 @@ See [Texture Properties: Main](Texture_Properties_Main.html).
 
 #### Displacement
 
-See [Texture Properties: Main: Displacement](Texture_Properties_Main.htm#Displacement).
+See [Texture Properties: Main: Displacement](Texture_Properties_Main.html#Displacement).
 
 
 #### Normal
 
-See [Texture Properties: Main: Normal](Texture_Properties_Main.htm#Normal).
+See [Texture Properties: Main: Normal](Texture_Properties_Main.html#Normal).
 
 
 #### Specular (reflective finish and highlight)
 
-See [Texture Properties: Advanced](Texture_Properties_Main.htm#Advanced).
+See [Texture Properties: Advanced](Texture_Properties_Main.html#Advanced).
 
 
 ### Map

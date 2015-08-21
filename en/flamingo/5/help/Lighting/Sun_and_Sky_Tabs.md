@@ -106,9 +106,9 @@ The sharpness of the sun highlight.
 ## Sky
 {: .toc-header }
 
-Two kinds of built-in sky lighting are provided: [HDR image](Lighting_Advanced_Tab.htm#HDRi) sky and [Automatic sky](#Automatic_Sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.
+Two kinds of built-in sky lighting are provided: [HDR image](Lighting_Advanced_Tab.html#HDRi) sky and [Automatic sky](#Automatic_Sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.
 
-The lighting preset schemes for [Exterior](Lighting_Tab.htm#Exterior_daylight) and [Interior](Lighting_Tab.htm#Interior_daylight) daylight use the Automatic sky by default. The [Studio](Lighting_Tab.htm#Studio_lighting) lighting preset scheme uses HDR image lighting by default.
+The lighting preset schemes for [Exterior](Lighting_Tab.html#Exterior_daylight) and [Interior](Lighting_Tab.html#Interior_daylight) daylight use the Automatic sky by default. The [Studio](Lighting_Tab.html#Studio_lighting) lighting preset scheme uses HDR image lighting by default.
 
 
 ## High-Dynamic-Range Image Sky
@@ -122,7 +122,7 @@ A high-dynamic-range (HDR) image is a 2-D image file. These images contain a muc
  *HDRi lighting.* 
 It is assumed that HDR images contain radiance values expressed in units of watts. If this is not the case, the intensity of these HDR images may need to be adjusted in order to achieve proper illumination levels.
 
-In addition to the Sky, a different HDR image can be used for each of the three background channels: [Visible](../Environment/Environment_Tab.htm#Advanced_Background), [Reflected](../Environment/Environment_Tab.htm#Advanced_Background), and [Refracted](../Environment/Environment_Tab.htm#Advanced_Background) background.
+In addition to the Sky, a different HDR image can be used for each of the three background channels: [Visible](../Environment/Environment_Tab.html#Advanced_Background), [Reflected](../Environment/Environment_Tab.html#Advanced_Background), and [Refracted](../Environment/Environment_Tab.html#Advanced_Background) background.
 
 The preset Studio Lighting scheme uses HDR images for the sky. If you are thinking of studio lighting as an indoor activity, think of the HDR image as a ceiling that emits light based on the colors in the image.
 

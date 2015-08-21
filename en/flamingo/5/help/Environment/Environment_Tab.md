@@ -74,10 +74,10 @@ Modifies the relative brightness of the background.
 
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
- *  [Sky](Environment_Tab.htm#Environment_Sky) 
- *  [Solid and gradient color](Environment_Tab.htm#Color_and_Gradient_Backgrounds) 
+ *  [Sky](Environment_Tab.html#Environment_Sky) 
+ *  [Solid and gradient color](Environment_Tab.html#Color_and_Gradient_Backgrounds) 
  *  [Image](#Environment_Image) 
- *  [HDR and planar HDR images](Environment_Tab.htm#HDR_and_Planar_HDR_Backgrounds) 
+ *  [HDR and planar HDR images](Environment_Tab.html#HDR_and_Planar_HDR_Backgrounds) 
 
 ## Sky
 {: toc-header }
@@ -194,7 +194,7 @@ The image can be mapped to a planar, cylindrical, or spherical shape or offset u
 ### Projection
 {: .toc-header }
 
-Three types of background image projections are supported: [Planar](Environment_Tab.htm#Planar), [Cylindrical](Environment_Tab.htm#Cylindrical), and [Spherical](Environment_Tab.htm#Spherical). Each projection method has its own set of controls for positioning the image.
+Three types of background image projections are supported: [Planar](Environment_Tab.html#Planar), [Cylindrical](Environment_Tab.html#Cylindrical), and [Spherical](Environment_Tab.html#Spherical). Each projection method has its own set of controls for positioning the image.
 
 
 #### Planar
@@ -233,7 +233,7 @@ Specify the size and position of the image map in height and width angles. Use t
 ##### Cylindrical Options
 
 
-######  [Background color](Environment_Tab.htm#BackgroundColors) 
+######  [Background color](Environment_Tab.html#BackgroundColors) 
 
 
 ###### Width
@@ -285,7 +285,7 @@ High-dynamic-range images provide lighting from luminance information stored in 
 
 Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window.
 
-An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](..\Lighting\Lights_Tab.htm#Channel) rendering.
+An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](..\Lighting\Lights_Tab.html#Channel) rendering.
 
 
 ## HDR options
@@ -333,7 +333,7 @@ Objects reflect the sky as specified in the [Lighting: Sun and Sky](../Lighting/
 ### Custom
 {: .toc-header }
 
-Objects reflect a [Color or gradient](Environment_Tab.htm#Color_and_Gradient_Backgrounds), [Image](Environment_Tab.htm#Image), or [HDR](Environment_Tab.htm#HDR_and_Planar_HDR_Backgrounds) background.
+Objects reflect a [Color or gradient](Environment_Tab.html#Color_and_Gradient_Backgrounds), [Image](Environment_Tab.html#Image), or [HDR](Environment_Tab.html#HDR_and_Planar_HDR_Backgrounds) background.
 
 
 ### Visible Background
@@ -355,7 +355,7 @@ Objects refract the sky as specified in the [Lighting: Sun and Sky](../Lighting/
 ### Custom
 {: .toc-header }
 
-Objects refract a [Color or gradient](Environment_Tab.htm#Color_and_Gradient_Backgrounds), [Image](Environment_Tab.htm#Image), or [HDR](Environment_Tab.htm#HDR_and_Planar_HDR_Backgrounds) background.
+Objects refract a [Color or gradient](Environment_Tab.html#Color_and_Gradient_Backgrounds), [Image](Environment_Tab.html#Image), or [HDR](Environment_Tab.html#HDR_and_Planar_HDR_Backgrounds) background.
 
 
 ### Visible Background

@@ -56,7 +56,7 @@ Determines how many levels of indirect light are permitted; in other words, how 
 ## Display in rendered viewports
 {: .toc-header }
 
- **Note** : These settings only affect viewports using Rhino's Rendered display mode. To see these objects in a rendered image, use [Post Effects](Render_Window.htm#PostProcessingWireframe).
+ **Note** : These settings only affect viewports using Rhino's Rendered display mode. To see these objects in a rendered image, use [Post Effects](Render_Window.html#PostProcessingWireframe).
 
 
 ### Curves

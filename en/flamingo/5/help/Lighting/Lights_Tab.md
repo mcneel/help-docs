@@ -56,14 +56,14 @@ Objects tagged as lights display a preview widget of how the light is pointed an
 
 #### To control the visibility of light widget
 
- * On the **Flamingo nXt menu &gt; Lights &gt;** check **Show light widgets on tagged objects** or use the [FlamingoNXtDrawLightsForObjectsTaggedAsLights](../General/flamingo_command_list.htm#FlamingoNXtDrawLightsForObjectsTaggedAsLights) command
+ * On the **Flamingo nXt menu &gt; Lights &gt;** check **Show light widgets on tagged objects** or use the [FlamingoNXtDrawLightsForObjectsTaggedAsLights](../General/flamingo_command_list.html#FlamingoNXtDrawLightsForObjectsTaggedAsLights) command
 
 ## Light Properties
 {: .toc-header }
 
 When Flamingo is the current rendering application in Rhino, additional properties can be set for lights. Lights have some but not all properties in common.
 
-Some light properties are displayed on the Lights tab as a matrix: [On/Off](Lights_Tab.htm#On), [Name](Lights_Tab.htm#Name), [Distribution](Lights_Tab.htm#Light_distribution), [Aim](Lights_Tab.htm#Aim_light), [Watts](Lights_Tab.htm#Watts), and [Channel](Lights_Tab.htm#Channel).
+Some light properties are displayed on the Lights tab as a matrix: [On/Off](Lights_Tab.html#On), [Name](Lights_Tab.html#Name), [Distribution](Lights_Tab.html#Light_distribution), [Aim](Lights_Tab.html#Aim_light), [Watts](Lights_Tab.html#Watts), and [Channel](Lights_Tab.html#Channel).
 
 
 ### Name
@@ -117,13 +117,13 @@ Drag the light target into position.
 Specifies the electrical power usage.
 
 
-### Beam angle *( [Spotlights only](Lights_Tab.htm#Spotlight) )* 
+### Beam angle *( [Spotlights only](Lights_Tab.html#Spotlight) )* 
 {: .toc-header }
 
 The degree of width that light emanates from a light source.
 
 
-### Radius *( [Spotlights only](Lights_Tab.htm#Spotlight) )* 
+### Radius *( [Spotlights only](Lights_Tab.html#Spotlight) )* 
 {: .toc-header }
 
 The size of the light. Smaller lights cast sharper shadows.
@@ -162,7 +162,7 @@ The following conditions are necessary to produce and manipulate a multi-channel
 
  *  **/mouse_button_right.htm');" id="a13" style="position: relative;">Right-click** a light in the **Lights** tab for additional options
 
-####  [On](Lights_Tab.htm#On) 
+####  [On](Lights_Tab.html#On) 
 
 
 #### Delete
@@ -172,10 +172,10 @@ Deletes the selected light.
 
 #### Remove light tag
 
-Removes the [tag](Lights_Tab.htm#Tag_objects_as_lights) that makes an object a light.
+Removes the [tag](Lights_Tab.html#Tag_objects_as_lights) that makes an object a light.
 
 
-####  [Properties](Lights_Tab.htm#Light_Properties) 
+####  [Properties](Lights_Tab.html#Light_Properties) 
 
 
 #### Select objects and matching items
@@ -199,5 +199,5 @@ IES (Illuminating Engineering Society) files are photometry files that define th
 ### Brightness from file
 {: .toc-header }
 
-Use the intensity stored in the IES file. If this is not checked, the ** [Watts](Lights_Tab.htm#Watts) ** setting is used.
+Use the intensity stored in the IES file. If this is not checked, the ** [Watts](Lights_Tab.html#Watts) ** setting is used.
 

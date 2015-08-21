@@ -12,7 +12,7 @@ The Simple Material Properties dialog box give easy access to the properties you
 ## Solid Color
 {: .toc-header }
 
-Solid Color materials have only a [name](Advanced_Material_Properties_Main.htm#Name) and a [color](Advanced_Material_Properties_Main.htm#Color).
+Solid Color materials have only a [name](Advanced_Material_Properties_Main.html#Name) and a [color](Advanced_Material_Properties_Main.html#Color).
 
 
 ### <img src="3-SolidColor.png"/>
@@ -20,8 +20,8 @@ Solid Color materials have only a [name](Advanced_Material_Properties_Main.htm#N
 
 Properties available from the **Simple Material Properties** dialog box:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
 All other properties are set to a default (usually off or zero).
 
 
@@ -34,7 +34,7 @@ Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html)
 ## Metal
 {: .toc-header }
 
-Metal materials have a highlight whose color matches the [color](Advanced_Material_Properties_Main.htm#Color). You can control the [Sharpness](Advanced_Material_Properties_Main.htm#Sharpness) of this highlight from the **Simple Material Properties** control.
+Metal materials have a highlight whose color matches the [color](Advanced_Material_Properties_Main.html#Color). You can control the [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) of this highlight from the **Simple Material Properties** control.
 
 
 ### <img src="3-Metal.png"/>
@@ -42,15 +42,15 @@ Metal materials have a highlight whose color matches the [color](Advanced_Materi
 
 Properties available from the **Simple Material Properties** dialog box:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
- *  [Sharpness](Advanced_Material_Properties_Main.htm#Sharpness) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
+ *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 Properties pre-set by the template:
 
- *  [Highlight color](Advanced_Material_Properties_Main.htm#Highlight_color) : The Highlight color matches the base color.
- *  [Intensity](Advanced_Material_Properties_Main.htm#Intensity) 
- *  [Fresnel](Advanced_Material_Properties_Main.htm#Fresnel) 
- *  [Type](Advanced_Material_Properties_Main.htm#Type) 
+ *  [Highlight color](Advanced_Material_Properties_Main.html#Highlight_color) : The Highlight color matches the base color.
+ *  [Intensity](Advanced_Material_Properties_Main.html#Intensity) 
+ *  [Fresnel](Advanced_Material_Properties_Main.html#Fresnel) 
+ *  [Type](Advanced_Material_Properties_Main.html#Type) 
 
 ###  <kbd>Advanced</kbd> 
 {: .toc-header }
@@ -61,7 +61,7 @@ Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html)
 ## Glass
 {: .toc-header }
 
-Glass materials have an [Index of Refraction](Advanced_Material_Properties_Transparency.htm#Index_Of_Refraction) (IOR) that you can adjust.
+Glass materials have an [Index of Refraction](Advanced_Material_Properties_Transparency.html#Index_Of_Refraction) (IOR) that you can adjust.
 
 
 ### <img src="3-Glass.png"/>
@@ -69,15 +69,15 @@ Glass materials have an [Index of Refraction](Advanced_Material_Properties_Trans
 
 Properties available from the **Simple Material Properties** dialog box:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
- *  [Index of Refraction](Advanced_Material_Properties_Transparency.htm#Index_Of_Refraction) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
+ *  [Index of Refraction](Advanced_Material_Properties_Transparency.html#Index_Of_Refraction) 
 Properties pre-set by the template:
 
- *  [Highlight color](Advanced_Material_Properties_Main.htm#Highlight_color) 
- *  [Intensity](Advanced_Material_Properties_Main.htm#Intensity) 
- *  [Fresnel](Advanced_Material_Properties_Main.htm#Fresnel) 
- *  [Sharpness](Advanced_Material_Properties_Main.htm#Sharpness) 
+ *  [Highlight color](Advanced_Material_Properties_Main.html#Highlight_color) 
+ *  [Intensity](Advanced_Material_Properties_Main.html#Intensity) 
+ *  [Fresnel](Advanced_Material_Properties_Main.html#Fresnel) 
+ *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
  *  [Transparency](Advanced_Material_Properties_Transparency.html) 
 
 ###  <kbd>Advanced</kbd> 
@@ -89,7 +89,7 @@ Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html)
 ## Plastic
 {: .toc-header }
 
-Plastic materials have a white [highlight](Advanced_Material_Properties_Main.htm#Highlight_color) set by the template.
+Plastic materials have a white [highlight](Advanced_Material_Properties_Main.html#Highlight_color) set by the template.
 
 
 ### <img src="3-Plastic.png"/>
@@ -97,14 +97,14 @@ Plastic materials have a white [highlight](Advanced_Material_Properties_Main.htm
 
 Properties available from the **Simple Material Properties** dialog box:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
 Properties pre-set by the template:
 
- *  [Highlight color](Advanced_Material_Properties_Main.htm#Highlight_color) 
- *  [Intensity](Advanced_Material_Properties_Main.htm#Intensity) 
- *  [Fresnel](Advanced_Material_Properties_Main.htm#Fresnel) 
- *  [Sharpness](Advanced_Material_Properties_Main.htm#Sharpness) 
+ *  [Highlight color](Advanced_Material_Properties_Main.html#Highlight_color) 
+ *  [Intensity](Advanced_Material_Properties_Main.html#Intensity) 
+ *  [Fresnel](Advanced_Material_Properties_Main.html#Fresnel) 
+ *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 
 ###  <kbd>Advanced</kbd> 
 {: .toc-header }
@@ -115,7 +115,7 @@ Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html)
 ## ClearFinish
 {: .toc-header }
 
-The ClearFinish material simulates car paint, porcelain, ceramics, varnished woods, or any material with a plastic or clear-coat layer. ClearFinish uses the [Fresnel](Advanced_Material_Properties_Main.htm#Fresnel) setting to change the material color based on angle to the view. These materials tend to be a deep color when looked at straight on, but as the surface curves away from the view, they become more and more reflective. Car paints with a clear-coat or clear lacquer finishes are good examples.
+The ClearFinish material simulates car paint, porcelain, ceramics, varnished woods, or any material with a plastic or clear-coat layer. ClearFinish uses the [Fresnel](Advanced_Material_Properties_Main.html#Fresnel) setting to change the material color based on angle to the view. These materials tend to be a deep color when looked at straight on, but as the surface curves away from the view, they become more and more reflective. Car paints with a clear-coat or clear lacquer finishes are good examples.
 
 
 ### <img src="3-ClearFinish.png"/>
@@ -123,14 +123,14 @@ The ClearFinish material simulates car paint, porcelain, ceramics, varnished woo
 
 Properties available from the **Simple Material Properties** dialog box:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
 Properties pre-set by the template:
 
- *  [Highlight color](Advanced_Material_Properties_Main.htm#Highlight_color) 
- *  [Intensity](Advanced_Material_Properties_Main.htm#Intensity) 
- *  [Fresnel](Advanced_Material_Properties_Main.htm#Fresnel) 
- *  [Sharpness](Advanced_Material_Properties_Main.htm#Sharpness) 
+ *  [Highlight color](Advanced_Material_Properties_Main.html#Highlight_color) 
+ *  [Intensity](Advanced_Material_Properties_Main.html#Intensity) 
+ *  [Fresnel](Advanced_Material_Properties_Main.html#Fresnel) 
+ *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 
 ###  <kbd>Advanced</kbd> 
 {: .toc-header }
@@ -141,7 +141,7 @@ Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html)
 ## Glossy
 {: .toc-header }
 
-Glossy materials have a highlight with low Highlight [Intensity](Advanced_Material_Properties_Main.htm#Intensity) and [Sharpness](Advanced_Material_Properties_Main.htm#Sharpness) settings that you can control from **Simple Material Properties**.
+Glossy materials have a highlight with low Highlight [Intensity](Advanced_Material_Properties_Main.html#Intensity) and [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) settings that you can control from **Simple Material Properties**.
 
 
 ### <img src="3-Glossy.png"/>
@@ -149,14 +149,14 @@ Glossy materials have a highlight with low Highlight [Intensity](Advanced_Materi
 
 Properties available from the **Simple Material Properties** dialog box:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
- *  [Intensity](Advanced_Material_Properties_Main.htm#Intensity) 
- *  [Highlight sharpness](Advanced_Material_Properties_Main.htm#Sharpness) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
+ *  [Intensity](Advanced_Material_Properties_Main.html#Intensity) 
+ *  [Highlight sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 Properties pre-set by the template:
 
- *  [Fresnel](Advanced_Material_Properties_Main.htm#Fresnel) 
- *  [Type](Advanced_Material_Properties_Main.htm#Type) 
+ *  [Fresnel](Advanced_Material_Properties_Main.html#Fresnel) 
+ *  [Type](Advanced_Material_Properties_Main.html#Type) 
 
 ###  <kbd>Advanced</kbd> 
 {: .toc-header }
@@ -175,12 +175,12 @@ Textured materials use images to create colored and patterned materials. The ima
 
 Properties available from the **Simple Material Properties** dialog box:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
- *  [Tiles](Texture_Properties_Main.htm#Tiles) : [Width/Height](Texture_Properties_Main.htm#Width_Height) and [Mirror tiles](Texture_Properties_Main.htm#Mirror_tiles) 
- *  [Linked status](Texture_Properties_Main.htm#Linking) 
- *  [Intensity](Advanced_Material_Properties_Main.htm#Intensity) 
- *  [Sharpness](Advanced_Material_Properties_Main.htm#Sharpness) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
+ *  [Tiles](Texture_Properties_Main.html#Tiles) : [Width/Height](Texture_Properties_Main.html#Width_Height) and [Mirror tiles](Texture_Properties_Main.html#Mirror_tiles) 
+ *  [Linked status](Texture_Properties_Main.html#Linking) 
+ *  [Intensity](Advanced_Material_Properties_Main.html#Intensity) 
+ *  [Sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 
 ###  <kbd>Advanced</kbd> 
 {: .toc-header }
@@ -199,9 +199,9 @@ Opens the [Advanced Material Properties](Advanced_Material_Properties_Main.html)
 
 Properties available from the **Simple Material Properties** dialog:
 
- *  [Name](Advanced_Material_Properties_Main.htm#Name) 
- *  [Color](Advanced_Material_Properties_Main.htm#Color) 
- *  [Tiles](Texture_Properties_Main.htm#Tiles) : [Width/Height](Texture_Properties_Main.htm#Width_Height) 
+ *  [Name](Advanced_Material_Properties_Main.html#Name) 
+ *  [Color](Advanced_Material_Properties_Main.html#Color) 
+ *  [Tiles](Texture_Properties_Main.html#Tiles) : [Width/Height](Texture_Properties_Main.html#Width_Height) 
  *  [Map Properties](Texture_Properties_Main.html) 
 
 ###  <kbd>Advanced</kbd> 

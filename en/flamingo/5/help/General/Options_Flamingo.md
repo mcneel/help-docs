@@ -71,7 +71,7 @@ Specifies how transparent a decal is while it is being dragged during placement.
 ### Default material preview size
 {: .toc-header }
 
-Specifies the default size of the material preview sphere in the [Material Editor](../Materials/Advanced_Material_Properties_Main.htm#Preview).
+Specifies the default size of the material preview sphere in the [Material Editor](../Materials/Advanced_Material_Properties_Main.html#Preview).
 
 
 ### Farm output folder

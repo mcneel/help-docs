@@ -59,7 +59,7 @@ Clicking the **Stop Rendering** button suspends the rendering process after the 
 
 The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
 
-Use the [Number of passes](..\Render\Render_Window.htm#Number_of_passes) or [Time](..\Render\Render_Window.htm#Time) settings on the [Render Window](..\Render\Render_Window.html) or in [Document Properties &gt; Flamingo nXt](..\Render\DocumentProperties_Flamingo.html) to set an automatic stopping point.
+Use the [Number of passes](..\Render\Render_Window.html#Number_of_passes) or [Time](..\Render\Render_Window.html#Time) settings on the [Render Window](..\Render\Render_Window.html) or in [Document Properties &gt; Flamingo nXt](..\Render\DocumentProperties_Flamingo.html) to set an automatic stopping point.
 
 &#160;
 

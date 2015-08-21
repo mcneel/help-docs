@@ -82,7 +82,7 @@ A measure of diffusion. High translucency produces a “sandblasted” effect, s
 
 Controls the probability of the light encountering a particle per unit length.
 
- **Note** : The&#160; [Path Tracer](../Render/Render_Tab.htm#Path_tracer) &#160;is required for this effect.
+ **Note** : The&#160; [Path Tracer](../Render/Render_Tab.html#Path_tracer) &#160;is required for this effect.
 
 Subsurface scattering permits light to penetrate the object's surface and scatter in any direction. Many translucent materials can be modeled using this effect. Certain surfaces, such as stone or skin can be realistically “softened” by allowing the light to penetrate a short distance.
 

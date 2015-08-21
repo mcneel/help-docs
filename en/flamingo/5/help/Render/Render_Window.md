@@ -33,7 +33,7 @@ Saves non-lossy compressed 24-bit RGB with no alpha channel.
 
 #### Tagged Image File Format (.tif, .tiff)
 
-Saves uncompressed 24-bit RGB with no [alpha](../Environment/Environment_Tab.htm#Alpha) channel.
+Saves uncompressed 24-bit RGB with no [alpha](../Environment/Environment_Tab.html#Alpha) channel.
 
 
 #### Windows Bitmap (.bmp)
@@ -76,7 +76,7 @@ Closes the Print Preview dialog box.
 ### <img src="ExportImage.png"/>Export to native Flamingo nXt file (.nXtImage)
 {: .toc-header }
 
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](../Environment/Environment_Tab.htm#Alpha). The nXtImage files can be opened in the [Image Editor](Image_Editor.html) where [exposure](#Adjust_Image) and [post-processing effects](#Effects) can be applied and the image re-saved to another bitmap format.
+Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](../Environment/Environment_Tab.html#Alpha). The nXtImage files can be opened in the [Image Editor](Image_Editor.html) where [exposure](#Adjust_Image) and [post-processing effects](#Effects) can be applied and the image re-saved to another bitmap format.
 
 The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](Image_Editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all of the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
 
@@ -144,7 +144,7 @@ Displays the original rendered image.
 ### Alpha Mask
 {: .toc-header }
 
-Displays the [alpha mask](Image_Editor.htm#Alpha_Channel).
+Displays the [alpha mask](Image_Editor.html#Alpha_Channel).
 
 <img src="AlphaChannel.png"/>
 
@@ -152,7 +152,7 @@ Displays the [alpha mask](Image_Editor.htm#Alpha_Channel).
 ### Distance Mask
 {: .toc-header }
 
-Displays the [distance mask](Image_Editor.htm#Distance_Channel).
+Displays the [distance mask](Image_Editor.html#Distance_Channel).
 
 <img src="DistanceChannel.png"/>
 
@@ -179,47 +179,47 @@ Stops/continues rendering the image.
 {: .toc-header }
 
 
-###  [<img src="SaveImageAs.png"/>Save](Render_Window.htm#Save) 
+###  [<img src="SaveImageAs.png"/>Save](Render_Window.html#Save) 
 {: .toc-header }
 
 
-###  [<img src="SaveImageAs.png"/>Save with background alpha channel](Render_Window.htm#Save_with_alpha_channel) 
+###  [<img src="SaveImageAs.png"/>Save with background alpha channel](Render_Window.html#Save_with_alpha_channel) 
 {: .toc-header }
 
 
-###  [<img src="PrintRenderedImage.png"/> [Print](Render_Window.htm#RenderWindowPrint) ](Render_Window.htm#Print_Preview) 
+###  [<img src="PrintRenderedImage.png"/> [Print](Render_Window.html#RenderWindowPrint) ](Render_Window.html#Print_Preview) 
 {: .toc-header }
 
 
-###  [<img src="ExportImage.png"/>Export to native Flamingo nXt file (.nXtImage)](Render_Window.htm#Export_to_nXtImage) 
+###  [<img src="ExportImage.png"/>Export to native Flamingo nXt file (.nXtImage)](Render_Window.html#Export_to_nXtImage) 
 {: .toc-header }
 
 
-###  [<img src="ExportImage.png"/>Export to HDR file](Render_Window.htm#Export_to_HDR) 
+###  [<img src="ExportImage.png"/>Export to HDR file](Render_Window.html#Export_to_HDR) 
 {: .toc-header }
 
 
-###  [<img src="ExportImage.png"/>Export to EXR file](Render_Window.htm#Export_to_EXR) 
+###  [<img src="ExportImage.png"/>Export to EXR file](Render_Window.html#Export_to_EXR) 
 {: .toc-header }
 
 
-###  [<img src="CopyToClipboard.png"/>Copy to clipboard](Render_Window.htm#Copy) 
+###  [<img src="CopyToClipboard.png"/>Copy to clipboard](Render_Window.html#Copy) 
 {: .toc-header }
 
 
-###  [<img src="ZoomToActualSize.png"/>Zoom to actual image size](Render_Window.htm#Zoom) 
+###  [<img src="ZoomToActualSize.png"/>Zoom to actual image size](Render_Window.html#Zoom) 
 {: .toc-header }
 
 
-###  [Rendered Display](Render_Window.htm#Rendered_Display) 
+###  [Rendered Display](Render_Window.html#Rendered_Display) 
 {: .toc-header }
 
 
-###  [Alpha Mask](Render_Window.htm#Alpha_Mask) 
+###  [Alpha Mask](Render_Window.html#Alpha_Mask) 
 {: .toc-header }
 
 
-###  [Distance Mask](Render_Window.htm#Distance_Mask) 
+###  [Distance Mask](Render_Window.html#Distance_Mask) 
 {: .toc-header }
 
 
@@ -241,7 +241,7 @@ Specifies the ratio of the image in the render window a mouse wheel step or pres
 {: .toc-header }
 
 
-###  [<img src="Help.png"/>Help](Render_Window.htm#Help) 
+###  [<img src="Help.png"/>Help](Render_Window.html#Help) 
 {: .toc-header }
 
 
@@ -367,7 +367,7 @@ When the exposure settings are locked, changing the lighting will not adjust the
 ### Resolution
 {: .toc-header }
 
-Displays the [render resolution](Render_Tab.htm#Resolution).
+Displays the [render resolution](Render_Tab.html#Resolution).
 
 
 ### Faces
@@ -406,11 +406,11 @@ Distance
 {: .toc-header }
 
 
-###  [Sun](../Lighting/Sun_and_Sky_Tabs.htm#Sun) 
+###  [Sun](../Lighting/Sun_and_Sky_Tabs.html#Sun) 
 {: .toc-header }
 
 
-###  [Sky](../Lighting/Sun_and_Sky_Tabs.htm#Sky) 
+###  [Sky](../Lighting/Sun_and_Sky_Tabs.html#Sky) 
 {: .toc-header }
 
 
@@ -418,11 +418,11 @@ Distance
 {: .toc-header }
 
 
-###  [Indirect](../Lighting/Lighting_Advanced_Tab.htm#Indirect) 
+###  [Indirect](../Lighting/Lighting_Advanced_Tab.html#Indirect) 
 {: .toc-header }
 
 
-###  [Ambient On/Off](../Lighting/Lighting_Advanced_Tab.htm#Ambient) 
+###  [Ambient On/Off](../Lighting/Lighting_Advanced_Tab.html#Ambient) 
 {: .toc-header }
 
 

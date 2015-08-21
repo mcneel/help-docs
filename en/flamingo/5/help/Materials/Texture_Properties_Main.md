@@ -153,19 +153,19 @@ Select the color component of the material that will be affected by the bitmap.
 {: .toc-header }
 
 
-###  [Base color](Advanced_Material_Properties_Main.htm#Color) 
+###  [Base color](Advanced_Material_Properties_Main.html#Color) 
 {: .toc-header }
 
 
-###  [Specular color](Advanced_Material_Properties_Main.htm#Highlight_color) 
+###  [Specular color](Advanced_Material_Properties_Main.html#Highlight_color) 
 {: .toc-header }
 
 
-###  [Specular intensity](Advanced_Material_Properties_Main.htm#Intensity) 
+###  [Specular intensity](Advanced_Material_Properties_Main.html#Intensity) 
 {: .toc-header }
 
 
-###  [Highlight sharpness](Advanced_Material_Properties_Main.htm#Sharpness) 
+###  [Highlight sharpness](Advanced_Material_Properties_Main.html#Sharpness) 
 {: .toc-header }
 
 
@@ -179,11 +179,11 @@ Affects the shape of the highlight.
 {: .toc-header }
 
 
-###  [Translucency](Advanced_Material_Properties_Transparency.htm#Translucency) 
+###  [Translucency](Advanced_Material_Properties_Transparency.html#Translucency) 
 {: .toc-header }
 
 
-###  [Attenuation](Advanced_Material_Properties_Transparency.htm#Attenuation) 
+###  [Attenuation](Advanced_Material_Properties_Transparency.html#Attenuation) 
 {: .toc-header }
 
 
@@ -203,6 +203,6 @@ Affects the direction of the surface normals.
 Offsets the material from the x- and y-axis.
 
 
-###  [Rotation](Advanced_Material_Properties_Textures.htm#Rotation) 
+###  [Rotation](Advanced_Material_Properties_Textures.html#Rotation) 
 {: .toc-header }
 

@@ -2,7 +2,6 @@
 layout: toc-page
 ---
 
-
 # Getting Help
 {: .toc-title }
 
@@ -14,6 +13,6 @@ At McNeel, we love to help people. Here's your help.
 ## Our Products
 {: .toc-header }
 Rhino
-[Flamingo](en/flamingo/5/help)
+[Flamingo](en/flamingo/5/help/All_Flamingo_Topics.html)
 Bongo
 Penguin

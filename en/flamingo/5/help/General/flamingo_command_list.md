@@ -13,11 +13,11 @@ layout: toc-page
 Displays theAbout Flamingodialog box.
 
 
-###  [FlamingoNXtAutomateRender](../Render/Automate_Rendering.htm#FlamingoNXtAutomateRender) 
+###  [FlamingoNXtAutomateRender](../Render/Automate_Rendering.html#FlamingoNXtAutomateRender) 
 {: .toc-header }
 
 
-###  [FlamingoNXtBatchRender](../Render/Automate_Rendering.htm#Batch_Render) 
+###  [FlamingoNXtBatchRender](../Render/Automate_Rendering.html#Batch_Render) 
 {: .toc-header }
 
 
@@ -25,7 +25,7 @@ Displays theAbout Flamingodialog box.
 {: .toc-header }
 
 
-###  [FlamingoNXtControlPanel](Welcome.htm#Control_Panel) 
+###  [FlamingoNXtControlPanel](Welcome.html#Control_Panel) 
 {: .toc-header }
 
 
@@ -51,17 +51,17 @@ Iterates recursively through a folder and generates a material preview for every
 {: .toc-header }
 
 
-###  [FlamingoNXtDrawLightsForObjectsTaggedAsLights](../Lighting/Lights_Tab.htm#Tag_objects_as_lights) 
+###  [FlamingoNXtDrawLightsForObjectsTaggedAsLights](../Lighting/Lights_Tab.html#Tag_objects_as_lights) 
 {: .toc-header }
 
-Turns on a display conduit that decorates objects that are [tagged as lights](../Lighting/Lights_Tab.htm#Tag_objects_as_lights) with a preview of how the light is pointed and were its location is.
+Turns on a display conduit that decorates objects that are [tagged as lights](../Lighting/Lights_Tab.html#Tag_objects_as_lights) with a preview of how the light is pointed and were its location is.
 
 
 ###  [FlamingoNXtEditPlant](../Plants/Plants.html) 
 {: .toc-header }
 
 
-###  [FlamingoNXtExportAllMaterials](../Materials/Materials_tab.htm#ExportAllMaterials) 
+###  [FlamingoNXtExportAllMaterials](../Materials/Materials_tab.html#ExportAllMaterials) 
 {: .toc-header }
 
 Exports each material in a model to a file.
@@ -95,27 +95,27 @@ Inserts a Flamingo 2-style [plant](../Plants/Plants.html).
 Opens the [Tree Editor](../Plants/Plants.html).
 
 
-###  [FlamingoNXtRenderConstraints](../Render/DocumentProperties_Flamingo.htm#Render_constraints) 
+###  [FlamingoNXtRenderConstraints](../Render/DocumentProperties_Flamingo.html#Render_constraints) 
 {: .toc-header }
 
-Sets [render constraints](../Render/DocumentProperties_Flamingo.htm#Render_constraints) :
+Sets [render constraints](../Render/DocumentProperties_Flamingo.html#Render_constraints) :
 
 
 ### FlamingoNXtRenderWindowConstraints
 {: .toc-header }
 
-Sets [render constraints](../Render/DocumentProperties_Flamingo.htm#Render_constraints) when **RenderWindow** is used for rendering.
+Sets [render constraints](../Render/DocumentProperties_Flamingo.html#Render_constraints) when **RenderWindow** is used for rendering.
 
 
-###  [FlamingoNXtRenderFarm](../Render/Automate_Rendering.htm#Render_Farm) 
+###  [FlamingoNXtRenderFarm](../Render/Automate_Rendering.html#Render_Farm) 
 {: .toc-header }
 
 
-###  [FlamingoNXtSaveRenderWindowAsIncludeAlpha](../Render/Render_Window.htm#Save_with_alpha_channel) 
+###  [FlamingoNXtSaveRenderWindowAsIncludeAlpha](../Render/Render_Window.html#Save_with_alpha_channel) 
 {: .toc-header }
 
 
-###  [FlamingoNXtTagObjectsAsLights](../Lighting/Lights_Tab.htm#Tag_objects_as_lights) 
+###  [FlamingoNXtTagObjectsAsLights](../Lighting/Lights_Tab.html#Tag_objects_as_lights) 
 {: .toc-header }
 
 

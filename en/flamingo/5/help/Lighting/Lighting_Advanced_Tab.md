@@ -49,14 +49,14 @@ An HDR image provides something for shiny objects to reflect.
 
 #### Color
 
-Sets the sky to a solid color or a two- or three-color gradient using controls similar to [Environment: Color and Gradient Backgrounds](../Environment/Environment_Tab.htm#Color_and_Gradient_Backgrounds).
+Sets the sky to a solid color or a two- or three-color gradient using controls similar to [Environment: Color and Gradient Backgrounds](../Environment/Environment_Tab.html#Color_and_Gradient_Backgrounds).
 
 <img src="ColorSky.png"/>
 
 
 #### Image
 
-Uses an image background with a planar, cylindrical, or spherical projection similar to [Environment: Image](../Environment/Environment_Tab.htm#Image).
+Uses an image background with a planar, cylindrical, or spherical projection similar to [Environment: Image](../Environment/Environment_Tab.html#Image).
 
 <img src="ChromeImageSky.png"/>
 
