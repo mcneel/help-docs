@@ -25,7 +25,7 @@ Turns the ground plane on.
 <img src="GroundPlane-002a.png"/>
 
 
- *Ground plane disabled (left) and enabled (right).*
+ *Ground plane disabled (left) and enabled (right).* 
 
 ### Alpha
 {: .toc-subheader }
@@ -34,7 +34,7 @@ Applies a transparent alpha channel to the ground plane so the image can be comp
 
 <img src="GroundPlane-004a.png"/>
 
- *Ground plane shows shadow, but is otherwise transparent in the image.*
+ *Ground plane shows shadow, but is otherwise transparent in the image.* 
 
 
 ### Elevation
@@ -45,7 +45,7 @@ Specifies the ground plane's height above zero.
 <img src="GroundPlane-005a.png"/>
 
 
- *Ground plane elevation above zero.*
+ *Ground plane elevation above zero.* 
 
 ### Material
 {: .toc-subheader }
@@ -55,7 +55,7 @@ Assigns a [material](..\Materials\Simple_Material_Properties.html) to the ground
 <img src="GroundPlane-003a.png"/>
 
 
- *Ground plane with raised elevation and water material.*
+ *Ground plane with raised elevation and water material.* 
 
 ## Background
 {: .toc-header }
@@ -74,10 +74,10 @@ Modifies the relative brightness of the background.
 
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
- *  [Sky](Environment_Tab.html#Environment_Sky)
- *  [Solid and gradient color](Environment_Tab.html#Color_and_Gradient_Backgrounds)
- *  [Image](#Environment_Image)
- *  [HDR and planar HDR images](Environment_Tab.html#HDR_and_Planar_HDR_Backgrounds)
+ *  [Sky](Environment_Tab.html#Environment_Sky) 
+ *  [Solid and gradient color](Environment_Tab.html#Color_and_Gradient_Backgrounds) 
+ *  [Image](#Environment_Image) 
+ *  [HDR and planar HDR images](Environment_Tab.html#HDR_and_Planar_HDR_Backgrounds) 
 
 ## Sky
 {: .toc-header }
@@ -87,7 +87,7 @@ The Sky environment uses the sun and sky settings from the [Lighting](../Lightin
 <img src="Background-Sky-001.png"/>
 
 
- *Automatic (left) and HDR image and sun (right).*
+ *Automatic (left) and HDR image and sun (right).* 
 
 ## Color and Gradient Color
 {: .toc-header }
@@ -103,7 +103,7 @@ A solid color background consists of a single color that fills the background.
 <img src="Background-Color-001.png"/>
 
 
- *Solid-color background.*
+ *Solid-color background.* 
 
 ### Two-Color Gradient
 {: .toc-subheader }
@@ -115,7 +115,7 @@ Two-color gradient backgrounds interpolate the background color between two sele
 <img src="Background-Color-002.png"/>
 
 
- *Two-color gradient background: blue and yellow.*
+ *Two-color gradient background: blue and yellow.* 
 
 ### Three-Color Gradient
 {: .toc-subheader }
@@ -125,7 +125,7 @@ Three-color gradient backgrounds interpolate the background color between three 
 <img src="Background-Color-003.png"/>
 
 
- *Three-color gradient background: blue, white, yellow.*
+ *Three-color gradient background: blue, white, yellow.* 
 
 ## Color controls
 {: .toc-header }
@@ -159,13 +159,13 @@ For three-color gradients, the green flag indicates the angle where the Middle c
 <img src="Background-Color-004.png"/>
 
 
-###  <kbd>Swap top and bottom colors</kbd>
+###  <kbd>Swap top and bottom colors</kbd> 
 {: .toc-subheader }
 
 Reverses the color order for the gradient.
 
 
-###  <kbd>Get angles from view</kbd>
+###  <kbd>Get angles from view</kbd> 
 {: .toc-subheader }
 
 Sets the angles of the gradient extents to match the viewport.
@@ -205,7 +205,7 @@ Projects the image to a flat background.
 
  * Drag the pink rectangle or use the numerical controls to move or scale the background image.
 
-<img src="Background-Image-003.png"/> *Background area (1), image size and shape (2).*
+<img src="Background-Image-003.png"/> *Background area (1), image size and shape (2).* 
 
 
 ##### Planar Options
@@ -233,7 +233,7 @@ Specify the size and position of the image map in height and width angles. Use t
 ##### Cylindrical Options
 
 
-######  [Background color](Environment_Tab.html#BackgroundColors)
+######  [Background color](Environment_Tab.html#BackgroundColors) 
 
 
 ###### Width
@@ -255,7 +255,7 @@ Specifies the image rotation and extents. Enter an angle or drag the control wid
 <img src="CylindricalControl-001.png"/>
 
 
-######  <kbd>Angles From View</kbd>
+######  <kbd>Angles From View</kbd> 
 
 Sets the **Width** and **Top/Bottom** angles to match the viewport.
 
@@ -273,7 +273,7 @@ Spherical projection maps the image to a complete sphere. This method generally 
 Specifies the image rotation. The red dot indicates the center of the image.
 
 
-######  <kbd>Angles From View</kbd>
+######  <kbd>Angles From View</kbd> 
 
 Sets the rotation angle to match the viewport.
 
@@ -304,7 +304,7 @@ Planar high-dynamic-range images provide both an image background and lighting. 
 {: .toc-subheader }
 
 
- *Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
+ *Background image (left) and Planar HDR (right) shows subtle lighting difference in background.* 
 
 ## Advanced Background
 {: .toc-header }
@@ -322,7 +322,7 @@ A reflected environment is not visible in the rendered image, but it reflects in
 <img src="../image/ReflectedBackground-002.png"/>
 
 
- *Normal environment (left) and reflected HDR sky environment (right).*
+ *Normal environment (left) and reflected HDR sky environment (right).* 
 
 ### Sky
 {: .toc-subheader }
@@ -370,3 +370,4 @@ Objects refract the visible background as specified in the [Environment](Environ
 Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
 
 If images will be pasted into the alpha channel, turn this setting off.
+
