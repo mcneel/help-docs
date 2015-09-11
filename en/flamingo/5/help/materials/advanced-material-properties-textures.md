@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-materials.png"/>Advanced Material Properties: Textures
+# Advanced Material Properties: Textures
 {: .toc-title }
 
 Two types of maps can be added to a material: image maps and bump patterns. Image mapping uses bitmap images to add detail to the material. Images can alter many attributes of the materials surface including its color and apparent three-dimensional surface quality (bump). Bumps add a random roughness or knurled quality to the surface.
@@ -83,7 +83,7 @@ Specifies scale in each direction separately.
 <img src="texturescalexy.png"/>
 
 
-#### <img src="lock.png"/>Lock
+#### Lock
 
 Maintains the aspect ratio.
 

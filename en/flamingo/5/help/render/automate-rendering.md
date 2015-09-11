@@ -9,7 +9,7 @@ layout: toc-page
 The Flamingo nXt **Render Farm** uses the power of several computers to render single images, batch jobs of multiple images, or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers that are used only as render farm clients.
 
 
-## <img src="farmmonitoricon.png"/>A typical Farm layout
+## A typical Farm layout
 {: .toc-header }
 
 <img src="renderfarm-002.png"/>
@@ -19,7 +19,7 @@ The Flamingo nXt **Render Farm** uses the power of several computers to render s
  1. <img src="../materials/03.png"/>Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
  1. <img src="../materials/04.png"/>Additional purchased render farm clients.
 
-## <img src="farmmonitoricon.png"/>The Farm Process
+## The Farm Process
 {: .toc-header }
 
 When rendering using Flamingo nXt, instead of rendering a single image with the **Render** command, use the **Render Farm**  *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](../general/options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
@@ -80,7 +80,7 @@ The Render Farm is now configured.
 The client machines should appear in the upper list box.
 
 
-## <img src="farmmonitoricon.png"/>Using the Render Farm
+## Using the Render Farm
 {: .toc-header }
 
 Currently, the farm can be used three ways for processing renderings on multiple computers: single rendering jobs, batch jobs, and animations.
@@ -164,31 +164,31 @@ On the **Flamingo nXt** menu, click **Render Batch**.
 {: .toc-header }
 
 
-### <img src="batchrender-add.png"/>Add
+### Add
 {: .toc-subheader }
 
 Add a viewport to the batch list.
 
 
-### <img src="batchrender-remove.png"/>Remove
+### Remove
 {: .toc-subheader }
 
 Delete a viewport from the batch list.
 
 
-### <img src="batchrender-properties.png"/>Properties
+### Properties
 {: .toc-subheader }
 
 Set the [Batch Render Properties](automate-rendering.html#batch-render-properties).
 
 
-### <img src="batchrender-moveup.png"/>Move Up
+### Move Up
 {: .toc-subheader }
 
 Move the viewport name up in the list.
 
 
-### <img src="batchrender-movedown.png"/>Move Down
+### Move Down
 {: .toc-subheader }
 
 Move the viewport name down in the list.
@@ -242,7 +242,7 @@ See: [Render tab, Viewport to render](render-tab.html#viewtorender).
 {: .toc-header }
 
 
-### <img src="batchrendersavebutton.png"/>File name
+### File name
 {: .toc-subheader }
 
 Click the **Save** button and specify a file name for the rendered image.
@@ -309,7 +309,7 @@ When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercomma
 Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
 
 
-## <img src="farmmonitoricon.png"/>Render Farm Monitor
+## Render Farm Monitor
 {: .toc-header }
 
 The **Render Farm Monitor** is a standalone program that reports the status of the client workstations and the jobs currently in the Farm. Jobs can be suspended and restarted from the monitor and a client workstation can be excluded from participating in the render farm.
@@ -331,31 +331,31 @@ The **Render Farm Monitor** is a standalone program that reports the status of t
 Right-click a **Machine** or a **Job** to access options.
 
 
-### <img src="farmmonitor-refresh.png"/>Refresh
+### Refresh
 {: .toc-subheader }
 
 Refresh job list.
 
 
-### <img src="farmmonitor-suspendmachine.png"/>Suspend Machine
+### Suspend Machine
 {: .toc-subheader }
 
 Exclude workstation from participating in the Render Farm.
 
 
-### <img src="farmmonitor-resumemachine.png"/>Resume Machine
+### Resume Machine
 {: .toc-subheader }
 
 Resume workstation to participating in the Render Farm.
 
 
-### <img src="farmmonitor-suspendjob.png"/>Suspend Job
+### Suspend Job
 {: .toc-subheader }
 
 Pause the specified job.
 
 
-### <img src="farmmonitor-resumejob.png"/>Resume Job
+### Resume Job
 {: .toc-subheader }
 
 Resume the specified job.
@@ -481,19 +481,19 @@ Saves the [alpha channel](render-window.html#save-with-alpha-channel) background
 {: .toc-header }
 
 
-### <img src="copyselectedfiles.png"/>Copy selected files to specified output folder
+### Copy selected files to specified output folder
 {: .toc-subheader }
 
 
-### <img src="refreshfilelist.png"/>Refresh file list
+### Refresh file list
 {: .toc-subheader }
 
 
-### <img src="checkall.png"/>Check all items
+### Check all items
 {: .toc-subheader }
 
 
-### <img src="uncheckall.png"/>Uncheck all items
+### Uncheck all items
 {: .toc-subheader }
 
 &#160;

@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-render.png"/>Render
+# Render
 {: .toc-title }
 
 

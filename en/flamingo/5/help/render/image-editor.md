@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="imageeditorlogo.png"/>Image Editor
+# Image Editor
 {: .toc-title }
 
 The nXt Image Editor can edit native image files (.nXtImage) produced by any of the nXt platforms. These native files retain all of the information gathered during rendering.

@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/properties.png"/>Object Properties
+# Object Properties
 {: .toc-title }
 
 Flamingo nXt object properties only affect the way objects are rendered in Flamingo nXt.

@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-materials.png"/>Advanced Material Properties: Transparency
+# Advanced Material Properties: Transparency
 {: .toc-title }
 
 The Transparency settings control&#160;properties associated with light passing through a material.

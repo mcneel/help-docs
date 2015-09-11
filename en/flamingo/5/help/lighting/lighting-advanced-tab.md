@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-spotlight.png"/>Lighting: Advanced
+# Lighting: Advanced
 {: .toc-title }
 
 

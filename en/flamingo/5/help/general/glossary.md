@@ -17,9 +17,9 @@ In this example, an image with an alpha-channel background is placed as a decal 
 The material assigned to a planar surface in this example has a red base color.
 
 
- *<img src="ObjectProperties/Airplane.png"/>Original decal image. The gray checkered area represents the image alpha channel.* 
+ *<img src="objectproperties/airplane.png"/>Original decal image. The gray checkered area represents the image alpha channel.* 
 
- *<img src="Materials/Masking-004.png"/>Final rendered image.* 
+ *<img src="materials/masking-004.png"/>Final rendered image.* 
 
 ### None
 {: .toc-subheader }
@@ -27,12 +27,12 @@ The material assigned to a planar surface in this example has a red base color.
 With no masking, the decal image obscures the underlying material. The rectangular planar surface casts a rectangular shadow on the ground plane. Masking allows the material to show through the image where the alpha channel or color masking takes place, but the shadow on the ground plane is rectangular, and the background behind the surface is blocked by the surface.
 
 
- *<img src="Materials/Masking-002.png"/>Without masking (left) the image covers the surface, with masking (right), the red material shows through.* 
+ *<img src="materials/masking-002.png"/>Without masking (left) the image covers the surface, with masking (right), the red material shows through.* 
 
 ### Alpha Channel
 {: .toc-subheader }
 
-Uses the image's [alpha channel](Environment/Environment_Tab.html#Alpha) to define the masked area if one exists.
+Uses the image's [alpha channel](environment/environment-tab.html#alpha) to define the masked area if one exists.
 
 The alpha channel is a portion of each pixel's data that is reserved for transparency information. Alpha channels create and store masks that let you isolate and protect parts of an image while you apply color changes, filters, or other effects to the rest of the image.&#160;
 
@@ -49,7 +49,7 @@ All image pixels within the sensitivity&#160;range of the selected color will be
 Specify a color that will be masked and let the background show through.
 
 
-#### <img src="Image/Eyedropper.png"/>Color Dropper
+#### Color Dropper
 
 Click to select the color from the bitmap.
 
@@ -80,7 +80,7 @@ Partially masks pixels. The value determines the magnitude of partial masking ar
 
 Inverts the mask—pixels that would have been masked are now included, and vice versa.
 
-<img src="Materials/Masking-007.png"/>
+<img src="materials/masking-007.png"/>
 
 
 ### Transparent
@@ -90,7 +90,7 @@ Makes the masked area of the underlying object transparent so other objects or t
 
 Transparent masking allows a more natural shadow and allows the background objects to show. The underlying material could simply be transparent, but sometimes it is useful to make the surface behind the decal transparent while keeping other areas of the surface opaque.
 
-<img src="Materials/Masking-003.png"/>
+<img src="materials/masking-003.png"/>
 
 &#160;
 

@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-spotlight.png"/>Lighting
+# Lighting
 {: .toc-title }
 
 Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
@@ -29,13 +29,13 @@ The lighting tabs that control the settings are visible depending on which prese
 To improve lighting techniques, be aware of the light and how it affects various surfaces. Materials can mask some of the effects of shadows and reflections, so some rendering experts apply lighting to their models before applying materials. Try to see light objectively, the way a camera does.
 
 
-### <img src="saveschemeicon.png"/>Save lighting scheme
+### Save lighting scheme
 {: .toc-subheader }
 
 Saves the current lighting scheme.
 
 
-### <img src="openschemeicon.png"/>Open lighting scheme
+### Open lighting scheme
 {: .toc-subheader }
 
 Opens a saved lighting scheme.
@@ -51,7 +51,7 @@ Indirect lighting, the lighting reflected off surfaces, is on when one of the tw
 Choose the Preset scheme that most closely resembles your scene.
 
 
-## <img src="studiolightingicon.png"/>Studio lighting
+## Studio lighting
 {: .toc-header }
 
 <img src="studiolighting-001.png"/>
@@ -67,7 +67,7 @@ For greater control, use light sources to light the scene. When lighting a studi
 Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](studio-lighting-basics.html).
 
 
-## <img src="exteriorlightingicon.png"/>Exterior daylight
+## Exterior daylight
 {: .toc-header }
 
 <img src="exteriorlighting-001.png"/>
@@ -87,7 +87,7 @@ Lights can also simulate landscape lighting. Use spotlights to highlight archite
 Exploded views, sections, and axonometric drawings from above also pose a special challenge. The decision depends on the desired results. For an exterior scene with the quickest rendering, use the exterior rendering method. If this method is not producing an interesting enough image, try using an interior rendering. This may make the interior more interesting, but it takes more time to set up the lighting.
 
 
-## <img src="interiordaylighticon.png"/>Interior daylight
+## Interior daylight
 {: .toc-header }
 
 <img src="interiordaylightnoportals.png"/>
@@ -107,7 +107,7 @@ The direct sunlight component of day lighting involves a straightforward calcula
  * You can set the [Sun](sun-and-sky-tabs.html#sun-intensity) or [Sky](sun-and-sky-tabs.html#sky-intensity) intensity to a lower value. Since these settings simulate a clear sky, reducing their intensity will simulate cloudy or darker day lighting conditions.
  * A [multi-channel](lights-tab.html#channel) rendering may help you get the picture you want, while still preserving accurate data.
 
-## <img src="artificiallightingicon.png"/>Artificial lighting
+## Artificial lighting
 {: .toc-header }
 
 This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
@@ -115,7 +115,7 @@ This scheme provides a simulation of an architectural interior at night, lit by 
 <img src="artificiallight-001.png"/>
 
 
-## <img src="customlighting.png"/>Custom
+## Custom
 {: .toc-header }
 
 When the values on the [Advanced tab](lighting-advanced-tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.

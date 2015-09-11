@@ -9,11 +9,11 @@ layout: toc-page
 The render window provides options for exposure adjustment and adding post-processing effects.
 
 
-## <img src="saveimageas.png"/>File menu
+## File menu
 {: .toc-header }
 
 
-### <img src="saveimageas.png"/>Save
+### Save
 {: .toc-subheader }
 
 Saves the image to file including alpha channel if the image format supports it. Does not save other rendered channels or [exposure](#adjust-image).
@@ -41,13 +41,13 @@ Saves uncompressed 24-bit RGB with no [alpha](../environment/environment-tab.htm
 Saves uncompressed 24-bit RGB color with no alpha channel.
 
 
-### <img src="saveimageas.png"/>Save with background alpha channel
+### Save with background alpha channel
 {: .toc-subheader }
 
 Saves image 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.
 
 
-### <img src="printrenderedimage.png"/>Print
+### Print
 {: .toc-subheader }
 
 Opens the **Print Preview** dialog box.
@@ -73,7 +73,7 @@ Prints the image vertically on the paper.
 Closes the Print Preview dialog box.
 
 
-### <img src="exportimage.png"/>Export to native Flamingo nXt file (.nXtImage)
+### Export to native Flamingo nXt file (.nXtImage)
 {: .toc-subheader }
 
 Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](../environment/environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image re-saved to another bitmap format.
@@ -81,13 +81,13 @@ Saves uncompressed luminance and color information. Saves all rendered channels 
 The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all of the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
 
 
-### <img src="exportimage.png"/>Export to HDR file
+### Export to HDR file
 {: .toc-subheader }
 
 Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
 
 
-### <img src="exportimage.png"/>Export to EXR file
+### Export to EXR file
 {: .toc-subheader }
 
 A&#160;high-dynamic-range image file format, released as an&#160;open standard&#160;along with a set of software tools created by&#160;Industrial Light and Magic (ILM), released under a&#160;free software license. This file format supports 16-bits-per-channel&#160;floating-point&#160;values (half precision) with a sign bit, five bits of exponent, and a ten-bit&#160;mantissa. This allows a dynamic range of over thirty&#160;stops&#160;of exposure. See: [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
@@ -101,36 +101,36 @@ The .exr format stores luminance data directly in a High Dynamic Range format. N
 Closes the render window.
 
 
-## <img src="copytoclipboard.png"/>Edit menu
+## Edit menu
 {: .toc-header }
 
 
-### <img src="copytoclipboard.png"/>Copy
+### Copy
 {: .toc-subheader }
 
 Places a copy of the image in the Windows Clipboard.
 
 
-## <img src="zoomtoactualsize.png"/>View menu
+## View menu
 {: .toc-header }
 
 
-### <img src="zoomtoactualsize.png"/>Zoom
+### Zoom
 {: .toc-subheader }
 
 Magnifies the view of the image.
 
 
-#### <img src="zoomtoactualsize.png"/>Actual Size
+#### Actual Size
 
 
-#### <img src="zoomin.png"/>Zoom In
+#### Zoom In
 
 
-#### <img src="zoomout.png"/>Zoom Out
+#### Zoom Out
 
 
-#### <img src="zoomextents.png"/>Zoom Extents
+#### Zoom Extents
 
 
 ### Rendered Display
@@ -157,19 +157,19 @@ Displays the [distance mask](image-editor.html#distance-channel).
 <img src="distancechannel.png"/>
 
 
-### <img src="hidetoolbar.png"/>Hide toolbar
+### Hide toolbar
 {: .toc-subheader }
 
 Closes the toolbar.
 
 
-### <img src="help.png"/>Help
+### Help
 {: .toc-subheader }
 
 Displays the Flamingo Help.
 
 
-## <img src="resumerendering.png"/>Stop/Resume Rendering
+## Stop/Resume Rendering
 {: .toc-header }
 
 Stops/continues rendering the image.
@@ -179,35 +179,35 @@ Stops/continues rendering the image.
 {: .toc-header }
 
 
-###  [<img src="saveimageas.png"/>Save](render-window.html#save) 
+###  [Save](render-window.html#save) 
 {: .toc-subheader }
 
 
-###  [<img src="saveimageas.png"/>Save with background alpha channel](render-window.html#save-with-alpha-channel) 
+###  [Save with background alpha channel](render-window.html#save-with-alpha-channel) 
 {: .toc-subheader }
 
 
-###  [<img src="printrenderedimage.png"/> [Print](render-window.html#renderwindowprint) ](render-window.html#print-preview) 
+###  [ [Print](render-window.html#renderwindowprint) ](render-window.html#print-preview) 
 {: .toc-subheader }
 
 
-###  [<img src="exportimage.png"/>Export to native Flamingo nXt file (.nXtImage)](render-window.html#export-to-nxtimage) 
+###  [Export to native Flamingo nXt file (.nXtImage)](render-window.html#export-to-nxtimage) 
 {: .toc-subheader }
 
 
-###  [<img src="exportimage.png"/>Export to HDR file](render-window.html#export-to-hdr) 
+###  [Export to HDR file](render-window.html#export-to-hdr) 
 {: .toc-subheader }
 
 
-###  [<img src="exportimage.png"/>Export to EXR file](render-window.html#export-to-exr) 
+###  [Export to EXR file](render-window.html#export-to-exr) 
 {: .toc-subheader }
 
 
-###  [<img src="copytoclipboard.png"/>Copy to clipboard](render-window.html#copy) 
+###  [Copy to clipboard](render-window.html#copy) 
 {: .toc-subheader }
 
 
-###  [<img src="zoomtoactualsize.png"/>Zoom to actual image size](render-window.html#zoom) 
+###  [Zoom to actual image size](render-window.html#zoom) 
 {: .toc-subheader }
 
 
@@ -241,7 +241,7 @@ Specifies the ratio of the image in the render window a mouse wheel step or pres
 {: .toc-subheader }
 
 
-###  [<img src="help.png"/>Help](render-window.html#help) 
+###  [Help](render-window.html#help) 
 {: .toc-subheader }
 
 

@@ -9,7 +9,7 @@ layout: toc-page
 Texture set materials support&#160;third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. The image names, tile size, and map properties are controlled from the Simple Materials Properties control.
 
 
-### <img src="textureset.png"/>
+### 
 {: .toc-subheader }
 
 

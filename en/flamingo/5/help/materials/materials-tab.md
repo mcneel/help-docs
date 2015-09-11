@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-materials.png"/>Materials
+# Materials
 {: .toc-title }
 
 Materials can be assigned to layers or individual objects from materials either saved in the current model or from material libraries.
@@ -11,13 +11,13 @@ Materials can be assigned to layers or individual objects from materials either 
 Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
 
 
-## <img src="assigntolayer.png"/>Assign materials to layers
+## Assign materials to layers
 {: .toc-header }
 
 Assigning materials by layer assigns a material to all objects on a layer.
 
 
-#### <img src="../image/icon-layer.png"/>Assign a material to a layer
+#### Assign a material to a layer
 
 1.
 
@@ -40,7 +40,7 @@ Click the <kbd>Browse</kbd> button.
 In the **Flamingo Materials** dialog box, select a material either from the **Materials in Model** palette or from the **Material Libraries**, and click **OK**.
 
 
-#### <img src="../image/dragndrop.png"/>Drag a material to a layer
+#### Drag a material to a layer
 
 1.
 
@@ -51,7 +51,7 @@ In Rhino, open the **Layers** dialog box.
 In the **Flamingo nXt [Control Panel](..\general\welcome.html#control-panel) **, on the **Materials** tab, drag a material either from the **Materials in Model** palette or from the **Material Libraries** on to a layer name.
 
 
-#### <img src="../image/icon-layer.png"/>Remove a material from a layer
+#### Remove a material from a layer
 
 1.
 
@@ -70,7 +70,7 @@ In the **Material Properties** dialog box, under **Assign By**, click **Basic**.
 If desired, reset the material color.
 
 
-## <img src="assigntoobject.png"/>Assign material to objects
+## Assign material to objects
 {: .toc-header }
 
 You can assign materials from the material libraries to a layer or object.
@@ -78,7 +78,7 @@ You can assign materials from the material libraries to a layer or object.
 Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
 
 
-#### <img src="../image/icon-properties.png"/>Assign a material through object properties
+#### Assign a material through object properties
 
 1.
 
@@ -97,11 +97,11 @@ In the ** [Properties](..\objectproperties\properties-object.html) ** dialog box
 In the **Flamingo Materials** dialog box, select a material either from the **Materials in Model** palette or from the **Material Libraries**, and click **OK**.
 
 
-#### <img src="../image/dragndrop.png"/>Drag a material onto a single object
+#### Drag a material onto a single object
 
  * In the **Flamingo nXt [Control Panel](..\general\welcome.html#control-panel) **, on the **Materials tab**, drag a material either from the **Materials in Model** palette or from the material library onto an object.
 
-#### <img src="assigntoobject.png"/>Assign a material to selected objects
+#### Assign a material to selected objects
 
 1.
 
@@ -116,7 +116,7 @@ In the **Flamingo nXt [Control Panel](..\general\welcome.html#control-panel) **,
 On the menu, click **Assign to Selected Objects**.
 
 
-## <img src="../image/selectobjects.png"/>Select objects with material assignment
+## Select objects with material assignment
 {: .toc-header }
 
 1.
@@ -176,100 +176,100 @@ In the **Control Panel**, click the **Materials** tab.
 {: .toc-header }
 
 
-### <img src="newmaterial.png"/>Create new material
+### Create new material
 {: .toc-subheader }
 
 Choose a material template. Templates provide preset values to help start a material.
 
 
-#### <img src="newsolidcolormaterial.png"/>New [Solid Color Material](simple-material-properties.html#solid-color) 
+#### New [Solid Color Material](simple-material-properties.html#solid-color) 
 
 
-#### <img src="newmetalmaterial.png"/>New [Metal Material](simple-material-properties.html#metal) 
+#### New [Metal Material](simple-material-properties.html#metal) 
 
 
-#### <img src="newplasticmaterial.png"/>New [Plastic Material](simple-material-properties.html#plastic) 
+#### New [Plastic Material](simple-material-properties.html#plastic) 
 
 
-#### <img src="newglassmaterial.png"/>New [Glass Material](simple-material-properties.html#glass) 
+#### New [Glass Material](simple-material-properties.html#glass) 
 
 
-#### <img src="newclearfinishmaterial.png"/>New [ClearFinish Material](simple-material-properties.html#clearfinish) 
+#### New [ClearFinish Material](simple-material-properties.html#clearfinish) 
 
 
-#### <img src="newglossymaterial.png"/>New [Glossy Material](simple-material-properties.html#glossy) 
+#### New [Glossy Material](simple-material-properties.html#glossy) 
 
 
-#### <img src="newtexturedmaterial.png"/>New [Textured Material](simple-material-properties.html#textured) 
+#### New [Textured Material](simple-material-properties.html#textured) 
 
 
-#### <img src="newtexturesetmaterial.png"/>New [Texture Set Material](simple-material-properties.html#texture-set) 
+#### New [Texture Set Material](simple-material-properties.html#texture-set) 
 
 
-#### <img src="newadvancedmaterial.png"/>New [Advanced Material](advanced-material-properties-main.html) 
+#### New [Advanced Material](advanced-material-properties-main.html) 
 
 
-### <img src="assigntoobject.png"/> [Assign to selected objects](#byobject) 
+###  [Assign to selected objects](#byobject) 
 {: .toc-subheader }
 
 
-### <img src="assigntolayer.png"/> [Assign material to layers](#bylayer) 
+###  [Assign material to layers](#bylayer) 
 {: .toc-subheader }
 
 
-### <img src="viewmenu.png"/>View menu
+### View menu
 {: .toc-subheader }
 
 
-#### <img src="largethumbnailview.png"/>Large thumbnail view
+#### Large thumbnail view
 
 
-#### <img src="smallthumbnailview.png"/>Thumbnail view
+#### Thumbnail view
 
 
-#### <img src="listview.png"/>List view
+#### List view
 
 
 #### Right-click thumbnail to
 
 
-### <img src="listview.png"/>List View
+### List View
 {: .toc-subheader }
 
 
-### <img src="smallthumbnailview.png"/>Thumbnail View
+### Thumbnail View
 {: .toc-subheader }
 
 
-### <img src="largethumbnailview.png"/>Large Thumbnail View
+### Large Thumbnail View
 {: .toc-subheader }
 
 
-### <img src="exporttofolder.png"/>Export Materials to Folder
+### Export Materials to Folder
 {: .toc-subheader }
 
 
-### <img src="importfromfile.png"/>Import from File
+### Import from File
 {: .toc-subheader }
 
 
-### <img src="assigntoobject.png"/> [Assign to Selected objects](#bylayer) 
+###  [Assign to Selected objects](#bylayer) 
 {: .toc-subheader }
 
 
-### <img src="assigntolayer.png"/> [Assign to Layer](#byobject) 
+###  [Assign to Layer](#byobject) 
 {: .toc-subheader }
 
 
-### <img src="selectobjects.png"/>Select Objects with this Material
+### Select Objects with this Material
 {: .toc-subheader }
 
 
-### <img src="duplicate.png"/>Duplicate
+### Duplicate
 {: .toc-subheader }
 
 
-### <img src="delete.png"/>Delete
+### Delete
 {: .toc-subheader }
 
 
@@ -277,7 +277,7 @@ Choose a material template. Templates provide preset values to help start a mate
 {: .toc-subheader }
 
 
-### <img src="properties.png"/>Properties
+### Properties
 {: .toc-subheader }
 
 
@@ -285,23 +285,23 @@ Choose a material template. Templates provide preset values to help start a mate
 {: .toc-header }
 
 
-### <img src="hidelibrarypanel.png"/>Hide Library panel
+### Hide Library panel
 {: .toc-subheader }
 
 
-### <img src="showlibrarypanel.png"/>Show Library panel
+### Show Library panel
 {: .toc-subheader }
 
 
-### <img src="gouponelevel.png"/>Go up one level
+### Go up one level
 {: .toc-subheader }
 
 
-### <img src="viewmenu.png"/>View menu
+### View menu
 {: .toc-subheader }
 
 
-### <img src="folder.png"/>Folder name
+### Folder name
 {: .toc-subheader }
 
 
@@ -309,27 +309,27 @@ Choose a material template. Templates provide preset values to help start a mate
 {: .toc-header }
 
 
-### <img src="listview.png"/>List View
+### List View
 {: .toc-subheader }
 
 
-### <img src="smallthumbnailview.png"/>Thumbnail View
+### Thumbnail View
 {: .toc-subheader }
 
 
-### <img src="largethumbnailview.png"/>Large Thumbnail View
+### Large Thumbnail View
 {: .toc-subheader }
 
 
-### <img src="gouponelevel.png"/>Up One Level
+### Up One Level
 {: .toc-subheader }
 
 
-### <img src="back.png"/>Back
+### Back
 {: .toc-subheader }
 
 
-### <img src="forward.png"/>Forward
+### Forward
 {: .toc-subheader }
 
 
@@ -353,6 +353,6 @@ Choose a material template. Templates provide preset values to help start a mate
 {: .toc-subheader }
 
 
-### <img src="delete.png"/>Delete
+### Delete
 {: .toc-subheader }
 

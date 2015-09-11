@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/propertiesbutton.png"/>Lights
+# Lights
 {: .toc-title }
 
 Artificial light sources use normal Rhino lights with added properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
@@ -14,7 +14,7 @@ Artificial light sources use normal Rhino lights with added properties to contro
 
  1. <img src="../image/directionallightbutton.png"/>Rhino **Directional Lights** are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
 
-### <img src="linearlight-01.png"/>LinearLight
+### LinearLight
 {: .toc-subheader }
 
 Distributes light in a cylindrical pattern that imitates a fluorescent tube.
@@ -22,7 +22,7 @@ Distributes light in a cylindrical pattern that imitates a fluorescent tube.
 <img src="linearlight.png"/>
 
 
-### <img src="pointlight-01.png"/>PointLight
+### PointLight
 {: .toc-subheader }
 
 Distributes light equally in all directions.
@@ -30,7 +30,7 @@ Distributes light equally in all directions.
 <img src="pointlight.png"/>
 
 
-### <img src="rectangularlight-01.png"/>RectangularLight
+### RectangularLight
 {: .toc-subheader }
 
 Provides an approximation of a recessed light with a diffuser or baffles.
@@ -38,7 +38,7 @@ Provides an approximation of a recessed light with a diffuser or baffles.
 <img src="rectangular light.png"/>
 
 
-### <img src="spotlight-01.png"/>Spotlight
+### Spotlight
 {: .toc-subheader }
 
 Provides a beam angle and direction.
@@ -46,7 +46,7 @@ Provides a beam angle and direction.
 <img src="spotlight.png"/>
 
 
-### <img src="tagobjectsaslights.png"/>Tag objects as lights
+### Tag objects as lights
 {: .toc-subheader }
 
 Any renderable object (surface, solid, etc.) can be tagged as a light and given light properties.

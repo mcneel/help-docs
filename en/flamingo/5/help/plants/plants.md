@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="planticon.png"/>Plants
+# Plants
 {: .toc-title }
 
 <img src="plants-001.png"/>
@@ -55,7 +55,7 @@ At the prompt, pick a location for your plant in the model.
  * Models with Flamingo 2 plants already inserted should work with some restrictions.
  * Flamingo 2 plants are different from the new plants. Currently you cannot edit Flamingo 2 plants or convert them to Flamingo nXt plants.
 
-## <img src="planticon.png"/>Plant Editor
+## Plant Editor
 {: .toc-header }
 
 

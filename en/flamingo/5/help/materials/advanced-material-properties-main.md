@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-materials.png"/>Advanced Material Properties: Main
+# Advanced Material Properties: Main
 {: .toc-title }
 
 <img src="bunchofmaterials.png"/>
@@ -24,12 +24,12 @@ The material name.
 ### Color
 {: .toc-subheader }
 
-Controls the local color for the material. All materials have a base color. [More about color...](General\select_color.html) 
+Controls the local color for the material. All materials have a base color. [More about color...](general\select-color.html) 
 
 
 #### Color swatch selector
 
-Click the color swatch to select colors from the [Select Color](General\select_color.html) dialog box.
+Click the color swatch to select colors from the [Select Color](general\select-color.html) dialog box.
 
 
 ### Preview
@@ -37,9 +37,9 @@ Click the color swatch to select colors from the [Select Color](General\select_c
 
 The preview image shows the material as it will appear on objects in the model. The style and size of the preview are part of the material definition.
 
- **Note** : Set the default size for the preview object in [Options: Flamingo nXt](General\Options_Flamingo.html).
+ **Note** : Set the default size for the preview object in [Options: Flamingo nXt](general\options-flamingo.html).
 
-<img src="Materials/Previewer.png"/>
+<img src="materials/previewer.png"/>
 
  * Right-click the material preview pane to specify options that control the preview's appearance:
 
@@ -244,7 +244,7 @@ On the menu, click **Remove**.
 Blends between two different materials to create materials that change characteristics based on the angle of view to the surface of the object.
 
 
-### <img src="angularblendmaterials.png"/>
+### 
 {: .toc-subheader }
 
 The **Angular Blend** procedure blends between two different materials to create special effects. Use **Angular Blend** to create materials that change characteristics based on the angle of view to the surface of the object.
@@ -330,7 +330,7 @@ The scale of the material is independent of the resolution of the bitmap used to
 The height in pixels of a single instance of the image.
 
 
-#### <img src="Materials/Lock.png"/>Lock
+#### Lock
 
 Maintains the ratio between the **Width** and **Height**.
 
@@ -399,7 +399,7 @@ The **Base** and **Spot** components are two materials. Their properties are spe
 Changes the absolute size of the pattern in the x-, y-, and z-directions.
 
 
-#### <img src="Materials/Lock.png"/>Lock
+#### Lock
 
 Maintains the ratio between the **X Scale**, **Y Scale**, and **Z scale**.
 
@@ -428,7 +428,7 @@ Blurs the boundaries between the components.
 Creates alternating slabs of **Base** and **Vein** components.
 
 
-### <img src="marblematerials.png"/>
+### 
 {: .toc-subheader }
 
 The **Marble** procedure defines how the **Base** and **Vein** components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object. Texture [mapping](..\objectproperties\properties-object.html#mapping) for the objects controls the orientation of the material on the object.
@@ -450,7 +450,7 @@ The **Base** and **Vein** components are two materials. Their properties are spe
 Changes the absolute size of the pattern in the x-, y-, and z-directions.
 
 
-#### <img src="Materials/Lock.png"/>Lock
+#### Lock
 
 Maintains the ratio between the **X Scale**, **Y Scale**, and **Z scale**.
 
@@ -511,7 +511,7 @@ Sets the overall tile size. The width and height sizes can be set independently.
 Specifies the width and height of the tiles.
 
 
-#### <img src="Materials/Lock.png"/>Lock
+#### Lock
 
 Maintains the ratio between the **Width** and **Height**.
 
@@ -528,7 +528,7 @@ Specifies the size of the joint material.
 Specifies the width and height of the joint material.
 
 
-#### <img src="lock.png"/>Lock
+#### Lock
 
 Maintains the ratio between the **Horizontal** and **Vertical joint** sizes.
 
@@ -585,7 +585,7 @@ The **Base** and **Ring** components are two materials. Their properties are spe
 Changes the absolute size of the pattern in the x-, y-, and z-directions.
 
 
-#### <img src="Materials/Lock.png"/>Lock
+#### Lock
 
 Maintains the ratio between the **X Scale**, **Y Scale**, and **Z scale**.
 

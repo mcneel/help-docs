@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/options.png"/>Options: Flamingo nXt
+# Options: Flamingo nXt
 {: .toc-title }
 
 
@@ -19,7 +19,7 @@ Additional folder locations to scan when creating the list of available material
 The folders are not searched for libraries, but rather for support files, such as bitmaps, plant textures, in addition to the **Library folders**. The folders are searched in order they appear in the list. The current folder containing the .3DM file is searched first.
 
 
-#### <img src="../image/addnewlibrary.png"/>Add a new folder
+#### Add a new folder
 
 1.
 
@@ -30,15 +30,15 @@ Under **Library folders**, click the **New** icon.
 In the **Browse for Folder** dialog box, select a folder.
 
 
-#### <img src="../image/deletelibrary.png"/>Delete a folder
+#### Delete a folder
 
  * Select a folder name from the list, and click the Delete icon.
 
-#### <img src="../image/librarymoveup.png"/>To move a folder up in the list
+#### To move a folder up in the list
 
  * Select a folder name from the list, and click the Move Up icon.
 
-#### <img src="../image/librarymovedown.png"/>To move a folder down in the list
+#### To move a folder down in the list
 
  * Select a folder name from the list, and click the Move Down icon.
 

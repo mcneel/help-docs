@@ -106,7 +106,7 @@ The sharpness of the sun highlight.
 ### Sun channel
 {: .toc-subheader }
 
-The sun [channel](Lighting\Lights_Tab.html#Channel).
+The sun [channel](lighting\lights-tab.html#channel).
 
 
 ## Sky
@@ -184,7 +184,7 @@ Reverses the image from left to right.
 ### Sky channel
 {: .toc-subheader }
 
-The sky [channel](Lighting\Lights_Tab.html#Channel).
+The sky [channel](lighting\lights-tab.html#channel).
 
 
 ## Automatic Sky
@@ -220,7 +220,7 @@ Modifies the brightness of the sky (indirect) daylight component. The intensity 
 ### Sky channel
 {: .toc-subheader }
 
-The sky [channel](Lighting\Lights_Tab.html#Channel).
+The sky [channel](lighting\lights-tab.html#channel).
 
 &#160;
 

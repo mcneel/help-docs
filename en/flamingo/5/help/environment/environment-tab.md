@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/icon-environment.png"/>Environment
+# Environment
 {: .toc-title }
 
 Environments include elements of the rendering that are not part of the actual model geometry, but only appear when rendering.
@@ -320,13 +320,13 @@ Reverses the image from left to right.
 ### Sun channel
 {: .toc-subheader }
 
-The sun [channel](Lighting\Lights_Tab.html#Channel).
+The sun [channel](lighting\lights-tab.html#channel).
 
 
 ### Sky channel
 {: .toc-subheader }
 
-The sky [channel](Lighting\Lights_Tab.html#Channel).
+The sky [channel](lighting\lights-tab.html#channel).
 
 
 ## Planar HDR options
@@ -336,7 +336,7 @@ Planar high-dynamic-range images provide both an image background and lighting. 
 
  * Click the <kbd>Click here to assign</kbd> button to select an image.
 
-### <img src="planarimagebeach.png"/>
+### 
 {: .toc-subheader }
 
 
@@ -345,13 +345,13 @@ Planar high-dynamic-range images provide both an image background and lighting. 
 ### Sun channel
 {: .toc-subheader }
 
-The sun [channel](Lighting\Lights_Tab.html#Channel).
+The sun [channel](lighting\lights-tab.html#channel).
 
 
 ### Sky channel
 {: .toc-subheader }
 
-The sky [channel](Lighting\Lights_Tab.html#Channel).
+The sky [channel](lighting\lights-tab.html#channel).
 
 
 ## Advanced Background

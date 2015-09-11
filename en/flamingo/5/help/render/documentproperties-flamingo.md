@@ -3,7 +3,7 @@ layout: toc-page
 ---
 
 
-# <img src="../image/documentpropertiesbutton.png"/>Document Properties: Flamingo nXt
+# Document Properties: Flamingo nXt
 {: .toc-title }
 
 These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
