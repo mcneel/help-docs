@@ -1,6 +1,6 @@
-# developer-rhino3d-com
+# McNeel Help
 
-This repo contains the contents of http://developer.rhino3d.com
+This repo contains the contents of http://help.mcneel.com
 
 The site is hosted on [GitHub Pages](https://pages.github.com/) which uses a static site generator called [Jekyll](http://jekyllrb.com/).
 
@@ -12,7 +12,7 @@ These instructions cover running this project locally on both Mac OS X and Windo
 First, navigate somewhere safe and clone the repository.
 
 ```
-git clone https://github.com/mcneel/developer-rhino3d-com.git
+git clone https://github.com/mcneel/help-docs.git
 ```
 
 If you are not comfortable using git on the command-line, then try [GitHub for Mac](https://mac.github.com/) and [GitHub for Windows](https://windows.github.com/). There's also the [git cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf).
@@ -20,10 +20,10 @@ If you are not comfortable using git on the command-line, then try [GitHub for M
 Notice that **'gh-pages'** is the only branch. Everything committed to this branch is automatically published when pushed to GitHub.
 
 
-![Mac Instructions](https://github.com/mcneel/developer-rhino3d-com/blob/gh-pages/images/mac_logo_small.png)
+![Mac Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/mac_logo_small.png)
 ### Mac OS X
 
-Mac OS X Yosemite ships with Ruby and RubyGems, however it's [not wise](https://github.com/mcneel/developer-rhino3d-com/pull/2#issuecomment-112601698) to mess around with this installation. Instead, install your own Ruby using [Homebrew](http://brew.sh).
+Mac OS X Yosemite ships with Ruby and RubyGems, however it's [not wise](https://github.com/mcneel/help-docs/pull/2#issuecomment-112601698) to mess around with this installation. Instead, install your own Ruby using [Homebrew](http://brew.sh).
 
 #### Install Homebrew and Ruby
 
@@ -59,7 +59,7 @@ jekyll serve
 Navigate to http://localhost:4000 in your browser to view the site.
 
 
-![Windows Instructions](https://github.com/mcneel/developer-rhino3d-com/blob/gh-pages/images/win_logo_small.png)
+![Windows Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/win_logo_small.png)
 ### Windows
 
 While **[Jekyll](http://jekyllrb.com/docs/windows/)** is not officially supported in Windows, it does work.  These instructions are based on the official _unofficial_ guide to [installing Jekyll on Windows](http://jekyll-windows.juthilo.com/).
