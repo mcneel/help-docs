@@ -77,12 +77,14 @@ layout: toc-page
  [Render Window](render\render-window.html) 
 
 
+## Commands
+
+ [Flamingo Command List](general\flamingo-command-list.html) 
+
 ## Misc
 {: .toc-header }
 
  [Enter CD Key](general/enter-cd-key.html) 
-
- [Flamingo Command List](general\flamingo-command-list.html) 
 
  [Options: Flamingo nXt](general\options-flamingo.html) 
 
