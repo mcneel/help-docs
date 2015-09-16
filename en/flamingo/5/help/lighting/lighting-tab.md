@@ -1,5 +1,6 @@
 ---
 layout: toc-page
+redirect_from: "../commands/xflamingonxttagobjectsaslights.html"
 ---
 
 

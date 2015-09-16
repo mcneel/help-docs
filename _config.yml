@@ -34,6 +34,7 @@ collections:
   - glossary
   - cheat_sheet_items
   - samples
+  - command_topics
 
 collections:
   guide_topics:
@@ -45,3 +46,6 @@ collections:
   samples:
     output: true
     permalink: /samples/:path/
+  command_topics:
+    output: true
+    permalink: /commands/:path/

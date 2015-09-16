@@ -76,13 +76,15 @@ layout: toc-page
 
  [Render Window](render\render-window.html) 
 
+## Commands
+{: .toc-header }
+
+ [Flamingo Command List](general\flamingo-command-list.html) 
 
 ## Misc
 {: .toc-header }
 
  [Enter CD Key](general/enter-cd-key.html) 
-
- [Flamingo Command List](general\flamingo-command-list.html) 
 
  [Options: Flamingo nXt](general\options-flamingo.html) 
 
@@ -91,6 +93,26 @@ layout: toc-page
  [Select color](general\select-color.html) 
 
  [Welcome](general\welcome.html) 
+
+## TODO List
+{: .toc-header }
+
+#### Commands
+{: .toc-subheader }
+
+<div class="trigger">
+  <ul>
+  {% for page in site.pages %}
+    {% if page.TODO == 1 %}
+	    {% if page.COMMAND == 1 %}
+	       <li>
+    	     <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+           </li>
+        {% endif %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
 
 &#160;
 
