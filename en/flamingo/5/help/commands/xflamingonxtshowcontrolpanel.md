@@ -1,10 +1,15 @@
 ---
 layout: toc-page
+title: xFlamingonXtShowControlPanel
+author: johnm@mcneel.com
+categories: ['Commands']
+keywords: ['commands', 'command', 'xFlamingonXtShowControlPanel']
+TODO: 1
+COMMAND: 1
 ---
 
 
 # xFlamingonXtShowControlPanel
 {: .toc-title }
 
-&#160;
-
+Under construction

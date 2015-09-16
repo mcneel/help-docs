@@ -94,6 +94,26 @@ layout: toc-page
 
  [Welcome](general\welcome.html) 
 
+## TODO List
+{: .toc-header }
+
+#### Commands
+{: .toc-subheader }
+
+<div class="trigger">
+  <ul>
+  {% for page in site.pages %}
+    {% if page.TODO == 1 %}
+	    {% if page.COMMAND == 1 %}
+	       <li>
+    	     <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+           </li>
+        {% endif %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+
 &#160;
 
 &#160;
