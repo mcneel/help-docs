@@ -37,22 +37,47 @@ body {
 ##############################################################################
 */
 
-.toc-title {
+h1 {
   background: #E6E6E6;
 }
-.toc-header {
+h2 {
   background: white;
   border-bottom:solid;
   border-bottom-color:black;
   border-bottom-width:1px;
+  margin-bottom: 3px;
 }
-.toc-subheader {
+h3 {
   background: white;
+  margin-bottom: 0px;
+}
+h4 {
+	margin-bottom: 0px;
 }
 .fixed {
     position: fixed;
 }
 
+blockquote {
+	border-color: white;
+}
+
+img {
+	margin-top: 5px;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.floatright img {
+	float: right;
+	margin-left: 15px;
+}
+.floatleft img {
+	float: left;
+	margin-right: 15px;
+}
 /*
 ##############################################################################
 ##  Index.md Page

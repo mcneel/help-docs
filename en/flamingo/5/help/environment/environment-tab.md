@@ -4,160 +4,93 @@ layout: toc-page
 
 
 # Environment
- 
-
 Environments include elements of the rendering that are not part of the actual model geometry, but only appear when rendering.
 
 You can think of the background as an infinite sphere surrounding the model. Backgrounds are projected onto this sphere. The background sphere is not an object that you can select, but a reference surface for the background effects.
 
 The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
 
-
 ## Ground plane
  
-
-
-#### Enabled
- 
-
+### Enabled
 Turns the ground plane on.
+![Groundplane Enabled](groundplane-002a.png)
+*Ground plane disabled (left) and enabled (right).* 
 
-<img src="groundplane-002a.png"/>
-
-
- *Ground plane disabled (left) and enabled (right).* 
-
-#### Alpha
- 
-
+### Alpha
 Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
-
-<img src="groundplane-004a.png"/>
+![Groundplane Alpha](groundplane-004a.png)
 *Ground plane shows shadow, but is otherwise transparent in the image.* 
 
-
-#### Elevation
- 
-
+### Elevation
 Specifies the ground plane's height above zero.
-
-<img src="groundplane-005a.png"/>
+![Groundplane Elevation](groundplane-005a.png)
 *Ground plane elevation above zero.* 
 
-#### Material
- 
-
+### Material
 Assigns a [material](..\materials\simple-material-properties.html) to the ground plane.
-
-<img src="groundplane-003a.png"/>
-
-
- *Ground plane with raised elevation and water material.* 
+![Groundplane Material](groundplane-003a.png)
+*Ground plane with raised elevation and water material.* 
 
 ## Background
- 
-
- **Note** : A color background is always turned on, but it may be hidden behind an image or other background.
+**Note** : A color background is always turned on, but it may be hidden behind an image or other background.
 
 
-#### Intensity
- 
+### Intensity
 Modifies the relative brightness of the background.
 
-
-#### Background type
- 
-
+### Background type
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
- *  [Sky](environment-tab.html#environment-sky) 
- *  [Solid and gradient color](environment-tab.html#color-and-gradient-backgrounds) 
- *  [Image](#environment-image) 
- *  [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds) 
+> [Sky](environment-tab.html#environment-sky) 
+> [Solid and gradient color](environment-tab.html#color-and-gradient-backgrounds) 
+> [Image](#environment-image) 
+> [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds) 
 
 ## Sky
- 
-
 The Sky environment uses the sun and sky settings from the [Lighting](../lighting/lighting-tab.html) tabs for settings.
-
-<img src="background-sky-001.png"/>
-
-
- *Automatic (left) and HDR image and sun (right).* 
+![Background Sky](background-sky-001.png)
+*Automatic (left) and HDR image and sun (right).* 
 
 ## Color and Gradient Color
- 
-
 A background color is always present, but may be obscured by images.
 
-
 ### Solid Color
- 
-
 A solid color background consists of a single color that fills the background.
-
-<img src="background-color-001.png"/>
-
-
- *Solid-color background.* 
+![SolidBackground](background-color-001.png)
+*Solid-color background.* 
 
 ### Two-Color Gradient
- 
-
- **Note** : Two- and three-color gradient backgrounds only apply to perspective views.
-
+**Note** : Two- and three-color gradient backgrounds only apply to perspective views.
 Two-color gradient backgrounds interpolate the background color between two selected colors.
-
-<img src="background-color-002.png"/>
-
-
- *Two-color gradient background: blue and yellow.* 
+![Background Color 2](background-color-002.png)
+*Two-color gradient background: blue and yellow.* 
 
 ### Three-Color Gradient
- 
-
 Three-color gradient backgrounds interpolate the background color between three selected colors.
+![Background Color 3](background-color-003.png)
+*Three-color gradient background: blue, white, yellow.* 
 
-<img src="background-color-003.png"/>
-
-
- *Three-color gradient background: blue, white, yellow.* 
-
-### Color controls
- 
-
+### Background Color controls
 Clicking a color swatch opens the [Select Color](..\general\select-color.html) dialog box.
 The edit boxes indicate the angle where the color will be the most saturated.
 
-##### To change the gradient color
+##### To change the gradient color:
+* Click the color swatches to set the colors in the [Select Color](..\general\select-color.html) dialog box.
 
- * Click the color swatches to set the colors in the [Select Color](..\general\select-color.html) dialog box.
-
-##### To change the range of the gradient color
+##### To change the range of the gradient color:
 If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
 
  * Enter an angle in degrees above and below the horizon in the Top, Middle, or Bottom boxes.
-Or, drag the angle markers in the angle graphic.
+ * Or, drag the angle markers in the angle graphic.
 
-A cone of vision is displayed in the graphic as a light gray shaded region.
-The angle filled by the background is displayed in the graphic as a light gray shaded region.
-The red flag indicates the angle where the Top color will be the most saturated.
-The blue flag indicates where the Bottom color&#160;will be the most saturated.
-For three-color gradients, the green flag indicates the angle where the Middle color is most saturated.
-
-<img src="background-color-004.png"/>
-
-
-###  <kbd>Swap top and bottom colors</kbd> 
+ | ![Background Color control](background-color-004.png) | A cone of vision is displayed in the graphic as a light gray shaded region.<br> The angle filled by the background is displayed in the graphic as a light gray shaded region.<br>The red flag indicates the angle where the Top color will be the most saturated.<br>The blue flag indicates where the Bottom color& will be the most saturated.|
  
+####  Swap top and bottom colors 
+This button reverses the color order for the gradient.
 
-Reverses the color order for the gradient.
-
-
-###  <kbd>Get angles from view</kbd> 
- 
-
-Sets the angles of the gradient extents to match the viewport.
+####  Get angles from view 
+This button sets the angles of the gradient extents to match the viewport.
 
 
 ## Image
@@ -170,36 +103,22 @@ You can use a digital photograph, a scanned artwork, or an image created with an
  * Place the model into an existing context.
  * Add panoramic city or mountain skylines.
  * Add surrealistic effects.
+
 The image can be mapped to a planar, cylindrical, or spherical shape or offset using coordinates or the visual graphic.
 
 <img src="background-image-001.png"/>
 
 
 ## Image Properties
- 
+Click the **Click here to assign** button to select an image. When a bitmap file is changed using an image editor such as Photoshop, you must refresh the bitmap definition in Flamingo nXt.
 
- * Click the <kbd>Click here to assign</kbd> button to select an image.
-
-### Note
-
-
-#### Refresh the image definition
-
-When a bitmap file is changed using an image editor such as Photoshop, you must refresh the bitmap definition in Flamingo nXt.
-
-
-#### To refresh the bitmap
-
+##### To refresh the bitmap
  * On the **Flamingo nXt** menu, click **Utilities** &gt; **Clear bitmap cache**.
 
-### Projection
- 
-
+### Image Projection Types
 Three types of background image projections are supported: [Planar](environment-tab.html#planar), [Cylindrical](environment-tab.html#cylindrical), and [Spherical](environment-tab.html#spherical). Each projection method has its own set of controls for positioning the image.
 
-
 #### Planar
-
 Projects the image to a flat background.
 
 <img src="projectiontypesplanar.png"/>
