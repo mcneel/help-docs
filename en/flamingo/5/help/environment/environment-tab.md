@@ -17,7 +17,7 @@ The ground plane provides an infinite horizontal platform for the image that str
 {: .toc-header }
 
 
-### Enabled
+#### Enabled
 {: .toc-subheader }
 
 Turns the ground plane on.
@@ -27,27 +27,24 @@ Turns the ground plane on.
 
  *Ground plane disabled (left) and enabled (right).* 
 
-### Alpha
+#### Alpha
 {: .toc-subheader }
 
 Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
 
 <img src="groundplane-004a.png"/>
+*Ground plane shows shadow, but is otherwise transparent in the image.* 
 
- *Ground plane shows shadow, but is otherwise transparent in the image.* 
 
-
-### Elevation
+#### Elevation
 {: .toc-subheader }
 
 Specifies the ground plane's height above zero.
 
 <img src="groundplane-005a.png"/>
+*Ground plane elevation above zero.* 
 
-
- *Ground plane elevation above zero.* 
-
-### Material
+#### Material
 {: .toc-subheader }
 
 Assigns a [material](..\materials\simple-material-properties.html) to the ground plane.
@@ -63,14 +60,13 @@ Assigns a [material](..\materials\simple-material-properties.html) to the ground
  **Note** : A color background is always turned on, but it may be hidden behind an image or other background.
 
 
-### Intensity
+#### Intensity
 {: .toc-subheader }
-
 Modifies the relative brightness of the background.
 
 
-## Background type
-{: .toc-header }
+#### Background type
+{: .toc-subheader }
 
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
@@ -127,33 +123,26 @@ Three-color gradient backgrounds interpolate the background color between three 
 
  *Three-color gradient background: blue, white, yellow.* 
 
-## Color controls
+### Color controls
 {: .toc-header }
 
 Clicking a color swatch opens the [Select Color](..\general\select-color.html) dialog box.
-
 The edit boxes indicate the angle where the color will be the most saturated.
 
-
-#### To change the gradient color
+##### To change the gradient color
 
  * Click the color swatches to set the colors in the [Select Color](..\general\select-color.html) dialog box.
 
-#### To change the range of the gradient color
-
+##### To change the range of the gradient color
 If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
 
  * Enter an angle in degrees above and below the horizon in the Top, Middle, or Bottom boxes.
 Or, drag the angle markers in the angle graphic.
 
 A cone of vision is displayed in the graphic as a light gray shaded region.
-
 The angle filled by the background is displayed in the graphic as a light gray shaded region.
-
 The red flag indicates the angle where the Top color will be the most saturated.
-
 The blue flag indicates where the Bottom color&#160;will be the most saturated.
-
 For three-color gradients, the green flag indicates the angle where the Middle color is most saturated.
 
 <img src="background-color-004.png"/>

@@ -31,6 +31,27 @@ body {
 .bs-callout-danger {
     border-left-color: #ce4844;
 }
+/*
+##############################################################################
+##  Main body styles
+##############################################################################
+*/
+
+.toc-title {
+  background: #E6E6E6;
+}
+.toc-header {
+  background: white;
+  border-bottom:solid;
+  border-bottom-color:black;
+  border-bottom-width:1px;
+}
+.toc-subheader {
+  background: white;
+}
+.fixed {
+    position: fixed;
+}
 
 /*
 ##############################################################################
@@ -71,18 +92,6 @@ tbody.index_table tr td{
 ##############################################################################
 */
 
-.toc-title {
-  background: white;
-}
-.toc-header {
-  background: white;
-}
-.toc-header .toc-subheader {
-  background: white;
-}
-.fixed {
-    position: fixed;
-}
 
 
 /* sidebar */
