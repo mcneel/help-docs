@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Environment
-{: .toc-title }
+ 
 
 Environments include elements of the rendering that are not part of the actual model geometry, but only appear when rendering.
 
@@ -14,11 +14,11 @@ The ground plane provides an infinite horizontal platform for the image that str
 
 
 ## Ground plane
-{: .toc-header }
+ 
 
 
 #### Enabled
-{: .toc-subheader }
+ 
 
 Turns the ground plane on.
 
@@ -28,7 +28,7 @@ Turns the ground plane on.
  *Ground plane disabled (left) and enabled (right).* 
 
 #### Alpha
-{: .toc-subheader }
+ 
 
 Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
 
@@ -37,7 +37,7 @@ Applies a transparent alpha channel to the ground plane so the image can be comp
 
 
 #### Elevation
-{: .toc-subheader }
+ 
 
 Specifies the ground plane's height above zero.
 
@@ -45,7 +45,7 @@ Specifies the ground plane's height above zero.
 *Ground plane elevation above zero.* 
 
 #### Material
-{: .toc-subheader }
+ 
 
 Assigns a [material](..\materials\simple-material-properties.html) to the ground plane.
 
@@ -55,18 +55,18 @@ Assigns a [material](..\materials\simple-material-properties.html) to the ground
  *Ground plane with raised elevation and water material.* 
 
 ## Background
-{: .toc-header }
+ 
 
  **Note** : A color background is always turned on, but it may be hidden behind an image or other background.
 
 
 #### Intensity
-{: .toc-subheader }
+ 
 Modifies the relative brightness of the background.
 
 
 #### Background type
-{: .toc-subheader }
+ 
 
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
@@ -76,7 +76,7 @@ Specifies the color scheme that will fill the background of the rendered image. 
  *  [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds) 
 
 ## Sky
-{: .toc-header }
+ 
 
 The Sky environment uses the sun and sky settings from the [Lighting](../lighting/lighting-tab.html) tabs for settings.
 
@@ -86,13 +86,13 @@ The Sky environment uses the sun and sky settings from the [Lighting](../lightin
  *Automatic (left) and HDR image and sun (right).* 
 
 ## Color and Gradient Color
-{: .toc-header }
+ 
 
 A background color is always present, but may be obscured by images.
 
 
 ### Solid Color
-{: .toc-subheader }
+ 
 
 A solid color background consists of a single color that fills the background.
 
@@ -102,7 +102,7 @@ A solid color background consists of a single color that fills the background.
  *Solid-color background.* 
 
 ### Two-Color Gradient
-{: .toc-subheader }
+ 
 
  **Note** : Two- and three-color gradient backgrounds only apply to perspective views.
 
@@ -114,7 +114,7 @@ Two-color gradient backgrounds interpolate the background color between two sele
  *Two-color gradient background: blue and yellow.* 
 
 ### Three-Color Gradient
-{: .toc-subheader }
+ 
 
 Three-color gradient backgrounds interpolate the background color between three selected colors.
 
@@ -124,7 +124,7 @@ Three-color gradient backgrounds interpolate the background color between three 
  *Three-color gradient background: blue, white, yellow.* 
 
 ### Color controls
-{: .toc-header }
+ 
 
 Clicking a color swatch opens the [Select Color](..\general\select-color.html) dialog box.
 The edit boxes indicate the angle where the color will be the most saturated.
@@ -149,19 +149,19 @@ For three-color gradients, the green flag indicates the angle where the Middle c
 
 
 ###  <kbd>Swap top and bottom colors</kbd> 
-{: .toc-subheader }
+ 
 
 Reverses the color order for the gradient.
 
 
 ###  <kbd>Get angles from view</kbd> 
-{: .toc-subheader }
+ 
 
 Sets the angles of the gradient extents to match the viewport.
 
 
 ## Image
-{: .toc-header }
+ 
 
 A background image is projected onto the background.
 
@@ -176,7 +176,7 @@ The image can be mapped to a planar, cylindrical, or spherical shape or offset u
 
 
 ## Image Properties
-{: .toc-header }
+ 
 
  * Click the <kbd>Click here to assign</kbd> button to select an image.
 
@@ -193,7 +193,7 @@ When a bitmap file is changed using an image editor such as Photoshop, you must 
  * On the **Flamingo nXt** menu, click **Utilities** &gt; **Clear bitmap cache**.
 
 ### Projection
-{: .toc-subheader }
+ 
 
 Three types of background image projections are supported: [Planar](environment-tab.html#planar), [Cylindrical](environment-tab.html#cylindrical), and [Spherical](environment-tab.html#spherical). Each projection method has its own set of controls for positioning the image.
 
@@ -280,7 +280,7 @@ Sets the rotation angle to match the viewport.
 
 
 ## HDR and Planar HDR Backgrounds
-{: .toc-header }
+ 
 
 High-dynamic-range images provide lighting from luminance information stored in the image.
 
@@ -290,61 +290,61 @@ An HDR environment image has more range of light than a normal bitmap image and 
 
 
 ## HDR options
-{: .toc-header }
+ 
 
  * Click the <kbd>Click here to assign</kbd> button to select an image.
 
 ### Rotation
-{: .toc-subheader }
+ 
 
 Rotates the image so a different part of the image lights the model.
 
 
 ### Mirror
-{: .toc-subheader }
+ 
 
 Reverses the image from left to right.
 
 
 ### Sun channel
-{: .toc-subheader }
+ 
 
 The sun [channel](lighting\lights-tab.html#channel).
 
 
 ### Sky channel
-{: .toc-subheader }
+ 
 
 The sky [channel](lighting\lights-tab.html#channel).
 
 
 ## Planar HDR options
-{: .toc-header }
+ 
 
 Planar high-dynamic-range images provide both an image background and lighting. These are often used outside windows in architectural renderings where light from the exterior is required.
 
  * Click the <kbd>Click here to assign</kbd> button to select an image.
 
 ### 
-{: .toc-subheader }
+ 
 
 
  *Background image (left) and Planar HDR (right) shows subtle lighting difference in background.* 
 
 ### Sun channel
-{: .toc-subheader }
+ 
 
 The sun [channel](lighting\lights-tab.html#channel).
 
 
 ### Sky channel
-{: .toc-subheader }
+ 
 
 The sky [channel](lighting\lights-tab.html#channel).
 
 
 ## Advanced Background
-{: .toc-header }
+ 
 
 The **Advanced Background** settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects.
 
@@ -352,7 +352,7 @@ In the illustration, the background is black, but the reflected environment is a
 
 
 ## Reflected
-{: .toc-header }
+ 
 
 A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
 
@@ -362,47 +362,47 @@ A reflected environment is not visible in the rendered image, but it reflects in
  *Normal environment (left) and reflected HDR sky environment (right).* 
 
 ### Sky
-{: .toc-subheader }
+ 
 
 Objects reflect the sky as specified in the [Lighting: Sun and Sky](../lighting/sun-and-sky-tabs.html) settings.
 
 
 ### Custom
-{: .toc-subheader }
+ 
 
 Objects reflect a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
 
 
 ### Visible Background
-{: .toc-subheader }
+ 
 
 Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
 
 
 ## Refracted
-{: .toc-header }
+ 
 
 
 ### Sky
-{: .toc-subheader }
+ 
 
 Objects refract the sky as specified in the [Lighting: Sun and Sky](../lighting/sun-and-sky-tabs.html) settings.
 
 
 ### Custom
-{: .toc-subheader }
+ 
 
 Objects refract a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
 
 
 ### Visible Background
-{: .toc-subheader }
+ 
 
 Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
 
 
 ### No Transparent Object Alpha
-{: .toc-subheader }
+ 
 
 Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
 

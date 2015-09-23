@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Decals
-{: .toc-title }
+ 
 
 Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps.
 
@@ -22,11 +22,11 @@ Some uses for decals include:
 
 
 ## Decal Placement
-{: .toc-header }
+ 
 
 
 ###  <kbd>Add</kbd> 
-{: .toc-subheader }
+ 
 
 1.
 
@@ -72,7 +72,7 @@ The precise sequence depends on the type of decal selected: [Planar](#decal-plan
 
 
 ###  <kbd>Edit Placement</kbd> 
-{: .toc-subheader }
+ 
 
 1.
 
@@ -88,7 +88,7 @@ Press **Enter** when finished.
 
 
 ###  <kbd>Properties</kbd> 
-{: .toc-subheader }
+ 
 
 1.
 
@@ -100,12 +100,12 @@ In the **Decal Properties** dialog box, use the controls to change the decal's p
 
 
 ###  <kbd>Delete</kbd> 
-{: .toc-subheader }
+ 
 
  * Click the **Delete** button.
 
 ###  <kbd>Move up</kbd> / <kbd>Move down</kbd> 
-{: .toc-subheader }
+ 
 
 When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
 
@@ -151,7 +151,7 @@ Or press **Enter** to complete the decal placement.
 
 
 ## Set or edit the decal placement using the control widget
-{: .toc-header }
+ 
 
 Note: When using the planar mapping on a curved object, the entire bitmap must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
 
@@ -177,23 +177,23 @@ Note: When using the planar mapping on a curved object, the entire bitmap must l
  * Drag the x-, y-, or z-axis control point on the widget axis icon.
 
 ## Decal Properties
-{: .toc-header }
+ 
 
 The information from the bitmap replaces or blends the object's color with the decal's color. This is the most common use of decals.
 
 
 ## Projection
-{: .toc-header }
+ 
 
 The mapping style determines how to project the decal onto the object. It is a good idea to draw construction lines in the scene to help accurately place decals. A rectangle drawn just behind a surface can act as a guide for a standard decal. Use object snaps for accurate placement.
 
 
 ### Cylindrical
-{: .toc-subheader }
+ 
 
 
 ### &#160;
-{: .toc-subheader }
+ 
 
 The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
 
@@ -201,11 +201,11 @@ The cylindrical projection maps the bitmap onto the cylinder with the bitmap's v
 
 <img src="cylindricaldecal-002.png"/>
 ### Planar
-{: .toc-subheader }
+ 
 
 
 ### &#160;
-{: .toc-subheader }
+ 
 
 Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
 
@@ -215,11 +215,11 @@ When using planar mapping on a curved object, the entire bitmap projection must 
 
 <img src="decal-planar-001.png"/>
 ### UV Map
-{: .toc-subheader }
+ 
 
 
 ### &#160;
-{: .toc-subheader }
+ 
 
 Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
 
@@ -229,7 +229,7 @@ UV mapping uses the u- and v-parameterization of the surface to bend and stretch
 
 <img src="uvmapdecal-00.png"/>
 ### Browse
-{: .toc-subheader }
+ 
 
 Change the image file.
 
@@ -247,47 +247,47 @@ When a bitmap file is changed using an image editor such as Photoshop, you must 
  * On the **Flamingo nXt** menu, click **Utilities** &gt; **Clear bitmap cache**.
 
 ## Strength
-{: .toc-header }
+ 
 
 
 ### Color
-{: .toc-subheader }
+ 
 
 Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](../materials/texture-properties-main.html#color).
 
 
 ### Bump
-{: .toc-subheader }
+ 
 
 Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](../materials/texture-properties-main.html#bump).
 
 
 ## Reflective finish
-{: .toc-header }
+ 
 
 Controls the same properties that are controlled by a material definition. Apply these properties to the specific areas of the object that are affected by the decal. By default, decals have a matte finish.
 
 
 ### Intensity
-{: .toc-subheader }
+ 
 
 Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](../materials/advanced-material-properties-main.html#intensity).
 
 
 ### Sharpness
-{: .toc-subheader }
+ 
 
 Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](../materials/advanced-material-properties-main.html#sharpness).
 
 
 ### Metallic
-{: .toc-subheader }
+ 
 
 Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](../materials/advanced-material-properties-main.html#metallic).
 
 
 ### Linking options
-{: .toc-subheader }
+ 
 
 Specifies how the image file will be linked to materials.
 
@@ -316,7 +316,7 @@ If the bitmap is found on the disk before rendering, the external file is used. 
 
 
 ## Masking
-{: .toc-header }
+ 
 
 Obscures portions of the image based on either a color value or an alpha channel stored in the image.
 
@@ -330,7 +330,7 @@ The material assigned to a planar surface in this example has a red base color.
  *<img src="materials/masking-004.png"/>Final rendered image.* 
 
 ### None
-{: .toc-subheader }
+ 
 
 With no masking, the decal image obscures the underlying material. The rectangular planar surface casts a rectangular shadow on the ground plane. Masking allows the material to show through the image where the alpha channel or color masking takes place, but the shadow on the ground plane is rectangular, and the background behind the surface is blocked by the surface.
 
@@ -338,7 +338,7 @@ With no masking, the decal image obscures the underlying material. The rectangul
  *<img src="materials/masking-002.png"/>Without masking (left) the image covers the surface, with masking (right), the red material shows through.* 
 
 ### Alpha Channel
-{: .toc-subheader }
+ 
 
 Uses the image's [alpha channel](environment/environment-tab.html#alpha) to define the masked area if one exists.
 
@@ -350,7 +350,7 @@ If a mask is fully transparent, a red pixel would have full intensity (be fully 
 
 
 ### Color
-{: .toc-subheader }
+ 
 
 All image pixels within the sensitivity&#160;range of the selected color will be masked.
 
@@ -366,25 +366,25 @@ Click to select the color from the bitmap.
 
 Click to select a color from the
 ### Popup('General/select_color.htm');" ehlpsource="robohelp classic" class="hcp1" id="a168" style="position: relative;">Select Color
-{: .toc-subheader }
+ 
 
 dialog box.
 
 
 ### Sensitivity *(Color only)* 
-{: .toc-subheader }
+ 
 
 The value indicates the size of the area around the color that is also masked. Must be greater than 0.0 for color masking to occur.
 
 
 ### Blur *(Color only)* 
-{: .toc-subheader }
+ 
 
 Partially masks pixels. The value determines the magnitude of partial masking around the masked color
 
 
 ### Reverse
-{: .toc-subheader }
+ 
 
 Inverts the mask—pixels that would have been masked are now included, and vice versa.
 
@@ -392,7 +392,7 @@ Inverts the mask—pixels that would have been masked are now included, and vice
 
 
 ### Transparent
-{: .toc-subheader }
+ 
 
 Makes the masked area of the underlying object transparent so other objects or the background behind the object can be seen through the object. Normally, the material of the object shows through in that area.
 
@@ -402,27 +402,27 @@ Transparent masking allows a more natural shadow and allows the background objec
 
 
 ## Advanced
-{: .toc-header }
+ 
 
 
 ### Double Sided
-{: .toc-subheader }
+ 
 
 Causes the decal to appear on the back face of the surface on which it is placed as well as the front face.
 
 
 ### Mirror
-{: .toc-subheader }
+ 
 
 Mirrors the decal image.
 
 
 ## Projection direction
-{: .toc-header }
+ 
 
 
 ### Backward
-{: .toc-subheader }
+ 
 
 Projects the decal away from the back of the decal image.
 
@@ -430,7 +430,7 @@ Projects the decal away from the back of the decal image.
 
 
 ### Forward
-{: .toc-subheader }
+ 
 
 Projects the decal away from the front of the decal image.
 
@@ -438,7 +438,7 @@ Projects the decal away from the front of the decal image.
 
 
 ### Forward &amp; Backward
-{: .toc-subheader }
+ 
 
 Projects the decal away from both the front and the back of the decal image.
 
@@ -446,7 +446,7 @@ Projects the decal away from both the front and the back of the decal image.
 
 
 ### Transparency
-{: .toc-subheader }
+ 
 
 Sets the transparency for the decal. See [Transparency](../materials/advanced-material-properties-transparency.html).
 

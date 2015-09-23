@@ -4,13 +4,13 @@ layout: toc-page
 
 
 # Object Properties
-{: .toc-title }
+ 
 
 Flamingo nXt object properties only affect the way objects are rendered in Flamingo nXt.
 
 
 ## Alpha channel
-{: .toc-header }
+ 
 
 Makes the object invisible. Shadows cast by and on the object are rendered. The image can then be overlaid on another image and the shadows will show in the composite image.
 
@@ -20,7 +20,7 @@ A few simple planar surfaces that match the image were created in order to catch
 
 
 ## Caustics
-{: .toc-header }
+ 
 
 The light rays reflected or refracted by a curved object or the projection of those rays on another surface. See [Wikipedia article: Caustic (optics)](http://en.wikipedia.org/wiki/Caustic_(optics)) for more information.
 
@@ -34,7 +34,7 @@ The light rays reflected or refracted by a curved object or the projection of th
  *Without caustics (left), and with caustics (right).* 
 
 ## Thin
-{: .toc-header }
+ 
 
 A space-enclosing, transparent object is normally treated as a solid for transparent refraction. Setting the **Thin** property means that each surface will be treated as a two-sided object for refraction.
 
@@ -46,7 +46,7 @@ A space-enclosing, transparent object is normally treated as a solid for transpa
 
 
 ## Daylight portal
-{: .toc-header }
+ 
 
 A daylight portal is an opening for [Sun and Sky lighting](../lighting/lighting-tab.html#interior-daylight) for an interior rendering.
 
@@ -60,7 +60,7 @@ When the lighting scheme is set to [Interior daylight](../lighting/lighting-tab.
  *With daylight portal (left), without daylight portal (right).* 
 
 ## Mapping
-{: .toc-header }
+ 
 
 Whether materials are assigned to a layer or object, mapping controls how that material is located (mapped) on a particular object. For materials that have no noticeable pattern, it is normally not necessary to control the mapping. Use mapping where the material is directional or has an obvious pattern. Even in these cases, the default mapping may be adequate. Mapping remains with the object and follows it if it is moved, rotated, or scaled.
 
@@ -74,7 +74,7 @@ Once a specific mapping type has been set, the object can be rotated, moved, and
 
 
 ### Place/Edit Placement
-{: .toc-subheader }
+ 
 
 Sets the origin point and rotation direction of the material mapping for the object. This controls where the bitmap image starts.
 
@@ -82,7 +82,7 @@ A different control icon activates for each mapping type. For cylindrical and sp
 
 
 ### Default
-{: .toc-subheader }
+ 
 
 Maps patterns orthographically to the world axes. The pattern begins at world 0,0,0. the origin or orientation cannot be changed. This means that the pattern may begin or end somewhere outside the boundaries of the object.
 
@@ -90,7 +90,7 @@ Maps patterns orthographically to the world axes. The pattern begins at world 0,
 
 
 ### Planar
-{: .toc-subheader }
+ 
 
 Mapping will not change orientation as the sides of the object change. If&#160;the object has faces that are perpendicular to the mapping plane, the material appears to be &quot;extruded&quot; or &quot;projected.&quot; In some cases, the **Planar** mapping can result in the pattern switching orientation suddenly in areas of high curvature.
 
@@ -98,7 +98,7 @@ Mapping will not change orientation as the sides of the object change. If&#160;t
 
 
 ### Cube
-{: .toc-subheader }
+ 
 
 Maps patterns orthographically to the object. The origin and orientation of the material mapping can be changed.
 
@@ -106,7 +106,7 @@ Maps patterns orthographically to the object. The origin and orientation of the 
 
 
 ### Cylindrical
-{: .toc-subheader }
+ 
 
 Maps patterns as if they were applied to a cylinder centered at the specified origin. The center, rotation, and axis of the mapping can be changed.
 
@@ -116,7 +116,7 @@ Use the material size or override the material size and specify the number of ti
 
 
 ### Spherical
-{: .toc-subheader }
+ 
 
 Maps patterns as if they were applied to a sphere centered at the specified origin.
 
@@ -124,7 +124,7 @@ Maps patterns as if they were applied to a sphere centered at the specified orig
 
 
 ### Surface
-{: .toc-subheader }
+ 
 
 The material does not tile, but only one instance of the material is placed on each surface regardless of the material size.
 

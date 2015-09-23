@@ -4,17 +4,17 @@ layout: toc-page
 
 
 # All Flamingo Topics
-{: .toc-title }
+ 
 
 
 ## Environment
-{: .toc-header }
+ 
 
  [Environment](environment/environment-tab.html) 
 
 
 ## Lighting
-{: .toc-header }
+ 
 
  [Lighting: Advanced](lighting/lighting-advanced-tab.html) 
 
@@ -30,7 +30,7 @@ layout: toc-page
 
 
 ## Materials
-{: .toc-header }
+ 
 
  [Advanced Material Properties: Main](materials/advanced-material-properties-main.html) 
 
@@ -50,7 +50,7 @@ layout: toc-page
 
 
 ## Object Properties
-{: .toc-header }
+ 
 
  [Decal Properties](objectproperties\properties-decal.html) 
 
@@ -58,13 +58,13 @@ layout: toc-page
 
 
 ## Plants
-{: .toc-header }
+ 
 
  [Plants](plants/plants.html) 
 
 
 ## Render
-{: .toc-header }
+ 
 
  [Automate Rendering](render/automate-rendering.html) 
 
@@ -78,7 +78,7 @@ layout: toc-page
 
 
 ## Misc
-{: .toc-header }
+ 
 
  [Enter CD Key](general/enter-cd-key.html) 
 

@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Plants
-{: .toc-title }
+ 
 
 <img src="plants-001.png"/>
 
@@ -29,7 +29,7 @@ At the prompt, pick a location for your plant in the model.
 
 
 ## Notes
-{: .toc-header }
+ 
 
  * Make sure the units are set correctly for your model.
  * Plants can be scaled, copied, and rotated.
@@ -50,21 +50,21 @@ At the prompt, pick a location for your plant in the model.
 
 
 ## Notes
-{: .toc-header }
+ 
 
  * Models with Flamingo 2 plants already inserted should work with some restrictions.
  * Flamingo 2 plants are different from the new plants. Currently you cannot edit Flamingo 2 plants or convert them to Flamingo nXt plants.
 
 ## Plant Editor
-{: .toc-header }
+ 
 
 
 ## File
-{: .toc-header }
+ 
 
 
 ### New
-{: .toc-subheader }
+ 
 
 Create a new plant definition.
 
@@ -112,25 +112,25 @@ Opens a complex plant template. This template can also be used to create fountai
 
 
 ### Open
-{: .toc-subheader }
+ 
 
 Opens an existing tree definition.
 
 
 ### Save
-{: .toc-subheader }
+ 
 
 Saves the current tree definition.
 
 
 ### Save As
-{: .toc-subheader }
+ 
 
 Saves the current tree definition to a different name.
 
 
 ## Raytrace
-{: .toc-header }
+ 
 
 Renders the preview image.
 
@@ -140,19 +140,19 @@ Renders the preview image.
  *Default (left) and raytraced (right) view.* 
 
 ### Start
-{: .toc-subheader }
+ 
 
 Start rendering the preview image.
 
 
 ### Stop
-{: .toc-subheader }
+ 
 
 Stop rendering the preview image.
 
 
 ## View
-{: .toc-header }
+ 
 
 Drag with the left mouse button to rotate the view camera around the target.
 
@@ -162,13 +162,13 @@ Scroll with the mouse wheel to zoom in and out.
 
 
 ### Restore Default
-{: .toc-subheader }
+ 
 
 Restores the default shaded view.
 
 
 ### Show Leaves
-{: .toc-subheader }
+ 
 
 Shows the tree preview with leaves.
 

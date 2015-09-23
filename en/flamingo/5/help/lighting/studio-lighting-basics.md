@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Studio Lighting Basics
-{: .toc-title }
+ 
 
 Studio lighting must be set up similar to a photographer's studio. For greater control, use light sources to light the scene.
 
@@ -18,19 +18,19 @@ The most basic studio lighting arrangement uses a key light (1), a fill light (2
 
 
 ## Camera Angle
-{: .toc-header }
+ 
 
 Lighting setups always depend on the angle of the camera to the subject. It is a good idea to start lighting by deciding on the camera angle. Use the **Camera** or **NamedView** commands to set up the position and angle of the camera. This will help determine the position of the lights.
 
 
 ## Basic Three-Light Setup
-{: .toc-header }
+ 
 
 A basic studio lighting setup includes three lights, a key light, a fill light, and a backlight.
 
 
 ### Key Light
-{: .toc-subheader }
+ 
 
 The key light is the dominant light in the scene. It sets the mood, provides direction, shows dimension and texture, and creates the darkest shadows. A key light is usually set 30 to 45 degrees to the side of and above the object depending on the subject matter.
 
@@ -44,7 +44,7 @@ The shadow cast by the key light will be visible on the subject. In images of fa
 
 
 ### Fill Light
-{: .toc-subheader }
+ 
 
 The fill light is placed just above the lens on the opposite side from the key light. Its purpose is to reduce contrast and bring out detail in the shadows by simulating light reflected off nearby objects. The key light and fill light may be of equal intensity for a low-contrast result, but the key light is usually brighter and harder than the fill light. The fill light is the secondary light in the scene. It should not introduce any more dark shadows into the scene.
 
@@ -54,7 +54,7 @@ In the illustration, notice that the shadow to the left of the nose and along th
 
 
 ### Backlight
-{: .toc-subheader }
+ 
 
 The backlight effect is subtle but can define the edges of objects in the scene and add depth by preventing objects from blending into the background. Backlights are usually placed behind and above the object and are pointed toward the camera.
 
@@ -66,7 +66,7 @@ In the illustration, the light on the top of the shoulders helps separate the su
 
 
 ## Light Qualities
-{: .toc-header }
+ 
 
 Images can be created with accurate shadows, highlights, and reflections, but without proper lighting, the goal of the shot will be missed. When setting up the lighting, consider the goal. Images work well if they are bold, graphic, and simple. Too many highlights in glassware or shadows from objects may add unnecessary complexity to a scene and detract from its essence.
 
@@ -79,7 +79,7 @@ Some of the qualities to consider include:
  * Whether the lighting should be warm or cool in color
 
 ### Contrast Range
-{: .toc-subheader }
+ 
 
 Contrast range is the difference between the brightest and the darkest areas with detail in a given scene. The human eye is capable of dealing with a far greater contrast range than film and can locally compensate to see detail in the extreme areas. This effect can be seen in snapshots taken on a sunny day.
 
@@ -93,7 +93,7 @@ A lower contrast image prevents details from being obscured in the highlight or 
 
 
 ### Three-Dimensional Quality
-{: .toc-subheader }
+ 
 
 Representing three dimensions in a two-dimensional space requires an illusion of depth. An opaque object lit from the side implies depth because there is a bright highlight side and a darker shadow side. A box showing three sides will have more dimension if each side is a different value. Often the top plane will be the brightest because light usually comes from above in real life situations.
 
@@ -101,7 +101,7 @@ Representing three dimensions in a two-dimensional space requires an illusion of
 
 
 ### Separation from the Background
-{: .toc-subheader }
+ 
 
 For a product to pop off the page, in addition to a three-dimensional quality and using the full contrast range, there must be good separation. That is, the edges of our subject must be decidedly lighter or darker than the background. Without separation, the subject blends into the background.
 
@@ -113,7 +113,7 @@ The subject's shadow can sometimes aid separation and sometimes cause objects to
 
 
 ### Hard or Soft Light
-{: .toc-subheader }
+ 
 
 One way to categorize light is hard (direct) or soft (diffused).
 

@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Undocumented Feature
-{: .toc-title }
+ 
 
 This topic has not been documented.
 

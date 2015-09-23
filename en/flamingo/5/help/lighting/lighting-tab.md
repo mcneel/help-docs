@@ -5,7 +5,7 @@ redirect_from: "../commands/xflamingonxttagobjectsaslights.html"
 
 
 # Lighting
-{: .toc-title }
+ 
 
 Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
 
@@ -31,19 +31,19 @@ To improve lighting techniques, be aware of the light and how it affects various
 
 
 ### Save lighting scheme
-{: .toc-subheader }
+ 
 
 Saves the current lighting scheme.
 
 
 ### Open lighting scheme
-{: .toc-subheader }
+ 
 
 Opens a saved lighting scheme.
 
 
 ## Lighting Presets
-{: .toc-header }
+ 
 
 Flamingo nXt provides lighting presets that can help get you started lighting your model. There are many more lighting options available, but the presets are often sufficient for many different renderings.
 
@@ -53,7 +53,7 @@ Choose the Preset scheme that most closely resembles your scene.
 
 
 ## Studio lighting
-{: .toc-header }
+ 
 
 <img src="studiolighting-001.png"/>
 
@@ -69,7 +69,7 @@ Lighting techniques for photography are generally the same as lighting for rende
 
 
 ## Exterior daylight
-{: .toc-header }
+ 
 
 <img src="exteriorlighting-001.png"/>
 
@@ -89,7 +89,7 @@ Exploded views, sections, and axonometric drawings from above also pose a specia
 
 
 ## Interior daylight
-{: .toc-header }
+ 
 
 <img src="interiordaylightnoportals.png"/>
 
@@ -101,7 +101,7 @@ The direct sunlight component of day lighting involves a straightforward calcula
 
 
 ## Notes
-{: .toc-header }
+ 
 
  * Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
  * Because the sun and sky are much brighter than other lights, you may not see much effect from adding artificial lighting when the sun is on. This is normal. Avoid artificially boosting the power of your light sources.
@@ -109,7 +109,7 @@ The direct sunlight component of day lighting involves a straightforward calcula
  * A [multi-channel](lights-tab.html#channel) rendering may help you get the picture you want, while still preserving accurate data.
 
 ## Artificial lighting
-{: .toc-header }
+ 
 
 This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
 
@@ -117,29 +117,29 @@ This scheme provides a simulation of an architectural interior at night, lit by 
 
 
 ## Custom
-{: .toc-header }
+ 
 
 When the values on the [Advanced tab](lighting-advanced-tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.
 
 
 ## Lighting controls
-{: .toc-header }
+ 
 
 
 ###  [Sky](sun-and-sky-tabs.html#sky) 
-{: .toc-subheader }
+ 
 
 The [Sky tab](sun-and-sky-tabs.html#sky) has one mode for HDR image sky (studio lighting) and one for daylight lighting modes.
 
 
 ###  [Sun](sun-and-sky-tabs.html#sun) 
-{: .toc-subheader }
+ 
 
 The [Sun tab](sun-and-sky-tabs.html#sun) contains the controls for altering the parameters of the automatic sky. The sun is a very bright directional light source infinitely far from the model. The controls for the sun specify its direction using spherical coordinates.
 
 
 ###  [Advanced](lighting-advanced-tab.html) 
-{: .toc-subheader }
+ 
 
 The [Advanced tab](lighting-advanced-tab.html) lets you override all of the preset scheme settings to create custom lighting conditions.
 

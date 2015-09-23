@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Advanced Material Properties: Textures
-{: .toc-title }
+ 
 
 Two types of maps can be added to a material: image maps and bump patterns. Image mapping uses bitmap images to add detail to the material. Images can alter many attributes of the materials surface including its color and apparent three-dimensional surface quality (bump). Bumps add a random roughness or knurled quality to the surface.
 
@@ -14,7 +14,7 @@ Image maps are two-dimensional patterns created using raster-based paint program
 
 
 ## Textures
-{: .toc-header }
+ 
 
 Buttons display previews of the specified image files.
 
@@ -23,7 +23,7 @@ Textures can consist of more than one image. Sometimes one image controls the co
 
 
 ## Bump Patterns
-{: .toc-header }
+ 
 
 Bumps create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. When one of the bump maps is checked, additional controls become available. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. More than one bump pattern can be added to a material.
 
@@ -31,7 +31,7 @@ Materials like stucco, concrete, and clay have a fine texture. It is probably no
 
 
 ### Sandpaper
-{: .toc-subheader }
+ 
 
 Provides a random, finely textured appearance.
 
@@ -39,7 +39,7 @@ Provides a random, finely textured appearance.
 
 
 ### Rubble
-{: .toc-subheader }
+ 
 
 Gives the appearance of a lumpy, pitted surface. It can be scaled up and used for water, dirt, and smudges on surfaces. **Rubble** bump has a larger size range than **Sandpaper**.
 
@@ -47,7 +47,7 @@ Gives the appearance of a lumpy, pitted surface. It can be scaled up and used fo
 
 
 ### Pyramid
-{: .toc-subheader }
+ 
 
 Gives the appearance of small pyramidal protrusions like a knurl pattern.
 
@@ -55,7 +55,7 @@ Gives the appearance of small pyramidal protrusions like a knurl pattern.
 
 
 ### Wrinkled
-{: .toc-subheader }
+ 
 
 Gives a wrinkled appearance.
 
@@ -63,7 +63,7 @@ Gives a wrinkled appearance.
 
 
 ### Marbled
-{: .toc-subheader }
+ 
 
 Gives a marbled appearance
 
@@ -71,7 +71,7 @@ Gives a marbled appearance
 
 
 ## Scale
-{: .toc-header }
+ 
 
 Scale controls the proportional size of the bumps.
 
@@ -89,7 +89,7 @@ Maintains the aspect ratio.
 
 
 ## Properties
-{: .toc-header }
+ 
 
 
 #### Strength
