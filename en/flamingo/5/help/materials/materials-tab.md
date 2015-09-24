@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Materials
-{: .toc-title }
+ 
 
 Materials can be assigned to layers or individual objects from materials either saved in the current model or from material libraries.
 
@@ -12,7 +12,7 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 
 
 ## Assign materials to layers
-{: .toc-header }
+ 
 
 Assigning materials by layer assigns a material to all objects on a layer.
 
@@ -71,7 +71,7 @@ If desired, reset the material color.
 
 
 ## Assign material to objects
-{: .toc-header }
+ 
 
 You can assign materials from the material libraries to a layer or object.
 
@@ -117,7 +117,7 @@ On the menu, click **Assign to Selected Objects**.
 
 
 ## Select objects with material assignment
-{: .toc-header }
+ 
 
 1.
 
@@ -129,7 +129,7 @@ On the menu, click **Select Objects with this Material**.
 
 
 ## Remove a by-object material assignment
-{: .toc-header }
+ 
 
 1.
 
@@ -145,7 +145,7 @@ In the ** [Properties](..\objectproperties\properties-object.html) ** dialog box
 
 
 ## Manage Materials
-{: .toc-header }
+ 
 
 1.
 
@@ -173,11 +173,11 @@ In the **Control Panel**, click the **Materials** tab.
  * Double-click a material thumbnail in either the Materials in Model palette or a library to edit the material.
 
 ## Materials Toolbar
-{: .toc-header }
+ 
 
 
 ### Create new material
-{: .toc-subheader }
+ 
 
 Choose a material template. Templates provide preset values to help start a material.
 
@@ -210,15 +210,15 @@ Choose a material template. Templates provide preset values to help start a mate
 
 
 ###  [Assign to selected objects](#byobject) 
-{: .toc-subheader }
+ 
 
 
 ###  [Assign material to layers](#bylayer) 
-{: .toc-subheader }
+ 
 
 
 ### View menu
-{: .toc-subheader }
+ 
 
 
 #### Large thumbnail view
@@ -234,125 +234,125 @@ Choose a material template. Templates provide preset values to help start a mate
 
 
 ### List View
-{: .toc-subheader }
+ 
 
 
 ### Thumbnail View
-{: .toc-subheader }
+ 
 
 
 ### Large Thumbnail View
-{: .toc-subheader }
+ 
 
 
 ### Export Materials to Folder
-{: .toc-subheader }
+ 
 
 
 ### Import from File
-{: .toc-subheader }
+ 
 
 
 ###  [Assign to Selected objects](#bylayer) 
-{: .toc-subheader }
+ 
 
 
 ###  [Assign to Layer](#byobject) 
-{: .toc-subheader }
+ 
 
 
 ### Select Objects with this Material
-{: .toc-subheader }
+ 
 
 
 ### Duplicate
-{: .toc-subheader }
+ 
 
 
 ### Delete
-{: .toc-subheader }
+ 
 
 
 ### Rename
-{: .toc-subheader }
+ 
 
 
 ### Properties
-{: .toc-subheader }
+ 
 
 
 ## Library panel
-{: .toc-header }
+ 
 
 
 ### Hide Library panel
-{: .toc-subheader }
+ 
 
 
 ### Show Library panel
-{: .toc-subheader }
+ 
 
 
 ### Go up one level
-{: .toc-subheader }
+ 
 
 
 ### View menu
-{: .toc-subheader }
+ 
 
 
 ### Folder name
-{: .toc-subheader }
+ 
 
 
 ## Right-click panel to
-{: .toc-header }
+ 
 
 
 ### List View
-{: .toc-subheader }
+ 
 
 
 ### Thumbnail View
-{: .toc-subheader }
+ 
 
 
 ### Large Thumbnail View
-{: .toc-subheader }
+ 
 
 
 ### Up One Level
-{: .toc-subheader }
+ 
 
 
 ### Back
-{: .toc-subheader }
+ 
 
 
 ### Forward
-{: .toc-subheader }
+ 
 
 
 ### Browse for Folder
-{: .toc-subheader }
+ 
 
 
 ### Default Folder
-{: .toc-subheader }
+ 
 
 
 ### Add to Library List
-{: .toc-subheader }
+ 
 
 
 ### Remove from Library List
-{: .toc-subheader }
+ 
 
 
 ### Rename
-{: .toc-subheader }
+ 
 
 
 ### Delete
-{: .toc-subheader }
+ 
 

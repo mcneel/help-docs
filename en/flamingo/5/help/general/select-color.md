@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Select color
-{: .toc-title }
+ 
 
 
 #### From the Color List
@@ -38,13 +38,13 @@ To create an hue/saturation/brightness value (HSV) color, type values in the **H
 
 
 ### Red, Green, Blue (RGB)
-{: .toc-subheader }
+ 
 
 This method is used by computers to project color onto the monitor. Each pixel is a combination of the three colors in varying intensities. Pure red is entirely red with no green or blue. Pure black has red, green, and blue set to 0, and pure white has red, green, and blue set to 255.
 
 
 ### Hue, Saturation, and Brightness (HSB)
-{: .toc-subheader }
+ 
 
 Brightness is also sometimes referred to as luminance or value.
 

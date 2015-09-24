@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Getting Started with Flamingo nXt®
-{: .toc-title }
+ 
 
  **Flamingo nXt** creates high quality, photorealistic, still, and animation image files from 3-D models inside **Rhinoceros** ®.
 
@@ -15,7 +15,7 @@ For technical support, tutorials, examples, and information about how to get sta
  *  [Technical Support](http://nxt.flamingo3d.com/forum) 
 
 ## The Flamingo nXt Control Panel
-{: .toc-header }
+ 
 
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
@@ -25,12 +25,12 @@ The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model f
  *  [Render](../render/render-tab.html) 
 
 ## To access the Flamingo control panel
-{: .toc-header }
+ 
 
  * On the **Flamingo nXt** menu, click **Control Panel**.
 
 ## Rendering Basics
-{: .toc-header }
+ 
 
 Rendering your finished model comprises four basic steps:
 
@@ -47,13 +47,13 @@ Rendering your finished model comprises four basic steps:
  * On the **Standard** toolbar, click the **Render** button.
 
 ### Stop Rendering
-{: .toc-subheader }
+ 
 
 By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
 
 
 ###  <kbd>Resume Rendering</kbd> 
-{: .toc-subheader }
+ 
 
 Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
 

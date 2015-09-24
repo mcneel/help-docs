@@ -4,11 +4,11 @@ layout: toc-page
 
 
 # Glossary
-{: .toc-title }
+ 
 
 
 ## Masking
-{: .toc-header }
+ 
 
 Obscures portions of the image based on either a color value or an alpha channel stored in the image.
 
@@ -22,7 +22,7 @@ The material assigned to a planar surface in this example has a red base color.
  *<img src="materials/masking-004.png"/>Final rendered image.* 
 
 ### None
-{: .toc-subheader }
+ 
 
 With no masking, the decal image obscures the underlying material. The rectangular planar surface casts a rectangular shadow on the ground plane. Masking allows the material to show through the image where the alpha channel or color masking takes place, but the shadow on the ground plane is rectangular, and the background behind the surface is blocked by the surface.
 
@@ -30,7 +30,7 @@ With no masking, the decal image obscures the underlying material. The rectangul
  *<img src="materials/masking-002.png"/>Without masking (left) the image covers the surface, with masking (right), the red material shows through.* 
 
 ### Alpha Channel
-{: .toc-subheader }
+ 
 
 Uses the image's [alpha channel](environment/environment-tab.html#alpha) to define the masked area if one exists.
 
@@ -42,7 +42,7 @@ If a mask is fully transparent, a red pixel would have full intensity (be fully 
 
 
 ### Color
-{: .toc-subheader }
+ 
 
 All image pixels within the sensitivity&#160;range of the selected color will be masked.
 
@@ -58,25 +58,25 @@ Click to select the color from the bitmap.
 
 Click to select a color from the
 ### Popup('General/select_color.htm');" ehlpsource="robohelp classic" class="hcp1" id="a168" style="position: relative;">Select Color
-{: .toc-subheader }
+ 
 
 dialog box.
 
 
 ### Sensitivity *(Color only)* 
-{: .toc-subheader }
+ 
 
 The value indicates the size of the area around the color that is also masked. Must be greater than 0.0 for color masking to occur.
 
 
 ### Blur *(Color only)* 
-{: .toc-subheader }
+ 
 
 Partially masks pixels. The value determines the magnitude of partial masking around the masked color
 
 
 ### Reverse
-{: .toc-subheader }
+ 
 
 Inverts the mask—pixels that would have been masked are now included, and vice versa.
 
@@ -84,7 +84,7 @@ Inverts the mask—pixels that would have been masked are now included, and vice
 
 
 ### Transparent
-{: .toc-subheader }
+ 
 
 Makes the masked area of the underlying object transparent so other objects or the background behind the object can be seen through the object. Normally, the material of the object shows through in that area.
 

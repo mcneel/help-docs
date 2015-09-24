@@ -4,7 +4,7 @@ layout: toc-page
 
 
 # Texture Properties: Main
-{: .toc-title }
+ 
 
 <img src="3-texture.png"/>
 
@@ -20,7 +20,7 @@ Image maps can be used many ways. A common method is to use a picture of a real-
 
 
 ### File name
-{: .toc-subheader }
+ 
 
 The name of the image file.
 
@@ -38,19 +38,19 @@ When a bitmap file is changed using an image editor such as Photoshop, you must 
  * On the **Flamingo nXt** menu, click **Utilities** &gt; **Clear bitmap cache**.
 
 ### Image preview
-{: .toc-subheader }
+ 
 
 Displays a preview of the selected image file.
 
 
 ### Image resolution
-{: .toc-subheader }
+ 
 
 Displays the resolution in pixels of the image file.
 
 
 ### Tiles
-{: .toc-subheader }
+ 
 
 Image maps used in material definitions are always repeated (tiled). These settings specify how large each instance (tile) will be in current model units.
 
@@ -71,7 +71,7 @@ Mirrors the map in both directions as it is tiled. This can sometimes produce ad
 
 
 ### Linking options
-{: .toc-subheader }
+ 
 
 Specifies how the image file will be linked to materials.
 
@@ -100,7 +100,7 @@ If the bitmap is found on the disk before rendering, the external file is used. 
 
 
 ## Masking
-{: .toc-header }
+ 
 
 Obscures portions of the image based on either a color value or an alpha channel stored in the image.
 
@@ -114,7 +114,7 @@ The material assigned to a planar surface in this example has a red base color.
  *<img src="materials/masking-004.png"/>Final rendered image.* 
 
 ### None
-{: .toc-subheader }
+ 
 
 With no masking, the decal image obscures the underlying material. The rectangular planar surface casts a rectangular shadow on the ground plane. Masking allows the material to show through the image where the alpha channel or color masking takes place, but the shadow on the ground plane is rectangular, and the background behind the surface is blocked by the surface.
 
@@ -122,7 +122,7 @@ With no masking, the decal image obscures the underlying material. The rectangul
  *<img src="materials/masking-002.png"/>Without masking (left) the image covers the surface, with masking (right), the red material shows through.* 
 
 ### Alpha Channel
-{: .toc-subheader }
+ 
 
 Uses the image's [alpha channel](environment/environment-tab.html#alpha) to define the masked area if one exists.
 
@@ -134,7 +134,7 @@ If a mask is fully transparent, a red pixel would have full intensity (be fully 
 
 
 ### Color
-{: .toc-subheader }
+ 
 
 All image pixels within the sensitivity&#160;range of the selected color will be masked.
 
@@ -150,25 +150,25 @@ Click to select the color from the bitmap.
 
 Click to select a color from the
 ### Popup('General/select_color.htm');" ehlpsource="robohelp classic" class="hcp1" id="a168" style="position: relative;">Select Color
-{: .toc-subheader }
+ 
 
 dialog box.
 
 
 ### Sensitivity *(Color only)* 
-{: .toc-subheader }
+ 
 
 The value indicates the size of the area around the color that is also masked. Must be greater than 0.0 for color masking to occur.
 
 
 ### Blur *(Color only)* 
-{: .toc-subheader }
+ 
 
 Partially masks pixels. The value determines the magnitude of partial masking around the masked color
 
 
 ### Reverse
-{: .toc-subheader }
+ 
 
 Inverts the mask—pixels that would have been masked are now included, and vice versa.
 
@@ -176,7 +176,7 @@ Inverts the mask—pixels that would have been masked are now included, and vice
 
 
 ### Transparent
-{: .toc-subheader }
+ 
 
 Makes the masked area of the underlying object transparent so other objects or the background behind the object can be seen through the object. Normally, the material of the object shows through in that area.
 
@@ -186,7 +186,7 @@ Transparent masking allows a more natural shadow and allows the background objec
 
 
 ### Show masked colors
-{: .toc-subheader }
+ 
 
 Graphically displays the effects of masking as the parameters change. Use the'../General/select_color.htm');" ehlpsource="robohelp classic" class="hcp1" id="a169" style="position: relative;">color swatch
 
@@ -196,11 +196,11 @@ provided to select the display color of the masked pixels. Changing this color o
 
 
 ## Mapping type
-{: .toc-header }
+ 
 
 
 ### Standard
-{: .toc-subheader }
+ 
 
 The image provides color and visual bump to the material.
 
@@ -223,7 +223,7 @@ Simulates bumps and wrinkles on the surface of an object by perturbing the&#160;
 
 
 ### Normal
-{: .toc-subheader }
+ 
 
 Fakes the lighting of bumps and dents without using more&#160;polygons to the render mesh. See: [Wikipedia article: Normal mapping](http://en.wikipedia.org/wiki/Normal_mapping).
 
@@ -231,7 +231,7 @@ Normal maps work similar to bump maps, in that they modify the normal of the sur
 
 
 ### Displacement
-{: .toc-subheader }
+ 
 
 Causes an effect where the actual geometric position of the surface isdisplaced, often along the&#160;local&#160;surface normal. See: [Wikipedia article: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
 
@@ -274,65 +274,65 @@ The size of the facets of the displacement mesh.
 
 
 ## Advanced
-{: .toc-header }
+ 
 
 Select the color component of the material that will be affected by the bitmap.
 
 
 ## Surface Component Altered by Map
-{: .toc-header }
+ 
 
 
 ###  [Base color](advanced-material-properties-main.html#color) 
-{: .toc-subheader }
+ 
 
 
 ###  [Specular color](advanced-material-properties-main.html#highlight-color) 
-{: .toc-subheader }
+ 
 
 
 ###  [Specular intensity](advanced-material-properties-main.html#intensity) 
-{: .toc-subheader }
+ 
 
 
 ###  [Highlight sharpness](advanced-material-properties-main.html#sharpness) 
-{: .toc-subheader }
+ 
 
 
 ### Highlight shape
-{: .toc-subheader }
+ 
 
 Affects the shape of the highlight.
 
 
 ###  [Transparency](advanced-material-properties-transparency.html) 
-{: .toc-subheader }
+ 
 
 
 ###  [Translucency](advanced-material-properties-transparency.html#translucency) 
-{: .toc-subheader }
+ 
 
 
 ###  [Attenuation](advanced-material-properties-transparency.html#attenuation) 
-{: .toc-subheader }
+ 
 
 
 ### Normal
-{: .toc-subheader }
+ 
 
 Affects the direction of the surface normals.
 
 
 ## Orientation
-{: .toc-header }
+ 
 
 
 ### X/Y Offset
-{: .toc-subheader }
+ 
 
 Offsets the material from the x- and y-axis.
 
 
 ###  [Rotation](advanced-material-properties-textures.html#rotation) 
-{: .toc-subheader }
+ 
 
