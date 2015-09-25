@@ -1,4 +1,4 @@
 ---
 layout: mainindex
-lang: en
+lang: fr
 ---
