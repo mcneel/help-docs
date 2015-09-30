@@ -20,7 +20,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
   <!-- Bootstrap override -->
   <link rel="stylesheet" href="{{ "/css/bootstrap-override.css" | prepend: site.baseurl }}">
-
+  <!-- Localized ovverides -->
+  <style type="text/css">
+  .searchBox {
+  	background-image: url('{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/website/images/searchicon.png');
+  }
+  
+  </style>
+  
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 

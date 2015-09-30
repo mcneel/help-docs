@@ -48,6 +48,7 @@ collections:
   command_topics:
     output: true
     permalink: /commands/:path/
+
 defaults:
   -
     scope:
