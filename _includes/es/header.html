@@ -1,13 +1,13 @@
 <header class="site-header">
 
 
-    <a class="site-title" href="{{ site.baseurl }}/">{% if page.product %} {{page.product}} {% else %} {{ site.title }}{% endif %} Help Documentation</a>
+    <a class="site-title" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">Flamingo NXT Help Documentation</a>
 
     <nav class="site-nav">
 
       {% assign pages = site.pages | sort:"order"  %}
       <div class="trigger">
-      	<a class="page-link" href="{{ site.baseurl }}/">Welcome</a>
+      	<a class="page-link" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">Welcome</a>
         {% for page in pages %}
           {% if page.title != 'Administration' %}
             {% if page.title != 'Blog' %}

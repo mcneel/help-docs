@@ -54,6 +54,15 @@ h3 {
 h4 {
 	margin-bottom: 0px;
 }
+
+h5 {
+	margin-bottom: 0px;
+}
+
+h6 {
+	margin-bottom: 0px;
+}
+
 .fixed {
     position: fixed;
 }

@@ -10,7 +10,7 @@ url: "http://help.mcneel.com" # the base hostname & protocol for your site
 editMeOnGhBaseUrl: "mcneel/help-docs"
 # twitter_username: ""
 github_username:  mcneel
-
+simple_search: http://google.com/search
 # Build settings
 #markdown: redcarpet
 
@@ -26,26 +26,48 @@ kramdown:
 
 safe: true
 
-collections:
-  - faqs
-  - guide_topics
-  - guide_advanced_topics
-  - api
-  - glossary
-  - cheat_sheet_items
-  - samples
-  - command_topics
+includes_dir: ./en/_includes
 
 collections:
-  guide_topics:
+  - faqs
+  - guides_topics
+  - help
+  - tutorials
+  - en-flamingo
+
+collections:
+  website:
     output: true
-    permalink: /guides/:path/
-  api:
+    permalink: /en/flamingo/5/website/:path/
+  help:
     output: true
-    permalink: /api/:path/
-  samples:
+    permalink: /en/flamingo/5/help/:path/
+  guides_topics:
     output: true
-    permalink: /samples/:path/
+    permalink: /en/flamingo/5/guides/:path/
   command_topics:
     output: true
     permalink: /commands/:path/
+defaults:
+  -
+    scope:
+      path: "en/flamingo"
+    values:
+      language: en
+      productname: "Flamingo NXT Documentation"
+      productpath: flamingo
+      productversionpath: "5"
+  -
+    scope:
+      path: "en/flamingo/5/help"
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Help"
+  -
+    scope:
+      path: "en/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-toc-page
+      collectionname: "Guides"

@@ -1,0 +1,28 @@
+<header class="site-header">
+
+
+    <a class="site-title" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">{{page.productname}} {{page.category}}</a>
+
+    <nav class="site-nav">
+
+      {% assign pages = site.pages | sort:"order"  %}
+      <div class="trigger">
+        <a class="page-link" href="{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/website/welcome.html"><!-- localize -->Getting Started</a>
+        <a class="page-link" href="{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/guides"><!-- localize -->Guides</a>
+        <a class="page-link" href="{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/help"><!-- localize -->Help</a>
+<!--
+        {% for page in pages %}
+          {% if page.title != 'Administration' %}
+            {% if page.title != 'Blog' %}
+              {% if page.collection and page.order %}
+                <a class="page-link" href="{{ page.collection | prepend: site.baseurl }}">{{ page.collectionname }}</a>
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+-->
+        <a class="page-link" href="http://discourse.mcneel.com/c/rendering/flamingo"><!-- localize -->Forums</a>
+      </div>
+    </nav>
+
+</header>
