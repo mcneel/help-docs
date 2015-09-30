@@ -1,4 +1,5 @@
 ---
+layout: fullwidth-page
 ---
 # search results
 <div id="page_content">
