@@ -109,7 +109,7 @@ The image can be mapped to a planar, cylindrical, or spherical shape or offset u
 
 >Click the **Click here to assign** button to select an image.
 
-{% include_relative snippets/z-snippet-clearbitmapcache.md %}
+{% include_relative snippets/snippet-clearbitmapcache.md %}
 ### Projection
 Three types of background image projections are supported: [Planar](environment-tab.html#planar), [Cylindrical](environment-tab.html#cylindrical), and [Spherical](environment-tab.html#spherical). Each projection method has its own set of controls for positioning the image.
 
@@ -170,7 +170,7 @@ An HDR environment image has more range of light than a normal bitmap image and 
 
 >Click the **Click here to assign** button to select an image.
 
-{% include_relative snippets/z-snippet-rotatehdrimage.md %}{% include_relative snippets/z-snippet-mirrorimage.md %}{% include_relative snippets/z-snippet-sunchannel.md %}{% include_relative snippets/z-snippet-skychannel.md %}
+{% include_relative snippets/snippet-rotatehdrimage.md %}{% include_relative snippets/snippet-mirrorimage.md %}{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
 ## Planar HDR options
 Planar high-dynamic-range images provide both an image background and lighting. These are often used outside windows in architectural renderings where light from the exterior is required.
 
@@ -178,7 +178,7 @@ Planar high-dynamic-range images provide both an image background and lighting. 
 
 ### 
 *Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
-{% include_relative snippets/z-snippet-sunchannel.md %}{% include_relative snippets/z-snippet-skychannel.md %}
+{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
 ## Advanced Background
 The **Advanced Background** settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects.
 In the illustration, the background is black, but the reflected environment is an HDR image of a building interior.

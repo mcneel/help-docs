@@ -3,5 +3,5 @@
 
 
 # Glossary
-{% include_relative snippets/z-snippet-masking.md %}&#160;
+{% include_relative snippets/snippet-masking.md %}&#160;
 

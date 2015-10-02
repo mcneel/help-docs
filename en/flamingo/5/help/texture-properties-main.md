@@ -12,7 +12,7 @@ Image maps can be used many ways. A common method is to use a picture of a real-
 
 ### File name
 The name of the image file.
-{% include_relative snippets/z-snippet-clearbitmapcache.md %}
+{% include_relative snippets/snippet-clearbitmapcache.md %}
 ### Image preview
 Displays a preview of the selected image file.
 
@@ -24,11 +24,11 @@ Image maps used in material definitions are always repeated (tiled). These setti
 
 #### Width/Height
 Sets the tile size.
-{% include_relative snippets/z-snippet-lock-widthheight.md %}
+{% include_relative snippets/snippet-lock-widthheight.md %}
 #### Mirror tiles
 Mirrors the map in both directions as it is tiled. This can sometimes produce adequate results using bitmaps that do not tile correctly by guaranteeing that the tile edges are continuous.
-{% include_relative snippets/z-snippet-linking.md %}
-{% include_relative snippets/z-snippet-masking.md %}
+{% include_relative snippets/snippet-linking.md %}
+{% include_relative snippets/snippet-masking.md %}
 ### Show masked colors
 Graphically displays the effects of masking as the parameters change. Use the'../General/select_color.htm');" ehlpsource="robohelp classic" class="hcp1" id="a169" style="position: relative;">color swatch
 provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.

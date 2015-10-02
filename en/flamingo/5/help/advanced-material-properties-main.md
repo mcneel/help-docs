@@ -6,7 +6,7 @@
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
 ## Basic material properties
-{% include_relative snippets/z-snippet-nameandbasecolor.md %}![images/3-solidcolor.png](images/3-solidcolor.png)
+{% include_relative snippets/snippet-nameandbasecolor.md %}![images/3-solidcolor.png](images/3-solidcolor.png)
 
 ## Reflective Finish and Highlight
 These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object.
@@ -83,7 +83,7 @@ The **Procedures** tree combines one or more materials using a set of rules for 
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [angular blend](advanced-material-properties-main.html#angular-blend), [blend](advanced-material-properties-main.html#blend), [marble,](advanced-material-properties-main.html#marble)  [granite](advanced-material-properties-main.html#granite), [tile](advanced-material-properties-main.html#tile), and [wood](advanced-material-properties-main.html#wood).
 
 ##### To add a procedure
-1. href="javascript:BSSCPopup('../mouse_button_right.htm');" id="a11" style="position: relative; text-decoration: underline; ">Right-clickanywhere in the **Procedures** window.
+1. Right-clickanywhere in the **Procedures** window.
 1. On the menu, click a procedure type.
  [Angular Blend](advanced-material-properties-main.html#angular-blend) 
  [Blend](advanced-material-properties-main.html#blend) 
@@ -93,10 +93,8 @@ Each procedure combines two &quot;child&quot; materials using a specific method.
  [Wood](advanced-material-properties-main.html#wood) 
 
 ##### To remove a procedure
- **1.** 
-In the **Procedures** window,ref="javascript:BSSCPopup('../mouse_button_right.htm');" id="a18" style="position: relative; text-decoration: underline; ">right-clickthe procedure name.
- **2.** 
-On the menu, click **Remove**.
+ 1. In the **Procedures** window,right-click the procedure name.
+ 2. On the menu, click **Remove**.
 
 ## Angular Blend
 Blends between two different materials to create materials that change characteristics based on the angle of view to the surface of the object.
@@ -148,7 +146,7 @@ The scale of the material is independent of the resolution of the bitmap used to
 
 #### Height
 The height in pixels of a single instance of the image.
-{% include_relative snippets/z-snippet-lock-widthheight.md %}
+{% include_relative snippets/snippet-lock-widthheight.md %}
 #### Mirror tiles
 Mirrors the bitmap image in both the x- and y-directions. This sometimes helps to cut down on seams showing in the repeats.
 
@@ -157,19 +155,19 @@ If the image has an alpha channel, this can be used instead of the bitmap graysc
 
 ### Reverse
 The **First** component will be placed where there is white in the bitmap pattern, and the **Second** component will be placed where there is black in the bitmap pattern.
-{% include_relative snippets/z-snippet-linking.md %}
+{% include_relative snippets/snippet-linking.md %}
 ## Granite
 Creates a 3-D material with solid pockets of a second material embedded in the **Base** component. The **Granite** procedure combines a randomly distributed **Spot** component in a **Base** component. The **Granite** procedure defines how the **Base** and **Spot** components combine. **Granite** procedures can be used for a variety of different materials including rust, sparkly plastic, and other randomly spotted materials.
 ![images/granitematerials.png](images/granitematerials.png)
 
 ### Base/Spot
 The **Base** and **Spot** components are two materials. Their properties are specified in the same way as any material.
-{% include_relative snippets/z-snippet-materialscaleandlock.md %}![images/granitescale.png](images/granitescale.png)
+{% include_relative snippets/snippet-materialscaleandlock.md %}![images/granitescale.png](images/granitescale.png)
 
 ### Density
 A fraction of the whole pattern. Increasing this setting increases the relative size of the spots.
 ![images/granitedensity.png](images/granitedensity.png)
-{% include_relative snippets/z-snippet-materialblend.md %}![images/graniteblend.png](images/graniteblend.png)
+{% include_relative snippets/snippet-materialblend.md %}![images/graniteblend.png](images/graniteblend.png)
 
 ## Marble
 Creates alternating slabs of **Base** and **Vein** components.
@@ -181,14 +179,14 @@ No texture mapping (left). With texture mapping (right).
 
 ### Base/Vein
 The **Base** and **Vein** components are two materials. Their properties are specified in the same way as any material.
-{% include_relative snippets/z-snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
+{% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
 ### Vein Width
 Alters the relative size of the slabs to each other. **Vein Width** is a fraction of the distance from one **Base** stripe to the next. Values range from 0 (zero) for no **Vein** component to 1 for no **Base** component.
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
-{% include_relative snippets/z-snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
-{% include_relative snippets/z-snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
-{% include_relative snippets/z-snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)Veneer (left), normal (right).
+{% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
+{% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
+{% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)Veneer (left), normal (right).
 
 ## Tile
 Tile is a 2-D material.&#160;Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The **Tile** material combines a **Base** component and a **Joint** component. Each of these materials can also include any other material.
@@ -201,7 +199,7 @@ Sets the overall tile size. The width and height sizes can be set independently.
 
 #### Width/Height
 Specifies the width and height of the tiles.
-{% include_relative snippets/z-snippet-lock-widthheight.md %}
+{% include_relative snippets/snippet-lock-widthheight.md %}
 ### Joint
 Specifies the size of the joint material.
 ![images/tilejointsize.png](images/tilejointsize.png)
@@ -236,12 +234,12 @@ One of the advantages of using a wood material is that when rendering different 
 
 ### Base/Ring
 The **Base** and **Ring** components are two materials. Their properties are specified in the same way as any material.
-{% include_relative snippets/z-snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
+{% include_relative snippets/snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
 
 ### Ring Width
 A fraction of the distance between one **Base** stripe and the next. Values range from 0 (zero) for no **Ring** component to 1 for no **Base** component.
 ![images/woodringwidth.png](images/woodringwidth.png)
-{% include_relative snippets/z-snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
-{% include_relative snippets/z-snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
-{% include_relative snippets/z-snippet-materialveneer.md %}![images/woodveneer.png](images/woodveneer.png)Veneer (left), normal (right).
+{% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
+{% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
+{% include_relative snippets/snippet-materialveneer.md %}![images/woodveneer.png](images/woodveneer.png)Veneer (left), normal (right).
 

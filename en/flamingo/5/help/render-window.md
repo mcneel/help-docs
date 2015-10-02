@@ -145,7 +145,7 @@ Specifies the ratio of the image in the render window a mouse wheel step or pres
 ### Pixels / second
 
 ## Render Constraints
-{% include_relative snippets/z-snippet-renderconstraints.md %}
+{% include_relative snippets/snippet-renderconstraints.md %}
 ## Adjust Image
 The settings that control the screen display also control any image file made from that display. Multiple image files with different exposure settings can be saved from a single rendering. The exposure settings for one rendered image will be applied to the next.
 This adjustment process is called *tone mapping.* Tone mapping is the process of converting the luminance data used by Flamingo nXt into&#160;Red, Green, and Blue (RGB) pixels that can be displayed or printed.
@@ -154,7 +154,7 @@ This adjustment process is called *tone mapping.* Tone mapping is the process of
 Adjusts the overall brightness of the image. For example, if a white surface in the model is rendering gray, increase the brightness until the surface appears white. Or, if the exterior scene seems overexposed, decrease the brightness until the scene appears more correct.
 ![images/brightnessdefault.png](images/brightnessdefault.png)
 *Brightness at default (left) and increased.*
-{% include_relative snippets/z-snippet-brightness.md %}
+{% include_relative snippets/snippet-brightness.md %}
 ### Burn
 Adjusts the image white point. This is the brightest white color in the image. Burn can add drama, life,&#160;and sharpness to a rendering by adding more areas of white to contrast with the dark areas.
 See [Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point).

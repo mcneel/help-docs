@@ -55,7 +55,7 @@ The sharpness of the sun highlight.
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
 *Sun highlight=0 (left) and 1 (right).*
  **Note** : Solar highlight artifacts can sometimes be seen on exterior renderings when the **Sun highlight** setting is used. To mitigate or eliminate this artifact, set the **Sun highlight** to a smaller value.
-{% include_relative snippets/z-snippet-sunchannel.md %}
+{% include_relative snippets/snippet-sunchannel.md %}
 ## Sky
 Two kinds of built-in sky lighting are provided: [HDR image](lighting-advanced-tab.html#hdri) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.
 The lighting preset schemes for [Exterior](lighting-tab.html#exterior-daylight) and [Interior](lighting-tab.html#interior-daylight) daylight use the Automatic sky by default. The [Studio](lighting-tab.html#studio-lighting) lighting preset scheme uses HDR image lighting by default.
@@ -77,7 +77,7 @@ Modifies the brightness of the HDR image light.
  **Note** : This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *Low and high HDR intensity.*
-{% include_relative snippets/z-snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
+{% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *Image rotated so the sun appears on the object.*
 
@@ -85,7 +85,7 @@ Modifies the brightness of the HDR image light.
 The color saturation for the light. Since the light from an HDR image is the color of the pixels in the image, this sometimes produces unwanted color effects. Set the saturation low if you want the light from the image, but not the color.
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)
 *Low (left) and high (right) saturation.*
-{% include_relative snippets/z-snippet-mirrorimage.md %}{% include_relative snippets/z-snippet-skychannel.md %}
+{% include_relative snippets/snippet-mirrorimage.md %}{% include_relative snippets/snippet-skychannel.md %}
 ## Automatic Sky
 Automatic sky uses settings from the [Sun tab](sun-and-sky-tabs.html) to specify the location of the sun and its intensity.
 ![images/sky-002.png](images/sky-002.png)
@@ -100,5 +100,5 @@ The **Cloudiness** setting affects many aspects of the daylight calculation, inc
 ### Sky intensity
 Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified.
  **Note** : This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
-{% include_relative snippets/z-snippet-skychannel.md %}&#160;
+{% include_relative snippets/snippet-skychannel.md %}&#160;
 

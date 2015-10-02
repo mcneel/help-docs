@@ -37,7 +37,7 @@ Otherwise, plants are represented by mesh objects.
 *![images/treespointcloudormesh.png](images/treespointcloudormesh.png)Trees as point cloud (left) and mesh (right).*
 
 ## Default image link state
-{% include_relative snippets/z-snippet-linking.md %}
+{% include_relative snippets/snippet-linking.md %}
 ### Decal drag transparency
 Specifies how transparent a decal is while it is being dragged during placement.
 

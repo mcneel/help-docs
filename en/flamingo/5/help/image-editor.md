@@ -152,7 +152,7 @@ Tone mapping is the process of converting the luminance data used by nXt into&#1
 
 ### Brightness
 See [Render Window: Brightness](render-window.html#brightness).
-{% include_relative snippets/z-snippet-brightness.md %}
+{% include_relative snippets/snippet-brightness.md %}
 ### Burn
 See [Render Window: Burn](render-window.html#burn) 
 

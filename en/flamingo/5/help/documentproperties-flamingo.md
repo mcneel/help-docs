@@ -50,4 +50,4 @@ Mesh edges display in rendered viewports.
 Uses lights on layers that are turned off and hidden lights.
 
 ## Render constraints
-{% include_relative snippets/z-snippet-renderconstraints.md %}
+{% include_relative snippets/snippet-renderconstraints.md %}

@@ -23,7 +23,7 @@ Some uses for decals include:
 1. On the **Properties** list, click **Flamingo nXt Decals**.
 1. Click the **Add** button.
 1. In the **Open Bitmap** dialog box, select a bitmap name, and click **Open**.
-{% include_relative snippets/z-snippet-clearbitmapcache.md %}1. In the **Decal Properties** dialog box, select options, and click **Place**.
+{% include_relative snippets/snippet-clearbitmapcache.md %}1. In the **Decal Properties** dialog box, select options, and click **Place**.
 1. At the prompts for points, pick points on the model to locate the decal.
 The precise sequence depends on the type of decal selected: [Planar](#decal-planarmapping), [Cylindrical](#decal-cylindricalmapping), or [UVMap](#decal-uvmapping).
 
@@ -114,7 +114,7 @@ UV mapping uses the u- and v-parameterization of the surface to bend and stretch
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
 ### Browse
 Change the image file.
-{% include_relative snippets/z-snippet-clearbitmapcache.md %}
+{% include_relative snippets/snippet-clearbitmapcache.md %}
 ## Strength
 
 ### Color
@@ -134,8 +134,8 @@ Sets the size of the highlight. Lower numbers specify a broader highlight; highe
 
 ### Metallic
 Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](advanced-material-properties-main.html#metallic).
-{% include_relative snippets/z-snippet-linking.md %}
-{% include_relative snippets/z-snippet-masking.md %}
+{% include_relative snippets/snippet-linking.md %}
+{% include_relative snippets/snippet-masking.md %}
 ## Advanced
 
 ### Double Sided

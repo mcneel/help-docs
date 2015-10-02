@@ -4,7 +4,7 @@
 
 # Simple Material Properties
 The Simple Material Properties dialog box give easy access to the properties you will usually want to change to make a material look different without changing the material style from, say Solid Color to Glass. For most materials, changing the color is all that is necessary to get a different look. You can change the advanced properties. These are pre-set by the material template to help you quickly achieve the appearance you want.
-{% include_relative snippets/z-snippet-nameandbasecolor.md %}
+{% include_relative snippets/snippet-nameandbasecolor.md %}
 ## Solid Color
 Solid Color materials have only a [name](advanced-material-properties-main.html#name) and a [color](advanced-material-properties-main.html#color).
 
