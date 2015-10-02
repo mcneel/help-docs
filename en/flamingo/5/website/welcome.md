@@ -3,20 +3,21 @@ layout: fullwidth-page
 ---
 
 
-# Getting Started with Flamingo nXt®
+# Flamingo nXt 5®
+ **[Flamingo nXt](http://www.flamingo3d.com/)** creates high quality, photorealistic, still, and animation image files from 3-D models inside **[Rhinoceros](http://www.rhino3d.com/)** ®.  Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a beta version.
  
+Some of the improvements include:
 
- **Flamingo nXt** creates high quality, photorealistic, still, and animation image files from 3-D models inside **Rhinoceros** ®.
+ *  Better Viewport Render Preview mode
+ *  Material mapping is done through the Rhino mapping interface.
+ *  Decals are placed using the Rhino decal interface.
+ *  Integration into the Rhino rendering panels (Sun Control, GroundPlane, Lights, Material Library Panel, Material Editor, Drag and Drop Materials)
+ *  Safe Frame is supported
+ *  Custom Meshing is supported (Curve Piping, Displacement, Edge Softening, Shut Lining)
+ *  New Hybrid Render Engine takes the best features in default and pathtrace.
+ *  Flamingo RT preview window shows a quick rendering of the current model.
 
-For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
-
- *  [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
- *  [Gallery](http://nxt.flamingo3d.com/photo) 
- *  [Technical Support](http://nxt.flamingo3d.com/forum) 
-
-## The Flamingo nXt Control Panel
- 
-
+## Getting started Guides
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
  *  [Materials](..\materials\materials-tab.html) 
@@ -24,44 +25,14 @@ The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model f
  *  [Environment](../environment/environment-tab.html) 
  *  [Render](../render/render-tab.html) 
 
-## To access the Flamingo control panel
- 
-
+## Help documentation
  * On the **Flamingo nXt** menu, click **Control Panel**.
-
-## Rendering Basics
  
+## Flamingo Information and Support
+ For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
 
-Rendering your finished model comprises four basic steps:
-
- *  [Set up lighting](../lighting/lighting-tab.html) 
- *  [Set up materials](..\materials\materials-tab.html) 
- *  [Set up an environment](../environment/environment-tab.html) 
- *  [Set up rendering conditions](../render/render-tab.html) 
-
-#### To start a rendering
-
- * On the **Render** or **Flamingo nXt** menu, click **Render**.
-- Or -
-
- * On the **Standard** toolbar, click the **Render** button.
-
-### Stop Rendering
- 
-
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
-
-
-###  <kbd>Resume Rendering</kbd> 
- 
-
-Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
-
-The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
-
-Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
-
-&#160;
-
-Revised: 22-Dec-2011 14:45
+ *  [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
+ *  [Gallery](http://nxt.flamingo3d.com/photo) 
+ *  [Technical Support](http://www.flamingo3d.com/en/support/)
+ *  [Forum](http://discourse.mcneel.com/c/rendering/flamingo) 
 
