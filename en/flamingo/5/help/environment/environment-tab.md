@@ -1,7 +1,5 @@
 ---
-layout: toc-page
 ---
-
 
 # Environment
 Environments include elements of the rendering that are not part of the actual model geometry, but only appear when rendering.
@@ -118,7 +116,7 @@ Click the **Click here to assign** button to select an image. When a bitmap file
 ### Image Projection Types
 Three types of background image projections are supported: [Planar](environment-tab.html#planar), [Cylindrical](environment-tab.html#cylindrical), and [Spherical](environment-tab.html#spherical). Each projection method has its own set of controls for positioning the image.
 
-#### Planar
+#### Planar Projection
 Projects the image to a flat background.
 
 <img src="projectiontypesplanar.png"/>
@@ -128,20 +126,20 @@ Projects the image to a flat background.
 <img src="background-image-003.png"/> *Background area (1), image size and shape (2).* 
 
 
-##### Planar Options
+#### Planar Options
 
 
-###### XScale / YScale
+##### XScale / YScale
 
 Specifies the size of the background image.
 
 
-###### XOffset / YOffset
+##### XOffset / YOffset
 
 Specifies the offset of the background image from the lower left corner of the viewport.
 
 
-#### Cylindrical
+#### Cylindrical Projection
 
 Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
 
@@ -150,57 +148,38 @@ Specify the size and position of the image map in height and width angles. Use t
 <img src="projectiontypescylindrical.png"/>
 
 
-##### Cylindrical Options
+#### Cylindrical Options
 
 
-######  [Background color](environment-tab.html#backgroundcolors) 
+#####  [Background color](environment-tab.html#backgroundcolors) 
 
 
-###### Width
-
+##### Width
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
 
-
-###### Top / Bottom
-
+##### Top / Bottom
 Specifies the vertical extents of the image. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45&#160;degrees above or below the horizon.
-
 <img src="background-cylinder-001.png"/>
 
-
-###### Rotation
-
+##### Rotation
 Specifies the image rotation and extents. Enter an angle or drag the control widget to set the rotation. The red dot indicates the center of the image. The gray area indicates the view.
-
 <img src="cylindricalcontrol-001.png"/>
 
-
-######  <kbd>Angles From View</kbd> 
-
+#####  Angles From View
 Sets the **Width** and **Top/Bottom** angles to match the viewport.
 
-
-#### Spherical
-
+#### Spherical Projection
 Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image.
 
+#### Spherical Options
 
-##### Spherical Options
-
-
-###### Rotation
-
+##### Rotation
 Specifies the image rotation. The red dot indicates the center of the image.
 
-
-######  <kbd>Angles From View</kbd> 
-
+##### Angles From View 
 Sets the rotation angle to match the viewport.
 
-
 ## HDR and Planar HDR Backgrounds
- 
-
 High-dynamic-range images provide lighting from luminance information stored in the image.
 
 Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window.
@@ -208,61 +187,55 @@ Using an HDR image as an environment allows more control over the relationship b
 An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](..\lighting\lights-tab.html#channel) rendering.
 
 
-## HDR options
- 
+### HDR options
 
- * Click the <kbd>Click here to assign</kbd> button to select an image.
+ * Click the **Click here to assign** button to select an image.
 
-### Rotation
- 
-
+#### Rotation
 Rotates the image so a different part of the image lights the model.
 
 
-### Mirror
+#### Mirror
  
 
 Reverses the image from left to right.
 
 
-### Sun channel
+#### Sun channel
  
 
 The sun [channel](lighting\lights-tab.html#channel).
 
 
-### Sky channel
+#### Sky channel
  
 
 The sky [channel](lighting\lights-tab.html#channel).
 
 
-## Planar HDR options
+### Planar HDR options
  
 
 Planar high-dynamic-range images provide both an image background and lighting. These are often used outside windows in architectural renderings where light from the exterior is required.
 
- * Click the <kbd>Click here to assign</kbd> button to select an image.
-
-### 
+ * Click the **Click here to assign** button to select an image.
  
-
-
+![Planar vs HDRI Planar Background](planarimagebeach.png)
  *Background image (left) and Planar HDR (right) shows subtle lighting difference in background.* 
 
-### Sun channel
+#### Sun channel
  
 
 The sun [channel](lighting\lights-tab.html#channel).
 
 
-### Sky channel
+#### Sky channel
  
 
 The sky [channel](lighting\lights-tab.html#channel).
 
 
-## Advanced Background
+### Advanced Background
  
 
 The **Advanced Background** settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects.
@@ -270,7 +243,7 @@ The **Advanced Background** settings control environments that are not visible i
 In the illustration, the background is black, but the reflected environment is an HDR image of a building interior.
 
 
-## Reflected
+#### Reflected
  
 
 A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
@@ -280,47 +253,43 @@ A reflected environment is not visible in the rendered image, but it reflects in
 
  *Normal environment (left) and reflected HDR sky environment (right).* 
 
-### Sky
- 
-
+##### Sky
 Objects reflect the sky as specified in the [Lighting: Sun and Sky](../lighting/sun-and-sky-tabs.html) settings.
 
 
-### Custom
- 
-
+##### Custom
 Objects reflect a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
 
 
-### Visible Background
+##### Visible Background
  
 
 Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
 
 
-## Refracted
+#### Refracted
  
 
 
-### Sky
+##### Sky
  
 
 Objects refract the sky as specified in the [Lighting: Sun and Sky](../lighting/sun-and-sky-tabs.html) settings.
 
 
-### Custom
+##### Custom
  
 
 Objects refract a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
 
 
-### Visible Background
+##### Visible Background
  
 
 Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
 
 
-### No Transparent Object Alpha
+#### No Transparent Object Alpha
  
 
 Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.

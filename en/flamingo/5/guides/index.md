@@ -2,7 +2,7 @@
 ---
 
 
-# All Flamingo Help Topics
+# All Flamingo Guides
 
 
 ## Environment
