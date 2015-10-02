@@ -4,24 +4,26 @@
 # All Flamingo Topics
 
 ## Libraries
+ [Assign Materials](materials-tab.html)
+ [Drag and Drop Plants]
 
 ## Materials
+ [Simple Material Properties](simple-material-properties.html) 
  [Advanced Material Properties: Main](advanced-material-properties-main.html) 
  [Advanced Material Properties: Textures](advanced-material-properties-textures.html) 
  [Advanced Material Properties: Transparency](advanced-material-properties-transparency.html) 
- [Assign Materials](materials-tab.html) 
  [Materials: Textured](texture-properties-main.html) 
- [Simple Material Properties](simple-material-properties.html) 
  [Texture Properties: Main](texture-properties-main.html) 
  [Texture Set Materials](texture-set-materials.html) 
 
 ## Lighting
+ [Lighting Pre-sets]
+ [Studio Lighting Basics](studio-lighting-basics.html) 
+ [Sky](sun-and-sky-tabs.html) 
+ [Sun and Sky](sun-and-sky-tabs.html) 
  [Lighting: Advanced](lighting-advanced-tab.html) 
  [Lighting](lighting-tab.html) 
  [Lights](lights-tab.html) 
- [Sky](sun-and-sky-tabs.html) 
- [Studio Lighting Basics](studio-lighting-basics.html) 
- [Sun and Sky](sun-and-sky-tabs.html) 
 
 ## Environment
  [Environment](environment-tab.html)
