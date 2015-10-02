@@ -1,11 +1,5 @@
 ---
-layout: flamingo-toc-page
-collection: help
-order: 2
-language: en
-url: /en/flamingo/5/help/environment/environment-tab.html
 ---
-
 
 # Environment
 Environments include elements of the rendering that are not part of the actual model geometry, but only appear when rendering.

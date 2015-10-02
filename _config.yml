@@ -8,11 +8,18 @@ title: McNeel Product Documentation
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://help.mcneel.com" # the base hostname & protocol for your site
 editMeOnGhBaseUrl: "mcneel/help-docs"
+
+# To Generate a local Sitemap, remove the following 2 comments on the lines. And set safe: below to false.
+#gems:
+#  - jekyll-sitemap
+
+
 # twitter_username: ""
 github_username:  mcneel
 simple_search: http://google.com/search
 # Build settings
 #markdown: redcarpet
+#
 
 # If we decide that we want to use kramdown over redcarpet, syntax
 # highlighting is performed by turning on the following options and
@@ -24,9 +31,8 @@ kramdown:
 
 #port: 4444
 
-safe: true
+safe: safe
 
-includes_dir: ./en/_includes
 
 collections:
   - faqs
