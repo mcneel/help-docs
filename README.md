@@ -10,19 +10,19 @@ There are 3 ways to edit these GitHub Pages:
 
  1. Edit the markdown (md) files directly on GitHub.
  1. Clone the Github respository on your local computer. This brings all teh files onto your computer.  Then edit those files and push the changes back up to GitHub.
- 1. Setup a local GitHub Pages server on your machine, clone the GitHub repository on your machine.  Then edit the files, followed by a local preview on the local GitHub server before pushing the changes up to GitHub.
+ 1. Setup a local GitHub Pages server on your machine. Clone the GitHub repository on your machine.  Then, edit the files. The changes can be previewed on the local GitHub server before pushing the changes up to GitHub.
 
-First, navigate somewhere safe and clone the repository.
+The reccomended product we use to pull the files to your local machine is [SourceTree](https://www.sourcetreeapp.com/).  Once downloaded and installed, log-in to GitHub through [SourceTree](https://www.sourcetreeapp.com/).  Then clone the "mcneel/help-docs" repository to a local folder on your machine.  All other interactiosn with GitHub can be accomplished with [SourceTree](https://www.sourcetreeapp.com/)
+
+If SourceTree does not work well for you, then GitHub offers a desktop application which simplifies syncing with the public repository.  Try [GitHub for Mac](https://mac.github.com/) and [GitHub for Windows](https://windows.github.com/). There's also the [git cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf).
+
+If you are confortable using GIT on the commandline, navigate somewhere safe and clone the repository.
 
 ```
 git clone https://github.com/mcneel/help-docs.git
 ```
 
-If you are not comfortable using git on the command-line, then try [GitHub for Mac](https://mac.github.com/) and [GitHub for Windows](https://windows.github.com/). There's also the [git cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf).
-
 Notice that **'gh-pages'** is the only branch. Everything committed to this branch is automatically published when pushed to GitHub.
-
-
 
 ## Getting Started with local server preview.
 
