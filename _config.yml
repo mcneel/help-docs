@@ -40,6 +40,9 @@ collections:
   - help
   - tutorials
   - en-flamingo
+  - kr-website
+  - kr-help
+  - kr-guide_topics
 
 collections:
   website:
@@ -51,10 +54,15 @@ collections:
   guides_topics:
     output: true
     permalink: /en/flamingo/5/guides/:path/
-  command_topics:
+  kr-website:
     output: true
-    permalink: /commands/:path/
-
+    permalink: /kr/flamingo/5/website/:path/
+  kr-help:
+    output: true
+    permalink: /kr/flamingo/5/help/:path/
+  kr-guides_topics:
+    output: true
+    permalink: /kr/flamingo/5/guides/:path/ 
 defaults:
   -
     scope:
@@ -78,3 +86,26 @@ defaults:
       doctype: "Guides"
       layout: flamingo-toc-page
       collectionname: "Guides"
+  -
+    scope:
+      path: "kr/flamingo"
+    values:
+      language: en
+      productname: "Flamingo NXT Documentation"
+      productpath: flamingo
+      productversionpath: "5"
+  -
+    scope:
+      path: "kr/flamingo/5/help"
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Help"
+  -
+    scope:
+      path: "kr/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-toc-page
+      collectionname: "Guides"
+
