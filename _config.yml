@@ -90,8 +90,8 @@ defaults:
     scope:
       path: "kr/flamingo"
     values:
-      language: en
-      productname: "Flamingo NXT Documentation"
+      language: kr
+      productname: "Flamingo NXT ??"
       productpath: flamingo
       productversionpath: "5"
   -
@@ -100,12 +100,12 @@ defaults:
     values:
       doctype: "Help"
       layout: flamingo-toc-page
-      collectionname: "Help"
+      collectionname: "???"
   -
     scope:
       path: "kr/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-toc-page
-      collectionname: "Guides"
+      collectionname: "???"
 
