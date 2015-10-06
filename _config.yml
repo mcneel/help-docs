@@ -1,4 +1,4 @@
-# Site settings
+﻿# Site settings
 title: McNeel Product Documentation
 # email: brian@mcneel.com
 # description: > # this means to ignore newlines until "baseurl:"
@@ -91,7 +91,7 @@ defaults:
       path: "kr/flamingo"
     values:
       language: kr
-      productname: "Flamingo NXT ??"
+      productname: "Flamingo NXT 문서"
       productpath: flamingo
       productversionpath: "5"
   -
@@ -100,12 +100,12 @@ defaults:
     values:
       doctype: "Help"
       layout: flamingo-toc-page
-      collectionname: "???"
+      collectionname: "도움말"
   -
     scope:
       path: "kr/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-toc-page
-      collectionname: "???"
+      collectionname: "가이드"
 
