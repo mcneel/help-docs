@@ -1,23 +1,41 @@
-﻿<header class="site-header">
+<header class="site-header">
 
 
-    <a class="site-title" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">Flamingo NXT 도움말 문서</a>
+    <a class="site-title" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">{{page.productname}} {{page.category}} {{page.collectionname}}</a>
 
     <nav class="site-nav">
-
+      <img class="menu-icon" src="{{ site.baseurl }}/images/gi.svg">
       {% assign pages = site.pages | sort:"order"  %}
       <div class="trigger">
-      	<a class="page-link" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">환영합니다</a>
+        <a class="page-link" href="{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/website/welcome.html"><!-- localize -->Getting Started</a>
+        <a class="page-link" href="{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/guides"><!-- localize -->Guides</a>
+        <a class="page-link" href="{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/help"><!-- localize -->Help</a>
+<!--
         {% for page in pages %}
           {% if page.title != 'Administration' %}
             {% if page.title != 'Blog' %}
-              {% if page.title and page.order %}
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              {% if page.collection and page.order %}
+                <a class="page-link" href="{{ page.collection | prepend: site.baseurl }}">{{ page.collectionname }}</a>
               {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}
-        <a class="page-link" href="http://discourse.mcneel.com/c/rendering/flamingo">포럼</a>
+-->
+
+        <a class="page-link" href="http://discourse.mcneel.com/c/rendering/flamingo"><!-- localize -->Forums</a>
+        <!-- Google Search Engine -->
+        <div id="sitesearch">
+            <!-- Google CSE Search Box Begins  -->
+            <!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+            <!-- The terms of service are available at https://www.google.com/cse/docs/tos.html -->
+            <form id="cref" action="{{ site.baseurl }}/{{page.language}}/{{page.productpath}}/{{page.productversionpath}}/website/search-results.html">
+                <input type="hidden" name="cref" value="007988927381198593803:mcq6pshqsn8" />
+                <input id="searchtext" type="text" name="q" size="24" value="" placeholder="search" />
+                <input class="searchBox" type="submit" name="sa" size="2" value=" " />
+            </form>
+        <!-- Google CSE Search Box Ends -->	
+        </div>
+        <!--End of Google Search Engine -->
       </div>
     </nav>
 
