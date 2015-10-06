@@ -44,12 +44,12 @@
 > [HDR과 평면형 HDR 이미지](environment-tab.html#hdr과-평면형-hdr-배경) 
 
 
-## 하늘<a name="하늘"></a>
+## 하늘
 하늘 환경은 [조명](lighting-tab.html) 탭의 태양과 하늘 설정을 사용합니다.
 ![images/background-sky-001.png](images/background-sky-001.png)
 *자동 (왼쪽), HDR 이미지와 태양 (오른쪽).*
 
-## 색과 그라데이션 색<a name="색과-그라데이션-색"></a>
+## 색과 그라데이션 색
 배경색은 항상 표시되지만, 이미지에 가려진 상태일 수도 있습니다.
 
 ### 단색
