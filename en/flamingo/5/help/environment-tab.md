@@ -38,7 +38,7 @@ Modifies the relative brightness of the background.
 ## Background type
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
-> [Sky](environment-tab.html#environment-sky) 
+> [Sky](environment-tab.html#sky) 
 > [Solid and gradient color](environment-tab.html#color-and-gradient-backgrounds) 
 > [Image](#environment-image) 
 > [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds) 

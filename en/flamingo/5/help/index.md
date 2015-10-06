@@ -8,7 +8,9 @@
  [Drag and Drop Plants]
 
 ## Materials
- [Simple Material Properties](simple-material-properties.html) 
+ [Material Editor]
+ [Flamingo NXT Material Types]
+ [Basic Material Properties](simple-material-properties.html) 
  [Advanced Material Properties: Main](advanced-material-properties-main.html) 
  [Advanced Material Properties: Textures](advanced-material-properties-textures.html) 
  [Advanced Material Properties: Transparency](advanced-material-properties-transparency.html) 
@@ -41,6 +43,7 @@
  [Image Editor](image-editor.html) 
 
 ## Object Properties
+ [Material Source]
  [Custom Meshing]
  [Texture Mapping]
  [Decal Properties](properties-decal.html) 
