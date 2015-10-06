@@ -38,10 +38,10 @@
 ## 배경 종류
 렌더링 이미지에서 배경을 채울 색 구성표를 지정합니다. 배경의 유형은 다음과 같습니다.
 
-> [하늘](environment-tab.html#environment-sky) 
-> [단색과 그라데이션 색](environment-tab.html#color-and-gradient-backgrounds) 
+> [하늘](environment-tab.html#하늘) 
+> [단색과 그라데이션 색](environment-tab.html#색과-그라데이션-색) 
 > [이미지](#environment-image) 
-> [HDR과 평면형 HDR 이미지](environment-tab.html#hdr-and-planar-hdr-backgrounds) 
+> [HDR과 평면형 HDR 이미지](environment-tab.html#hdr과-평면형-hdr-배경) 
 
 ## 하늘
 하늘 환경은 [조명](lighting-tab.html) 탭의 태양과 하늘 설정을 사용합니다.
@@ -111,7 +111,7 @@
 
 {% include_relative snippets/snippet-clearbitmapcache.md %}
 ### 투영
-세 가지 유형의 배경 이미지 투영 ([평면형](environment-tab.html#planar), [원통형](environment-tab.html#cylindrical), [구 형태](environment-tab.html#spherical)이 지원됩니다. 각각의 투영 방식에는 이미지의 위치를 지정하는 자체적인 제어 설정이 있습니다.
+세 가지 유형의 배경 이미지 투영 ([평면형](environment-tab.html#평면형), [원통형](environment-tab.html#원통형), [구 형태](environment-tab.html#구-형태) )가 지원됩니다. 각각의 투영 방식에는 이미지의 위치를 지정하는 자체적인 제어 설정이 있습니다.
 
 #### 평면형
 평평한 배경에 이미지를 투영합니다.
@@ -134,7 +134,7 @@
 
 #### 원통형 옵션
 
-#####  [배경색](environment-tab.html#backgroundcolors) 
+#####  [배경색](environment-tab.html#배경색) 
 
 ##### 너비
 이미지 맵의 각도 너비를 지정합니다. 각도를 입력하거나, 제어 위젯에서 플래그를 끌어 너비를 지정합니다. 파란색 영역은 각도 너비 범위를 나타냅니다.
@@ -164,7 +164,7 @@
 ## HDR과 평면형 HDR 배경
 HDRI(High-dynamic-range images)는 이미지에 저장된 휘도 정보를 기반으로 조명을 설정합니다.
 HDR 이미지를 환경으로 사용하면 조명과 배경의 관계 그리고 이미지에 있는 다른 조명을 보다 상세하게 설정할 수 있습니다. 이 옵션은 밝은 실외가 창으로 보이는 실내 공간을 표현할 때 특히 유용합니다.
-HDR 환경 이미지는 일반적인 비트맵 이미지보다 훨씬 넓은 범위의 빛 정보를 가지고 있으며, 채널을 적용할 수 있어 [다중 채널](lights-tab.html#channel) 렌더링에서 명암을 관리할 수 있습니다.
+HDR 환경 이미지는 일반적인 비트맵 이미지보다 훨씬 넓은 범위의 빛 정보를 가지고 있으며, 채널을 적용할 수 있어 [다중 채널](lights-tab.html#채널) 렌더링에서 명암을 관리할 수 있습니다.
 
 ## HDR 옵션
 
@@ -192,7 +192,7 @@ HDR 환경 이미지는 일반적인 비트맵 이미지보다 훨씬 넓은 범
 [조명: 태양과 하늘](sun-and-sky-tabs.html) 설정에서 지정된 대로 개체에 하늘이 비춰집니다.
 
 ### 사용자 지정
-개체가 [색 또는 그라데이션](environment-tab.html#color-and-gradient-backgrounds), 이미지, 또는 HDR 배경을 반사합니다.
+개체가 [색 또는 그라데이션](environment-tab.html#색과-그라데이션-배경), 이미지, 또는 HDR 배경을 반사합니다.
 
 ### 보이는 배경
 [환경](environment-tab.html) 설정에서 지정된 상태로 보이는 배경이 개체에 비춰집니다.
@@ -203,7 +203,7 @@ HDR 환경 이미지는 일반적인 비트맵 이미지보다 훨씬 넓은 범
 [조명: 태양과 하늘](sun-and-sky-tabs.html) 설정에서 지정된 대로 개체가 하늘을 굴절시킵니다.
 
 ### 사용자 지정
-개체가 [색 또는 그라데이션](environment-tab.html#color-and-gradient-backgrounds), [이미지](environment-tab.html#image), 또는 [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) 배경을 굴절시킵니다.
+개체가 [색 또는 그라데이션](environment-tab.html#색과-그라데이션-배경), [이미지](environment-tab.html#이미지), 또는 [HDR](environment-tab.html#hdr과-평면형-hdr-배경) 배경을 굴절시킵니다.
 
 ### 보이는 배경
 [환경](environment-tab.html) 설정에서 지정된 상태로 보이는 배경이 개체에 굴절됩니다.
