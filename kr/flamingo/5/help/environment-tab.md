@@ -38,7 +38,7 @@
 ## 배경 종류
 렌더링 이미지에서 배경을 채울 색 구성표를 지정합니다. 배경의 유형은 다음과 같습니다.
 
-> [하늘](#하늘) 
+> [하늘](environment-tab.html#하늘) 
 > [단색과 그라데이션 색](environment-tab.html#색과-그라데이션-색) 
 > [이미지](#이미지) 
 > [HDR과 평면형 HDR 이미지](environment-tab.html#hdr과-평면형-hdr-배경) 
