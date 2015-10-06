@@ -2,12 +2,15 @@
 
 This repo contains the contents of http://help.mcneel.com
 
-The site is hosted on [GitHub Pages](https://pages.github.com/) which uses a static site generator called [Jekyll](http://jekyllrb.com/).
+The site is hosted on [GitHub Pages](https://pages.github.com/) which uses a static site generator called [Jekyll](http://jekyllrb.com/).  The pages are mades generally from a markdown syntax called [kramdown](http://kramdown.gettalong.org/syntax.html)
 
+## Getting Started with GitHub
 
-## Getting Started
+There are 3 ways to edit these GitHub Pages:
 
-These instructions cover running this project locally on both Mac OS X and Windows so that you can preview changes before pushing them to GitHub Pages.
+ 1. Edit the markdown (md) files directly on GitHub.
+ 1. Clone the Github respository on your local computer. This brings all teh files onto your computer.  Then edit those files and push the changes back up to GitHub.
+ 1. Setup a local GitHub Pages server on your machine, clone the GitHub repository on your machine.  Then edit the files, followed by a local preview on the local GitHub server before pushing the changes up to GitHub.
 
 First, navigate somewhere safe and clone the repository.
 
@@ -18,6 +21,12 @@ git clone https://github.com/mcneel/help-docs.git
 If you are not comfortable using git on the command-line, then try [GitHub for Mac](https://mac.github.com/) and [GitHub for Windows](https://windows.github.com/). There's also the [git cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf).
 
 Notice that **'gh-pages'** is the only branch. Everything committed to this branch is automatically published when pushed to GitHub.
+
+
+
+## Getting Started with local server preview.
+
+Most edits can be made on the site, or by pulling the site locally then pushing the site back up to GitHub to see the reults.  If needed, it is possible to run a GitHub server locally to see any changes before pushing to GitHub. These instructions cover running this project locally on both Mac OS X and Windows so that you can preview changes before pushing them up to GitHub Pages.
 
 
 ![Mac Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/mac_logo_small.png)
