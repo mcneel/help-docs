@@ -1,13 +1,13 @@
-<header class="site-header">
+﻿<header class="site-header">
 
 
-    <a class="site-title" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">Flamingo NXT Help Documentation</a>
+    <a class="site-title" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">Flamingo NXT 도움말 문서</a>
 
     <nav class="site-nav">
 
       {% assign pages = site.pages | sort:"order"  %}
       <div class="trigger">
-      	<a class="page-link" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">Welcome</a>
+      	<a class="page-link" href="{{ site.baseurl }}/{{page.language}}/flamingo/5/help">환영합니다</a>
         {% for page in pages %}
           {% if page.title != 'Administration' %}
             {% if page.title != 'Blog' %}
@@ -17,7 +17,7 @@
             {% endif %}
           {% endif %}
         {% endfor %}
-        <a class="page-link" href="http://discourse.mcneel.com/c/rendering/flamingo">Forums</a>
+        <a class="page-link" href="http://discourse.mcneel.com/c/rendering/flamingo">포럼</a>
       </div>
     </nav>
 
