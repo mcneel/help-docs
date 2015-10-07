@@ -19,7 +19,7 @@ github_username:  mcneel
 simple_search: http://google.com/search
 # Build settings
 #markdown: redcarpet
-#
+encoding: utf-8
 
 # If we decide that we want to use kramdown over redcarpet, syntax
 # highlighting is performed by turning on the following options and
