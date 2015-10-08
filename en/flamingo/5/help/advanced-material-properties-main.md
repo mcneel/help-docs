@@ -6,9 +6,7 @@
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
 ## Basic material properties
-{: #preview}
-{: #color}
-{: #name}
+{: #basic-materials-properties}
 {% include_relative snippets/snippet-nameandbasecolor.md %}![images/3-solidcolor.png](images/3-solidcolor.png)
 
 ## Reflective Finish and Highlight
@@ -97,7 +95,8 @@ Opens the [Simple Material Properties](simple-material-properties.html) dialog b
 ## Procedures
 {: #procedures}
 
-### Base
+### Base]
+{: #material-procedure-base}
 The **Procedures** tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: **Base**.
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [angular blend](advanced-material-properties-main.html#angular-blend), [blend](advanced-material-properties-main.html#blend), [marble,](advanced-material-properties-main.html#marble)  [granite](advanced-material-properties-main.html#granite), [tile](advanced-material-properties-main.html#tile), and [wood](advanced-material-properties-main.html#wood).
 
@@ -116,7 +115,7 @@ Each procedure combines two &quot;child&quot; materials using a specific method.
  2. On the menu, click **Remove**.
 
 ## Angular Blend
-{: #angular-blend}
+{: ##material-procedure-angular-blend}
 Blends between two different materials to create materials that change characteristics based on the angle of view to the surface of the object.
 
 ### 
@@ -144,7 +143,7 @@ The **Inner** material is white, and the **Outer** material is black.
 
 ![images/angularblend-001.png](images/angularblend-001.png)
 ## Blend
-{: #blend}
+{: #material-procedure-blend}
 The **Blend** procedure combines two base components and controls the proportions of each. All of the standard library wood materials use a **Blend** procedure to change the finish of the wood from clear matte to dark shiny.
 ![images/blend-001.png](images/blend-001.png)
 Blends work well changing an entire material definition by adding an overall color to a base patterned material.
@@ -192,7 +191,7 @@ A fraction of the whole pattern. Increasing this setting increases the relative 
 {% include_relative snippets/snippet-materialblend.md %}![images/graniteblend.png](images/graniteblend.png)
 
 ## Marble
-{: #marble}
+{: #material-procedure-marble}
 Creates alternating slabs of **Base** and **Vein** components.
 
 ### 
@@ -212,7 +211,7 @@ Alters the relative size of the slabs to each other. **Vein Width** is a fractio
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)Veneer (left), normal (right).
 
 ## Tile
-{: #tile}
+{: #material-procedure-tile}
 Tile is a 2-D material.&#160;Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The **Tile** material combines a **Base** component and a **Joint** component. Each of these materials can also include any other material.
 ![images/tile materials.png](images/tile materials.png)
 Scale tile differently in each direction for special effects. For example, use a tile material that is extremely long in one direction to create siding materials.
@@ -250,7 +249,7 @@ Offsets the material from the world origin. Do this if a seam that marks the beg
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
 ## Wood
-{: #wood}
+{: #material-procedure-wood}
 Creates concentric cylinders of alternating **Base** and **Ring** components.
 Wood consists of concentric cylinders of alternating **Base** and **Ring** components. The Wood settings define how the **Base** and **Ring** components combine.
 The method used to create wood materials depends on how close it will be viewed. If the viewpoint is not close to the wood, a solid color can take the place of wood without sacrificing image quality. This allows faster rendering.
