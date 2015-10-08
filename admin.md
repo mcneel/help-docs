@@ -35,7 +35,7 @@ This will list the files with TODO below.
   {% assign pages = site.pages | sort: 'url' %}
   <ul>
   {% for page in pages %}
-        {% if page.content contains "TODO" %}
+        {% if page.content contains "TODO" and page.path != "admin.md" %}
           <li><a class="page-link" href="http://github.com/mcneel/help-docs/edit/gh-pages/{{page.path}}">{{page.path}}</a></li>
         {% endif %}
   {% endfor %}

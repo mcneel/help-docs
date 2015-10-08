@@ -72,27 +72,3 @@ Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Ti
 Revised: 22-Dec-2011 14:45
 
 
-## TODO List
-
-#### Commands
-
-<div class="trigger">
-  <ul>
-  {% for page in site.pages %}
-    {% if page.TODO == 1 %}
-	    {% if page.COMMAND == 1 %}
-	       <li>
-    	     <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-           </li>
-        {% endif %}
-    {% endif %}
-  {% endfor %}
-  </ul>
-</div>
-
-&#160;
-
-&#160;
-
-&#160;
-
