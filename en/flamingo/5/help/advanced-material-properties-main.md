@@ -122,11 +122,138 @@ Excludes all reflections of artificial light sources and the artificial highligh
 Excludes raycast reflections of light sources, only the highlight is used. This is sometimes useful for preventing speckle artifacts if the material is blurry and the scene contains small, bright, light sources.
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
-### Template
-{: #template}
-Indicates the template used with the [Simple Material Properties](simple-material-properties.html) dialog box.
+## Transparency
+{: transparncy}
+The Transparency settings control&#160;properties associated with light passing through a material.
+![images/transparentmaterials.png](images/transparentmaterials.png)
 
-### Simple Editor
-{: #simple-editor}
-Opens the [Simple Material Properties](simple-material-properties.html) dialog box. The more commonly used settings are available in this editor.
+### Transparency Intensity
+Changes the material from opaque to transparent. Transparent materials increase rendering time.
+![images/transparency.png](images/transparency.png)
+
+### Index of Refraction
+{: #index-of-refraction}
+Determines how much refraction occurs when looking through the material at objects beyond.
+![images/transparencyior.png](images/transparencyior.png)
+The following table shows some examples of index of refraction:
+
+### Material
+
+### IOR
+Vacuum
+1. Air
+1. Ice
+1. Water
+1. Glass
+1. Emerald
+1. Ruby/Sapphire
+1. Diamond
+1. 
+### Translucency
+{: #translucency}
+A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material.
+![images/transparencytl.png](images/transparencytl.png)
+
+### Scattering
+{: #scattering}
+Controls the probability of the light encountering a particle per unit length.
+ **Note** : The&#160; [Path Tracer](render-tab.html#path-tracer) &#160;is required for this effect.
+Subsurface scattering permits light to penetrate the object's surface and scatter in any direction. Many translucent materials can be modeled using this effect. Certain surfaces, such as stone or skin can be realistically “softened” by allowing the light to penetrate a short distance.
+The material must have some transparency in order for sub-surface scattering to take place. This is a volumetric effect. The objects with this material attached must be solid or “space enclosing” for this to work properly.
+![images/scattering.png](images/scattering.png)
+
+### Attenuation
+{: #attenuation}
+Determines how much light is absorbed as it passes through the object— greater values produce a more cloudy appearance. Use **Attenuation** to model liquids. Clear liquids have low **Attenuation** ; murky liquids have higher **Attenuation** values.
+![images/attenuation.png](images/attenuation.png)
+
+### Dispersion
+{: #dispersion}
+Controls how much light is split into its component wavelengths.
+![images/dispersion.png](images/dispersion.png)
+
+### Saturation
+{: #saturation}
+Determines the amount of dispersion.
+![images/saturation.png](images/saturation.png)
+
+### Blurry Transparency
+{: #blurry-transparency}
+When a material is partially transparent, a little noise is introduced into the transparency, to make the material look more natural.
+
+#### Blurriness
+Controls the amount of noise added.
+![images/blurrytransparency.png](images/blurrytransparency.png)
+
+### Glow
+{: #glow}
+Creates the illusion of illumination.
+![images/glow.png](images/glow.png)
+
+## Textures
+{: #textures}
+Two types of maps can be added to a material: image maps and bump patterns. Image mapping uses bitmap images to add detail to the material. Images can alter many attributes of the materials surface including its color and apparent three-dimensional surface quality (bump). Bumps add a random roughness or knurled quality to the surface.
+![images/textures.png](images/textures.png)
+Image maps are two-dimensional patterns created using raster-based paint programs or by scanning photographs or other materials. Image maps can be used many ways. A common method is to use a picture of a real-world material as the materials color.
+
+Buttons display previews of the specified image files.
+
+>Click a button with an image to edit its [texture properties](texture-properties-main.html). Click a blank image button to apply a new image.
+
+Textures can consist of more than one image. Sometimes one image controls the color and another controls the bump properties of the texture.
+
+### Bump Patterns
+{: #bump-patterns}
+Bumps create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. When one of the bump maps is checked, additional controls become available. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. More than one bump pattern can be added to a material.
+Materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a **Sandpaper** procedural bump on a ** [Base Color](advanced-material-properties-main.html#color) ** emulates this kind of fine pattern. Create a ** [Base Color](advanced-material-properties-main.html#color) ** that is the color of the material. Then add a procedural bump to the material. Use **Sandpaper** for a fine texture and **Rubble** for a coarser texture.
+
+#### Sandpaper
+{: #sandpaper}
+Provides a random, finely textured appearance.
+![images/sandpaper.png](images/sandpaper.png)
+
+#### Rubble
+{: #rubble}
+Gives the appearance of a lumpy, pitted surface. It can be scaled up and used for water, dirt, and smudges on surfaces. **Rubble** bump has a larger size range than **Sandpaper**.
+![images/rubble.png](images/rubble.png)
+
+#### Pyramid
+{: #pyramid}
+Gives the appearance of small pyramidal protrusions like a knurl pattern.
+![images/pyramid.png](images/pyramid.png)
+
+#### Wrinkled
+{: #wrinkled}
+Gives a wrinkled appearance.
+![images/wrinkled.png](images/wrinkled.png)
+
+#### Marbled
+{: #marbled}
+Gives a marbled appearance
+![images/marbled.png](images/marbled.png)
+
+### Scale
+{: #scale}
+Scale controls the proportional size of the bumps.
+
+#### X/Y/Z
+Specifies scale in each direction separately.
+![images/texturescalexy.png](images/texturescalexy.png)
+
+#### Lock
+Maintains the aspect ratio.
+
+### Properties
+
+#### Strength
+{: #strength}
+Controls the appearance of depth.
+![images/texturestrength.png](images/texturestrength.png)
+
+#### Rotation
+{: #rotation}
+Sets the rotation angle for the pattern.
+Changes to the orientation are normally apparent only if the procedural map has an obvious pattern or if the bump map has been scaled with different x, y and z components to produce a directional pattern.
+![images/texturerotated.png](images/texturerotated.png)
+
 

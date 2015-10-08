@@ -18,8 +18,6 @@
  [Basic Material Properties](simple-material-properties.html)
  [Advanced Material Properties](advanced-material-properties-main.html) 
  [Proceedural Material Types](procedural-materials.html)
-    [Advanced Material Properties: Textures](advanced-material-properties-textures.html) 
-    [Advanced Material Properties: Transparency](advanced-material-properties-transparency.html) 
  [Materials: Textured](texture-properties-main.html) 
  [Texture Properties: Main](texture-properties-main.html) 
  [Texture Set Materials](texture-set-materials.html) 
