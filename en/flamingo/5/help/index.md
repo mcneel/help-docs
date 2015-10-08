@@ -17,24 +17,22 @@
  [Flamingo NXT Material Types]
  [Basic Material Properties](simple-material-properties.html)
  [Advanced Material Properties](advanced-material-properties-main.html) 
- [Proceedural Material Types](procedural-materials.html)
- [Materials: Textured](texture-properties-main.html) 
- [Texture Properties: Main](texture-properties-main.html) 
+ [Procedural Material Types](procedural-materials.html)
+ [Texture Properties](texture-properties-main.html) 
  [Texture Set Materials](texture-set-materials.html) 
 
 ## Lighting
 {: lighting}
- [Lighting Pre-sets]
- [Studio Lighting Basics](studio-lighting-basics.html) 
- [Sky](sun-and-sky-tabs.html) 
- [Sun and Sky](sun-and-sky-tabs.html) 
- [Lighting: Advanced](lighting-advanced-tab.html) 
- [Lighting](lighting-tab.html) 
+ [Lighting Pre-sets](lighting-tab.html) 
+ [Sky]
+ [Sun] 
+ [Custom Lighting](lighting-advanced-tab.html) 
  [Lights](lights-tab.html) 
+ [Studio Lighting Tips](studio-lighting-basics.html) 
 
 ## Environment
 {: environment}
- [Environment](environment-tab.html)
+ [Flamingo Environment](environment-tab.html)
 
 ## GroundPlane
 {: groundplane}
