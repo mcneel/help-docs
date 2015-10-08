@@ -10,7 +10,7 @@ Texture set materials support&#160;third-party texture maps that contain informa
 ## Simple Editor
 {: #simple-editor}
 
-### Name
+### 이름
 {: #name}
 See [Advanced Material Properties: Main](advanced-material-properties-main.html#name).
 
@@ -20,7 +20,7 @@ See [Texture Properties: Main: Tiles](texture-properties-main.html#tiles).
 
 ## Map Properties
 {: #map-properties}
-The map properties vary depending on the map type.
+맵 속성은 맵의 형식에 따라 달라집니다.
 
 #### Color
 See [Texture Properties: Main](texture-properties-main.html).
@@ -36,15 +36,14 @@ See [Texture Properties: Advanced](texture-properties-main.html#advanced).
 
 ### Map
 {: #images}
-The map name and type.
+맵의 이름과 형식.
 
-### Link
-The linked style and file name if applicable.
+### 링크
+해당하는 경우 링크된 스타일과 파일 이름.
 
 ### Image Resolution
-The image resolution.
+이미지 해상도.
 
-###  **Advanced** 
+###  **고급** 
 {: #advanced}
 Opens the [Advanced Material Properties: Main](advanced-material-properties-main.html) dialog box.
-

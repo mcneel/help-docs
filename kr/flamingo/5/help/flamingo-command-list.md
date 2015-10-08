@@ -22,15 +22,15 @@ Displays theAbout Flamingodialog box.
 
 ### FlamingoNXtClearBitmapCache
 {: #flamingonxtclearbitmapcache}
-Refreshes the bitmap definition when a bitmap file is changed using an image editor such as Photoshop.
+Photoshop과 같은 이미지 편집기에서 비트맵 파일 비트맵 정의가 수정되었을 때 비트맵 정의를 새로 고칩니다.
 
 ### FlamingoNXtConvertLegacyMaterialLibrary
 {: #flamingonxtconvertlegacymateriallibrary}
-Extracts Flamingo 2.x materials from a specified MLIB file as Flamingo nXt ArMaterial files in a specified output folder.
+지정된 MLIB 파일에서 Flamingo 2.x 재질을 추출하여 지정된 출력 폴더의 Flamingo nXt ArMaterial 파일로 변환합니다.
 
 ### FlamingoNXtCreateThumbNails
 {: #flamingonxtcreatethumbnails}
-Iterates recursively through a folder and generates a material preview for every ArMaterial file in the folder and sub folders. Specify how many passes it uses when generating the preview.
+폴더를 재귀적으로 반복하여 해당 폴더와 그 하위 폴더에 있는 모든 ArMaterial 파일의 재질 미리보기를 생성합니다. 미리보기를 생성할 때 몇 번의 패스가 사용되는지를 지정합니다.
 
 ###  [FlamingoNXtDecal](properties-decal.html) 
 {: #flamingonxtdecal}
@@ -44,11 +44,11 @@ Turns on a display conduit that decorates objects that are [tagged as lights](li
 
 ###  [FlamingoNXtExportAllMaterials](materials-tab.html#exportallmaterials) 
 {: #flamingonxtexportallmaterials}
-Exports each material in a model to a file.
+모델에 있는 각각의 재질을 파일로 내보냅니다.
 
 ### FlamingoNXtFindZeroFaceMeshes
 {: #flamingonxtfindzerofacemeshes}
-A diagnostic utility that finds Flamingo nXt render meshes that have faces with no area.
+Flamingo nXt 렌더링 메쉬에 면적이 없는 면이 있는지 찾아내는 진단 유틸리티입니다.
 
 ### FlamingoNXtHelp
 {: #flamingonxthelp}
@@ -87,10 +87,9 @@ Sets [render constraints](documentproperties-flamingo.html#render-constraints) w
 
 ### FlamingoNXtUpdateLinkedPlants
 {: #flamingonxtupdatelinkedplants}
-Updates plant definitions that have been modified in the current model.
+현재 모델에서 수정된 식물 정의를 업데이트합니다.
 
 ###  [FlamingoNXtWebPage](http://nxt.flamingo3d.com/) 
 {: #flamingonxtwebpage}
-Opens the Flamingo nXt web page.
+Flamingo nXt 웹 페이지를 엽니다.
 &#160;
-

@@ -3,7 +3,7 @@
 
 
 # Lights
-Artificial light sources use normal Rhino lights with added properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
+인공 광원은 몇 가지 속성이 추가된 일반적인 Rhino 조명을 사용하여 배광을 제어합니다. 광원을 사용할 때 실제 램프와 가장 유사한 유형을 선택하십시오.
 
 ## Note
 
@@ -12,28 +12,28 @@ Artificial light sources use normal Rhino lights with added properties to contro
 ### LinearLight
 {: #linearlight}
 {: #rhino-light-commands}
-Distributes light in a cylindrical pattern that imitates a fluorescent tube.
+형광등과 같은 원통형 패턴으로 조명을 배광합니다.
 ![images/linearlight.png](images/linearlight.png)
 
 ### PointLight
 {: #pointlight}
-Distributes light equally in all directions.
+조명을 모든 방향에서 균등하게 배광합니다.
 ![images/pointlight.png](images/pointlight.png)
 
 ### RectangularLight
 {: #rectangularlight}
-Provides an approximation of a recessed light with a diffuser or baffles.
+산광기(디퓨저) 또는 칸막이(배플)를 사용한 매립등과 유사하게 표현됩니다.
 ![images/rectangular light.png](images/rectangular light.png)
 
 ### Spotlight
 {: #spotlight}
-Provides a beam angle and direction.
+빔 각도와 방향을 제공합니다.
 ![images/spotlight.png](images/spotlight.png)
 
 ### Tag objects as lights
 {: #tag-objects-as-lights}
-Any renderable object (surface, solid, etc.) can be tagged as a light and given light properties.
-Objects tagged as lights display a preview widget of how the light is pointed and were its location is.
+렌더링할 수 있는 모든 개체 (서피스, 솔리드 등) 는 조명 개체로 태그를 지정하고 조명 속성을 부여할 수 있습니다.
+조명으로 태그된 개체는 조명이 향하는 곳과 위치를 나타내는 미리보기 위젯을 표시합니다.
 
 ##### To control the visibility of light widget
 
@@ -41,64 +41,64 @@ Objects tagged as lights display a preview widget of how the light is pointed an
 
 ## Light Properties
 {: #light-properties}
-When Flamingo is the current rendering application in Rhino, additional properties can be set for lights. Lights have some but not all properties in common.
+Flamingo가 Rhino의 현재 렌더링 응용 프로그램일 때, 조명에 추가 속성을 설정할 수 있습니다. 조명의 일부 속성은 공통적이지만, 모든 속성이 그러한 것은 아닙니다.
 Some light properties are displayed on the Lights tab as a matrix: [On/Off](lights-tab.html#on), [Name](lights-tab.html#name), [Distribution](lights-tab.html#light-distribution), [Aim](lights-tab.html#aim-light), [Watts](lights-tab.html#watts), and [Channel](lights-tab.html#channel).
 
-### Name
+### 이름
 {: #name}
-The name of the light object.
+조명 개체의 이름.
 
 ### On
 {: #on}
-Toggles the light on and off.
+조명의 켜짐/꺼짐 상태를 전환합니다.
 
 ### Visible
 {: #visible}
-The light object itself will be visible in the rendered image.
+조명 개체 자체가 렌더링된 이미지에 표시됩니다.
 
 ### Light distribution *( [Tagged objects only](#tag-objects-as-lights) )* 
 {: #light-distribution}
-Specifies the light distribution pattern.
+배광 패턴을 지정합니다.
 
 #### All Directions
-Simulates a point light.
+점 조명을 시뮬레이션합니다.
 
 #### Diffuse
-Simulates a rectangular light.
+직사각형 조명을 시뮬레이션합니다.
 
 #### Spot
-Simulates a spotlight.
+집중 조명을 시뮬레이션합니다.
 
 ### Aim light *( [Tagged objects only](#tag-objects-as-lights) )* 
 {: #aim-light}
-Drag the light target into position.
+조명 대상을 원하는 위치로 끌어옵니다.
 
 ### Watts
 {: #watts}
-Specifies the electrical power usage.
+전력 사용을 지정합니다.
 
 ### Beam angle *( [Spotlights only](lights-tab.html#spotlight) )* 
 {: #beam-angle}
-The degree of width that light emanates from a light source.
+광원으로부터 빛이 나오는 너비의 각도.
 
 ### Radius *( [Spotlights only](lights-tab.html#spotlight) )* 
 {: #radius}
-The size of the light. Smaller lights cast sharper shadows.
+조명의 크기. 조명이 작을수록 더 선명한 그림자가 생깁니다.
 
 ### Color
 {: #color}
-The color for the light.
+조명의 색.
 
 #### Use material color *( [Tagged objects only](#tag-objects-as-lights) )* 
-Uses the color of the material assigned to the light object for the light it produces.
+조명에서 나오는 빛에 조명 개체에 적용된 재질의 색을 사용합니다.
 
 ### Channel
 {: #channel}
-Specifies one of eight channels for the light.
-This controls the number of channels for multi-channel rendering.
-This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. Each light source in the drawing, including the sun and sky, can be assigned to a channel. Once this image is rendered, each channel can be individually scaled either in the Render Window before saving or it can be saved to an .nXtImage file for later editing. Using this capability, you can produce day and night interiors with a single rendering.
-Click to play video clip.
-The following conditions are necessary to produce and manipulate a multi-channel image:
+조명의 8개 채널 중 하나를 지정합니다.
+다중 채널 렌더링에서 채널의 수를 지정합니다.
+렌더링 작업이 완료된 후 렌더링된 이미지에서 실시간으로 조명을 조정할 수 있습니다. 도면에 있는 각 광원 (태양과 하늘 포함)을 채널로 지정할 수 있습니다. 이미지가 렌더링되면 저장하기 전에 각 채널은 렌더링 창에 개별적으로 조정되며, nXtImage 파일로 저장하여 나중에 편집할 수 있습니다. 이 기능을 활용하여 하나의 렌더링으로 낮과 밤의 실내 이미지를 만들어낼 수 있습니다.
+클릭하여 동영상을 재생합니다.
+다중 채널 이미지를 만들고 조작하려면 다음의 조건들이 필요합니다.
 
 >All participating lights must be on.
 >Each light source must be assigned a channel. By default, Sun and Sky are set to channel 0.
@@ -112,19 +112,19 @@ The following conditions are necessary to produce and manipulate a multi-channel
 ####  [On](lights-tab.html#on) 
 
 #### Delete
-Deletes the selected light.
+선택된 조명을 삭제합니다.
 
 #### Remove light tag
 Removes the [tag](lights-tab.html#tag-objects-as-lights) that makes an object a light.
 
-####  [Properties](lights-tab.html#light-properties) 
+####  [속성](lights-tab.html#light-properties) 
 
 #### Select objects and matching items
-Selects the light in the viewport.
+뷰포트에서 조명을 선택합니다.
 
-## IES File
+## IES 파일
 {: #iesfile}
-IES (Illuminating Engineering Society) files are photometry files that define the distribution of light from a light source. Light fixture manufacturers often provide these files. By using the IES file to define your distribution, you can more accurately depict your light source. The geometry of the tagged light object has no relationship to the distribution of light. The definition of the light distribution comes from the photometry file alone.
+IES (Illuminating Engineering Society) 파일은 광원의 배광을 정의하는 광도 측정 파일입니다. 조명 기구 제조사들이 이런 파일을 제공하는 경우가 많습니다. IES 파일로 배광을 정의하여 광원을 보다 정확하게 묘사할 수 있습니다. 조명으로 태그된 개체 지오메트리는 배광과 무관합니다. 배광의 정의는 광도 측정 파일에서만 지정됩니다.
 
 ## Notes:
 
@@ -134,4 +134,3 @@ IES (Illuminating Engineering Society) files are photometry files that define th
 
 ### Brightness from file
 Use the intensity stored in the IES file. If this is not checked, the ** [Watts](lights-tab.html#watts) ** setting is used.
-

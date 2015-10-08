@@ -2,17 +2,17 @@
 ---
 
 
-# Materials
-Materials can be assigned to layers or individual objects from materials either saved in the current model or from material libraries.
-Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
+# 재질
+재질은 현재 모델에 저장된 재질 또는 재질 라이브러리에서 선택하여 레이어 또는 개별적인 개체에 적용할 수 있습니다.
+레이어에 따라 재질을 적용하는 방법을 권장합니다. 별도의 레이어에서 작업하지 않고, 소수의 개체만으로 작업하는 경우에는 개체마다 재질을 적용하십시오.
 
 ## Assign materials to layers
 {: #bylayer}
 {: #assign-materials}
-Assigning materials by layer assigns a material to all objects on a layer.
+"재질을 레이어에 적용"은 하나의 재질을 해당 레이어에 있는 모든 개체에 적용합니다.
 
 ##### Assign a material to a layer
-1. In Rhino, open the **Layers** dialog box.
+1. Rhino에서 **레이어** 대화상자를 엽니다.
 1. Select one or more layer names, and click the **Material** column.
 1. In the **Material Editor** dialog box, under **Assign By**, click **Plug-in**.
 1. Click the **Browse** button.
@@ -20,20 +20,20 @@ Assigning materials by layer assigns a material to all objects on a layer.
 
 ##### Drag a material to a layer
 {: #drag-dropmaterialtolayer}
-1. In Rhino, open the **Layers** dialog box.
+1. Rhino에서 **레이어** 대화상자를 엽니다.
 1. In the **Flamingo nXt [Control Panel](welcome.html#control-panel) **, on the **Materials** tab, drag a material either from the **Materials in Model** palette or from the **Material Libraries** on to a layer name.
 
 ##### Remove a material from a layer
 {: #detachmaterialfromlayer}
-1. In Rhino, open the **Layers** dialog box.
+1. Rhino에서 **레이어** 대화상자를 엽니다.
 1. Select one or more layer names, and click the **Material** column.
 1. In the **Material Properties** dialog box, under **Assign By**, click **Basic**.
 1. If desired, reset the material color.
 
 ## Assign material to objects
 {: #byobject}
-You can assign materials from the material libraries to a layer or object.
-Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
+재질 라이브러리에서 레이어 또는 개체로 재질을 지정할 수 있습니다.
+레이어에 따라 재질을 적용하는 방법을 권장합니다. 별도의 레이어에서 작업하지 않고, 소수의 개체만으로 작업하는 경우에는 개체마다 재질을 적용하십시오.
 
 ##### Assign a material through object properties
 1. Select objects.
@@ -71,7 +71,7 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 
 >![images/01.png](images/01.png)New material menu
 >![images/02.png](images/02.png)Assign to object
->![images/03.png](images/03.png)Assign to layer
+>![images/03.png](images/03.png)레이어에 적용
 >![images/04.png](images/04.png)View menu
 >![images/05.png](images/05.png)Materials in Model palette
 >![images/06.png](images/06.png)Material library name
@@ -111,7 +111,7 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 
 ###  [Assign material to layers](#bylayer) 
 
-### View menu
+### 뷰 메뉴
 
 #### Large thumbnail view
 
@@ -156,9 +156,9 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 
 ### Go up one level
 
-### View menu
+### 뷰 메뉴
 
-### Folder name
+### 폴더 이름
 
 ## Right-click panel to
 
@@ -168,7 +168,7 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 
 ### Large Thumbnail View
 
-### Up One Level
+### 한 단계 위로
 
 ### Back
 
@@ -185,4 +185,3 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 ### Rename
 
 ### Delete
-

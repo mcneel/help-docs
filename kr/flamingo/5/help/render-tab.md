@@ -7,39 +7,39 @@
 ## Viewport to render
 {: #viewtorender}
 
-#### Active view
+#### 활성 뷰
 
 #### List of available viewports
-Includes named views.
+명명된 뷰를 포함합니다.
 
 ## Rendering resolution
 {: #resolution}
-The image size and resolution are saved in the Rhino file.
+이미지의 크기와 해상도는 Rhino 파일에 저장됩니다.
 
 ### Total pixels
 {: #resolutionimagepixels}
-Sets the number of total pixels in the rendered image.
+렌더링된 이미지의 전체 픽셀 수를 설정합니다.
 
-### Viewport Resolution
-Uses the viewport size in pixels to determine the rendered image size.
+### 뷰포트 해상도
+렌더링된 이미지 크기를 결정하는 뷰포트 크기를 픽셀 단위로 사용합니다.
 
 ### Image size
 {: #resolutionprintedsize}
 
 #### Pixels
-Sets the page units to pixels.
+페이지 단위를 픽셀로 설정합니다.
 
 #### Inches
-Sets page units to inches.
+페이지 단위를 인치로 설정합니다.
 
 #### Millimeters
-Sets the page units to millimeters.
+페이지 단위를 밀리미터로 설정합니다.
 
 #### Width
-Printed image width in current size units.
+현재 크기 단위로 인쇄되는 이미지 너비.
 
 #### Height
-Printed image height in current size units.
+현재 크기 단위로 인쇄되는 이미지 높이.
 
 #### Resolution
 {: #printsizepixelsperunit}
@@ -47,29 +47,29 @@ Printed image height in current size units.
 {: #printsizeresolution}
 
 #### Display
-The image is rendered using the pixel size of the viewport.
+뷰포트의 픽셀 크기로 이미지가 렌더링됩니다.
 
 #### Custom
-The image is rendered using a custom resolution. Type the custom width and height resolution in pixels.
+사용자 지정 해상도로 이미지가 렌더링됩니다. 사용자 지정 너비와 높이 해상도를 픽셀 단위로 입력합니다.
 
 #### Printer, draft quality
-100 pixels per inch or 4 pixels per mm.
+100 픽셀/인치 또는 4 픽셀/mm.
 
 #### Printer, normal quality
-150 pixels per inch or 6 pixels per mm.
+150 픽셀/인치 또는 6 픽셀/mm.
 
 #### Printer, high quality
-300 pixels per inch or 12 pixels per mm.
+300 픽셀/인치 또는 12 픽셀/mm.
 
 #### Pixels per ___
-Displays the current resolution.
+현재 해상도를 표시합니다.
 
-## Depth of field
+## 피사계 심도(DOF)
 {: #depthoffieldoption}
-This effect creates a depth of field blur that mimics a photographer's lens. A lens can only focus precisely at exactly one distance, but the decrease in sharpness is gradual around the focal distance.
+이 효과는 포토그래퍼의 렌즈를 흉내내는, 피사계 심도(Depth of Field) 흐림 효과를 만듭니다. 렌주는 정확하게 하나의 거리에서만 정확하게 초점을 맞출 수 있으나, 초점 거리 주변의 선명도는 점차 떨어집니다.
 
-### Enabled
-Turns on the depth-of-field effect.
+### 사용
+피사계 심도(DOF) 효과를 켭니다.
 
 ### Strength
 Controls the size of the focus area. Setting **Strength** to zero makes the entire image is sharp. Increasing the **Strength** makes the areas outside the focal distance more blurry and makes the area in focus smaller.
@@ -79,13 +79,13 @@ Controls the size of the focus area. Setting **Strength** to zero makes the enti
 Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If theFocal distanceis set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
 
 ### Pick
-Pick a point in the model for the focal distance.
+초점 거리가 되는 한 지점을 모델에서 지정합니다.
 
 ## Render Engine
 {: #render-engine}
 
-### Default
-The default algorithm produces a very high-quality simulation. The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
+### 기본값
+기본값 알고리즘으로 매우 높은 퀄리티의 시뮬레이션이 만들어집니다. 기본 방식과 경로 추적기 방식 간의 퀄리티 차이는 매우 미미하며, 특히 간접 조명이 사용 설정되어 있는 경우 그러합니다. 그 차이는 오랜 렌더링 처리 시간을 감수할 만큼은 아니라고 할 수 있습니다.
 
 ### Path Tracer
 {: #path-tracer}
@@ -102,6 +102,5 @@ The path tracer begins by displaying a very grainy image that gradually refines 
 
 >Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer.
 
-###  **Advanced** 
+###  **고급** 
 Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page.
-
