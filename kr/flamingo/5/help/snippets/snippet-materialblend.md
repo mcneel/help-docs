@@ -1,4 +1,3 @@
 
 ### Blend
-Blurs the boundaries between the components.
-
+구성 요소 사이의 경계를 흐리게 표시합니다.

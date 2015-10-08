@@ -9,7 +9,7 @@ The Flamingo nXt **Render Farm** uses the power of several computers to render s
 {: #render-farm}
 ![images/renderfarm-002.png](images/renderfarm-002.png)
 
->![images/01.png](images/01.png)A computer with Rhino and Flamingo nXt.
+>![images/01.png](images/01.png)Rhino와 Flamingo nXt가 설치된 컴퓨터.
 >![images/02.png](images/02.png)Network server or shared farm folder.
 >![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
 >![images/04.png](images/04.png)Additional purchased render farm clients.
@@ -20,26 +20,26 @@ When rendering using Flamingo nXt, instead of rendering a single image with the 
 The **Render Farm** clients continuously check the farm output folder for a new job. Each client will pick up a part of the job and start to render. The **Farm Monitor**  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* keeps track of the job's progress.
 Each farm client deposits the results in the farm folder under &lt;&lt; *job name* &gt;&gt;\Output.
 Farm output will be in the [nXt image format (.nXtImage)](image-editor.html). Images in this format can be edited using the [nXt Image Editor](image-editor.html). The results can also be saved as TGA, PNG, TIF, and JPG files from the [nXt Image Editor](image-editor.html).
-As each client finishes with a job, it will continue to pick up new jobs as they are submitted to the farm.
+각각의 클라이언트가 작업을 완료하면, 팜으로 전송되는 새로운 작업을 계속해서 선택합니다.
 The Render Farm is free for up to two client computers. To add additional client computers, purchase the **nXt Render Farm** license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 The **nXt Render Farm** includes two parts:
 
 >nXtFarmer.exe (nXtFarmer64.exe)
 
-A small program that runs on each network rendering client and waits for jobs to be generated. Normally, render farms proceed silently without displaying the renderings on a monitor as they progress. Rendering in this manner allows you to use more computer power for lengthy tasks but does not allow interacting with the rendering as it progresses.
+각각의 네트워크 클라이언트에서 실행되는 작은 프로그램으로, 생성되는 작업을 기다립니다. 일반적으로 렌더 팜은 렌더링 진행 상황을 모니터에 표시하지 않고 조용하게 처리합니다. 이 방식으로 렌더링하면, 렌더링이 진행되는 동안 컴퓨터가 이를 간섭하지 않게 하면서 시간이 걸리는 작업에 더 많은 컴퓨터 성능을 활용할 수 있습니다.
 
 >nXtFarmMonitor.exe (nXtFarmMonitor64.exe)
 
-An applet that shows you the state of your render jobs and provides some simple control tools.
-For advanced installations, the nXt Render Farm software lets you work with third-party render managers. The following procedures apply to the Render Farm included with Flaming nXt. If you are planning to use third-party render farm software, some of these procedures will be different.
+렌더링 작업 상태를 보여주고 간단한 제어 기능을 갖춘 애플릿입니다.
+고급 설치의 경우, nXt 렌더 팜 소프트웨어를 타사의 렌더링 관리자와 함께 사용할 수 있습니다. 다음의 절차가 Flaming nXt에 포함된 렌더 팜에 적용됩니다. 타사의 렌더 팜 소프트웨어를 사용할 계획이라면 다음 절차 중 일부가 달라집니다.
 
 ##### To configure the Render Farm
 {: #configure-the-render-farm}
 
 >Create a folder to store the Render Farm jobs on a common shared location.
 
-This folder can be on a network server machine or any location that all farm computers can access. All of the farm client computers must have read/write access to this folder. The shared folder should have at least 20GB of available storage.
-You must perform the following four steps on all computers you plan to use in the Render Farm, including any nXt workstations that will submit jobs to the render farm:
+이 폴더는 네트워크 서버 컴퓨터 또는 모든 팜 컴퓨터가 액세스할 수 있는 어떤 위치에도 있을 수 있습니다. 모든 팜 클라이언트 컴퓨터는 이 폴더를 읽고 쓸 수 있는 권한이 있어야 합니다. 공유 폴더의 사용 가능한 저장 공간은 최소 20GB가 되어야 합니다.
+렌더 팜으로 작업을 전송하는 nXt 워크스테이션을 포함하여, 렌더 팜에서 사용하고자 하는 모든 컴퓨터에서 다음의 네 단계 과정을 실행해야 합니다.
 1. Install the **nXt Render Farm** software.
 1. From the **Start** menu, run the **Render Farmer** on each machine.
 The **Render Farmer** will appear as an icon in the system tray.
@@ -48,17 +48,17 @@ The **Render Farmer** will appear as an icon in the system tray.
 
 >On the computer with Rhino and Flamingo nXt where you will ready the models to render and submit jobs to the farm, in Rhino, from the **Tools** menu, click **Options**, set the common farm location to the [Farm output folder](options-flamingo.html#farm-output-folder).
 
-The Render Farm is now configured.
+렌더 팜이 이제 구성되었습니다.
 
 ##### To verify that the client workstations are responding
 
 >On any of the client workstations, on the **Windows Start** menu, click **Render Farmer**.
 
-The client machines should appear in the upper list box.
+위쪽 목록 상자에 클라이언트 컴퓨터가 나타나야 합니다.
 
 ## Using the Render Farm
 {: #using-the-render-farm-from-flamingo-nxt}
-Currently, the farm can be used three ways for processing renderings on multiple computers: single rendering jobs, batch jobs, and animations.
+현재 팜은 여러 대의 컴퓨터에 세 가지 방식으로 렌더링을 처리할 수 있습니다: 단일 렌더링 작업, 일괄 작업, 애니메이션.
 
 ## Single Images
 {: #single-images}
@@ -72,18 +72,18 @@ To reconstruct the output into a single image, use the [nXt Image Editor, Arithm
 
 ## Farm Job Options
 
-### Name
+### 이름
 {: #job-name}
 The date and time is automatically pre-pended to the name you choose. A sub-folder for the job is created in the **Render Farm** shared folder. An output folder is also created in the new job folder.
-After each job is complete, output can be found in the job's output folder.
+각각의 작업이 완료되면 출력 파일은 작업의 출력 폴더에서 찾을 수 있습니다.
 
 ### Start job
 
 #### Now
-Start the job now.
+지금 작업을 시작합니다.
 
 #### Later (Manually)
-Start the job later using the nXt Render Farm Monitor to start the job.
+nXt 렌더링 팜 모니터를 사용하여 작업을 나중에 시작합니다.
 
 #### After
 Start the job at a specified date and time.
@@ -95,7 +95,7 @@ Start the job at a specified date and time.
 
 ## Batch Jobs
 {: #batch-jobs}
-Batch jobs let you submit multiple jobs and views to the Render Farm with one command. Each batch rendering will be rendered by a single client computer.
+일괄 작업을 통해 여러 개의 작업을 전송하고 명령 하나로 렌더 팜에서 이를 볼 수 있습니다. 각각의 일괄 렌더링은 하나의 클라이언트 컴퓨터에서 렌더링됩니다.
 
 ##### To submit a batch job to the render farm
 1. In Rhino, configure your rendering and view as you would for a normal rendering.
@@ -104,36 +104,36 @@ Batch jobs let you submit multiple jobs and views to the Render Farm with one co
 ## Batch Render Options
 {: #batch-render}
 
-### Add
-Add a viewport to the batch list.
+### 추가
+일괄 목록에 뷰포트를 추가합니다.
 
 ### Remove
-Delete a viewport from the batch list.
+일괄 목록에서 뷰포트를 삭제합니다.
 
 ### Properties
 Set the [Batch Render Properties](automate-rendering.html#batch-render-properties).
 
 ### Move Up
-Move the viewport name up in the list.
+목록에서 뷰포트 이름을 위로 이동시킵니다.
 
 ### Move Down
-Move the viewport name down in the list.
+목록에서 뷰포트 이름을 아래로 이동시킵니다.
 
 ## Batch List
 {: #batch-list}
-Displays information about the list of views to be rendered.
+렌더링될 뷰 목록에 대한 정보를 표시합니다.
 
 ## Rendering
 
 ### View
-Displays pass, scan line, and elapsed time information about the progress of the batch process.
+일괄 처리 진행률에 대한 패스, 스캔 라인, 경과 시간 정보를 표시합니다.
 
 ###  **Stop Rendering** 
-Stops the batch process.
+일괄 프로세스를 중지합니다.
 
 ###  **Render Batch Locally** 
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will be output to the location specified in the batch job properties.
+현재 컴퓨터만을 사용하여 일괄 작업을 렌더링합니다. 렌더링된 이미지는 일괄 작업 속성에 지정된 위치에 출력됩니다.
 
 ###  **Send Batch To Farm** 
 Sends the batch jobs to the [Render Farm](automate-rendering.html#render-farm). The jobs will be rendered by all available Farm clients. The render images will be output to the shared Farm folder.
@@ -149,13 +149,13 @@ See: [Render tab, Viewport to render](render-tab.html#viewtorender).
 ### File name
 Click the **Save** button and specify a file name for the rendered image.
 
-### Alpha channel
- [Use alpha channel background.](environment-tab.html#alpha) 
+### 알파 채널
+ [알파 채널 배경을 사용합니다.](environment-tab.html#alpha) 
 
 ## Rendering resolution
 {: #rendering-resolution}
 
-### Use document settings
+### 문서 설정 사용
 See [Render tab, Resolution](render-tab.html#resolution).
 
 ## Rendering constraints
@@ -197,27 +197,27 @@ The **Render Farm Monitor** is a standalone program that reports the status of t
 Right-click a **Machine** or a **Job** to access options.
 
 ### Refresh
-Refresh job list.
+작업 목록을 새로 고칩니다.
 
 ### Suspend Machine
-Exclude workstation from participating in the Render Farm.
+렌더 팜 참여에서 워크스테이션을 제외시킵니다.
 
 ### Resume Machine
-Resume workstation to participating in the Render Farm.
+렌더 팜 작업이 실행될 워크스테이션을 다시 시작합니다.
 
 ### Suspend Job
-Pause the specified job.
+지정된 작업을 잠시 멈춥니다.
 
 ### Resume Job
-Resume the specified job.
+지정된 작업을 다시 시작합니다.
 
 ### Remove Job
-Delete the specified job from the list.
+목록에서 지정된 작업을 삭제합니다.
 
 ## Licensing the Render Farm
 {: #licensing-the-render-farm-}
 The free version of the Render Farm allows two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
-Once you have purchased your license and have acquired a product key, use the following procedures to license your farm.
+라이선스를 구입하면 제품 키를 가지고 다음 순서로 팜 라이선스를 설정하여 사용하십시오.
 
 ##### To authorize the node
 1. Wait for any active farm jobs to complete before beginning your licensing.
@@ -232,22 +232,22 @@ In the **nXt Render Farm** folder, click **Authorize Farm**.
 In the **nXt Render Farm** folder, click **Render Farmer**.
 1.  **p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click** the tray icon, and on the menu, click **Restore**.
 1. On the **Help** menu, click **About**.
-If the version number indicates an Evaluation version, licensing has not been successful.
+버전 숫자가 평가판인 경우에는 라이선스를 받을 수 없습니다.
 1. Minimize the **Render Farmer** window to return it to the tray.
 
-## FlamingoNXtAutomateRender command
+## FlamingoNXtAutomateRender 명령
 {: #flamingonxtautomaterender}
 
 ## Configure Automated Render Command
 
-### Enabled
+### 사용
 Redirects the default **Render** command to use the **Render Farm**.
 
-### Use default render dialog
+### 기본 렌더링 대화 사용
 Resets the **Render** command to render directly instead of to the farm.
 
 ### Number of render passes to render
-Specifies the number of render passes.
+렌더링 패스의 수를 지정합니다.
 
 ### Render to farm
 Redirects the **Render** command to render to the farm.
@@ -273,4 +273,3 @@ Saves the [alpha channel](render-window.html#save-with-alpha-channel) background
 
 ### Uncheck all items
 &#160;
-

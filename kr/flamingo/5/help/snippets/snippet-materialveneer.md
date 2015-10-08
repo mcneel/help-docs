@@ -1,4 +1,3 @@
 
 ### Veneer
-Causes the material to appear as a planar pattern on the surfaces of the object instead of cutting through the object.
-
+개체에서 끊어지지 않고, 개체 표면에 평면형 패턴으로 표시되도록 재질을 설정합니다.

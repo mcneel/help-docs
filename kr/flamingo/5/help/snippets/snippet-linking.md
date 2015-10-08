@@ -1,15 +1,15 @@
 
 ### Linking options
-Specifies how the image file will be linked to materials.
+이미지 파일이 재질과 링크되어 있는 방식을 지정합니다.
 
 #### Linked
-Creates a link to the image file. The file must be present on the local disk.
+이미지 파일로 연결된 링크를 만듭니다. 파일은 로컬 디스크에 있어야 합니다.
 
 #### Embedded
-Embeds the image information in the current file.
+이미지 정보를 현재 파일에 포함시킵니다.
 
 #### Linked and embedded
-If the bitmap is found on the disk before rendering, the external file is used. If the image cannot be found on the disk, the internal definition will be used.
+렌더링 전에 디스크에서 비트맵이 발견되면 외부 파일이 사용됩니다. 디스크에서 이미지를 찾을 수 없으면 내부 정의가 사용됩니다.
  **Note:** The images are cached for the life of the document.
 
 ##### To see changes in linked or linked and embedded files

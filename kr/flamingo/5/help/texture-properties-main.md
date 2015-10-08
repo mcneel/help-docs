@@ -4,11 +4,11 @@
 
 # Texture Properties: Main
 ![images/3-texture.png](images/3-texture.png)
-Materials can be created from images. Scan photographs and real materials like wallpaper and carpet, create patterns in a paint program, or use images from other sources of bitmap.
-Imagine that the material stretches infinitely in all directions in space. The material becomes visible only where an object passes through it. Patterns are repeated infinitely (tiled) in four directions at a specified scale.
-Small images that can be seamlessly tiled tend to work best. If the bitmap does not tile well, use the option to mirror the tiles. This guarantees matched edges.
+이미지를 가지고 재질을 만들 수 있습니다. 사진과 실제 재질(벽지, 카펫 등)을 스캔하여 페인트 프로그램에서 패턴을 만들거나 다른 비트맵을 소스로 이미지를 사용합니다.
+재질이 모든 방향에서 무한대로 늘어난다고 상상해보십시오. 개체가 이를 통과하는 지점에서만 재질이 보이게 됩니다. 패턴은 지정된 비율로 네 방향에서 끝없이 반복 (타일) 됩니다.
+작은 이미지는 타일처럼 사용하기 가장 좋습니다. 비트맵으로 타일 처리가 잘 되지 않으면 타일을 미러(거울) 실행하는 옵션을 사용합니다. 이 옵션은 가장자리 일치를 보장합니다.
  **Note** : To make a bitmap image cover only part on the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
-Image maps can be used many ways. A common method is to use a picture of a real-world material as the materials color.
+이미지 맵은 다양한 방식으로 사용될 수 있습니다. 일반적인 방식은 실제 재질의 사진을 재질색으로 사용하는 것입니다.
 
 ### File name
 {: #file-name}
@@ -16,19 +16,19 @@ The name of the image file.{: #clearbitmapcache}
 {% include_relative snippets/snippet-clearbitmapcache.md %}
 ### Image preview
 {: #image-preview}
-Displays a preview of the selected image file.
+선택된 이미지 파일의 미리보기를 표시합니다.
 
 ### Image resolution
 {: #image-resolution}
-Displays the resolution in pixels of the image file.
+이미지 파일의 해상도(픽셀 단위)를 표시합니다.
 
 ### Tiles
 {: #tiles}
-Image maps used in material definitions are always repeated (tiled). These settings specify how large each instance (tile) will be in current model units.
+재질 정의에 사용되는 이미지 맵은 항상 반복됩니다 (타일 처리). 이 설정은 각 인스턴스(타일)의 크기가 현재 모델 단위에서 얼마나 큰지를 지정합니다.
 
 #### Width/Height
 {: #width-height}
-Sets the tile size.
+타일 크기를 설정합니다.
 {% include_relative snippets/snippet-lock-widthheight.md %}
 #### Mirror tiles
 {: #mirror-tiles}
@@ -43,13 +43,13 @@ Graphically displays the effects of masking as the parameters change. Use the [e
 {: #mapping-type}
 
 ### Standard
-The image provides color and visual bump to the material.
+이미지는 재질에 색과 시각적 범프를 제공합니다.
 
 ### Strength
 
 #### Color
 {: #color}
-Determines how much the image map influences the appearance of the material. In the example below, the underlying material is magenta colored. The color strength increases until the underlying color is completely masked by the black and white texture.
+이미지 맵이 얼마나 재질 표현에 영향을 미치는지를 결정합니다. 다음의 예에서 아래에 있는 재질은 자홍색입니다. 아래에 있는 색이 완전히 검정색과 흰색 텍스처로 마스크 처리될 때까지 색의 세기가 증가합니다.
 ![images/brik-b14.png](images/brik-b14.png)![images/strength.png](images/strength.png) *Color strength 0.2, 0.5, 1.0.* 
 
 #### Bump
@@ -60,38 +60,38 @@ Simulates bumps and wrinkles on the surface of an object by perturbing the&#160;
 ### Normal
 {: #normal}
 Fakes the lighting of bumps and dents without using more&#160;polygons to the render mesh. See: [Wikipedia article: Normal mapping](http://en.wikipedia.org/wiki/Normal_mapping).
-Normal maps work similar to bump maps, in that they modify the normal of the surface. The effect is essentially the same as bump; but normal maps allow more control over the normal than a bump. A bump map uses the grey average of the RGB in a bitmap. The RGB of a normal map corresponds to the modification of the XYZ of the normal.
+법선 맵(Normal Map)은 범프 맵과 유사하지만, 법선 맵의 경우 서피스의 법선을 수정합니다. 효과는 범프와 기본적으로 동일합니다. 그러나 법선 맵은 범프보다 법선을 훨씬 제어하기 쉽습니다. 범프 맵은 비트맵에서 RGB의 회색 평균을 사용합니다. 법선 맵의 RGB는 법선의 XYZ 수정에 대응합니다.
 
 ### Displacement
 {: #displacement}
 Causes an effect where the actual geometric position of the surface isdisplaced, often along the&#160;local&#160;surface normal. See: [Wikipedia article: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
-Displaces the material using the color values to move points on the render mesh.
+렌더링 메쉬에서 점을 이동시키기 위해 색상값을 사용하여 재질의 위치를 바꿉니다(변위:變位).
  **Note** : Use displacement mapping sparingly for small objects. Displacement increases rendering time considerably.
 ![images/displacement.png](images/displacement.png)
 
 #### Height
 {: #height}
-The height of the highest point of displacement.
+변위의 가장 높은 지점의 높이.
 ![images/displacementheight.png](images/displacementheight.png)
 
 #### Offset
 {: #offset}
-Sets the starting point of the displacement with reference to the surface normal.
+서피스 법선에 대하여 변위가 시작하는 지점을 설정합니다.
 ![images/displacementz-001.png](images/displacementz-001.png)
-Z-offset = -1.0
+Z 간격띄우기 = -1.0
 ![images/displacementz-002.png](images/displacementz-002.png)
-Z-offset = -0.5
+Z 간격띄우기 = -0.5
 ![images/displacementz-003.png](images/displacementz-003.png)
-Z-offset = 0.0
+Z 간격띄우기 = 0.0
 
 #### Facet size
 {: #facet-size}
-The size of the facets of the displacement mesh.
+변위 메쉬의 패싯 크기.
 ![images/facetsize.png](images/facetsize.png)
 
 ## Advanced
 {: #advanced}
-Select the color component of the material that will be affected by the bitmap.
+비트맵의 영향을 받는 재질의 색 구성 요소를 선택합니다.
 
 ## Surface Component Altered by Map
 
@@ -105,24 +105,23 @@ Select the color component of the material that will be affected by the bitmap.
 
 ### Highlight shape
 {: #advanced-highlight-shape}
-Affects the shape of the highlight.
+하이라이트 형태에 영향을 줍니다.
 
 ###  [Transparency](advanced-material-properties-transparency.html) 
 
 ###  [Translucency](advanced-material-properties-transparency.html#translucency) 
 
-###  [Attenuation](advanced-material-properties-transparency.html#attenuation) 
+###  [감쇠](advanced-material-properties-transparency.html#attenuation) 
 
 ### Normal
 {: #advanced-normal}
-Affects the direction of the surface normals.
+서피스 법선의 방향에 영향을 줍니다.
 
 ## Orientation
 {: #advanced-orientation}
 
 ### X/Y Offset
 {: #advanced-x-y-offset}
-Offsets the material from the x- and y-axis.
+재질과 X축, Y축과의 간격을 띄웁니다.
 
 ###  [Rotation](advanced-material-properties-textures.html#rotation) 
-

@@ -1,4 +1,3 @@
 
 ### Turbulence
-Produces the swirled appearance by causing the alternating components to bend and twist.
-
+구성요소를 번갈아 휘게 만들고 비틀어 소용돌이 모양을 나타냅니다.

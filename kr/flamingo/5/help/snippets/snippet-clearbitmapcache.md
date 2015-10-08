@@ -2,7 +2,7 @@
 ### Note
 
 #### Refresh the image definition
-When a bitmap file is changed using an image editor such as Photoshop, you must refresh the bitmap definition in Flamingo nXt.
+Photoshop과 같은 이미지 편집기로 비트맵 파일을 편집하면 반드시 Flamingo nXt에서 비트맵 정의를 새로 고침해야 합니다.
 
 #### To refresh the bitmap
 

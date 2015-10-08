@@ -6,13 +6,13 @@
 
 ## Library folders
 {: #library-folders}
-Additional folder locations to scan when creating the list of available material and plant libraries. By default, this list is empty.
+사용 가능한 재질과 식물 라이브러리 목록을 만들 때 스캔할 추가적인 폴더 위치. 기본적으로 이 목록은 비어 있습니다.
 
 ## File search paths
 {: #file-search-paths}
 The folders are not searched for libraries, but rather for support files, such as bitmaps, plant textures, in addition to the **Library folders**. The folders are searched in order they appear in the list. The current folder containing the .3DM file is searched first.
 
-#### Add a new folder
+#### 새 폴더 추가
 1.
 Under **Library folders**, click the **New** icon.
 2.
@@ -32,12 +32,12 @@ In the **Browse for Folder** dialog box, select a folder.
 
 ### Allow modeling while rendering
 {: #modal-rendering}
-Lets you keep working on the model while rendering is underway.
+렌더링이 실행되는 동안에도 계속해서 모델링 작업을 할 수 있습니다.
 
 ### Insert plants as point clouds
 {: #insert-plants-as-point-clouds}
-Uses a point cloud to represent a plant. Using point clouds generally make smaller file sizes.
-Otherwise, plants are represented by mesh objects.
+식물을 나타내기 위해 점구름을 사용합니다. 점구름을 사용하면 일반적으로 파일 크기가 더욱 작아집니다.
+점구름을 사용하지 않는 경우, 식물은 메쉬 개체로 표시됩니다.
 *![images/treespointcloudormesh.png](images/treespointcloudormesh.png)Trees as point cloud (left) and mesh (right).*
 
 ## Default image link state
@@ -46,7 +46,7 @@ Otherwise, plants are represented by mesh objects.
 ### Decal drag transparency
 {: #drag-transparency}
 {: #decal-editing}
-Specifies how transparent a decal is while it is being dragged during placement.
+데칼을 배치하기 위해 마우스로 끌어오는 동안 표시되는 투명도를 지정합니다.
 
 ### Default material preview size
 {: #default-material-preview-size}
@@ -54,5 +54,4 @@ Specifies the default size of the material preview sphere in the [Material Edito
 
 ### Farm output folder
 {: #farm-output-folder}
-The output folder for render farm jobs.
-
+렌더 팜 작업이 출력되는 폴더입니다.

@@ -7,7 +7,7 @@
  [Assign Materials](materials-tab.html)
  [Drag and Drop Plants]
 
-## Materials
+## 재질
  [Material Editor]
  [Flamingo NXT Material Types]
  [Basic Material Properties](simple-material-properties.html) 
@@ -44,9 +44,9 @@
 
 ## Object Properties
  [Material Source]
- [Custom Meshing]
- [Texture Mapping]
- [Decal Properties](properties-decal.html) 
+ [사용자 지정 메쉬 처리]
+ [텍스처 매핑]
+ [데칼 속성](properties-decal.html) 
  [Object properties](properties-object.html) 
 
 ## Plants
@@ -62,11 +62,11 @@
  [Enter CD Key](enter-cd-key.html)
  [RealTime Viewport] 
  [Flamingo Command List](flamingo-command-list.html) 
- [Animations]
+ [애니메이션]
  [Instancing]
  [Options: Flamingo nXt](options-flamingo.html) 
  [Progress Form](progress-form.html) 
  [Select color](select-color.html) 
- [Welcome](welcome.html) 
+ [환영합니다](welcome.html) 
 
  

@@ -3,22 +3,22 @@
 
 
 # Document Properties: Flamingo nXt
-These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
+이러한 설정은 현재 모델에만 적용됩니다. 렌더링을 완료하는 데 필요한 시간이 길어질수록 원하는 화질로 렌더링이 완성됩니다.
 
 ##### To change settings
 
 >On the **Flamingo nXt** menu, click **Document Properties**.
 
-## Materials
+## 재질
 {: #materials}
 
 ### Use materials
 {: #use-materials}
-Renders using materials created in Flamingo nXt and Rhino materials. Objects that have no material assignment render white.
+Flamingo nXt 와 Rhino 재질을 사용하여 렌더링합니다. 재질이 적용되지 않은 개체는 하얗게 렌더링됩니다.
 
 ### Use object color
 {: #use-object-color}
-Renders using the colors assigned through Rhino object or layer color.
+Rhino 개체 또는 레이어 색에서 지정된 색을 사용하여 렌더링합니다.
  **Note** : Both **Use materials** and **Use object color** can be checked. In this case, objects that have materials assigned will use those materials. Other objects will render using their object or layer color.
 
 ## Bounces
@@ -26,40 +26,40 @@ Renders using the colors assigned through Rhino object or layer color.
 
 ### Reflective
 {: #reflective-bounces}
-Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times.
+얼마나 많은 수준의 반사가 허용되는지를 결정합니다. 즉, 광선이 개체를 몇 번이나 비추는가가 지정됩니다. 0으로 설정하면 반사를 사용하지 않는 것으로 설정됩니다. 값이 높을수록 렌더링 시간이 길어집니다.
 
 ### Refractive
 {: #refractive-bounces}
-Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times.
+얼마나 많은 수준의 굴절이 허용되는지를 결정합니다. 즉, 광선이 개체를 몇 번이나 굴절시키는지가 지정됩니다. 0으로 설정하면 굴절을 사용하지 않게 됩니다. 값이 높을수록 렌더링 시간이 길어집니다.
 
 ### Indirect
 {: #indirect-bounces}
-Determines how many levels of indirect light are permitted; in other words, how many times an indirect light ray will bounce off objects. A setting of 0 disables reflections. Higher values cause longer rendering times.
+얼마나 많은 수준의 간접 조명이 허용되는지를 결정합니다. 즉, 간접 조명 광선이 개체를 몇 번이나 바운스시키는지가 지정됩니다. 0으로 설정하면 반사를 사용하지 않는 것으로 설정됩니다. 값이 높을수록 렌더링 시간이 길어집니다.
 
 ## Display in rendered viewports
  **Note** : These settings only affect viewports using Rhino's Rendered display mode. To see these objects in a rendered image, use [Post Effects](render-window.html#postprocessingwireframe).
 
 ### Curves
 {: #rendercurves}
-Curves display in rendered viewports.
+렌더링된 뷰포트에 커브가 표시됩니다.
 
 ### Dimensions and text
 {: #renderdimensions}
-Dimensions and text display in rendered viewports.
+렌더링된 뷰포트에서 치수와 텍스트 표시.
 
 ### Isocurves
 {: #renderisocurves}
-Isocurves display in rendered viewports.
+렌더링된 뷰포트에서 아이소커브 표시.
 
 ### Mesh edges
 {: #rendermeshedges}
-Mesh edges display in rendered viewports.
+렌더링된 뷰포트의 메쉬 가장자리 표시.
 
 ## Miscellaneous
 
-### Use lights on layers that are off
+### 꺼진 레이어의 조명 사용
 {: #uselightsonlayersthatareoff}
-Uses lights on layers that are turned off and hidden lights.
+꺼져 있는 레이어에 있는 조명과 숨겨진 조명을 사용합니다.
 
 ## Render constraints
 {: #number-of-passes}

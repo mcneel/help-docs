@@ -1,4 +1,3 @@
 
 ### Rotation
-Rotates the image so a different part of the image lights the model.
-
+이미지를 회전시켜 이미지의 다른 부분을 모델에 비춥니다.

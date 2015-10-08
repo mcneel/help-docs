@@ -8,7 +8,7 @@ For technical support, tutorials, examples, and information about how to get sta
 
 > [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
 > [Gallery](http://nxt.flamingo3d.com/photo) 
-> [Technical Support](http://nxt.flamingo3d.com/forum) 
+> [기술 지원](http://nxt.flamingo3d.com/forum) 
 
 ## The Flamingo nXt Control Panel
 {: #control-panel}
@@ -25,7 +25,7 @@ The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model f
 
 ## Rendering Basics
 {: #rendering-basics}
-Rendering your finished model comprises four basic steps:
+완성된 모델을 렌더링하는 데에는 네 가지 기본적인 과정이 필요합니다.
 
 > [Set up lighting](lighting-tab.html) 
 > [Set up materials](materials-tab.html) 
@@ -36,7 +36,7 @@ Rendering your finished model comprises four basic steps:
 
 >On the **Render** or **Flamingo nXt** menu, click **Render**.
 
-- Or -
+- 또는 -
 
 >On the **Standard** toolbar, click the **Render** button.
 
@@ -49,4 +49,3 @@ The button then changes to **Resume Rendering**. If you have stopped the renderi
 Use the [Number of passes](render-window.html#number-of-passes) or [Time](render-window.html#time) settings on the [Render Window](render-window.html) or in [Document Properties &gt; Flamingo nXt](documentproperties-flamingo.html) to set an automatic stopping point.
 &#160;
 Revised: 22-Dec-2011 14:45
-
