@@ -3,6 +3,7 @@
 
 
 # Environment
+{: #environment-tab}
 Environments include elements of the rendering that are not part of the actual model geometry, but only appear when rendering.
 You can think of the background as an infinite sphere surrounding the model. Backgrounds are projected onto this sphere. The background sphere is not an object that you can select, but a reference surface for the background effects.
 The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
@@ -17,13 +18,12 @@ Turns the ground plane on.
 *Ground plane disabled (left) and enabled (right).*
 
 ### Alpha
-{: #alpha}
+{: #groundplane-alpha}
 Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
 ![images/groundplane-004a.png](images/groundplane-004a.png)
  *Ground plane shows shadow, but is otherwise transparent in the image.* 
 
 ### Elevation
-{: #height}
 {: #groundplane-elevation}
 Specifies the ground plane's height above zero.
 ![images/groundplane-005a.png](images/groundplane-005a.png)
@@ -36,17 +36,18 @@ Assigns a [material](simple-material-properties.html) to the ground plane.
 *Ground plane with raised elevation and water material.*
 
 ## Background
-{: #backgroundcolors}
+{: #background-colors}
  **Note** : A color background is always turned on, but it may be hidden behind an image or other background.
 
 ### Intensity
-{: #intensity}
+{: #background-intensity}
 Modifies the relative brightness of the background.
 
 ## Background type
+{: #background-type}
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
-> [Sky](environment-tab.html#sky) 
+> [Sky](environment-tab.html#environment-sky) 
 > [Solid and gradient color](environment-tab.html#color-and-gradient-backgrounds) 
 > [Image](#environment-image) 
 > [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds) 
@@ -58,11 +59,11 @@ The Sky environment uses the sun and sky settings from the [Lighting](lighting-t
 *Automatic (left) and HDR image and sun (right).*
 
 ## Color and Gradient Color
+{: #environment-color-and-gradient}
 A background color is always present, but may be obscured by images.
 
 ### Solid Color
 {: #solid-color}
-{: #color-and-gradient-backgrounds}
 A solid color background consists of a single color that fills the background.
 ![images/background-color-001.png](images/background-color-001.png)
 *Solid-color background.*
@@ -81,7 +82,7 @@ Three-color gradient backgrounds interpolate the background color between three 
 *Three-color gradient background: blue, white, yellow.*
 
 ## Color controls
-{: #color-controls}
+{: #enviroment-sky-color-controls}
 Clicking a color swatch opens the [Select Color](select-color.html) dialog box.
 The edit boxes indicate the angle where the color will be the most saturated.
 
@@ -110,7 +111,6 @@ Reverses the color order for the gradient.
 Sets the angles of the gradient extents to match the viewport.
 
 ## Image
-{: #image}
 {: #environment-image}
 A background image is projected onto the background.
 You can use a digital photograph, a scanned artwork, or an image created with an electronic paint program. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective.
@@ -129,11 +129,11 @@ The image can be mapped to a planar, cylindrical, or spherical shape or offset u
 
 {% include_relative snippets/snippet-clearbitmapcache.md %}
 ### Projection
-{: #projection}
+{: #backgroud-image-projection}
 Three types of background image projections are supported: [Planar](environment-tab.html#planar), [Cylindrical](environment-tab.html#cylindrical), and [Spherical](environment-tab.html#spherical). Each projection method has its own set of controls for positioning the image.
 
 #### Planar
-{: #planar}
+{: #backgroud-image-planar}
 Projects the image to a flat background.
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 Drag the pink rectangle or use the numerical controls to move or scale the background image.
@@ -192,9 +192,7 @@ Using an HDR image as an environment allows more control over the relationship b
 An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
 
 ## HDR options
-{: #rotation}
-{: #mirror}
-{: #hdr-options}
+{: #background-hdr-options}
 
 >Click the **Click here to assign** button to select an image.
 
@@ -214,7 +212,7 @@ The **Advanced Background** settings control environments that are not visible i
 In the illustration, the background is black, but the reflected environment is an HDR image of a building interior.
 
 ## Reflected
-{: #reflected-sky}
+{: #advanced-background-reflected-sky}
 A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
 *Normal environment (left) and reflected HDR sky environment (right).*
@@ -229,7 +227,7 @@ Objects reflect a [Color or gradient](environment-tab.html#color-and-gradient-ba
 Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
 
 ## Refracted
-{: #refracted-sky}
+{: #advanced-background-refracted-sky}
 
 ### Sky
 Objects refract the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.

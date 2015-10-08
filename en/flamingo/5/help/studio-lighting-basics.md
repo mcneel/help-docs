@@ -3,6 +3,7 @@
 
 
 # Studio Lighting Basics
+{: #studio-lighting-bascis}
 Studio lighting must be set up similar to a photographer's studio. For greater control, use light sources to light the scene.
 ![images/lighting-001.png](images/lighting-001.png)
 When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of light sources placed in a way to create very light and very dark areas.
@@ -14,6 +15,7 @@ The most basic studio lighting arrangement uses a key light (1), a fill light (2
 Lighting setups always depend on the angle of the camera to the subject. It is a good idea to start lighting by deciding on the camera angle. Use the **Camera** or **NamedView** commands to set up the position and angle of the camera. This will help determine the position of the lights.
 
 ## Basic Three-Light Setup
+{: basic-three-light-setup}
 A basic studio lighting setup includes three lights, a key light, a fill light, and a backlight.
 
 ### Key Light
