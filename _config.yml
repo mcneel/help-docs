@@ -76,16 +76,17 @@ defaults:
     scope:
       path: "en/flamingo/5/help"
     values:
-      doctype: "Help"
+      category: "help"
       layout: flamingo-toc-page
       collectionname: "Help"
   -
     scope:
       path: "en/flamingo/5/guides"
     values:
-      doctype: "Guides"
+      type: "guides_topic"
       layout: flamingo-toc-page
       collectionname: "Guides"
+      sort: 1
   -
     scope:
       path: "kr/flamingo"
