@@ -10,7 +10,7 @@ The ground plane provides an infinite horizontal platform for the image that str
 
 ## Ground plane
 {: #ground-plane}
- <!-- TODONotes: We need and image here. -->
+
 
 ### Enabled
 {: #groundplane-enabled}
@@ -60,7 +60,7 @@ The Sky environment uses the sun and sky settings from the [Lighting](lighting-t
 *Automatic (left) and HDR image and sun (right).*
 
 ## Color and Gradient Color
-{: #environment-color-and-gradient}
+{: #environment-color-and-gradient-backgrounds}
 A background color is always present, but may be obscured by images.
 
 ### Solid Color

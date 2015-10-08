@@ -20,7 +20,7 @@ The sources of content-to-be-consolidated are:
 
 ---
 
-## Page To Do List:
+## Pages instructions:
 
   <a class="page-link" href="https://github.com/mcneel/help-docs/blob/gh-pages/README.md">Getting Started with Dev Docs</a>
 
