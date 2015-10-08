@@ -24,9 +24,7 @@ Specify a color that will be masked and let the background show through.
 Click to select the color from the bitmap.
 
 #### Color swatch
-Click to select a color from the
-### Popup('General/select_color.htm');" ehlpsource="robohelp classic" class="hcp1" id="a168" style="position: relative;">Select Color
-dialog box.
+Click to select a color from the [ehlpsource="robohelp classic" class="hcp1" id="a168" style="position: relative;">Select Color]() dialog box.
 
 ### Sensitivity *(Color only)* 
 The value indicates the size of the area around the color that is also masked. Must be greater than 0.0 for color masking to occur.

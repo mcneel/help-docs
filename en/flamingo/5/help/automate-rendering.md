@@ -6,6 +6,7 @@
 The Flamingo nXt **Render Farm** uses the power of several computers to render single images, batch jobs of multiple images, or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers that are used only as render farm clients.
 
 ## A typical Farm layout
+{: #render-farm}
 ![images/renderfarm-002.png](images/renderfarm-002.png)
 
 >![images/01.png](images/01.png)A computer with Rhino and Flamingo nXt.
@@ -14,6 +15,7 @@ The Flamingo nXt **Render Farm** uses the power of several computers to render s
 >![images/04.png](images/04.png)Additional purchased render farm clients.
 
 ## The Farm Process
+{: #the-farm-process}
 When rendering using Flamingo nXt, instead of rendering a single image with the **Render** command, use the **Render Farm**  *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
 The **Render Farm** clients continuously check the farm output folder for a new job. Each client will pick up a part of the job and start to render. The **Farm Monitor**  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* keeps track of the job's progress.
 Each farm client deposits the results in the farm folder under &lt;&lt; *job name* &gt;&gt;\Output.
@@ -32,6 +34,7 @@ An applet that shows you the state of your render jobs and provides some simple 
 For advanced installations, the nXt Render Farm software lets you work with third-party render managers. The following procedures apply to the Render Farm included with Flaming nXt. If you are planning to use third-party render farm software, some of these procedures will be different.
 
 ##### To configure the Render Farm
+{: #configure-the-render-farm}
 
 >Create a folder to store the Render Farm jobs on a common shared location.
 
@@ -54,9 +57,11 @@ The Render Farm is now configured.
 The client machines should appear in the upper list box.
 
 ## Using the Render Farm
+{: #using-the-render-farm-from-flamingo-nxt}
 Currently, the farm can be used three ways for processing renderings on multiple computers: single rendering jobs, batch jobs, and animations.
 
 ## Single Images
+{: #single-images}
 When rendering single images, each image is split into &quot;slices&quot; and distributed to multiple computers.
 The progress of jobs can be viewed with the [Farm Monitor](automate-rendering.html#render-farm-monitor). As soon as the job is sent, another farm job may be submitted. Newly submitted jobs will queue up in the render farm shared folder. By default, the farm will render the jobs in the order they were received.
 To reconstruct the output into a single image, use the [nXt Image Editor, Arithmetic](image-editor.html#arithmetic) function.
@@ -68,6 +73,7 @@ To reconstruct the output into a single image, use the [nXt Image Editor, Arithm
 ## Farm Job Options
 
 ### Name
+{: #job-name}
 The date and time is automatically pre-pended to the name you choose. A sub-folder for the job is created in the **Render Farm** shared folder. An output folder is also created in the new job folder.
 After each job is complete, output can be found in the job's output folder.
 
@@ -83,10 +89,12 @@ Start the job later using the nXt Render Farm Monitor to start the job.
 Start the job at a specified date and time.
 
 ### Render constraints
+{: #render-constraints}
 
 ####  [Passes](documentproperties-flamingo.html#number-of-passes) 
 
 ## Batch Jobs
+{: #batch-jobs}
 Batch jobs let you submit multiple jobs and views to the Render Farm with one command. Each batch rendering will be rendered by a single client computer.
 
 ##### To submit a batch job to the render farm
@@ -94,6 +102,7 @@ Batch jobs let you submit multiple jobs and views to the Render Farm with one co
 1. On the **Flamingo nXt** menu, click **Render Batch**.
 
 ## Batch Render Options
+{: #batch-render}
 
 ### Add
 Add a viewport to the batch list.
@@ -111,6 +120,7 @@ Move the viewport name up in the list.
 Move the viewport name down in the list.
 
 ## Batch List
+{: #batch-list}
 Displays information about the list of views to be rendered.
 
 ## Rendering
@@ -122,12 +132,14 @@ Displays pass, scan line, and elapsed time information about the progress of the
 Stops the batch process.
 
 ###  **Render Batch Locally** 
+{: #render-batch-locally}
 Uses only the current computer to render the batch jobs. The rendered images will be output to the location specified in the batch job properties.
 
 ###  **Send Batch To Farm** 
 Sends the batch jobs to the [Render Farm](automate-rendering.html#render-farm). The jobs will be rendered by all available Farm clients. The render images will be output to the shared Farm folder.
 
 ## Batch Render Properties
+{: #batch-render-properties}
 
 ### Viewport to render
 See: [Render tab, Viewport to render](render-tab.html#viewtorender).
@@ -141,15 +153,18 @@ Click the **Save** button and specify a file name for the rendered image.
  [Use alpha channel background.](environment-tab.html#alpha) 
 
 ## Rendering resolution
+{: #rendering-resolution}
 
 ### Use document settings
 See [Render tab, Resolution](render-tab.html#resolution).
 
 ## Rendering constraints
+{: #rendering-constraints}
 
 ###  [Passes](documentproperties-flamingo.html#number-of-passes) 
 
 ## Animation
+{: #animation}
 Animations in Rhino can be configured using Rhino's **Animation toolbar**.
 
 ##### To submit an animation job to the render farm
@@ -167,6 +182,7 @@ When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercomma
 Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
 
 ## Render Farm Monitor
+{: #render-farm-monitor}
 The **Render Farm Monitor** is a standalone program that reports the status of the client workstations and the jobs currently in the Farm. Jobs can be suspended and restarted from the monitor and a client workstation can be excluded from participating in the render farm.
 
 ## To access the Farm Monitor from Rhino
@@ -199,6 +215,7 @@ Resume the specified job.
 Delete the specified job from the list.
 
 ## Licensing the Render Farm
+{: #licensing-the-render-farm-}
 The free version of the Render Farm allows two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 Once you have purchased your license and have acquired a product key, use the following procedures to license your farm.
 
@@ -219,6 +236,7 @@ If the version number indicates an Evaluation version, licensing has not been su
 1. Minimize the **Render Farmer** window to return it to the tray.
 
 ## FlamingoNXtAutomateRender command
+{: #flamingonxtautomaterender}
 
 ## Configure Automated Render Command
 

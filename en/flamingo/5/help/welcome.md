@@ -11,6 +11,7 @@ For technical support, tutorials, examples, and information about how to get sta
 > [Technical Support](http://nxt.flamingo3d.com/forum) 
 
 ## The Flamingo nXt Control Panel
+{: #control-panel}
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
 > [Materials](materials-tab.html) 
@@ -23,6 +24,7 @@ The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model f
 >On the **Flamingo nXt** menu, click **Control Panel**.
 
 ## Rendering Basics
+{: #rendering-basics}
 Rendering your finished model comprises four basic steps:
 
 > [Set up lighting](lighting-tab.html) 

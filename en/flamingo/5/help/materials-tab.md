@@ -7,6 +7,8 @@ Materials can be assigned to layers or individual objects from materials either 
 Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
 
 ## Assign materials to layers
+{: #bylayer}
+{: #assign-materials}
 Assigning materials by layer assigns a material to all objects on a layer.
 
 ##### Assign a material to a layer
@@ -17,16 +19,19 @@ Assigning materials by layer assigns a material to all objects on a layer.
 1. In the **Flamingo Materials** dialog box, select a material either from the **Materials in Model** palette or from the **Material Libraries**, and click **OK**.
 
 ##### Drag a material to a layer
+{: #drag-dropmaterialtolayer}
 1. In Rhino, open the **Layers** dialog box.
 1. In the **Flamingo nXt [Control Panel](welcome.html#control-panel) **, on the **Materials** tab, drag a material either from the **Materials in Model** palette or from the **Material Libraries** on to a layer name.
 
 ##### Remove a material from a layer
+{: #detachmaterialfromlayer}
 1. In Rhino, open the **Layers** dialog box.
 1. Select one or more layer names, and click the **Material** column.
 1. In the **Material Properties** dialog box, under **Assign By**, click **Basic**.
 1. If desired, reset the material color.
 
 ## Assign material to objects
+{: #byobject}
 You can assign materials from the material libraries to a layer or object.
 Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
 
@@ -37,6 +42,7 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 1. In the **Flamingo Materials** dialog box, select a material either from the **Materials in Model** palette or from the **Material Libraries**, and click **OK**.
 
 ##### Drag a material onto a single object
+{: #drag-dropmaterialtoobject}
 
 >In the **Flamingo nXt [Control Panel](welcome.html#control-panel) **, on the **Materials tab**, drag a material either from the **Materials in Model** palette or from the material library onto an object.
 
@@ -46,15 +52,18 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 1. On the menu, click **Assign to Selected Objects**.
 
 ## Select objects with material assignment
+{: #select-objects-with-material-assignment}
 1. In the **Flamingo nXt [Control Panel](welcome.html#control-panel) **, on the **Materials** tab, right-click a material from the **Materials in Model** palette.
 1. On the menu, click **Select Objects with this Material**.
 
 ## Remove a by-object material assignment
+{: #removematerialfromobject}
 1. Select objects.
 1. On the **Edit** menu, click **Object Properties**.
 1. In the ** [Properties](properties-object.html) ** dialog box, on the **Material** page, under **Assign by**, select **Layer**.
 
 ## Manage Materials
+{: #manage-materials}
 1. On the **Flamingo nXt** menu, click **Control Panel**.
 1. In the **Control Panel**, click the **Materials** tab.
 &#160;
@@ -77,7 +86,8 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 ## Materials Toolbar
 
 ### Create new material
-Choose a material template. Templates provide preset values to help start a material.
+{: #create-new-material}
+{: #material-template}Choose a material template. Templates provide preset values to help start a material.
 
 #### New [Solid Color Material](simple-material-properties.html#solid-color) 
 
@@ -118,6 +128,7 @@ Choose a material template. Templates provide preset values to help start a mate
 ### Large Thumbnail View
 
 ### Export Materials to Folder
+{: #exportallmaterials}
 
 ### Import from File
 
@@ -130,12 +141,14 @@ Choose a material template. Templates provide preset values to help start a mate
 ### Duplicate
 
 ### Delete
+{: #-delete}
 
 ### Rename
 
 ### Properties
 
 ## Library panel
+{: #library-panel}
 
 ### Hide Library panel
 

@@ -8,6 +8,7 @@
 Flamingo nXt includes a fun and powerful plant generator that efficiently generates complex plant forms during rendering. These plants have little impact on model size, since only a placeholder is kept in the model.
 
 ##### Insert an nXt Plant
+{: #insert-an-nxt-plant:}
 1. On the **Flamingo nXt** menu, click **Plants &gt; Insert Plant**.
 1. In the **Flamingo nXt Plant** dialog box, click a plant name, and click **Open**.
 1. At the prompt, pick a location for your plant in the model.
@@ -18,6 +19,7 @@ Flamingo nXt includes a fun and powerful plant generator that efficiently genera
 >Plants can be scaled, copied, and rotated.
 
 ##### Using Flamingo 2 plants
+{: #using-flamingo-2-plants}
 1. On the **Flamingo nXt** menu, click **Plants &gt; Insert Flaming 2 Plant**.
 1. In the **Flamingo nXt Plant** dialog box, click a plant name, and click **Open**.
 1. At the prompt, pick a location for your plant in the model.
@@ -28,6 +30,7 @@ Flamingo nXt includes a fun and powerful plant generator that efficiently genera
 >Flamingo 2 plants are different from the new plants. Currently you cannot edit Flamingo 2 plants or convert them to Flamingo nXt plants.
 
 ## Plant Editor
+{: #tree-editor}
 
 ## File
 

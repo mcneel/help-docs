@@ -21,6 +21,7 @@ Using the nXt Image Editor, you can:
 >On the **Flamingo nXt** menu, click **Utilities &gt; Flamingo nXt Image Editor**.
 
 ## File menu
+{: #file-menu}
 
 ### Open
 Opens a file saved in nXtImage format for editing.
@@ -32,6 +33,7 @@ Saves the nXtImage file.
 Saves the nXtImage file under a different name.
 
 ### Save Tonemapped Image As
+{: #save-tonemapped-image-as}
 Saves the edited image as a bitmap image file.
 
 >JPEG (.jpg)
@@ -44,11 +46,13 @@ Saves the edited image as a bitmap image file.
 Piranesi is a 3-D painting tool that creates images with a hand-painted appearance.
 
 ### Save HDR Image As
+{: #save-hdr-image-as}
 HDR File (.hdr)
 EXR File (.exr)
 EXR with Alpha Channel (.exr)
 
 ### Save Mask
+{: #save-mask}
 nXtImage files contain three additional channels that can be used as masks for advanced compositing in most bitmap editors. These channels carry alpha, distance, and material information for each pixel, encoded in a gray-scale image. Each channel can be viewed and saved to a .png file.
 
 ## Notes:
@@ -58,26 +62,33 @@ nXtImage files contain three additional channels that can be used as masks for a
 >The Materials channel will only uniquely encode 255 different materials. If your model contains more materials than that, some mask colors will repeat.
 
 #### Material Channel
+{: #material-channel}
 Saves the material channel mask.
 ![images/materialchannel.png](images/materialchannel.png)
 
 #### Alpha Channel
+{: #alpha-channel}
 Saves the alpha channel mask.
 ![images/alphachannel.png](images/alphachannel.png)
 
 #### Distance Channel
+{: #distance-channel}
 Saves the distance channel mask.
 ![images/distancechannel.png](images/distancechannel.png)
 
 ### Save Lighting Settings As
+{: #save-lighting-settings-as}
 Saves the [lighting scheme](lighting-tab.html#open-lighting-scheme).
 
 ## Image menu
+{: #renderwindowimage}
 
 ### Info
+{: #info}
 Displays information about the image.
 
 ### Arithmetic
+{: #arithmetic}
 Allows piecing together or overlaying segments of images rendered using the [Render Farm Single Image](automate-rendering.html#single-images) function.
 
 ##### To piece image segments
@@ -104,6 +115,7 @@ Combines images rendered using the Path Tracer engine so that for example, combi
 *![images/combinedpathtrace200.png](images/combinedpathtrace200.png) *Rendered with 20 passes (left), ten 20-pass images combined to create a 200-pass image (right).* *
 
 ### Apply Patch
+{: #apply-patch}
 Inserts an image rendered as a selected portion into the rendered image.
 
 ### Animation
@@ -120,6 +132,7 @@ Create a folder.
 A sequence of images will be created that can be used to create an animation using software designed for this purpose.
 
 ## View menu
+{: #view-menu}
 Specifies what to display in the image.
 
 ### Image
@@ -146,11 +159,13 @@ Displays the [distance mask](image-editor.html#distance-channel).
 1. In the **nXt Image Editor**, on the File menu, click **Open** to load the image into the editor.
 
 ## Tone mapping
+{: #tone-mapping}
 Tone mapping is the process of converting the luminance data used by nXt into&#160;RGB pixels that can be displayed or printed.
 
 ## Tone mapping controls
 
 ### Brightness
+{: #brightness}
 See [Render Window: Brightness](render-window.html#brightness).
 {% include_relative snippets/snippet-brightness.md %}
 ### Burn
@@ -166,26 +181,33 @@ See [Render Window: Histogram](render-window.html#histogram)
 The status fields are located at the bottom of the screen. As you move your cursor over the image, these fields display information about each pixel.
 
 ### Pixel
+{: #pixel}
 The pixel coordinate, measured from the lower left corner.
 
 ### Color
+{: #color}
 The first three fields display the RGB colors&#160;displayed in the image after tonemapping. The fourth field shows the alpha (transparency) channel, which is used for compositing.
 
 ### Value
+{: #value}
 The luminance value for each of the red, green, and blue sub-channels.
 
 ### Lum
+{: #lum}
 A weighted average of the luminance values stored in each pixel.
 
 ### Depth
+{: #depth}
 The distance of each pixel from the viewer in meters. Negative values indicate a background pixel.
 
 ### Material
+{: #material}
 The name of the material used to render the pixel.
 
 ## FX Settings
 
 ## Haze
+{: #haze}
 Adds color to pixels farther from the camera. This effect can be used to add a haze or fog effect to a scene or to mask a background with color or change the background color.
 *![images/golden gate.png](images/golden gate.png)Original image (left) and with haze (right).*
 
@@ -212,6 +234,7 @@ The haze color.
 Pick a point on the image to specify the color.
 
 ## Depth Blur
+{: #depth-blur}
 Since each pixel in the image contains a distance value, this can be used to blur the image between specified distances.
 ![images/fx-depth-001.png](images/fx-depth-001.png)
 *Original image (left) and with depth blur (right).*
@@ -220,12 +243,14 @@ Since each pixel in the image contains a distance value, this can be used to blu
 Specifies the amount of blur.
 
 ### Focus
+{: #depthblurfocus}
 Specifies a distance in the image that will be in focus.
 
 #### Pick
 Pick a point on the image to specify the focus distance.
 
 ### In-Focus Zone
+{: #in-focus-zone}
 The distance around the **Focus** that is sharp.&#160;This value is in meters.&#160;All pixels within this distance will be sharp and will be ignored by the Blur filter.&#160;Pixels beyond this distance will be progressively blurred with neighboring pixels to give the illusion of depth of field.
 
 ### Blur
@@ -242,6 +267,7 @@ Blurs pixels that are closer to the camera than the **In-Focus Zone** range.
 Blur pixels both in front and behind the **In-Focus Zone** range. This is a quick way to get a depth-of-field effect.&#160;It is not as accurate as using the built-in pre-render [Depth of Field](render-tab.html#depthoffieldoption).
 
 ## Glare
+{: #glare}
 Glare affects pixels that are brighter than the Threshold in lumens by creating a halo effect on the surrounding pixels.&#160;Only the brightest pixels in the image are affected.
 Hold the cursor over the pixels to see glare and read the total lumens of that pixel.
 *![images/glare-001.png](images/glare-001.png)Original image (left) and with glare (right).*
@@ -256,6 +282,7 @@ The lower limit of&#160;the&#160;value affected by the glare filter.&#160;All pi
 Pick a point on the image to specify the brightness value.
 
 ## Vignette
+{: #vignette}
 Blurs and blends the colors on the edges of the image to create a halo effect.
 *![images/fx-vignette-001.png](images/fx-vignette-001.png)Original image (left) and with vignette (right).*
 

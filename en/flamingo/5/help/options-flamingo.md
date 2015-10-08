@@ -5,9 +5,11 @@
 # Options: Flamingo nXt
 
 ## Library folders
+{: #library-folders}
 Additional folder locations to scan when creating the list of available material and plant libraries. By default, this list is empty.
 
 ## File search paths
+{: #file-search-paths}
 The folders are not searched for libraries, but rather for support files, such as bitmaps, plant textures, in addition to the **Library folders**. The folders are searched in order they appear in the list. The current folder containing the .3DM file is searched first.
 
 #### Add a new folder
@@ -29,21 +31,28 @@ In the **Browse for Folder** dialog box, select a folder.
 >Select a folder name from the list, and click the Move Down icon.
 
 ### Allow modeling while rendering
+{: #modal-rendering}
 Lets you keep working on the model while rendering is underway.
 
 ### Insert plants as point clouds
+{: #insert-plants-as-point-clouds}
 Uses a point cloud to represent a plant. Using point clouds generally make smaller file sizes.
 Otherwise, plants are represented by mesh objects.
 *![images/treespointcloudormesh.png](images/treespointcloudormesh.png)Trees as point cloud (left) and mesh (right).*
 
 ## Default image link state
+{: #default-decal-link-state}
 {% include_relative snippets/snippet-linking.md %}
 ### Decal drag transparency
+{: #drag-transparency}
+{: #decal-editing}
 Specifies how transparent a decal is while it is being dragged during placement.
 
 ### Default material preview size
+{: #default-material-preview-size}
 Specifies the default size of the material preview sphere in the [Material Editor](advanced-material-properties-main.html#preview).
 
 ### Farm output folder
+{: #farm-output-folder}
 The output folder for render farm jobs.
 
