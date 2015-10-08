@@ -5,14 +5,15 @@
 
 ## Libraries
 {: libraries}
- [Material Library]
- [Environment Library]
- [Plant Library]
- [Library Settings]
+ [Libraries Panel](libraries.html)
+ [Material Library](libraries.html#material)
+ [Environment Library](libraries.html#environment)
+ [Plant Library](libraries.html#plant)
+ [Library Settings](libraries.html#settings)
 
 ## Materials
 {: materials}
- [Material Editor]
+ [Material Editor](material-editor.html)
  [Assign Materials](materials-tab.html)
  [Flamingo NXT Material Types]
  [Basic Material Properties](simple-material-properties.html)
