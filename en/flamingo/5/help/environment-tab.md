@@ -10,6 +10,7 @@ The ground plane provides an infinite horizontal platform for the image that str
 
 ## Ground plane
 {: #ground-plane}
+ <!-- TODONotes: We need and image here. -->
 
 ### Enabled
 {: #groundplane-enabled}

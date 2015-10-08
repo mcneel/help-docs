@@ -4,21 +4,28 @@
 # All Flamingo Topics
 
 ## Libraries
- [Assign Materials](materials-tab.html)
- [Drag and Drop Plants]
+{: libraries}
+ [Material Library]
+ [Environment Library]
+ [Plant Library]
+ [Library Settings]
 
 ## Materials
+{: materials}
  [Material Editor]
+ [Assign Materials](materials-tab.html)
  [Flamingo NXT Material Types]
- [Basic Material Properties](simple-material-properties.html) 
- [Advanced Material Properties: Main](advanced-material-properties-main.html) 
- [Advanced Material Properties: Textures](advanced-material-properties-textures.html) 
- [Advanced Material Properties: Transparency](advanced-material-properties-transparency.html) 
+ [Basic Material Properties](simple-material-properties.html)
+ [Advanced Material Properties](advanced-material-properties-main.html) 
+ [Proceedural Material Types](procedural-materials.html)
+    [Advanced Material Properties: Textures](advanced-material-properties-textures.html) 
+    [Advanced Material Properties: Transparency](advanced-material-properties-transparency.html) 
  [Materials: Textured](texture-properties-main.html) 
  [Texture Properties: Main](texture-properties-main.html) 
  [Texture Set Materials](texture-set-materials.html) 
 
 ## Lighting
+{: lighting}
  [Lighting Pre-sets]
  [Studio Lighting Basics](studio-lighting-basics.html) 
  [Sky](sun-and-sky-tabs.html) 
@@ -28,12 +35,15 @@
  [Lights](lights-tab.html) 
 
 ## Environment
+{: environment}
  [Environment](environment-tab.html)
 
 ## GroundPlane
+{: groundplane}
  [Groundplane]
 
 ## Rendering
+{: rendering}
  [Render Preview]
  [Safe Frame]
  [Render tab](render-tab.html) 
@@ -43,6 +53,7 @@
  [Image Editor](image-editor.html) 
 
 ## Object Properties
+{: object-properties}
  [Material Source]
  [Custom Meshing]
  [Texture Mapping]
@@ -50,15 +61,18 @@
  [Object properties](properties-object.html) 
 
 ## Plants
+{: plants}
  [Plants](plants.html)
  [Plant Editor]
 
 ## Network Rendering (Farm)
+{: farm}
  [Installing the Farm]
  [Render Farm]
  [Render Farm Monitor]
 
 ## Misc
+{: misc}
  [Enter CD Key](enter-cd-key.html)
  [RealTime Viewport] 
  [Flamingo Command List](flamingo-command-list.html) 
