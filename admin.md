@@ -27,15 +27,15 @@ The sources of content-to-be-consolidated are:
 ## TODO List
 To leave To Do Notes in the markdown pages, add a standard HTML comment with the following content:
 
-TODONotes: 'Put the comments here'
+TODO: 'Put the comments here'
  
-This will list the files with TodoNotes below.
+This will list the files with TODO below.
 
 <div class="trigger">
   {% assign pages = site.pages | sort: 'url' %}
   <ul>
   {% for page in pages %}
-        {% if page.content contains "TODONotes" %}
+        {% if page.content contains "TODO" %}
           <li><a class="page-link" href="http://github.com/mcneel/help-docs/edit/gh-pages/{{page.path}}">{{page.path}}</a></li>
         {% endif %}
   {% endfor %}

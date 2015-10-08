@@ -7,7 +7,7 @@
 
 A Flamingo material is made up of a series property groups that dascibe a complete material.
 
-<!-- TODONotes: We need an diagram describing the Proceedure Hirarchyarchy. -->
+<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
  1. Name
  1. Material Procedure
  1. Basic Properties
@@ -27,7 +27,7 @@ The **Procedures** tree combines one or more materials using a set of rules for 
 
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include angular blend, blend, marble, granite, tile, and wood.
 
-<!-- TODONotes: We need an diagram describing the Proceedure Hirarchyarchy. -->
+<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 ##### To add a procedure
 1. Right-click on **Base** the **Procedures** window.
