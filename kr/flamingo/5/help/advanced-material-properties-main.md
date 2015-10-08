@@ -6,19 +6,23 @@
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
 ## Basic material properties
+{: #basic-materials-properties}
 {% include_relative snippets/snippet-nameandbasecolor.md %}![images/3-solidcolor.png](images/3-solidcolor.png)
 
 ## Reflective Finish and Highlight
+{: #reflective-finish-and-highlight}
 These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object.
  **Note** : To activate these settings, the **Intensity** value must be greater than zero.
 
 ### Highlight color
+{: #highlight-color}
 
 #### White
 Materials with a white highlight tend to resemble plastics.
 ![images/3-plastic.png](images/3-plastic.png)
 
 #### Metallic
+{: #metallic}
 Sets the highlight color to match the base color.
  **Note** : Chrome and other reflective materials do not make an interesting image unless they have something to reflect. Simply applying a reflective metal material to an object is not enough.
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
@@ -28,57 +32,71 @@ Specify any color for the highlight.
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
 ### Intensity
+{: #intensity}
 Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight.
 ![images/highlightintensity.png](images/highlightintensity.png)
 
 ### Fresnel
+{: #fresnel}
 Pronounced (fray-NELL) Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations) .The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
 Reduce the value for very dark materials to prevent too much reflection.&#160;Increase the value for materials like varnished wood, where the Fresnel reflectivity is more pronounced.
 ![images/highlightfresnel.png](images/highlightfresnel.png)
 
 ### Sharpness
+{: #sharpness}
 Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area.
 ![images/highlightsharpness.png](images/highlightsharpness.png)
 
 ### Type
+{: #type}
 Changes how reflections are calculated when artificial light sources are reflected.
 Reflections are calculated using two methods: *raycasting* and *highlight*. These two methods will eventually produce identical results; however, in certain situations, you will find that one method gets a good result more quickly. For example, objects might not look good because a light source reflection hides the material's appearance.
 In the illustration below for **Balanced** type, the object on the left has a bright white reflection that overpowers the material's appearance.
  **Note** : Blurry reflections of light sources can be associated with interior renderings where the light sources are small. The surfaces exhibiting the artifact typically have blurry reflections. Changing the type to [Glossy](advanced-material-properties-main.html#glossy), [No Light Source Reflections](advanced-material-properties-main.html#no-light-source-reflection), or [Monte Carlo](advanced-material-properties-main.html#monte-carlo) can help alleviate this problem.
 
 #### Balanced
+{: #balanced}
 Automatically balances raycasting and highlight based on the **Sharpness** setting. Both the actual reflection of the light source and the artificial highlight are calculated.
 ![images/highlightbalanced.png](images/highlightbalanced.png)
 
 #### Glossy
+{: #glossy}
 Increases the blurriness of the highlight and prevents raycasting. No object or light reflections are calculated, therefore performance is increased, and artifacts for materials with very blurry reflections are prevented. Some reflective subtlety may be lost.
 ![images/highlightglossy.png](images/highlightglossy.png)
 
 #### Monte Carlo
+{: #monte-carlo}
 Only raycasting is used to calculate reflections of light sources. The raycasting is initially very noisy and gradually converges to the correct solution. It is most useful when the highlight is not blurry.
 ![images/highlightmontecarlo.png](images/highlightmontecarlo.png)
 
 #### No Highlight
+{: #no-highlight}
 Only raycasting is used to calculate reflections of light sources. This is useful when light sources are large and the material is not blurry; in which case, the highlight calculation can take a long time. The light source reflections gradually converge.
 ![images/highlightnohighlight.png](images/highlightnohighlight.png)
 
 #### No Light Source Reflection or No Highlight
+{: #no-light-source-reflection-and-no-highlight}
 Excludes all reflections of artificial light sources and the artificial highlight effect. Object reflections are still calculated.
 ![images/highlightnohighlightreflection.png](images/highlightnohighlightreflection.png)
 
 #### No Light Source Reflections
+{: #no-light-source-reflection}
 Excludes raycast reflections of light sources, only the highlight is used. This is sometimes useful for preventing speckle artifacts if the material is blurry and the scene contains small, bright, light sources.
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
 ### Template
+{: #template}
 Indicates the template used with the [Simple Material Properties](simple-material-properties.html) dialog box.
 
 ### Simple Editor
+{: #simple-editor}
 Opens the [Simple Material Properties](simple-material-properties.html) dialog box. The more commonly used settings are available in this editor.
 
 ## Procedures
+{: #procedures}
 
-### Base
+### Base]
+{: #material-procedure-base}
 The **Procedures** tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: **Base**.
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [angular blend](advanced-material-properties-main.html#angular-blend), [blend](advanced-material-properties-main.html#blend), [marble,](advanced-material-properties-main.html#marble)  [granite](advanced-material-properties-main.html#granite), [tile](advanced-material-properties-main.html#tile), and [wood](advanced-material-properties-main.html#wood).
 
@@ -97,6 +115,7 @@ Each procedure combines two &quot;child&quot; materials using a specific method.
  2. On the menu, click **Remove**.
 
 ## Angular Blend
+{: ##material-procedure-angular-blend}
 Blends between two different materials to create materials that change characteristics based on the angle of view to the surface of the object.
 
 ### 
@@ -124,6 +143,7 @@ The **Inner** material is white, and the **Outer** material is black.
 
 ![images/angularblend-001.png](images/angularblend-001.png)
 ## Blend
+{: #material-procedure-blend}
 The **Blend** procedure combines two base components and controls the proportions of each. All of the standard library wood materials use a **Blend** procedure to change the finish of the wood from clear matte to dark shiny.
 ![images/blend-001.png](images/blend-001.png)
 Blends work well changing an entire material definition by adding an overall color to a base patterned material.
@@ -157,6 +177,7 @@ If the image has an alpha channel, this can be used instead of the bitmap graysc
 The **First** component will be placed where there is white in the bitmap pattern, and the **Second** component will be placed where there is black in the bitmap pattern.
 {% include_relative snippets/snippet-linking.md %}
 ## Granite
+{: #granite}
 Creates a 3-D material with solid pockets of a second material embedded in the **Base** component. The **Granite** procedure combines a randomly distributed **Spot** component in a **Base** component. The **Granite** procedure defines how the **Base** and **Spot** components combine. **Granite** procedures can be used for a variety of different materials including rust, sparkly plastic, and other randomly spotted materials.
 ![images/granitematerials.png](images/granitematerials.png)
 
@@ -170,6 +191,7 @@ A fraction of the whole pattern. Increasing this setting increases the relative 
 {% include_relative snippets/snippet-materialblend.md %}![images/graniteblend.png](images/graniteblend.png)
 
 ## Marble
+{: #material-procedure-marble}
 Creates alternating slabs of **Base** and **Vein** components.
 
 ### 
@@ -189,6 +211,7 @@ Alters the relative size of the slabs to each other. **Vein Width** is a fractio
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)Veneer (left), normal (right).
 
 ## Tile
+{: #material-procedure-tile}
 Tile is a 2-D material.&#160;Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The **Tile** material combines a **Base** component and a **Joint** component. Each of these materials can also include any other material.
 ![images/tile materials.png](images/tile materials.png)
 Scale tile differently in each direction for special effects. For example, use a tile material that is extremely long in one direction to create siding materials.
@@ -226,6 +249,7 @@ Offsets the material from the world origin. Do this if a seam that marks the beg
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
 ## Wood
+{: #material-procedure-wood}
 Creates concentric cylinders of alternating **Base** and **Ring** components.
 Wood consists of concentric cylinders of alternating **Base** and **Ring** components. The Wood settings define how the **Base** and **Ring** components combine.
 The method used to create wood materials depends on how close it will be viewed. If the viewpoint is not close to the wood, a solid color can take the place of wood without sacrificing image quality. This allows faster rendering.

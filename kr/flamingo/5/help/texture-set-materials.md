@@ -8,14 +8,18 @@ Texture set materials support&#160;third-party texture maps that contain informa
 ### 
 
 ## Simple Editor
+{: #simple-editor}
 
 ### Name
+{: #name}
 See [Advanced Material Properties: Main](advanced-material-properties-main.html#name).
 
 ## Tiles
+{: #tiles}
 See [Texture Properties: Main: Tiles](texture-properties-main.html#tiles).
 
 ## Map Properties
+{: #map-properties}
 The map properties vary depending on the map type.
 
 #### Color
@@ -31,6 +35,7 @@ See [Texture Properties: Main: Normal](texture-properties-main.html#normal).
 See [Texture Properties: Advanced](texture-properties-main.html#advanced).
 
 ### Map
+{: #images}
 The map name and type.
 
 ### Link
@@ -40,5 +45,6 @@ The linked style and file name if applicable.
 The image resolution.
 
 ###  **Advanced** 
+{: #advanced}
 Opens the [Advanced Material Properties: Main](advanced-material-properties-main.html) dialog box.
 

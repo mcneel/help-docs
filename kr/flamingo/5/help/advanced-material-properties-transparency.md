@@ -11,6 +11,7 @@ Changes the material from opaque to transparent. Transparent materials increase 
 ![images/transparency.png](images/transparency.png)
 
 ### Index of Refraction
+{: #index-of-refraction}
 Determines how much refraction occurs when looking through the material at objects beyond.
 ![images/transparencyior.png](images/transparencyior.png)
 The following table shows some examples of index of refraction:
@@ -28,10 +29,12 @@ Vacuum
 1. Diamond
 1. 
 ### Translucency
+{: #translucency}
 A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material.
 ![images/transparencytl.png](images/transparencytl.png)
 
 ### Scattering
+{: #scattering}
 Controls the probability of the light encountering a particle per unit length.
  **Note** : The&#160; [Path Tracer](render-tab.html#path-tracer) &#160;is required for this effect.
 Subsurface scattering permits light to penetrate the object's surface and scatter in any direction. Many translucent materials can be modeled using this effect. Certain surfaces, such as stone or skin can be realistically “softened” by allowing the light to penetrate a short distance.
@@ -39,18 +42,22 @@ The material must have some transparency in order for sub-surface scattering to 
 ![images/scattering.png](images/scattering.png)
 
 ### Attenuation
+{: #attenuation}
 Determines how much light is absorbed as it passes through the object— greater values produce a more cloudy appearance. Use **Attenuation** to model liquids. Clear liquids have low **Attenuation** ; murky liquids have higher **Attenuation** values.
 ![images/attenuation.png](images/attenuation.png)
 
 ### Dispersion
+{: #dispersion}
 Controls how much light is split into its component wavelengths.
 ![images/dispersion.png](images/dispersion.png)
 
 ### Saturation
+{: #saturation}
 Determines the amount of dispersion.
 ![images/saturation.png](images/saturation.png)
 
 ### Blurry Transparency
+{: #blurry-transparency}
 When a material is partially transparent, a little noise is introduced into the transparency, to make the material look more natural.
 
 #### Blurriness
@@ -58,6 +65,7 @@ Controls the amount of noise added.
 ![images/blurrytransparency.png](images/blurrytransparency.png)
 
 ### Glow
+{: #glow}
 Creates the illusion of illumination.
 ![images/glow.png](images/glow.png)
 
