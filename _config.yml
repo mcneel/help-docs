@@ -35,48 +35,32 @@ safe: safe
 
 
 collections:
-  - faqs
-  - guides_topics
-  - help
-  - tutorials
-  - en-flamingo
-  - kr-website
-  - kr-help
-  - kr-guide_topics
+  - en
+  - kr
 
 collections:
-  website:
+  en:
     output: true
-    permalink: /en/flamingo/5/website/:path/
-  help:
+  kr:
     output: true
-    permalink: /en/flamingo/5/help/:path/
-  guides_topics:
-    output: true
-    permalink: /en/flamingo/5/guides/:path/
-  kr-website:
-    output: true
-    permalink: /kr/flamingo/5/website/:path/
-  kr-help:
-    output: true
-    permalink: /kr/flamingo/5/help/:path/
-  kr-guides_topics:
-    output: true
-    permalink: /kr/flamingo/5/guides/:path/ 
+    
 defaults:
   -
     scope:
-      path: "en/flamingo"
+      path: ""
+      type: en
     values:
       language: en
       productname: "Flamingo NXT Documentation"
       productpath: flamingo
       productversionpath: "5"
+      layout: flamingo-toc-page
+
   -
     scope:
       path: "en/flamingo/5/help"
+      type: en
     values:
-      category: "help"
       layout: flamingo-toc-page
       collectionname: "Help"
   -
@@ -89,15 +73,18 @@ defaults:
       sort: 1
   -
     scope:
-      path: "kr/flamingo"
+      path: ""
+      type: kr
     values:
       language: kr
       productname: "Flamingo NXT 문서"
       productpath: flamingo
       productversionpath: "5"
+      layout: flamingo-toc-page
   -
     scope:
       path: "kr/flamingo/5/help"
+      type: kr
     values:
       doctype: "Help"
       layout: flamingo-toc-page

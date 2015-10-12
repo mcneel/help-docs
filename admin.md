@@ -32,7 +32,7 @@ TODO: 'Put the comments here'
 This will list the files with TODO below.
 
 <div class="trigger">
-  {% assign pages = site.pages | sort: 'url' %}
+  {% assign pages = site.en | sort: 'url' %}
   <ul>
   {% for page in pages %}
         {% if page.content contains "TODO" and page.path != "admin.md" %}
