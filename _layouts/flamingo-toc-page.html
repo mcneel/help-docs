@@ -8,58 +8,65 @@ layout: flbootstrap
     <!--Nav Bar -->
     <nav class="col-xs-0 col-md-3 bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked fixed">
+          {% assign first_toc = true %}
+          {% for category in site.data.en.help-index.categories %}
+		    <li><a href="{{site.baseurl}}/en/flamingo/5/help/{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
+              {% for topic in category.topics %}
+                {% if page.url contains topic.path and first_toc %}
+                {% assign first_toc = false %}
+                  <!-- Find the h1 handle and title -->
+                  {% if content contains '<h1 id="' %}
+                  {% assign splitAtFirstHeader = content | split:'<h1 id="' %}
+                  {% assign firstSideOfFirstHeader = splitAtFirstHeader[1] %}
+                  {% assign dividedMainTitle = firstSideOfFirstHeader | split:'<' %}
+                  {% assign firstSideOfDividedMainTitle = dividedMainTitle[0] %}
+                  {% assign titleToProcess = firstSideOfDividedMainTitle | split:'">' %}
+                  {% assign mainTitleHandle = titleToProcess[0] %}
+                  {% assign mainTitleTitle = titleToProcess[1] %}
+                  <li>
+                    <a href="#{{ mainTitleHandle }}">{{ mainTitleTitle }}</a>
 
-          <!-- Find the h1 handle and title -->
-          {% if content contains '<h1 id="' %}
-          {% assign splitAtFirstHeader = content | split:'<h1 id="' %}
-          {% assign firstSideOfFirstHeader = splitAtFirstHeader[1] %}
-          {% assign dividedMainTitle = firstSideOfFirstHeader | split:'<' %}
-          {% assign firstSideOfDividedMainTitle = dividedMainTitle[0] %}
-          {% assign titleToProcess = firstSideOfDividedMainTitle | split:'">' %}
-          {% assign mainTitleHandle = titleToProcess[0] %}
-          {% assign mainTitleTitle = titleToProcess[1] %}
-          <li>
-            <a href="#{{ mainTitleHandle }}">{{ mainTitleTitle }}</a>
-
-            <ul class="nav nav-stacked">
-              <!-- Find the h2 group and any h3 subgroups -->
-              {% assign groups = content | split:'<h2 id="' %}
-
-              {% for group in groups offset:1 %}
-                {% assign dividedGroup = group | split:'<' %}
-                {% assign groupToProcess = dividedGroup[0] %}
-                {% assign groupHeading = groupToProcess | split:'">' %}
-                {% assign groupHandle = groupHeading[0] %}
-                {% assign groupTitle = groupHeading[1] %}
-                <li>
-                  <a href="#{{groupHandle}}">{{ groupTitle }}</a>
-
-                  {% if group contains '<h3 id="' %}
                     <ul class="nav nav-stacked">
-                      {% assign subgroups = group | split:'<h3 id="' %}
+                      <!-- Find the h2 group and any h3 subgroups -->
+                      {% assign groups = content | split:'<h2 id="' %}
 
-                      {% for subgroup in subgroups offset:1 %}
-                        {% assign dividedSubgroup = subgroup | split:'<' %}
-                        {% assign subgroupToProcess = dividedSubgroup[0] %}
-                        {% assign subgroupHeading = subgroupToProcess | split:'">' %}
-                        {% assign subgroupHandle = subgroupHeading[0] %}
-                        {% assign subgroupTitle = subgroupHeading[1] %}
+                      {% for group in groups offset:1 %}
+                        {% assign dividedGroup = group | split:'<' %}
+                        {% assign groupToProcess = dividedGroup[0] %}
+                        {% assign groupHeading = groupToProcess | split:'">' %}
+                        {% assign groupHandle = groupHeading[0] %}
+                        {% assign groupTitle = groupHeading[1] %}
                         <li>
-                            <a href="#{{subgroupHandle}}">{{ subgroupTitle }}</a>
+                          <a href="#{{groupHandle}}">{{ groupTitle }}</a>
+
+                          {% if group contains '<h3 id="' %}
+                            <ul class="nav nav-stacked">
+                              {% assign subgroups = group | split:'<h3 id="' %}
+
+                              {% for subgroup in subgroups offset:1 %}
+                                {% assign dividedSubgroup = subgroup | split:'<' %}
+                                {% assign subgroupToProcess = dividedSubgroup[0] %}
+                                {% assign subgroupHeading = subgroupToProcess | split:'">' %}
+                                {% assign subgroupHandle = subgroupHeading[0] %}
+                                {% assign subgroupTitle = subgroupHeading[1] %}
+                                <li>
+                                    <a href="#{{subgroupHandle}}">{{ subgroupTitle }}</a>
+                                </li>
+                              {% endfor %}
+
+                            </ul>
+                          {% endif %}
+
                         </li>
                       {% endfor %}
+                    {% endif %}
 
                     </ul>
-                  {% endif %}
 
-                </li>
+                  </li>
+                {% endif %}
               {% endfor %}
-            {% endif %}
-
-            </ul>
-
-          </li>
-
+          {% endfor %}
         </ul>
     </nav>
     <!--Main Content -->

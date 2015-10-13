@@ -215,11 +215,11 @@ tbody.index_table tr td{
 }
 
 .bs-docs-sidebar .nav {
-  margin-left:10px;
+  margin-left:0px;
 }
 
 .bs-docs-sidebar .nav .nav {
-  margin-left:20px;
+  margin-left:10px;
 }
 
 .bs-docs-sidebar .nav .nav .nav {

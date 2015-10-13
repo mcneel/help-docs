@@ -79,7 +79,7 @@ categories:
         path: image-editor.html
 
   - name: Object Properties
-    anchor: 0bject_properties
+    anchor: object_properties
     topics:
       - name: Material Source
       - name: Custom Meshing
