@@ -31,7 +31,7 @@
 ## {{category.name}}
 {: #{{category.anchor}}}
 {% for topic in category.topics %}
-[{{topic.name}}]({{topic.path}}){% endfor %}
+[{{topic.name}}]{% if topic.path != null %}({{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}){% endif %}{% endfor %}
 {% endfor %}
 
 
