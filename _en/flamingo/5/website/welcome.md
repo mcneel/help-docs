@@ -2,20 +2,24 @@
 layout: fullwidth-page
 ---
 
-
-# Flamingo nXt 5®
- **[Flamingo nXt](http://www.flamingo3d.com/)** creates high quality, photorealistic, still, and animation image files from 3-D models inside **[Rhinoceros](http://www.rhino3d.com/)** ®.  Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a beta version.
+# Getting Started with Flamingo nXt®
+**Flamingo nXt** creates high quality, photorealistic, still, and animation image files from 3-D models inside **Rhinoceros** ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a work in progress version.
  
-Some of the improvements include:
+Flamingo can be downloaded and installed from the [Flamingo nXt 5 Download}(http://www.rhino3d.com/download/flamingo/5/beta).
 
- *  Better Viewport Render Preview mode
- *  Material mapping is done through the Rhino mapping interface.
- *  Decals are placed using the Rhino decal interface.
- *  Integration into the Rhino rendering panels (Sun Control, GroundPlane, Lights, Material Library Panel, Material Editor, Drag and Drop Materials)
- *  Safe Frame is supported
- *  Custom Meshing is supported (Curve Piping, Displacement, Edge Softening, Shut Lining)
- *  New Hybrid Render Engine takes the best features in default and pathtrace.
- *  Flamingo RT preview window shows a quick rendering of the current model.
+You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo)
+
+## Installation
+
+Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
+Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
+After downloading and running the RHI installer, start up Rhino.
+
+For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
+
+> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
+> [Gallery](http://nxt.flamingo3d.com/photo) 
+> [Technical Support](http://nxt.flamingo3d.com/forum) 
 
 ## Getting started Guides
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
