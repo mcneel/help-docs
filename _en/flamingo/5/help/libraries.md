@@ -13,7 +13,7 @@ Materials are simply files on your hard driver.  Library folders are simply Wind
 
 Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_defaults.png](images/library_defaults.png)
+Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
 
 ## Material Library
 {: #material}
