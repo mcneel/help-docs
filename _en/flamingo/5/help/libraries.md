@@ -13,7 +13,7 @@ Materials are simply files on your hard driver.  Library folders are simply Wind
 
 Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_defaults.png](images/library_defaults.png)
+Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
 
 ## Material Library
 {: #material}
@@ -35,6 +35,8 @@ Drag onto a block and any ByParent objects in the block will adopt that material
 Plants in libraries are Rhino files on the hard drive.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive.
 
 Drag and drop plants into a viewport to place plants into the model. 
+
+<!-- TODO: Where do we explain plants and what you can do with them? -->
 
 ## Environment Library
 {: #environment}
