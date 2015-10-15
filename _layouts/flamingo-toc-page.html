@@ -9,7 +9,8 @@ layout: flbootstrap
     <nav class="col-xs-0 col-md-3 bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked fixed">
           {% assign first_toc = true %}
-          {% for category in site.data.en.help-index.categories %}
+          <li><a href="{{site.baseurl}}/en/flamingo/5/help/{% if site.data.en.help-index.main_index.anchor != null %}#{{site.data.en.help-index.main_index.anchor}}{% endif %}">{{site.data.en.help-index.main_index.name}}</a></li>
+          {% for category in site.data.en.help-index.main_index.categories %}
 		    <li><a href="{{site.baseurl}}/en/flamingo/5/help/{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
               {% for topic in category.topics %}
                 {% if page.url contains topic.path and first_toc %}

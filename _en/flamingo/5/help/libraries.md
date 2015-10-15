@@ -15,6 +15,11 @@ Use the address bar at the top of the Libraries tab to navigate to any folder on
 
 Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
 
+#### Organizing Libraries
+{: organizing_libraries}
+Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents.
+
+
 ## Material Library
 {: #material}
 Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive.
@@ -22,13 +27,13 @@ Materials in libraries are files on the hard drive.  Once assigned to the model,
 Drag and drop materials to assign materials to the model. Materials can be assigned to:
 
 #### Layer Assignment
-Drag a material directly onto the layer name in the Layer Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping anither material on the layer.
+Drag a material directly onto the layer name in the Layer Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
 
 #### Object Assignment
 Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment. 
 
 #### Block Assignment
-Drag onto a block and any ByParent objects in the block will adopt that material.  Any object wihin the block that has a ByParent material source will pickup the blocks material.
+Drag onto a block and any ByParent objects in the block will adopt that material.  Any object within the block that has a ByParent material source will pickup the blocks material.
 
 ## Plant Library
 {: #plant}
@@ -40,48 +45,31 @@ Drag and drop plants into a viewport to place plants into the model.
 
 ## Environment Library
 {: #environment}
-This is the Environment Library
-<!-- TODO: This needs to be filled out -->
+Environments can be saved in the library.  This allows Environment settings to be passed from one model to another.  For more details, got to [Environments](environment-tab.html)
 
 ## Library Settings
 {: #settings}
-Set up content libraries in Options > Libraries.
+![images/options.png](images/options.png)Libraries Options are used to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
 
-![images/options.png](images/options.png)Libraries Options
-&#160;
-
-### Where can I find this command?
-![images/options.png](images/options.png)Toolbars
- [id="a6" style="position: relative;">Properties]() 
- [id="a7" style="position: relative;">Standard]() 
- [id="a8" style="position: relative;">Tools]() 
-![images/menuicon.png](images/menuicon.png)Menus
- [id="a9" style="position: relative;">Tools]() 
-Options
-![images/ctrlplus.png](images/ctrlplus.png)Shortcut
-Libraries
-
+#### Where can I find this command?
+ 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
+ 1. ![images/options.png](images/options.png)Toolbars >![images/icon-properties.png](images/icon-properties.png)Properties Toolbar > ![images/documentpropertiesbutton.png](images/documentpropertiesbutton.png)Document Properties > Libraries
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Tools Pulldown > Options > Libraries.
 
 ### Show render content
-Changes the default location of [content libraries](libraries.html) for this computer.
+Use this to show or hide the default render content location.
 
 #### Use default library location (My Documents)
 By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
 
 #### Custom
-Sets a custom [library](libraries.html) location.
+Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
 
-####  **Browse** 
+##### Browse Button 
 Open file browser to specify file.
 
-### Show &quot;Documents&quot; folder
+#### Show "Documents" folder
 In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
 
-### Show custom folders
+#### Show custom folders
 In the [Libraries panel](libraries.html), designated custom folders will display in the menu.
-
-
-
-### Organizing Libraries
-{: Orgainzing Libraries}
-Libraries are simply files.  You can copy and paste and move around folders.

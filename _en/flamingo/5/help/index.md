@@ -1,33 +1,33 @@
 ---
 ---
 
-# All Flamingo Topics
-
 <!-- Do not edit the below section. The source for the Help index can be found in the _data folder in the help_index.yaml file -->
 {% case page.language %}
   {% when 'cn' %}
-    {%assign local_categories = site.data.cn.help-index.categories %}
+    {%assign local_categories = site.data.cn.help-index.main_index %}
   {% when 'de' %}
-    {%assign local_categories = site.data.de.help-index.categories %}
+    {%assign local_categories = site.data.de.help-index.main_index %}
   {% when 'en' %}
-    {%assign local_categories = site.data.en.help-index.categories %}
+    {%assign local_categories = site.data.en.help-index.main_index %}
   {% when 'es' %}
-    {%assign local_categories = site.data.es.help-index.categories %}
+    {%assign local_categories = site.data.es.help-index.main_index %}
   {% when 'fr' %}
-    {%assign local_categories = site.data.fr.help-index.categories %}
+    {%assign local_categories = site.data.fr.help-index.main_index%}
   {% when 'it' %}
-    {%assign local_categories = site.data.it.help-index.categories %}
+    {%assign local_categories = site.data.it.help-index.main_index %}
   {% when 'jp' %}
-    {%assign local_categories = site.data.jp.help-index.categories %}
+    {%assign local_categories = site.data.jp.help-index.main_index %}
   {% when 'kr' %}
-    {%assign local_categories = site.data.kr.help-index.categories %}
+    {%assign local_categories = site.data.kr.help-index.main_index %}
   {% when 'tw' %}
-    {%assign local_categories = site.data.tw.help-index.categories %}
+    {%assign local_categories = site.data.tw.help-index.main_index %}
   {% else %}
-    {%assign local_categories = site.data.en.help-index.categories %}
+    {%assign local_categories = site.data.en.help-index.main_index %}
 {% endcase %}
 
-{% for category in local_categories %}
+
+# {{local_categories.name}}
+{% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}
 {% for topic in category.topics %}
