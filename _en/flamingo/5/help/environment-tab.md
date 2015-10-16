@@ -22,7 +22,7 @@ Turns the ground plane on.
 {: #groundplane-alpha}
 Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
 ![images/groundplane-004a.png](images/groundplane-004a.png)
- *Ground plane shows shadow, but is otherwise transparent in the image.* 
+ *Ground plane shows shadow, but is otherwise transparent in the image.*
 
 ### Elevation
 {: #groundplane-elevation}
@@ -48,10 +48,10 @@ Modifies the relative brightness of the background.
 {: #background-type}
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
 
-> [Sky](environment-tab.html#environment-sky) 
-> [Solid and gradient color](environment-tab.html#color-and-gradient-backgrounds) 
-> [Image](#environment-image) 
-> [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds) 
+> [Sky](environment-tab.html#environment-sky)
+> [Solid and gradient color](environment-tab.html#color-and-gradient-backgrounds)
+> [Image](#environment-image)
+> [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds)
 
 ## Sky
 {: #environment-sky}
@@ -105,10 +105,10 @@ The blue flag indicates where the Bottom color&#160;will be the most saturated.
 For three-color gradients, the green flag indicates the angle where the Middle color is most saturated.
 ![images/background-color-004.png](images/background-color-004.png)
 
-###  **Swap top and bottom colors** 
+###  **Swap top and bottom colors**
 Reverses the color order for the gradient.
 
-###  **Get angles from view** 
+###  **Get angles from view**
 Sets the angles of the gradient extents to match the viewport.
 
 ## Image
@@ -138,7 +138,7 @@ Three types of background image projections are supported: [Planar](environment-
 Projects the image to a flat background.
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 Drag the pink rectangle or use the numerical controls to move or scale the background image.
-![images/background-image-003.png](images/background-image-003.png) *Background area (1), image size and shape (2).* 
+![images/background-image-003.png](images/background-image-003.png) *Background area (1), image size and shape (2).*
 
 #### Planar Options
 
@@ -157,7 +157,7 @@ Specify the size and position of the image map in height and width angles. Use t
 #### Cylindrical Options
 {: #cylindricalprojectionoptions}
 
-#####  [Background color](environment-tab.html#backgroundcolors) 
+#####  [Background color](environment-tab.html#backgroundcolors)
 
 ##### Width
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
@@ -170,7 +170,7 @@ Specifies the vertical extents of the image. Enter an angle or drag the flags in
 Specifies the image rotation and extents. Enter an angle or drag the control widget to set the rotation. The red dot indicates the center of the image. The gray area indicates the view.
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png)
 
-#####  **Angles From View** 
+#####  **Angles From View**
 Sets the **Width** and **Top/Bottom** angles to match the viewport.
 
 #### Spherical
@@ -183,7 +183,7 @@ Spherical projection maps the image to a complete sphere. This method generally 
 ##### Rotation
 Specifies the image rotation. The red dot indicates the center of the image.
 
-#####  **Angles From View** 
+#####  **Angles From View**
 Sets the rotation angle to match the viewport.
 
 ## HDR and Planar HDR Backgrounds
@@ -204,7 +204,7 @@ Planar high-dynamic-range images provide both an image background and lighting. 
 
 >Click the **Click here to assign** button to select an image.
 
-### 
+###
 *Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
 {% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
 ## Advanced Background
@@ -243,4 +243,3 @@ Objects refract the visible background as specified in the [Environment](environ
 {: #no-transparent-alpha-objects}
 Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
 If images will be pasted into the alpha channel, turn this setting off.
-

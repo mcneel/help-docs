@@ -97,6 +97,12 @@ As with OS X, install the GitHub Pages Ruby Gem, navigate to the clone directory
 
 ```
 gem install github-pages
+gem install wdm
 cd CLONE_DIRECTORY
+```
+
+#### Run Jekyll
+Run the Git Shell program and type:
+```
 jekyll serve
 ```
