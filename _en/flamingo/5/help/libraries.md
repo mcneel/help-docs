@@ -1,7 +1,7 @@
 ---
 ---
 
-# Library Panel
+# Library Panel ![images/librariestab.png](images/librariestab.png)
 The Libraries command opens the Libraries panel, to manage libraries of materials, textures, and environments.
 Render content can be saved to files creating external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
 
@@ -30,7 +30,7 @@ Drag and drop materials to assign materials to the model. Materials can be assig
 Drag a material directly onto the layer name in the Layer Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
 
 #### Object Assignment
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment. 
+Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
 
 #### Block Assignment
 Drag onto a block and any ByParent objects in the block will adopt that material.  Any object within the block that has a ByParent material source will pickup the blocks material.
@@ -39,7 +39,7 @@ Drag onto a block and any ByParent objects in the block will adopt that material
 {: #plant}
 Plants in libraries are Rhino files on the hard drive.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive.
 
-Drag and drop plants into a viewport to place plants into the model. 
+Drag and drop plants into a viewport to place plants into the model.
 
 <!-- TODO: Where do we explain plants and what you can do with them? -->
 
@@ -65,7 +65,7 @@ By default, the [content libraries](libraries.html) are a subfolder of the *My D
 #### Custom
 Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
 
-##### Browse Button 
+##### Browse Button
 Open file browser to specify file.
 
 #### Show "Documents" folder
