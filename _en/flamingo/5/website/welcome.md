@@ -7,7 +7,7 @@ layout: fullwidth-page
  
 Flamingo can be downloaded and installed from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/beta).
 
-You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo)
+You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo).
 
 ## Installation
 
@@ -25,10 +25,10 @@ For technical support, tutorials, examples, and information about how to get sta
 ## Getting started guides
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
- *  [Materials](..\materials\materials-tab.html) 
- *  [Lighting](../lighting/lighting-tab.html) 
- *  [Environment](../environment/environment-tab.html) 
- *  [Render](../render/render-tab.html) 
+>  [Materials](..\materials\materials-tab.html) 
+> [Lighting](../lighting/lighting-tab.html) 
+> [Environment](../environment/environment-tab.html) 
+> [Render](../render/render-tab.html) 
 
 ## Help documentation
  * On the **Flamingo nXt** menu, click **Control Panel**.
@@ -37,8 +37,8 @@ The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model f
  For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
 <!--TODO: This link does not match line 19. Should it? -->
 
- *  [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
- *  [Gallery](http://nxt.flamingo3d.com/photo) 
- *  [Technical Support](http://www.flamingo3d.com/en/support/)
- *  [Forum](http://discourse.mcneel.com/c/rendering/flamingo) 
+> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
+> [Gallery](http://nxt.flamingo3d.com/photo) 
+> [Technical Support](http://www.flamingo3d.com/en/support/)
+> [Forum](http://discourse.mcneel.com/c/rendering/flamingo) 
 
