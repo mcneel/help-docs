@@ -32,9 +32,9 @@ body {
     border-left-color: #ce4844;
 }
 
-/* 
+/*
 ##################################################################
-# Style Search 
+# Style Search
 ##################################################################
 */
 
@@ -107,6 +107,9 @@ h1 {
   background: #E6E6E6;
   padding: 6px;
 }
+h1 img {
+  vertical-align: top;
+}
 h2 {
   background: white;
   border-bottom:solid;
@@ -114,18 +117,28 @@ h2 {
   border-bottom-width:1px;
   margin-bottom: 3px;
 }
+h2 img {
+  vertical-align: top;
+}
 h3 {
   background: white;
   margin-bottom: 0px;
 }
+h3 img {
+  vertical-align: top;
+}
 h4 {
 	margin-bottom: 0px;
 }
-
+h4 img {
+  vertical-align: bottom;
+}
 h5 {
 	margin-bottom: 0px;
 }
-
+h5 img {
+  vertical-align: top;
+}
 h6 {
 	margin-bottom: 0px;
 }
