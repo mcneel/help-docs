@@ -17,6 +17,7 @@ After downloading and running the RHI installer, start up Rhino.
 
 For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
 <!--TODO: This link does not match line 36. Should it? -->
+
 > [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
 > [Gallery](http://nxt.flamingo3d.com/photo) 
 > [Technical support](http://nxt.flamingo3d.com/forum) 
@@ -35,6 +36,7 @@ The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model f
 ## Flamingo information and support
  For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
 <!--TODO: This link does not match line 19. Should it? -->
+
  *  [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
  *  [Gallery](http://nxt.flamingo3d.com/photo) 
  *  [Technical Support](http://www.flamingo3d.com/en/support/)
