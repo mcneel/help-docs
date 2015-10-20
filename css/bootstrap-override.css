@@ -125,19 +125,25 @@ h3 {
   margin-bottom: 0px;
 }
 h3 img {
-  vertical-align: top;
+  vertical-align: bottom;
+  margin-top: 0px;
+  margin-bottom: 1px;
 }
 h4 {
 	margin-bottom: 0px;
 }
 h4 img {
   vertical-align: bottom;
+  margin-top: 0px;
+  margin-bottom: 3px;
 }
 h5 {
 	margin-bottom: 0px;
 }
 h5 img {
-  vertical-align: top;
+  vertical-align: bottom;
+  margin-top: 0px;
+  margin-bottom: 1px;
 }
 h6 {
 	margin-bottom: 0px;
