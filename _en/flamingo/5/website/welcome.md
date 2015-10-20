@@ -16,7 +16,7 @@ Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
 After downloading and running the RHI installer, start up Rhino.
 
 For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
-<!--TODO: This link does not match line 36. Should it? -->
+
 
 > [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation) 
 > [Gallery](http://nxt.flamingo3d.com/photo) 
@@ -25,7 +25,7 @@ For technical support, tutorials, examples, and information about how to get sta
 ## Getting started guides
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
->  [Materials](..\materials\materials-tab.html) 
+> [Materials](..\materials\materials-tab.html) 
 > [Lighting](../lighting/lighting-tab.html) 
 > [Environment](../environment/environment-tab.html) 
 > [Render](../render/render-tab.html) 
