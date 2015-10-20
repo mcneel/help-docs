@@ -17,7 +17,7 @@ Quickly navigate back to the Default Library locations using the wrench icon at 
 
 #### Organizing Libraries
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents.
+Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
 
 
 ## Material Library
