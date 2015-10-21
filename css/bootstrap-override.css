@@ -3,13 +3,16 @@
 body {
   font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 300;
   font-style: normal;
   font-variant: normal;
   color: #111;
   background-color: white;
   -webkit-text-size-adjust: 100%;
+}
+body img {
+  vertical-align:bottom;
 }
 
 .tab-content .tab-pane {
@@ -155,10 +158,6 @@ h6 {
 
 blockquote {
 	border-color: white;
-}
-
-img {
-	margin-top: 5px;
 }
 
 ul {

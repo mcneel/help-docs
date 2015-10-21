@@ -1,7 +1,7 @@
 ---
 ---
 
-# Material Editor Panel ![images/materialtab.png](images/materialtab.png)
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Editor Panel 
 Materials contain the specification of color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For best result use Flamingo specific materials.
 
 Materials can be assign to layer, objects and blocks. Assignments can be made by dragged and dropped onto objects or various controls. See [Material Assignments](material_assignment.html) for more information.
@@ -139,7 +139,7 @@ Drag on this divider to change the length of the Material List versus the length
 
 ### [Material Name](material-editor.html#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
-This is the name of the material. The material name is also saved as the file name when exporting the material to the library. **note:** - materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
+This is the name of the material. The material name is also saved as the file name when exporting the material to the library. note: - materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
 
 ### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #sections}
@@ -156,12 +156,12 @@ These settings also appear on right-click context menus for the thumbnail previe
 Assigns the current material to selected objects.
 
 ##### To assign a material to objects
- 1. Click **Assign to Selection**.
+ 1. Click Assign to Selection.
  1. In the Rhino viewport, select the target objects.
 
 ##### To pre-select objects
  1. In the Rhino viewport, select the target objects.
- 1. Click **Assign to Selection**.
+ 1. Click Assign to Selection.
 The target objects can be selected either before or after clicking Assign to Selection.
 
 ##### To drag and drop materials to objects
@@ -172,12 +172,12 @@ Drag and drop works for only one object at a time.
 Assigns the current material to layers.
 
 ##### To assign a material to layers
- 1. Click **Assign to Layers**.
- 1. In the **Choose Layers** dialog box, check the boxes for the material assignment.
+ 1. Click Assign to Layers.
+ 1. In the Choose Layers dialog box, check the boxes for the material assignment.
 
 ##### To assign materials from the Layers panel
- 1. In the ** [Layer](layer.html) ** panel, select one or more layers and click the ** [Material](layer.html#material) ** column.
- 1. In the **Layer Material** dialog box, select the material to assign.
+ 1. In the  [Layer](layer.html)  panel, select one or more layers and click the  [Material](layer.html#material)  column.
+ 1. In the Layer Material dialog box, select the material to assign.
 
 ##### To drag and drop materials to objects
  * Drag the material from the thumbnails or list onto the target layer.
@@ -201,7 +201,7 @@ Changes the material to a different type.
 
 #### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
 Changes the material to a different type.
-The default behavior depends on the current state of the [Rendering Options](rendering.html) &gt; ** [Copy similar settings when content type is changed](rendering.html#copy-similar-settings-when-content-type-is-changed) ** box. If checked, compatible settings from the old content will be copied to the new one.
+The default behavior depends on the current state of the [Rendering Options](rendering.html) &gt;  [Copy similar settings when content type is changed](rendering.html#copy-similar-settings-when-content-type-is-changed)  box. If checked, compatible settings from the old content will be copied to the new one.
 <!--TODO: The links above need to be updated.-->
 
 #### ![images/reset.png](images/reset.png) Reset to Defaults
@@ -229,7 +229,7 @@ Copies the selected material to a new material with the same settings.
 Removes the connection between [instanced](#paste-as-instance) materials.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 #### ![images/contentfilter.png](images/contentfilter.png) Content Filter
-Opens the **[Content Filters](content_filters.html)** dialog box.
+Opens the [Content Filters](content_filters.html) dialog box.
 
 #### ![images/rename.png](images/rename.png) Properties
-Opens the **[Preview Properties](previewproperties.html)** dialog box.
+Opens the [Preview Properties](previewproperties.html) dialog box.
