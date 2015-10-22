@@ -1,8 +1,3 @@
-All materials share three basic properties: name, color, and preview.
-
-### Name
-The material name.
-
 ### Color
 Controls the local color for the material. All materials have a base color. [More about color...](select-color.html) 
 
@@ -27,4 +22,3 @@ Sets the preview object to a plane with a width equaling the sphere radius.
 
 #### Sphere radius
 Sets the preview sphere radius and box and plane width. Set the size to approximate the size of the objects to which the material will be assigned to help visualize the material.
-

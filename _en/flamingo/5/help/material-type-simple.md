@@ -1,15 +1,37 @@
 ---
 ---
 
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
+The Flamingo material is defined by a series of property groups. A material may present any of the following property groups:
 
-# Simple Material Properties
+> [Name](#name)
+> [Solid Color](#solid-color)
+> Plastic
+> Metal
+> Glass
+> Glossy
+> Clear finish
+> Flamingo Textured
+> Texture Set
+> Procedural Material (Advanced)
+> Advanced Material (Advanced)
+> Transparency (Advanced)
+> Textures (Advanced)
+> Textures Summary (Advanced)
+> Notes
+
+All materials are actually and advanced material, with a simple interface presented.
+
 The Simple Material Properties dialog box give easy access to the properties you will usually want to change to make a material look different without changing the material style from, say Solid Color to Glass. For most materials, changing the color is all that is necessary to get a different look. You can change the advanced properties. These are pre-set by the material template to help you quickly achieve the appearance you want.{: #materialname}
-{% include_relative snippets/snippet-nameandbasecolor.md %}
+
+## Name
+{: #name}
+This is the name of the material. The material name is also saved as the file name when exporting the material to the library. note: - materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
+
 ## Solid Color
 {: #solid-color}
 Solid Color materials have only a [name](advanced-material-properties-main.html#name) and a [color](advanced-material-properties-main.html#color).
-
-###
+![images/solidcolors.png](images/3-solidcolor.png)
 Properties available from the **Simple Material Properties** dialog box:
 
 > [Name](advanced-material-properties-main.html#name)
@@ -156,14 +178,11 @@ Properties available from the **Simple Material Properties** dialog:
 Opens the [Advanced Material Properties](advanced-material-properties-main.html) dialog box.
 &#160;
 
-## Color
-Sets the material's base (also called *diffuse* ) color.
-The color used to [render](render.html) surfaces, polysurfaces, or polygon meshes.
-The color option does not affect the select wireframe display. To change the color of the wireframe display, change the color of the object's [layer](layer.html) or set the color in [Object Properties](properties.html)
+## Color Selector
 
 ##### To change the color
 
->![images/number-1.png](images/number-1.png)Click the color swatch to select a color from the [Select Color](select-color.html) dialog box.
+ 1. Click the color swatch to select a color from the [Select Color](select-color.html) dialog box.
 
 ![images/colorswatch-002.png](images/colorswatch-002.png)
 

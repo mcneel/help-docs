@@ -30,15 +30,17 @@ main_index:
           path: material_assignment.html
         - name: Flamingo NXT Material Type
         - name: Basic Material Properties
-          path: simple-material-properties.html
+          path: material-type-simple.html
         - name: Advanced Material Properties
-          path: advanced-material-properties-main.html
+          path: material-type-advanced.html
         - name: Procedural Material Types
           path: procedural-materials.html
         - name: Texture Properties
           path: texture-properties-main.html
         - name: Texture Set Materials
           path: texture-set-materials.html
+        - name: Color Selector
+          path: select-color.html
 
     - name: Lighting
       anchor: lighting
