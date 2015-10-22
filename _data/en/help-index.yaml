@@ -28,7 +28,6 @@ main_index:
           path: material-editor.html
         - name: Assign Materials
           path: material_assignment.html
-        - name: Flamingo NXT Material Type
         - name: Basic Material Properties
           path: material-type-simple.html
         - name: Advanced Material Properties

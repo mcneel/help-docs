@@ -2,42 +2,46 @@
 ---
 
 
-# Advanced Material Properties: Main
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Advanced Material Properties
+
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
-A Flamingo material is made up of a series property groups that dascibe a complete material.
+Flamingo has both [Simple Material](material-type-simple.html) Types and an Advanced Material type.  The Advanced Material contains the complete series of property groups for a material.  Use the Advanced Material type for the maximum flexibility and control of a material.
 
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
- 1. Name
- 1. Material Procedure
- 1. Basic Properties
- 1. Reflective Finish
- 1. Transparency Properties
- 1. Procedural Textures
- 1. Bitmap Textures
- 1. Notes
+The complete set of property groups in the Advanced Material are:
 
- ## Material Name
- {: #name}
- This is the name of the material in the Rhino model.  Materials are stored in the Rhino model.
+> [Name](#name)
+> [Material Procedure](#proceedures)
+> [Advanced Material Properties](#advanced)
+> [Reflective Finish](#reflective)
+> [Transparency Properties](#transparent)
+> [Procedural Textures](#texture_procedural)
+> [Bitmap Textures](#texture_bitmap)
+> [Notes](#notes)
 
- ## Material Procedures
+## Material Name
+{: #name}
+This is the name of the material in the Rhino model.  Materials are stored in the Rhino model. That means a with the same name in the library or a different model will not be affected by edits to the material in the current model. To use any material in another model it must be exported to the [Library](libraries.html) first. The Name of the material will also serve as its exported file name.
+
+## Material Procedures
 {: #procedures}
-The **Procedures** tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: **Base**.
+The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For standard materials, there will be only one component in the list: Base.
 
-Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include angular blend, blend, marble, granite, tile, and wood.
+Each procedure combines two "child" materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include angular blend, blend, marble, granite, tile, and wood.
+
+As an example, the Marble Procedure combines a Base material and Vein Material in a swirling pattern.
 
 <!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 ##### To add a procedure
 1. Right-click on **Base** the **Procedures** window.
 1. On the menu, click a procedure type.
-> [Angular Blend](procedural-materials.html#angular-blend) 
-> [Blend](procedural-materials.html#blend) 
-> [Granite](procedural-materials.html#granite) 
-> [Marble](procedural-materials.html#marble) 
-> [Tile](procedural-materials.html#tile) 
-> [Wood](procedural-materials.html#wood) 
+> [Angular Blend](procedural-materials.html#angular-blend)
+> [Blend](procedural-materials.html#blend)
+> [Granite](procedural-materials.html#granite)
+> [Marble](procedural-materials.html#marble)
+> [Tile](procedural-materials.html#tile)
+> [Wood](procedural-materials.html#wood)
 
 ##### To remove a procedure
  1. In the **Procedures** window,right-click the procedure name.
@@ -148,7 +152,7 @@ Vacuum
 1. Emerald
 1. Ruby/Sapphire
 1. Diamond
-1. 
+1.
 ### Translucency
 {: #translucency}
 A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material.
@@ -255,5 +259,3 @@ Controls the appearance of depth.
 Sets the rotation angle for the pattern.
 Changes to the orientation are normally apparent only if the procedural map has an obvious pattern or if the bump map has been scaled with different x, y and z components to produce a directional pattern.
 ![images/texturerotated.png](images/texturerotated.png)
-
-

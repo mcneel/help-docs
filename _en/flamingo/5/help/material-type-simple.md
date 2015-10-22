@@ -4,31 +4,32 @@
 # ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
 The Flamingo material is defined by a series of property groups. There are a series of Simple Material Types of commonly used materials.  These material present very a very simple set of controls. This give easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
 
-Simple Material Types:
+#### Simple Material Types:
 
-> [Solid Color](#solid-color)
-> [Plastic](#plastic)
-> [Metal](#metal)
-> [Glass](#glass)
-> [Glossy](#glossy)
-> [Clear Finish](#clear-finish)
-> [Flamingo Textured](#flamingo-textured)
-> [Texture Set](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Solid Color](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastic](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metal](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png)[Glass](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png)[Glossy](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[Clear Finish](#clear-finish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
 
 Any material can be converted to an advanced material.  Advanced material present all the possible controls to edit a material in Flamingo NXT.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
 
-Advanced Materials are comprised of these property groups:
+#### Advanced Materials are comprised of these property groups:
 
-> [Name](#name)
-> Procedural Material
-> Advanced Material
-> Transparency
-> Textures
-> Textures Summary
-> Notes
+> [Name](material-type-advanced.html#name)
+> [Procedural Material](material-type-advanced.html#name)
+> [Advanced Material](material-type-advanced.html#name)
+> [Transparency](material-type-advanced.html#name)
+> [Textures](material-type-advanced.html#name)
+> [Textures Summary](material-type-advanced.html#name)
+> [Notes](material-type-advanced.html#name)
 
 Materials are saved in the Rhino Model. A materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
 <!-- TODO: All the links and anchors need to be tested on this page.  They were created before the Advanced page they reference.-->
+
 ## Solid Color
 {: #solid-color}
 Solid Color materials have only a [name](advanced-material-properties-main.html#name) and a [color](advanced-material-properties-main.html#color).
