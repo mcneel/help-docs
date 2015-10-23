@@ -32,10 +32,10 @@ main_index:
           path: material-type-simple.html
         - name: Advanced Material Properties
           path: material-type-advanced.html
+        - name: Material Image Properties
+          path: material-image-properties.html
         - name: Procedural Material Types
           path: procedural-materials.html
-        - name: Texture Properties
-          path: texture-properties-main.html
         - name: Texture Set Materials
           path: texture-set-materials.html
         - name: Color Selector

@@ -116,8 +116,12 @@ Controls strength of the mirror-like reflection of the surface. See Advanced [In
 #### Sharpness
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](advanced-material-properties-main.html#sharpness) topic for more details.
 
-#### Texture
-Set the texture map and properties of the material. There are many options here, see the Advanced [Texture](material-type-advanced.html#texture) topic for more details.
+#### Image
+Set the image map and properties of the material. There are many options here, see the Advanced [Images](material-type-advanced.html#texture) topic for more details.
+
+{% include_relative snippets/snippet-material-image-add-edit.md %}
+
+<!--TODO: There are a lot of changes surrounding the Images vs texture issues.  Does this link above go to the right place?-->
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets on this material.
 

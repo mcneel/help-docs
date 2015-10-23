@@ -3,6 +3,7 @@
 
 #  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Procedural Materials
 The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
+<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include
 

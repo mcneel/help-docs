@@ -111,7 +111,7 @@ h1 {
   padding: 6px;
 }
 h1 img {
-  vertical-align: top;
+  vertical-align: bottom;
 }
 h2 {
   background: white;
@@ -323,3 +323,26 @@ tbody.index_table tr td{
 @media screen and (max-width: 990px) { .bs-docs-sidebar {
     display: none;
 } }
+/*
+##############################################################################
+##  Material Type Advanced Page
+##############################################################################
+*/
+.grided-table table {
+  margin: 20px;
+  margin-bottom: 30px;
+}
+.grided-table th, td {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  padding-right: 10px;
+  padding-right: 10px;
+}
+
+.grided-table th{
+  border-bottom-width: 2px;
+}
+
+.grided-table td{
+  border-bottom-width: 1px;
+}
