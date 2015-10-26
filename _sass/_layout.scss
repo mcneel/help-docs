@@ -253,7 +253,11 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-
+    h1 {
+      @media print {
+        border-bottom: 2px solid black;
+      }
+    }
     h2 {
         font-size: 32px;
 
