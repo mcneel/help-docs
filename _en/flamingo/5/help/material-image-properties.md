@@ -14,17 +14,18 @@ Small images that can be seamlessly tiled tend to work best. If the bitmap does 
  **Note** : To make a bitmap image cover only part on the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
 Image maps can be used many ways. A common method is to use a picture of a real-world material as the materials color.
 
-### File name
-{: #file-name}
-The name of the image file.{: #clearbitmapcache}
-{% include_relative snippets/snippet-clearbitmapcache.md %}
+## Name
+Image Textures can be named.  This name is used by the Texture library of the RDK and has no real impact on Flamingo.
+
+## Flamingo Image
+
 ### Image preview
 {: #image-preview}
-Displays a preview of the selected image file.
+Displays a preview of the selected image file. Hold the mouse over the image to a see a pop-up of the image file name.  Click on the image to select a different image.
 
-### Image resolution
+#### Image resolution
 {: #image-resolution}
-Displays the resolution in pixels of the image file.
+Displays the resolution in pixels of the current image file.
 
 ### Tiles
 {: #tiles}
@@ -32,31 +33,29 @@ Image maps used in material definitions are always repeated (tiled). These setti
 
 #### Width/Height
 {: #width-height}
-Sets the tile size.
+Sets the tile size in model units.
 {% include_relative snippets/snippet-lock-widthheight.md %}
-#### Mirror tiles
-{: #mirror-tiles}
-Mirrors the map in both directions as it is tiled. This can sometimes produce adequate results using bitmaps that do not tile correctly by guaranteeing that the tile edges are continuous.{: #linking}
-{% include_relative snippets/snippet-linking.md %}{: #masking}
-{% include_relative snippets/snippet-masking.md %}
-### Show masked colors
-Graphically displays the effects of masking as the parameters change. Use the [ehlpsource="robohelp classic" class="hcp1" id="a169" style="position: relative;">color swatch]() provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.
-![images/masking-008.png](images/masking-008.png)
 
-## Mapping type
+{% include_relative snippets/snippet-masking.md %}
+
+### Mapping type
 {: #mapping-type}
+Images normally apply to the color channel. But there are other ways to use images.  Images can be set as:
+
+> [Standard](#standard)
+> [Normal](#normal)
+> [Displacement](#displacement)
 
 ### Standard
-The image provides color and visual bump to the material.
+{: standard}
+The image provides color and visual bump to the material. Use the Strength and Bump values to control how the bitmap will influence the material.
 
-### Strength
-
-#### Color
+#### Color Strength
 {: #color}
 Determines how much the image map influences the appearance of the material. In the example below, the underlying material is magenta colored. The color strength increases until the underlying color is completely masked by the black and white texture.
 ![images/brik-b14.png](images/brik-b14.png)![images/strength.png](images/strength.png) *Color strength 0.2, 0.5, 1.0.*
 
-#### Bump
+#### Bump Strength
 {: #bump}
 Simulates bumps and wrinkles on the surface of an object by perturbing the&#160;surface normals&#160;of the object. The underlying object is not changed.&#160;In the illustration, the material on the left uses displacement mapping, while the material on the right uses bump mapping set at its highest value. The edge and shadow are smooth for the bump-mapped material. See: [Wikipedia article: Bump mapping](http://en.wikipedia.org/wiki/Bump_mapping).
 ![images/bumpvsdisplacement.png](images/bumpvsdisplacement.png) *Bump strength, 0.5 (left) and 1.0 (right).*
@@ -93,38 +92,29 @@ Z-offset = 0.0
 The size of the facets of the displacement mesh.
 ![images/facetsize.png](images/facetsize.png)
 
-## Advanced
+## Flamingo Image Advanced
 {: #advanced}
-Select the color component of the material that will be affected by the bitmap.
+Normally a Flamingo Image will apply to the main color channel of a material. The Flamingo Advanced dialog specifies other channels that the bitmap can effect.  These are used for very special effects.
 
-## Surface Component Altered by Map
+####  [Base color](advanced-material-properties-main.html#color)
 
-###  [Base color](advanced-material-properties-main.html#color)
+####  [Specular color](advanced-material-properties-main.html#highlight-color)
 
-###  [Specular color](advanced-material-properties-main.html#highlight-color)
+####  [Specular intensity](advanced-material-properties-main.html#intensity)
 
-###  [Specular intensity](advanced-material-properties-main.html#intensity)
+####  [Highlight sharpness](advanced-material-properties-main.html#sharpness)
 
-###  [Highlight sharpness](advanced-material-properties-main.html#sharpness)
-
-### Highlight shape
+#### Highlight shape
 {: #advanced-highlight-shape}
 Affects the shape of the highlight.
 
-###  [Transparency](advanced-material-properties-transparency.html)
+####  [Transparency](advanced-material-properties-transparency.html)
 
-###  [Translucency](advanced-material-properties-transparency.html#translucency)
+####  [Translucency](advanced-material-properties-transparency.html#translucency)
 
-###  [Attenuation](advanced-material-properties-transparency.html#attenuation)
+####  [Attenuation](advanced-material-properties-transparency.html#attenuation)
 
-### Normal
-{: #advanced-normal}
-Affects the direction of the surface normals.
-
-## Orientation
-{: #advanced-orientation}
-
-### X/Y Offset
+### Offsets X/Y
 {: #advanced-x-y-offset}
 Offsets the material from the x- and y-axis.
 
