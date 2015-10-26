@@ -23,7 +23,12 @@ layout: flbootstrap
                   {% assign firstSideOfDividedMainTitle = dividedMainTitle[0] %}
                   {% assign titleToProcess = firstSideOfDividedMainTitle | split:'">' %}
                   {% assign mainTitleHandle = titleToProcess[0] %}
-                  {% assign mainTitleTitle = titleToProcess[1] %}
+                  {% if dividedMainTitle[1] contains "img" %}
+                    {% assign titleToProcess = dividedMainTitle[1] | split:'/>' %}
+                    {% assign mainTitleTitle = titleToProcess[1] %}
+                  {% else %}
+                    {% assign mainTitleTitle = titleToProcess[1] %}
+                  {% endif %}
                   <li>
                     <a href="#{{ mainTitleHandle }}">{{ mainTitleTitle }}</a>
 
