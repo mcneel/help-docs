@@ -3,6 +3,7 @@
 
 # ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
 The Libraries command opens the Libraries panel, to manage libraries of materials, textures, and environments.
+
 Render content can be saved to files creating external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
 
 Color swatches can be dragged and dropped in the same way.
@@ -45,7 +46,7 @@ Drag and drop plants into a viewport to place plants into the model.
 
 ## Environment Library
 {: #environment}
-Environments can be saved in the library.  This allows Environment settings to be passed from one model to another.  For more details, got to [Environments](environment-tab.html)
+Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
 
 ## Library Settings
 {: #settings}
