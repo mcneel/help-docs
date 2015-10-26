@@ -48,8 +48,6 @@ main_index:
           path: lighting-tab.html
         - name: Sky
         - name: Sun
-        - name: Custom Lighting
-          path: lighting-advanced-tab.html
         - name: Lights
           path: lights-tab.html
         - name: Studio Lighting Tips
