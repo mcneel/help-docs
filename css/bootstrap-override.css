@@ -323,6 +323,12 @@ tbody.index_table tr td{
 @media screen and (max-width: 990px) { .bs-docs-sidebar {
     display: none;
 } }
+
+@media only print {
+  .bs-docs-sidebar {
+      display: none;
+  }
+}
 /*
 ##############################################################################
 ##  Material Type Advanced Page

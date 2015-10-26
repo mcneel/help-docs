@@ -8,6 +8,12 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    @media print {
+      border-style: none;
+      min-height: 0px;
+      margin-bottom: 2px;
+      padding-bottom: 2px;
+    }
 }
 
 .site-title {
@@ -21,6 +27,11 @@
     &:visited {
         color: $grey-color-dark;
     }
+    @media print {
+      font-size: 14px;
+      line-height: 18px;
+      margin-left: 25px;
+    }
 }
 
 .site-title-short {
@@ -28,7 +39,11 @@
        @include media-query($on-palm) {
            display: block;
        }
+       @media print {
+         display: none;
+       }
 }
+
 
 .site-nav {
     float: right;
@@ -94,7 +109,15 @@
             padding: 5px 10px;
         }
     }
+
+    @media print {
+      .trigger {
+          clear: both;
+          display: none;
+      }
+    }
 }
+
 
 
 
@@ -115,6 +138,12 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+}
+
+.social-media-list {
+  @media print {
+    display: none;
+  }
 }
 
 .footer-col-wrapper {
@@ -198,7 +227,12 @@
     font-size: 24px;
 }
 
-
+/** Remove links when printing */
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
 
 /**
  * Posts
