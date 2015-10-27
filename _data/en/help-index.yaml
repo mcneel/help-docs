@@ -46,8 +46,12 @@ main_index:
       topics:
         - name: Lighting Pre-sets
           path: lighting-tab.html
-        - name: Sky
         - name: Sun
+          path: sun-and-sky-tabs.html
+          anchor: sun
+        - name: Sky
+          path: sun-and-sky-tabs.html
+          anchor: sky
         - name: Lights
           path: lights-tab.html
         - name: Studio Lighting Tips

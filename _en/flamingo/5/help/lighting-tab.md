@@ -1,8 +1,7 @@
 ---
 ---
 
-
-# Lighting
+# ![images/lights-tab.png](images/lights-tab.png){:height="75px" width="75px"} Lighting Presets
 Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -93,6 +92,7 @@ Indirect lighting, the lighting reflected off surfaces, is on when one of the tw
 Custom is the tab to mix and match parts of the lighting pre-lights together.  For instance if the scene is a Exterior daylight, but lit with the addition of a HDRI environment.  Use the the Custom tab to turn off and on parts of the lighting model.  When the values on the [Advanced tab](lighting-advanced-tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.
 
 ####  [Sun](sun-and-sky-tabs.html#sun)
+{: #sun}
 Turn on and off the Sun tab in the drop down. The [Sun tab](sun-and-sky-tabs.html#sun) contains the controls for altering the parameters of the sun position.
 
 ![images/lightsunon.png](images/lightsunon.png)
@@ -100,6 +100,7 @@ Turn on and off the Sun tab in the drop down. The [Sun tab](sun-and-sky-tabs.htm
 The sun is a very bright directional light source infinitely far from the model. The controls for the sun specify its direction using spherical coordinates. For more details, see the [Sun tab](sun-and-sky-tabs.html#sun) topic.
 
 ####  [Sky](sun-and-sky-tabs.html#sky)
+{: #sky}
 Set the Sky channel to one of four options:
 
 > Auto
@@ -111,6 +112,7 @@ For details, see the [Sky tab](sun-and-sky-tabs.html#sky) topic.
 Defines a hemispherical light source infinitely far away from the model.
 
 #### Off
+{: #off}
 Turns the sky off.
 ![images/chromenosky.png](images/chromenosky.png)
 
@@ -188,7 +190,7 @@ Optimizes ambient light for interior scenes.
 #### Studio
 Optimizes ambient light for studio scenes.
 
-## Saving and Importing Custom lighting scenes
+## Saving Custom Lighting
 
 ### Save lighting scheme
 {: #save-lighting-scheme}

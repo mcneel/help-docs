@@ -128,7 +128,7 @@ Set the image map and properties of the material. There are many options here, s
 ## Texture Set
 {: #texture-set}
 [Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these set of textures.
-<!-- TODO: This dialog at this time is all messed up.  Please check at a later date to see if it works better. There are the wrong controls in the panel-->
+<!-- TODO: This dialog at this time is all messed up.  The Map Properties (Mass?) settings will change based on the map selected.  We also need to add the map types that are captured.-->
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
