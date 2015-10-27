@@ -23,12 +23,11 @@ layout: flbootstrap
                   {% assign firstSideOfDividedMainTitle = dividedMainTitle[0] %}
                   {% assign titleToProcess = firstSideOfDividedMainTitle | split:'">' %}
                   {% assign mainTitleHandle = titleToProcess[0] %}
-                  {% if dividedMainTitle[1] contains "img" %}
+                  <!-- If there is an img in the h1, strip it -->
+                  {% if dividedMainTitle[1] contains "img " %}
                     {% assign titleToProcess = dividedMainTitle[1] | split:'/>' %}
-                    {% assign mainTitleTitle = titleToProcess[1] %}
-                  {% else %}
-                    {% assign mainTitleTitle = titleToProcess[1] %}
                   {% endif %}
+                  {% assign mainTitleTitle = titleToProcess[1] %}
                   <li>
                     <a href="#{{ mainTitleHandle }}">{{ mainTitleTitle }}</a>
 
@@ -41,6 +40,10 @@ layout: flbootstrap
                         {% assign groupToProcess = dividedGroup[0] %}
                         {% assign groupHeading = groupToProcess | split:'">' %}
                         {% assign groupHandle = groupHeading[0] %}
+                        <!-- If there is a heading that is a link, strip it -->
+                        {% if dividedGroup[1] contains "a href" %}
+                          {% assign groupHeading = dividedGroup[1] | split:'">' %}
+                        {% endif %}
                         {% assign groupTitle = groupHeading[1] %}
                         <li>
                           <a href="#{{groupHandle}}">{{ groupTitle }}</a>
@@ -54,6 +57,12 @@ layout: flbootstrap
                                 {% assign subgroupToProcess = dividedSubgroup[0] %}
                                 {% assign subgroupHeading = subgroupToProcess | split:'">' %}
                                 {% assign subgroupHandle = subgroupHeading[0] %}
+                                <!-- Strip a leading img if it is in the header-->
+                                {% if dividedSubgroup[1] contains "img " %}
+                                  {% assign subgroupHeading = dividedSubgroup[1] | split:'/>' %}
+                                {% elsif dividedSubgroup[1] contains "a href" %}
+                                  {% assign subgroupHeading = dividedSubgroup[1] | split:'">' %}
+                                {% endif %}
                                 {% assign subgroupTitle = subgroupHeading[1] %}
                                 <li>
                                     <a href="#{{subgroupHandle}}">{{ subgroupTitle }}</a>
