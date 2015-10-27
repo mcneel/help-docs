@@ -8,6 +8,7 @@ Lighting is the most important and most neglected consideration when creating im
 *Image by Christopher Soto Gutiérrez.*
 
 #### Where can I find Flamingo Lighting control?
+
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
 

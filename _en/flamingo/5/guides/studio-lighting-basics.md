@@ -1,6 +1,6 @@
 ---
 ---
-
+<!-- TODO: Make sure to update this page and get working in the guides section of the documentation. -->
 
 # Studio Lighting Basics
 {: #studio-lighting-bascis}
@@ -83,4 +83,3 @@ Diffuse lighting can work well for dark plastic objects, because it produces a b
 When lighting a studio setup, dramatic, high contrast lighting is important. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of lights placed in a way to create light and dark areas.
 Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting.
 Flamingo nXt includes pre-set [lighting schemes](lighting-tab.html#lighting-presets) to help you get started lighting your model. The settings on the [Advanced tab](lighting-advanced-tab.html) are optimized for each lighting method.
-

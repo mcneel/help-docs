@@ -54,8 +54,6 @@ main_index:
           anchor: sky
         - name: Lights
           path: lights-tab.html
-        - name: Studio Lighting Tips
-          path: studio-lighting-basics.html
 
     - name: Environment
       anchor: environment
