@@ -1,7 +1,7 @@
 ---
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Editor Panel 
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Editor Panel
 Materials contain the specification of color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For best result use Flamingo specific materials.
 
 Materials can be assign to layer, objects and blocks. Assignments can be made by dragged and dropped onto objects or various controls. See [Material Assignments](material_assignment.html) for more information.
@@ -28,19 +28,17 @@ Materials Panel
  1. [Window Divider](#divider)
  1. [Material Properties Section](#properties)
  1. [Name](#name)
- 1. [Material Properties Sections](#sections)
+ 1. [Material Properties Panels](#panels)
 
 ## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #settings}
-Opening a floating preview allows visualization of the texture during its development.
+Use this bar to navigate the material during its development.
 <!-- TODO: This content is from the old source.  It needs heavy editing-->
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-<!-- TODO: Add a back button image-->
 Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the parent material from the texture details.
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-<!-- TODO: Add a forward button image-->
 Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the recently used texture from the parent material.
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
@@ -51,9 +49,8 @@ Displays the current material name and level.  For instance, if there is a textu
 Displays the [Tools menu](material_editor.html#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
 
 #### ![images/help_topics.png](images/help_topics.png) Help
-<!-- TODO: Add a section about the move divider up and down in the panel interface -->
 
-## [Materials List](material-editor.html#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #material_list}
 This lists all the materials contained in the model. From this list:
 
@@ -134,18 +131,18 @@ Update previews manually when Auto-Update Preview is off.
 {: divider}
 Drag on this divider to change the length of the Material List versus the length of the Material Properties Section.
 
-## [Material Properties Section](material-editor.html#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: properties}
 
-### [Material Name](material-editor.html#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
 This is the name of the material. The material name is also saved as the file name when exporting the material to the library. note: - materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
 
 ### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
-{: #sections}
+{: #panels}
 The Materials Properties section is filled with a number of direct Material panels. Clicking on the grey title bar will rollup the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 
-Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials]()
+Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html)
 
 ## Tools menu ![images/library_default.png](images/library_default.png)
 {: #tools_menu}
@@ -219,7 +216,7 @@ Creates a new material based on the contents of the Clipboard that is linked to 
 #### ![images/delete.png](images/delete.png) Delete
 Deletes the selected material.
 
-#### ![images/rename.png](images/rename.png) Rename
+#### ![images/rename.png](images/rename.png) Rename...
 Renames the selected material.
 
 #### ![images/duplicate.png](images/duplicate.png) Duplicate

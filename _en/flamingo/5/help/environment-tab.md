@@ -1,245 +1,214 @@
 ---
 ---
 
-
-# Environment
+# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Environment Panel
 {: #environment-tab}
-Environments include elements of the rendering that are not part of the actual model geometry, but only appear when rendering.
-You can think of the background as an infinite sphere surrounding the model. Backgrounds are projected onto this sphere. The background sphere is not an object that you can select, but a reference surface for the background effects.
-The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
+Environments not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
 
-## Ground plane
-{: #ground-plane}
+The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
 
+Flamingo comes with a special environment called *Default Flamingo Environment*.  This environment will sync to the current [Lighting Pre-set](lighting-tab.html). By using Lighting pre-sets, both the Lighting and environment will be set to appropriate scene defaults.
 
-### Enabled
-{: #groundplane-enabled}
-Turns the ground plane on.
-![images/groundplane-002a.png](images/groundplane-002a.png)
-*Ground plane disabled (left) and enabled (right).*
+![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
-### Alpha
-{: #groundplane-alpha}
-Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
-![images/groundplane-004a.png](images/groundplane-004a.png)
- *Ground plane shows shadow, but is otherwise transparent in the image.*
+#### Where can I find this command?
+ 1. ![images/environments.png](images/environments.png)Materials Tab
+ 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
+ 1. Command > EnvironmentEditor
 
-### Elevation
-{: #groundplane-elevation}
-Specifies the ground plane's height above zero.
-![images/groundplane-005a.png](images/groundplane-005a.png)
-*Ground plane elevation above zero.*
+The Environment Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
 
-### Material
-{: #groundplane-material}
-Assigns a [material](simple-material-properties.html) to the ground plane.
-![images/groundplane-003a.png](images/groundplane-003a.png)
-*Ground plane with raised elevation and water material.*
+Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+Materials Panel
 
-## Background
-{: #background-colors}
- **Note** : A color background is always turned on, but it may be hidden behind an image or other background.
+ 1. [Background Type](#type)
+ 1. [Settings Bar](#material_list)
+ 1. [Environment List](#environment-list)
+ 1. [Window Divider](#divider)
+ 1. [Environment Properties Section](#properties)
+ 1. [Name](#name)
+ 1. [Environment Property Panels](#panels)
 
-### Intensity
-{: #background-intensity}
-Modifies the relative brightness of the background.
+## [Background Type](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+{: #type}
+Select the type of background for the model.  [Environment](#flamingo-environment) is an all inclusive rendering environment and should be the default setting for Flamingo.  The other three settings present a much more simplified set of settings that reflect older ways of defining backgrounds. For more information see the [Rhinoceros Simple Background](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings) topic
 
-## Background type
-{: #background-type}
-Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
+The reset of this help topic covers the Environment type.
 
-> [Sky](environment-tab.html#environment-sky)
-> [Solid and gradient color](environment-tab.html#color-and-gradient-backgrounds)
-> [Image](#environment-image)
-> [HDR and planar HDR images](environment-tab.html#hdr-and-planar-hdr-backgrounds)
+## [Settings Bar](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+{: #settings}
+Use this bar to help navigate the Environment list.
+<!-- TODO: This content is from the old source.  It needs heavy editing-->
 
-## Sky
-{: #environment-sky}
-The Sky environment uses the sun and sky settings from the [Lighting](lighting-tab.html) tabs for settings.
-![images/background-sky-001.png](images/background-sky-001.png)
-*Automatic (left) and HDR image and sun (right).*
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
+Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
 
-## Color and Gradient Color
-{: #environment-color-and-gradient-backgrounds}
-A background color is always present, but may be obscured by images.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
+Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
-### Solid Color
-{: #solid-color}
-A solid color background consists of a single color that fills the background.
-![images/background-color-001.png](images/background-color-001.png)
-*Solid-color background.*
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
+<!-- TODO: Add a texture image image and a procedural icon-->
+Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" will be shown. A good place to see where the environment is current.
 
-### Two-Color Gradient
-{: #two-color-gradient}
- **Note** : Two- and three-color gradient backgrounds only apply to perspective views.
-Two-color gradient backgrounds interpolate the background color between two selected colors.
-![images/background-color-002.png](images/background-color-002.png)
-*Two-color gradient background: blue and yellow.*
+#### ![images/library_default.png](images/library_default.png) Tools Menu
+Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
 
-### Three-Color Gradient
-{: #three-color-gradient}
-Three-color gradient backgrounds interpolate the background color between three selected colors.
-![images/background-color-003.png](images/background-color-003.png)
-*Three-color gradient background: blue, white, yellow.*
+#### ![images/help_topics.png](images/help_topics.png) Help
 
-## Color controls
-{: #enviroment-sky-color-controls}
-Clicking a color swatch opens the [Select Color](select-color.html) dialog box.
-The edit boxes indicate the angle where the color will be the most saturated.
+## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+{: #environment_list}
+This lists all the environments contained in the model. One Environment will be selected as the current environment. It is the current environment that is used in the rendering. Yellow corners will show up surrounding the current Environment.
 
-##### To change the gradient color
+From this list:
 
->Click the color swatches to set the colors in the [Select Color](select-color.html) dialog box.
+* Click on an Environment to make it current. Once selected the material's properties will be shown in the panels below. See [Render Materials Properties](#properties) for more information
+* Scroll up and down in the list to see all the environments in the model.
+* Drag and drop an environment from this list onto any viewport to set it current.
+* Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
+* Right-click a thumbnail to display the Environment context menu
+* Right-click the blank area to display the New Environment Context Menu
 
-##### To change the range of the gradient color
-{: #colorrange}
-If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
+###  ![images/add_material.png](images/add_material.png) Add new environment
+{: #add_environment}
+Scroll down to the bottom of the Environment list to see the add icon.
 
->Enter an angle in degrees above and below the horizon in the Top, Middle, or Bottom boxes.
+Opens the Render Content [library](libraries.html) of environments.
+The environments in the library act as templates for creating environments in the model.
 
-Or, drag the angle markers in the angle graphic.
-A cone of vision is displayed in the graphic as a light gray shaded region.
-The angle filled by the background is displayed in the graphic as a light gray shaded region.
-The red flag indicates the angle where the Top color will be the most saturated.
-The blue flag indicates where the Bottom color&#160;will be the most saturated.
-For three-color gradients, the green flag indicates the angle where the Middle color is most saturated.
-![images/background-color-004.png](images/background-color-004.png)
+### Environment Context Menu
+{: environment_context}
+This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
 
-###  **Swap top and bottom colors**
-Reverses the color order for the gradient.
+### New Environment Context Menu
+{: new_envrionment_context}
+This menus is available by right-clicking on a blank area of the Environment List.
 
-###  **Get angles from view**
-Sets the angles of the gradient extents to match the viewport.
+#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
+Creates a new Flamingo Environment.
 
-## Image
-{: #environment-image}
-A background image is projected onto the background.
-You can use a digital photograph, a scanned artwork, or an image created with an electronic paint program. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective.
+#### ![images/import.png](images/import.png) Import Environment from File...
+Use this command to select a previously exported Environment.
 
->Place the model into an existing context.
->Add panoramic city or mountain skylines.
->Add surrealistic effects.
+#### ![images/paste.png](images/paste.png) Paste
+Creates a new environment based on the contents of the Clipboard.
 
-The image can be mapped to a planar, cylindrical, or spherical shape or offset using coordinates or the visual graphic.
-![images/background-image-001.png](images/background-image-001.png)
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
 
-## Image Properties
-{: #image-properties}
+#### ![images/grid.png](images/grid.png) Grid
+Displays the previews as a grid of thumbnails.
 
->Click the **Click here to assign** button to select an image.
+#### ![images/list.png](images/list.png) List
+Displays the previews as a list of thumbnails.
 
-{% include_relative snippets/snippet-clearbitmapcache.md %}
-### Projection
-{: #backgroud-image-projection}
-Three types of background image projections are supported: [Planar](environment-tab.html#planar), [Cylindrical](environment-tab.html#cylindrical), and [Spherical](environment-tab.html#spherical). Each projection method has its own set of controls for positioning the image.
+#### ![images/tree.png](images/tree.png) Tree
+Displays the previews as a tree showing nesting.
 
-#### Planar
-{: #backgroud-image-planar}
-Projects the image to a flat background.
-![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
-Drag the pink rectangle or use the numerical controls to move or scale the background image.
-![images/background-image-003.png](images/background-image-003.png) *Background area (1), image size and shape (2).*
+#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
+Displays the previews to the left of the controls.
 
-#### Planar Options
+#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
+Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
 
-##### XScale / YScale
-Specifies the size of the background image.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
+Floats the preview image in a re-sizable window.
 
-##### XOffset / YOffset
-Specifies the offset of the background image from the lower left corner of the viewport.
+#### Thumbnails
 
-#### Cylindrical
-{: #cylindrical}
-Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
-Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
-![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
+##### ![images/small.png](images/small.png) Small
+Sets the thumbnail size to the smallest size.
 
-#### Cylindrical Options
-{: #cylindricalprojectionoptions}
+##### ![images/medium.png](images/medium.png) Medium
+Sets the thumbnail size to medium size.
 
-#####  [Background color](environment-tab.html#backgroundcolors)
+##### ![images/large.png](images/large.png) Large
+Sets the thumbnail size to large size.
 
-##### Width
-Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
+##### ![images/showlabels.png](images/showlabels.png) Show Labels
+Displays thumbnail name labels when in Grid mode.
+List mode always displays labels.
 
-##### Top / Bottom
-Specifies the vertical extents of the image. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45&#160;degrees above or below the horizon.
-![images/background-cylinder-001.png](images/background-cylinder-001.png)
+##### ![images/showunits.png](images/showunits.png) Show Units
+Displays size in model units.
 
-##### Rotation
-Specifies the image rotation and extents. Enter an angle or drag the control widget to set the rotation. The red dot indicates the center of the image. The gray area indicates the view.
-![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png)
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
+Automatically updates all previews as settings change.
 
-#####  **Angles From View**
-Sets the **Width** and **Top/Bottom** angles to match the viewport.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
+Update previews manually when Auto-Update Preview is off.
 
-#### Spherical
-{: #spherical}
-Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image.
+## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+{: divider}
+Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
 
-#### Spherical Options
-{: #sphericalprojectionoptions}
+## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+{: properties}
 
-##### Rotation
-Specifies the image rotation. The red dot indicates the center of the image.
+### [Environment Name](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+{: #name}
+This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. note: - environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
 
-#####  **Angles From View**
-Sets the rotation angle to match the viewport.
+### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
+{: #panels}
+The Environment Properties section is filled with a number of direct Environment panels. Clicking on the grey title bar will rollup the environment panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 
-## HDR and Planar HDR Backgrounds
-{: #hdr-and-planar-hdr-backgrounds}
-High-dynamic-range images provide lighting from luminance information stored in the image.
-Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window.
-An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
 
-## HDR options
-{: #background-hdr-options}
+## Tools Menu ![images/library_default.png](images/library_default.png)
+{: tools_menu}
+These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
 
->Click the **Click here to assign** button to select an image.
+#### ![images/currentenvironment.png](images/currentenvironment.png) Set as Current Environment
+This sets the target environment current.  The current environment will be used in the next rendering.
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}{% include_relative snippets/snippet-mirrorimage.md %}{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
-## Planar HDR options
-{: #planar-hdr-options}
-Planar high-dynamic-range images provide both an image background and lighting. These are often used outside windows in architectural renderings where light from the exterior is required.
+#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
+Creates a new Flamingo Environment.
+<!-- TODO: This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
+These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
 
->Click the **Click here to assign** button to select an image.
+#### ![images/import.png](images/import.png) Import Material from File
+Imports environments from a saved Rhino .renv file.
 
-###
-*Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
-{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
-## Advanced Background
-{: #advanced-background}
-The **Advanced Background** settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects.
-In the illustration, the background is black, but the reflected environment is an HDR image of a building interior.
+#### ![images/savetofile.png](images/savetofile.png) Save to File
+Saves a environment to a Rhino .renv file.
 
-## Reflected
-{: #advanced-background-reflected-sky}
-A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
-![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*Normal environment (left) and reflected HDR sky environment (right).*
+#### ![images/changetype.png](images/changetype.png) Change Type
+Changes the environment to a different type.
 
-### Sky
-Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
+Changes the environment to a different type.
+The default behavior depends on the current state of the [Rendering Options](rendering.html) &gt;  [Copy similar settings when content type is changed](rendering.html#copy-similar-settings-when-content-type-is-changed)  box. If checked, compatible settings from the old content will be copied to the new one.
+<!--TODO: The links above need to be updated.-->
 
-### Custom
-Objects reflect a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
+#### ![images/reset.png](images/reset.png) Reset to Defaults
+Changes all of the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
 
-### Visible Background
-Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
+#### ![images/copy.png](images/copy.png) Copy
+Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
 
-## Refracted
-{: #advanced-background-refracted-sky}
+#### ![images/paste.png](images/paste.png) Paste
+Creates a new environment based on the contents of the Clipboard.
 
-### Sky
-Objects refract the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
 
-### Custom
-Objects refract a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
+#### ![images/delete.png](images/delete.png) Delete
+Deletes the selected environment.
 
-### Visible Background
-Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
+#### ![images/rename.png](images/rename.png) Rename...
+Renames the selected environment.
 
-### No Transparent Object Alpha
-{: #no-transparent-alpha-objects}
-Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
-If images will be pasted into the alpha channel, turn this setting off.
+#### ![images/duplicate.png](images/duplicate.png) Duplicate
+Copies the selected environment to a new environment with the same settings.
+
+#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
+Removes the connection between [instanced](#paste-as-instance) environments.
+
+{% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
+
+#### ![images/contentfilter.png](images/contentfilter.png) Content Filter
+Opens the [Content Filters](content_filters.html) dialog box.
+
+#### ![images/rename.png](images/rename.png) Properties
+Opens the [Preview Properties](previewproperties.html) dialog box.

@@ -58,13 +58,16 @@ main_index:
     - name: Environment
       anchor: environment
       topics:
-       - name: Flamingo Environment
+       - name: Environment Editor
          path: environment-tab.html
+       - name: Flamingo Environment
+         path: environment.html
 
     - name: GroundPlane
       anchor: GroundPlane
       topics:
        - name: Groundplane
+         path: groundplane-tab.html
 
     - name: Rendering
       anchor: rendering

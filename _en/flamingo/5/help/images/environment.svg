@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.0.0.4-->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   stroke-width="0.501"
+   stroke-linejoin="bevel"
+   fill-rule="evenodd"
+   version="1.1"
+   overflow="visible"
+   width="21.542pt"
+   height="15.385pt"
+   viewBox="0 0 21.542 15.385"
+   id="svg4918"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="environment.svg">
+  <metadata
+     id="metadata4967">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1180"
+     inkscape:window-height="752"
+     id="namedview4965"
+     showgrid="false"
+     inkscape:zoom="10.695386"
+     inkscape:cx="13.46375"
+     inkscape:cy="9.6156251"
+     inkscape:window-x="0"
+     inkscape:window-y="243"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4918" />
+  <defs
+     id="defs4920">
+    <radialGradient
+       id="RadialGradient"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       r="16.105"
+       gradientTransform="translate(16.926 11.796) rotate(-142.769) scale(1 1.20379)">
+      <stop
+         offset="0"
+         stop-color="#8df8ff"
+         id="stop4923" />
+      <stop
+         offset="1"
+         stop-color="#0d0ebc"
+         id="stop4925" />
+    </radialGradient>
+    <image
+       id="Bitmap"
+       preserveAspectRatio="none"
+       width="0.001"
+       height="0.001"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAhCAYAAABN2CLhAAAACXBIWXMAABcRAAAXEQHKJvM/AAACc0lEQVRYhe2YwWvTYBjGn7ft1lntxIJlCrNsA8ExpqjgxYNH/Qc8KChT1JMHwZuX/QkyvFSGyuZBvAqelCEIXj2IB5mwbqcJMqQeqrV9fd40cbG1sZHaJLAfJHnz5Uv69M2TL98b7LBDdyT0GTqfAqYFfeO9QuabYc7o/cf16TDXXKp9FOyRV2DrG+RGvZfefxfgZLY0CqSH8d9J1YCLVYhoUK9g0VoeAkaKQD2DgZH9DnzcDLJMd9G6kOVtO8QojYGjFF7f6GaXP4t2/Fs7zGAIkSG0ysgHyPlG+5HO2+54+OsM/bULkaI5Ju4Ig3ftRzozrQ+m6YiDiA3NVcjcmr/ld9G6xIeucQqxIsWR5McryNWq17JtD8cWjZP8HxHboh0b/TLUhRWvxefpEh88FFud4oaWaNtxyJUN22uJdrKc4r/RmGXZj+mDTzSmJmn44r9MRQbIhPPMyaVPrujGUa5inOVfzHJ5kYGuUHjFdiJ484VFj8MRjXVaA3kkgxx0sWD2sFEjCdZwSU9RtE7Ge9TowERjPH4vlCCkZKLHkCh76BhFS4FBFskhT9HN3XzbRDhvDoua6NQ6gxkkhzUbPcoMFpEMrPy635ps6KPrXN9BvKFgvcWC4Nn2DEkfnqVV7jIoIH7QwnITcvmN7bRVLuW9LOFvM7LM5xA9W1wWKOweM1zzGrtU449HOfObY3CBeycwWOx7x2ur/bh94hfr0cMXpqUJrs4xOsPtaW4PoO9IhdemULykdZ9Drm0G9g59fV2m6OYx2KTcyiCIbTkVwB4u+91e++B894Nl6YvbZkKsOGVlrRV3qF3l+W/p1c+9CwB+AkLHmziW+RUtAAAAAElFTkSuQmCC">
+      <title
+         id="title4928">1</title>
+    </image>
+    <radialGradient
+       id="RadialGradient_1"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       r="3.283"
+       gradientTransform="translate(15.898 13.335) rotate(-128.633) scale(1 4.7813)">
+      <stop
+         offset="0"
+         stop-color="#ffffff"
+         id="stop4931" />
+      <stop
+         offset="0.1"
+         stop-color="#f6f6f6"
+         id="stop4933" />
+      <stop
+         offset="0.2"
+         stop-color="#ebebeb"
+         id="stop4935" />
+      <stop
+         offset="0.3"
+         stop-color="#dcdcdc"
+         id="stop4937" />
+      <stop
+         offset="0.4"
+         stop-color="#c7c7c7"
+         id="stop4939" />
+      <stop
+         offset="0.5"
+         stop-color="#a9a9a9"
+         id="stop4941" />
+      <stop
+         offset="0.6"
+         stop-color="#7a7a7a"
+         id="stop4943" />
+      <stop
+         offset="0.7"
+         stop-color="#4b4b4b"
+         id="stop4945" />
+      <stop
+         offset="0.8"
+         stop-color="#2b2b2b"
+         id="stop4947" />
+      <stop
+         offset="0.9"
+         stop-color="#131313"
+         id="stop4949" />
+      <stop
+         offset="1"
+         stop-color="#000000"
+         id="stop4951" />
+    </radialGradient>
+  </defs>
+  <g
+     id="Document"
+     fill="none"
+     stroke="black"
+     font-family="Times New Roman"
+     font-size="16"
+     transform="scale(1 -1)">
+    <g
+       id="Spread"
+       transform="translate(0 -15.385)">
+      <g
+         id="Layer 1">
+        <path
+           d="M 21.542,4.143 C 21.542,1.855 16.716,0 10.77,0 C 4.826,0 0,1.855 0,4.143 C 0,10.35 4.826,15.385 10.771,15.385 C 16.716,15.385 21.542,10.35 21.542,4.143 Z"
+           stroke="none"
+           stroke-width="0.985"
+           stroke-linejoin="miter"
+           marker-start="none"
+           marker-end="none"
+           stroke-miterlimit="79.8403193612775"
+           fill="url(#RadialGradient)"
+           id="path4956" />
+        <use
+           transform="translate(0 15.84) scale(21600 -15840)"
+           xlink:href="#Bitmap"
+           stroke-width="0"
+           fill="none"
+           stroke="none"
+           stroke-miterlimit="79.8403193612775"
+           fill-opacity="1.000000"
+           id="use4958" />
+        <mask
+           id="TranspMask">
+          <rect
+             x="-10%"
+             y="-10%"
+             width="120%"
+             height="120%"
+             fill="url(#RadialGradient_1)"
+             stroke="none"
+             id="rect4961" />
+        </mask>
+        <path
+           d="M 21.542,4.143 C 21.542,1.855 16.716,0 10.77,0 C 4.826,0 0,1.855 0,4.143 C 0,10.35 4.826,15.385 10.771,15.385 C 16.716,15.385 21.542,10.35 21.542,4.143 Z"
+           fill="#fff8ad"
+           stroke="none"
+           stroke-width="0.985"
+           stroke-linejoin="miter"
+           marker-start="none"
+           marker-end="none"
+           stroke-miterlimit="79.8403193612775"
+           mask="url(#TranspMask)"
+           id="path4963" />
+      </g>
+    </g>
+  </g>
+</svg>
