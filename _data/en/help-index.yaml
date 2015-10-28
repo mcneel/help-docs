@@ -75,6 +75,8 @@ main_index:
           path: render-tab.html
         - name: Render Window
           path: render-window.html
+        - name: Channels
+          path: render-channel.html
         - name: Document Properties
           path: documentproperties-flamingo.html
         - name: Automate Rendering

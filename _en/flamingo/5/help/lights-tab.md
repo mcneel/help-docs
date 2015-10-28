@@ -7,7 +7,7 @@ Artificial light sources use normal Rhino lights with added Flamingo properties 
 
 ## Lights Tab
 {: #light-tab}
-The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible in the way it works.
+The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible through additional [Light Properties](#light-properties)
 
 #### Where can I find Flamingo Lighting control?
 The Lights tab must be activated through the [Lighting Pre-set](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
@@ -15,7 +15,7 @@ The Lights tab must be activated through the [Lighting Pre-set](lighting-tab.htm
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
 
-From the Lights tab lightscan be inserted, turned off/on, changed the strength and channel of each light.
+From the Lights tab lights can be inserted, turned off/on, changed the strength and channel of each light.
 
 ##### Flamingo supports these light types:
 
@@ -25,7 +25,22 @@ From the Lights tab lightscan be inserted, turned off/on, changed the strength a
 > [Rectangular Light](#rectangularlight)
 > [Linear Light](#linearlight)
 
- **Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
+**Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
+
+Some light properties are displayed on the Lights tab table for quick editing of common properties.
+
+##### Properties contained in the table are:
+
+ >[On/Off](#on)
+ >[Name](#name)
+ >[Distribution](#light-distribution)
+ >[Aim](#aim-light)
+ >[Watts](#watts)
+ >[Channel](#channel)
+
+Right-clicking on the lights tab table will open the [Additional Options](#additional-options) menu.
+
+[Light Properties](#light-properties) can also be accessed by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm)
 
 ## Light Types
 {: #light-types}
@@ -66,99 +81,82 @@ Distributes light in a cylindrical pattern that imitates a fluorescent tube. Lig
 
 ![images/linearlight.png](images/linearlight.png)
 
-
 ## Light Properties
 {: #light-properties}
 When Flamingo is the current rendering application in Rhino, additional properties can be set for lights. Lights have some but not all properties in common.
-Some light properties are displayed on the Lights tab as a matrix: [On/Off](lights-tab.html#on), [Name](lights-tab.html#name), [Distribution](lights-tab.html#light-distribution), [Aim](lights-tab.html#aim-light), [Watts](lights-tab.html#watts), and [Channel](lights-tab.html#channel).
 
-### Name
+#### Name
 {: #name}
-The name of the light object.
+The name of the light object. This is an easy way to differentiate lights which are the same type in the model.
 
-### On
+#### ![images/lightbulbon.png](images/lightbulbon.png) On/Off
 {: #on}
-Toggles the light on and off.
+Toggles the light on and off. In the Light table,  the lightbulb icon is yellow, the light is on. If the lightbulb icon is gray, the light will be off in the rendering. Double-click on the icon to toggle On/Off. In the properties dialog, there is a On/Off Checkbox.
 
-### Visible
+#### Visible
 {: #visible}
-The light object itself will be visible in the rendered image.
+By default lights will show themselves as a bright light source in the rendering.  By unchecking the Viibile property, the light object itself will be invisible in the rendering.  Although, the light will project its light into the scene.
 
-### Light distribution *( [Tagged objects only](#tag-objects-as-lights) )*
+#### Light distribution *( [Tagged objects only](#tag-objects-as-lights) )*
 {: #light-distribution}
-Specifies the light distribution pattern.
+When tagging an object as a light, us Distribution to specify the pattern the light projects into the scene. In the light panel, double-click on the distribution cell to get options drop-down. Distribution types include: [All Directions](#point), [Spot](#spot) and [Diffuse](#diffuse). Both Spot and Diffuse require a [direction](#aim-light) to be specified.
 
-#### All Directions
-Simulates a point light.
-
-#### Diffuse
-Simulates a rectangular light.
-
-#### Spot
-Simulates a spotlight.
-
-### Aim light *( [Tagged objects only](#tag-objects-as-lights) )*
+#### Aim light *( [Tagged objects only](#tag-objects-as-lights) )*
 {: #aim-light}
-Drag the light target into position.
+For tagged light which have a distribution of Spot or Diffuse, a direction must be specified.  Double-click on the "Aim >>" option and follow the command line prompts.
 
-### Watts
+#### Watts
 {: #watts}
-Specifies the electrical power usage.
+Specifies the electrical power of the light.  It is recommended to start with realistic values for the scene. In the light table, double-click on the cell to change the value.
 
-### Beam angle *( [Spotlights only](lights-tab.html#spotlight) )*
+#### Beam angle *( [Spotlights only](lights-tab.html#spotlight) )*
 {: #beam-angle}
-The degree of width that light emanates from a light source.
+The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
-### Radius
+#### Radius
 {: #radius}
-The size of the light. Smaller lights cast sharper shadows.
+The size of the visible light source. Smaller lights cast sharper shadows.
 
-### Color
+#### Color
 {: #color}
-The color for the light.
+The color for the light the source emanates.
 
 #### Use material color *( [Tagged objects only](#tag-objects-as-lights) )*
 Uses the color of the material assigned to the light object for the light it produces.
 
-### Channel
+#### Channel
 {: #channel}
-Specifies one of eight channels for the light.
-This controls the number of channels for multi-channel rendering.
-This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. Each light source in the drawing, including the sun and sky, can be assigned to a channel. Once this image is rendered, each channel can be individually scaled either in the Render Window before saving or it can be saved to an .nXtImage file for later editing. Using this capability, you can produce day and night interiors with a single rendering.
-Click to play video clip.
-The following conditions are necessary to produce and manipulate a multi-channel image:
+Lights can be assigned to one of eight channels. This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.htnl) topic.
 
->All participating lights must be on.
->Each light source must be assigned a channel. By default, Sun and Sky are set to channel 0.
->The only saved format that preserves this channel information is the .nXtImage format. Lighting can be adjusted there and then the image saved to a bitmap format.
+#### IES File
+{: #iesfile}
+IES (Illuminating Engineering Society) files are photometry files that define the distribution of light from a light source. Light fixture manufacturers often provide these files. By using the IES file to define your distribution, you can more accurately depict your light source. The geometry of the tagged light object has no relationship to the distribution of light. The definition of the light distribution comes from the photometry file alone.
 
-## Additional options
+Notes:
+
+* Flamingo nXt supports Type C goniometry files, which includes the majority of IES files. Type A, which are occasionally used by the automobile industry to define headlights, and Type B files, which are sometimes used to define floodlighting, are not supported.
+* IES distributions include the effects of light fixture elements such as baffles, reflectors, and diffusers.
+* IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
+
+#### Brightness from file
+Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
+
+
+## Additional Options Menu
 {: #additional-options}
+Additional options for lights can be accessed by right-clicking on the light in the Light table.
 
-> [id="a13" style="position: relative;">Right-click]() a light in the Lights tab for additional options
-
-####  [On](lights-tab.html#on)
+####  On
+Toggles the light [ON/Off](#on)
 
 #### Delete
 Deletes the selected light.
 
 #### Remove light tag
-Removes the [tag](lights-tab.html#tag-objects-as-lights) that makes an object a light.
+Removes the [tag](#tag-objects-as-lights) that makes an object a light.
 
-####  [Properties](lights-tab.html#light-properties)
+#### Properties
+Access the [Light Properties](#light-properties) for that light.
 
 #### Select objects and matching items
 Selects the light in the viewport.
-
-## IES File
-{: #iesfile}
-IES (Illuminating Engineering Society) files are photometry files that define the distribution of light from a light source. Light fixture manufacturers often provide these files. By using the IES file to define your distribution, you can more accurately depict your light source. The geometry of the tagged light object has no relationship to the distribution of light. The definition of the light distribution comes from the photometry file alone.
-
-## Notes:
-
->Flamingo nXt supports Type C goniometry files, which includes the majority of IES files. Type A, which are occasionally used by the automobile industry to define headlights, and Type B files, which are sometimes used to define floodlighting, are not supported.
->IES distributions include the effects of light fixture elements such as baffles, reflectors, and diffusers.
->IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
-
-### Brightness from file
-Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
