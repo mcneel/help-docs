@@ -7,7 +7,7 @@ Environments not only what can be seen in the background of a rendering, but con
 
 The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
 
-Flamingo comes with a special environment called *Default Flamingo Environment*.  This environment will sync to the current [Lighting Pre-set](lighting-tab.html). By using Lighting pre-sets, both the Lighting and environment will be set to appropriate scene defaults.
+Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Pre-set](lighting-tab.html). By using [Lighting pre-sets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
