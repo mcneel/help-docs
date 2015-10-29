@@ -184,29 +184,6 @@ The angle from view checkbox will keep the image in sync with the current view. 
 #### Plan control
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
 
-![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: style="float: left; padding-right: 25px;"}
-
-* The control shows the environment in plan view.
-* The dark grey cone of vision shows the last coordinates in the current perspective view.
-* The blue cone shows the range of angles the image will be visible.
-* The Blue arrow represents the left coordinate of the image map.
-* The Red dot represents the middle of the background image.
-* The Purple arrow represents the right coordinate of the image map.
-
-#### Vertical control
-{: style="clear: both;"}
-Specifies the vertical extents of the cylindrical projection. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45 degrees above or below the horizon.
-
-![images/background-cylinder-001.png](images/background-cylinder-001.png){: style="float: left; padding-right: 25px;"}
-
-* The control shows the cylinder in section view.
-* The grey cone of vision shows the last coordinates in the current perspective view.
-* The Blue arrow represents the bottom border of the image map.
-* The Red arrow represents the top border of the image map.
-
-##### Rotation
-{: style="clear: both;"}
-
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
 
 * The control shows the environment in plan view.
@@ -229,27 +206,23 @@ Specifies the vertical extents of the cylindrical projection. Enter an angle or 
 
 #### Rotation
 {: .clear-img}
+Specifies the image rotation. The red dot indicates the center of the image.
 
+#### Width
+Specifies the width of the image in degrees relative the the plan view.
 
-Specifies the image rotation and extents. Enter an angle or drag the control widget to set the rotation. The red dot indicates the center of the image. The gray area indicates the view.
+#### Top/Bottom
+Specifies the vertical angles of the image based on horizontal groundplane direction in the model
 
-
-#####  **Angles From View**
-Sets the **Width** and **Top/Bottom** angles to match the viewport.
-
+####  Get Angles From View button
+Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
 #### Spherical Projection
 {: #spherical}
-Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image.
+Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
 
 #### Spherical Options
 {: #sphericalprojectionoptions}
-
-##### Rotation
-Specifies the image rotation. The red dot indicates the center of the image.
-
-#####  **Angles From View**
-Sets the rotation angle to match the viewport.
 
 ## HDR and Planar HDR Background
 {: #hdr-and-planar-hdr-backgrounds}

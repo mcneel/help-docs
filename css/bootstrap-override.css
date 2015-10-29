@@ -48,6 +48,9 @@ body img {
   padding-left: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
+  @include media-query($on-palm) {
+      float: none;
+  }
 }
 
 .float-img-left {
@@ -55,7 +58,12 @@ body img {
   padding-right: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
+  @include media-query($on-palm) {
+      clear: both;
+      float: none;
+  }
 }
+
 .clear-img {
   clear:both;
 }
