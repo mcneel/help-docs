@@ -35,9 +35,10 @@ Drag a material directly onto an object in any viewport. This will override the 
 
 #### Block Assignment
 Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
-<!-- TODO: Where is the Plant Libary? -->
+
 ## Plant Library
 {: #plant}
+<!-- TODO: Where is the Plant Libary? -->
 Plants in libraries are Rhino files on the hard drive.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive.
 
 Drag and drop plants into a viewport to place plants into the model.
@@ -57,9 +58,13 @@ There are three places to find the Libraries Options command.
 
  1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
  1. ![images/options.png](images/options.png)Toolbars >![images/icon-properties.png](images/icon-properties.png)Properties Toolbar > ![images/documentpropertiesbutton.png](images/documentpropertiesbutton.png)Document Properties > Libraries
- <!-- TODO: Is Properties Toolbar really supposed to be in this list? -->
  1. ![images/menuicon.png](images/menuicon.png)Menus > Tools pulldown > Options > Libraries.
+
+ 
+<!-- TODO: Is Properties Toolbar really supposed to be in this list? -->
+
 <!-- TODO: Should this be? At the menu bar click Tools pulldown > Options > Libraries. -->
+
 ### Show render content
 Use this to show or hide the default render content location.
 
