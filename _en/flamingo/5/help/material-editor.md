@@ -31,7 +31,7 @@ Materials Panel
  1. [Material Properties Panels](#panels)
 
 ## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
-{: #settings}
+{: #settings style="clear: both;"}
 Use this bar to navigate the material during its development.
 <!-- TODO: This content is from the old source.  It needs heavy editing-->
 
@@ -134,11 +134,11 @@ Drag on this divider to change the length of the Material List versus the length
 ## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: properties}
 
-### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+#### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
 This is the name of the material. The material name is also saved as the file name when exporting the material to the library. note: - materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
 
-### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+#### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #panels}
 The Materials Properties section is filled with a number of direct Material panels. Clicking on the grey title bar will rollup the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 

@@ -31,7 +31,7 @@ Materials Panel
  1. [Environment Property Panels](#panels)
 
 ## [Background Type](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
-{: #type}
+{: #type style="clear: both;"}
 Select the type of background for the model.  [Environment](#flamingo-environment) is an all inclusive rendering environment and should be the default setting for Flamingo.  The other three settings present a much more simplified set of settings that reflect older ways of defining backgrounds. For more information see the [Rhinoceros Simple Background](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings) topic
 
 The reset of this help topic covers the Environment type.

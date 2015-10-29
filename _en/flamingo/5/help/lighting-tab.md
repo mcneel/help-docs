@@ -37,8 +37,7 @@ Lighting in Flamingo nXt uses four pre-set methods categories:
 {: #studio-lighting}
 This scheme mimics the lighting found in a photographer's studio. It is most useful for rendering small-to-medium-sized objects in isolation.  It can also be used for any scene that is well lit through an HDRI environment.
 
-![images/studiolighting-001.png](images/studiolighting-001.png)
-A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](lighting-advanced-tab.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
+![images/studiolighting-001.png](images/studiolighting-001.png){: style="float: left; padding-right: 25px;"} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](lighting-advanced-tab.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
 
 Studio lighting is optimized for tabletop setups for small design articles such as jewelry and product designs. In the preset scheme, the sun is off and an HDR image sky provides something for shiny objects to reflect.
 
@@ -48,10 +47,9 @@ Lighting techniques for photography are generally the same as lighting for rende
 
 ### Exterior daylight
 {: #exterior-daylight}
-This scheme simulates daylight for architectural exteriors using a natural sun and sky.
 <!-- TODO: The links in this next paragraph need to be updated wonce the other pages are finished. -->
+![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: style="float: right; padding-left: 25px;"}  This scheme simulates daylight for architectural exteriors using a natural sun and sky.
 
-![images/exteriorlighting-001.png](images/exteriorlighting-001.png)
 Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
 Lighting a building exterior is the most straightforward lighting model. Most exterior lighting will need no more than the default [Sun](sun-and-sky-tabs.html#sun) light source.
 
@@ -67,13 +65,13 @@ Exploded views, sections, and axonometric drawings from above also pose a specia
 {: #interior-daylight}
 This scheme simulates an interior lit by natural light.
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png)
-It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: style="float: left; padding-right: 25px;"} It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
 
 The [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) settings are similar to the [Exterior](lighting-tab.html#exterior-daylight) preset.
 The direct sunlight component of day lighting involves a straightforward calculation -- normally simply specify the time, date, and location to ensure accuracy.
 
-Notes:
+Notes on interior renderings:
+{: style="clear:both;"}
 
 * Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
 * Because the sun and sky are much brighter than other lights, you may not see much effect from adding artificial lighting when the sun is on. This is normal. Avoid artificially boosting the power of your light sources.
@@ -82,14 +80,12 @@ Notes:
 
 ### Artificial lighting
 {: #artificial-lighting}
-This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
-
-![images/artificiallight-001.png](images/artificiallight-001.png)
+![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
 
 Indirect lighting, the lighting reflected off surfaces, is on when one of the two interior presets are selected and off for studio and exterior. This type of lighting is a very significant component of an interior simulation. For exteriors and studio models the effects of indirect lighting is more subtle and is therefore turned off by default.
 
-### Custom
-{: #custom}
+### Custom Lighting
+{: #custom  style="clear:both;"}
 Custom is the tab to mix and match parts of the lighting pre-lights together.  For instance if the scene is a Exterior daylight, but lit with the addition of a HDRI environment.  Use the the Custom tab to turn off and on parts of the lighting model.  When the values on the [Advanced tab](lighting-advanced-tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.
 
 ####  [Sun](sun-and-sky-tabs.html#sun)
