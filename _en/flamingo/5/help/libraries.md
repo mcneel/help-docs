@@ -20,9 +20,9 @@ Quickly navigate back to the Default Library locations using the wrench icon at 
 {: organizing_libraries}
 Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
 
-<!-- TODO: Is this Materials Library the Materials Tab or is it the Flamingo Materials Folder? -->
 ## Materials Library
 {: #material}
+<!-- TODO: Is this Materials Library the Materials Tab or is it the Flamingo Materials Folder? -->
 Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
 
 Drag and drop materials to assign materials to the model. Materials can be assigned to:
@@ -54,6 +54,7 @@ Environments can be saved in the library.  This lets Environment settings to be 
 
 #### Where can I find this command?
 There are three places to find the Libraries Options command.
+
  1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
  1. ![images/options.png](images/options.png)Toolbars >![images/icon-properties.png](images/icon-properties.png)Properties Toolbar > ![images/documentpropertiesbutton.png](images/documentpropertiesbutton.png)Document Properties > Libraries
  <!-- TODO: Is Properties Toolbar really supposed to be in this list? -->
