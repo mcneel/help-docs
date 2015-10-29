@@ -82,10 +82,9 @@ See [Color Controls](#enviroment-sky-color-controls) below for more details on e
 
 ### Color controls
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected.
+The number of controls available  may change based on the Color Background type that is currently selected. Gradient Backgrounds will have up to 3 color selectors that may include a top, middle and bottom color.
 
 {% include_relative snippets/snippet-material-color-select.md %}
-Gradient Backgrounds will have up to 3 color selectors that may include a top, middle and bottom color.
 
 #### Swap Colors
 Use this button to rearrange the color in the gradient from top to bottom
@@ -102,8 +101,7 @@ If Angles from View are checked in, the current color gradient will sync with th
 {: #colorrange}
 If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled. By controlling the angles above and below the horizon that each of the top, middle and bottom colors occurs.
 
-![images/background-color-004.png](images/background-color-004.png)
-*Color Gradient Mapper*
+![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
 * The control shows the environment in section view.  The 90 degree marker is the Z-up coordinate. The 0 coordinate represents the horizontal ground plane. The -90 Degree marker is the Z-down coordinate.
 * The grey cone of vision shows the last coordinates of the current perspective view.
@@ -119,70 +117,91 @@ These are angle readouts of the Top, Middle and Bottom colors in the current gra
 
 ## Image Background
 {: #environment-image}
-A background image is projected onto the background.
-You can use a digital photograph, a scanned artwork, or an image created with an electronic paint program. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective.
+A background image is projected onto the background. Many times this is use to place a model in and existing context or set a view out of some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective.
 
->Place the model into an existing context.
->Add panoramic city or mountain skylines.
->Add surrealistic effects.
-
-The image can be mapped to a planar, cylindrical, or spherical shape or offset using coordinates or the visual graphic.
 ![images/background-image-001.png](images/background-image-001.png)
+*A planar images set as a background.*
 
-### Image Properties
+The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+
+### Image File
 {: #image-properties}
-
->Click the **Click here to assign** button to select an image.
-
-{% include_relative snippets/snippet-clearbitmapcache.md %}
+Set the background image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
 
 ### Projection
 {: #backgroud-image-projection}
-Three types of background image projections are supported: [Planar](environment-tab.html#planar), [Cylindrical](environment-tab.html#cylindrical), and [Spherical](environment-tab.html#spherical). Each projection method has its own set of controls for positioning the image.
+Select one of three image projections from the drop-down control:
 
-#### Planar
-{: #backgroud-image-planar}
-Projects the image to a flat background.
+>[Planar](#planar)
+>[Cylindrical](#cylindrical)
+>[Spherical](#spherical)
+
+Each projection method has its own set of controls for positioning the image.
+
+#### Planar Projection
+{: #planar}
+Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
 
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
-Drag the pink rectangle or use the numerical controls to move or scale the background image.
 
-![images/background-image-003.png](images/background-image-003.png) *Background area (1), image size and shape (2).*
+#### Angle from view
+The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
 
-#### Planar Options
+#### Image Placement Control
+Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
 
-##### XScale / YScale
-Specifies the size of the background image.
+![images/background-image-003.png](images/background-image-003.png)
+*Current viewport area (1), image size and shape (2).*
 
-##### XOffset / YOffset
-Specifies the offset of the background image from the lower left corner of the viewport.
+#### X Scale / Y Scale
+Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
-#### Cylindrical
+#### X Offset / Y Offset
+Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
+
+#### Cylindrical Projection
 {: #cylindrical}
 Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
-Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
+
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
+Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
 
-#### Cylindrical Options
-{: #cylindricalprojectionoptions}
+#### Angle from view
+The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
 
-#####  [Background color](environment-tab.html#backgroundcolors)
-
-##### Width
+#### Plan control
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
 
-##### Top / Bottom
-Specifies the vertical extents of the image. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45&#160;degrees above or below the horizon.
-![images/background-cylinder-001.png](images/background-cylinder-001.png)
+![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
 
-##### Rotation
+* The control shows the environment in plan view.
+* The dark grey cone of vision shows the last coordinates in the current perspective view.
+* The blue cone shows the range of angles the image will be visible.
+* The Blue arrow represents the left coordinate of the image map.
+* The Red dot represents the middle of the background image.
+* The Purple arrow represents the right coordinate of the image map.
+
+#### Vertical control
+{: .clear-img}
+Specifies the vertical extents of the cylindrical projection. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45 degrees above or below the horizon.
+
+![images/background-cylinder-001.png](images/background-cylinder-001.png){: .float-img-left}
+
+* The control shows the cylinder in section view.
+* The grey cone of vision shows the last coordinates in the current perspective view.
+* The Blue arrow represents the bottom border of the image map.
+* The Red arrow represents the top border of the image map.
+
+#### Rotation
+{: .clear-img}
 Specifies the image rotation and extents. Enter an angle or drag the control widget to set the rotation. The red dot indicates the center of the image. The gray area indicates the view.
-![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png)
+
 
 #####  **Angles From View**
 Sets the **Width** and **Top/Bottom** angles to match the viewport.
 
-#### Spherical
+
+#### Spherical Projection
 {: #spherical}
 Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image.
 
