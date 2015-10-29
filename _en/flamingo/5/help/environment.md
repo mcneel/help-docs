@@ -117,12 +117,10 @@ These are angle readouts of the Top, Middle and Bottom colors in the current gra
 
 ## Image Background
 {: #environment-image}
-A background image is projected onto the background. Many times this is use to place a model in and existing context or set a view out of some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective.
+A background image is projected onto the background. Many times this is use to place a model in and existing context or set a view out of some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
 *A planar images set as a background.*
-
-The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ### Image File
 {: #image-properties}
@@ -221,63 +219,80 @@ Sets the rotation angle to match the current perspective viewport.  Good for res
 {: #spherical}
 Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
 
-#### Spherical Options
-{: #sphericalprojectionoptions}
+#### Angle from view
+The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
 
-## HDR and Planar HDR Background
-{: #hdr-and-planar-hdr-backgrounds}
-High-dynamic-range images provide lighting from luminance information stored in the image.
-Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window.
-An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+#### Spherical control
+Specifies the direction of the image map. Enter an angle or drag the flag in the control widget to set the width. The Red dot represents the middle of the background image.
 
-## HDR options
-{: #background-hdr-options}
+#### Rotation
+{: .clear-img}
+Specifies the image rotation. The red dot indicates the center of the image.
 
->Click the **Click here to assign** button to select an image.
+####  Get Angles From View button
+Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}{% include_relative snippets/snippet-mirrorimage.md %}{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
-## Planar HDR options
+## HDRI Background
+{: #hdr-background}
+Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+
+#### Image File
+{: #hdri-image}
+Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+<!-- TODO: The channels are wrong here -->
+{% include_relative snippets/snippet-rotatehdrimage.md %}
+{% include_relative snippets/snippet-mirrorimage.md %}
+{% include_relative snippets/snippet-sunchannel.md %}
+{% include_relative snippets/snippet-skychannel.md %}
+
+## Planar HDRI options
 {: #planar-hdr-options}
-Planar high-dynamic-range images provide both an image background and lighting. These are often used outside windows in architectural renderings where light from the exterior is required.
+<!-- TODO: The interface is not correct for Planar HDRI files -->
+Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
 
->Click the **Click here to assign** button to select an image.
 
-###
+![images/planarimagebeach.png](images/planarimagebeach.png)
 *Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
-{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
+
+#### Image File
+{: #hdri-planar-image}
+Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+{% include_relative snippets/snippet-sunchannel.md %}
+{% include_relative snippets/snippet-skychannel.md %}
+
 ## Advanced Background
 {: #advanced-background}
-The **Advanced Background** settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects.
-In the illustration, the background is black, but the reflected environment is an HDR image of a building interior.
+The Advanced Background settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects. This allows for the visible environemnt to look one way, while reflections and refractions might be reacting to a different environment.  For instance in the illustration below, the background is black, but the reflected environment is an HDR image of a building interior.
 
-## Reflected
-{: #advanced-background-reflected-sky}
-A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
 *Normal environment (left) and reflected HDR sky environment (right).*
 
-### Sky
+### Reflected
+{: #advanced-background-reflected-sky}
+A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
+
+#### Sky
 Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
 
-### Custom
-Objects reflect a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
+#### Custom
+Objects reflect a [Color or gradient](#color-backgrounds), [Image](#image), or [HDR](#hdr-backgrounds) background.
 
-### Visible Background
+#### Visible Background
 Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
 
-## Refracted
+### Refracted
 {: #advanced-background-refracted-sky}
 
-### Sky
+#### Sky
 Objects refract the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
 
-### Custom
-Objects refract a [Color or gradient](environment-tab.html#color-and-gradient-backgrounds), [Image](environment-tab.html#image), or [HDR](environment-tab.html#hdr-and-planar-hdr-backgrounds) background.
+#### Custom
+Objects refract a [Color or gradient](#color-and-gradient-backgrounds), [Image](#image), or [HDR](#hdr-background) background.
 
-### Visible Background
+#### Visible Background
 Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
 
-### No Transparent Object Alpha
+#### No Transparent Object Alpha
 {: #no-transparent-alpha-objects}
 Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
 If images will be pasted into the alpha channel, turn this setting off.
