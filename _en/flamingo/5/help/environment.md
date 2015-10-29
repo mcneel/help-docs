@@ -159,6 +159,18 @@ Specifies the size of the background image in the 0 - 1.0 scale of the view widt
 #### X Offset / Y Offset
 Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
+#### Image Placement Control
+Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
+
+![images/background-image-003.png](images/background-image-003.png)
+*Current viewport area (1), image size and shape (2).*
+
+#### X Scale / Y Scale
+Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
+
+#### X Offset / Y Offset
+Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
+
 #### Cylindrical Projection
 {: #cylindrical}
 Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
@@ -194,6 +206,31 @@ Specifies the vertical extents of the cylindrical projection. Enter an angle or 
 
 ##### Rotation
 {: style="clear: both;"}
+
+![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
+
+* The control shows the environment in plan view.
+* The dark grey cone of vision shows the last coordinates in the current perspective view.
+* The blue cone shows the range of angles the image will be visible.
+* The Blue arrow represents the left coordinate of the image map.
+* The Red dot represents the middle of the background image.
+* The Purple arrow represents the right coordinate of the image map.
+
+#### Vertical control
+{: .clear-img}
+Specifies the vertical extents of the cylindrical projection. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45 degrees above or below the horizon.
+
+![images/background-cylinder-001.png](images/background-cylinder-001.png){: .float-img-left}
+
+* The control shows the cylinder in section view.
+* The grey cone of vision shows the last coordinates in the current perspective view.
+* The Blue arrow represents the bottom border of the image map.
+* The Red arrow represents the top border of the image map.
+
+#### Rotation
+{: .clear-img}
+
+
 Specifies the image rotation and extents. Enter an angle or drag the control widget to set the rotation. The red dot indicates the center of the image. The gray area indicates the view.
 
 
