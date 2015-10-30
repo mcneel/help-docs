@@ -3,43 +3,68 @@
 
 
 # Render
+The render tab controls the main properties of the final rendering.  Use this tab to control quality and length of time a rendering can take.  Resolution of the final image is one of the biggest influences on overall rendering times.
+
+Note: A good practice is to leave the rendering resolution low during draft renderings. Use high resolution renderings for final renderings only.
+
+#### Where can I find Flamingo Lighting control?
+
+ 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
+
 
 ## Viewport to render
 {: #viewtorender}
+Set the view that Flamingo NXT 5 will rendering.  This is a very useful setting when working on the model and rendering, but there is on specific view that should always render.  For instance Perspective view is many times the view of interest.  By setting this drop down, then there is not a need to make sure the view is current before starting the rendering.
 
 #### Active view
+Use this option to render the current active view.  This is the default setting.
 
 #### List of available viewports
-Includes named views.
+This list includes all the named views in the model.  Select the view name that should always be rendered..
 
 ## Rendering resolution
 {: #resolution}
-The image size and resolution are saved in the Rhino file.
+The Rendering Resolution is one of the most important render settings.  This control sets the image size and resolution are saved in the Rhino file.  Increasing resolution will exponentially increase rendering time.  So, it is important to handle this setting carefully.
 
-### Total pixels
+#### Total pixels
 {: #resolutionimagepixels}
-Sets the number of total pixels in the rendered image.
+Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
 
 ### Viewport Resolution
-Uses the viewport size in pixels to determine the rendered image size.
+Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
 
 ### Image size
 {: #resolutionprintedsize}
+Image Size will set the final resolution based on a number of different variables.  This is the best way to match and exact size and resolution of a final image. If the hieght ond width of the final rendering does not match the same aspect ratio of the view being rendering, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very longtime to complete.  Use these controls for final high resolution renderings.
+
+There are four unit types which can be used:
+
+>Pixels
+>Inches
+>Millimeters
+>Centermeters
 
 #### Pixels
-Sets the page units to pixels.
+Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.
 
 #### Inches
-Sets page units to inches.
+Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of inches in width and height by the resolution DPI value.
 
 #### Millimeters
-Sets the page units to millimeters.
+Sets the page units to millimeters. Millimeters are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of millimeters in width and height by the resolution dots per millimeter value.
+
+#### Centimeter
+Sets the page units to centimeters. Centimeters are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of centimeters in width and height by the resolution dots per centimeter value.
+
+#### Apply view aspect ratio
+Use this setting to keep the width and height setting in the same aspect ratio to the current view.  This will assure the complete view is render in the final image.
 
 #### Width
-Printed image width in current size units.
+Printed image width in current unit size.  This setting is multiplied by the resolution setting to reach the final image size in total number of pixels.
 
 #### Height
-Printed image height in current size units.
+Printed image height in current size units.  This setting is multiplied by the resolution setting to reach the final image size in total number of pixels.
 
 #### Resolution
 {: #printsizepixelsperunit}
@@ -47,61 +72,66 @@ Printed image height in current size units.
 {: #printsizeresolution}
 
 #### Display
-The image is rendered using the pixel size of the viewport.
+The image is rendered using the DPI resolution of the viewport.
+<!-- TODO: What does this really mean in terms of DPI.  Does the resolution density of the devise count -->
 
 #### Custom
-The image is rendered using a custom resolution. Type the custom width and height resolution in pixels.
+The image is rendered using a custom resolution. Type the custom width and height resolution in Pixels per: control below.
 
 #### Printer, draft quality
-100 pixels per inch or 4 pixels per mm.
+Set the resolution to 100 pixels per inch or 4 pixels per mm.
 
 #### Printer, normal quality
-150 pixels per inch or 6 pixels per mm.
+Set the resolution to 150 pixels per inch or 6 pixels per mm.
 
 #### Printer, high quality
-300 pixels per inch or 12 pixels per mm.
+Set the resolution to 300 pixels per inch or 12 pixels per mm. this is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderingsins, the overall resolution can get very high with this setting. Very high resolutions can lead to very long rendering times.
 
 #### Pixels per ___
-Displays the current resolution.
+When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a pre-set resolution is selected, this control displays the current resolution.
 
 ## Depth of field
 {: #depthoffieldoption}
 This effect creates a depth of field blur that mimics a photographer's lens. A lens can only focus precisely at exactly one distance, but the decrease in sharpness is gradual around the focal distance.
 
-### Enabled
+#### Enabled
 Turns on the depth-of-field effect.
 
-### Strength
-Controls the size of the focus area. Setting **Strength** to zero makes the entire image is sharp. Increasing the **Strength** makes the areas outside the focal distance more blurry and makes the area in focus smaller.
+#### Strength
+Controls the size of the focus area. Setting Strength to zero makes the entire image is sharp. Increasing the Strength makes the areas outside the focal distance more blurry and makes the area in focus smaller.
 
-### Focal distance
+#### Focal distance
 {: #focaldistance}
-Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If theFocal distanceis set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
+Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If the Focal distance is set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
 
-### Pick
+#### Pick >>
 Pick a point in the model for the focal distance.
 
 ## Render Engine
 {: #render-engine}
+There are three different render engines within Flamingo.  Each render engine will produce slightly different results in normal rendering conditions.
+
+Flamingo use progressive, multi-step rendering techniques to create renderings.  Each pass in the rendering will result in The way a render engine approaches a render solution in progressive steps, as Flamingo does, there can be  a number of unfinished artifacts in the rendering at each progressive step. Artifacts are render effects that leave unusual effects in a rendering.  Artifacts are the result of the effect not being completed.  Technically all 3 render engines, given enough time will result in the the same rendering, given enough time.  But realistically time is always a limiting factor. So, the trick is to select a render engine that will best render the current scene in the least number of steps.
+
+It is very easy to simply select a different render engine and then render to see the results.
 
 ### Default
-The default algorithm produces a very high-quality simulation. The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
+The default algorithm produces a very high-quality simulation. The default engine is a very good render engine for a wide variety of scenes.  While the other two engines have greater strengths, there are also greater weaknesses.  The Default engine is a good starting point.
+
+The default render engine has a very noticeable artifact in the renderings in the early passes.  The artifact is hard overlapping shadows.  As passes progress these shadows will soften up.  This allows the default engine to return a result quickly, but may take more passes to actually soften he shadows out.
+
+The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
 
 ### Path Tracer
 {: #path-tracer}
-The path tracer begins by displaying a very grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation.
- **Note** : Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
+The path tracer begins by displaying a very grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. Note : Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
 
-### Advantages of using the path tracer
+Certain advanced effects, such as caustics or blurry transmission, can be calculated with better accuracy using the path tracer. Images rendered with instancing, plants, and displacement maps can converge faster. The path tracer is usually easier to set up than the default method. advanced settings such as reflection shaders, daylight portals, and ambient lighting, are not used when the path tracer engine is selected.
 
->Certain advanced effects, such as caustics or blurry transmission, can be calculated with better accuracy using the path tracer.
->Images rendered with instancing, plants, and displacement maps can converge faster.
->The path tracer is usually easier to set up than the default method. advanced settings such as reflection shaders, daylight portals, and ambient lighting, are not used when the path tracer engine is selected.
+Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer to finish.
 
-### Disadvantages of using the path tracer
+### Hybrid
+The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. in some situations it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
 
->Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer.
-
-###  **Advanced** 
-Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page.
-
+###  **Advanced**
+Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page. There are a number of advanced rendering properties that can be set here to further customize the final rendering quality.
