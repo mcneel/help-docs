@@ -66,7 +66,7 @@ Printed image width in current unit size.  This setting is multiplied by the res
 #### Height
 Printed image height in current size units.  This setting is multiplied by the resolution setting to reach the final image size in total number of pixels.
 
-#### Resolution
+### Resolution
 {: #printsizepixelsperunit}
 {: #printsizedpi}
 {: #printsizeresolution}

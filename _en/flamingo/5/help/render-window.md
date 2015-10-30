@@ -1,6 +1,7 @@
 ---
 ---
 
+<!-- TODO: This is a combination of the old information here and the Rhino render Windows.  These two still need to be combined. -->
 
 # Render Window
 The render window provides options for exposure adjustment and adding post-processing effects.
@@ -117,27 +118,27 @@ Stops/continues rendering the image.
 
 ## Toolbar
 
-###  [Save](render-window.html#save) 
+###  [Save](render-window.html#save)
 
-###  [Save with background alpha channel](render-window.html#save-with-alpha-channel) 
+###  [Save with background alpha channel](render-window.html#save-with-alpha-channel)
 
-###  [ [Print](render-window.html#renderwindowprint) ](render-window.html#print-preview) 
+###  [ [Print](render-window.html#renderwindowprint) ](render-window.html#print-preview)
 
-###  [Export to native Flamingo nXt file (.nXtImage)](render-window.html#export-to-nxtimage) 
+###  [Export to native Flamingo nXt file (.nXtImage)](render-window.html#export-to-nxtimage)
 
-###  [Export to HDR file](render-window.html#export-to-hdr) 
+###  [Export to HDR file](render-window.html#export-to-hdr)
 
-###  [Export to EXR file](render-window.html#export-to-exr) 
+###  [Export to EXR file](render-window.html#export-to-exr)
 
-###  [Copy to clipboard](render-window.html#copy) 
+###  [Copy to clipboard](render-window.html#copy)
 
-###  [Zoom to actual image size](render-window.html#zoom) 
+###  [Zoom to actual image size](render-window.html#zoom)
 
-###  [Rendered Display](render-window.html#rendered-display) 
+###  [Rendered Display](render-window.html#rendered-display)
 
-###  [Alpha Mask](render-window.html#alpha-mask) 
+###  [Alpha Mask](render-window.html#alpha-mask)
 
-###  [Distance Mask](render-window.html#distance-mask) 
+###  [Distance Mask](render-window.html#distance-mask)
 
 ### Options
 
@@ -151,7 +152,7 @@ Specifies the ratio of the image in the render window a mouse wheel step or pres
 
 ### Show/Hide menu
 
-###  [Help](render-window.html#help) 
+###  [Help](render-window.html#help)
 
 ## Progress
 {: #progress}
@@ -248,17 +249,17 @@ Distance
 
 ## Lighting information
 
-###  [Presets](lighting-tab.html) 
+###  [Presets](lighting-tab.html)
 
-###  [Sun](sun-and-sky-tabs.html#sun) 
+###  [Sun](sun-and-sky-tabs.html#sun)
 
-###  [Sky](sun-and-sky-tabs.html#sky) 
+###  [Sky](sun-and-sky-tabs.html#sky)
 
-###  [Lights](lights-tab.html) 
+###  [Lights](lights-tab.html)
 
-###  [Indirect](lighting-advanced-tab.html#indirect) 
+###  [Indirect](lighting-advanced-tab.html#indirect)
 
-###  [Ambient On/Off](lighting-advanced-tab.html#ambient) 
+###  [Ambient On/Off](lighting-advanced-tab.html#ambient)
 
 ## Channels
 {: #channels}
@@ -488,4 +489,3 @@ Displays point objects.
 
 ### Preview
 Preview the effect on the image as you change the values.
-
