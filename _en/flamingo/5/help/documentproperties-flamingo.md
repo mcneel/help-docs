@@ -5,9 +5,12 @@
 # Document Properties: Flamingo nXt
 These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
 
+#### Where can I find this command?
+<!-- These locations are not correct.  They need to be updated. -->
 
-#### Where can I find Flamingo Lighting control?
-The channel controls are found on the Flamingo NXT tab in the [render window](render-window.html) under Channels.
+ 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
+ 1. Command > EnvironmentEditor
 
 ## Materials
 {: #materials}

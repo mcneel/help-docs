@@ -76,10 +76,11 @@ main_index:
           path: render-channel.html
         - name: Document Properties
           path: documentproperties-flamingo.html
-        - name: Automate Rendering
-          path: automate-rendering.html
         - name: Image Editor
           path: image-editor.html
+        - name: Automated Rendering
+          path: automate-rendering.html
+
 
     - name: Object Properties
       anchor: object_properties
@@ -103,8 +104,14 @@ main_index:
       anchor: farm
       topics:
         - name: Installing the Farm
+          path: automate-rendering.html
+          anchor: install
         - name: Render Farm
+          path: automate-rendering.html
+          anchor: farm
         - name: Render Farm Monitor
+          path: automate-rendering.html
+          anchor: monitor
 
     - name: Misc
       anchor: misc
