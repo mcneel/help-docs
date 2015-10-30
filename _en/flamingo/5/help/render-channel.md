@@ -34,6 +34,7 @@ The first step in setting up a muti-channel rendering is to set each light to ch
 >[Sun Channel](sun-and-sky-tabs.html#sun-channel)
 >[Sky Channel](sun-and-sky-tabs.html#sky-channel)
 >[Artificial Light Channel](lights-tab.html#channel)
+>[Material Glow](documentproperties-flamingo.html#channel)
 
 Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
 
