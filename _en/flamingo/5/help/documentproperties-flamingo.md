@@ -54,11 +54,11 @@ Monte Carlo in indirect lighting controls how Flamingo samples indirect light. W
 
 ## Miscellaneous
 
-### Use lights on layers that are off
+#### Use lights on layers that are off
 {: #uselightsonlayersthatareoff}
 Uses lights on layers that are turned off and hidden lights.
 
-## Render constraints
+### Render constraints
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}
