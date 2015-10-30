@@ -67,7 +67,6 @@ main_index:
       anchor: rendering
       topics:
         - name: Render Preview
-        - name: Safe Frame
         - name: Render tab
           path: render-tab.html
         - name: Render Window
