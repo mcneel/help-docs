@@ -2,7 +2,7 @@
 ---
 
 # ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
-The Flamingo material is defined by a series of property groups. There are a series of Simple Material Types of commonly used materials.  These material present very a very simple set of controls. This give easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
+Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These material present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
 
 #### Simple Material Types:
 
@@ -11,7 +11,7 @@ The Flamingo material is defined by a series of property groups. There are a ser
 > ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metal](#metal)
 > ![images/newglassmaterial.png](images/newglassmaterial.png)[Glass](#glass)
 > ![images/newglossymaterial.png](images/newglossymaterial.png)[Glossy](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[Clear Finish](#clear-finish)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
 > ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
 > ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
 
@@ -103,7 +103,7 @@ The ClearFinish material simulates car paint, porcelain, ceramics, varnished woo
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of[Highlight color](advanced-material-properties-main.html#highlight-color), [Intensity](advanced-material-properties-main.html#intensity), [Fresnel](advanced-material-properties-main.html#fresnel) and [Sharpness](advanced-material-properties-main.html#sharpness).
 
 ## Flamingo Textured
-{: #textured}
+{: #flamingo-textured}
 Textured materials use images to create colored and patterns. The image name, resolution, tile size, and highlight intensity and sharpness are controllable from this simple material.
 
 ![images/solidcolors.png](images/3-texture.png)
