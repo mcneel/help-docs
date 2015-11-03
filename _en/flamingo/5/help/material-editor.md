@@ -10,27 +10,25 @@ Once assigned, materials are stored in the model. The material, textures, and al
 
 Materials, environments, and textures are stored in the model, but rendering content can also be saved to files that can be shared between models. Content can be dragged between Rhino sessions and into a folder. Color swatches can be dragged and dropped in the same way. The [Libraries Panel](libraries.html) displays the default content folder. Use this to drag and drop content into the model or to drag and drop model content to an external file.
 
-![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map height="600px" style="float: right"}
+![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map .float-img-right}
 
 #### Where can I find this command?
 There several options to find the Materials tab.
+
  * ![images/materialtab.png](images/materialtab.png)Materials tab
  * ![images/icon-render.png](images/icon-render.png)Render Tools toolbar >
-  * ![images/materialtab.png](images/materialtab.png) Material Editor
+ * ![images/materialtab.png](images/materialtab.png) Material Editor
  * ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Materials Editor
  * On the Command line type **MaterialEditor**
 
  <!--TODO: At Render Tools toolbar > Material Editor? I can't find it. If I click on the matching icon, Toggle Materials panel, I don't think it goes to the same place as the Materials tab. -->
 
-<!--TODO: I changed this list to bullets as I kept looking at the numbers in the illustration, thinking they matched. Also, these are four different ways to find the Materials Panels, right? -->
 
 The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
 
 Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
 
 Materials Panel
-
-<!--TODO: These links are bad. -->
 
  1. [Settings Bar](#settings)
  1. [Material List](#material_list)
@@ -40,7 +38,7 @@ Materials Panel
  1. [Material Properties Panels](#panels)
 
 ## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
-{: #settings style="clear: both;"}
+{: #settings .clear-img}
 Use this bar to navigate the material during its development.
 <!-- TODO: This content is from the old source.  It needs heavy editing-->
 
@@ -57,13 +55,10 @@ Walks back though the current material or the previously selected materials.  Fo
 Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will be shown. A good place to see where the editor is in a material.
 
 #### ![images/library_default.png](images/library_default.png) Tools menu
-Displays the [Tools menu](material_editor.html#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
+Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
 
 <!--TODO: Bad link -->
 
-#### ![images/help_topics.png](images/help_topics.png) Help
-
-<!--TODO: Do we list an item when we have nothing to say about it? -->
 
 ## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #material_list}
@@ -76,9 +71,6 @@ This lists all the materials contained in the model. From this list:
 <!--TODO: I don't understand why the Add New Button image doesn't show up. It also doesn't show up in the header below. -->
 
 * Click on each material to select it. Once selected the material's properties will be shown in the panels below. See [Render Materials Properties](#properties) for more information.
-
-<!--TODO: Bad link -->
-
 * Right-click a thumbnail to display the Material context menu.
 * Right-click the blank area to display the New Material Context Menu.
 
@@ -151,11 +143,11 @@ Automatically updates all previews as settings change.
 Update previews manually when Auto-Update Preview is off.
 
 ## [Window Divider](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
-{: divider}
+{: #divider}
 Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
 
 ## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
-{: properties}
+{: #properties}
 
 #### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
@@ -168,7 +160,7 @@ The Materials Properties section is filled with several direct Material panels. 
 Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html).
 
 ## Tools menu ![images/library_default.png](images/library_default.png)
-{: #tools_menu}
+{: #tools-menu}
 <!-- TODO: This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
 
