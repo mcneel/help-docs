@@ -2,7 +2,7 @@
 ---
 
 
-# Document Properties: Flamingo nXt
+# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Document Properties: Flamingo nXt
 These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
 
 #### Where can I find this command?

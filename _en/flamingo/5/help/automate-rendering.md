@@ -1,6 +1,6 @@
 ---
 ---
-
+<!-- TODO: This page needs to be updated more with current automated rendering information.-->
 
 # Automate Rendering
 The Flamingo nXt **Render Farm** uses the power of several computers to render single images, batch jobs of multiple images, or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers that are used only as render farm clients.
@@ -91,7 +91,7 @@ Start the job at a specified date and time.
 ### Render constraints
 {: #render-constraints}
 
-####  [Passes](documentproperties-flamingo.html#number-of-passes) 
+####  [Passes](documentproperties-flamingo.html#number-of-passes)
 
 ## Batch Jobs
 {: #batch-jobs}
@@ -128,14 +128,14 @@ Displays information about the list of views to be rendered.
 ### View
 Displays pass, scan line, and elapsed time information about the progress of the batch process.
 
-###  **Stop Rendering** 
+###  **Stop Rendering**
 Stops the batch process.
 
-###  **Render Batch Locally** 
+###  **Render Batch Locally**
 {: #render-batch-locally}
 Uses only the current computer to render the batch jobs. The rendered images will be output to the location specified in the batch job properties.
 
-###  **Send Batch To Farm** 
+###  **Send Batch To Farm**
 Sends the batch jobs to the [Render Farm](automate-rendering.html#render-farm). The jobs will be rendered by all available Farm clients. The render images will be output to the shared Farm folder.
 
 ## Batch Render Properties
@@ -150,7 +150,7 @@ See: [Render tab, Viewport to render](render-tab.html#viewtorender).
 Click the **Save** button and specify a file name for the rendered image.
 
 ### Alpha channel
- [Use alpha channel background.](environment-tab.html#alpha) 
+ [Use alpha channel background.](environment-tab.html#alpha)
 
 ## Rendering resolution
 {: #rendering-resolution}
@@ -161,7 +161,7 @@ See [Render tab, Resolution](render-tab.html#resolution).
 ## Rendering constraints
 {: #rendering-constraints}
 
-###  [Passes](documentproperties-flamingo.html#number-of-passes) 
+###  [Passes](documentproperties-flamingo.html#number-of-passes)
 
 ## Animation
 {: #animation}
@@ -273,4 +273,3 @@ Saves the [alpha channel](render-window.html#save-with-alpha-channel) background
 
 ### Uncheck all items
 &#160;
-
