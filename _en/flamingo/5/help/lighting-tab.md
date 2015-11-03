@@ -9,12 +9,13 @@ Lighting is the most important and most neglected consideration when creating im
 
 #### Where can I find Flamingo Lighting control?
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
+* Right-click any tab and check Flamingo nXt.
+
 
 Use the following guidelines when lighting your model:
 
-* Start with a lighting pre-set.
+* Start with a lighting preset.
 * Since Flamingo nXt simulates real-world lighting, provide accurate information whenever possible.
 * Avoid using unrealistic intensity levels for light sources.
 * Set the units correctly for your model. The lighting will not be correct unless the units are correct. For example, if your model is in millimeters, set the model units to millimeters.
@@ -26,7 +27,7 @@ To improve lighting techniques, be aware of the light and how it affects various
 {: #lighting-presets}
 A great starting place for lighting is the included Lighting presets that correspond to real-world lighting situations. Flamingo nXt provides lighting presets that can help get you started lighting your model. There are many more lighting options available, but the presets are often sufficient for many different renderings. Choose the Preset scheme that most closely resembles your scene.
 
-Lighting in Flamingo nXt uses four pre-set methods categories:
+Lighting in Flamingo nXt uses four preset methods categories:
 
 > [Studio lighting](lighting-tab.html#studio-lighting)
 > [Exterior daylight](lighting-tab.html#exterior-daylight)
@@ -37,13 +38,15 @@ Lighting in Flamingo nXt uses four pre-set methods categories:
 {: #studio-lighting}
 This scheme mimics the lighting found in a photographer's studio. It is most useful for rendering small-to-medium-sized objects in isolation.  It can also be used for any scene that is well lit through an HDRI environment.
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: style="float: left; padding-right: 25px;"} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](lighting-advanced-tab.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
+![images/studiolighting-001.png](images/studiolighting-001.png){: style="float: left; padding-right: 25px;"} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](sun-and-sky-tabs.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
+<!-- TODO: Fixed the Sky tab. Did I get the right one? -->
 
 Studio lighting is optimized for tabletop setups for small design articles such as jewelry and product designs. In the preset scheme, the sun is off and an HDR image sky provides something for shiny objects to reflect.
 
-For greater control, use light sources to light the scene. When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of light sources placed in a way to create very light and very dark areas.
+For greater control, use light sources to light the scene. When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires several light sources placed in a way to create very light and very dark areas.
 
 Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](studio-lighting-basics.html).
+<!-- TODO: Bad link. -->
 
 ### Exterior daylight
 {: #exterior-daylight}
@@ -54,6 +57,7 @@ Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-t
 Lighting a building exterior is the most straightforward lighting model. Most exterior lighting will need no more than the default [Sun](sun-and-sky-tabs.html#sun) light source.
 
 When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be designated as an [interior](lighting-advanced-tab.html#interior) or an [exterior](lighting-advanced-tab.html#exterior). This is because the contribution of the sky light, reflected light from the ground, and light reflected off other surfaces is much different when inside as opposed to outside. Using the correct [Interior/Exterior](lighting-advanced-tab.html#indirect) setting results in effective and realistic lighting.
+<!-- TODO: All these interior/exterior links are bad. -->
 
 Sometimes it is easy to determine if a scene is an interior or an exterior. If the viewpoint is outside a building, it is an exterior scene. If the viewpoint is inside a room, it is an interior. Some kinds of scenes are not so clear. This includes courtyards, gazebos, exploded views, and sections. If a courtyard is much wider than it is tall, thereby letting in a lot of skylight, try lighting it as an exterior scene. If it is taller than it is wide, try lighting the scene as an interior. In this case, one of the tricks is to add daylight portals at the top of the courtyard to help direct the skylight into the scene.
 
@@ -86,7 +90,8 @@ Indirect lighting, the lighting reflected off surfaces, is on when one of the tw
 
 ### Custom Lighting
 {: #custom  style="clear:both;"}
-Custom is the tab to mix and match parts of the lighting pre-lights together.  For instance if the scene is a Exterior daylight, but lit with the addition of a HDRI environment.  Use the the Custom tab to turn off and on parts of the lighting model.  When the values on the [Advanced tab](lighting-advanced-tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.
+Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRI environment, use the Custom tab to turn off and on parts of the lighting model.  When the values on the [Advanced tab](lighting-advanced-tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.
+<!-- TODO: Bad link. -->
 
 ####  [Sun](sun-and-sky-tabs.html#sun)
 {: #sun}
@@ -164,7 +169,7 @@ Optimizes the indirect lighting for indoor situations.
 #### Exterior
 {: #exterior}
 Optimizes the indirect lighting for outdoor situations.
-Indirect lighting reflected from other surfaces, can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately when using indirect lighting.
+Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately when using indirect lighting.
 
 #### Bounces
 {: #bounces}
