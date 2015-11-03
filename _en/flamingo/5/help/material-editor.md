@@ -1,27 +1,36 @@
 ---
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Editor Panel
-Materials contain the specification of color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For best result use Flamingo specific materials.
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Materials Editor Panel
+Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
 
-Materials can be assign to layer, objects and blocks. Assignments can be made by dragged and dropped onto objects or various controls. See [Material Assignments](material_assignment.html) for more information.
+Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.
 
-Once assigned, materials are stored in the model. The material, textures and all support files for rendering can be stored within the Rhino model with properly set [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm).
+Once assigned, materials are stored in the model. The material, textures, and all support files for rendering can be stored within the Rhino model with properly set [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm).
 
-Materials, environments, and textures are stored in the model, but render content can also be saved to files that can be shared between models. Content can be dragged between Rhino sessions and into a folder. Color swatches can be dragged and dropped in the same way. The [Libraries Panel](libraries.html) displays the default content folder. Use this to drag and drop content into the model or to drag and drop model content to an external file.
+Materials, environments, and textures are stored in the model, but rendering content can also be saved to files that can be shared between models. Content can be dragged between Rhino sessions and into a folder. Color swatches can be dragged and dropped in the same way. The [Libraries Panel](libraries.html) displays the default content folder. Use this to drag and drop content into the model or to drag and drop model content to an external file.
 
 ![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map height="600px" style="float: right"}
 
 #### Where can I find this command?
- 1. ![images/materialtab.png](images/materialtab.png)Materials Tab
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/materialtab.png](images/materialtab.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Materials Editor
- 1. Command > MaterialEditor
+There several options to find the Materials tab.
+ * ![images/materialtab.png](images/materialtab.png)Materials tab
+ * ![images/icon-render.png](images/icon-render.png)Render Tools toolbar >
+  * ![images/materialtab.png](images/materialtab.png) Material Editor
+ * ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Materials Editor
+ * On the Command line type **MaterialEditor**
+
+ <!--TODO: At Render Tools toolbar > Material Editor? I can't find it. If I click on the matching icon, Toggle Materials panel, I don't think it goes to the same place as the Materials tab. -->
+
+<!--TODO: I changed this list to bullets as I kept looking at the numbers in the illustration, thinking they matched. Also, these are four different ways to find the Materials Panels, right? -->
 
 The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
 
 Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+
 Materials Panel
+
+<!--TODO: These links are bad. -->
 
  1. [Settings Bar](#settings)
  1. [Material List](#material_list)
@@ -36,30 +45,42 @@ Use this bar to navigate the material during its development.
 <!-- TODO: This content is from the old source.  It needs heavy editing-->
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the parent material from the texture details.
+Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to get back to the parent material from the texture details.
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
 Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the recently used texture from the parent material.
+
+<!--TODO: Back Arrow and Forward Arrow do the same things, except one goes from parent to texture and the other goes from texture to parent?  -->
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
 <!-- TODO: Add a texture image image and a procedural icon-->
 Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will be shown. A good place to see where the editor is in a material.
 
-#### ![images/library_default.png](images/library_default.png) Tools Menu
+#### ![images/library_default.png](images/library_default.png) Tools menu
 Displays the [Tools menu](material_editor.html#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
 
+<!--TODO: Bad link -->
+
 #### ![images/help_topics.png](images/help_topics.png) Help
+
+<!--TODO: Do we list an item when we have nothing to say about it? -->
 
 ## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #material_list}
 This lists all the materials contained in the model. From this list:
 
-* Scroll up and down in the list to see all the material in the model.
-* Drag and drop a material from this list onto a layer in the [Layer Panel](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm) or directly onto and Object to assign it to an Object. See [Material Assignments](material_assignment.html) for more information.
+* Scroll up and down in the list to see all the materials in the model.
+* Drag and drop a material from this list onto a layer in the [Layer Panel](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm) or directly onto an Object to assign it to an Object. See [Material Assignments](material_assignment.html) for more information.
 * Add a new Material using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
-* Click on each material to select it. Once selected the material's properties will be shown in the panels below. See [Render Materials Properties](#properties) for more information
-* Right-click a thumbnail to display the Material context menu
-* Right-click the blank area to display the New Material Context Menu
+
+<!--TODO: I don't understand why the Add New Button image doesn't show up. It also doesn't show up in the header below. -->
+
+* Click on each material to select it. Once selected the material's properties will be shown in the panels below. See [Render Materials Properties](#properties) for more information.
+
+<!--TODO: Bad link -->
+
+* Right-click a thumbnail to display the Material context menu.
+* Right-click the blank area to display the New Material Context Menu.
 
 ###  ![images/add_material.png](images/add_material.png) Add new material
 {: #add_material}
@@ -70,14 +91,16 @@ The materials in the library act as templates for creating materials in the mode
 
 ### Material Context Menu
 {: material_context}
-This menu is available by right click on a material listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+This menu is available by right-clicking on a material listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
 
 ### New Material Context Menu
 {: new_material_context}
-This menus is available by right-clicking on a blank area of the Material List.
+This menu is available by right-clicking on a blank area of the Material List.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Basic Material
+#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Material
 Creates a new basic matte white material.
+
+<!--TODO: What about Import Material from File? -->
 
 #### ![images/paste.png](images/paste.png) Paste
 Creates a new material based on the contents of the Clipboard.
@@ -101,7 +124,7 @@ Displays the previews to the left of the controls.
 Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
 
 #### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
-Floats the preview image in a re-sizable window.
+Floats the preview image in a resizable window.
 
 #### Thumbnails
 
@@ -129,25 +152,25 @@ Update previews manually when Auto-Update Preview is off.
 
 ## [Window Divider](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: divider}
-Drag on this divider to change the length of the Material List versus the length of the Material Properties Section.
+Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
 
 ## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: properties}
 
 #### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
-This is the name of the material. The material name is also saved as the file name when exporting the material to the library. note: - materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
+This is the name of the material. The material name is also saved as the file name when exporting the material to the library. Note: Materials are stored in the Rhino model. Unique materials can have the same name in different Rhino models.
 
 #### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #panels}
-The Materials Properties section is filled with a number of direct Material panels. Clicking on the grey title bar will rollup the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+The Materials Properties section is filled with several direct Material panels. Clicking on the grey title bar will roll up the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 
-Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html)
+Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html).
 
 ## Tools menu ![images/library_default.png](images/library_default.png)
 {: #tools_menu}
 <!-- TODO: This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
+These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
 
 #### ![images/assigntoobjects.png](images/assigntoobjects.png) Assign to Selection
 Assigns the current material to selected objects.
@@ -156,7 +179,7 @@ Assigns the current material to selected objects.
  1. Click Assign to Selection.
  1. In the Rhino viewport, select the target objects.
 
-##### To pre-select objects
+##### To preselect objects
  1. In the Rhino viewport, select the target objects.
  1. Click Assign to Selection.
 The target objects can be selected either before or after clicking Assign to Selection.
@@ -175,6 +198,8 @@ Assigns the current material to layers.
 ##### To assign materials from the Layers panel
  1. In the  [Layer](layer.html)  panel, select one or more layers and click the  [Material](layer.html#material)  column.
  1. In the Layer Material dialog box, select the material to assign.
+
+<!--TODO: Bad links -->
 
 ##### To drag and drop materials to objects
  * Drag the material from the thumbnails or list onto the target layer.
@@ -225,8 +250,11 @@ Copies the selected material to a new material with the same settings.
 #### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
 Removes the connection between [instanced](#paste-as-instance) materials.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
+<!--TODO: Bad link -->
+
 #### ![images/contentfilter.png](images/contentfilter.png) Content Filter
 Opens the [Content Filters](content_filters.html) dialog box.
 
 #### ![images/rename.png](images/rename.png) Properties
 Opens the [Preview Properties](previewproperties.html) dialog box.
+<!--TODO: Bad link -->
