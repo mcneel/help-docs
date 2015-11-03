@@ -5,6 +5,7 @@
 # Image Editor
 The nXt Image Editor can edit native image files (.nXtImage) produced by any of the nXt platforms. These native files retain all of the information gathered during rendering.
 Using the nXt Image Editor, you can:
+<!-- TODO: This page needs to be updated.  One of the last we will work on. The image editor is not used much.-->
 
 >Adjust the [tone operator](image-editor.html#tone-mapping) settings.
 >Change the intensity of any lighting channel.
@@ -41,7 +42,7 @@ Saves the edited image as a bitmap image file.
 >TIFF with Alpha Channel (.tif)
 >PNG (.png)
 >PNG with Alpha Channel (.png)
-> [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) 
+> [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/)
 
 Piranesi is a 3-D painting tool that creates images with a hand-painted appearance.
 
@@ -169,13 +170,13 @@ Tone mapping is the process of converting the luminance data used by nXt into&#1
 See [Render Window: Brightness](render-window.html#brightness).
 {% include_relative snippets/snippet-brightness.md %}
 ### Burn
-See [Render Window: Burn](render-window.html#burn) 
+See [Render Window: Burn](render-window.html#burn)
 
 ### Saturation
-See [Render Window: Saturation](render-window.html#saturation) 
+See [Render Window: Saturation](render-window.html#saturation)
 
 ### Histogram
-See [Render Window: Histogram](render-window.html#histogram) 
+See [Render Window: Histogram](render-window.html#histogram)
 
 ## Status Fields
 The status fields are located at the bottom of the screen. As you move your cursor over the image, these fields display information about each pixel.
@@ -285,4 +286,3 @@ Pick a point on the image to specify the brightness value.
 {: #vignette}
 Blurs and blends the colors on the edges of the image to create a halo effect.
 *![images/fx-vignette-001.png](images/fx-vignette-001.png)Original image (left) and with vignette (right).*
-
