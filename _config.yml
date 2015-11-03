@@ -43,7 +43,7 @@ collections:
     output: true
   kr:
     output: true
-    
+
 defaults:
   -
     scope:
@@ -51,7 +51,7 @@ defaults:
       type: en
     values:
       language: en
-      productname: "Flamingo NXT Documentation"
+      productname: "Flamingo nXt Documentation"
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
@@ -96,4 +96,3 @@ defaults:
       doctype: "Guides"
       layout: flamingo-toc-page
       collectionname: "가이드"
-
