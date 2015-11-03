@@ -2,7 +2,7 @@
 ---
 
 # ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
-Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These material present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
+Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
 
 #### Simple Material Types:
 
@@ -15,7 +15,7 @@ Flamingo materials are defined by a series of property groups. These are a serie
 > ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
 > ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
 
-Any material can be converted to an advanced material.  Advanced material present all the possible controls to edit a material in Flamingo NXT.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
+Any material can be converted to an advanced material.  Advanced materials present all the possible controls to edit a material in Flamingo nXt.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
 
 #### Advanced Materials are comprised of these property groups:
 
@@ -27,12 +27,13 @@ Any material can be converted to an advanced material.  Advanced material presen
 > [Textures Summary](material-type-advanced.html#name)
 > [Notes](material-type-advanced.html#name)
 
-Materials are saved in the Rhino Model. A materials are stored in the Rhino model, unique materials can have the same name in different Rhino models.
+Materials are saved and stored in the Rhino model. Unique materials can have the same name in different Rhino models.
 <!-- TODO: All the links and anchors need to be tested on this page.  They were created before the Advanced page they reference.-->
 
 ## Solid Color
 {: #solid-color}
 Solid Color materials have only a [name](advanced-material-properties-main.html#name) and a [color](advanced-material-properties-main.html#color).
+<!-- TODO: Bad links-->
 
 ![images/solidcolors.png](images/3-solidcolor.png)
 
@@ -49,6 +50,7 @@ Plastic materials are slightly reflective with a white [highlight](advanced-mate
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](advanced-material-properties-main.html#highlight-color), [Intensity](advanced-material-properties-main.html#intensity), [Fresnel](advanced-material-properties-main.html#fresnel), and [Sharpness](advanced-material-properties-main.html#sharpness).
+<!-- TODO: Bad links. Also, 'highlight' on line 46 is a bad link. Tons of bad links following. I think it will be easier to correct as they are checked, than for me to note each one.-->
 
 ## Metal
 {: #metal}
@@ -61,7 +63,7 @@ Metal materials have a highlight whose color matches the [color](advanced-materi
 #### Sharpness
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](advanced-material-properties-main.html#sharpness) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](advanced-material-properties-main.html#highlight-color), [Intensity](advanced-material-properties-main.html#intensity), [Fresnel](advanced-material-properties-main.html#fresnel) and [Type](advanced-material-properties-main.html#type)
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](advanced-material-properties-main.html#highlight-color), [Intensity](advanced-material-properties-main.html#intensity), [Fresnel](advanced-material-properties-main.html#fresnel) and [Type](advanced-material-properties-main.html#type).
 
 ## Glass
 {: #glass}
@@ -78,7 +80,7 @@ Controls the amount light bends through the material. See Advanced [Index of Ref
 
 ## Glossy
 {: #glossy}
-Glossy materials gernally have a low Highlight [Intensity](advanced-material-properties-main.html#intensity) and [Sharpness](advanced-material-properties-main.html#sharpness).
+Glossy materials generally have a low Highlight [Intensity](advanced-material-properties-main.html#intensity) and [Sharpness](advanced-material-properties-main.html#sharpness).
 
 ![images/solidcolors.png](images/3-glossy.png)
 
@@ -90,7 +92,7 @@ Controls strength of the highlight from lights on the surface. See Advanced [Int
 #### Highlight Sharpness
 Controls sharpenss vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](advanced-material-properties-main.html#sharpness) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Fresnel](advanced-material-properties-main.html#fresnel) and [Type](advanced-material-properties-main.html#type)
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](advanced-material-properties-main.html#fresnel) and [Type](advanced-material-properties-main.html#type).
 
 ## ClearFinish
 {: #clearfinish}
@@ -100,11 +102,11 @@ The ClearFinish material simulates car paint, porcelain, ceramics, varnished woo
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of[Highlight color](advanced-material-properties-main.html#highlight-color), [Intensity](advanced-material-properties-main.html#intensity), [Fresnel](advanced-material-properties-main.html#fresnel) and [Sharpness](advanced-material-properties-main.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](advanced-material-properties-main.html#highlight-color), [Intensity](advanced-material-properties-main.html#intensity), [Fresnel](advanced-material-properties-main.html#fresnel) and [Sharpness](advanced-material-properties-main.html#sharpness).
 
 ## Flamingo Textured
 {: #flamingo-textured}
-Textured materials use images to create colored and patterns. The image name, resolution, tile size, and highlight intensity and sharpness are controllable from this simple material.
+Textured materials use images to create colors and patterns. The image name, resolution, tile size, and highlight intensity and sharpness are controllable from this simple material.
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -117,13 +119,14 @@ Controls strength of the mirror-like reflection of the surface. See Advanced [In
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](advanced-material-properties-main.html#sharpness) topic for more details.
 
 #### Image
-Set the image map and properties of the material. There are many options here, see the Advanced [Images](material-type-advanced.html#texture) topic for more details.
+Set the image map and properties of the material. There are many options here. See the Advanced [Images](material-type-advanced.html#texture) topic for more details.
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
 
 <!--TODO: There are a lot of changes surrounding the Images vs texture issues.  Does this link above go to the right place?-->
+<!-- TODO: There are errors in the snippets: 'select an image', not 'select and image'? 'select an image' not 'slect an images', Put a period after 'Material Editor'.-->
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets on this material.
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material.
 
 ## Texture Set
 {: #texture-set}
@@ -144,7 +147,7 @@ Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness]
 #### Types
 This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced#type) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the using the advanced editor will not keep all the properties in sync.
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
 
 ## Advanced Material
-The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials will work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.
+The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.
