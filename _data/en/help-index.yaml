@@ -84,8 +84,14 @@ main_index:
       anchor: object_properties
       topics:
         - name: Material Source
+          path: properties-object.html
+          anchor: material-source
         - name: Custom Meshing
+          path: properties-object.html
+          anchor: custom-meshing
         - name: Texture Mapping
+          path: properties-object.html
+          anchor: texture-mapping
         - name: Decal Properties
           path: properties-decal.html
         - name: Object properties
