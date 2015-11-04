@@ -2,10 +2,12 @@
 ---
 
 # ![images/render.svg](images/render.svg){:height="75px" width="75px"} Render Window
-The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic will cover the Flamingo specific additions to the render process.
+The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
 
-## Managing an active Rendering
-Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass systems that will update the rendered image in stages. Once a rendering is started, flamingo will first look for any changes to its internal model and the initialize for rendering.  This process can take a few seconds or a few minutes on a very large model.  This is the time the model is imported, material bitmaps are collected from the hard drive and the render image buffer is created. There are some key steps to the process to managing the rendering:
+## Managing an Active Rendering
+Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model and the initialize for rendering.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
+<!-- TODO: Is 'initialize for rendering' the right words? -->
+
 
 >[Multiple pass rendering](#multi-pass)
 >[Stopping a rendering](#stop-render)
@@ -14,9 +16,9 @@ Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhi
 
 ### Multiple Pass Rendering
 {: #multi-pass}
-Flamingo nXt is a completely new rendering engine. Using a method of multi-pass refinement nXt allows for more advanced rendering effects without the overhead of a complicated interface. The first few rendering passes, there will be unusual artifacts.  For instance you will see shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each render pass.  Use the [Flamingo Tab](#flamingo-tab) to monitor the rendering process.
+Flamingo nXt is a completely new rendering engine. Using a method of multi-pass refinement allows more advanced rendering effects without the overhead of a complicated interface. In the first few rendering passes, there will be unusual artifacts.  For instance you will see shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each rendering pass.  Use the [Flamingo Tab](#flamingo-tab) to monitor the rendering process.
 
-In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. This allows you to let images that are looking good to continue to improve. But you can also stop an image at any time, if you would like to change or save something.
+In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. You can let images that look good continue to improve. But, if you want to change or save something, you can also stop an image at any time.
 
 ![images/passes-wide-1.gif](images/passes-wide-1.gif)
 
@@ -32,6 +34,7 @@ Some of the effects that improve on each pass are:
 ### Stopping a rendering
 {: #stop-render}
 You can stop the rendering in a number of ways:
+<!-- TODO: Bad image -->
 
 ![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
 
@@ -49,20 +52,26 @@ Controls used for images adjustment include:
 >[Channels](#channels)
 >[Post Effects](#post-process-effects)
 
+<!-- TODO: Post Effects is a bad link -->
+
 ### Saving Images
 {: #saving}
 There are many ways to save an image depending on the plans for the image.  Normally saving as a JPG or PNG image file is the recommended process for most images.  But there are other options.
 
 #### ![images/saveimageas.png](images/saveimageas.png) Save Image
-Saving a JPG or PNG image file is the normal process after adjusting the image.  A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, there are some colors that will be removed from the image. PNG is compressed format that contains 100% of the color information and alpha channel information. This makes is a very good format for high quality images.
+Saving a JPG or PNG image file is the normal process after adjusting the image.  
+
+A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price. There are some colors that will be removed from the image. 
+
+PNG is a compressed format that contains 100% of the color information and alpha channel information. This makes is a very good format for high quality images.
 
 #### Save with background alpha channel
 {: #save-with-alpha-channel}
-Saves image 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
 
 #### Export to native Flamingo nXt file (.nXtImage)
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image re-saved to another bitmap format.
+Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
 The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all of the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
 
 #### Export to HDR file
@@ -71,21 +80,22 @@ Saves uncompressed luminance and color information. The .hdr format stores lumin
 
 #### Export to EXR file
 {: #export-to-exr}
-A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See: [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
+A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
 The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
 
 #### ![images/close-x.png](images/close-x.png) Exit
 Closes the render window.
+<!-- TODO: Bad image -->
 
 #### Pulldown Menus
-For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)
+For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).
 
 ## Flamingo Tab
 {: #flamingo-tab}
-The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to getting managing the active Flamigno renderings.
+The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to managing the active Flamigno renderings.
 
 #### Save with alpha channel
-Saves image 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  Use this checkbox and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+Saves 32-bit PNG, TIF, and BMP images including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  Use this checkbox and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
 
 ## Progress
 {: #progress}
@@ -97,7 +107,7 @@ Shows the current status of the rendering as is works through the model.
 Status messages include:
 
 * Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
-* Action Done - Once the Stop button has been hit and the render engine finishes a pass, then it the stop action is done.
+* Action Done - Once the Stop button has been hit and the render engine finishes a pass, then the stop action is done.
 * Pass Complete - Each time a pass is complete, this message is posted.
 * Resume Rendering - In cases that a resume is possible this is displayed.
 * Updating - The render engine is in the middle of a pass, currently updating the rendering.
@@ -119,10 +129,10 @@ The number of pixels resolved in the image per second.
 
 ## Adjust Image
 {: #adjust-image}
-This is one of the most important controls in Flamingo. Just like a camera, the exposure of an image can be adjusted.  This is the best way to make rendings brighter, darker, add contrast , increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness' then can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
+This is one of the most important controls in Flamingo. Just like a camera, the exposure of an image can be adjusted.  This is the best way to make renderings brighter, darker, add contrast, or increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness than can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
 
 ![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
-*The default image on the left. The corrected image after applying brightness (0.20), burn (0.16) and saturation (1.20)*
+*The default image on the left. The corrected image after applying brightness (0.20), burn (0.16) and saturation (1.20).*
 Use this process to quickly adjust the brightness of an image and overall color of an image without needing to re-render.
 
 ### Brightness
@@ -157,7 +167,7 @@ Graphically displays the distribution of the light and dark areas in the image a
 *An example histogram with very few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
 
 #### Histogram options
-Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information, they do not actually change the values in the histogram.
+Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
 
 * **Fit** - This fits the highest verticals into the chart.
 * **Median** - This fits the median value in the vertical. This is a good way to see the details at the edges of the chart.
@@ -180,7 +190,7 @@ When the exposure settings are locked, changing the lighting will not adjust the
 {: #information}
 
 #### Resolution
-Displays the current [render resolution](render-tab.html#resolution).
+Displays the current [rendering resolution](render-tab.html#resolution).
 
 #### Faces
 Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.
@@ -198,14 +208,16 @@ This is some information on the current lighting setup of the rendering.  Here i
 >[Indirect](lighting-advanced-tab.html#indirect)
 >[Ambient On/Off](lighting-advanced-tab.html#ambient)
 
+<!-- TODO: Indirect and Ambient On/Off are bad links -->
+
 ## Channels
 {: #channels}
-Use these controls to change the lights channels in realtime. Lights can be assigned to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
+Use these controls to change the lights channels in real time. Lights can be assigned to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
 
 ## Post Effects
 {: #post-process-effects}
 {: #effects}
-Post-processing effects are applied after the image is rendered. These can be turned on and off and re-ordered in the list. Each effect has its own settings. Effects include:
+Post-processing effects are applied after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
 
 >Fog
 >Glow
