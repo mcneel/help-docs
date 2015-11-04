@@ -125,6 +125,7 @@ main_index:
         - name: Options Flamingo nXt
           path: options-flamingo.html
         - name: RealTime Viewport
+          path: realtime.html
         - name: Flamingo Command List
           path: flamingo-command-list.html
         - name: Select color
