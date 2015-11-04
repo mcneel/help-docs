@@ -2,11 +2,11 @@
 ---
 
 # ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Flamingo Environment
-There are many types of environments in Rhino, this topic will address the Flamingo Default Environment.
+There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
+The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
 
-Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Pre-set](lighting-tab.html). By using [Lighting pre-sets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
+Flamingo comes with a special environment called **Default Flamingo Environment**.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
 
 The complete set of property groups in the Flamingo Environment are:
 
@@ -19,13 +19,15 @@ The complete set of property groups in the Flamingo Environment are:
 > [Bitmap Textures](#texture_bitmap)
 > [Notes](#notes)
 
+<!-- TODO: Bad links -->
+
 ## Environment Name
 {: #name}
-This is the name of the environment in the Rhino model.  Environments are stored in the Rhino model. That means a with the same name in the library or a different model will not be affected by edits to the environment in the current model. To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
+This is the name of the environment in the Rhino model.  Environments are stored in the Rhino model. That means that the same name in the library or a different model will not be affected by edits to the environment in the current model. To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
 
 ## Flamingo Environment
 {: environment}
-There are three major effects an environment effects in a rendering:
+There are three major effects of environment in a rendering:
 
 >Visible Background
 >[Reflective Background](#advanced-background-reflected-sky)
@@ -39,12 +41,14 @@ Modifies the relative brightness of the background. The Intensity value is used 
 
 #### Background type
 {: #background-type}
-Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be of the following types:
+Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be the following types:
 
 > [Sky](#environment-sky)
 > [Solid and gradient color](#color-backgrounds)
 > [Image](#environment-image)
 > [HDR and planar HDR images](#hdr-and-planar-hdr-backgrounds)
+
+<!-- TODO: Bad HDR link -->
 
 ## Sky Background
 {: #environment-sky}
@@ -55,14 +59,14 @@ The Sky environment uses the sun and sky settings from the [Lighting](lighting-t
 
 ## Color Background
 {: #color-backgrounds}
-A background color controls are always present. There is always a color background even if the color is completely obscured by and image, HDRI or Sky background.
+Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
 
 #### Solid Color
 {: #solid-color}
 A solid color background consists of a single color that fills the background.
 
 ![images/background-color-001.png](images/background-color-001.png)
-*Solid-color background.*
+*Solid color background.*
 See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Solid Color.
 
 #### Two-Color Gradient
@@ -71,7 +75,7 @@ Two- and three-color gradient backgrounds only apply to perspective views. Two-c
 
 ![images/background-color-002.png](images/background-color-002.png)
 *Two-color gradient background: blue and yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Two-color Gradient.
+See [Color Controls](#enviroment-sky-color-controls) below for more details on editing a two-color gradient.
 
 #### Three-Color Gradient
 {: #three-color-gradient}
@@ -82,28 +86,30 @@ See [Color Controls](#enviroment-sky-color-controls) below for more details on e
 
 ### Color controls
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient Backgrounds will have up to 3 color selectors that may include a top, middle and bottom color.
+The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### Swap Colors
 Use this button to rearrange the color in the gradient from top to bottom
 
-#### Gradient Mapping control
+#### Gradient mapping control
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a Two or Three color gradient is selected. Gradients can only be mapped to perspective views.
+The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
 
 #### Angles from views
 {: #angle-from-views}
-If Angles from View are checked in, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
 
 #### View Altitude Mapper
 {: #colorrange}
 If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled. By controlling the angles above and below the horizon that each of the top, middle and bottom colors occurs.
+<!-- TODO: I can't figure out what the last sentence in this paragraph says. -->
+
 
 ![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
-* The control shows the environment in section view.  The 90 degree marker is the Z-up coordinate. The 0 coordinate represents the horizontal ground plane. The -90 Degree marker is the Z-down coordinate.
+* The control shows the environment in section view.  The 90 degree marker is the Z-up coordinate. The 0 coordinate represents the horizontal ground plane. The -90 degree marker is the Z-down coordinate.
 * The grey cone of vision shows the last coordinates of the current perspective view.
 * The Red arrow represents the location of the top color. At this angle and above will be the top color.
 * The Green double-arrow represents the middle of the gradient blend between the top and bottom colors.  If it is a three color gradient this is also the location of the middle color.
@@ -113,11 +119,11 @@ If the current viewport is a perspective projection, the top and bottom colors a
 Use this button to reset the Gradient mapping control to the current perspective view coordinates.
 
 #### Top/Middle/Bottom Angles
-These are angle readouts of the Top, Middle and Bottom colors in the current gradients.  They correspond the the location of the Red, Green and Blue arrows in the View altitude mapper.
+These are angle readouts of the Top, Middle, and Bottom colors in the current gradients.  They correspond to the location of the Red, Green, and Blue arrows in the View altitude mapper.
 
 ## Image Background
 {: #environment-image}
-A background image is projected onto the background. Many times this is use to place a model in and existing context or set a view out of some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
 *A planar images set as a background.*
@@ -146,7 +152,7 @@ Projects the image to a flat background in the current view. The planar projecti
 The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
 
 #### Image Placement Control
-Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
+Use the placement control to place the image relative to the current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
 
 ![images/background-image-003.png](images/background-image-003.png)
 *Current viewport area (1), image size and shape (2).*
@@ -187,9 +193,9 @@ Specifies the angular width of the image map. Enter an angle or drag the flags i
 * The control shows the environment in plan view.
 * The dark grey cone of vision shows the last coordinates in the current perspective view.
 * The blue cone shows the range of angles the image will be visible.
-* The Blue arrow represents the left coordinate of the image map.
-* The Red dot represents the middle of the background image.
-* The Purple arrow represents the right coordinate of the image map.
+* The blue arrow represents the left coordinate of the image map.
+* The red dot represents the middle of the background image.
+* The purple arrow represents the right coordinate of the image map.
 
 #### Vertical control
 {: .clear-img}
@@ -199,8 +205,8 @@ Specifies the vertical extents of the cylindrical projection. Enter an angle or 
 
 * The control shows the cylinder in section view.
 * The grey cone of vision shows the last coordinates in the current perspective view.
-* The Blue arrow represents the bottom border of the image map.
-* The Red arrow represents the top border of the image map.
+* The blue arrow represents the bottom border of the image map.
+* The red arrow represents the top border of the image map.
 
 #### Rotation
 {: .clear-img}
@@ -223,7 +229,7 @@ Spherical projection maps the image to a complete sphere. This method generally 
 The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
 
 #### Spherical control
-Specifies the direction of the image map. Enter an angle or drag the flag in the control widget to set the width. The Red dot represents the middle of the background image.
+Specifies the direction of the image map. Enter an angle or drag the flag in the control widget to set the width. The red dot represents the middle of the background image.
 
 #### Rotation
 {: .clear-img}
@@ -262,7 +268,7 @@ Set the background HDRI image by clicking on the large button that reads *(empty
 
 ## Advanced Background
 {: #advanced-background}
-The Advanced Background settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects. This allows for the visible environemnt to look one way, while reflections and refractions might be reacting to a different environment.  For instance in the illustration below, the background is black, but the reflected environment is an HDR image of a building interior.
+The Advanced Background settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects. This lets the visible environment look one way, while reflections and refractions might be reacting to a different environment.  For instance, in the illustration below the background is black, but the reflected environment is an HDR image of a building interior.
 
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
 *Normal environment (left) and reflected HDR sky environment (right).*
@@ -276,6 +282,7 @@ Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-
 
 #### Custom
 Objects reflect a [Color or gradient](#color-backgrounds), [Image](#image), or [HDR](#hdr-backgrounds) background.
+<!-- TODO: Image and HDR are bad links -->
 
 #### Visible Background
 Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
