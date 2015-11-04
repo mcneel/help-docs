@@ -88,12 +88,13 @@ main_index:
           anchor: material-source
         - name: Custom Meshing
           path: properties-object.html
-          anchor: custom-meshing
+          anchor: custom-meshes
         - name: Texture Mapping
           path: properties-object.html
           anchor: texture-mapping
         - name: Decal Properties
-          path: properties-decal.html
+          path: properties-object.html
+          anchor: decals
         - name: Object properties
           path: properties-object.html
 
@@ -103,6 +104,7 @@ main_index:
         - name: Plants
           path: plants.html
         - name: Plant Editor
+          path: tree-editor.html
 
     - name: Network Rendering (Farm)
       anchor: farm

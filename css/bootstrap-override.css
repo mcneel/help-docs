@@ -34,38 +34,7 @@ body img {
 .bs-callout-danger {
     border-left-color: #ce4844;
 }
-/*
-##############################################################################
-## Image float overrides. Allows to wrap text around images.
-## {: .float-img-right}
-## To finish the wrapping, insert this text under next block object:
-## {: .clear-img}
-## That assures the next block element will stay clear of the image.
-##############################################################################
-*/
-.float-img-right {
-  float: right;
-  padding-left: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 
-.float-img-left {
-  float: left;
-  padding-right: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.clear-img {
-  clear:both;
-}
-
-/*
-##################################################################
-# Style Search
-##################################################################
-*/
 
 #sitesearch {
     float:right;
@@ -190,14 +159,38 @@ ul {
 	list-style-type: circle;
 }
 
-.floatright img {
-	float: right;
-	margin-left: 15px;
+/*
+##############################################################################
+## Image float overrides. Allows to wrap text around images.
+## {: .float-img-right}
+## To finish the wrapping, insert this text under next block object:
+## {: .clear-img}
+## That assures the next block element will stay clear of the image.
+##############################################################################
+*/
+.float-img-right {
+  float: right;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.floatleft img {
-	float: left;
-	margin-right: 15px;
+
+.float-img-left {
+  float: left;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
+.clear-img {
+  clear:both;
+}
+
+/*
+##################################################################
+# Style Search
+##################################################################
+*/
 /*
 ##############################################################################
 ##  Index.md Page
@@ -377,4 +370,22 @@ tbody.index_table tr td{
 
 .grided-table td{
   border-bottom-width: 1px;
+}
+
+/*
+##############################################################################
+##  Plant editor table
+##############################################################################
+*/
+.plant-table table {
+  margin: 20px;
+  margin-bottom: 30px;
+}
+.plant-table th, td {
+  border-bottom-style: none;
+  padding-right: 10px;
+  padding-right: 10px;
+}
+.plant-table img {
+  padding-top: 25px;
 }
