@@ -72,8 +72,6 @@ main_index:
           path: render-window.html
         - name: Channels
           path: render-channel.html
-        - name: Document Properties
-          path: documentproperties-flamingo.html
         - name: Image Editor
           path: image-editor.html
         - name: Automated Rendering
@@ -122,17 +120,13 @@ main_index:
     - name: Misc
       anchor: misc
       topics:
-        - name: Enter CD Key
-          path: enter-cd-key.html
+        - name: Document Properties
+          path: documentproperties-flamingo.html
+        - name: Options Flamingo nXt
+          path: options-flamingo.html
         - name: RealTime Viewport
         - name: Flamingo Command List
           path: flamingo-command-list.html
-        - name: Animations
-        - name: Instancing
-        - name: Options Flamingo nXt
-          path: options-flamingo.html
-        - name: Progress Form
-          path: progress-form.html
         - name: Select color
           path: select-color.html
         - name: Welcome
