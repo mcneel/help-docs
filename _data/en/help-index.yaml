@@ -44,7 +44,7 @@ main_index:
     - name: Lighting
       anchor: lighting
       topics:
-        - name: Lighting Pre-sets
+        - name: Lighting Presets
           path: lighting-tab.html
         - name: Sun
           path: sun-and-sky-tabs.html
@@ -110,13 +110,13 @@ main_index:
       anchor: farm
       topics:
         - name: Installing the Farm
-          path: automate-rendering.html
+          path: render-farm.html
           anchor: install
         - name: Render Farm
-          path: automate-rendering.html
+          path: render-farm.html
           anchor: farm
         - name: Render Farm Monitor
-          path: automate-rendering.html
+          path: render-farm.html
           anchor: monitor
 
     - name: Misc

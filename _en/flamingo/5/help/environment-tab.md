@@ -11,7 +11,7 @@ Flamingo comes with a special environment called *[Default Flamingo Environment]
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
-#### Where can I find this command?
+##### Where can I find this command?
  1. ![images/environments.png](images/environments.png)Materials Tab
  1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
  1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
