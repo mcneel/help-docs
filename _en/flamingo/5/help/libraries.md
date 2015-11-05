@@ -60,7 +60,7 @@ There are three places to find the Libraries Options command.
  1. ![images/options.png](images/options.png)Toolbars >![images/icon-properties.png](images/icon-properties.png)Properties Toolbar > ![images/documentpropertiesbutton.png](images/documentpropertiesbutton.png)Document Properties > Libraries
  1. ![images/menuicon.png](images/menuicon.png)Menus > Tools pulldown > Options > Libraries.
 
- 
+
 <!-- TODO: Is Properties Toolbar really supposed to be in this list? -->
 
 <!-- TODO: Should this be? At the menu bar click Tools pulldown > Options > Libraries. -->
