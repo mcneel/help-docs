@@ -7,18 +7,19 @@ Flamingo nXt object properties only affect the way objects are rendered in Flami
 
 ### ![images/materialtab.png](images/materialtab.png) Material Source
 {: #material-source}
-A material can be assigned to layers, blocks and objects.  For details on Assigning material see the [Material Assignment](material_assignment.html) topic. If the material is set to ByObject, that the material properties are also displayed in this dialog.  For more details on editing a material, see the [Materials](material-type-simple.html) topic
+A material can be assigned to layers, blocks, and objects.  For details on Assigning material see the [Material Assignments](material_assignment.html) topic. If the material is set to ByObject, then the material properties are also displayed in this dialog.  For more details on editing a material, see [Material Properties](material-type-simple.html).
 
 ### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Texture mapping
 {: #texture-mapping}
-Whether materials are assigned to a layer or object, mapping controls how that material is located (mapped) on a particular object. For materials that have no noticeable pattern, it is normally not necessary to control the mapping. Use mapping where the material is directional or has an obvious pattern. Even in these cases, the default mapping may be adequate. Mapping remains with the object and follows it if it is moved, rotated, or scaled. For details on the mapping types see the [Texture Mapping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm) topic
+Mapping controls how a material is located (mapped) on a particular object, no matter whether it is assigned to a layer or object. For materials that have no noticeable pattern, it is normally not necessary to control the mapping. Use mapping where the material is directional or has an obvious pattern. Even in these cases, the default mapping may be adequate. Mapping remains with the object and follows it if it is moved, rotated, or scaled. For details on the mapping types see the [Texture Mapping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm) topic.
+<!-- TODO: I rewrote the first sentence in this paragraph. Does it still say what it is supposed to say? -->
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
 *Two different mapping directions*
 
 ### ![images/decalproperties.png](images/decalproperties.png) Decals
 {: #decals}
-Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps. See the [Rhino decal topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm) for details on creating and placing decals.
+Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps. See the [Rhino Decals](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm) for details on creating and placing decals.
 
 ![images/freshmilk.png](images/freshmilk.png) ![images/decal-planar-001.png](images/decal-planar-001.png)
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
@@ -26,7 +27,7 @@ Decals are non-tiling image maps that apply directly to objects instead of indir
 
 ### ![images/apply-edge-softening.png](images/apply-edge-softening.png) Custom Meshes
 {: #custom-meshes}
-A number or custom mesh modifiers can be used in Rhino to detail rendered models. Use these modifies to round edges, add panel shut lines and create cables from curves.
+Several custom mesh modifiers can be used in Rhino to detail rendered models. Use these modifiers to round edges, add panel shut lines, and create cables from curves.
 
 For more details go to the topics below:
 
@@ -37,6 +38,7 @@ For more details go to the topics below:
 
 ### ![images/object-flamingo.png](images/object-flamingo.png) Flamingo Properties
 {: #flamingo-properties}
+<!-- TODO: Bad icon link -->
 
 #### Alpha channel
 {: #alpha-channel}
