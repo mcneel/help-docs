@@ -6,7 +6,7 @@
 
 ## Batch rendering
 {: #batch-rendering}
-Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
+Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
 
 ##### Where can I find this command?
 
@@ -14,7 +14,7 @@ Batch jobs let you submit multiple jobs to be rendered automatically. A Batch jo
 
 ### Batch Render Dialog
 {: #batch-render}
-Start by adding a job, then edit the properties to setup batch jobs.
+Start by adding a job, then edit the properties to set up batch jobs.
 
 #### Add
 Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
@@ -43,10 +43,10 @@ Stops the batch process.
 
 #### Render Batch Locally
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will be output to the location specified in the [Batch Render Properties](#batch-render-properties).
+Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
 
 ####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will be output to the shared Farm folder.
+Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
 
 ### Batch Render Properties
 {: #batch-render-properties}
