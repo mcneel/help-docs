@@ -51,7 +51,7 @@ defaults:
       type: en
     values:
       language: en
-      productname: "Flamingo nXt Documentation"
+      productname: "Flamingo nXt"
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
