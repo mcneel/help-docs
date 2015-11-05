@@ -58,7 +58,7 @@ Shows the view that this job will render. See [Render tab, Viewport to render](r
 Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
 
 #### Alpha channel
-Save the image with the Alpha Channel.  See the [Use alpha channel background.](environment-tab.html#alpha) for more details.
+Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
 
 #### Use document settings
 {: #rendering-resolution}
