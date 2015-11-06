@@ -48,7 +48,6 @@ Walks back though the current material or the previously selected materials.  Fo
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
 Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the recently used texture from the parent material.
 
-<!--TODO: Back Arrow and Forward Arrow do the same things, except one goes from parent to texture and the other goes from texture to parent?  -->
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
 <!-- TODO: Add a texture image image and a procedural icon-->
