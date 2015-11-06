@@ -28,7 +28,7 @@ The Material Editor Panel is split into discrete sections.  Based on the materia
 
 You can drag colors and textures from the color swatch and drop onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
 
-#####Materials Panel
+##### Materials Panel
 
  1. [Settings Bar](#settings)
  1. [Material List](#material_list)
