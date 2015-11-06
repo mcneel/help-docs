@@ -1,6 +1,28 @@
 ---
 layout: flbootstrap
 ---
+{% case page.language %}
+  {% when 'cn' %}
+    {%assign local_categories = site.data.cn.help-index.main_index %}
+  {% when 'de' %}
+    {%assign local_categories = site.data.de.help-index.main_index %}
+  {% when 'en' %}
+    {%assign local_categories = site.data.en.help-index.main_index %}
+  {% when 'es' %}
+    {%assign local_categories = site.data.es.help-index.main_index %}
+  {% when 'fr' %}
+    {%assign local_categories = site.data.fr.help-index.main_index%}
+  {% when 'it' %}
+    {%assign local_categories = site.data.it.help-index.main_index %}
+  {% when 'jp' %}
+    {%assign local_categories = site.data.jp.help-index.main_index %}
+  {% when 'kr' %}
+    {%assign local_categories = site.data.kr.help-index.main_index %}
+  {% when 'tw' %}
+    {%assign local_categories = site.data.tw.help-index.main_index %}
+  {% else %}
+    {%assign local_categories = site.data.en.help-index.main_index %}
+{% endcase %}
 
 <div class="container-fluid">
 
@@ -9,9 +31,9 @@ layout: flbootstrap
     <nav class="col-xs-0 col-md-3 bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked sitenav fixed">
           {% assign first_toc = true %}
-          <li><a href="{{site.baseurl}}/en/flamingo/5/help/{% if site.data.en.help-index.main_index.anchor != null %}#{{site.data.en.help-index.main_index.anchor}}{% endif %}">{{site.data.en.help-index.main_index.name}}</a></li>
-          {% for category in site.data.en.help-index.main_index.categories %}
-		    <li><a href="{{site.baseurl}}/en/flamingo/5/help/{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
+          <li><a href="{{site.baseurl}}/{{page.language}}/flamingo/5/help/{% if local_categories.anchor != null %}#{{local_categories.anchor}}{% endif %}">{{local_categories.name}}</a></li>
+          {% for category in local_categories.categories %}
+		    <li><a href="{{site.baseurl}}/{{page.language}}/flamingo/5/help/{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
               {% for topic in category.topics %}
                 {% if page.url contains topic.path and first_toc %}
                 {% assign first_toc = false %}
