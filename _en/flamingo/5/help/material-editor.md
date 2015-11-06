@@ -12,7 +12,7 @@ Materials, environments, and textures are stored in the model, but rendering con
 
 ![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map .float-img-right}
 
-#### Where can I find this command?
+##### Where can I find this command?
 There several options to find the Materials tab.
 
  * ![images/materialtab.png](images/materialtab.png)Materials tab
@@ -26,9 +26,9 @@ There several options to find the Materials tab.
 
 The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
 
-Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+You can drag colors and textures from the color swatch and drop onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
 
-Materials Panel
+#####Materials Panel
 
  1. [Settings Bar](#settings)
  1. [Material List](#material_list)
@@ -52,7 +52,7 @@ Walks back though the current material or the previously selected materials.  Fo
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
 <!-- TODO: Add a texture image image and a procedural icon-->
-Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will be shown. A good place to see where the editor is in a material.
+Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
 
 #### ![images/library_default.png](images/library_default.png) Tools menu
 Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
@@ -70,7 +70,7 @@ This lists all the materials contained in the model. From this list:
 
 <!--TODO: I don't understand why the Add New Button image doesn't show up. It also doesn't show up in the header below. -->
 
-* Click on each material to select it. Once selected the material's properties will be shown in the panels below. See [Render Materials Properties](#properties) for more information.
+* Click on each material to select it. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information.
 * Right-click a thumbnail to display the Material context menu.
 * Right-click the blank area to display the New Material Context Menu.
 
@@ -219,7 +219,7 @@ The default behavior depends on the current state of the [Rendering Options](ren
 <!--TODO: The links above need to be updated.-->
 
 #### ![images/reset.png](images/reset.png) Reset to Defaults
-Changes all of the material settings to the default white, matte, non-reflective, untextured material.
+Changes all the material settings to the default white, matte, non-reflective, untextured material.
 
 #### ![images/copy.png](images/copy.png) Copy
 Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
