@@ -7,7 +7,7 @@ layout: flbootstrap
 <div class="row-fluid">
     <!--Nav Bar -->
     <nav class="col-xs-0 col-md-3 bs-docs-sidebar">
-        <ul id="sidebar" class="nav nav-stacked fixed">
+        <ul id="sidebar" class="nav nav-stacked sitenav fixed">
           {% assign first_toc = true %}
           <li><a href="{{site.baseurl}}/en/flamingo/5/help/{% if site.data.en.help-index.main_index.anchor != null %}#{{site.data.en.help-index.main_index.anchor}}{% endif %}">{{site.data.en.help-index.main_index.name}}</a></li>
           {% for category in site.data.en.help-index.main_index.categories %}

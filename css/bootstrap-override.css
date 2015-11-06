@@ -252,12 +252,16 @@ tbody.index_table tr td{
     margin-bottom: 20px;
 }
 
+.bs-docs-sidebar .sitenav {
+  margin-left: -10px;
+}
+
 .bs-docs-sidebar .nav {
   margin-left:0px;
 }
 
 .bs-docs-sidebar .nav .nav {
-  margin-left:10px;
+  margin-left:20px;
 }
 
 .bs-docs-sidebar .nav .nav .nav {
@@ -309,6 +313,7 @@ tbody.index_table tr td{
     text-decoration: none;
     background-color: transparent;
     border-left-color: #563d7c;
+    margin-left: 10px;
 }
 /* all active links */
 .bs-docs-sidebar .nav>.active>a,
