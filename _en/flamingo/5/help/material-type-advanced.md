@@ -10,12 +10,12 @@ Flamingo has both [Simple Material](material-type-simple.html) Types and an Adva
 The complete set of property groups in the Advanced Material are:
 
 > [Name](#name)
-> [Material Procedure](#proceedures)
-> [Advanced Material Properties](#advanced)
-> [Reflective Finish](#reflective)
-> [Transparency Properties](#transparent)
-> [Procedural Textures](#texture_procedural)
-> [Bitmap Textures](#texture_bitmap)
+> [Material Procedure](#procedures)
+> [Advanced Material Properties](#advanced-materials-properties)
+> [Reflective Finish](#reflective-finish-and-highlight)
+> [Transparency Properties](#transparency)
+> [Procedural Textures](#bump-patterns)
+> [Bitmap Textures](#textures)
 > [Notes](#notes)
 
 ## Material Name
@@ -225,7 +225,7 @@ Two types of textures can be added to a material: Image Textures and Bump Patter
 ![images/textures.png](images/textures.png)
 
 ### Images
-{: images}
+{: #images}
 Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another images may control the bump properties of the texture. To control how an image effects a material, go to the [Image Properties](material-image-properties.html) Dialog
 
 ![images/solidcolors.png](images/3-texture.png)

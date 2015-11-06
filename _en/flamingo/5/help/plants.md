@@ -42,5 +42,5 @@ Notes:
 
 ### Plant Editor
 {: tree-editor}
-Flamingo includes a tree editor to create custom trees.  There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](plant-editor.html) topic.
+Flamingo includes a tree editor to create custom trees.  There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.
 <!-- TODO: Bad link -->

@@ -11,22 +11,17 @@ Flamingo comes with a special environment called **Default Flamingo Environment*
 The complete set of property groups in the Flamingo Environment are:
 
 > [Name](#name)
-> [Material Procedure](#proceedures)
-> [Advanced Material Properties](#advanced)
-> [Reflective Finish](#reflective)
-> [Transparency Properties](#transparent)
-> [Procedural Textures](#texture_procedural)
-> [Bitmap Textures](#texture_bitmap)
-> [Notes](#notes)
+> [Flamingo Environment](#environment)
+> [Background Color](#color-backgrounds)
+> [Advanced Background](#advanced-background-reflected-sky)
 
-<!-- TODO: Bad links -->
 
 ## Environment Name
 {: #name}
 This is the name of the environment in the Rhino model.  Environments are stored in the Rhino model. That means that the same name in the library or a different model will not be affected by edits to the environment in the current model. To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
 
 ## Flamingo Environment
-{: environment}
+{: #environment}
 There are three major effects of environment in a rendering:
 
 >Visible Background
