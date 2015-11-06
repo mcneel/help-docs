@@ -72,8 +72,7 @@ Printed image height in current size units.  Multiply this setting by the resolu
 {: #printsizeresolution}
 
 #### Display
-The image is rendered using the DPI resolution of the viewport.
-<!-- TODO: What does this really mean in terms of DPI.  Does the resolution density of the devise count -->
+The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
 
 #### Custom
 The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
@@ -87,7 +86,7 @@ Set the resolution to 150 pixels per inch or 6 pixels per mm.
 #### Printer, high quality
 Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. High resolutions can lead to long rendering times.
 
-#### Pixels per 
+#### Pixels per
 When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a preset resolution is selected, this control displays the current resolution.
 
 ## Depth of field
