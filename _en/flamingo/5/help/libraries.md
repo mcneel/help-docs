@@ -2,7 +2,7 @@
 ---
 
 # ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
-The Libraries command opens the Libraries panel, to manage libraries of materials, textures, and environments.
+The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
 
 Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
 
@@ -10,7 +10,7 @@ Color swatches can be dragged and dropped in the same way.
 
 The Libraries panel displays a view into the content folders you have set up. Use this to drag and drop content into the model or to store document content to a location outside the model.
 
-Materials are simply files on your hard driver.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
+Materials are simply files on your hard drive.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
 
 Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
 
@@ -45,7 +45,7 @@ Environments can be saved in the library.  This lets Environment settings to be 
 
 ## Library Settings
 {: #settings}
-![images/options.png](images/options.png)Libraries Options are used to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
 
 ##### Where can I find this command?
 There are three places to find the Libraries Options command.
