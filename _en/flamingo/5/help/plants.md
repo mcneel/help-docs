@@ -11,8 +11,8 @@ Flamingo nXt includes a fun and powerful plant generator that efficiently genera
 {: #insert:}
 Flamingo Plants are inserted as a block.  These blocks contains points that represent the general shape of the tree.
 
-1. On the Flamingo nXt menu, click **Plants > Insert Plant**.
-1. In the Flamingo nXt Plant dialog box, click a plant name, and click **Open**.
+1. On the Flamingo nXt menu, click Plants > Insert Plant.
+1. In the Flamingo nXt Plant dialog box, click a plant name, and click Open.
 1. At the prompt, pick a location for your plant in the model.
 
 Notes:
@@ -24,15 +24,15 @@ Notes:
 {: #edit}
 Once inserted, a tree can be moved, copied, and scaled.  The tree will resize appropriately. For more advanced edits to that structure of the tree, use the Edit plant command. Making small changes to the structure of the trees can be quick.  Larger changes to the tree algorithms can take more experimentation.
 
-1. On the Flamingo nXt menu, click **Plants > Edit Plant**.
+1. On the Flamingo nXt menu, click Plants > Edit Plant.
 1. Select the plant to edit.
 1. Make the correct edits to the plant.
 1. Save the tree, then close the editor.  The plant in Rhino will automatically update.
 
 ### Using Flamingo 2 plants
 {: #using-flamingo-2-plants}
-1. On the Flamingo nXt menu, click **Plants > Insert Flamingo 2 Plant**.
-1. In the Flamingo nXt Plant dialog box, click a plant name, and click **Open**.
+1. On the Flamingo nXt menu, click Plants > Insert Flamingo 2 Plant.
+1. In the Flamingo nXt Plant dialog box, click a plant name, and click Open.
 1. At the prompt, pick a location for your plant in the model.
 
 Notes:
