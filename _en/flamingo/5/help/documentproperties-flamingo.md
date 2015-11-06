@@ -14,7 +14,7 @@ These settings apply to the current model only. There is a trade-off between the
 
 ## Materials
 {: #materials}
-These controls can be used to quickly change the how Flamingo renders the surfaces in a rendering.  These settings will not change the material assignments on the objects and layers, but will change how Flamingo produces the color of each surface.
+Use these controls to quickly change how Flamingo renders the surfaces in a rendering.  These settings will not change the material assignments on the objects and layers, but will change how Flamingo produces the color of each surface.
 
 #### Use materials
 {: #use-materials}
@@ -26,7 +26,7 @@ Renders using the colors assigned through Rhino object or layer color. Note : Bo
 
 #### Glow Channel
 {: #channel}
-Materials that contain any level of glow will light up, but will not illuminate other objects (tag the object as a light to illuminate other objects.).  Set the Glow on a Channel, allowing the brightness of the glow to be adjusted after rendering without re-rendering.
+Materials that contain any level of glow will light up, but will not illuminate other objects. (Tag the object as a light to illuminate other objects.)  Set the Glow on a Channel, allowing the brightness of the glow to be adjusted after rendering without re-rendering.
 
 ## Bounces
 {: #bounces}
@@ -50,7 +50,7 @@ The indirect lighting settings only effect the rays that bounce off one surface 
 
 #### Color Bleed
 {: #color-bleed}
-Color bleed controls the amount of color that is transferred in a indirect bounce of light from one surface to another.  By default this is set to the maximum value to increase dynamics in the rendering.  
+Color bleed controls the amount of color transferred in a indirect bounce of light from one surface to another.  By default this is set to the maximum value to increase dynamics in the rendering.  
 
 #### Monte Carlo Reflections
 {: #monte-carlo}
