@@ -38,26 +38,22 @@ Lighting in Flamingo nXt uses four preset methods categories:
 {: #studio-lighting}
 This scheme mimics the lighting found in a photographer's studio. It is most useful for rendering small-to-medium-sized objects in isolation.  It can also be used for any scene that is well lit through an HDRI environment.
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: style="float: left; padding-right: 25px;"} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](sun-and-sky-tabs.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
-<!-- TODO: Fixed the Sky tab. Did I get the right one? -->
+![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](sun-and-sky-tabs.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
 
 Studio lighting is optimized for tabletop setups for small design articles such as jewelry and product designs. In the preset scheme, the sun is off and an HDR image sky provides something for shiny objects to reflect.
 
 For greater control, use light sources to light the scene. When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires several light sources placed in a way to create very light and very dark areas.
 
-Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](studio-lighting-basics.html).
-<!-- TODO: Bad link. -->
+Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](../guides/studio-lighting-basics.html).
 
 ### Exterior daylight
-{: #exterior-daylight}
-<!-- TODO: The links in this next paragraph need to be updated wonce the other pages are finished. -->
-![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: style="float: right; padding-left: 25px;"}  This scheme simulates daylight for architectural exteriors using a natural sun and sky.
+{: #exterior-daylight .clear-img}
+This scheme simulates daylight for architectural exteriors using a natural sun and sky.
 
-Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
+![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
 Lighting a building exterior is the most straightforward lighting model. Most exterior lighting will need no more than the default [Sun](sun-and-sky-tabs.html#sun) light source.
 
-When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be designated as an [interior](lighting-advanced-tab.html#interior) or an [exterior](lighting-advanced-tab.html#exterior). This is because the contribution of the sky light, reflected light from the ground, and light reflected off other surfaces is much different when inside as opposed to outside. Using the correct [Interior/Exterior](lighting-advanced-tab.html#indirect) setting results in effective and realistic lighting.
-<!-- TODO: All these interior/exterior links are bad. -->
+When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be designated as an [interior](#interior) or an [exterior](#exterior). This is because the contribution of the sky light, reflected light from the ground, and light reflected off other surfaces is much different when inside as opposed to outside. Using the correct [Interior/Exterior](#indirect) setting results in effective and realistic lighting.
 
 Sometimes it is easy to determine if a scene is an interior or an exterior. If the viewpoint is outside a building, it is an exterior scene. If the viewpoint is inside a room, it is an interior. Some kinds of scenes are not so clear. This includes courtyards, gazebos, exploded views, and sections. If a courtyard is much wider than it is tall, thereby letting in a lot of skylight, try lighting it as an exterior scene. If it is taller than it is wide, try lighting the scene as an interior. In this case, one of the tricks is to add daylight portals at the top of the courtyard to help direct the skylight into the scene.
 
@@ -66,16 +62,16 @@ Lights can also simulate landscape lighting. Use spotlights to highlight archite
 Exploded views, sections, and axonometric drawings from above also pose a special challenge. The decision depends on the desired results. For an exterior scene with the quickest rendering, use the exterior rendering method. If this method is not producing an interesting enough image, try using an interior rendering. This may make the interior more interesting, but it takes more time to set up the lighting.
 
 ### Interior daylight
-{: #interior-daylight}
+{: #interior-daylight .clear-img}
 This scheme simulates an interior lit by natural light.
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: style="float: left; padding-right: 25px;"} It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
 
 The [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) settings are similar to the [Exterior](lighting-tab.html#exterior-daylight) preset.
 The direct sunlight component of day lighting involves a straightforward calculation -- normally simply specify the time, date, and location to ensure accuracy.
 
 Notes on interior renderings:
-{: style="clear:both;"}
+{: .clear-img}
 
 * Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
 * Because the sun and sky are much brighter than other lights, you may not see much effect from adding artificial lighting when the sun is on. This is normal. Avoid artificially boosting the power of your light sources.
@@ -90,8 +86,7 @@ Indirect lighting, the lighting reflected off surfaces, is on when one of the tw
 
 ### Custom Lighting
 {: #custom  style="clear:both;"}
-Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRI environment, use the Custom tab to turn off and on parts of the lighting model.  When the values on the [Advanced tab](lighting-advanced-tab.html) change from the defaults for the presets, the scheme becomes a custom scheme.
-<!-- TODO: Bad link. -->
+Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRI environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
 
 ####  [Sun](sun-and-sky-tabs.html#sun)
 {: #sun}

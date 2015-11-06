@@ -41,9 +41,8 @@ Specifies the color scheme that will fill the background of the rendered image. 
 > [Sky](#environment-sky)
 > [Solid and gradient color](#color-backgrounds)
 > [Image](#environment-image)
-> [HDR and planar HDR images](#hdr-and-planar-hdr-backgrounds)
+> [HDR and planar HDR images](#hdr-background)
 
-<!-- TODO: Bad HDR link -->
 
 ## Sky Background
 {: #environment-sky}
@@ -98,9 +97,7 @@ If Angles from View are checked, the current color gradient will sync with the c
 
 #### View Altitude Mapper
 {: #colorrange}
-If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled. By controlling the angles above and below the horizon that each of the top, middle and bottom colors occurs.
-<!-- TODO: I can't figure out what the last sentence in this paragraph says. -->
-
+If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
 
 ![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
@@ -240,7 +237,7 @@ Using an HDR image as an environment allows more control over the relationship b
 #### Image File
 {: #hdri-image}
 Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
-<!-- TODO: The channels are wrong here -->
+
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
 {% include_relative snippets/snippet-sunchannel.md %}
@@ -248,7 +245,7 @@ Set the background HDRI image by clicking on the large button that reads *(empty
 
 ## Planar HDRI options
 {: #planar-hdr-options}
-<!-- TODO: The interface is not correct for Planar HDRI files -->
+
 Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
 
 
@@ -276,8 +273,7 @@ A reflected environment is not visible in the rendered image, but it reflects in
 Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
 
 #### Custom
-Objects reflect a [Color or gradient](#color-backgrounds), [Image](#image), or [HDR](#hdr-backgrounds) background.
-<!-- TODO: Image and HDR are bad links -->
+Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-image), or [HDR](#hdr-background) background.
 
 #### Visible Background
 Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.

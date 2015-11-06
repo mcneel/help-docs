@@ -39,7 +39,6 @@ The reset of this help topic covers the Environment type.
 ## [Settings Bar](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #settings}
 Use this bar to help navigate the Environment list.
-<!-- TODO: This content is from the old source.  It needs heavy editing-->
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
 Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
@@ -48,7 +47,6 @@ Walks back though the current environment or the previously selected environment
 Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-<!-- TODO: Add a texture image image and a procedural icon-->
 Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" will be shown. A good place to see where the environment is current.
 
 #### ![images/library_default.png](images/library_default.png) Tools Menu
@@ -164,7 +162,7 @@ This sets the target environment current.  The current environment will be used 
 
 #### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
 Creates a new Flamingo Environment.
-<!-- TODO: This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
+<!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
 
 #### ![images/import.png](images/import.png) Import Material from File
@@ -178,8 +176,7 @@ Changes the environment to a different type.
 
 #### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
 Changes the environment to a different type.
-The default behavior depends on the current state of the [Rendering Options](rendering.html) &gt;  [Copy similar settings when content type is changed](rendering.html#copy-similar-settings-when-content-type-is-changed)  box. If checked, compatible settings from the old content will be copied to the new one.
-<!--TODO: The links above need to be updated.-->
+The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
 
 #### ![images/reset.png](images/reset.png) Reset to Defaults
 Changes all of the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.

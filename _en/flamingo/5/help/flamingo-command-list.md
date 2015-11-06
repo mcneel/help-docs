@@ -1,7 +1,6 @@
 ---
 ---
 
-<!-- TODO: These need to be updated to the new commands. -->
 
 # Flamingo Command List
 

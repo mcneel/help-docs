@@ -48,8 +48,7 @@ Lights can be inserted from the Rhino toolbars or the Flamingo Lights tab. Objec
 
 #### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Tag objects as lights
 {: #tag-objects-as-lights}
-<!-- TODO: Add the distribution types on this page?-->
-Any renderable object (surface, solid, etc.) can be tagged as a light source and given light properties. Additional properties such as distribution, direction, and strength can be assigned. Objects tagged as lights may display a preview widget showing direction of the light and its center location.
+Any renderable object (surface, solid, etc.) can be tagged as a light source and given light properties. Additional properties such as [distribution](#light-distribution), [direction](#aim-light), and [strength](#watts) can be assigned. Objects tagged as lights may display a preview widget showing direction of the light and its center location.
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *LED driving lights and headlights tagged as light sources*
@@ -61,13 +60,12 @@ Spotlight is a conical light distribution with a specific direction.  The light 
 ![images/spotlight.png](images/spotlight.png)
 *A Spotlight pointed at the red box*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) PointLight
+#### ![images/pointlight-01.png](images/pointlight-01.png) Point Light
 {: #pointlight}
-Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the pointlight is partially obscured by an object that intersects the light.
+Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the point light is partially obscured by an object that intersects the light.
 
 ![images/pointlight.png](images/pointlight.png)
-*A small pointlight close to the right wall*
-<!-- TODO: Is it PointLight, pointlight or point light? -->
+*A small point light close to the right wall*
 
 #### ![images/rectangularlight-01.png](images/rectangularlight-01.png) RectangularLight
 {: #rectangularlight}
@@ -100,8 +98,7 @@ By default lights will show themselves as a bright light source in the rendering
 
 #### Light distribution *([Tagged objects only](#tag-objects-as-lights))*
 {: #light-distribution}
-When tagging an object as a light, use Distribution to specify the pattern the light projects into the scene. In the light panel, double-click on the distribution cell to get an options drop-down. Distribution types include: [All Directions](#point), [Spot](#spot) and [Diffuse](#diffuse). Both Spot and Diffuse require a [direction](#aim-light) to be specified.
-<!-- TODO: Bad links -->
+When tagging an object as a light, use Distribution to specify the pattern the light projects into the scene. In the light panel, double-click on the distribution cell to get an options drop-down. Distribution types include: [All Directions](#pointlight), [Spot](#spotlight) and [Diffuse](#rectangularlight). Both Spot and Diffuse require a [direction](#aim-light) to be specified.
 
 #### Aim light *([Tagged objects only](#tag-objects-as-lights))*
 {: #aim-light}
@@ -128,8 +125,7 @@ Uses the color of the material assigned to the light object for the light it pro
 
 #### Channel
 {: #channel}
-Lights can be assigned to one of eight channels. This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.htnl) topic.
-<!-- TODO: Bad link -->
+Lights can be assigned to one of eight channels. This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html) topic.
 
 #### IES File
 {: #iesfile}

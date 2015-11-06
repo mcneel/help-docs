@@ -22,7 +22,6 @@ Libraries are simply files.  You can copy and paste and move around folders. Use
 
 ## Materials Library
 {: #material}
-<!-- TODO: Is this Materials Library the Materials Tab or is it the Flamingo Materials Folder? -->
 Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
 
 Drag and drop materials to assign materials to the model. Materials can be assigned to:
@@ -38,12 +37,7 @@ Drag onto a block and any By Parent objects in the block will adopt that materia
 
 ## Plant Library
 {: #plant}
-<!-- TODO: Where is the Plant Libary? -->
-Plants in libraries are Rhino files on the hard drive.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive.
-
-Drag and drop plants into a viewport to place plants into the model.
-
-<!-- TODO: Where do we explain plants and what you can do with them? -->
+In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
 
 ## Environment Library
 {: #environment}
@@ -53,17 +47,12 @@ Environments can be saved in the library.  This lets Environment settings to be 
 {: #settings}
 ![images/options.png](images/options.png)Libraries Options are used to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
 
-#### Where can I find this command?
+##### Where can I find this command?
 There are three places to find the Libraries Options command.
 
  1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
- 1. ![images/options.png](images/options.png)Toolbars >![images/icon-properties.png](images/icon-properties.png)Properties Toolbar > ![images/documentpropertiesbutton.png](images/documentpropertiesbutton.png)Document Properties > Libraries
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Tools pulldown > Options > Libraries.
-
-
-<!-- TODO: Is Properties Toolbar really supposed to be in this list? -->
-
-<!-- TODO: Should this be? At the menu bar click Tools pulldown > Options > Libraries. -->
+ 1. Menus > Tools pulldown > Options > Libraries.
+ 
 
 ### Show render content
 Use this to show or hide the default render content location.
