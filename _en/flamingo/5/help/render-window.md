@@ -61,9 +61,9 @@ There are many ways to save an image depending on the plans for the image.  Norm
 #### ![images/saveimageas.png](images/saveimageas.png) Save Image
 Saving a JPG or PNG image file is the normal process after adjusting the image.  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price. There are some colors that will be removed from the image. 
+A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image. 
 
-PNG is a compressed format that contains 100% of the color information and alpha channel information. This makes is a very good format for high quality images.
+PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
 
 #### Save with background alpha channel
 {: #save-with-alpha-channel}
@@ -72,16 +72,16 @@ Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. Th
 #### Export to native Flamingo nXt file (.nXtImage)
 {: #export-to-nxtimage}
 Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
-The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all of the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
+The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
 
 #### Export to HDR file
 {: #export-to-hdr}
-Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
+Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
 
 #### Export to EXR file
 {: #export-to-exr}
 A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
-The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
+The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
 
 #### ![images/close-x.png](images/close-x.png) Exit
 Closes the render window.
@@ -99,7 +99,7 @@ Saves 32-bit PNG, TIF, and BMP images including alpha channel background. The Al
 
 ## Progress
 {: #progress}
-Use the Progress information to monitor the status and progress of a Flamingo rendeirng.
+Use the Progress information to check the status and progress of a Flamingo rendering.
 
 #### Action
 Shows the current status of the rendering as is works through the model.
@@ -108,7 +108,7 @@ Status messages include:
 
 * Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
 * Action Done - Once the Stop button has been hit and the render engine finishes a pass, then the stop action is done.
-* Pass Complete - Each time a pass is complete, this message is posted.
+* Pass Complete - This message posts each time a pass is complete.
 * Resume Rendering - In cases that a resume is possible this is displayed.
 * Updating - The render engine is in the middle of a pass, currently updating the rendering.
 
@@ -129,7 +129,7 @@ The number of pixels resolved in the image per second.
 
 ## Adjust Image
 {: #adjust-image}
-This is one of the most important controls in Flamingo. Just like a camera, the exposure of an image can be adjusted.  This is the best way to make renderings brighter, darker, add contrast, or increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness than can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
+This is one of the most important controls in Flamingo. Just like a camera, you can adjust image exposure.  This is the best way to make renderings brighter, darker, add contrast, or increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness than can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
 
 ![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
 *The default image on the left. The corrected image after applying brightness (0.20), burn (0.16) and saturation (1.20).*
