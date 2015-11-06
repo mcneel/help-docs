@@ -45,7 +45,7 @@ For more details go to the topics below:
 Makes the object invisible. Shadows cast by and on the object are rendered. The image can then be overlaid on another image and the shadows will show in the composite image.
 
 ![images/building.png](images/building.png)
-In the example above, a few simple planar surfaces that match the image were created in order to catch shadows cast on the building by the trees. The planes were tagged with the Alpha channel property so when they were rendered, they were invisible, but still displayed the shadows. This partially transparent image was then overlaid onto the image.
+In the example above, a few simple planar surfaces that match the image were created to catch shadows cast on the building by the trees. The planes were tagged with the Alpha channel property so when they were rendered, they were invisible, but still displayed the shadows. This partially transparent image was then overlaid onto the image.
 
 #### Caustics
 {: #caustics}
