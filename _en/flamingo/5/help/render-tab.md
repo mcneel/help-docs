@@ -36,7 +36,7 @@ Uses the viewport size in pixels to determine the rendered image size.  This cre
 
 ### Image size
 {: #resolutionprintedsize}
-Image size will set the final resolution based on several different variables.  This is the best way to match an exact size and resolution of a final image. If the height ond width of the final rendering does not match the same aspect ratio of the view being rendered, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very long time to complete.  Use these controls for final high resolution renderings.
+Image size will set the final resolution based on several different variables.  This is the best way to match an exact size and resolution of a final image. If the height and width of the final rendering does not match the same aspect ratio of the view being rendered, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very long time to complete.  Use these controls for final high resolution renderings.
 
 There are four unit types which can be used:
 
@@ -52,19 +52,19 @@ Sets the render image units to pixels.  Use this setting to simply set the final
 Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of inches in width and height by the resolution DPI value.
 
 #### Millimeters
-Sets the page units to millimeters. Millimeters are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of millimeters in width and height by the resolution dots per millimeter value.
+Sets the page units to millimeters. Use millimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of millimeters in width and height by the resolution dots per millimeter value.
 
 #### Centimeters
-Sets the page units to centimeters. Centimeters are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of centimeters in width and height by the resolution dots per centimeter value.
+Sets the page units to centimeters. Use centimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of centimeters in width and height by the resolution dots per centimeter value.
 
 #### Apply view aspect ratio
 Use this setting to keep the width and height setting in the same aspect ratio to the current view.  This will assure the complete view is rendered in the final image.
 
 #### Width
-Printed image width in current unit size.  This setting is multiplied by the resolution setting to reach the final image size in total number of pixels.
+Printed image width in current unit size.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
 
 #### Height
-Printed image height in current size units.  This setting is multiplied by the resolution setting to reach the final image size in total number of pixels.
+Printed image height in current size units.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
 
 ### Resolution
 {: #printsizepixelsperunit}
@@ -85,7 +85,7 @@ Set the resolution to 100 pixels per inch or 4 pixels per mm.
 Set the resolution to 150 pixels per inch or 6 pixels per mm.
 
 #### Printer, high quality
-Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. Very high resolutions can lead to very long rendering times.
+Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. High resolutions can lead to long rendering times.
 
 #### Pixels per 
 When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a preset resolution is selected, this control displays the current resolution.
@@ -116,7 +116,7 @@ Flamingo use progressive, multi-step rendering techniques to create renderings. 
 It is very easy to simply select a different render engine and then render to see the results.
 
 ### Default
-The default algorithm produces a very high-quality simulation. The default engine is a very good render engine for a wide variety of scenes.  While the other two engines have greater strengths, they also have greater weaknesses.  The Default engine is a good starting point.
+The default algorithm produces a very high-quality simulation. The default engine is a good render engine for a wide variety of scenes.  While the other two engines have greater strengths, they also have greater weaknesses.  The Default engine is a good starting point.
 
 The default render engine has a very noticeable artifact in the renderings in the early passes.  The artifact is hard overlapping shadows.  As passes progress these shadows will soften up.  This allows the default engine to return a result quickly, but may take more passes to actually soften the shadows out.
 
@@ -124,7 +124,7 @@ The difference in quality between the default method and the path tracer can be 
 
 ### Path Tracer
 {: #path-tracer}
-The path tracer begins by displaying a very grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. Note: Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
+The path tracer begins by displaying a grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. **Note:** Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
 
 Certain advanced effects, such as caustics or blurry transmission, can be calculated with better accuracy using the path tracer. Images rendered with instancing, plants, and displacement maps can converge faster. The path tracer is usually easier to set up than the default method. Advanced settings such as reflection shaders, daylight portals, and ambient lighting are not used when the path tracer engine is selected.
 
