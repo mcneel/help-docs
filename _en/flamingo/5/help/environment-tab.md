@@ -3,11 +3,11 @@
 
 # ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Environment Panel
 {: #environment-tab}
-Environments not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
+Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
 
 The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
 
-Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Pre-set](lighting-tab.html). By using [Lighting pre-sets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
+Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
@@ -47,7 +47,7 @@ Walks back though the current environment or the previously selected environment
 Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" will be shown. A good place to see where the environment is current.
+Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
 #### ![images/library_default.png](images/library_default.png) Tools Menu
 Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
@@ -56,11 +56,11 @@ Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, 
 
 ## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #environment_list}
-This lists all the environments contained in the model. One Environment will be selected as the current environment. It is the current environment that is used in the rendering. Yellow corners will show up surrounding the current Environment.
+This lists all the environments contained in the model. One Environment will be selected as the current environment. The current environment is used in the rendering. Yellow corners will show up surrounding the current Environment.
 
 From this list:
 
-* Click on an Environment to make it current. Once selected the material's properties will be shown in the panels below. See [Render Materials Properties](#properties) for more information
+* Click on an Environment to make it current. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
 * Scroll up and down in the list to see all the environments in the model.
 * Drag and drop an environment from this list onto any viewport to set it current.
 * Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
@@ -145,7 +145,7 @@ Drag on this divider to change the length of the Environment List versus the len
 
 ### [Environment Name](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
-This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. note: - environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
+This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. **Note:** Environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
 
 ### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
 {: #panels}
@@ -179,7 +179,7 @@ Changes the environment to a different type.
 The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
 
 #### ![images/reset.png](images/reset.png) Reset to Defaults
-Changes all of the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
+Changes all the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
 
 #### ![images/copy.png](images/copy.png) Copy
 Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
