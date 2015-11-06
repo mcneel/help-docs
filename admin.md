@@ -28,7 +28,7 @@ The sources of content-to-be-consolidated are:
 To leave To Do Notes in the markdown pages, add a standard HTML comment with the following content:
 
 TODO: 'Put the comments here'
- 
+
 This will list the files with TODO below.
 
 <div class="trigger">
@@ -41,4 +41,3 @@ This will list the files with TODO below.
   {% endfor %}
   </ul>
 </div>
-

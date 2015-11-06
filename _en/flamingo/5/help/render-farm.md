@@ -72,8 +72,8 @@ After starting the Render Farmer client on all of the client computers:
  1. On any of the master computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
  1. The client machines should appear in the upper list box.
  1. Each Render Farmer client should be listed under the Machine list.  The Status should read Active.
-  
- 
+
+
 
 <!-- TODO: Is this supposed to say 'On any master computer'? -->
 
@@ -82,7 +82,7 @@ If there is a problem with this, review the [install](#install) and [configurati
 
 ##### To submit a job to the render farm
 1. In Rhino, configure your rendering and view as you would for a normal rendering.
-1. On the Flamingo nXt menu, click **Render Farm**.
+1. On the Flamingo nXt menu, click Start Farm Render.
 1. The [Farm Job](#farm-job) dialog should appear.
 1. Verify the correct option and hit OK.
 
