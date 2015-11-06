@@ -24,7 +24,7 @@ For technical support, tutorials, examples, and information about how to get sta
 
 ## The Flamingo nXt Control Panel
 {: #control-panel}
-The Flamingo nXt Control Panel provides tabs for setting up the model for rendering, including:
+This version of Flamingo features and interface which is integrated with the Rhino 5 rendering tools. The Flamingo nXt Control Panel provides tabs for setting up the model for rendering, including:
 
 > [Materials](materials-tab.html)
 > [Lighting](lighting-tab.html)
