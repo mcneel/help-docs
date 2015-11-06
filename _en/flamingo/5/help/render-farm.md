@@ -3,7 +3,7 @@
 <!-- TODO: This page needs to be updated more with current automated rendering information.-->
 
 # Farm Rendering
-The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images, or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers that are used only as render farm clients.
+The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers used only as render farm clients.
 
 #### A typical Farm layout
 {: #render-farm}
@@ -15,7 +15,7 @@ The Flamingo nXt Render Farm uses the power of several computers to render singl
 >![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
 >![images/04.png](images/04.png)Additional purchased render farm clients.
 
-The Render Farm is free for up to two client computers. To add additional client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+The Render Farm is free for up to two client computers. To add more client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
 #### Shared Farm folder
 {: farm-folder}
@@ -67,7 +67,7 @@ The Render Farm is now configured.
 Currently, the farm can be used three ways for processing renderings on multiple computers: single rendering jobs, batch jobs, and animations.
 
 ##### To verify that the client workstations are responding
-After starting the Render Farmer client on all of the client computers:
+After starting the Render Farmer client on all the client computers:
 
  1. On any of the master computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
  1. The client machines should appear in the upper list box.
@@ -94,8 +94,8 @@ After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-m
  1. A recent job should show up in the Jobs list. This can take a few minutes for large jobs.
  1. The status of the job will change to active.
  1. After a period of time, the machines above should pick up tasks with the same date.
- 1. The Percent complete will increase as tasks are completed.
- 1. Watch for jobs status Completed when the job is finished.
+ 1. The Percent complete increases as tasks are completed.
+ 1. Watch for the job status Completed when the job is finished.
 
 
 ## Farm Job Options
