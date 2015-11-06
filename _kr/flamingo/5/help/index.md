@@ -1,72 +1,38 @@
 ---
 ---
 
-# All Flamingo Topics
+<!-- Do not edit the below section. The source for the Help index can be found in the _data folder in the help_index.yaml file -->
+{% case page.language %}
+  {% when 'cn' %}
+    {%assign local_categories = site.data.cn.help-index.main_index %}
+  {% when 'de' %}
+    {%assign local_categories = site.data.de.help-index.main_index %}
+  {% when 'en' %}
+    {%assign local_categories = site.data.en.help-index.main_index %}
+  {% when 'es' %}
+    {%assign local_categories = site.data.es.help-index.main_index %}
+  {% when 'fr' %}
+    {%assign local_categories = site.data.fr.help-index.main_index%}
+  {% when 'it' %}
+    {%assign local_categories = site.data.it.help-index.main_index %}
+  {% when 'jp' %}
+    {%assign local_categories = site.data.jp.help-index.main_index %}
+  {% when 'kr' %}
+    {%assign local_categories = site.data.kr.help-index.main_index %}
+  {% when 'tw' %}
+    {%assign local_categories = site.data.tw.help-index.main_index %}
+  {% else %}
+    {%assign local_categories = site.data.en.help-index.main_index %}
+{% endcase %}
 
-## Libraries
- [Assign Materials](materials-tab.html)
- [Drag and Drop Plants]
 
-## 재질
- [Material Editor]
- [Flamingo NXT Material Types]
- [Basic Material Properties](simple-material-properties.html) 
- [Advanced Material Properties: Main](advanced-material-properties-main.html) 
- [Advanced Material Properties: Textures](advanced-material-properties-textures.html) 
- [Advanced Material Properties: Transparency](advanced-material-properties-transparency.html) 
- [Materials: Textured](texture-properties-main.html) 
- [Texture Properties: Main](texture-properties-main.html) 
- [Texture Set Materials](texture-set-materials.html) 
+# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} {{local_categories.name}}
+{% for category in local_categories.categories %}
+## {{category.name}}
+{: #{{category.anchor}}}
+{% for topic in category.topics %}
+[{{topic.name}}]{% if topic.path != null %}({{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}){% endif %}{% endfor %}
+{% endfor %}
 
-## Lighting
- [Lighting Pre-sets]
- [Studio Lighting Basics](studio-lighting-basics.html) 
- [Sky](sun-and-sky-tabs.html) 
- [Sun and Sky](sun-and-sky-tabs.html) 
- [Lighting: Advanced](lighting-advanced-tab.html) 
- [Lighting](lighting-tab.html) 
- [Lights](lights-tab.html) 
 
-## Environment
- [Environment](environment-tab.html)
-
-## GroundPlane
- [Groundplane]
-
-## Rendering
- [Render Preview]
- [Safe Frame]
- [Render tab](render-tab.html) 
- [Render Window](render-window.html) 
- [Document Properties: Flamingo nXt](documentproperties-flamingo.html) 
- [Automate Rendering](automate-rendering.html) 
- [Image Editor](image-editor.html) 
-
-## Object Properties
- [Material Source]
- [사용자 지정 메쉬 처리]
- [텍스처 매핑]
- [데칼 속성](properties-decal.html) 
- [Object properties](properties-object.html) 
-
-## Plants
- [Plants](plants.html)
- [Plant Editor]
-
-## Network Rendering (Farm)
- [Installing the Farm]
- [Render Farm]
- [Render Farm Monitor]
-
-## Misc
- [Enter CD Key](enter-cd-key.html)
- [RealTime Viewport] 
- [Flamingo Command List](flamingo-command-list.html) 
- [애니메이션]
- [Instancing]
- [Options: Flamingo nXt](options-flamingo.html) 
- [Progress Form](progress-form.html) 
- [Select color](select-color.html) 
- [환영합니다](welcome.html) 
-
- 
+<!-- Do not edit this section above. The source for the Help index can be found in the _data folder in the help_index.yaml file-->
