@@ -15,14 +15,10 @@ Materials, environments, and textures are stored in the model, but rendering con
 ##### Where can I find this command?
 There several options to find the Materials tab.
 
- * ![images/materialtab.png](images/materialtab.png)Materials tab
- * ![images/icon-render.png](images/icon-render.png)Render Tools toolbar >
- * ![images/materialtab.png](images/materialtab.png) Material Editor
- * ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Materials Editor
- * On the Command line type **MaterialEditor**
-
- <!--TODO: At Render Tools toolbar > Material Editor? I can't find it. If I click on the matching icon, Toggle Materials panel, I don't think it goes to the same place as the Materials tab. -->
-
+* ![images/materialtab.png](images/materialtab.png)Materials tab
+* ![images/icon-render.png](images/icon-render.png)Render Tools toolbar > ![images/materialtab.png](images/materialtab.png) Material Editor
+* Menus > Render Pulldown > Materials Editor
+* On the Command line type MaterialEditor
 
 The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
 
@@ -40,7 +36,6 @@ You can drag colors and textures from the color swatch and drop onto any other c
 ## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #settings .clear-img}
 Use this bar to navigate the material during its development.
-<!-- TODO: This content is from the old source.  It needs heavy editing-->
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
 Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to get back to the parent material from the texture details.
@@ -50,13 +45,10 @@ Walks back though the current material or the previously selected materials.  Fo
 
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-<!-- TODO: Add a texture image image and a procedural icon-->
 Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
 
 #### ![images/library_default.png](images/library_default.png) Tools menu
 Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
-
-<!--TODO: Bad link -->
 
 
 ## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
@@ -67,7 +59,6 @@ This lists all the materials contained in the model. From this list:
 * Drag and drop a material from this list onto a layer in the [Layer Panel](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm) or directly onto an Object to assign it to an Object. See [Material Assignments](material_assignment.html) for more information.
 * Add a new Material using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
 
-<!--TODO: I don't understand why the Add New Button image doesn't show up. It also doesn't show up in the header below. -->
 
 * Click on each material to select it. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information.
 * Right-click a thumbnail to display the Material context menu.
@@ -91,7 +82,6 @@ This menu is available by right-clicking on a blank area of the Material List.
 #### ![images/toolbarlus.png](images/toolbarplus.png) Create New Material
 Creates a new basic matte white material.
 
-<!--TODO: What about Import Material from File? -->
 
 #### ![images/paste.png](images/paste.png) Paste
 Creates a new material based on the contents of the Clipboard.
@@ -160,7 +150,7 @@ Material Panels will vary based on the type of material and the current active m
 
 ## Tools menu ![images/library_default.png](images/library_default.png)
 {: #tools-menu}
-<!-- TODO: This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
+<!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
 
 #### ![images/assigntoobjects.png](images/assigntoobjects.png) Assign to Selection
@@ -187,10 +177,9 @@ Assigns the current material to layers.
  1. In the Choose Layers dialog box, check the boxes for the material assignment.
 
 ##### To assign materials from the Layers panel
- 1. In the  [Layer](layer.html)  panel, select one or more layers and click the  [Material](layer.html#material)  column.
+ 1. In the  [Layer](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)  panel, select one or more layers and click the  [Material](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)  column.
  1. In the Layer Material dialog box, select the material to assign.
 
-<!--TODO: Bad links -->
 
 ##### To drag and drop materials to objects
  * Drag the material from the thumbnails or list onto the target layer.
@@ -214,8 +203,7 @@ Changes the material to a different type.
 
 #### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
 Changes the material to a different type.
-The default behavior depends on the current state of the [Rendering Options](rendering.html) &gt;  [Copy similar settings when content type is changed](rendering.html#copy-similar-settings-when-content-type-is-changed)  box. If checked, compatible settings from the old content will be copied to the new one.
-<!--TODO: The links above need to be updated.-->
+The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)  box. If checked, compatible settings from the old content will be copied to the new one.
 
 #### ![images/reset.png](images/reset.png) Reset to Defaults
 Changes all the material settings to the default white, matte, non-reflective, untextured material.
@@ -239,13 +227,12 @@ Renames the selected material.
 Copies the selected material to a new material with the same settings.
 
 #### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
-Removes the connection between [instanced](#paste-as-instance) materials.
+Removes the connection between [instanced](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) materials.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
-<!--TODO: Bad link -->
+
 
 #### ![images/contentfilter.png](images/contentfilter.png) Content Filter
 Opens the [Content Filters](content_filters.html) dialog box.
 
 #### ![images/rename.png](images/rename.png) Properties
-Opens the [Preview Properties](previewproperties.html) dialog box.
-<!--TODO: Bad link -->
+Opens the [Preview Properties](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) dialog box.
