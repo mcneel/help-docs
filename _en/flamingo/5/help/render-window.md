@@ -196,7 +196,7 @@ Displays the current [rendering resolution](render-tab.html#resolution).
 Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.
 
 #### Apparent faces
-When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The Apparent faces display shows how many additional temporary faces would be generated if the block instances did not exist.
+When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The Apparent faces display shows how many more temporary faces would be generated if the block instances did not exist.
 
 #### Lighting information
 This is some information on the current lighting setup of the rendering.  Here is a list of lighting information listed:
@@ -212,12 +212,12 @@ This is some information on the current lighting setup of the rendering.  Here i
 
 ## Channels
 {: #channels}
-Use these controls to change the lights channels in real time. Lights can be assigned to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
+Use these controls to change the lights channels in real time. Assign lights to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
 
 ## Post Effects
 {: #post-process-effects}
 {: #effects}
-Post-processing effects are applied after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
+Apply post-processing effects after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
 
 >Fog
 >Glow
