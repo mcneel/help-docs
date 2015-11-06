@@ -1,134 +1,134 @@
 main_index:
-  name: Flamingo Help Topics
+  name: Flamingo 도움말 항목
   anchor: all_topics
   categories:
-    - name: Libraries
+    - name: 라이브러리
       anchor: libraries
       topics:
-        - name: Libraries Panel
+        - name: 라이브러리 패널
           path: libraries.html
           anchor: test
-        - name: Material Library
+        - name: 재질 패널
           path: libraries.html
           anchor: material
-        - name: Environment Library
+        - name: 환경 라이브러리
           path: libraries.html
           anchor: environment
-        - name: Plant Library
+        - name: 식물 라이브러리
           path: libraries.html
           anchor: plant
-        - name: Library Settings
+        - name: 라이브러리 설정
           path: libraries.html
           anchor: settings
 
-    - name: Materials
+    - name: 재질
       anchor: materials
       topics:
-        - name: Material Editor
+        - name: 재질 편집기
           path: material-editor.html
-        - name: Assign Materials
+        - name: 재질 적용
           path: material_assignment.html
-        - name: Basic Material Properties
+        - name: 기본 재질 속성
           path: material-type-simple.html
-        - name: Advanced Material Properties
+        - name: 고급 재질 속성
           path: material-type-advanced.html
-        - name: Material Image Properties
+        - name: 재질 이미지 속성
           path: material-image-properties.html
-        - name: Procedural Material Types
+        - name: 절차적 재질 유형
           path: procedural-materials.html
-        - name: Texture Set Materials
+        - name: 텍스처 세트 재질
           path: texture-set-materials.html
-        - name: Color Selector
+        - name: 색 선택기
           path: select-color.html
 
-    - name: Lighting
+    - name: 조명 설정
       anchor: lighting
       topics:
-        - name: Lighting Presets
+        - name: 조명 기본 설정
           path: lighting-tab.html
-        - name: Sun
+        - name: 태양
           path: sun-and-sky-tabs.html
           anchor: sun
-        - name: Sky
+        - name: 하늘
           path: sun-and-sky-tabs.html
           anchor: sky
-        - name: Lights
+        - name: 조명
           path: lights-tab.html
 
-    - name: Environment
+    - name: 환경
       anchor: environment
       topics:
-       - name: Environment Editor
+       - name: 환경 편집기
          path: environment-tab.html
-       - name: Flamingo Environment
+       - name: Flamingo 환경
          path: environment.html
 
-    - name: Rendering
+    - name: 렌더링
       anchor: rendering
       topics:
-        - name: Render tab
+        - name: 렌더링 탭
           path: render-tab.html
-        - name: Render Window
+        - name: 렌더링 창
           path: render-window.html
-        - name: Channels
+        - name: 채널
           path: render-channel.html
-        - name: Image Editor
+        - name: 이미지 편집기
           path: image-editor.html
-        - name: Automated Rendering
+        - name: 자동 렌더링
           path: automate-rendering.html
 
 
-    - name: Object Properties
+    - name: 개체 속성
       anchor: object_properties
       topics:
-        - name: Material Source
+        - name: 재질 소스
           path: properties-object.html
           anchor: material-source
-        - name: Custom Meshing
+        - name: 사용자 지정 메쉬 처리
           path: properties-object.html
           anchor: custom-meshes
-        - name: Texture Mapping
+        - name: 텍스처 매핑
           path: properties-object.html
           anchor: texture-mapping
-        - name: Decal Properties
+        - name: 데칼 속성
           path: properties-object.html
           anchor: decals
-        - name: Object properties
+        - name: 개체 속성
           path: properties-object.html
 
-    - name: Plants
+    - name: 식물
       anchor: plants
       topics:
-        - name: Plants
+        - name: 식물
           path: plants.html
-        - name: Plant Editor
+        - name: 식물 편집기
           path: tree-editor.html
 
-    - name: Network Rendering (Farm)
+    - name: 네트워크 렌더링 (팜:Farm)
       anchor: farm
       topics:
-        - name: Installing the Farm
+        - name: 팜 설치하기
           path: render-farm.html
           anchor: install
-        - name: Render Farm
+        - name: 렌더링 팜
           path: render-farm.html
           anchor: farm
-        - name: Render Farm Monitor
+        - name: 렌더링 팜 모니터
           path: render-farm.html
           anchor: monitor
 
-    - name: Misc
+    - name: 기타
       anchor: misc
       topics:
-        - name: Document Properties
+        - name: 문서 속성
           path: documentproperties-flamingo.html
-        - name: Options Flamingo nXt
+        - name: 옵션 Flamingo nXt
           path: options-flamingo.html
-        - name: RealTime Viewport
+        - name: RT(실시간) 뷰포트
           path: realtime.html
-        - name: Flamingo Command List
+        - name: Flamingo 명령 목록
           path: flamingo-command-list.html
-        - name: Select color
+        - name: 색 선택
           path: select-color.html
-        - name: Welcome
+        - name: 환영합니다
           path: welcome.html
