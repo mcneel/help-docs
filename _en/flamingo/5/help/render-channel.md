@@ -1,7 +1,6 @@
 ---
 ---
 
-
 # ![images/render.svg](images/render.svg){:height="75px" width="75px"} Channels
 {: #channel}
 A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
@@ -47,7 +46,8 @@ Lighting channels can be adjusted immediately after rendering, or in the Flaming
 The channel controls are found on the Flamingo nXt tab in the [render window](render-window.html) under Channels.
 
 There are eight channel controls 0-7. Only the channels that have lights on them will activate.
-<!-- TODO: can we get a picture of the slider and multiplier value -->
+
+![images/channel-slider.png](images/channel-slider.png)
 Each channel has a slider and a spinner value.  The spinner value represents the maximum value of the slider. If the slider is all the way to right, then the full value of the spinner is used to multiply the lighting amounts on that channel.  It follows that the slider at 50% will multiply all the lighting on that channel layer by half the spinner amount.  A slider slid all the way to the left will turn off all the lighting on that channel.
 
 The value of the spinner can be very important.  Because Sun and Sky can be many times brighter then artificial lights, the spinner value on artificial lights  might need to be increased to 20 or 50 to see any difference.

@@ -1,6 +1,5 @@
 ---
 ---
-<!-- TODO: This page needs to be updated more with current automated rendering information.-->
 
 # Farm Rendering
 The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers used only as render farm clients.
@@ -53,12 +52,9 @@ For machines that do not have Rhino and Flamingo installed, install the Farmer c
 ##### To configure the Render Farm
 {: #configure-the-render-farm}
 1.  [Right-click](mouse-button-right.html) on the icon and select Restore.
-1. In the nXt Farmer window, on the Options menu, click **Path** and select the path to the Render Farm folder.
+1. In the nXt Farmer window, on the Options menu, click Path and select the path to the Render Farm folder.
 
-<!-- TODO: Is the 'Right-click' correct? -->
-
-On the computer with Rhino and Flamingo nXt where you will ready the models to render and submit jobs to the farm, in Rhino, from the Tools menu, click **Options**, set the common farm location to the [Farm output folder](options-flamingo.html#farm-output-folder).
-<!-- TODO: I'm not sure what this sentence is supposed to say. -->
+On the computer with Rhino and Flamingo nXt set the Zoo folder in Rhino. From the Tools menu, click Options, set the common farm location to the [Farm output folder](options-flamingo.html#farm-output-folder).
 
 The Render Farm is now configured.
 
@@ -69,13 +65,9 @@ Currently, the farm can be used three ways for processing renderings on multiple
 ##### To verify that the client workstations are responding
 After starting the Render Farmer client on all the client computers:
 
- 1. On any of the master computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
+ 1. On any of the computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
  1. The client machines should appear in the upper list box.
  1. Each Render Farmer client should be listed under the Machine list.  The Status should read Active.
-
-
-
-<!-- TODO: Is this supposed to say 'On any master computer'? -->
 
 If there is a problem with this, review the [install](#install) and [configuration topics](#configure-the-render-farm).
 
