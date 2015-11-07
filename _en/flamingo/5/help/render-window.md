@@ -5,9 +5,7 @@
 The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
 
 ## Managing an Active Rendering
-Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model and the initialize for rendering.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
-<!-- TODO: Is 'initialize for rendering' the right words? -->
-
+Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model then starts an initialization process.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
 
 >[Multiple pass rendering](#multi-pass)
 >[Stopping a rendering](#stop-render)
@@ -34,7 +32,6 @@ Some of the effects that improve on each pass are:
 ### Stopping a rendering
 {: #stop-render}
 You can stop the rendering in a number of ways:
-<!-- TODO: Bad image -->
 
 ![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
 
@@ -52,7 +49,6 @@ Controls used for images adjustment include:
 >[Channels](#channels)
 >[Post Effects](#post-process-effects)
 
-<!-- TODO: Post Effects is a bad link -->
 
 ### Saving Images
 {: #saving}
@@ -61,7 +57,7 @@ There are many ways to save an image depending on the plans for the image.  Norm
 #### ![images/saveimageas.png](images/saveimageas.png) Save Image
 Saving a JPG or PNG image file is the normal process after adjusting the image.  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image. 
+A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
 
 PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
 
@@ -85,7 +81,6 @@ The .exr format stores luminance data directly in a High Dynamic Range format. N
 
 #### ![images/close-x.png](images/close-x.png) Exit
 Closes the render window.
-<!-- TODO: Bad image -->
 
 #### Pulldown Menus
 For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).
@@ -205,10 +200,8 @@ This is some information on the current lighting setup of the rendering.  Here i
 >[Sun](sun-and-sky-tabs.html#sun)
 >[Sky](sun-and-sky-tabs.html#sky)
 >[Lights](lights-tab.html)
->[Indirect](lighting-advanced-tab.html#indirect)
->[Ambient On/Off](lighting-advanced-tab.html#ambient)
-
-<!-- TODO: Indirect and Ambient On/Off are bad links -->
+>[Indirect](lighting-tab.html#indirect)
+>[Ambient On/Off](lighting-tab.html#ambient)
 
 ## Channels
 {: #channels}
@@ -216,7 +209,6 @@ Use these controls to change the lights channels in real time. Assign lights to 
 
 ## Post Effects
 {: #post-process-effects}
-{: #effects}
 Apply post-processing effects after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
 
 >Fog

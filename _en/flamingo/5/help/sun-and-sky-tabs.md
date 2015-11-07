@@ -17,8 +17,7 @@ The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighti
 * ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
 * ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
 
-<!-- TODO: For tabs, I find Sky, Lights, Custom, and Render Options, but no Sun. I must be lost.  -->
-
+Note: The Sun tab will only be visible if the Sun is activated through a Lighting Pre-set.
 
 Solar angles are required to perform sunlight calculations. There are two ways to specify the sun direction: by date, time, and place; and by direct angle. Use date, time, and place positioning to simulate the real sun in a study of your model's site. Direct sun angle controls the light angle without reference to a real sun. Use the direct sun angle to try lighting effects.
 
@@ -110,8 +109,7 @@ Sky can be set five ways:
 >[Color](#color-sky)
 >[Image](#image-sky)
 
-The two best settings for sky lighting types are [HDR image](lighting-advanced-tab.html#hdri) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
-<!-- TODO: Bad links -->
+The two best settings for sky lighting types are [HDR image](#high-dynamic-range-image-sky) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
 
 ### Automatic Sky
 {: #automatic-sky}
@@ -145,20 +143,18 @@ It is assumed that HDR images contain radiance values expressed in watts units. 
 In addition to the Sky, a different HDR image can be used for each of the three visible backgrounds: [Visible](environment-tab.html#advanced-background), [Reflected](environment-tab.html#advanced-background), and [Refracted](environment-tab.html#advanced-background) background.
 
 #### HDRI Image
-Specifies the HDR image file. Click on the image to select a different HDRI.
+Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
 *Equarectangular projection.*
 
-HDRI images come in two projection types which allow the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
-<!-- TODO: HDRI or HDRi? -->
+HDR images come in two projection types which allow the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
 
 #### Intensity
 Modifies the brightness of the HDR image light. This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *Low and high HDR intensity.*
-<!-- TODO: Bad image here somewhere (hdri-spherical.png) -->
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
@@ -175,7 +171,7 @@ The color saturation for the light. Since the light from an HDR image is the col
 {% include_relative snippets/snippet-skychannel.md %}
 
 ### Color
-{: #color-sky} 
+{: #color-sky}
 It is possible to use a color or gradient of color to light the scene. The colors in the sky are multiplied by the intensity value to give the colors a lighting value.
 
 #### Intensity
