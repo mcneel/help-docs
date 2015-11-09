@@ -13,7 +13,7 @@ Materials, environments, and textures are stored in the model, but rendering con
 ![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map .float-img-right}
 
 ##### Where can I find this command?
-There several options to find the Materials tab.
+There are several options to find the Materials tab.
 
 * ![images/materialtab.png](images/materialtab.png)Materials tab
 * ![images/icon-render.png](images/icon-render.png)Render Tools toolbar > ![images/materialtab.png](images/materialtab.png) Material Editor
@@ -38,10 +38,10 @@ You can drag colors and textures from the color swatch and drop onto any other c
 Use this bar to navigate the material during its development.
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to get back to the parent material from the texture details.
+Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to return to the parent material from the texture details.
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the recently used texture from the parent material.
+Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to return to the recently used texture from the parent material.
 
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
@@ -84,10 +84,10 @@ Creates a new basic matte white material.
 
 
 #### ![images/paste.png](images/paste.png) Paste
-Creates a new material based on the contents of the Clipboard.
+Creates a new material based on the Clipboard contents.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new material based on the contents of the Clipboard that is linked to the original through instancing.
+Creates a new material based on the Clipboard contents that is linked to the original through instancing.
 
 #### ![images/grid.png](images/grid.png) Grid
 Displays the previews as a grid of thumbnails.
@@ -212,10 +212,10 @@ Changes all the material settings to the default white, matte, non-reflective, u
 Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
 
 #### ![images/paste.png](images/paste.png) Paste
-Creates a new material based on the contents of the Clipboard.
+Creates a new material based on the Clipboard contents.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new material based on the contents of the Clipboard that is linked to the original through instancing.
+Creates a new material based on the Clipboard contents that is linked to the original through instancing.
 
 #### ![images/delete.png](images/delete.png) Delete
 Deletes the selected material.
