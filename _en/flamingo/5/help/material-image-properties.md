@@ -8,11 +8,11 @@
 ![images/textures.png](images/textures.png)
 ![images/solidcolors.png](images/textureset.png)
 
-Materials can be created from images. Scan photographs and real materials like wallpaper and carpet, create patterns in a paint program, or use images from other sources of bitmap.
+Materials can be created from images. Scan photographs and real materials like wallpaper and carpet, create patterns in a paint program, or use images from other bitmap sources.
 Imagine that the material stretches infinitely in all directions in space. The material becomes visible only where an object passes through it. Patterns are repeated infinitely (tiled) in four directions at a specified scale.
 Small images that can be seamlessly tiled tend to work best. If the bitmap does not tile well, use the option to mirror the tiles. This guarantees matched edges.
 
-Note : To make a bitmap image cover only part on the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
+**Note:** To make a bitmap image cover only part of the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
 
 Image maps can be used many ways. A common method is to use a picture of a real-world material as the materials color.
 
@@ -23,7 +23,7 @@ Image Textures can be named.  This name is used by the Texture library of the RD
 
 ### Image preview
 {: #image-preview}
-Displays a preview of the selected image file. Hold the mouse over the image to a see a pop-up of the image file name.  Click on the image to select a different image.
+Displays a preview of the selected image file. Hold the mouse over the image to see a pop-up of the image file name.  Click on the image to select a different image.
 
 #### Image resolution
 {: #image-resolution}
