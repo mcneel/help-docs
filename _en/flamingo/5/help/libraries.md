@@ -14,7 +14,7 @@ Materials are simply files on your hard drive.  Library folders are simply Windo
 
 Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+To quickly navigate back to the Default Library locations use the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
 
 #### Organizing Libraries
 {: organizing_libraries}
@@ -66,7 +66,7 @@ Sets a custom [library](libraries.html) location.  Changes the default location 
 ##### Browse button
 Open file browser to specify file.
 
-#### Show "Documents" folder
+#### Show Documents folder
 In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
 
 #### Show custom folders
