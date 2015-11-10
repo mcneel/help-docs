@@ -99,7 +99,7 @@ As with OS X, install the GitHub Pages Ruby Gem, navigate to the clone directory
 gem install jekyll
 gem install github-pages
 gem install wdm
-
+```
 
 #### Running the Local Jekyll server
 
