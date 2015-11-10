@@ -2,5 +2,6 @@
 ---
 
 
-# Glossary
-{% include_relative snippets/snippet-masking.md %}&#160;
+# 용어집
+{% include_relative snippets/snippet-masking.md %} 
+

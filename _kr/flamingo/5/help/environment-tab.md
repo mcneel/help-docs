@@ -1,244 +1,211 @@
 ---
 ---
 
-
-# 환경
+# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} 환경 패널
 {: #environment-tab}
-환경은 실제 모델 지오메트리의 일부는 아니지만, 렌더링에만 나타나는 렌더링 요소들이 포함됩니다.
-배경은 모델을 둘러싸고 있는 무한대의 구(球)라고 생각할 수 있습니다. 배경은 이 구에 투영됩니다. 배경 구는 선택 가능한 개체는 아니지만 배경 효과가 적용되는 참조 서피스입니다.
-지반면은 모든 방향에서 정의된 고도로 위치가 지정된 이미지가 가로로 스트레치되는, 무한대의 가로 플랫폼을 제공합니다. 넓은 평면 서피스를 베이스로 사용하는 것보다 지반면을 사용할 때 렌더링 속도가 더욱 빨라집니다.
+Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
 
-## 지반면
-{: #ground-plane}
+The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
 
-### 사용
-{: #groundplane-enabled}
-지반면을 켭니다.
-![images/groundplane-002a.png](images/groundplane-002a.png)
-*지반면이 꺼진 상태 (왼쪽), 켜진 상태(오른쪽).*
+Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
 
-### 알파
-{: #groundplane-alpha}
-지반면에 투명한 알파 채널을 적용하여 다른 이미지로 그림자를 투사하여 합성할 수 있습니다. 참조: [Wikipedia 항목: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
-![images/groundplane-004a.png](images/groundplane-004a.png)
- *지반면에는 그림자가 보이지만, 이미지에서는 투명하게 보입니다.* 
+![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
-### 고도
-{: #groundplane-elevation}
-지반면의 높이를 0보다 높게 설정합니다.
-![images/groundplane-005a.png](images/groundplane-005a.png)
-*0보다 높은 지반면 고도.*
+##### 이 명령은 어디에서 찾을 수 있습니까?
+ 1. ![images/environments.png](images/environments.png)재질 탭
+ 1. ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/environments.png](images/environments.png) 재질 편집기
+ 1. ![images/menuicon.png](images/menuicon.png)메뉴 > 렌더링 메뉴 > 환경 편집기
+ 1. 명령 > EnvironmentEditor
 
-### 재질
-{: #groundplane-material}
-[재질](simple-material-properties.html)을 지반면에 적용합니다.
-![images/groundplane-003a.png](images/groundplane-003a.png)
-*높은 고도와 물 재질이 적용된 지반면.*
+환경 편집기 패널은 별개의 섹션으로 나뉘어져 있습니다. 재질 유형에 따라 고급 패널이 달라질 수 있습니다.
 
-## 배경
-{: #background-colors}
- **안내**: 컬러 배경은 언제나 켜져 있는 상태이지만, 이미지 또는 다른 배경 뒤에 숨겨진 상태일 수 있습니다.
+Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+재질 패널
 
-### 강도
-{: #background-intensity}
-배경의 상대적인 밝기를 수정합니다.
+ 1. [배경 유형](#type)
+ 1. [설정 막대](#material_list)
+ 1. [환경 목록](#environment-list)
+ 1. [창 구분](#divider)
+ 1. [환경 속성 섹션](#properties)
+ 1. [이름](#name)
+ 1. [환경 속성 패널](#panels)
 
-## 배경 종류
-{: #background-type}
-렌더링 이미지에서 배경을 채울 색 구성표를 지정합니다. 배경의 유형은 다음과 같습니다.
+## [배경 유형](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+{: #type style="clear: both;"}
+Select the type of background for the model.  [Environment](#flamingo-environment) is an all inclusive rendering environment and should be the default setting for Flamingo.  The other three settings present a much more simplified set of settings that reflect older ways of defining backgrounds. For more information see the [Rhinoceros Simple Background](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings) topic
 
-> [하늘](environment-tab.html#environment-sky) 
-> [단색과 그라데이션 색](environment-tab.html#color-and-gradient-backgrounds) 
-> [이미지](#environment-image) 
-> [HDR과 평면형 HDR 이미지](environment-tab.html#hdr-and-planar-hdr-backgrounds) 
+이 도움말 항목에서 환경 유형에 대해 상세하게 설명합니다.
 
-## 하늘
-{: #environment-sky}
-하늘 환경은 [조명](lighting-tab.html) 탭의 태양과 하늘 설정을 사용합니다.
-![images/background-sky-001.png](images/background-sky-001.png)
-*자동 (왼쪽), HDR 이미지와 태양 (오른쪽).*
+## [설정 막대](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+{: #settings}
+이 막대를 사용하여 환경 목록을 탐색하세요.
 
-## 색과 그라데이션 색
-{: #environment-color-and-gradient}
-배경색은 항상 표시되지만, 이미지에 가려진 상태일 수도 있습니다.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) 뒤로 화살표
+Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
 
-### 단색
-{: #solid-color}
-단색 배경은 배경이 하나의 색으로 채워져 있습니다.
-![images/background-color-001.png](images/background-color-001.png)
-*단색 배경.*
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
+Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
-### 2색 그라데이션
-{: #two-color-gradient}
- **안내: 2색과 3색 그라데이션 배경은 투시 뷰에서만 적용됩니다.
-2색 그라데이션 배경은 선택된 2색의 단계적 변화로 배경을 표시합니다.
-![images/background-color-002.png](images/background-color-002.png)
-*2색 그라데이션 배경: 파랑과 노랑.*
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
+Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
-### 3색 그라데이션
-{: #three-color-gradient}
-3색 그라데이션 배경은 선택된 3색의 단계적 변화로 배경을 표시합니다.
-![images/background-color-003.png](images/background-color-003.png)
-*3색 그라데이션 배경: 파랑, 흰색, 노랑.*
+#### ![images/library_default.png](images/library_default.png) Tools Menu
+Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
 
-## 색 제어
-{: #enviroment-sky-color-controls}
-색 견본을 클릭하면 [색 선택](select-color.html) 대화상자가 열립니다.
-편집 상자는 색이 가장 진하게 표시되는 각도를 가리킵니다.
+#### ![images/help_topics.png](images/help_topics.png) Help
 
-##### 그라데이션 색을 변경하려면
+## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+{: #environment_list}
+This lists all the environments contained in the model. One Environment will be selected as the current environment. The current environment is used in the rendering. Yellow corners will show up surrounding the current Environment.
 
->색을 설정하려면 [색 선택](select-color.html) 대화상자에서 색 견본을 클릭합니다.
+From this list:
 
-##### 그라데이션 색의 범위를 변경하려면
-{: #colorrange}
-현재 뷰포트가 투시 투영인 경우, 위 아래 색과 뷰와 관련된 그라데이션의 범위는 제어할 수 있습니다.
+* Click on an Environment to make it current. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
+* Scroll up and down in the list to see all the environments in the model.
+* Drag and drop an environment from this list onto any viewport to set it current.
+* Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
+* Right-click a thumbnail to display the Environment context menu
+* Right-click the blank area to display the New Environment Context Menu
 
->수평선의 위 아래 각도를 위, 가운데, 또는 아래 상자에 도 단위로 입력합니다.
+###  ![images/add_material.png](images/add_material.png) Add new environment
+{: #add_environment}
+Scroll down to the bottom of the Environment list to see the add icon.
 
-또는 각도 그래픽에서 각도 마커를 마우스로 끌어옵니다.
-각도의 폭이 흐린 회색 음영 부분으로 그래픽에 표시됩니다.
-배경으로 채워지는 각도는 흐린 회색 음영 부분으로 그래픽에 표시됩니다.
-빨간색 깃발은 위쪽으로 지정된 색이 가장 진하게 표시되는 각도를 나타냅니다.
-파란색 깃발은 아래쪽으로 지정된 색이 가장 진하게 표시되는 부분을 나타냅니다.
-3색 그라데이션의 경우, 초록색 깃발이 가운데 색이 가장 진하게 표시되는 부분을 나타냅니다.
-![images/background-color-004.png](images/background-color-004.png)
+Opens the Render Content [library](libraries.html) of environments.
+The environments in the library act as templates for creating environments in the model.
 
-###  **위 아래 색 바꾸기** 
-그라데이션 되는 색의 순서를 바꿉니다.
+### Environment Context Menu
+{: environment_context}
+This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
 
-###  **뷰와 일치하는 각도 설정** 
-뷰포트와 일치하도록 그라데이션 범위의 각도를 설정합니다.
+### New Environment Context Menu
+{: new_envrionment_context}
+This menus is available by right-clicking on a blank area of the Environment List.
 
-## 이미지
-{: #environment-image}
-배경 이미지는 배경에 투영됩니다.
-디지털 사진, 스캔한 이미지, 이미지 편집 소프트웨어에서 만든 이미지를 사용할 수 있습니다. 가장 좋은 결과를 얻으려면 고해상도 이미지를 배경에 사용하십시오. 자연스런 초점과 원근감을 표현하기 위해 선명한 이미지를 조금 흐리게 처리하는 것도 좋은 아이디어입니다.
+#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
+Creates a new Flamingo Environment.
 
->기존 컨텍스트에 모델을 배치합니다.
->도시 전경이나 산의 스카이라인을 추가합니다.
->초현실적인 효과를 추가합니다.
+#### ![images/import.png](images/import.png) Import Environment from File...
+Use this command to select a previously exported Environment.
 
-이미지는 평면형, 원통형, 구 형태로 매핑하거나, 시각적 그래픽 또는 좌표를 사용하여 간격을 띄우는 방법으로 매핑할 수 있습니다.
-![images/background-image-001.png](images/background-image-001.png)
+#### ![images/paste.png](images/paste.png) Paste
+클립보드의 콘텐츠를 바탕으로 새로운 환경을 만듭니다.
 
-## 이미지 속성
-{: #image-properties}
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+인스턴스 작업을 통해 원래 환경과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 환경을 만듭니다.
 
->이미지를 선택하려면 **여기를 클릭하여 지정** 단추를 클릭합니다.
+#### ![images/grid.png](images/grid.png) Grid
+미리보기를 썸네일 그리드로 표시합니다.
 
-{% include_relative snippets/snippet-clearbitmapcache.md %}
-### 투영
-{: #backgroud-image-projection}
-세 가지 유형의 배경 이미지 투영 ([평면형](environment-tab.html#평면형), [원통형](environment-tab.html#원통형), [구 형태](environment-tab.html#구-형태) )가 지원됩니다. 각각의 투영 방식에는 이미지의 위치를 지정하는 자체적인 제어 설정이 있습니다.
+#### ![images/list.png](images/list.png) List
+미리보기를 썸네일 목록으로 표시합니다.
 
-#### 평면형
-{: #backgroud-image-planar}
-평평한 배경에 이미지를 투영합니다.
-![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
-분홍색 직사각형을 마우스로 끌거나 숫자를 입력하여 배경 이미지를 이동하거나 크기를 조정합니다.
-![images/background-image-003.png](images/background-image-003.png) *Background area (1), image size and shape (2).* 
+#### ![images/tree.png](images/tree.png) Tree
+미리보기를 중첩된 트리로 표시합니다.
 
-#### 평면형 옵션
+#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
+제어의 왼쪽으로 미리보기를 표시합니다.
 
-##### X방향크기 / Y방향크기
-배경 이미지의 크기를 지정합니다.
+#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
+현재 선택된 썸네일의 미리보기 속성을 표시합니다. 미리보기 지오메트리, 크기. 배경, 회전 동작을 설정합니다.
 
-##### X간격띄우기 / Y간격띄우기
-뷰포트의 왼쪽 아래 모서리를 기준으로 배경 이미지가 떨어져 있는 간격을 지정합니다.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
+조정 가능한 창에서 미리보기 이미지를 플로팅(floating)으로 설정합니다.
 
-#### 원통형
-{: #cylindrical}
-원통형 투영은 모델을 둘러싸고 있는 상상 속의 원통에 이미지를 매핑합니다. 이 투영 방법은 실제로 원통형인 이미지에 가장 적합하지만, 사진을 기반으로 구성된 일반적인 파노라마에도 잘 적용됩니다.
-이미지 맵의 높이와 너비 각도의 크기 및 위치를 지정합니다. 그래픽 도구와 마우스를 사용하여 이미지의 위치와 크기를 지정합니다. 현재 원뿔형 표시기는 옅은 회색으로 음영 처리된 영역으로 표시됩니다.
-![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
+#### Thumbnails
 
-#### 원통형 옵션
-{: #cylindricalprojectionoptions}
+##### ![images/small.png](images/small.png) Small
+썸네일 크기를 가장 작은 크기로 설정합니다.
 
-#####  [배경색](environment-tab.html#배경색) 
+##### ![images/medium.png](images/medium.png) Medium
+썸네일 크기를 중간 크기로 설정합니다.
 
-##### 너비
-이미지 맵의 각도 너비를 지정합니다. 각도를 입력하거나, 제어 위젯에서 플래그를 끌어 너비를 지정합니다. 파란색 영역은 각도 너비 범위를 나타냅니다.
+##### ![images/large.png](images/large.png) Large
+썸네일 크기를 큰 크기로 설정합니다.
 
-##### 위 / 아래
-이미지의 세로 범위를 지정합니다. 각도를 입력하거나, 제어 위젯에서 플래그를 끌어 위 아래 각도를 설정합니다. 원통형 투영은 수평선을 기준으로 45도 초과 또는 미만으로 제한됩니다.
-![images/background-cylinder-001.png](images/background-cylinder-001.png)
+##### ![images/showlabels.png](images/showlabels.png) Show Labels
+Displays thumbnail name labels when in Grid mode.
+List mode always displays labels.
 
-##### 회전
-이미지 회전과 범위를 지정합니다. 각도를 입력하거나, 제어 위젯에서 끌어 회전을 설정합니다. 빨간 점은 이미지의 중심을 나타냅니다. 회색 영역은 뷰를 나타냅니다.
-![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png)
+##### ![images/showunits.png](images/showunits.png) Show Units
+크기를 모델 단위로 표시합니다.
 
-#####  **뷰로부터의 각도** 
-뷰포트와 일치하도록 **너비**와 **위/아래** 각도를 설정합니다.
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
+설정이 변경되면 그에 따라 자동으로 모든 미리보기를 업데이트합니다.
 
-#### 구 형태
-{: #spherical}
-구(球) 형태 투영은 이미지를 완전한 구체로 매핑합니다. 이 방식은 일반적으로 등장방형인 구 형태 이미지를 사용할 때 좋은 결과물을 만들어냅니다.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
+Update previews manually when Auto-Update Preview is off.
 
-#### 구 형태 옵션
-{: #sphericalprojectionoptions}
+## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+{: divider}
+Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
 
-##### 회전
-이미지의 회전을 지정합니다. 빨간 점은 이미지의 중심을 나타냅니다.
+## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+{: properties}
 
-#####  **뷰로부터의 각도** 
-회전 각도를 뷰포트와 일치하도록 설정합니다.
+### [환경 이름](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+{: #name}
+This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. **Note:** Environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
 
-## HDR과 평면형 HDR 배경
-{: #hdr-and-planar-hdr-backgrounds}
-HDRI(High-dynamic-range images)는 이미지에 저장된 휘도 정보를 기반으로 조명을 설정합니다.
-HDR 이미지를 환경으로 사용하면 조명과 배경의 관계 그리고 이미지에 있는 다른 조명을 보다 상세하게 설정할 수 있습니다. 이 옵션은 밝은 실외가 창으로 보이는 실내 공간을 표현할 때 특히 유용합니다.
-HDR 환경 이미지는 일반적인 비트맵 이미지보다 훨씬 넓은 범위의 빛 정보를 가지고 있으며, 채널을 적용할 수 있어 [다중 채널](lights-tab.html#채널) 렌더링에서 명암을 관리할 수 있습니다.
+### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
+{: #panels}
+The Environment Properties section is filled with a number of direct Environment panels. Clicking on the grey title bar will rollup the environment panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 
-## HDR 옵션
-{: #background-hdr-options}
+Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
 
->이미지를 선택하려면 **여기를 클릭하여 지정** 단추를 클릭합니다.
+## Tools Menu ![images/library_default.png](images/library_default.png)
+{: tools_menu}
+이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}{% include_relative snippets/snippet-mirrorimage.md %}{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
-## 평면형 HDR 옵션
-{: #planar-hdr-options}
-평면형 HDR (high-dynamic-range) 이미지는 이미지 배경과 조명 모두를 제공합니다. 건축 렌더링에서 실외에서 들어오는 빛이 필요한 창 바깥쪽에 자주 사용됩니다.
+#### ![images/currentenvironment.png](images/currentenvironment.png) Set as Current Environment
+This sets the target environment current.  The current environment will be used in the next rendering.
 
->이미지를 선택하려면 **여기를 클릭하여 지정** 단추를 클릭합니다.
+#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
+Creates a new Flamingo Environment.
+<!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
+이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
-### 
-*배경 이미지 (왼쪽)와 평면형 HDR (오른쪽)을 비교하면 배경에서의 은은한 조명의 차이를 알 수 있습니다.*
-{% include_relative snippets/snippet-sunchannel.md %}{% include_relative snippets/snippet-skychannel.md %}
-## 고급 배경
-{: #advanced-background}
-**고급 배경** 설정은 렌더링에 보이지는 않지만 개체에 반사되거나 굴절되는 환경을 제어합니다.
-그림에서 배경은 검정색이지만 반사된 환경은 빌딩 실내의 HDR 이미지입니다.
+#### ![images/import.png](images/import.png) Import Material from File
+저장된 Rhino .renv 파일에서 환경을 가져옵니다.
 
-## 반사
-{: #advanced-background-reflected-sky}
-반사된 환경은 렌더링된 이미지에는 보이지 않으나 반짝거리는 개체에 반사되어 보입니다.
-![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*보통 환경 (왼쪽), 반사된 HDR 하늘 환경 (오른쪽).*
+#### ![images/savetofile.png](images/savetofile.png) Save to File
+Saves a environment to a Rhino .renv file.
 
-### 하늘
-[조명: 태양과 하늘](sun-and-sky-tabs.html) 설정에서 지정된 대로 개체에 하늘이 비춰집니다.
+#### ![images/changetype.png](images/changetype.png) Change Type
+환경을 다른 유형으로 변경합니다.
 
-### 사용자 지정
-개체가 [색 또는 그라데이션](environment-tab.html#색과-그라데이션-배경), 이미지, 또는 HDR 배경을 반사합니다.
+#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
+환경을 다른 유형으로 변경합니다.
+The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
 
-### 보이는 배경
-[환경](environment-tab.html) 설정에서 지정된 상태로 보이는 배경이 개체에 비춰집니다.
+#### ![images/reset.png](images/reset.png) Reset to Defaults
+Changes all the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
 
-## 굴절됨
-{: #advanced-background-refracted-sky}
+#### ![images/copy.png](images/copy.png) Copy
+Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
 
-### 하늘
-[조명: 태양과 하늘](sun-and-sky-tabs.html) 설정에서 지정된 대로 개체가 하늘을 굴절시킵니다.
+#### ![images/paste.png](images/paste.png) Paste
+클립보드의 콘텐츠를 바탕으로 새로운 환경을 만듭니다.
 
-### 사용자 지정
-개체가 [색 또는 그라데이션](environment-tab.html#색과-그라데이션-배경), [이미지](environment-tab.html#이미지), 또는 [HDR](environment-tab.html#hdr과-평면형-hdr-배경) 배경을 굴절시킵니다.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+인스턴스 작업을 통해 원래 환경과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 환경을 만듭니다.
 
-### 보이는 배경
-[환경](environment-tab.html) 설정에서 지정된 상태로 보이는 배경이 개체에 굴절됩니다.
+#### ![images/delete.png](images/delete.png) Delete
+선택된 환경을 삭제합니다.
 
-### 투명한 개체 알파 없음
-{: #no-transparent-alpha-objects}
-투명한 개체를 통해 알파 채널이 보이는 것을 방지하고, 투명한 개체를 통해 알파 채널이 합성되는 것도 방지합니다.
-이미지가 알파 채널로 붙여넣기 실행이 된다면 이 설정을 끕니다.
+#### ![images/rename.png](images/rename.png) Rename...
+선택된 환경의 이름을 바꿉니다.
+
+#### ![images/duplicate.png](images/duplicate.png) Duplicate
+선택된 환경을 동일한 설정으로 새 환경에 복사합니다.
+
+#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
+Removes the connection between [instanced](#paste-as-instance) environments.
+
+{% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
+
+#### ![images/contentfilter.png](images/contentfilter.png) 콘텐츠 필터
+[콘텐츠 필터](content_filters.html) 대화상자를 엽니다.
+
+#### ![images/rename.png](images/rename.png) 속성
+[미리보기 속성](previewproperties.html) 대화상자를 엽니다.

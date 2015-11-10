@@ -1,9 +1,9 @@
 
 ### Note
 
-#### Refresh the image definition
+#### 이미지 정의 새로 고침
 Photoshop과 같은 이미지 편집기로 비트맵 파일을 편집하면 반드시 Flamingo nXt에서 비트맵 정의를 새로 고침해야 합니다.
 
-#### To refresh the bitmap
+#### 비트맵을 새로 고침하려면
 
->On the **Flamingo nXt** menu, click **Utilities** &gt; **Clear bitmap cache**.
+>**Flamingo nXt** 메뉴에서 **유틸리티** &gt; **비트맵 캐시 지우기**를 클릭합니다.

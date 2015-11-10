@@ -6,4 +6,4 @@ layout: toc-page
 # Flamingo
 {: .toc-title }
 
-This help topic is under construction
+이 도움말 항목은 추가 예정입니다.

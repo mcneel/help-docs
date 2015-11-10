@@ -1,3 +1,3 @@
 
-#### Lock
-Maintains the ratio between the **Width** and **Height**.
+#### 잠금
+너비와 높이의 종횡비를 유지합니다.
