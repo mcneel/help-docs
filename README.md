@@ -103,16 +103,10 @@ gem install wdm
 
 #### Running the Local Jekyll server
 
-Using the coomandline navigate to the clone directory.  Then run the "jekyll serve" command.
+Using the command line navigate to the local GitHUB clone directory.  Then run the "jekyll serve" command.
 
 ```
-cd CLONE_DIRECTORY
+cd "to your local CLONE_DIRECTORY"
 jekyll serve
 ```
-The server can be accessed through the Localhost address.  
-
-#### Run Jekyll
-Run the Git Shell program and type:
-```
-jekyll serve
-```
+The server can be accessed through the Localhost address listed on the commandline.
