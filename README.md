@@ -96,6 +96,7 @@ ruby dk.rb install
 As with OS X, install the GitHub Pages Ruby Gem, navigate to the clone directory and run jekyll.
 
 ```
+gem install jekyll
 gem install github-pages
 gem install wdm
 cd CLONE_DIRECTORY
