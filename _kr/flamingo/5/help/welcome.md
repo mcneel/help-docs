@@ -3,7 +3,7 @@
 
 
 # ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Flamingo nXt® 처음 시작
-Flamingo nXt는 Rhinoceros ®안에서 3D 모델을 가지고, 고화질의 마치 사진과도 같은 스틸과 애니메이션 이미지를 만듭니다. Flamingo nXt 5는, Rhino 5에 탑재된 렌더링 기능과 통합되는 Flamingo의 업데이트 버전입니다. 현재 개발 중(WIP: Work in Progress)인 버전입니다.
+Flamingo nXt는 Rhinoceros ®안에서 3D 모델을 가지고, 고화질의 마치 사진과도 같은 스틸과 애니메이션 이미지를 만듭니다. Flamingo nXt 5는, Rhino 5에 탑재된 렌더링 기능과 통합되는 Flamingo의 업데이트 버전입니다. 현재 개발 중(WIP: Work in Progress)인 버전입니다. TEST 1
 
 Flamingo는 [Flamingo nXt 5 다운로드](http://www.rhino3d.com/download/flamingo/5/beta)에서 다운로드하여 설치하실 수 있습니다.
 
