@@ -91,7 +91,7 @@ ruby dk.rb init
 ruby dk.rb install
 ```
 
-#### Install Jekyll and serve
+#### Install Jekyll
 
 As with OS X, install the GitHub Pages Ruby Gem, navigate to the clone directory and run jekyll.
 
@@ -99,8 +99,17 @@ As with OS X, install the GitHub Pages Ruby Gem, navigate to the clone directory
 gem install jekyll
 gem install github-pages
 gem install wdm
-cd CLONE_DIRECTORY
+
+
+#### Running the Local Jekyll server
+
+Using the coomandline navigate to the clone directory.  Then run the "jekyll serve" command.
+
 ```
+cd CLONE_DIRECTORY
+jekyll serve
+```
+The server can be accessed through the Localhost address.  
 
 #### Run Jekyll
 Run the Git Shell program and type:
