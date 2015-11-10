@@ -71,7 +71,7 @@ Navigate to http://localhost:4000 in your browser to view the site.
 ![Windows Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/win_logo_small.png)
 ### Windows Local Server Installation
 
-While **[Jekyll](http://jekyllrb.com/docs/windows/)** is not officially supported in Windows, it does work.  These instructions are based on the official _unofficial_ guide to [installing Jekyll on Windows](http://jekyll-windows.juthilo.com/).
+Please install  Ruby, Ruby Devkit, Jekyll, Github pages, wdm.  The instructiosn are below.
 
 #### Install Ruby and Ruby DevKit
 
