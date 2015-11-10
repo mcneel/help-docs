@@ -1,38 +1,48 @@
 ---
 ---
 
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
+The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
 
-# Select color
 
-##### From the Color List
+There are two parts of the selector:
+  ![images/colorswatch-002.svg](images/colorswatch-002.svg)
 
->In the **Select Color** dialog box, from the **Named Colors** list, select a color.
+1. [Color Swatch](#swatch) - Click on the color fo the main color selector
+1. [Options Menu](#options) - Click on the arrow for additional color utilities
 
-##### From the color selector
-1. Drag the marker around the wheel to define the hue.
-1. Drag the marker horizontally in the square to define the saturation level.
-1. Drag the marker vertically in the square to define the brightness value.
+## Color Swatch ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+{: #swatch}
+Click the color swatch to select a color from the Select Color dialog box.
 
-##### From the HSV and RGB boxes
-1. To select an red/green/blue (RGB) color, type values in the **R**, **G**, and **B** boxes.
-1. To create an hue/saturation/brightness value (HSV) color, type values in the **Hue**, **Sat**, and **Value** boxes.
+##### Select from the Named Color List
+* Select a color from the list of names on the left.
 
-### Red, Green, Blue (RGB)
+##### Select from the color wheel selector
+1. Drag the marker around the outer wheel to define the hue.
+1. Drag the marker horizontally in the inner square to define the saturation level.
+1. Drag the marker vertically in the inner square to define the brightness value.
+
+##### Set in the Hue, Sat, Val boxes
+1. Hue is a color's hue corresponds to its visible wavelength of light. Hue is measured in degrees from 0 to 359, which correspond roughly with a rainbow's hues in 60 degree increments: red, orange, yellow, green, blue, and violet.
+1. Saturation refers to the color's intensity on a 0 to 100 scale. A saturation of 0 produces a neutral gray color that varies from black to white depending on the color's brightness. The hue has no effect on a color with a saturation component of 0. A saturation of 100 produces that hue's most intense shade.
+1. Value refers to the perceived amount of light value (or white) in the color. The Value component varies between 0 and 100. Value is also sometimes referred to as luminance or brightness.
+
+##### Red, Green, Blue (RGB)
 {: #rgb}
 이 방법은 컴퓨터에서 화면상에 색상을 투영하기 위해 사용됩니다. 세 가지 색상의 각 픽셀의 강도는 서로 다릅니다. 순수한 빨강은 초록색이나 파란색이 섞이지 않고 완전히 빨간색으로만 이루어져 있습니다. 순수한 검정색은 빨강, 초록, 파랑이 모두 0으로 설정되어 있으며, 순수한 흰색은 빨강, 초록, 파랑의 값이 255로 설정되어 있습니다.
 
-### Hue, Saturation, and Brightness (HSB)
-{: #hsb}
-명도(Brightness, Value)는 휘도(luminance) 또는 밝기를 뜻하기도 합니다.
+## Menu options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+{: #options}
 
-#### Hue
-{: #hue}
-빛의 가시(可視) 파장에 대응하는 색상(Hue)입니다. 색상은 0도에서 359도까지의 값으로 측정되며, 이 값은 대략 60도씩 증분하는 무지개 색상(빨강, 주황, 노랑, 초록, 파랑, 보라)과 대응합니다.
+#### Color Picker
+Opens the [Color Swatch](#swatch) dialog box described above. This is the same as clicking on the color swatch.
 
-#### Saturation
-{: #saturation}
-채도는 색의 강도를 0에서 100까지의 값으로 나타냅니다. 채도가 0 이면 검정색에서 흰색 사이에 명도로 구별되는 무채색을 만들어냅니다. 색상(Hue)은 채도가 0인 색에 아무런 영향을 주지 않습니다. 채도를 100으로 설정하면 해당 색상의 가장 강한 색이 만들어집니다.
+#### Eye Dropper
+Allows picking the color from anywhere on the screen using a eye dropper tool.
 
-#### Brightness
-{: #brightness}
-명도(Brightness)는 색에서 라이트 밸류(Light Value: 흰색)가 감지되는 정도를 나타냅니다. 명도는 0 에서 100 까지의 값으로 정의됩니다.
+#### Copy
+Copies the color in the color swatch. To be used in another color selector by using the Paste option.
+
+#### Paste
+Pastes the color from one color swatch to another. After using the Copy command above, use this Paste option.
