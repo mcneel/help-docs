@@ -37,11 +37,14 @@ safe: safe
 collections:
   - en
   - kr
+　- jp
 
 collections:
   en:
     output: true
   kr:
+    output: true
+  jp:
     output: true
 
 defaults:
@@ -77,7 +80,7 @@ defaults:
       type: kr
     values:
       language: kr
-      productname: "Flamingo NXT 문서"
+      productname: "Flamingo nXt"
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
@@ -96,3 +99,28 @@ defaults:
       doctype: "Guides"
       layout: flamingo-toc-page
       collectionname: "가이드"
+  -
+    scope:
+      path: ""
+      type: jp
+    values:
+      language: jp
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "jp/flamingo/5/help"
+      type: jp
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "ヘルプ"
+  -
+    scope:
+      path: "jp/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-toc-page
+      collectionname: "ガイド"
