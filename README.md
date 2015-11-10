@@ -71,7 +71,7 @@ Navigate to http://localhost:4000 in your browser to view the site.
 ![Windows Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/win_logo_small.png)
 ### Windows Local Server Installation
 
-While **[Jekyll](http://jekyllrb.com/docs/windows/)** is not officially supported in Windows, it does work.  These instructions are based on the official _unofficial_ guide to [installing Jekyll on Windows](http://jekyll-windows.juthilo.com/).
+Please install  Ruby, Ruby Devkit, Jekyll, Github pages, wdm.  The instructiosn are below.
 
 #### Install Ruby and Ruby DevKit
 
@@ -103,16 +103,10 @@ gem install wdm
 
 #### Running the Local Jekyll server
 
-Using the coomandline navigate to the clone directory.  Then run the "jekyll serve" command.
+Using the command line navigate to the local GitHUB clone directory.  Then run the "jekyll serve" command.
 
 ```
-cd CLONE_DIRECTORY
+cd "to your local CLONE_DIRECTORY"
 jekyll serve
 ```
-The server can be accessed through the Localhost address.  
-
-#### Run Jekyll
-Run the Git Shell program and type:
-```
-jekyll serve
-```
+The server can be accessed through the Localhost address listed on the commandline.
