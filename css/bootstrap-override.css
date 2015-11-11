@@ -15,9 +15,6 @@ body {
   body {
     font-size: 14px;
   }
-  .site-title {
-    font-size: 24px;
-  }
 }
 
 body img {
@@ -26,11 +23,6 @@ body img {
 
 /* stripping the padding out of boostrap for small displays. */
 @media screen and (max-width: 650px) {
-  .page-content {
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
   .container{
     padding-left: 2px;
     padding-right: 2px;
@@ -166,10 +158,6 @@ h2 img {
   h2 {
     font-size: 24px;
   }
-  .post-content h2 {
-    font-size: 24px;
-    margin-top: 10px;
-  }
 }
 h3 {
   background: white;
@@ -184,10 +172,6 @@ h3 img {
   h3 {
     font-size: 20px;
   }
-  .post-content h3 {
-    font-size: 20px;
-    margin-top: 8px;
-  }
 }
 h4 {
 	margin-bottom: 0px;
@@ -200,10 +184,6 @@ h4 img {
 @media screen and (max-width: 450px) {
   h4 {
     font-size: 14px;
-  }
-  .post-content h4 {
-    font-size: 14px;
-    margin-top: 5px;
   }
 }
 
