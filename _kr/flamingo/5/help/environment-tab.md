@@ -1,7 +1,8 @@
 ---
+title: 환경 패널
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} 환경 패널
+# ![images/environment.svg](images/environment.svg) {{page.title}}
 {: #environment-tab}
 Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
 
@@ -52,9 +53,9 @@ Displays the current environment name and edit level.  For instance, if there is
 #### ![images/library_default.png](images/library_default.png) Tools Menu
 Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
 
-#### ![images/help_topics.png](images/help_topics.png) Help
+#### ![images/help_topics.png](images/help_topics.png) 도움말
 
-## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [환경 목록](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #environment_list}
 This lists all the environments contained in the model. One Environment will be selected as the current environment. The current environment is used in the rendering. Yellow corners will show up surrounding the current Environment.
 
@@ -74,7 +75,7 @@ Scroll down to the bottom of the Environment list to see the add icon.
 Opens the Render Content [library](libraries.html) of environments.
 The environments in the library act as templates for creating environments in the model.
 
-### Environment Context Menu
+### 환경 상황에 맞는 메뉴
 {: environment_context}
 This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
 
@@ -88,31 +89,31 @@ Creates a new Flamingo Environment.
 #### ![images/import.png](images/import.png) Import Environment from File...
 Use this command to select a previously exported Environment.
 
-#### ![images/paste.png](images/paste.png) Paste
+#### ![images/paste.png](images/paste.png) 붙여넣기
 클립보드의 콘텐츠를 바탕으로 새로운 환경을 만듭니다.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
 인스턴스 작업을 통해 원래 환경과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 환경을 만듭니다.
 
-#### ![images/grid.png](images/grid.png) Grid
+#### ![images/grid.png](images/grid.png) 그리드
 미리보기를 썸네일 그리드로 표시합니다.
 
-#### ![images/list.png](images/list.png) List
+#### ![images/list.png](images/list.png) 목록
 미리보기를 썸네일 목록으로 표시합니다.
 
-#### ![images/tree.png](images/tree.png) Tree
+#### ![images/tree.png](images/tree.png) 나무
 미리보기를 중첩된 트리로 표시합니다.
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
+#### ![images/horizontal.png](images/horizontal.png) 가로 레이아웃
 제어의 왼쪽으로 미리보기를 표시합니다.
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
+#### ![images/showpreview.png](images/showpreview.png) 미리보기 창 표시
 현재 선택된 썸네일의 미리보기 속성을 표시합니다. 미리보기 지오메트리, 크기. 배경, 회전 동작을 설정합니다.
 
 #### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
 조정 가능한 창에서 미리보기 이미지를 플로팅(floating)으로 설정합니다.
 
-#### Thumbnails
+#### 썸네일
 
 ##### ![images/small.png](images/small.png) Small
 썸네일 크기를 가장 작은 크기로 설정합니다.
@@ -140,20 +141,20 @@ Update previews manually when Auto-Update Preview is off.
 {: divider}
 Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
 
-## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+## [환경 속성 섹션](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: properties}
 
 ### [환경 이름](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
 This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. **Note:** Environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
 
-### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
+### [환경 패널](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
 {: #panels}
 The Environment Properties section is filled with a number of direct Environment panels. Clicking on the grey title bar will rollup the environment panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 
 Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
 
-## Tools Menu ![images/library_default.png](images/library_default.png)
+## 도구 메뉴 ![images/library_default.png](images/library_default.png)
 {: tools_menu}
 이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
@@ -165,10 +166,10 @@ Creates a new Flamingo Environment.
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
-#### ![images/import.png](images/import.png) Import Material from File
+#### ![images/import.png](images/import.png) 파일에서 재질 가져오기
 저장된 Rhino .renv 파일에서 환경을 가져옵니다.
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
+#### ![images/savetofile.png](images/savetofile.png) 파일에 저장
 Saves a environment to a Rhino .renv file.
 
 #### ![images/changetype.png](images/changetype.png) Change Type
@@ -184,7 +185,7 @@ Changes all the environment settings to the default Solid color background (Blac
 #### ![images/copy.png](images/copy.png) Copy
 Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
 
-#### ![images/paste.png](images/paste.png) Paste
+#### ![images/paste.png](images/paste.png) 붙여넣기
 클립보드의 콘텐츠를 바탕으로 새로운 환경을 만듭니다.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance

@@ -1,7 +1,8 @@
 ---
+title: Farm Rendering
 ---
 
-# Farm Rendering
+# {{page.title}}
 The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers used only as render farm clients.
 
 #### A typical Farm layout
@@ -98,7 +99,7 @@ After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-m
 The date and time is automatically pre-pended to the name you choose. A sub-folder for the job is created in the Render Farm shared folder. An output folder is also created in the new job folder.
 각각의 작업이 완료되면 출력 파일은 작업의 출력 폴더에서 찾을 수 있습니다.
 
-#### Start job
+#### 작업 시작
 Job may be started immediately after submission, at a later time, or manually through the Farm monitor.
 
 #### Now
@@ -123,7 +124,7 @@ To access the Farm Monitor from Rhino go to the Flamingo nXt 5.0 menu > Render F
 
 To access the Farm Monitor from Windows, on the Start menu click **All Programs > nXt Render Farm > Farm Monitor**.
 
-#### Options
+#### 옵션
 Right-click a Machine or a Job to access options.
 
 #### Refresh
@@ -162,6 +163,6 @@ In the nXt Render Farm folder, click **Authorize Farm**.
 1. Click the **Windows Start** button, and then click **All Programs**.
 In the nXt Render Farm folder, click **Render Farmer**.
 1.  p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click the tray icon, and on the menu, click **Restore**.
-1. On the Help menu, click **About**.
+1. 도움말 메뉴에서 **정보**를 클릭합니다.
 버전 숫자가 평가판인 경우에는 라이선스를 받을 수 없습니다.
 1. Minimize the Render Farmer window to return it to the tray.

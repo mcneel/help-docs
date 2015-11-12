@@ -1,7 +1,8 @@
 ---
+title: 재질 편집기 패널
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Materials Editor Panel
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
 
 Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.
@@ -24,14 +25,14 @@ The Material Editor Panel is split into discrete sections.  Based on the materia
 
 You can drag colors and textures from the color swatch and drop onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
 
-##### Materials Panel
+##### 재질 패널
 
- 1. [Settings Bar](#settings)
- 1. [Material List](#material_list)
+ 1. [설정 막대](#settings)
+ 1. [재질 목록](#material_list)
  1. [창 구분](#divider)
- 1. [Material Properties Section](#properties)
+ 1. [재질 속성 섹션](#properties)
  1. [이름](#name)
- 1. [Material Properties Panels](#panels)
+ 1. [재질 속성 패널](#panels)
 
 ## [설정 막대](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #settings .clear-img}
@@ -83,31 +84,31 @@ This menu is available by right-clicking on a blank area of the Material List.
 새로운 기본 무광택 흰색 재질을 만듭니다.
 
 
-#### ![images/paste.png](images/paste.png) Paste
+#### ![images/paste.png](images/paste.png) 붙여넣기
 Creates a new material based on the Clipboard contents.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
 Creates a new material based on the Clipboard contents that is linked to the original through instancing.
 
-#### ![images/grid.png](images/grid.png) Grid
+#### ![images/grid.png](images/grid.png) 그리드
 미리보기를 썸네일 그리드로 표시합니다.
 
-#### ![images/list.png](images/list.png) List
+#### ![images/list.png](images/list.png) 목록
 미리보기를 썸네일 목록으로 표시합니다.
 
-#### ![images/tree.png](images/tree.png) Tree
+#### ![images/tree.png](images/tree.png) 나무
 미리보기를 중첩된 트리로 표시합니다.
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
+#### ![images/horizontal.png](images/horizontal.png) 가로 레이아웃
 제어의 왼쪽으로 미리보기를 표시합니다.
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
+#### ![images/showpreview.png](images/showpreview.png) 미리보기 창 표시
 현재 선택된 썸네일의 미리보기 속성을 표시합니다. 미리보기 지오메트리, 크기. 배경, 회전 동작을 설정합니다.
 
 #### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
 조정 가능한 창에서 미리보기 이미지를 플로팅(floating)으로 설정합니다.
 
-#### Thumbnails
+#### 썸네일
 
 ##### ![images/small.png](images/small.png) Small
 썸네일 크기를 가장 작은 크기로 설정합니다.
@@ -192,10 +193,10 @@ Drag and drop works for only one layer at a time.
 Opens the Render Content [library](libraries.html) of materials.
 라이브러리의 재질은 모델에 재질을 만들 때 템플릿처럼 실행됩니다.
 
-#### ![images/import.png](images/import.png) Import Material from File
+#### ![images/import.png](images/import.png) 파일에서 재질 가져오기
 저장된 Rhino .rmtl 파일에서 재질을 가져옵니다.
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
+#### ![images/savetofile.png](images/savetofile.png) 파일에 저장
 재질을 Rhino .rmtl 파일로 저장합니다.
 
 #### ![images/changetype.png](images/changetype.png) Change Type
@@ -211,7 +212,7 @@ Changes all the material settings to the default white, matte, non-reflective, u
 #### ![images/copy.png](images/copy.png) Copy
 Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
 
-#### ![images/paste.png](images/paste.png) Paste
+#### ![images/paste.png](images/paste.png) 붙여넣기
 Creates a new material based on the Clipboard contents.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance

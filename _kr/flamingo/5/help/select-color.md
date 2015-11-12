@@ -1,7 +1,8 @@
 ---
+title: 색 선택기
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
 
 
@@ -28,21 +29,21 @@ Click the color swatch to select a color from the Select Color dialog box.
 1. Saturation refers to the color's intensity on a 0 to 100 scale. A saturation of 0 produces a neutral gray color that varies from black to white depending on the color's brightness. The hue has no effect on a color with a saturation component of 0. A saturation of 100 produces that hue's most intense shade.
 1. Value refers to the perceived amount of light value (or white) in the color. The Value component varies between 0 and 100. Value is also sometimes referred to as luminance or brightness.
 
-##### Red, Green, Blue (RGB)
+##### 빨강, 초록, 파랑 (RGB)
 {: #rgb}
 이 방법은 컴퓨터에서 화면상에 색상을 투영하기 위해 사용됩니다. 세 가지 색상의 각 픽셀의 강도는 서로 다릅니다. 순수한 빨강은 초록색이나 파란색이 섞이지 않고 완전히 빨간색으로만 이루어져 있습니다. 순수한 검정색은 빨강, 초록, 파랑이 모두 0으로 설정되어 있으며, 순수한 흰색은 빨강, 초록, 파랑의 값이 255로 설정되어 있습니다.
 
-## Menu options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## 메뉴 옵션 ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
 {: #options}
 
-#### Color Picker
+#### 색 선택
 Opens the [Color Swatch](#swatch) dialog box described above. This is the same as clicking on the color swatch.
 
-#### Eye Dropper
+#### 스포이트
 Allows picking the color from anywhere on the screen using a eye dropper tool.
 
-#### Copy
+#### 복사
 Copies the color in the color swatch. To be used in another color selector by using the Paste option.
 
-#### Paste
+#### 붙여넣기
 Pastes the color from one color swatch to another. After using the Copy command above, use this Paste option.

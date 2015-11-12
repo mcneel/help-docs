@@ -1,7 +1,8 @@
 ---
+title: Flamingo 환경
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Flamingo 환경
+# ![images/environment.svg](images/environment.svg) {{page.title}}
 Rhino에는 다양한 유형의 환경이 있습니다. 이 항목에서는 Flamingo의 기본 환경에 대해 설명합니다.
 
 The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
@@ -177,7 +178,7 @@ Specifies the offset of the background image from the lower left corner of the v
 #### Angle from view
 The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
 
-#### Plan control
+#### 평면 제어
 이미지 맵의 각도 너비를 지정합니다. 각도를 입력하거나, 제어 위젯에서 플래그를 끌어 너비를 지정합니다. 파란색 영역은 각도 너비 범위를 나타냅니다.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
@@ -204,7 +205,7 @@ Specifies the vertical extents of the cylindrical projection. Enter an angle or 
 {: .clear-img}
 이미지의 회전을 지정합니다. 빨간 점은 이미지의 중심을 나타냅니다.
 
-#### Width
+#### 너비
 Specifies the width of the image in degrees relative the the plan view.
 
 #### Top/Bottom
@@ -234,7 +235,7 @@ Sets the rotation angle to match the current perspective viewport.  Good for res
 {: #hdr-background}
 Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
 
-#### Image File
+#### 이미지 파일
 {: #hdri-image}
 Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
 
@@ -252,7 +253,7 @@ Planar high-dynamic-range images are seldom used, but can be very useful.  And H
 ![images/planarimagebeach.png](images/planarimagebeach.png)
 *배경 이미지 (왼쪽)와 평면형 HDR (오른쪽)을 비교하면 배경에서의 은은한 조명의 차이를 알 수 있습니다.*
 
-#### Image File
+#### 이미지 파일
 {: #hdri-planar-image}
 Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
 {% include_relative snippets/snippet-sunchannel.md %}
@@ -272,7 +273,7 @@ The Advanced Background settings control environments that are not visible in th
 #### Sky
 [조명: 태양과 하늘](sun-and-sky-tabs.html) 설정에서 지정된 대로 개체에 하늘이 비춰집니다.
 
-#### Custom
+#### 사용자 지정
 Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-image), or [HDR](#hdr-background) background.
 
 #### Visible Background
@@ -284,7 +285,7 @@ Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-
 #### Sky
 [조명: 태양과 하늘](sun-and-sky-tabs.html) 설정에서 지정된 대로 개체가 하늘을 굴절시킵니다.
 
-#### Custom
+#### 사용자 지정
 Objects refract a [Color or gradient](#color-and-gradient-backgrounds), [Image](#image), or [HDR](#hdr-background) background.
 
 #### Visible Background

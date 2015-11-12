@@ -1,8 +1,9 @@
 ---
+title: 데칼
 ---
 
 
-# Decals
+# {{page.title}}
 데칼은 재질을 간접적으로 사용하지 않고, 개체에 직접 적용하는 비(非) 타일 방식의 이미지 맵입니다. 개체 색, 반사도 또는 범프에서 제한된 부분을 수정할 때 데칼을 사용합니다.
 Decals consist of a single instance of the image, rather than being tiled as they are when used in a [material definition](materials-tab.html).
 데칼의 용도:
@@ -19,7 +20,7 @@ Decals consist of a single instance of the image, rather than being tiled as the
 {: #decal-list}
 {: #decal-placement}
 
-###  **추가** 
+###  **추가**
 {: #add-decal}
 1. Select one or more objects.
 1. On the **Edit** menu, click **Object Properties**.
@@ -30,23 +31,23 @@ Decals consist of a single instance of the image, rather than being tiled as the
 1. At the prompts for points, pick points on the model to locate the decal.
 The precise sequence depends on the type of decal selected: [Planar](#decal-planarmapping), [Cylindrical](#decal-cylindricalmapping), or [UVMap](#decal-uvmapping).
 
-###  **Edit Placement** 
+###  **Edit Placement**
 {: #decal-edit-placement}
 1. Click the **Edit Placement** button.
 1. At the **Select control point** prompt, use the graphical editor to change the placement of the decal.
 1. Press **Enter** when finished.
 
-###  **속성** 
+###  **속성**
 {: #decal-properties}
 1. Click the **Properties** button.
 1. In the **Decal Properties** dialog box, use the controls to change the decal's properties.
 
-###  **Delete** 
+###  **Delete**
 {: #decal-delete}
 
->Click the **Delete** button.
+>**삭제** 단추를 클릭합니다.
 
-###  **Move up** / **Move down** 
+###  **위로 이동** / **아래로 이동**
 {: #decal-movedown}
 {: #decal-moveup}
 When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
@@ -183,5 +184,4 @@ Sets the highlight color to match the base color. See [Advanced Material Propert
 ### Transparency
 Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
 IOR
-Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction) 
-
+Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction)

@@ -1,9 +1,10 @@
 ---
+title: Options Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Options: Flamingo nXt
-These settings apply to the Flamingo application.  Making changes here will change how Flamingo runs all the time.
+# ![images/options.svg](images/options.svg) {{page.title}}
+이 설정은 Flamingo 응용 프로그램에 적용됩니다. 이 설정을 변경하면 Flamingo를 실행할 때마다 항상 적용됩니다.
 
 {: #default-decal-link-state}
 {% include_relative snippets/snippet-linking.md %}

@@ -4,7 +4,7 @@
 <!-- TODO: This is a combination of the old information here and the Rhino render Windows.  These two still need to be combined. -->
 
 # 렌더링 창
-The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rednering frameowrk.  For details on the rederwindow menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)
+렌더링 창에는 노출을 조정하고 후처리 효과를 더하는 옵션이 있습니다. 렌더링 창의 메인프레임은 Rhino 렌더링 프레임워크의 일부입니다. 렌더링 창 메뉴와 아이콘에 대한 정보는 [렌더링 창 항목](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm) 을 참조하세요.
 
 ### 메뉴
 렌더링 창 메뉴와 아이콘에 대한 자세한 안내는 [렌더링 창 항목](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm) 을 참조하세요.
@@ -28,7 +28,7 @@ The render window provides options for exposure adjustment and adding post-proce
 
 ### EXR 파일로 내보내기
 {: #export-to-exr}
-A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See: [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
+HDR (high-dynamic-range) 이미지 형식은 Industrial Light and Magic (ILM)에서 무료 소프트웨어 라이선스로 개발한 소프트웨어 툴과 함께 오픈 스탠다드로 릴리스되었습니다. 이 파일 형식은 1 비트 부호, 5 비트 지수(指數), 10 비트 가수(假數)로 채널당 16비트 부동 소수점 값 (절반의 정밀도: half precision)을 지원합니다.  30 스톱 노출의 동적 범위(dynamic range)가 허용됩니다. 참조: [Wikipedia 항목: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
 exr 형식은 High Dynamic Range 형식에 있는 휘도 데이터를 직접 저장합니다. 일반 사진처럼 휘도가 없는 배경을 이러한 형식으로 저장하면 검정색으로 나타납니다.
 
 ## 끝내기
@@ -59,7 +59,7 @@ exr 형식은 High Dynamic Range 형식에 있는 휘도 데이터를 직접 저
 ## 이미지 조정
 {: #adjust-image}
 화면 디스플레이를 제어하는 설정으로, 해당 디스플레이에서 만들어진 이미지 파일도 제어합니다. 다른 노출이 설정된 여러 개의 이미지 파일도 하나의 렌더링에서 저장할 수 있습니다. 렌더링된 이미지 하나의 노출 설정이 다음 이미지에도 적용됩니다.
-This adjustment process is called *tone mapping.* Tone mapping is the process of converting the luminance data used by Flamingo nXt into Red, Green, and Blue (RGB) pixels that can be displayed or printed.
+이 조정 처리를 *톤 매핑*이라고 합니다. 톤 매핑은 Flamingo nXt에서 사용된 휘도 데이터를 디스플레이 또는 인쇄에 사용하기 위해 빨강, 초록, 파랑(RGB) 픽셀로 변환하는 과정입니다.
 
 ### 밝기
 {: #brightness}
@@ -69,7 +69,7 @@ This adjustment process is called *tone mapping.* Tone mapping is the process of
 {% include_relative snippets/snippet-brightness.md %}
 ### 번
 {: #burn}
-Adjusts the image white point. This is the brightest white color in the image. Burn can add drama, life, and sharpness to a rendering by adding more areas of white to contrast with the dark areas.
+이미지의 흰 점을 조정합니다. 이것은 이미지에서 가장 밝은 흰색입니다. 번(Burn)은 어두운 곳과 대비되는 흰색을 더 많이 추가하므로 렌더링에 더욱 생생하고 극적인 느낌을 더하고, 선명하게 만들 수 있습니다.
 [Wikipedia 항목: White point](http://en.wikipedia.org/wiki/White_point)을 참조하세요.
 ![images/burn-001.png](images/burn-001.png)
 *기본 설정 상태의 번 효과 (왼쪽), 증가된 상태.*
@@ -161,11 +161,11 @@ Distance
 ![images/moveup.png](images/moveup.png)선택된 효과를 목록에서 위로 이동시킵니다.
 ![images/movedown.png](images/movedown.png)선택된 효과를 목록에서 아래로 이동시킵니다.
 ![images/effectproperties.png](images/effectproperties.png)선택된 효과의 속성.
-![images/savelistorderasdefault.png](images/savelistorderasdefault.png)Save the current effects list order and properties as default.
-![images/savecurrenteffectslist.png](images/savecurrenteffectslist.png)Save the current effects list as named list.
-![images/importnamedeffectslist.png](images/importnamedeffectslist.png)Import named effects list.
+![images/savelistorderasdefault.png](images/savelistorderasdefault.png)현재 효과 목록 순서와 속성을 기본값으로 저장합니다.
+![images/savecurrenteffectslist.png](images/savecurrenteffectslist.png)현재 효과 목록을 명명된 목록으로 저장합니다.
+![images/importnamedeffectslist.png](images/importnamedeffectslist.png)명명된 효과 목록을 가져옵니다.
 
-## Depth of Field
+## 피사계 심도 (DOF)
 {: #postprocessingdof}
 피사계 심도 효과는 카메라로부터의 거리에 따라 이미지에 흐림 효과를 줍니다.
 ![images/postprocessing-dof.png](images/postprocessing-dof.png)
@@ -173,30 +173,30 @@ Distance
 ## 피사계 심도 속성
 {: #depth-of-field-properties}
 
-### Visual Properties
+### 시각적 속성
 {: #dofvisualproperties}
 
-#### Blurring strength
+#### 흐림 강도
 {: #dofblurringstrength}
 흐림의 정도를 결정합니다. 이 값은 임의의 값이며, 서로 다른 이미지에 다른 값을 적용하는 것이 적합합니다.
 
-#### Max blurring
+#### 최대 흐림
 {: #dofmaxblurring}
 사용되는 최대 흐림 반지름을 결정합니다. 극도로 흐린 영역에서는 효과의 속도가 느려지므로, 이 설정으로 효과를 제한합니다.
 
-### Area of Effect
+### 효과 영역
 {: #dofareaofeffect}
 
-#### Focal distance
+#### 초점 거리
 {: #dofocaldistance}
 카메라로부터, 이미지에 초점이 맞춰져 있는(흐리지 않은) 지점까지의 거리입니다.
 
-#### Pick
+#### 지정
 초점 거리를 설정하기 위해 이미지에서 한 점을 지정합니다.
 
-#### Blur background
+#### 흐린 배경
 {: #dofblurbackground}
-Determines whether the background is blurry. The background will be blurred at the maximum effect.
+배경을 흐리게 되는지를 지정합니다. 배경이 최대 효과로 흐림 처리됩니다.
 
 ## 안개
 {: #postprocessingfog}
@@ -244,51 +244,51 @@ Strength = 1Noise = .1Fog Color = BlackEnd distance = approximately 110Start dis
 
 #### 끝 거리
 {: #fogenddistance}
-Specifies the distance from the camera at which the maximum amount of fogginess is achieved.
+카메라로부터의 거리(안개가 최대치로 나타나는 곳)를 지정합니다.
 
 >렌더링된 이미지에서 깊이를 지정하려면 **지정** 단추를 클릭합니다.
 
-### Bounds (Left, Right, Top, Bottom)
+### 바운드 (왼쪽, 오른쪽, 위, 아래)
 {: #fogbounds}
-Specifies the area of the image affected by the fog. This can be used to create a low-lying mist effect.
-Click the **Pick Area** button to pick bounding area from the rendered image.
+안개의 영향을 받는 영역을 지정합니다. 낮게 깔린 엷은 안개 효과를 줄 때 사용할 수 있습니다.
+렌더링된 이미지에서 경계 영역을 지정하려면 **영역 지정** 단추를 클릭합니다.
 
-### Fog
+### 안개
 
-#### Fog background
+#### 안개 배경
 배경 이미지에 안개 효과를 주는지를 지정합니다. 배경에도 안개가 최대 강도로 표시됩니다.
 
-#### Feathering
+#### 페더링
 {: #fogfeathering}
-Determines the number of pixels outside the bounding area to “fade in” the fogginess.
+경계 영역 바깥에 있어 안개에서 *점점 흐려지는* 픽셀의 개수를 지정합니다.
 
 ### 미리보기
 값을 변경하면 그에 따라 달라지는 이미지 효과를 미리 봅니다.
 
-## Glare
+## 글레어
 {: #postprocessingglare}
 글레어와 글로우는 매우 비슷합니다. 글로우는 선택된 색을 사용하는 반면에, 글레어는 색을 흰색으로 보이게 합니다. 글레어는 이미지에서 극도로 밝은 부분이 글레어로 나타나게 하며, 밝은 부분을 둘러싼 부분을 더욱 밝게 하는 방법으로 이를 실행합니다. 대개 야간 장면에 매우 은은한 글레어 효과가 사용되며, 빛이 더욱 사실적으로 표현됩니다.
 ![images/postprocessing-noglare.png](images/postprocessing-noglare.png)
-*Glare off (left) and on (right).*
+*글레어가 꺼진 상태 (왼쪽), 켜진 상태 (오른쪽).*
 
-## Glare Properties
+## 글레어 속성
 {: #glaresettings}
 
-### White point bound
+### 흰점 바운드
 {: #glarewhitepointbound}
-Determines where in the tonal range the glare will begin. The value is represented on the histogram and can be adjusted graphically. Pixels lighter than the **White Point Bound** (in either luminance or the grey-scale value) will glare.
+글레어가 시작하는 톤 범위가 어디인지 결정합니다. 값은 히스토그램으로 표시되며, 그래픽을 통해 조정이 가능합니다. **흰점 바운드**보다 가벼운(휘도 또는 회색조 명도를 기준으로) 픽셀이 글레어로 표시됩니다.
 
-### Glare size
+### 글레어 크기
 {: #glaresize}
 밝은 픽셀을 둘러싼 글레어의 반지름.
 
-### Gain
+### 게인
 {: #glaregain}
 게인이란 글레어 밝기의 승수(乘數:곱하는 수)입니다. 기본값인 1.0은 보통 글레어 효과를 나타냅니다. 그보다 높은 값을 사용하면 극도로 밝은 글레어 효과를 얻을 수 있습니다.
 
-### Use photometric information
+### 광도 정보 사용
 {: #glareusephotometric}
-When using photometric information, the amount of glare is controlled by how &quot;whiter than white&quot; the pixel is. Otherwise, the effect uses the whitest pixels in the image.
+광도 측정 정보를 사용할 때, 글레어의 양은 픽셀이 얼마나 &quot;흰색보다 더 하얀지&quot;로 결정됩니다. 그렇지 않으면, 이미지에서 가장 하얀 픽셀이 효과에 사용됩니다.
 
 ### 히스토그램
 {: #glarehistogram}
@@ -309,16 +309,16 @@ When using photometric information, the amount of glare is controlled by how &qu
 ### 미리보기
 값을 변경하면 그에 따라 달라지는 이미지 효과를 미리 봅니다.
 
-## Glow
+## 글로우
 {: #postprocessingglow}
 글로우 효과는 특정 색 주변에 밝은 부분을 만듭니다. 유색 조명을 만들거나, 네온 조명과 같은 개체를 빛나게 할 때 사용합니다. 이미지에 효과를 주는 10개의 색까지 선택할 수 있습니다.
 그림에서 루비의 빨간색이 게인 설정과 함께 사용되어 흰색에 가까운 색이 되었습니다.
 ![images/postprocessing-glowassparkle.png](images/postprocessing-glowassparkle.png)
-*Glow as sparkle.*
+*반짝거림으로 표현됩니다.*
 ![images/postprocessing-glowon.png](images/postprocessing-glowon.png)
-*Glow off (left) and on (right).*
+*글로우가 꺼진 상태 (왼쪽), 켜진 상태 (오른쪽).*
 
-## Glow Properties
+## 글로우 속성
 {: #glowsettings}
 
 ### 켜기
@@ -331,28 +331,28 @@ When using photometric information, the amount of glare is controlled by how &qu
 >[색 선택](select-color.html) 대화상자에서 색 견본을 클릭하여 색을 선택합니다.
 >렌더링된 이미지에서 색을 선택하려면 **지정** 단추를 클릭합니다.
 
-### Sensitivity
+### 감도
 {: #glowsensitivity}
-Controls how much variation on the selected color is permitted when calculating glow on pixels close to that color.
+선택된 색과 가까운 픽셀에서의 글로우를 계산할 때, 선택된 색에 어느 정도 변형을 줄 수 있는지를 제어합니다.
 
-### Glow Size
+### 글로우 크기
 {: #glowsize}
 밝은 픽셀을 둘러싼 글로우의 반지름.
 
-### Gain
+### 게인
 {: #glowgain}
 게인이란 글로우 밝기의 승수(乘數:곱하는 수)입니다. 기본값인 1.0은 보통 글로우 효과를 나타냅니다. 그보다 높은 값을 사용하면 극도로 밝은 글로우 효과를 얻을 수 있습니다.
 
 ### 미리보기
 값을 변경하면 그에 따라 달라지는 이미지 효과를 미리 봅니다.
 
-## Wires &amp; Text
+## 와이어와 텍스트
 {: #postprocessingwireframe}
 렌더링된 이미지 위에 커브, 텍스트, 치수, 아이소커브, 메쉬 가장자리, 점 개체를 오버레이합니다.
 ![images/posteffectwires-001.png](images/posteffectwires-001.png)
-*With (left) and without Wires &amp; Text (right).*
+*와이어와 텍스트 설정이 적용된 상태 (왼쪽), 적용되지 않은 상태 (오른쪽).*
 
-## Wires and Text Properties
+## 와이어와 텍스트 속성
 
 ### 커브
 커브 개체를 표시합니다.
@@ -366,7 +366,7 @@ Controls how much variation on the selected color is permitted when calculating 
 ### 메쉬 가장자리
 메쉬 가장자리를 표시합니다.
 
-### Points
+### 점
 점 개체를 표시합니다.
 
 ### 미리보기
