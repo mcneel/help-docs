@@ -23,7 +23,20 @@ For technical support, tutorials, examples, and information about how to get sta
 > [Technical support](http://nxt.flamingo3d.com/forum)
 
 ## Help Documentation
- * On the Flamingo nXt menu, click Control Panel. The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
+Help documentation for Flamingo comes in a few languages:
+
+* [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
+* [Deutsch]({{baseurl}}/de/flamingo/5/help)
+* [English]({{baseurl}}/en/flamingo/5/help)
+* [Español]({{baseurl}}/es/flamingo/5/help)
+* [Français]({{baseurl}}/fr/flamingo/5/help)
+* [Italiano]({{baseurl}}/it/flamingo/5/help)
+* [日本語]({{baseurl}}/jp/flamingo/5/help)
+* [한국어]({{baseurl}}/kr/flamingo/5/help)
+* [中文(繁 體)]({{baseurl}}/tw/flamingo/5/help)
+
+## Getting Started
+On the Flamingo nXt menu, click Control Panel. The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
 
 > [Materials](../help/material-editor.html)
 > [Lighting](../help/lighting-tab.html)
