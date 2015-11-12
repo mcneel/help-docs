@@ -1,7 +1,7 @@
 ---
 title: Automated rendering
 ---
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} {{page.title}}
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
 
 #### Simple Material Types:
