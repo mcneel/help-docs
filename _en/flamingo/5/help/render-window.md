@@ -1,7 +1,8 @@
 ---
+title: Render Window
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Render Window
+# ![images/render.svg](images/render.svg){:height="75px" width="75px"} {{page.title}}
 The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
 
 ## Managing an Active Rendering

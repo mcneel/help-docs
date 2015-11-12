@@ -1,8 +1,9 @@
 ---
+title: Flamingo Command List
 ---
 
 
-# Flamingo Command List
+# {{page.title}}
 
 ### FlamingoNXtAbout
 {: #flamingonxtabout-command}

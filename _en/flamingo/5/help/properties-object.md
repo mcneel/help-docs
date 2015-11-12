@@ -1,8 +1,9 @@
 ---
+titla: Object Properties
 ---
 
 
-#  ![images/properties.svg](images/properties.svg){:height="75px" width="75px"} Object Properties
+#  ![images/properties.svg](images/properties.svg){:height="75px" width="75px"} {{page.title}}
 Flamingo nXt object properties only affect the way objects are rendered in Flamingo nXt.
 
 ### ![images/materialtab.png](images/materialtab.png) Material Source
