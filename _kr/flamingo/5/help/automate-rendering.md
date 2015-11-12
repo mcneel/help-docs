@@ -1,10 +1,11 @@
 ---
+title: 자동 렌더링
 ---
 
-# Automated rendering
+# {{page.title}}
 
 
-## Batch rendering
+## 일괄 렌더링
 {: #batch-rendering}
 Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
 
@@ -12,7 +13,7 @@ Batch jobs let you submit multiple jobs to be rendered automatically. A Batch jo
 
  * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
 
-### Batch Render Dialog
+### 일괄 렌더링 대화상자
 {: #batch-render}
 Start by adding a job, then edit the properties to set up batch jobs.
 
@@ -22,16 +23,16 @@ Each Batch job is based on a view saved in the model.  Click on the Add item to 
 #### 삭제
 Select and existing batch job.  Then use Delete to remove the job from the batch list.
 
-#### Properties
+#### 속성
 Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
 
-#### Move Up
+#### 위로 이동
 목록에서 뷰포트 이름을 위로 이동시킵니다.
 
-#### Move Down
+#### 아래로 이동
 목록에서 뷰포트 이름을 아래로 이동시킵니다.
 
-#### Batch List
+#### 일괄 목록
 {: #batch-list}
 Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
 
@@ -51,13 +52,13 @@ Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be re
 ### Batch Render Properties
 {: #batch-render-properties}
 
-#### Viewport to render
+#### 렌더링할 뷰포트
 Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
 
-#### File name
+#### 파일 이름
 Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
 
-#### Alpha channel
+#### 알파 채널
 Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
 
 #### Use document settings
@@ -72,7 +73,7 @@ Set the number of passes needed to finish the batch job.  See the [Passes](docum
 
 <!-- Commented out until automated render can be determined
 
-## Animations
+## 애니메이션
 {: #animation}
 There are two ways to create animations in Rhino.  Animations can be configured using [Rhino's Animation toolbar](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm) or using the [Bongo](http://bongo.rhino3d.com/) animation plugin.
 
@@ -109,7 +110,7 @@ Resets the **Render** command to render directly instead of to the farm.
 ### Render to farm
 Redirects the **Render** command to render to the farm.
 
-### Job name
+### 작업 이름
 Specifies the **Render Farm**  [Job name](automate-rendering.html#job-name).
 
 ## 렌더링 제한 조건
@@ -117,6 +118,6 @@ Specifies the **Render Farm**  [Job name](automate-rendering.html#job-name).
 ### Number of render passes to render
 Specifies the [number of passes](documentproperties-flamingo.html#number-of-passes).
 
-### Save alpha channel
+### 알파 채널 저장
 Saves the [alpha channel](render-window.html#save-with-alpha-channel) background.
 -->

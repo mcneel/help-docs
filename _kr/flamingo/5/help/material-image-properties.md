@@ -1,8 +1,9 @@
 ---
+title: 재질 이미지 속성
 ---
 
 
-# ![images/images.svg](images/images.svg){:height="75px" width="75px"} Material Image Properties
+# ![images/images.svg](images/images.svg) {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -16,16 +17,16 @@ Materials can be created from images. Scan photographs and real materials like w
 
 이미지 맵은 다양한 방식으로 사용될 수 있습니다. 일반적인 방식은 실제 재질의 사진을 재질색으로 사용하는 것입니다.
 
-## Name
+## 이름
 Image Textures can be named.  This name is used by the Texture library of the RDK and has no real impact on Flamingo.
 
-## Flamingo Image
+## Flamingo 이미지
 
-### Image preview
+### 이미지 미리보기
 {: #image-preview}
 Displays a preview of the selected image file. Hold the mouse over the image to see a pop-up of the image file name.  Click on the image to select a different image.
 
-#### Image resolution
+#### 이미지 해상도
 {: #image-resolution}
 Displays the resolution in pixels of the current image file.
 
@@ -33,7 +34,7 @@ Displays the resolution in pixels of the current image file.
 {: #tiles}
 재질 정의에 사용되는 이미지 맵은 항상 반복됩니다 (타일 처리). 이 설정은 각 인스턴스(타일)의 크기가 현재 모델 단위에서 얼마나 큰지를 지정합니다.
 
-#### Width/Height
+#### 너비/높이
 {: #width-height}
 Sets the tile size in model units.
 {% include_relative snippets/snippet-lock-widthheight.md %}
@@ -44,11 +45,11 @@ Sets the tile size in model units.
 {: #mapping-type}
 Images normally apply to the color channel. But there are other ways to use images.  Images can be set as:
 
-> [Standard](#standard)
+> [표준](#standard)
 > [Normal](#normal)
 > [Displacement](#displacement)
 
-### Standard
+### 표준
 {: standard}
 The image provides color and visual bump to the material. Use the Strength and Bump values to control how the bitmap will influence the material.
 
@@ -80,13 +81,13 @@ This image map displaces the surface render mesh based on the color values in th
 
 ![images/displacement.png](images/displacement.png)
 
-#### Height
+#### 높이
 {: #height}
 변위의 가장 높은 지점의 높이.
 
 ![images/displacementheight.png](images/displacementheight.png)
 
-#### Offset
+#### 간격띄우기
 {: #offset}
 Sets the starting point of the displacement with reference to the surface normal. The displacement can take place completely outside, inside, or some ratio inside and outside the part.
 
@@ -99,13 +100,13 @@ Sets the starting point of the displacement with reference to the surface normal
 ![images/displacementz-003.png](images/displacementz-003.png)
 *Z-offset = 0.0*
 
-#### Facet size
+#### 패싯 크기
 {: #facet-size}
 The size of the facets of the displacement mesh. This will increase the detail in the displacement, but also will increase rendering size and memory usage.
 
 ![images/facetsize.png](images/facetsize.png)
 
-## Flamingo Image Advanced
+## Flamingo 이미지 고급
 {: #advanced}
 Normally a Flamingo Image will apply to the main color channel of a material. The Flamingo Advanced dialog specifies other channels that the bitmap can effect.  These are used for very special effects.
 

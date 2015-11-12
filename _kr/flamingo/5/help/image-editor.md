@@ -1,129 +1,129 @@
 ---
+title: 이미지 편집기
 ---
 
-
-# Image Editor
+# {{page.title}}
 nXt 이미지 편집기는 nXt 플랫폼에서 만들어진 원시 이미지 파일 (.nXtImage)을 편집할 수 있습니다. 이 원시 파일에는 렌더링이 실행되는 동안 수집된 모든 정보가 담겨 있습니다.
-By using the nXt Image Editor, you can:
+nXt 이미지 편집기를 사용하여 다음과 같은 기능을 실행할 수 있습니다:
 <!-- TODO: This page needs to be updated.  One of the last we will work on. The image editor is not used much.-->
 
->Adjust the [tone operator](image-editor.html#tone-mapping) settings.
->Change the intensity of any lighting channel.
+>[톤 연산자](image-editor.html#tone-mapping) 설정을 조정합니다.
+>조명 채널의 강도를 변경합니다.
 >Add special image-based effects: [Haze](image-editor.html#haze), [Depth Blur](image-editor.html#depth-blur), and [Glare](image-editor.html#glare).
 > [Save](image-editor.html#save-tonemapped-image-as) a tone-mapped image in a bitmap format such as .jpg or .png.
 >Save the luminance information to an [HDR format](image-editor.html#save-hdr-image-as).
 >View and save additional masked channels ( [alpha](image-editor.html#alpha-channel), [distance](image-editor.html#distance-channel), [material](image-editor.html#material-channel) ) for use in advanced compositing.
 >Save a [Piranesi©](http://www.piranesi.co.uk/) file format (*.epx) which can be used to create non photorealistic rendering.
 >렌더 팜에서 별도의 노드로 생성된 이미지를 짜집기하는 등의 작업을 할 때는 이미지를 산술로 설정하여 사용하십시오.
->Save the [Lighting Settings](image-editor.html#save-lighting-settings-as) used to generate this rendering. These Lighting Settings can then be used to generate more renderings.
+>이 렌더링을 생성하는 데 사용된 [조명 설정](image-editor.html#save-lighting-settings-as)을 저장합니다. 이 조명 설정을 사용하여 더 많은 렌더링을 만들 수 있습니다.
 
 편집기를 시작하려면
 
->On the **Flamingo nXt** menu, click **Utilities &gt; Flamingo nXt Image Editor**.
+>**Flamingo nXt** 메뉴에서 **유틸리티 &gt; Flamingo nXt 이미지 편집기**를 클릭합니다.
 
 ## 파일 메뉴
 {: #file-menu}
 
-### Open
+### 열기
 nXtImage 형식으로 저장된 파일을 편집용으로 엽니다.
 
-### Save Source Image
+### 원본 이미지 저장
 nXtImage 파일을 저장합니다.
 
-### Save Source Image As
+### 원본 이미지를 다른 이름으로 저장
 nXtImage 파일을 다른 이름으로 저장합니다.
 
-### Save Tonemapped Image As
+### 톤맵 이미지를 다른 이름으로 저장
 {: #save-tonemapped-image-as}
 편집된 이미지를 비트맵 이미지 파일로 저장합니다.
 
 >JPEG (.jpg)
 >TIFF (.tif)
->TIFF with Alpha Channel (.tif)
+>TIFF - 알파 채널 포함 (.tif)
 >PNG (.png)
 >PNG with Alpha Channel (.png)
-> [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/)
+> [Piranesi EPix 파일 (.epx)](http://www.piranesi.co.uk/)
 
 Piranesi는 손으로 그린 것처럼 표현된 이미지를 만드는 3D 페인팅 도구입니다.
 
-### Save HDR Image As
+### HDR 이미지를 다른 이름으로 저장
 {: #save-hdr-image-as}
 HDR 파일 (.hdr)
 EXR 파일 (.exr)
 EXR - 알파 채널 포함 (.exr)
 
-### Save Mask
+### 마스크 저장
 {: #save-mask}
 nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵 편집기에서 높은 수준의 합성 작업을 할 때 사용할 수 있습니다. 이러한 채널의 각 픽셀에는 알파, 거리, 재질 정보가 담겨 있으며, 회색조 이미지로 인코딩됩니다. 이 채널은 png 파일로 보고 저장할 수 있습니다.
 
 ## 안내:
 
->The alpha channel can be included with a tone-mapped image by selecting a file format with Alpha when saving a tone-mapped image.
->Distance and Materials channels are not antialiased and may show some hard-edged artifacts. Adding a small amount of Gaussian blur to a mask before using it may help soften these edges.
->The Materials channel will only uniquely encode 255 different materials. If your model contains more materials than that, some mask colors will repeat.
+>톤맵 처리된 이미지를 저장할 때 알파를 포함하도록 파일 형식을 선택하면 톤맵 처리된 이미지에 알파 채널이 포함될 수 있습니다.
+>거리와 재질 채널은 앤티 앨리어싱되지 않으며, 가장자리가 각진 아티팩트가 일부 표시될 수 있습니다. 사용하기 전에 마스크에 가우스 흐림을 조금 추가하면 이 가장자리가 부드러워질 수 있습니다.
+>재질 채널은 고유하게 255개의 서로 다른 재질로 인코드됩니다. 모델에 그 보다 많은 재질이 있다면 일부 마스크 색이 반복될 것입니다.
 
-#### Materials Channel
+#### 재질 채널
 {: #material-channel}
 재질 채널 마스크를 저장합니다.
 ![images/materialchannel.png](images/materialchannel.png)
 
-#### Alpha Channel
+#### 알파 채널
 {: #alpha-channel}
 알파 채널 마스크를 저장합니다.
 ![images/alphachannel.png](images/alphachannel.png)
 
-#### Distance Channel
+#### 거리 채널
 {: #distance-channel}
 거리 채널 마스크를 저장합니다.
 ![images/distancechannel.png](images/distancechannel.png)
 
-### Save Lighting Settings As
+### 조명 설정을 다른 이름으로 저장
 {: #save-lighting-settings-as}
-Saves the [lighting scheme](lighting-tab.html#open-lighting-scheme).
+[조명 구성표](lighting-tab.html#open-lighting-scheme)를 저장합니다.
 
-## Image menu
+## 이미지 메뉴
 {: #renderwindowimage}
 
-### Info
+### 정보
 {: #info}
 이미지에 대한 정보를 표시합니다.
 
-### Arithmetic
+### 산술
 {: #arithmetic}
-Allows piecing together or overlaying segments of images rendered using the [Render Farm Single Image](automate-rendering.html#single-images) function.
+렌더링된 이미지 조각들을 [렌더 팜 단일 이미지 기능](automate-rendering.html#single-images)을 사용하여 하나로 합치거나 오버레이합니다.
 
 이미지 조각을 모으려면
-1. On the **File** menu, click **Open**.
+1. **파일** 메뉴에서 **열기**를 클릭합니다.
 시퀀스의 첫 번째 이미지를 선택합니다. (예: 000000.nXtImage)
-1. On the **Image** menu, click **Arithmetic**, and then click **Add**.
-1. Select all of the other images in the sequence.
- **Note:** Do not select the first image (000000.nXtImage) again or it will be added twice.
+1. **이미지** 메뉴에서 **산술**을 클릭하고 **추가**를 클릭합니다.
+1. 시퀀스의 모든 다른 이미지를 선택합니다.
+ **안내:** 첫 번째 이미지 (000000.nXtImage)를 다시 선택하지 않습니다. 그렇지 않으면 첫 번째 이미지가 2번 추가됩니다.
 
 #### 추가
 한 레이어의 픽셀값을 다른 레이어에 추가합니다. 값이 255를 넘으면 (RGB의 경우), 흰색이 표시됩니다.
 
-#### Subtract
+#### 빼기
 다른 레이어에서 한 레이어의 픽셀 값을 뺍니다. 값이 음수인 경우, 검정색이 표시됩니다.
 
-#### Difference
+#### 차이
 항상 양(+)의 값을 얻기 위해 아래 레이어에서 위 레이어를 (또는 그 반대로) 뺍니다. 모든 색의 값은 0 이므로 검정과 블렌드하면 변화가 없습니다. 흰색과 블렌드하면 그림이 반전됩니다.
 
-#### Masked Add
+#### 마스크 추가
 블렌드할 때 투명한 알파 채널 마스크를 적용시킵니다.
 
-#### Combine Path Tracings
-Combines images rendered using the Path Tracer engine so that, for example, when you combinine ten images rendered with 20 passes each becomes the equivalent of an image rendered with 200 passes.
-*![images/combinedpathtrace200.png](images/combinedpathtrace200.png) *Rendered with 20 passes (left), ten 20-pass images combined to create a 200-pass image (right).* *
+#### 경로 추적 결합
+경로 추적기 엔진을 사용하여 렌더링된 이미지를 결합합니다. 예를 들어, 20번의 패스로 렌더링된 10개의 이미지를 결합하면 200번의 패스를 거쳐 렌더링된 이미지와 마찬가지가 됩니다.
+*![images/combinedpathtrace200.png](images/combinedpathtrace200.png) *20번의 패스로 렌더링된 이미지 (왼쪽), 20번의 패스로 렌더링된 10개의 이미지로 만든 200 번 패스 이미지 (오른쪽).* *
 
-### Apply Patch
+### 패치 적용
 {: #apply-patch}
 선택된 부분만 렌더링된 이미지를 이미 렌더링된 이미지에 삽입합니다.
 
-### Animation
-You can animate by changing the image information.
+### 애니메이션
+이미지 정보를 변경하며 애니메이션 실행할 수 있습니다.
 
 이미지 효과를 애니메이션 실행하려면
-1. Set up the first image.
+1. 첫 번째 이미지를 설정합니다.
  
 Click the **Plus (+)** button next to the **Frame** edit box.
 1. Edit the image and add frames.
@@ -143,66 +143,66 @@ Click the **Plus (+)** button next to the **Frame** edit box.
 원래 렌더링된 이미지를 표시합니다.
 ![images/fx-001.png](images/fx-001.png)
 
-### Image and Alpha Mask
+### 이미지와 알파 마스크
 이미지와 알파 채널 마스크를 함께 표시합니다.
 ![images/imageandalpha.png](images/imageandalpha.png)
 
-### Material Mask
-Displays the [material mask](image-editor.html#material-channel).
+### 재질 마스크
+[재질 마스크](image-editor.html#material-channel)를 표시합니다.
 ![images/materialchannel.png](images/materialchannel.png)
 
 ### 거리 마스크
 [거리 마스크](image-editor.html#distance-channel)를 표시합니다.
 ![images/distancechannel.png](images/distancechannel.png)
 
-## Using the image editor
+## 이미지 편집기 사용
 
-##### Load an Image
+##### 이미지 로드
 1.  [Save](render-window.html#export-to-nxtimage) your rendering results as an. **nXtImage**.
 1. On the **Flamingo nXt** menu, click **Utilities &gt; Flamingo nXt Image Editor**.
 1. In the **nXt Image Editor**, on the File menu, click **Open** to load the image into the editor.
 
 <!-- TODO: OK, this time I didn't remove the #### -->
 
-## Tone mapping
+## 톤 매핑
 {: #tone-mapping}
-Tone mapping is the process of converting the luminance data used by nXt into RGB pixels that can be displayed or printed.
+톤 매핑은 nXt에서 사용된 휘도 데이터를 디스플레이나 인쇄가 가능한 RGB 픽셀로 변환하는 과정입니다.
 
-## Tone mapping controls
+## 톤 매핑 제어
 
 ### 밝기
 {: #brightness}
-See [Render Window: Brightness](render-window.html#brightness).
+[렌더링 창: 밝기](render-window.html#brightness)를 참조하세요.
 {% include_relative snippets/snippet-brightness.md %}
 ### 번
-See [Render Window: Burn](render-window.html#burn)
+[렌더링 창: 번](render-window.html#burn)을 참조하세요.
 
 ### 채도
 See [Render Window: Saturation](render-window.html#saturation)
 
 ### 히스토그램
-See [Render Window: Histogram](render-window.html#histogram)
+[렌더링 창: 히스토그램](render-window.html#histogram)을 참조하세요.
 
-## Status Fields
+## 상태 필드
 상태 필드는 화면의 아래쪽에 위치합니다. 커서를 이미지에서 움직이면 이 필드에 각 픽셀에 대한 정보가 표시됩니다.
 
-### Pixel
+### 픽셀
 {: #pixel}
 왼쪽 아래 모서리를 기준으로 측정된 픽셀 좌표.
 
 ### 색
 {: #color}
-The first three fields display the RGB colors displayed in the image after tonemapping. The fourth field shows the alpha (transparency) channel, which is used for compositing.
+처음 필드 3개는 톤매핑 이후에 이미지에 표시되는 RGB 컬러를 나타냅니다. 4번째 필드는 합성에 사용되는 알파 (투명도) 채널을 나타냅니다.
 
-### Value
+### 값
 {: #value}
 빨강, 초록, 파랑 하위 채널의 휘도값입니다.
 
-### Lum
+### 휘도
 {: #lum}
 각 픽셀에 저장된 휘도값의 가중 평균.
 
-### Depth
+### 깊이
 {: #depth}
 보는 이로부터 각 픽셀이 떨어져 있는 거리를 미터 단위로 표시합니다. 음의 값은 배경 픽셀을 나타냅니다.
 
@@ -210,10 +210,10 @@ The first three fields display the RGB colors displayed in the image after tonem
 {: #material}
 픽셀을 렌더링하는 데 사용된 재질의 이름.
 
-## FX Settings
+## FX 설정
 <!-- TODO: Do we want some information here? -->
 
-## Haze
+## 옆은 안개
 {: #haze}
 카메라에서 멀리 떨어져 있는 픽셀에 색을 더합니다. 이 효과는 장면에 옅은 안개 또는 안개를 추가하거나, 배경을 색으로 마스크 처리, 배경색을 변경할 때 사용할 수 있습니다.
 *![images/golden gate.png](images/golden gate.png)Original image (left) and with haze (right).*
@@ -224,72 +224,72 @@ The first three fields display the RGB colors displayed in the image after tonem
 ### Near
 옅은 안개가 각 픽셀에 색을 추가하기 시작하는 카메라로부터의 거리.
 
-#### Pick
+#### 지정
 거리를 지정하기 위해 이미지 상에서 한 점을 지정합니다.
 
 ### Far
-The distance at which the haze effect will be its maximum. All pixels beyond this point will have the maximum haze effect added to each pixel.
+옅은 안개 효과가 최대치인 거리입니다. 이 지점을 넘는 모든 픽셀은 각 픽셀에 최대 옅은 안개 효과가 더해집니다.
 가까이와 멀리 사이에 있는 픽셀은 가까이에서 멀리 있는 픽셀 선상으로 옅은 안개 효과가 더해집니다.
 
-#### Pick
+#### 지정
 거리를 지정하기 위해 이미지 상에서 한 점을 지정합니다.
 
 ### 색
 옅은 안개의 색.
 
-#### Pick
+#### 지정
 색을 지정하기 위해 이미지 상에서 한 점을 지정합니다.
 
-## Depth Blur
+## 깊이 흐림
 {: #depth-blur}
 이미지의 각 픽셀은 거리값을 가지고 있으므로 지정된 거리 사이의 이미지를 흐리게 처리하는 데 사용할 수 있습니다.
 ![images/fx-depth-001.png](images/fx-depth-001.png)
-*Original image (left) and with depth blur (right).*
+*원래 이미지 (왼쪽), 깊이 흐림이 적용된 이미지 (오른쪽).*
 
 ### Strength
 흐린 정도를 지정합니다.
 
-### Focus
+### 초점
 {: #depthblurfocus}
 이미지에서 초점이 되는 거리를 지정합니다.
 
-#### Pick
+#### 지정
 초점 거리를 설정하기 위해 이미지에서 한 점을 지정합니다.
 
-### In-Focus Zone
+### 정초점 영역
 {: #in-focus-zone}
-The distance around the **Focus** that is sharp. This value is in meters. All pixels within this distance will be sharp and will be ignored by the Blur filter. Pixels beyond this distance will be progressively blurred with neighboring pixels to give the illusion of depth of field.
+**초점**을 중심으로 선명하게 보이는 거리입니다. 이 값은 미터 단위입니다. 이 거리 안에 있는 모든 픽셀은 선명하게 보이며, 흐림 필터에서 무시됩니다. 이 거리보다 멀리 있는 픽셀은 이웃하고 있는 픽셀과 함께 점점 흐리게 처리되어 피사계 심도(DOF)를 표현합니다.
 
-### Blur
-Controls which direction the blur filter will work. The default value is **Background**. This means all pixels farther away from the camera than the **In-Focus Zone** will progressively blur.
+### 흐리게
+흐리게 필터가 실행되는 방향을 제어합니다. 기본값은 **배경**입니다. 이것은 카메라에서 정초점 영역**(In-Focus Zone)**보다 멀리 있는 모든 픽셀이 흐리게 처리되는 것을 뜻합니다.
 *![images/blur-001.png](images/blur-001.png)Blur foreground (left) and background (right).*
 
-#### Background
-Blurs pixels farther away from the camera than the **In-Focus Zone** range.
+#### 배경
+카메라에서 **정초점 영역**의 범위보다 먼 곳의 픽셀을 흐리게 표시합니다.
 
-#### Foreground
-Blurs pixels that are closer to the camera than the **In-Focus Zone** range.
+#### 전경
+카메라에 **정초점 영역** 범위보다 가까이 있는 픽셀을 흐리게 처리합니다.
 
 #### Both
-Blur pixels both in front and behind the **In-Focus Zone** range. This is a quick way to get a depth-of-field effect. It is not as accurate as using the built-in pre-render [Depth of field](render-tab.html#depthoffieldoption).
+**정초점 영역** 범위의 앞과 뒤에 있는 픽셀을 흐리게 처리합니다. 이 옵션을 사용하면 피사계 심도 (depth-of-field) 효과를 빠르게 얻을 수 있습니다. 기본 탑재된 사전 렌더링 [피사계 심도](render-tab.html#depthoffieldoption)를 사용하는 것만큼 정확하지 않습니다.
 
-## Glare
+## 글레어
 {: #glare}
-Glare affects pixels that are brighter than the Threshold in lumens by creating a halo effect on the surrounding pixels. Only the brightest pixels in the image are affected.
+글레어(Glare)는 주변 픽셀에 후광(Halo) 효과를 만들어 루멘이 임계값보다 더 밝은 픽셀에 영향을 줍니다. 이미지에서 가장 밝은 픽셀만 영향을 받습니다.
 커서를 픽셀 위에 잠시 두면 글레어가 표시되며, 해당 픽셀의 전체 루멘을 알 수 있습니다.
-*![images/glare-001.png](images/glare-001.png)Original image (left) and with glare (right).*
+*![images/glare-001.png](images/glare-001.png)원래 이미지 (왼쪽), 글레어가 적용된 이미지 (오른쪽).*
 
 ### Strength
 주변 픽셀에 영향을 주는 후광의 양을 조정합니다.
 
-### Threshold
-The lower limit of the value affected by the glare filter. All pixels brighter than this value will be affected.
+### 임계값
+글레어 필터의 영향을 받는 값의 낮은 한계. 이 값보다 밝은 모든 픽셀이 영향을 받습니다.
 
-#### Pick
+#### 지정
 명도를 지정하기 위해 이미지에서 한 점을 지정합니다.
 
-## Vignette
+## 배경 흐리게
 {: #vignette}
 후광 같은 효과를 만들기 위해 이미지의 가장자리 색을 흐리게 처리하고 블렌드합니다.
-*![images/fx-vignette-001.png](images/fx-vignette-001.png)Original image (left) and with vignette (right).*
+*![images/fx-vignette-001.png](images/fx-vignette-001.png)원래 이미지 (왼쪽), 배경 흐리게가 적용된 이미지 (오른쪽).*
 <!-- TODO: The captions for pictures under Glare and Vignette are starting to the right of the pictures, not under the pictures. -->

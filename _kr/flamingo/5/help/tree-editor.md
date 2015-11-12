@@ -1,8 +1,9 @@
 ---
+title: 식물 편집기
 ---
 <!-- TODO: This could use an update. -->
 
-# 식물 편집기
+# {{page.title}}
 {: #tree-editor}
 
 ### 파일 메뉴

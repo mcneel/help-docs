@@ -1,28 +1,28 @@
 
-### Masking
+### 마스크
 Obscures portions of the image based on either a color value or an alpha channel stored in the image. This allows textures to have complex shaped boundaries and create complex effects such as holes in a surface.
 
 다음 예에서는 알파 채널 배경을 가진 이미지가 직사각형 서피스에 데칼로 배치되었습니다. 재질을 마스크 처리할 때도 동일합니다.
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
-*Original decal image. The gray checkered area represents the image alpha channel.*
+*원래 데칼 이미지. 회색 바둑판 무늬 부분은 이미지의 알파 채널을 나타냅니다.*
 
 Masking information can come from three sources in the bitmap:
 
 > [None](#nomask)
-> [Alpha Channel](#alphamask)
-> [Color](#colormask)
+> [알파 채널](#alphamask)
+> [색](#colormask)
 
-#### None
+#### 없음
 {: #nomask}
 With no masking, the image obscures the underlying material. Masking allows the material to show through the image where the alpha channel or masking color exists. The material assigned to a planar surface in this example has a red base color.
 
 ![images/masking-002.png](images/masking-002.png)
-*Without masking (left) the image covers the surface, with masking (right), the red material shows through.*
+*마스크 처리 없음 (왼쪽) 의 경우, 이미지는 서피스를 커버합니다. 마스크 처리 (오른쪽) 의 경우는 빨간색 재질이 보입니다.*
 
-#### Alpha Channel
+#### 알파 채널
 {: #alphamask}
-Uses the image's [alpha channel](environment-tab.html#alpha) to define the masked area if one exists.
+이미지의 [알파 채널](environment-tab.html#alpha)이 있는 경우 이를 사용하여 마스크가 적용된 영역을 정의합니다.
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
 *Original on the left. The gray checkered area represents the image alpha channel. On the right is the image over a water surface.*
@@ -33,7 +33,7 @@ The alpha channel is a portion of each pixel's data that is reserved for transpa
 {: #colormask}
 If alpha channel does not exist in an image, a color in the image can be specified as a mask. There is also a sensitivity number to make the mask more or less sensitive to a single specific color as a masked color. Selecting the Color option will activate the Color Dropper, Color Selector, and Sensitivity controls.
 
-#### Color Dropper
+#### 색 스포이트
 Click to select the mask color from the bitmap. Click on the Color Dropper, then on the bitmap to pick the color. This control is only available when the Color option is selected.
 
 {% include_relative snippets/snippet-material-color-select.md %}
@@ -57,7 +57,7 @@ Transparent masking allows a more natural shadow and lets the background objects
 
 ![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
 
-#### Show masked colors
+#### 마스크 색 표시
 Graphically displays the effects of masking as the parameters change. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.
 
 ![images/masking-008.png](images/masking-008.png)

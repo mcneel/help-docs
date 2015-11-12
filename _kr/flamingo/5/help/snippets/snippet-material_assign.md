@@ -1,9 +1,9 @@
-### Assign material by
+### 재질 적용 옵션
 플러그인 라이브러리 또는 Rhino 기본 렌더러를 사용하여 렌더링 속성을 레이어에 적용합니다.
 
 #### 레이어
-The object inherits the render material assigned to the layer. To change the material assignment of the layer, use the [ **Layers** ](layer.html) dialog box.
- **Note** : Deleting a material from the ** [Material Editor](materialeditor.html) **, returns all objects that had the deleted material assigned to assignment by layer.
+레이어에 적용된 렌더링 재질을 개체가 이어받습니다. 레이어에 적용된 재질을 변경하려면 [ **레이어** ](layer.html) 대화상자를 사용합니다.
+ **안내** : 재질을 ** [재질 편집기](materialeditor.html) **에서 삭제하면 삭제된 재질이 적용됐던 모든 개체가 레이어 기준 적용으로 되돌아옵니다.
 
 #### 부모
 개체가 부모 개체로부터 렌더링 재질을 이어받습니다.

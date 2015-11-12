@@ -1,10 +1,11 @@
 ---
+title: Sun and Sky
 ---
 
-# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} Sun and Sky
+# ![imagessun.svg](images/sun.svg) {{page.title}}
 The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Automode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
 
-## Sun
+## 태양
 {: #sun}
 The Sun is a powerful invisible parallel light. Factors simulating real-world conditions such as latitude and longitude, time of day, and season control the Sun's direction and brightness.
 
@@ -17,7 +18,7 @@ The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighti
 * ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
 * ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
 
-**Note:** The Sun tab will only be visible if the Sun is activated through a Lighting Preset.
+**안내:** 조명 기본 설정에서 태양이 활성화된 경우에만 태양 탭이 표시됩니다.
 
 태양빛을 계산하려면 태양 각도가 필요합니다. 태양의 방향을 지정하는 방법에는 2 가지가 있습니다. 날짜/시간/장소로 결정하는 방법과 직사광선의 각도로 지정하는 방법이 그것입니다. 날짜, 시간, 장소를 사용하여 모델이 위치한 부지에서 실제 태양을 시뮬레이션합니다. 태양 직사광선의 각도는 실제 태양을 참조하지 않고 빛의 각도를 제어합니다. 직사광선 각도를 사용하여 조명 효과를 시험해 보세요.
 
@@ -28,11 +29,11 @@ The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighti
 {: #set-azimuth-and-altitude}
 Use solar angles to manually set the sun's direction. Enables [Azimuth](#azimuth) and [Altitude](#altitude) controls.
 
-#### Azimuth
+#### 방위각
 {: #azimuth}
 Sets the sun's direction in angle degrees from North (0) in the horizontal plane.  The circular map shows the world in a plan view.
 
-#### Altitude
+#### 고도
 {: #altitude}
 Sets the sun's height in the sky in angle degrees from the Equator (0).  The half circle map simulates a section through the vertical direction of the world coordinates.
 
@@ -87,16 +88,16 @@ Modifies the brightness of the sun (direct) daylight component. The intensity of
 
 #### North Direction
 {: #north}
-**Note:** North is the World Y direction.
+**안내:** 북쪽은 절대좌표 Y 방향입니다.
 
 ## 하늘
 {: #sky}
 The Sky is a large sphere around the rendering that can be used for lighting. The Sky is very different from environment.  Sky controls lighting. Environment controls what is reflected and visible in the background. There are many situations where the Sky and Environment might be set differently.
 
-#### Where can I find Flamingo Sky control?
+#### Flamingo 하늘 제어는 어디에 있습니까?
 The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sky).
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
+ 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sky
 
 The lighting preset schemes for [Exterior](lighting-tab.html#exterior-daylight) and [Interior](lighting-tab.html#interior-daylight) daylight use the Automatic sky by default. The [Studio](lighting-tab.html#studio-lighting) lighting preset scheme uses HDR image lighting by default.
@@ -142,7 +143,7 @@ It is assumed that HDR images contain radiance values expressed in watts units. 
 
 In addition to the Sky, a different HDR image can be used for each of the three visible backgrounds: [Visible](environment-tab.html#advanced-background), [Reflected](environment-tab.html#advanced-background), and [Refracted](environment-tab.html#advanced-background) background.
 
-#### HDRI Image
+#### HDRI 이미지
 Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)

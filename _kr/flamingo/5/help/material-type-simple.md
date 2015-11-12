@@ -1,27 +1,28 @@
 ---
+title: 자동 렌더링
 ---
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
 
-#### Simple Material Types:
+#### 간단한 재질 속성:
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Solid Color](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastic](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metal](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[Glass](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Glossy](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[단색](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[플라스틱](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[금속](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png)[유리](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png)[광택](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[클리어_피니시](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo 텍스처](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[텍스처 세트](#texture-set)
 
 Any material can be converted to an advanced material.  Advanced materials present all the possible controls to edit a material in Flamingo nXt.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
 
 #### Advanced Materials are comprised of these property groups:
 
-> [Name](material-type-advanced.html#name)
-> [Material Procedure](material-type-advanced.html#procedures)
-> [Advanced Material Properties](material-type-advanced.html#advanced-materials-properties)
-> [Reflective Finish](material-type-advanced.html#reflective-finish-and-highlight)
+> [이름](material-type-advanced.html#name)
+> [재질 절차](material-type-advanced.html#procedures)
+> [고급 재질 속성](material-type-advanced.html#advanced-materials-properties)
+> [반사 마무리](material-type-advanced.html#reflective-finish-and-highlight)
 > [Transparency Properties](material-type-advanced.html#transparency)
 > [Procedural Textures](material-type-advanced.html#bump-patterns)
 > [Bitmap Textures](material-type-advanced.html#textures)
@@ -29,7 +30,7 @@ Any material can be converted to an advanced material.  Advanced materials prese
 
 Materials are saved and stored in the Rhino model. Unique materials can have the same name in different Rhino models.
 
-## Solid Color
+## 단색
 {: #solid-color}
 Solid Color materials have only a [name](material-type-advanced.html#name) and a [color](material-type-advanced.html#color).
 
@@ -39,7 +40,7 @@ Solid Color materials have only a [name](material-type-advanced.html#name) and a
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %}
 
-## Plastic
+## 플라스틱
 {: #plastic}
 Plastic materials are slightly reflective with a white [highlight](material-type-advanced.html#highlight-color).
 
@@ -49,7 +50,7 @@ Plastic materials are slightly reflective with a white [highlight](material-type
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
 
-## Metal
+## 금속
 {: #metal}
 Metal materials have a highlight whose color matches the [color](material-type-advanced.html#color). You can also control the [Sharpness](material-type-advanced.html#sharpness) of the reflection.
 
@@ -57,12 +58,12 @@ Metal materials have a highlight whose color matches the [color](material-type-a
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Sharpness
+#### 선명도
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
 
-## Glass
+## 유리
 {: #glass}
 Glass materials have a [color](material-type-advanced.html#color) and an [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) (IOR).
 
@@ -70,12 +71,12 @@ Glass materials have a [color](material-type-advanced.html#color) and an [Index 
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Index of Refraction
+#### 굴절률(IOR)
 Controls the amount light bends through the material. See Advanced [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Sharpness](material-type-advanced.html#sharpness) and [Transparency](material-type-advanced.html#transparency)
 
-## Glossy
+## 광택
 {: #glossy}
 Glossy materials generally have a low Highlight [Intensity](material-type-advanced.html#intensity) and [Sharpness](material-type-advanced.html#sharpness).
 
@@ -91,7 +92,7 @@ Controls sharpenss vs blurriness of the highlight spot from lights on the surfac
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
 
-## ClearFinish
+## 클리어_피니시
 {: #clearfinish}
 The ClearFinish material simulates car paint, porcelain, ceramics, varnished woods, or any material with a plastic or clear-coat layer. ClearFinish uses the [Fresnel](material-type-advanced.html#fresnel) setting to change the material color based on angle to the view. These materials tend to be a deep color when looked at straight on, but as the surface curves away from the view, they become more and more reflective. Car paints with a clear-coat or clear lacquer finishes are good examples.
 
@@ -101,7 +102,7 @@ The ClearFinish material simulates car paint, porcelain, ceramics, varnished woo
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Sharpness](material-type-advanced.html#sharpness).
 
-## Flamingo Textured
+## Flamingo 텍스처
 {: #flamingo-textured}
 Textured materials use images to create colors and patterns. The image name, resolution, tile size, and highlight intensity and sharpness are controllable from this simple material.
 
@@ -112,7 +113,7 @@ Textured materials use images to create colors and patterns. The image name, res
 #### Intensity
 Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
-#### Sharpness
+#### 선명도
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 #### 이미지
@@ -134,7 +135,7 @@ Controls size of all the textures in the set.  Use this control to keep all the 
 #### Intensity
 Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
-#### Sharpness
+#### 선명도
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 #### Types
