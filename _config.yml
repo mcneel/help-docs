@@ -33,18 +33,6 @@ kramdown:
 
 safe: false
 
-
-collections:
-  - en
-  - kr
-  - jp
-  - cn
-  - de
-  - es
-  - fr
-  - it
-  - tw
-
 collections:
   en:
     output: true
