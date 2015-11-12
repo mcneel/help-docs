@@ -1,7 +1,8 @@
 ---
+title: Procedural Materials
 ---
 
-#  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Procedural Materials
+#  ![images/paint.svg](images/paint.svg) {{page.title}}
 The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
 <!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 

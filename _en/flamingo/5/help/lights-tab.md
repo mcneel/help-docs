@@ -1,7 +1,8 @@
 ---
+title: Lights
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png){:height="75px" width="75px"} Lights
+# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
 Artificial light sources use normal Rhino lights with added Flamingo properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
 
 

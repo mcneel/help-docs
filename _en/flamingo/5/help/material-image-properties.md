@@ -1,8 +1,9 @@
 ---
+title: Material Image Properties
 ---
 
 
-# ![images/images.svg](images/images.svg){:height="75px" width="75px"} Material Image Properties
+# ![images/images.svg](images/images.svg) {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)

@@ -1,7 +1,8 @@
 ---
+title: Color Selector
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
 
 

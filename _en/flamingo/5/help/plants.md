@@ -1,7 +1,8 @@
 ---
+title: Plants
 ---
 
-# Plants
+# {{page.title}}
 Flamingo nXt includes a fun and powerful plant generator that efficiently generates complex plant forms during rendering. These plants have little impact on model size, since only a placeholder is kept in the model.
 
 ![images/plants-001.png](images/plants-001.png)

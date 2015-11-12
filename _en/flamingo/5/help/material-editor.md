@@ -1,7 +1,8 @@
 ---
+title: Materials Editor Panel
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Materials Editor Panel
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
 
 Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.

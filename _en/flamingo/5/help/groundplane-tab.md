@@ -1,7 +1,8 @@
 ---
+title: Ground plane
 ---
 
-# Ground plane
+# {{page.title}}
 {: #ground-plane}
 
 The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
