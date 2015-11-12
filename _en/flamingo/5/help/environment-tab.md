@@ -150,7 +150,7 @@ Specifies the offset of the background image from the lower left corner of the v
 
 #### Cylindrical
 {: #cylindrical}
-Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
+Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it is also used effectively with standard panoramas built from photographs.
 Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
 
