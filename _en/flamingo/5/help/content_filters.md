@@ -1,6 +1,7 @@
 ---
+title: Content Filters
 ---
-# Content Filters ![images/contentfilter.png](images/contentfilter.png) 
+# {{page.title}} ![images/contentfilter.png](images/contentfilter.png)
 The content filter is accessed through the **Content Filters** dialog box.
 
 #### Name filter
