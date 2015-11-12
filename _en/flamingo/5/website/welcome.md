@@ -25,7 +25,7 @@ For technical support, tutorials, examples, and information about how to get sta
 ## Help Documentation
  * On the Flamingo nXt menu, click Control Panel. The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
 
-> [Materials](../help/materials-tab.html)
+> [Materials](../help/material-editor.html)
 > [Lighting](../help/lighting-tab.html)
 > [Environment](../help/environment-tab.html)
 > [Render](../help/render-tab.html)
