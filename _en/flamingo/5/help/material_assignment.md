@@ -2,7 +2,7 @@
 title: Material Assignments
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} {{page.title}}
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on the how easy the model is to change and maintain in the future.
 
 Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:

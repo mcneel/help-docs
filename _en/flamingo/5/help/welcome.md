@@ -3,7 +3,7 @@ title: Getting Started with Flamingo
 ---
 
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Getting Started with Flamingo nXt®
+# ![images/flamingotab.svg](images/flamingotab.svg) Getting Started with Flamingo nXt®
 Flamingo nXt creates high quality, photorealistic, still, and animation image files from 3-D models inside Rhinoceros ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a work in progress version.
 
 Flamingo can be downloaded and installed from the [Flamingo nXt 5 Download}(http://www.rhino3d.com/download/flamingo/5/beta).

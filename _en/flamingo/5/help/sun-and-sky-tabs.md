@@ -2,7 +2,7 @@
 title: Sun and Sky
 ---
 
-# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} {{page.title}}
+# ![imagessun.svg](images/sun.svg) {{page.title}}
 The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Automode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
 
 ## Sun
