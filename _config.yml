@@ -31,7 +31,7 @@ kramdown:
 
 #port: 4444
 
-safe: safe
+safe: false
 
 
 collections:
