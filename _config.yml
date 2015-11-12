@@ -10,8 +10,8 @@ url: "http://help.mcneel.com" # the base hostname & protocol for your site
 editMeOnGhBaseUrl: "mcneel/help-docs"
 
 # To Generate a local Sitemap, remove the following 2 comments on the lines. And set safe: below to false.
-#gems:
-#  - jekyll-sitemap
+gems:
+  - jekyll-sitemap
 
 
 # twitter_username: ""
