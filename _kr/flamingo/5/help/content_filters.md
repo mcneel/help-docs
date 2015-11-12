@@ -1,7 +1,8 @@
 ---
+title: 콘텐츠 필터
 ---
-# 콘텐츠 필터 ![images/contentfilter.png](images/contentfilter.png) 
-The content filter is accessed through the **Content Filters** dialog box.
+# {{page.title}} ![images/contentfilter.png](images/contentfilter.png)
+콘텐츠 필터는 **콘텐츠 필터** 대화상자를 통해 액세스할 수 있습니다.
 
 #### 이름 필터
 이름을 지정하여 콘텐츠를 선택하려면 별표 문자(*)를 사용합니다.
@@ -12,16 +13,16 @@ The content filter is accessed through the **Content Filters** dialog box.
 #### 지우기
 이름 필터링 지우기
 
-#### Show unassigned materials
+#### 미지정된 재질 표시
 개체 또는 레이어에 지정되지 않은 재질을 표시합니다.
 
-#### Show V4 materials
+#### V4 재질 표시
 Rhino 4 버전에서 만들어진 재질을 표시합니다.
 
-#### Show hidden materials, environments and textures
+#### 숨겨진 재질, 환경, 택스처 표시
 렌더링 엔진이 숨긴 항목을 표시합니다.
 
-#### Show reference materials, environments and textures
+#### 참조 재질, 환경, 텍스처 표시
 이 옵션은 [작업세션 참조](worksession.html) 또는 [링크된 블록](insert.htm)으로 생성된 항목을 표시합니다.
 
 ### 렌더링 엔진의 콘텐츠 표시

@@ -1,8 +1,9 @@
 ---
+title: Flamingo 명령 목록
 ---
 
 
-# Flamingo 명령 목록
+# {{page.title}}
 
 ### FlamingoNXtAbout
 {: #flamingonxtabout-command}

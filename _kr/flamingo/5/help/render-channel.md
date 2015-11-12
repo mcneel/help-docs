@@ -1,7 +1,8 @@
 ---
+title: 채널
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Channels
+# ![images/render.svg](images/render.svg) {{page.title}}
 {: #channel}
 A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
 
@@ -22,18 +23,18 @@ Use channels to adjust the strength of lights relative to each other, not to bri
 
 다중 채널 이미지를 만들고 조작하려면 다음의 조건들이 필요합니다.
 
- 1. All participating lights must be on.
+ 1. 참여하고 있는 모든 조명은 켜져 있어야 합니다.
  2. Each light source must be assigned to a channel. By default, Sun and Sky are set to channel 0, artificial lights are set to 1.
  3. Immediately after rendering, use the Channel controls in the render window.
  3. The only saved format that preserves this channel information is the .nXtImage format. Lighting can be adjusted there and then the image is saved to a bitmap format.
 
-## Setting Channels
+## 채널 설정
 {: setting}
 The first step in setting up a muti-channel rendering is to set each light to channel. The channel number is usually set in each light property.  For information on setting specific lights to a channel see:
 
->[Sun Channel](sun-and-sky-tabs.html#sun-channel)
->[Sky Channel](sun-and-sky-tabs.html#sky-channel)
->[Artificial Light Channel](lights-tab.html#channel)
+>[태양 채널](sun-and-sky-tabs.html#sun-channel)
+>[하늘 채널](sun-and-sky-tabs.html#sky-channel)
+>[인공 조명 채널](lights-tab.html#channel)
 >[Material Glow](documentproperties-flamingo.html#channel)
 
 Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
@@ -42,7 +43,7 @@ Any number of lights can be grouped onto the same light channel.  The channel ad
 {: adjusting}
 Lighting channels can be adjusted immediately after rendering, or in the Flamingo image editor if the rendering is saved as an nXtImage file.  Channels can be adjusted while Flamingo continues to render, but we recommend that you stop the rendering before making major adjustments.
 
-#### Where can I find Flamingo Lighting control?
+#### Flamingo 조명 제어는 어디에 있습니까?
 The channel controls are found on the Flamingo nXt tab in the [render window](render-window.html) under Channels.
 
 There are eight channel controls 0-7. Only the channels that have lights on them will activate.

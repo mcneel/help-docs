@@ -1,12 +1,13 @@
 ---
+title: 렌더링 옵션
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Render Options
+# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
 The render tab controls the main properties of the final rendering.  Use this tab to control quality and length of time a rendering can take.  Resolution of the final image is one of the biggest influences on overall rendering times.
 
 Note: A good practice is to leave the rendering resolution low during draft renderings. Use high resolution renderings for final renderings only.
 
-#### Where can I find Flamingo Lighting control?
+#### Flamingo 조명 제어는 어디에 있습니까?
 
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
@@ -26,43 +27,43 @@ This list includes all the named views in the model.  Select the view name that 
 {: #resolution}
 The Rendering resolution is one of the most important render settings.  This control sets the image size and resolution to be saved in the Rhino file.  Increasing resolution will exponentially increase rendering time.  So, it is important to handle this setting carefully.
 
-#### Total pixels
+#### 전체 픽셀의 수
 {: #resolutionimagepixels}
 Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
 
 ### Viewport resolution
 Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
 
-### Image size
+### 이미지 크기
 {: #resolutionprintedsize}
 Image size will set the final resolution based on several different variables.  This is the best way to match an exact size and resolution of a final image. If the height and width of the final rendering does not match the same aspect ratio of the view being rendered, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very long time to complete.  Use these controls for final high resolution renderings.
 
 There are four unit types which can be used:
 
->Pixels
->Inches
->Millimeters
->Centermeters
+>픽셀
+>인치
+>밀리미터
+>센티미터
 
-#### Pixels
+#### 픽셀
 Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.
 
-#### Inches
+#### 인치
 Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of inches in width and height by the resolution DPI value.
 
-#### Millimeters
+#### 밀리미터
 Sets the page units to millimeters. Use millimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of millimeters in width and height by the resolution dots per millimeter value.
 
-#### Centimeters
+#### 센티미터
 Sets the page units to centimeters. Use centimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of centimeters in width and height by the resolution dots per centimeter value.
 
 #### Apply view aspect ratio
 Use this setting to keep the width and height setting in the same aspect ratio to the current view.  This will assure the complete view is rendered in the final image.
 
-#### Width
+#### 너비
 Printed image width in current unit size.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
 
-#### Height
+#### 높이
 Printed image height in current size units.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
 
 ### 해상도
@@ -73,7 +74,7 @@ Printed image height in current size units.  Multiply this setting by the resolu
 #### Display
 The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
 
-#### Custom
+#### 사용자 지정
 The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
 
 #### Printer, draft quality
@@ -98,7 +99,7 @@ When Resolution control is set to Custom, use this control to set the resolution
 #### 세기
 Controls the size of the focus area. Setting Strength to zero makes the entire image is sharp. Increasing the Strength makes the areas outside the focal distance more blurry and makes the area in focus smaller.
 
-#### Focal distance
+#### 초점 거리
 {: #focaldistance}
 Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If the Focal distance is set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
 
@@ -120,7 +121,7 @@ The default render engine has a very noticeable artifact in the renderings in th
 
 The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
 
-### Path Tracer
+### 경로 추적기
 {: #path-tracer}
 The path tracer begins by displaying a grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. **Note:** Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
 

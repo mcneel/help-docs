@@ -1,7 +1,8 @@
 ---
+title: Render Window
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Render Window
+# ![images/render.svg](images/render.svg) {{page.title}}
 The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
 
 ## Managing an Active Rendering
@@ -50,11 +51,11 @@ Controls used for images adjustment include:
 >[Post Effects](#post-process-effects)
 
 
-### Saving Images
+### 이미지 저장
 {: #saving}
 There are many ways to save an image depending on the plans for the image.  Normally saving as a JPG or PNG image file is the recommended process for most images.  But there are other options.
 
-#### ![images/saveimageas.png](images/saveimageas.png) Save Image
+#### ![images/saveimageas.png](images/saveimageas.png) 이미지 저장
 Saving a JPG or PNG image file is the normal process after adjusting the image.  
 
 A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
@@ -70,7 +71,7 @@ Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. Th
 Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
 The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
 
-#### Export to HDR file
+#### HDR 파일로 내보내기
 {: #export-to-hdr}
 Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
 
@@ -85,7 +86,7 @@ The .exr format stores luminance data directly in a High Dynamic Range format. N
 #### Pulldown Menus
 For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).
 
-## Flamingo Tab
+## Flamingo 탭
 {: #flamingo-tab}
 The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to managing the active Flamigno renderings.
 
@@ -184,40 +185,40 @@ Right-click the histogram image for the following options.  This options simply 
 ## 정보
 {: #information}
 
-#### Resolution
+#### 해상도
 Displays the current [rendering resolution](render-tab.html#resolution).
 
 #### Faces
 Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.
 
-#### Apparent faces
+#### 보이는 면
 When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The Apparent faces display shows how many more temporary faces would be generated if the block instances did not exist.
 
 #### Lighting information
 This is some information on the current lighting setup of the rendering.  Here is a list of lighting information listed:
 
 >[Presets](lighting-tab.html)
->[Sun](sun-and-sky-tabs.html#sun)
->[Sky](sun-and-sky-tabs.html#sky)
->[Lights](lights-tab.html)
->[Indirect](lighting-tab.html#indirect)
->[Ambient On/Off](lighting-tab.html#ambient)
+>[태양](sun-and-sky-tabs.html#sun)
+>[하늘](sun-and-sky-tabs.html#sky)
+>[조명](lights-tab.html)
+>[간접](lighting-tab.html#indirect)
+>[주변광 켜기/끄기](lighting-tab.html#ambient)
 
 ## 채널
 {: #channels}
 Use these controls to change the lights channels in real time. Assign lights to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
 
-## Post Effects
+## 후처리 효과
 {: #post-process-effects}
 Apply post-processing effects after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
 
->Fog
->Glow
->Glare
->Depth of Field
+>안개
+>글로우
+>글레어
+>피사계 심도(DOF)
 >Points
->Curves
->Isocurves
->Annotations
+>커브
+>아이소커브
+>주석
 
 For more details on specific filters see the [Post-process images](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) topic.

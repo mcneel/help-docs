@@ -1,7 +1,8 @@
 ---
+title: 재질 적용
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Assignments
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on the how easy the model is to change and maintain in the future.
 
 Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:
@@ -44,7 +45,7 @@ By parent is a seldom used, but useful, assignment. Objects within a Block insta
 As an example, a car model might have tires on the tires layer and wheels on the wheel layer. But for rendering the body of the car might vary between individual block instances.  Assign By Parent to the car body.  Then a material can be assigned to the block insert and only the body will adopt that material.
 
 ##### To assign a material through object properties
-1. Select objects.
+1. 개체를 선택합니다.
 1. On the Edit menu, click Object Properties ![images/properties.png](images/properties.png) command to edit the object.
 1. In the [Properties](properties-object.html) dialog box, on the Material page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Parent.
 
@@ -56,7 +57,7 @@ See  [Materials Editor](material-editor.html) .
 레이어에 따라 재질을 적용하는 방법을 권장합니다. 별도의 레이어에서 작업하지 않고, 소수의 개체만으로 작업하는 경우에는 개체마다 재질을 적용하십시오.
 
 ##### Assign a material through object properties
-1. Select objects.
+1. 개체를 선택합니다.
 1. On the Edit menu, click the Object Properties ![images/properties.png](images/properties.png) command to edit the object.
 1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Object, and then click the Material from the list.
 
@@ -66,7 +67,7 @@ See  [Materials Editor](material-editor.html) .
  * In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material onto an object. The object will highlight when the cursor is in the correct place to drop.
 
 ##### Assign a material to selected objects
-1. Select objects.
+1. 개체를 선택합니다.
 1. In the [Material List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
 1. On the menu, click Assign to Selected Objects.
 
@@ -77,6 +78,6 @@ See  [Materials Editor](material-editor.html) .
 
 ##### Remove a by-object material assignment
 {: #removematerialfromobject}
-1. Select objects.
+1. 개체를 선택합니다.
 1. On the Edit menu, click Object Properties.
 1. In the  [Properties](properties-object.html) dialog box, on the Material page, under Assign by, select Layer.

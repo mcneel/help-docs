@@ -1,18 +1,19 @@
 ---
+title: Lights
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png){:height="75px" width="75px"} Lights
+# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
 Artificial light sources use normal Rhino lights with added Flamingo properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
 
 
-## Lights Tab
+## 조명 탭
 {: #light-tab}
 The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible through additional [Light Properties](#light-properties).
 
-#### Where can I find Flamingo Lighting control?
+#### Flamingo 조명 제어는 어디에 있습니까?
 The Lights tab must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
+ 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
 
 From the Lights tab lights you can insert, turn off/on, and change the strength and channel of each light.
@@ -42,7 +43,7 @@ Right-clicking on the Lights tab table will open the [Additional Options](#addit
 
 [Light Properties](#light-properties) can also be accessed by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
 
-## Light Types
+## 조명 유형
 {: #light-types}
 Lights can be inserted from the Rhino toolbars or the Flamingo Lights tab. Objects can be tagged as lights with Flamingo.
 
@@ -88,7 +89,7 @@ Flamingo가 Rhino의 현재 렌더링 응용 프로그램일 때, 조명에 추�
 {: #name}
 The name of the light object. This is an easy way to differentiate lights which are the same type in the model.
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) On/Off
+#### ![images/lightbulbon.png](images/lightbulbon.png) 켜기/끄기
 {: #on}
 Toggles the light on and off. In the Light table,  if the light bulb icon is yellow the light is on. If the light bulb icon is gray the light will be off in the rendering. Double-click on the icon to toggle it On/Off. In the properties dialog, there is an On/Off Checkbox.
 
@@ -104,7 +105,7 @@ When tagging an object as a light, use Distribution to specify the pattern the l
 {: #aim-light}
 For tagged light which have a distribution of Spot or Diffuse, a direction must be specified.  Double-click on the "Aim >>" option and follow the command line prompts.
 
-#### Watts
+#### 와트
 {: #watts}
 Specifies the electrical power of the light.  It is recommended to start with realistic values for the scene. In the light table, double-click on the cell to change the value.
 
@@ -112,7 +113,7 @@ Specifies the electrical power of the light.  It is recommended to start with re
 {: #beam-angle}
 The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
-#### Radius
+#### 반지름
 {: #radius}
 The size of the visible light source. Smaller lights cast sharper shadows.
 
@@ -123,11 +124,11 @@ The color for the light the source emanates.
 #### Use material color *([Tagged objects only](#tag-objects-as-lights))*
 조명에서 나오는 빛에 조명 개체에 적용된 재질의 색을 사용합니다.
 
-#### Channel
+#### 채널
 {: #channel}
 Lights can be assigned to one of eight channels. This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html) topic.
 
-#### IES File
+#### IES 파일
 {: #iesfile}
 IES (Illuminating Engineering Society) 파일은 광원의 배광을 정의하는 광도 측정 파일입니다. 조명 기구 제조사들이 이런 파일을 제공하는 경우가 많습니다. IES 파일로 배광을 정의하여 광원을 보다 정확하게 묘사할 수 있습니다. 조명으로 태그된 개체 지오메트리는 배광과 무관합니다. 배광의 정의는 광도 측정 파일에서만 지정됩니다.
 
@@ -154,7 +155,7 @@ Toggles the light [On/Off](#on)
 #### 조명 태그 제거
 Removes the [tag](#tag-objects-as-lights) that makes an object a light.
 
-#### Properties
+#### 속성
 Access the [Light Properties](#light-properties) for that light.
 
 #### 개체와 일치하는 항목 선택
