@@ -76,7 +76,7 @@ Controls the size of the focus area. Setting **Strength** to zero makes the enti
 
 ### Focal distance
 {: #focaldistance}
-Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If theFocal distanceis set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
+Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If the Focal distance is set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
 
 ### Pick
 Pick a point in the model for the focal distance.
@@ -102,6 +102,5 @@ The path tracer begins by displaying a very grainy image that gradually refines 
 
 >Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer.
 
-###  **Advanced** 
+###  **Advanced**
 Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page.
-
