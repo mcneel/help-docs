@@ -8,14 +8,14 @@ The **Procedures** tree combines one or more materials using a set of rules for 
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [angular blend](advanced-material-properties-main.html#angular-blend), [blend](advanced-material-properties-main.html#blend), [marble,](advanced-material-properties-main.html#marble)  [granite](advanced-material-properties-main.html#granite), [tile](advanced-material-properties-main.html#tile), and [wood](advanced-material-properties-main.html#wood).
 
 ##### To add a procedure
-1. Right-clickanywhere in the **Procedures** window.
-1. On the menu, click a procedure type.
- [Angular Blend](advanced-material-properties-main.html#angular-blend) 
- [Blend](advanced-material-properties-main.html#blend) 
- [Granite](advanced-material-properties-main.html#granite) 
- [Marble](advanced-material-properties-main.html#marble) 
- [Tile](advanced-material-properties-main.html#tile) 
- [Wood](advanced-material-properties-main.html#wood) 
+1. Right-click anywhere in the **Procedures** window.
+2. On the menu, click a procedure type.
+ [Angular Blend](advanced-material-properties-main.html#angular-blend)
+ [Blend](advanced-material-properties-main.html#blend)
+ [Granite](advanced-material-properties-main.html#granite)
+ [Marble](advanced-material-properties-main.html#marble)
+ [Tile](advanced-material-properties-main.html#tile)
+ [Wood](advanced-material-properties-main.html#wood)
 
 ##### To remove a procedure
  1. In the **Procedures** window,right-click the procedure name.
@@ -29,7 +29,7 @@ This is the basic simple material with no layers.
 {: ##material-procedure-angular-blend}
 Blends between two different materials to create materials that change characteristics based on the angle of view to the surface of the object.
 
-### 
+###
 The **Angular Blend** procedure blends between two different materials to create special effects. Use **Angular Blend** to create materials that change characteristics based on the angle of view to the surface of the object.
 
 ### Inner
@@ -105,7 +105,7 @@ A fraction of the whole pattern. Increasing this setting increases the relative 
 {: #material-procedure-marble}
 Creates alternating slabs of **Base** and **Vein** components.
 
-### 
+###
 The **Marble** procedure defines how the **Base** and **Vein** components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object. Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object.
 ![images/materialunmapped.png](images/materialunmapped.png)
 No texture mapping (left). With texture mapping (right).
@@ -177,4 +177,3 @@ A fraction of the distance between one **Base** stripe and the next. Values rang
 {% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/woodveneer.png](images/woodveneer.png)Veneer (left), normal (right).
-
