@@ -27,7 +27,7 @@ RHI 설치 관리자를 다운로드하신 후에 설치하시고, Rhino를 시�
 * [Italiano]({{baseurl}}/it/flamingo/5/help)
 * [日本語]({{baseurl}}/jp/flamingo/5/help)
 * [한국어]({{baseurl}}/kr/flamingo/5/help)
-* [中文(繁 體)]({{baseurl}}/tw/flamingo/5/help)
+* [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
 
 ## 처음 시작
 Flamingo nXt 메뉴에서 제어 패널을 클릭합니다. Flamingo nXt 제어 패널에는 모델의 렌더링 설정을 지정하는 다음과 같은 탭이 있습니다:
