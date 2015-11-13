@@ -1,8 +1,9 @@
 ---
+title: Sun and Sky
 ---
 
-# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} Sun and Sky
-The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Auto mode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
+# ![imagessun.svg](images/sun.svg) {{page.title}}
+The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Automode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
 
 ## Sun
 {: #sun}
@@ -17,7 +18,7 @@ The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighti
 * ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
 * ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
 
-Note: The Sun tab will only be visible if the Sun is activated through a Lighting Pre-set.
+**Note:** The Sun tab will only be visible if the Sun is activated through a Lighting Preset.
 
 Solar angles are required to perform sunlight calculations. There are two ways to specify the sun direction: by date, time, and place; and by direct angle. Use date, time, and place positioning to simulate the real sun in a study of your model's site. Direct sun angle controls the light angle without reference to a real sun. Use the direct sun angle to try lighting effects.
 
@@ -38,7 +39,7 @@ Sets the sun's height in the sky in angle degrees from the Equator (0).  The hal
 
 ### Set location on Earth
 {: #set-location-on-earth}
-Use the sun angle calculator to place the sun based on Date, Time, Location.  Note: As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
+Use the sun angle calculator to place the sun based on Date, Time, Location.  **Note:** As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
 
 #### Date
 {: #date}
@@ -80,14 +81,14 @@ The sharpness of the sun highlight.
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
 *Sun highlight=0 (left) and 1 (right).*
 
-Note : Solar highlight artifacts can sometimes be seen on exterior renderings when the Sun highlight setting is used. To mitigate or eliminate this artifact, set the Sun highlight to a smaller value.
+**Note:** Solar highlight artifacts can sometimes be seen on exterior renderings when the Sun highlight setting is used. To mitigate or eliminate this artifact, set the Sun highlight to a smaller value.
 {: #speckle-artifacts}
 
 {% include_relative snippets/snippet-sunchannel.md %}
 
 #### North Direction
 {: #north}
-Note : North is the World Y direction.
+**Note:** North is the World Y direction.
 
 ## Sky
 {: #sky}
@@ -127,7 +128,7 @@ When Cloudiness is turned off, the sky is considered clear and strong shadows ar
 
 #### Sky intensity
 {: #sky-intensity}
-Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified. Note: This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified. **Note:** This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
 
 {% include_relative snippets/snippet-skychannel.md %}
 
@@ -148,7 +149,7 @@ Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the
 ![images/hdrimage-001.png](images/hdrimage-001.png)
 *Equarectangular projection.*
 
-HDR images come in two projection types which allow the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
+HDR images come in two projection types which let the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
 
 #### Intensity
 Modifies the brightness of the HDR image light. This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
