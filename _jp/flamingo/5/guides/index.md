@@ -67,7 +67,7 @@ Flamingo nXtタブには、Flamingo特有のコントロールが表示されま
 
 自動停止条件を設定するには、[レンダリングウィンドウ](..\render\render-window.html)または[ドキュメントのプロパティ &gt; Flamingo nXt](..\render\documentproperties-flamingo.html)の[パスの数](..\render\render-window.html#number-of-passes)または[時間](..\render\render-window.html#time)を使用します。
 
-
+&#160;
 
 改訂: 22-Dec-2011年12月22日 14:45
 
