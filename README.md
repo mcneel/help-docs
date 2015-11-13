@@ -2,21 +2,21 @@
 
 This repo contains the contents of http://help.mcneel.com
 
-The site is hosted on [GitHub Pages](https://pages.github.com/) which uses a static site generator called [Jekyll](http://jekyllrb.com/).  The pages are mades generally from a markdown syntax called [kramdown](http://kramdown.gettalong.org/syntax.html)
+The site is hosted on [GitHub Pages](https://pages.github.com/) which uses a static site generator called [Jekyll](http://jekyllrb.com/).  The pages are made generally from a markdown syntax called [kramdown](http://kramdown.gettalong.org/syntax.html)
 
 ## Getting Started with GitHub
 
 There are 3 ways to edit these GitHub Pages:
 
  1. Edit the markdown (md) files directly on GitHub.
- 1. Clone the Github respository on your local computer. This brings all teh files onto your computer.  Then edit those files and push the changes back up to GitHub.
+ 1. Clone the Github repository on your local computer. This brings all the files onto your computer.  Then edit those files and push the changes back up to GitHub.
  1. Setup a local GitHub Pages server on your machine. Clone the GitHub repository on your machine.  Then, edit the files. The changes can be previewed on the local GitHub server before pushing the changes up to GitHub.
 
-The reccomended product we use to pull the files to your local machine is [SourceTree](https://www.sourcetreeapp.com/).  Once downloaded and installed, log-in to GitHub through [SourceTree](https://www.sourcetreeapp.com/).  Clone the "mcneel/help-docs" repository to a local folder on your machine.  All other interactions with GitHub can be accomplished with [SourceTree](https://www.sourcetreeapp.com/)
+The recommended product we use to pull the files to your local machine is [SourceTree](https://www.sourcetreeapp.com/).  Once downloaded and installed, log-in to GitHub through [SourceTree](https://www.sourcetreeapp.com/).  Clone the "mcneel/help-docs" repository to a local folder on your machine.  All other interactions with GitHub can be accomplished with [SourceTree](https://www.sourcetreeapp.com/)
 
 If SourceTree does not work well in your case, GitHub offers a desktop application which simplifies syncing with the public repository.  Try [GitHub for Mac](https://mac.github.com/) and [GitHub for Windows](https://windows.github.com/). There's also the [git cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf).
 
-Finally, if you are confortable using GIT on the commandline, navigate somewhere safe and clone the repository.
+Finally, if you are comfortable using GIT on the commandline, navigate somewhere safe and clone the repository.
 
 ```
 git clone https://github.com/mcneel/help-docs.git
@@ -29,8 +29,8 @@ Notice that **'gh-pages'** is the only branch. Everything committed to this bran
 Most edits can be made on the site, or by pulling the site locally then pushing the site back up to GitHub to see the reults.  If needed, it is possible to run a GitHub server locally to see any changes before pushing to GitHub. These instructions cover running this project locally on both Mac OS X and Windows so that you can preview changes before pushing them up to GitHub Pages.
 
 
-![Mac Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/mac_logo_small.png)
-### Mac OS X Local Server Installation
+
+### ![Mac Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/mac_logo_small.png) Mac OS X Local Server Installation
 
 Mac OS X Yosemite ships with Ruby and RubyGems, however it's [not wise](https://github.com/mcneel/help-docs/pull/2#issuecomment-112601698) to mess around with this installation. Instead, install your own Ruby using [Homebrew](http://brew.sh).
 
@@ -67,9 +67,7 @@ jekyll serve
 
 Navigate to http://localhost:4000 in your browser to view the site.
 
-
-![Windows Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/win_logo_small.png)
-### Windows Local Server Installation
+### ![Windows Instructions](https://github.com/mcneel/help-docs/blob/gh-pages/images/win_logo_small.png) Windows Local Server Installation
 
 Please install  Ruby, Ruby Devkit, Jekyll, Github pages, wdm.  The instructiosn are below.
 
@@ -83,7 +81,7 @@ Then, from the same page download the Development Kit that corresponds to your R
 
 Run the self extracting archive, entering the path `C:\RubyDevKit` when prompted.
 
-To initialise and install the DevKit, open up a command prompt and roll up your sleeves...
+To initialize and install the DevKit, open up a command prompt and roll up your sleeves...
 
 ```
 cd C:\RubyDevKit
