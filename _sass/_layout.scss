@@ -315,6 +315,9 @@
             font-size: 24px;
             margin-top: 10px;
         }
+        @media print {
+          font-size: 26px;
+        }
     }
 
     h3 {
