@@ -143,6 +143,12 @@ h1 img {
     display: none;
   }
 }
+@media print {
+  h1 img {
+    display: none;
+  }
+}
+
 
 h2 {
   background: white;
@@ -155,6 +161,11 @@ h2 img {
   vertical-align: top;
 }
 @media screen and (max-width: 450px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+@media print {
   h2 {
     font-size: 24px;
   }
