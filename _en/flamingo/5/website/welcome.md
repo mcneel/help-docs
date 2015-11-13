@@ -16,12 +16,6 @@ Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
 Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
 After downloading and running the RHI installer, start up Rhino.
 
-For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
-
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical support](http://nxt.flamingo3d.com/forum)
-
 ## Help Documentation
 Help documentation for Flamingo comes in a few languages:
 
@@ -45,3 +39,9 @@ On the Flamingo nXt menu, click Control Panel. The Flamingo nXt  Control Panel p
 
 ## Flamingo information and support
  For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
+
+ For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
+
+ > [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+ > [Gallery](http://nxt.flamingo3d.com/photo)
+ > [Technical support](http://nxt.flamingo3d.com/forum)

@@ -34,23 +34,23 @@ kramdown:
 safe: false
 
 collections:
-  - en:
+  en:
     output: true
-  - kr:
+  kr:
     output: true
-  - jp:
+  jp:
     output: true
-  - cn:
+  cn:
     output: true
-  - de:
+  de:
     output: true
-  - es:
+  es:
     output: true
-  - fr:
+  fr:
     output: true
-  - it:
+  it:
     output: true
-  - tw:
+  tw:
     output: true
 
 defaults:
