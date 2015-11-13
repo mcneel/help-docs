@@ -45,8 +45,7 @@ The value indicates the size of the area around the color that is also masked. M
 Partially masks pixels. The value determines the magnitude of partial masking around the masked color. This control is only available when the Color option is selected.
 
 #### Reverse
-Inverts the mask—pixels that would have been masked are now included, and vice versa.
-<!-- TODO: Does this make sense? -->
+Inverts the mask. Pixels that would have been masked are now included, and pixels once included are now masked.
 
 ![images/masking-007.png](images/masking-007.png)  
 
