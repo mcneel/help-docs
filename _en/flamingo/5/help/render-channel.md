@@ -17,9 +17,8 @@ Once this image is rendered, each channel can be individually scaled either in t
 
 Use channels to adjust the strength of lights relative to each other, not to brighten the whole image.  If you need to brighten the whole image at once, use the Adjust Image controls.
 
-<!-- TODO: Find original video clip.It is probably best to embed it from Vimeo.-->
-Click to play video clip.
-<!-- TODO: Is this supposed to link to a video? -->
+<video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
+*Click to play video clip.*
 
 The following conditions are necessary to produce and manipulate a multi-channel image:
 

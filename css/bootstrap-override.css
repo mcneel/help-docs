@@ -463,3 +463,24 @@ tbody.index_table tr td{
 .plant-table img {
   padding-top: 25px;
 }
+
+/*
+##############################################################################
+##  Video on the Render channel page
+##############################################################################
+*/
+
+#channelsvideo {
+  width: 704px;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  #channelsvideo {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 525px) {
+  #channelsvideo {
+    width: 320px;
+  }
+}
