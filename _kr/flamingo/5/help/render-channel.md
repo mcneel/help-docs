@@ -6,7 +6,7 @@ title: 채널
 {: #channel}
 A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
 
-Channels are very effective when:
+채널이 매우 효과적인 경우:
 
 * Trying to balance an HDRI Environment and the Sunlight.  Not all HDRI environments are calibrated.  It is useful to set the HDRi Sky on one channel and the Sun on another.  Then adjust the relative strength of the Sky light vs the sun after rendering.
 * Studio renderings that use a key, fill, and backlight setup. Set each light on a different channel, then adjust their strength real-time in the rendering using channels.
@@ -17,9 +17,8 @@ Once this image is rendered, each channel can be individually scaled either in t
 
 Use channels to adjust the strength of lights relative to each other, not to brighten the whole image.  If you need to brighten the whole image at once, use the Adjust Image controls.
 
-<!-- TODO: Find original video clip.It is probably best to embed it from Vimeo.-->
-클릭하여 동영상을 재생합니다.
-<!-- TODO: Is this supposed to link to a video? -->
+<video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
+*Click to play video clip.*
 
 다중 채널 이미지를 만들고 조작하려면 다음의 조건들이 필요합니다.
 
@@ -39,7 +38,7 @@ The first step in setting up a muti-channel rendering is to set each light to ch
 
 Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
 
-## Adjusting Channels
+## 채널 조정
 {: adjusting}
 Lighting channels can be adjusted immediately after rendering, or in the Flamingo image editor if the rendering is saved as an nXtImage file.  Channels can be adjusted while Flamingo continues to render, but we recommend that you stop the rendering before making major adjustments.
 

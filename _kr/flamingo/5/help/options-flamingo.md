@@ -1,5 +1,5 @@
 ---
-title: Options Flamingo nXt
+title: 옵션 Flamingo nXt
 ---
 
 

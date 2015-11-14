@@ -13,7 +13,7 @@ Note: A good practice is to leave the rendering resolution low during draft rend
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
 
 
-## Viewport to render
+## 렌더링할 뷰포트
 {: #viewtorender}
 Set the view that Flamingo nXt 5 will be rendering.  This is a very useful setting when working on the model and rendering, but there is one specific view that should always render.  For instance, Perspective view is many times the view of interest.  By setting this drop down, then you do not need to make sure the view is current before starting the rendering.
 
@@ -23,7 +23,7 @@ Use this option to render the current active view.  This is the default setting.
 #### List of available viewports
 This list includes all the named views in the model.  Select the view name that should always be rendered.
 
-## Rendering resolution
+## 렌더링 해상도
 {: #resolution}
 The Rendering resolution is one of the most important render settings.  This control sets the image size and resolution to be saved in the Rhino file.  Increasing resolution will exponentially increase rendering time.  So, it is important to handle this setting carefully.
 
@@ -31,7 +31,7 @@ The Rendering resolution is one of the most important render settings.  This con
 {: #resolutionimagepixels}
 Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
 
-### Viewport resolution
+### 뷰포트 해상도
 Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
 
 ### 이미지 크기
@@ -57,7 +57,7 @@ Sets the page units to millimeters. Use millimeters in combination with resoluti
 #### 센티미터
 Sets the page units to centimeters. Use centimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of centimeters in width and height by the resolution dots per centimeter value.
 
-#### Apply view aspect ratio
+#### 뷰 종횡비 적용
 Use this setting to keep the width and height setting in the same aspect ratio to the current view.  This will assure the complete view is rendered in the final image.
 
 #### 너비
@@ -71,22 +71,22 @@ Printed image height in current size units.  Multiply this setting by the resolu
 {: #printsizedpi}
 {: #printsizeresolution}
 
-#### Display
+#### 표시
 The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
 
 #### 사용자 지정
 The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
 
-#### Printer, draft quality
-Set the resolution to 100 pixels per inch or 4 pixels per mm.
+#### 프린터, 간단하게 인쇄
+해상도를 100 픽셀/인치 또는 4 픽셀/mm로 설정합니다.
 
-#### Printer, normal quality
-Set the resolution to 150 pixels per inch or 6 pixels per mm.
+#### 프린터, 보통 품질
+해상도를 150 픽셀/인치 또는 6 픽셀/mm로 설정합니다.
 
-#### Printer, high quality
+#### 프린터, 고품질
 Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. High resolutions can lead to long rendering times.
 
-#### Pixels per
+#### 단위당 픽셀
 When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a preset resolution is selected, this control displays the current resolution.
 
 ## 피사계 심도(DOF)
@@ -103,10 +103,10 @@ Controls the size of the focus area. Setting Strength to zero makes the entire i
 {: #focaldistance}
 Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If the Focal distance is set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
 
-#### Pick >>
+#### 지정 >>
 초점 거리가 되는 한 지점을 모델에서 지정합니다.
 
-## Render Engine
+## 렌더링 엔진
 {: #render-engine}
 There are three different render engines within Flamingo.  Each render engine will produce slightly different results in normal rendering conditions.
 
@@ -129,7 +129,7 @@ Certain advanced effects, such as caustics or blurry transmission, can be calcul
 
 Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer to finish.
 
-### Hybrid
+### 하이브리드
 The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. in some situations it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
 
 ###  **고급**
