@@ -1,5 +1,5 @@
 ---
-title: Document Properties Flamingo nXt
+title: 문서 속성 Flamingo nXt
 ---
 
 

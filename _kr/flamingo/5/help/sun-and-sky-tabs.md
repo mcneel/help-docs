@@ -58,15 +58,15 @@ Use the sun angle calculator to place the sun based on Date, Time, Location.  **
 위도와 경도를 입력하거나 지도에서 위치를 지정합니다.
 The numbers will also update to display the latitude and longitude of a location picked on the map with the mouse cursor.
 
-#### Time zone
+#### 시간대
 {: #time-zone}
 Displays the time zone based on Latitude and Longitude for the current location.
 
-#### City list
+#### 도시 목록
 {: #city-list}
 Use this to select a major city to set the location.
 
-#### Map
+#### 지도
 {: #map}
 Click the map to specify a location. Drag with the left mouse button to pan the map.
 
@@ -137,7 +137,7 @@ Modifies the brightness of the sky (indirect) daylight component. The intensity 
 A [high-dynamic-range (HDR or HDRI)](https://en.wikipedia.org/wiki/High-dynamic-range_imaging) image is a special 2-D image file. These images contain a much broader range of values at each pixel then standard image files, such as a .jpg or .png. This extra data can be used to light models. If the values contained in the HDR are accurate, then the lighting will be accurate. This can produce very dynamic lighting in a scene. The preset Studio Lighting scheme uses HDR images for the sky. If you are thinking of studio lighting as an indoor activity, think of the HDR image as a ceiling that emits light based on the colors in the image.
 
 ![images/lighting-001.png](images/lighting-001.png)
-*HDRi lighting.*
+*HDRi 조명*
 
 It is assumed that HDR images contain radiance values expressed in watts units. If this is not the case, the intensity of these HDR images may need to be adjusted in order to achieve proper illumination levels.
 
@@ -161,7 +161,7 @@ Modifies the brightness of the HDR image light. This setting only matters if the
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *Image rotated so the sun appears on the object.*
 
-#### Saturation
+#### 채도
 빛의 채도입니다. HDR 이미지의 빛은 이미지에 있는 픽셀의 색이므로 때때로 원치 않는 효과를 얻을 수도 있습니다. 이미지에서 색이 아니라 빛을 얻으려면 채도를 낮게 설정하십시오.
 
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)

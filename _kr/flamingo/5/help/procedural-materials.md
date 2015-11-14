@@ -22,7 +22,7 @@ title: 절차적 재질
 
 ##### To remove a procedure
  1. In the Procedures window, right-click the procedure name.
- 2. On the menu, click Remove.
+ 2. 메뉴에서 제거를 클릭합니다.
 
 ## Base
 {: #base}
@@ -78,7 +78,7 @@ Varies the percentage of each component material used in the final material.  Fo
 #### 알파 채널 사용
 색이 블렌드되는 곳을 결정할 때 이미지에 알파 채널이 있으면 비트맵 회색조 대신 알파 채널이 사용될 수 있습니다.
 
-#### Reverse
+#### 반대로
 첫 번째 구성 요소는 비트맵 패턴에서 흰색이 있는 곳으로 배치되고, 두 번째 구성 요소는 비트맵 패턴에서 검정색이 있는 곳으로 배치됩니다.
 
 #### 타일

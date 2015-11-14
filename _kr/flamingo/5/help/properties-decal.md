@@ -16,7 +16,7 @@ Decals consist of a single instance of the image, rather than being tiled as the
 ![images/freshmilk.png](images/freshmilk.png)
  **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode. The **Pipeline** setting must be **OpenGL** in **Options**  &gt; **Appearance**  &gt; **Advanced Settings**  &gt; **Wireframe**  &gt; **Other Settings**  &gt; **Pipeline and Conduits**.
 
-## Decal Placement
+## 데칼 배치
 {: #decal-list}
 {: #decal-placement}
 
@@ -42,7 +42,7 @@ The precise sequence depends on the type of decal selected: [Planar](#decal-plan
 1. Click the **Properties** button.
 1. In the **Decal Properties** dialog box, use the controls to change the decal's properties.
 
-###  **Delete**
+###  **삭제**
 {: #decal-delete}
 
 >**삭제** 단추를 클릭합니다.
@@ -54,14 +54,14 @@ When multiple overlapping decals are applied on a single object, the order in wh
 
 >Click **Move Up** or **Move Down** to change a decal's position in the list.
 
-##### To place a planar decal
+##### 평면 데칼을 배치하려면
 1. At the prompts, pick locations for the decal's **Width**, and **Height direction**.
 1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
 Or press **Enter** to complete the decal placement.
 
 ### 옵션
 
-#### Move
+#### 이동
 데칼을 움직입니다. "이동의 기준점 새 위치" 프롬프트에서 Rhino Move 명령에서와 마찬가지로 원하는 위치를 입력합니다.
 
 #### UseImageAspectRatio
@@ -95,11 +95,11 @@ Or press **Enter** to complete the decal placement.
 
 >Drag the x-, y-, or z-axis control point on the widget axis icon.
 
-## Decal Properties
+## 데칼 속성
 {: #dialogbox-editdecal}
 비트맵의 정보는 개체의 색을 데칼의 색으로 바꾸거나, 두 가지를 블렌드합니다. 이것이 데칼의 가장 일반적인 사용법입니다.
 
-## Projection
+## 투영
 {: #projection}
 The mapping style determines how to project the decal onto the object. It is a good idea to draw construction lines in the scene to help accurately place decals. A rectangle drawn just behind a surface can act as a guide for a standard decal. Use object snaps for accurate placement.
 
@@ -126,18 +126,18 @@ Decals using UV mapping are useful for objects like hair and tree bark where the
 데칼이 개체 전체를 커버합니다. 데칼의 배치를 제어할 수 없습니다.
 UV 매핑은 이미지를 구부리고 늘리기 위해 서피스의 U 방향과 V 방향을 매개변수화하여 사용하므로, 사용자가 직접 배치할 필요가 없습니다.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
-### Browse
+### 찾아보기
 {: #file-browse}
 이미피 파일을 바꿉니다.
 {% include_relative snippets/snippet-clearbitmapcache.md %}
-## Strength
+## 세기
 {: #decalmappingstrength}
 
 ### 색
 {: #decal-color}
 Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](texture-properties-main.html#color).
 
-### Bump
+### 범프
 {: #decalmappingbump}
 Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](texture-properties-main.html#bump).
 
@@ -162,26 +162,26 @@ Sets the highlight color to match the base color. See [Advanced Material Propert
 {: #double}
 데칼이 서피스의 앞면과 뒷면에 모두 나타나게 합니다.
 
-### Mirror
+### 미러
 {: #mirror}
 데칼 이미지를 반전시켜 미러(거울) 실행합니다.
 
-## Projection direction
+## 투영 방향
 {: #projection-direction}
 
-### Backward
+### 뒤로
 데칼 이미지의 뒤로부터 멀리 데칼을 투영합니다.
 ![images/projectionbackward1.png](images/projectionbackward1.png)Front (left), back (right).
 
-### Forward
+### 앞으로
 데칼 이미지의 앞으로부터 멀리 데칼을 투영합니다.
 ![images/projectionforward1.png](images/projectionforward1.png)Front (left), back (right).
 
-### Forward &amp; Backward
+### 앞으로 &amp; 뒤로
 데칼을 데칼 이미지의 앞과 뒤로 모두 투영시킵니다.
-![images/projectionforwardandback.png](images/projectionforwardandback.png)Front (left), back (right).
+![images/projectionforwardandback.png](images/projectionforwardandback.png)앞 (왼쪽), 뒤 (오른쪽).
 
-### Transparency
+### 투명도
 Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
 IOR
 Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction)

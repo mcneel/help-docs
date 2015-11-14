@@ -9,11 +9,11 @@ nXt 이미지 편집기를 사용하여 다음과 같은 기능을 실행할 수
 
 >[톤 연산자](image-editor.html#tone-mapping) 설정을 조정합니다.
 >조명 채널의 강도를 변경합니다.
->Add special image-based effects: [Haze](image-editor.html#haze), [Depth Blur](image-editor.html#depth-blur), and [Glare](image-editor.html#glare).
-> [Save](image-editor.html#save-tonemapped-image-as) a tone-mapped image in a bitmap format such as .jpg or .png.
+>이미지 기반 특수 효과를 추가합니다: [옅은 안개](image-editor.html#haze), [깊이 흐림](image-editor.html#depth-blur), [글레어](image-editor.html#glare).
+>톤 매핑된 이미지를 .jpg 또는 .png와 같은 비트맵 형식으로 [저장](image-editor.html#save-tonemapped-image-as)합니다.
 >Save the luminance information to an [HDR format](image-editor.html#save-hdr-image-as).
 >View and save additional masked channels ( [alpha](image-editor.html#alpha-channel), [distance](image-editor.html#distance-channel), [material](image-editor.html#material-channel) ) for use in advanced compositing.
->Save a [Piranesi©](http://www.piranesi.co.uk/) file format (*.epx) which can be used to create non photorealistic rendering.
+>포토리얼리스틱 렌더링이 아닌 렌더링을 만들 때 사용할 수 있는 [Piranesi©](http://www.piranesi.co.uk/) 파일 형식(*.epx)으로 저장합니다.
 >렌더 팜에서 별도의 노드로 생성된 이미지를 짜집기하는 등의 작업을 할 때는 이미지를 산술로 설정하여 사용하십시오.
 >이 렌더링을 생성하는 데 사용된 [조명 설정](image-editor.html#save-lighting-settings-as)을 저장합니다. 이 조명 설정을 사용하여 더 많은 렌더링을 만들 수 있습니다.
 
@@ -125,10 +125,10 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 이미지 효과를 애니메이션 실행하려면
 1. 첫 번째 이미지를 설정합니다.
  
-Click the **Plus (+)** button next to the **Frame** edit box.
-1. Edit the image and add frames.
-1. Click **Image &gt; Animation**, and in the dialog box, click **Preview**.
-1. If all is well, click **Animate**.
+**프레임** 편집 상자 옆에 있는 **플러스 (+)** 단추를 클릭합니다.  
+1. 이미지를 편집하고 프레임을 추가합니다.
+1. **이미지 &gt; 애니메이션**을 클릭하고 대화상자에서 **미리보기**를 클릭합니다.
+1. 모두 잘 설정되었으면 **애니메이션**을 클릭합니다.
 폴더를 만듭니다.
 만들어진 이미지 시퀀스로, 애니메이션 제작 용도 소프트웨어를 사용하여 애니메이션을 만들 때 사용할 수 있습니다.
 
@@ -158,9 +158,9 @@ Click the **Plus (+)** button next to the **Frame** edit box.
 ## 이미지 편집기 사용
 
 ##### 이미지 로드
-1.  [Save](render-window.html#export-to-nxtimage) your rendering results as an. **nXtImage**.
-1. On the **Flamingo nXt** menu, click **Utilities &gt; Flamingo nXt Image Editor**.
-1. In the **nXt Image Editor**, on the File menu, click **Open** to load the image into the editor.
+1.  렌더링 이미지를 **nXtImage**로 [저장](render-window.html#export-to-nxtimage)합니다.
+1. **Flamingo nXt** 메뉴에서 **유틸리티 &gt; Flamingo nXt 이미지 편집기**를 클릭합니다.
+1. **nXt 이미지 편집기**의 파일 메뉴에서 **열기**를 클릭하여 이미지를 편집기에 로드합니다.
 
 <!-- TODO: OK, this time I didn't remove the #### -->
 
@@ -178,7 +178,7 @@ Click the **Plus (+)** button next to the **Frame** edit box.
 [렌더링 창: 번](render-window.html#burn)을 참조하세요.
 
 ### 채도
-See [Render Window: Saturation](render-window.html#saturation)
+[렌더링 창: 채도](render-window.html#saturation)를 참조하세요.
 
 ### 히스토그램
 [렌더링 창: 히스토그램](render-window.html#histogram)을 참조하세요.
@@ -213,10 +213,10 @@ See [Render Window: Saturation](render-window.html#saturation)
 ## FX 설정
 <!-- TODO: Do we want some information here? -->
 
-## 옆은 안개
+## 옅은 안개
 {: #haze}
 카메라에서 멀리 떨어져 있는 픽셀에 색을 더합니다. 이 효과는 장면에 옅은 안개 또는 안개를 추가하거나, 배경을 색으로 마스크 처리, 배경색을 변경할 때 사용할 수 있습니다.
-*![images/golden gate.png](images/golden gate.png)Original image (left) and with haze (right).*
+*![images/golden gate.png](images/golden gate.png)원본 이미지 (왼쪽), 옅은 안개 처리된 이미지 (오른쪽).*
 
 ### Strength
 옅은 안개 색의 강도를 지정합니다.
@@ -262,7 +262,7 @@ See [Render Window: Saturation](render-window.html#saturation)
 
 ### 흐리게
 흐리게 필터가 실행되는 방향을 제어합니다. 기본값은 **배경**입니다. 이것은 카메라에서 정초점 영역**(In-Focus Zone)**보다 멀리 있는 모든 픽셀이 흐리게 처리되는 것을 뜻합니다.
-*![images/blur-001.png](images/blur-001.png)Blur foreground (left) and background (right).*
+*![images/blur-001.png](images/blur-001.png)흐린 전경 (왼쪽), 배경 (오른쪽).*
 
 #### 배경
 카메라에서 **정초점 영역**의 범위보다 먼 곳의 픽셀을 흐리게 표시합니다.

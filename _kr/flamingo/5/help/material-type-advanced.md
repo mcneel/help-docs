@@ -31,34 +31,33 @@ Each procedure combines two "child" materials using a specific method. Each of t
 
 As an example, the [Marble](procedural-materials.html#marble) Procedure combines a Base material and Vein Material in a swirling pattern.
 
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 ##### 절차를 추가하려면
 1. Right-click on Base the Procedures window.
 1. On the menu, click a procedure type.
   * [Base](procedural-materials.html#base)
   * [Angular Blend](procedural-materials.html#angular-blend)
-  * [Blend](procedural-materials.html#blend)
-  * [Granite](procedural-materials.html#granite)
-  * [Marble](procedural-materials.html#marble)
-  * [Tile](procedural-materials.html#tile)
-  * [Wood](procedural-materials.html#wood)
+  * [블렌드](procedural-materials.html#blend)
+  * [화강암](procedural-materials.html#granite)
+  * [대리석](procedural-materials.html#marble)
+  * [타일](procedural-materials.html#tile)
+  * [나무](procedural-materials.html#wood)
 
 ##### To remove a procedure
  1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+ 2. 메뉴에서 제거를 클릭합니다.
 
-## Advanced Material Properties
+## 고급 재질 속성
 {: #advanced-materials-properties}
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Reflective Finish and Highlight
+#### 반사 마무리와 하이라이트
 {: #reflective-finish-and-highlight}
 These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object. The reflective effect normally defined with a more mirror like reflections that reflects the objects in the rest of the the scene. It is important to now that chrome and other reflective materials do not make an interesting image unless they have something to reflect. When working with reflective materials, also think about an interesting environment and other objects for the reflective materials to reflect.
  Note : To activate these settings, the Intensity value must be greater than zero.
 
-#### Highlight color
+#### 하이라이트 색
 {: #highlight-color}
 Highlight color is the color that material adds to reflections. There are three settings for this control, White, Metallic and Custom
 
@@ -117,13 +116,13 @@ Automatically balances raycasting and highlight based on the Sharpness setting. 
 
 ![images/highlightglossy.png](images/highlightglossy.png)
 
-#### Monte Carlo
+#### 몬테카를로
 {: #monte-carlo}
 오직 레이캐스팅만이 광원 반사 계산에 사용됩니다. 레이캐스팅 초기에는 매우 노이즈가 많으며 점차 올바르게 수렴됩니다. 하이라이트가 흐리지 않을 때 가장 유용합니다.
 
 ![images/highlightmontecarlo.png](images/highlightmontecarlo.png)
 
-#### No Highlight
+#### 하이라이트 없음
 {: #no-highlight}
 오직 레이캐스팅만이 광원 반사 계산에 사용됩니다. 광원이 크고 재질이 흐리지 않아 하이라이트 계산에 시간이 오래 걸릴 수 있을 때 유용한 방식입니다. 광원 반사는 점차적으로 수렴됩니다.
 
@@ -162,17 +161,17 @@ The Transparency settings control properties associated with light passing throu
 
  | 재질      |     | IOR         |
  |:--------------|:---:|:------------|
- | Vacuum        |     | 1.0         |
- | Air           |     | 1.0029      |
- | Ice           |     | 1.309       |
- | Water         |     | 1.33        |
- | Glass         |     | 1.52 to 1.8 |
- | Emerald       |     | 1.57        |
- | Ruby/Sapphire |     | 1.77        |
- | Diamond       |     | 2.417       |
+ | 진공        |     | 1.0         |
+ | 공기           |     | 1.0029      |
+ | 얼음           |     | 1.309       |
+ | 물         |     | 1.33        |
+ | 유리         |     | 1.52 to 1.8 |
+ | 에메랄드       |     | 1.57        |
+ | 루비/사파이어 |     | 1.77        |
+ | 다이아몬드       |     | 2.417       |
 {: .grided-table}
 
-#### Translucency
+#### 반투명도
 {: #translucency}
 A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material. This is a very sensitive effect, small adjustments can make a big difference.
 
@@ -198,7 +197,7 @@ Determines how much light is absorbed as it passes through the object— greater
 
 ![images/dispersion.png](images/dispersion.png)
 
-#### Saturation
+#### 채도
 {: #saturation}
 굴절 분산의 양을 결정합니다.
 
