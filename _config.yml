@@ -246,14 +246,14 @@ defaults:
     values:
       doctype: "Help"
       layout: flamingo-toc-page
-      collectionname: "Help"
+      collectionname: "Aiuti"
   -
     scope:
       path: "it/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-toc-page
-      collectionname: "Guides"
+      collectionname: "Guide"
   -
     scope:
       path: ""

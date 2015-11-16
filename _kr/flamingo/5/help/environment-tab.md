@@ -44,13 +44,13 @@ Select the type of background for the model.  [Environment](#flamingo-environmen
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) 뒤로 화살표
 Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) 앞으로 화살표
 Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
 Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
-#### ![images/library_default.png](images/library_default.png) Tools Menu
+#### ![images/library_default.png](images/library_default.png) 도구 메뉴
 Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
 
 #### ![images/help_topics.png](images/help_topics.png) 도움말
@@ -92,7 +92,7 @@ Use this command to select a previously exported Environment.
 #### ![images/paste.png](images/paste.png) 붙여넣기
 클립보드의 콘텐츠를 바탕으로 새로운 환경을 만듭니다.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
 인스턴스 작업을 통해 원래 환경과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 환경을 만듭니다.
 
 #### ![images/grid.png](images/grid.png) 그리드
@@ -179,28 +179,28 @@ Saves a environment to a Rhino .renv file.
 환경을 다른 유형으로 변경합니다.
 The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
+#### ![images/reset.png](images/reset.png) 기본값으로 다시 설정
 Changes all the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
 
-#### ![images/copy.png](images/copy.png) Copy
+#### ![images/copy.png](images/copy.png) 복사
 Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
 
 #### ![images/paste.png](images/paste.png) 붙여넣기
 클립보드의 콘텐츠를 바탕으로 새로운 환경을 만듭니다.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
 인스턴스 작업을 통해 원래 환경과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 환경을 만듭니다.
 
-#### ![images/delete.png](images/delete.png) Delete
+#### ![images/delete.png](images/delete.png) 삭제
 선택된 환경을 삭제합니다.
 
-#### ![images/rename.png](images/rename.png) Rename...
+#### ![images/rename.png](images/rename.png) 이름 바꾸기...
 선택된 환경의 이름을 바꿉니다.
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
+#### ![images/duplicate.png](images/duplicate.png) 복제
 선택된 환경을 동일한 설정으로 새 환경에 복사합니다.
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
+#### ![images/removeinstancing.png](images/removeinstancing.png) 인스턴스 제거
 Removes the connection between [instanced](#paste-as-instance) environments.
 
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}

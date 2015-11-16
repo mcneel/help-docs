@@ -87,7 +87,7 @@ Glossy materials generally have a low Highlight [Intensity](material-type-advanc
 #### Intensity
 Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
-#### Highlight Sharpness
+#### 하이라이트 선명도
 Controls sharpenss vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
@@ -129,7 +129,7 @@ Set the image map and properties of the material. There are many options here. S
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-#### Width and Height
+#### 너비와 높이
 Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
 
 #### Intensity
@@ -143,5 +143,5 @@ This controls the type of reflection on the surface.  See Advanced [Type](materi
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
 
-## Advanced Material
+## 고급 재질
 The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.

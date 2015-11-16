@@ -1,7 +1,7 @@
-Sets the default time and number of passes constraints. The default recommended setting is to set these render constraints off and let the render engine continue until it is closed or manually stopped. These may be changed using the controls in the Render Window. Setting the Number of passes and Time to 0 allows the rendering to continue until you click Stop Rendering.
+기본적인 시간과 패스의 수 제한 조건을 설정합니다. 기본적으로 권장되는 설정은 렌더링 제한 조건을 끄고 렌더링 엔진이 종료되거나, 사용자가 직접 중지할 때까지 두는 것입니다. 이 설정은 렌더링 창의 제어 설정에서 변경할 수 있습니다. 패스의 수와 시간을 0으로 설정하면 사용자가 렌더링 중지를 클릭할 때까지 렌더링을 계속합니다.
 
 #### 시간
 렌더링이 계속해서 프로세스되는 시간을 시/분/초로 지정합니다. 안내: 시간 제한에 이른 후 마지막 패스를 지나친 후에 렌더링이 중지됩니다. 렌더링 다시 시작을 클릭하면 추가적으로 한 번의 패스를 계속합니다.
 
 #### 패스의 수
-Specifies the number of rendering passes the render will process. Note : Any time you click Resume Rendering, the counter for the number of passes is reset. For example, if you set the number of passes to 10 and stop the rendering after pass 8, the rendering will continue until it reaches 18 passes. Normally renderings may take 10 - 15 passes to start to converge. Architectural interiors may need up to 30 passes to start to converge.
+렌더링에서 진행되는 렌더링 패스의 수를 지정합니다. 안내 : 렌더링 다시 시작을 클릭하면 그 때마다 패스의 수가 다시 설정됩니다. 예를 들어, 패스의 수를 10으로 지정한 경우, 패스가 8번 실행된 후 렌더링을 중지하고 "렌더링 다시 시작"을 클릭하면 총 18번의 패스에 이를 때까지 렌더링이 계속됩니다. 일반적으로 렌더링 시작에서 수렴될 때까지 10~15 패스가 소요됩니다. 건축 인테리어의 경우, 시작에서 수렴될 때까지 30 패스까지 필요할 수 있습니다.
