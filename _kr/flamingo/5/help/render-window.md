@@ -1,11 +1,11 @@
 ---
-title: Render Window
+title: 렌더링 창
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}
 The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
 
-## Managing an Active Rendering
+## 활성 렌더링의 관리
 Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model then starts an initialization process.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
 
 >[Multiple pass rendering](#multi-pass)
@@ -40,15 +40,15 @@ You can stop the rendering in a number of ways:
 
 ![images/stop.png](images/stop.png) Double-click the Stop Raytrace to stop the rendering immediately and leave the render window open.
 
-### Adjusting a rendering
+### 렌더링 조정
 {: #adjusting}
 After stopping and image, use the controls in the [Flamingo Tab](#flamingo-tab) to quickly adjust the image and lighting. This is a very important set of tools when producing high end images.
 
 Controls used for images adjustment include:
 
->[Adjust Image](#adjust-image)
->[Channels](#channels)
->[Post Effects](#post-process-effects)
+>[이미지 조정](#adjust-image)
+>[채널](#channels)
+>[후처리 효과](#post-process-effects)
 
 
 ### 이미지 저장
@@ -75,22 +75,22 @@ The .nXtImage format is the native image format of the nXt renderers. It is the 
 {: #export-to-hdr}
 Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
 
-#### Export to EXR file
+#### EXR 파일로 내보내기
 {: #export-to-exr}
-A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
-The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
+HDR (high-dynamic-range) 이미지 형식은 Industrial Light and Magic (ILM)에서 무료 소프트웨어 라이선스로 개발한 소프트웨어 툴과 함께 오픈 스탠다드로 릴리스되었습니다. 이 파일 형식은 1 비트 부호, 5 비트 지수(指數), 10 비트 가수(假數)로 채널당 16비트 부동 소수점 값 (절반의 정밀도: half precision)을 지원합니다.  30 스톱 노출의 동적 범위(dynamic range)가 허용됩니다. [Wikipedia 항목: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)을 참조하세요.
+exr 형식은 High Dynamic Range 형식에 있는 휘도 데이터를 직접 저장합니다. 일반 사진처럼 휘도가 없는 배경을 이러한 형식으로 저장하면 검정색으로 나타납니다.
 
 #### ![images/close-x.png](images/close-x.png) Exit
 렌더링 창을 닫습니다.
 
-#### Pulldown Menus
+#### 메뉴
 For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).
 
 ## Flamingo 탭
 {: #flamingo-tab}
 The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to managing the active Flamigno renderings.
 
-#### Save with alpha channel
+#### 알파 채널과 함께 저장
 Saves 32-bit PNG, TIF, and BMP images including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  Use this checkbox and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
 
 ## 진행률
@@ -108,19 +108,19 @@ Status messages include:
 * Resume Rendering - In cases that a resume is possible this is displayed.
 * Updating - The render engine is in the middle of a pass, currently updating the rendering.
 
-#### Pass
+#### 패스
 This is the current pass Flamingo is rendering.  Flamingo is a multi-pass render engine.  Each pass will refine add lighting effects and refine the complex rendering effects.
 
-#### Scan line
+#### 스캔 라인
 A pass progresses along a stretch of horizontal pixels.  Each row of pixels is a scanline.  This reports the current scanline returned from the render engine.
 
-#### Elapsed time
+#### 경과 시간
 This is the time that has passed from the beginning of the rendering.  This does not include the setup time for the rendering.
 
 #### Rays / second
 The number of rays resolved into the scene per second.
 
-#### Pixels / second
+#### 픽셀 / 초
 The number of pixels resolved in the image per second.
 
 ## 이미지 조정
@@ -188,7 +188,7 @@ Right-click the histogram image for the following options.  This options simply 
 #### 해상도
 Displays the current [rendering resolution](render-tab.html#resolution).
 
-#### Faces
+#### 면
 Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.
 
 #### 보이는 면

@@ -78,7 +78,7 @@ Set the number of passes needed to finish the batch job.  See the [Passes](docum
 There are two ways to create animations in Rhino.  Animations can be configured using [Rhino's Animation toolbar](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm) or using the [Bongo](http://bongo.rhino3d.com/) animation plugin.
 
 ##### To submit an animation job to the render farm
-1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
+1. [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) 명령을 실행합니다.
 1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
  
 Specify theJob name,and click theOKbutton.

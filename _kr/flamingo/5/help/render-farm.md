@@ -1,23 +1,23 @@
 ---
-title: Farm Rendering
+title: 팜 렌더링
 ---
 
 # {{page.title}}
 The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers used only as render farm clients.
 
-#### A typical Farm layout
+#### 전형적인 팜 레이아웃
 {: #render-farm}
 
 ![images/renderfarm-002.png](images/renderfarm-002.png){: style="margin-top:25px;"}
 
 >![images/01.png](images/01.png)Rhino와 Flamingo nXt가 설치된 컴퓨터.
->![images/02.png](images/02.png)Network server or shared farm folder.
+>![images/02.png](images/02.png)네트워크 서버 또는 공유된 팜 폴더.
 >![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
 >![images/04.png](images/04.png)Additional purchased render farm clients.
 
 The Render Farm is free for up to two client computers. To add more client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
-#### Shared Farm folder
+#### 공유된 팜 폴더
 {: farm-folder}
 The key to a functional render farm is a shared folder to which the master machine and all the client computers can access.  This is normally a shared network folder.  It can be a folder on the master machine or on a network.  The folder does not have to be assigned to the same name on each client, but each client does need full read/write/delete access to the folder.  The shared folder should have at least 20GB of available storage.
 
