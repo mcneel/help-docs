@@ -226,6 +226,9 @@ h6 {
 
 blockquote {
 	border-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 450px) {
   blockquote {
