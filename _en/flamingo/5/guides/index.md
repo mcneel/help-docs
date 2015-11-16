@@ -3,7 +3,7 @@ layout: fullwidth-page
 ---
 
 # Getting Started with Flamingo nXt 5®
- 
+
 ## Installation
 
 Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
@@ -24,26 +24,26 @@ Libraries
 Environment
 Groundplane
 Etc…
- 
+
 ## To access the Flamingo control panel
   * On the **Flamingo nXt** menu, click **Control Panel**.
 
-  ## The Flamingo nXt Control Panel
+## The Flamingo nXt Control Panel
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
- *  [Materials](..\materials\materials-tab.html) 
- *  [Lighting](../lighting/lighting-tab.html) 
- *  [Environment](../environment/environment-tab.html) 
- *  [Render](../render/render-tab.html) 
+ *  [Materials](..\materials\materials-tab.html)
+ *  [Lighting](../lighting/lighting-tab.html)
+ *  [Environment](../environment/environment-tab.html)
+ *  [Render](../render/render-tab.html)
 
 ## Rendering Basics
- 
+
 Rendering your finished model comprises four basic steps:
 
- *  [Set up materials](..\materials\materials-tab.html) 
- *  [Set up lighting](../lighting/lighting-tab.html) 
- *  [Set up an environment](../environment/environment-tab.html) 
- *  [Set up rendering conditions](../render/render-tab.html) 
+ *  [Set up materials](..\materials\materials-tab.html)
+ *  [Set up lighting](../lighting/lighting-tab.html)
+ *  [Set up an environment](../environment/environment-tab.html)
+ *  [Set up rendering conditions](../render/render-tab.html)
 
 #### To start a rendering
 
@@ -53,13 +53,13 @@ Rendering your finished model comprises four basic steps:
  * On the **Standard** toolbar, click the **Render** button.
 
 ### Stop Rendering
- 
+
 
 By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
 
 
-###  <kbd>Resume Rendering</kbd> 
- 
+###  <kbd>Resume Rendering</kbd>
+
 
 Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
 
@@ -70,5 +70,3 @@ Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Ti
 &#160;
 
 Revised: 22-Dec-2011 14:45
-
-
