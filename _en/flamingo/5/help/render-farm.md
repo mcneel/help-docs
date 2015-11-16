@@ -48,7 +48,7 @@ For machines that do not have Rhino and Flamingo installed, install the Farmer c
  1. Download the current [Render Farmer software](http://www.rhino3d.com/download/The-Farm/1.0/release).
  1. Run the downloaded installer on each of the client computers.
  1. From the Start menu, run the Render Farmer on each machine.
- The Render Farmer will appear as an icon in the system tray.
+ 1. The Render Farmer will appear as an icon in the system tray.
 
 ##### To configure the Render Farm
 {: #configure-the-render-farm}
