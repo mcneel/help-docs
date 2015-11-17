@@ -1,7 +1,8 @@
 ---
+title: Automated rendering
 ---
 
-# Automated rendering
+# {{page.title}}
 
 
 ## Batch rendering

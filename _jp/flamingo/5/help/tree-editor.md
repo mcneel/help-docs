@@ -1,8 +1,9 @@
 ---
+title: Plant Editor
 ---
 <!-- TODO: This could use an update. -->
 
-# Plant Editor
+# {{page.title}}
 {: #tree-editor}
 
 ### File Pulldown
