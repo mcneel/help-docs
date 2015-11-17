@@ -7,7 +7,8 @@ The color selector is used for many material groups and properties.  In all case
 
 
 There are two parts of the selector:
-  ![images/colorswatch-002.svg](images/colorswatch-002.svg)
+
+![images/colorswatch-002.svg](images/colorswatch-002.svg)
 
 1. [Color Swatch](#swatch) - Click on the color fo the main color selector
 1. [Options Menu](#options) - Click on the arrow for additional color utilities
@@ -29,7 +30,7 @@ Click the color swatch to select a color from the Select Color dialog box.
 1. Saturation refers to the color's intensity on a 0 to 100 scale. A saturation of 0 produces a neutral gray color that varies from black to white depending on the color's brightness. The hue has no effect on a color with a saturation component of 0. A saturation of 100 produces that hue's most intense shade.
 1. Value refers to the perceived amount of light value (or white) in the color. The Value component varies between 0 and 100. Value is also sometimes referred to as luminance or brightness.
 
-##### Red, Green, Blue (RGB)
+#### Red, Green, Blue (RGB)
 {: #rgb}
 This method is used by computers to project color onto the monitor. Each pixel is a combination of the three colors in varying intensities. Pure red is entirely red with no green or blue. Pure black has red, green, and blue set to 0, and pure white has red, green, and blue set to 255.
 
