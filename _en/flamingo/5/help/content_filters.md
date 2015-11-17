@@ -1,6 +1,8 @@
 ---
 title: Content Filters
 ---
+<!-- TODO: This is an orphan page, but needs to be linked to from the Material Libraries page -->
+
 # {{page.title}} ![images/contentfilter.png](images/contentfilter.png)
 The content filter is accessed through the **Content Filters** dialog box.
 
