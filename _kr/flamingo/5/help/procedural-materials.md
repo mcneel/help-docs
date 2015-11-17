@@ -4,31 +4,30 @@ title: 절차적 재질
 
 #  ![images/paint.svg](images/paint.svg) {{page.title}}
 절차 트리는 재질들이 서로 상호 작용하는 방법을 정하는 규칙을 사용하여 하나 이상의 재질을 결합합니다. 트리에는 재질을 만드는 데 사용된 구성 요소가 표시되며, 직접 구성 요소를 추가할수도 있습니다. 간단한 재질은 베이스 구성 요소만 목록에 표시됩니다.
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 각각의 절차는 두 개의 하위 재질을 특정한 방식을 사용하여 결합합니다. 두 하위 재질이 차례차례 절차가 되어 두 하위 재질 자체를 결합합니다. 이 방식을 사용하여 더욱 간단한 구성 요소를 가지고 매우 정교한 재질을 만들 수 있습니다. 재질을 결합하는 절차에는 다음과 같은 옵션이 있습니다:
 
-> [Base](#base)
-> [Angular Blend](#angular-blend)
-> [Blend](#blend)
-> [Marble](#marble)
-> [Granite](#granite)
-> [Tile](#tile)
-> [Wood](#wood)
+> [베이스](#base)
+> [각도 블렌드](#angular-blend)
+> [블렌드](#blend)
+> [대리석](#marble)
+> [화강암](#granite)
+> [타일](#tile)
+> [나무](#wood)
 
 ##### 절차를 추가하려면
-1. Right-click anywhere in the Procedures window.
-1. On the menu, click a procedure type.
+1. 절차 창 안에서 오른쪽 클릭합니다.
+1. 메뉴에서 절차 유형을 클릭합니다.
 
-##### To remove a procedure
- 1. In the Procedures window, right-click the procedure name.
+##### 절차를 제거하려면
+ 1. 절차 창에서 절차의 이름을 오른쪽 클릭합니다.
  2. 메뉴에서 제거를 클릭합니다.
 
-## Base
+## 베이스
 {: #base}
-This is the basic simple material with no layers. This is the default procedure.
+레이어가 없는 가장 기본적이고 간단한 재질입니다. 이것은 기본 절차입니다.
 
-## Angular Blend
+## 각도 블렌드
 {: #angular-blend}
 Many materials change color, reflection, or transparency based on the angle the material is viewed. The Angular Blend procedure blends between two materials based on the angle of view to the surface of the object.
 
@@ -68,8 +67,7 @@ Varies the percentage of each component material used in the final material.  Fo
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### 이미지 사용
-대개 회색조 패턴으로 구성된 비트맵 이미지는 어디에 두 개의 구성 요소 재질이 표시되는지를 정의합니다. 재질은 이미지의 회색 픽셀 값을 기준으로 블렌드됩니다. 회색조 이미지 맵을 사용하여 첫 번째와 두 번째 구성 요소 사이를 조정합니다. 첫 번째 구성 요소는 비트맵 패턴에 검정색이 있는 곳에 배치되며, 두 번째 구성 요소는 비트맵 패턴에 흰색이 있는 곳으로 배치됩니다.
-<!--TODO: The first sentence needs work. -->
+An Image can be used to control how two materials will interact.  When using a Bitmap image the grayscale values of the pixels define where two component materials will blend. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
 
 그림에서 처음과 두 번째 구성 요소에 모두 동일한 재질이 사용되었으나, 블렌드는 세 개의 다른 비트맵으로 제어됩니다.
 ![images/blendmask.png](images/blendmask.png)
@@ -114,7 +112,7 @@ Creates alternating slabs of Base and Vein components. The Marble procedure defi
 
 Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object.
 ![images/materialunmapped.png](images/materialunmapped.png)
-텍스처 매핑 없음 (왼쪽). 텍스처 매핑 적용 상태 (오른쪽).
+*No texture mapping (left). With texture mapping (right).*
 
 #### Base/Vein
 The Base and Vein components are two materials. Their properties are specified in the same way as any material.
@@ -126,7 +124,7 @@ The Base and Vein components are two materials. Their properties are specified i
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-베니어 (왼쪽), 일반 (오른쪽).
+*Veneer (left), normal (right).*
 
 ## 타일
 {: #tile}
