@@ -1,7 +1,8 @@
 ---
+title: Check for Updates
 ---
 
-# Check for Updates
+# {{page.title}}
 This is an automated check for the current version of Flamingo NXT 5.0.
 
 #### Current Update status

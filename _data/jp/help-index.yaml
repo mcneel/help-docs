@@ -1,134 +1,134 @@
 main_index:
-  name: Flamingo Help Topics
+  name: Flamingoヘルプのトピック
   anchor: all_topics
   categories:
-    - name: Libraries
+    - name: ライブラリ
       anchor: libraries
       topics:
-        - name: Libraries Panel
+        - name: ライブラリパネル
           path: libraries.html
           anchor: test
-        - name: Material Library
+        - name: マテリアルライブラリ
           path: libraries.html
           anchor: material
-        - name: Environment Library
+        - name: 環境ライブラリ
           path: libraries.html
           anchor: environment
-        - name: Plant Library
+        - name: 植物ライブラリ
           path: libraries.html
           anchor: plant
-        - name: Library Settings
+        - name: ライブラリの設定
           path: libraries.html
           anchor: settings
 
-    - name: Materials
+    - name: マテリアル
       anchor: materials
       topics:
-        - name: Material Editor
+        - name: マテリアルエディタ
           path: material-editor.html
-        - name: Assign Materials
+        - name: マテリアルの割り当て
           path: material_assignment.html
-        - name: Basic Material Properties
+        - name: マテリアルの基本プロパティ
           path: material-type-simple.html
-        - name: Advanced Material Properties
+        - name: マテリアルの詳細プロパティ
           path: material-type-advanced.html
-        - name: Material Image Properties
+        - name: マテリアル画像のプロパティ
           path: material-image-properties.html
-        - name: Procedural Material Types
+        - name: プロシージャルマテリアルのタイプ
           path: procedural-materials.html
-        - name: Texture Set Materials
+        - name: テクスチャセットマテリアル
           path: texture-set-materials.html
-        - name: Color Selector
+        - name: 色セレクタ
           path: select-color.html
 
-    - name: Lighting
+    - name: 照明
       anchor: lighting
       topics:
-        - name: Lighting Presets
+        - name: 照明プリセット
           path: lighting-tab.html
-        - name: Sun
+        - name: 太陽
           path: sun-and-sky-tabs.html
           anchor: sun
-        - name: Sky
+        - name: 空
           path: sun-and-sky-tabs.html
           anchor: sky
-        - name: Lights
+        - name: 光源
           path: lights-tab.html
 
-    - name: Environment
+    - name: 環境
       anchor: environment
       topics:
-       - name: Environment Editor
+       - name: 環境エディタ
          path: environment-tab.html
-       - name: Flamingo Environment
+       - name: Flamingoの環境
          path: environment.html
 
-    - name: Rendering
+    - name: レンダリング
       anchor: rendering
       topics:
-        - name: Render tab
+        - name: レンダリングタブ
           path: render-tab.html
-        - name: Render Window
+        - name: レンダリングウィンドウ
           path: render-window.html
-        - name: Channels
+        - name: チャンネル
           path: render-channel.html
-        - name: Image Editor
+        - name: 画像エディタ
           path: image-editor.html
-        - name: Automated Rendering
+        - name: レンダリングの自動化
           path: automate-rendering.html
 
 
-    - name: Object Properties
+    - name: オブジェクトのプロパティ
       anchor: object_properties
       topics:
-        - name: Material Source
+        - name: マテリアルソース
           path: properties-object.html
           anchor: material-source
-        - name: Custom Meshing
+        - name: カスタムメッシュ生成
           path: properties-object.html
           anchor: custom-meshes
-        - name: Texture Mapping
+        - name: テクスチャマッピング
           path: properties-object.html
           anchor: texture-mapping
-        - name: Decal Properties
+        - name: デカールのプロパティ
           path: properties-object.html
           anchor: decals
-        - name: Object properties
+        - name: オブジェクトのプロパティ
           path: properties-object.html
 
-    - name: Plants
+    - name: 植物
       anchor: plants
       topics:
-        - name: Plants
+        - name: 植物
           path: plants.html
-        - name: Plant Editor
+        - name: 植物エディタ
           path: tree-editor.html
 
-    - name: Network Rendering (Farm)
+    - name: ネットワークレンダリング（ファーム）
       anchor: farm
       topics:
-        - name: Installing the Farm
+        - name: ファームのインストール
           path: render-farm.html
           anchor: install
-        - name: Render Farm
+        - name: レンダーファーム
           path: render-farm.html
           anchor: farm
-        - name: Render Farm Monitor
+        - name: レンダーファームモニター
           path: render-farm.html
           anchor: monitor
 
-    - name: Misc
+    - name: その他
       anchor: misc
       topics:
-        - name: Document Properties
+        - name: ドキュメントのプロパティ
           path: documentproperties-flamingo.html
-        - name: Options Flamingo nXt
+        - name: Flamingo nXtのオプション
           path: options-flamingo.html
-        - name: RealTime Viewport
+        - name: リアルタイムビューポート
           path: realtime.html
-        - name: Flamingo Command List
+        - name: Flamingoのコマンドリスト
           path: flamingo-command-list.html
-        - name: Select color
+        - name: 色の選択
           path: select-color.html
-        - name: Welcome
+        - name: はじめに
           path: welcome.html

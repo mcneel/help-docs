@@ -1,11 +1,12 @@
 ---
+title: Procedural Materials
 ---
 
-#  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Procedural Materials
+#  ![images/paint.svg](images/paint.svg) {{page.title}}
 The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
 <!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
-Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include
+Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include:
 
 > [Base](#base)
 > [Angular Blend](#angular-blend)
@@ -16,11 +17,11 @@ Each procedure combines two &quot;child&quot; materials using a specific method.
 > [Wood](#wood)
 
 ##### To add a procedure
-1. Right-clickanywhere in the Procedures window.
+1. Right-click anywhere in the Procedures window.
 1. On the menu, click a procedure type.
 
 ##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
+ 1. In the Procedures window, right-click the procedure name.
  2. On the menu, click Remove.
 
 ## Base
@@ -29,7 +30,7 @@ This is the basic simple material with no layers. This is the default procedure.
 
 ## Angular Blend
 {: #angular-blend}
-Many material change color, reflection or transparency based on the angle the material is viewed. The Angular Blend procedure blends between two materials based on the angle of view to the surface of the object.
+Many materials change color, reflection, or transparency based on the angle the material is viewed. The Angular Blend procedure blends between two materials based on the angle of view to the surface of the object.
 
 ![images/angularblendmaterials.png](images/angularblendmaterials.png)
 The Angular Blend procedure blends between two different materials to create special effects. The two layers in the procedure are the Inner and the Outer Layer.
@@ -63,14 +64,16 @@ The Blend procedure combines two base components and controls the proportions of
 Blends work well changing an entire material definition by adding an overall color to a base patterned material.
 
 #### Blend
-Varies the percentage of each component material used in the final material.  For instance the material blow shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and 50% striped and 50% green color blended.  The image to the right shows a weak striped material with a strong green material, so the slider is at the right of the Blend slider.
+Varies the percentage of each component material used in the final material.  For instance, the material below shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and 50% striped and 50% green color blended.  The image to the right shows a weak striped material with a strong green material, so the slider is at the right of the Blend slider.
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### Use image
 Bitmap images usually consisting of grayscale patterns define where two component materials will show. The materials are blended by the value of the gray pixels in the image. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
+<!--TODO: The first sentence needs work. -->
+
 In the image, the same materials are used for the first and second components, but the blend is controlled by three different bitmaps.
 ![images/blendmask.png](images/blendmask.png)
-The resolution of the mask bitmap affects the quality of the material. Higher resolution bitmaps allow a viewpoint closer to the material with fewer quality issues, but they also use more memory.
+The resolution of the mask bitmap affects the material quality. Higher resolution bitmaps allow a viewpoint closer to the material with fewer quality issues, but they also use more memory.
 
 #### Use Alpha channel
 If the image has an alpha channel, this can be used instead of the bitmap grayscale to determine where the colors blend.
@@ -168,7 +171,7 @@ Offsets the material from the world origin for each tile randomly. Do this if a 
 {: #wood}
 Wood consists of concentric cylinders of alternating Base and Ring components. The Wood settings define how the Base and Ring components combine.
 
-Use this method to create wood materials if objects are not closely viewed. If detailed wood is needed, use a [Texture material](material-type-simple.html#textured) to do wood.  If the viewpoint is not close to the wood, a solid color can be used to take the place of wood without sacrificing image quality. This allows faster rendering. An additional advantages of using a wood material is that when rendering different sides of an object, the wood grain will look correct. End grain will show on the ends and parallel grain will show on the sides of an object.
+Use this method to create wood materials if objects are not closely viewed. If detailed wood is needed, use a [Texture material](material-type-simple.html#textured) to do wood.  If the viewpoint is not close to the wood, a solid color can be used to take the place of wood without sacrificing image quality. This allows faster rendering. An additional advantage of using a wood material is that when rendering different sides of an object, the wood grain will look correct. End grain will show on the ends and parallel grain will show on the sides of an object.
 ![images/woodmaterials.png](images/woodmaterials.png)
 
 #### Base/Ring

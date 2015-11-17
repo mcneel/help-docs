@@ -2,73 +2,73 @@
 layout: fullwidth-page
 ---
 
-# Getting Started with Flamingo nXt 5®
+# Flamingo nXt 5®をはじめるにあたって
  
-## Installation
+## インストール
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
-Startup notes
+Flamingo 5 ベータには、以前のバージョンのFlamingo nXtがインストールされていることが必要です。
+Flamingo nXt 5を実行するには、Rhino 5 サービスリリース12が必要です。
+RHIインストーラをダウンロード、実行後にRhinoを起動してください。
+起動についてのメモ
 
-This version of Flamingo features an interface which is integrated with the Rhino 5 rendering tools. This made several necessary changes to the rendering interface. At this time it is important to find the Flamingo interface when first starting up Flamingo:
+このバージョンのFlamingoはインターフェイスがRhino 5のレンダリングツールと統合されます。そのため、レンダリングのインターフェイスにはいくつかの必要な変更が加えられています。最初にFlamingoを起動する際は、Flamingoのインターフェイスを下の操作を行って表示させてください。
 
-The Flamingo control panel can be found under the Render Pulldown > Flamingo nXt 5 > Show Control Panel
-The Flamingo nXt tab contains Flamingo specific controls:
-Sky
-Lighting Manager
-Custom Lighting controls
-Render Options
-Once in the control panel, Right-click in the tab area and select the panels:
-Libraries
-Environment
-Groundplane
-Etc…
+レンダリングプルダウン > Flamingo nXt 5 > コントロールパネルを表示を選択します。Flamingoのコントロールパネルが表示されます。
+Flamingo nXtタブには、Flamingo特有のコントロールが表示されます:
+空
+光源マネージャ
+カスタム照明コントロール
+レンダリングオプション
+コントロールパネルのタブ領域を右クリックすると下のようなパネルを選択することができます:
+ライブラリ
+環境
+地平面
+その他…
  
-## To access the Flamingo control panel
-  * On the **Flamingo nXt** menu, click **Control Panel**.
+## Flamingoのコントロールパネルを表示するには
+  * **Flamingo nXt**メニューの**コントロールパネル**をクリックします。
 
-  ## The Flamingo nXt Control Panel
-The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
+  ## Flamingo nXtのコントロールパネル
+**Flamingo nXt**の**コントロールパネル**には、レンダリングのためにモデルを設定するためのタブが表示されます:
 
- *  [Materials](..\materials\materials-tab.html) 
- *  [Lighting](../lighting/lighting-tab.html) 
- *  [Environment](../environment/environment-tab.html) 
- *  [Render](../render/render-tab.html) 
+ *  [マテリアル](..\materials\materials-tab.html) 
+ *  [照明](../lighting/lighting-tab.html) 
+ *  [環境](../environment/environment-tab.html) 
+ *  [レンダリング](../render/render-tab.html) 
 
-## Rendering Basics
+## レンダリングの基礎
  
-Rendering your finished model comprises four basic steps:
+完成したモデルのレンダリングは次の4つの基本手順で行います。
 
- *  [Set up materials](..\materials\materials-tab.html) 
- *  [Set up lighting](../lighting/lighting-tab.html) 
- *  [Set up an environment](../environment/environment-tab.html) 
- *  [Set up rendering conditions](../render/render-tab.html) 
+ *  [マテリアルの設定](..\materials\materials-tab.html) 
+ *  [照明の設定](../lighting/lighting-tab.html) 
+ *  [環境の設定](../environment/environment-tab.html) 
+ *  [レンダリング条件の設定](../render/render-tab.html) 
 
-#### To start a rendering
+#### レンダリングを開始するには
 
- * On the **Render** or **Flamingo nXt** menu, click **Render**.
-- Or -
+ * **レンダリング**または**Flamingo nXt**メニューの**レンダリング**をクリックします。
+- または -
 
- * On the **Standard** toolbar, click the **Render** button.
+ * **標準**ツールバーの**レンダリング**ボタンをクリックします。
 
-### Stop Rendering
- 
-
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
-
-
-###  <kbd>Resume Rendering</kbd> 
+### レンダリングを停止
  
 
-Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
+デフォルトで、レンダリングプロセスは**レンダリングを停止**ボタンをクリックするまでパス毎にイメージのリファイン（より詳細なレンダリング）を続けます。このボタンを使うと、時間と質のバランスを取ることができます。レンダリングを長く続けるほど、完全に収束した「正しい」結果に近づきます。レンダリングはいつでも好きな時に中止することができます。
 
-The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
 
-Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
+###  <kbd>レンダリングを再開</kbd> 
+ 
+
+**レンダリングを停止**ボタンをクリックすると、現在処理中のパスが完了した後にレンダリングが停止されます。
+
+レンダリングが停止すると、ボタンの表示は**レンダリングを再開**に変わります。レンダリング停止条件で設定した時間またはパスの数に達する前にレンダリングを停止した場合、**レンダリングを再開**ボタンを押すとレンダリングが続行されます。
+
+自動停止条件を設定するには、[レンダリングウィンドウ](..\render\render-window.html)または[ドキュメントのプロパティ &gt; Flamingo nXt](..\render\documentproperties-flamingo.html)の[パスの数](..\render\render-window.html#number-of-passes)または[時間](..\render\render-window.html#time)を使用します。
 
 &#160;
 
-Revised: 22-Dec-2011 14:45
+改訂: 22-Dec-2011年12月22日 14:45
 
 

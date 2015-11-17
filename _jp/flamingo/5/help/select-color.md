@@ -1,7 +1,8 @@
 ---
+title: Color Selector
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
 
 
@@ -39,7 +40,7 @@ This method is used by computers to project color onto the monitor. Each pixel i
 Opens the [Color Swatch](#swatch) dialog box described above. This is the same as clicking on the color swatch.
 
 #### Eye Dropper
-Allows picking the color from anywhere on the screen using a eye dropper tool
+Allows picking the color from anywhere on the screen using a eye dropper tool.
 
 #### Copy
 Copies the color in the color swatch. To be used in another color selector by using the Paste option.
