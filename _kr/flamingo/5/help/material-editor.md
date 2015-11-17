@@ -41,7 +41,7 @@ Use this bar to navigate the material during its development.
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) 뒤로 화살표
 Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to return to the parent material from the texture details.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) 앞으로 화살표
 Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to return to the recently used texture from the parent material.
 
 
@@ -87,7 +87,7 @@ This menu is available by right-clicking on a blank area of the Material List.
 #### ![images/paste.png](images/paste.png) 붙여넣기
 Creates a new material based on the Clipboard contents.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
 Creates a new material based on the Clipboard contents that is linked to the original through instancing.
 
 #### ![images/grid.png](images/grid.png) 그리드
@@ -206,28 +206,28 @@ Opens the Render Content [library](libraries.html) of materials.
 재질을 다른 유형으로 변경합니다.
 The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)  box. If checked, compatible settings from the old content will be copied to the new one.
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
+#### ![images/reset.png](images/reset.png) 기본값으로 다시 설정
 Changes all the material settings to the default white, matte, non-reflective, untextured material.
 
-#### ![images/copy.png](images/copy.png) Copy
+#### ![images/copy.png](images/copy.png) 복사
 Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
 
 #### ![images/paste.png](images/paste.png) 붙여넣기
 Creates a new material based on the Clipboard contents.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
 Creates a new material based on the Clipboard contents that is linked to the original through instancing.
 
-#### ![images/delete.png](images/delete.png) Delete
+#### ![images/delete.png](images/delete.png) 삭제
 선택된 재질을 삭제합니다.
 
-#### ![images/rename.png](images/rename.png) Rename...
+#### ![images/rename.png](images/rename.png) 이름 바꾸기...
 선택된 재질의 이름을 변경합니다.
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
+#### ![images/duplicate.png](images/duplicate.png) 복제
 선택된 재질을 동일한 설정으로 새 재질에 복사합니다.
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
+#### ![images/removeinstancing.png](images/removeinstancing.png) 인스턴스 제거
 Removes the connection between [instanced](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) materials.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 

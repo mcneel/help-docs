@@ -1,5 +1,5 @@
 ---
-title: Lights
+title: 조명
 ---
 
 # ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
@@ -47,7 +47,7 @@ Right-clicking on the Lights tab table will open the [Additional Options](#addit
 {: #light-types}
 Lights can be inserted from the Rhino toolbars or the Flamingo Lights tab. Objects can be tagged as lights with Flamingo.
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Tag objects as lights
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) 개체를 조명으로 태그
 {: #tag-objects-as-lights}
 Any renderable object (surface, solid, etc.) can be tagged as a light source and given light properties. Additional properties such as [distribution](#light-distribution), [direction](#aim-light), and [strength](#watts) can be assigned. Objects tagged as lights may display a preview widget showing direction of the light and its center location.
 
@@ -61,7 +61,7 @@ Spotlight is a conical light distribution with a specific direction.  The light 
 ![images/spotlight.png](images/spotlight.png)
 *A Spotlight pointed at the red box*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) Point Light
+#### ![images/pointlight-01.png](images/pointlight-01.png) 점 조명
 {: #pointlight}
 Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the point light is partially obscured by an object that intersects the light.
 

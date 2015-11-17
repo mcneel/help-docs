@@ -1,21 +1,21 @@
 
 ### 마스크
-Obscures portions of the image based on either a color value or an alpha channel stored in the image. This allows textures to have complex shaped boundaries and create complex effects such as holes in a surface.
+색상값 또는 이미지에 저장된 알파 채널을 기준으로 이미지의 일부를 잘 보이지 않게 합니다. 마스크를 사용하여 복잡한 형태의 경계를 가진 텍스처를 사용할 수 있으며, 서피스의 구멍처럼 복잡한 효과를 만들어낼 수 있습니다.
 
 다음 예에서는 알파 채널 배경을 가진 이미지가 직사각형 서피스에 데칼로 배치되었습니다. 재질을 마스크 처리할 때도 동일합니다.
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
 *원래 데칼 이미지. 회색 바둑판 무늬 부분은 이미지의 알파 채널을 나타냅니다.*
 
-Masking information can come from three sources in the bitmap:
+마스크 정보는 비트맵의 세 가지 소스에서 올 수 있습니다:
 
-> [None](#nomask)
+> [없음](#nomask)
 > [알파 채널](#alphamask)
 > [색](#colormask)
 
 #### 없음
 {: #nomask}
-With no masking, the image obscures the underlying material. Masking allows the material to show through the image where the alpha channel or masking color exists. The material assigned to a planar surface in this example has a red base color.
+마스크 처리가 없으면, 이미지는 아래에 있는 재질을 잘 보이지 않게 가립니다. 마스크를 사용하여 이미지에 알파 채널이 있는 부분 또는 컬러 마스크 처리된 부분을 통과하여 재질이 보이도록 설정할 수 있습니다. 이 예에서 평면형 서피스에 적용된 재질의 기본색이 빨강입니다.
 
 ![images/masking-002.png](images/masking-002.png)
 *마스크 처리 없음 (왼쪽) 의 경우, 이미지는 서피스를 커버합니다. 마스크 처리 (오른쪽) 의 경우는 빨간색 재질이 보입니다.*
@@ -25,39 +25,38 @@ With no masking, the image obscures the underlying material. Masking allows the 
 이미지의 [알파 채널](environment-tab.html#alpha)이 있는 경우 이를 사용하여 마스크가 적용된 영역을 정의합니다.
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
-*Original on the left. The gray checkered area represents the image alpha channel. On the right is the image over a water surface.*
+*왼쪽이 원본입니다. 회색 바둑판 영역은 이미지 알파 채널을 나타냅니다. 오른쪽에서는, 수면 위에 이미지가 있습니다.*
 
-The alpha channel is a portion of each pixel's data that is reserved for transparency information. Alpha channels create and store masks that let you isolate and protect parts of an image while you apply color changes, filters, or other effects to the rest of the image. Each pixel in an image is described as channels of data that define the mixture of the red, green, and blue (RGB) colors. The alpha channel is an 8-bit (256-level) grayscale representation of the image that masks the color of the underlying pixel. The value of the alpha mask determines the intensity of the pixel color. If the Alpha channel is 100%, the images pixel will be complete transparent.  At other alpha strengths, the image pixels will blend with transparency.
+알파 채널은 각 픽셀의 데이터에서 투명도 정보를 저장하기 위해 준비되어 있는 부분입니다. 알파 채널은 마스크를 만들어 저장하므로 이 마스크로 인해 이미지와 분리/보호되는 부분을 제외하고 이미지의 나머지 부분에 색상 변경, 필터 처리, 또는 기타 다른 효과 처리를 실행할 수 있습니다. 이미지의 각 픽셀은 빨강, 초록, 파랑 (RGB)의 혼합을 정의하는 데이터 채널로 표현됩니다. 알파 채널은 기저에 있는 픽셀의 색을 마스크 처리한 이미지의 8 비트 (256 단계) 회색조 표현입니다. 알파 채널 값은 픽셀의 채도를 결정합니다. 알파 채널이 100%라면, 이미지 픽셀은 완전히 투명해집니다. 다른 알파 세기에서 이미지 픽셀이 투명도와 블렌드됩니다.
 
 #### 색
 {: #colormask}
-If alpha channel does not exist in an image, a color in the image can be specified as a mask. There is also a sensitivity number to make the mask more or less sensitive to a single specific color as a masked color. Selecting the Color option will activate the Color Dropper, Color Selector, and Sensitivity controls.
+이미지에 알파 채널이 없다면 이미지의 색을 마스크로 지정할 수 있습니다. 또한 감도 값을 설정하여 마스크 처리되는 특정한 한 색에 마스크가 더욱 또는 덜 민감하게 처리되도록 할 수 있습니다. 색 옵션을 선택하면 색 스포이트, 감도 제어가 활성화됩니다.
 
 #### 색 스포이트
-Click to select the mask color from the bitmap. Click on the Color Dropper, then on the bitmap to pick the color. This control is only available when the Color option is selected.
+클릭하여 비트맵에서 마스크 색을 선택합니다. 색 스포이트를 클릭한 다음, 원하는 색을 비트맵에서 클릭합니다. 색 옵션이 선택되어 있는 경우에만 이 제어를 사용하실 수 있습니다.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Sensitivity
-The value indicates the size of the area around the color that is also masked. Must be greater than 0.0 for color masking to occur. This control is only available when the Color option is selected.
+#### 감도
+마스크 처리되는 색을 중심으로 하는 영역 크기를 나타내는 값입니다. 컬러 마스크 처리가 실행되려면 값이 0.0 보다 커야 합니다. 색 옵션이 선택되어 있는 경우에만 이 제어를 사용하실 수 있습니다.
 
-#### Blur
-Partially masks pixels. The value determines the magnitude of partial masking around the masked color. This control is only available when the Color option is selected.
+#### 흐리게
+픽셀을 부분적으로 마스크 처리합니다. 이 값은 마스크 처리된 색 주변의 부분적 마스크 처리의 규모를 결정합니다. 색 옵션이 선택되어 있는 경우에만 이 제어를 사용하실 수 있습니다.
 
-#### Reverse
-마스크를 반전시킵니다. 마스크 처리된 픽셀이 지금은 포함되거나, 그 반대의 경우로 처리됩니다.
-<!-- TODO: Does this make sense? -->
+#### 반대로
+마스크를 반전시킵니다. 마스크 처리된 픽셀이 이제 포함되거나, 일단 포함된 픽셀이 이제 마스크 처리됩니다.
 
 ![images/masking-007.png](images/masking-007.png)  
 
-#### Transparent
+#### 투명
 아래에 있는 개체의 마스크 처리된 부분을 투명하게 만들어 다른 개체 또는 개체 뒤에 있는 배경이 개체를 통해 보일 수 있습니다. 일반적으로 해당 부분에서 개체의 재질이 그대로 보입니다.
 
-Transparent masking allows a more natural shadow and lets the background objects to show. The underlying material could simply be transparent, but sometimes it is useful to make the surface behind the decal transparent while keeping other areas of the surface opaque.
+투명 마스크 처리로 그림자가 더욱 자연스러워지고, 배경 개체도 보이게 됩니다. 아래에 있는 재질을 단순히 투명하게 할 수 있으나, 때때로 데칼 뒤에 있는 서피스를 투명하게 하고 서피스의 다른 부분은 불투명하게 유지하는 방법이 때때로 유용합니다.
 
 ![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
 
 #### 마스크 색 표시
-Graphically displays the effects of masking as the parameters change. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.
+매개 변수가 변하면 그에 따라 달라지는 마스크 처리 효과를 그래픽으로 표시합니다. 마스크 처리된 픽셀의 표시색을 제시된 [색 선택기](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)에서 선택합니다. 이 색 또는 설정 확인란을 변경해도 마스크 처리된 색이 바뀌지 않습니다. 이것은 단순히 마스크 편집을 위한 그래픽 표시 기능입니다.
 
 ![images/masking-008.png](images/masking-008.png)
