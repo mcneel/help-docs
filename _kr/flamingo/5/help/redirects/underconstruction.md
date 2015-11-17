@@ -6,4 +6,4 @@ layout: toc-page
 # Flamingo
 {: .toc-title }
 
-ÀÌ µµ¿ò¸» Ç×¸ñÀº Ãß°¡ ¿¹Á¤ÀÔ´Ï´Ù.
+ì´ ë„ì›€ë§ í•­ëª©ì€ ì¶”ê°€ ì˜ˆì •ìž…ë‹ˆë‹¤.
