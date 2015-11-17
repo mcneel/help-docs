@@ -43,4 +43,4 @@ Once inserted, a tree can be moved, copied, and scaled.  The tree will resize ap
 
 ### 식물 편집기
 {: tree-editor}
-Flamingo includes a tree editor to create custom trees.  There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.
+Flamingo에는 사용자가 지정하는 나무를 만들 수 있는 나무 편집기가 포함되어 있습니다. There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.

@@ -1,6 +1,7 @@
 ---
+title: Automated rendering
 ---
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
 
 #### Simple Material Types:
@@ -47,7 +48,7 @@ Plastic materials are slightly reflective with a white [highlight](material-type
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
 
 ## Metal
 {: #metal}

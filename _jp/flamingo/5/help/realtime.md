@@ -1,7 +1,8 @@
 ---
+title: Reatime preview
 ---
 
-# Reatime preview
+# {{page.title}}
 Flamingo NXT 5 includes a realtime preview.  This is an experimental viewport to see if a quick preview of the rendered scene is valuable.
 
 #### To start the Realtime viewport

@@ -36,22 +36,22 @@ safe: false
 collections:
   en:
     output: true
-#  kr:
-#    output: true
-#  jp:
-#    output: true
-#  cn:
-#    output: true
-#  de:
-#    output: true
-#  es:
-#    output: true
-#  fr:
-#    output: true
-#  it:
-#    output: true
-#  tw:
-#    output: true
+  kr:
+    output: true
+  jp:
+    output: true
+  cn:
+    output: true
+  de:
+    output: true
+  es:
+    output: true
+  fr:
+    output: true
+  it:
+    output: true
+  tw:
+    output: true
 
 defaults:
   -
