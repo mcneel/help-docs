@@ -30,7 +30,7 @@ Displays a preview of the selected image file. Hold the mouse over the image to 
 {: #image-resolution}
 Displays the resolution in pixels of the current image file.
 
-### Tiles
+### 타일
 {: #tiles}
 재질 정의에 사용되는 이미지 맵은 항상 반복됩니다 (타일 처리). 이 설정은 각 인스턴스(타일)의 크기가 현재 모델 단위에서 얼마나 큰지를 지정합니다.
 
@@ -41,7 +41,7 @@ Sets the tile size in model units.
 
 {% include_relative snippets/snippet-masking.md %}
 
-### Mapping type
+### 매핑 유형
 {: #mapping-type}
 Images normally apply to the color channel. But there are other ways to use images.  Images can be set as:
 
@@ -132,12 +132,12 @@ This will effect the amount of [transparency](advanced-material-properties-main.
 ####  Translucency
 This will effect the amount of [transparency](advanced-material-properties-transparency.html#translucency) in the material based on the grayscale of the image.
 
-####  Attenuation
+####  감쇠
 This will effect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the grayscale of the image.
 
 #### Offsets X/Y
 {: #advanced-x-y-offset}
 재질과 X축, Y축과의 간격을 띄웁니다.
 
-####  Rotation
+####  회전
 This will rotate the image map.  Use to rotate the image 90 or 180 degrees if needed to reorient the image from its default rotation.

@@ -4,7 +4,6 @@ title: Procedural Materials
 
 #  ![images/paint.svg](images/paint.svg) {{page.title}}
 The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include:
 
@@ -68,8 +67,7 @@ Varies the percentage of each component material used in the final material.  Fo
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### Use image
-Bitmap images usually consisting of grayscale patterns define where two component materials will show. The materials are blended by the value of the gray pixels in the image. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
-<!--TODO: The first sentence needs work. -->
+An Image can be used to control how two materials will interact.  When using a Bitmap image the grayscale values of the pixels define where two component materials will blend. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
 
 In the image, the same materials are used for the first and second components, but the blend is controlled by three different bitmaps.
 ![images/blendmask.png](images/blendmask.png)
@@ -114,7 +112,7 @@ Creates alternating slabs of Base and Vein components. The Marble procedure defi
 
 Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object.
 ![images/materialunmapped.png](images/materialunmapped.png)
-No texture mapping (left). With texture mapping (right).
+*No texture mapping (left). With texture mapping (right).*
 
 #### Base/Vein
 The Base and Vein components are two materials. Their properties are specified in the same way as any material.
@@ -126,7 +124,7 @@ Alters the relative size of the slabs to each other. Vein Width is a fraction of
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-Veneer (left), normal (right).
+*Veneer (left), normal (right).*
 
 ## Tile
 {: #tile}

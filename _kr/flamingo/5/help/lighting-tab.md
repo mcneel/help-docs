@@ -30,9 +30,9 @@ A great starting place for lighting is the included Lighting presets that corres
 
 Lighting in Flamingo nXt uses four preset methods categories:
 
-> [Studio lighting](lighting-tab.html#studio-lighting)
-> [Exterior daylight](lighting-tab.html#exterior-daylight)
-> [Interior daylight](lighting-tab.html#interior-daylight)
+> [스튜디오 조명](lighting-tab.html#studio-lighting)
+> [실외 주광](lighting-tab.html#exterior-daylight)
+> [실내 주광](lighting-tab.html#interior-daylight)
 > [인공 조명](lighting-tab.html#artificial-lighting)
 
 ### 스튜디오 조명
@@ -65,14 +65,14 @@ When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be design
 
 ### 실내 주광
 {: #interior-daylight .clear-img}
-This scheme simulates an interior lit by natural light.
+이 기본 설정은 자연광이 비춰진 실내를 시뮬레이션합니다.
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} 두 가지 구성 요소로 이루어져 있습니다. [태양](sun-and-sky-tabs.html#sun)의 직사일광과 지면, 실외 개체, [하늘](sun-and-sky-tabs.html#sky)을 통해 전달된 간접 태양광이 그 두 가지입니다.
 
 The [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) settings are similar to the [Exterior](lighting-tab.html#exterior-daylight) preset.
 주광의 직사일광 구성 요소 계산법은 간단합니다. 단순히 시간, 날짜, 장소를 지정하는 것만으로 충분히 정확한 결과를 얻을 수 있습니다.
 
-Notes on interior renderings:
+실내 렌더링에 대한 안내:
 {: .clear-img}
 
 * Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
@@ -169,11 +169,11 @@ Reduces the brightness of the [sun](sun-and-sky-tabs.html) and sky to mimic the 
 
 Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately with indirect lighting.
 
-#### Bounces
+#### 바운스
 {: #bounces}
 간접 조명으로 인해 반사되는 횟수를 지정합니다.
 
-### Ambient
+### 주변광
 {: #ambient}
 Ambient light is a constant light added to the rendering. These settings control the intensity of the ambient light as a percentage of the total estimated ambient light in the scene.
 주변광의 양을 줄이면 이미지의 명암이 더욱 짙어집니다. 주변광을 지나치게 높이면 렌더링된 이미지가 단순하고 재미없어 보일 수 있습니다. 주변광이 너무 낮으면 명암이 과도하게 표현됩니다.
@@ -187,7 +187,7 @@ Ambient light is a constant light added to the rendering. These settings control
 #### Interior
 주변광을 실내 설정에 맞춰 최적화합니다.
 
-#### Studio
+#### 스튜디오
 주변광을 스튜디오 설정에 맞춰 최적화합니다.
 
 ## Saving Custom Lighting
@@ -198,4 +198,4 @@ Ambient light is a constant light added to the rendering. These settings control
 
 ### Open lighting scheme
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Opens a saved lighting scheme.
+![images/importfromfile.png](images/importfromfile.png) 저장된 조명 구성표를 엽니다.

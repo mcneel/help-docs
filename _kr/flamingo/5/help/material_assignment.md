@@ -32,7 +32,7 @@ Note: Deleting a material from the [Material Editor](material-editor.html) retur
 1. Select one or more layer names, and click the Material column.
 1. In the Layer Material dialog box, select a material from the Material drop-down list.
 
-##### Remove a material from a layer
+##### 레이어에서 재질 제거
 {: #detachmaterialfromlayer}
 1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
 1. Select one or more layer names, and click the Material column.
@@ -52,13 +52,13 @@ As an example, a car model might have tires on the tires layer and wheels on the
 ## Assign material to objects
 {: #byobject}
 You can assign materials from the material libraries to a layer or object. Rendering materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See  [Materials Editor](material-editor.html) .
+[재질 편집기](material-editor.html)를 참조하세요.
 
 레이어에 따라 재질을 적용하는 방법을 권장합니다. 별도의 레이어에서 작업하지 않고, 소수의 개체만으로 작업하는 경우에는 개체마다 재질을 적용하십시오.
 
-##### Assign a material through object properties
+##### 개체 속성을 통해 재질 적용
 1. 개체를 선택합니다.
-1. On the Edit menu, click the Object Properties ![images/properties.png](images/properties.png) command to edit the object.
+1. 편집 메뉴에서 개체 속성 ![images/properties.png](images/properties.png)을 클릭하여 개체를 편집합니다.
 1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Object, and then click the Material from the list.
 
 ##### Drag a material onto a single object
@@ -79,5 +79,5 @@ See  [Materials Editor](material-editor.html) .
 ##### Remove a by-object material assignment
 {: #removematerialfromobject}
 1. 개체를 선택합니다.
-1. On the Edit menu, click Object Properties.
-1. In the  [Properties](properties-object.html) dialog box, on the Material page, under Assign by, select Layer.
+1. 편집 메뉴에서 개체 속성을 클릭합니다.
+1. [속성](properties-object.html) 대화상자 재질 페이지의 할당 옵션 아래에서 레이어를 선택합니다.

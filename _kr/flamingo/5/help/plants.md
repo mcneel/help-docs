@@ -30,17 +30,17 @@ Once inserted, a tree can be moved, copied, and scaled.  The tree will resize ap
 1. Make the correct edits to the plant.
 1. Save the tree, then close the editor.  The plant in Rhino will automatically update.
 
-### Using Flamingo 2 plants
+### Flamingo 2 식물 사용
 {: #using-flamingo-2-plants}
-1. On the Flamingo nXt menu, click Plants > Insert Flamingo 2 Plant.
+1. Flamingo nXt 메뉴에서 식물 > Flamingo 2 식물을 클릭합니다.
 1. Flamingo nXt 식물 대화상자에서 식물 이름을 클릭하고 열기를 클릭합니다.
 1. 프롬프트에서 모델에서의 식물 위치를 지정합니다.
 
 안내:
 
-* Models with Flamingo 2 plants already inserted should work with some restrictions.
-* Flamingo 2 plants are different from the new plants. Currently you cannot edit Flamingo 2 plants or convert them to Flamingo nXt plants.
+* Flamingo 2 식물이 이미 삽입되어 있는 모델은 일부 제한 사항 하에서 작업할 수 있습니다.
+* Flamingo 2 식물은 새로운 식물과 다릅니다. 현재 Flamingo 2 식물을 편집하거나 Flamingo nXt 식물로 변환할 수 없습니다.
 
-### Plant Editor
+### 식물 편집기
 {: tree-editor}
-Flamingo includes a tree editor to create custom trees.  There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.
+Flamingo에는 사용자가 지정하는 나무를 만들 수 있는 나무 편집기가 포함되어 있습니다. There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.
