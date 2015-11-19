@@ -31,7 +31,7 @@ Materials that contain any level of glow will light up, but will not illuminate 
 
 ## Bounces
 {: #bounces}
-When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are two low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
+When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are too low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
 
 #### Reflective
 {: #reflective-bounces}
