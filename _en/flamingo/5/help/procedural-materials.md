@@ -48,6 +48,7 @@ The angle from the viewpoint at which the Outer component material stops.
 Between the Start Angle and the Stop angle, the Inner and the Outer components blend.
 
 In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/01.png](images/01.png) is 60 degrees (in the rendering that translates to the red circle).
+
 The image at the left shows the the Inner material as white, and the Outer material as black.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
@@ -63,11 +64,11 @@ The Blend procedure combines two base components and controls the proportions of
 Blends work well changing an entire material definition by adding an overall color to a base patterned material.
 
 #### Blend
-Varies the percentage of each component material used in the final material.  For instance, the material below shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and 50% striped and 50% green color blended.  The image to the right shows a weak striped material with a strong green material, so the slider is at the right of the Blend slider.
+Varies the percentage of each component material used in the final material.  For instance, the material below shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and a blended 50% striped and 50% green color.  The right image shows the slider to the right, showing a weak striped material with a strong green material.
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### Use image
-An Image can be used to control how two materials will interact.  When using a Bitmap image the grayscale values of the pixels define where two component materials will blend. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
+An image can be used to control how two materials will interact.  When using a Bitmap image the grayscale values of the pixels define where two component materials will blend. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
 
 In the image, the same materials are used for the first and second components, but the blend is controlled by three different bitmaps.
 ![images/blendmask.png](images/blendmask.png)
@@ -80,7 +81,7 @@ If the image has an alpha channel, this can be used instead of the bitmap graysc
 The First component will be placed where there is white in the bitmap pattern, and the Second component will be placed where there is black in the bitmap pattern.
 
 #### Tiles
-The scale of the material is independent of the resolution of the bitmap used to define it. In order to scale the material correctly, decide how large an area in real units one copy of the bitmap represents. If the bitmap represents the height of six 4-unit tiles and the length represents twelve 4-unit tiles, the scale would be 48 units in the x-direction and 24 units in the y-direction. This stretches the bitmap to the proper size for the pattern.
+The scale of the material is independent of the resolution of the bitmap used to define it. To scale the material correctly, decide how large an area in real units one copy of the bitmap represents. If the bitmap represents the height of six 4-unit tiles and the length represents twelve 4-unit tiles, the scale is 48 units in the x-direction and 24 units in the y-direction. This stretches the bitmap to the proper size for the pattern.
 
 #### Width
 The width in pixels of a single instance of the image.

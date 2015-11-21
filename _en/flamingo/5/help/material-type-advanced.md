@@ -21,7 +21,7 @@ The complete set of property groups in the Advanced Material are:
 
 ## Material Name
 {: #name}
-This is the name of the material in the Rhino model.  Materials are stored in the Rhino model. That means a with the same name in the library or a different model will not be affected by edits to the material in the current model. To use any material in another model it must be exported to the [Library](libraries.html) first. The Name of the material will also serve as its exported file name.
+This is the name of the material in the Rhino model.  Materials are stored in the Rhino model. That means a material with the same name in the library or a different model will not be affected by edits to the material in the current model. To use any material in another model it must be exported to the [Library](libraries.html) first. The Name of the material will also serve as its exported file name.
 
 ## Material Procedures
 {: #procedures}
@@ -54,38 +54,39 @@ As an example, the [Marble](procedural-materials.html#marble) Procedure combines
 
 #### Reflective Finish and Highlight
 {: #reflective-finish-and-highlight}
-These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object. The reflective effect normally defined with a more mirror like reflections that reflects the objects in the rest of the the scene. It is important to now that chrome and other reflective materials do not make an interesting image unless they have something to reflect. When working with reflective materials, also think about an interesting environment and other objects for the reflective materials to reflect.
- Note : To activate these settings, the Intensity value must be greater than zero.
+These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object. The reflective effect is normally defined with mirror-like reflections that reflect the objects in the rest of the the scene. It is important to know that chrome and other reflective materials do not make an interesting image unless they have something to reflect. When working with reflective materials, also think about an interesting environment and other objects for the reflective materials to reflect.
+ Note: To activate these settings, the Intensity value must be greater than zero.
 
 #### Highlight color
 {: #highlight-color}
-Highlight color is the color that material adds to reflections. There are three settings for this control, White, Metallic and Custom
+Highlight color is the color that material adds to reflections. There are three settings for this control: White, Metallic, and Custom.
 
 #### White
-Materials with a white highlight will not add any color to reflections.  Materials with a white highlight are common and tend to resemble standard paint, plastics or a mirror finish.
+Materials with a white highlight will not add any color to reflections.  Materials with a white highlight are common and tend to resemble standard paint, plastics, or a mirror finish.
 
 ![images/3-plastic.png](images/3-plastic.png)
 
 #### Metallic
 {: #metallic}
-Sets the highlight color to match the base color. Many metal finishes normally use the base color as the reflective color.  This metallic options use the material based color as a reflective color.
+Sets the highlight color to match the base color. Many metal finishes normally use the base color as the reflective color.  This metallic option uses the material based color as a reflective color.
 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Custom
-In some very specialized finishes, the reflection off the object will be a different color then the base color fo the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
+In some very specialized finishes, the reflection off the object will be a different color than the base color for the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
 #### Intensity
 {: #intensity}
-Adjusts the strength of the highlight. Lower values tend to make glossy objects that reflect light, but not surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
+Adjusts the strength of the highlight. Lower values tend to make glossy objects that reflect light, but not the surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
 #### Fresnel
 {: #fresnel}
-Pronounced (fray-NELL) Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations) .The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
+Pronounced (fray-NELL). Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations). The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
+
 Reduce the value for very dark materials to prevent too much reflection.&#160;Increase the value for materials like varnished wood, where the Fresnel reflectivity is more pronounced.
 
 ![images/highlightfresnel.png](images/highlightfresnel.png)
@@ -112,7 +113,7 @@ Automatically balances raycasting and highlight based on the Sharpness setting. 
 
 #### Glossy
 {: #glossy}
-Increases the blurriness of the highlight and prevents raycasting. No object or light reflections are calculated, therefore performance is increased, and artifacts for materials with very blurry reflections are prevented. Some reflective subtlety may be lost.
+Increases the blurriness of the highlight and prevents raycasting. No object or light reflections are calculated. So performance is increased, and artifacts for materials with very blurry reflections are prevented. Some reflective subtlety may be lost.
 
 ![images/highlightglossy.png](images/highlightglossy.png)
 
@@ -136,7 +137,7 @@ Excludes all reflections of artificial light sources and the artificial highligh
 
 #### No Light Source Reflections
 {: #no-light-source-reflection}
-Excludes raycast reflections of light sources, only the highlight is used. This is sometimes useful for preventing speckle artifacts if the material is blurry and the scene contains small, bright, light sources.
+Excludes raycast reflections of light sources. Only the highlight is used. This is sometimes useful for preventing speckle artifacts if the material is blurry and the scene contains small, bright, light sources.
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
@@ -173,21 +174,23 @@ The following table shows some examples of index of refraction:
 
 #### Translucency
 {: #translucency}
-A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material. This is a very sensitive effect, small adjustments can make a big difference.
+A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material. This is a very sensitive effect. Small adjustments can make a big difference.
 
 ![images/transparencytl.png](images/transparencytl.png)
 
 #### Scattering
 {: #scattering}
 Controls the probability of the light encountering a particle per unit length. The [Path Tracer](render-tab.html#path-tracer) is required for this effect.
+
 Subsurface scattering permits light to penetrate the object's surface and scatter in any direction. Many translucent materials can be modeled using this effect. Certain surfaces, such as stone or skin can be realistically “softened” by allowing the light to penetrate a short distance.
+
 The material must have some transparency in order for sub-surface scattering to take place. This is a volumetric effect. The objects with this material attached must be solid or “space enclosing” for this to work properly.
 
 ![images/scattering.png](images/scattering.png)
 
 #### Attenuation
 {: #attenuation}
-Determines how much light is absorbed as it passes through the object— greater values produce a more cloudy appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation ; murky liquids have higher Attenuation values.
+Determines how much light is absorbed as it passes through the object— greater values produce a cloudier appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation ; murky liquids have higher Attenuation values.
 
 ![images/attenuation.png](images/attenuation.png)
 
@@ -205,7 +208,7 @@ Determines the amount of dispersion.
 
 #### Blurry Transparency
 {: #blurry-transparency}
-When a material is partially transparent, a little noise is introduced into the transparency, to make the material look more natural.
+When a material is partially transparent, a little noise is introduced into the transparency to make the material look more natural.
 
 #### Blurriness
 Controls the amount of noise added.
@@ -220,13 +223,13 @@ Creates the illusion of illumination.
 
 ## Textures
 {: #textures}
-Two types of textures can be added to a material: Image Textures and Bump Patterns. Image textures are based on bitmaps, photographs or scanned images.  Bump Patterns are random or repeating patterns generated by Flamingo.
+Two types of textures can be added to a material: Image Textures and Bump Patterns. Image textures are based on bitmaps, photographs, or scanned images.  Bump Patterns are random or repeating patterns generated by Flamingo.
 
 ![images/textures.png](images/textures.png)
 
 ### Images
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another images may control the bump properties of the texture. To control how an image effects a material, go to the [Image Properties](material-image-properties.html) Dialog
+Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another image may control the bump properties of the texture. To control how an image effects a material, go to the [Image Properties](material-image-properties.html) Dialog.
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -234,7 +237,7 @@ Up to four bitmap images can be used to add detail to a material. Image maps can
 
 ### Bump Patterns
 {: #bump-patterns}
-Bumps Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
+Bump Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
 
 > [Sandpaper](#sandpaper)
 > [Rubble](#rubble)
@@ -242,13 +245,13 @@ Bumps Patterns create the appearance of a specific kind of surface without using
 > [Wrinkled](#wrinkled)
 > [Marbled](#marbled)
 
-As and example materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarser texture.
+Materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarser texture.
 
-When one of the bump maps is checked, additional controls become available. More than one bump pattern can be added to a material.
+When one of the bump maps is checked, more controls become available. More than one bump pattern can be added to a material.
 
 #### Sandpaper
 {: #sandpaper}
-Provides a random, finely textured appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit sandpaper.
+Provides a random, finely textured appearance. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit sandpaper.
 
 ![images/sandpaper.png](images/sandpaper.png)
 *Sandpaper progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
@@ -269,14 +272,14 @@ Gives the appearance of small pyramidal protrusions like a knurl pattern.  [Scal
 
 #### Wrinkled
 {: #wrinkled}
-Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit wrinkled.
 
 ![images/wrinkled.png](images/wrinkled.png)
 *Pyramid showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
 
 #### Marbled
 {: #marbled}
-Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit wrinkled.
 
 ![images/marbled.png](images/marbled.png)
 *Marbled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
@@ -299,6 +302,5 @@ Controls the appearance of depth.
 
 ### Rotation
 {: #rotation}
-Sets the rotation angle for the pattern.
-Changes to the orientation are normally apparent only if the procedural map has an obvious pattern or if the bump map has been scaled with different x, y and z components to produce a directional pattern.
+Sets the rotation angle for the pattern. Changes to the orientation are normally apparent only if the procedural map has an obvious pattern or if the bump map has been scaled with different x, y, and z components to produce a directional pattern.
 ![images/texturerotated.png](images/texturerotated.png)
