@@ -81,7 +81,7 @@ This menu is available by right click on a environment listing.  See the [Tools 
 
 ### New Environment Context Menu
 {: new_envrionment_context}
-This menus is available by right-clicking on a blank area of the Environment List.
+This menu is available by right-clicking on a blank area of the Environment List.
 
 #### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
 Creates a new Flamingo Environment.
@@ -170,7 +170,7 @@ These settings also appear on right-click context menus for the thumbnail previe
 Imports environments from a saved Rhino .renv file.
 
 #### ![images/savetofile.png](images/savetofile.png) Save to File
-Saves a environment to a Rhino .renv file.
+Saves an environment to a Rhino .renv file.
 
 #### ![images/changetype.png](images/changetype.png) Change Type
 Changes the environment to a different type.
