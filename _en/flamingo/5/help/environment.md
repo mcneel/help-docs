@@ -3,6 +3,7 @@ title: Flamingo Environment
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
+<!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
 There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
 
 The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
@@ -29,10 +30,12 @@ There are three major effects of environment in a rendering:
 >[Reflective Background](#advanced-background-reflected-sky)
 >[Refractive Background](#advanced-background-refracted-sky)
 
+<!-- TODO: Does the following sentence make sense? Is there something missing? -->
 The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
 
 #### Intensity
 {: #background-intensity}
+<!-- TODO: Color range normally is from 0-255... -->
 Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
 
 #### Background type
