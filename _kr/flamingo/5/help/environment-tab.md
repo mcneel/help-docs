@@ -6,7 +6,7 @@ title: 환경 패널
 {: #environment-tab}
 Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
+The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
 
 Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
 
@@ -47,7 +47,7 @@ Walks back though the current environment or the previously selected environment
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) 앞으로 화살표
 Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 현재 선택된 재질 이름
 Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
 #### ![images/library_default.png](images/library_default.png) 도구 메뉴
@@ -81,12 +81,12 @@ This menu is available by right click on a environment listing.  See the [Tools 
 
 ### New Environment Context Menu
 {: new_envrionment_context}
-This menus is available by right-clicking on a blank area of the Environment List.
+This menu is available by right-clicking on a blank area of the Environment List.
 
 #### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
 Creates a new Flamingo Environment.
 
-#### ![images/import.png](images/import.png) Import Environment from File...
+#### ![images/import.png](images/import.png) 파일에서 환경 가져오기...
 Use this command to select a previously exported Environment.
 
 #### ![images/paste.png](images/paste.png) 붙여넣기
@@ -110,7 +110,7 @@ Use this command to select a previously exported Environment.
 #### ![images/showpreview.png](images/showpreview.png) 미리보기 창 표시
 현재 선택된 썸네일의 미리보기 속성을 표시합니다. 미리보기 지오메트리, 크기. 배경, 회전 동작을 설정합니다.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) 플로팅
 조정 가능한 창에서 미리보기 이미지를 플로팅(floating)으로 설정합니다.
 
 #### 썸네일
@@ -128,16 +128,16 @@ Use this command to select a previously exported Environment.
 Displays thumbnail name labels when in Grid mode.
 List mode always displays labels.
 
-##### ![images/showunits.png](images/showunits.png) Show Units
+##### ![images/showunits.png](images/showunits.png) 단위 표시
 크기를 모델 단위로 표시합니다.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 미리보기 자동 업데이트
 설정이 변경되면 그에 따라 자동으로 모든 미리보기를 업데이트합니다.
 
 ##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
 Update previews manually when Auto-Update Preview is off.
 
-## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [창 구분](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: divider}
 Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
 
@@ -170,12 +170,12 @@ Creates a new Flamingo Environment.
 저장된 Rhino .renv 파일에서 환경을 가져옵니다.
 
 #### ![images/savetofile.png](images/savetofile.png) 파일에 저장
-Saves a environment to a Rhino .renv file.
+환경을 Rhino .renv 파일로 저장합니다.
 
-#### ![images/changetype.png](images/changetype.png) Change Type
+#### ![images/changetype.png](images/changetype.png) 유형 변경
 환경을 다른 유형으로 변경합니다.
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
+#### ![images/changetype.png](images/changetype.png) 유형 변경 (유사한 설정 복사)
 환경을 다른 유형으로 변경합니다.
 The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
 

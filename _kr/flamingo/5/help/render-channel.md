@@ -4,7 +4,7 @@ title: 채널
 
 # ![images/render.svg](images/render.svg) {{page.title}}
 {: #channel}
-A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
+8개의 채널 중 하나의 채널에서 조명을 설정할 수 있는 능력은 Flamingo nXt 5의 매우 유용한 기능입니다. 도면에서 태양과 하늘을 비롯한 각각의 광원은 하나의 채널에 지정할 수 있습니다. 렌더링할 때 각 채널의 빛은 그 자체의 레이어에 있게 됩니다. 렌더링을 마친 후에 해당 채널의 세기를 조정할 수 있습니다. 다시 렌더링할 필요 없이, 실시간으로 변경됩니다.  
 
 채널이 매우 효과적인 경우:
 
@@ -18,23 +18,23 @@ Once this image is rendered, each channel can be individually scaled either in t
 Use channels to adjust the strength of lights relative to each other, not to brighten the whole image.  If you need to brighten the whole image at once, use the Adjust Image controls.
 
 <video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
-*Click to play video clip.*
+*동영상을 재생하려면 클릭합니다.*
 
 다중 채널 이미지를 만들고 조작하려면 다음의 조건들이 필요합니다.
 
  1. 참여하고 있는 모든 조명은 켜져 있어야 합니다.
- 2. Each light source must be assigned to a channel. By default, Sun and Sky are set to channel 0, artificial lights are set to 1.
- 3. Immediately after rendering, use the Channel controls in the render window.
- 3. The only saved format that preserves this channel information is the .nXtImage format. Lighting can be adjusted there and then the image is saved to a bitmap format.
+ 2. 각각의 광원이 채널에 지정되어 있어야 합니다. 기본적으로 태양과 하늘은 채널 0에, 인공적인 조명은 채널 1에 설정됩니다.
+ 3. 렌더링 직후에 렌더링 창의 채널 제어를 사용합니다.
+ 3. nXtImage 형식에서만 채널 정보가 저장됩니다. 이 파일 형식에서 조명을 조정하고 이미지를 비트맵 형식으로 저장할 수 있습니다.
 
 ## 채널 설정
 {: setting}
-The first step in setting up a muti-channel rendering is to set each light to channel. The channel number is usually set in each light property.  For information on setting specific lights to a channel see:
+첫 번째 단계는 각각의 조명을 채널에 지정하기 위해 다중 채널 렌더링을 설정하는 것입니다. 채널 번호는 일반적으로 각 조명 속성에 지정됩니다. 특정 조명을 채널에 설정하는 방법에 대한 안내는 다음 링크를 참조하세요:
 
 >[태양 채널](sun-and-sky-tabs.html#sun-channel)
 >[하늘 채널](sun-and-sky-tabs.html#sky-channel)
 >[인공 조명 채널](lights-tab.html#channel)
->[Material Glow](documentproperties-flamingo.html#channel)
+>[재질 글로우](documentproperties-flamingo.html#channel)
 
 Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
 

@@ -11,12 +11,12 @@ title: 조명 기본 설정
 #### Flamingo 조명 제어는 어디에 있습니까?
 
 * ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt.
-* Right-click any tab and check Flamingo nXt.
+* 어느 한 탭을 오른쪽 클릭하고 Flamingo nXt를 선택합니다.
 
 
 모델의 조명을 설정할 때 다음의 가이드라인을 사용하세요:
 
-* Start with a lighting preset.
+* 조명 기본 설정값으로 시작합니다.
 * Since Flamingo nXt simulates real-world lighting, provide accurate information whenever possible.
 * Avoid using unrealistic intensity levels for light sources.
 * Set the units correctly for your model. The lighting will not be correct unless the units are correct. For example, if your model is in millimeters, set the model units to millimeters.
@@ -136,38 +136,38 @@ Uses an image background with a planar, cylindrical, or spherical projection sim
 ![images/chromeimagesky.png](images/chromeimagesky.png)
 
 
-### Studio Brightness
+### 스튜디오 밝기
 {: #studio-brightness}
 Reduces the brightness of the [sun](sun-and-sky-tabs.html) and sky to mimic the interior lighting levels of a photographer's studio.
 ![images/studiobrightnessoffandon.png](images/studiobrightnessoffandon.png)
-*Studio Brightness off (left) and on (right).*
+*스튜디오 밝기를 끈 상태 (왼쪽), 켠 상태 (오른쪽).*
 
-### Lights
+### 조명
 {: #lights}
 인공 조명을 켜거나 끕니다.
 
 ![images/lightsonandoff.png](images/lightsonandoff.png)
-*Lights on (left) and off (right).*
+*조명이 켜진 상태 (왼쪽), 꺼진 상태 (오른쪽).*
 
 ### 간접
 {: #indirect}
 서피스로부터 반사된 조명을 정의합니다. 기본적으로 실내 조명에는 켜져 있는 상태이며, 실외 및 스튜디오 조명 기본 설정에서는 꺼져 있는 상태입니다. 실외 렌더링에 간접 조명을 켜고 사용할 수 있습니다.
 
-#### Method
+#### 방식
 간접 조명의 계산 방식을 설정합니다.
 
 #### 끄기
 간접 조명 계산을 끕니다.
 
-#### Interior
+#### 실내
 {: #interior}
 실내 상황에 맞는 간접 조명으로 최적화합니다.
 
-#### Exterior
+#### 실외
 {: #exterior}
 실외 상황에 맞는 간접 조명으로 최적화합니다.
 
-Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately with indirect lighting.
+다른 표면에서 반사된 간접 조명은 실외 렌더링에 보다 섬세하고 사실적인 느낌을 부여합니다. 특히, 간접 조명과 함께, 지붕의 처마, 발코니처럼 돌출된 부분의 아래쪽을 더욱 정확하게 렌더링할 수 있습니다.
 
 #### 바운스
 {: #bounces}
@@ -175,27 +175,27 @@ Indirect lighting reflected from other surfaces can add subtlety and realism to 
 
 ### 주변광
 {: #ambient}
-Ambient light is a constant light added to the rendering. These settings control the intensity of the ambient light as a percentage of the total estimated ambient light in the scene.
+주변광은 렌더링에 더해지는 일정한 빛입니다. 이 설정은 장면에서 예상되는 총 주변광을 퍼센트로 지정하여 주변광의 강도를 제어합니다.
 주변광의 양을 줄이면 이미지의 명암이 더욱 짙어집니다. 주변광을 지나치게 높이면 렌더링된 이미지가 단순하고 재미없어 보일 수 있습니다. 주변광이 너무 낮으면 명암이 과도하게 표현됩니다.
 
 #### 없음
 주변광 없음.
 
-#### Exterior
+#### 실외
 주변광을 실외 설정에 맞춰 최적화합니다.
 
-#### Interior
+#### 실내
 주변광을 실내 설정에 맞춰 최적화합니다.
 
 #### 스튜디오
 주변광을 스튜디오 설정에 맞춰 최적화합니다.
 
-## Saving Custom Lighting
+## 사용자 지정 조명 저장
 
-### Save lighting scheme
+### 조명 구성표 저장
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Saves the current lighting scheme.
+![images/saveschemeicon.png](images/saveschemeicon.png) 현재 조명의 구성표를 저장합니다.
 
-### Open lighting scheme
+### 조명 구성표 열기
 {: #open-lighting-scheme}
 ![images/importfromfile.png](images/importfromfile.png) 저장된 조명 구성표를 엽니다.

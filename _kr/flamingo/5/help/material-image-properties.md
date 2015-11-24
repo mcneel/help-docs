@@ -10,7 +10,9 @@ title: 재질 이미지 속성
 ![images/solidcolors.png](images/textureset.png)
 
 Materials can be created from images. Scan photographs and real materials like wallpaper and carpet, create patterns in a paint program, or use images from other bitmap sources.
+
 재질이 모든 방향에서 무한대로 늘어난다고 상상해보십시오. 개체가 이를 통과하는 지점에서만 재질이 보이게 됩니다. 패턴은 지정된 비율로 네 방향에서 끝없이 반복 (타일) 됩니다.
+
 작은 이미지는 타일처럼 사용하기 가장 좋습니다. 비트맵으로 타일 처리가 잘 되지 않으면 타일을 미러(거울) 실행하는 옵션을 사용합니다. 이 옵션은 가장자리 일치를 보장합니다.
 
 **Note:** To make a bitmap image cover only part of the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
@@ -47,7 +49,7 @@ Images normally apply to the color channel. But there are other ways to use imag
 
 > [표준](#standard)
 > [Normal](#normal)
-> [Displacement](#displacement)
+> [변위](#displacement)
 
 ### 표준
 {: standard}
@@ -60,7 +62,7 @@ Determines how much the image map influences the material appearance. In the exa
 ![images/brik-b14.png](images/brik-b14.png)![images/strength.png](images/strength.png)
 *Color strength 0.2, 0.5, 1.0.*
 
-#### Bump Strength
+#### 범프 세기
 {: #bump}
 Simulates bumps and wrinkles on the surface of an object by perturbing the surface normals of the object. The underlying object is not changed. In the illustration, the material on the left uses displacement mapping, while the material on the right uses bump mapping set at its highest value. Using negative bump numbers will reverse the effect. The edge and shadow are smooth for the bump-mapped material. See: [Wikipedia article: Bump mapping](http://en.wikipedia.org/wiki/Bump_mapping).
 
@@ -73,7 +75,7 @@ Fakes the lighting of bumps and dents without using more polygons to the render 
 
 Normal maps work very similar to bump maps, in that they modify the normal of the surface. The effect is essentially the same as bump, but normal maps allow more control over the normal than a bump. A bump map uses the grey average of the RGB in a bitmap. The RGB of a normal map corresponds to the modification of the XYZ of the normal. Because the blue channel of the image controls the Z-direction of the normal. Normal maps have a considerable blue color to them.
 
-### Displacement
+### 변위
 {: #displacement}
 This image map displaces the surface render mesh based on the color values in the image. The effect is a change in the actual geometric position of the surface. The displacement is often along the local surface normal. See: [Wikipedia article: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
 
@@ -92,13 +94,13 @@ This image map displaces the surface render mesh based on the color values in th
 Sets the starting point of the displacement with reference to the surface normal. The displacement can take place completely outside, inside, or some ratio inside and outside the part.
 
 ![images/displacementz-001.png](images/displacementz-001.png)
-*Z-offset = -1.0*
+*Z간격띄우기 = -1.0*
 
 ![images/displacementz-002.png](images/displacementz-002.png)
-*Z-offset = -0.5*
+*Z간격띄우기 = -0.5*
 
 ![images/displacementz-003.png](images/displacementz-003.png)
-*Z-offset = 0.0*
+*Z간격띄우기 = 0.0*
 
 #### 패싯 크기
 {: #facet-size}
@@ -126,10 +128,10 @@ This will adjust the sharpness vs blurriness of the [highlight](advanced-materia
 {: #advanced-highlight-shape}
 하이라이트 형태에 영향을 줍니다.
 
-####  Transparency
+####  투명도
 This will effect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the grayscale of the image.
 
-####  Translucency
+####  반투명도
 This will effect the amount of [transparency](advanced-material-properties-transparency.html#translucency) in the material based on the grayscale of the image.
 
 ####  감쇠

@@ -3,7 +3,7 @@ title: 식물 편집기
 ---
 <!-- TODO: This could use an update. -->
 
-# {{page.title}}
+# ![images/plants.svg](images/plants.svg) {{page.title}}
 {: #tree-editor}
 
 ### 파일 메뉴

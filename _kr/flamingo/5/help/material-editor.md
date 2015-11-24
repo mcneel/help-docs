@@ -45,7 +45,7 @@ Walks back though the current material or the previously selected materials.  Fo
 Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to return to the recently used texture from the parent material.
 
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 현재 선택된 재질 이름
 Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
 
 #### ![images/library_default.png](images/library_default.png) Tools menu
@@ -72,11 +72,11 @@ Scroll down to the bottom of the Material list to see the add icon.
 Opens the Render Content [library](libraries.html) of materials.
 라이브러리의 재질은 모델에 재질을 만들 때 템플릿처럼 실행됩니다.
 
-### Material Context Menu
+### 재질 상황에 맞는 메뉴
 {: material_context}
 This menu is available by right-clicking on a material listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
 
-### New Material Context Menu
+### 새로운 재질 상황에 맞는 메뉴
 {: new_material_context}
 This menu is available by right-clicking on a blank area of the Material List.
 
@@ -105,7 +105,7 @@ Creates a new material based on the Clipboard contents that is linked to the ori
 #### ![images/showpreview.png](images/showpreview.png) 미리보기 창 표시
 현재 선택된 썸네일의 미리보기 속성을 표시합니다. 미리보기 지오메트리, 크기. 배경, 회전 동작을 설정합니다.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) 플로팅
 조정 가능한 창에서 미리보기 이미지를 플로팅(floating)으로 설정합니다.
 
 #### 썸네일
@@ -123,16 +123,16 @@ Creates a new material based on the Clipboard contents that is linked to the ori
 Displays thumbnail name labels when in Grid mode.
 List mode always displays labels.
 
-##### ![images/showunits.png](images/showunits.png) Show Units
+##### ![images/showunits.png](images/showunits.png) 단위 표시
 크기를 모델 단위로 표시합니다.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 미리보기 자동 업데이트
 설정이 변경되면 그에 따라 자동으로 모든 미리보기를 업데이트합니다.
 
 ##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
 Update previews manually when Auto-Update Preview is off.
 
-## [Window Divider](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [창 구분](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #divider}
 Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
 
@@ -149,15 +149,15 @@ The Materials Properties section is filled with several direct Material panels. 
 
 Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html).
 
-## Tools menu ![images/library_default.png](images/library_default.png)
+## 도구 메뉴 ![images/library_default.png](images/library_default.png)
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
 
-#### ![images/assigntoobjects.png](images/assigntoobjects.png) Assign to Selection
+#### ![images/assigntoobjects.png](images/assigntoobjects.png) 선택한 개체에 적용
 현재 재질을 선택된 개체에 적용합니다.
 
-##### To assign a material to objects
+##### 재질을 개체에 적용하려면
  1. Click Assign to Selection.
  1. In the Rhino viewport, select the target objects.
 
@@ -170,7 +170,7 @@ The target objects can be selected either before or after clicking Assign to Sel
  * Drag the material from the thumbnails or list onto the target objects.
 Drag and drop works for only one object at a time.
 
-#### ![images/assigntolayers.png](images/assigntolayers.png) Assign to Layers
+#### ![images/assigntolayers.png](images/assigntolayers.png) 레이어에 적용
 현재 재질을 레이어에 적용합니다.
 
 ##### To assign a material to layers
@@ -199,10 +199,10 @@ Opens the Render Content [library](libraries.html) of materials.
 #### ![images/savetofile.png](images/savetofile.png) 파일에 저장
 재질을 Rhino .rmtl 파일로 저장합니다.
 
-#### ![images/changetype.png](images/changetype.png) Change Type
+#### ![images/changetype.png](images/changetype.png) 유형 변경
 재질을 다른 유형으로 변경합니다.
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
+#### ![images/changetype.png](images/changetype.png) 유형 변경 (유사한 설정 복사)
 재질을 다른 유형으로 변경합니다.
 The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)  box. If checked, compatible settings from the old content will be copied to the new one.
 

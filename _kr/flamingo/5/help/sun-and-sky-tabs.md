@@ -1,5 +1,5 @@
 ---
-title: Sun and Sky
+title: 태양과 하늘
 ---
 
 # ![imagessun.svg](images/sun.svg) {{page.title}}
@@ -15,8 +15,8 @@ This help topic reviews the Flamingo Sun control.  The [Rhinoceros Sun](http://d
 
 The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
 
-* ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
+* ![images/options.png](images/options.png)도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
+* ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 태양
 
 **안내:** 조명 기본 설정에서 태양이 활성화된 경우에만 태양 탭이 표시됩니다.
 
@@ -25,7 +25,7 @@ The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighti
 ![images/sydneymorning.png](images/sydneymorning.png)  ![images/stockholmmorning.png](images/stockholmmorning.png)
 *Sydney, Australia, 21-June, 09:30 (on the left). Stockholm, Sweden, 21-June, 09:30 (on the right).*
 
-### Set azimuth and altitude
+### 방위각과 고도 설정
 {: #set-azimuth-and-altitude}
 Use solar angles to manually set the sun's direction. Enables [Azimuth](#azimuth) and [Altitude](#altitude) controls.
 
@@ -49,11 +49,11 @@ Use the sun angle calculator to place the sun based on Date, Time, Location.  **
 {: #time}
 현지 시각을 지정합니다.
 
-#### Daylight savings time
+#### 일광 시간 절약제
 {: #daylight-savings-time}
 시간을 한 시간 앞당깁니다.
 
-#### Latitude/Longitude
+#### 위도/경도
 {: #latitude-longitude}
 위도와 경도를 입력하거나 지도에서 위치를 지정합니다.
 The numbers will also update to display the latitude and longitude of a location picked on the map with the mouse cursor.
@@ -70,11 +70,11 @@ Use this to select a major city to set the location.
 {: #map}
 Click the map to specify a location. Drag with the left mouse button to pan the map.
 
-### Sun intensity
+### 태양광 강도
 {: #sun-intensity}
 Modifies the brightness of the sun (direct) daylight component. The intensity of sun is automatically calculated based on solar angles and sky conditions, but can be modified to balance with other lights.
 
-### Sun highlight
+### 태양 하이라이트
 {: #sun-highlight}
 태양 하이라이트의 선명도입니다.
 
@@ -86,7 +86,7 @@ Modifies the brightness of the sun (direct) daylight component. The intensity of
 
 {% include_relative snippets/snippet-sunchannel.md %}
 
-#### North Direction
+#### 북쪽 방향
 {: #north}
 **안내:** 북쪽은 절대좌표 Y 방향입니다.
 
@@ -98,41 +98,41 @@ The Sky is a large sphere around the rendering that can be used for lighting. Th
 The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sky).
 
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sky
+ 1. ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 하늘
 
-The lighting preset schemes for [Exterior](lighting-tab.html#exterior-daylight) and [Interior](lighting-tab.html#interior-daylight) daylight use the Automatic sky by default. The [Studio](lighting-tab.html#studio-lighting) lighting preset scheme uses HDR image lighting by default.
+[실외](lighting-tab.html#exterior-daylight)와 [실내](lighting-tab.html#interior-daylight) 주광의 기본 설정에서는 기본적으로 자동 하늘을 사용합니다. [스튜디오](lighting-tab.html#studio-lighting) 조명 기본 설정에서는 HDR 이미지 조명을 기본적으로 사용합니다.
 
-Sky can be set five ways:
+하늘은 다음의 5가지 방법으로 설정할 수 있습니다:
 
->[Off](lighting-tab.html#off)
->[Automatic Sky](#automatic-sky)
->[High Dynamic Range Image (HDRI)](#high-dynamic-range-image-sky)
->[Color](#color-sky)
->[Image](#image-sky)
+>[끄기](lighting-tab.html#off)
+>[자동 하늘](#automatic-sky)
+>[하이 다이내믹 레인지 (HDRI)](#high-dynamic-range-image-sky)
+>[색](#color-sky)
+>[이미지](#image-sky)
 
 The two best settings for sky lighting types are [HDR image](#high-dynamic-range-image-sky) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
 
-### Automatic Sky
+### 자동 하늘
 {: #automatic-sky}
 Automatic sky uses settings from the [Sun tab](sun-and-sky-tabs.html) to specify the color range and intensity of the skylight.  For instance, when the sun is high in the sky, the lighting and colors of the sky are very different than when the sun is low in the sky.
 
 ![images/sky-002.png](images/sky-002.png)
-*Automatic sky: sun high (left) and low (right) in the sky.*
+*자동 하늘: 하늘의 태양이 높을 떄 (왼쪽), 낮을 때 (오른쪽).*
 
-#### Cloudiness
+#### 운량
 {: #sky-cloudiness}
 When Cloudiness is turned off, the sky is considered clear and strong shadows are created. The greater the cloudiness, the less contrast there will be between the light and shadows. Greater cloudiness will create lighter shadows and a more even lighting effect. The Cloudiness setting affects many aspects of the daylight calculation, including the relative amounts of direct vs. indirect lighting, the way indirect lighting is calculated, and the background color if Automatic Sky mode has been selected. The Cloudiness setting varies from 0 (clear) to 1 (completely overcast). The cloudiness settings around 0.35 - 0.50 is a very sensitive and dynamic range.
 
 ![images/cloudiness0.png](images/cloudiness0.png)
-*Cloudiness 0 (left) and 1 (right).*
+*운량 0 (왼쪽), 1 (오른쪽).*
 
-#### Sky intensity
+#### 하늘 강도
 {: #sky-intensity}
 Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified. **Note:** This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### High-Dynamic-Range Image Sky
+### HDRI(High-Dynamic-Range Image) 하늘
 {: #high-dynamic-range-image-sky}
 A [high-dynamic-range (HDR or HDRI)](https://en.wikipedia.org/wiki/High-dynamic-range_imaging) image is a special 2-D image file. These images contain a much broader range of values at each pixel then standard image files, such as a .jpg or .png. This extra data can be used to light models. If the values contained in the HDR are accurate, then the lighting will be accurate. This can produce very dynamic lighting in a scene. The preset Studio Lighting scheme uses HDR images for the sky. If you are thinking of studio lighting as an indoor activity, think of the HDR image as a ceiling that emits light based on the colors in the image.
 
@@ -147,7 +147,7 @@ In addition to the Sky, a different HDR image can be used for each of the three 
 Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*Equarectangular projection.*
+*Equirectangular projection.*
 
 HDR images come in two projection types which let the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
 

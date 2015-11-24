@@ -11,7 +11,7 @@ Batch jobs let you submit multiple jobs to be rendered automatically. A Batch jo
 
 ##### 이 명령은 어디에서 찾을 수 있습니까?
 
- * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
+ * 메뉴 > Flamingo nXt 5.0 > 기타 도구 > 일괄 렌더링
 
 ### 일괄 렌더링 대화상자
 {: #batch-render}
@@ -36,20 +36,20 @@ Select an existing batch job, then use Properties to set the [Batch Render Prope
 {: #batch-list}
 Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
 
-#### Rendering Status
+#### 렌더링 상태
 일괄 처리 진행률에 대한 패스, 스캔 라인, 경과 시간 정보를 표시합니다.
 
-####  Stop Rendering
+####  렌더링 중지
 일괄 프로세스를 중지합니다.
 
-#### Render Batch Locally
+#### 로컬에서 일괄 렌더링
 {: #render-batch-locally}
 Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
 
 ####  Send Batch To Farm
 Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
 
-### Batch Render Properties
+### 일괄 렌더링 속성
 {: #batch-render-properties}
 
 #### 렌더링할 뷰포트
@@ -61,7 +61,7 @@ Click the Save button ![images/saveimageas.png](images/saveimageas.png) and spec
 #### 알파 채널
 Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
 
-#### Use document settings
+#### 문서 설정 사용
 {: #rendering-resolution}
 The default is to use the current document resolution settings to render.  If another resolution is needed, then uncheck this box and specify a resolution. See the [Render tab, Resolution](render-tab.html#resolution) topic for more details.
 
@@ -104,18 +104,18 @@ Redirects the default **Render** command to use the **Render Farm**.
 ### 기본 렌더링 대화 사용
 Resets the **Render** command to render directly instead of to the farm.
 
-### Number of render passes to render
+### 렌더링하기 위한 렌더링 패스의 수
 렌더링 패스의 수를 지정합니다.
 
-### Render to farm
-Redirects the **Render** command to render to the farm.
+### 팜으로 렌더링
+팜으로 렌더링하기 위해 **Render** 명령을 리디렉션합니다.
 
 ### 작업 이름
-Specifies the **Render Farm**  [Job name](automate-rendering.html#job-name).
+**Render Farm**  [작업 이름](automate-rendering.html#job-name)을 지정합니다.
 
 ## 렌더링 제한 조건
 
-### Number of render passes to render
+### 렌더링하기 위한 렌더링 패스의 수
 Specifies the [number of passes](documentproperties-flamingo.html#number-of-passes).
 
 ### 알파 채널 저장
