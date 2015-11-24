@@ -10,7 +10,7 @@ Flamingo nXt includes a fun and powerful plant generator that efficiently genera
 
 ### Insert an nXt Plant
 {: #insert:}
-Flamingo Plants are inserted as a block.  These blocks contains points that represent the general shape of the tree.
+Flamingo Plants are inserted as a block.  These blocks contain points that represent the general shape of the tree.
 
 1. On the Flamingo nXt menu, click Plants > Insert Plant.
 1. In the Flamingo nXt Plant dialog box, click a plant name, and click Open.
