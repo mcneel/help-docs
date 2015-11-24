@@ -158,7 +158,7 @@ Displays the [distance mask](image-editor.html#distance-channel).
 ## Using the image editor
 
 ##### Load an Image
-1.  [Save](render-window.html#export-to-nxtimage) your rendering results as an. **nXtImage**.
+1.  [Save](render-window.html#export-to-nxtimage) your rendering results as an **.nXtImage**.
 1. On the **Flamingo nXt** menu, click **Utilities &gt; Flamingo nXt Image Editor**.
 1. In the **nXt Image Editor**, on the File menu, click **Open** to load the image into the editor.
 

@@ -12,7 +12,7 @@ The Flamingo nXt Render Farm uses the power of several computers to render singl
 
 >![images/01.png](images/01.png)A computer with Rhino and Flamingo nXt.
 >![images/02.png](images/02.png)Network server or shared farm folder.
->![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
+>![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.)
 >![images/04.png](images/04.png)Additional purchased render farm clients.
 
 The Render Farm is free for up to two client computers. To add more client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
