@@ -47,9 +47,9 @@ The angle from the viewpoint at which the Outer component material starts.
 The angle from the viewpoint at which the Outer component material stops.
 Between the Start Angle and the Stop angle, the Inner and the Outer components blend.
 
-In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/01.png](images/01.png) is 60 degrees (in the rendering that translates to the red circle).
+In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/02.png](images/02.png) is 60 degrees (in the rendering that translates to the red circle).
 
-The image at the left shows the the Inner material as white, and the Outer material as black.
+The image at the right shows the the Inner material as white, and the Outer material as black.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
