@@ -48,7 +48,7 @@ In the example above, a few simple planar surfaces that match the image were cre
 
 #### Caustics
 {: #caustics}
-The light rays reflected or refracted by a curved object or the projection of those rays on another surface. Caustics should be used in very specific situations. Caustics are only rendered with the [Path Tracer](render-tab.html#path-tracer) engine or the [Hybrid](render-tab.html#hybrid) render engine.  Caustic calculations takes many passes to converge. See [Wikipedia article: Caustic (optics)](http://en.wikipedia.org/wiki/Caustic_(optics)) for more information.
+The light rays reflected or refracted by a curved object or the projection of those rays on another surface. Caustics should be used in very specific situations. Caustics are only rendered with the [Path Tracer](render-tab.html#path-tracer) engine or the [Hybrid](render-tab.html#hybrid) render engine.  Caustic calculations take many passes to converge. See [Wikipedia article: Caustic (optics)](http://en.wikipedia.org/wiki/Caustic_(optics)) for more information.
 
 ![images/kaustik.png](images/kaustik.png)
 *Caustics produced by a glass of water.*
@@ -58,7 +58,7 @@ The light rays reflected or refracted by a curved object or the projection of th
 
 #### Thin
 {: #thin}
-A space-enclosing, transparent object is normally treated as a solid for transparent refraction. Setting the Thin property means that each surface will be treated as a two-sided object for refraction. This is the setting to use if single surfaces as glass are used for architectural models.
+A space-enclosing, transparent object is normally treated as a solid for transparent refraction. Setting the Thin property means that each surface will be treated as a two-sided object for refraction. This is the setting to use if single surfaces such as glass are used for architectural models.
 
 ![images/thin.png](images/thin.png) ![images/thinoff.png](images/thinoff.png)
 *Base Rhino model (left), Normal (middle) and Thin (right).*

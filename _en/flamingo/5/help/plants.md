@@ -23,7 +23,7 @@ Notes:
 
 ### Edit a plant
 {: #edit}
-Once inserted, a tree can be moved, copied, and scaled.  The tree will resize appropriately. For more advanced edits to that structure of the tree, use the Edit plant command. Making small changes to the structure of the trees can be quick.  Larger changes to the tree algorithms can take more experimentation.
+Once inserted, a tree can be moved, copied, and scaled.  The tree will resize appropriately. For more advanced edits to that tree structure, use the Edit plant command. Making small changes to the tree structure can be quick.  Larger changes to the tree algorithms can take more experimentation.
 
 1. On the Flamingo nXt menu, click Plants > Edit Plant.
 1. Select the plant to edit.

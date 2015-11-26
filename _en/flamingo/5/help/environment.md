@@ -119,10 +119,11 @@ These are angle readouts of the Top, Middle, and Bottom colors in the current gr
 
 ## Image Background
 {: #environment-image}
+<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
 A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar images set as a background.*
+*A planar image set as a background.*
 
 ### Image File
 {: #image-properties}
@@ -137,6 +138,8 @@ Select one of three image projections from the drop-down control:
 >[Spherical](#spherical)
 
 Each projection method has its own set of controls for positioning the image.
+
+<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
 
 #### Planar Projection
 {: #planar}
