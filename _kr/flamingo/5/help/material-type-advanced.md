@@ -188,13 +188,13 @@ Controls the probability of the light encountering a particle per unit length. T
 
 ![images/scattering.png](images/scattering.png)
 
-#### Attenuation
+#### 감쇠
 {: #attenuation}
 Determines how much light is absorbed as it passes through the object— greater values produce a cloudier appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation ; murky liquids have higher Attenuation values.
 
 ![images/attenuation.png](images/attenuation.png)
 
-#### Dispersion
+#### 굴절 분산
 {: #dispersion}
 빛이 얼마나 많이 구성 요소 파장으로 분할되는지를 제어합니다.
 
@@ -206,11 +206,11 @@ Determines how much light is absorbed as it passes through the object— greater
 
 ![images/saturation.png](images/saturation.png)
 
-#### Blurry Transparency
+#### 흐린 투명도
 {: #blurry-transparency}
 When a material is partially transparent, a little noise is introduced into the transparency to make the material look more natural.
 
-#### Blurriness
+#### 흐린 정도
 노이즈가 추가되는 정도를 제어합니다.
 
 ![images/blurrytransparency.png](images/blurrytransparency.png)
@@ -235,7 +235,7 @@ Up to four bitmap images can be used to add detail to a material. Image maps can
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
 
-### Bump Patterns
+### 범프 패턴
 {: #bump-patterns}
 Bump Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
 
@@ -249,14 +249,14 @@ Materials like stucco, concrete, and clay have a fine texture. It is probably no
 
 When one of the bump maps is checked, more controls become available. More than one bump pattern can be added to a material.
 
-#### Sandpaper
+#### 사포
 {: #sandpaper}
 Provides a random, finely textured appearance. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit sandpaper.
 
 ![images/sandpaper.png](images/sandpaper.png)
 *Sandpaper progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
 
-#### Rubble
+#### 자갈
 {: #rubble}
 Gives the appearance of a lumpy, pitted surface. It can be scaled up and used for water, dirt, and smudges on surfaces. Smudges can be made with a large [Scale](#scale) and a very small [Strength](#strength) using Rubble. Rubble bump has a larger size range than Sandpaper.
 

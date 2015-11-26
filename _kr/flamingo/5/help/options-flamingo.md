@@ -4,7 +4,7 @@ title: 옵션 Flamingo nXt
 
 
 # ![images/options.svg](images/options.svg) {{page.title}}
-These settings apply to the Flamingo application.  Making changes here change how Flamingo runs all the time.
+These settings apply to the Flamingo application.  Making changes here changes how Flamingo runs all the time.
 
 {: #default-decal-link-state}
 {% include_relative snippets/snippet-linking.md %}

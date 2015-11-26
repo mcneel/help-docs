@@ -26,9 +26,9 @@ This is the name of the environment in the Rhino model.  Environments are stored
 {: #environment}
 There are three major effects of environment in a rendering:
 
->Visible Background
+>보이는 배경
 >[반사된 배경](#advanced-background-reflected-sky)
->[Refractive Background](#advanced-background-refracted-sky)
+>[굴절된 배경](#advanced-background-refracted-sky)
 
 <!-- TODO: Does the following sentence make sense? Is there something missing? -->
 The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
@@ -119,10 +119,11 @@ These are angle readouts of the Top, Middle, and Bottom colors in the current gr
 
 ## Image Background
 {: #environment-image}
+<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
 A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar images set as a background.*
+*A planar image set as a background.*
 
 ### 이미지 파일
 {: #image-properties}
@@ -138,6 +139,8 @@ Select one of three image projections from the drop-down control:
 
 Each projection method has its own set of controls for positioning the image.
 
+<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
+
 #### Planar Projection
 {: #planar}
 Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
@@ -147,31 +150,31 @@ Projects the image to a flat background in the current view. The planar projecti
 #### 뷰로부터의 각도
 The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
 
-#### Image Placement Control
+#### 이미지 배치 제어
 Use the placement control to place the image relative to the current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
 
 ![images/background-image-003.png](images/background-image-003.png)
 *현재 뷰포트 영역 (1), 이미지 크기와 형태 (2).*
 
-#### X Scale / Y Scale
+#### X 방향 크기 / Y 방향 크기
 Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
-#### X Offset / Y Offset
+#### X 간격띄우기 / Y 간격띄우기
 Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
-#### Image Placement Control
+#### 이미지 배치 제어
 Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
 
 ![images/background-image-003.png](images/background-image-003.png)
 *현재 뷰포트 영역 (1), 이미지 크기와 형태 (2).*
 
-#### X Scale / Y Scale
+#### X 방향 크기 / Y 방향 크기
 Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
-#### X Offset / Y Offset
+#### X 간격띄우기 / Y 간격띄우기
 Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
-#### Cylindrical Projection
+#### 원통형 투영
 {: #cylindrical}
 원통형 투영은 모델을 둘러싸고 있는 상상 속의 원통에 이미지를 매핑합니다. 이 투영 방법은 실제로 원통형인 이미지에 가장 적합하지만, 사진을 기반으로 구성된 일반적인 파노라마에도 잘 적용됩니다.
 
@@ -214,12 +217,12 @@ Specifies the width of the image in degrees relative the the plan view.
 #### 위/아래
 Specifies the vertical angles of the image based on horizontal groundplane direction in the model
 
-####  Get Angles From View button
+####  뷰와 일치하는 각도 설정 단추
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
 #### 구형태 투영
 {: #spherical}
-구(球) 형태 투영은 이미지를 완전한 구체로 매핑합니다. 이 방식은 일반적으로 등장방형인 구 형태 이미지를 사용할 때 좋은 결과물을 만들어냅니다. 등장방향 이미지는 2:1 직사각형 종횡비를 갖습니다. 
+구(球) 형태 투영은 이미지를 완전한 구체로 매핑합니다. 이 방식은 일반적으로 등장방형인 구 형태 이미지를 사용할 때 좋은 결과물을 만들어냅니다. 등장방향 이미지는 2:1 직사각형 종횡비를 갖습니다.
 
 #### 뷰로부터의 각도
 The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
@@ -231,12 +234,12 @@ Specifies the direction of the image map. Enter an angle or drag the flag in the
 {: .clear-img}
 이미지의 회전을 지정합니다. 빨간 점은 이미지의 중심을 나타냅니다.
 
-####  Get Angles From View button
+####  뷰와 일치하는 각도 설정 단추
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
-## HDRI Background
+## HDRI 배경
 {: #hdr-background}
-Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+HDR 이미지를 환경으로 사용하면 조명과 배경의 관계 그리고 이미지에 있는 다른 조명을 보다 상세하게 설정할 수 있습니다. 이 옵션은 밝은 실외가 창으로 보이는 실내 공간을 표현할 때 특히 유용합니다. HDR 환경 이미지는 일반적인 비트맵 이미지보다 훨씬 넓은 범위의 빛 정보를 가지고 있으며, 채널을 적용할 수 있어 [다중 채널](lights-tab.html#channel) 렌더링에서 명암을 관리할 수 있습니다.
 
 #### 이미지 파일
 {: #hdri-image}
@@ -269,7 +272,7 @@ The Advanced Background settings control environments that are not visible in th
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
 *보통 환경 (왼쪽), 반사된 HDR 하늘 환경 (오른쪽).*
 
-### Reflected
+### 반사됨
 {: #advanced-background-reflected-sky}
 반사된 환경은 렌더링된 이미지에는 보이지 않으나 반짝거리는 개체에 반사되어 보입니다.
 
@@ -282,7 +285,7 @@ Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-
 #### 보이는 배경
 [환경](environment-tab.html) 설정에서 지정된 상태로 보이는 배경이 개체에 비춰집니다.
 
-### Refracted
+### 굴절됨
 {: #advanced-background-refracted-sky}
 
 #### 하늘

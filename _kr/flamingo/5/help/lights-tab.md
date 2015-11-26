@@ -30,7 +30,7 @@ Flamingo는 다음과 같은 조명 유형을 지원합니다:
 
 Some light properties are displayed on the Lights tab table for quick editing of common properties.
 
-Properties contained in the table are:
+테이블에 포함된 속성:
 
  >[켜기/끄기](#on)
  >[이름](#name)
@@ -138,11 +138,11 @@ IES (Illuminating Engineering Society) 파일은 광원의 배광을 정의하�
 * IES distributions include the effects of light fixture elements such as baffles, reflectors, and diffusers.
 * IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
 
-#### Brightness from file
+#### 파일로부터의 밝기
 Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
 
 
-## Additional Options Menu
+## 추가 옵션 메뉴
 {: #additional-options}
 Additional options for lights can be accessed by right-clicking on the light in the Light table.
 

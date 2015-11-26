@@ -134,8 +134,8 @@ List mode always displays labels.
 ##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 미리보기 자동 업데이트
 설정이 변경되면 그에 따라 자동으로 모든 미리보기를 업데이트합니다.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) 모든 미리보기 업데이트
+미리보기 자동 업데이트가 꺼져 있을 때 수동으로 미리보기를 업데이트합니다.
 
 ## [창 구분](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: divider}

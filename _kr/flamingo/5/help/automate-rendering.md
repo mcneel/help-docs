@@ -21,7 +21,7 @@ Start by adding a job, then edit the properties to set up batch jobs.
 Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
 
 #### 삭제
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+Select an existing batch job.  Then use Delete to remove the job from the batch list.
 
 #### 속성
 Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
@@ -46,8 +46,8 @@ Displays information about the list of views to be rendered. Double-click on an 
 {: #render-batch-locally}
 Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
 
-####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
+####  일괄 렌더링을 팜으로 보내기
+일괄 작업을 [렌더 팜](render-farm.html)으로 보냅니다. 작업은 모든 사용 가능한 팜 클라이언트에서 렌더링됩니다. 렌더링 이미지는 공유된 팜 폴더에 출력됩니다.
 
 ### 일괄 렌더링 속성
 {: #batch-render-properties}

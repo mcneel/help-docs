@@ -16,12 +16,12 @@ Materials, environments, and textures are stored in the model, but rendering con
 ##### 이 명령은 어디에서 찾을 수 있습니까?
 There are several options to find the Materials tab.
 
-* ![images/materialtab.png](images/materialtab.png)Materials tab
-* ![images/icon-render.png](images/icon-render.png)Render Tools toolbar > ![images/materialtab.png](images/materialtab.png) Material Editor
-* Menus > Render Pulldown > Materials Editor
-* On the Command line type MaterialEditor
+* ![images/materialtab.png](images/materialtab.png)재질 탭
+* ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/materialtab.png](images/materialtab.png) 재질 편집기
+* 메뉴 > 렌더링 메뉴 > 재질 편집기
+* 명령행에 MaterialEditor 를 입력합니다.
 
-The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
+재질 편집기 패널은 별개의 섹션으로 나뉘어져 있습니다. 재질 유형에 따라 고급 패널이 달라질 수 있습니다.
 
 You can drag colors and textures from the color swatch and drop onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
 
@@ -48,11 +48,11 @@ Walks back though the current material or the previously selected materials.  Fo
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 현재 선택된 재질 이름
 Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
 
-#### ![images/library_default.png](images/library_default.png) Tools menu
+#### ![images/library_default.png](images/library_default.png) 도구 메뉴
 Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
 
 
-## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [재질 목록](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #material_list}
 This lists all the materials contained in the model. From this list:
 
@@ -65,7 +65,7 @@ This lists all the materials contained in the model. From this list:
 * Right-click a thumbnail to display the Material context menu.
 * Right-click the blank area to display the New Material Context Menu.
 
-###  ![images/add_material.png](images/add_material.png) Add new material
+###  ![images/add_material.png](images/add_material.png) 새 재질 추가
 {: #add_material}
 Scroll down to the bottom of the Material list to see the add icon.
 
@@ -129,17 +129,17 @@ List mode always displays labels.
 ##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 미리보기 자동 업데이트
 설정이 변경되면 그에 따라 자동으로 모든 미리보기를 업데이트합니다.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) 모든 미리보기 업데이트
+미리보기 자동 업데이트가 꺼져 있을 때 수동으로 미리보기를 업데이트합니다.
 
 ## [창 구분](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #divider}
 Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
 
-## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [재질 속성 섹션](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: #properties}
 
-#### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+#### [재질 이름](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
 This is the name of the material. The material name is also saved as the file name when exporting the material to the library. Note: Materials are stored in the Rhino model. Unique materials can have the same name in different Rhino models.
 
@@ -236,4 +236,4 @@ Removes the connection between [instanced](http://docs.mcneel.com/rhino/5/help/e
 [콘텐츠 필터](content_filters.html) 대화상자를 엽니다.
 
 #### ![images/rename.png](images/rename.png) 속성
-Opens the [Preview Properties](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) dialog box.
+[미리보기 속성](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) 대화상자를 엽니다.

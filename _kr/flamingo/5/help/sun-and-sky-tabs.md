@@ -3,17 +3,17 @@ title: 태양과 하늘
 ---
 
 # ![imagessun.svg](images/sun.svg) {{page.title}}
-The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Automode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
+[태양](#sun)과 [하늘](#sky)은 서로 밀접하게 연관되어 있습니다. 자동 모드에서 태양은 하늘의 밝기를 변경시킬 수 있습니다. 태양이 켜져 있고 하늘이 HDRI 일 때, 그 강도의 균형을 맞추는 것이 중요합니다.
 
 ## 태양
 {: #sun}
-The Sun is a powerful invisible parallel light. Factors simulating real-world conditions such as latitude and longitude, time of day, and season control the Sun's direction and brightness.
+태양은 보이지 않는 강력한 평행광입니다. 위도, 경도, 시간, 계절과 같은 실제 세계 조건을 시뮬레이션하는 요소가 태양의 방향과 밝기를 제어합니다.
 
-This help topic reviews the Flamingo Sun control.  The [Rhinoceros Sun](http://docs.mcneel.com/rhino/5/help/en-us/commands/sun.htm) control may also be used to place the sun.  Flamingo will keep the two sun controls in sync.
+이 도움말 항목은 Flamingo 태양 제어에 대해 설명합니다. [Rhinoceros 태양](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/sun.htm) 제어를 사용하여 태양을 배치할 수 있습니다. Flamingo에서 두 태양 제어를 동기화합니다.
 
-##### Where can I find Flamingo Sun control?
+##### Flamingo 태양 제어는 어디에 있습니까?
 
-The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+태양은 [조명 기본 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sun)에서 활성화해야 합니다.
 
 * ![images/options.png](images/options.png)도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
 * ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 태양
@@ -23,15 +23,15 @@ The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighti
 태양빛을 계산하려면 태양 각도가 필요합니다. 태양의 방향을 지정하는 방법에는 2 가지가 있습니다. 날짜/시간/장소로 결정하는 방법과 직사광선의 각도로 지정하는 방법이 그것입니다. 날짜, 시간, 장소를 사용하여 모델이 위치한 부지에서 실제 태양을 시뮬레이션합니다. 태양 직사광선의 각도는 실제 태양을 참조하지 않고 빛의 각도를 제어합니다. 직사광선 각도를 사용하여 조명 효과를 시험해 보세요.
 
 ![images/sydneymorning.png](images/sydneymorning.png)  ![images/stockholmmorning.png](images/stockholmmorning.png)
-*Sydney, Australia, 21-June, 09:30 (on the left). Stockholm, Sweden, 21-June, 09:30 (on the right).*
+*호주, 시드니, 6월 21일, 09:30 (왼쪽). 스웨덴, 스톡홀름, 6월 21일, 09:30 (오른쪽).*
 
 ### 방위각과 고도 설정
 {: #set-azimuth-and-altitude}
-Use solar angles to manually set the sun's direction. Enables [Azimuth](#azimuth) and [Altitude](#altitude) controls.
+태양의 방향을 직접 설정하려면 태양의 각도를 사용합니다. [방위각](#azimuth)과 [고도](#altitude) 제어를 사용합니다.
 
 #### 방위각
 {: #azimuth}
-Sets the sun's direction in angle degrees from North (0) in the horizontal plane.  The circular map shows the world in a plan view.
+가로 평면에서 북쪽(0)을 기준, 도 단위의 각도로 태양 방향을 설정합니다. 원형 지도에서 전세계를 평면뷰로 표시합니다.
 
 #### 고도
 {: #altitude}
@@ -41,7 +41,7 @@ Sets the sun's height in the sky in angle degrees from the Equator (0).  The hal
 {: #set-location-on-earth}
 Use the sun angle calculator to place the sun based on Date, Time, Location.  **Note:** As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
 
-#### Date
+#### 날짜
 {: #date}
 날짜를 지정합니다.
 

@@ -6,9 +6,9 @@ title: Flamingo 처음 시작
 # ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt® 처음 시작
 Flamingo nXt는 Rhinoceros ®안에서 3D 모델을 가지고, 고화질의 마치 사진과도 같은 스틸과 애니메이션 이미지를 만듭니다. Flamingo nXt 5는, Rhino 5에 탑재된 렌더링 기능과 통합되는 Flamingo의 업데이트 버전입니다. 현재 개발 중(WIP: Work in Progress)인 버전입니다.
 
-Flamingo는 [Flamingo nXt 5 다운로드](http://www.rhino3d.com/download/flamingo/5/beta)에서 다운로드하여 설치하실 수 있습니다.
+[Flamingo nXt 5를 다운로드](http://www.rhino3d.com/download/flamingo/5/beta)하여 설치하세요.
 
-[Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo)에서 기술적인 토론에 참여하실 수 있습니다.
+[Flamingo Discourse 포럼](http://discourse.mcneel.com/c/rendering/flamingo)에서 기술적인 토론에 참여하실 수 있습니다.
 
 ## 설치
 
@@ -25,7 +25,7 @@ RHI 설치 관리자를 다운로드하신 후에 설치하시고, Rhino를 시�
 
 ## Flamingo nXt 제어 패널
 {: #control-panel}
-Flamingo nXt 5는, Rhino 5에 탑재된 렌더링 기능과 통합되는 Flamingo의 업데이트 버전입니다. Flamingo nXt 제어 패널에는 모델 렌더링을 설정하는 다음과 같은 탭이 있습니다:
+Flamingo nXt 5 버전은 Rhino 5 렌더링 기능과 인터페이스가 통합되었습니다. Flamingo nXt 제어 패널에 모델 렌더링을 설정하는 다음과 같은 탭이 있습니다:
 
 > [재질](materials-tab.html)
 > [조명](lighting-tab.html)

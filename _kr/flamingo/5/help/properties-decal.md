@@ -81,19 +81,19 @@ title: 데칼
 
 #### 데칼 높이를 변경하려면
 
->Drag the center control point on the top and bottom edges of the control widget.
+>제어 위젯의 위와 아래 가장자리 상에서 중간 제어점을 끌어옵니다.
 
-#### To change the decal width
+#### 데칼 너비를 변경하려면
 
->Drag the center control point on the left and right edges of the control widget.
+>제어 위젯의 왼쪽과 오른쪽 가장자리 상에서 중간 제어점을 끌어옵니다.
 
 #### 데칼을 이동시키려면
 
->Drag the control point in the center of the control widget.
+>제어 위젯의 중간으로부터 제어점을 끌어옵니다.
 
 #### 데칼을 회전시키려면
 
->Drag the x-, y-, or z-axis control point on the widget axis icon.
+>위젯 축 아이콘 상에서 x, y, 또는 z 축 제어점을 끌어옵니다.
 
 ## 데칼 속성
 {: #dialogbox-editdecal}
@@ -146,13 +146,13 @@ UV 매핑은 이미지를 구부리고 늘리기 위해 서피스의 U 방향과
 재질 정의에서 제어되는 것과 동일한 속성을 제어합니다. 이 속성을 데칼의 영향을 받는 개체의 특정한 영역에 적용합니다. 기본적으로 데칼은 무광 마무리로 처리됩니다.
 
 ### 강도
-Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](advanced-material-properties-main.html#intensity).
+하이라이트의 세기를 조정합니다. 값이 크면 하이라이트 크기와 세기가 증가합니다. [고급 재질 속성, 강도](advanced-material-properties-main.html#intensity)를 참조하십시오.
 
-### Sharpness
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](advanced-material-properties-main.html#sharpness).
+### 선명도
+하이라이트의 크기를 설정합니다. 숫자가 작을수록 더 넓은 하이라이트가 지정됩니다. 숫자가 클수록 더 작은 하이라이트 영역으로 초점이 맞춰집니다. [고급 재질 속성, 선명도](advanced-material-properties-main.html#sharpness)를 참조하십시오.
 
-### Metallic
-Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](advanced-material-properties-main.html#metallic).
+### 금속
+기본색과 일치하도록 하이라이트 색을 설정합니다. [고급 재질 속성: 금속](advanced-material-properties-main.html#metallic)을 참조하십시오.
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
 ## 고급
@@ -182,6 +182,6 @@ Sets the highlight color to match the base color. See [Advanced Material Propert
 ![images/projectionforwardandback.png](images/projectionforwardandback.png)앞 (왼쪽), 뒤 (오른쪽).
 
 ### 투명도
-Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
+데칼의 투명도를 설정합니다. [투명도](advanced-material-properties-transparency.html)를 참조하십시오.
 IOR
 투명한 데칼의 굴절률을 설정합니다. [굴절률(index of refraction)](advanced-material-properties-transparency.html#index-of-refraction)을 참조하세요.
