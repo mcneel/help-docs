@@ -36,7 +36,7 @@ For more details go to the topics below:
 >[Shut Lining](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyshutlining.htm)
 >[Displacement](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applydisplacement.htm)
 
-### ![images/object-flamingo.png](images/object-flamingo.png) Flamingo Properties
+### ![images/object-flamingo.PNG](images/object-flamingo.PNG) Flamingo Properties
 {: #flamingo-properties}
 
 #### Alpha channel
