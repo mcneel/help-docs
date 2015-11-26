@@ -11,24 +11,24 @@ title: 조명 기본 설정
 #### Flamingo 조명 제어는 어디에 있습니까?
 
 * ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt.
-* Right-click any tab and check Flamingo nXt.
+* 어느 한 탭을 오른쪽 클릭하고 Flamingo nXt를 선택합니다.
 
 
 모델의 조명을 설정할 때 다음의 가이드라인을 사용하세요:
 
-* Start with a lighting preset.
-* Since Flamingo nXt simulates real-world lighting, provide accurate information whenever possible.
-* Avoid using unrealistic intensity levels for light sources.
-* Set the units correctly for your model. The lighting will not be correct unless the units are correct. For example, if your model is in millimeters, set the model units to millimeters.
-* Adjust the overall brightness of your rendering by using the [Brightness](render-window.html#brightness) control on the rendering display. Do not attempt to adjust the overall scene brightness by changing the intensity of all the light sources; the automatic [exposure](render-window.html#brightness) adjustment will defeat this.
+* 조명 기본 설정값으로 시작합니다.
+* Flamingo nXt는 현실 세계에서의 빛을 시뮬레이션하므로, 가능한한 항상 정확한 정보를 입력합니다.
+* 광원을 비현실적인 강도로 사용하는 것을 피합니다.
+* 모델에 맞는 정확한 단위를 설정합니다. 단위가 정확하지 않으면 조명이 올바르게 설정되지 않습니다. 예를 들어, 모델이 밀리미터 단위로 만들어졌다면, 모델 단위를 밀리미터로 설정하십시오.
+렌더링의 전반적인 [밝기(render-window.html#brightness)는 렌더링 표시의 밝기 제어로 조정하십시오. 위에 언급된 모든 광원의 강도를 모두 변경하는 방법으로 전체적인 장면의 밝기를 조정하려고 하지 마십시오. 자동 [노출](render-window.html#brightness) 조정이 우선시됩니다.
 
 조명 능력을 향상시키려면 빛을 이해하고 빛이 다양한 표면에 어떤 영향을 미치는지 알아야 합니다. 재질로 인해 그림자와 반사 효과가 가려질 수 있으므로, 일부 렌더링 전문가들은 재질을 적용하기 전에 모델의 조명을 설정합니다. 카메라에서 처리되는 방식처럼 객관적으로 조명을 보도록 노력하십시오.
 
 ## 조명 기본 설정
 {: #lighting-presets}
-A great starting place for lighting is the included Lighting presets that correspond to real-world lighting situations. Flamingo nXt provides lighting presets that can help get you started lighting your model. There are many more lighting options available, but the presets are often sufficient for many different renderings. Choose the Preset scheme that most closely resembles your scene.
+실제 조명 환경에 맞춰 Flamingo에 포함되어 있는 기본 설정 조명은 조명 설정 작업시 좋은 출발점이 됩니다. Flamingo nXt에는 모델의 조명 설정에 도움이 되는 조명 기본 설정이 있습니다. 많은 조명 옵션이 있지만, 다양한 렌더링에 기본 설정만으로도 충분한 경우가 많습니다. 사용자가 원하는 장면과 가장 비슷한 기본 설정 구성표를 선택하세요.
 
-Lighting in Flamingo nXt uses four preset methods categories:
+Flamingo nXt의 기본 조명에는 네 가지 방식이 있습니다:
 
 > [스튜디오 조명](lighting-tab.html#studio-lighting)
 > [실외 주광](lighting-tab.html#exterior-daylight)
@@ -37,15 +37,15 @@ Lighting in Flamingo nXt uses four preset methods categories:
 
 ### 스튜디오 조명
 {: #studio-lighting}
-This scheme mimics the lighting found in a photographer's studio. It is most useful for rendering small-to-medium-sized objects in isolation.  It can also be used for any scene that is well lit through an HDRI environment.
+이 기본 설정은 포토그래퍼의 스튜디오에서 볼 수 있는 조명을 표현합니다. 소규모~중간 규모의 개체를 단독으로 렌더링할 때 가장 유용합니다. 또한 HDRI 환경을 통해 조명이 잘 비춰진 장면에도 사용할 수 있습니다.
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](sun-and-sky-tabs.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
+![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} 이 기본 설정은 포토그래퍼의 스튜디오에서 볼 수 있는 조명을 표현합니다. 소규모~중간 규모의 개체를 단독으로 렌더링할 때 가장 유용합니다. HDR (high-dynamic-range) 이미지 파일이 주요 조명을 제공합니다. HDR 이미지의 조명은 스튜디오의 실내 조명 수준과 유사합니다. HDR 설정은 [하늘 탭](sun-and-sky-tabs.html#sky)에 있습니다. 조명 탭을 사용하여 인공적인 조명을 추가할 수 있습니다. 스튜디오 기본 설정에서 보이는 배경은 검정입니다.
 
-Studio lighting is optimized for tabletop setups for small design articles such as jewelry and product designs. In the preset scheme, the sun is off and an HDR image sky provides something for shiny objects to reflect.
+스튜디오 조명은 주얼리와 제품 디자인과 같은 작은 디자인 물품용 테이블탑 설정에 최적화되어 있습니다. 이 기본 설정에서 태양은 꺼진 상태이며, HDR 이미지 하늘은 반짝거리는 개체에 반사되는 형상을 제공합니다.
 
-For greater control, use light sources to light the scene. When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires several light sources placed to create very light and very dark areas.
+전체적으로 제어하기 위해 광원을 사용하여 장면을 비춥니다. 스튜디오 설정 조명에서는 극적인 조명이 중요합니다. 명암을 짙게 만들면 조명을 극적으로 만들 수 있습니다. 이것은 어두운 부분도 밝은 부분만큼 중요하다는 것을 의미합니다. 극적인 조명에는 아주 밝고 아주 어두운 부분을 만들도록 설치된 일정 수의 조명이 필요합니다.
 
-Lighting techniques for photography are generally the same as lighting for rendering. So a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](../guides/studio-lighting-basics.html).
+사진 조명 기법은 일반적으로 렌더링용 조명과 같습니다. 사진 조명을 주제로 하는 많은 책들을 보는 것이 렌더링 공부의 좋은 출발점이 될 것입니다. 스튜디오 조명 설정에 대한 보다 자세한 정보는 [스튜디오 조명 기초](../guides/studio-lighting-basics.html).를 참조하세요.
 
 ### 실외 주광
 {: #exterior-daylight .clear-img}
@@ -53,9 +53,9 @@ Lighting techniques for photography are generally the same as lighting for rende
 
 ![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
 
-Lighting a building exterior is the most straightforward lighting model. Most exterior lighting will need no more than the default [Sun](sun-and-sky-tabs.html#sun) light source.
+건물 외부를 비추는 것은 가장 간단한 조명입니다. 실외 조명은 기본적인 [태양](sun-and-sky-tabs.html#sun) 광원 이외에는 필요하지 않습니다.
 
-When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be designated as an [interior](#interior) or an [exterior](#exterior). This is because the contribution of the sky light, reflected light from the ground, and light reflected off other surfaces is much different when inside as opposed to outside. Using the correct [Interior/Exterior](#indirect) setting results in effective and realistic lighting.
+[태양](sun-and-sky-tabs.html#sun)이 켜지면 장면은 [실내](#interior) 또는 [실외](#exterior)로 지정되어야 합니다. 이것은 천공광의 기여, 지표면에서 반사된 빛, 다른 표면에서 반사된 빛이 실내와 실외일 때 매우 다르기 때문입니다. 정확한 [실내/실내](#indirect) 설정은 효과적이고 사실적인 조명 결과를 만들어냅니다.
 
 때로는 장면이 실내인지 실외인지 쉽게 알 수 있습니다. 시점이 건물 바깥에 있다면, 실외 장면입니다. 시점이 방 안이라면 실내입니다. 어떤 장면들은 그렇게 명확하지 않기도 합니다. 건물에 둘러싸인 안뜰, 정원의 정자, 분해도, 단면이 여기에 속합니다. 안뜰의 높이보다 너비가 더 넓다면 많은 천공광이 들어오게 되므로, 실외 장면으로 조명을 설정해 보세요. 너비보다 높이가 더 높다면 실내 조명 설정을 시도해 보세요. 이 경우, 한 가지 트릭은 안뜰의 높은 곳에 데이라이트 포털을 추가하여 직사일광이 장면을 비추게 하는 것입니다.
 
@@ -69,45 +69,45 @@ When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be design
 
 ![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} 두 가지 구성 요소로 이루어져 있습니다. [태양](sun-and-sky-tabs.html#sun)의 직사일광과 지면, 실외 개체, [하늘](sun-and-sky-tabs.html#sky)을 통해 전달된 간접 태양광이 그 두 가지입니다.
 
-The [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) settings are similar to the [Exterior](lighting-tab.html#exterior-daylight) preset.
+[태양](sun-and-sky-tabs.html#sun)과 [하늘](sun-and-sky-tabs.html#sky) 설정은 [실외](lighting-tab.html#exterior-daylight) 기본 설정과 유사합니다.
 주광의 직사일광 구성 요소 계산법은 간단합니다. 단순히 시간, 날짜, 장소를 지정하는 것만으로 충분히 정확한 결과를 얻을 수 있습니다.
 
 실내 렌더링에 대한 안내:
 {: .clear-img}
 
-* Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
-* Because the sun and sky are much brighter than other lights, you may not see much effect from adding artificial lighting when the sun is on. This is normal. Avoid artificially boosting the power of your light sources.
-* You can set the [Sun](sun-and-sky-tabs.html#sun-intensity) or [Sky](sun-and-sky-tabs.html#sky-intensity) intensity to a lower value. Since these settings simulate a clear sky, reducing their intensity will simulate cloudy or darker day lighting conditions.
-* A [multi-channel](lights-tab.html#channel) rendering may help you get the picture you want, while still preserving accurate data.
+* 가능한 한 [조명](lights-tab.html), [하늘 설정](sun-and-sky-tabs.html#sky), 창의 유리 재질에 정확한 값을 사용하십시오.
+* 태양과 하늘은 다른 조명보다 훨씬 밝기 때문에 태양이 켜진 상태에서 인공 조명을 추가하는 것으로 큰 효과를 볼 수 없을 수도 있으며, 이것은 일반적인 현상입니다. 광원을 인공적으로 강화하지 않도록 하십시오.
+* 보다 낮은 값으로 [태양](sun-and-sky-tabs.html#sun-intensity) 또는 [하늘](sun-and-sky-tabs.html#sky-intensity) 강도를 설정할 수 있습니다. 이 설정은 맑은 하늘을 표현하므로 강도를 낮추면 흐리거나 어두운 날의 조명 조건으로 표현할 수 있습니다.
+* 정확한 데이터를 보존하면서 원하는 이미지를 얻는 데 [다중 채널](lights-tab.html#channel) 렌더링이 도움이 될 수 있습니다.
 
 ### 인공 조명
 {: #artificial-lighting}
-![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
+![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} 이 기본 설정은 야간에 램프 조명이 비춰진 건축물의 실내를 시뮬레이션합니다. [조명 탭](lights-tab.html) 또는 [Rhino 조명 관련 명령](lights-tab.html#rhino-light-commands)을 사용하여 모델에 조명 개체를 삽입하고 관리합니다.
 
-Indirect lighting, the lighting reflected off surfaces, is on when one of the two interior presets is selected and off for studio and exterior. This type of lighting is a significant component of an interior simulation. For exteriors and studio models the effects of indirect lighting is more subtle and is therefore turned off by default.
+두 가지 실내 기본 설정 중 하나를 선택하면 간접 조명과 표면에 반사된 조명이 켜지고, 스튜디오와 실외 조명에서는 꺼집니다. 이러한 조명 유형은 실내 시뮬레이션에서 매우 중요한 구성요소입니다. 실외와 스튜디오 모델의 경우, 간접 조명 효과가 좀 더 은은하게 표현되므로, 기본적으로 꺼짐 상태가 됩니다.
 
 ### 사용자 지정 조명
 {: #custom  style="clear:both;"}
-Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRI environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
+사용자 지정은 조명 설정값을 다양하게 조합하여 사용하는 탭입니다. 예를 들어, 실외 주광인 장면이지만 추가적인 HDRI 환경이 조명으로 사용된 경우, 사용자 지정 탭을 사용하여 모델에서 조명의 일부를 켜고 끌 수 있습니다. 값이 기본 설정 기본값에서 다른 값으로 바뀌면, 해당 구성표가 사용자 지정 구성표가 됩니다.
 
 ####  [태양](sun-and-sky-tabs.html#sun)
 {: #sun}
-Turn on and off the Sun tab in the drop down. The [Sun tab](sun-and-sky-tabs.html#sun) contains the controls for altering the parameters of the sun position.
+드롭다운 메뉴에서 태양 탭을 켜고 끕니다. [태양 탭](sun-and-sky-tabs.html#sun)에는 태양 위치를 변경하는 매개변수 제어가 있습니다.
 
 ![images/lightsunon.png](images/lightsunon.png)
 *태양이 켜진 상태, 꺼진 상태.*
-The sun is a very bright directional light source infinitely far from the model. The controls for the sun specify its direction using spherical coordinates. For more details, see the [Sun tab](sun-and-sky-tabs.html#sun) topic.
+태양은 매우 밝은 직사광선의 광원이며 모델로부터 무한하게 멀리 떨어져 있습니다. 태양의 제어는 구 형태 좌표를 사용하여 태양의 방향을 지정합니다. 자세한 정보는 [태양 탭](sun-and-sky-tabs.html#sun) 항목을 참조하세요.
 
 ####  [태양](sun-and-sky-tabs.html#sky)
 {: #sky}
-Set the Sky channel to one of four options:
+다음 네 가지 옵션으로 하늘 채널을 설정합니다:
 
 > 자동
 > HDRI
 > 색
 > 이미지
 
-For details, see the [Sky tab](sun-and-sky-tabs.html#sky) topic.
+자세한 정보는 [하늘 탭](sun-and-sky-tabs.html#sky) 항목을 참조하세요.
 모델로부터 끝없이 떨어져 있는 반구형의 광원을 정의합니다.
 
 #### 끄기
@@ -117,7 +117,7 @@ For details, see the [Sky tab](sun-and-sky-tabs.html#sky) topic.
 
 #### 자동
 {: #auto}
-Provides an analytical model based on real-world sky conditions. The settings on the [Sun](sun-and-sky-tabs.html) tab control the appearance and light qualities of the sky.
+실제 하늘 조건을 기준으로 분석적인 모델을 제공합니다. [태양](sun-and-sky-tabs.html) 탭 설정에서 하늘의 표현과 광질(Light Quality)을 제어합니다.
 ![images/chromeautosky.png](images/chromeautosky.png)
 
 #### HDRi
@@ -127,47 +127,47 @@ HDR 이미지는 반짝거리는 이미지에 반사되는 형상을 제공합�
 
 #### 색
 {: #color}
-Sets the sky to a solid color or a two- or three-color gradient using controls similar to [Environment: Color and Gradient Backgrounds](environment-tab.html#color-and-gradient-backgrounds).
+하늘을 단색 또는 2~3개의 그라데이션 색으로 설정합니다. [환경: 색과 그라데이션 배경](environment-tab.html#color-and-gradient-backgrounds) 설정과 유사합니다.
 ![images/colorsky.png](images/colorsky.png)
 
 #### 이미지
 {: #image}
-Uses an image background with a planar, cylindrical, or spherical projection similar to [Environment: Image](environment-tab.html#image).
+이미지 배경을 평면형, 원통형, 구 형태 투영으로 사용합니다. [환경: 이미지](environment-tab.html#image) 설정과 유사합니다.
 ![images/chromeimagesky.png](images/chromeimagesky.png)
 
 
-### Studio Brightness
+### 스튜디오 밝기
 {: #studio-brightness}
-Reduces the brightness of the [sun](sun-and-sky-tabs.html) and sky to mimic the interior lighting levels of a photographer's studio.
+[태양](sun-and-sky-tabs.html)과 하늘의 밝기를 낮춰 실제 사진 스튜디오의 실내 조명 수준을 표현합니다.
 ![images/studiobrightnessoffandon.png](images/studiobrightnessoffandon.png)
-*Studio Brightness off (left) and on (right).*
+*스튜디오 밝기를 끈 상태 (왼쪽), 켠 상태 (오른쪽).*
 
-### Lights
+### 조명
 {: #lights}
 인공 조명을 켜거나 끕니다.
 
 ![images/lightsonandoff.png](images/lightsonandoff.png)
-*Lights on (left) and off (right).*
+*조명이 켜진 상태 (왼쪽), 꺼진 상태 (오른쪽).*
 
 ### 간접
 {: #indirect}
 서피스로부터 반사된 조명을 정의합니다. 기본적으로 실내 조명에는 켜져 있는 상태이며, 실외 및 스튜디오 조명 기본 설정에서는 꺼져 있는 상태입니다. 실외 렌더링에 간접 조명을 켜고 사용할 수 있습니다.
 
-#### Method
+#### 방식
 간접 조명의 계산 방식을 설정합니다.
 
 #### 끄기
 간접 조명 계산을 끕니다.
 
-#### Interior
+#### 실내
 {: #interior}
 실내 상황에 맞는 간접 조명으로 최적화합니다.
 
-#### Exterior
+#### 실외
 {: #exterior}
 실외 상황에 맞는 간접 조명으로 최적화합니다.
 
-Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately with indirect lighting.
+다른 표면에서 반사된 간접 조명은 실외 렌더링에 보다 섬세하고 사실적인 느낌을 부여합니다. 특히, 간접 조명과 함께, 지붕의 처마, 발코니처럼 돌출된 부분의 아래쪽을 더욱 정확하게 렌더링할 수 있습니다.
 
 #### 바운스
 {: #bounces}
@@ -175,27 +175,27 @@ Indirect lighting reflected from other surfaces can add subtlety and realism to 
 
 ### 주변광
 {: #ambient}
-Ambient light is a constant light added to the rendering. These settings control the intensity of the ambient light as a percentage of the total estimated ambient light in the scene.
+주변광은 렌더링에 더해지는 일정한 빛입니다. 이 설정은 장면에서 예상되는 총 주변광을 퍼센트로 지정하여 주변광의 강도를 제어합니다.
 주변광의 양을 줄이면 이미지의 명암이 더욱 짙어집니다. 주변광을 지나치게 높이면 렌더링된 이미지가 단순하고 재미없어 보일 수 있습니다. 주변광이 너무 낮으면 명암이 과도하게 표현됩니다.
 
 #### 없음
 주변광 없음.
 
-#### Exterior
+#### 실외
 주변광을 실외 설정에 맞춰 최적화합니다.
 
-#### Interior
+#### 실내
 주변광을 실내 설정에 맞춰 최적화합니다.
 
 #### 스튜디오
 주변광을 스튜디오 설정에 맞춰 최적화합니다.
 
-## Saving Custom Lighting
+## 사용자 지정 조명 저장
 
-### Save lighting scheme
+### 조명 구성표 저장
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Saves the current lighting scheme.
+![images/saveschemeicon.png](images/saveschemeicon.png) 현재 조명의 구성표를 저장합니다.
 
-### Open lighting scheme
+### 조명 구성표 열기
 {: #open-lighting-scheme}
 ![images/importfromfile.png](images/importfromfile.png) 저장된 조명 구성표를 엽니다.

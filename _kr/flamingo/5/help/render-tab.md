@@ -3,42 +3,42 @@ title: 렌더링 옵션
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
-The render tab controls the main properties of the final rendering.  Use this tab to control quality and length of time a rendering can take.  Resolution of the final image is one of the biggest influences on overall rendering times.
+렌더링 탭은 최종 렌더링의 주요 속성을 제어합니다. 이 탭을 사용하여 렌더링에 소요되는 시간과 화질을 제어합니다. 최종 이미지의 해상도는 전반적인 렌더링 시간에 가장 큰 영향을 미치는 요인 중 하나입니다.
 
-Note: A good practice is to leave the rendering resolution low during draft renderings. Use high resolution renderings for final renderings only.
+안내: 초안 렌더링 단계에서 렌더링 해상도를 낮게 설정하는 것이 좋습니다. 최종 렌더링일 때만 고해상도 렌더링을 사용하세요.
 
 #### Flamingo 조명 제어는 어디에 있습니까?
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
+ 1. ![images/options.png](images/options.png)도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음 > 렌더링 옵션 탭
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt > 렌더링 옵션 탭
 
 
 ## 렌더링할 뷰포트
 {: #viewtorender}
-Set the view that Flamingo nXt 5 will be rendering.  This is a very useful setting when working on the model and rendering, but there is one specific view that should always render.  For instance, Perspective view is many times the view of interest.  By setting this drop down, then you do not need to make sure the view is current before starting the rendering.
+Flamingo nXt 5가 렌더링하는 뷰를 설정합니다. 모델을 작업하며 렌더링할 때 매우 유용한 설정이지만, 특정한 한 뷰를 항상 렌더링해야 합니다. 예를 들어 많은 경우에 Perspective 뷰가 렌더링 대상이 됩니다. 이 드롭다운 메뉴를 설정하면 렌더링을 시작하기 전에 해당 뷰가 현재 뷰로 설정되어 있는지 매번 확인하지 않아도 됩니다.
 
 #### 활성 뷰
-Use this option to render the current active view.  This is the default setting.
+현재 활성 뷰를 렌더링하려면 이 옵션을 사용합니다. 이것은 기본 설정입니다.
 
-#### List of available viewports
-This list includes all the named views in the model.  Select the view name that should always be rendered.
+#### 사용 가능한 뷰포트 목록
+모델에 있는 모든 명명된 뷰가 포함된 목록입니다. 항상 렌더링되는 뷰 이름을 선택합니다.
 
 ## 렌더링 해상도
 {: #resolution}
-The Rendering resolution is one of the most important render settings.  This control sets the image size and resolution to be saved in the Rhino file.  Increasing resolution will exponentially increase rendering time.  So, it is important to handle this setting carefully.
+렌더링 해상도는 가장 중요한 렌더링 설정 중 하나입니다. 이 설정은 이미지 크기와 Rhino 파일에 저장될 해상도를 지정합니다. 해상도를 올리면 기하급수적으로 렌더링 시간이 길어집니다. 따라서 이 설정을 신중하게 지정하는 것이 중요합니다.
 
 #### 전체 픽셀의 수
 {: #resolutionimagepixels}
-Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
+현재 뷰의 높이와 너비 비율을 사용한 최종 렌더링의 전체 픽셀의 수를 설정합니다. 렌더링 작업에 유용한 설정입니다. 현재 뷰를 렌더링에 일치시키기에 가장 좋은 설정입니다. 픽셀의 전체 수를 변경하는 것만으로 쉽게 이미지 해상도를 올리거나 낮출 수 있습니다.
 
 ### 뷰포트 해상도
-Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
+렌더링된 이미지 크기를 결정하기 위해, 픽셀 단위의 뷰포트 크기를 사용합니다. 이것은 뷰포트 종횡비와 해상도의 1대1 재현입니다. 이는 유용한 모드이지만, 전체 화면 뷰포트를 렌더링하는 경우, Rhino 표준 4뷰 설정에서의 화면 1/4 크기의 뷰포트를 렌더링할 때보다 처리 속도가 느려질 수 있습니다.
 
 ### 이미지 크기
 {: #resolutionprintedsize}
-Image size will set the final resolution based on several different variables.  This is the best way to match an exact size and resolution of a final image. If the height and width of the final rendering does not match the same aspect ratio of the view being rendered, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very long time to complete.  Use these controls for final high resolution renderings.
+몇 가지 다른 변수를 기준으로 이미지 크기가 최종 해상도를 설정합니다. 이것은 최종 이미지의 정확한 크기와 해상도를 일치시키는 가장 좋은 방법입니다. 최종 렌더링의 높이와 너비가, 렌더링되고 있는 뷰의 종횡비와 일치하지 않는다면 뷰의 위, 아래 또는 옆이 일부 잘릴 수 있습니다. 안내: 이 제어를 사용하여 아주 오랜 시간이 소요될 수 있는 초고해상도 렌더링을 생성할 수 있습니다. 이 제어를 최종 고해상도 렌더링에 사용하세요.
 
-There are four unit types which can be used:
+다음과 같은 4개의 단위 유형을 사용할 수 있습니다:
 
 >픽셀
 >인치

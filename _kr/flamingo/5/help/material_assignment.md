@@ -17,28 +17,28 @@ Imported files may have any one of these three assignments. Many imported files 
 
 Once materials are assigned, the material will be saved in the current model.  Editing the material will not effect that material in other models.
 
-## Assign materials to layers
+## 레이어에 재질 적용
 {: #bylayer}
 Assigning materials by layer assigns a material to all objects on that layer. This is the default method of assignment. To change the material assignment of the layer, use the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
 Note: Deleting a material from the [Material Editor](material-editor.html) returns all objects that had the deleted material assigned to assignment by layer.
 
-##### Drag a material to a layer
+##### 재질을 레이어로 끌어오기
 {: #drag-dropmaterialtolayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material on to a layer name in the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog.
+1. Rhino에서 [레이어](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/layer.htm) 대화상자를 엽니다.
+1. 라이브러리 탭 또는 재질 편집기 탭의 [재질 목록](material-editor.html#material_list)에서 재질을 마우스로 끌어 [레이어](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/layer.htm) 대화상자의 레이어 이름으로 가져옵니다.
 
-##### To assign a material to a layer
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select a material from the Material drop-down list.
+##### 재질을 레이어에 적용하려면
+1. Rhino에서 [레이어](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/layer.htm) 대화상자를 엽니다.
+1. 하나 이상의 레이어 이름을 선택하고 재질 열을 클릭합니다.
+1. 레이어 재질 대화상자에서, 재질 드롭다운 목록의 한 재질을 선택합니다.
 
 ##### 레이어에서 재질 제거
 {: #detachmaterialfromlayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select the Default Material Material drop-down list.
+1. Rhino에서 [레이어](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/layer.htm) 대화상자를 엽니다.
+1. 하나 이상의 레이어 이름을 선택하고 재질 열을 클릭합니다.
+1. 레이어 재질 대화상자에서, 재질 드롭다운 목록의 기본 재질을 선택합니다.
 
-## Assign material to Parent
+## 재질을 부모에 적용
 {: #byparent}
 By parent is a seldom used, but useful, assignment. Objects within a Block instance will retain their By Layer or By Object assignments.  Objects that are using By Parent assignment will adopt the material of the block insertion.  This way objects within a block instance can adopt the material of the parent block.
 
@@ -49,7 +49,7 @@ As an example, a car model might have tires on the tires layer and wheels on the
 1. On the Edit menu, click Object Properties ![images/properties.png](images/properties.png) command to edit the object.
 1. In the [Properties](properties-object.html) dialog box, on the Material page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Parent.
 
-## Assign material to objects
+## 재질을 개체에 적용
 {: #byobject}
 You can assign materials from the material libraries to a layer or object. Rendering materials are assigned to individual objects and are used by Rhino's built-in renderer.
 [재질 편집기](material-editor.html)를 참조하세요.
@@ -69,14 +69,14 @@ You can assign materials from the material libraries to a layer or object. Rende
 ##### Assign a material to selected objects
 1. 개체를 선택합니다.
 1. In the [Material List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Assign to Selected Objects.
+1. 메뉴에서 선택된 개체에 적용을 클릭합니다.
 
-##### Select objects with material assignment
+##### 재질 적용을 기준으로 개체 선택
 {: #select-objects-with-material-assignment}
 1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Select Objects with this Material.
+1. 메뉴에서 이 재질이 적용된 개체 선택을 클릭합니다.
 
-##### Remove a by-object material assignment
+##### 개체변 재질 적용 제거
 {: #removematerialfromobject}
 1. 개체를 선택합니다.
 1. 편집 메뉴에서 개체 속성을 클릭합니다.

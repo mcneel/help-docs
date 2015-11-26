@@ -2,7 +2,7 @@
 title: 자동 렌더링
 ---
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
+Flamingo 재질은 속성 그룹 시리즈로 정의됩니다. 자주 사용되는 재질로 구성된 간단한 재질 속성 시리즈가 있습니다. 이들 재질에는 아주 간단한 제어로 변경이 가능하며, 복잡하게 많은 설정을 변경할 필요 없이 간단한 제어만으로도 원하는 대로 설정을 변경하여 재질을 다르게 표현할 수 있습니다. 가장 간단한 재질의 경우, 재질의 색만 바꾸면 다르게 표현이 됩니다.
 
 #### 간단한 재질 속성:
 
@@ -17,18 +17,18 @@ Flamingo materials are defined by a series of property groups. These are a serie
 
 Any material can be converted to an advanced material.  Advanced materials present all the possible controls to edit a material in Flamingo nXt.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
 
-#### Advanced Materials are comprised of these property groups:
+#### 고급 재질은 다음 속성 그룹으로 구성되어 있습니다:
 
 > [이름](material-type-advanced.html#name)
 > [재질 절차](material-type-advanced.html#procedures)
 > [고급 재질 속성](material-type-advanced.html#advanced-materials-properties)
 > [반사 마무리](material-type-advanced.html#reflective-finish-and-highlight)
-> [Transparency Properties](material-type-advanced.html#transparency)
-> [Procedural Textures](material-type-advanced.html#bump-patterns)
-> [Bitmap Textures](material-type-advanced.html#textures)
-> [Notes](material-type-advanced.html#notes)
+> [투명도 속성](material-type-advanced.html#transparency)
+> [절차적 텍스처](material-type-advanced.html#bump-patterns)
+> [비트맵 텍스처](material-type-advanced.html#textures)
+> [노트](material-type-advanced.html#notes)
 
-Materials are saved and stored in the Rhino model. Unique materials can have the same name in different Rhino models.
+재질은 Rhino 모델에 저장되고 보관됩니다. Rhino 모델이 서로 다르더라도, 고유한 재질의 이름은 동일할 수 있습니다.
 
 ## 단색
 {: #solid-color}
@@ -88,7 +88,7 @@ Glossy materials generally have a low Highlight [Intensity](material-type-advanc
 Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### 하이라이트 선명도
-Controls sharpenss vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+Controls sharpeness vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
 
@@ -122,9 +122,9 @@ Set the image map and properties of the material. There are many options here. S
 {% include_relative snippets/snippet-material-image-add-edit.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material.
 
-## Texture Set
+## 텍스처 세트
 {: #texture-set}
-[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these set of textures.
+[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
 <!-- TODO: This dialog Needs a page.-->
 ![images/solidcolors.png](images/textureset.png)
 
@@ -141,7 +141,7 @@ Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness]
 #### Types
 This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. **Note:** This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
 
 ## 고급 재질
 The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.

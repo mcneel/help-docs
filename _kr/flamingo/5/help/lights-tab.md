@@ -3,7 +3,7 @@ title: 조명
 ---
 
 # ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
-Artificial light sources use normal Rhino lights with added Flamingo properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
+인공 광원은 몇 가지 Flamingo 속성이 추가된 일반적인 Rhino 조명을 사용하여 배광을 제어합니다. 광원을 사용할 때 실제 램프와 가장 유사한 유형을 선택하십시오.
 
 
 ## 조명 탭
@@ -14,30 +14,30 @@ The Lights tab will list all the artificial lights in the scene. This topic cove
 The Lights tab must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
 
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo 탭 > 조명
 
-From the Lights tab lights you can insert, turn off/on, and change the strength and channel of each light.
+조명 탭에서 조명을 삽입, 켜기/끄기, 각 조명의 채널과 강도를 변경할 수 있습니다.
 
-Flamingo supports these light types:
+Flamingo는 다음과 같은 조명 유형을 지원합니다:
 
-> [Tag objects as lights](#tag-objects-as-lights)
-> [Spotlight](#spotlight)
-> [Point light](#pointlight)
-> [Rectangular light](#rectangularlight)
-> [Linear light](#linearlight)
+> [개체를 조명으로 태그](#tag-objects-as-lights)
+> [집중 조명](#spotlight)
+> [점 조명](#pointlight)
+> [직사각형 조명](#rectangularlight)
+> [선형 조명](#linearlight)
 
 **Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
 
 Some light properties are displayed on the Lights tab table for quick editing of common properties.
 
-Properties contained in the table are:
+테이블에 포함된 속성:
 
- >[On/Off](#on)
- >[Name](#name)
- >[Distribution](#light-distribution)
- >[Aim](#aim-light)
- >[Watts](#watts)
- >[Channel](#channel)
+ >[켜기/끄기](#on)
+ >[이름](#name)
+ >[배광](#light-distribution)
+ >[조준](#aim-light)
+ >[와트](#watts)
+ >[채널](#channel)
 
 Right-clicking on the Lights tab table will open the [Additional Options](#additional-options) menu.
 
@@ -54,7 +54,7 @@ Any renderable object (surface, solid, etc.) can be tagged as a light source and
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *LED driving lights and headlights tagged as light sources*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) Spotlight
+#### ![images/spotlight-01.png](images/spotlight-01.png) 집중 조명
 {: #spotlight}
 Spotlight is a conical light distribution with a specific direction.  The light properties include a [source radius](#radius), [beam angle](#beam-angle), falloff radius, and direction. The larger the source radius, the softer the shadows will be from the light. By default there is a visible disk at the light location. Information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
@@ -68,7 +68,7 @@ Point lights are a small sphere that distributes light equally in all directions
 ![images/pointlight.png](images/pointlight.png)
 *A small point light close to the right wall*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) RectangularLight
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) 직사각형 조명
 {: #rectangularlight}
 Provides an approximation of a recessed light with a diffuser or baffles. The light distributes light in a diffuse pattern based on the orientation of the rectangle. A direction arrow is drawn at the center point of the light. Full strength light is directly in front of the rectangle.  Then the light falls off at an angle to the objects from the rectangle. By default a white rectangle will be visible when rendering. A common mistake is to insert these rectangles at exactly the same height as a ceiling plane. For consistent results, make sure the lights are slightly below the ceiling. For information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros RectangularLight](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm) help topic.
 
@@ -109,7 +109,7 @@ For tagged light which have a distribution of Spot or Diffuse, a direction must 
 {: #watts}
 Specifies the electrical power of the light.  It is recommended to start with realistic values for the scene. In the light table, double-click on the cell to change the value.
 
-#### Beam angle *([Spotlights only](lights-tab.html#spotlight))*
+#### 빔 각도 *([집중 조명만 해당](lights-tab.html#spotlight))*
 {: #beam-angle}
 The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
@@ -121,7 +121,7 @@ The size of the visible light source. Smaller lights cast sharper shadows.
 {: #color}
 The color for the light the source emanates.
 
-#### Use material color *([Tagged objects only](#tag-objects-as-lights))*
+#### 재질색 사용 *([태그된 개체만 해당](#tag-objects-as-lights))*
 조명에서 나오는 빛에 조명 개체에 적용된 재질의 색을 사용합니다.
 
 #### 채널
@@ -138,25 +138,25 @@ IES (Illuminating Engineering Society) 파일은 광원의 배광을 정의하�
 * IES distributions include the effects of light fixture elements such as baffles, reflectors, and diffusers.
 * IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
 
-#### Brightness from file
+#### 파일로부터의 밝기
 Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
 
 
-## Additional Options Menu
+## 추가 옵션 메뉴
 {: #additional-options}
 Additional options for lights can be accessed by right-clicking on the light in the Light table.
 
 ####  On
-Toggles the light [On/Off](#on)
+조명의 [켜짐/꺼짐](#on) 상태를 전환합니다.
 
 #### 삭제
 선택된 조명을 삭제합니다.
 
 #### 조명 태그 제거
-Removes the [tag](#tag-objects-as-lights) that makes an object a light.
+개체를 조명으로 만드는 [태그](#tag-objects-as-lights)를 제거합니다.
 
 #### 속성
-Access the [Light Properties](#light-properties) for that light.
+해당 조명의 [조명 속성](#light-properties)에 액세스합니다.
 
 #### 개체와 일치하는 항목 선택
 뷰포트에서 조명을 선택합니다.

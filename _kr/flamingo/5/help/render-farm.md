@@ -3,7 +3,7 @@ title: 팜 렌더링
 ---
 
 # {{page.title}}
-The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers used only as render farm clients.
+Flamingo nXt 렌더 팜에서는 여러 대의 컴퓨터를 사용하여 하나의 이미지를 렌더링하고, 여러 이미지를 일괄 렌더링하거나, 뷰 기반 애니메이션 작업을 할 수 있습니다. 렌더 팜 클라이언트로만 사용될 컴퓨터에 Rhino 나 Flamingo nXt 가 필요하지 않습니다.
 
 #### 전형적인 팜 레이아웃
 {: #render-farm}
@@ -12,25 +12,25 @@ The Flamingo nXt Render Farm uses the power of several computers to render singl
 
 >![images/01.png](images/01.png)Rhino와 Flamingo nXt가 설치된 컴퓨터.
 >![images/02.png](images/02.png)네트워크 서버 또는 공유된 팜 폴더.
->![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
->![images/04.png](images/04.png)Additional purchased render farm clients.
+>![images/03.png](images/03.png)두 개의 렌더 팜 클라이언트. (nXt 렌더 팜은 무료로 2 대의 클라이언트에서 사용할 수 있습니다.)
+>![images/04.png](images/04.png)추가로 구매한 렌더 팜 클라이언트.
 
-The Render Farm is free for up to two client computers. To add more client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+Render Farm(렌더 팜)은 2 대의 클라이언트 컴퓨터까지 무료로 사용하실 수 있습니다. 더 많은 클라이언트 컴퓨터를 추가하려면 nXt Render Farm 라이선스를 구입하세요. 구입처:  [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
 #### 공유된 팜 폴더
 {: farm-folder}
 The key to a functional render farm is a shared folder to which the master machine and all the client computers can access.  This is normally a shared network folder.  It can be a folder on the master machine or on a network.  The folder does not have to be assigned to the same name on each client, but each client does need full read/write/delete access to the folder.  The shared folder should have at least 20GB of available storage.
 
-#### The nXt Render Farm includes two Applications:
+#### nXt 렌더 팜에는 두 가지 응용 프로그램이 있습니다:
 
-##### The Farmer render client (nXtFarmer64.exe)
+##### Farmer render 클라이언트 (nXtFarmer64.exe)
 각각의 네트워크 클라이언트에서 실행되는 작은 프로그램으로, 생성되는 작업을 기다립니다. 일반적으로 렌더 팜은 렌더링 진행 상황을 모니터에 표시하지 않고 조용하게 처리합니다. 이 방식으로 렌더링하면, 렌더링이 진행되는 동안 컴퓨터가 이를 간섭하지 않게 하면서 시간이 걸리는 작업에 더 많은 컴퓨터 성능을 활용할 수 있습니다.
 
-##### The Farm monitor (nXtFarmMonitor64.exe)
+##### Farm 모니터 (nXtFarmMonitor64.exe)
 렌더링 작업 상태를 보여주고 간단한 제어 기능을 갖춘 애플릿입니다.
-For advanced installations, the nXt Render Farm software lets you work with third-party render managers. The following procedures apply to the Render Farm included with Flamingo nXt. If you are planning to use third-party render farm software, some of these procedures will be different.
+고급 설치의 경우, nXt 렌더 팜 소프트웨어를 타사의 렌더링 관리자와 함께 사용할 수 있습니다. 다음의 절차가 Flaming nXt에 포함된 렌더 팜에 적용됩니다. 타사의 렌더 팜 소프트웨어를 사용할 계획이라면 다음 절차 중 일부가 달라집니다.
 
-#### The Farm Process
+#### 팜 프로세스
 {: #the-farm-process}
  1. To start a rendering using Flamingo nXt farm, instead of using the standard Render command, use the Render Farm *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
  2. Render jobs are split into many different farm tasks. The Render Farm clients continuously check the farm output folder for new tasks. Each client will pick up a task and start to render. The Farm Monitor  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* is a good way to keep track of the job's progress.
@@ -91,12 +91,12 @@ After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-m
  1. Watch for the job status Completed when the job is finished.
 
 
-## Farm Job Options
+## 팜 작업 옵션
 {: #farm-job}
 
 #### 이름
 {: #job-name}
-The date and time is automatically pre-pended to the name you choose. A sub-folder for the job is created in the Render Farm shared folder. An output folder is also created in the new job folder.
+사용자가 선택한 이름에 자동으로 날짜와 시간이 붙습니다. 작업의 하위 폴더가 렌더 팜 공유 폴더에 만들어집니다. 출력 폴더도 새로운 작업 폴더에 만들어집니다.
 각각의 작업이 완료되면 출력 파일은 작업의 출력 폴더에서 찾을 수 있습니다.
 
 #### 작업 시작
@@ -127,31 +127,31 @@ To access the Farm Monitor from Windows, on the Start menu click **All Programs 
 #### 옵션
 Right-click a Machine or a Job to access options.
 
-#### Refresh
+#### 새로 고침
 작업 목록을 새로 고칩니다.
 
-#### Suspend Machine
+#### 컴퓨터 일시 중단
 렌더 팜 참여에서 워크스테이션을 제외시킵니다.
 
-#### Resume Machine
+#### 컴퓨터 다시 시작
 렌더 팜 작업이 실행될 워크스테이션을 다시 시작합니다.
 
-#### Suspend Job
+#### 작업 일시 중단
 지정된 작업을 잠시 멈춥니다.
 
-#### Resume Job
+#### 작업 다시 시작
 지정된 작업을 다시 시작합니다.
 
-#### Remove Job
+#### 작업 제거
 목록에서 지정된 작업을 삭제합니다.
 
-## Licensing the Render Farm
+## 렌더 팜의 라이선스
 {: #licensing-the-render-farm-}
-The free version of the Render Farm allows two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+The free version of the Render Farm lets two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
 라이선스를 구입하면 제품 키를 가지고 다음 순서로 팜 라이선스를 설정하여 사용하십시오.
 
-##### To authorize the node
+##### 노드를 승인하려면
 1. Wait for any active farm jobs to complete before beginning your licensing.
 1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
 1. If the node is currently active, in the Windows system tray (on the taskbar), /mouse_button_right.htm');" id="a16" style="position: relative;">right-click the Render Farm icon, and then click **Close**.
@@ -159,10 +159,10 @@ The free version of the Render Farm allows two network computers (nodes) to work
 In the nXt Render Farm folder, click **Authorize Farm**.
 1. In the edit box, paste or type your Product Key and click **OK**.
 
-##### To start the node
+##### 노드를 시작하려면
 1. Click the **Windows Start** button, and then click **All Programs**.
 In the nXt Render Farm folder, click **Render Farmer**.
 1.  p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click the tray icon, and on the menu, click **Restore**.
 1. 도움말 메뉴에서 **정보**를 클릭합니다.
 버전 숫자가 평가판인 경우에는 라이선스를 받을 수 없습니다.
-1. Minimize the Render Farmer window to return it to the tray.
+1. 렌더 파머 창을 최소화하여 트레이로 반환합니다.

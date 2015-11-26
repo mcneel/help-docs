@@ -2,7 +2,7 @@
 title: 식물
 ---
 
-# {{page.title}}
+# ![images/plants.svg](images/plants.svg) {{page.title}}
 Flamingo nXt에는 재미있고 강력한 식물 생성기가 있어, 렌더링하는 동안 복잡한 식물을 효과적으로 만들 수 있습니다. 모델에서는 자리 표시자만 보관되므로, 식물이 모델 크기에 거의 영향을 미치지 않습니다.
 
 ![images/plants-001.png](images/plants-001.png)
@@ -10,7 +10,7 @@ Flamingo nXt에는 재미있고 강력한 식물 생성기가 있어, 렌더링�
 
 ### nXt 식물 삽입
 {: #insert:}
-Flamingo Plants are inserted as a block.  These blocks contains points that represent the general shape of the tree.
+Flamingo 식물은 블록으로 삽입이 됩니다. 나무의 전체적인 형태는 나타내는 점들이 블록에 포함되어 있습니다.
 
 1. Flamingo nXt 메뉴에서 식물 > 식물 삽입을 클릭합니다.
 1. Flamingo nXt 식물 대화상자에서 식물 이름을 클릭하고 열기를 클릭합니다.
@@ -23,12 +23,12 @@ Flamingo Plants are inserted as a block.  These blocks contains points that repr
 
 ### 식물 편집
 {: #edit}
-Once inserted, a tree can be moved, copied, and scaled.  The tree will resize appropriately. For more advanced edits to that structure of the tree, use the Edit plant command. Making small changes to the structure of the trees can be quick.  Larger changes to the tree algorithms can take more experimentation.
+나무를 삽입한 후에는 이동, 복사, 크기 조정이 가능합니다. 나무의 크기가 적당하게 조정이 됩니다. 나무 구조를 보다 구체적으로 편집하려면 식물 편집 명령을 사용합니다. 나무 구조를 조금 변경하면 금방 실행됩니다. 나무 알고리즘을 크게 변경하려면 여러 번의 시행이 필요할 수 있습니다.
 
-1. On the Flamingo nXt menu, click Plants > Edit Plant.
+1. Flamingo nXt 메뉴에서 식물 > 식물 편집을 클릭합니다.
 1. 편집할 식물을 선택합니다.
-1. Make the correct edits to the plant.
-1. Save the tree, then close the editor.  The plant in Rhino will automatically update.
+1. 선택한 식물을 원하는 대로 편집합니다.
+1. 나무를 저장하고 편집기를 닫습니다. Rhino의 해당 식물이 자동으로 업데이트됩니다.
 
 ### Flamingo 2 식물 사용
 {: #using-flamingo-2-plants}
@@ -43,4 +43,4 @@ Once inserted, a tree can be moved, copied, and scaled.  The tree will resize ap
 
 ### 식물 편집기
 {: tree-editor}
-Flamingo에는 사용자가 지정하는 나무를 만들 수 있는 나무 편집기가 포함되어 있습니다. There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.
+Flamingo에는 사용자가 지정하는 나무를 만들 수 있는 나무 편집기가 포함되어 있습니다. 새 식물을 만들 때 그 시작점으로 사용할 수 있는 몇 가지 기본 나무 템플릿이 있습니다. 자세한 정보는 [식물 편집기](tree-editor.html) 항목을 참조하세요.
