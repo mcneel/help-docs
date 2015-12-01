@@ -38,7 +38,7 @@ Drag onto a block and any By Parent objects in the block will adopt that materia
 
 ## Plant Library
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned plant will not change the original plant on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
 
 ## Environment Library
 {: #environment}
@@ -49,7 +49,7 @@ Environments can be saved in the library.  This lets Environment settings to be 
 Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
 
 ##### Where can I find this command?
-There are three places to find the Libraries Options command.
+There are three places to find the Libraries Options command. <!-- TODO: Where is the third place? -->
 
  1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
  1. Menus > Tools pulldown > Options > Libraries.
