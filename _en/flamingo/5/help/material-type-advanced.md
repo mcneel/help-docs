@@ -73,7 +73,7 @@ Sets the highlight color to match the base color. Many metal finishes normally u
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Custom
-In some very specialized finishes, the reflection off the object will be a different color than the base color for the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
+In some very specialized finishes, the reflection of the object will be a different color than the base color for the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
@@ -85,9 +85,9 @@ Adjusts the strength of the highlight. Lower values tend to make glossy objects 
 
 #### Fresnel
 {: #fresnel}
-Pronounced (fray-NELL). Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations). The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
+Pronounced (fray-NELL). Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations). The Fresnel setting models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
 
-Reduce the value for very dark materials to prevent too much reflection.&#160;Increase the value for materials like varnished wood, where the Fresnel reflectivity is more pronounced.
+Reduce the value for very dark materials to prevent too much reflection. Increase the value for materials like varnished wood, where the Fresnel reflectivity is more pronounced.
 
 ![images/highlightfresnel.png](images/highlightfresnel.png)
 
@@ -142,8 +142,8 @@ Excludes raycast reflections of light sources. Only the highlight is used. This 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
 ## Transparency
-{: transparncy}
-The Transparency settings control&#160;properties associated with light passing through a material.
+{: #transparency}
+The Transparency settings control properties associated with light passing through a material.
 
 ![images/transparentmaterials.png](images/transparentmaterials.png)
 
