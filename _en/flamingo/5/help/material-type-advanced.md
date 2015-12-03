@@ -229,7 +229,7 @@ Two types of textures can be added to a material: Image Textures and Bump Patter
 
 ### Images
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another image may control the bump properties of the texture. To control how an image effects a material, go to the [Image Properties](material-image-properties.html) Dialog.
+Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another image may control the bump properties of the texture. To control how an image affects a material, go to the [Image Properties](material-image-properties.html) Dialog.
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -275,11 +275,11 @@ Gives the appearance of small pyramidal protrusions like a knurl pattern.  [Scal
 Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit wrinkled.
 
 ![images/wrinkled.png](images/wrinkled.png)
-*Pyramid showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*Wrinkled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
 
 #### Marbled
 {: #marbled}
-Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit wrinkled.
+Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit marbled.
 
 ![images/marbled.png](images/marbled.png)
 *Marbled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
