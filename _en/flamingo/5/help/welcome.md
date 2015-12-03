@@ -49,7 +49,7 @@ Rendering your finished model comprises four basic steps:
 * Or, on the Standard toolbar, click the Render button.
 
 ### Stop Rendering
-By default, the rendering process will continue refining the image, pass by pass, until you click the Stop Rendering button. This lets you to manage the trade-off between time and quality. The longer the rendering continues, the more closely it resembles its fully converged result. You can stop a rendering at any time.
+By default, the rendering process will continue refining the image, pass by pass, until you click the Stop Rendering button. This lets you manage the trade-off between time and quality. The longer the rendering continues, the more closely it resembles its fully converged result. You can stop a rendering at any time.
 
 ###  Resume Rendering
 Clicking the Stop Rendering button suspends the rendering process after the current pass is completed.
