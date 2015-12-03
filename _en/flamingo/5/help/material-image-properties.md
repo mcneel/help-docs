@@ -116,7 +116,7 @@ Normally a Flamingo Image will apply to the main color channel of a material. Th
 This is the default setting.  An image will effect the [color](advanced-material-properties-main.html#color) of a material.
 
 ####  Specular color
-This will effect the color of [reflection channel](advanced-material-properties-main.html#highlight-color) based on the image color at that point.
+This will affect the color of [reflection channel](advanced-material-properties-main.html#highlight-color) based on the image color at that point.
 
 ####  Specular intensity
 This will change the [amount of reflection](advanced-material-properties-main.html#intensity) based on the grayscale of the image at that point.  This is used often in Texture Sets as a Specular Map.
@@ -129,13 +129,13 @@ This will adjust the sharpness vs blurriness of the [highlight](advanced-materia
 Affects the shape of the highlight.
 
 ####  Transparency
-This will effect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the grayscale of the image.
+This will affect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the grayscale of the image.
 
 ####  Translucency
-This will effect the amount of [transparency](advanced-material-properties-transparency.html#translucency) in the material based on the grayscale of the image.
+This will affect the amount of [translucency](advanced-material-properties-transparency.html#translucency) in the material based on the grayscale of the image.
 
 ####  Attenuation
-This will effect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the grayscale of the image.
+This will affect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the grayscale of the image.
 
 #### Offsets X/Y
 {: #advanced-x-y-offset}
