@@ -147,7 +147,7 @@ Delete the specified job from the list.
 
 ## Licensing the Render Farm
 {: #licensing-the-render-farm-}
-The free version of the Render Farm lets two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+The free version of the Render Farm lets two network computers (nodes) work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
 Once you have purchased your license and have acquired a product key, use the following procedures to license your farm.
 
