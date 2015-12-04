@@ -165,14 +165,14 @@ Graphically displays the distribution of the light and dark areas in the image a
 *An example histogram with few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
 
 #### Histogram options
-Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
+Right-click the histogram image for the following options.  These options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
 
 * **Fit** - This fits the highest verticals into the chart.
 * **Median** - This fits the median value in the vertical. This is a good way to see the details at the edges of the chart.
 * **Mean** - This fits the mean value in the vertical direction.
 * **Show Sorted Graph** - This sorts all the values based on the amount they exist in the image.
 * **Show Scale** - Shows the corresponding values along the bottom of the chart.
-* **Graph Color...** - Set the graph color.
+* **Graph Color...** - Sets the graph color.
 
 ### Lock exposure
 {: #lock-exposure}
