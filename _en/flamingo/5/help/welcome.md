@@ -52,6 +52,6 @@ Rendering your finished model comprises four basic steps:
 By default, the rendering process will continue refining the image, pass by pass, until you click the Stop Rendering button. This lets you manage the trade-off between time and quality. The longer the rendering continues, the more closely it resembles its fully converged result. You can stop a rendering at any time.
 
 ###  Resume Rendering
-Clicking the Stop Rendering button suspends the rendering process after the current pass is completed.
-The button then changes to Resume Rendering. If you stop the rendering before the number of passes or the time constraints are reached, you can click the Resume Rendering button to continue.
+Clicking the Stop Rendering button suspends the rendering process after the current pass completes.
+The button then changes to Resume Rendering. If you stop the rendering before reaching the number of passes or the time constraints, you can click the Resume Rendering button to continue.
 Use the [Number of passes](render-window.html#number-of-passes) or [Time](render-window.html#time) settings on the [Render Window](render-window.html) or in [Document Properties Flamingo nXt](documentproperties-flamingo.html) to set an automatic stopping point.
