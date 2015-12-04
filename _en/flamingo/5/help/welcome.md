@@ -25,7 +25,7 @@ For technical support, tutorials, examples, and information about how to get sta
 
 ## The Flamingo nXt Control Panel
 {: #control-panel}
-This version of Flamingo features an interface which is integrated with the Rhino 5 rendering tools. The Flamingo nXt Control Panel provides tabs for setting up the model for rendering, including:
+This version of Flamingo features an interface integrated with the Rhino 5 rendering tools. The Flamingo nXt Control Panel provides tabs for setting up the model for rendering, including:
 
 > [Materials](materials-tab.html)
 > [Lighting](lighting-tab.html)
@@ -54,4 +54,5 @@ By default, the rendering process will continue refining the image, pass by pass
 ###  Resume Rendering
 Clicking the Stop Rendering button suspends the rendering process after the current pass completes.
 The button then changes to Resume Rendering. If you stop the rendering before reaching the number of passes or the time constraints, you can click the Resume Rendering button to continue.
+
 Use the [Number of passes](render-window.html#number-of-passes) or [Time](render-window.html#time) settings on the [Render Window](render-window.html) or in [Document Properties Flamingo nXt](documentproperties-flamingo.html) to set an automatic stopping point.
