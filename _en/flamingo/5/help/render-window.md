@@ -32,7 +32,7 @@ Some of the effects that improve on each pass are:
 
 ### Stopping a rendering
 {: #stop-render}
-You can stop the rendering in a number of ways:
+You can stop the rendering several ways:
 
 ![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
 
@@ -68,7 +68,8 @@ Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. Th
 
 #### Export to native Flamingo nXt file (.nXtImage)
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
+Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXt Image files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
+
 The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
 
 #### Export to HDR file
@@ -105,7 +106,7 @@ Status messages include:
 * Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
 * Action Done - Once the Stop button has been clicked and the render engine finishes a pass, then the stop action is done.
 * Pass Complete - This message posts each time a pass is complete.
-* Resume Rendering - In cases that a resume is possible this displays.
+* Resume Rendering - If a resume is possible, this displays.
 * Updating - The render engine is in the middle of a pass, currently updating the rendering.
 
 #### Pass
@@ -164,14 +165,14 @@ Graphically displays the distribution of the light and dark areas in the image a
 *An example histogram with few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
 
 #### Histogram options
-Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
+Right-click the histogram image for the following options.  These options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
 
 * **Fit** - This fits the highest verticals into the chart.
 * **Median** - This fits the median value in the vertical. This is a good way to see the details at the edges of the chart.
 * **Mean** - This fits the mean value in the vertical direction.
 * **Show Sorted Graph** - This sorts all the values based on the amount they exist in the image.
 * **Show Scale** - Shows the corresponding values along the bottom of the chart.
-* **Graph Color...** - Set the graph color.
+* **Graph Color...** - Sets the graph color.
 
 ### Lock exposure
 {: #lock-exposure}

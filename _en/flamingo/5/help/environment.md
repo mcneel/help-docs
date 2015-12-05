@@ -57,7 +57,7 @@ The Sky environment uses the sun and sky settings from the [Lighting](lighting-t
 
 ## Color Background
 {: #color-backgrounds}
-Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
+Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRi, or Sky background.
 
 #### Solid Color
 {: #solid-color}
@@ -84,20 +84,20 @@ See [Color Controls](#enviroment-sky-color-controls) below for more details on e
 
 ### Color controls
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
+The number of controls available may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### Swap Colors
-Use this button to rearrange the color in the gradient from top to bottom
+Use this button to rearrange the color in the gradient from top to bottom.
 
 #### Gradient mapping control
 {: #gradient-mapping}
 The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
 
-#### Angles from views
+#### Angles from View
 {: #angle-from-views}
-If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+If Angles from View is checked, the current color gradient syncs with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
 
 #### View Altitude Mapper
 {: #colorrange}
@@ -215,7 +215,7 @@ Specifies the image rotation. The red dot indicates the center of the image.
 Specifies the width of the image in degrees relative the the plan view.
 
 #### Top/Bottom
-Specifies the vertical angles of the image based on horizontal groundplane direction in the model
+Specifies the vertical angles of the image based on horizontal groundplane direction in the model.
 
 ####  Get Angles From View button
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
@@ -237,13 +237,13 @@ Specifies the image rotation. The red dot indicates the center of the image.
 ####  Get Angles From View button
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
-## HDRI Background
+## HDRi Background
 {: #hdr-background}
 Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
 
 #### Image File
 {: #hdri-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Set the background HDRi image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
@@ -253,7 +253,7 @@ Set the background HDRI image by clicking on the large button that reads *(empty
 ## Planar HDRI options
 {: #planar-hdr-options}
 
-Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
+Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRi provides a wider range of color possibilities. A good use of planar HDRi files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRi files are always mapped planar.
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
