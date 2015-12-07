@@ -63,7 +63,6 @@ From this list:
 
 * Click on an Environment to make it current. Once selected the environment's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
 * Scroll up and down in the list to see all the environments in the model.
-* Drag and drop an environment from this list onto any viewport to set it current.
 * Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
 * Right-click a thumbnail to display the Environment context menu
 * Right-click the blank area to display the New Environment Context Menu
