@@ -31,7 +31,7 @@ Rendering your finished model comprises four basic steps:
 
 #### To start a rendering
 
- * On the **Render** or **Flamingo nXt** menu, click **Render**.
+ * On the **Render** click **Render**.
 - Or -
 
  * On the **Standard** toolbar, click the **Render** button.
@@ -39,15 +39,8 @@ Rendering your finished model comprises four basic steps:
 ### Stop Rendering
 
 
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
+By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** ![images/stop.png](images/stop.png) button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
 
-
-###  <kbd>Resume Rendering</kbd>
-
-
-Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
-
-The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
 
 Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
 
