@@ -37,7 +37,7 @@ Flamingo nXt의 기본 조명에는 네 가지 방식이 있습니다:
 
 ### 스튜디오 조명
 {: #studio-lighting}
-이 기본 설정은 포토그래퍼의 스튜디오에서 볼 수 있는 조명을 표현합니다. 소규모~중간 규모의 개체를 단독으로 렌더링할 때 가장 유용합니다. 또한 HDRI 환경을 통해 조명이 잘 비춰진 장면에도 사용할 수 있습니다.
+이 기본 설정은 포토그래퍼의 스튜디오에서 볼 수 있는 조명을 표현합니다. 소규모~중간 규모의 개체를 단독으로 렌더링할 때 가장 유용합니다. 또한 HDRi 환경을 통해 조명이 잘 비춰진 장면에도 사용합니다.
 
 ![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} 이 기본 설정은 포토그래퍼의 스튜디오에서 볼 수 있는 조명을 표현합니다. 소규모~중간 규모의 개체를 단독으로 렌더링할 때 가장 유용합니다. HDR (high-dynamic-range) 이미지 파일이 주요 조명을 제공합니다. HDR 이미지의 조명은 스튜디오의 실내 조명 수준과 유사합니다. HDR 설정은 [하늘 탭](sun-and-sky-tabs.html#sky)에 있습니다. 조명 탭을 사용하여 인공적인 조명을 추가할 수 있습니다. 스튜디오 기본 설정에서 보이는 배경은 검정입니다.
 
@@ -51,7 +51,7 @@ Flamingo nXt의 기본 조명에는 네 가지 방식이 있습니다:
 {: #exterior-daylight .clear-img}
 이 기본 설정은 자연적인 태양과 하늘을 사용한 건축물 외부를 위한 주광(daylight)을 표현합니다.
 
-![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
+![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} [태양](sun-and-sky-tabs.html#sun)과 [하늘](sun-and-sky-tabs.html#sky) 탭의 설정을 지정합니다. [태양 각도](sun-and-sky-tabs.html#set-azimuth-and-altitude)를 직접 설정하거나 [지리적 위치](sun-and-sky-tabs.html#set-location-on-earth), 날짜, 시간을 사용합니다. 기본 설정에서 보이는 배경은 시뮬레이션된 하늘입니다.
 
 건물 외부를 비추는 것은 가장 간단한 조명입니다. 실외 조명은 기본적인 [태양](sun-and-sky-tabs.html#sun) 광원 이외에는 필요하지 않습니다.
 
@@ -88,7 +88,7 @@ Flamingo nXt의 기본 조명에는 네 가지 방식이 있습니다:
 
 ### 사용자 지정 조명
 {: #custom  style="clear:both;"}
-사용자 지정은 조명 설정값을 다양하게 조합하여 사용하는 탭입니다. 예를 들어, 실외 주광인 장면이지만 추가적인 HDRI 환경이 조명으로 사용된 경우, 사용자 지정 탭을 사용하여 모델에서 조명의 일부를 켜고 끌 수 있습니다. 값이 기본 설정 기본값에서 다른 값으로 바뀌면, 해당 구성표가 사용자 지정 구성표가 됩니다.
+사용자 지정은 조명 설정값을 다양하게 조합하여 사용하는 탭입니다. 예를 들어, 실외 주광인 장면이지만 추가적인 HDRi 환경이 조명으로 사용된 경우, 사용자 지정 탭을 사용하여 모델에서 조명의 일부를 켜고 끌 수 있습니다. 값이 기본 설정 기본값에서 다른 값으로 바뀌면, 해당 구성표가 사용자 지정 구성표가 됩니다.
 
 ####  [태양](sun-and-sky-tabs.html#sun)
 {: #sun}
@@ -176,6 +176,7 @@ HDR 이미지는 반짝거리는 이미지에 반사되는 형상을 제공합�
 ### 주변광
 {: #ambient}
 주변광은 렌더링에 더해지는 일정한 빛입니다. 이 설정은 장면에서 예상되는 총 주변광을 퍼센트로 지정하여 주변광의 강도를 제어합니다.
+
 주변광의 양을 줄이면 이미지의 명암이 더욱 짙어집니다. 주변광을 지나치게 높이면 렌더링된 이미지가 단순하고 재미없어 보일 수 있습니다. 주변광이 너무 낮으면 명암이 과도하게 표현됩니다.
 
 #### 없음

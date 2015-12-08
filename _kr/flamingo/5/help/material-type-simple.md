@@ -84,11 +84,11 @@ Glossy materials generally have a low Highlight [Intensity](material-type-advanc
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
+#### 강도
 Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### 하이라이트 선명도
-Controls sharpeness vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+Controls sharpness vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
 
@@ -110,7 +110,7 @@ Textured materials use images to create colors and patterns. The image name, res
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
+#### 강도
 Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### 선명도
@@ -132,7 +132,7 @@ Set the image map and properties of the material. There are many options here. S
 #### 너비와 높이
 Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
 
-#### Intensity
+#### 강도
 Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### 선명도

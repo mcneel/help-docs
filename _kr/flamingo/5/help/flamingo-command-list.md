@@ -4,10 +4,10 @@ title: Flamingo 명령 목록
 
 
 # {{page.title}}
-
+<!-- TODO: Some of those commands have been renamed to a version without "nXt". Or all of them? -->
 ### FlamingoNXtAbout
 {: #flamingonxtabout-command}
-Flamingo 정보 대화상자를 엽니다.
+Flamingo 정보 대화상자를 표시합니다.
 
 ###  [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)
 {: #flamingonxtautomaterender}

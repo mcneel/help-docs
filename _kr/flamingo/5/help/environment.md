@@ -24,7 +24,7 @@ This is the name of the environment in the Rhino model.  Environments are stored
 
 ## Flamingo 환경
 {: #environment}
-There are three major effects of environment in a rendering:
+렌더링에서 환경은 세 가지 측면에서 크게 영향을 미칩니다:
 
 >보이는 배경
 >[반사된 배경](#advanced-background-reflected-sky)
@@ -33,7 +33,7 @@ There are three major effects of environment in a rendering:
 <!-- TODO: Does the following sentence make sense? Is there something missing? -->
 The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
 
-#### Intensity
+#### 강도
 {: #background-intensity}
 <!-- TODO: Color range normally is from 0-255... -->
 Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
@@ -57,7 +57,7 @@ The Sky environment uses the sun and sky settings from the [Lighting](lighting-t
 
 ## 컬러 배경
 {: #color-backgrounds}
-Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
+Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRi, or Sky background.
 
 #### 단색
 {: #solid-color}
@@ -84,12 +84,12 @@ See [Color Controls](#enviroment-sky-color-controls) below for more details on e
 
 ### 색 제어
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
+The number of controls available may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### 색 바꾸기
-Use this button to rearrange the color in the gradient from top to bottom
+Use this button to rearrange the color in the gradient from top to bottom.
 
 #### 그라데이션 매핑 제어
 {: #gradient-mapping}
@@ -97,7 +97,7 @@ The colors in a gradient color background need to be mapped to the environment s
 
 #### 뷰로부터의 각도
 {: #angle-from-views}
-If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+If Angles from View is checked, the current color gradient syncs with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
 
 #### View Altitude Mapper
 {: #colorrange}
@@ -117,7 +117,7 @@ Use this button to reset the Gradient mapping control to the current perspective
 #### Top/Middle/Bottom Angles
 These are angle readouts of the Top, Middle, and Bottom colors in the current gradients.  They correspond to the location of the Red, Green, and Blue arrows in the View altitude mapper.
 
-## Image Background
+## 이미지 배경
 {: #environment-image}
 <!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
 A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
@@ -215,7 +215,7 @@ Specifies the vertical extents of the cylindrical projection. Enter an angle or 
 Specifies the width of the image in degrees relative the the plan view.
 
 #### 위/아래
-Specifies the vertical angles of the image based on horizontal groundplane direction in the model
+Specifies the vertical angles of the image based on horizontal groundplane direction in the model.
 
 ####  뷰와 일치하는 각도 설정 단추
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
@@ -237,13 +237,13 @@ Specifies the direction of the image map. Enter an angle or drag the flag in the
 ####  뷰와 일치하는 각도 설정 단추
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
-## HDRI 배경
+## HDRi 배경
 {: #hdr-background}
 HDR 이미지를 환경으로 사용하면 조명과 배경의 관계 그리고 이미지에 있는 다른 조명을 보다 상세하게 설정할 수 있습니다. 이 옵션은 밝은 실외가 창으로 보이는 실내 공간을 표현할 때 특히 유용합니다. HDR 환경 이미지는 일반적인 비트맵 이미지보다 훨씬 넓은 범위의 빛 정보를 가지고 있으며, 채널을 적용할 수 있어 [다중 채널](lights-tab.html#channel) 렌더링에서 명암을 관리할 수 있습니다.
 
 #### 이미지 파일
 {: #hdri-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Set the background HDRi image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
@@ -253,7 +253,7 @@ Set the background HDRI image by clicking on the large button that reads *(empty
 ## 평면형 HDRI 옵션
 {: #planar-hdr-options}
 
-Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
+Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRi provides a wider range of color possibilities. A good use of planar HDRi files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRi files are always mapped planar.
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)

@@ -50,16 +50,16 @@ For machines that do not have Rhino and Flamingo installed, install the Farmer c
  1. From the Start menu, run the Render Farmer on each machine.
  1. The Render Farmer will appear as an icon in the system tray.
 
-##### To configure the Render Farm
+##### 렌더 팜을 설정하려면
 {: #configure-the-render-farm}
-1.  [Right-click](mouse-button-right.html) on the icon and select Restore.
-1. In the nXt Farmer window, on the Options menu, click Path and select the path to the Render Farm folder.
+1. 아이콘을 [오른쪽 클릭](mouse-button-right.html)하고 복원을 선택합니다.
+1. nXt 파머 창의 옵션 메뉴에서 경로를 클릭하고 렌더 팜 폴더로의 경로를 선택합니다.
 
 On the computer with Rhino and Flamingo nXt set the Zoo folder in Rhino. From the Tools menu, click Options, set the common farm location to the [Farm output folder](options-flamingo.html#farm-output-folder).
 
 렌더 팜이 이제 구성되었습니다.
 
-## Using the Render Farm
+## 렌더 팜의 사용
 {: #using-the-render-farm-from-flamingo-nxt}
 현재 팜은 여러 대의 컴퓨터에 세 가지 방식으로 렌더링을 처리할 수 있습니다: 단일 렌더링 작업, 일괄 작업, 애니메이션.
 
@@ -80,7 +80,7 @@ If there is a problem with this, review the [install](#install) and [configurati
 1. Verify the correct option and hit OK.
 
 
-##### Monitoring the Farm
+##### 팜의 모니터
 After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-monitor).
 
  1. On the master computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
@@ -111,9 +111,9 @@ Start the job later using the nXt [Farm Monitor](#render-farm-monitor) to start 
 #### After
 Start the job at a specified date and time.
 
-#### Rendering Constraints Passes
+#### 렌더링 제한 조건 패스
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+일괄 작업을 완료하는 데 필요한 패스의 수를 설정합니다. 자세한 안내는 [패스](documentproperties-flamingo.html#number-of-passes) 항목을 참조하세요.
 
 
 ## Render Farm Monitor
@@ -147,7 +147,7 @@ Right-click a Machine or a Job to access options.
 
 ## 렌더 팜의 라이선스
 {: #licensing-the-render-farm-}
-The free version of the Render Farm lets two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+The free version of the Render Farm lets two network computers (nodes) work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
 라이선스를 구입하면 제품 키를 가지고 다음 순서로 팜 라이선스를 설정하여 사용하십시오.
 
@@ -155,13 +155,13 @@ The free version of the Render Farm lets two network computers (nodes) to work o
 1. Wait for any active farm jobs to complete before beginning your licensing.
 1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
 1. If the node is currently active, in the Windows system tray (on the taskbar), /mouse_button_right.htm');" id="a16" style="position: relative;">right-click the Render Farm icon, and then click **Close**.
-1. Click the **Windows Start** button, and then click **All Programs**.
-In the nXt Render Farm folder, click **Authorize Farm**.
-1. In the edit box, paste or type your Product Key and click **OK**.
+1. **Windows 시작** 단추를 클릭하고 **모든 프로그램**을 클릭합니다.
+nXt Render Farm 폴더에서 **Authorize Farm**을 클릭합니다.
+1. 편집 상자에서 귀하의 제품 키를 붙여넣고 **확인**을 클릭합니다.
 
 ##### 노드를 시작하려면
-1. Click the **Windows Start** button, and then click **All Programs**.
-In the nXt Render Farm folder, click **Render Farmer**.
+1. **Windows 시작** 단추를 클릭하고 **모든 프로그램**을 클릭합니다.
+nXt Render Farm 폴더에서 **Render Farmer**를 클릭합니다.
 1.  p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click the tray icon, and on the menu, click **Restore**.
 1. 도움말 메뉴에서 **정보**를 클릭합니다.
 버전 숫자가 평가판인 경우에는 라이선스를 받을 수 없습니다.

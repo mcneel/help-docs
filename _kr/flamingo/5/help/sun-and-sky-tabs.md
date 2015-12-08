@@ -37,7 +37,7 @@ title: 태양과 하늘
 {: #altitude}
 Sets the sun's height in the sky in angle degrees from the Equator (0).  The half circle map simulates a section through the vertical direction of the world coordinates.
 
-### Set location on Earth
+### 지구상의 위치 설정
 {: #set-location-on-earth}
 Use the sun angle calculator to place the sun based on Date, Time, Location.  **Note:** As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
 
@@ -79,9 +79,9 @@ Modifies the brightness of the sun (direct) daylight component. The intensity of
 태양 하이라이트의 선명도입니다.
 
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
-*Sun highlight=0 (left) and 1 (right).*
+* 태양 하이라이트=0 (왼쪽), 1 (오른쪽).*
 
-**Note:** Solar highlight artifacts can sometimes be seen on exterior renderings when the Sun highlight setting is used. To mitigate or eliminate this artifact, set the Sun highlight to a smaller value.
+**안내:** 태양 하이라이트 설정을 사용하면 때때로 실외 렌더링에 태양의 하이라이트 아티팩트가 보일 수 있습니다. 이 아티팩트를 완화시키거나 없애려면 태양 하이라이트를 작은 값으로 설정하세요.
 {: #speckle-artifacts}
 
 {% include_relative snippets/snippet-sunchannel.md %}
@@ -134,12 +134,12 @@ Modifies the brightness of the sky (indirect) daylight component. The intensity 
 
 ### HDRI(High-Dynamic-Range Image) 하늘
 {: #high-dynamic-range-image-sky}
-A [high-dynamic-range (HDR or HDRI)](https://en.wikipedia.org/wiki/High-dynamic-range_imaging) image is a special 2-D image file. These images contain a much broader range of values at each pixel then standard image files, such as a .jpg or .png. This extra data can be used to light models. If the values contained in the HDR are accurate, then the lighting will be accurate. This can produce very dynamic lighting in a scene. The preset Studio Lighting scheme uses HDR images for the sky. If you are thinking of studio lighting as an indoor activity, think of the HDR image as a ceiling that emits light based on the colors in the image.
+[하이 다이내믹 레인지 (HDR 또는 HDRi)](https://en.wikipedia.org/wiki/High-dynamic-range_imaging) 이미지는 2D 이미지 파일입니다. 이 이미지는 일반적인 이미지 파일 (jpg, png 등) 보다 훨씬 광범위한 값을 포함하고 있습니다. 이러한 추가적인 데이터를 사용하여 모델에 조명을 설정할 수 있습니다. HDR에 포함된 값이 정확하다면 조명도 정확하게 설정됩니다. 스튜디오 조명 기본 설정에서는 HDR 이미지를 하늘로 사용합니다. 스튜디오 조명을 실내 환경이라고 생각한다면, HDR 이미지를 해당 이미지에 있는 색을 기반으로 빛을 발산하는 천장이라고 생각할 수 있습니다.
 
 ![images/lighting-001.png](images/lighting-001.png)
 *HDRi 조명*
 
-It is assumed that HDR images contain radiance values expressed in watts units. If this is not the case, the intensity of these HDR images may need to be adjusted in order to achieve proper illumination levels.
+HDR 이미지에는 와트 단위로 표시된 방사휘도(radiance value)가 있습니다. 만약 방사휘도가 없다면 적절한 조명 수준을 얻기 위해서 HDR 이미지의 강도를 조정해야 할 수도 있습니다.
 
 In addition to the Sky, a different HDR image can be used for each of the three visible backgrounds: [Visible](environment-tab.html#advanced-background), [Reflected](environment-tab.html#advanced-background), and [Refracted](environment-tab.html#advanced-background) background.
 
@@ -147,25 +147,25 @@ In addition to the Sky, a different HDR image can be used for each of the three 
 Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*Equirectangular projection.*
+* 등장방향 투영*
 
 HDR images come in two projection types which let the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
 
-#### Intensity
+#### 강도
 Modifies the brightness of the HDR image light. This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
-*Low and high HDR intensity.*
+* 낮고 높은 HDR 강도*
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
-*Image rotated so the sun appears on the object.*
+* 태양이 개체에 나타나도록 이미지가 회전되었습니다.*
 
 #### 채도
 빛의 채도입니다. HDR 이미지의 빛은 이미지에 있는 픽셀의 색이므로 때때로 원치 않는 효과를 얻을 수도 있습니다. 이미지에서 색이 아니라 빛을 얻으려면 채도를 낮게 설정하십시오.
 
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)
-*Low (left) and high (right) saturation.*
+* 낮은 채도(왼쪽), 높은 채도(오른쪽)*
 
 {% include_relative snippets/snippet-mirrorimage.md %}
 
@@ -175,18 +175,18 @@ Modifies the brightness of the HDR image light. This setting only matters if the
 {: #color-sky}
 It is possible to use a color or gradient of color to light the scene. The colors in the sky are multiplied by the intensity value to give the colors a lighting value.
 
-#### Intensity
+#### 강도
 The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
 
-#### Color type
+#### 색 유형
 There are three ways to control the color of the sky.  These are similar to the Color Environment controls.  See [Color Background](environment-tab.html#environment-color-and-gradient-backgrounds) controls for more information.
 
 ### 이미지
 {: #image-sky}
 It is possible to use an image to light the scene. The colors in the image are multiplied by the intensity value to give the colors a lighting value.
 
-#### Intensity
+#### 강도
 The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
 
-#### Image Projection
+#### 이미지 투영
 There are many ways to control how an image is mapped to the sky.  These are similar to the Image Background controls.  See [Image Background](environment-tab.html#environment-image) controls for more information.

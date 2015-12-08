@@ -3,7 +3,7 @@ title: 재질 편집기 패널
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
+재질에는 색, 반사, 투명도, 텍스처, 범프 맵, 서피스 마무리 등의 설정이 포함되어 있습니다. 모든 재질에는 기본 설정이 있습니다. 기본 재질은 흰색 무광이며, 반사 또는 투명도가 지정되지 않았습니다. 가장 좋은 결과를 얻으려면 Flamingo 특정 재질을 사용하세요.
 
 Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.
 
@@ -62,14 +62,14 @@ This lists all the materials contained in the model. From this list:
 
 
 * Click on each material to select it. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information.
-* Right-click a thumbnail to display the Material context menu.
-* Right-click the blank area to display the New Material Context Menu.
+* 썸네일을 오른쪽 클릭하면 재질 관련 메뉴가 표시됩니다.
+* 공백의 공간을 오른쪽 클릭하면 새로운 재질 관련 메뉴가 표시됩니다.
 
 ###  ![images/add_material.png](images/add_material.png) 새 재질 추가
 {: #add_material}
 Scroll down to the bottom of the Material list to see the add icon.
 
-Opens the Render Content [library](libraries.html) of materials.
+렌더링 콘텐츠 재질 [라이브러리](libraries.html)를 엽니다.
 라이브러리의 재질은 모델에 재질을 만들 때 템플릿처럼 실행됩니다.
 
 ### 재질 상황에 맞는 메뉴
@@ -80,15 +80,15 @@ This menu is available by right-clicking on a material listing.  See the [Tools 
 {: new_material_context}
 This menu is available by right-clicking on a blank area of the Material List.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Material
+#### ![images/toolbarlus.png](images/toolbarplus.png) 새 재질 만들기
 새로운 기본 무광택 흰색 재질을 만듭니다.
 
 
 #### ![images/paste.png](images/paste.png) 붙여넣기
-Creates a new material based on the Clipboard contents.
+클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
-Creates a new material based on the Clipboard contents that is linked to the original through instancing.
+인스턴스 작업을 통해 원래 재질과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
 #### ![images/grid.png](images/grid.png) 그리드
 미리보기를 썸네일 그리드로 표시합니다.
@@ -110,18 +110,18 @@ Creates a new material based on the Clipboard contents that is linked to the ori
 
 #### 썸네일
 
-##### ![images/small.png](images/small.png) Small
+##### ![images/small.png](images/small.png) 작게
 썸네일 크기를 가장 작은 크기로 설정합니다.
 
-##### ![images/medium.png](images/medium.png) Medium
+##### ![images/medium.png](images/medium.png) 중간
 썸네일 크기를 중간 크기로 설정합니다.
 
-##### ![images/large.png](images/large.png) Large
+##### ![images/large.png](images/large.png) 크게
 썸네일 크기를 큰 크기로 설정합니다.
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in Grid mode.
-List mode always displays labels.
+##### ![images/showlabels.png](images/showlabels.png) 레이블 표시
+썸네일 이름 레이블을 그리드 모드에서 표시합니다.
+목록 모드는 항상 레이블을 표시합니다.
 
 ##### ![images/showunits.png](images/showunits.png) 단위 표시
 크기를 모델 단위로 표시합니다.
@@ -143,7 +143,7 @@ Drag on this divider to change the length of the Material List. If you lengthen 
 {: #name}
 This is the name of the material. The material name is also saved as the file name when exporting the material to the library. Note: Materials are stored in the Rhino model. Unique materials can have the same name in different Rhino models.
 
-#### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+#### [재질 패널](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #panels}
 The Materials Properties section is filled with several direct Material panels. Clicking on the grey title bar will roll up the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 
@@ -152,45 +152,45 @@ Material Panels will vary based on the type of material and the current active m
 ## 도구 메뉴 ![images/library_default.png](images/library_default.png)
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
+이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
 #### ![images/assigntoobjects.png](images/assigntoobjects.png) 선택한 개체에 적용
 현재 재질을 선택된 개체에 적용합니다.
 
 ##### 재질을 개체에 적용하려면
- 1. Click Assign to Selection.
- 1. In the Rhino viewport, select the target objects.
+ 1. 메뉴에서 선택한 개체에 적용을 클릭합니다.
+ 1. Rhino 뷰포트에서 대상 개체를 선택합니다.
 
-##### To preselect objects
- 1. In the Rhino viewport, select the target objects.
- 1. Click Assign to Selection.
-The target objects can be selected either before or after clicking Assign to Selection.
+##### 개체를 미리 선택하려면
+ 1. Rhino 뷰포트에서 대상 개체를 선택합니다.
+ 1. 메뉴에서 선택한 개체에 적용을 클릭합니다.
+선택한 개체에 적용을 클릭하기 전,후에 대상 개체를 선택할 수 있습니다.
 
-##### To drag and drop materials to objects
- * Drag the material from the thumbnails or list onto the target objects.
-Drag and drop works for only one object at a time.
+##### 재질을 개체에 끌어 놓으려면(drag and drop)
+ * 썸네일 또는 목록에서 재질을 대상 개체로 끌어옵니다.
+끌어 놓기(drag and drop)는 한 번에 하나의 개체에만 실행됩니다.
 
 #### ![images/assigntolayers.png](images/assigntolayers.png) 레이어에 적용
 현재 재질을 레이어에 적용합니다.
 
-##### To assign a material to layers
- 1. Click Assign to Layers.
- 1. In the Choose Layers dialog box, check the boxes for the material assignment.
+##### 재질을 레이어에 적용하려면
+ 1. 레이어에 적용을 클릭합니다.
+ 1. 레이어 선택 대화상자에서 재질을 적용할 레이어의 확인란을 선택합니다.
 
-##### To assign materials from the Layers panel
+##### 레이어 패널에서 재질을 적용하려면
  1. In the  [Layer](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)  panel, select one or more layers and click the  [Material](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)  column.
  1. In the Layer Material dialog box, select the material to assign.
 
 
-##### To drag and drop materials to objects
+##### 재질을 개체에 끌어 놓으려면(drag and drop)
  * Drag the material from the thumbnails or list onto the target layer.
-Drag and drop works for only one layer at a time.
+끌어 놓기(drag and drop)는 한 번에 하나의 레이어에만 실행됩니다.
 
-#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) Select Objects
+#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) 개체 선택
 재질을 적용할 개체를 모델에서 선택합니다.
 
-#### ![images/toolbarplus.png](images/toolbarplus.png) Create New Material
-Opens the Render Content [library](libraries.html) of materials.
+#### ![images/toolbarplus.png](images/toolbarplus.png) 새 재질 만들기
+렌더링 콘텐츠 재질 [라이브러리](libraries.html)를 엽니다.
 라이브러리의 재질은 모델에 재질을 만들 때 템플릿처럼 실행됩니다.
 
 #### ![images/import.png](images/import.png) 파일에서 재질 가져오기
@@ -204,19 +204,19 @@ Opens the Render Content [library](libraries.html) of materials.
 
 #### ![images/changetype.png](images/changetype.png) 유형 변경 (유사한 설정 복사)
 재질을 다른 유형으로 변경합니다.
-The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)  box. If checked, compatible settings from the old content will be copied to the new one.
+기본 동작은 [렌더링 옵션](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) > [콘텐츠 형식이 변경되면 시슷한 설정 복사](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) 상자의 현재 상태에 따라 결정됩니다. 이 확인란을 선택하면 기존 콘텐츠에서 호환되는 설정이 새로운 설정으로 복사됩니다.
 
 #### ![images/reset.png](images/reset.png) 기본값으로 다시 설정
-Changes all the material settings to the default white, matte, non-reflective, untextured material.
+모든 재질 설정을 기본 흰색, 무광택, 반사 없음, 텍스처 없는 재질로 변경합니다.
 
 #### ![images/copy.png](images/copy.png) 복사
-Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
+선택된 재질을 Windows 클립보드로 복사합니다. 클립보드는 편집기로 붙여넣기 실행되어 새 재질이 되거나, 폴더로 바로 붙여넣기 되어 [라이브러리](libraries.html) 파일이 됩니다.
 
 #### ![images/paste.png](images/paste.png) 붙여넣기
-Creates a new material based on the Clipboard contents.
+클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
-Creates a new material based on the Clipboard contents that is linked to the original through instancing.
+인스턴스 작업을 통해 원래 재질과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
 #### ![images/delete.png](images/delete.png) 삭제
 선택된 재질을 삭제합니다.
@@ -228,7 +228,7 @@ Creates a new material based on the Clipboard contents that is linked to the ori
 선택된 재질을 동일한 설정으로 새 재질에 복사합니다.
 
 #### ![images/removeinstancing.png](images/removeinstancing.png) 인스턴스 제거
-Removes the connection between [instanced](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) materials.
+[인스턴스](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) 실행된 재질 간의 연결을 제거합니다.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 

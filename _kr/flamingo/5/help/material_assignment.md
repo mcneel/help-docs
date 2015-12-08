@@ -7,7 +7,7 @@ Objects in the scene have a material source. This is the place where they adopt 
 
 Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:
 
- 1. [Layers](#bylayer) - All objects on the layer will adopt this material, unless they are in a block or have a specific object assignment.
+ 1. [레이어](#bylayer) - 개체가 블록에 속하거나 특정한 개체 적용으로 지정되어 있지 은 경우, 레이어의 모든 개체에 이 재질이 적용됩니다. 
  2. [Parent](#byparent) - This is used for objects within blocks.  Objects with a By Parent assignment will look to the block insert for the material.
  3. [Individual objects](#byobject) - Materials can be assigned directly to an object, overwriting any other material assignments.
 
@@ -15,7 +15,7 @@ Assigning materials by layer is the recommended method. Using By layer makes it 
 
 Imported files may have any one of these three assignments. Many imported files will have By Object assignments.  It may take a lot of work to convert the model to By Layer assignments, but it can be beneficial if there is a lot of editing to the render materials planned.
 
-Once materials are assigned, the material will be saved in the current model.  Editing the material will not effect that material in other models.
+Once materials are assigned, the material will be saved in the current model.  Editing the material will not affect that material in other models.
 
 ## 레이어에 재질 적용
 {: #bylayer}
@@ -36,7 +36,7 @@ Note: Deleting a material from the [Material Editor](material-editor.html) retur
 {: #detachmaterialfromlayer}
 1. Rhino에서 [레이어](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/layer.htm) 대화상자를 엽니다.
 1. 하나 이상의 레이어 이름을 선택하고 재질 열을 클릭합니다.
-1. 레이어 재질 대화상자에서, 재질 드롭다운 목록의 기본 재질을 선택합니다.
+1. In the Layer Material dialog box, select the Default Material in the drop-down list.
 
 ## 재질을 부모에 적용
 {: #byparent}
@@ -61,7 +61,7 @@ You can assign materials from the material libraries to a layer or object. Rende
 1. 편집 메뉴에서 개체 속성 ![images/properties.png](images/properties.png)을 클릭하여 개체를 편집합니다.
 1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Object, and then click the Material from the list.
 
-##### Drag a material onto a single object
+##### 재질을 단일 개체로 끌어오기
 {: #drag-dropmaterialtoobject}
 
  * In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material onto an object. The object will highlight when the cursor is in the correct place to drop.
