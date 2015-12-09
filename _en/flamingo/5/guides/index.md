@@ -12,7 +12,7 @@ title: Guide Index
 ## To access the Flamingo control panel
   * On the **Flamingo nXt** menu, click **Control Panel**.
 
-  ## The Flamingo nXt Control Panel
+## The Flamingo nXt Control Panel
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
  *  [Materials](..\materials\materials-tab.html)
@@ -31,7 +31,7 @@ Rendering your finished model comprises four basic steps:
 
 #### To start a rendering
 
- * On the **Render** click **Render**.
+ * On the **Render** menu, click **Render**.
 - Or -
 
  * On the **Standard** toolbar, click the **Render** button.

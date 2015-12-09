@@ -58,13 +58,13 @@ There are many ways to save an image depending on the plans for the image.  Norm
 #### ![images/saveimageas.png](images/saveimageas.png) Save Image
 Saving a JPG or PNG image file is the normal process after adjusting the image.  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
+A JPG image is a very efficient, small file format.  This is good for images placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
 
 PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
 
 #### Save with background alpha channel
 {: #save-with-alpha-channel}
-Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. Use the Alpha channel versions of the file formats for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
 
 #### Export to native Flamingo nXt file (.nXtImage)
 {: #export-to-nxtimage}
@@ -104,7 +104,7 @@ Shows the current status of the rendering as is works through the model.
 Status messages include:
 
 * Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
-* Action Done - Once the Stop button has been clicked and the render engine finishes a pass, then the stop action is done.
+* Action Done - Once the Stop button is clicked and the render engine finishes a pass, then the stop action is done.
 * Pass Complete - This message posts each time a pass is complete.
 * Resume Rendering - If a resume is possible, this displays.
 * Updating - The render engine is in the middle of a pass, currently updating the rendering.
