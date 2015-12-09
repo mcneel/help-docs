@@ -2,6 +2,8 @@
 title: Plants
 ---
 
+<!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
+
 # ![images/plants.svg](images/plants.svg) {{page.title}}
 Flamingo nXt includes a fun and powerful plant generator that efficiently generates complex plant forms during rendering. These plants have little impact on model size, since only a placeholder is kept in the model.
 
