@@ -93,7 +93,7 @@ Use this button to rearrange the color in the gradient from top to bottom.
 
 #### Gradient mapping control
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
+The colors in a gradient color background need to be mapped to the environment sphere. Use the Gradient mapper to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
 
 #### Angles from View
 {: #angle-from-views}
@@ -250,7 +250,7 @@ Set the background HDRi image by clicking on the large button that reads *(empty
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Planar HDRI options
+## Planar HDRi options
 {: #planar-hdr-options}
 
 Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRi provides a wider range of color possibilities. A good use of planar HDRi files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRi files are always mapped planar.
