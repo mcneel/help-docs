@@ -188,6 +188,7 @@ The angle from view checkbox will keep the image in sync with the current view. 
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
+<!--TODO: Image doesn't show up in file. -->
 
 * The control shows the environment in plan view.
 * The dark grey cone of vision shows the last coordinates in the current perspective view.
