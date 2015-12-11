@@ -47,7 +47,7 @@ Determines how many levels of indirect light are permitted; in other words, how 
 
 ## Indirect lighting
 {: #indirect-settings}
-The indirect lighting settings only affect the rays that bounce off one surface an carry light to another surface.
+The indirect lighting settings only affect the rays that bounce off one surface and carry light to another surface.
 
 #### Color Bleed
 {: #color-bleed}

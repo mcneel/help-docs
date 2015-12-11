@@ -6,7 +6,7 @@ title: Flamingo Environment
 <!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
 There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
+The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
 
 Flamingo comes with a special environment called **Default Flamingo Environment**.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
 
