@@ -1,7 +1,7 @@
 ---
 title: Decals
 ---
-
+<--TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
 
 # {{page.title}}
 Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps.
@@ -14,7 +14,7 @@ Some uses for decals include:
 >Creating stained glass windows.
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode.&#160;The **Pipeline** setting must be **OpenGL** in **Options** &#160;&gt; **Appearance** &#160;&gt; **Advanced Settings** &#160;&gt; **Wireframe** &#160;&gt; **Other Settings** &#160;&gt; **Pipeline and Conduits**.
+ **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode. The **Pipeline** setting must be **OpenGL** in **Options**  &gt; **View**  &gt; **Display Modes**  &gt; **Wireframe**  &gt; **Other Settings**  &gt; **Display Pipeline assignment**.
 
 ## Decal Placement
 {: #decal-list}
@@ -105,31 +105,30 @@ The mapping style determines how to project the decal onto the object. It is a g
 
 ### Cylindrical
 {: #decal-cylindricalmapping}
-
-### &#160;
 The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
 The cylindrical projection maps the bitmap onto the cylinder with the bitmap's vertical axis along the cylinder's axis, and the horizontal axis around the cylinder.
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
+
 ### Planar
 {: #decal-planarmapping}
-
-### &#160;
 Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
 The corners define the bitmap's location and extents. If the rectangle does not have the same proportions as the bitmap, the bitmap will be stretched or compressed to fit.
 When using planar mapping on a curved object, the entire bitmap projection must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
+
 ### UV Map
 {: #decal-uvmapping}
-
-### &#160;
 Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
 The decal covers the entire object; there is no control over the decal placement.
 UV mapping uses the u- and v-parameterization of the surface to bend and stretch the image; therefore, no manual placement is necessary.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
+
 ### Browse
 {: #file-browse}
 Change the image file.
+
 {% include_relative snippets/snippet-clearbitmapcache.md %}
+
 ## Strength
 {: #decalmappingstrength}
 

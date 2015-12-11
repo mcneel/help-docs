@@ -1,5 +1,5 @@
 ---
-titla: Object Properties
+title: Object Properties
 ---
 
 
@@ -12,7 +12,7 @@ A material can be assigned to layers, blocks, and objects.  For details on Assig
 
 ### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Texture mapping
 {: #texture-mapping}
-Mapping controls how a material is located (mapped) on a particular object. The method used to assign a material whether to a layer or object does not effect mapping. For materials that have no noticeable pattern, it is normally not necessary to control the mapping. Use mapping where the material is directional or has an obvious pattern. Even in these cases, the default mapping may be adequate. Mapping remains with the object and follows it if it is moved, rotated, or scaled. For details on the mapping types see the [Texture Mapping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm) topic.
+Mapping controls how a material is located (mapped) on a particular object. The method used to assign a material whether to a layer or object does not affect mapping. For materials that have no noticeable pattern, it is normally not necessary to control the mapping. Use mapping where the material is directional or has an obvious pattern. Even in these cases, the default mapping may be adequate. Mapping remains with the object and follows it if it is moved, rotated, or scaled. For details on the mapping types see the [Texture Mapping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm) topic.
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
 *Two different mapping directions*
