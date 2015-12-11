@@ -53,7 +53,7 @@ title: 재질 이미지 속성
 
 ### 표준
 {: standard}
-The image provides color and visual bump to the material. Use the Strength and Bump values to control how the bitmap will influence the material.
+이미지는 재질에 색과 시각적인 울퉁불퉁함(범프)을 표현합니다. 강도와 범프값을 사용하여 비트맵이 재질에 미치는 영향의 정도를 제어합니다.
 
 #### 색 세기
 {: #color}
@@ -73,13 +73,13 @@ The image provides color and visual bump to the material. Use the Strength and B
 {: #normal}
 렌더링 메쉬에 더 많은 다각형을 사용하지 않고도 범프와 움푹 들어간 부분의 음영을 가짜로 만들어냅니다. 참조: [Wikipedia 항목: Normal mapping](http://en.wikipedia.org/wiki/Normal_mapping).
 
-Normal maps work very similar to bump maps, in that they modify the normal of the surface. The effect is essentially the same as bump, but normal maps allow more control over the normal than a bump. A bump map uses the grey average of the RGB in a bitmap. The RGB of a normal map corresponds to the modification of the XYZ of the normal. Because the blue channel of the image controls the Z-direction of the normal. Normal maps have a considerable blue color to them.
+법선 맵(Normal Map)은 범프 맵과 유사하지만, 법선 맵의 경우 서피스의 법선을 수정합니다. 효과는 범프와 기본적으로 동일합니다. 그러나 법선 맵은 범프보다 법선을 훨씬 제어하기 쉽습니다. 범프 맵은 비트맵에서 RGB의 회색 평균을 사용합니다. 법선 맵의 RGB는 법선의 XYZ 수정에 대응합니다. 이미지의 파란색 채널이 법선의 Z방향을 제어하기 때문에, 법선맵에서 파란색이 확연하게 보입니다.
 
 ### 변위
 {: #displacement}
-This image map displaces the surface render mesh based on the color values in the image. The effect is a change in the actual geometric position of the surface. The displacement is often along the local surface normal. See: [Wikipedia article: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
+이 이미지 맵은 이미지에서 색의 값을 기준으로 서피스 렌더링 메쉬를 변위(變位:displacement) 실행합니다. 그 결과, 서피스의 실제 지리적 위치 변경에 영향을 줍니다. 대개, 서피스 법선을 따라 변위가 실행됩니다. 참조: [Wikipedia 항목: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
 
- **Note:** Use displacement mapping sparingly for small objects. Displacement increases rendering time considerably.
+ **안내:** 작은 개체에 변위 맵핑을 사용하실 때 주의하세요. 변위를 사용하면 렌더링 시간이 상당히 증가합니다.
 
 ![images/displacement.png](images/displacement.png)
 
@@ -91,7 +91,7 @@ This image map displaces the surface render mesh based on the color values in th
 
 #### 간격띄우기
 {: #offset}
-Sets the starting point of the displacement with reference to the surface normal. The displacement can take place completely outside, inside, or some ratio inside and outside the part.
+서피스 법선를 참조하며, 변위가 시작하는 지점을 설정합니다. 변위는 특정 부분의 완전한 외부/내부, 또는 일부 내부/외부에서 실행될 수 있습니다.
 
 ![images/displacementz-001.png](images/displacementz-001.png)
 *Z간격띄우기 = -1.0*
@@ -104,42 +104,42 @@ Sets the starting point of the displacement with reference to the surface normal
 
 #### 패싯 크기
 {: #facet-size}
-The size of the facets of the displacement mesh. This will increase the detail in the displacement, but also will increase rendering size and memory usage.
+변위 메쉬의 패싯 크기. 변위의 디테일뿐만 아니라,렌더링 크기와 메모리 사용도 증가시킵니다.
 
 ![images/facetsize.png](images/facetsize.png)
 
 ## Flamingo 이미지 고급
 {: #advanced}
-Normally a Flamingo Image will apply to the main color channel of a material. The Flamingo Advanced dialog specifies other channels that the bitmap can effect.  These are used for very special effects.
+일반적으로 Flamingo 이미지는 재질의 주요 색 채널에 적용됩니다. Flamingo 고급 대화상자에서 해당 비트맵이 영향을 미치는 다른 채널을 지정합니다. 이 기능은 매우 특수한 효과를 내기 위해 사용합니다.
 
-####  Base color
-This is the default setting.  An image will effect the [color](advanced-material-properties-main.html#color) of a material.
+####  기본색
+기본색이 기본 설정입니다. 이미지가 재질의 [색](advanced-material-properties-main.html#color)에 영향을 미칩니다.
 
-####  Specular color
-This will effect the color of [reflection channel](advanced-material-properties-main.html#highlight-color) based on the image color at that point.
+####  정반사 색
+정반사 색은 해당 시점에서의 이미지 색을 기준으로 [반사 채널](advanced-material-properties-main.html#highlight-color) 의 색에 영향을 미칩니다.
 
-####  Specular intensity
-This will change the [amount of reflection](advanced-material-properties-main.html#intensity) based on the grayscale of the image at that point.  This is used often in Texture Sets as a Specular Map.
+####  정반사 강도
+정반사 강도는 해당 시점에서의 이미지 회색조를 기준으로 [반사의 정도](advanced-material-properties-main.html#intensity)를 변경시킵니다. 이는 텍스처 세트에서 정반사 맵으로 자주 사용됩니다.
 
-####  Highlight sharpness
-This will adjust the sharpness vs blurriness of the [highlight](advanced-material-properties-main.html#intensity) based on the grayscale value of the map at that point.
+####  하이라이트 선명도
+해당 시점에서 맵의 회색조 값을 기준으로 [하이라이트](advanced-material-properties-main.html#intensity) 의 선명도와 흐린 정도를 조정합니다.
 
-#### Highlight shape
+#### 하이라이트 형태
 {: #advanced-highlight-shape}
 하이라이트 형태에 영향을 줍니다.
 
 ####  투명도
-This will effect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the grayscale of the image.
+이미지의 회색조를 기준으로, 재질에서의 [투명도](advanced-material-properties-main.html#intensity) 정도에 영향을 줍니다.
 
 ####  반투명도
-This will effect the amount of [transparency](advanced-material-properties-transparency.html#translucency) in the material based on the grayscale of the image.
+이미지의 회색조를 기준으로, 재질에서의 [반투명도](advanced-material-properties-transparency.html#translucency) 정도에 영향을 줍니다.
 
 ####  감쇠
-This will effect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the grayscale of the image.
+이미지의 회색조를 기준으로, 재질에서의 [감쇠](advanced-material-properties-transparency.html#attenuation) 정도에 영향을 줍니다.
 
-#### Offsets X/Y
+#### X/Y 간격띄우기
 {: #advanced-x-y-offset}
 재질과 X축, Y축과의 간격을 띄웁니다.
 
 ####  회전
-This will rotate the image map.  Use to rotate the image 90 or 180 degrees if needed to reorient the image from its default rotation.
+이미지 맵을 회전시킵니다. 이미지의 기본 회전을 변경해야 할 경우, 이미지를 90도 또는 180도로 회전시키는 데 사용합니다.

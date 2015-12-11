@@ -8,14 +8,14 @@ title: 채널
 
 채널이 매우 효과적인 경우:
 
-* Trying to balance an HDRI Environment and the Sunlight.  Not all HDRI environments are calibrated.  It is useful to set the HDRi Sky on one channel and the Sun on another.  Then adjust the relative strength of the Sky light vs the sun after rendering.
-* Studio renderings that use a key, fill, and backlight setup. Set each light on a different channel, then adjust their strength real-time in the rendering using channels.
-* When using different banks of lights in an exterior or interior rendering.  Each bank of lights can be set on a channel and effectively have their own dimmer to control their strength.
-* Rendering with all the lights on, then turning off and on certain lights. No need to render an interior to create a night shot and a daytime rendering.
+* HDRI 환경과 일광 사이의 균형을 잡아야 하는 경우. 모든 HDRi 환경이 교정 가능한 것은 아닙니다. HDRi 하늘과 태양을 각각의 채널에 설정하는 것이 유용합니다. 렌더링을 실행한 후에 하늘과 태양의 상대적 빛의 세기를 조정합니다.
+* 주광, 보조광, 후광 설정을 사용하는 스튜디오 렌더링. 각각의 조명을 서로 다른 채널에 설정하고 렌더링에 채널을 사용하며 실시간으로 세기를 조정합니다.
+* 실내 또는 실외 렌더링에 다른 조명을 일렬로 사용하는 경우. 각 조명의 열을 하나의 채널에 설정할 수 있으며 그에 따라 효과적으로 조명의 세기를 각각 조정할 수 있습니다.
+* 모든 조명을 켜고 렌더링한 후, 조명을 모두 끄고 그 중 일부의 조명을 다시 켜는 경우. 밤과 낮 렌더링을 만들기 위해 실내 장면을 렌더링할 필요가 없습니다.
 
-Once this image is rendered, each channel can be individually scaled either in the Render Window before saving or it can be saved to an .nXtImage file for later editing.
+한 번 이미지를 렌더링하면 각각의 채널은 저장하기 전에 개별적으로 렌더링 창에서 크기 조정이 가능하고, 또는 나중에 편집할 수 있는 .nXtImage 파일로 저장합니다.
 
-Use channels to adjust the strength of lights relative to each other, not to brighten the whole image.  If you need to brighten the whole image at once, use the Adjust Image controls.
+전체 이미지를 밝게 하지 않고, 조명의 각각 서로에 대한 상대적인 빛의 세기를 조정할 때 채널을 사용합니다. 전체 이미지를 한 번에 밝게 하려면 이미지 조정 제어를 사용합니다.
 
 <video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
 *동영상을 재생하려면 클릭합니다.*
@@ -36,20 +36,20 @@ Use channels to adjust the strength of lights relative to each other, not to bri
 >[인공 조명 채널](lights-tab.html#channel)
 >[재질 글로우](documentproperties-flamingo.html#channel)
 
-Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
+원하는 수의 조명을 동일한 조명 채널로 그룹화할 수 있습니다. 채널 조정은 체배기입니다. 같은 채널에 있는 조명은 조정되는 동안에도 서로에 대한 상대적 세기를 유지합니다.
 
 ## 채널 조정
 {: adjusting}
-Lighting channels can be adjusted immediately after rendering, or in the Flamingo image editor if the rendering is saved as an nXtImage file.  Channels can be adjusted while Flamingo continues to render, but we recommend that you stop the rendering before making major adjustments.
+조명 채널은 렌더링 직후에 조정이 가능하며, 또는 nXtImage 파일로 렌더링을 저장한 경우 Flamingo 이미지 편집기에서 조정이 가능합니다. Flamingo가 계속해서 렌더링하는 동안 채널을 조정할 수 있으나, 크게 수정하려면 렌더링을 중지하고 조정할 것을 권장합니다.
 
 #### Flamingo 조명 제어는 어디에 있습니까?
-The channel controls are found on the Flamingo nXt tab in the [render window](render-window.html) under Channels.
+채널 제어는 [렌더링 창](render-window.html)의 Flamingo nXt 탭에 있는 채널 아래에 있습니다.
 
-There are eight channel controls 0-7. Only the channels that have lights on them will activate.
+0부터 7까지의 8개 채널 제어가 있습니다. 조명이 켜져 있는 채널만이 활성화됩니다.
 
 ![images/channel-slider.png](images/channel-slider.png)
-Each channel has a slider and a spinner value.  The spinner value represents the maximum value of the slider. If the slider is all the way to right, then the full value of the spinner is used to multiply the lighting amounts on that channel.  It follows that the slider at 50% will multiply all the lighting on that channel layer by half the spinner amount.  A slider slid all the way to the left will turn off all the lighting on that channel.
+각 채널에는 슬라이더와 회전자 값이 있습니다. 회전자 값은 슬라이더의 최대값을 나타냅니다. 슬라이더가 오른쪽 끝으로 설정되어 있으면 회전자의 최대값이 해당 채널의 빛의 양을 곱하는 데 사용됩니다. 슬라이더가 50% 위치에 있으면 해당 채널의 모든 빛을 회전자 값의 절반으로 곱합니다. 슬라이더를 왼쪽 끝으로 설정하면 해당 채널의 모든 빛을 끕니다. 
 
-The value of the spinner can be very important.  Because Sun and Sky can be many times brighter then artificial lights, the spinner value on artificial lights  might need to be increased to 20 or 50 to see any difference.
+회전자의 값이 매우 중요하게 작용하는 경우가 있습니다. 태양과 하늘은 인공적인 조명보다 훨씬 밝을 수 있으므로, 인공 조명에서 차이를 확인하려면 회전자 값을 20 또는 50으로 올려야 할 수 있습니다. 
 
-After adjusting the channels correctly, then save the image as a JPG or PNG file as the final rendering.
+채널을 올바르게 조정한 후, 이미지를 JPG 또는 PNG 파일 형식의 최종 렌더링으로 저장합니다. 

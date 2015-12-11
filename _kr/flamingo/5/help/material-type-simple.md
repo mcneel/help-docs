@@ -48,7 +48,7 @@ Plastic materials are slightly reflective with a white [highlight](material-type
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} [하이라이트 색](material-type-advanced.html#highlight-color), [강도](material-type-advanced.html#intensity), [프레넬](material-type-advanced.html#fresnel), [선명도](material-type-advanced.html#sharpness)의 기본 설정을 덮어쓰려면 고급 편집기를 사용합니다.
 
 ## 금속
 {: #metal}
@@ -74,7 +74,7 @@ Glass materials have a [color](material-type-advanced.html#color) and an [Index 
 #### 굴절률(IOR)
 Controls the amount light bends through the material. See Advanced [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Sharpness](material-type-advanced.html#sharpness) and [Transparency](material-type-advanced.html#transparency)
+{% include_relative snippets/snippet-material-advanced-editor.md %} [하이라이트 색](material-type-advanced.html#highlight-color), [강도](material-type-advanced.html#intensity), [프레넬](material-type-advanced.html#fresnel), [선명도](material-type-advanced.html#sharpness), [투명도](material-type-advanced.html#transparency)의 기본 설정을 덮어쓰려면 고급 편집기를 사용합니다.
 
 ## 광택
 {: #glossy}
@@ -84,11 +84,11 @@ Glossy materials generally have a low Highlight [Intensity](material-type-advanc
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
+#### 강도
 Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### 하이라이트 선명도
-Controls sharpeness vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+Controls sharpness vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
 
@@ -110,7 +110,7 @@ Textured materials use images to create colors and patterns. The image name, res
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
+#### 강도
 Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### 선명도
@@ -132,13 +132,13 @@ Set the image map and properties of the material. There are many options here. S
 #### 너비와 높이
 Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
 
-#### Intensity
+#### 강도
 Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### 선명도
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
 
-#### Types
+#### 유형
 This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. **Note:** This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.

@@ -15,31 +15,31 @@ title: 문서 속성 Flamingo nXt
 
 ## 재질
 {: #materials}
-Use these controls to quickly change how Flamingo renders the surfaces in a rendering.  These settings will not change the material assignments on the objects and layers, but will change how Flamingo produces the color of each surface.
+이 제어를 사용하여 Flamingo가 렌더링에서 서피스를 렌더링하는 방식을 금방 변경할 수 있습니다. 이 설정은 개체와 레이어에 적용된 재질을 변경하지 않으나, Flamingo가 각 서피스의 색을 생성하는 방식을 변경합니다.
 
 #### 재질 사용
 {: #use-materials}
-Renders using materials created in Flamingo nXt and Rhino materials. Objects that have no material assignment render white. If neither the Use materials or the Use Object colors is checked, then all the objects will render white.
+Flamingo nXt 와 Rhino 재질을 사용하여 렌더링합니다. 재질이 적용되지 않은 개체는 하얗게 렌더링됩니다. 재질 사용 또는 개체 색 사용이 모두 선택되어 있지 ㅇ낳으면 모든 개체가 흰색으로 렌더링됩니다.
 
 #### 개체색 사용
 {: #use-object-color}
-Renders using the colors assigned through Rhino object or layer color. Note : Both Use materials and Use object color can be checked. In this case, objects that have materials assigned will use those materials. Other objects will render using their object or layer color.
+Rhino 개체 또는 레이어 색에서 지정된 색을 사용하여 렌더링합니다. 안내 : 재질 사용과 개체색 사용의 확인란을 모두 선택할 수 있습니다. 이 경우, 재질이 적용된 개체는 해당 재질을 사용합니다. 다른 개체는 개체 색 또는 레이어 색으로 렌더링됩니다.
 
 #### 글로우 채널
 {: #channel}
-Materials that contain any level of glow will light up, but will not illuminate other objects. (Tag the object as a light to illuminate other objects.)  Set the Glow on a Channel, allowing the brightness of the glow to be adjusted after rendering without re-rendering.
+글로우가 포함된 재질이 밝게 빛나지만, 다른 개체를 비추지 않습니다. (다른 개체를 비추려면 해당 개체를 조명으로 태그합니다.) 글로우를 채널에 설정하면 나중에 다시 렌더링하지 않고도 글로우의 밝기를 채널에서 조정할 수 있습니다.
 
 ## 바운스
 {: #bounces}
-When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are too low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
+광선이 장면에 들어올 때 배제되기 전에 몇 번의 바운스를 거치게 됩니다. 바운스의 회수를 제한하면 렌더링이 더 빠르게 실행됩니다. 하지만 제한된 회수가 지나치게 낮으면 효과가 전혀 나지 않거나, 검정색으로 처리될 수 있습니다. 여기 지정되어 있는 기본값은 많은 렌더링에 적합하지만 일부 경우 변경해야 할 수 있습니다.
 
 #### 반사
 {: #reflective-bounces}
-Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times. Increase this number if there is a view that is looking at a reflective surface that bounces off an adjacent reflective and the reflections start to go completely black.
+몇 단계의 반사가 허용되는지 즉, 광선이 개체를 몇 번 반사하는지를 결정합니다. 0으로 설정하면 전혀 반사되지 않습니다. 높은 값을 사용하면 렌더링 시간이 더 길어집니다. 인접한 반사를 산란하는 반사 서피스가 보이는 뷰에서 반사가 완전히 검정색으로 보이면 이 숫자를 올려서 실행하세요.
 
 #### 굴절
 {: #refractive-bounces}
-Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times. Increase this number if there is a view that looks through many layers and ultimately looks black and not look transparent.
+몇 단계의 굴절이 허용되는지 즉, 광선이 개체를 몇 번 굴절하는지를 결정합니다. 0으로 설정하면 전혀 굴절되지 않습니다. 높은 값을 사용하면 렌더링 시간이 더 길어집니다. 많은 레이어를 통해 보는 뷰에서 투명하지 않고 결국엔 검정으로 표시되는 경우, 이 숫자를 올려서 실행하세요.
 
 #### 간접
 {: #indirect-bounces}
@@ -47,15 +47,15 @@ Determines how many levels of refractions are permitted; in other words, how man
 
 ## 간접 조명
 {: #indirect-settings}
-The indirect lighting settings only affect the rays that bounce off one surface an carry light to another surface.
+간접 조명 설정은 한 서피스에서 빛을 산란하고 다른 서피스로 빛을 옮기는 광선에만 영향을 미칩니다.
 
 #### 컬러 블리드
 {: #color-bleed}
-Color bleed controls the amount of color transferred in a indirect bounce of light from one surface to another.  By default this is set to the maximum value to increase dynamics in the rendering.  
+컬러 블리드는 하나의 서피스에서 다른 서피스로 빛의 간접 바운스로 전달되는 색의 정도를 제어합니다. 렌더링에서 다이내믹을 증가시키기 위해 기본적으로 최대값으로 설정되어 있습니다.  
 
 #### 몬테카를로 반사
 {: #monte-carlo}
-Monte Carlo in indirect lighting controls how Flamingo samples indirect light. When activated, the indirect light will become very noisy in the early passes.  But over all, as the passes progress, the overall effect of Monte Carlo indirect will be a more subtle and potentially more detail indirect effect. Scenes that rely heavily on indirect light may benefit from Mote Carlo indirection reflections.
+간접 조명에서 몬테카를로 반사는 Flamingo가 간접 조명을 샘플링하는 방식을 제어합니다. 하지만 패스가 진행되면서 몬테카를로 방식은 전체로 봤을 때 그 효과가 미미하고 간접적으로 효과를 나타냅니다.
 
 ## 기타
 

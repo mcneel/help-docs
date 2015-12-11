@@ -13,56 +13,56 @@ Libraries 명령은 재질, 텍스처, 환경 라이브러리를 관리하는 �
 
 재질은 사용자의 하드 드라이브에 있는 파일입니다. 라이브러리 폴더는 Windows 폴더입니다. 다른 Windows 파일이나 폴더와 마찬가지로 라이브러리 폴더를 복사하고, 붙여넣고, 이동할 수 있습니다.
 
-Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
+라이브러리 상단의 주소 표시줄을 사용하여 사용자 컴퓨터의 폴더 위치를 찾습니다.
 
-To quickly navigate back to the Default Library locations use the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+기본 라이브러리 위치로 바로 돌아오려면 오른쪽 상단의 렌치 아이콘 ![images/library_default.png](images/library_default.png) 을 사용하세요.
 
-#### Organizing Libraries
+#### 라이브러리 관리
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+라이브러리는 간단한 파일들입니다. 폴더에서 이 파일들을 복사, 붙여넣기, 이동할 수 있습니다. 폴더와 문서를 편집하려면 Windows 탐색기를 사용합니다. 라이브러리 탭에 지정되어 있는 기본 폴더를 편집하려면 [라이브러리 설정](#settings) ![images/library_default.png](images/library_default.png) 을 사용합니다.
 
 ## 재질 라이브러리
 {: #material}
-Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
+라이브러리의 재질은 하드 드라이브에 있는 파일들입니다. 일단 모델에 적용되면 해당 재질은 해당 모델에 보관 및 저장됩니다. 적용된 재질을 변경하더라도 하드 드라이브의 원래 재질에 영향을 미치지 않습니다.
 
-Drag and drop materials to assign materials to the model. Materials can be assigned to:
+재질을 마우스로 끌어 놓아 모델에 적용시킵니다. 재질은 다음과 같이 적용할 수 있습니다:
 
 #### 레이어 지정
-Drag a material directly onto the layer name in the Layers Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
+레이어 패널의 레이어 이름로 재질을 끌어옵니다. 기본적으로 해당 레이어의 모든 개체에 재질이 적용되므로 이 방법을 권장합니다. 나중에 해당 레이어에 다른 재질을 마우스로 끌어 놓아 새로운 재질로 금방 변경할 수 있습니다.
 
 #### 개체 지정
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
+원하는 뷰포트에서 개체에 재질을 직접 마우스로 끌어놓습니다. 이 설정을 사용하면, 레이어 지정으로 설정된 재질이 개체 지정 재질로 새로 설정됩니다.
 
 #### 블록 지정
-Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
+블록에 마우스로 재질을 놓으면, 해당 블록에서 부모 기준으로 설정된 개체에 해당 재질이 적용됩니다. 해당 블록에 속한 개체 중 부모 기준 재질이 설정된 개체는 블록 재질을 받아들입니다.
 
 ## 식물 라이브러리
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+기본 라이브러리 폴더에 식물 폴더가 있습니다. 이 폴더의 식물을 모델에 배치합니다. 일단 모델에 식물이 배치되면 해당 식물은 해당 모델에 보관 및 저장됩니다. 적용된 식물을 변경하더라도 하드 드라이브의 원래 식물에 영향을 미치지 않습니다. 자세한 정보는 [식물 도움말](plants.html) 항목을 참조하세요.
 
 ## 환경 라이브러리
 {: #environment}
-Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
+환경은 라이브러리에 저장할 수 있습니다. 이 기능을 사용하여 한 모델의 환경 설정을 다른 모델에서 사용할 수 있습니다. 자세한 안내는 [환경](environment-tab.html) 항목을 참조하세요.
 
 ## 라이브러리 설정
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+![images/library_default.png](images/library_default.png) 메뉴 아래 표시된 라이브러리 기본값을 변경하려면 ![images/options.png](images/options.png)라이브러리 옵션을 사용합니다.
 
 ##### 이 명령은 어디에서 찾을 수 있습니까?
-There are three places to find the Libraries Options command.
+라이브러리 옵션 명령은 세 가지 방법으로 사용할 수 있습니다. <!-- TODO: Where is the third place? -->
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
+ 1. 라이브러리 패널의 오른쪽 위의 ![images/library_default.png](images/library_default.png) 라이브러리 탭 > 설정...
  1. 메뉴 > 도구 메뉴 > 옵션 > 라이브러리.
 
 
 ### 렌더링 콘텐츠 표시
-Use this to show or hide the default render content location.
+기본 렌더링 콘텐츠 위치를 표시/숨기기 실행하는 데 이 설정을 사용합니다.
 
-#### Use default library location (My Documents)
-By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
+#### 기본 라이브러리 위치 사용 (내 문서)
+기본적으로 [콘텐츠 라이브러리](libraries.html)는 *내 문서* 폴더의 하위 폴더에 위치합니다.
 
 #### 사용자 지정
-Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
+사용자 지정 [라이브러리](libraries.html) 위치를 설정합니다. 사용하는 컴퓨터에서의 [콘텐츠 라이브러리](libraries.html) 기본 위치를 변경합니다.
 
 ##### 찾아보기 단추
 파일을 지정하기 위해 파일 브라우저를 엽니다.

@@ -10,8 +10,10 @@ title: 조명
 {: #light-tab}
 The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible through additional [Light Properties](#light-properties).
 
+<!-- TODO: There should be some mention that the Lights tab only is available for some of the Lighting presets -->
+<!-- TODO: #### Is this supposed to be a code? It's showing up as #### -->
 #### Flamingo 조명 제어는 어디에 있습니까?
-The Lights tab must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+조명 탭은 [조명 기본 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sun)에서 활성화해야 합니다.
 
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo 탭 > 조명
@@ -26,9 +28,9 @@ Flamingo는 다음과 같은 조명 유형을 지원합니다:
 > [직사각형 조명](#rectangularlight)
 > [선형 조명](#linearlight)
 
-**Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
+**안내:** Rhino 방향 조명 ![images/directionallightbutton.png](images/directionallightbutton.png) 은 지원되지 않습니다. 방향 조명은 조명 목록에 표시되지 않으며, Flamingo nXt 속성을 지정할 수 없습니다.
 
-Some light properties are displayed on the Lights tab table for quick editing of common properties.
+일부 조명 속성은 조명 탭 테이블에 표시되므로 간단하게 공통 속성을 편집할 수 있습니다.
 
 테이블에 포함된 속성:
 
@@ -39,9 +41,9 @@ Some light properties are displayed on the Lights tab table for quick editing of
  >[와트](#watts)
  >[채널](#channel)
 
-Right-clicking on the Lights tab table will open the [Additional Options](#additional-options) menu.
+Right-click on the Lights tab table to open the [Additional Options](#additional-options) menu.
 
-[Light Properties](#light-properties) can also be accessed by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
+Access [Light Properties](#light-properties) by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
 
 ## 조명 유형
 {: #light-types}
@@ -59,23 +61,23 @@ Any renderable object (surface, solid, etc.) can be tagged as a light source and
 Spotlight is a conical light distribution with a specific direction.  The light properties include a [source radius](#radius), [beam angle](#beam-angle), falloff radius, and direction. The larger the source radius, the softer the shadows will be from the light. By default there is a visible disk at the light location. Information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
 ![images/spotlight.png](images/spotlight.png)
-*A Spotlight pointed at the red box*
+* 빨간 상자를 향하는 집중 조명*
 
 #### ![images/pointlight-01.png](images/pointlight-01.png) 점 조명
 {: #pointlight}
 Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the point light is partially obscured by an object that intersects the light.
 
 ![images/pointlight.png](images/pointlight.png)
-*A small point light close to the right wall*
+* 오른쪽 벽에 가까운 작은 점 조명*
 
 #### ![images/rectangularlight-01.png](images/rectangularlight-01.png) 직사각형 조명
 {: #rectangularlight}
 Provides an approximation of a recessed light with a diffuser or baffles. The light distributes light in a diffuse pattern based on the orientation of the rectangle. A direction arrow is drawn at the center point of the light. Full strength light is directly in front of the rectangle.  Then the light falls off at an angle to the objects from the rectangle. By default a white rectangle will be visible when rendering. A common mistake is to insert these rectangles at exactly the same height as a ceiling plane. For consistent results, make sure the lights are slightly below the ceiling. For information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros RectangularLight](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm) help topic.
 
 ![images/rectangular light.png](images/rectangular light.png)
-*A rectangular light just below the ceiling*
+*천장 바로 아래의 직사각형 조명*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) LinearLight
+#### ![images/linearlight-01.png](images/linearlight-01.png) 선형 조명
 {: #linearlight}
 Distributes light in a cylindrical pattern that imitates a fluorescent tube. Light properties for this light include [source radius](#radius) and length. The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light cylinder at the light location when rendering. Note that unusual effects can happen if the cylindrical light is partially obscured by an object that intersects the light. Use Rhino Control points to activate the grips on the light to edit on the screen.
 
@@ -101,9 +103,9 @@ By default lights will show themselves as a bright light source in the rendering
 {: #light-distribution}
 When tagging an object as a light, use Distribution to specify the pattern the light projects into the scene. In the light panel, double-click on the distribution cell to get an options drop-down. Distribution types include: [All Directions](#pointlight), [Spot](#spotlight) and [Diffuse](#rectangularlight). Both Spot and Diffuse require a [direction](#aim-light) to be specified.
 
-#### Aim light *([Tagged objects only](#tag-objects-as-lights))*
+#### 조명 조준 *([태그된 개체만](#tag-objects-as-lights))*
 {: #aim-light}
-For tagged light which have a distribution of Spot or Diffuse, a direction must be specified.  Double-click on the "Aim >>" option and follow the command line prompts.
+For tagged light which have a distribution of Spot or Diffuse, specify a direction.  Double-click on the "Aim >>" option and follow the command line prompts.
 
 #### 와트
 {: #watts}
@@ -111,7 +113,7 @@ Specifies the electrical power of the light.  It is recommended to start with re
 
 #### 빔 각도 *([집중 조명만 해당](lights-tab.html#spotlight))*
 {: #beam-angle}
-The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Find details on grip editing in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
 #### 반지름
 {: #radius}
@@ -139,12 +141,12 @@ IES (Illuminating Engineering Society) 파일은 광원의 배광을 정의하�
 * IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
 
 #### 파일로부터의 밝기
-Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
+IES 파일에 저장된 강도를 사용합니다. 이 항목이 선택되어 있지 않으면 [와트](lights-tab.html#watts) 설정이 사용됩니다.
 
 
 ## 추가 옵션 메뉴
 {: #additional-options}
-Additional options for lights can be accessed by right-clicking on the light in the Light table.
+Access additional options for lights by right-clicking on the light in the Light table.
 
 ####  On
 조명의 [켜짐/꺼짐](#on) 상태를 전환합니다.
