@@ -23,7 +23,7 @@ There are several options to find the Materials tab.
 
 재질 편집기 패널은 별개의 섹션으로 나뉘어져 있습니다. 재질 유형에 따라 고급 패널이 달라질 수 있습니다.
 
-You can drag colors and textures from the color swatch and drop onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+색과 텍스처는 색 견본에서 원하는 색을 마우스로 선택하여 재질 편집기, [텍스처 팔레트](texturepalette.html), 또는 [환경 편집기](environmenteditor.html)의 색 견본/제어에 놓을 수 있습니다.
 
 ##### 재질 패널
 
@@ -36,49 +36,49 @@ You can drag colors and textures from the color swatch and drop onto any other c
 
 ## [설정 막대](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #settings .clear-img}
-Use this bar to navigate the material during its development.
+재질 탐색에 이 설정 막대를 사용합니다.
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) 뒤로 화살표
-Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to return to the parent material from the texture details.
+현재 재질 또는 이전에 선택된 재질로 되돌아갑니다. 예를 들어, 텍스처가 있는 재질에는 여러 개의 레이어가 있습니다. 이 화살표를 사용하여 텍스처 디테일에서 부모 재질로 돌아갑니다. 
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) 앞으로 화살표
-Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to return to the recently used texture from the parent material.
+현재 재질 또는 이전에 선택된 재질에서 앞으로 갑니다. 예를 들어, 텍스처가 있는 재질에는 여러 개의 레이어가 있습니다. 이 화살표를 사용하여 부모 재질에서 최근에 사용된 텍스처로 돌아갑니다. 
 
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 현재 선택된 재질 이름
-Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
+현재 재질 이름과 레벨을 표시합니다. 예를 들어 텍스처 또는 재질 절차 레벨이 있으면 ">" 표시가 나타납니다. 재질에서 편집기를 보기에 좋은 위치입니다.
 
 #### ![images/library_default.png](images/library_default.png) 도구 메뉴
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
+[도구 메뉴](#tools-menu)를 표시합니다. 이것은 재질과 관련된 명령, 설정, 유틸리티가 확장된 메뉴입니다.
 
 
 ## [재질 목록](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #material_list}
-This lists all the materials contained in the model. From this list:
+모델에 포함된 모든 재질 목록입니다. 이 목록으로 다음과 같은 작업이 가능합니다:
 
-* Scroll up and down in the list to see all the materials in the model.
-* Drag and drop a material from this list onto a layer in the [Layer Panel](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm) or directly onto an Object to assign it to an Object. See [Material Assignments](material_assignment.html) for more information.
-* Add a new Material using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
+* 목록에서 위/아래로 스크롤하여 모델의 모든 재질을 봅니다.
+* 이 목록에서 재질을 마우스로 끌어 [레이어 패널](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)의 레이어에 놓거나 직접 개체에 놓아 재질을 지정합니다. 자세한 정보는 [재질 적용](material_assignment.html)을 참조하세요.
+* 목록의 아래쪽에 있는 새 재질 추가 단추 ![images/add_material.png](images/add_material.png) 를 사용하여 새로운 재질을 추가합니다.
 
 
-* Click on each material to select it. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information.
+* 각 재질을 클릭하여 선택합니다. 재질을 선택하면 해당 재질의 속성이 아래 패널에 표시됩니다. 자세한 정보는 [렌더링 재질 속성](#properties)을 참조하세요
 * 썸네일을 오른쪽 클릭하면 재질 관련 메뉴가 표시됩니다.
 * 공백의 공간을 오른쪽 클릭하면 새로운 재질 관련 메뉴가 표시됩니다.
 
 ###  ![images/add_material.png](images/add_material.png) 새 재질 추가
 {: #add_material}
-Scroll down to the bottom of the Material list to see the add icon.
+추가 아이콘을 보려면 재질 목록의 아래로 스크롤합니다.
 
 렌더링 콘텐츠 재질 [라이브러리](libraries.html)를 엽니다.
 라이브러리의 재질은 모델에 재질을 만들 때 템플릿처럼 실행됩니다.
 
 ### 재질 상황에 맞는 메뉴
 {: material_context}
-This menu is available by right-clicking on a material listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+이 메뉴는 재질 목록에서 오른쪽 클릭하여 사용할 수 있습니다. 이 메뉴의 다양한 옵션에 대한 자세한 정보는 [도구 메뉴](#tools_menu)를 참조하세요.
 
 ### 새로운 재질 상황에 맞는 메뉴
 {: new_material_context}
-This menu is available by right-clicking on a blank area of the Material List.
+이 메뉴는 재질 목록에서 비어 있는 공간을 오른쪽 클릭하여 사용할 수 있습니다.
 
 #### ![images/toolbarlus.png](images/toolbarplus.png) 새 재질 만들기
 새로운 기본 무광택 흰색 재질을 만듭니다.
@@ -178,12 +178,12 @@ Material Panels will vary based on the type of material and the current active m
  1. 레이어 선택 대화상자에서 재질을 적용할 레이어의 확인란을 선택합니다.
 
 ##### 레이어 패널에서 재질을 적용하려면
- 1. In the  [Layer](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)  panel, select one or more layers and click the  [Material](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)  column.
- 1. In the Layer Material dialog box, select the material to assign.
+ 1. [레이어](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#commands/layer.htm) 패널에서 하나 이상의 레이어를 선택하고 [재질](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/layer.htm#Material) 열을 클릭합니다.
+ 1. 레이어 재질 대화상자에서 적용할 재질을 선택합니다.
 
 
 ##### 재질을 개체에 끌어 놓으려면(drag and drop)
- * Drag the material from the thumbnails or list onto the target layer.
+ * 썸네일 또는 목록에서 재질을 대상 레이어로 끌어옵니다.
 끌어 놓기(drag and drop)는 한 번에 하나의 레이어에만 실행됩니다.
 
 #### ![images/materials_selectobjects.png](images/materials_selectobjects.png) 개체 선택

@@ -3,7 +3,7 @@ title: 렌더링 창
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}
-렌더링 창에는 노출을 조정하고 후처리 효과를 더하는 옵션이 있습니다. 렌더링 창의 메인프레임은 Rhino 렌더링 프레임워크의 일부입니다. 렌더링 창 메뉴와 아이콘에 대한 정보는 [렌더링 창 항목](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm) 을 참조하세요. 이 항목은 렌더링 과정에서의 Flamingo 설정을 다룹니다.  
+렌더링 창에는 노출을 조정하고 후처리 효과를 더하는 옵션이 있습니다. 렌더링 창의 메인프레임은 Rhino 렌더링 프레임워크의 일부입니다. 렌더링 창 메뉴와 아이콘에 대한 정보는 [렌더링 창 항목](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm) 을 참조하세요. 이 항목은 렌더링 과정에서의 Flamingo 설정을 다룹니다.
 
 ## 활성 렌더링의 관리
 Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts up and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. Flamingo first looks for any changes to its internal model, then starts an initialization process.  This process can take a few seconds or a few minutes.  This is when the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
@@ -21,7 +21,7 @@ In this way, an nXt rendering is never "finished"; you merely decide when it is 
 
 ![images/passes-wide-1.gif](images/passes-wide-1.gif)
 
-Some of the effects that improve on each pass are:
+패스를 향상시키는 효과 중 일부는 다음과 같습니다:
 
 >조명 (전역 발광을 사용할 때)
 >부드러운 그림자
@@ -58,13 +58,13 @@ There are many ways to save an image depending on the plans for the image.  Norm
 #### ![images/saveimageas.png](images/saveimageas.png) 이미지 저장
 Saving a JPG or PNG image file is the normal process after adjusting the image.  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
+A JPG image is a very efficient, small file format.  This is good for images placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
 
 PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
 
 #### 배경 알파 채널과 함께 저장
 {: #save-with-alpha-channel}
-Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. Use the Alpha channel versions of the file formats for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
 
 #### 네이티브 Flamingo nXt 파일 (.nXtImage)로 내보내기
 {: #export-to-nxtimage}
@@ -101,13 +101,13 @@ Use the Progress information to check the status and progress of a Flamingo rend
 #### 액션
 Shows the current status of the rendering as is works through the model.
 
-Status messages include:
+상태 안내 메시지는 다음과 같습니다:
 
-* Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
-* Action Done - Once the Stop button has been clicked and the render engine finishes a pass, then the stop action is done.
+* 렌더링이 시작되었습니다 - 일단 렌더링이 시작된 후에는 렌더링을 하기 위해 모델을 전환하고 메모리를 지정하는 일부 설정이 있습니다. 
+* 액션 완료 - 중지 단추를 클릭하면 렌더링 엔진이 패스를 완료하고 액션 중지가 실행됩니다.
 * Pass Complete - This message posts each time a pass is complete.
-* Resume Rendering - If a resume is possible, this displays.
-* Updating - The render engine is in the middle of a pass, currently updating the rendering.
+* 렌더링 다시 시작 - 다시 시작이 가능한 경우, 이 메시지가 표시됩니다.
+* 업데이트하는 중 - 렌더링 엔진이 패스를 처리 중이며, 현재 렌더링을 업데이트하는 중입니다.
 
 #### 패스
 This is the current pass Flamingo is rendering.  Flamingo is a multi-pass render engine.  Each pass will refine add lighting effects and refine the complex rendering effects.
@@ -188,7 +188,7 @@ Right-click the histogram image for the following options.  These options simply
 {: #information}
 
 #### 해상도
-Displays the current [rendering resolution](render-tab.html#resolution).
+현재 [렌더링 해상도](render-tab.html#resolution)를 표시합니다.
 
 #### 면
 Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.

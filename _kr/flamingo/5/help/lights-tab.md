@@ -30,7 +30,7 @@ Flamingo는 다음과 같은 조명 유형을 지원합니다:
 
 **안내:** Rhino 방향 조명 ![images/directionallightbutton.png](images/directionallightbutton.png) 은 지원되지 않습니다. 방향 조명은 조명 목록에 표시되지 않으며, Flamingo nXt 속성을 지정할 수 없습니다.
 
-일부 조명 속성은 조명 탭 테이블에 표시되므로 간단하게 공통 속성을 편집할 수 있습니다. 
+일부 조명 속성은 조명 탭 테이블에 표시되므로 간단하게 공통 속성을 편집할 수 있습니다.
 
 테이블에 포함된 속성:
 
@@ -75,7 +75,7 @@ Point lights are a small sphere that distributes light equally in all directions
 Provides an approximation of a recessed light with a diffuser or baffles. The light distributes light in a diffuse pattern based on the orientation of the rectangle. A direction arrow is drawn at the center point of the light. Full strength light is directly in front of the rectangle.  Then the light falls off at an angle to the objects from the rectangle. By default a white rectangle will be visible when rendering. A common mistake is to insert these rectangles at exactly the same height as a ceiling plane. For consistent results, make sure the lights are slightly below the ceiling. For information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros RectangularLight](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm) help topic.
 
 ![images/rectangular light.png](images/rectangular light.png)
-*A rectangular light just below the ceiling*
+*천장 바로 아래의 직사각형 조명*
 
 #### ![images/linearlight-01.png](images/linearlight-01.png) 선형 조명
 {: #linearlight}

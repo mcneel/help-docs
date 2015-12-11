@@ -68,18 +68,18 @@ Rhino 모델의 재질 이름입니다. 재질은 Rhino 모델에 저장됩니�
 
 #### 금속
 {: #metallic}
-Sets the highlight color to match the base color. Many metal finishes normally use the base color as the reflective color.  This metallic option uses the material based color as a reflective color.
+베이스 색에 일치하는 하이라이트 색을 설정합니다. 많은 금속 마무리에서 일반적으로 베이스 색을 반사 색으로 사용합니다. 이 금속 옵션은 재질의 베이스 색을 반사 색으로 사용합니다.
 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### 사용자 지정
-In some very specialized finishes, the reflection of the object will be a different color than the base color for the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
+일부 특수한 마무리의 경우, 개체의 반사는 재질의 베이스 색과 다른 색일 수 있습니다. 여러 개의 재질로 만들어진 재질이 일반적으로 여기에 속합니다. 사용자 지정을 사용하여 하이라이트 색을 지정합니다. [색 선택](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)을 사용하여 반사 색을 선택합니다.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
 #### 강도
 {: #intensity}
-하이라이트의 세기를 조정합니다. 값이 낮을수록 주변 개체가 아닌, 빛을 반사하는 광택 있는 개체로 표현됩니다. 큰 값은 하이라이트와 반사의 크기와 세기를 증가시킵니다. 가장 높은 값을 사용하면 재질이 거울처럼 표현되므로 장면의 다른 개체와 환경이 반사됩니다. 
+하이라이트의 세기를 조정합니다. 값이 낮을수록 주변 개체가 아닌, 빛을 반사하는 광택 있는 개체로 표현됩니다. 큰 값은 하이라이트와 반사의 크기와 세기를 증가시킵니다. 가장 높은 값을 사용하면 재질이 거울처럼 표현되므로 장면의 다른 개체와 환경이 반사됩니다.
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
@@ -103,7 +103,7 @@ In some very specialized finishes, the reflection of the object will be a differ
 
 아래 그림에서 균형 유형의 경우, 왼쪽 개체의 반사가 밝고 하얗기 때문에 재질이 잘 표현되지 않았습니다.
 
-때때로, 광원이 작은 실내 렌더링의 일부 경우에 서피스에 마치 점과 같은 아티팩트가 있을 수 있습니다. 아티팩트가 보이는 서피스는 특히 흐리게 반사됩니다. 유형을 [광택](advanced-material-properties-main.html#glossy), [광원 반사 없음](advanced-material-properties-main.html#no-light-source-reflection), 또는 [몬테카를로](advanced-material-properties-main.html#monte-carlo) 반사로 변경하면 이 문제를 완화시키는 데 도움이 됩니다. 
+때때로, 광원이 작은 실내 렌더링의 일부 경우에 서피스에 마치 점과 같은 아티팩트가 있을 수 있습니다. 아티팩트가 보이는 서피스는 특히 흐리게 반사됩니다. 유형을 [광택](advanced-material-properties-main.html#glossy), [광원 반사 없음](advanced-material-properties-main.html#no-light-source-reflection), 또는 [몬테카를로](advanced-material-properties-main.html#monte-carlo) 반사로 변경하면 이 문제를 완화시키는 데 도움이 됩니다.
 
 #### 균형
 {: #balanced}
@@ -190,7 +190,7 @@ In some very specialized finishes, the reflection of the object will be a differ
 
 #### 감쇠
 {: #attenuation}
-빛이 개체를 통과하면서 얼마나 빛이 흡수되는지를 결정합니다. 값이 클수록 더욱 탁하게 표현됩니다. 액체를 모델링할 때 감쇠를 사용하세요. 맑은 액체는 감쇠가 낮고, 탁한 액체는 감쇠 값이 더 높습니다. 
+빛이 개체를 통과하면서 얼마나 빛이 흡수되는지를 결정합니다. 값이 클수록 더욱 탁하게 표현됩니다. 액체를 모델링할 때 감쇠를 사용하세요. 맑은 액체는 감쇠가 낮고, 탁한 액체는 감쇠 값이 더 높습니다.
 
 ![images/attenuation.png](images/attenuation.png)
 
@@ -229,7 +229,7 @@ In some very specialized finishes, the reflection of the object will be a differ
 
 ### 이미지
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another image may control the bump properties of the texture. To control how an image affects a material, go to the [Image Properties](material-image-properties.html) Dialog.
+최대 4개의 비트맵 이미지를 사용하여 재질에 디테일을 추가할 수 있습니다. 이미지 맵은 서피스 색, 입체처럼 표현하는 서피스을 나타내는 데 사용할 수 있습니다. 이미지 맵은 래스터 기반 페인트 프로그램이나 스캔한 사진, 또는 다른 재질을 가지고 만든 2차원 패턴입니다. 이미지 맵은 다양한 방식으로 사용할 수 있습니다. 실제 재질의 사진을 재질 색으로 사용하는 것이 일반적인 방식입니다. 이미지 맵은 최대 4개의 이미지로 구성이 가능합니다. 경우에 따라, 한 이미지는 색을 제어하고 다른 이미지로는 텍스처의 범프 속성을 제어합니다. 이미지가 재질에 영향을 주는 방식을 제어하려면 [이미지 속성](material-image-properties.html) 대화상자로 갑니다.
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -237,7 +237,7 @@ Up to four bitmap images can be used to add detail to a material. Image maps can
 
 ### 범프 패턴
 {: #bump-patterns}
-Bump Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
+범프 패턴은 변위 맵이나 다른 맵을 사용하지 않아도 표면의 질감을 특정하게 표현합니다. 범프는 수학적인 규칙을 사용하여 마치 표면이 울퉁불퉁한 것처럼 보이게 재질을 표현합니다. 다음과 같은 패턴이 포함됩니다: 
 
 > [사포](#sandpaper)
 > [자갈](#rubble)
@@ -251,38 +251,38 @@ Bump Patterns create the appearance of a specific kind of surface without using 
 
 #### 사포
 {: #sandpaper}
-Provides a random, finely textured appearance. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit sandpaper.
+랜덤하고 세밀하게 텍스처 처리된 모습으로 표현됩니다. 사포를 편집하려면 [크기](#scale), [세기](#strength), [회전](#rotation)을 변경합니다.
 
 ![images/sandpaper.png](images/sandpaper.png)
-*Sandpaper progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*작은 [크기](#scale)와 [세기](#strength)에서 큰 크기와 세기로 처리되는 사포* 
 
 #### 자갈
 {: #rubble}
 울퉁불퉁하고 구멍난 표면을 표현합니다. 크기 조정하여 물, 흙, 표면의 얼룩을 나타낼 수 있습니다. 얼룩은 자갈을 사용하여, 큰 [크기](#scale)와 아주 작은 [강도](#strength)로 만들 수 있습니다. 자갈 범프는 사포보다 크기 범위가 더 큽니다.
 
 ![images/rubble.png](images/rubble.png)
-*Rubble progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*작은 [크기](#scale)와 [세기](#strength)에서 큰 크기와 세기로 처리되는 자갈*
 
 #### 각뿔
 {: #pyramid}
-Gives the appearance of small pyramidal protrusions like a knurl pattern.  [Scale](#scale) will control only the X and Y pyramid base size. [Strength](#strength) will effect the "height" effect of the pyramid.
+널링(knurling) 패턴처럼, 작은 피라미드 형태의 돌기를 표현합니다. [크기](#scale)는  X와 Y 각뿔의 기본 크기만을 제어합니다. [세기](#strength)는 각뿔의 "높이" 효과에 영향을 줍니다.
 
 ![images/pyramid.png](images/pyramid.png)
-*Pyramid showing a larger and larger [Scale](#scale).*
+*크고 더 큰 [크기](#scale)를 나타내는 각뿔*
 
 #### 주름
 {: #wrinkled}
-Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit wrinkled.
+주름과 같은 모습으로 표현됩니다. 주름을 편집하려면 [크기](#scale), [세기](#strength), [회전](#rotation)을 변경합니다.
 
 ![images/wrinkled.png](images/wrinkled.png)
-*Wrinkled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*크고 더 큰 [크기](#scale)를 나타내는 주름. [세기](#strength)는 일정합니다.*
 
 #### 대리석
 {: #marbled}
-Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit marbled.
+대리석처럼 표현하는 소용돌이 패턴입니다. 대리석을 편집하려면 [크기](#scale), [세기](#strength), [회전](#rotation)을 변경합니다.
 
 ![images/marbled.png](images/marbled.png)
-*Marbled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*크고 더 큰 [크기](#scale)를 나타내는 대리석. [세기](#strength)는 일정합니다.*
 
 ### 비율
 {: #scale}

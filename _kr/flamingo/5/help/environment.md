@@ -73,14 +73,14 @@ Two- and three-color gradient backgrounds only apply to perspective views. Two-c
 
 ![images/background-color-002.png](images/background-color-002.png)
 *2색 그라데이션 배경: 파랑과 노랑.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing a two-color gradient.
+2색 그라데이션에 대한 자세한 정보는 아래의 [색 제어](#enviroment-sky-color-controls)를 참조하세요.
 
 #### 3색 그라데이션
 {: #three-color-gradient}
 3색 그라데이션 배경은 선택된 3색의 단계적 변화로 배경을 표시합니다.
 ![images/background-color-003.png](images/background-color-003.png)
 *3색 그라데이션 배경: 파랑, 흰색, 노랑.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Three-color Gradient.
+3색 그라데이션에 대한 자세한 정보는 아래의 [색 제어](#enviroment-sky-color-controls)를 참조하세요.
 
 ### 색 제어
 {: #enviroment-sky-color-controls}
@@ -89,11 +89,11 @@ The number of controls available may change based on the Color Background type t
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### 색 바꾸기
-Use this button to rearrange the color in the gradient from top to bottom.
+그라데이션의 색을 위에서 아래로 다시 조정하려면 이 단추를 사용합니다.
 
 #### 그라데이션 매핑 제어
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
+The colors in a gradient color background need to be mapped to the environment sphere. Use the Gradient mapper to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
 
 #### 뷰로부터의 각도
 {: #angle-from-views}
@@ -111,10 +111,10 @@ If Angles from View is checked, the current color gradient syncs with the curren
 * The Green double-arrow represents the middle of the gradient blend between the top and bottom colors.  If it is a three color gradient this is also the location of the middle color.
 * The Blue arrow represents the location of the bottom color.  Below this angle there will only be bottom color.
 
-####  Get angles from View Button
+####  뷰와 일치하는 각도 설정 단추
 Use this button to reset the Gradient mapping control to the current perspective view coordinates.
 
-#### Top/Middle/Bottom Angles
+#### 위/가운데/아래 각도
 These are angle readouts of the Top, Middle, and Bottom colors in the current gradients.  They correspond to the location of the Red, Green, and Blue arrows in the View altitude mapper.
 
 ## 이미지 배경
@@ -123,7 +123,7 @@ These are angle readouts of the Top, Middle, and Bottom colors in the current gr
 A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar image set as a background.*
+*배경으로 설정된 평면 이미지*
 
 ### 이미지 파일
 {: #image-properties}
@@ -141,7 +141,7 @@ Each projection method has its own set of controls for positioning the image.
 
 <!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
 
-#### Planar Projection
+#### 평면 투영
 {: #planar}
 Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
 
@@ -188,6 +188,7 @@ The angle from view checkbox will keep the image in sync with the current view. 
 이미지 맵의 각도 너비를 지정합니다. 각도를 입력하거나, 제어 위젯에서 플래그를 끌어 너비를 지정합니다. 파란색 영역은 각도 너비 범위를 나타냅니다.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
+<!--TODO: Image doesn't show up in file. -->
 
 * The control shows the environment in plan view.
 * The dark grey cone of vision shows the last coordinates in the current perspective view.
@@ -250,7 +251,7 @@ Set the background HDRi image by clicking on the large button that reads *(empty
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## 평면형 HDRI 옵션
+## Planar HDRi options
 {: #planar-hdr-options}
 
 Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRi provides a wider range of color possibilities. A good use of planar HDRi files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRi files are always mapped planar.
@@ -292,7 +293,7 @@ Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-
 [조명: 태양과 하늘](sun-and-sky-tabs.html) 설정에서 지정된 대로 개체가 하늘을 굴절시킵니다.
 
 #### 사용자 지정
-Objects refract a [Color or gradient](#color-and-gradient-backgrounds), [Image](#image), or [HDR](#hdr-background) background.
+개체가 [색 또는 그라데이션](#color-and-gradient-backgrounds), [이미지](#image), 또는 [HDR](#hdr-background) 배경을 굴절시킵니다.
 
 #### 보이는 배경
 [환경](environment-tab.html) 설정에서 지정된 상태로 보이는 배경이 개체에 굴절됩니다.

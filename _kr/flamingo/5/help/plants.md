@@ -2,6 +2,8 @@
 title: 식물
 ---
 
+<!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
+
 # ![images/plants.svg](images/plants.svg) {{page.title}}
 Flamingo nXt에는 재미있고 강력한 식물 생성기가 있어, 렌더링하는 동안 복잡한 식물을 효과적으로 만들 수 있습니다. 모델에서는 자리 표시자만 보관되므로, 식물이 모델 크기에 거의 영향을 미치지 않습니다.
 

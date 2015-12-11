@@ -1,7 +1,7 @@
 ---
 title: 데칼
 ---
-
+<--TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
 
 # {{page.title}}
 데칼은 재질을 간접적으로 사용하지 않고, 개체에 직접 적용하는 비(非) 타일 방식의 이미지 맵입니다. 개체 색, 반사도 또는 범프에서 제한된 부분을 수정할 때 데칼을 사용합니다.
@@ -14,7 +14,7 @@ title: 데칼
 >스테인드글래스 창 만들기.
 
 ![images/freshmilk.png](images/freshmilk.png)
- **안내:** 데칼 미리보기는 OpenGL이 와이어프레임 모드에서만 사용하도록 설정된 경우 와이어프레임 뷰에서만 표시됩니다. **파이프라인** 설정은 **OpenGL** 설정(**옵션**  &gt; **화면표시**  &gt; **고급 설정**  &gt; **와이어프레임**  &gt; **기타 설정**  &gt; **파이프라인과 도관**)에 있습니다.
+ **안내:** 데칼 미리보기는 OpenGL이 와이어프레임 모드에서만 사용하도록 설정된 경우 와이어프레임 뷰에서만 표시됩니다. **파이프라인** 설정은 **OpenGL** 설정(**옵션**  &gt; **뷰**  &gt; **표시 모드**  &gt; **와이어프레임**  &gt; **기타 설정**  &gt; **사용할 표시 파이프라인**)에 있습니다.
 
 ## 데칼 배치
 {: #decal-list}
@@ -105,31 +105,30 @@ title: 데칼
 
 ### 원통형
 {: #decal-cylindricalmapping}
-
-###  
 원통형 매핑 유형은 와인 병에 레이블을 부착할 때처럼, 한 방향으로 곡면인 개체 상에 데칼을 배치할 때 유용합니다.
 원통형 투영은 비트맵의 세로축을 원통형의 축에 맞추고 가로축은 원통을 둘러싸이게 하여 비트맵을 원통에 매핑합니다.
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
+
 ### 평면형
 {: #decal-planarmapping}
-
-###  
-평면 매핑은 가장 일반적인 매핑 스타일입니다. 평면 또는 부드러운 곡면을 이루는 개체에 적합한 매핑입니다.
+Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
 모서리는 비트맵의 위치와 범위를 정의합니다. 직사각형의 비율이 비트맵과 동일하지 않다면 비트맵이 스트레치되거나 압축되어 직사각형에 맞춰집니다.
 평면형 매핑을 곡면에 사용할 때 전체 비트맵 투영은 개체 서피스의 뒤에 있어야 합니다. 비트맵 일부가 개체 앞에 있다면 그 부분은 보이지 않습니다.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
+
 ### UV 맵
 {: #decal-uvmapping}
-
-###  
-UV 매핑을 사용하는 데칼은 머리카락이나 나무 껍질 등의 개체처럼 데칼이 서피스에 맞춰 흐르고 늘어나는 경우에 유용합니다.
+Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
 데칼이 개체 전체를 커버합니다. 데칼의 배치를 제어할 수 없습니다.
 UV 매핑은 이미지를 구부리고 늘리기 위해 서피스의 U 방향과 V 방향을 매개변수화하여 사용하므로, 사용자가 직접 배치할 필요가 없습니다.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
+
 ### 찾아보기
 {: #file-browse}
 이미피 파일을 바꿉니다.
+
 {% include_relative snippets/snippet-clearbitmapcache.md %}
+
 ## 세기
 {: #decalmappingstrength}
 

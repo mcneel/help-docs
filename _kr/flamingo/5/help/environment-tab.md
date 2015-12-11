@@ -13,19 +13,19 @@ Flamingo comes with a special environment called *[Default Flamingo Environment]
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
 ##### 이 명령은 어디에서 찾을 수 있습니까?
- 1. ![images/environments.png](images/environments.png)Environment Tab
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Environment Editor
+ 1. ![images/environments.png](images/environments.png)환경 탭
+ 1. ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/environments.png](images/environments.png) 환경 편집기
  1. ![images/menuicon.png](images/menuicon.png)메뉴 > 렌더링 메뉴 > 환경 편집기
  1. 명령 > EnvironmentEditor
 
-The Environment Editor Panel is split into discrete sections.  Based on the environment type, the advanced panels may vary.
+환경 편집기 패널은 별개의 섹션으로 나뉘어져 있습니다. 환경 유형에 따라 고급 패널이 달라질 수 있습니다.
 
-Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+색과 텍스처는 색 견본에서 원하는 색을 마우스로 선택하여 재질 편집기, [텍스처 팔레트](texturepalette.html), 또는 [환경 편집기](environmenteditor.html)의 색 견본/제어에 놓을 수 있습니다.
 환경 패널
 
  1. [배경 유형](#type)
  1. [설정 막대](#settings)
- 1. [Environment List](#environment_list)
+ 1. [환경 목록](#environment_list)
  1. [창 구분](#divider)
  1. [환경 속성 섹션](#properties)
  1. [이름](#name)
@@ -47,7 +47,7 @@ Walks back through the current environment or the previously selected environmen
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) 앞으로 화살표
 Walks forward through the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected environment name
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 현재 선택된 환경 이름
 Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
 #### ![images/library_default.png](images/library_default.png) 도구 메뉴
@@ -67,7 +67,7 @@ From this list:
 * Right-click a thumbnail to display the Environment context menu
 * Right-click the blank area to display the New Environment Context Menu
 
-###  ![images/add_material.png](images/add_material.png) Add new environment
+###  ![images/add_material.png](images/add_material.png) 새 환경 추가
 {: #add_environment}
 Scroll down to the bottom of the Environment list to see the add icon.
 

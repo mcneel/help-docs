@@ -1,5 +1,5 @@
 ---
-titla: 개체 속성
+title: 개체 속성
 ---
 
 
@@ -19,7 +19,7 @@ Flamingo nXt 개체 속성은 Flamingo nXt에서 개체를 렌더링하는 방�
 
 ### ![images/decalproperties.png](images/decalproperties.png) 데칼
 {: #decals}
-데칼은 재질을 간접적으로 사용하지 않고, 개체에 직접 적용하는 비(非) 타일 방식의 이미지 맵입니다. 개체 색, 반사도 또는 범프에서 제한된 부분을 수정할 때 데칼을 사용합니다. 데칼의 생성과 배치에 대한 자세한 정보는 [Rhino 데칼](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#properties/decal.htm) 항목을 참조하세요. 
+데칼은 재질을 간접적으로 사용하지 않고, 개체에 직접 적용하는 비(非) 타일 방식의 이미지 맵입니다. 개체 색, 반사도 또는 범프에서 제한된 부분을 수정할 때 데칼을 사용합니다. 데칼의 생성과 배치에 대한 자세한 정보는 [Rhino 데칼](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#properties/decal.htm) 항목을 참조하세요.
 
 ![images/freshmilk.png](images/freshmilk.png) ![images/decal-planar-001.png](images/decal-planar-001.png)
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
@@ -27,7 +27,7 @@ Flamingo nXt 개체 속성은 Flamingo nXt에서 개체를 렌더링하는 방�
 
 ### ![images/apply-edge-softening.png](images/apply-edge-softening.png) 사용자 지정 메쉬
 {: #custom-meshes}
-몇몇 사용자 지정 메쉬 설정은 Rhino에서 렌더링 모델을 더 구체적으로 표현하는 데 사용될 수 있습니다. 이 설정에서 둥근 가장자리, 패널 셧 라인, 커브로 케이블 만들기 등을 설정할 수 있습니다.  
+몇몇 사용자 지정 메쉬 설정은 Rhino에서 렌더링 모델을 더 구체적으로 표현하는 데 사용될 수 있습니다. 이 설정에서 둥근 가장자리, 패널 셧 라인, 커브로 케이블 만들기 등을 설정할 수 있습니다.
 
 관련 정보는 다음 항목을 참조하세요:
 

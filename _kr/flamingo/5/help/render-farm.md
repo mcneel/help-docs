@@ -42,13 +42,13 @@ The key to a functional render farm is a shared folder to which the master machi
 {: #install}
 The Farmer render client and the Farm monitor are installed with Flamingo on the master Rhino machine.  For other client computers that do not have Rhino and Flamingo nXt, the Farmer client needs to be installed.
 
-##### Installing the Render Farmer
+##### Render Farmer 설치
 For machines that do not have Rhino and Flamingo installed, install the Farmer client:
 
- 1. Download the current [Render Farmer software](http://www.rhino3d.com/download/The-Farm/1.0/release).
- 1. Run the downloaded installer on each of the client computers.
- 1. From the Start menu, run the Render Farmer on each machine.
- 1. The Render Farmer will appear as an icon in the system tray.
+ 1. 최신 [Render Farmer 소프트웨어](http://www.rhino3d.com/download/The-Farm/1.0/release)를 다운로드합니다.
+ 1. 다운로드한 설치 관리자 파일을 각각의 클라이언트 컴퓨터에 실행합니다.
+ 1. 시작 메뉴에서 Render Farmer를 각 컴퓨터에서 실행합니다.
+ 1. Render Farmer가 시스템 트레이에 아이콘으로 나타납니다.
 
 ##### 렌더 팜을 설정하려면
 {: #configure-the-render-farm}
@@ -162,7 +162,7 @@ nXt Render Farm 폴더에서 **Authorize Farm**을 클릭합니다.
 ##### 노드를 시작하려면
 1. **Windows 시작** 단추를 클릭하고 **모든 프로그램**을 클릭합니다.
 nXt Render Farm 폴더에서 **Render Farmer**를 클릭합니다.
-1.  p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click the tray icon, and on the menu, click **Restore**.
+1.  트레이 아이콘을 오른쪽 클릭하고 메뉴에서 **복원**을 클릭합니다.
 1. 도움말 메뉴에서 **정보**를 클릭합니다.
 버전 숫자가 평가판인 경우에는 라이선스를 받을 수 없습니다.
 1. 렌더 파머 창을 최소화하여 트레이로 반환합니다.

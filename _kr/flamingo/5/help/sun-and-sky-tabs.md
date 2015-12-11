@@ -35,11 +35,11 @@ title: 태양과 하늘
 
 #### 고도
 {: #altitude}
-Sets the sun's height in the sky in angle degrees from the Equator (0).  The half circle map simulates a section through the vertical direction of the world coordinates.
+적도(0)를 기준으로 도 단위의 각도로, 하늘에서의 태양 고도를 설정합니다. 반원 맵은 절대좌표의 수직 방향을 기준으로 하는 섹션을 나타냅니다.
 
 ### 지구상의 위치 설정
 {: #set-location-on-earth}
-Use the sun angle calculator to place the sun based on Date, Time, Location.  **Note:** As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
+날짜, 시간, 위치를 기준으로 태양을 배치하려면 태양 각도 계산기를 사용합니다.  **안내:** 모든 태양 계산기와 마찬가지로, 태양 위치의 정확도는 다양할 수 있습니다. 절대적인 정확도가 필요하다면 태양 위치를 지정하는 것을 권장합니다.  
 
 #### 날짜
 {: #date}
@@ -56,23 +56,23 @@ Use the sun angle calculator to place the sun based on Date, Time, Location.  **
 #### 위도/경도
 {: #latitude-longitude}
 위도와 경도를 입력하거나 지도에서 위치를 지정합니다.
-The numbers will also update to display the latitude and longitude of a location picked on the map with the mouse cursor.
+마우스 커서로 지도상에서 지정된 위치의 위도와 경도를 나타내는 숫자도 업데이트됩니다.
 
 #### 시간대
 {: #time-zone}
-Displays the time zone based on Latitude and Longitude for the current location.
+현재 위치의 위도와 경도를 기준으로 시간대를 표시합니다.
 
 #### 도시 목록
 {: #city-list}
-Use this to select a major city to set the location.
+이 목록에서 주요 도시를 선택하여 위치를 설정합니다.
 
 #### 지도
 {: #map}
-Click the map to specify a location. Drag with the left mouse button to pan the map.
+지도를 클릭하여 위치를 지정합니다. 왼쪽 마우스 단추로 끌어 지도에서 초점 이동합니다.
 
 ### 태양광 강도
 {: #sun-intensity}
-Modifies the brightness of the sun (direct) daylight component. The intensity of sun is automatically calculated based on solar angles and sky conditions, but can be modified to balance with other lights.
+태양 (직사광선) 일광 구성 요소의 밝기를 수정합니다. 태양의 강도는 태양 각도와 하늘 조건을 기반으로 자동으로 계산되지만 다른 조명과의 균형을 맞추기 위해 수정할 수 있습니다.
 
 ### 태양 하이라이트
 {: #sun-highlight}
@@ -92,10 +92,10 @@ Modifies the brightness of the sun (direct) daylight component. The intensity of
 
 ## 하늘
 {: #sky}
-The Sky is a large sphere around the rendering that can be used for lighting. The Sky is very different from environment.  Sky controls lighting. Environment controls what is reflected and visible in the background. There are many situations where the Sky and Environment might be set differently.
+하늘은 렌더링을 중심으로 하는 큰 구이며 조명에 사용될 수 있습니다. 하늘은 환경과 매우 다릅니다. 하늘은 빛을 제어합니다. 환경은 배경에 무엇이 반사되고, 보이는지를 제어합니다. 하늘과 환경이 다르게 설정되는 경우가 많이 있습니다.
 
 #### Flamingo 하늘 제어는 어디에 있습니까?
-The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sky).
+하늘은 [조명 기본 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sky)에서 활성화해야 합니다.
 
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
  1. ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 하늘
@@ -110,25 +110,25 @@ The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighti
 >[색](#color-sky)
 >[이미지](#image-sky)
 
-The two best settings for sky lighting types are [HDR image](#high-dynamic-range-image-sky) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
+천공광(天空光)에 사용하는 가장 좋은 두 가지 설정은 [HDR 이미지](#high-dynamic-range-image-sky) 하늘과 [자동 하늘](#automatic-sky)입니다. HDR 이미지 하늘은 빛과 반사를 나타내도록 각 픽셀에 저장된 라이트밸류(Light Value)가 있는 이미지를 사용합니다. 자동 하늘은 실제 태양 위치와 운량을 사용하여 하늘을 시뮬레이션합니다. 이 설정은 가장 생생한 렌더링을 만들어냅니다.
 
 ### 자동 하늘
 {: #automatic-sky}
-Automatic sky uses settings from the [Sun tab](sun-and-sky-tabs.html) to specify the color range and intensity of the skylight.  For instance, when the sun is high in the sky, the lighting and colors of the sky are very different than when the sun is low in the sky.
+자동 하늘은 색의 범위와 천공광의 강도 지정에 [태양 탭](sun-and-sky-tabs.html)의 설정을 사용합니다. 예를 들어, 태양이 하늘 높이 있을 때와 낮게 있을 때를 비교하면 하늘의 빛과 색은 매우 다릅니다.
 
 ![images/sky-002.png](images/sky-002.png)
 *자동 하늘: 하늘의 태양이 높을 떄 (왼쪽), 낮을 때 (오른쪽).*
 
 #### 운량
 {: #sky-cloudiness}
-When Cloudiness is turned off, the sky is considered clear and strong shadows are created. The greater the cloudiness, the less contrast there will be between the light and shadows. Greater cloudiness will create lighter shadows and a more even lighting effect. The Cloudiness setting affects many aspects of the daylight calculation, including the relative amounts of direct vs. indirect lighting, the way indirect lighting is calculated, and the background color if Automatic Sky mode has been selected. The Cloudiness setting varies from 0 (clear) to 1 (completely overcast). The cloudiness settings around 0.35 - 0.50 is a very sensitive and dynamic range.
+이 운량 설정이 꺼져 있으면 하늘이 맑은 상태이므로 강한 그림자가 만들어집니다. 운량이 많을수록, 빛과 그림자 사이에 명암이 더 적게 만들어집니다. 직접 조명과 간접 조명 사이의 상대적인 정도, 간접 조명이 계산되는 방법, 자동 하늘이 선택된 상태에서 배경색 지정 등, 다양한 주광 계산에 운량 설정이 영향을 줍니다.  운량 설정은 0 (맑음)에서 1 (완전히 구름으로 뒤덮인 상태) 사이의 값으로 달라집니다. 0.35 ~ 0.50 정도의 운량 설정은 매우 민감하면서도 다이내믹한 범위입니다. 
 
 ![images/cloudiness0.png](images/cloudiness0.png)
 *운량 0 (왼쪽), 1 (오른쪽).*
 
 #### 하늘 강도
 {: #sky-intensity}
-Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified. **Note:** This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+하늘 (간접) 주광 구성 요소의 밝기를 수정합니다. 천공광(skylight)의 강도는 태양 각도와 하늘 조건을 기반으로 자동으로 계산되지만 수정할 수 있습니다. **안내:** 장면에 보정되어야 하는 다른 조명이 있는 경우에만 이 설정이 해당됩니다. 다른 조명이 없는 경우, 톤 연산자가 노출을 보정하고 렌더링된 이미지는 이 설정을 바탕으로 더 밝아지거나 더 어두워지지 않게 됩니다.
 
 {% include_relative snippets/snippet-skychannel.md %}
 
@@ -141,23 +141,23 @@ Modifies the brightness of the sky (indirect) daylight component. The intensity 
 
 HDR 이미지에는 와트 단위로 표시된 방사휘도(radiance value)가 있습니다. 만약 방사휘도가 없다면 적절한 조명 수준을 얻기 위해서 HDR 이미지의 강도를 조정해야 할 수도 있습니다.
 
-In addition to the Sky, a different HDR image can be used for each of the three visible backgrounds: [Visible](environment-tab.html#advanced-background), [Reflected](environment-tab.html#advanced-background), and [Refracted](environment-tab.html#advanced-background) background.
+하늘 외에도, 다른 HDR 이미지를 세 가지 배경 채널 ( [보이는 배경](environment-tab.html#advanced-background), [반사된 배경](environment-tab.html#advanced-background), [굴절된 배경](environment-tab.html#advanced-background) )로 사용할 수 있습니다.
 
 #### HDRI 이미지
-Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
+HDR (HDR과 HDRi는 동일한 파일 유형입니다) 이미지 파일을 지정합니다. 다른 HDRi를 선택하려면 원하는 이미지를 클릭합니다.
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
 * 등장방향 투영*
 
-HDR images come in two projection types which let the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
+HDR 이미지에는 하늘 구를 제대로 둘러싸게 하는 두 가지 투영 유형이 있습니다. 가장 많이 사용되는 유형은 등장방형(equirectangular)입니다. 이 이미지는 종횡비가 2:1인 직사각형입니다. 등장방향 이미지는 이미지 전체에 걸쳐 해상도가 비슷합니다. 두 번째 투영은 구(球) 투영입니다. 구 형태 HDR 이미지는 종횡비가 정사각형이며 이미지의 곡률이 잘 표현됩니다. 구 투영은 심 위치에서 해상도가 더 낮습니다.
 
 #### 강도
-Modifies the brightness of the HDR image light. This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+HDR 이미지 조명의 밝기를 수정합니다. 장면에 보정되어야 하는 다른 조명이 있는 경우에만 이 설정이 해당됩니다. 다른 조명이 없는 경우, 톤 연산자가 노출을 보정하고 렌더링된 이미지는 이 설정을 바탕으로 더 밝아지거나 더 어두워지지 않게 됩니다.
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 * 낮고 높은 HDR 강도*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
+{% include_relative snippets/snippet-rotatehdrimage.md %}그림의 경우, 이미지가 회전되었으므로 개체에 태양이 반사되어 보입니다. 회전 각도를 입력하거나 회전 위젯 표시기에서 직접 회전을 지정합니다.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 * 태양이 개체에 나타나도록 이미지가 회전되었습니다.*
 
@@ -173,20 +173,20 @@ Modifies the brightness of the HDR image light. This setting only matters if the
 
 ### 색
 {: #color-sky}
-It is possible to use a color or gradient of color to light the scene. The colors in the sky are multiplied by the intensity value to give the colors a lighting value.
+장면에 빛을 비추는 데 색 또는 색의 그라데이션을 사용할 수 있습니다. 하늘의 색은 색에 라이트밸류(Light Value)를 주기 위해 강도 값으로 곱합니다. 
 
 #### 강도
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+강도 값은 하늘의 색과 라이브 밸류의 결과를 곱하는 데 사용됩니다. 색의 범위는 채널당 0에서 256까지입니다. 강도는 이 값을 증가시킵니다. 
 
 #### 색 유형
-There are three ways to control the color of the sky.  These are similar to the Color Environment controls.  See [Color Background](environment-tab.html#environment-color-and-gradient-backgrounds) controls for more information.
+하늘의 색을 제어하는 방법에는 세 가지가 있습니다. 이 설정은 색 환경 제어와 비슷합니다. 자세한 정보는 [색 배경](environment-tab.html#environment-color-and-gradient-backgrounds) 제어를 참조하세요.
 
 ### 이미지
 {: #image-sky}
-It is possible to use an image to light the scene. The colors in the image are multiplied by the intensity value to give the colors a lighting value.
+장면에 빛을 비추는 데 이미지를 사용할 수 있습니다. 이미지의 색은 색에 라이트밸류(Light Value)를 주기 위해 강도 값으로 곱합니다.
 
 #### 강도
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+강도 값은 하늘의 색과 라이브 밸류의 결과를 곱하는 데 사용됩니다. 색의 범위는 채널당 0에서 256까지입니다. 강도는 이 값을 증가시킵니다.
 
 #### 이미지 투영
-There are many ways to control how an image is mapped to the sky.  These are similar to the Image Background controls.  See [Image Background](environment-tab.html#environment-image) controls for more information.
+하늘에 이미지를 매핑하는 방법은 다양합니다. 이 설정은 이미지 배경 제어와 비슷합니다. 자세한 정보는 [이미지 배경](environment-tab.html#environment-image) 제어를 참조하세요.

@@ -15,7 +15,7 @@ title: 렌더링 옵션
 
 ## 렌더링할 뷰포트
 {: #viewtorender}
-Flamingo nXt 5가 렌더링하는 뷰를 설정합니다. 모델을 작업하며 렌더링할 때 매우 유용한 설정이지만, 특정한 한 뷰를 항상 렌더링해야 합니다. 예를 들어 많은 경우에 Perspective 뷰가 렌더링 대상이 됩니다. 이 드롭다운 메뉴를 설정하면 렌더링을 시작하기 전에 해당 뷰가 현재 뷰로 설정되어 있는지 매번 확인하지 않아도 됩니다.
+Set the view that Flamingo nXt 5 will render.  This is a useful setting when working on the model and rendering, but there is one specific view that should always render.  For instance, many times Perspective view is the view of interest.  By setting this drop down, you do not need to make sure the view is current before starting the rendering.
 
 #### 활성 뷰
 현재 활성 뷰를 렌더링하려면 이 옵션을 사용합니다. 이것은 기본 설정입니다.
@@ -49,7 +49,7 @@ Flamingo nXt 5가 렌더링하는 뷰를 설정합니다. 모델을 작업하며
 Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.
 
 #### 인치
-Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of inches in width and height by the resolution DPI value.
+Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of inches in width and height by the resolution DPI value.
 
 #### 밀리미터
 Sets the page units to millimeters. Use millimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of millimeters in width and height by the resolution dots per millimeter value.
@@ -72,7 +72,7 @@ Printed image height in current size units.  Multiply this setting by the resolu
 {: #printsizeresolution}
 
 #### 표시
-The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
+The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch).
 
 #### 사용자 지정
 The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
@@ -87,7 +87,7 @@ The image is rendered using a custom resolution. Type the custom width and heigh
 Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. High resolutions can lead to long rendering times.
 
 #### 단위당 픽셀
-When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a preset resolution is selected, this control displays the current resolution.
+When Resolution control is set to Custom, use this control to set the resolution per selected unit. When you select a preset resolution, this control displays the current resolution.
 
 ## 피사계 심도(DOF)
 {: #depthoffieldoption}
@@ -112,20 +112,20 @@ There are three different render engines within Flamingo.  Each render engine wi
 
 Flamingo use progressive, multi-step rendering techniques to create renderings.  With progressive steps, as Flamingo does, there can be unfinished artifacts in the rendering at each step. Artifacts are render effects that leave unusual uncompleted effects in a rendering.  Technically all three render engines will result in the the same rendering, given enough time.  But realistically time is always a limiting factor. So, the trick is to select a render engine that will best render the current scene in the least number of steps.
 
-It is very easy to simply select a different render engine and then render to see the results.
+It is easy to simply select a different render engine and then render to see the results.
 
 ### 기본값
 The default algorithm produces a very high-quality simulation. The default engine is a good render engine for a wide variety of scenes.  While the other two engines have greater strengths, they also have greater weaknesses.  The Default engine is a good starting point.
 
 The default render engine has a very noticeable artifact in the renderings in the early passes.  The artifact is hard overlapping shadows.  As passes progress these shadows will soften up.  This allows the default engine to return a result quickly, but may take more passes to actually soften the shadows out.
 
-The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
+The difference in quality between the default method and the path tracer can be subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
 
 ### 경로 추적기
 {: #path-tracer}
 The path tracer begins by displaying a grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. **Note:** Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
 
-Certain advanced effects, such as caustics or blurry transmission, can be calculated with better accuracy using the path tracer. Images rendered with instancing, plants, and displacement maps can converge faster. The path tracer is usually easier to set up than the default method. Advanced settings such as reflection shaders, daylight portals, and ambient lighting are not used when the path tracer engine is selected.
+You can calculate certain advanced effects, such as caustics or blurry transmission, with better accuracy using the path tracer. Images rendered with instancing, plants, and displacement maps can converge faster. The path tracer is usually easier to set up than the default method. Advanced settings such as reflection shaders, daylight portals, and ambient lighting are not used when the path tracer engine is selected.
 
 Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer to finish.
 
@@ -133,4 +133,4 @@ Images rendered using the path tracer will generally take longer to converge tha
 The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. in some situations it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
 
 ###  **고급**
-Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page. There are several advanced rendering properties that can be set here to further customize the final rendering quality.
+문서 속성 대화상자의 [Flamingo nXt](documentproperties-flamingo.html) 페이지를 엽니다. There are several advanced rendering properties that can be set here to further customize the final rendering quality.

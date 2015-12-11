@@ -48,7 +48,7 @@ Plastic materials are slightly reflective with a white [highlight](material-type
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} [하이라이트 색](material-type-advanced.html#highlight-color), [강도](material-type-advanced.html#intensity), [프레넬](material-type-advanced.html#fresnel), [선명도](material-type-advanced.html#sharpness)의 기본 설정을 덮어쓰려면 고급 편집기를 사용합니다.
 
 ## 금속
 {: #metal}
@@ -74,7 +74,7 @@ Glass materials have a [color](material-type-advanced.html#color) and an [Index 
 #### 굴절률(IOR)
 Controls the amount light bends through the material. See Advanced [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Sharpness](material-type-advanced.html#sharpness) and [Transparency](material-type-advanced.html#transparency)
+{% include_relative snippets/snippet-material-advanced-editor.md %} [하이라이트 색](material-type-advanced.html#highlight-color), [강도](material-type-advanced.html#intensity), [프레넬](material-type-advanced.html#fresnel), [선명도](material-type-advanced.html#sharpness), [투명도](material-type-advanced.html#transparency)의 기본 설정을 덮어쓰려면 고급 편집기를 사용합니다.
 
 ## 광택
 {: #glossy}
@@ -138,7 +138,7 @@ Controls strength of the mirror-like reflection of the surface. See Advanced [In
 #### 선명도
 Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
 
-#### Types
+#### 유형
 This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. **Note:** This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
