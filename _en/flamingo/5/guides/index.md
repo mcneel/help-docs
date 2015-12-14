@@ -15,10 +15,10 @@ title: Guide Index
 ## The Flamingo nXt Control Panel
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
 
- *  [Materials](..\materials\materials-tab.html)
- *  [Lighting](../lighting/lighting-tab.html)
- *  [Environment](../environment/environment-tab.html)
- *  [Render](../render/render-tab.html)
+ *  [Materials]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
+ *  [Lighting]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
+ *  [Environment]({{site.baseurl}}/{{page.language}}/flamingo/5/help/environment-tab.html)
+ *  [Render]({{site.baseurl}}/{{page.language}}/flamingo/5/help/render-tab.html)
 
 ## Rendering Basics
 

@@ -32,8 +32,8 @@ For advanced installations, the nXt Render Farm software lets you work with thir
 
 #### The Farm Process
 {: #the-farm-process}
- 1. To start a rendering using Flamingo nXt farm, instead of using the standard Render command, use the Render Farm *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
- 2. Render jobs are split into many different farm tasks. The Render Farm clients continuously check the farm output folder for new tasks. Each client will pick up a task and start to render. The Farm Monitor  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* is a good way to keep track of the job's progress.
+ 1. To start a rendering using Flamingo nXt farm, instead of using the standard Render command, use the Render Farm *(Flamingo nXt 5.0 menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
+ 2. Render jobs are split into many different farm tasks. The Render Farm clients continuously check the farm output folder for new tasks. Each client will pick up a task and start to render. The Farm Monitor  *(Flamingo nXt 5.0 &gt; Render Farm &gt; Farm Monitor...)* is a good way to keep track of the job's progress.
  3. Each farm client deposits the results in the farm folder under *job name* \Output.
  3. As each client finishes with a job, it will continue to pick up new jobs as they are submitted to the farm.
  4. Farm output will be in the [nXt image format (.nXtImage)](image-editor.html). Images in this format can be edited using the [nXt Image Editor](image-editor.html). The results can also be saved as TGA, PNG, TIF, and JPG files from the [nXt Image Editor](image-editor.html).
