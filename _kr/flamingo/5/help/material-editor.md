@@ -5,16 +5,16 @@ title: 재질 편집기 패널
 # ![images/paint.svg](images/paint.svg) {{page.title}}
 재질에는 색, 반사, 투명도, 텍스처, 범프 맵, 서피스 마무리 등의 설정이 포함되어 있습니다. 모든 재질에는 기본 설정이 있습니다. 기본 재질은 흰색 무광이며, 반사 또는 투명도가 지정되지 않았습니다. 가장 좋은 결과를 얻으려면 Flamingo 특정 재질을 사용하세요.
 
-Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.
+재질은 레이어, 개체, 블록에 적용할 수 있습니다. 재질을 마우스로 끌어 개체에 놓는 방법을 비롯해 다양한 방식으로 적용할 수 있습니다. 자세한 정보는 [재질 적용](material_assignment.html) 항목을 참조하세요.
 
-Once assigned, materials are stored in the model. The material, textures, and all support files for rendering can be stored within the Rhino model with properly set [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm).
+일단 재질이 적용된 후에는 재질이 모델에 저장됩니다. 재질, 텍스처, 렌더링을 위한 모든 지원 파일은 올바르게 지정된 [렌더링 옵션](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#options/rendering.htm) 과 함께 Rhino 모델 안에 저장될 수 있습니다. .
 
-Materials, environments, and textures are stored in the model, but rendering content can also be saved to files that can be shared between models. Content can be dragged between Rhino sessions and into a folder. Color swatches can be dragged and dropped in the same way. The [Libraries Panel](libraries.html) displays the default content folder. Use this to drag and drop content into the model or to drag and drop model content to an external file.
+재질, 환경, 텍스처가 모델에 저장되지만, 렌더링 콘텐츠 또한 파일에 저장하고 이를 다른 모델과 공유할 수 있습니다. 콘텐츠는 Rhino 세션 간에 마우스로 끌어 폴더에 놓을 수 있습니다. 색 견본도 동일한 방식으로 마우스로 끌어 놓을 수 있습니다. [라이브러리 패널](libraries.html) 에는 기본 콘텐츠 폴더가 표시됩니다. 이것을 사용하여 마우스로 콘텐츠를 끌어 모델에 놓거나, 모델 콘텐츠를 외부 파일로 끌어 놓을 수 있습니다.
 
 ![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map .float-img-right}
 
 ##### 이 명령은 어디에서 찾을 수 있습니까?
-There are several options to find the Materials tab.
+재질 탭을 찾는 방법에는 몇 가지가 있습니다.
 
 * ![images/materialtab.png](images/materialtab.png)재질 탭
 * ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/materialtab.png](images/materialtab.png) 재질 편집기
@@ -134,20 +134,20 @@ There are several options to find the Materials tab.
 
 ## [창 구분](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #divider}
-Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
+이 구분선을 마우스로 끌어 재질 목록의 길이를 변경합니다. 재질 목록을 길게 지정하면 재질 속성 섹션이 짧아집니다.
 
 ## [재질 속성 섹션](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: #properties}
 
 #### [재질 이름](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
-This is the name of the material. The material name is also saved as the file name when exporting the material to the library. Note: Materials are stored in the Rhino model. Unique materials can have the same name in different Rhino models.
+재질의 이름입니다. 재질 이름은 재질을 라이브러리로 내보낼 때 파일 이름으로도 저장됩니다. 안내: 재질은 Rhino 모델에 보관됩니다. 서로 다른 Rhino 모델에서 고유한 재질의 이름은 동일할 수 있습니다.
 
 #### [재질 패널](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #panels}
-The Materials Properties section is filled with several direct Material panels. Clicking on the grey title bar will roll up the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+재질 속성 섹션은 몇 가지 직접적인 재질 패널로 구성되어 있습니다. 회색 제목 표시줄을 클릭하면 재질 패널이 접히고 해당 패널의 콘텐츠가 숨김 상태가 됩니다. 제목 표시줄을 다시 클릭하면 콘텐츠가 다시 표시됩니다.
 
-Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html).
+재질 패널은 재질의 유형과 현재 활성인 재질의 레벨에 따라 달라집니다. 특정 재질 패널에 대한 자세한 정보는 [Flamingo 재질](material-type-simple.html)을 참조하세요.
 
 ## 도구 메뉴 ![images/library_default.png](images/library_default.png)
 {: #tools-menu}

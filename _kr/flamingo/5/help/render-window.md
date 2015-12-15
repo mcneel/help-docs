@@ -6,7 +6,7 @@ title: 렌더링 창
 렌더링 창에는 노출을 조정하고 후처리 효과를 더하는 옵션이 있습니다. 렌더링 창의 메인프레임은 Rhino 렌더링 프레임워크의 일부입니다. 렌더링 창 메뉴와 아이콘에 대한 정보는 [렌더링 창 항목](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm) 을 참조하세요. 이 항목은 렌더링 과정에서의 Flamingo 설정을 다룹니다.
 
 ## 활성 렌더링의 관리
-Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts up and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. Flamingo first looks for any changes to its internal model, then starts an initialization process.  This process can take a few seconds or a few minutes.  This is when the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
+일단 렌더링이 시작되면 [렌더링 창](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm)이 시작하고, 렌더링이 진행됩니다. Flamingo는 렌더링된 이미지를 단계별로 업데이트하는 다중 패스 시스템입니다. Flamingo는 우선 내부 모델에 어떤 변화가 있는지 확인하고, 초기화 프로세스를 시작합니다. 이 프로세스는 몇 초에서 몇 분까지 소요될 수 있습니다. 이 시간 동안 모델을 가져오고, 하드 드라이브에서 재질 비트맵을 수집하며, 렌더링 이미지 버퍼가 생성됩니다. 이 프로세스에는 몇 가지 중요 단계가 있습니다.
 
 >[다중 패스 렌더링](#multi-pass)
 >[렌더링 중지](#stop-render)
