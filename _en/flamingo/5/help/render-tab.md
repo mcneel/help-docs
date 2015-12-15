@@ -32,7 +32,7 @@ The Rendering resolution is one of the most important render settings.  This con
 Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
 
 ### Viewport resolution
-Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
+Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino view configuration.
 
 ### Image size
 {: #resolutionprintedsize}
@@ -43,7 +43,7 @@ There are four unit types which can be used:
 >Pixels
 >Inches
 >Millimeters
->Centermeters
+>Centimeters
 
 #### Pixels
 Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.

@@ -154,7 +154,7 @@ Once you have purchased your license and have acquired a product key, use the fo
 ##### To authorize the node
 1. Wait for any active farm jobs to complete before beginning your licensing.
 1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
-1. If the node is currently active, in the Windows system tray (on the taskbar), /mouse_button_right.htm');" id="a16" style="position: relative;">right-click the Render Farm icon, and then click **Close**.
+1. If the node is currently active, in the Windows system tray (on the taskbar), [right-click](mouse-button-right.html) the Render Farm icon, and then click **Close**.
 1. Click the **Windows Start** button, and then click **All Programs**.
 In the nXt Render Farm folder, click **Authorize Farm**.
 1. In the edit box, paste or type your Product Key and click **OK**.
@@ -162,7 +162,7 @@ In the nXt Render Farm folder, click **Authorize Farm**.
 ##### To start the node
 1. Click the **Windows Start** button, and then click **All Programs**.
 In the nXt Render Farm folder, click **Render Farmer**.
-1.  p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click the tray icon, and on the menu, click **Restore**.
+1. [Right-click](mouse-button-right.html) the tray icon, and on the menu, click **Restore**.
 1. On the Help menu, click **About**.
 If the version number indicates an Evaluation version, licensing has not been successful.
 1. Minimize the Render Farmer window to return it to the tray.
