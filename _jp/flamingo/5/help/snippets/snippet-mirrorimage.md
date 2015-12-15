@@ -1,3 +1,3 @@
 
-#### Mirror
-Reverses the image from left to right.
+#### ミラー
+画像の左右を逆にします。

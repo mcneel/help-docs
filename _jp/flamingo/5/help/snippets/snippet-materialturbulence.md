@@ -1,3 +1,3 @@
 
-#### Turbulence
-Produces the swirled appearance by causing the alternating components to bend and twist.
+#### 乱れ
+曲げたりねじったりして、コンポーネントを交互に表示し、渦を巻いた模様を作成します。

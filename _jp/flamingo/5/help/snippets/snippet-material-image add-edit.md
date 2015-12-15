@@ -1,9 +1,9 @@
-##### To add a new image:
- * Click on the *(empty - Click to assign)* text and then select and image in the file dialog.
- * Or, click the Edit Image ![images/edit_image.png](images/edit_image.png) button and select an images in the file dialog.
+##### 新規画像を追加するには:
+ * *(なし - クリックして割り当て)*をクリックし、ファイルダイアログの画像を選択します。
+ * または、画像を編集 ![images/edit_image.png](images/edit_image.png)ボタンをクリックし、ファイルダイアログの画像を選択します。
 
-##### To edit an how an image effects a surface:
- * Click on the name of the image in the list. This will present the [Image Properties](material-image-properties.html) Dialog.  To get back to the main material, click on the material name in the [Material Editor](material-editor.html#settings)
+##### 画像のサーフェスへの影響方法を編集するには:
+ * リストの画像名をクリックします。これは、[画像のプロパティ](material-image-properties.html)ダイアログを表示します。メインマテリアルに戻るには、[マテリアルエディタ](material-editor.html#settings)のマテリアル名をクリックします。
 
-##### To replace an image with a different image:
-  * Click the Edit Image ![images/edit_image.png](images/edit_image.png) button and select an images in the file dialog.
+##### 画像を異なる画像と置き換えるには:
+  * 画像を編集 ![images/edit_image.png](images/edit_image.png)ボタンをクリックし、ファイルダイアログの画像を選択します。

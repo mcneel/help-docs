@@ -1,11 +1,11 @@
 
-#### Plan control
+#### 平面図コントロール
 
 ![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}
 
-* Click on the plan control to rotate the HDRI correctly.
-* The red dot signifies the center of the HDRI image.
+* HDRIを正しく回転するには、平面図コントロールをクリックします。
+* 赤い点は、HDRI画像の中央を表します。
 
-#### Rotation
+#### 回転
 {: .clear-img}
-Rotates the image so a different part of the image lights the model.
+画像の異なる部分がモデルを照らすように、画像を回転します。

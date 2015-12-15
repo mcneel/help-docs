@@ -1,7 +1,7 @@
 ---
 layout: fullwidth-page
 ---
-# search results
+# 検索結果
 <div id="page_content">
  <!-- #BeginEditable "content" -->
 

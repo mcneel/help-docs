@@ -1,2 +1,2 @@
-#### Advanced Editor
-Opens the [Advanced Material Properties](material-type-advanced.html) dialog box for more control over this material.
+#### 詳細エディタ
+このマテリアルをよりコントロールできる[詳細マテリアルのプロパティ](material-type-advanced.html)ダイアログボックスを開きます。

@@ -1,56 +1,55 @@
 ---
-title: Channels
+title: チャンネル
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}
 {: #channel}
-A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
+Flamingo nXt 5の非常に便利な機能に、8つのチャンネルの1つに光源を設定できることがあります。シーンの太陽や空を含むそれぞれの光源は、チャンネルに割り当てることができます。レンダリング時に、それぞれのチャンネルからの光はそれ自体の層に配置されます。レンダリングが終了すると、チャンネルの強度を変更することができます。チャンネルは再レンダリングする必要がなく、リアルタイムで変更されます。  
 
-Channels are very effective when:
+チャンネルは下の場合に非常に効果的です。
 
-* Trying to balance an HDRI Environment and the Sunlight.  Not all HDRI environments are calibrated.  It is useful to set the HDRi Sky on one channel and the Sun on another.  Then adjust the relative strength of the Sky light vs the sun after rendering.
-* Studio renderings that use a key, fill, and backlight setup. Set each light on a different channel, then adjust their strength real-time in the rendering using channels.
-* When using different banks of lights in an exterior or interior rendering.  Each bank of lights can be set on a channel and effectively have their own dimmer to control their strength.
-* Rendering with all the lights on, then turning off and on certain lights. No need to render an interior to create a night shot and a daytime rendering.
+* HDRI環境と太陽光のバランスを取ることを試みている場合。HDRI環境がすべて調整されるという訳ではありません。HDRiの空を1つのチャンネルに設定し、太陽を別のチャンネルに設定すると便利です。レンダリング後に空の光と太陽の強さの比を調整してください。
+* キー、フィル、バックライトを使用するスタジオレンダリングで。それぞれの光源を異なるチャンネルに設定し、チャンネルを使用してそれらの強さをレンダリングでリアルタイムで調整します。
+* 屋外または屋内レンダリングでいくつもの異なる光源（グループ）を使用する場合。それぞれの光源（グループ）はチャンネルに設定でき、照明調節を使って効果的に強さをコントロールすることができます。
+* すべての光源をオンにしてレンダリングし、その後に特定の光源をオン、オフにする場合。夜のシーンと昼のレンダリングを作成するのに分けて屋内をレンダリングする必要がありません。
 
-Once this image is rendered, each channel can be individually scaled either in the Render Window before saving or it can be saved to an .nXtImage file for later editing.
+シーンをレンダリングすると、それぞれのチャンネルは別々に、保存する前にレンダリングウィンドウで調整、または.nXtImageファイルに保存して後に編集することができます。
 
-Use channels to adjust the strength of lights relative to each other, not to brighten the whole image.  If you need to brighten the whole image at once, use the Adjust Image controls.
+イメージ全体を明るくするのではなく、それぞれの光源の強さをそれぞれに対して調整するのにチャンネルを使用してください。イメージ全体を一度に明るくする必要がある場合は、イメージ調整コントロールを使用してください。
 
-<!-- TODO: Find original video clip.It is probably best to embed it from Vimeo.-->
-Click to play video clip.
-<!-- TODO: Is this supposed to link to a video? -->
+<video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
+*クリックするとビデオが再生されます。*
 
-The following conditions are necessary to produce and manipulate a multi-channel image:
+マルチチャンネルイメージを作成するには、次の条件が必要です。
 
- 1. All participating lights must be on.
- 2. Each light source must be assigned to a channel. By default, Sun and Sky are set to channel 0, artificial lights are set to 1.
- 3. Immediately after rendering, use the Channel controls in the render window.
- 3. The only saved format that preserves this channel information is the .nXtImage format. Lighting can be adjusted there and then the image is saved to a bitmap format.
+ 1. 使用する光源はすべてオンにしてください。
+ 2. それぞれの光源をチャンネルに割り当ててください。デフォルトでは太陽と空はチャンネル0に、人工の光源は1に設定されます。
+ 3. レンダリング直後に、レンダリングウィンドウでチャンネルコントロールを使用します。
+ 3. このチャンネル情報を保存する形式は.nXtImageのみです。照明はそこで調整し、後にビットマップ形式でイメージを保存できます。
 
-## Setting Channels
+## チャンネルを設定する
 {: setting}
-The first step in setting up a muti-channel rendering is to set each light to channel. The channel number is usually set in each light property.  For information on setting specific lights to a channel see:
+複数のチャンネルを用いたレンダリングをセットアップするための最初のステップは、それぞれの光源をチャンネルに設定することです。チャンネル番号は通常、それぞれの光源のプロパティに設定されます。特定の光源をチャンネルに設定する方法の情報については、次を参照してください。
 
->[Sun Channel](sun-and-sky-tabs.html#sun-channel)
->[Sky Channel](sun-and-sky-tabs.html#sky-channel)
->[Artificial Light Channel](lights-tab.html#channel)
->[Material Glow](documentproperties-flamingo.html#channel)
+>[太陽チャンネル](sun-and-sky-tabs.html#sun-channel)
+>[空チャンネル](sun-and-sky-tabs.html#sky-channel)
+>[人工光源チャンネル](lights-tab.html#channel)
+>[マテリアルのグロー](documentproperties-flamingo.html#channel)
 
-Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
+複数の光源を同じ光源チャンネルに割り当てることができます。チャンネルの調整は乗算で行います。複数の光源が同じチャンネルに割り当てられている際、それらは調整中それぞれに対する相対的な強さを維持します。
 
-## Adjusting Channels
+## チャンネルを調整する
 {: adjusting}
-Lighting channels can be adjusted immediately after rendering, or in the Flamingo image editor if the rendering is saved as an nXtImage file.  Channels can be adjusted while Flamingo continues to render, but we recommend that you stop the rendering before making major adjustments.
+照明チャンネルは、レンダリング直後に調整できます。レンダリングがnXtImageファイルとして保存されている場合は、Flamingoのイメージエディタで調整できます。チャンネルは、Flamingoがレンダリングを続行中でも調整できますが、大幅な調整を行う場合は、まずレンダリングを停止することをお勧めします。
 
-#### Where can I find Flamingo Lighting control?
-The channel controls are found on the Flamingo nXt tab in the [render window](render-window.html) under Channels.
+#### Flamingo照明コントロールの位置
+チャンネルのコントロールは、[レンダリングウィンドウ](render-window.html)のFlamingo nXtタブの「チャンネル」にあります。
 
-There are eight channel controls 0-7. Only the channels that have lights on them will activate.
+チャンネルのコントロールは、0から7までで、合計8つあります。光源が設定されているチャンネルのみがアクティブになります。
 
 ![images/channel-slider.png](images/channel-slider.png)
-Each channel has a slider and a spinner value.  The spinner value represents the maximum value of the slider. If the slider is all the way to right, then the full value of the spinner is used to multiply the lighting amounts on that channel.  It follows that the slider at 50% will multiply all the lighting on that channel layer by half the spinner amount.  A slider slid all the way to the left will turn off all the lighting on that channel.
+それぞれのチャンネルには、スライダとスピナ値があります。スピナ値は、スライダの最大値を表します。スライダが一番右に設定されている場合、スピナの最大の値がそのチャンネルの照明量を乗算するのに使用されます。スライダが50%の位置にある場合、そのチャンネル層のすべての照明はスピナ量の半分で乗算されます。スライダが一番左に設定されている場合、そのチャンネルのすべての照明はオフになります。
 
-The value of the spinner can be very important.  Because Sun and Sky can be many times brighter then artificial lights, the spinner value on artificial lights  might need to be increased to 20 or 50 to see any difference.
+スピナの値は重要です。例えば、太陽と空は、人工の光源よりも何倍も明るいので、人工の光源のスピナ値は20や50などに増やさないと違いが分からないことがあります。
 
-After adjusting the channels correctly, then save the image as a JPG or PNG file as the final rendering.
+チャンネルを正しく調整した後は、イメージを最終レンダリングとしてJPGまたはPNGファイルで保存してください。

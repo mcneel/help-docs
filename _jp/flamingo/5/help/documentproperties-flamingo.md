@@ -1,69 +1,69 @@
 ---
-title: Document Properties Flamingo nXt
+title: ドキュメントのプロパティ - Flamingo nXt
 ---
 
 
 # ![images/options.svg](images/options.svg) {{page.title}}
-These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
+これらの設定は、現在のモデルのみに適用されます。レンダリングの質を上げようとすると時間がかかり、速くレンダリングしたければ高い品質は望めません。
 
-#### Where can I find this command?
+#### コマンドの位置
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
- 1. Command > EnvironmentEditor
+ 1. ![images/icon-render.png](images/icon-render.png)レンダリングツールツールバー > ![images/environments.png](images/environments.png) マテリアルエディタ
+ 1. ![images/menuicon.png](images/menuicon.png)メニュー > レンダリングプルダウン > 環境エディタ
+ 1. コマンド > EnvironmentEditor
 
-## Materials
+## マテリアル
 {: #materials}
-Use these controls to quickly change how Flamingo renders the surfaces in a rendering.  These settings will not change the material assignments on the objects and layers, but will change how Flamingo produces the color of each surface.
+これらのコントロールを使用すると、Flamingoのサーフェスのレンダリングの方法を簡単に変更することができます。これらの設定はオブジェクトやレイヤへのマテリアルの割り当ては変更しませんが、Flamingoのそれぞれのサーフェスの色の生成方法を変更します。
 
-#### Use materials
+#### マテリアルを使用
 {: #use-materials}
-Renders using materials created in Flamingo nXt and Rhino materials. Objects that have no material assignment render white. If neither the Use materials or the Use Object colors is checked, then all the objects will render white.
+Flamingo nXtとRhinoのマテリアルで作成されたマテリアルを用いてレンダリングします。マテリアルを割り当てられていないオブジェクトは、白でレンダリングされます。マテリアルを使用にもオブジェクト色を使用にもチェックマークが付けられていない場合、すべてのオブジェクトは白でレンダリングされます。
 
-#### Use object color
+#### オブジェクト色を使用
 {: #use-object-color}
-Renders using the colors assigned through Rhino object or layer color. Note : Both Use materials and Use object color can be checked. In this case, objects that have materials assigned will use those materials. Other objects will render using their object or layer color.
+Rhinoのオブジェクトまたはレイヤ色を用いて割り当てられた色を用いてレンダリングします。 メモ:　マテリアルを使用とオブジェクト色の両方をチェックすることもできます。この場合、マテリアルを割り当てられたオブジェクトはそれらのマテリアルを使用します。その他のオブジェクトは、それらのオブジェクトまたはレイヤ色を用いてレンダリングされます。
 
-#### Glow Channel
+#### グローチャンネル
 {: #channel}
-Materials that contain any level of glow will light up, but will not illuminate other objects. (Tag the object as a light to illuminate other objects.)  Set the Glow on a Channel, allowing the brightness of the glow to be adjusted after rendering without re-rendering.
+グローが含まれているマテリアルは光りますが、他のオブジェクトは照らされません。（他のオブジェクトを照らす場合は、オブジェクトを光源としてタグ付けしてください。）チャンネルにグローを設定します。グローの明るさをレンダリング後に再レンダリングすることなしに調整することができます。
 
-## Bounces
+## バウンス
 {: #bounces}
-When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are two low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
+レイ（光線）がシーンに入ると、消えてなくなる前に何度かバウンスし（跳ね返り）ます。バウンスの数を制限すると、レンダリングの速度が上がります。しかし、値が低すぎる場合、効果が現れないか、黒くなってしまいます。通常、デフォルトの値が多くの場合適切ですが、変更が必要な場合もあります。
 
-#### Reflective
+#### 反射
 {: #reflective-bounces}
-Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times. Increase this number of there is a view that is looking at a reflective surface that bounces off an adjacent reflective and the reflections start to go completely black.
+反射の段階数を設定します。言い換えれば、光線（レイ）がオブジェクトに反射する回数です。設定が０の場合、反射はオフになります。値が大きいほどレンダリング時間が長くなります。反射性サーフェスがあり、そのサーフェスによって反射される光が隣接する別の反射性サーフェスによって反射される場合で、反射が黒くなってしまう場合、この値を増やしてください。
 
-#### Refractive
+#### 屈折
 {: #refractive-bounces}
-Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times. Increase this number of there is a view that looks through many layers and ultimately looks black and not look transparent.
+屈折の段階数を設定します。言い換えれば、光線（レイ）がオブジェクトで屈折する回数です。設定が０の場合、屈折はオフになります。値が大きいほどレンダリング時間が長くなります。何層にも渡って屈折を繰り返す場合で、黒く見える場合（透明に見えない場合）、この値を増やしてください。
 
-#### Indirect
+#### 間接光
 {: #indirect-bounces}
-Determines how many levels of indirect light are permitted; in other words, how many times an indirect light ray will bounce off objects. A setting of 0 disables reflections. Higher values cause longer rendering times.
+間接光の段階数を設定します。言い換えれば、間接光線（レイ）がオブジェクトで跳ね返る回数です。設定が０の場合、反射はオフになります。値が大きいほどレンダリング時間が長くなります。
 
-## Indirect lighting
+## 間接照明
 {: #indirect-settings}
-The indirect lighting settings only effect the rays that bounce off one surface an carry light to another surface.
+間接照明設定は、1つのサーフェスから反射し、別のサーフェスに光を運ぶレイ（光線）のみに影響します。
 
-#### Color Bleed
+#### カラーブリード
 {: #color-bleed}
-Color bleed controls the amount of color transferred in a indirect bounce of light from one surface to another.  By default this is set to the maximum value to increase dynamics in the rendering.  
+カラーブリードは、1つのサーフェスから別のサーフェスへの光の間接的なバウンス（跳ね返り）の色移りの量をコントロールします。  
 
-#### Monte Carlo Reflections
+#### モンテカルロ反射
 {: #monte-carlo}
-Monte Carlo in indirect lighting controls how Flamingo samples indirect light. When activated, the indirect light will become very noisy in the early passes.  But over all, as the passes progress, the overall effect of Monte Carlo indirect will be a more subtle and potentially more detail indirect effect. Scenes that rely heavily on indirect light may benefit from Mote Carlo indirection reflections.
+間接照明でのモンテカルロ反射は、Flamingoが間接光をサンプルする方法をコントロールします。この設定をオンにすると、初期のパスでは間接光にノイズが多く含まれますが、いくつかのパスを繰り返す間に次第に全体のモンテカルロの間接効果がわずかになり、より細かい間接効果を得られる可能性があります。主に間接光を活用するシーンには、モンテカルロ間接反射が便利になる可能性があります。
 
-## Miscellaneous
+## その他
 
-#### Use lights on layers that are off
+#### オフレイヤの光源を使用
 {: #uselightsonlayersthatareoff}
-Uses lights on layers that are turned off and hidden lights.
+非表示の光源や非表示のレイヤにある光源も使用してレンダリングします。
 
-### Render constraints
+### レンダリング停止条件
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}

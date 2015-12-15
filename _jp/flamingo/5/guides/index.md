@@ -1,74 +1,49 @@
 ---
 layout: fullwidth-page
+title: ガイドの索引
 ---
 
-# Flamingo nXt 5®をはじめるにあたって
- 
-## インストール
+# Getting Started with Flamingo nXt®をはじめるにあたって
 
-Flamingo 5 ベータには、以前のバージョンのFlamingo nXtがインストールされていることが必要です。
-Flamingo nXt 5を実行するには、Rhino 5 サービスリリース12が必要です。
-RHIインストーラをダウンロード、実行後にRhinoを起動してください。
-起動についてのメモ
+## 最初のチュートリアル
+* [最初のレンダリングチュートリアル]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/getting-started-tutorial.html)
+* [スタジオ照明のヒント]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
 
-このバージョンのFlamingoはインターフェイスがRhino 5のレンダリングツールと統合されます。そのため、レンダリングのインターフェイスにはいくつかの必要な変更が加えられています。最初にFlamingoを起動する際は、Flamingoのインターフェイスを下の操作を行って表示させてください。
-
-レンダリングプルダウン > Flamingo nXt 5 > コントロールパネルを表示を選択します。Flamingoのコントロールパネルが表示されます。
-Flamingo nXtタブには、Flamingo特有のコントロールが表示されます:
-空
-光源マネージャ
-カスタム照明コントロール
-レンダリングオプション
-コントロールパネルのタブ領域を右クリックすると下のようなパネルを選択することができます:
-ライブラリ
-環境
-地平面
-その他…
- 
 ## Flamingoのコントロールパネルを表示するには
   * **Flamingo nXt**メニューの**コントロールパネル**をクリックします。
 
-  ## Flamingo nXtのコントロールパネル
+## Flamingo nXtのコントロールパネル
 **Flamingo nXt**の**コントロールパネル**には、レンダリングのためにモデルを設定するためのタブが表示されます:
 
- *  [マテリアル](..\materials\materials-tab.html) 
- *  [照明](../lighting/lighting-tab.html) 
- *  [環境](../environment/environment-tab.html) 
- *  [レンダリング](../render/render-tab.html) 
+ *  [マテリアル]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
+ *  [照明]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
+ *  [環境]({{site.baseurl}}/{{page.language}}/flamingo/5/help/environment-tab.html)
+ *  [レンダリング]({{site.baseurl}}/{{page.language}}/flamingo/5/help/render-tab.html)
 
 ## レンダリングの基礎
- 
+
 完成したモデルのレンダリングは次の4つの基本手順で行います。
 
- *  [マテリアルの設定](..\materials\materials-tab.html) 
- *  [照明の設定](../lighting/lighting-tab.html) 
- *  [環境の設定](../environment/environment-tab.html) 
- *  [レンダリング条件の設定](../render/render-tab.html) 
+ *  [マテリアルの設定](..\materials\materials-tab.html)
+ *  [照明の設定](../lighting/lighting-tab.html)
+ *  [環境の設定](../environment/environment-tab.html)
+ *  [レンダリング条件の設定](../render/render-tab.html)
 
 #### レンダリングを開始するには
 
- * **レンダリング**または**Flamingo nXt**メニューの**レンダリング**をクリックします。
+ * **レンダリング**メニューの**レンダリング**をクリックします。
 - または -
 
  * **標準**ツールバーの**レンダリング**ボタンをクリックします。
 
 ### レンダリングを停止
- 
-
-デフォルトで、レンダリングプロセスは**レンダリングを停止**ボタンをクリックするまでパス毎にイメージのリファイン（より詳細なレンダリング）を続けます。このボタンを使うと、時間と質のバランスを取ることができます。レンダリングを長く続けるほど、完全に収束した「正しい」結果に近づきます。レンダリングはいつでも好きな時に中止することができます。
 
 
-###  <kbd>レンダリングを再開</kbd> 
- 
+デフォルトで、レンダリングプロセスは**レンダリングを停止** ![images/stop.png](images/stop.png)ボタンをクリックするまでパス毎にイメージのリファイン（より詳細なレンダリング）を続けます。このボタンを使うと、時間と質のバランスを取ることができます。レンダリングを長く続けるほど、完全に収束した「正しい」結果に近づきます。レンダリングはいつでも好きな時に中止することができます。
 
-**レンダリングを停止**ボタンをクリックすると、現在処理中のパスが完了した後にレンダリングが停止されます。
-
-レンダリングが停止すると、ボタンの表示は**レンダリングを再開**に変わります。レンダリング停止条件で設定した時間またはパスの数に達する前にレンダリングを停止した場合、**レンダリングを再開**ボタンを押すとレンダリングが続行されます。
 
 自動停止条件を設定するには、[レンダリングウィンドウ](..\render\render-window.html)または[ドキュメントのプロパティ &gt; Flamingo nXt](..\render\documentproperties-flamingo.html)の[パスの数](..\render\render-window.html#number-of-passes)または[時間](..\render\render-window.html#time)を使用します。
 
 &#160;
 
 改訂: 22-Dec-2011年12月22日 14:45
-
-

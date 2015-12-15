@@ -1,192 +1,192 @@
 ---
-title: Sun and Sky
+title: 太陽と空
 ---
 
 # ![imagessun.svg](images/sun.svg) {{page.title}}
-The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Automode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
+[太陽](#sun)と[空](#sky)は、お互いに密接に関係があります。太陽は自動モードで空の明るさを変更することができます。太陽がオンで、空がHDRIの場合、この2つの強弱の釣り合いを取るのが重要です。
 
-## Sun
+## 太陽
 {: #sun}
-The Sun is a powerful invisible parallel light. Factors simulating real-world conditions such as latitude and longitude, time of day, and season control the Sun's direction and brightness.
+太陽表示されない強い平行光源です。太陽の方向と明るさは実世界の状況をシミュレートする緯度と経度、その日の時刻、季節などの要素でコントロールされます。
 
-This help topic reviews the Flamingo Sun control.  The [Rhinoceros Sun](http://docs.mcneel.com/rhino/5/help/en-us/commands/sun.htm) control may also be used to place the sun.  Flamingo will keep the two sun controls in sync.
+このヘルプトピックは、Flamingoの太陽コントロールについて詳しく述べます。[Rhinocerosの太陽](http://docs.mcneel.com/rhino/5/help/en-us/commands/sun.htm)コントロールも太陽を配置するのに用いることができます。Flamingoは、これら2つの太陽コントロールを同じに合わせます。
 
-##### Where can I find Flamingo Sun control?
+##### Flamingo太陽コントロールの位置
 
-The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+太陽は、[照明プリセット](lighting-tab.html#lighting-presets)または[カスタム照明設定](lighting-tab.html#sun)を通してアクティブにします。
 
-* ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
+* ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXtツールバー
+* ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXtタブ > 太陽
 
-**Note:** The Sun tab will only be visible if the Sun is activated through a Lighting Preset.
+**メモ:** 照明プリセットで太陽がオンになっている場合のみ、太陽タブが表示されます。
 
-Solar angles are required to perform sunlight calculations. There are two ways to specify the sun direction: by date, time, and place; and by direct angle. Use date, time, and place positioning to simulate the real sun in a study of your model's site. Direct sun angle controls the light angle without reference to a real sun. Use the direct sun angle to try lighting effects.
+太陽光の計算を行うためには太陽の角度が必要です。太陽の方向を指定するには2つの方法があります。日付と時刻、場所で指定する方法と、直接角度で指定する方法です。モデルの場所のシミュ レーションで、実際の太陽の効果を確かめたい場合、日付と時刻、場所を用いるとよいでしょう。直接角度を指定する方法は、実世界の太陽と関係なく光の角度をコントロールします。照明効果を試すには、直接角度を指定する方法を使用してください。
 
 ![images/sydneymorning.png](images/sydneymorning.png)  ![images/stockholmmorning.png](images/stockholmmorning.png)
-*Sydney, Australia, 21-June, 09:30 (on the left). Stockholm, Sweden, 21-June, 09:30 (on the right).*
+*6月21日の午前9時半、オーストラリアのシドニー（左）、6月21日の午前9時半、スウェーデンのストックホルム（右）*
 
-### Set azimuth and altitude
+### 方位角と高度を設定
 {: #set-azimuth-and-altitude}
-Use solar angles to manually set the sun's direction. Enables [Azimuth](#azimuth) and [Altitude](#altitude) controls.
+太陽の方向を手動で設定するのに太陽の角度を使用します。[方位角](#azimuth)と[高度](#altitude)のコントロールが使用できるようになります。
 
-#### Azimuth
+#### 方位角
 {: #azimuth}
-Sets the sun's direction in angle degrees from North (0) in the horizontal plane.  The circular map shows the world in a plan view.
+水平面の北（0）からの角度で太陽の方向を設定します。円形の図は、平面図でのワールドを表示します。
 
-#### Altitude
+#### 高度
 {: #altitude}
-Sets the sun's height in the sky in angle degrees from the Equator (0).  The half circle map simulates a section through the vertical direction of the world coordinates.
+赤道（0）からの角度で太陽の空での高度を設定します。半円形の図は、ワールド座標の垂直方向を通る断面をシミュレートします。
 
-### Set location on Earth
+### 地球上の位置を設定
 {: #set-location-on-earth}
-Use the sun angle calculator to place the sun based on Date, Time, Location.  **Note:** As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
+太陽角度計算機を使用して、日付、時刻、位置に基づいて太陽を配置します。  **メモ:** どの太陽計算機とも同じように、太陽の位置の精度は変わることがあります。絶対精度が必要な場合、太陽の位置を確認するようにしてください。  
 
-#### Date
+#### 日付
 {: #date}
-Specifies the date.
+日付を指定します。
 
-#### Time
+#### 時刻
 {: #time}
-Specifies the local time of day.
+現地時刻を指定します。
 
-#### Daylight savings time
+#### 夏時間
 {: #daylight-savings-time}
-Sets the time forward by one hour.
+1時間進めた時刻を設定します。
 
-#### Latitude/Longitude
+#### 緯度/経度
 {: #latitude-longitude}
-Enter a latitude and longitude or pick a location on the map.
-The numbers will also update to display the latitude and longitude of a location picked on the map with the mouse cursor.
+緯度と経度を入力するか、地図で位置をピックします。
+緯度と経度の値は、マウスカーソルで地図をクリックした位置の値に更新されます。
 
-#### Time zone
+#### タイムゾーン
 {: #time-zone}
-Displays the time zone based on Latitude and Longitude for the current location.
+緯度と経度に基づいて現在の位置のタイムゾーンを表示します。
 
-#### City list
+#### 都市のリスト
 {: #city-list}
-Use this to select a major city to set the location.
+このリストの都市を選択して位置を設定します。
 
-#### Map
+#### 地図
 {: #map}
-Click the map to specify a location. Drag with the left mouse button to pan the map.
+地図をクリックして位置を指定します。地図をパンする場合は、左マウスボタンでドラッグします。
 
-### Sun intensity
+### 太陽の強度
 {: #sun-intensity}
-Modifies the brightness of the sun (direct) daylight component. The intensity of sun is automatically calculated based on solar angles and sky conditions, but can be modified to balance with other lights.
+昼光光源の太陽光（直射光）要素の明るさを変更します。太陽の角度と空の状況に基づいて、太陽光の強度は自動的に計算されますが、他の光源とバランスを取るため変更することもできます。
 
-### Sun highlight
+### 太陽ハイライト
 {: #sun-highlight}
-The sharpness of the sun highlight.
+太陽のハイライトのシャープさの度合いです。
 
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
-*Sun highlight=0 (left) and 1 (right).*
+*太陽ハイライト=0（左）、1（右）*
 
-**Note:** Solar highlight artifacts can sometimes be seen on exterior renderings when the Sun highlight setting is used. To mitigate or eliminate this artifact, set the Sun highlight to a smaller value.
+**メモ:** 太陽ハイライト設定を用いると、時として屋外のレンダリングに日光のハイライトのアーチファクトが見られることがあります。このアーチファクトを軽減、もしくはなくすには、太陽ハイライトを小さな値に設定します。
 {: #speckle-artifacts}
 
 {% include_relative snippets/snippet-sunchannel.md %}
 
-#### North Direction
+#### 北の方向
 {: #north}
-**Note:** North is the World Y direction.
+**メモ:** 北はワールドY方向です。
 
-## Sky
+## 空
 {: #sky}
-The Sky is a large sphere around the rendering that can be used for lighting. The Sky is very different from environment.  Sky controls lighting. Environment controls what is reflected and visible in the background. There are many situations where the Sky and Environment might be set differently.
+空は、照明に使用できるレンダリングの周りの大きな球です。空は環境とは非常に異なります。空は照明をコントロールします。環境は何が背景に表示され、反射されるのかをコントロールします。空と環境を異なる設定にするケースは多くあります。
 
-#### Where can I find Flamingo Sky control?
-The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sky).
+#### Flamingo空コントロールの位置
+空は、[照明プリセット](lighting-tab.html#lighting-presets)または[カスタム照明設定](lighting-tab.html#sky)を通してアクティブにします。
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sky
+ 1. ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXtツールバー
+ 1. ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXtタブ > 空
 
-The lighting preset schemes for [Exterior](lighting-tab.html#exterior-daylight) and [Interior](lighting-tab.html#interior-daylight) daylight use the Automatic sky by default. The [Studio](lighting-tab.html#studio-lighting) lighting preset scheme uses HDR image lighting by default.
+[屋外](lighting-tab.html#exterior-daylight)と[屋内](lighting-tab.html#interior-daylight)昼光の照明プリセットスキームは、デフォルトで自動設定の空を使用します。[スタジオ](lighting-tab.html#studio-lighting)照明プリセットスキームは、HDR画像照明をデフォルトで使用します。
 
-Sky can be set five ways:
+空は5つの方法で設定できます。
 
->[Off](lighting-tab.html#off)
->[Automatic Sky](#automatic-sky)
->[High Dynamic Range Image (HDRI)](#high-dynamic-range-image-sky)
->[Color](#color-sky)
->[Image](#image-sky)
+>[オフ](lighting-tab.html#off)
+>[空の自動設定](#automatic-sky)
+>[ハイ・ダイナミック・レンジ・イメージ（HDRI）](#high-dynamic-range-image-sky)
+>[色](#color-sky)
+>[画像](#image-sky)
 
-The two best settings for sky lighting types are [HDR image](#high-dynamic-range-image-sky) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
+2つの最良の空照明のタイプの設定は、[HDR画像](#high-dynamic-range-image-sky)の空と[自動設定の空](#automatic-sky)です。。HDR画像の空は、光と反射を表現する、それぞれのピクセルに照明値を格納する画像を使用します。自動設定の空は、実世界の太陽の位置と雲量を用いて空を模倣します。これらの設定は、最もダイナミックなレンダリングを作り出します。
 
-### Automatic Sky
+### 空の自動設定
 {: #automatic-sky}
-Automatic sky uses settings from the [Sun tab](sun-and-sky-tabs.html) to specify the color range and intensity of the skylight.  For instance, when the sun is high in the sky, the lighting and colors of the sky are very different than when the sun is low in the sky.
+空の自動設定は、[太陽タブ](sun-and-sky-tabs.html)の設定を用いて、スカイライト（天空光）の色の範囲と強度を指定します。例えば、太陽が空の高い位置にある場合、空の明るさや色は太陽が空の低い位置にある場合ととても異なります。
 
 ![images/sky-002.png](images/sky-002.png)
-*Automatic sky: sun high (left) and low (right) in the sky.*
+*自動設定の空: 空の高い位置にある太陽（左）、空の低い位置にある太陽（右）*
 
-#### Cloudiness
+#### 雲量
 {: #sky-cloudiness}
-When Cloudiness is turned off, the sky is considered clear and strong shadows are created. The greater the cloudiness, the less contrast there will be between the light and shadows. Greater cloudiness will create lighter shadows and a more even lighting effect. The Cloudiness setting affects many aspects of the daylight calculation, including the relative amounts of direct vs. indirect lighting, the way indirect lighting is calculated, and the background color if Automatic Sky mode has been selected. The Cloudiness setting varies from 0 (clear) to 1 (completely overcast). The cloudiness settings around 0.35 - 0.50 is a very sensitive and dynamic range.
+雲量がオフの場合、空は晴れ渡っていると考えられ、強い影が作り出されます。雲量が高ければ高いほど、明るいところと影の部分のコントラストが低くなります。また、影は薄くなり、均等な照明効果が作り出されます。雲量設定は、直接光と間接光の相対量、間接光の計算方法、空の自動設定が選択された場合の背景色など、昼光の計算のいろいろな要素に影響します。雲量は、0（晴天）から1（完全に雲に覆われた空）の間の値で設定できます。雲量が約0.35 - 0.50だと、非常に繊細でダイナミックな範囲です。
 
 ![images/cloudiness0.png](images/cloudiness0.png)
-*Cloudiness 0 (left) and 1 (right).*
+*雲量0（左）、雲量1（右）*
 
-#### Sky intensity
+#### 空の強度
 {: #sky-intensity}
-Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified. **Note:** This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+昼光光源の天空光（間接光）要素の明るさを変更します。太陽の角度と空の状況に基づいて、天空光の強度は自動的に計算されますが、変更することもできます。 **メモ:** この設定は、シーンに補正しなければならない他の光源がある場合のみに関係します。他に光源がない場合、トーンマッピングが露出を補正し、レンダリングイメージはこの設定によって明るくなったり暗くなったりすることはありません。
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### High-Dynamic-Range Image Sky
+### ハイ・ダイナミック・レンジ画像の空
 {: #high-dynamic-range-image-sky}
-A [high-dynamic-range (HDR or HDRI)](https://en.wikipedia.org/wiki/High-dynamic-range_imaging) image is a special 2-D image file. These images contain a much broader range of values at each pixel then standard image files, such as a .jpg or .png. This extra data can be used to light models. If the values contained in the HDR are accurate, then the lighting will be accurate. This can produce very dynamic lighting in a scene. The preset Studio Lighting scheme uses HDR images for the sky. If you are thinking of studio lighting as an indoor activity, think of the HDR image as a ceiling that emits light based on the colors in the image.
+[ハイ・ダイナミック・レンジ（HDRまたはHDRI）](https://en.wikipedia.org/wiki/High-dynamic-range_imaging)画像は、特殊な2D画像ファイルです。これらの画像は、各ピクセルで.jpgや.pngなどといった標準の画像ファイルよりもより広範囲の値を含みます。このより多くのデータはモデルの照明に用いられます。HDRに含まれた値が正確であれば、照明も正確です。これは非常にダイナミックな照明をシーンに作り出します。プリセットのスタジオ照明スキームは、空にHDR画像を使用します。スタジオ照明を屋内ですることと考えると、HDR画像は画像の色を基準に光を発する天井として考えるとよいでしょう。
 
 ![images/lighting-001.png](images/lighting-001.png)
-*HDRi lighting.*
+*HDRi照明*
 
-It is assumed that HDR images contain radiance values expressed in watts units. If this is not the case, the intensity of these HDR images may need to be adjusted in order to achieve proper illumination levels.
+HDR画像は通常ワットの単位で表された放射輝度値を含んでいますが、それが含まれていない場合、HDR画像の強度は適切な照明レベルを達成するために調整が必要なこともあります。
 
-In addition to the Sky, a different HDR image can be used for each of the three visible backgrounds: [Visible](environment-tab.html#advanced-background), [Reflected](environment-tab.html#advanced-background), and [Refracted](environment-tab.html#advanced-background) background.
+空に加え、異なるHDR画像を[表示](environment-tab.html#advanced-background)、[反射](environment-tab.html#advanced-background)、そして[屈折](environment-tab.html#advanced-background)の3つの表示背景のそれぞれに用いることもできます。
 
-#### HDRI Image
-Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
+#### HDRI画像
+HDR（HDRとHDRIは同じファイル形式）画像ファイルを指定します。異なるHDRIを選択するには、画像をクリックします。
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*Equarectangular projection.*
+*正距円筒図法*
 
-HDR images come in two projection types which let the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
+HDR画像は、画像を適切に球体の空に巻き付ける2種類の投影方法で提供されます。最も人気があるのは正距円筒図法です。これらの画像は、縦横比2:1の長方形です。正距円筒図法の画像の解像度は、画像全体に渡って似通っています。2つ目の投影は、球状投影です。球状のHDRI画像は、正方形で、画像は大きな曲率を表示します。球状投影は、解像度がつなぎ目（シーム）で 低くなります。
 
-#### Intensity
-Modifies the brightness of the HDR image light. This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+#### 強度
+HDR画像光源の明るさを変更します。この設定は、シーンに補正しなければならない他の光源がある場合のみに関係します。他に光源がない場合、トーンマッピングが露出を補正し、レンダリングイメージはこの設定によって明るくなったり暗くなったりすることはありません。
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
-*Low and high HDR intensity.*
+*HDR強度を低く設定（左）、HDR強度を高く設定（右）*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
+{% include_relative snippets/snippet-rotatehdrimage.md %}下のイメージでは、画像は太陽がオブジェクトに映るように回転されています。回転角度を入力するか、回転ウィジェットインジケータをインタラクティブに移動してください。
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
-*Image rotated so the sun appears on the object.*
+*オブジェクトに太陽が映るように画像を回転。*
 
-#### Saturation
-The color saturation for the light. Since the light from an HDR image is the color of the pixels in the image, this sometimes produces unwanted color effects. Set the saturation low if you want the light from the image, but not the color.
+#### 彩度
+光の彩度です。HDR画像からの光は、画像のピクセルの色なので、望まないような色効果が出る場合があります。色ではなく画像からの光を必要としている場合は彩度を低く設定してください。
 
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)
-*Low (left) and high (right) saturation.*
+*彩度を低く設定（左）、彩度を高く設定（右）*
 
 {% include_relative snippets/snippet-mirrorimage.md %}
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### Color
+### 色
 {: #color-sky}
-It is possible to use a color or gradient of color to light the scene. The colors in the sky are multiplied by the intensity value to give the colors a lighting value.
+色や色のグラデーションを使ってシーンを照らすことも可能です。空の色は、強度の値で乗算され、照明値を色に与えます。
 
-#### Intensity
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+#### 強度
+強度の値は、空の色を乗算し、結果を照明値にするために使用されます。色の範囲はチャンネル毎に0 - 256です。強度は、これらの値を乗算します。
 
-#### Color type
-There are three ways to control the color of the sky.  These are similar to the Color Environment controls.  See [Color Background](environment-tab.html#environment-color-and-gradient-backgrounds) controls for more information.
+#### 色のタイプ
+空の色をコントロールする方法には、3通りあります。これらは、色環境のコントロールに似通っています。詳細については、[色背景](environment-tab.html#environment-color-and-gradient-backgrounds)コントロールを参照してください。
 
-### Image
+### 画像
 {: #image-sky}
-It is possible to use an image to light the scene. The colors in the image are multiplied by the intensity value to give the colors a lighting value.
+画像を使ってシーンを照らすことも可能です。画像の色は、強度の値で乗算され、照明値を色に与えます。
 
-#### Intensity
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+#### 強度
+強度の値は、空の色を乗算し、結果を照明値にするために使用されます。色の範囲はチャンネル毎に0 - 256です。強度は、これらの値を乗算します。
 
-#### Image Projection
-There are many ways to control how an image is mapped to the sky.  These are similar to the Image Background controls.  See [Image Background](environment-tab.html#environment-image) controls for more information.
+#### 画像の投影
+画像を空にマップする方法は、何通りもあります。これらは、画像背景コントロールに似通っています。詳細については、[画像背景](environment-tab.html#environment-image)を参照してください。

@@ -1,38 +1,38 @@
 ---
-title: Automated rendering
+title: レンダリングの自動化
 ---
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
+Flamingoのマテリアルは、一連のプロパティグループで定義されます。これらは一般的に使用されるシンプルなマテリアルのタイプの一連です。これらのマテリアルは、非常にシンプルなコントロールセットを表示します。それによって、多数のコントロールを設定することなしに、一般的なプロパティを簡単に編集して、マテリアルの外見を変えることができます。ほとんどのシンプルなマテリアルは、単に色を変更するだけで希望する効果が得られます。
 
-#### Simple Material Types:
+#### シンプルなマテリアルのタイプ
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Solid Color](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastic](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metal](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[Glass](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Glossy](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[単色](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[プラスチック](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[金属](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png)[ガラス](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png)[光沢](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[クリアフィニッシュ](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingoテクスチャ](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[テクスチャセット](#texture-set)
 
-Any material can be converted to an advanced material.  Advanced materials present all the possible controls to edit a material in Flamingo nXt.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
+マテリアルはすべて詳細マテリアルに変換することができます。詳細マテリアルでは、Flamingo nXtでマテリアルの編集を行うためのすべての可能なコントロールが使用できます。マテリアルの幅広いコントロールを利用するには、詳細マテリアルを使うか、既存のマテリアルを詳細マテリアルに変換してください。
 
-#### Advanced Materials are comprised of these property groups:
+#### 詳細マテリアルは、これらのプロパティグループから構成されています。
 
-> [Name](material-type-advanced.html#name)
-> [Material Procedure](material-type-advanced.html#procedures)
-> [Advanced Material Properties](material-type-advanced.html#advanced-materials-properties)
-> [Reflective Finish](material-type-advanced.html#reflective-finish-and-highlight)
-> [Transparency Properties](material-type-advanced.html#transparency)
-> [Procedural Textures](material-type-advanced.html#bump-patterns)
-> [Bitmap Textures](material-type-advanced.html#textures)
-> [Notes](material-type-advanced.html#notes)
+> [名前](material-type-advanced.html#name)
+> [マテリアルプロシージャ](material-type-advanced.html#procedures)
+> [詳細マテリアルのプロパティ](material-type-advanced.html#advanced-materials-properties)
+> [反射仕上げ](material-type-advanced.html#reflective-finish-and-highlight)
+> [透明度のプロパティ](material-type-advanced.html#transparency)
+> [プロシージャルテクスチャ](material-type-advanced.html#bump-patterns)
+> [ビットマップテクスチャ](material-type-advanced.html#textures)
+> [注記](material-type-advanced.html#notes)
 
-Materials are saved and stored in the Rhino model. Unique materials can have the same name in different Rhino models.
+マテリアルはRhinoのモデルに保存、格納されます。それぞれのマテリアルは異なるRhinoのモデルで同じ名前を持つことができます。
 
-## Solid Color
+## 単色
 {: #solid-color}
-Solid Color materials have only a [name](material-type-advanced.html#name) and a [color](material-type-advanced.html#color).
+単色マテリアルには、[名前](material-type-advanced.html#name)と[色](material-type-advanced.html#color)だけが表示されます。
 
 ![images/solidcolors.png](images/3-solidcolor.png)
 
@@ -40,108 +40,108 @@ Solid Color materials have only a [name](material-type-advanced.html#name) and a
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %}
 
-## Plastic
+## プラスチック
 {: #plastic}
-Plastic materials are slightly reflective with a white [highlight](material-type-advanced.html#highlight-color).
+プラスチックマテリアルには、白い[ハイライト](material-type-advanced.html#highlight-color)、わずかな反射性があります。
 
 ![images/solidcolors.png](images/3-plastic.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 予め設定されている[ハイライト色](material-type-advanced.html#highlight-color)、[強度](material-type-advanced.html#intensity)、[フレネル](material-type-advanced.html#fresnel)、[シャープネス](material-type-advanced.html#sharpness)を変更したい場合は、詳細エディタを使用します。
 
-## Metal
+## 金属
 {: #metal}
-Metal materials have a highlight whose color matches the [color](material-type-advanced.html#color). You can also control the [Sharpness](material-type-advanced.html#sharpness) of the reflection.
+金属マテリアルには、[色](material-type-advanced.html#color)の設定と一致する色でハイライトが設定されています。反射の[シャープネス](material-type-advanced.html#sharpness)をコントロールすることもできます。
 
 ![images/solidcolors.png](images/3-metal.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### シャープネス
+反射のシャープネス対ブラーの度合をコントロールします。詳細については、詳細の[シャープネス](material-type-advanced.html#sharpness)のトピックを参照してください。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 予め設定されている[ハイライト色](material-type-advanced.html#highlight-color)、[強度](material-type-advanced.html#intensity)、[フレネル](material-type-advanced.html#fresnel)、[タイプ](material-type-advanced.html#type)を変更したい場合は、詳細エディタを使用します。
 
-## Glass
+## ガラス
 {: #glass}
-Glass materials have a [color](material-type-advanced.html#color) and an [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) (IOR).
+ガラスマテリアルは、[色](material-type-advanced.html#color)と[屈折率](advanced-material-properties-main.html#index-of-refraction)（IOR）があります。
 
 ![images/solidcolors.png](images/3-glass.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Index of Refraction
-Controls the amount light bends through the material. See Advanced [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) topic for more details.
+#### IOR
+マテリアルを通過する際の光の屈折量をコントロールします。詳細については、詳細の[屈折率](advanced-material-properties-main.html#index-of-refraction)を参照してください。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Sharpness](material-type-advanced.html#sharpness) and [Transparency](material-type-advanced.html#transparency)
+{% include_relative snippets/snippet-material-advanced-editor.md %} 予め設定されている[ハイライト色](material-type-advanced.html#highlight-color)、[強度](material-type-advanced.html#intensity)、[フレネル](material-type-advanced.html#fresnel)、[シャープネス](material-type-advanced.html#sharpness) and [透明度](material-type-advanced.html#transparency)を変更したい場合は、詳細エディタを使用します。
 
-## Glossy
+## 光沢
 {: #glossy}
-Glossy materials generally have a low Highlight [Intensity](material-type-advanced.html#intensity) and [Sharpness](material-type-advanced.html#sharpness).
+光沢マテリアルには通常ハイライト[強度](material-type-advanced.html#intensity)と[シャープネス](material-type-advanced.html#sharpness)が低く設定されています。
 
 ![images/solidcolors.png](images/3-glossy.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
-Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### 強度
+サーフェス上の光源からのハイライトの強度をコントロールします。詳細については、詳細の[強度](material-type-advanced.html#intensity)のトピックを参照してください。
 
-#### Highlight Sharpness
-Controls sharpenss vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### ハイライトシャープネス
+サーフェス上の光源からのハイライトスポットのシャープネス対ブラーの度合コントロールします。詳細については、詳細の[ハイライトシャープネス](material-type-advanced.html#sharpness)のトピックを参照してください。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 予め設定されている[フレネル](material-type-advanced.html#fresnel)と[タイプ](material-type-advanced.html#type)を変更したい場合は、詳細エディタを使用します。
 
-## ClearFinish
+## クリアフィニッシュ
 {: #clearfinish}
-The ClearFinish material simulates car paint, porcelain, ceramics, varnished woods, or any material with a plastic or clear-coat layer. ClearFinish uses the [Fresnel](material-type-advanced.html#fresnel) setting to change the material color based on angle to the view. These materials tend to be a deep color when looked at straight on, but as the surface curves away from the view, they become more and more reflective. Car paints with a clear-coat or clear lacquer finishes are good examples.
+クリアフィニッシュマテリアルは、車の塗料（ペイント）、磁器（ポーセリン）、陶磁器（セラミック）、ニスを塗った木材、その他のプラスチックまたはクリアコーティング層のあるマテリアルをシミュレートします。クリアフィニッシュは、視点に基づいたマテリアルの色の変化に[フレネル](material-type-advanced.html#fresnel)設定を用います。これらのマテリアルの色は、正面から見た場合、濃くなる傾向があります。しかし、サーフェスの曲面に沿って視点をずらしていくと、反射が強くなっていきます。クリアコーティング、またはクリアラッカー仕上げのあるカーペイントが、よい例です。
 
 ![images/solidcolors.png](images/3-clearfinish.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 予め設定されている[ハイライト色](material-type-advanced.html#highlight-color)、[強度](material-type-advanced.html#intensity)、[フレネル](material-type-advanced.html#fresnel)、[シャープネス](material-type-advanced.html#sharpness)を変更したい場合は、詳細エディタを使用します。
 
-## Flamingo Textured
+## Flamingo テクスチャ
 {: #flamingo-textured}
-Textured materials use images to create colors and patterns. The image name, resolution, tile size, and highlight intensity and sharpness are controllable from this simple material.
+テクスチャマテリアルは、画像を用いて色やパターンを作成します。このシンプルなマテリアルから、画像名、解像度、タイルのサイズ、そしてハイライトの強度とシャープネスをコントロールすることができます。
 
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
-Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### 強度
+サーフェスの鏡のような反射の強度をコントロールします。詳細については、詳細の[強度](material-type-advanced.html#intensity)のトピックを参照してください。
 
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### シャープネス
+反射のシャープネス対ブラーの度合をコントロールします。詳細については、詳細の[シャープネス](material-type-advanced.html#sharpness)のトピックを参照してください。
 
-#### Image
-Set the image map and properties of the material. There are many options here. See the Advanced [Images](material-type-advanced.html#texture) topic for more details.
+#### 画像
+マテリアルの画像マップとプロパティを設定します。多くのオプションがあります。詳細については、詳細の[画像](material-type-advanced.html#texture)を参照してください。
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material.
+{% include_relative snippets/snippet-material-advanced-editor.md %} マテリアルに予め設定されている内容を変更したい場合は、詳細エディタを使用します。
 
-## Texture Set
+## テクスチャセット
 {: #texture-set}
-[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these set of textures.
+[テクスチャセットマテリアル](texture-set-materials.html)は、ディスプレイスメント、法線、バンプマップなどの情報を含むサードパーティのテクスチャマップをサポートします。ディスプレイスメントマップは、マテリアルに深さを与えます。これらのテクスチャマップをセットとして組み合わせると、非常にリアルなマテリアルを作成することができます。[PixPlant software](http://www.pixplant.com/)は、標準ビットマップを使って、これらのテクスチャのセットを作成できる製品です。
 <!-- TODO: This dialog Needs a page.-->
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-#### Width and Height
-Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
+#### 幅と高さ
+セットのすべてのテクスチャのサイズをコントロールします。すべてのビットマップのサイズを同じに、整列するようにするには、このコントロールを使用します。
 
-#### Intensity
-Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### 強度
+サーフェスの鏡のような反射の強度をコントロールします。詳細については、詳細の[強度](material-type-advanced.html#intensity)のトピックを参照してください。
 
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### シャープネス
+反射のシャープネス対ブラーの度合をコントロールします。詳細については、詳細の[シャープネス](material-type-advanced.html#sharpness)のトピックを参照してください。
 
-#### Types
-This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
+#### タイプ
+これは、サーフェス上の反射のタイプをコントロールします。詳細については、詳細の[タイプ](material-type-advanced.html#type)のトピックを参照してください。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+{% include_relative snippets/snippet-material-advanced-editor.md %} マテリアルに予め設定されている内容を変更したい場合は、詳細エディタを使用します。 **メモ:** これは、様々なデフォルトを用いて多くの重なり合ったテクスチャセットを使用する複雑なマテリアルです。詳細エディタを使用するとすべてのプロパティの同期性を保つことができなくなります。
 
-## Advanced Material
-The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.
+## 詳細マテリアル
+[Flamingo 詳細](material-type-advanced)マテリアルは、Flamingoのマテリアルのすべてのプロパティのセットを含んでいます。シンプルなマテリアルが用途に合わない場合、この[Flamingo 詳細](material-type-advanced)マテリアルを使用して、フレキシブルにマテリアルを作成することができます。

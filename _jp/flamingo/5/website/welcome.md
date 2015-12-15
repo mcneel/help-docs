@@ -1,23 +1,24 @@
 ---
 layout: fullwidth-page
-title: Getting Started with Flamingo
+title: Flamingoをはじめるにあたって
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) Getting Started with Flamingo nXt®
-Flamingo nXt creates high quality, photorealistic, still, and animation image files from 3-D models inside Rhinoceros ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a work in progress version.
+# ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt®をはじめるにあたって
+Flamingo nXtは、3Dモデルから高品質でフォトリアリスティックな静止およびアニメーションの画像ファイルをRhinoceros ®の中で作成します。Flamingo nXt 5は、Flamingoへのアップデートで、Rhino 5にビルトインレンダリング機能を統合します。これは現在ワーク・イン・プログレス・バージョンです。
 
-Flamingo can be downloaded and installed from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/beta).
+Flamingoは、[Flamingo nXt 5 ダウンロード](http://www.rhino3d.com/download/flamingo/5/beta)からダウンロード、インストールしていただけます。
 
-You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo).
+[Flamingo Discourse Forum（フォーラム）](http://discourse.mcneel.com/c/rendering/flamingo)では、テクニカルディスカッションに参加していただけます。
 
-## Installation
+## インストール
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
+Flamingo 5 ベータには、以前のバージョンのFlamingo nXtがインストールされていることが必要です。Flamingo nXt 5を実行するには、Rhino 5 サービスリリース12が必要です。
+RHIインストーラをダウンロード、実行後にRhinoを起動してFlamingo nXt 5.0ロードしてください。
 
-## Help Documentation
-Help documentation for Flamingo comes in a few languages:
+最新のベータはこちらでダウンロードしていただけます: [http://www.rhino3d.com/download/Flamingo/5.0/beta](http://www.rhino3d.com/download/Flamingo/5.0/beta)
+
+## ヘルプドキュメンテーション
+Flamingoは次の複数の言語がサポートされています。
 
 * [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
 * [Deutsch]({{baseurl}}/de/flamingo/5/help)
@@ -29,19 +30,17 @@ Help documentation for Flamingo comes in a few languages:
 * [한국어]({{baseurl}}/kr/flamingo/5/help)
 * [中文(繁 體)]({{baseurl}}/tw/flamingo/5/help)
 
-## Getting Started
-On the Flamingo nXt menu, click Control Panel. The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
+## Flamingo nXtの基本
+Flamingoメニューのコントロールパネルをクリックします。Flamingo nXtのコントロールパネルには、レンダリングのためにモデルを設定するためのタブが表示されます。タブには次のものが含まれます。
 
-> [Materials](../help/material-editor.html)
-> [Lighting](../help/lighting-tab.html)
-> [Environment](../help/environment-tab.html)
-> [Render](../help/render-tab.html)
+* [マテリアル](../help/material-editor.html)
+* [照明](../help/lighting-tab.html)
+* [環境](../help/environment-tab.html)
+* [レンダリング](../help/render-tab.html)
 
-## Flamingo information and support
- For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
+## Flamingoの情報とサポート
+テクニカルサポート、チュートリアル、例、Flamingo nXtをはじめるにあたっての情報については、[Flamingo nXtのウェブサイト](http://nxt.flamingo3d.com/)をご覧ください。
 
- For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
-
- > [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
- > [Gallery](http://nxt.flamingo3d.com/photo)
- > [Technical support](http://nxt.flamingo3d.com/forum)
+ * [チュートリアル](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+ * [ギャラリー](http://nxt.flamingo3d.com/photo)
+ * [テクニカルサポート](http://discourse.mcneel.com/c/rendering/flamingo)

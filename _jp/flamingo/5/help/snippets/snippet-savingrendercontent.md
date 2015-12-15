@@ -1,6 +1,6 @@
 
-## Saving render content
-Materials, environments, and textures are stored in the model, but render content can also be saved to files that can be shared between models. Content can be dragged between Rhino sessions and into a folder.
-Color swatches can be dragged and dropped in the same way.
-The ** [Libraries](libraries.html) ** panel displays the default content folder. Use this to drag and drop content into the model or to drag and drop model content to an external file.
+## レンダリングコンテンツの保存
+マテリアル、環境、そしてテクスチャはモデルに格納されますが、レンダリングコンテンツはモデル間で共有できるファイルに保存することもできます。コンテンツはRhinoのセッション間で、そしてフォルダにドラッグできます。
+色見本も同じようにドラッグアンドドロップできます。
+** [ライブラリ](libraries.html) **パネルはデフォルトのコンテンツフォルダを表示します。これを、モデルにコンテンツをドラッグアンドドロップするのに、またはモデルコンテンツを外部ファイルにドラッグアンドドロップするのに使用してください。
 

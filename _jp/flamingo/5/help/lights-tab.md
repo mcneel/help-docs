@@ -1,162 +1,164 @@
 ---
-title: Lights
+title: 光源
 ---
 
 # ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
-Artificial light sources use normal Rhino lights with added Flamingo properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
+人工光源は、配光をコントロールするためのFlamingoのプロパティが追加された通常のRhinoの光源を使用します。光源を用いる際は、モデリングする実世界の照明器具を最もよく表現するタイプを選択してください。
 
 
-## Lights Tab
+## 光源タブ
 {: #light-tab}
-The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible through additional [Light Properties](#light-properties).
+光源タブは、シーンのすべての人工光源の一覧を表示します。このトピックでは、Flamingo特有の光源タブについて説明します。[Rhinoの光源タブ](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm)もあります。FlamingoとRhinoは、これらの2つのタブの間で光源設定を同期化します。Flamingoの光源タブではより多くの[光源のプロパティ](#light-properties)が使用できるので、Rhinoの光源タブよりもフレキシブルです。
 
-#### Where can I find Flamingo Lighting control?
-The Lights tab must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+<!-- TODO: There should be some mention that the Lights tab only is available for some of the Lighting presets -->
+<!-- TODO: #### Is this supposed to be a code? It's showing up as #### -->
+#### Flamingo照明コントロールの位置
+光源タブは、[照明プリセット](lighting-tab.html#lighting-presets)または[カスタム照明設定](lighting-tab.html#sun)を通してアクティブにします。
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
+ 1. ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXtツールバー
+ 1. ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingoタブ > 光源
 
-From the Lights tab lights you can insert, turn off/on, and change the strength and channel of each light.
+光源タブでは、それぞれの光源の挿入や表示のオフ/オン、そして強度やチャンネルの変更などが行えます。
 
-Flamingo supports these light types:
+Flamingoは次の光源タイプをサポートします。
 
-> [Tag objects as lights](#tag-objects-as-lights)
-> [Spotlight](#spotlight)
-> [Point light](#pointlight)
-> [Rectangular light](#rectangularlight)
-> [Linear light](#linearlight)
+> [オブジェクトに光源としてタグ付け](#tag-objects-as-lights)
+> [スポット光源](#spotlight)
+> [点光源](#pointlight)
+> [矩形光源](#rectangularlight)
+> [線光源](#linearlight)
 
-**Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
+**メモ:** Rhinoの指向性光源 ![images/directionallightbutton.png](images/directionallightbutton.png) はサポートされません。光源リストには表示されず、Flamingo nXtのプロパティも所有しません。
 
-Some light properties are displayed on the Lights tab table for quick editing of common properties.
+光源のプロパティのいくつかは、光源タブの列に表示されます。これによって、よく使われるプロパティに素早くアクセスして編集することができます。
 
-Properties contained in the table are:
+列に表示されるプロパティは次のとおりです。
 
- >[On/Off](#on)
- >[Name](#name)
- >[Distribution](#light-distribution)
- >[Aim](#aim-light)
- >[Watts](#watts)
- >[Channel](#channel)
+ >[オン/オフ](#on)
+ >[名前](#name)
+ >[配光](#light-distribution)
+ >[方向](#aim-light)
+ >[ワット](#watts)
+ >[チャンネル](#channel)
 
-Right-clicking on the Lights tab table will open the [Additional Options](#additional-options) menu.
+光源タブを右クリックすると、[より多くのオプション](#additional-options)を表示するメニューが表示されます。
 
-[Light Properties](#light-properties) can also be accessed by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
+[光源のプロパティ](#light-properties)は、光源をピックし、 [オブジェクトのプロパティパネル](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm)の光源のプロパティアイコン ![images/spotlightbutton.png](images/spotlightbutton.png) をクリックしてアクセスできます。
 
-## Light Types
+## 光源のタイプ
 {: #light-types}
-Lights can be inserted from the Rhino toolbars or the Flamingo Lights tab. Objects can be tagged as lights with Flamingo.
+光源は、Rhinoのツールバーから、またはFlamingoの光源タブから挿入できます。オブジェクトはFlamingoを使用して光源としてタグ付けすることができます。
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Tag objects as lights
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) オブジェクトに光源としてタグ付け
 {: #tag-objects-as-lights}
-Any renderable object (surface, solid, etc.) can be tagged as a light source and given light properties. Additional properties such as [distribution](#light-distribution), [direction](#aim-light), and [strength](#watts) can be assigned. Objects tagged as lights may display a preview widget showing direction of the light and its center location.
+レンダリング可能なオブジェクト（サーフェス、ソリッドなど）はすべて光源としてのタグを付加し、光源のプロパティを持たせることができます。[配光](#light-distribution)、[方向](#aim-light)、および[強度](#watts)などのその他のプロパティの割り当てることができます。光源としてタグ付けされたオブジェクトには、光源の中心の位置と向きを示すプレビューウィジェットを表示することができます。
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
-*LED driving lights and headlights tagged as light sources*
+*光源としてタグ付けされたLEDドライビングライトとヘッドライト*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) Spotlight
+#### ![images/spotlight-01.png](images/spotlight-01.png) スポット光源
 {: #spotlight}
-Spotlight is a conical light distribution with a specific direction.  The light properties include a [source radius](#radius), [beam angle](#beam-angle), falloff radius, and direction. The larger the source radius, the softer the shadows will be from the light. By default there is a visible disk at the light location. Information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+スポット光源は、特定の方向に円錐形の配光を行う光源です。光源のプロパティには、[光源半径](#radius)、[ビーム角](#beam-angle)、フォールオフ半径、および方向が含まれます。光源の半径が大きいほど、ライトからの影は柔らかくなります。デフォルトでは、光源の位置にディスク形状が表示されます。グリップを使用した画面上での位置、方向、ビーム角の編集については、[Rhinocerosのスポット光源](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm)のヘルプトピックを参照してください。
 
 ![images/spotlight.png](images/spotlight.png)
-*A Spotlight pointed at the red box*
+*赤い箱に向いているスポット光源*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) Point Light
+#### ![images/pointlight-01.png](images/pointlight-01.png) 点光源
 {: #pointlight}
-Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the point light is partially obscured by an object that intersects the light.
+点光源は、すべての方向に均等に光を配分する小さな球です。この光源のプロパティには、[光源の半径](#radius)が含まれます。半径が大きいほど、ライトから投げかけられる影が柔らかくなります。デフォルトでは、レンダリング時に光源の位置に光の球が表示されます。オブジェクトによって点光源の光が部分的に遮られた場合、普通とは違う効果が発生することがあることを覚えておいてください。
 
 ![images/pointlight.png](images/pointlight.png)
-*A small point light close to the right wall*
+*右側の壁に近い位置にある小さな点光源*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) RectangularLight
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) 矩形光源
 {: #rectangularlight}
-Provides an approximation of a recessed light with a diffuser or baffles. The light distributes light in a diffuse pattern based on the orientation of the rectangle. A direction arrow is drawn at the center point of the light. Full strength light is directly in front of the rectangle.  Then the light falls off at an angle to the objects from the rectangle. By default a white rectangle will be visible when rendering. A common mistake is to insert these rectangles at exactly the same height as a ceiling plane. For consistent results, make sure the lights are slightly below the ceiling. For information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros RectangularLight](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm) help topic.
+ディフューザーまたはバッフルがあるダウンライトを近似します。光源は、矩形の向きに基づいて光を拡散して分配します。光源の中心点には、方向矢印が表示されます。光の強度は、矩形の真正面で最大で、それから矩形からオブジェクトへの角度によって減少します。デフォルトでは、レンダリング時に白い四角形が表示されます。天井に矩形光源を使用する場合は、天井面とまったく同じ高さではなく、少し下に挿入するようにしてください。一貫した結果を得ることができます。グリップを使用した画面上での位置、方向、ビーム角の編集については、[Rhinocerosの矩形光源](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm)のトピックを参照してください。
 
 ![images/rectangular light.png](images/rectangular light.png)
-*A rectangular light just below the ceiling*
+*天井のすぐ下の矩形光源*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) LinearLight
+#### ![images/linearlight-01.png](images/linearlight-01.png) 線光源
 {: #linearlight}
-Distributes light in a cylindrical pattern that imitates a fluorescent tube. Light properties for this light include [source radius](#radius) and length. The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light cylinder at the light location when rendering. Note that unusual effects can happen if the cylindrical light is partially obscured by an object that intersects the light. Use Rhino Control points to activate the grips on the light to edit on the screen.
+蛍光灯を模倣した円柱パターンで光を配分します。このライトの光源のプロパティには、[光源の半径](#radius)と長さが含まれます。半径が大きいほど、ライトから投げかけられる影が柔らかくなります。デフォルトでは、レンダリング時に光源の位置に光の円柱が表示されます。オブジェクトによって線光源の光が部分的に遮られた場合、普通とは違う効果が発生することがあることを覚えておいてください。画面上で編集できるように光源上のグリップをアクティブにするには、Rhinoの制御点を使用してください。
 
 ![images/linearlight.png](images/linearlight.png)
 
-## Light Properties
+## 光源のプロパティ
 {: #light-properties}
-When Flamingo is the current rendering application in Rhino, additional properties can be set for lights. Lights have some but not all properties in common.
+FlamingoがRhinoの現在のレンダリングアプリケーションである場合、光源にはより多くのプロパティを設定できます。光源のプロパティはいくつかは共通していますが、すべてが共通している訳ではありません。
 
-#### Name
+#### 名前
 {: #name}
-The name of the light object. This is an easy way to differentiate lights which are the same type in the model.
+光源オブジェクトの名前です。モデルに同じタイプの光源がある場合、名前があると違いが分かり便利です。
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) On/Off
+#### ![images/lightbulbon.png](images/lightbulbon.png) オン/オフ
 {: #on}
-Toggles the light on and off. In the Light table,  if the light bulb icon is yellow the light is on. If the light bulb icon is gray the light will be off in the rendering. Double-click on the icon to toggle it On/Off. In the properties dialog, there is an On/Off Checkbox.
+光源のオンとオフを切り替えます。光源テーブル（表）で、電球アイコンが黄色の場合、光源はオンです。電球アイコンがグレーの場合は、レンダリングで光源はオフになります。アイコンをダブルクリックすると、オン/オフを切り替えられます。プロパティダイアログでは、オン/オフのチェックボックスが表示されます。
 
-#### Visible
+#### 表示
 {: #visible}
-By default lights will show themselves as a bright light source in the rendering.  By unchecking the Visible property, the light object itself will be invisible in the rendering.  Still, the light will project its light into the scene.
+デフォルトでは、光源はレンダリングに表示されますが、この表示プロパティのチェックマークを外すと、それが表示されなくなります。光源の投げかける光はｼｰﾝで表示されます。
 
-#### Light distribution *([Tagged objects only](#tag-objects-as-lights))*
+#### 配光 *([タグ付けされたオブジェクトのみ](#tag-objects-as-lights))*
 {: #light-distribution}
-When tagging an object as a light, use Distribution to specify the pattern the light projects into the scene. In the light panel, double-click on the distribution cell to get an options drop-down. Distribution types include: [All Directions](#pointlight), [Spot](#spotlight) and [Diffuse](#rectangularlight). Both Spot and Diffuse require a [direction](#aim-light) to be specified.
+オブジェクトを光源としてタグ付けした場合、配光を使用して、シーンへの光の投影方法を指定することができます。配光の列のセルをダブルクリックすると、オプションドロップダウンが表示されます。配光タイプには、[全方向](#pointlight)、[スポット](#spotlight)、[拡散](#rectangularlight)があります。スポットと拡散は、[方向](#aim-light)の指定が必要です。
 
-#### Aim light *([Tagged objects only](#tag-objects-as-lights))*
+#### 方向 *([タグ付けされたオブジェクトのみ](#tag-objects-as-lights))*
 {: #aim-light}
-For tagged light which have a distribution of Spot or Diffuse, a direction must be specified.  Double-click on the "Aim >>" option and follow the command line prompts.
+スポットまたは拡散の配光が指定されたタグ付けされた光源には、方向の指定をしてください。「方向 >>」オプションをダブルクリックし、コマンドラインのプロンプトに従ってください。
 
-#### Watts
+#### ワット
 {: #watts}
-Specifies the electrical power of the light.  It is recommended to start with realistic values for the scene. In the light table, double-click on the cell to change the value.
+光源の電力を指定します。シーンに適した現実的な値から始めることをお勧めします。光源テーブル（表）でセルをダブルクリックすると値を変更できます。
 
-#### Beam angle *([Spotlights only](lights-tab.html#spotlight))*
+#### ビーム角 *([スポット光源のみ](lights-tab.html#spotlight))*
 {: #beam-angle}
-The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+光源から発する光の幅をコントロールする角度（度で）です。これは画面上でグリップを使用して変更することもできます。グリップを使った編集の詳細については、[Rhinocerosのスポット光源](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm)のヘルプトピックを参照してください。
 
-#### Radius
+#### 半径
 {: #radius}
-The size of the visible light source. Smaller lights cast sharper shadows.
+表示される光源の大きさです。小さい光源はよりシャープな影を投げかけます。
 
-#### Color
+#### 色
 {: #color}
-The color for the light the source emanates.
+光源が発する光の色です。
 
-#### Use material color *([Tagged objects only](#tag-objects-as-lights))*
-Uses the color of the material assigned to the light object for the light it produces.
+#### マテリアル色を使用 *([タグ付けされたオブジェクトのみ](#tag-objects-as-lights))*
+光源オブジェクトによって作り出される光に、光源オブジェクトに割り当てられたマテリアルの色を用います。
 
-#### Channel
+#### チャンネル
 {: #channel}
-Lights can be assigned to one of eight channels. This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html) topic.
+光源は8つのチャンネルの1つに割り当てることができます。この機能を用いると、レンダリングの生成後にリアルタイムでレンダリングイメージの照明を調整できます。これはレンダリングで複数の光源のバランスを調整するのにとても便利です。
 
-#### IES File
+#### IESファイル
 {: #iesfile}
-IES (Illuminating Engineering Society) files are photometry files that define the distribution of light from a light source. Light fixture manufacturers often provide these files. By using the IES file to define your distribution, you can more accurately depict your light source. The geometry of the tagged light object has no relationship to the distribution of light. The definition of the light distribution comes from the photometry file alone.
+IES（Illuminating Engineering Society）ファイルは、光源からの配光を定義する測光ファイルです。これらのファイルは照明器具の製造業者が提供している場合が多く、IESファイルを使用して配光を定義することによって光源をより正確に表現することができます。タグ付けされた光源オブジェクトの形状は、配光には関連がありません。配光の定義には、測光ファイルのみが用いられます。
 
-Notes:
+メモ:
 
-* Flamingo nXt supports Type C goniometry files, which includes the majority of IES files. Type A files, which are occasionally used by the automobile industry to define headlights, and Type B files, which are sometimes used to define floodlighting, are not supported.
-* IES distributions include the effects of light fixture elements such as baffles, reflectors, and diffusers.
-* IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
+* Flamingo nXtは、IESファイルの大半を含むタイプC測角ファイルをサポートします。ヘッドライトを定義するのに自動車産業によって用いられることがあるタイプA、および投光照明を定義するのに時折用いられるタイプBのファイルはサポートされません。
+* IESの分配は、照明器具のバッフル、リフレクター（反射板）、ディフューザー（拡散板）などの構成要素の効果を含みます。
+* IESの分配は非対称であることが多いため、光源を当てるプロセスにはターゲットだけではなく回転角度も含めます。
 
-#### Brightness from file
-Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
+#### ファイルからの明るさ
+IESファイルに保存されている強度を用います。これがチェックされていない場合、[ワット](lights-tab.html#watts)設定が用いられます。
 
 
-## Additional Options Menu
+## より多くのオプションを表示するメニュー
 {: #additional-options}
-Additional options for lights can be accessed by right-clicking on the light in the Light table.
+光源テーブル（表）の光源を右クリックすると、メニューが表示され、その他のオプションが使用できます。
 
-####  On
-Toggles the light [On/Off](#on)
+####  オン
+光源の[オン/オフ](#on)を切り替えます。
 
-#### Delete
-Deletes the selected light.
+#### 削除
+選択された光源を削除します。
 
-#### Remove light tag
-Removes the [tag](#tag-objects-as-lights) that makes an object a light.
+#### 光源のタグを削除
+オブジェクトを光源にする[タグ](#tag-objects-as-lights)を削除します。
 
-#### Properties
-Access the [Light Properties](#light-properties) for that light.
+#### プロパティ
+光源の[プロパティ](#light-properties)にアクセスできます。
 
-#### Select objects and matching items
-Selects the light in the viewport.
+#### オブジェクトと一致するアイテムを選択
+ビューポートの光源を選択します。
