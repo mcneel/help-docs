@@ -1,136 +1,136 @@
 ---
-title: Render Options
+title: レンダリングオプション
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
-The render tab controls the main properties of the final rendering.  Use this tab to control quality and length of time a rendering can take.  Resolution of the final image is one of the biggest influences on overall rendering times.
+レンダリングタブは、最終のレンダリングの主なプロパティをコントロールします。レンダリングの質や所要時間をコントロールするのにこのタブを使用します。最終イメージの解像度が、所要時間を左右する一番大きな要素です。
 
-Note: A good practice is to leave the rendering resolution low during draft renderings. Use high resolution renderings for final renderings only.
+メモ: よい方法は、ドラフトレンダリング中にレンダリングの解像度を低くしておくことです。最終レンダリングにのみ高解像度のレンダリングを使用してください。
 
-#### Where can I find Flamingo Lighting control?
+#### Flamingo照明コントロールの位置
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
+ 1. ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt ツールバー > レンダリングオプションタブ
+ 1. ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXt > レンダリングオプションタブ
 
 
-## Viewport to render
+## レンダリングするビューポート
 {: #viewtorender}
-Set the view that Flamingo nXt 5 will be rendering.  This is a very useful setting when working on the model and rendering, but there is one specific view that should always render.  For instance, Perspective view is many times the view of interest.  By setting this drop down, then you do not need to make sure the view is current before starting the rendering.
+Flamingo nXt 5がレンダリングするビューを設定します。これはモデルやレンダリングの作業をしている場合で常にレンダリングするビューが決まっている場合に、便利な設定です。例えば、多くの場合レンダリングするビューはPerspectiveです。このドロップダウンを設定することによって、レンダリング開始前にPerspectiveが現在のビューであることを確認する手間が省けます。
 
-#### Active view
-Use this option to render the current active view.  This is the default setting.
+#### アクティブビュー
+このオプションは、現在のアクティブなビューをレンダリングします。
 
-#### List of available viewports
-This list includes all the named views in the model.  Select the view name that should always be rendered.
+#### 使用できるビューポートの一覧
+このリストには、モデルの名前の付いたﾋﾞｭｰがすべて表示されます。常にレンダリングしたいビューの名前を選択します。
 
-## Rendering resolution
+## レンダリング解像度
 {: #resolution}
-The Rendering resolution is one of the most important render settings.  This control sets the image size and resolution to be saved in the Rhino file.  Increasing resolution will exponentially increase rendering time.  So, it is important to handle this setting carefully.
+レンダリング解像度は、レンダリング設定の中でも一番重要な設定の1つです。このコントロールは、Rhinoのファイルに保存するイメージのサイズと解像度を設定します。解像度を上げると、レンダリングの時間が指数関数的に増加するので、この設定は注意して行ってください。
 
-#### Total pixels
+#### 合計ピクセル
 {: #resolutionimagepixels}
-Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
+現在のビューの高さと幅の比率を用いて、最終レンダリングの合計ピクセル数を設定します。これは、レンダリングの作業中に用いると便利です。現在のビューをレンダリングと一致させるのに一番良い設定です。ピクセルの合計数を変えるだけで、イメージの解像度を簡単に増加、減少させることができます。
 
-### Viewport resolution
-Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
+### ビューポート解像度
+レンダリングイメージのサイズを決定するのにピクセルでのビューポートサイズを使用します。ビューポートの縦横比と解像度が1対1になります。これは便利なモードですが、標準のRhinoのビュー構成の1/4のビューポートに対してフルスクリーンでのレンダリング時は速度が遅くなります。
 
-### Image size
+### イメージサイズ
 {: #resolutionprintedsize}
-Image size will set the final resolution based on several different variables.  This is the best way to match an exact size and resolution of a final image. If the height and width of the final rendering does not match the same aspect ratio of the view being rendered, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very long time to complete.  Use these controls for final high resolution renderings.
+イメージサイズは、いくつかの異なる変数に基づいて最終の解像度を設定します。このオプションは、最終イメージの正確なサイズと解像度を一致させる最良の方法です。最終レンダリングの高さと幅がレンダリングされるビューの縦横比に一致しない場合は、ビューの上下左右の部分が完全に表示されなくなる可能性があります。メモ: これらのコントロールは、完了するのに時間がかかる高解像度のレンダリングに繋がる可能性もあります。これらのコントロールは、最終の高解像度のレンダリングに用いてください。
 
-There are four unit types which can be used:
+使用できるのは次の4つの単位です。
 
->Pixels
->Inches
->Millimeters
->Centermeters
+>ピクセル
+>インチ
+>ミリメートル
+>センチメートル
 
-#### Pixels
-Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.
+#### ピクセル
+レンダリングイメージの単位をピクセルに設定します。この設定は、最終レンダリングの最終の幅と高さをピクセル数によって簡単に設定するのに使用します。
 
-#### Inches
-Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of inches in width and height by the resolution DPI value.
+#### インチ
+ページ単位をインチに設定します。インチは、解像度設定と共にレンダリングイメージの最終解像度を決定するのに使用されます。最終解像度を決定するには、幅と高さのインチ数を解像度のDPI値と乗算します。
 
-#### Millimeters
-Sets the page units to millimeters. Use millimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of millimeters in width and height by the resolution dots per millimeter value.
+#### ミリメートル
+ページ単位をミリメートルに設定します。ミリメートルは、解像度設定と共にレンダリングイメージの最終解像度を決定するのに使用します。最終解像度を決定するには、幅と高さのミリメートル数を解像度のミリメートルあたりのドット数値と乗算します。
 
-#### Centimeters
-Sets the page units to centimeters. Use centimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of centimeters in width and height by the resolution dots per centimeter value.
+#### センチメートル
+ページ単位をセンチメートルに設定します。センチメートルは、解像度設定と共にレンダリングイメージの最終解像度を決定するのに使用します。最終解像度を決定するには、幅と高さのセンチメートル数を解像度のセンチメートルあたりのドット数値と乗算します。
 
-#### Apply view aspect ratio
-Use this setting to keep the width and height setting in the same aspect ratio to the current view.  This will assure the complete view is rendered in the final image.
+#### ビューの縦横比を適用
+この設定は、現在のビューと同じ縦横比に幅と高さ設定を維持するのに使用します。これは、最終イメージで完全なビューがレンダリングされるのを確実にします。
 
-#### Width
-Printed image width in current unit size.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
+#### 幅
+現在の単位サイズでの印刷イメージ幅です。この設定を解像度の設定と乗算し、最終イメージの合計ピクセル数を得ます。
 
-#### Height
-Printed image height in current size units.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
+#### 高さ
+現在のサイズ単位での印刷イメージ高さです。この設定を解像度の設定と乗算し、最終イメージの合計ピクセル数でのサイズを得ます。
 
-### Resolution
+### 解像度
 {: #printsizepixelsperunit}
 {: #printsizedpi}
 {: #printsizeresolution}
 
-#### Display
-The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
+#### 画面
+イメージは、ビューポートのDPI解像度を用いてレンダリングされます。これは、デバイス上のピクセル密度です。通常、これは[1インチあたりのドット数（DPI）](https://en.wikipedia.org/wiki/Dots_per_inch)を表しています。
 
-#### Custom
-The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
+#### カスタム
+イメージはカスタム解像度を使用してレンダリングされます。カスタム幅と高さ解像度を**単位当たりのピクセル**で入力してください。
 
-#### Printer, draft quality
-Set the resolution to 100 pixels per inch or 4 pixels per mm.
+#### プリンタ､ 質-低
+解像度をインチ毎100ピクセル、またはミリメートル毎4ピクセルに設定します。
 
-#### Printer, normal quality
-Set the resolution to 150 pixels per inch or 6 pixels per mm.
+#### プリンタ､ 質-中
+解像度をインチ毎150ピクセル、またはミリメートル毎6ピクセルに設定します。
 
-#### Printer, high quality
-Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. High resolutions can lead to long rendering times.
+#### プリンタ､ 質-高
+解像度をインチ毎300ピクセル、またはミリメートル毎12ピクセルに設定します。これはレンダリングにはかなりの高解像度です。これは比較的小さなレンダリングに適しています。大きなポスターやウォールサイズのレンダリングの場合、この設定では全体の解像度が非常に高くなります。解像度が高くなると、レンダリング時間が長くなります。
 
-#### Pixels per
-When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a preset resolution is selected, this control displays the current resolution.
+#### 単位毎のピクセル
+解像度コントロールをカスタムに設定した場合、このコントロールを使用して選択されている単位毎の解像度を設定します。予め設定されている解像度が選択された場合、このコントロールは現在の解像度を表示します。
 
-## Depth of field
+## 被写界深度
 {: #depthoffieldoption}
-This effect creates a depth of field blur that mimics a photographer's lens. A lens can only focus precisely at exactly one distance, but the decrease in sharpness is gradual around the focal distance.
+この効果は、写真家のレンズを模倣する被写界深度のボケを作り出します。レンズは1つの距離のみにしか焦点を合わせることができませんが、焦点距離周囲での鋭さは徐々に減少します。
 
-#### Enabled
-Turns on the depth-of-field effect.
+#### オン
+被写界深度効果をオンにします。
 
-#### Strength
-Controls the size of the focus area. Setting Strength to zero makes the entire image is sharp. Increasing the Strength makes the areas outside the focal distance more blurry and makes the area in focus smaller.
+#### 強弱
+焦点領域のサイズをコントロールします。強弱を0に設定すると、イメージ全体がはっきりとします。強弱を上げると、焦点距離外の領域がよりぼやけ、焦点が合っている領域を小さくします。
 
-#### Focal distance
+#### 焦点距離
 {: #focaldistance}
-Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If the Focal distance is set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
+被写界深度の距離を設定します。オブジェクトに焦点が合う被写界深度点の周辺の距離です。焦点距離が10単位に設定されている場合、被写界深度点の後ろ約7単位、被写界深度点の前約3単位内のオブジェクトに焦点が合います。
 
-#### Pick >>
-Pick a point in the model for the focal distance.
+#### ピック >>
+焦点距離をモデル中の点をピックして指定します。
 
-## Render Engine
+## レンダリングエンジン
 {: #render-engine}
-There are three different render engines within Flamingo.  Each render engine will produce slightly different results in normal rendering conditions.
+Flamingoには、3つの異なるレンダリングエンジンがあります。それぞれのレンダリングエンジンは、通常のレンダリング条件で若干異なる結果を表示します。
 
-Flamingo use progressive, multi-step rendering techniques to create renderings.  With progressive steps, as Flamingo does, there can be unfinished artifacts in the rendering at each step. Artifacts are render effects that leave unusual uncompleted effects in a rendering.  Technically all three render engines will result in the the same rendering, given enough time.  But realistically time is always a limiting factor. So, the trick is to select a render engine that will best render the current scene in the least number of steps.
+Flamingoは、レンダリングを行うのに、連続的な、多段階式のレンダリングテクニックを用います。それぞれの段階では、処理が完了していないアーチファクトが表示されることがあります。アーチファクトは、レンダリングに普通ではない未完了の効果を残すレンダリング効果です。技術的には、時間を十分にかければ、3つのレンダリングエンジンの結果は同じになります。しかし現実的には、時間には限りがあります。したがって、現在のシーンを最小の段階数で一番適切にレンダリングするエンジンを選択するのがこつとなります。
 
-It is very easy to simply select a different render engine and then render to see the results.
+異なるレンダリングエンジンを選択してみて、結果を確かめるのが（簡単なので）良いでしょう。
 
-### Default
-The default algorithm produces a very high-quality simulation. The default engine is a good render engine for a wide variety of scenes.  While the other two engines have greater strengths, they also have greater weaknesses.  The Default engine is a good starting point.
+### デフォルト
+デフォルトのアルゴリズムは、非常に質の高いシミュレーションを作成します。デフォルトのエンジンは、幅広い種類のシーンに使用できます。他の2つのエンジンにはデフォルトのエンジンにない強みがありますが、それと同時に弱点もあります。デフォルトエンジンをまず使用するのが一般的によい試みでしょう。
 
-The default render engine has a very noticeable artifact in the renderings in the early passes.  The artifact is hard overlapping shadows.  As passes progress these shadows will soften up.  This allows the default engine to return a result quickly, but may take more passes to actually soften the shadows out.
+デフォルトのエンジンでは、最初の方のパスでレンダリングに顕著なアーチファクトが現れます。アーチファクトは、はっきりとした重なり合った影です。パスを繰り返す過程で、これらの影は柔らかみを帯びてきます。これはデフォルトのエンジンが素早く結果を返すことを可にしますが、実際に影が完全にソフトになるのにより多くのパスを必要とする場合もあります。
 
-The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
+デフォルトの方法とパストレーサーの質の違いは（特に間接照明が用いられた場合に）わずかです。質の違いのために処理時間を長くかける価値はないでしょう。
 
-### Path Tracer
+### パストレーサー
 {: #path-tracer}
-The path tracer begins by displaying a grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. **Note:** Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
+パストレーサーは、最初は荒いイメージを表示しますが、それは徐々にリファインされ、滑らかになります。このプロセスは、*収束（コンバージェンス）*として知られています。パストレーサーは、（より簡単な設定で）多くのモデルによりよい質の仕上げをもたらします。しかし、引き換えに、計算がより複雑で、より時間がかかるようになります。 **メモ:**  パストレーサーを使うと、レンダリングプロセスの際に明るい部分やスペックル（斑点）のアーチファクトが現れることがあります。これらのアーチファクトはパストレーサーには普通で、時間が経つと解決します。
 
-Certain advanced effects, such as caustics or blurry transmission, can be calculated with better accuracy using the path tracer. Images rendered with instancing, plants, and displacement maps can converge faster. The path tracer is usually easier to set up than the default method. Advanced settings such as reflection shaders, daylight portals, and ambient lighting are not used when the path tracer engine is selected.
+コースティックスやぼやけた透過性などの特定の高度な効果は、パストレーサーを用いるとより高精度で計算できます。インスタンス化、植物、そしてディスプレイスメントマップを用いてレンダリングされたイメージは、収束がより早く行われます。パストレーサーは通常デフォルトの方法より設定が簡単です。反射シェーダ、昼光ポータル、環境光などの高度な設定は、パストレーサーエンジンが選択されている際は使用されません。
 
-Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer to finish.
+パストレーサーを用いてレンダリングされたイメージは一般的に、デフォルトの方法を用いてレンダリングされたイメージに比べて収束により時間がかかります。窓が比較的小さいシーンのような屋内昼光のシミュレーションは、終了するのにより時間がかかります。
 
-### Hybrid
-The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. in some situations it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
+### ハイブリッド
+ハイブリッドエンジンは、デフォルトエンジンとパストレーサーエンジンの良い部分を使おうと試むエンジンです。ハイブリッドエンジンは、両方のエフェクトを使用します。このエンジンは、間接光を常に計算します。ハイブリッドのアーチファクトは、目立った点のパターンです。この点のパターンは、パスを重ねると減少していきます。場合によっては、パターンを取り除くのには多くのパスが必要になることもあります。多くのレンダリングには、このエンジンが最適であることがあります。
 
-###  **Advanced**
-Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page. There are several advanced rendering properties that can be set here to further customize the final rendering quality.
+###  **高度な設定**
+ドキュメントのプロパティダイアログボックスの[Flamingo nXt](documentproperties-flamingo.html)ページを開きます。最終レンダリングの質をよりカスタマイズするために設定できる高度なレンダリングプロパティが表示されます。

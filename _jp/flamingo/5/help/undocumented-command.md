@@ -1,8 +1,8 @@
 ---
-title: Undocumented Feature
+title:  	ドキュメントに未記載の機能
 ---
 
 
-# Undocumented Feature
-This topic has not been documented.
-Post questions about this feature to ** [//news.flamingo3d.com/flamingo](flamingo) **.
+# ドキュメントに未記載の機能
+このトピックはまだドキュメントに記載されていません。
+この機能についてのご質問は、** [//news.flamingo3d.com/flamingo](flamingo) **に投稿してください。

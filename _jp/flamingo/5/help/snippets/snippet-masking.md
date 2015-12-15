@@ -1,63 +1,62 @@
 
-### Masking
-Obscures portions of the image based on either a color value or an alpha channel stored in the image. This allows textures to have complex shaped boundaries and create complex effects such as holes in a surface.
+### マスキング
+画像に保存された色値またはアルファチャンネルに基づいて画像の指定部分を覆い隠します。このことによって、テクスチャの境界を複雑な形状にすることが可能になり、サーフェスの穴など、複雑な効果を作成することができるようになります。
 
-In this example, an image with an alpha-channel background is placed as a decal on a rectangular surface. Masking for materials works the same.
+この例では、長方形のサーフェスにアルファチャンネル背景のある画像がデカールとして配置されています。マテリアルのマスキングも同じ要領で行えます。
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
-*Original decal image. The gray checkered area represents the image alpha channel.*
+*元のデカール画像。グレーのチェッカーの部分は、画像のアルファチャンネルを表しています。*
 
-Masking information can come from three sources in the bitmap:
+マスキング情報は、ビットマップの3つのソースから取得できます。
 
-> [None](#nomask)
-> [Alpha Channel](#alphamask)
-> [Color](#colormask)
+> [なし](#nomask)
+> [アルファチャンネル](#alphamask)
+> [色](#colormask)
 
-#### None
+#### なし
 {: #nomask}
-With no masking, the image obscures the underlying material. Masking allows the material to show through the image where the alpha channel or masking color exists. The material assigned to a planar surface in this example has a red base color.
+マスキングが設定されていない場合、画像は下のマテリアルを覆い隠します。マスキングを設定すると、アルファチャンネルまたはマスキング色がある部分では、マテリアルがイメージを通して見えるようになります。この例では、平面サーフェスに割り当てられたマテリアルに赤いベース色が用いられています。
 
 ![images/masking-002.png](images/masking-002.png)
-*Without masking (left) the image covers the surface, with masking (right), the red material shows through.*
+*マスキングが設定されていない（左）場合は画像がサーフェスを隠します。マスキングが設定されている（右）場合は赤いマテリアルが透けて見えます。*
 
-#### Alpha Channel
+#### アルファチャンネル
 {: #alphamask}
-Uses the image's [alpha channel](environment-tab.html#alpha) to define the masked area if one exists.
+（アルファチャンネルがある場合、）画像の[アルファチャンネル](environment-tab.html#alpha)を用いてマスク領域を定義します。
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
-*Original on the left. The gray checkered area represents the image alpha channel. On the right is the image over a water surface.*
+*左が元の画像。グレーのチェッカーの部分は、画像のアルファチャンネルを表しています。右は、画像を水のサーフェス上に配置したものです。*
 
-The alpha channel is a portion of each pixel's data that is reserved for transparency information. Alpha channels create and store masks that let you isolate and protect parts of an image while you apply color changes, filters, or other effects to the rest of the image. Each pixel in an image is described as channels of data that define the mixture of the red, green, and blue (RGB) colors. The alpha channel is an 8-bit (256-level) grayscale representation of the image that masks the color of the underlying pixel. The value of the alpha mask determines the intensity of the pixel color. If the Alpha channel is 100%, the images pixel will be complete transparent.  At other alpha strengths, the image pixels will blend with transparency.
+アルファチャンネルは、透明度情報のために確保された、それぞれのピクセルデータの一部です。アルファチャンネルは、色の変更、フィルタ、その他の効果を画像に適用する際に画像の一部を隔離して保護できるマスクを作成、保存することができます。画像の各ピクセルは、赤、緑、青（RGB）の混合を定義する複数のデータチャンネルで表現されます。 アルファチャンネルは、画像の8ビット（256階調）のグレースケール表現で、下のピクセルの色をマスクするのに使われます。アルファマスクの値がピクセル色の強度を決定します。アルファチャンネルが100%の場合、画像のピクセルは完全に透明になります。そうでない場合、画像のピクセルは透明度とブレンドされます。
 
-#### Color
+#### 色
 {: #colormask}
-If alpha channel does not exist in an image, a color in the image can be specified as a mask. There is also a sensitivity number to make the mask more or less sensitive to a single specific color as a masked color. Selecting the Color option will activate the Color Dropper, Color Selector, and Sensitivity controls.
+画像にアルファチャンネルがない場合、画像の色をマスクとして指定することができます。また、感度設定を使用して、マスク色の1つの指定色へのマスク感度を設定することもできます。色オプションを選択すると、スポイト、カラーセレクタ、感度コントロールが使用できるようになります。
 
-#### Color Dropper
-Click to select the mask color from the bitmap. Click on the Color Dropper, then on the bitmap to pick the color. This control is only available when the Color option is selected.
+#### スポイト
+クリックしてビットマップからマスク色を選択します。スポイトをクリックしてから、ビットマップをクリックして色をピックします。このコントロールは、色オプションが選択されている場合のみに使用できます。
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Sensitivity
-The value indicates the size of the area around the color that is also masked. Must be greater than 0.0 for color masking to occur. This control is only available when the Color option is selected.
+#### 感度
+値は、色の周囲の（一緒にマスクされる）領域のサイズを示します。カラーマスキングを行うには、この設定が0.0より大きくなければなりません。このコントロールは、色オプションが選択されている場合のみに使用できます。
 
-#### Blur
-Partially masks pixels. The value determines the magnitude of partial masking around the masked color. This control is only available when the Color option is selected.
+#### ブラー
+部分的にピクセルをマスクします。値は、マスクされる色周囲の部分的マスクの度合いを決定します。このコントロールは、色オプションが選択されている場合のみに使用できます。
 
-#### Reverse
-Inverts the mask—pixels that would have been masked are now included, and vice versa.
-<!-- TODO: Does this make sense? -->
+#### 反転
+マスクを反転します。マスクされていたはずのピクセルが含まれ、含まれていたピクセルがマスクされます。
 
 ![images/masking-007.png](images/masking-007.png)  
 
-#### Transparent
-Makes the masked area of the underlying object transparent so other objects or the background behind the object can be seen through the object. Normally, the material of the object shows through in that area.
+#### 透明
+下にあるオブジェクトのマスクされた部分を透明にし、オブジェクトの後ろの背景や他のオブジェクトをオブジェクトを透かして見えるようにします。通常、その部分のオブジェクトのマテリアルは見えるようになります。
 
-Transparent masking allows a more natural shadow and lets the background objects to show. The underlying material could simply be transparent, but sometimes it is useful to make the surface behind the decal transparent while keeping other areas of the surface opaque.
+透明なマスキングは、影をより自然に見えるようにし、また背景オブジェクトが見えるようにします。 下にあるマテリアルを透明にすることもできますが、時にはサーフェスの他の部分は不透明にしたままで、デカールの後ろのサーフェスを透明にすると便利です。
 
 ![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
 
-#### Show masked colors
-Graphically displays the effects of masking as the parameters change. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.
+#### マスクされる色を表示
+パラメータを変更すると、そのマスキング効果が表示されます。マスクされるピクセルの表示色を選択するには、[カラーセレクタ](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)を使用します。 この色やチェックボックスの設定を変更しても、マスクの色は変わりません。 これは、単にマスクを編集する際に使用するグラフィカルツールです。
 
 ![images/masking-008.png](images/masking-008.png)

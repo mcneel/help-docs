@@ -1,11 +1,11 @@
 ---
-title: Reatime preview
+title: リアルタイムプレビュー
 ---
 
 # {{page.title}}
-Flamingo NXT 5 includes a realtime preview.  This is an experimental viewport to see if a quick preview of the rendered scene is valuable.
+Flamingo nXt 5には、リアルタイムプレビュー機能が搭載されています。これは、レンダリングシーンのクイックプレビューが役に立つかどうかを見るための、試験的なビューポートです。
 
-#### To start the Realtime viewport
-1. Go to the Flamingo NXT 5.0 pulldown > Show Realtime Preview
-1. Select a viewport by clicking inside the view.
-3. The Flamingo RT view should display.
+#### リアルタイムビューポートを開始するには
+1. Flamingo nXt 5.0プルダウン > リアルタイムプレビューを表示を選択します。
+1. ビューの内側をクリックして、ビューポートを選択します。
+3. Flamingo RTビューが表示されます。

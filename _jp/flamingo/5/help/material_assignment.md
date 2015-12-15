@@ -1,83 +1,83 @@
 ---
-title: Material Assignments
+title: マテリアルの割り当て
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on the how easy the model is to change and maintain in the future.
+シーンのオブジェクトには、レンダリング用のマテリアルが設定されています。 マテリアルは異なる方法で割り当てることができます。マテリアルを割り当てるのに使用する方法によって、モデルの将来の変更、維持が簡単かどうかが決まります。
 
-Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:
+マテリアルは3つの方法で割り当てることができます。この3つの方法は、階層になっています。リストの下の方にある割り当て方法は、その上の割り当て方法に優先されます。3つの方法は次のとおりです。
 
- 1. [Layers](#bylayer) - All objects on the layer will adopt this material, unless they are in a block or have a specific object assignment.
- 2. [Parent](#byparent) - This is used for objects within blocks.  Objects with a By Parent assignment will look to the block insert for the material.
- 3. [Individual objects](#byobject) - Materials can be assigned directly to an object, overwriting any other material assignments.
+ 1. [レイヤ](#bylayer) - ブロックにあるオブジェクトまたはオブジェクト単位での割り当てでない限り、レイヤのすべてのオブジェクトに指定のマテリアルが割り当てられます。
+ 2. [親](#byparent) - これはブロック内のオブジェクトに使用されます。親の設定で割り当てのオブジェクトは、ブロックのインサートのマテリアルを使用します。
+ 3. [個々のオブジェクト](#byobject) - マテリアルは直接オブジェクトに割り当てることができます。これは他のすべてのマテリアルの割り当て方法に優先します。
 
-Assigning materials by layer is the recommended method. Using By layer makes it very easy to change the material of all the objects on a layer. Use By object assignment if you have only a few objects that you do not want on separate layers.
+マテリアルは、レイヤで割り当てることをお勧めします。レイヤの設定で割り当てると、同じレイヤにあるすべてのオブジェクトのマテリアルを簡単に変更することができます。オブジェクトが数個しかなく、それらを別々のレイヤに置きたくない場合は、オブジェクトでマテリアルを割り当てるとよいでしょう。
 
-Imported files may have any one of these three assignments. Many imported files will have By Object assignments.  It may take a lot of work to convert the model to By Layer assignments, but it can be beneficial if there is a lot of editing to the render materials planned.
+インポートされたファイルは3つの割り当て方法のいずれかが設定されています。多くの場合、オブジェクトの設定の割り当てが設定されています。モデルをレイヤの設定に変更するのは大変な作業になる場合がありますが、レンダリングマテリアルに多くの編集が必要な場合、便利な場合もあるでしょう。
 
-Once materials are assigned, the material will be saved in the current model.  Editing the material will not effect that material in other models.
+マテリアルを割り当てると、そのマテリアルは現在のモデルに保存されます。マテリアルを編集しても、他のモデルのマテリアルには影響はありません。
 
-## Assign materials to layers
+## マテリアルをレイヤに割り当てる
 {: #bylayer}
-Assigning materials by layer assigns a material to all objects on that layer. This is the default method of assignment. To change the material assignment of the layer, use the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-Note: Deleting a material from the [Material Editor](material-editor.html) returns all objects that had the deleted material assigned to assignment by layer.
+マテリアルをレイヤの設定で割り当てると、マテリアルはそのレイヤのすべてのオブジェクトに割り当てられます。これはデフォルトの割り当て方法です。レイヤのマテリアルの割り当てを変更するには[レイヤ](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)ダイアログボックスを使用します。
+メモ: [マテリアルエディタ](material-editor.html)からのマテリアルの削除は、削除されたマテリアルを割り当てられていたすべてのオブジェクトをレイヤでの割り当てに戻します。
 
-##### Drag a material to a layer
+##### マテリアルをレイヤにドラッグする
 {: #drag-dropmaterialtolayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material on to a layer name in the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog.
+1. Rhinoで[レイヤ](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)ダイアログボックスを開きます。
+1. ライブラリタブまたはマテリアルエディタタブの[マテリアルリスト](material-editor.html#material_list)で、[レイヤ](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)ダイアログのレイヤ名にマテリアルをドラッグします。
 
-##### To assign a material to a layer
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select a material from the Material drop-down list.
+##### マテリアルをレイヤに割り当てるには
+1. Rhinoで[レイヤ](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)ダイアログボックスを開きます。
+1. 1つまたはそれ以上のレイヤ名を選択し、マテリアルカラムをクリックします。
+1. レイヤのマテリアルダイアログボックスで、マテリアルドロップダウンリストからマテリアルを選択します。
 
-##### Remove a material from a layer
+##### マテリアルをレイヤから取り除く
 {: #detachmaterialfromlayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select the Default Material Material drop-down list.
+1. Rhinoで[レイヤ](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)ダイアログボックスを開きます。
+1. 1つまたはそれ以上のレイヤ名を選択し、マテリアルカラムをクリックします。
+1. レイヤのマテリアルダイアログボックスで、マテリアルドロップダウンリストからデフォルトのマテリアルを選択します。
 
-## Assign material to Parent
+## マテリアルを親に割り当てる
 {: #byparent}
-By parent is a seldom used, but useful, assignment. Objects within a Block instance will retain their By Layer or By Object assignments.  Objects that are using By Parent assignment will adopt the material of the block insertion.  This way objects within a block instance can adopt the material of the parent block.
+親の設定はあまり使われませんが、役に立つ割り当て方法です。ブロックインスタンス内のオブジェクトは、レイヤの設定またはオブジェクトの設定の割り当てを保持します。親の設定を使うオブジェクトは、ブロックのインサートのマテリアルを使用します。この方法によって、ブロックインスタンス内のオブジェクトは、親ブロックのマテリアルを使用できます。
 
-As an example, a car model might have tires on the tires layer and wheels on the wheel layer. But for rendering the body of the car might vary between individual block instances.  Assign By Parent to the car body.  Then a material can be assigned to the block insert and only the body will adopt that material.
+例: タイヤレイヤにタイヤがあり、車輪のレイヤに車輪がある車のモデルの場合を考えてみましょう。レンダリング用に、車のボディは個々のブロックインスタンス間で変わります。車のボディに親の設定を割り当てると、マテリアルはブロックインサートに割り当てることができ、ボディのみがそのマテリアルを使用します。
 
-##### To assign a material through object properties
-1. Select objects.
-1. On the Edit menu, click Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the [Properties](properties-object.html) dialog box, on the Material page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Parent.
+##### オブジェクトのプロパティを使ってマテリアルを割り当てるには
+1. オブジェクトを選択します。
+1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png) をオブジェクトを編集するためにクリックします。
+1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、親の設定をクリックします。
 
-## Assign material to objects
+## マテリアルをオブジェクトに割り当てる
 {: #byobject}
-You can assign materials from the material libraries to a layer or object. Rendering materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See  [Materials Editor](material-editor.html) .
+マテリアルは、マテリアルライブラリからレイヤまたはオブジェクトに割り当てることができます。レンダリングマテリアルは、個々のオブジェクトに割り当てられ、Rhinoのビルトインレンダラによって使用されます。
+[マテリアルエディタ](material-editor.html)を参照してください。
 
-Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
+マテリアルは、レイヤで割り当てることをお勧めします。 オブジェクトが数個しかなく、それらを別々のレイヤに移動したくない場合は、オブジェクトでマテリアルを割り当てるとよいでしょう。
 
-##### Assign a material through object properties
-1. Select objects.
-1. On the Edit menu, click the Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Object, and then click the Material from the list.
+##### オブジェクトのプロパティを使ってマテリアルを割り当てる
+1. オブジェクトを選択します。
+1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png) をオブジェクトを編集するためにクリックします。
+1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、オブジェクトの設定をクリックし、リストでマテリアルをクリックします。
 
-##### Drag a material onto a single object
+##### マテリアルを1つのオブジェクトにドラッグする
 {: #drag-dropmaterialtoobject}
 
- * In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material onto an object. The object will highlight when the cursor is in the correct place to drop.
+ * ライブラリタブまたはマテリアルエディタタブの[マテリアルリスト](material-editor.html#material_list)で、マテリアルをオブジェクトにドラッグします。ドロップする正しい位置にカーソルが置かれると、オブジェクトがハイライトされます。
 
-##### Assign a material to selected objects
-1. Select objects.
-1. In the [Material List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Assign to Selected Objects.
+##### マテリアルを選択されたオブジェクトに割り当てる
+1. オブジェクトを選択します。
+1. ライブラリタブまたはマテリアルエディタタブの[マテリアルリスト](material-editor.html#material_list)で、モデルパレットのマテリアルのマテリアルを右クリックします。
+1. メニューの選択オブジェクトに割り当てをクリックします。
 
-##### Select objects with material assignment
+##### マテリアルが割り当てられたオブジェクトを選択する
 {: #select-objects-with-material-assignment}
-1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Select Objects with this Material.
+1. ライブラリタブまたはマテリアルエディタタブの[マテリアルリスト](material-editor.html#material_list)で、モデルパレットのマテリアルのマテリアルを右クリックします。
+1. メニューのこのマテリアルが割り当てられているオブジェクトを選択をクリックします。
 
-##### Remove a by-object material assignment
+##### オブジェクトで割り当てたマテリアルを取り除く
 {: #removematerialfromobject}
-1. Select objects.
-1. On the Edit menu, click Object Properties.
-1. In the  [Properties](properties-object.html) dialog box, on the Material page, under Assign by, select Layer.
+1. オブジェクトを選択します。
+1. 編集メニューのオブジェクトのプロパティをクリックします。
+1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページの割り当てで、レイヤを選択します。

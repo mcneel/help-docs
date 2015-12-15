@@ -1,13 +1,13 @@
-### Assign material by
-Using a plug-in library, rendering properties can be assigned to layers, or to objects that will be used with the basic Rhino renderer.
+### マテリアルの割り当て方法
+プラグインライブラリを使用して、レンダリングのプロパティはレイヤ、または標準のRhinoのレンダラと用いられるオブジェクトに割り当てることができます。
 
-#### Layer
-The object inherits the render material assigned to the layer. To change the material assignment of the layer, use the [ **Layers** ](layer.html) dialog box.
- **Note** : Deleting a material from the ** [Material Editor](materialeditor.html) **, returns all objects that had the deleted material assigned to assignment by layer.
+#### レイヤ
+オブジェクトは、レイヤに割り当てられたレンダリングマテリアルを継承します。レイヤのマテリアルの割り当てを変更するには[ **レイヤ** ](layer.html)ダイアログボックスを使用します。
+ **メモ** : ** [マテリアルエディタ](materialeditor.html) **からのマテリアルの削除は、削除されたマテリアルを割り当てられていたすべてのオブジェクトをレイヤでの割り当てに戻します。
 
-#### Parent
-The object inherits the render material from its parent object.
+#### 親の設定
+オブジェクトはその親オブジェクトからレンダリングマテリアルを継承します。
 
-#### Object
-Render materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See ** [MaterialEditor](materialeditor.html) **.
+#### オブジェクト
+レンダリングマテリアルは、個々のオブジェクトに割り当てられ、Rhinoのビルトインレンダラによって使用されます。
+** [マテリアルエディタ](materialeditor.html) **を参照してください。

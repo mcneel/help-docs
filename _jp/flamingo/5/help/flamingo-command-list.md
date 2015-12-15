@@ -1,13 +1,13 @@
 ---
-title: Flamingo Command List
+title: Flamingoのコマンドリスト
 ---
 
 
 # {{page.title}}
-
+<!-- TODO: Some of those commands have been renamed to a version without "nXt". Or all of them? -->
 ### FlamingoNXtAbout
 {: #flamingonxtabout-command}
-Displays theAbout Flamingodialog box.
+Flamingoについての情報ダイアログボックスを表示します。
 
 ###  [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)
 {: #flamingonxtautomaterender}
@@ -23,56 +23,56 @@ Displays theAbout Flamingodialog box.
 
 ### FlamingoNXtClearBitmapCache
 {: #flamingonxtclearbitmapcache}
-Refreshes the bitmap definition when a bitmap file is changed using an image editor such as Photoshop.
+Photoshopなどのイメージ（画像）エディタを使ってビットマップファイルが変更された場合に、ビットマップ定義を再読み込みします。
 
 ### FlamingoNXtConvertLegacyMaterialLibrary
 {: #flamingonxtconvertlegacymateriallibrary}
-Extracts Flamingo 2.x materials from a specified MLIB file as Flamingo nXt ArMaterial files in a specified output folder.
+Flamingo 2.xのマテリアルをFlamingo nXt ArMaterialとして指定されたMLIBファイルから指定する出力フォルダに抽出します。
 
 ### FlamingoNXtCreateThumbNails
 {: #flamingonxtcreatethumbnails}
-Iterates recursively through a folder and generates a material preview for every ArMaterial file in the folder and sub folders. Specify how many passes it uses when generating the preview.
+フォルダを再帰的に反復処理し、そのフォルダとサブフォルダのそれぞれのArMaterialファイルにマテリアルプレビューを生成します。プレビューの生成に用いるパスの数を指定してください。
 
 ###  [FlamingoNXtDecal](properties-decal.html)
 {: #flamingonxtdecal}
 
 ###  [FlamingoNXtDrawLightsForObjectsTaggedAsLights](lights-tab.html#tag-objects-as-lights)
 {: #flamingonxtdrawlightsforobjectstaggedaslights}
-Turns on a display conduit that decorates objects that are [tagged as lights](lights-tab.html#tag-objects-as-lights) with a preview of how the light is pointed and were its location is.
+[光源としてタグ付けされた](lights-tab.html#tag-objects-as-lights)オブジェクトの表示コンジットをオンにします。光源の位置と向きプレビューが表示されます。
 
 ###  [FlamingoNXtEditPlant](plants.html)
 {: #flamingonxteditplant}
 
 ###  [FlamingoNXtExportAllMaterials](materials-tab.html#exportallmaterials)
 {: #flamingonxtexportallmaterials}
-Exports each material in a model to a file.
+モデルのそれぞれのマテリアルをファイルへエクスポートします。
 
 ### FlamingoNXtFindZeroFaceMeshes
 {: #flamingonxtfindzerofacemeshes}
-A diagnostic utility that finds Flamingo nXt render meshes that have faces with no area.
+面積のない面があるFlamingo nXtのレンダリングメッシュを見つける診断ユーティリティです。
 
 ### FlamingoNXtHelp
 {: #flamingonxthelp}
-Opens theHelpfile.
+ヘルプファイルを開きます。
 
 ### FlamingoNxtOldStylePlant
 {: #flamingonxtoldstyleplant}
-Inserts a Flamingo 2-style [plant](plants.html).
+Flamingo 2形式の[植物](plants.html)をインポートします。
 
 ###  [FlamingoNXtPlant](plants.html)
 {: #flamingonxtplant}
 
 ###  [FlamingoNXtPlantEditor](plants.html)
 {: #flamingonxtplanteditor}
-Opens the [Tree Editor](plants.html).
+[植物エディタ](plants.html)を表示します。
 
 ###  [FlamingoNXtRenderConstraints](documentproperties-flamingo.html#render-constraints)
 {: #flamingonxtrenderconstraints}
-Sets [render constraints](documentproperties-flamingo.html#render-constraints) :
+[レンダリング停止条件](documentproperties-flamingo.html#render-constraints)を設定します。
 
 ### FlamingoNXtRenderWindowConstraints
 {: #flamingonxtrenderwindowconstraints}
-Sets [render constraints](documentproperties-flamingo.html#render-constraints) when **RenderWindow** is used for rendering.
+レンダリングに**RenderWindow**が用いられた際の[レンダリング停止条件](documentproperties-flamingo.html#render-constraints)を設定します。
 
 ###  [FlamingoNXtRenderFarm](automate-rendering.html#render-farm)
 {: #flamingonxtrenderfarm}
@@ -88,9 +88,9 @@ Sets [render constraints](documentproperties-flamingo.html#render-constraints) w
 
 ### FlamingoNXtUpdateLinkedPlants
 {: #flamingonxtupdatelinkedplants}
-Updates plant definitions that have been modified in the current model.
+現在のモデルで変更されている植物定義を更新します。
 
 ###  [FlamingoNXtWebPage](http://nxt.flamingo3d.com/)
 {: #flamingonxtwebpage}
-Opens the Flamingo nXt web page.
+Flamingo nXtのウェブページを開きます。
 &#160;

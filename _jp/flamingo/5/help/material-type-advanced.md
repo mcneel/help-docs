@@ -1,305 +1,306 @@
 ---
-title: Advanced Material Properties
+title: 詳細マテリアルのプロパティ
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
-Flamingo has both [Simple Material](material-type-simple.html) Types and an Advanced Material type.  The Advanced Material contains the complete series of property groups for a material.  Use the Advanced Material type for the maximum flexibility and control of a material.
+Flamingoには、[シンプルなマテリアル](material-type-simple.html)のタイプと詳細なマテリアルのタイプがあります。詳細なマテリアルには、マテリアルのすべてのプロパティグループが含まれます。マテリアルをフレキシブルに最大にコントロールしたい場合は、詳細マテリアルタイプを使用してください。
 
-The complete set of property groups in the Advanced Material are:
+詳細マテリアルのすべてのプロパティグループは次のとおりです。
 
-> [Name](#name)
-> [Material Procedure](#procedures)
-> [Advanced Material Properties](#advanced-materials-properties)
-> [Reflective Finish](#reflective-finish-and-highlight)
-> [Transparency Properties](#transparency)
-> [Procedural Textures](#bump-patterns)
-> [Bitmap Textures](#textures)
-> [Notes](#notes)
+> [名前](#name)
+> [マテリアルプロシージャ](#procedures)
+> [詳細マテリアルのプロパティ](#advanced-materials-properties)
+> [反射仕上げ](#reflective-finish-and-highlight)
+> [透明度のプロパティ](#transparency)
+> [プロシージャルテクスチャ](#bump-patterns)
+> [ビットマップテクスチャ](#textures)
+> [注記](#notes)
 
-## Material Name
+## マテリアルの名前
 {: #name}
-This is the name of the material in the Rhino model.  Materials are stored in the Rhino model. That means a with the same name in the library or a different model will not be affected by edits to the material in the current model. To use any material in another model it must be exported to the [Library](libraries.html) first. The Name of the material will also serve as its exported file name.
+Rhinoのモデルにあるマテリアルの名前です。マテリアルはRhinoのモデルに格納されます。これは、ライブラリや異なるモデルの同じ名前のマテリアルは現在のモデルのマテリアルの編集によって影響されないということを意味します。他のモデルのマテリアルを使用する場合、そのマテリアルはまず[ライブラリ](libraries.html)にエクスポートする必要があります。マテリアル名は、それをエクスポートする際のファイル名にも使用されます。
 
-## Material Procedures
+## マテリアルプロシージャ
 {: #procedures}
-The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For standard materials, there will be only one component in the list: Base.
+プロシージャツリーは、マテリアル同士がどのようにお互いに影響し合うかの一式のルールを用いてマテリアルが1つまたは複数のマテリアルを組み合わせます。ツリーは、マテリアルを作成するのに用いられたコンポーネントを表示します。ここではコンポーネントを追加することができます。標準のマテリアルの場合、リストにはベースという1つのコンポーネントしか表示されません。
 
-Each procedure combines two "child" materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [Angular Blend](procedural-materials.html#angular-blend), [Blend](procedural-materials.html#blend), [Marble](procedural-materials.html#marble), [Granite](procedural-materials.html#granite), [Tile](procedural-materials.html#tile), and [Wood](procedural-materials.html#wood).
+それぞれのプロシージャは、特定の方法を使って2つの「子」マテリアルを組み合わせます。 それぞれの子マテリアルも、それぞれ独自の子マテリアルを2つ組み合わせて、プロシージャで構成することができます。 このように、単純な構成要素から、非常に複雑なマテリアルを作り出すことができます。 マテリアルを組み合わせるためのプロシージャには、[角度ブレンド](procedural-materials.html#angular-blend)、[ブレンド](procedural-materials.html#blend)、[大理石](procedural-materials.html#marble)、[花崗岩](procedural-materials.html#granite)、[タイル](procedural-materials.html#tile)、および[木目](procedural-materials.html#wood)が含まれます。
 
-As an example, the [Marble](procedural-materials.html#marble) Procedure combines a Base material and Vein Material in a swirling pattern.
+例えば、[大理石](procedural-materials.html#marble)プロシージャは、ベースマテリアルと石目マテリアルを渦を巻くように組み合わせます。
 
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
-##### To add a procedure
-1. Right-click on Base the Procedures window.
-1. On the menu, click a procedure type.
-  * [Base](procedural-materials.html#base)
-  * [Angular Blend](procedural-materials.html#angular-blend)
-  * [Blend](procedural-materials.html#blend)
-  * [Granite](procedural-materials.html#granite)
-  * [Marble](procedural-materials.html#marble)
-  * [Tile](procedural-materials.html#tile)
-  * [Wood](procedural-materials.html#wood)
+##### プロシージャを追加するには
+1. プロシージャウィンドウのベースで右クリックします。
+1. メニューでプロシージャのタイプをクリックします。
+  * [ベース](procedural-materials.html#base)
+  * [角度ブレンド](procedural-materials.html#angular-blend)
+  * [ブレンド](procedural-materials.html#blend)
+  * [花崗岩](procedural-materials.html#granite)
+  * [大理石](procedural-materials.html#marble)
+  * [タイル](procedural-materials.html#tile)
+  * [木目](procedural-materials.html#wood)
 
-##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+##### プロシージャを削除するには
+ 1. プロシージャウィンドウで、プロシージャ名を右クリックします。
+ 2. メニューで削除をクリックします。
 
-## Advanced Material Properties
+## マテリアルの詳細プロパティ
 {: #advanced-materials-properties}
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Reflective Finish and Highlight
+#### 反射仕上げとハイライト
 {: #reflective-finish-and-highlight}
-These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object. The reflective effect normally defined with a more mirror like reflections that reflects the objects in the rest of the the scene. It is important to now that chrome and other reflective materials do not make an interesting image unless they have something to reflect. When working with reflective materials, also think about an interesting environment and other objects for the reflective materials to reflect.
- Note : To activate these settings, the Intensity value must be greater than zero.
+これらの設定は、マテリアルが光やオブジェクトを反射する方法を変更します。ハイライト効果は通常、光沢のあるマテリアルが割り当てられているオブジェクトの光で照らされている部分に表示されます。反射効果は通常、残りのシーンのオブジェクトを反射するより鏡のような反射で定義されます。クロムおよび他の反射性マテリアルは、何も反射するものがない場合、あまり金属らしいイメージには仕上がらないことを覚えておいてください。反射性マテリアルを用いる際はまた、環境、そして反射性マテリアルが反射するその他のオブジェクトのことを考慮してください。
+ メモ: これらの設定をアクティブにする（使用する）には、強度の値を0より大きくする必要があります。
 
-#### Highlight color
+#### ハイライト色
 {: #highlight-color}
-Highlight color is the color that material adds to reflections. There are three settings for this control, White, Metallic and Custom
+ハイライト色とは、マテリアルが反射に加える色のことです。このコントロールには、白、金属、カスタムの3つの設定があります。
 
-#### White
-Materials with a white highlight will not add any color to reflections.  Materials with a white highlight are common and tend to resemble standard paint, plastics or a mirror finish.
+#### 白
+白のハイライトのあるマテリアルは、反射に色を加えません。白のハイライトのあるマテリアルは一般的で、普通のペンキ、プラスティック、または鏡面仕上げにどちらかというと似ています。
 
 ![images/3-plastic.png](images/3-plastic.png)
 
-#### Metallic
+#### 金属
 {: #metallic}
-Sets the highlight color to match the base color. Many metal finishes normally use the base color as the reflective color.  This metallic options use the material based color as a reflective color.
+ハイライトの色をベースの色と同じにします。多くのメタリック仕上げは通常ベースの色を反射の色として使用します。この金属オプションは、マテリアルに基づいた色を反射色として使用します。
 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
-#### Custom
-In some very specialized finishes, the reflection off the object will be a different color then the base color fo the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
+#### カスタム
+非常に特殊な仕上げには、オブジェクトからの反射の色はマテリアルのベース色と異なります。これは、通常複数のレイヤで作成されたマテリアルで見られます。ハイライト色を任意の色に設定するのにカスタムを使用してください。[カラーセレクタ](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)を使用して、反射色を選択します。
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
-#### Intensity
+#### 強度
 {: #intensity}
-Adjusts the strength of the highlight. Lower values tend to make glossy objects that reflect light, but not surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
+ハイライトの強度を調整します。低い値は周囲のオブジェクトでは反射られない光を反射する艶のあるオブジェクトにする傾向があります。高い値を設定すると、ハイライトや反射のサイズと強度が大きくなります。一番高い値は、他のオブジェクトやシーンの環境を映すマテリアルを鏡のようにします。
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
-#### Fresnel
+#### フレネル
 {: #fresnel}
-Pronounced (fray-NELL) Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations) .The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
-Reduce the value for very dark materials to prevent too much reflection.&#160;Increase the value for materials like varnished wood, where the Fresnel reflectivity is more pronounced.
+[導体のフレネル反射](http://en.wikipedia.org/wiki/Fresnel_equations)として知られている現象である不透明マテリアルの反射をコントロールします。フレネル設定は、垂直の視覚ではよりくすんだ特性を維持し、視射角では多くのマテリアルがより鏡のように反射するようになる傾向を模倣します。
+
+極度の反射を避けるために、非常に暗い色のマテリアルの場合は値を下げてください。フレネル反射がより顕著なニスを塗った木材のようなマテリアルの場合は、値を上げてください。
 
 ![images/highlightfresnel.png](images/highlightfresnel.png)
 
-#### Sharpness
+#### シャープネス
 {: #sharpness}
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area.  When applied to higher intensity reflectivity, it will make reflections blurry (out of focus) or sharp (in focus).
+ハイライトのサイズを設定します。低い値を設定すると、より広いハイライトが指定されます。高い値を設定すると、ハイライトはより小さい領域に集中します。より高い強度の反射率に適用された場合、反射はぼやけた（焦点の合っていない）、またはシャープ（焦点の合った）状態になります。
 
 ![images/highlightsharpness.png](images/highlightsharpness.png)
 
-#### Type
+#### タイプ
 {: #type}
-Changes how reflections are calculated when artificial light sources are reflected. Reflections are calculated using two methods: *raycasting* and *highlight*. These two methods will eventually produce identical results; however, in certain situations, you will find that one method gets a good result more quickly. For example, objects might not look good because a light source reflection hides the material's appearance.
+人工の光源が反射される際の反射の計算方法を変更します。反射は*レイキャスティング*と*ハイライト*の2つの方法を用いて計算されます。これらの2つの方法は最終的には同じ結果を生み出しますが、場合によってはどちらか1つの方法がより速くより良い結果を生み出すことがあります。例えば、光源の反射によってマテリアルがよく見えなくなる場合があります。
 
-In the illustration below for Balanced type, the object on the left has a bright white reflection that overpowers the material's appearance.
+下のイメージではタイプがバランスに設定されています。左のオブジェクトでは反射が強すぎて（そこが白くなってしまい）マテリアルの効果が弱くなっています。
 
-Sometimes interior renderings where the light sources are small can have a spotty artifact on surfaces. The surfaces exhibiting the artifact typically have blurry reflections. Changing the reflective type to [Glossy](advanced-material-properties-main.html#glossy), [No Light Source Reflections](advanced-material-properties-main.html#no-light-source-reflection), or [Monte Carlo](advanced-material-properties-main.html#monte-carlo) can help alleviate this problem.
+屋内のレンダリングで、光源が小さい場合、サーフェスに むらのあるアーチファクトが現れる場合があります。アーチファクトが表示されるサーフェスは、多くの場合ぼやけた反射が原因です。タイプを[光沢](advanced-material-properties-main.html#glossy)、[光源反射なし](advanced-material-properties-main.html#no-light-source-reflection)、または[モンテカルロ](advanced-material-properties-main.html#monte-carlo)を用いるとこの問題をある程度解決できる場合があります。
 
-#### Balanced
+#### バランス
 {: #balanced}
-Automatically balances raycasting and highlight based on the Sharpness setting. Both the actual reflection of the light source and the artificial highlight are calculated.
+シャープネス設定に基づいて、レイキャスティングとハイライトのバランスを自動的に取ります。実際の光の反射および人工のハイライトの両方が計算されます。
 
 ![images/highlightbalanced.png](images/highlightbalanced.png)
 
-#### Glossy
+#### 光沢
 {: #glossy}
-Increases the blurriness of the highlight and prevents raycasting. No object or light reflections are calculated, therefore performance is increased, and artifacts for materials with very blurry reflections are prevented. Some reflective subtlety may be lost.
+ハイライトのぼかしを強くし、レイキャスティングを抑えます。オブジェクトや光の反射は計算されないので、スピードが上がり、非常にぼやけた反射があるマテリアルのアーチファクトが避けられます。反射の微かな効果が失われる可能性があります。
 
 ![images/highlightglossy.png](images/highlightglossy.png)
 
-#### Monte Carlo
+#### モンテカルロ
 {: #monte-carlo}
-Only raycasting is used to calculate reflections of light sources. The raycasting is initially very noisy and gradually converges to the correct solution. It is most useful when the highlight is not blurry.
+レイキャスティングのみが使用され、光源の反射が計算されます。レイキャスティングは初めノイズを伴って表示されますが、次第に正しい結果に収束します。ハイライトがぼやけていない場合に最も便利です。
 
 ![images/highlightmontecarlo.png](images/highlightmontecarlo.png)
 
-#### No Highlight
+#### ハイライトなし
 {: #no-highlight}
-Only raycasting is used to calculate reflections of light sources. This is useful when light sources are large and the material is not blurry; in which case, the highlight calculation can take a long time. The light source reflections gradually converge.
+レイキャスティングのみを用いて光源の反射が計算されます。光源が大きくマテリアルがぼやけていない場合に（ハイライトの計算に時間がかかるので）便利です。光源の反射は次第に収束します。
 
 ![images/highlightnohighlight.png](images/highlightnohighlight.png)
 
-#### No Light Source Reflection or No Highlight
+#### 光源の反射またはハイライトなし
 {: #no-light-source-reflection-and-no-highlight}
-Excludes all reflections of artificial light sources and the artificial highlight effect. Object reflections are still calculated.
+人工の光源の反射と人工のハイライト効果をすべて除外します。オブジェクトの反射は計算されます。
 
 ![images/highlightnohighlightreflection.png](images/highlightnohighlightreflection.png)
 
-#### No Light Source Reflections
+#### 光源の反射なし
 {: #no-light-source-reflection}
-Excludes raycast reflections of light sources, only the highlight is used. This is sometimes useful for preventing speckle artifacts if the material is blurry and the scene contains small, bright, light sources.
+光源のレイキャスト反射を除外し、ハイライトだけを用います。マテリアルがぼやけており、シーンに小さい、明るい光源が含まれている場合に、便利であることがあります。
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
-## Transparency
-{: transparncy}
-The Transparency settings control&#160;properties associated with light passing through a material.
+## 透明度
+{: #transparency}
+透明度の設定は、マテリアルを通過する光に関連したプロパティをコントロールします。
 
 ![images/transparentmaterials.png](images/transparentmaterials.png)
 
-#### Transparency Intensity
-Changes the material from opaque to transparent. Transparent materials increase rendering time.
+#### 透明度の強度
+マテリアルを不透明から透明の状態の間で自由に設定できます。 透明なマテリアルを使用すると、レンダリングの時間が増します。
 
 ![images/transparency.png](images/transparency.png)
 
-#### Index of Refraction
+#### IOR
 {: #index-of-refraction}
-Determines how much refraction occurs when looking through the material at objects beyond.
+マテリアルの向こう側のオブジェクトを見ている時の光線の屈折の度合いを決定します。
 
 ![images/transparencyior.png](images/transparencyior.png)
 
-The following table shows some examples of index of refraction:
+次の表は、屈折率のいくつかの例です。
 
- | Material      |     | IOR         |
+ | マテリアル      |     | IOR（屈折率）         |
  |:--------------|:---:|:------------|
- | Vacuum        |     | 1.0         |
- | Air           |     | 1.0029      |
- | Ice           |     | 1.309       |
- | Water         |     | 1.33        |
- | Glass         |     | 1.52 to 1.8 |
- | Emerald       |     | 1.57        |
- | Ruby/Sapphire |     | 1.77        |
- | Diamond       |     | 2.417       |
+ | 真空        |     | 1.0         |
+ | 空気           |     | 1.0029      |
+ | 氷           |     | 1.309       |
+ | 水         |     | 1.33        |
+ | ガラス         |     | 1.52 to 1.8 |
+ | エメラルド       |     | 1.57        |
+ | ルビー/サファイア |     | 1.77        |
+ | ダイアモンド       |     | 2.417       |
 {: .grided-table}
 
-#### Translucency
+#### 半透明度
 {: #translucency}
-A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material. This is a very sensitive effect, small adjustments can make a big difference.
+拡散の度合いです。不透明度が高い場合、より多くの光がマテリアルでランダムに拡散されるので、「サンドブラスト」効果が生まれます。これは非常に「繊細」定な効果で、少しの調整が大きな違いを生み出します。
 
 ![images/transparencytl.png](images/transparencytl.png)
 
-#### Scattering
+#### スキャタリング
 {: #scattering}
-Controls the probability of the light encountering a particle per unit length. The [Path Tracer](render-tab.html#path-tracer) is required for this effect.
-Subsurface scattering permits light to penetrate the object's surface and scatter in any direction. Many translucent materials can be modeled using this effect. Certain surfaces, such as stone or skin can be realistically “softened” by allowing the light to penetrate a short distance.
-The material must have some transparency in order for sub-surface scattering to take place. This is a volumetric effect. The objects with this material attached must be solid or “space enclosing” for this to work properly.
+単位長さ当たりの光が粒子に衝突する確率をコントロールします。この効果には[パストレーサー](render-tab.html#path-tracer)が必要です。
+
+サブサーフェススキャタリング（表面下散乱）は、光がオブジェクトのサーフェスを透過し、あらゆる方向に散乱することを可能にします。多くの半透明のマテリアルはこの効果を用いてモデリングすることができます。石や皮膚などのサーフェスは、光を短い距離を透過させることを可能にすることで、現実的に「柔らかく」見せることができます。
+
+サブサーフェススキャタリングの効果を有効にするには、マテリアルにある程度の透明度がなければなりません。これは体積効果なので、このマテリアルが割り当てられるオブジェクトは、ソリッドか「空間を包括している」状態である必要があります。
 
 ![images/scattering.png](images/scattering.png)
 
-#### Attenuation
+#### 減衰
 {: #attenuation}
-Determines how much light is absorbed as it passes through the object— greater values produce a more cloudy appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation ; murky liquids have higher Attenuation values.
+光がオブジェクトを通る際にどのくらい吸収されるかを決定します。この値が大きいほど、より濁った効果を表現することができます。減衰は、液体をモデリングする時に役に立ちます。透き通った液体は減衰が低く、不透明な液体は減衰の値が高くなります。
 
 ![images/attenuation.png](images/attenuation.png)
 
-#### Dispersion
+#### 分散
 {: #dispersion}
-Controls how much light is split into its component wavelengths.
+光が成分の波長ごとに分離される度合いをコントロールします。
 
 ![images/dispersion.png](images/dispersion.png)
 
-#### Saturation
+#### 彩度
 {: #saturation}
-Determines the amount of dispersion.
+分散の量を決定します。
 
 ![images/saturation.png](images/saturation.png)
 
-#### Blurry Transparency
+#### ブラー透明度
 {: #blurry-transparency}
-When a material is partially transparent, a little noise is introduced into the transparency, to make the material look more natural.
+マテリアルがある程度透明な場合に、少しの「ノイズ」が与えられ、マテリアルがより自然に見えるようになります。
 
-#### Blurriness
-Controls the amount of noise added.
+#### ブラーの度合
+追加するノイズの量をコントロールします。
 
 ![images/blurrytransparency.png](images/blurrytransparency.png)
 
-#### Glow
+#### グロー
 {: #glow}
-Creates the illusion of illumination.
+照明効果を生み出します。
 
 ![images/glow.png](images/glow.png)
 
-## Textures
+## テクスチャ
 {: #textures}
-Two types of textures can be added to a material: Image Textures and Bump Patterns. Image textures are based on bitmaps, photographs or scanned images.  Bump Patterns are random or repeating patterns generated by Flamingo.
+マテリアルには、画像テクスチャとバンプパターンの2種類のテクスチャが追加できます。画像テクスチャは、ビットマップ、写真、またはスキャンされたイメージを基にします。バンプパターンは、Flamingoによって生成されるランダムなまたは繰り返されるパターンです。
 
 ![images/textures.png](images/textures.png)
 
-### Images
+### 画像
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another images may control the bump properties of the texture. To control how an image effects a material, go to the [Image Properties](material-image-properties.html) Dialog
+最大4つまでのビットマップ画像がマテリアルに詳細を加えるのに使用できます。画像マップは、 サーフェスの色や3次元サーフェスの表示特性（バンプ）を含む多くの目的で使用できます。画像マップは、ラスタベースのペイントプログラムを使って、写真やその他のマテリアルをスキャンして作成された2次元のパターンです。 一般的な方法は、現実の世界のマテリアルの写真をマテリアル色として使用する方法です。画像は最大4つの単体の画像で構成することができます。1つの画像が色をコントロールし、もう1つの画像がテクスチャのバンププロパティをコントロールすることなどができます。画像のマテリアルへの影響方法をコントロールするには、[画像のプロパティ](material-image-properties.html)ダイアログを使用してください。
 
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
 
-### Bump Patterns
+### バンプパターン
 {: #bump-patterns}
-Bumps Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
+バンプパターンは、ディスプレイスメントマップを用いたり、他のマップを用いたりする必要なしに、特定の種類のサーフェスの外観を表現します。バンプは、マテリアルのサーフェスの凹凸を、数式を使って表現します。 パターンには次のものがあります:
 
-> [Sandpaper](#sandpaper)
-> [Rubble](#rubble)
-> [Pyramid](#pyramid)
-> [Wrinkled](#wrinkled)
-> [Marbled](#marbled)
+> [サンドペーパー](#sandpaper)
+> [砕石](#rubble)
+> [ピラミッド](#pyramid)
+> [しわ](#wrinkled)
+> [大理石](#marbled)
 
-As and example materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarser texture.
+例えば、漆喰、コンクリート、そして粘土のようなマテリアルは、きめが細かいマテリアルです。このようなマテリアルは、クローズアップして見ることがない限り、マテリアルをスキャンしてそのビットマップを作成する意味はあまりないでしょう。このようなきめの細かいパターンは、サンドペーパープロシージャルバンプを[ベース色](advanced-material-properties-main.html#color)上で使うことで模倣することができます。マテリアルの色で[ベース色](advanced-material-properties-main.html#color)を作成してください。そして、マテリアルにプロシージャルバンプを追加します。きめを細かくするには、サンドペーパーを、きめを粗くするには砕石を使用します。
 
-When one of the bump maps is checked, additional controls become available. More than one bump pattern can be added to a material.
+バンプマップを選択してチェックマークを付けると、詳細コントロールが有効になります。マテリアルには、1つまたはそれ以上のバンプパターンを追加することができます。
 
-#### Sandpaper
+#### サンドペーパー
 {: #sandpaper}
-Provides a random, finely textured appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit sandpaper.
+ランダムできめの細かいでこぼこを表現します。サンドペーパーを編集するには、[スケール](#scale)、[強弱](#strength)、[回転](#rotation)を変更します。
 
 ![images/sandpaper.png](images/sandpaper.png)
-*Sandpaper progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*[スケール](#scale)および[強弱](#strength)を増加させたサンドペーパーの例*
 
-#### Rubble
+#### 粗石
 {: #rubble}
-Gives the appearance of a lumpy, pitted surface. It can be scaled up and used for water, dirt, and smudges on surfaces. Smudges can be made with a large [Scale](#scale) and a very small [Strength](#strength) using Rubble. Rubble bump has a larger size range than Sandpaper.
+波だった、くぼみのあるサーフェスを表現します。 これは、スケールを上げて水、土、サーフェスのにじみなどに使用することができます。にじみは、粗石を使って[スケール](#scale)を大きくし、[強弱](#strength)を非常に小さくして表現することができます。砕石バンプはサンドペーパーよりも大きなサイズを表現します。
 
 ![images/rubble.png](images/rubble.png)
-*Rubble progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*[スケール](#scale)および[強弱](#strength)を増加させた砕石の例*
 
-#### Pyramid
+#### ピラミッド
 {: #pyramid}
-Gives the appearance of small pyramidal protrusions like a knurl pattern.  [Scale](#scale) will control only the X and Y pyramid base size. [Strength](#strength) will effect the "height" effect of the pyramid.
+刻みパターンのような複数の小さいピラミッド型の突出を表現します。[スケール](#scale)は、XとYのピラミッドのベースサイズのみをコントロールします。[強弱](#strength)は、ピラミッドの「高さ」効果をコントロールします。
 
 ![images/pyramid.png](images/pyramid.png)
-*Pyramid showing a larger and larger [Scale](#scale).*
+*[スケール](#scale)を増加させたピラミッドの例*
 
-#### Wrinkled
+#### しわ
 {: #wrinkled}
-Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+しわくちゃな様子を表現します。しわを編集するには、[スケール](#scale)、[強弱](#strength)、[回転](#rotation)を変更します。
 
 ![images/wrinkled.png](images/wrinkled.png)
-*Pyramid showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*[スケール](#scale)を増加させたしわの例。[強弱](#strength)は一定に保たれています。*
 
-#### Marbled
+#### 大理石
 {: #marbled}
-Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+大理石のような模様を表現します。これは渦を巻くパターンです。大理石を編集するには、[スケール](#scale)、[強弱](#strength)、[回転](#rotation)を変更します。
 
 ![images/marbled.png](images/marbled.png)
-*Marbled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*[スケール](#scale)を増加させた大理石の例。[強弱](#strength)は一定に保たれています。*
 
-### Scale
+### スケール
 {: #scale}
-Scale controls the proportional size of the bumps.
+バンプの比例サイズをコントロールします。
 
 #### X/Y/Z
-Specifies scale in each direction separately.
+それぞれの方向のスケールを別々に指定します。
 ![images/texturescalexy.png](images/texturescalexy.png)
 
-#### Lock
-Maintains the aspect ratio.
+#### ロック
+縦横比を維持します。
 
-### Strength
+### 強弱
 {: #strength}
-Controls the appearance of depth.
+奥行きの表現をコントロールします。
 ![images/texturestrength.png](images/texturestrength.png)
 
-### Rotation
+### 回転
 {: #rotation}
-Sets the rotation angle for the pattern.
-Changes to the orientation are normally apparent only if the procedural map has an obvious pattern or if the bump map has been scaled with different x, y and z components to produce a directional pattern.
+パターンの回転角度を設定します。向きの変更は通常、プロシージャルマップにはっきりとしたパターンがあるか、バンプマップスケールのX、Y、Z要素に異なる値を設定して方向性のあるパターンを作っている場合のみによく分かります。
 ![images/texturerotated.png](images/texturerotated.png)

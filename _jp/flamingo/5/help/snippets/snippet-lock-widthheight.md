@@ -1,3 +1,3 @@
 
-#### Lock
-Maintains the ratio between the Width and Height.
+#### ロック
+幅と高さの比率を維持します。

@@ -1,24 +1,24 @@
-### Color
-Controls the local color for the material. All materials have a base color. [More about color...](select-color.html) 
+### 色
+マテリアルのローカルカラー（固有色）をコントロールします。すべてのマテリアルにはベースカラー（基本の色）があります。 [色についての詳細...](select-color.html) 
 
-#### Color swatch selector
-Click the color swatch to select colors from the [Select Color](select-color.html) dialog box.
+#### 色見本セレクタ
+[色の選択](select-color.html)ダイアログボックスから色を選択するには、色見本をクリックします。
 
-### Preview
-The preview image shows the material as it will appear on objects in the model. The style and size of the preview are part of the material definition.
- **Note** : Set the default size for the preview object in [Options: Flamingo nXt](options-flamingo.html).
+### プレビュー
+プレビューイメージは、マテリアルがモデルのオブジェクト上に表れるように（マテリアルを）表示します。プレビューのスタイルとサイズはマテリアルの定義の一部です。
+ **メモ** : プレビューオブジェクトのデフォルトのサイズは、[オプション: Flamingo nXt](options-flamingo.html)で設定できます。
 ![images/previewer.png](images/previewer.png)
 
->Right-click the material preview pane to specify options that control the preview's appearance:
+>マテリアルプレビューペインを右クリックすると、プレビューの表示方法をコントロールするオプションがポップアップメニューで表示されます。
 
-#### Sphere
-Sets the preview object to a sphere.
+#### 球
+プレビューオブジェクトを球に設定します。
 
-#### Box
-Sets the preview object to a box with a width equaling the sphere radius.
+#### 直方体
+プレビューオブジェクトを直方体に設定します。幅が球の半径と同じになります。
 
-#### Plane
-Sets the preview object to a plane with a width equaling the sphere radius.
+#### 平面
+プレビューオブジェクトを平面に設定します。幅が球の半径と同じになります。
 
-#### Sphere radius
-Sets the preview sphere radius and box and plane width. Set the size to approximate the size of the objects to which the material will be assigned to help visualize the material.
+#### 球の半径
+プレビューの球の半径、および直方体と平面の幅を設定します。（マテリアルを視覚化するために）マテリアルが割り当てられるオブジェクトのサイズを近似するサイズを設定してください。

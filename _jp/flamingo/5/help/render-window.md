@@ -1,224 +1,226 @@
 ---
-title: Render Window
+title: レンダリングウィンドウ
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}
-The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
+レンダリングウィンドウは、露出調整やポストプロセッシング効果を追加するオプションを提供します。レンダリングウィンドウのメインフレームは、Rhinoのレンダリングフィレームワークの一部です。レンダリングメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)を参照してください。このトピックは、Flamingo特有のレンダリングプロセスに追加された機能を説明します。
 
-## Managing an Active Rendering
-Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model then starts an initialization process.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
+## アクティブなレンダリングの管理
+レンダリングが開始されると、[レンダリングウィンドウ](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)が起動し、レンダリングが開始されます。Flamingoは、段階によってレンダリングイメージを更新する、マルチパスシステムです。Flamingoはまず内部モデルに変更があるかどうかを確認し、初期化プロセスを開始します。このプロセスには、数秒から数分かかる場合があります。この初期プロセスでは、モデルがインポートされ、ハードドライブからマテリアルビットマップが取得され、レンダリングイメージバッファが作成されます。レンダリングを管理するプロセスには、いくつかのキーになるステップがあります。
 
->[Multiple pass rendering](#multi-pass)
->[Stopping a rendering](#stop-render)
->[Adjusting the Image](#adjusting)
->[Saving the Image](#saving)
+>[マルチパスレンダリング](#multi-pass)
+>[レンダリングを停止する](#stop-render)
+>[イメージを調整する](#adjusting)
+>[イメージを保存する](#saving)
 
-### Multiple Pass Rendering
+### マルチパスレンダリング
 {: #multi-pass}
-Flamingo nXt is a completely new rendering engine. Using a method of multi-pass refinement allows more advanced rendering effects without the overhead of a complicated interface. In the first few rendering passes, there will be unusual artifacts.  For instance you will see shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each rendering pass.  Use the [Flamingo Tab](#flamingo-tab) to monitor the rendering process.
+Flamingo nXtは、まったく新しいレンダリングエンジンです。マルチパスのリファインメント方法を用いることで、複雑なインターフェイスで時間や労力を取られることなく、より高度なレンダリング効果を可能にします。最初の数回のレンダリングパスでは、変わったアーチファクトが見られます。例えば、影が非常にシャープで直線的であるなどです。しかし、パスを重ねるにつれ、影はブレンドされて柔らかみを帯びて行きます。同じく各レンダリングパスで向上していく他の多くの効果もあります。レンダリングプロセスを確認するには[Flamingoタブ](#flamingo-tab)を使用してください。
 
-In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. You can let images that look good continue to improve. But, if you want to change or save something, you can also stop an image at any time.
+このように、nXtのレンダリングには「終り」がなく、レンダリングをいつ停止するのかを決定するだけになります。レンダリングを続けてより良くすることも、変更や保存のために好きな時にいつでも停止することもできます。
 
 ![images/passes-wide-1.gif](images/passes-wide-1.gif)
 
-Some of the effects that improve on each pass are:
+それぞれのパスで向上される効果には次のものが含まれます:
 
->Lighting (such as global illumination if enabled)
->Soft Shadows
->Reflections (blurry)
->Refraction
->Anti-aliasing
->Depth of field
+>照明（有効な場合、グローバルイルミネーションなど）
+>ソフトシャドウ
+>反射（ぼやけた)
+>屈折
+>アンチエイリアシング
+>被写界深度
 
-### Stopping a rendering
+### レンダリングを停止する
 {: #stop-render}
-You can stop the rendering in a number of ways:
+レンダリングは複数の方法で停止することができます。
 
-![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
+![images/close-x.png](images/close-x.png) すぐにレンダリングを停止して、レンダリングウィンドを閉じるには、ウィンドウの右上にある「X」ボタンをクリックします。素早くモデルに戻って変更を加えたい場合に最適の方法です。
 
-![images/stop.png](images/stop.png) Click the Stop Raytrace button to stop the rendering at the end of the current pass. This is the best option before saving and image.
+![images/stop.png](images/stop.png) 現在のパスの最後でレンダリングを停止したい場合は、レイトレースを停止ボタンをクリックします。これはイメージを保存する前に使用するのに最適です。
 
-![images/stop.png](images/stop.png) Double-click the Stop Raytrace to stop the rendering immediately and leave the render window open.
+![images/stop.png](images/stop.png) すぐにレンダリングを停止して、レンダリングウィンドウを開いたままにしておきたい場合は、レイトレースを停止ボタンをダブルクリックします。
 
-### Adjusting a rendering
+### レンダリングを調整する
 {: #adjusting}
-After stopping and image, use the controls in the [Flamingo Tab](#flamingo-tab) to quickly adjust the image and lighting. This is a very important set of tools when producing high end images.
+レンダリングを停止後、[Flamingoタブ](#flamingo-tab)のコントロールを使用して、イメージと照明を調整します。これらのツールはハイエンドのイメージを作り出そうとしている場合に、非常に大切です。
 
-Controls used for images adjustment include:
+イメージの調整に使用できるコントロールには次が含まれます。
 
->[Adjust Image](#adjust-image)
->[Channels](#channels)
->[Post Effects](#post-process-effects)
+>[イメージの調整](#adjust-image)
+>[チャンネル](#channels)
+>[ポストエフェクト](#post-process-effects)
 
 
-### Saving Images
+### イメージを保存する
 {: #saving}
-There are many ways to save an image depending on the plans for the image.  Normally saving as a JPG or PNG image file is the recommended process for most images.  But there are other options.
+イメージの使用方法によって、保存方法をいろいろと帰ることができます。通常、ほとんどのJPGまたはPNG画像ファイルとして保存するのがお勧めですが、他のオプションもあります。
 
-#### ![images/saveimageas.png](images/saveimageas.png) Save Image
-Saving a JPG or PNG image file is the normal process after adjusting the image.  
+#### ![images/saveimageas.png](images/saveimageas.png) イメージを保存
+イメージを調整した後は、JPGまたはPNG 画像ファイルを保存するのが通常のプロセスです。  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
+JPG画像は、とても効率的で、サイズの小さいファイル形式です。Webに載せるまたはメールで送信する画像に適しています。しかし、効率的な代わりに、いくつかの色はイメージから取り除かれます。
 
-PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
+PNGは、100%の色情報とアルファチャンネル情報を持つ圧縮された形式です。高品質のイメージに適した形式です。
 
-#### Save with background alpha channel
+#### 保存（背景アルファチャンネルを含める）
 {: #save-with-alpha-channel}
-Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+32ビットのPNG、TIF、BMPイメージをアルファチャンネル背景を含めて保存します。ファイル形式のアルファチャンネルバージョンが高品質の合成に用います。レンダリングがアルファチャンネルを含めて保存されると、背景は黒で表示されます。[Flamingoタブ](#flamingo-tab)と[保存ダイアログ](#saving)ボックスには、チェックボックスがあり、アルファチャンネルを保存することができます。PNG形式がアルファ情報を保存するのに適した形式です。
 
-#### Export to native Flamingo nXt file (.nXtImage)
+#### ネイティブFlamingo nXtファイルにエクスポート（.nXtImage）
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
-The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
+非圧縮の輝度および色情報を保存します。[アルファ](environment-tab.html#alpha)を含むすべてのレンダリングチャンネルを保存します。nXtのイメージファイルは、[イメージエディタ](image-editor.html)で開くことができ、[露出](#adjust-image)や[ポストプロセッシング効果](#effects)を適用してイメージを別のビットマップ形式で保存することができます。
 
-#### Export to HDR file
+nXtImage形式は、nXtレンダラーのネイティブのイメージ形式です。レンダリングのほとんどの情報を保存するので、推奨する保存形式です。この形式で保存されたイメージは、[nXtイメージエディタ](image-editor.html)で操作することができ、特殊効果を追加できます。このエディタからは、nXtでサポートされているすべての形式を含む多くのよく使用されている標準形式に保存ができます。[Piranesi EPixファイル（.epx）](http://www.piranesi.co.uk/)形式に保存することもできます。
+
+#### HDRファイルにエクスポート
 {: #export-to-hdr}
-Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
+非圧縮の輝度および色情報を保存します。.hdr形式は、輝度データを直接ハイ・ダイナミック・レンジ形式に保存します。通常の写真のような輝度のない背景は、これらの形式で保存すると黒で表示されます。
 
-#### Export to EXR file
+#### EXRファイルにエクスポート
 {: #export-to-exr}
-A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
-The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
+フリーソフトウェアライセンスの下でリリースされた、インダストリアル・ライト&マジック（ILM）によって作られたソフトウェアツールのセットと共にオープン標準としてリリースされたハイ・ダイナミック・レンジ画像ファイル形式です。このファイル形式は、符号1ビット、指数5ビット、仮数10ビットの16ビット/チャンネルの浮動小数点値（半精度）をサポートします。これは、30を超える値の露出のダイナミックレンジを可能にします。[Wikipediaの記事: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)を参照してください。
+.exr形式は、輝度データを直接ハイ・ダイナミック・レンジ形式に保存します。通常の写真のような輝度のない背景は、これらの形式で保存すると黒で表示されます。
 
-#### ![images/close-x.png](images/close-x.png) Exit
-Closes the render window.
+#### ![images/close-x.png](images/close-x.png) 閉じる
+レンダリングウィンドウを閉じます。
 
-#### Pulldown Menus
-For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).
+#### プルダウンメニュー
+レンダリングウィンドウのメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)を参照してください。
 
-## Flamingo Tab
+## Flamingoタブ
 {: #flamingo-tab}
-The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to managing the active Flamigno renderings.
+レンダリングウィンドウのFlamingoタブは、Flamingoレンダリングエンジン特有の多くの追加コントロールを表示します。これらのコントロールを理解しておくことは、アクティブなFlamignoのレンダリングを管理するのに重要です。
 
-#### Save with alpha channel
-Saves 32-bit PNG, TIF, and BMP images including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  Use this checkbox and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+#### 保存（背景アルファチャンネルを含める）
+32ビットのPNG、TIF、BMPイメージをアルファチャンネル背景を含めて保存します。ファイル形式のアルファチャンネルバージョンが高品質の合成に用いられます。レンダリングがアルファチャンネルを含めて保存されると、背景は黒で表示されます。アルファイメージを保存するには、このチェックボックスと[保存ダイアログ](#saving)ボックスを使用します。PNG形式がアルファ情報を保存するのに適した形式です。
 
-## Progress
+## 進行状況
 {: #progress}
-Use the Progress information to check the status and progress of a Flamingo rendering.
+Flamingoのレンダリングの状態と進行状況を確認するのに、この情報を用います。
 
-#### Action
-Shows the current status of the rendering as is works through the model.
+#### 動作
+モデルで進行中のレンダリングの現在の状況を表示します。
 
-Status messages include:
+状況のメッセージには次のものが含まれます。
 
-* Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
-* Action Done - Once the Stop button has been hit and the render engine finishes a pass, then the stop action is done.
-* Pass Complete - This message posts each time a pass is complete.
-* Resume Rendering - In cases that a resume is possible this is displayed.
-* Updating - The render engine is in the middle of a pass, currently updating the rendering.
+* レンダリング開始 - レンダリングが開始されると、モデルの変換とレンダリングのためのメモリのセットアップを含むいくつかのセットアップ作業が行われます。
+* 操作完了 - 停止ボタンをクリックし、レンダリングエンジンがパスを終了すると、操作が完了されます。
+* パス完了 - 1つのパスが完了する度にこのメッセージが表示されます。
+* レンダリングを再開 - 再開が可能な場合に、このメッセージが表示されます。
+* 更新中 - レンダリングエンジンがパスを処理中です。レンダリングが更新されています。
 
-#### Pass
-This is the current pass Flamingo is rendering.  Flamingo is a multi-pass render engine.  Each pass will refine add lighting effects and refine the complex rendering effects.
+#### パス
+現在Flamingoがレンダリング中のパスです。Flamingoは、マルチパスレンダリングエンジンです。それぞれのパスは、レンダリングをリファインし、照明効果や複雑なレンダリング効果を加えていきます。
 
-#### Scan line
-A pass progresses along a stretch of horizontal pixels.  Each row of pixels is a scanline.  This reports the current scanline returned from the render engine.
+#### スキャンライン
+パスは、水平方向のピクセルに沿って進行します。ピクセルのそれぞれの行がスキャンラインです。この部分は、レンダリングエンジンから返された現在のスキャンラインを表示します。
 
-#### Elapsed time
-This is the time that has passed from the beginning of the rendering.  This does not include the setup time for the rendering.
+#### 経過時間
+レンダリング開始時からの経過時間です。これにはレンダリングのセットアップ時間は含まれません。
 
-#### Rays / second
-The number of rays resolved into the scene per second.
+#### レイ/秒
+シーンで処理される秒毎のレイの数です。
 
-#### Pixels / second
-The number of pixels resolved in the image per second.
+#### ピクセル/秒
+イメージで処理される秒毎のピクセルの数です。
 
-## Adjust Image
+## イメージの調整
 {: #adjust-image}
-This is one of the most important controls in Flamingo. Just like a camera, you can adjust image exposure.  This is the best way to make renderings brighter, darker, add contrast, or increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness than can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
+これは、Flamingoで最も重要なコントロールの1つです。このコントロールを使えば、カメラのように、イメージの露出を調整できます。これは、レンダリングを明るくまたは暗くする、またはコントラストを付け加える、または色の彩度を上げる最良の方法です。この調整処理は、[トーンマッピング](https://en.wikipedia.org/wiki/Tone_mapping)と呼ばれます。Flamingoは、画面やプリンタで表示できるよりもより広い範囲の色や明るさを扱える輝度空間でレンダリング処理を行います。トーンマッピングは、輝度データを、画面に表示または印刷される赤、緑、青（RGB）のピクセルに変換する処理です。これらの設定は、イメージの保存方法もコントロールします。
 
 ![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
-*The default image on the left. The corrected image after applying brightness (0.20), burn (0.16) and saturation (1.20).*
-Use this process to quickly adjust the brightness of an image and overall color of an image without needing to re-render.
+*デフォルトイメージ（左）。明るさ（0.20）、焼き込み（0.16）、彩度（1.20）を適用して補正したイメージ。*
+再レンダリングしないで、イメージの明るさと全体の色を素早く調整したい場合にこのプロセスを使用します。
 
-### Brightness
+### 明るさ
 {: #brightness}
-Adjusts the overall brightness of the image. For example, if a white surface in the model is rendering gray, increase the brightness until the surface appears white. Or, if the exterior scene seems overexposed, decrease the brightness until the scene appears more correct.
+イメージの全体の明るさを調整します。例えば、モデルの中の白いサーフェスがグレーにレンダリングされている場合は、サーフェスが白く見えるまで明るさの度合いを上げることができます。反対に、屋外のシーンが露出オーバーになっているような場合、これでよいと感じるまでシーンの明るさの度合いを下げることができます。
 
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*Brightness at default (left) and increased.*
+*デフォルトの明るさ（左）、値を上げた状態*
 
 {% include_relative snippets/snippet-brightness.md %}
 
-### Burn
+### 焼き込み
 {: #burn}
-Adjusts the image white point. This is the brightest white color in the image. A little burn can add drama, life, and sharpness to a rendering by adding more areas of white to contrast with the dark areas.
-See [Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point).
+イメージの白い点を調整します。これはイメージの中で最も明るい白色です。少量の焼きこみは、暗い部分とのコントラストを付ける白い部分をより追加することでレンダリングを印象的に、よりはっきりさせます。
+[Wikipediaの記事: White point](http://en.wikipedia.org/wiki/White_point)を参照してください。
 
 ![images/burn-001.png](images/burn-001.png)
-*Burn at the default setting (left) and increased.*
+*デフォルト設定で焼き込み（左）、値を上げた状態*
 
-### Saturation
+### 彩度
 {: #saturation}
-Saturation controls the amount of color in the image. A saturation of 0.00 will result in a grayscale image. Values above 1.00 can make colors richer.
+彩度は、イメージの色の量をコントロールします。彩度が0.0の場合、グレースケールのイメージになります。彩度を1.00よりも大きくすると、色がより鮮やかになります。
 
 ![images/saturationdefault.png](images/saturationdefault.png)
-*Saturation at the default (left) and increased by about 3 (right).*
+*デフォルトの彩度（右）、3程値を上げた状態（左）*
 
-### Histogram
+### ヒストグラム
 {: #histogram}
-Graphically displays the distribution of the light and dark areas in the image after the Adjust images controls have been applied. The left edge of the chart are the darks to black.  The right edge shows the amount of light colors to white. This is a great way to determine the important parts of the image. A good goal is to adjust the image to have a full range of values in the image.  For instance if the histogram stops before getting to the far right of the graph,  then use more brightness or burn will stretch the values toward the right or bright edge. See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
+イメージの調整コントロールが適用された後に、イメージの明るいそして暗い部分の分布を図（グラフ）で表示します。ヒストグラム表示の左端は真っ暗な状態（黒）です。右端は一番明るい状態（白）を表示します。これはイメージの重点を置きたい部分を決定するのにとても良い方法です。イメージにあらゆる範囲の値があるように調整するのがよい目標でしょう。 例えば、ヒストグラムがグラフの右端に達する前に止まっている場合、明るさや焼き込みを使うと右端（一番明るい）まで値が分布されるようになります。[Wikipediaの記事: Histogram](http://en.wikipedia.org/wiki/Histogram)を参照してください。インターネットには、デジタル写真の露出を確認するのにヒストグラムを用いることに関する多くの情報があります。原理はレンダリングも同じです。
+<!--'Use more brightness or burn will stretch the values' - This needs rewritten.-->
 
 ![images/histogram.png](images/histogram.png)
-*An example histogram with very few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
+*暗い部分が少なく、広い範囲の明るい色のあるヒストグラムの例。（けれども、右端に達する前にグラフが下がることから完全に白のピクセルは少ししかないことが分かります。）*
 
-#### Histogram options
-Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
+#### ヒストグラムのオプション
+ヒストグラムのイメージを右クリックすると、下のオプションが表示されます。これらのオプションは、ヒストグラムの情報の表示方法を変更します。（ヒストグラムの値は変更されません。）
 
-* **Fit** - This fits the highest verticals into the chart.
-* **Median** - This fits the median value in the vertical. This is a good way to see the details at the edges of the chart.
-* **Mean** - This fits the mean value in the vertical direction.
-* **Show Sorted Graph** - This sorts all the values based on the amount they exist in the image.
-* **Show Scale** - Shows the corresponding values along the bottom of the chart.
-* **Graph Color...** - Set the graph color.
+* **フィット** - これは、縦方向に一番高い部分をグラフにフィットさせます。
+* **中央値** - これは、縦方向の中央値でフィットさせます。これは、ヒストグラムの両端の詳細を確認するのによい方法です。
+* **平均値** - これは、縦方向の平均値でフィットさせます。
+* **並べ替えたグラフを表示** - これはイメージにあるすべての値を量で並べ替えます。
+* **スケールを表示** - ヒストグラムの一番下に沿って、対応する値を表示します。
+* **グラフの色...** - グラフの色を設定します。
 
-### Lock exposure
+### 露出を固定
 {: #lock-exposure}
-When the exposure settings are locked, changing the lighting will not adjust the exposure to compensate.
+露出設定を固定すると、照明を変更しても補正のための露出調整はされません。
 
-## Render Constraints
+## レンダリング停止条件
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}
 {% include_relative snippets/snippet-renderconstraints.md %}
 
-## Information
+## 情報
 {: #information}
 
-#### Resolution
-Displays the current [rendering resolution](render-tab.html#resolution).
+#### 解像度
+現在の[レンダリング解像度](render-tab.html#resolution)を表示します。
 
-#### Faces
-Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.
+#### 面
+モデルをレンダリングするのに使用されたメッシュ面の数を表示します。これはRhinoでの様々な[レンダリングメッシュの設定](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm)を比較するのに便利です。
 
-#### Apparent faces
-When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The Apparent faces display shows how many more temporary faces would be generated if the block instances did not exist.
+#### 見掛けの面
+モデルにブロックがある場合、Flamingo nXtはそれぞれのインスタンスのメッシュを再生成しなくても、ブロック定義を用いてブロックインスタンスをレンダリングすることができます。見掛けの面は、ブロックインスタンスがなかった場合に、後どのくらいの一時面が生成されるかを表示します。
 
-#### Lighting information
-This is some information on the current lighting setup of the rendering.  Here is a list of lighting information listed:
+#### 照明の情報
+レンダリングの現在の照明設定に関するいくつかの情報が表示されます。表示される情報は次のとおりです。
 
->[Presets](lighting-tab.html)
->[Sun](sun-and-sky-tabs.html#sun)
->[Sky](sun-and-sky-tabs.html#sky)
->[Lights](lights-tab.html)
->[Indirect](lighting-tab.html#indirect)
->[Ambient On/Off](lighting-tab.html#ambient)
+>[プリセット](lighting-tab.html)
+>[太陽](sun-and-sky-tabs.html#sun)
+>[空](sun-and-sky-tabs.html#sky)
+>[光源](lights-tab.html)
+>[間接光](lighting-tab.html#indirect)
+>[環境光　オン/オフ](lighting-tab.html#ambient)
 
-## Channels
+## チャンネル
 {: #channels}
-Use these controls to change the lights channels in real time. Assign lights to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
+リアルタイムで光源チャンネルを変更する場合に、これらのコントロールを使用します。8つのチャンネルの1つに光源を割り当てます。レンダリングが表示されたら、レンダリングイメージの照明を調整します。これはレンダリングで複数の光源のバランスを調整するのにとても便利です。詳細については、[レンダリングチャンネル](render-channel.html#adjustng-channels)のトピックを参照してください。
 
-## Post Effects
+## ポストエフェクト
 {: #post-process-effects}
-Apply post-processing effects after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
+イメージがレンダリングされたら、ポストプロセッシング効果を適用できます。これらはオン、オフを切り替えられ、リストで順序を変えることもできます。設定はそれぞれの効果によって変わります。次のエフェクトがあります。
 
->Fog
->Glow
->Glare
->Depth of Field
->Points
->Curves
->Isocurves
->Annotations
+>フォグ
+>グロー
+>グレア
+>被写界深度
+>点
+>曲線
+>アイソカーブ
+>注釈
 
-For more details on specific filters see the [Post-process images](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) topic.
+それぞれのフィルタの詳細については、[イメージのポストプロセス](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)のトピックを参照してください。

@@ -1,55 +1,56 @@
 ---
-title: Plant Editor
+title: 植物エディタ
 ---
 <!-- TODO: This could use an update. -->
 
-# {{page.title}}
+# ![images/plants.svg](images/plants.svg) {{page.title}}
 {: #tree-editor}
 
-### File Pulldown
+### ファイルプルダウン
 
-#### New
-Create a new plant definition based on a template.
+#### 新規作成
+テンプレートに基づいて新規植物の定義を作成します。
 
  | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
- | **Standard**                                |   **Conifer**                             | **Broad Crown**                       |
+ | **標準**                                |   **コニファー**                             | **広い樹冠**                       |
  | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
- | **Palm**                                    |  **Groundcover**                          | **Complex**                                  
+ | **ヤシ**                                    |  **グランドカバー**                          | **複雑形状**                                  
 {: .plant-table}
 
-#### Open
-Opens an existing tree definition.
+#### 開く
+既存の樹木定義を開きます。
 
-#### Save
-Saves the current tree definition.
+#### 上書き保存
+現在の樹木定義を保存します。
 
-#### Save As
-Saves the current tree definition to a different name.
+#### 名前を付けて保存
+現在の樹木定義を異なる名前で保存します。
 
-### Raytrace Pulldown
-Renders the preview image.
+### レイトレースプルダウン
+プレビューイメージをレンダリングします。
 ![images/shadedvsrendered.png](images/shadedvsrendered.png)
-*Default (left) and raytraced (right) view.*
+*デフォルト（左）、レイトレース（右）表示*
 
-#### Start
-Start rendering the preview image.
+#### 開始
+プレビューイメージのレンダリングを開始します。
 
-#### Stop
-Stop rendering the preview image.
+#### 終了
+プレビューイメージのレンダリングを終了します。
 
-### View Pulldown
-Drag with the left mouse button to rotate the view camera around the target.
-Drag with the right mouse button to rotate the target around the camera.
-Scroll with the mouse wheel to zoom in and out.
+### 表示プルダウン
+ターゲットを中心にビューカメラを回転するには、左マウスボタンを使ってドラッグします。
+カメラを中心にターゲットを回転するには、右マウスボタンを使ってドラッグします。
+ズームイン、アウトするには、マウスホイールを使ってスクロールします。
 
-#### Restore Default
-Restores the default shaded view.
+#### デフォルトに戻す
+デフォルトのシェーディング表示に戻します。
 
-#### Show Leaves
-Shows the tree preview with leaves.
+#### 葉を表示
+樹木プレビューに葉を表示します。
 ![images/leaves-001.png](images/leaves-001.png)
-*Without leaves (left) and with leaves (right).*
+*葉がない状態（左）、葉を表示した状態（右）
+*
 
-### Settings pulldown
-Set the units in the editor to match the working units.
+### 設定プルダウン
+エディタの単位を作業単位に合うように設定します。

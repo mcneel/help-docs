@@ -1,212 +1,211 @@
 ---
-title: Environment Panel
+title: 環境パネル
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
 {: #environment-tab}
-Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
+環境はレンダリングの背景に表示されるだけではなく、モデルを取り囲む無限の球をコントロールします。シーンのオブジェクトは、環境を反射、そして屈折します。この環境の球は、背景効果のための参照サーフェスであり、選択できるオブジェクトではありません。
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
+環境は、背景や反射の目に見える部分に影響します。シーンの照明に影響する効果については、[空](sun-and-sky.html)のヘルプトピックを参照してください。
 
-Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
+Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれる特別な環境が用意されています。この環境は、現在の[照明プリセット](lighting-tab.html)に同期されます。照明プリセット](lighting-tab.html)を使用することで、照明と環境が適切なシーンのデフォルトに設定されます。
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
-##### Where can I find this command?
- 1. ![images/environments.png](images/environments.png)Materials Tab
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
- 1. Command > EnvironmentEditor
+##### コマンドの位置
+ 1. ![images/environments.png](images/environments.png)環境タブ
+ 1. ![images/icon-render.png](images/icon-render.png)レンダリングツールツールバー > ![images/environments.png](images/environments.png) 環境エディタ
+ 1. ![images/menuicon.png](images/menuicon.png)メニュー > レンダリングプルダウン > 環境エディタ
+ 1. コマンド > EnvironmentEditor
 
-The Environment Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
+環境エディタパネルは、個別のセクションに分かれています。環境のタイプに応じて、高度な（詳細）設定パネルは異なることがあります。
 
-Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
-Materials Panel
+色やテクスチャは色見本からドラッグして、どのような他の色見本、またはマテリアルエディタ、[テクスチャパレット](texturepalette.html)、または[環境エディタ](environmenteditor.html)にもドロップすることができます。
+環境パネル
 
- 1. [Background Type](#type)
- 1. [Settings Bar](#material_list)
- 1. [Environment List](#environment-list)
- 1. [Window Divider](#divider)
- 1. [Environment Properties Section](#properties)
- 1. [Name](#name)
- 1. [Environment Property Panels](#panels)
+ 1. [背景のタイプ](#type)
+ 1. [設定バー](#settings)
+ 1. [環境のリスト](#environment_list)
+ 1. [ウィンドウ区切り線](#divider)
+ 1. [環境のプロパティセクション](#properties)
+ 1. [名前](#name)
+ 1. [環境のプロパティパネル](#panels)
 
-## [Background Type](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [背景のタイプ](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #type style="clear: both;"}
-Select the type of background for the model.  [Environment](#flamingo-environment) is an all inclusive rendering environment and should be the default setting for Flamingo.  The other three settings present a much more simplified set of settings that reflect older ways of defining backgrounds. For more information see the [Rhinoceros Simple Background](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings) topic
+モデルの背景のタイプを選択します。[環境](#flamingo-environment)はすべてを含んだレンダリング環境で、Flamingoのデフォルト設定です。他の3つの設定は、古い形式の背景の定義方法で、「環境」に比べて非常にシンプルな設定コントロールが表示されます。詳細については、[Rhinocerosのシンプルな背景](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings)のトピックを参照してください。
 
-The reset of this help topic covers the Environment type.
+残りのこのヘルプトピックは、環境のタイプについて説明します。
 
-## [Settings Bar](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [設定バー](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #settings}
-Use this bar to help navigate the Environment list.
+このバーを使用して、環境のリストを順番に表示します。
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) 戻る矢印
+現在の環境または前に選択された環境をうしろ向きの順番で表示します。例えば、反射または屈折レイヤのある環境です。反射または屈折の詳細設定から親環境に戻るのにこの矢印を使用してください。
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) 進む矢印
+前に選択された環境を前向きの順番で表示します。例えば、反射または屈折レイヤのある環境です。反射または屈折の詳細設定から親環境に進むのにこの矢印を使用してください。
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 現在選択されている環境名
+現在の環境名と編集レベルを表示します。例えば、反射または屈折レベルがある場合、「>」が表示されます。現在の環境を確認できる場所です。
 
-#### ![images/library_default.png](images/library_default.png) Tools Menu
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
+#### ![images/library_default.png](images/library_default.png) ツールメニュー
+[ツールメニュー](#tools-menu)を表示します。環境に関するコマンド、設定、ユーティリティの包括的なメニューです。
 
-#### ![images/help_topics.png](images/help_topics.png) Help
+#### ![images/help_topics.png](images/help_topics.png) ヘルプ
 
-## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [環境リスト](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #environment_list}
-This lists all the environments contained in the model. One Environment will be selected as the current environment. The current environment is used in the rendering. Yellow corners will show up surrounding the current Environment.
+ここにはモデルに含まれるすべての環境が表示されます。1つの環境が現在の環境として選択されます。現在の環境はレンダリングに使用されます。現在の環境には、黄色の枠が表示されます。
 
-From this list:
+このリストでは次のことが行えます。
 
-* Click on an Environment to make it current. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
-* Scroll up and down in the list to see all the environments in the model.
-* Drag and drop an environment from this list onto any viewport to set it current.
-* Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
-* Right-click a thumbnail to display the Environment context menu
-* Right-click the blank area to display the New Environment Context Menu
+* 環境をクリックして、現在の環境に設定できます。選択されると、環境のプロパティが下のパネルに表示されます。詳細については、[レンダリングマテリアルのプロパティ](#properties)を参照してください。
+* リストを上下にスクロールして、モデルのすべての環境を見ることができます。
+* 新規環境追加ボタン ![images/add_material.png](images/add_material.png) を使用して、リストの一番最後に新規環境を追加することができます。
+* サムネイルを右クリックすると、環境のコンテクストメニューを表示することができます。
+* 何も表示されていない部分を右クリックすると、新規環境のコンテクストメニューを表示することができます。
 
-###  ![images/add_material.png](images/add_material.png) Add new environment
+###  ![images/add_material.png](images/add_material.png) 新規環境を追加ボタン
 {: #add_environment}
-Scroll down to the bottom of the Environment list to see the add icon.
+追加アイコンは、環境リストを一番下までスクロールしたところに表示されます。
 
-Opens the Render Content [library](libraries.html) of environments.
-The environments in the library act as templates for creating environments in the model.
+環境のレンダリングコンテクスト[ライブラリ]を開きます。
+ライブラリの環境は、モデルの環境を作成するためのテンプレートしての役割をします。
 
-### Environment Context Menu
+### 環境のコンテクストメニュー
 {: environment_context}
-This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+このメニューは、環境リストを右クリックすると表示されます。このメニューに表示される多くのオプションの詳細については、[ツールメニュー](#tools_menu)を参照してください。
 
-### New Environment Context Menu
+### 新規環境のコンテクストメニュー
 {: new_envrionment_context}
-This menus is available by right-clicking on a blank area of the Environment List.
+このメニューは、環境リストの何も表示されていない部分を右クリックすると表示されます。
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) 新規環境を作成
+新規Flamingo環境を作成します。
 
-#### ![images/import.png](images/import.png) Import Environment from File...
-Use this command to select a previously exported Environment.
+#### ![images/import.png](images/import.png) 環境をファイルからインポート...
+このコマンドは、以前にエクスポートした環境を選択するのに使用します。
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new environment based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) ペースト
+クリップボードの内容に基づいて新規環境を作成します。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) インスタンスとしてペースト
+クリップボードの内容に基づいて、インスタンシングによって元にリンクされる新規環境を作成します。
 
-#### ![images/grid.png](images/grid.png) Grid
-Displays the previews as a grid of thumbnails.
+#### ![images/grid.png](images/grid.png) グリッド
+プレビューをサムネイルのグリッドとして表示します。
 
-#### ![images/list.png](images/list.png) List
-Displays the previews as a list of thumbnails.
+#### ![images/list.png](images/list.png) 一覧
+プレビューをサムネイルの一覧として表示します。
 
-#### ![images/tree.png](images/tree.png) Tree
-Displays the previews as a tree showing nesting.
+#### ![images/tree.png](images/tree.png) ツリー
+プレビューをツリー表示します。（ネストを表示します。）
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
-Displays the previews to the left of the controls.
+#### ![images/horizontal.png](images/horizontal.png) 水平レイアウト
+プレビューをコントロールの左側に表示します。
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
-Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
+#### ![images/showpreview.png](images/showpreview.png) プレビューペインを表示
+現在選択されているサムネイルのプレビューのプロパティを表示します。プレビューの形状、サイズ、背景、回転動作を設定します。
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
-Floats the preview image in a re-sizable window.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) フロート
+サイズ変更できるウィンドウにプレビューイメージをフロートします。
 
-#### Thumbnails
+#### サムネイル
 
-##### ![images/small.png](images/small.png) Small
-Sets the thumbnail size to the smallest size.
+##### ![images/small.png](images/small.png) 小
+サムネイルを一番小さいサイズで表示します。
 
-##### ![images/medium.png](images/medium.png) Medium
-Sets the thumbnail size to medium size.
+##### ![images/medium.png](images/medium.png) 中
+サムネイルを一番中ぐらいのサイズで表示します。
 
-##### ![images/large.png](images/large.png) Large
-Sets the thumbnail size to large size.
+##### ![images/large.png](images/large.png) 大
+サムネイルを一番大きいサイズで表示します。
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in Grid mode.
-List mode always displays labels.
+##### ![images/showlabels.png](images/showlabels.png) ラベルを表示
+グリッドモードの際にサムネイル名のラベルを表示します。
+ラベルはリストモードでは常に表示されます。
 
-##### ![images/showunits.png](images/showunits.png) Show Units
-Displays size in model units.
+##### ![images/showunits.png](images/showunits.png) 単位を表示
+モデル単位でサイズを表示します。
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
-Automatically updates all previews as settings change.
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) プレビューを自動更新
+設定を変更するとすべてのプレビューを自動的に更新します。
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) すべてのプレビューを更新
+プレビューを自動更新がオフの場合に、プレビューを手動で更新します。
 
-## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
-{: divider}
-Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
+## [ウィンドウ区切り線](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+{: #divider}
+区切り線をドラッグして環境のプロパティのセクションの長さに対する環境リストの長さを変更します。
 
-## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
-{: properties}
+## [環境のプロパティセクション](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+{: #properties}
 
-### [Environment Name](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+### [環境名](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
-This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. **Note:** Environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
+環境の名前です。環境名は、環境をライブラリにエクスポートする際にファイル名としても保存されます。 **メモ:** 環境はRhinoのモデルに保存されます。それぞれの環境は異なるRhinoのモデルで同じ名前を持つことができます。
 
-### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
+### [環境パネル](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
 {: #panels}
-The Environment Properties section is filled with a number of direct Environment panels. Clicking on the grey title bar will rollup the environment panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+環境のプロパティセクションには、多くの環境指示パネルが表示されます。グレーのタイトルバーをクリックすると、環境パネルを折りたたんで内容を隠すことができます。タイトルバーを再度クリックすると、内容が表示されます。
 
-Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
+環境パネルは、環境のタイプによって、そして現在のアクティブな環境レベルによって異なります。それぞれの環境パネルの詳細については、[Flamingoの環境](environment.html)を参照してください。
 
-## Tools Menu ![images/library_default.png](images/library_default.png)
+## ツールメニュー ![images/library_default.png](images/library_default.png)
 {: tools_menu}
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
+これらの設定は、サムネイルプレビューやサムネイル背景の右クリックコンテクストメニューにも表示されます。
 
-#### ![images/currentenvironment.png](images/currentenvironment.png) Set as Current Environment
-This sets the target environment current.  The current environment will be used in the next rendering.
+#### ![images/currentenvironment.png](images/currentenvironment.png) 現在の環境として設定
+ターゲットの環境を現在の環境に設定します。現在の環境は、次のレンダリングで使用されます。
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) 新規環境を作成
+新規Flamingo環境を作成します。
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
+これらの設定は、サムネイルプレビューやサムネイル背景の右クリックコンテクストメニューにも表示されます。
 
-#### ![images/import.png](images/import.png) Import Material from File
-Imports environments from a saved Rhino .renv file.
+#### ![images/import.png](images/import.png) 環境をファイルからインポート
+保存されているRhinoの.renvファイルから環境をインポートします。
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
-Saves a environment to a Rhino .renv file.
+#### ![images/savetofile.png](images/savetofile.png) ファイルに保存
+環境をRhinoの.renvファイルに保存します。
 
-#### ![images/changetype.png](images/changetype.png) Change Type
-Changes the environment to a different type.
+#### ![images/changetype.png](images/changetype.png) タイプを変更
+環境を異なるタイプに変更します。
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
-Changes the environment to a different type.
-The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
+#### ![images/changetype.png](images/changetype.png) タイプを変更 (類似の設定をコピー)
+環境を異なるタイプに変更します。
+デフォルトの動作は、[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [コンテンツのタイプが変更された際に類似の設定をコピー](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)ボックスの現在の状態に依存します。チェックマークが付いている場合、古いコンテンツからの互換性のある設定が新しいコンテンツにコピーされます。
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
-Changes all the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
+#### ![images/reset.png](images/reset.png) デフォルトにリセット
+すべての環境の設定をデフォルトの指定色の背景（黒）、反射背景を空、屈折背景を表示背景にします。
 
-#### ![images/copy.png](images/copy.png) Copy
-Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
+#### ![images/copy.png](images/copy.png) コピー
+選択された環境をWindowsのクリップボードコピーします。その後、クリップボードの内容をエディタにペーストして新規環境を作成したり、直接フォルダにペーストして[ライブラリ](libraries.html)ファイルを作成することができます。
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new environment based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) ペースト
+クリップボードの内容に基づいて新規環境を作成します。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) インスタンスとしてペースト
+クリップボードの内容に基づいて、インスタンシングによって元にリンクされる新規環境を作成します。
 
-#### ![images/delete.png](images/delete.png) Delete
-Deletes the selected environment.
+#### ![images/delete.png](images/delete.png) 削除
+選択された環境を削除します。
 
-#### ![images/rename.png](images/rename.png) Rename...
-Renames the selected environment.
+#### ![images/rename.png](images/rename.png) 名前を変更...
+選択された環境の名前を変更します。
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
-Copies the selected environment to a new environment with the same settings.
+#### ![images/duplicate.png](images/duplicate.png) 複製
+選択された環境を同じ設定で新規環境にコピーします。
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
-Removes the connection between [instanced](#paste-as-instance) environments.
+#### ![images/removeinstancing.png](images/removeinstancing.png) インスタンシングを取り除く
+[インスタンスされた](#paste-as-instance)環境間の接続を取り除きます。
 
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
-#### ![images/contentfilter.png](images/contentfilter.png) Content Filter
-Opens the [Content Filters](content_filters.html) dialog box.
+#### ![images/contentfilter.png](images/contentfilter.png) コンテンツフィルタ
+[コンテンツフィルタ](content_filters.html)ダイアログボックスを開きます。
 
-#### ![images/rename.png](images/rename.png) Properties
-Opens the [Preview Properties](previewproperties.html) dialog box.
+#### ![images/rename.png](images/rename.png) プロパティ
+[プレビューのプロパティ](previewproperties.html)ダイアログボックスを開きます。

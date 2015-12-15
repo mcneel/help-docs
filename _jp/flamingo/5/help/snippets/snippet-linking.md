@@ -1,14 +1,14 @@
 
-#### Linking options
-Specifies how the image file will be linked to materials.
+#### リンクオプション
+画像ファイルをどのようにマテリアルにリンクするかを指定します。
 
-#### Linked
-Creates a link to the image file. The file must be present on the local disk.
+#### リンク
+画像ファイルへのリンクを作成します。ファイルはローカルディスクにある必要があります。
 
-#### Embedded
-Embeds the image information in the current file.
+#### 埋め込み
+現在のファイルに画像の情報を埋め込みます。
 
-#### Linked and embedded
-If the bitmap is found on the disk before rendering, the external file is used. If the image cannot be found on the disk, the internal definition will be used.
+#### リンクおよび埋め込み
+レンダリングの前にディスクにビットマップが見つかった場合、外部ファイルが使用されます。画像がディスクに見つからない場合、内部の定義が用いられます。
 
-Note: To see changes in linked or linked and embedded files go to the Flamingo nXt menu, click Utilities and then click Clear bitmap cache.
+メモ: リンクまたはリンクおよび埋め込まれたファイルの変更を確認するには、Flamingo nXtメニューのユーティリティをクリックし、ビットマップキャッシュを消去をクリックします。

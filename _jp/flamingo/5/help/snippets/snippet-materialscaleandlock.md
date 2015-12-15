@@ -1,6 +1,6 @@
 
-#### X/Y/Z Scale
-Changes the absolute size of the pattern in the x-, y-, and z-directions.
+#### X/Y/Zスケール
+X、Y、Z方向のパターンの絶対的なサイズを変更します。
 
-#### Lock
-Maintains the ratio between the X Scale, Y Scale, and Z Scale.
+#### ロック
+Xスケール、Yスケール、 Zスケールの比率を維持します。

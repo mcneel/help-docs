@@ -1,16 +1,16 @@
 ---
-title: Check for Updates
+title: サービスリリースのチェック
 ---
 
 # {{page.title}}
-This is an automated check for the current version of Flamingo NXT 5.0.
+これは現在のバージョンのFlamingo NXT 5.0の自動チェック機能です。
 
-#### Current Update status
+#### 現在の更新状況
 
-#### Last Checked
+#### 前回の確認
 
-#### Update frequency
+#### 更新頻度
 
-### Check now...
+### 今すぐ確認...
 
-## Troubleshooting Updates
+## 更新のトラブルシューティング

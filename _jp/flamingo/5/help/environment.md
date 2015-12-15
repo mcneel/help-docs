@@ -1,297 +1,304 @@
 ---
-title: Flamingo Environment
+title: Flamingoの環境
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
-There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
+<!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
+Rhinoには多くのタイプの環境があります。このトピックでは、Flamingoのデフォルトの環境について説明します。
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
+環境は、背景や反射の目に見える部分に影響します。シーンの照明に影響する効果については、[空](sun-and-sky-tabs.html)のヘルプトピックを参照してください。
 
-Flamingo comes with a special environment called **Default Flamingo Environment**.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
+Flamingoには、**デフォルトFlamingo環境**と呼ばれる特別な環境が用意されています。この環境は、現在の[照明プリセット](lighting-tab.html)に同期されます。[照明プリセット](lighting-tab.html)を使用することで、照明と環境が適切なシーンのデフォルトに設定されます。
 
-The complete set of property groups in the Flamingo Environment are:
+Flamingoの環境のすべてのプロパティグループは次のとおりです。
 
-> [Name](#name)
-> [Flamingo Environment](#environment)
-> [Background Color](#color-backgrounds)
-> [Advanced Background](#advanced-background-reflected-sky)
+> [名前](#name)
+> [Flamingo環境](#environment)
+> [背景色](#color-backgrounds)
+> [高度な背景設定](#advanced-background-reflected-sky)
 
 
-## Environment Name
+## 環境名
 {: #name}
-This is the name of the environment in the Rhino model.  Environments are stored in the Rhino model. That means that the same name in the library or a different model will not be affected by edits to the environment in the current model. To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
+Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに格納されます。これは、ライブラリや異なるモデルの同じ名前は現在のモデルの環境の編集によって影響されないということを意味します。他のモデルの環境を使用する場合、その環境はまず[ライブラリ](libraries.html)にエクスポートする必要があります。環境名は、それをエクスポートする際のファイル名にも使用されます。
 
-## Flamingo Environment
+## Flamingo環境
 {: #environment}
-There are three major effects of environment in a rendering:
+レンダリングには、3つの主な環境効果があります。
 
->Visible Background
->[Reflective Background](#advanced-background-reflected-sky)
->[Refractive Background](#advanced-background-refracted-sky)
+>表示背景
+>[反射背景](#advanced-background-reflected-sky)
+>[屈折背景](#advanced-background-refracted-sky)
 
-The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
+<!-- TODO: Does the following sentence make sense? Is there something missing? -->
+表示背景は、基本の一般プロパティパネルで、目に見える環境です。[反射](#advanced-background-reflected-sky)および[屈折](#advanced-background-refracted-sky)背景は、違う設定ができ、高度な背景設定のセクションに表示されます。
 
-#### Intensity
+#### 強度
 {: #background-intensity}
-Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
+<!-- TODO: Color range normally is from 0-255... -->
+背景の相対的な明るさを調整します。強度の値は、背景の色を乗算し、結果を照明値にするために使用されます。色の範囲はチャンネル毎に0 - 256です。強度は、これらの値を乗算します。これは、背景がレンダリングされたモデルに比べて非常に暗い場合に、重要になってきます。
 
-#### Background type
+#### 背景のタイプ
 {: #background-type}
-Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be the following types:
+レンダリングイメージの背景を埋める色のスキームを指定します。背景は次のタイプから選択することができます。
 
-> [Sky](#environment-sky)
-> [Solid and gradient color](#color-backgrounds)
-> [Image](#environment-image)
-> [HDR and planar HDR images](#hdr-background)
+> [空](#environment-sky)
+> [色（単色）またはグラデーション色](#color-backgrounds)
+> [画像](#environment-image)
+> [HDRまたは平面HDR画像](#hdr-background)
 
 
-## Sky Background
+## 空背景
 {: #environment-sky}
-The Sky environment uses the sun and sky settings from the [Lighting](lighting-tab.html) tabs for settings.  It is the default setting for the renderings that see the sky in the renderings.
+環境の空は、[照明](lighting-tab.html)タブの太陽と空の設定を使用します。レンダリングで空を表示するレンダリングのデフォルト設定です。
 
 ![images/background-sky-001.png](images/background-sky-001.png)
-*Automatic (left) and HDR image and sun (right).*
+*自動（左）、HDR画像と太陽（右）*
 
-## Color Background
+## 色背景
 {: #color-backgrounds}
-Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
+背景色のコントロールは常に存在します。色が画像、HDRi、または空背景で隠されていたとしても色背景は常に存在します。
 
-#### Solid Color
+#### 指定色
 {: #solid-color}
-A solid color background consists of a single color that fills the background.
+1つの色で背景に色を付けます。
 
 ![images/background-color-001.png](images/background-color-001.png)
-*Solid color background.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Solid Color.
+*指定色背景*
+指定色の編集の詳細については、下の[色のコントロール](#enviroment-sky-color-controls)を参照してください。
 
-#### Two-Color Gradient
+#### 2色グラデーション
 {: #two-color-gradient}
-Two- and three-color gradient backgrounds only apply to perspective views. Two-color gradient backgrounds interpolate the background color between two selected colors.
+2および3色グラデーション背景は、パースビューのみに適用されます。選択した2つの色の間で背景色を補間します。
 
 ![images/background-color-002.png](images/background-color-002.png)
-*Two-color gradient background: blue and yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing a two-color gradient.
+*2色グラデーション背景: 青と黄色*
+2色グラデーションの編集の詳細については、下の[色のコントロール](#enviroment-sky-color-controls)を参照してください。
 
-#### Three-Color Gradient
+#### 3色グラデーション
 {: #three-color-gradient}
-Three-color gradient backgrounds interpolate the background color between three selected colors.
+選択した3つの色の間で背景色を補間します。
 ![images/background-color-003.png](images/background-color-003.png)
-*Three-color gradient background: blue, white, yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Three-color Gradient.
+*3色グラデーション背景: 青、白、黄色*
+3色グラデーションの編集の詳細については、下の[色のコントロール](#enviroment-sky-color-controls)を参照してください。
 
-### Color controls
+### 色のコントロール
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
+使用できるコントロールの数は、現在選択されている色背景のタイプによって変わることがあります。グラデーション背景は、最大で3色のカラーセレクタ（上、中、下）が表示されます。
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Swap Colors
-Use this button to rearrange the color in the gradient from top to bottom
+#### 色を入れ替え
+グラデーションの色の上と下を入れ替える場合に、このボタンを使用します。
 
-#### Gradient mapping control
+#### グラデーションマッピングのコントロール
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
+グラデーション色背景の色は、環境の球体にマッピングする必要があります。これを行うのに、グラデーションマッパーを使用します。グラデーションマッピングコントロールは、2または3色グラデーションが選択された時のみアクティブになります。グラデーションはパースビューのみにマッピングされます。
 
-#### Angles from views
+#### ビューからの角度
 {: #angle-from-views}
-If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+ビューからの角度にチェックマークが付いていると、現在の色グラデーションは現在のレンダリングされたパースビューと同期化します。一番上の色はビューの一番上にマッピングされ、一番下の色はビューの一番下にマッピングされます。その他の色は、一番上と下の間で均等に配分されます。
 
-#### View Altitude Mapper
+#### ビュー高度マッパー
 {: #colorrange}
-If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
+現在のビューポートが遠近法投影の場合、上と下の色、ビューに対してのグラデーションの範囲を指定することができます。
 
 ![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
-* The control shows the environment in section view.  The 90 degree marker is the Z-up coordinate. The 0 coordinate represents the horizontal ground plane. The -90 degree marker is the Z-down coordinate.
-* The grey cone of vision shows the last coordinates of the current perspective view.
-* The Red arrow represents the location of the top color. At this angle and above will be the top color.
-* The Green double-arrow represents the middle of the gradient blend between the top and bottom colors.  If it is a three color gradient this is also the location of the middle color.
-* The Blue arrow represents the location of the bottom color.  Below this angle there will only be bottom color.
+* コントロールは、ビューの断面図での環境を表示します。90度の印はZの上座標です。0座標は水平の地平面を表します。-90どの印はZの下座標です。
+* グレーの視野を表す円錐形は、現在のパースビューの1つ前の座標を表示します。
+* 赤の矢印は、一番上の色の位置を表します。この角度とその上が一番上の色になります。
+* 緑の両方向矢印は、一番上と下の間のグラデーションブレンドの中央を表します。3色グラデーションの場合、これは中の位置も表します。
+* 青い矢印は、一番下の色の位置を表します。この角度より下は一番下の色のみが表示されます。
 
-####  Get angles from View Button
-Use this button to reset the Gradient mapping control to the current perspective view coordinates.
+####  ビューから角度を取得ボタン
+このボタンを使用すると、グラデーションマッピングコントロールが現在のパースビュー座標にリセットされます。
 
-#### Top/Middle/Bottom Angles
-These are angle readouts of the Top, Middle, and Bottom colors in the current gradients.  They correspond to the location of the Red, Green, and Blue arrows in the View altitude mapper.
+#### 上/中/下角度
+現在のグラデーションの上、中、下の色の計測値です。ビュー高度マッパーの赤、緑、青の矢印の位置に対応します。
 
-## Image Background
+## 画像背景
 {: #environment-image}
-A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
+画像が背景に投影されます。これは多くの場合、既存のコンテクストにモデルを配置したり、窓に景色を設定するのに使用されます。画像にはデジタル写真や芸術作品のスキャン、ペイントプログラムで作成した画像などが使用できます。最良の結果を得るには、高解像度のイメージを背景画像として使用するとよいでしょう。また、自然の焦点整合と空気遠近法を擬似するために、シャープな画像をぼかしたりあせた色にしたりするとよいでしょう。背景画像は平面、円柱、または球状投影でシーンの背景にマッピングできます。
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar images set as a background.*
+*背景として設定された平面画像*
 
-### Image File
+### 画像ファイル
 {: #image-properties}
-Set the background image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+背景画像を設定するには、*(なし - クリックして割り当て)*と表示されている大きなボタンをクリックし、ビットマップを選択します。異なる画像を割り当てるには、ボタンサムネイル画像をクリックします。
 
-### Projection
+### 投影
 {: #backgroud-image-projection}
-Select one of three image projections from the drop-down control:
+ドロップダウンコントロールを使用して、3つの画像投影方法から1つを選択します。
 
->[Planar](#planar)
->[Cylindrical](#cylindrical)
->[Spherical](#spherical)
+>[平面](#planar)
+>[円柱](#cylindrical)
+>[球](#spherical)
 
-Each projection method has its own set of controls for positioning the image.
+それぞれの投影方法には、異なる画像配置コントロールが表示されます。
 
-#### Planar Projection
+<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
+
+#### 平面投影
 {: #planar}
-Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
+画像は現在のビューの（平らな）背景に投影されます。平面投影座標は常に現在のビューに相対です。
 
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### ビューからの角度
+ビューからの角度チェックボックスにチェックマークを付けると、常に画像が現在のビューと同期化します。画像は現在のビューに合うように引き伸ばされます。
 
-#### Image Placement Control
-Use the placement control to place the image relative to the current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
-
-![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
-
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### Image Placement Control
-Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
+#### 画像配置コントロール
+配置コントロールを使用すると、画像を現在のビューに対して配置することができます。ビューポートの形が濃いグレーの長方形として表示されます。ピンクの長方形をドラッグするか、数値コントロールを使用してビューに対して背景画像を移動したり、サイズ変更したりします。
 
 ![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
+*現在のビューポート領域 (1)、画像サイズと形状 (2)*
 
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### Xスケール / Yスケール
+背景画像のサイズをビューの幅と高さの0 - 1.0のスケールで指定します。例えば、1.0はビューサイズの100%、0.5はビューの幅の50%などです。
 
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### Xオフセット / Yオフセット
+背景画像のビューポートの左下の角からのオフセットをビューの幅と高さの0 - 1.0のスケールで指定します。例えば、0.25はビューサイズの25%のオフセット、0.5はビューの幅の50%などです。
 
-#### Cylindrical Projection
+#### 画像配置コントロール
+配置コントロールを使用すると、画像を現在のビューに対して配置することができます。ビューポートの形が濃いグレーの長方形として表示されます。ピンクの長方形をドラッグするか、数値コントロールを使用してビューに対して背景画像を移動したり、サイズ変更したりします。
+
+![images/background-image-003.png](images/background-image-003.png)
+*現在のビューポート領域 (1)、画像サイズと形状 (2)*
+
+#### Xスケール / Yスケール
+背景画像のサイズをビューの幅と高さの0 - 1.0のスケールで指定します。例えば、1.0はビューサイズの100%、0.5はビューの幅の50%などです。
+
+#### Xオフセット / Yオフセット
+背景画像のビューポートの左下の角からのオフセットをビューの幅と高さの0 - 1.0のスケールで指定します。例えば、0.25はビューサイズの25%のオフセット、0.5はビューの幅の50%などです。
+
+#### 円柱投影
 {: #cylindrical}
-Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
+円柱投影は、モデルを囲む仮想的な円柱に画像をマッピングします。この投影法では真の円柱状の画像が最適ですが、写真から作成された標準のパノラマも効果的に使えます。
 
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
-Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
+画像マップのサイズと位置は高さと幅の角度で設定します。画像の位置とサイズをグラフィカルツールとマウスを用いて設定してください。現在視野に入る領域（視野を表す円錐形）が角度グラフィックコントロールにライトグレーの領域として表示されます。
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### ビューからの角度
+ビューからの角度チェックボックスにチェックマークを付けると、常に画像が現在のビューと同期化します。画像は現在のビューに合うように引き伸ばされます。
 
-#### Plan control
-Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
+#### 平面図コントロール
+画像マップの角度幅を指定します。角度を入力するか、コントロールウィジェットの「旗」をドラッグして幅を設定します。青い領域は角度幅の範囲を示します。
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
+<!--TODO: Image doesn't show up in file. -->
 
-* The control shows the environment in plan view.
-* The dark grey cone of vision shows the last coordinates in the current perspective view.
-* The blue cone shows the range of angles the image will be visible.
-* The blue arrow represents the left coordinate of the image map.
-* The red dot represents the middle of the background image.
-* The purple arrow represents the right coordinate of the image map.
+* コントロールは、環境を平面図で表示します。
+* 濃いグレーの視野を表す円錐形は、現在のパースビューでの1つ前の座標を表示します。
+* 青い円錐形は、画像が見える角度の範囲を表示します。
+* 青い矢印は、画像マップの左座標を表します。
+* 赤い点は、背景画像の中央を表します。
+* 紫の矢印は、画像マップの右座標を表します。
 
-#### Vertical control
+#### 縦方向コントロール
 {: .clear-img}
-Specifies the vertical extents of the cylindrical projection. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45 degrees above or below the horizon.
+円柱投影の縦方向の範囲を指定します。角度を入力するか、コントロールウィジェットの「旗」をドラッグして上下の角度を設定します。円柱投影は水平線の上下45度の範囲内に限られます。
 
 ![images/background-cylinder-001.png](images/background-cylinder-001.png){: .float-img-left}
 
-* The control shows the cylinder in section view.
-* The grey cone of vision shows the last coordinates in the current perspective view.
-* The blue arrow represents the bottom border of the image map.
-* The red arrow represents the top border of the image map.
+* コントロールは、円柱を断面図で表示します。
+* グレーの視野を表す円錐形は、現在のパースビューでの1つ前の座標を表示します。
+* 青い矢印は、画像マップの下の境界を表します。
+* 赤い矢印は、画像マップの上の境界を表します。
 
-#### Rotation
+#### 回転
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+画像の回転を指定します。赤い点は画像の中心を示します。
 
-#### Width
-Specifies the width of the image in degrees relative the the plan view.
+#### 幅
+画像の幅を平面図に対する度で指定します。
 
-#### Top/Bottom
-Specifies the vertical angles of the image based on horizontal groundplane direction in the model
+#### 上/下
+画像の垂直角度をモデルの水平の地平面の方向に基づいて指定します。
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  ビューから角度を取得ボタン
+現在のパースビューポートに合うように回転角度を設定します。投影の値をリセットするのに便利です。
 
-#### Spherical Projection
+#### 球投影
 {: #spherical}
-Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
+球投影は画像を完全な球にマッピングします。一般的に、正距円筒図法の球体画像が使用されないとこの方法でよい結果は得られません。正距円筒図法の画像の縦横比は2:1の長方形です。
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### ビューからの角度
+ビューからの角度チェックボックスにチェックマークを付けると、常に画像が現在のビューと同期化します。画像は現在のビューに合うように引き伸ばされます。
 
-#### Spherical control
-Specifies the direction of the image map. Enter an angle or drag the flag in the control widget to set the width. The red dot represents the middle of the background image.
+#### 球コントロール
+画像マップの方向を指定します。角度を入力するか、コントロールウィジェットの「旗」をドラッグして幅を設定します。赤い点は、背景イメージの中央を表します。
 
-#### Rotation
+#### 回転
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+画像の回転を指定します。赤い点は画像の中心を示します。
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  ビューから角度を取得ボタン
+現在のパースビューポートに合うように回転角度を設定します。投影の値をリセットするのに便利です。
 
-## HDRI Background
+## HDRi背景
 {: #hdr-background}
-Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+ハイ・ダイナミック・レンジ・イメージは、画像に保存されている輝度情報から照明を供給します。HDR画像を環境として用いると、背景の光と画像の中のその他の光の関係がよりコントロールしやすくなります。これは特に窓から見えている明るい屋外空間がある屋内空間を描写している際に便利です。HDR環境画像には通常のビットマップ画像よりもより広い範囲の光があり、チャンネルを割り当てることができるので、[マルチチャンネル](lights-tab.html#channel)レンダリングでコントラストを調整することができます。
 
-#### Image File
+#### 画像ファイル
 {: #hdri-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+背景HDRi画像を設定するには、*(なし - クリックして割り当て)*と表示されている大きなボタンをクリックし、ビットマップを選択します。異なる画像を割り当てるには、ボタンサムネイル画像をクリックします。
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Planar HDRI options
+## 平面HDRiオプション
 {: #planar-hdr-options}
 
-Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
+平面ハイ・ダイナミック・レンジ・イメージは、めったに使用されませんが、非常に便利な場合があります。また、HDRiはより広い範囲の色の可能性を提供します。平面HDRiは、背景が明るすぎる、または暗すぎる建築レンダリングで窓の外に使用できます。平面HDRiは常に平面状にマッピングされます。
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
-*Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
+*背景画像（左）と平面HDR（右）による背景の明暗の差*
 
-#### Image File
+#### 画像ファイル
 {: #hdri-planar-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+背景HDRI画像を設定するには、*(なし - クリックして割り当て)*と表示されている大きなボタンをクリックし、ビットマップを選択します。異なる画像を割り当てるには、ボタンサムネイル画像をクリックします。
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Advanced Background
+## 高度な背景設定
 {: #advanced-background}
-The Advanced Background settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects. This lets the visible environment look one way, while reflections and refractions might be reacting to a different environment.  For instance, in the illustration below the background is black, but the reflected environment is an HDR image of a building interior.
+高度な背景設定は、レンダリングでは表示されないけれども、オブジェクトの反射や屈折に表示される環境をコントロールします。表示背景は変わりませんが、反射や屈折を異なる環境に反応させることが可能です。例えば、下のイメージでは、背景は黒ですが、反射されている環境は建物のインテリアのHDR画像です。
 
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*Normal environment (left) and reflected HDR sky environment (right).*
+*通常の環境（左）、反射されたHDRの空の環境（左）*
 
-### Reflected
+### 反射
 {: #advanced-background-reflected-sky}
-A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
+反射環境はレンダリングイメージには表示されませんが、光沢のあるオブジェクトの反射に表示されます。
 
-#### Sky
-Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### 空
+オブジェクトは[照明: 太陽と空](sun-and-sky-tabs.html)設定で指定されている空を反射します。
 
-#### Custom
-Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-image), or [HDR](#hdr-background) background.
+#### カスタム
+オブジェクトは[色またはグラデーション](#color-backgrounds)、[画像](#environment-image)、または[HDR](#hdr-background)背景を反射します。
 
-#### Visible Background
-Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
+#### 表示背景
+オブジェクトは[環境](environment-tab.html)設定で指定されている表示される背景を反射します。
 
-### Refracted
+### 屈折
 {: #advanced-background-refracted-sky}
 
-#### Sky
-Objects refract the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### 空
+オブジェクトは[照明: 太陽と空](sun-and-sky-tabs.html)設定で指定されている空を屈折します。
 
-#### Custom
-Objects refract a [Color or gradient](#color-and-gradient-backgrounds), [Image](#image), or [HDR](#hdr-background) background.
+#### カスタム
+オブジェクトは[色またはグラデーション](#color-and-gradient-backgrounds)、[画像](#image)、または[HDR](#hdr-background)背景を屈折します。
 
-#### Visible Background
-Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
+#### 表示背景
+オブジェクトは[環境](environment-tab.html)設定で指定されている表示される背景を屈折します。
 
-#### No Transparent Object Alpha
+#### 透明アルファオブジェクトなし
 {: #no-transparent-alpha-objects}
-Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
-If images will be pasted into the alpha channel, turn this setting off.
+透明なオブジェクトからアルファチャンネルが見えることを防ぎ、透明なオブジェクトからアルファチャンネルが合成されることを防ぎます。
+画像がアルファチャンネルに貼り付けられる場合は、この設定をオフにします。

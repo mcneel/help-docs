@@ -1,2 +1,2 @@
-#### Name
-This is the name of the material. See the Advanced [Name](material-type-advanced.html#name) property for details.
+#### 名前
+マテリアルの名前です。詳細については、詳細の[名前](material-type-advanced.html#name)のプロパティを参照してください。
