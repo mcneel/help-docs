@@ -73,7 +73,7 @@ Simulates bumps and wrinkles on the surface of an object by perturbing the surfa
 {: #normal}
 Fakes the lighting of bumps and dents without using more polygons to the render mesh. See: [Wikipedia article: Normal mapping](http://en.wikipedia.org/wiki/Normal_mapping).
 
-Normal maps work very similar to bump maps, in that they modify the normal of the surface. The effect is essentially the same as bump, but normal maps allow more control over the normal than a bump. A bump map uses the grey average of the RGB in a bitmap. The RGB of a normal map corresponds to the modification of the XYZ of the normal. Because the blue channel of the image controls the Z-direction of the normal. Normal maps have a considerable blue color to them.
+Normal maps work very similar to bump maps, in that they modify the normal of the surface. The effect is essentially the same as bump, but normal maps allow more control over the normal than a bump. A bump map uses the grey average of the RGB in a bitmap. The RGB of a normal map corresponds to the modification of the XYZ of the normal. Because the blue channel of the image controls the Z-direction of the normal, normal maps have a considerable blue color to them.
 
 ### Displacement
 {: #displacement}
