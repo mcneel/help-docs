@@ -6,26 +6,26 @@ title: Environment Panel
 {: #environment-tab}
 Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
+The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
 
 Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
 ##### Where can I find this command?
- 1. ![images/environments.png](images/environments.png)Materials Tab
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
+ 1. ![images/environments.png](images/environments.png)Environment Tab
+ 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Environment Editor
  1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
  1. Command > EnvironmentEditor
 
-The Environment Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
+The Environment Editor Panel is split into discrete sections.  Based on the environment type, the advanced panels may vary.
 
 Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
-Materials Panel
+Environment Panel
 
  1. [Background Type](#type)
- 1. [Settings Bar](#material_list)
- 1. [Environment List](#environment-list)
+ 1. [Settings Bar](#settings)
+ 1. [Environment List](#environment_list)
  1. [Window Divider](#divider)
  1. [Environment Properties Section](#properties)
  1. [Name](#name)
@@ -42,12 +42,12 @@ The reset of this help topic covers the Environment type.
 Use this bar to help navigate the Environment list.
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
+Walks back through the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
+Walks forward through the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected environment name
 Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
 #### ![images/library_default.png](images/library_default.png) Tools Menu
@@ -61,9 +61,8 @@ This lists all the environments contained in the model. One Environment will be 
 
 From this list:
 
-* Click on an Environment to make it current. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
+* Click on an Environment to make it current. Once selected the environment's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
 * Scroll up and down in the list to see all the environments in the model.
-* Drag and drop an environment from this list onto any viewport to set it current.
 * Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
 * Right-click a thumbnail to display the Environment context menu
 * Right-click the blank area to display the New Environment Context Menu
@@ -81,7 +80,7 @@ This menu is available by right click on a environment listing.  See the [Tools 
 
 ### New Environment Context Menu
 {: new_envrionment_context}
-This menus is available by right-clicking on a blank area of the Environment List.
+This menu is available by right-clicking on a blank area of the Environment List.
 
 #### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
 Creates a new Flamingo Environment.
@@ -138,11 +137,11 @@ Automatically updates all previews as settings change.
 Update previews manually when Auto-Update Preview is off.
 
 ## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
-{: divider}
+{: #divider}
 Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
 
 ## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
-{: properties}
+{: #properties}
 
 ### [Environment Name](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
@@ -166,11 +165,11 @@ Creates a new Flamingo Environment.
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
 
-#### ![images/import.png](images/import.png) Import Material from File
+#### ![images/import.png](images/import.png) Import Environment from File
 Imports environments from a saved Rhino .renv file.
 
 #### ![images/savetofile.png](images/savetofile.png) Save to File
-Saves a environment to a Rhino .renv file.
+Saves an environment to a Rhino .renv file.
 
 #### ![images/changetype.png](images/changetype.png) Change Type
 Changes the environment to a different type.

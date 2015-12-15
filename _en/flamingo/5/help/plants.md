@@ -2,7 +2,9 @@
 title: Plants
 ---
 
-# {{page.title}}
+<!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
+
+# ![images/plants.svg](images/plants.svg) {{page.title}}
 Flamingo nXt includes a fun and powerful plant generator that efficiently generates complex plant forms during rendering. These plants have little impact on model size, since only a placeholder is kept in the model.
 
 ![images/plants-001.png](images/plants-001.png)
@@ -10,7 +12,7 @@ Flamingo nXt includes a fun and powerful plant generator that efficiently genera
 
 ### Insert an nXt Plant
 {: #insert:}
-Flamingo Plants are inserted as a block.  These blocks contains points that represent the general shape of the tree.
+Flamingo Plants are inserted as a block.  These blocks contain points that represent the general shape of the tree.
 
 1. On the Flamingo nXt menu, click Plants > Insert Plant.
 1. In the Flamingo nXt Plant dialog box, click a plant name, and click Open.
@@ -23,7 +25,7 @@ Notes:
 
 ### Edit a plant
 {: #edit}
-Once inserted, a tree can be moved, copied, and scaled.  The tree will resize appropriately. For more advanced edits to that structure of the tree, use the Edit plant command. Making small changes to the structure of the trees can be quick.  Larger changes to the tree algorithms can take more experimentation.
+You can move, copy, and scale a tree once it is inserted. The tree will resize appropriately. For more advanced edits to that tree structure, use the Edit plant command. Making small changes to the tree structure can be quick.  Larger changes to the tree algorithms can take more experimentation.
 
 1. On the Flamingo nXt menu, click Plants > Edit Plant.
 1. Select the plant to edit.

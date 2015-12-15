@@ -14,7 +14,7 @@ title: 미리보기 속성
 >![images/number-onestep.gif](images/number-onestep.gif)오른쪽 클릭으로, 상황에 맞는 메뉴를 표시합니다.
 >![images/number-onestep.gif](images/number-onestep.gif)썸네일 아래 큰 미리보기 창을 표시하려면 두 번 클릭합니다.
 >![images/number-onestep.gif](images/number-onestep.gif)미리보기 썸네일을 마우스로 끌어 목록에서 순서를 다시 지정합니다.
->![images/number-onestep.gif](images/number-onestep.gif)재질을 복제하기 위해 마우스로 끌어오는 동안 [onmouseover="if (parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event)" onclick="javascript:BSSCPopup('../Popup_Actions/Ctrl_Key.htm');;return false" id="a16" style="position: relative; font-weight: normal;">Ctrl]() 키를 누릅니다.
+>![images/number-onestep.gif](images/number-onestep.gif)재질을 복제하기 위해 마우스로 끌어오는 동안 Ctrl 키를 누릅니다.
 >![images/number-onestep.gif](images/number-onestep.gif)큰 미리보기를 두 번 클릭하여 플로팅 창을 엽니다. 이 창은 더 큰 해상도로 미리보기를 볼 수 있도록 크기 조정할 수 있습니다.
 
 원래 미리보기 이미지에 상황에 맞는 메뉴가 있고 모델의 다른 재질 또는 개체를 마우스로 끌어 놓을 수 있듯이 이 창에도 모든 같은 기능이 있습니다.

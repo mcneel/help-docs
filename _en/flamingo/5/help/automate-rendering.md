@@ -21,7 +21,7 @@ Start by adding a job, then edit the properties to set up batch jobs.
 Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
 
 #### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+Select an existing batch job.  Then use Delete to remove the job from the batch list.
 
 #### Properties
 Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
@@ -79,17 +79,17 @@ There are two ways to create animations in Rhino.  Animations can be configured 
 
 ##### To submit an animation job to the render farm
 1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+1. In the Configure Automated Render Command dialog, select **Render to farm**.
 &#160;
-Specify theJob name,and click theOKbutton.
+Specify the Job name,and click the OK button.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Set a type of animation from Rhino's Animation setup toolbar. Select Render Full as the Capture method.
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+Record the animation from the Animation toolbar. The render jobs will be sent to Render Farm.
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+When the jobs are finished in Render Farm, run the FlamingoNXtAutomateRender command again and select all the jobs in the dialog.
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+Click the Copy selected files to specified output folder button and select a folder where all the render images will be copied to.
 
 
 ## FlamingoNXtAutomateRender command

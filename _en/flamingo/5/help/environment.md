@@ -3,9 +3,10 @@ title: Flamingo Environment
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
+<!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
 There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
+The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
 
 Flamingo comes with a special environment called **Default Flamingo Environment**.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
 
@@ -29,10 +30,12 @@ There are three major effects of environment in a rendering:
 >[Reflective Background](#advanced-background-reflected-sky)
 >[Refractive Background](#advanced-background-refracted-sky)
 
+<!-- TODO: Does the following sentence make sense? Is there something missing? -->
 The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
 
 #### Intensity
 {: #background-intensity}
+<!-- TODO: Color range normally is from 0-255... -->
 Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
 
 #### Background type
@@ -54,7 +57,7 @@ The Sky environment uses the sun and sky settings from the [Lighting](lighting-t
 
 ## Color Background
 {: #color-backgrounds}
-Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
+Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRi, or Sky background.
 
 #### Solid Color
 {: #solid-color}
@@ -81,20 +84,20 @@ See [Color Controls](#enviroment-sky-color-controls) below for more details on e
 
 ### Color controls
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
+The number of controls available may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### Swap Colors
-Use this button to rearrange the color in the gradient from top to bottom
+Use this button to rearrange the color in the gradient from top to bottom.
 
 #### Gradient mapping control
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
+The colors in a gradient color background need to be mapped to the environment sphere. Use the Gradient mapper to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
 
-#### Angles from views
+#### Angles from View
 {: #angle-from-views}
-If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+If Angles from View is checked, the current color gradient syncs with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
 
 #### View Altitude Mapper
 {: #colorrange}
@@ -116,10 +119,11 @@ These are angle readouts of the Top, Middle, and Bottom colors in the current gr
 
 ## Image Background
 {: #environment-image}
+<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
 A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar images set as a background.*
+*A planar image set as a background.*
 
 ### Image File
 {: #image-properties}
@@ -134,6 +138,8 @@ Select one of three image projections from the drop-down control:
 >[Spherical](#spherical)
 
 Each projection method has its own set of controls for positioning the image.
+
+<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
 
 #### Planar Projection
 {: #planar}
@@ -182,6 +188,7 @@ The angle from view checkbox will keep the image in sync with the current view. 
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
+<!--TODO: Image doesn't show up in file. -->
 
 * The control shows the environment in plan view.
 * The dark grey cone of vision shows the last coordinates in the current perspective view.
@@ -209,7 +216,7 @@ Specifies the image rotation. The red dot indicates the center of the image.
 Specifies the width of the image in degrees relative the the plan view.
 
 #### Top/Bottom
-Specifies the vertical angles of the image based on horizontal groundplane direction in the model
+Specifies the vertical angles of the image based on horizontal groundplane direction in the model.
 
 ####  Get Angles From View button
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
@@ -231,23 +238,23 @@ Specifies the image rotation. The red dot indicates the center of the image.
 ####  Get Angles From View button
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
-## HDRI Background
+## HDRi Background
 {: #hdr-background}
 Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
 
 #### Image File
 {: #hdri-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Set the background HDRi image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Planar HDRI options
+## Planar HDRi options
 {: #planar-hdr-options}
 
-Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
+Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRi provides a wider range of color possibilities. A good use of planar HDRi files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRi files are always mapped planar.
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)

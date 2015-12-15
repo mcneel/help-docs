@@ -12,7 +12,7 @@ The Flamingo nXt Render Farm uses the power of several computers to render singl
 
 >![images/01.png](images/01.png)A computer with Rhino and Flamingo nXt.
 >![images/02.png](images/02.png)Network server or shared farm folder.
->![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
+>![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.)
 >![images/04.png](images/04.png)Additional purchased render farm clients.
 
 The Render Farm is free for up to two client computers. To add more client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
@@ -32,8 +32,8 @@ For advanced installations, the nXt Render Farm software lets you work with thir
 
 #### The Farm Process
 {: #the-farm-process}
- 1. To start a rendering using Flamingo nXt farm, instead of using the standard Render command, use the Render Farm *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
- 2. Render jobs are split into many different farm tasks. The Render Farm clients continuously check the farm output folder for new tasks. Each client will pick up a task and start to render. The Farm Monitor  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* is a good way to keep track of the job's progress.
+ 1. To start a rendering using Flamingo nXt farm, instead of using the standard Render command, use the Render Farm *(Flamingo nXt 5.0 menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
+ 2. Render jobs are split into many different farm tasks. The Render Farm clients continuously check the farm output folder for new tasks. Each client will pick up a task and start to render. The Farm Monitor  *(Flamingo nXt 5.0 &gt; Render Farm &gt; Farm Monitor...)* is a good way to keep track of the job's progress.
  3. Each farm client deposits the results in the farm folder under *job name* \Output.
  3. As each client finishes with a job, it will continue to pick up new jobs as they are submitted to the farm.
  4. Farm output will be in the [nXt image format (.nXtImage)](image-editor.html). Images in this format can be edited using the [nXt Image Editor](image-editor.html). The results can also be saved as TGA, PNG, TIF, and JPG files from the [nXt Image Editor](image-editor.html).
@@ -147,14 +147,14 @@ Delete the specified job from the list.
 
 ## Licensing the Render Farm
 {: #licensing-the-render-farm-}
-The free version of the Render Farm allows two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+The free version of the Render Farm lets two network computers (nodes) work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
 Once you have purchased your license and have acquired a product key, use the following procedures to license your farm.
 
 ##### To authorize the node
 1. Wait for any active farm jobs to complete before beginning your licensing.
 1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
-1. If the node is currently active, in the Windows system tray (on the taskbar), /mouse_button_right.htm');" id="a16" style="position: relative;">right-click the Render Farm icon, and then click **Close**.
+1. If the node is currently active, in the Windows system tray (on the taskbar), [right-click](mouse-button-right.html) the Render Farm icon, and then click **Close**.
 1. Click the **Windows Start** button, and then click **All Programs**.
 In the nXt Render Farm folder, click **Authorize Farm**.
 1. In the edit box, paste or type your Product Key and click **OK**.
@@ -162,7 +162,7 @@ In the nXt Render Farm folder, click **Authorize Farm**.
 ##### To start the node
 1. Click the **Windows Start** button, and then click **All Programs**.
 In the nXt Render Farm folder, click **Render Farmer**.
-1.  p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click the tray icon, and on the menu, click **Restore**.
+1. [Right-click](mouse-button-right.html) the tray icon, and on the menu, click **Restore**.
 1. On the Help menu, click **About**.
 If the version number indicates an Evaluation version, licensing has not been successful.
 1. Minimize the Render Farmer window to return it to the tray.

@@ -6,7 +6,7 @@ title: Render Window
 The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
 
 ## Managing an Active Rendering
-Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model then starts an initialization process.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
+Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts up and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. Flamingo first looks for any changes to its internal model, then starts an initialization process.  This process can take a few seconds or a few minutes.  This is when the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
 
 >[Multiple pass rendering](#multi-pass)
 >[Stopping a rendering](#stop-render)
@@ -15,7 +15,7 @@ Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhi
 
 ### Multiple Pass Rendering
 {: #multi-pass}
-Flamingo nXt is a completely new rendering engine. Using a method of multi-pass refinement allows more advanced rendering effects without the overhead of a complicated interface. In the first few rendering passes, there will be unusual artifacts.  For instance you will see shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each rendering pass.  Use the [Flamingo Tab](#flamingo-tab) to monitor the rendering process.
+Flamingo nXt is a completely new rendering engine. Using a method of multi-pass refinement allows more advanced rendering effects without the overhead of a complicated interface. In the first few rendering passes, there will be unusual artifacts.  For instance you will see shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each rendering pass.  Use the [Flamingo Tab](#flamingo-tab) to track the rendering process.
 
 In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. You can let images that look good continue to improve. But, if you want to change or save something, you can also stop an image at any time.
 
@@ -32,7 +32,7 @@ Some of the effects that improve on each pass are:
 
 ### Stopping a rendering
 {: #stop-render}
-You can stop the rendering in a number of ways:
+You can stop the rendering several ways:
 
 ![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
 
@@ -58,17 +58,18 @@ There are many ways to save an image depending on the plans for the image.  Norm
 #### ![images/saveimageas.png](images/saveimageas.png) Save Image
 Saving a JPG or PNG image file is the normal process after adjusting the image.  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
+A JPG image is a very efficient, small file format.  This is good for images placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
 
 PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
 
 #### Save with background alpha channel
 {: #save-with-alpha-channel}
-Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. Use the Alpha channel versions of the file formats for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
 
 #### Export to native Flamingo nXt file (.nXtImage)
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
+Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXt Image files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
+
 The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
 
 #### Export to HDR file
@@ -103,9 +104,9 @@ Shows the current status of the rendering as is works through the model.
 Status messages include:
 
 * Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
-* Action Done - Once the Stop button has been hit and the render engine finishes a pass, then the stop action is done.
+* Action Done - Once the Stop button is clicked and the render engine finishes a pass, then the stop action is done.
 * Pass Complete - This message posts each time a pass is complete.
-* Resume Rendering - In cases that a resume is possible this is displayed.
+* Resume Rendering - If a resume is possible, this displays.
 * Updating - The render engine is in the middle of a pass, currently updating the rendering.
 
 #### Pass
@@ -157,20 +158,21 @@ Saturation controls the amount of color in the image. A saturation of 0.00 will 
 
 ### Histogram
 {: #histogram}
-Graphically displays the distribution of the light and dark areas in the image after the Adjust images controls have been applied. The left edge of the chart are the darks to black.  The right edge shows the amount of light colors to white. This is a great way to determine the important parts of the image. A good goal is to adjust the image to have a full range of values in the image.  For instance if the histogram stops before getting to the far right of the graph,  then use more brightness or burn will stretch the values toward the right or bright edge. See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
+Graphically displays the distribution of the light and dark areas in the image after the Adjust images controls are applied. The left edge of the chart are the darks to black.  The right edge shows the amount of light colors to white. This is a great way to determine the important parts of the image. A good goal is to adjust the image to have a full range of values in the image.  For instance, if the histogram stops before getting to the far right of the graph, use more brightness or burn will stretch the values toward the right or bright edge. See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
+<!--'Use more brightness or burn will stretch the values' - This needs rewritten.-->
 
 ![images/histogram.png](images/histogram.png)
-*An example histogram with very few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
+*An example histogram with few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
 
 #### Histogram options
-Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
+Right-click the histogram image for the following options.  These options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
 
 * **Fit** - This fits the highest verticals into the chart.
 * **Median** - This fits the median value in the vertical. This is a good way to see the details at the edges of the chart.
 * **Mean** - This fits the mean value in the vertical direction.
 * **Show Sorted Graph** - This sorts all the values based on the amount they exist in the image.
 * **Show Scale** - Shows the corresponding values along the bottom of the chart.
-* **Graph Color...** - Set the graph color.
+* **Graph Color...** - Sets the graph color.
 
 ### Lock exposure
 {: #lock-exposure}
@@ -206,11 +208,11 @@ This is some information on the current lighting setup of the rendering.  Here i
 
 ## Channels
 {: #channels}
-Use these controls to change the lights channels in real time. Assign lights to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
+Use these controls to change the lights channels in real time. Assign lights to one of eight channels. After you produce the rendering, adjust the lighting in the rendered image. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
 
 ## Post Effects
 {: #post-process-effects}
-Apply post-processing effects after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
+Apply post-processing effects after rendering the image. Turn post-processing effects on and off and reorder in the list. Each effect has its own settings. Effects include:
 
 >Fog
 >Glow

@@ -158,7 +158,7 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 ## 이미지 편집기 사용
 
 ##### 이미지 로드
-1.  렌더링 이미지를 **nXtImage**로 [저장](render-window.html#export-to-nxtimage)합니다.
+1.  렌더링 결과를 **.nXtImage** 파일로 [저장](render-window.html#export-to-nxtimage)합니다.
 1. **Flamingo nXt** 메뉴에서 **유틸리티 &gt; Flamingo nXt 이미지 편집기**를 클릭합니다.
 1. **nXt 이미지 편집기**의 파일 메뉴에서 **열기**를 클릭하여 이미지를 편집기에 로드합니다.
 

@@ -31,15 +31,15 @@ Materials that contain any level of glow will light up, but will not illuminate 
 
 ## Bounces
 {: #bounces}
-When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are two low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
+When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are too low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
 
 #### Reflective
 {: #reflective-bounces}
-Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times. Increase this number of there is a view that is looking at a reflective surface that bounces off an adjacent reflective and the reflections start to go completely black.
+Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times. Increase this number if there is a view that is looking at a reflective surface that bounces off an adjacent reflective and the reflections start to go completely black.
 
 #### Refractive
 {: #refractive-bounces}
-Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times. Increase this number of there is a view that looks through many layers and ultimately looks black and not look transparent.
+Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times. Increase this number if there is a view that looks through many layers and ultimately looks black and not look transparent.
 
 #### Indirect
 {: #indirect-bounces}
@@ -47,7 +47,7 @@ Determines how many levels of indirect light are permitted; in other words, how 
 
 ## Indirect lighting
 {: #indirect-settings}
-The indirect lighting settings only effect the rays that bounce off one surface an carry light to another surface.
+The indirect lighting settings only affect the rays that bounce off one surface and carry light to another surface.
 
 #### Color Bleed
 {: #color-bleed}

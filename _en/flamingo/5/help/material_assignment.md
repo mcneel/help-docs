@@ -3,7 +3,7 @@ title: Material Assignments
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on the how easy the model is to change and maintain in the future.
+Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on how easy the model is to change and maintain in the future.
 
 Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:
 
@@ -15,7 +15,7 @@ Assigning materials by layer is the recommended method. Using By layer makes it 
 
 Imported files may have any one of these three assignments. Many imported files will have By Object assignments.  It may take a lot of work to convert the model to By Layer assignments, but it can be beneficial if there is a lot of editing to the render materials planned.
 
-Once materials are assigned, the material will be saved in the current model.  Editing the material will not effect that material in other models.
+Once materials are assigned, the material will be saved in the current model.  Editing the material will not affect that material in other models.
 
 ## Assign materials to layers
 {: #bylayer}
@@ -36,7 +36,7 @@ Note: Deleting a material from the [Material Editor](material-editor.html) retur
 {: #detachmaterialfromlayer}
 1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
 1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select the Default Material Material drop-down list.
+1. In the Layer Material dialog box, select the Default Material in the drop-down list.
 
 ## Assign material to Parent
 {: #byparent}

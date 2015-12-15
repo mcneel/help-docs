@@ -112,7 +112,7 @@ Subtracts the top layer from the bottom layer or the other way round, to always 
 Takes the transparent alpha-channel mask into account when blending.
 
 #### Combine Path Tracings
-Combines images rendered using the Path Tracer engine so that, for example, when you combinine ten images rendered with 20 passes each becomes the equivalent of an image rendered with 200 passes.
+Combines images rendered using the Path Tracer engine so that, for example, when you combine ten images rendered with 20 passes each becomes the equivalent of an image rendered with 200 passes.
 *![images/combinedpathtrace200.png](images/combinedpathtrace200.png) *Rendered with 20 passes (left), ten 20-pass images combined to create a 200-pass image (right).* *
 
 ### Apply Patch
@@ -158,7 +158,7 @@ Displays the [distance mask](image-editor.html#distance-channel).
 ## Using the image editor
 
 ##### Load an Image
-1.  [Save](render-window.html#export-to-nxtimage) your rendering results as an. **nXtImage**.
+1.  [Save](render-window.html#export-to-nxtimage) your rendering results as an **.nXtImage**.
 1. On the **Flamingo nXt** menu, click **Utilities &gt; Flamingo nXt Image Editor**.
 1. In the **nXt Image Editor**, on the File menu, click **Open** to load the image into the editor.
 
@@ -175,13 +175,13 @@ Tone mapping is the process of converting the luminance data used by nXt into&#1
 See [Render Window: Brightness](render-window.html#brightness).
 {% include_relative snippets/snippet-brightness.md %}
 ### Burn
-See [Render Window: Burn](render-window.html#burn)
+See [Render Window: Burn](render-window.html#burn).
 
 ### Saturation
-See [Render Window: Saturation](render-window.html#saturation)
+See [Render Window: Saturation](render-window.html#saturation).
 
 ### Histogram
-See [Render Window: Histogram](render-window.html#histogram)
+See [Render Window: Histogram](render-window.html#histogram).
 
 ## Status Fields
 The status fields are located at the bottom of the screen. As you move your cursor over the image, these fields display information about each pixel.
@@ -228,8 +228,8 @@ The distance from the camera where haze will start adding color to each pixel.
 Pick a point on the image to specify the distance.
 
 ### Far
-The distance at which the haze effect will be its maximum.&#160;All pixels beyond this point will have the maximum haze effect added to each pixel.
-Pixels between near and far will have haze added in a linear fashion from the near to the far pixels.
+The distance where the haze effect is at its maximum.&#160;All pixels beyond this point have the maximum haze effect added to each pixel.
+Pixels between near and far have haze added in a linear fashion from the near to the far pixels.
 
 #### Pick
 Pick a point on the image to specify the distance.

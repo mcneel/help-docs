@@ -2,7 +2,7 @@
 title: Automated rendering
 ---
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
+Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you can change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is needed to get a different look.
 
 #### Simple Material Types:
 
@@ -88,7 +88,7 @@ Glossy materials generally have a low Highlight [Intensity](material-type-advanc
 Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
 
 #### Highlight Sharpness
-Controls sharpenss vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+Controls sharpness vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
 
@@ -124,7 +124,7 @@ Set the image map and properties of the material. There are many options here. S
 
 ## Texture Set
 {: #texture-set}
-[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these set of textures.
+[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
 <!-- TODO: This dialog Needs a page.-->
 ![images/solidcolors.png](images/textureset.png)
 
@@ -141,7 +141,7 @@ Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness]
 #### Types
 This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. **Note:** This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
 
 ## Advanced Material
 The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.
