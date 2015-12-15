@@ -2,6 +2,6 @@
 ---
 
 
-# Glossary
-{% include_relative snippets/snippet-masking.md %}&#160;
+# 用語集
+{% include_relative snippets/snippet-masking.md %}
 

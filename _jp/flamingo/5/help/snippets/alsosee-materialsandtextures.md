@@ -1,2 +1,2 @@
- [id="a1" style="position: relative; ">Use materials and textures.]() 
+ [id="a1" style="position: relative; ">マテリアルやテクスチャを使用する]() 
 

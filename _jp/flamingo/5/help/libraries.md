@@ -1,74 +1,74 @@
 ---
-title: Libraries Panel
+title: ライブラリパネル
 ---
 
 # ![images/libraries.svg](images/libraries.svg) {{page.title}}
-The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
+Librariesコマンドは、マテリアル、テクスチャ、環境のライブラリを管理するライブラリパネルを開きます。
 
-Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
+レンダリングコンテンツは、モデル間で共有できる外部ライブラリを作成するためにファイルに保存することができます。コンテンツはまた、Rhinoのセッション間で、そしてフォルダにドラッグすることもできます。
 
-Color swatches can be dragged and dropped in the same way.
+色見本も同じようにドラッグアンドドロップできます。
 
-The Libraries panel displays a view into the content folders you have set up. Use this to drag and drop content into the model or to store document content to a location outside the model.
+ライブラリは、設定されたコンテクストフォルダの内容を表示します。ライブラリを使用すると、コンテンツをモデルにドラッグアンドドロップしたり、ドキュメントのコンテンツをモデルの外部の場所に格納したりすることができます。
 
-Materials are simply files on your hard drive.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
+マテリアルは、お使いのハードドライブにある単なるファイルです。ライブラリフォルダは、単なるWindowsのフォルダです。どのようなWindowsのファイルやフォルダとも同じく、ライブラリフォルダはコピー、ペースト、移動が行えます。
 
-Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
+ライブラリタブの一番上のアドレスバーを用いると、お使いのコンピュータのどのフォルダも開くことができます。
 
-To quickly navigate back to the Default Library locations use the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+デフォルトのライブラリの場所に素早く戻るには、右上のレンチアイコン ![images/library_default.png](images/library_default.png) を使用します。
 
-#### Organizing Libraries
+#### ライブラリの組織化
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+ライブラリは単なる複数のファイルです。フォルダは、コピー、ペースト、移動が行えます。Windowsエクスプローラを使用して、フォルダやドキュメントを編集します。ライブラリタブでのデフォルトのフォルダの設定は、[ライブラリ設定](#settings) ![images/library_default.png](images/library_default.png)を使用して行えます。
 
-## Materials Library
+## マテリアルライブラリ
 {: #material}
-Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
+ライブラリのマテリアルは、ハードドライブ上のﾌｧｲﾙです。モデルに割り当てると、マテリアルはモデルに格納、保存されます。割り当てられたマテリアルを変更しても、ハードディスク上の元のマテリアルは変更されません。
 
-Drag and drop materials to assign materials to the model. Materials can be assigned to:
+ドラッグアンドドロップして、マテリアルをモデルに割り当てます。マテリアルの割り当て先には次のものがあります。
 
-#### Layer Assignment
-Drag a material directly onto the layer name in the Layers Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
+#### レイヤへ割り当て
+レイヤパネルのレイヤ名にマテリアルを直接ドラッグします。これはデフォルトでレイヤのすべてのオブジェクトにマテリアルが割り当てられるので、推奨する方法です。後のマテリアルの変更は簡単です。別のマテリアルをレイヤにドロップするだけで変更が行えます。
 
-#### Object Assignment
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
+#### オブジェクトへ割り当て
+任意のビューポートのオブジェクトに直接マテリアルをドラッグします。これは、レイヤの設定のマテリアルをオブジェクトの設定の割り当てに上書きします。
 
-#### Block Assignment
-Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
+#### ブロックへ割り当て
+ブロックにドラッグします。ブロックの親の設定のオブジェクトにマテリアルが割り当てられます。マテリアルを親の設定から取得するブロック内のすべてのオブジェクトにブロックへの割り当てが適用されます。
 
-## Plant Library
+## 植物ライブラリ
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+デフォルトのライブラリフォルダの内容が植物フォルダです。モデルに植物を配置する際に使用します。モデルに配置すると、植物はモデルに格納、保存されます。割り当てられた直物を変更しても、ハードディスク上の元の植物は変更されません。植物をビューポートにドラッグアンドドロップして、モデルに植物を配置します。詳細については、[植物のヘルプ](plants.html)トピックを参照してください。
 
-## Environment Library
+## 環境ライブラリ
 {: #environment}
-Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
+環境はライブラリに保存できます。このことで、環境の設定を1つのモデルから別のモデルへ受け渡すことができます。詳細については、[環境](environment-tab.html)を参照してください。
 
-## Library Settings
+## ライブラリの設定
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+![images/options.png](images/options.png)ライブラリオプションを使用すると、![images/library_default.png](images/library_default.png)メニューに表示される内容を変更することができます。
 
-##### Where can I find this command?
-There are three places to find the Libraries Options command.
+##### コマンドの位置
+ライブラリオプションコマンドは、3箇所からアクセスできます。 <!-- TODO: Where is the third place? -->
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
- 1. Menus > Tools pulldown > Options > Libraries.
+ 1. ライブラリタブ > ライブラリパネルの右上の![images/library_default.png](images/library_default.png) > 設定...
+ 1. メニュー > ツールプルダウン > オプション > ライブラリ
 
 
-### Show render content
-Use this to show or hide the default render content location.
+### レンダリングコンテンツを表示
+デフォルトのレンダリングコンテンツの場所を表示するかどうかを指定します。
 
-#### Use default library location (My Documents)
-By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
+#### デフォルトのライブラリの場所を使用（My Document（マイドキュメント））
+デフォルトで、[コンテンツライブラリ](libraries.html)は*マイドキュメント（My Documents）*フォルダのサブフォルダです。
 
-#### Custom
-Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
+#### カスタム
+カスタム[ライブラリ](libraries.html)の場所を設定します。このコンピュータの[コンテンツライブラリ](libraries.html)のデフォルトの場所を変更します。
 
-##### Browse button
-Open file browser to specify file.
+##### 参照ボタン
+ファイルを指定するファイルブラウザを開きます。
 
-#### Show Documents folder
-In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
+#### Documents(ドキュメント)フォルダﾞを表示
+指定されたドキュメントフォルダが[ライブラリパネル](libraries.html)でメニューに表示されます。
 
-#### Show custom folders
-In the [Libraries panel](libraries.html), designated custom folders will display in the menu.
+#### カスタムフォルダを表示
+指定されたカスタムフォルダが[ライブラリパネル](libraries.html)でメニューに表示されます。

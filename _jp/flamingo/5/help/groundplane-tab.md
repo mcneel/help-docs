@@ -1,32 +1,32 @@
 ---
-title: Ground plane
+title: 地平面
 ---
 
 # {{page.title}}
 {: #ground-plane}
 
-The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
+地平面は、指定する高度で、水平方向のあらゆる方角に伸びて、画像を配置する無限に広い台のような役割をします。土台に大きな平面サーフェスを使用するより、地平面を使用した方がレンダリングの速度がずっと速くなります。
 
-### Enabled
+### オン
 {: #groundplane-enabled}
-Turns the ground plane on.
+地平面をオンにします。
 ![images/groundplane-002a.png](images/groundplane-002a.png)
-*Ground plane disabled (left) and enabled (right).*
+*地平面オフ（左）、地平面オン（右）*
 
-### Alpha
+### アルファ
 {: #groundplane-alpha}
-Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
+透明アルファチャンネルを地平面に適用し、影のある画像を別の画像と合成できるようにします。[Wikipediaの記事: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing)を参照してください。
 ![images/groundplane-004a.png](images/groundplane-004a.png)
- *Ground plane shows shadow, but is otherwise transparent in the image.*
+ *イメージで地平面が影を表示（それ以外は透明）*
 
-### Elevation
+### 高度
 {: #groundplane-elevation}
-Specifies the ground plane's height above zero.
+0を基準に地平面の高さを指定します。
 ![images/groundplane-005a.png](images/groundplane-005a.png)
-*Ground plane elevation above zero.*
+*0より上の高度の地平面*
 
-### Material
+### マテリアル
 {: #groundplane-material}
-Assigns a [material](simple-material-properties.html) to the ground plane.
+[マテリアル](simple-material-properties.html)を地平面に割り当てます。
 ![images/groundplane-003a.png](images/groundplane-003a.png)
-*Ground plane with raised elevation and water material.*
+*高度を上げて水のマテリアルを用いた地平面*

@@ -3,371 +3,371 @@
 
 <!-- TODO: This is a combination of the old information here and the Rhino render Windows.  These two still need to be combined. -->
 
-# Render Window
-The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rednering frameowrk.  For details on the rederwindow menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)
+# レンダリングウィンドウ
+レンダリングウィンドウは、露出調整やポストプロセッシング効果を追加するオプションを提供します。レンダリングウィンドウのメインフレームは、Rhinoのレンダリングフィレームワークの一部です。レンダリングウィンドウのメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)を参照してください。
 
-### Pulldown Menus
-For details on the rederwindow menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)
-
-
-### Toolbars
+### プルダウンメニュー
+レンダリングメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)を参照してください。
 
 
-### Save with background alpha channel
+### ツールバー
+
+
+### 保存（背景アルファチャンネルを含める）
 {: #save-with-alpha-channel}
-Saves image 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.
+32ビットのPNG、TIF、BMPイメージをアルファチャンネル背景を含めて保存します。ファイル形式のアルファチャンネルバージョンが高品質の合成に用いられます。レンダリングがアルファチャンネルを含めて保存されると、背景は黒で表示されます。
 
-### Export to native Flamingo nXt file (.nXtImage)
+### ネイティブFlamingo nXtファイルにエクスポート（.nXtImage）
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image re-saved to another bitmap format.
-The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all of the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
+非圧縮の輝度および色情報を保存します。[アルファ](environment-tab.html#alpha)を含むすべてのレンダリングチャンネルを保存します。nXtImageファイルは、[イメージエディタ](image-editor.html)で開くことができ、[露出](#adjust-image)や[ポストプロセッシング効果](#effects)を適用してイメージを別のビットマップ形式で保存することができます。
+.nXtImage形式は、nXtレンダラーのネイティブのイメージ形式です。レンダリングのほとんどの情報を保存するので、推奨する保存形式です。この形式で保存されたイメージは、[nXtイメージエディタ](image-editor.html)で操作することができ、特殊効果を追加できます。このエディタからは、nXtでサポートされているすべての形式を含む多くのよく使用されている標準形式に保存ができます。[Piranesi EPixファイル（.epx）](http://www.piranesi.co.uk/)形式に保存することもできます。
 
-### Export to HDR file
+### HDRファイルにエクスポート
 {: #export-to-hdr}
-Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
+非圧縮の輝度および色情報を保存します。.hdr形式は、輝度データを直接ハイ・ダイナミック・レンジ形式に保存します。通常の写真のような輝度のない背景は、これらの形式で保存すると黒で表示されます。
 
-### Export to EXR file
+### EXRファイルにエクスポート
 {: #export-to-exr}
-A&#160;high-dynamic-range image file format, released as an&#160;open standard&#160;along with a set of software tools created by&#160;Industrial Light and Magic (ILM), released under a&#160;free software license. This file format supports 16-bits-per-channel&#160;floating-point&#160;values (half precision) with a sign bit, five bits of exponent, and a ten-bit&#160;mantissa. This allows a dynamic range of over thirty&#160;stops&#160;of exposure. See: [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
-The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
+フリーソフトウェアライセンスの下でリリースされた、インダストリアル・ライト&マジック（ILM）によって作られたソフトウェアツールのセットと共にオープン標準としてリリースされたハイ・ダイナミック・レンジ画像ファイル形式です。このファイル形式は、符号1ビット、指数5ビット、仮数10ビットの16ビット/チャンネルの浮動小数点値（半精度）をサポートします。これは、30を超える値の露出のダイナミックレンジを可能にします。[Wikipediaの記事: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)を参照してください。
+.exr形式は、輝度データを直接ハイ・ダイナミック・レンジ形式に保存します。通常の写真のような輝度のない背景は、これらの形式で保存すると黒で表示されます。
 
-## Exit
-Closes the render window.
+## 閉じる
+レンダリングウィンドウを閉じます。
 
-##  [Flamingo Tab Render Window](render-window.html#help)
+##  [Flamingoタブのレンダリングウィンドウ](render-window.html#help)
 
-## Progress
+## 進行状況
 {: #progress}
 
-### Action
+### 動作
 
-### Pass
+### パス
 
-### Scan line
+### スキャンライン
 
-### Elapsed time
+### 経過時間
 
-### Rays / second
+### レイ/秒
 
-### Pixels / second
+### ピクセル/秒
 
-## Render Constraints
+## レンダリング停止条件
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}
 {% include_relative snippets/snippet-renderconstraints.md %}
-## Adjust Image
+## イメージの調整
 {: #adjust-image}
-The settings that control the screen display also control any image file made from that display. Multiple image files with different exposure settings can be saved from a single rendering. The exposure settings for one rendered image will be applied to the next.
-This adjustment process is called *tone mapping.* Tone mapping is the process of converting the luminance data used by Flamingo nXt into&#160;Red, Green, and Blue (RGB) pixels that can be displayed or printed.
+画面表示をコントロールする設定は、その表示から作成されたどのようなイメージファイルもコントロールします。1つのレンダリングから異なる露出設定の複数のイメージファイルが保存できます。1つのレンダリングイメージのために指定された露出設定は、引き続き次のイメージに適用されます。
+この調整処理は、*トーンマッピング*と呼ばれます。トーンマッピングは、Flamingo nXtによって使用される輝度データを、表示または印刷される赤、緑、青（RGB）のピクセルに変換する処理です。
 
-### Brightness
+### 明るさ
 {: #brightness}
-Adjusts the overall brightness of the image. For example, if a white surface in the model is rendering gray, increase the brightness until the surface appears white. Or, if the exterior scene seems overexposed, decrease the brightness until the scene appears more correct.
+イメージの全体の明るさを調整します。例えば、モデルの中の白いサーフェスがグレーにレンダリングされている場合は、サーフェスが白く見えるまで明るさの度合いを上げることができます。反対に、屋外のシーンが露出オーバーになっているような場合、これでよいと感じるまでシーンの明るさの度合いを下げることができます。
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*Brightness at default (left) and increased.*
+*デフォルトの明るさ（左）、値を上げた状態*
 {% include_relative snippets/snippet-brightness.md %}
-### Burn
+### 焼き込み
 {: #burn}
-Adjusts the image white point. This is the brightest white color in the image. Burn can add drama, life,&#160;and sharpness to a rendering by adding more areas of white to contrast with the dark areas.
-See [Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point).
+イメージの白い点を調整します。これはイメージの中で最も明るい白色です。焼きこみは、暗い部分とのコントラストを付ける白い部分をより追加することでレンダリングを印象的に、よりはっきりさせます。
+[Wikipediaの記事: White point](http://en.wikipedia.org/wiki/White_point)を参照してください。
 ![images/burn-001.png](images/burn-001.png)
-*Burn at the default setting (left) and increased.*
+*デフォルト設定で焼き込み（左）、値を上げた状態*
 
-### Saturation
+### 彩度
 {: #saturation}
-Saturation controls the amount of color in the image. A saturation of 0.00 will result in a grayscale image. Values above 1.00 can make colors richer.
+彩度は、イメージの色の量をコントロールします。彩度が0.0の場合、グレースケールのイメージになります。彩度を1.00よりも大きくすると、色がより鮮やかになります。
 ![images/saturationdefault.png](images/saturationdefault.png)
-*Saturation at the default (left) and increased by about 3 (right).*
+*デフォルトの彩度（右）、3程値を上げた状態（左）*
 
-### Histogram
+### ヒストグラム
 {: #histogram}
-Graphically displays the distribution of the light and dark areas in the image.
-See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
+イメージの明るいそして暗い部分の分布を図（グラフ）で表示します。
+[Wikipediaの記事: Histogram](http://en.wikipedia.org/wiki/Histogram)を参照してください。インターネットには、デジタル写真の露出を確認するのにヒストグラムを用いることに関する多くの情報があります。原理はレンダリングも同じです。
 ![images/histogram.png](images/histogram.png)
-*Histogram.*
+*ヒストグラム*
 
-#### Histogram options
+#### ヒストグラムのオプション
 
->Right-click the histogram image for options
+>ヒストグラムのイメージを右クリックするとオプションが表示されます。
 
-#### Fit
+#### フィット
 
-#### Median
+#### 中央値
 
-#### Mean
+#### 平均値
 
-#### Show Sorted Graph
+#### 並べ替えたグラフを表示
 
-#### Show Scale
+#### スケールを表示
 
-#### Graph Color
+#### グラフの色
 
-#### Show Luminance Values
+#### 輝度値を表示
 
-### Lock exposure
+### 露出を固定
 {: #lock-exposure}
-When the exposure settings are locked, changing the lighting will not adjust the exposure to compensate.
+露出設定を固定すると、照明を変更しても補正のための露出調整はされません。
 
-## Information
+## 情報
 {: #information}
 
-### Resolution
-Displays the [render resolution](render-tab.html#resolution).
+### 解像度
+[レンダリング解像度](render-tab.html#resolution)を表示します。
 
-### Faces
-Displays the number of mesh faces used to render the model.
+### 面
+モデルをレンダリングするのに使用されたメッシュ面の数を表示します。
 
-### Apparent faces
-When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The **Apparent faces** display shows how many additional temporary faces are generated.
+### 見掛けの面
+モデルにブロックがある場合、Flamingo nXtはそれぞれのインスタンスのメッシュを再生成しなくても、ブロック定義を用いてブロックインスタンスをレンダリングすることができます。**見掛けの面**は、追加で生成された一時メッシュの数を表示します。
 
-## Pixel information
-Window point
-Image point
-Image Y-Up
-Pixel color
-Luminance
-Distance
+## ピクセルの情報
+ウィンドウの点
+イメージの点
+イメージYアップ
+ピクセルの色
+輝度
+距離
 
-## Lighting information
+## 照明の情報
 
-###  [Presets](lighting-tab.html)
+###  [プリセット](lighting-tab.html)
 
-###  [Sun](sun-and-sky-tabs.html#sun)
+###  [太陽](sun-and-sky-tabs.html#sun)
 
-###  [Sky](sun-and-sky-tabs.html#sky)
+###  [空](sun-and-sky-tabs.html#sky)
 
-###  [Lights](lights-tab.html)
+###  [光源](lights-tab.html)
 
-###  [Indirect](lighting-advanced-tab.html#indirect)
+###  [間接光](lighting-advanced-tab.html#indirect)
 
-###  [Ambient On/Off](lighting-advanced-tab.html#ambient)
+###  [環境光　オン/オフ](lighting-advanced-tab.html#ambient)
 
-## Channels
+## チャンネル
 {: #channels}
-Displays the status of the lighting channels.
+照明チャンネルの状態を表示します。
 
-## Effects
+## エフェクト
 {: #post-process-effects}
 {: #effects}
-Post-processing effects are applied after the image is rendered. These can be turned on and off and re-ordered in the list. Each effect has its own settings.
+ポストプロセッシング効果は、イメージのレンダリング後に適用されます。これらはオン、オフを切り替えられ、リストで順序を変えることもできます。設定はそれぞれの効果によって変わります。
 
-## Effects Options
-These options are also available from a context menu.
+## エフェクトオプション
+これらのオプションはコンテクストメニューからも選択できます。
 
->Right-click an effect to display the context menu.
+>コンテクストメニューを表示するには、効果を右クリックしてください。
 
-![images/toggleeffect.png](images/toggleeffect.png)Toggle the on/off state of the selected effect.
-![images/moveup.png](images/moveup.png)Move the selected effect up in the list.
-![images/movedown.png](images/movedown.png)Move the selected effect down in the list.
-![images/effectproperties.png](images/effectproperties.png)Selected effect properties.
-![images/savelistorderasdefault.png](images/savelistorderasdefault.png)Save the current effects list order and properties as default.
-![images/savecurrenteffectslist.png](images/savecurrenteffectslist.png)Save the current effects list as named list.
-![images/importnamedeffectslist.png](images/importnamedeffectslist.png)Import named effects list.
+![images/toggleeffect.png](images/toggleeffect.png)選択された効果のオン/オフ状態を切り替えます。
+![images/moveup.png](images/moveup.png)リストで選択された効果を1つ上に移動します。
+![images/movedown.png](images/movedown.png)リストで選択された効果を1つ下に移動します。
+![images/effectproperties.png](images/effectproperties.png)選択された効果のプロパティを表示します。
+![images/savelistorderasdefault.png](images/savelistorderasdefault.png)現在の効果のリストの順序とプロパティをデフォルトして保存します。
+![images/savecurrenteffectslist.png](images/savecurrenteffectslist.png)現在のエフェクトリストを名前の付いたリストとして保存します。
+![images/importnamedeffectslist.png](images/importnamedeffectslist.png)名前の付いたエフェクトリストをインポートします。
 
-## Depth of Field
+## 被写界深度
 {: #postprocessingdof}
-The Depth of Field effect blurs the image depending on the distance from the camera.
+被写界深度効果は、カメラからの距離によってイメージをぼやけさせます。
 ![images/postprocessing-dof.png](images/postprocessing-dof.png)
 
-## Depth of Field Properties
+## 被写界深度のプロパティ
 {: #depth-of-field-properties}
 
-### Visual Properties
+### 視覚のプロパティ
 {: #dofvisualproperties}
 
-#### Blurring strength
+#### ブラーの強度
 {: #dofblurringstrength}
-Determines the amount of blurring. This is an arbitrary value and different values will work better with different images.
+ぼかしの量を決定します。この値は任意のもので、イメージによって異なる値が適切です。
 
-#### Max blurring
+#### 最大ブラー
 {: #dofmaxblurring}
-Determines the maximum blurring radius used. Since extremely blurred areas can cause the effect to be slow, this limits the effect.
+最大ぼかし半径を決定します。 ぼかしの強い部分は効果を遅くする場合があるので、これで効果を制限します。
 
-### Area of Effect
+### 効果の範囲
 {: #dofareaofeffect}
 
-#### Focal distance
+#### 焦点距離
 {: #dofocaldistance}
-The distance from the camera at which the image is in focus (not blurry).
+イメージがはっきりと見える（焦点があってぼやけていない）カメラからの距離です。
 
-#### Pick
-Pick a location on the image to set the focal distance.
+#### ピック
+イメージの位置をピックして焦点距離を設定します。
 
-#### Blur background
+#### 背景のブラー
 {: #dofblurbackground}
-Determines whether the background is blurry. The background will be blurred at the maximum effect.
+背景をぼやけさせるかどうかを決定します。 背景は、最大の効果でぼやけさせられます。
 
-## Fog
+## フォグ
 {: #postprocessingfog}
-The fog effect adds depth-dependent coloration in the image. This effect can be used to add a thick fog effect or a subtle depth cue.
+フォグ効果は、イメージに奥行きによる色付けを行います。深い霧の効果からかすかな奥行きの効果まで様々な効果を付けることができます。
 ![images/postprocessing-nofog.png](images/postprocessing-nofog.png)
-*No post processing effects.*
+*ポストプロセッシング効果がない状態*
 
-### Fog as Gradient Background
-Fog can be used to create a gradient background.
-In this case the settings to create the background are as follows:
-Strength = 1Noise = .1Fog Color = BlackEnd distance = approximately 110Start distance = approximately 90Fog Background = OnFeathering = 80
+### グラデーション背景としてのフォグ
+フォグは、グラデーション背景を作り出すのに使用できます。
+この例での背景を作成するための設定は次の通りです。
+強弱 = 1ノイズ = .1フォグの色 = 黒終了距離 = 約110開始距離 = 約90Fog 背景のフォグ = オンフェザリング = 80
 ![images/postprocessing-fogasgradient.png](images/postprocessing-fogasgradient.png)
-*Fog as gradient background.*
+*グラデーション背景としてのフォグ*
 
-## Fog Properties
+## フォグのプロパティ
 {: #fogsettings}
 
-### Visual properties
+### 視覚のプロパティ
 {: #fogvisualproperties}
-Determines the appearance of the fog effect.
+フォグ効果の表示方法を決定します。
 
-#### Strength
+#### 強弱
 {: #fogstrength}
-Determines the maximum amount of fogginess. Setting Strength to 0.0 turns the effect off; setting Strength to 1.0 represents total fog. Values higher than 1.0 can be used but only make sense when used with the **Noise**.
+フォグの最大量を決定します。 強弱が0.0の場合、効果はなしになります。1.0の場合、完全なフォグとなります。 1.0より高い値も使用できますが、**ノイズ**と一緒に使用しない限り意味はありません。
 
-#### Noise
+#### ノイズ
 {: #fognoise}
-Adds a random variation to Fog **Strength**.
+フォグの**強弱**にランダムな変化を付けます。
 
-#### Color
+#### 色
 {: #fogcolor}
-Specifies the fog color.
+フォグの色を指定します。
 
->Click the color swatch to select a color from the [Select color](select-color.html) dialog box.
->Click the **Pick** button to select the color from the rendered image.
+>色見本をクリックし、[色の選択](select-color.html)ダイアログボックスから色を選択します。
+>レンダリングイメージから色を選択するには、**ピック**ボタンをクリックします。
 
-### Area of effect
-Determines the area encompassed by the fog effect.
+### 効果の範囲
+フォグ効果の範囲を決定します。
 
-#### Start distance
+#### 開始距離
 {: #fogstartdistance}
-Specifies the distance from the camera at which the fog begins to appear.
+フォグの表示が開始するカメラからの距離を指定します。
 
->Click the **Pick** button to pick the depth from the rendered image.
+>レンダリングイメージから奥行きをピックするには、**ピック**ボタンをクリックします。
 
-#### End distance
+#### 終了距離
 {: #fogenddistance}
-Specifies the distance from the camera at which the maximum amount of fogginess is achieved.
+フォグが最大量になるカメラからの距離を指定します。
 
->Click the **Pick** button to pick the depth from the rendered image.
+>レンダリングイメージから奥行きをピックするには、**ピック**ボタンをクリックします。
 
-### Bounds (Left, Right, Top, Bottom)
+### 境界（左、右、上、下）
 {: #fogbounds}
-Specifies the area of the image affected by the fog. This can be used to create a low-lying mist effect.
-Click the **Pick Area** button to pick bounding area from the rendered image.
+フォグによって影響されるイメージの領域を指定します。 これは、低くたなびく霧の効果を作り出すのに使用できます。
+レンダリングイメージから境界領域をピックするには、**範囲をピック**ボタンをクリックします。
 
-### Fog
+### フォグ
 
-#### Fog background
-Determines whether the background image is also made foggy. The background will be fogged at the maximum strength.
+#### 背景のフォグ
+背景イメージにもフォグを適用するのか決定します。 背景は、最大の強度でフォグが適用されます。
 
-#### Feathering
+#### フェザリング
 {: #fogfeathering}
-Determines the number of pixels outside the bounding area to “fade in” the fogginess.
+フォグを徐々に適用する際の境界領域の外のピクセルの数を決定します。
 
-### Preview
-Preview the effect on the image as you change the values.
+### プレビュー
+値を変更した後にこのボタンをクリックすると、イメージ上の効果をプレビューできます。
 
-## Glare
+## グレア
 {: #postprocessingglare}
-Glare and Glow are very similar. Whereas Glow uses a selected color, Glare pushes the color to white. Glare makes extremely bright parts of the image appear to glare. It does this by making the area surrounding the bright area brighter. This very subtle effect is usually used for night scenes where it will make the lights seem much more realistic.
+グレアとグローはとても似ています。グローは選択された色を使用しますが、グレアは色を白にします。グレアは、イメージの非常に明るい部分を光らせます。これは、明るい部分の周囲の部分をより明るくすることで行われます。この非常に微妙な効果は、ライトがよりリアルに見える夜のシーンに通常使われます。
 ![images/postprocessing-noglare.png](images/postprocessing-noglare.png)
-*Glare off (left) and on (right).*
+*グレアがオフの状態（左）、グレアがオンの状態（右）*
 
-## Glare Properties
+## グレアのプロパティ
 {: #glaresettings}
 
-### White point bound
+### 白点範囲
 {: #glarewhitepointbound}
-Determines where in the tonal range the glare will begin. The value is represented on the histogram and can be adjusted graphically. Pixels lighter than the **White Point Bound** (in either luminance or the grey-scale value) will glare.
+色調範囲のグレアの始まる場所を決定します。 この値は、ヒストグラムに示され、それを用いても調整できます。**白点範囲**よりも明るいピクセル（輝度またはグレースケール値で）が光ります。
 
-### Glare size
+### グレアのサイズ
 {: #glaresize}
-The radius of the glare around the bright pixel.
+明るいピクセルの周りのグレアの半径です。
 
-### Gain
+### ゲイン
 {: #glaregain}
-Multiplier for the lightness of the glare. The default value of 1.0 should result in normal glare effects. Use higher values for extremely bright glare.
+グレアの明度の乗数です。デフォルト値の1.0で、通常のグレア効果が得られるはずです。非常に明るいグレアには、より高い値を使用してください。
 
-### Use photometric information
+### フォトメトリック情報を使用
 {: #glareusephotometric}
-When using photometric information, the amount of glare is controlled by how &quot;whiter than white&quot; the pixel is. Otherwise, the effect uses the whitest pixels in the image.
+フォトメトリック情報を使用する際、グレアの量はピクセルがどれくらい「白より白い」かでコントロールされます。そうでない場合は、効果はイメージの一番白いピクセルを使用します。
 
-### Histogram
+### ヒストグラム
 {: #glarehistogram}
-Graphically displays the distribution of the light and dark.
+明るいそして暗い部分の分布を図（グラフ）で表示します。
 
-#### Histogram options
+#### ヒストグラムのオプション
 
->Right-click the histogram image for options
+>ヒストグラムのイメージを右クリックするとオプションが表示されます。
 
-#### Fit
+#### フィット
 
-#### Median
+#### 中央値
 
-#### Mean
+#### 平均値
 
-#### Show Sorted Graph
+#### 並べ替えたグラフを表示
 
-### Preview
-Preview the effect on the image as you change the values.
+### プレビュー
+値を変更した後にこのボタンをクリックすると、イメージ上の効果をプレビューできます。
 
-## Glow
+## グロー
 {: #postprocessingglow}
-The Glow effect produces a bright area around specific colors. It can be used to make colored lights or objects like neon lights appear to glow. Select up to 10 colors to affect in the image.
-In the illustration, a red color from the ruby is used with the gain set so that the color becomes close to white.
+グロー効果は、指定の色の周囲に明るい部分を作り出します。これは、色の付いたライトやネオンライトが光って見える効果を生み出します。10色までを選択してイメージに効果を与えることができます。
+イメージでは、ルビーからの赤い色がゲインを設定して使用されており、色が白に近くなっています。
 ![images/postprocessing-glowassparkle.png](images/postprocessing-glowassparkle.png)
-*Glow as sparkle.*
+*輝きを表現するグロー*
 ![images/postprocessing-glowon.png](images/postprocessing-glowon.png)
-*Glow off (left) and on (right).*
+*グローがオフの状態（左）、グローがオンの状態（右）*
 
-## Glow Properties
+## グローのプロパティ
 {: #glowsettings}
 
-### On
-Turns glow for the corresponding color on.
+### オン
+対応する色のグローをオンにします。
 
-### Color
+### 色
 {: #glowcolor}
-Specifies the glow color.
+グローの色を指定します。
 
->Click the color swatch to select a color from the [Select color](select-color.html) dialog box.
->Click the **Pick** button to select the color from the rendered image.
+>色見本をクリックし、[色の選択](select-color.html)ダイアログボックスから色を選択します。
+>レンダリングイメージから色を選択するには、**ピック**ボタンをクリックします。
 
-### Sensitivity
+### 感度
 {: #glowsensitivity}
-Controls how much variation on the selected color is permitted when calculating glow on pixels close to that color.
+選択されている色に近いピクセルのグローを計算する際の（選択された色からの）変化の量を設定します。
 
-### Glow Size
+### グローのサイズ
 {: #glowsize}
-The radius of the glow around the bright pixel.
+明るいピクセルの周りのグローの半径です。
 
-### Gain
+### ゲイン
 {: #glowgain}
-Multiplier for the lightness of the glow. The default value of 1.0 should result in normal glow effects. Use higher values for extremely bright glow.
+グローの明度の乗数です。デフォルト値の1.0で、通常のグロー効果が得られるはずです。非常に明るいグローには、より高い値を使用してください。
 
-### Preview
-Preview the effect on the image as you change the values.
+### プレビュー
+値を変更した後にこのボタンをクリックすると、イメージ上の効果をプレビューできます。
 
-## Wires &amp; Text
+## ワイヤ &amp; テキスト
 {: #postprocessingwireframe}
-Overlays curves, text, dimensions, isocurves, mesh edges, and point objects over the rendered image.
+曲線、テキスト、寸法、アイソカーブ、メッシュエッジ、および点オブジェクトをレンダリングイメージに重ねます。
 ![images/posteffectwires-001.png](images/posteffectwires-001.png)
-*With (left) and without Wires &amp; Text (right).*
+*ワイヤ &amp; テキストを表示（左）、ワイヤ &amp; テキストを非表示（右）*
 
-## Wires and Text Properties
+## ワイヤとテキストのプロパティ
 
-### Curves
-Displays curve objects.
+### 曲線
+曲線オブジェクトを表示します。
 
-### Dimensions and text
-Displays dimension and text objects.
+### 寸法とテキスト
+寸法とテキストオブジェクトを表示します。
 
-### Isocurves
-Displays surface isoparametric curves.
+### アイソカーブ
+サーフェスのアイソパラメトリック曲線を表示します。
 
-### Mesh edges
-Displays mesh edges.
+### メッシュエッジ
+メッシュのエッジを表示します。
 
-### Points
-Displays point objects.
+### 点
+点オブジェクトを表示します。
 
-### Preview
-Preview the effect on the image as you change the values.
+### プレビュー
+値を変更した後にこのボタンをクリックすると、イメージ上の効果をプレビューできます。

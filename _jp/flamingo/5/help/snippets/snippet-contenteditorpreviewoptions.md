@@ -1,36 +1,36 @@
 
-#### ![images/floatingpreview.png](images/floatingpreview.png) Floating Preview
-Floats the preview image in a resizable window.
+#### ![images/floatingpreview.png](images/floatingpreview.png) フローティングプレビュー
+サイズ変更できるウィンドウにプレビューイメージをフロートします。
 
-#### ![images/grid.png](images/grid.png) Grid
-Displays the previews as a grid of thumbnails. The editors default to **Grid** mode.
+#### ![images/grid.png](images/grid.png) グリッド
+プレビューをサムネイルのグリッドとして表示します。エディタのデフォルトは**グリッド**モードです。
 
-#### ![images/list.png](images/list.png) List
-Displays the previews as a list of thumbnails.
+#### ![images/list.png](images/list.png) 一覧
+プレビューをサムネイルの一覧として表示します。
 
-#### ![images/tree.png](images/tree.png) Tree
-Displays the previews as a tree showing nesting.
+#### ![images/tree.png](images/tree.png) ツリー
+プレビューをツリー表示します。（ネストを表示します。）
 
-#### ![images/small.png](images/small.png) Small
-Sets the thumbnail size to the smallest size.
+#### ![images/small.png](images/small.png) 小
+サムネイルを一番小さいサイズで表示します。
 
-#### ![images/medium.png](images/medium.png) Medium
-Sets the thumbnail size to medium size.
+#### ![images/medium.png](images/medium.png) 中
+サムネイルを一番中ぐらいのサイズで表示します。
 
-#### ![images/large.png](images/large.png) Large
-Sets the thumbnail size to large size.
+#### ![images/large.png](images/large.png) 大
+サムネイルを一番大きいサイズで表示します。
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
-Displays the previews to the left of the controls.
+#### ![images/horizontal.png](images/horizontal.png) 水平レイアウト
+プレビューをコントロールの左側に表示します。
 
-#### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in **Grid** mode.
+#### ![images/showlabels.png](images/showlabels.png) ラベルを表示
+**グリッド**モードの際にサムネイル名のラベルを表示します。
 ![images/thumbnaillabel-001.png](images/thumbnaillabel-001.png)
- **List** mode always displays labels.
+ ラベルは**リスト**モードでは常に表示されます。
 
-#### ![images/showunits.png](images/showunits.png) Show Units
-Displays size in model units.
+#### ![images/showunits.png](images/showunits.png) 単位を表示
+モデル単位でサイズを表示します。
 ![images/thumbnaillabel-002.png](images/thumbnaillabel-002.png)
 
-#### ![images/rename.png](images/rename.png) Show Preview Pane
-Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
+#### ![images/rename.png](images/rename.png) プレビューペインを表示
+現在選択されているサムネイルのプレビューのプロパティを表示します。プレビューの形状、サイズ、背景、回転動作を設定します。

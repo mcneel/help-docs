@@ -1,75 +1,75 @@
-Preview Properties
-Preview thumbnail images and the background area between thumbnail images both have context menus.
+プレビューのプロパティ
+プレビューサムネイルのイメージと、サムネイルイメージの間の背景領域には両方、コンテクストメニューが表示されます。
 
-#### Thumbnail preview actions
+#### サムネイルプレビューの操作
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click and drag to change the view.
+>![images/number-onestep.gif](images/number-onestep.gif)ビューを変更するには、右クリックしてドラッグします。
 
-This does not have much affect if the preview object is a sphere, but if it is a cube, cone, or other shape, rotating the view or object shows the preview object from different viewpoints.
+プレビューオブジェクトが球の場合、これはあまり効果がありませんが、立方体、円錐体、または他の形状の場合、ビューまたはオブジェクトを回転すると異なる視点からプレビューオブジェクトを表示することができます。
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click to display a context menu.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click to display a larger preview window below the thumbnails.
->![images/number-onestep.gif](images/number-onestep.gif)Drag the preview thumbnails to reorder the list.
->![images/number-onestep.gif](images/number-onestep.gif)Press the [onmouseover="if (parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event)" onclick="javascript:BSSCPopup('../Popup_Actions/Ctrl_Key.htm');;return false" id="a16" style="position: relative; font-weight: normal;">Ctrl]() key while dragging to duplicate a material.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click the larger preview to open a floating window that can be resized to get a higher resolution view of the preview.
+>![images/number-onestep.gif](images/number-onestep.gif)コンテクストメニューを表示するには、右クリックします。
+>![images/number-onestep.gif](images/number-onestep.gif)サムネイルの下に大きなプレビューウィンドウを表示するには、ダブルクリックします。
+>![images/number-onestep.gif](images/number-onestep.gif)リストの順序を変えるには、プレビューサムネイルをドラッグします。
+>![images/number-onestep.gif](images/number-onestep.gif)マテリアルを複製するには、Ctrlキーを押しながらドラッグします。
+>![images/number-onestep.gif](images/number-onestep.gif)大きなプレビューをダブルクリックすると、フローティングウィンドウが開き、サイズ変更してプレビューのより高い解像度のビューを表示することができます。
 
-This window has all the same functionality as the original preview image including the context menu and the ability to drag and drop onto other materials or objects in the model.
+このウィンドウは、コンテクストメニューやモデルの他のマテリアルやオブジェクトにドラッグアンドドロップできる機能など、元のプレビューイメージと同じ機能をすべて備えています。
 
-### Geometry
+### ジオメトリ
 
-#### Materials
-Materials can use various geometry types.
-![images/thumbnailsphere.png](images/thumbnailsphere.png) *Sphere* 
-![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Pyramid* 
-![images/thumbnailcube.png](images/thumbnailcube.png) *Cube* 
-![images/thumbnailtorus.png](images/thumbnailtorus.png) *Torus* 
-![images/thumbnailcone.png](images/thumbnailcone.png) *Cone* 
-![images/thumbnailplane.png](images/thumbnailplane.png) *Plane* 
+#### マテリアル
+マテリアルは、いろいろなジオメトリのタイプを使うことができます。
+![images/thumbnailsphere.png](images/thumbnailsphere.png) *球* 
+![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *ピラミッド* 
+![images/thumbnailcube.png](images/thumbnailcube.png) *立方体* 
+![images/thumbnailtorus.png](images/thumbnailtorus.png) *トーラス* 
+![images/thumbnailcone.png](images/thumbnailcone.png) *円錐体* 
+![images/thumbnailplane.png](images/thumbnailplane.png) *平面* 
 
-#### Environments
-Environments only use the cone and sphere.
-![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cone and sphere* 
+#### 環境
+環境は、円錐体と球のみを使うことができます。
+![images/environmentthumbnail.png](images/environmentthumbnail.png) *円錐体と球* 
 
-#### Textures
-Textures are displayed only as a two-dimensional, flat surface facing the camera.
+#### テクスチャ
+テクスチャは、2次元の、カメラに向いた平らなサーフェスとしてのみ表示されます。
 ![images/texturepreview.png](images/texturepreview.png)
 
-#### Size
-Sets the unit size for the thumbnail.
+#### サイズ
+サムネイルの単位サイズを設定します。
 
-### View
-Controls the right-mouse drag object or camera rotation.
+### ビュー
+右マウスボタンによるオブジェクトまたはカメラの回転をコントロールします。
 
-#### Rotate object
-Right-mouse drag rotates the object.
+#### オブジェクトを回転
+右マウスドラッグでオブジェクトを回転します。
 
-#### Rotate camera
-Right-mouse drag rotates the camera.
+#### カメラを回転
+右マウスドラッグでカメラを回転します。
 
-#### X angle
-Sets the horizontal rotation angle for the object or camera.
+#### X角度
+オブジェクトまたはカメラの水平回転角度を設定します
 
-#### Y angle
-Sets the vertical rotation angle for the object or camera.
+#### Y角度
+オブジェクトまたはカメラの垂直回転角度を設定します。
 
-### Background
-Controls the appearance of the thumbnail background.
+### 背景
+サムネイルの背景の表示をコントロールします。
 
-#### None
-The default gray environment is used.
+#### なし
+デフォルトのグレーの環境を使用します。
 ![images/thumbnailbackground-001.png](images/thumbnailbackground-001.png)
 
-#### Checkered
-A gray checkered background is used.
+#### チェッカー
+グレーのチェッカーの背景を使用します。
 ![images/thumbnailbackground-002.png](images/thumbnailbackground-002.png)
 
-#### Custom
-Any material or texture can be used as a custom background.
+#### カスタム
+マテリアルまたはテクスチャをカスタム背景として使用します。
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 
-####  **Save as Defaults** 
-Saves the thumbnail properties as the default settings.
+####  **デフォルトとして保存** 
+サムネイルのプロパティをデフォルトの設定として保存します。
 
-####  **Load from Defaults** 
-Loads the thumbnail properties from the default settings.
+####  **デフォルトから読み込み** 
+サムネイルのプロパティをデフォルト設定から読み込みます。
 

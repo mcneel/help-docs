@@ -1,187 +1,186 @@
 ---
-title: Decals
+title: デカール
 ---
-
+<--TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
 
 # {{page.title}}
-Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps.
-Decals consist of a single instance of the image, rather than being tiled as they are when used in a [material definition](materials-tab.html).
-Some uses for decals include:
+デカールは、オブジェクトにマテリアルを用いて間接的にではなく直接適用できるタイリングしない画像マップです。デカールは、オブジェクトの色、反射、またはバンプの一部に変更を加えるのに用います。
+画像は[マテリアル定義](materials-tab.html)で用いられる時はタイリングされますが、デカールでは1つのインスタンスだけが使われます。
+デカールは次のように使うことができます。
 
->Hanging artwork on interior walls.
->Placing labels or logos on products.
->Adding signs to the model.
->Creating stained glass windows.
+>室内の壁に掛かっている芸術作品（絵等）を作成する。
+>製品にラベルやロゴを配置する。
+>モデルに署名を付ける。
+>ステンドグラス窓を作成する。
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode.&#160;The **Pipeline** setting must be **OpenGL** in **Options** &#160;&gt; **Appearance** &#160;&gt; **Advanced Settings** &#160;&gt; **Wireframe** &#160;&gt; **Other Settings** &#160;&gt; **Pipeline and Conduits**.
+ **メモ:** ワイヤフレームモードにOpenGLを使用している場合、デカールのプレビューはワイヤフレームビューでしか表示されません。**パイプライン**の設定は、**OpenGL**である必要があります（**オプション**  &gt; **ビュー**  &gt; **表示モード**  &gt; **ワイヤフレーム**  &gt; **その他の設定**  &gt; **使用する表示パイプライン**）。
 
-## Decal Placement
+## デカールの配置
 {: #decal-list}
 {: #decal-placement}
 
-###  **Add**
+###  **追加**
 {: #add-decal}
-1. Select one or more objects.
-1. On the **Edit** menu, click **Object Properties**.
-1. On the **Properties** list, click **Flamingo nXt Decals**.
-1. Click the **Add** button.
-1. In the **Open Bitmap** dialog box, select a bitmap name, and click **Open**.
-{% include_relative snippets/snippet-clearbitmapcache.md %}1. In the **Decal Properties** dialog box, select options, and click **Place**.
-1. At the prompts for points, pick points on the model to locate the decal.
-The precise sequence depends on the type of decal selected: [Planar](#decal-planarmapping), [Cylindrical](#decal-cylindricalmapping), or [UVMap](#decal-uvmapping).
+1. 1つまたは複数のオブジェクトを選択します。
+1. **編集**メニューの**オブジェクトのプロパティ**をクリックします。
+1. **プロパティ**リストの**Flamingo nXtデカール**をクリックします。
+1. **追加**ボタンをクリックします。
+1. **ビットマップを開く**ダイアログボックスで、ビットマップの名前を選択し、**開く**をクリックします。
+{% include_relative snippets/snippet-clearbitmapcache.md %}1. **デカールのプロパティ**ダイアログボックスで、オプションを選択し、**配置**をクリックします。
+1. プロンプトの表示に沿って、モデル上のデカールを配置する点をピックします。
+プロンプトの内容は、選択するデカールのタイプ（[平面](#decal-planarmapping)、[円柱](#decal-cylindricalmapping)、[UVマップ](#decal-uvmapping)）によって異なります。
 
-###  **Edit Placement**
+###  **配置を編集**
 {: #decal-edit-placement}
-1. Click the **Edit Placement** button.
-1. At the **Select control point** prompt, use the graphical editor to change the placement of the decal.
-1. Press **Enter** when finished.
+1. **配置を編集**ボタンをクリックします。
+1. **制御点を選択**のプロンプトで、グラフィカルエディタを使ってデカールの配置を変更します。
+1. 作業が終わったら、**Enter**を押します。
 
-###  **Properties**
+###  **プロパティ**
 {: #decal-properties}
-1. Click the **Properties** button.
-1. In the **Decal Properties** dialog box, use the controls to change the decal's properties.
+1. **プロパティ**ボタンをクリックします。
+1. **デカールのプロパティ**ダイアログボックスで、コントロールを使用してデカールのプロパティを変更します。
 
-###  **Delete**
+###  **削除**
 {: #decal-delete}
 
->Click the **Delete** button.
+>**削除**ボタンをクリックします。
 
-###  **Move up** / **Move down**
+###  **上へ移動** / **下へ移動**
 {: #decal-movedown}
 {: #decal-moveup}
-When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
+1つのオブジェクトに複数の重なるデカールを適用した場合、その順序が重要になる場合があります。デカールは、リストに表示される順序で適用されます。 リストの一番最後のデカールは、一番上に表示されます。
 
->Click **Move Up** or **Move Down** to change a decal's position in the list.
+>リストのデカールの位置を変更するには、**上へ移動**または**下へ移動**をクリックします。
 
-##### To place a planar decal
-1. At the prompts, pick locations for the decal's **Width**, and **Height direction**.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### 平面デカールを配置するには
+1. プロンプトの表示に従って、デカールの**幅**、**高さ方向**をピックします。
+1. **制御点を選択...**のプロンプトで、制御点を選択し、イメージのサイズ、回転、位置を調整します。
+または**Enter**を押してデカールの配置を終了します。
 
-### Options
+### オプション
 
-#### Move
-Moves the decal. At the Point to move from and the Point to move to prompts, enter any locations as for the Rhino Move command.
+#### 移動
+デカールを移動します。移動の基点となる制御点を選択および移動先の点のプロンプトで、RhinoのMoveコマンドを使用する時の要領で位置を指定します。
 
-#### UseImageAspectRatio
-Restores a stretched decal to the aspect ratio of the original bitmap.
+#### 画像の縦横比を使用
+伸縮したデカールを元のビットマップの縦横比に戻します。
 
-##### To place a cylindrical decal
-1. At the prompt, pick a location for the **Center point** of the cylinder.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### 円柱デカールを配置するには
+1. プロンプトに従って、円柱の**中心点**をピックします。
+1. **制御点を選択...**のプロンプトで、制御点を選択し、イメージのサイズ、回転、位置を調整します。
+または**Enter**を押してデカールの配置を終了します。
 
-## Set or edit the decal placement using the control widget
-Note: When using the planar mapping on a curved object, the entire bitmap must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+## コントロールウィジェットを使用してデカールの配置を設定または編集する
+メモ: 曲面状のオブジェクトに平面マッピングを使用する場合、ビットマップ全体がオブジェクトのサーフェスの後ろに位置している必要があります。 ビットマップのサーフェスの前に位置する部分は見えません。
 
-#### To resize the decal width and height at the same time
+#### デカールの幅と高さを同時に変更するには
 
->Drag the control points at the corners of the control widget.
+>コントロールウィジェットの角の制御点をドラッグします。
 
-#### To change the decal height
+#### デカールの高さを変更するには
 
->Drag the center control point on the top and bottom edges of the control widget.
+>コントロールウィジェットの上下のエッジ中央の制御点をドラッグします。
 
-#### To change the decal width
+#### デカールの幅を変更するには
 
->Drag the center control point on the left and right edges of the control widget.
+>コントロールウィジェットの左右のエッジ中央の制御点をドラッグします。
 
-#### To move the decal
+#### デカールを移動するには
 
->Drag the control point in the center of the control widget.
+>コントロールウィジェットの中心の制御点をドラッグします。
 
-#### To rotate the decal
+#### デカールを回転するには
 
->Drag the x-, y-, or z-axis control point on the widget axis icon.
+>ウィジェット軸アイコンのX、Y、Z制御点をドラッグします。
 
-## Decal Properties
+## デカールのプロパティ
 {: #dialogbox-editdecal}
-The information from the bitmap replaces or blends the object's color with the decal's color. This is the most common use of decals.
+ビットマップからの情報によって、オブジェクトの色がデカールの色と置き換わったり、オブジェクトの色がデカールの色とブレンドされたりします。これは、デカールの使い方として最も一般的です。
 
-## Projection
+##  投影
 {: #projection}
-The mapping style determines how to project the decal onto the object. It is a good idea to draw construction lines in the scene to help accurately place decals. A rectangle drawn just behind a surface can act as a guide for a standard decal. Use object snaps for accurate placement.
+マッピングスタイルは、どのようにオブジェクト上にデカールを投影するのかを決定します。デカールを正確に配置するには、補助線をシーンに作成しておくとよいでしょう。サーフェスのすぐ後ろに作成された長方形は、標準デカールの配置の目安となります。正確に配置するために、オブジェクトスナップを使用するとよいでしょう。
 
-### Cylindrical
+### 円柱
 {: #decal-cylindricalmapping}
-
-### &#160;
-The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
-The cylindrical projection maps the bitmap onto the cylinder with the bitmap's vertical axis along the cylinder's axis, and the horizontal axis around the cylinder.
+円柱マッピングタイプは、ワインボトルのラベルのような、1方向に曲がるオブジェクトにデカールを配置するのに便利です。
+ビットマップの垂直軸を円柱の軸に合わせ、水平軸を円柱の回りに合わせる円柱状投影で、円柱上にビットマップがマップされます。
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
-### Planar
+
+### 平面
 {: #decal-planarmapping}
-
-### &#160;
-Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
-The corners define the bitmap's location and extents. If the rectangle does not have the same proportions as the bitmap, the bitmap will be stretched or compressed to fit.
-When using planar mapping on a curved object, the entire bitmap projection must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+平面マッピングは、一番一般的なマッピングスタイルです。このタイプは、平面状、または緩やかに曲がったオブジェクトのマッピングに適しています。
+角（コーナー）は、ビットマップの位置と位置と範囲を定義します。長方形がビットマップと同じサイズでない場合、ビットマップはフィットするように拡大または縮小されます。
+曲面状のオブジェクトに平面マッピングを使用する場合、ビットマップの投影全体がオブジェクトのサーフェスの後ろに位置している必要があります。ビットマップのサーフェスの前に位置する部分は見えません。
 ![images/decal-planar-001.png](images/decal-planar-001.png)
-### UV Map
-{: #decal-uvmapping}
 
-### &#160;
-Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
-The decal covers the entire object; there is no control over the decal placement.
-UV mapping uses the u- and v-parameterization of the surface to bend and stretch the image; therefore, no manual placement is necessary.
+### UVマップ
+{: #decal-uvmapping}
+UVマッピングは、髪の毛や木の皮等、サーフェスにデカールを流れるように伸ばしてフィットさせたいオブジェクトをマッピングするのに便利です。
+デカールはオブジェクト全体を覆います。デカールの配置をコントロールすることはできません。
+UVマッピングは、サーフェスのUとVのパラメタリゼーションを使用してイメージを曲げたり伸ばしたりします。したがって、手作業で配置する必要はありません。
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
-### Browse
+
+### 参照
 {: #file-browse}
-Change the image file.
+画像ファイルを変更します。
+
 {% include_relative snippets/snippet-clearbitmapcache.md %}
-## Strength
+
+## 強弱
 {: #decalmappingstrength}
 
-### Color
+### 色
 {: #decal-color}
-Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](texture-properties-main.html#color).
+画像の色のマテリアルに対する相対強度を設定します。[マテリアル-テクスチャのプロパティ-強弱-色](texture-properties-main.html#color)も参照してください。
 
-### Bump
+### バンプ
 {: #decalmappingbump}
-Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](texture-properties-main.html#bump).
+バンプマップはサーフェスに影とハイライトのシミュレーションを作成します。[マテリアル-テクスチャのプロパティ-強弱-バンプ](texture-properties-main.html#bump)も参照してください。
 
-## Reflective finish
+## 反射仕上げ
 {: #reflective-finish-and-highlight}
-Controls the same properties that are controlled by a material definition. Apply these properties to the specific areas of the object that are affected by the decal. By default, decals have a matte finish.
+マテリアル定義がコントロールするのと同じプロパティをコントロールします。これらのプロパティをデカールによって影響されるオブジェクトの特定の部分に適用してください。デフォルトでは、デカールは光沢のない仕上げになっています。
 
-### Intensity
-Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](advanced-material-properties-main.html#intensity).
+### 強度
+ハイライトの強度を調整します。高い値を設定すると、ハイライトのサイズと強度が大きくなります。[マテリアルのプロパティ - 詳細の強度](advanced-material-properties-main.html#intensity)を参照してください。
 
-### Sharpness
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](advanced-material-properties-main.html#sharpness).
+### シャープネス
+ハイライトのサイズを設定します。低い値を設定すると、より広いハイライトが指定されます。高い値を設定すると、ハイライトはより小さい領域に集中します。[マテリアルのプロパティ - 詳細のシャープネス](advanced-material-properties-main.html#sharpness)を参照してください。
 
-### Metallic
-Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](advanced-material-properties-main.html#metallic).
+### 金属
+ハイライトの色をベースの色と同じにします。[マテリアルのプロパティ - 詳細の金属](advanced-material-properties-main.html#metallic)を参照してください。
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
-## Advanced
+## 形式
 {: #advanced}
 
-### Double Sided
+### 両面
 {: #double}
-Causes the decal to appear on the back face of the surface on which it is placed as well as the front face.
+デカールを、サーフェスの表と裏に表示します。
 
-### Mirror
+### ミラー
 {: #mirror}
-Mirrors the decal image.
+デカール画像をミラーします。
 
-## Projection direction
+## 投影方向
 {: #projection-direction}
 
-### Backward
-Projects the decal away from the back of the decal image.
-![images/projectionbackward1.png](images/projectionbackward1.png)Front (left), back (right).
+### 後方
+デカールを後方に投影します。
+![images/projectionbackward1.png](images/projectionbackward1.png)前面（左）、背面（右）
 
-### Forward
-Projects the decal away from the front of the decal image.
-![images/projectionforward1.png](images/projectionforward1.png)Front (left), back (right).
+### 前方
+デカールを前方に投影します。
+![images/projectionforward1.png](images/projectionforward1.png)前面（左）、背面（右）
 
-### Forward &amp; Backward
-Projects the decal away from both the front and the back of the decal image.
-![images/projectionforwardandback.png](images/projectionforwardandback.png)Front (left), back (right).
+### 前方 &amp; 後方
+デカールを前方と後方に投影します。
+![images/projectionforwardandback.png](images/projectionforwardandback.png)前面（左）、背面（右）
 
-### Transparency
-Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
+### 透明度
+デカールの透明度を設定します。[透明度](advanced-material-properties-transparency.html)を参照してください。
 IOR
-Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction)
+透明なデカールの屈折率を設定します。[屈折率](advanced-material-properties-transparency.html#index-of-refraction)を参照してください。

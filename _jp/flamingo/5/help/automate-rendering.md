@@ -1,123 +1,124 @@
 ---
-title: Automated rendering
+title: レンダリングの自動化
 ---
 
 # {{page.title}}
 
 
-## Batch rendering
+## バッチレンダリング
 {: #batch-rendering}
-Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
+バッチジョブでは、複数のジョブを送信し、自動的にレンダリングできます。特定のビュー、解像度、パスの数の指定が可能です。バッチレンダリングは単一でも[レンダーファーム](render-farm.html)に送信しても開始できます。バッチリストを開き、リストにジョブを追加してください。バッチジョブリストはモデルに保存されます。
 
-##### Where can I find this command?
+##### コマンドの位置
 
- * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
+ * メニュー > Flamingo nXt 5.0 > その他のツール > バッチレンダリング
 
-### Batch Render Dialog
+### バッチレンダリングダイアログ
 {: #batch-render}
-Start by adding a job, then edit the properties to set up batch jobs.
+まずジョブを追加し、それからプロパティを編集して、バッチジョブを設定します。
 
-#### Add
-Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
+#### 追加
+それぞれのバッチジョブは、モデルに保存されたビューに基づいています。「追加」をクリックし、モデルのビューリストからビューを選択します。ジョブが追加され、選択されると、他のメニューアイテムが使用できるようになります。
 
-#### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+#### 削除
+既存のバッチジョブを選択し、「削除」を使用すると、バッチリストからジョブが削除されます。
 
-#### Properties
-Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
+#### プロパティ
+既存のバッチジョブを選択し、「プロパティ」を使用すると[バッチレンダリングのプロパティ](#batch-render-properties)を設定できるようになります。プロパティには、それぞれのジョブのファイル名、解像度、そしてパスの数などを設定できます。
 
-#### Move Up
-Move the viewport name up in the list.
+#### 上へ移動
+リストでビューポート名を1つ上に移動します。
 
-#### Move Down
-Move the viewport name down in the list.
+#### 下へ移動
+リストでビューポート名を1つ下に移動します。
 
-#### Batch List
+#### バッチリスト
 {: #batch-list}
-Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
+レンダリングされるビューのリストの情報を表示します。既存のジョブをダブルクリックすると、[バッチレンダリングのプロパティ](#batch-render-properties)を設定または編集できます。
 
-#### Rendering Status
-Displays pass, scan line, and elapsed time information about the progress of the batch process.
+#### レンダリングの進行状況
+バッチ処理の進行状況のパス、スキャンライン、経過時間の情報を表示します。
 
-####  Stop Rendering
-Stops the batch process.
+####  レンダリングを停止
+バッチ処理を停止します。
 
-#### Render Batch Locally
+#### バッチをローカルでレンダリング
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
+バッチジョブをレンダリングするのに現在のコンピュータのみを使用します。レンダリングイメージは
+[バッチレンダリングのプロパティ](#batch-render-properties)で指定された場所に出力されます。
 
-####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
+####  バッチをファームへ送信
+バッチジョブを[レンダーファーム](render-farm.html)へ送信します。ジョブは使用できるすべてのファームクライアントでレンダリングされます。レンダリングイメージは共有ファームフォルダに出力されます。
 
-### Batch Render Properties
+### バッチレンダリングのプロパティ
 {: #batch-render-properties}
 
-#### Viewport to render
-Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
+#### レンダリングするビューポート
+指定のジョブがレンダリングするビューを表示します。[レンダリングタブ、レンダリングするビューポート](render-tab.html#viewtorender)を参照してください。
 
-#### File name
-Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
+#### ファイル名
+保存ボタン ![images/saveimageas.png](images/saveimageas.png) をクリックし、レンダリングイメージのファイル名を指定します。
 
-#### Alpha channel
-Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
+#### アルファチャンネル
+イメージをアルファチャンネルと一緒に保存します。詳細については、[アルファチャンネル背景を使用する](environment-tab.html#alpha)を参照してください。
 
-#### Use document settings
+#### ドキュメントの設定を使用
 {: #rendering-resolution}
-The default is to use the current document resolution settings to render.  If another resolution is needed, then uncheck this box and specify a resolution. See the [Render tab, Resolution](render-tab.html#resolution) topic for more details.
+デフォルトでは、レンダリングに現在のドキュメントの解像度設定が使用されます。解像度を変更したい場合は、このボックスのチェックマークを外し、解像度を指定してください。詳細については、[レンダリングタブ、解像度](render-tab.html#resolution)のトピックを参照してください。
 
-#### Rendering Constraints Passes
+#### レンダリング停止条件パス
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+バッチジョブを終了するのに必要なパスの数を設定します。詳細については、[パス](documentproperties-flamingo.html#number-of-passes)のトピックを参照してください。
 
 <!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 
-## Animations
+## アニメーション
 {: #animation}
-There are two ways to create animations in Rhino.  Animations can be configured using [Rhino's Animation toolbar](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm) or using the [Bongo](http://bongo.rhino3d.com/) animation plugin.
+Rhinoでアニメーションを作成する方法には2通りあります。アニメーションは、[Rhinoのアニメーションツールバー](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm)または[Bongo](http://bongo.rhino3d.com/)アニメーションプラグインを用いて設定することができます。
 
-##### To submit an animation job to the render farm
-1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+##### アニメーションジョブをレンダーファームに送信するには
+1. [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)コマンドを実行します。
+1. 自動レンダリングコマンドを設定ダイアログボックスで**ファームへレンダリング**を選択します。
 &#160;
-Specify theJob name,and click theOKbutton.
+ジョブ名を指定し、OKボタンをクリックします。
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Rhinoのアニメーションセットアップツールバーからアニメーションのタイプを設定します。キャプチャ方法はフルレンダリングを選択します。
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+アニメーションツールバーからアニメーションを記録します。レンダージョブがレンダーファームに送信されます。
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+レンダーファームでジョブが完了したら、FlamingoNXtAutomateRenderコマンドを再度実行し、ダイアログのすべてのジョブを選択します。
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+選択ファイルを指定出力フォルダへコピーボタンをクリックし、すべてのレンダリングイメージをコピーする先のフォルダを選択します。
 
 
-## FlamingoNXtAutomateRender command
+## FlamingoNXtAutomateRenderコマンド
 {: #flamingonxtautomaterender}
 
 
-## Configure Automated Render Command
+## 自動レンダリングコマンドを設定
 
-### Enabled
-Redirects the default **Render** command to use the **Render Farm**.
+### オン
+デフォルトの**Render**コマンドを**レンダーファーム**を使用させるようにします。
 
-### Use default render dialog
-Resets the **Render** command to render directly instead of to the farm.
+### デフォルトのレンダリングダイアログを使用
+**Render**コマンドを（ファームにではなく）直接レンダリングするように設定を戻します。
 
-### Number of render passes to render
-Specifies the number of render passes.
+### レンダリングするレンダリングパスの数
+レンダリングパスの数を指定します。
 
-### Render to farm
-Redirects the **Render** command to render to the farm.
+### ファームへレンダリング
+**Render**コマンドをファームへレンダリングするようにします。
 
-### Job name
-Specifies the **Render Farm**  [Job name](automate-rendering.html#job-name).
+### ジョブ名
+**レンダーファームの** [ジョブ名](automate-rendering.html#job-name)を指定します。
 
-## Render constraints
+## レンダリング停止条件
 
-### Number of render passes to render
-Specifies the [number of passes](documentproperties-flamingo.html#number-of-passes).
+### レンダリングするレンダリングパスの数
+[パスの数](documentproperties-flamingo.html#number-of-passes)を指定します。
 
-### Save alpha channel
-Saves the [alpha channel](render-window.html#save-with-alpha-channel) background.
+### アルファチャンネルを保存
+[アルファチャンネル](render-window.html#save-with-alpha-channel)背景を保存します。
 -->

@@ -1,201 +1,202 @@
 ---
-title: Lighting Presets
+title: 照明プリセット
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
-Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
+イメージを作成するに当たって、一番大切でありながら、重要視されていないのが照明です。照明は単にモデルに光を当てる手段というだけではありません。 照明はムードを決め、全体の構成を左右する重要な鍵でもあります。
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
-*Image by Christopher Soto Gutiérrez.*
+*イメージ: Christopher Soto Gutiérrez*
 
-#### Where can I find Flamingo Lighting control?
+#### Flamingo照明コントロールの位置
 
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
-* Right-click any tab and check Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXt
+* 任意のタブを右クリックしてFlamingo nXtにチェックマークを付ける
 
 
-Use the following guidelines when lighting your model:
+モデルの照明を行う際は、次の点に気をつけてください。
 
-* Start with a lighting preset.
-* Since Flamingo nXt simulates real-world lighting, provide accurate information whenever possible.
-* Avoid using unrealistic intensity levels for light sources.
-* Set the units correctly for your model. The lighting will not be correct unless the units are correct. For example, if your model is in millimeters, set the model units to millimeters.
-* Adjust the overall brightness of your rendering by using the [Brightness](render-window.html#brightness) control on the rendering display. Do not attempt to adjust the overall scene brightness by changing the intensity of all the light sources; the automatic [exposure](render-window.html#brightness) adjustment will defeat this.
+* 照明プリセットから開始してください。
+* Flamingo nXtは実世界の照明をシミュレートするので、できるだけ正確な情報を設定してください。
+* 光源を現実的ではない強さに設定することを避けてください。
+* モデルに単位を正しく設定してください。単位が正しくないと、照明も正確にはなりません。モデルがミリメートルを用いている場合は、モデル単位をミリメートルに設定してください。
+* レンダリングの全体の明るさを調整するには、レンダリング表示の[明るさ](render-window.html#brightness)コントロールを使用してください。すべての光源の強度を変更することでシーン全体の明るさを調整するのは避けてください。自動[露出](render-window.html#brightness)調整がこれを無効化してしまいます。
 
-To improve lighting techniques, be aware of the light and how it affects various surfaces. Materials can mask some of the effects of shadows and reflections, so some rendering experts apply lighting to their models before applying materials. Try to see light objectively, the way a camera does.
+照明テクニックを向上するためには、光源に気を配り、それがいろいろなサーフェスにどのような影響を与えるかを注意する必要があります。マテリアルは影や反射の効果の一部を隠すことがあります。そのため、レンダリングのエキスパートの中にはマテリアルを適用する前にモデルに照明を適用する人もいます。カメラのような客観的な目で光を確認するようにしてください。
 
-## Lighting Presets
+## 照明プリセット
 {: #lighting-presets}
-A great starting place for lighting is the included Lighting presets that correspond to real-world lighting situations. Flamingo nXt provides lighting presets that can help get you started lighting your model. There are many more lighting options available, but the presets are often sufficient for many different renderings. Choose the Preset scheme that most closely resembles your scene.
+照明の設定は、実世界の照明の設定に対応する照明プリセットを用いると便利です。Flamingo nXtはモデルの照明をすぐに始められるような照明プリセットを備えています。照明のオプションは自由に設定できますが、プリセットを使えば多くの異なるレンダリングを簡単に設定できます。シーンに一番似ているプリセットスキームを選択してください。
 
-Lighting in Flamingo nXt uses four preset methods categories:
+Flamingo nXtの照明は、4つのプリセットの方法のカテゴリを使用します。
 
-> [Studio lighting](lighting-tab.html#studio-lighting)
-> [Exterior daylight](lighting-tab.html#exterior-daylight)
-> [Interior daylight](lighting-tab.html#interior-daylight)
-> [Artificial lighting](lighting-tab.html#artificial-lighting)
+> [スタジオ照明](lighting-tab.html#studio-lighting)
+> [屋外昼光](lighting-tab.html#exterior-daylight)
+> [屋内昼光](lighting-tab.html#interior-daylight)
+> [人工照明](lighting-tab.html#artificial-lighting)
 
-### Studio lighting
+### スタジオ照明
 {: #studio-lighting}
-This scheme mimics the lighting found in a photographer's studio. It is most useful for rendering small-to-medium-sized objects in isolation.  It can also be used for any scene that is well lit through an HDRI environment.
+このスキームは、写真館（フォトスタジオ）で用いられるような照明を模倣します。スタジオ照明は小さいまたは中くらいのサイズの単体のオブジェクトのレンダリングに最も便利です。スタジオ照明はまた、HDRi環境を通してきれいに照らされるどのようなシーンにも使用できます。
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](sun-and-sky-tabs.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
+![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} 主な照明は、ハイ・ダイナミック・レンジ（HDR）画像ファイルによってもたらされます。HDR画像からの光は、スタジオの屋内照明と同じようなレベルに似ています。HDRの設定は、[空タブ](sun-and-sky-tabs.html#sky)にあります。光源タブを用いて人工の光をシーンに追加することもできます。スタジオプリセットに表示される背景は黒です。
 
-Studio lighting is optimized for tabletop setups for small design articles such as jewelry and product designs. In the preset scheme, the sun is off and an HDR image sky provides something for shiny objects to reflect.
+スタジオ照明は、ジュエリーやプロダクトデザインなどの小さい品物の卓上設定に最適化されています。プリセットスキームでは、太陽はオフで、光沢のあるオブジェクトの反射にHDR画像の空が用いられます。
 
-For greater control, use light sources to light the scene. When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires several light sources placed to create very light and very dark areas.
+照明をよりよく演出するには、光源を用いてシーンを照らすとよいでしょう。スタジオでのセッティングの照明の際は、印象的な照明を用いることが重要です。コントラストをはっきりさせると、印象的な照明が行えます。つまり、暗いところは明るいところと同様に重要であるということです。印象的な照明には、暗いところと明るいところを作り出すため、いくつかのライトを配置することが必要です。
 
-Lighting techniques for photography are generally the same as lighting for rendering. So a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](../guides/studio-lighting-basics.html).
+レンダリングのための照明テクニックは写真撮影のための照明テクニックと大体同じなので、写真撮影のための照明の本から勉強し始めるとよいでしょう。スタジオ照明を設定する詳しい情報については、 [スタジオ照明の基礎](../guides/studio-lighting-basics.html)を参照してください。
 
-### Exterior daylight
+### 屋外昼光
 {: #exterior-daylight .clear-img}
-This scheme simulates daylight for architectural exteriors using a natural sun and sky.
+このスキームは、自然の太陽および空を用いて建築物の屋外の昼光を模倣します。
 
-![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
+![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} 設定は[太陽](sun-and-sky-tabs.html#sun)と[空](sun-and-sky-tabs.html#sky)のタブで指定します。[太陽の角度](sun-and-sky-tabs.html#set-azimuth-and-altitude)を直接指定するか、[地理的な位置](sun-and-sky-tabs.html#set-location-on-earth)と日付および時刻を使用します。このプリセットのデフォルトの表示背景はシミュレートされた空です。
 
-Lighting a building exterior is the most straightforward lighting model. Most exterior lighting will need no more than the default [Sun](sun-and-sky-tabs.html#sun) light source.
+建物の外の照明は、最も簡単なモデル照明です。 ほとんどの屋外照明は、デフォルトの[太陽](sun-and-sky-tabs.html#sun)光源で十分です。
 
-When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be designated as an [interior](#interior) or an [exterior](#exterior). This is because the contribution of the sky light, reflected light from the ground, and light reflected off other surfaces is much different when inside as opposed to outside. Using the correct [Interior/Exterior](#indirect) setting results in effective and realistic lighting.
+[太陽](sun-and-sky-tabs.html#sun)がオンの場合、シーンを[屋内](#interior)または[屋外](#exterior)に指定しなければいけません。これは、天空光、地面からの反射光、そして他のサーフェスから反射して来る光の貢献度が屋内と屋外では異なるからです。[屋内/屋外](#indirect)の設定を正しく使うことは、非常に効果的なリアルな照明につながります。
 
-Sometimes it is easy to determine if a scene is an interior or an exterior. If the viewpoint is outside a building, it is an exterior scene. If the viewpoint is inside a room, it is an interior. Some kinds of scenes are not so clear. This includes courtyards, gazebos, exploded views, and sections. If a courtyard is much wider than it is tall, thereby letting in a lot of skylight, try lighting it as an exterior scene. If it is taller than it is wide, try lighting the scene as an interior. In this case, one of the tricks is to add daylight portals at the top of the courtyard to help direct the skylight into the scene.
+シーンが屋内であるか屋外であるかを決定するのは簡単な場合があります。 視点が建物の外であれば、それは屋外のシーンです。 視点が建物の中であれば、それは屋内のシーンです。 しかし、シーンが屋内か屋外かを決めるのは難しい場合があります。 中庭、ガゼボ（あずまや）、分解図、断面図がこれに当たります。 中庭が高さよりも地面部分が広く、天空光を多く取り入れる場合は、屋外シーンとして照明を設定してみてください地面部分よりも高さが高い場合は、屋内としてシーンを照明してみてください この場合、技として、昼光ポータルを中庭の上の部分に追加し、シーンに天空光を入れるようにするとよいでしょう。
 
-Lights can also simulate landscape lighting. Use spotlights to highlight architectural features and trees. This works well for night or twilight scenes. During the day, the sun normally will overpower any artificial lighting in an outdoor scene, just as it will in the real world.
+光源は、景色の照明もシミュレートすることができます。 建築物のフィーチャや木などをハイライトするには、スポット光源を使用するとよいでしょう。 これは、夜や夕暮れのシーンに向いています。 日中は、戸外のシーンでは実際の世界と同じく、太陽がどのような人工の照明よりも力が勝ります。
 
-Exploded views, sections, and axonometric drawings from above also pose a special challenge. The decision depends on the desired results. For an exterior scene with the quickest rendering, use the exterior rendering method. If this method is not producing an interesting enough image, try using an interior rendering. This may make the interior more interesting, but it takes more time to set up the lighting.
+分解図、断面図、上からの不等角投影図も、屋外か屋内かを決めるのが困難です。 この場合、どのような結果を得たいのかを基準に決めるとよいでしょう。 屋外シーンの高速なレンダリングには、屋外のレンダリング方法を取ります。 この方法で希望するような効果を得られない場合、屋内レンダリングを試してみてください。 この方法では、屋内によい効果が出ることがありますが、照明の設定により時間がかかります。
 
-### Interior daylight
+### 屋内昼光
 {: #interior-daylight .clear-img}
-This scheme simulates an interior lit by natural light.
+このスキームは、自然の光によって照らされた屋内シミュレートします。
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} 昼光照明には2つの要素があります。 [太陽](sun-and-sky-tabs.html#sun)から直接放射される太陽光と、[空](sun-and-sky-tabs.html#sky)や地面やその他屋外のオブジェクトから発される間接太陽光です。
 
-The [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) settings are similar to the [Exterior](lighting-tab.html#exterior-daylight) preset.
-The direct sunlight component of day lighting involves a straightforward calculation -- normally simply specify the time, date, and location to ensure accuracy.
+[太陽](sun-and-sky-tabs.html#sun)と[空](sun-and-sky-tabs.html#sky)の設定は、[屋外](lighting-tab.html#exterior-daylight)プリセットと似ています。
+昼光照明の直接太陽光要素の計算はあまり複雑ではなく、たいていの場合、太陽をオンにして、日付と時刻と場所だけ設定すれば、正確な結果が期待できます。
 
-Notes on interior renderings:
+屋内レンダリングに関するメモ:
 {: .clear-img}
 
-* Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
-* Because the sun and sky are much brighter than other lights, you may not see much effect from adding artificial lighting when the sun is on. This is normal. Avoid artificially boosting the power of your light sources.
-* You can set the [Sun](sun-and-sky-tabs.html#sun-intensity) or [Sky](sun-and-sky-tabs.html#sky-intensity) intensity to a lower value. Since these settings simulate a clear sky, reducing their intensity will simulate cloudy or darker day lighting conditions.
-* A [multi-channel](lights-tab.html#channel) rendering may help you get the picture you want, while still preserving accurate data.
+* [光源](lights-tab.html)、[空の設定](sun-and-sky-tabs.html#sky)窓ガラスのマテリアルにはできるだけ正確な値を使用してください。
+* 太陽や空は他の光源よりも明るいので、太陽がオンの場合人工照明を追加してもあまり効果は見られないでしょう。これは通常のことです。光源の強度を人為的に上げることは避けてください。
+* [太陽](sun-and-sky-tabs.html#sun-intensity)または[空](sun-and-sky-tabs.html#sky-intensity)の設定は澄んだ空を模倣するので、これらの強度を下げると曇ったまたは暗めの昼の光をシミュレートすることができます。
+* [マルチチャンネル](lights-tab.html#channel)レンダリングを行うと、正確なデータを維持したまま希望するイメージになることがあります。
 
-### Artificial lighting
+### 人工照明
 {: #artificial-lighting}
-![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
+![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} このスキームは、夜の照明器具によって照らされた建築物の屋内をシミュレートします。モデルに光源オブジェクトを挿入する、または管理するには、[光源タブ](lights-tab.html)または[Rhinoの光源のコマンド](lights-tab.html#rhino-light-commands)を使用してください。
 
-Indirect lighting, the lighting reflected off surfaces, is on when one of the two interior presets is selected and off for studio and exterior. This type of lighting is a significant component of an interior simulation. For exteriors and studio models the effects of indirect lighting is more subtle and is therefore turned off by default.
+間接光（サーフェスからの反射による光）は、2つの屋内プリセットのうちの1つが選択されている場合はオンに、スタジオまたは屋外プリセットが選択されている場合はオフになります。このタイプの照明は、屋内シミュレーションには重要な要素です。屋外そしてスタジオのモデルには、間接照明の効果はほとんど見られません。よって、間接光はデフォルトではオフに設定されています。
 
-### Custom Lighting
+### カスタム照明
 {: #custom  style="clear:both;"}
-Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRI environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
+カスタムタブでは、照明設定を組み合わせて、照明をカスタム化することができます。例えば、シーンが屋外昼光で、HDRi環境照明も用いたい場合、カスタムタブを使用して照明モデルの部分、部分でオン、オフを設定できます。プリセットの値をデフォルトから変更すると、スキームはカスタムスキームに変更されます。
 
-####  [Sun](sun-and-sky-tabs.html#sun)
+####  [太陽](sun-and-sky-tabs.html#sun)
 {: #sun}
-Turn on and off the Sun tab in the drop down. The [Sun tab](sun-and-sky-tabs.html#sun) contains the controls for altering the parameters of the sun position.
+ドロップダウンで太陽タブをオン、オフにできます。[太陽タブ](sun-and-sky-tabs.html#sun)には、太陽の位置のパラメータを変更できるコントロールが含まれています。
 
 ![images/lightsunon.png](images/lightsunon.png)
-*Sun on and off.*
-The sun is a very bright directional light source infinitely far from the model. The controls for the sun specify its direction using spherical coordinates. For more details, see the [Sun tab](sun-and-sky-tabs.html#sun) topic.
+*太陽がオンとオフの状態*
+太陽は、モデルから無限に離れた非常に明るい平行光源です。太陽のコントロールは、その方向を球座標を用いて指定します。詳細については、[太陽タブ](sun-and-sky-tabs.html#sun)のトピックを参照してください。
 
-####  [Sky](sun-and-sky-tabs.html#sky)
+####  [空](sun-and-sky-tabs.html#sky)
 {: #sky}
-Set the Sky channel to one of four options:
+空のチャンネルは、下の4つのオプションの1つに設定します。
 
-> Auto
+> 自動
 > HDRI
-> Color
-> Image
+> 色
+> 画像
 
-For details, see the [Sky tab](sun-and-sky-tabs.html#sky) topic.
-Defines a hemispherical light source infinitely far away from the model.
+詳細については、[空タブ](sun-and-sky-tabs.html#sky)のトピックを参照してください。
+モデルから無限に離れた半球の光源を定義します。
 
-#### Off
+#### オフ
 {: #off}
-Turns the sky off.
+空をオフにします。
 ![images/chromenosky.png](images/chromenosky.png)
 
-#### Auto
+#### 自動
 {: #auto}
-Provides an analytical model based on real-world sky conditions. The settings on the [Sun](sun-and-sky-tabs.html) tab control the appearance and light qualities of the sky.
+実際の世界の空の状態に基づいて分析モデルを供給します。[太陽](sun-and-sky-tabs.html)タブの設定が空の状況と光の質をコントロールします。
 ![images/chromeautosky.png](images/chromeautosky.png)
 
 #### HDRi
 {: #hdri}
-An HDR image provides something for shiny objects to reflect.
+HDR画像は光るオブジェクトによって反射で用いられます。
 ![images/chromehdrbackground.png](images/chromehdrbackground.png)
 
-#### Color
+#### 色
 {: #color}
-Sets the sky to a solid color or a two- or three-color gradient using controls similar to [Environment: Color and Gradient Backgrounds](environment-tab.html#color-and-gradient-backgrounds).
+空を[環境: 色やグラデーションを用いた背景](environment-tab.html#color-and-gradient-backgrounds)に似たコントロールを用いて単色または2色または3色のグラデーションに設定します。
 ![images/colorsky.png](images/colorsky.png)
 
-#### Image
+#### 画像
 {: #image}
-Uses an image background with a planar, cylindrical, or spherical projection similar to [Environment: Image](environment-tab.html#image).
+[環境: 画像](environment-tab.html#image)に似た平面、円柱、または球投影を用いた画像背景を使用します。
 ![images/chromeimagesky.png](images/chromeimagesky.png)
 
 
-### Studio Brightness
+### スタジオの明るさ
 {: #studio-brightness}
-Reduces the brightness of the [sun](sun-and-sky-tabs.html) and sky to mimic the interior lighting levels of a photographer's studio.
+[太陽](sun-and-sky-tabs.html)と空の明るさを抑え、写真館（フォトスタジオ）の屋内照明のレベルを模倣するようにします。
 ![images/studiobrightnessoffandon.png](images/studiobrightnessoffandon.png)
-*Studio Brightness off (left) and on (right).*
+*スタジオの明るさオフ（左）、スタジオの明るさオン（右）*
 
-### Lights
+### 光源
 {: #lights}
-Turns artificial lighting on and off.
+人工照明のオン、オフを切り替えます。
 
 ![images/lightsonandoff.png](images/lightsonandoff.png)
-*Lights on (left) and off (right).*
+*光源オン（左）、光源オフ（右）*
 
-### Indirect
+### 間接光
 {: #indirect}
-Defines the lighting reflected from surfaces. By default, it is on for interior lighting and off for exterior and studio lighting preset schemes. It is possible to turn on indirect lighting for exterior renderings.
+サーフェスから反射される照明を定義します。デフォルトでは、屋内照明プリセットスキームではオンに、屋外およびスタジオ照明プリセットスキームではオフになっています。屋外のレンダリングに間接光をオンにすることも可能です。
 
-#### Method
-Sets the calculation method for indirect lighting.
+#### 方法
+間接光の計算方法を設定します。
 
-#### Off
-Turns indirect lighting calculation off.
+#### オフ
+間接光の計算をオフにします。
 
-#### Interior
+#### 屋内
 {: #interior}
-Optimizes the indirect lighting for indoor situations.
+屋内用に間接光を最適化します。
 
-#### Exterior
+#### 屋外
 {: #exterior}
-Optimizes the indirect lighting for outdoor situations.
+屋外用に間接光を最適化します。
 
-Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately with indirect lighting.
+他のサーフェスから反射された間接光は屋外照明に細やかさと現実味を付け加えることができます。特に軒やベランダなど張り出した部分の下側は、間接光を用いるとより正確にレンダリングできます。
 
-#### Bounces
+#### バウンス
 {: #bounces}
-Specifies the number of reflections caused by an indirect light.
+間接光によって起こる反射の回数を指定します。
 
-### Ambient
+### 環境光
 {: #ambient}
-Ambient light is a constant light added to the rendering. These settings control the intensity of the ambient light as a percentage of the total estimated ambient light in the scene.
-Decreasing the amount of ambient light generally produces images with more contrast. Too much ambient light can make a rendered image seem flat and uninteresting; too little can cause excessive contrast.
+環境光は、レンダリングに加えられる一定の光です。これらの設定は、シーン中の環境光全体の推定量の何パーセントかを指定して、環境光の強度をコントロールします。
 
-#### None
-No ambient light.
+一般的に、環境光の量を少なくすると、イメージのコントラストは高くなります。 環境光の量が多すぎるとレンダリングに深みがなく面白みがなくなり、少なすぎればコントラストが過度に強くなります。
 
-#### Exterior
-Optimizes ambient light for exterior scenes.
+#### なし
+環境光を使用しません。
 
-#### Interior
-Optimizes ambient light for interior scenes.
+#### 屋外
+屋外シーン用に環境光を最適化します。
 
-#### Studio
-Optimizes ambient light for studio scenes.
+#### 屋内
+屋内シーン用に環境光を最適化します。
 
-## Saving Custom Lighting
+#### スタジオ
+スタジオシーン用に環境光を最適化します。
 
-### Save lighting scheme
+## カスタム照明の保存
+
+### 照明スキームを保存
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Saves the current lighting scheme.
+![images/saveschemeicon.png](images/saveschemeicon.png) 現在の照明スキームを保存します。
 
-### Open lighting scheme
+### 照明スキームを開く
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Opens a saved lighting scheme.
+![images/importfromfile.png](images/importfromfile.png) 保存されているスキームを開きます。

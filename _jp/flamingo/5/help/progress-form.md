@@ -2,6 +2,6 @@
 ---
 
 
-# Progress Form
-This process may take some time. Please be patient.
+# 進行状況フォーム
+このプロセスは、時間がかかることがあります。
 

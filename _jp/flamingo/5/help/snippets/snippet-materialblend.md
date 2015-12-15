@@ -1,3 +1,3 @@
 
-#### Blend
-Blurs the boundaries between the components.
+#### ブレンド
+コンポーネントの間の境界をぼかします。

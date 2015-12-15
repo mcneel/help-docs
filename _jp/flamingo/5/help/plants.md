@@ -1,46 +1,48 @@
 ---
-title: Plants
+title: 植物
 ---
 
-# {{page.title}}
-Flamingo nXt includes a fun and powerful plant generator that efficiently generates complex plant forms during rendering. These plants have little impact on model size, since only a placeholder is kept in the model.
+<!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
+
+# ![images/plants.svg](images/plants.svg) {{page.title}}
+Flamingo nXtには、レンダリングの際に複雑な植物形状を効率的に生成する、簡単でパワフルな植物ジェネレータが含まれています。モデルにはプレースホルダーのみが置かれるので、植物はモデルのサイズにあまり影響を与えません。
 
 ![images/plants-001.png](images/plants-001.png)
-*Flamingo nXt trees.*
+*Flamingo nXtの樹木*
 
-### Insert an nXt Plant
+### nXtの植物を挿入する
 {: #insert:}
-Flamingo Plants are inserted as a block.  These blocks contains points that represent the general shape of the tree.
+Flamingoの植物は、ブロックとして挿入されます。これらのブロックは、樹木の一般的な形状を表す点を含んでいます。
 
-1. On the Flamingo nXt menu, click Plants > Insert Plant.
-1. In the Flamingo nXt Plant dialog box, click a plant name, and click Open.
-1. At the prompt, pick a location for your plant in the model.
+1. Flamingo nXtメニューの植物 > 植物を挿入をクリックします。
+1. Flamingo nXt植物ダイアログボックスで、植物名をクリックし、開くをクリックします。
+1. プロンプトで、モデルの中の植物の位置をピックします。
 
-Notes:
+メモ:
 
-* Make sure the units are set correctly for your model.
-* Plants can be scaled, copied, and rotated.
+* モデルに正しい単位が設定されていることを確認してください。
+* 植物は、スケール変更、コピー、回転することができます。
 
-### Edit a plant
+### 植物を編集する
 {: #edit}
-Once inserted, a tree can be moved, copied, and scaled.  The tree will resize appropriately. For more advanced edits to that structure of the tree, use the Edit plant command. Making small changes to the structure of the trees can be quick.  Larger changes to the tree algorithms can take more experimentation.
+植物は一度挿入すると、移動、コピー、スケーリングが行えます。樹木は適切にサイズ変更されます。樹木の構造をより詳細に編集したい場合は、植物の編集コマンドを使用してください。樹木の構造にに小さな変更を加えるのは、比較的簡単に行えます。樹木のアルゴリズムに大きな変更を加えるのは、いろいろな試行が必要な場合もあります。
 
-1. On the Flamingo nXt menu, click Plants > Edit Plant.
-1. Select the plant to edit.
-1. Make the correct edits to the plant.
-1. Save the tree, then close the editor.  The plant in Rhino will automatically update.
+1. Flamingo nXtメニューの植物 > 植物を編集をクリックします。
+1. 編集する植物を選択します。
+1. 植物を正しく編集します。
+1. 植物を保存し、エディタを閉じます。Rhinoの植物が自動的に更新されます。
 
-### Using Flamingo 2 plants
+### Flamingo 2の植物を使用する
 {: #using-flamingo-2-plants}
-1. On the Flamingo nXt menu, click Plants > Insert Flamingo 2 Plant.
-1. In the Flamingo nXt Plant dialog box, click a plant name, and click Open.
-1. At the prompt, pick a location for your plant in the model.
+1. Flamingo nXtメニューの植物 > Flaming 2の植物を挿入をクリックします。
+1. Flamingo nXt植物ダイアログボックスで、植物名をクリックし、開くをクリックします。
+1. プロンプトで、モデルの中の植物の位置をピックします。
 
-Notes:
+メモ:
 
-* Models with Flamingo 2 plants already inserted should work with some restrictions.
-* Flamingo 2 plants are different from the new plants. Currently you cannot edit Flamingo 2 plants or convert them to Flamingo nXt plants.
+* Flamingo 2の植物が既に挿入されているモデルは、いくつかの制限はありますが動作するはずです。
+* Flamingo 2の植物は、新しい植物とは異なります。Flamingo 2の植物は今のところ編集やFlamingo nXtの植物への変換は行えません。
 
-### Plant Editor
+### 植物エディタ
 {: tree-editor}
-Flamingo includes a tree editor to create custom trees.  There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.
+Flamingoには、カスタムの樹木を作成できる樹木エディタが搭載されています。新規の植物タイプを簡単に作成できるための基本的な樹木テンプレートがいくつか用意されています。詳細については、[植物エディタ](tree-editor.html)のトピックを参照してください。
