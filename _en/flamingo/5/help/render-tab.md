@@ -72,7 +72,7 @@ Printed image height in current size units.  Multiply this setting by the resolu
 {: #printsizeresolution}
 
 #### Display
-The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch).
+The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a device.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch).
 
 #### Custom
 The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
@@ -130,7 +130,7 @@ You can calculate certain advanced effects, such as caustics or blurry transmiss
 Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer to finish.
 
 ### Hybrid
-The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. in some situations it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
+The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. In some situations, it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
 
 ###  **Advanced**
 Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page. There are several advanced rendering properties that can be set here to further customize the final rendering quality.
