@@ -3,7 +3,7 @@ layout: fullwidth-page
 title: ガイドの索引
 ---
 
-# Getting Started with Flamingo nXt®をはじめるにあたって
+# Flamingo nXt®をはじめるにあたって
 
 ## 最初のチュートリアル
 * [最初のレンダリングチュートリアル]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/getting-started-tutorial.html)
@@ -13,7 +13,7 @@ title: ガイドの索引
   * **Flamingo nXt**メニューの**コントロールパネル**をクリックします。
 
 ## Flamingo nXtのコントロールパネル
-**Flamingo nXt**の**コントロールパネル**には、レンダリングのためにモデルを設定するためのタブが表示されます:
+**Flamingo nXt**の**コントロールパネル**には、レンダリングのためにモデルを設定するためのタブが表示されます。タブには次のものが含まれます。
 
  *  [マテリアル]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
  *  [照明]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
@@ -32,14 +32,13 @@ title: ガイドの索引
 #### レンダリングを開始するには
 
  * **レンダリング**メニューの**レンダリング**をクリックします。
-- または -
-
+             - または -
  * **標準**ツールバーの**レンダリング**ボタンをクリックします。
 
 ### レンダリングを停止
 
 
-デフォルトで、レンダリングプロセスは**レンダリングを停止** ![images/stop.png](images/stop.png)ボタンをクリックするまでパス毎にイメージのリファイン（より詳細なレンダリング）を続けます。このボタンを使うと、時間と質のバランスを取ることができます。レンダリングを長く続けるほど、完全に収束した「正しい」結果に近づきます。レンダリングはいつでも好きな時に中止することができます。
+デフォルトで、レンダリングプロセスは**レンダリングを停止** ![images/stop.png](images/stop.png)ボタンをクリックするまでパス毎にイメージのリファイン（より詳細なレンダリング）を続けます。このボタンを使うと、時間を重視するのか質を重視するのかを決定することができます。レンダリングを長く続けるほど、完全に収束した「正しい」結果に近づきます。レンダリングはいつでも好きな時に中止することができます。
 
 
 自動停止条件を設定するには、[レンダリングウィンドウ](..\render\render-window.html)または[ドキュメントのプロパティ &gt; Flamingo nXt](..\render\documentproperties-flamingo.html)の[パスの数](..\render\render-window.html#number-of-passes)または[時間](..\render\render-window.html#time)を使用します。
