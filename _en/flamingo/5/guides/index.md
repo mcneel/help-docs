@@ -32,8 +32,7 @@ Rendering your finished model comprises four basic steps:
 #### To start a rendering
 
  * On the **Render** menu, click **Render**.
-- Or -
-
+           - Or -
  * On the **Standard** toolbar, click the **Render** button.
 
 ### Stop Rendering
