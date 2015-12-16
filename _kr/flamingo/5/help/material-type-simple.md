@@ -1,5 +1,5 @@
 ---
-title: 자동 렌더링
+title: 기본 재질 속성
 ---
 # ![images/paint.svg](images/paint.svg) {{page.title}}
 Flamingo 재질은 속성 그룹 시리즈로 정의됩니다. 자주 사용되는 재질로 구성된 간단한 재질 속성 시리즈가 있습니다. 이들 재질에는 아주 간단한 제어로 변경이 가능하며, 복잡하게 많은 설정을 변경할 필요 없이 간단한 제어만으로도 원하는 대로 설정을 변경하여 재질을 다르게 표현할 수 있습니다. 가장 간단한 재질의 경우, 재질의 색만 바꾸면 다르게 표현이 됩니다.
@@ -15,7 +15,7 @@ Flamingo 재질은 속성 그룹 시리즈로 정의됩니다. 자주 사용되�
 > ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo 텍스처](#flamingo-textured)
 > ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[텍스처 세트](#texture-set)
 
-어떤 재질도 고급 재질로 변환할 수 있습니다. 고급 재질에서는 Flamingo nXt 재질을 편집하는 모든 사용 가능한 제어가 표시됩니다. 재질을 최대한의 설정으로 제어하려면, 고급 재질을 사용하거나, 기존 재질을 고급 재질로 변환합니다. 
+어떤 재질도 고급 재질로 변환할 수 있습니다. 고급 재질에서는 Flamingo nXt 재질을 편집하는 모든 사용 가능한 제어가 표시됩니다. 재질을 최대한의 설정으로 제어하려면, 고급 재질을 사용하거나, 기존 재질을 고급 재질로 변환합니다.
 
 #### 고급 재질은 다음 속성 그룹으로 구성되어 있습니다:
 
@@ -42,7 +42,7 @@ Flamingo 재질은 속성 그룹 시리즈로 정의됩니다. 자주 사용되�
 
 ## 플라스틱
 {: #plastic}
-플라스틱 재질은 흰색 [하이라이트](material-type-advanced.html#highlight-color)와 함께 적은 반사가 표시됩니다. 
+플라스틱 재질은 흰색 [하이라이트](material-type-advanced.html#highlight-color)와 함께 적은 반사가 표시됩니다.
 
 ![images/solidcolors.png](images/3-plastic.png)
 
@@ -124,13 +124,13 @@ Flamingo 재질은 속성 그룹 시리즈로 정의됩니다. 자주 사용되�
 
 ## 텍스처 세트
 {: #texture-set}
-[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
+[텍스처 세트 재질](texture-set-materials.html)은 변위, 법선, 범프 맵 정보가 있는 타사(third-party)의 텍스처 맵을 지원합니다. 변위 맵은 재질의 깊이를 더합니다. 이 텍스처 맵을 하나의 세트로 병합하면 매우 사실적인 재질을 만들 수 있습니다. [PixPlant 소프트웨어](http://www.pixplant.com/)는 일반적인 비트맵을 가지고 이러한 텍스처 세트를 만드는 제품입니다.
 <!-- TODO: This dialog Needs a page.-->
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 #### 너비와 높이
-Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
+세트에서 모든 텍스처의 크기를 제어합니다. 이 제어를 사용하여 모든 비트맵의 크기와 정렬을 함께 유지할 수 있습니다.
 
 #### 강도
 표면에서 거울과 같은 반사 세기를 제어합니다. 자세한 정보는 [강도](material-type-advanced.html#intensity) 항목을 참조하세요.
@@ -139,9 +139,9 @@ Controls size of all the textures in the set.  Use this control to keep all the 
 반사의 선명도와 흐린 정도를 제어합니다. 자세한 정보는 [선명도](material-type-advanced.html#sharpness) 항목을 참조하세요.
 
 #### 유형
-This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
+표면에서의 반사 유형을 제어합니다. 자세한 정보는 [유형](material-type-advanced.html#type) 항목을 참조하세요.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. **Note:** This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+{% include_relative snippets/snippet-material-advanced-editor.md %} 고급 편집기를 사용하여 이 재질의 기본 설정을 덮어 씁니다. **안내:** 많이 겹쳐진 텍스처 세트와 다양한 기본값을 사용하는 복잡한 재질입니다. 고급 편집기를 사용해도 모든 속성이 동기화되지는 않습니다.
 
 ## 고급 재질
 [Flamingo 고급](material-type-advanced) 재질에는 Flamingo 재질의 완전한 속성 세트가 포함되어 있습니다. 간단한 재질만으로는 부족할 때 [Flamingo 고급](material-type-advanced) 재질을 사용하여, 보다 자유롭게 재질을 만들 수 있습니다.

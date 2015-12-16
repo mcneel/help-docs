@@ -15,10 +15,10 @@ title: 가이드 색인
 ## Flamingo nXt 제어 패널
 **Flamingo nXt**의  **제어 패널**에는 모델의 렌더링 설정을 지정하는 다음과 같은 탭이 있습니다:
 
- *  [재질](..\materials\materials-tab.html)
- *  [조명](../lighting/lighting-tab.html)
- *  [환경](../environment/environment-tab.html)
- *  [렌더링](../render/render-tab.html)
+ *  [재질]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
+ *  [조명]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
+ *  [환경]({{site.baseurl}}/{{page.language}}/flamingo/5/help/environment-tab.html)
+ *  [렌더링]({{site.baseurl}}/{{page.language}}/flamingo/5/help/render-tab.html)
 
 ## 렌더링 기초
 
