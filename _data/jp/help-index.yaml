@@ -38,7 +38,7 @@ main_index:
           path: procedural-materials.html
         - name: テクスチャセットマテリアル
           path: texture-set-materials.html
-        - name: 色セレクタ
+        - name: カラーセレクタ
           path: select-color.html
 
     - name: 照明
@@ -72,7 +72,7 @@ main_index:
           path: render-window.html
         - name: チャンネル
           path: render-channel.html
-        - name: 画像エディタ
+        - name: イメージエディタ
           path: image-editor.html
         - name: レンダリングの自動化
           path: automate-rendering.html

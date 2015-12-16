@@ -1,5 +1,5 @@
 ---
-title: 詳細マテリアルのプロパティ
+title: マテリアルの詳細プロパティ
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
