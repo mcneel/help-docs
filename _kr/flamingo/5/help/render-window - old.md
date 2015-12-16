@@ -127,7 +127,7 @@ exr 형식은 High Dynamic Range 형식에 있는 휘도 데이터를 직접 저
 이미지 Y가 위로
 픽셀의 색
 휘도
-거리
+Distance
 
 ## 조명 정보
 
