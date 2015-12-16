@@ -12,7 +12,7 @@ The Flamingo nXt Render Farm uses the power of several computers to render singl
 
 >![images/01.png](images/01.png)A computer with Rhino and Flamingo nXt.
 >![images/02.png](images/02.png)Network server or shared farm folder.
->![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
+>![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.)
 >![images/04.png](images/04.png)Additional purchased render farm clients.
 
 The Render Farm is free for up to two client computers. To add more client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
@@ -147,7 +147,7 @@ Delete the specified job from the list.
 
 ## Licensing the Render Farm
 {: #licensing-the-render-farm-}
-The free version of the Render Farm allows two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+The free version of the Render Farm lets two network computers (nodes) work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
 Once you have purchased your license and have acquired a product key, use the following procedures to license your farm.
 

@@ -147,7 +147,7 @@ In addition to the Sky, a different HDR image can be used for each of the three 
 Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*Equarectangular projection.*
+*Equirectangular projection.*
 
 HDR images come in two projection types which let the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
 

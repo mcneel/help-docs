@@ -39,7 +39,7 @@ exr 형식은 High Dynamic Range 형식에 있는 휘도 데이터를 직접 저
 ## 진행률
 {: #progress}
 
-### 동작
+### 액션
 
 ### 패스
 

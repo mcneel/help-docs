@@ -4,36 +4,35 @@ title: 절차적 재질
 
 #  ![images/paint.svg](images/paint.svg) {{page.title}}
 절차 트리는 재질들이 서로 상호 작용하는 방법을 정하는 규칙을 사용하여 하나 이상의 재질을 결합합니다. 트리에는 재질을 만드는 데 사용된 구성 요소가 표시되며, 직접 구성 요소를 추가할수도 있습니다. 간단한 재질은 베이스 구성 요소만 목록에 표시됩니다.
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 각각의 절차는 두 개의 하위 재질을 특정한 방식을 사용하여 결합합니다. 두 하위 재질이 차례차례 절차가 되어 두 하위 재질 자체를 결합합니다. 이 방식을 사용하여 더욱 간단한 구성 요소를 가지고 매우 정교한 재질을 만들 수 있습니다. 재질을 결합하는 절차에는 다음과 같은 옵션이 있습니다:
 
-> [Base](#base)
-> [Angular Blend](#angular-blend)
-> [Blend](#blend)
-> [Marble](#marble)
-> [Granite](#granite)
-> [Tile](#tile)
-> [Wood](#wood)
+> [베이스](#base)
+> [각도 블렌드](#angular-blend)
+> [블렌드](#blend)
+> [대리석](#marble)
+> [화강암](#granite)
+> [타일](#tile)
+> [나무](#wood)
 
 ##### 절차를 추가하려면
-1. Right-click anywhere in the Procedures window.
-1. On the menu, click a procedure type.
+1. 절차 창 안에서 오른쪽 클릭합니다.
+1. 메뉴에서 절차 유형을 클릭합니다.
 
-##### To remove a procedure
- 1. In the Procedures window, right-click the procedure name.
+##### 절차를 제거하려면
+ 1. 절차 창에서 절차의 이름을 오른쪽 클릭합니다.
  2. 메뉴에서 제거를 클릭합니다.
 
-## Base
+## 베이스
 {: #base}
-This is the basic simple material with no layers. This is the default procedure.
+레이어가 없는 가장 기본적이고 간단한 재질입니다. 이것은 기본 절차입니다.
 
-## Angular Blend
+## 각도 블렌드
 {: #angular-blend}
-Many materials change color, reflection, or transparency based on the angle the material is viewed. The Angular Blend procedure blends between two materials based on the angle of view to the surface of the object.
+보는 각도에 따라 많은 재질의 색, 반사, 투명도가 바뀝니다. 각도 블렌드 절차는 개체의 서피스를 보는 각도를 기준으로 두 재질 사이를 블렌드합니다.
 
 ![images/angularblendmaterials.png](images/angularblendmaterials.png)
-The Angular Blend procedure blends between two different materials to create special effects. The two layers in the procedure are the Inner and the Outer Layer.
+각도 블렌드 절차는 특수 효과를 만들기 위해 두 개의 서로 다른 재질을 블렌드합니다. 절차에는 내부와 외부 레이어 이렇게 두 개의 레이어가 있습니다.
 
 #### 내부
 시점으로부터 0도에서 시작 각도까지, 내부 구성 요소가 완전하게 표시됩니다. 이것을 기본 재질이라고 생각하십시오.
@@ -48,8 +47,9 @@ The Angular Blend procedure blends between two different materials to create spe
 시점으로부터 외부 구성 요소 재질이 멈추는 각도입니다.
 시작 각도와 종료 각도 사이에서 내부와 외부 구성 요소가 블렌드됩니다.
 
-In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/01.png](images/01.png) is 60 degrees (in the rendering that translates to the red circle).
-The image at the left shows the the Inner material as white, and the Outer material as black.
+아래 그림에서 시작 각도![images/01.png](images/01.png)는 30도(렌더링에서는 오른쪽의 녹색 원으로 표시됩니다)이고, 종료 각도![images/02.png](images/02.png)는 60도(렌더링에서는 빨간색 원으로 표시됩니다)입니다.
+
+오른쪽 이미지에서 흰색은 내부 재질이고, 검정색은 외부 재질입니다.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
@@ -64,12 +64,11 @@ The image at the left shows the the Inner material as white, and the Outer mater
 기본 패턴 재질에 전체적인 색을 추가하여 전체 재질 정의를 바꿀 때 블렌드가 잘 실행됩니다.
 
 #### 블렌드
-Varies the percentage of each component material used in the final material.  For instance, the material below shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and 50% striped and 50% green color blended.  The image to the right shows a weak striped material with a strong green material, so the slider is at the right of the Blend slider.
+최종 재질에서 각 구성 요소 재질가 사용되는 비율을 다르게 설정합니다. 예를 들어, 아래의 재질은 줄무늬 재질과 녹색의 블렌드를 나타냅니다. 슬라이더가 왼쪽으로 설정된 왼쪽 이미지에서는 줄무늬 재질이 강하고 녹색은 흐리게 보입니다. 가운데 이미지의 경우, 슬라이더가 중간에 있으며, 50% 줄무늬와 50% 녹색이 블렌드되었습니다. 오른쪽 이미지는 슬라이더가 오른쪽으로 설정되어 있으며, 줄무늬 재질은 약하고 녹색 재질은 강하게 표시됩니다.
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### 이미지 사용
-대개 회색조 패턴으로 구성된 비트맵 이미지는 어디에 두 개의 구성 요소 재질이 표시되는지를 정의합니다. 재질은 이미지의 회색 픽셀 값을 기준으로 블렌드됩니다. 회색조 이미지 맵을 사용하여 첫 번째와 두 번째 구성 요소 사이를 조정합니다. 첫 번째 구성 요소는 비트맵 패턴에 검정색이 있는 곳에 배치되며, 두 번째 구성 요소는 비트맵 패턴에 흰색이 있는 곳으로 배치됩니다.
-<!--TODO: The first sentence needs work. -->
+두 개의 재질이 어떻게 상호 작용하는지를 제어하는 데 이미지를 사용할 수 있습니다. 비트맵 이미지를 사용할 때, 픽셀의 회색조 값은 두 개의 구성요소 재질이 어디서 블렌드되는지를 정의합니다. 회색조 이미지 맵을 사용하여 첫 번째와 두 번째 구성 요소 사이를 조정합니다. 첫 번째 구성 요소는 비트맵 패턴에 검정색이 있는 곳에 배치되며, 두 번째 구성 요소는 비트맵 패턴에 흰색이 있는 곳으로 배치됩니다.
 
 그림에서 처음과 두 번째 구성 요소에 모두 동일한 재질이 사용되었으나, 블렌드는 세 개의 다른 비트맵으로 제어됩니다.
 ![images/blendmask.png](images/blendmask.png)
@@ -108,25 +107,25 @@ Varies the percentage of each component material used in the final material.  Fo
 
 ## 대리석
 {: #marble}
-Creates alternating slabs of Base and Vein components. The Marble procedure defines how the Base and Vein components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object.
+베이스와 결 구성요소가 번갈아 표시되는 슬래브를 만듭니다. 대리석 절차는 베이스와 결 구성요소가 어떻게 결합되는지를 정의합니다. 슬래브의 크기는 무한하며, 개체의 원점은 해당 개체에 대한 슬래브의 방향이 지정되는 방식에 영향을 미칩니다.
 
 ![images/marbled.png](images/marbled.png)
 
-Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object.
+개체의 텍스처 [매핑](properties-object.html#mapping)은 개체에서 재질의 방향을 제어합니다.
 ![images/materialunmapped.png](images/materialunmapped.png)
-텍스처 매핑 없음 (왼쪽). 텍스처 매핑 적용 상태 (오른쪽).
+*텍스처 매핑 없음 (왼쪽). 텍스처 매핑 적용 상태 (오른쪽).*
 
-#### Base/Vein
-The Base and Vein components are two materials. Their properties are specified in the same way as any material.
+#### 베이스/결
+베이스와 결 구성 요소는 두 개의 재질입니다. 이들의 속성은 다른 재질과 같은 방식으로 지정됩니다.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
-#### Vein Width
+#### 결 너비
 베이스와 결이 서로에 대해, 석판에서의 상대적인 크기를 바꿉니다. 결 너비는 하나의 베이스 줄과 다음 줄까지 거리의 일부입니다. 값의 범위는 0 (영)부터 1까지이며, 0 은 결 구성 요소가 없는 상태이고, 1은 베이스 구성 요소가 없는 상태입니다.
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-베니어 (왼쪽), 일반 (오른쪽).
+*베니어 (왼쪽), 일반 (오른쪽).*
 
 ## 타일
 {: #tile}
@@ -160,18 +159,18 @@ The Base and Vein components are two materials. Their properties are specified i
 각각의 타일에 임의의 색상을 가진 재질 색을 더합니다. 불규칙한 벽돌과 같은 재질을 모델링할 수 있습니다.
 
 #### R/G/B
-Modifies the red, green, and blue color components.  This will slightly vary the base material of each tile randomly.
+빨강, 녹색, 파랑 색 구성요소를 수정합니다. 각 타일의 기본 재질에 따라 다소 불규칙하게 달라집니다.
 ![images/tilevarycolor.png](images/tilevarycolor.png)
 
 #### X/Y/Z
-Offsets the material from the world origin for each tile randomly. Do this if a seam that marks the beginning of the material appears an in inappropriate place.
+각 타일의 절대좌표 원점을 기준으로 재질의 간격을 불규칙하게 띄웁니다. 재질의 처음을 나타내는 심이 잘못된 위치에 표시되면 이 옵션을 사용합니다.
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
 ## 나무
 {: #wood}
 나무는 베이스와 링 구성요소가 번갈아 동심원을 이루는 원통형으로 구성되어 있습니다. 나무 설정은 베이스와 링 구성 요소의 결합 방식을 정의합니다.
 
-Use this method to create wood materials if objects are not closely viewed. If detailed wood is needed, use a [Texture material](material-type-simple.html#textured) to do wood.  If the viewpoint is not close to the wood, a solid color can be used to take the place of wood without sacrificing image quality. This allows faster rendering. An additional advantage of using a wood material is that when rendering different sides of an object, the wood grain will look correct. End grain will show on the ends and parallel grain will show on the sides of an object.
+개체를 가까이 보지 않을 경우, 나무 재질을 만드는 데 이 방식을 사용하세요. 더욱 세밀하게 나무를 표현해야 한다면 [텍스처 재질](material-type-simple.html#textured)로 나무를 만듭니다. 나무와 시점이 멀리 떨어져 있다면 화질을 희생하지 않고, 나무에 단색을 적용할 수 있습니다. 렌더링 시간도 빨라집니다. 나무 재질을 사용하는 또 다른 장점은 한 개체의 다른 면을 렌더링할 때 나뭇결이 정확하게 보입니다. 나무의 횡단결이 양쪽 끝에 보이고 종단결은 개체의 옆면에 보입니다.
 ![images/woodmaterials.png](images/woodmaterials.png)
 
 #### 베이스/링

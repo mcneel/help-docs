@@ -14,7 +14,7 @@ This does not have much affect if the preview object is a sphere, but if it is a
 >![images/number-onestep.gif](images/number-onestep.gif)Right-click to display a context menu.
 >![images/number-onestep.gif](images/number-onestep.gif)Double-click to display a larger preview window below the thumbnails.
 >![images/number-onestep.gif](images/number-onestep.gif)Drag the preview thumbnails to reorder the list.
->![images/number-onestep.gif](images/number-onestep.gif)Press the [onmouseover="if (parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event)" onclick="javascript:BSSCPopup('../Popup_Actions/Ctrl_Key.htm');;return false" id="a16" style="position: relative; font-weight: normal;">Ctrl]() key while dragging to duplicate a material.
+>![images/number-onestep.gif](images/number-onestep.gif)Press the Ctrl key while dragging to duplicate a material.
 >![images/number-onestep.gif](images/number-onestep.gif)Double-click the larger preview to open a floating window that can be resized to get a higher resolution view of the preview.
 
 This window has all the same functionality as the original preview image including the context menu and the ability to drag and drop onto other materials or objects in the model.

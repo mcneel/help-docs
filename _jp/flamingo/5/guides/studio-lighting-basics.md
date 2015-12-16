@@ -2,84 +2,84 @@
 ---
 <!-- TODO: Make sure to update this page and get working in the guides section of the documentation. -->
 
-# Studio Lighting Basics
+# スタジオ照明の基礎
 {: #studio-lighting-bascis}
-Studio lighting must be set up similar to a photographer's studio. For greater control, use light sources to light the scene.
+スタジオ照明は、写真館での照明のようなセットアップが求められます。照明をよりよく演出するには、光源を使用してシーンを照らすとよいでしょう。
 ![images/lighting-001.png](images/lighting-001.png)
-When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of light sources placed in a way to create very light and very dark areas.
-The most basic studio lighting arrangement uses a key light (1), a fill light (2), and a back light (3). This is the most common lighting arrangement for standalone characters and objects in the studio. A three-point setup will give good results right away and is an excellent starting point for creating special effects. Spotlights are useful because you can control their direction and hot spot to give the scene drama.
+スタジオでのセッティングの照明の際は、印象的な照明を用いることが重要です。コントラストをはっきりさせると、印象的な照明が行えます。つまり、暗いところは明るいところと同様に重要であるということです。印象的な照明には、暗いところと明るいところを作り出すため、いくつかのライトを配置することが必要です。
+スタジオ照明の最も基本的なセットアップでは、キーライト（1）、フィルライト（2）、そしてバックライト（3）を使用します。これがスタジオで物や人物を単独で撮影する時に最もよく使われるライトの当て方です。3点照明を使えば初めからよい結果が得られます。後に独特の効果を出すための基本にもなります。スポットライトは方向とホットスポットをコントロールでき、シーンに印象的な効果を与えることができるので便利です。
 ![images/studiolighting-004.png](images/studiolighting-004.png)
 
-## Camera Angle
+## カメラの角度
 {: #cameraangle}
-Lighting setups always depend on the angle of the camera to the subject. It is a good idea to start lighting by deciding on the camera angle. Use the **Camera** or **NamedView** commands to set up the position and angle of the camera. This will help determine the position of the lights.
+照明の設定は常に被写体に対するカメラの角度で決まります。カメラの角度を決めることから照明のセットアップを始めていくとよいでしょう。**Camera**または**NamedView**コマンドを使用して、カメラの位置と角度を調整するとよいでしょう。これは、ライトの配置を決めるのに役に立ちます。
 
-## Basic Three-Light Setup
+## 3つのライトを使った基本的な照明
 {: basic-three-light-setup}
-A basic studio lighting setup includes three lights, a key light, a fill light, and a backlight.
+基本的なスタジオ照明は、キーライト、フィルライト、そしてバックライトの3つのライトを使用します。
 
-### Key Light
+### キーライト
 {: #keylight}
-The key light is the dominant light in the scene. It sets the mood, provides direction, shows dimension and texture, and creates the darkest shadows. A key light is usually set 30 to 45 degrees to the side of and above the object depending on the subject matter.
-The closer the key light is to the camera, the less modeling and texture it produces. A key light is usually higher than the lens, and throws shadows down. As the key light moves to the side, the three-dimensional quality of the object increases. In a classic portraiture setup, the key light is set at about a 45-degree angle between the subject and the camera and high enough to throw shadows down, but not so high that the subject's eyes are in shadow.
-If the key light is a soft light, little or no fill may be required. It is a basic solution for lighting small studio setups as well.
-The shadow cast by the key light will be visible on the subject. In images of faces, this often shows up as a strong shadow cast by the nose.
+キーライトはシーンの主光源です。キーライトでムードが決定される上、方向を与え、立体感と質感を表現し、一番暗い影を作ります。照明の対象にもよりますが、キーライトは普通、オブジェクトの斜め上30度から45度に配置されます。
+キーライトがカメラに近くなるにつれて、立体感と質感の効果が弱まります。キーライトはたいていレンズより高い位置にあり、下方に影を投げかけます。キーライトを横へ移動するにつれて、オブジェクトの3次元性が高まります。一般的な人物写真を撮影するセットアップでは、キーライトは対象とカメラの間45度のところに配置され、影を下へ投げかけるようにしますが、対象となる人物の目が影にならない高さに配置されます。
+キーライトがソフトなライトであれば、フィルは少しでよく、必要ない場合もあります。小さいスタジオ設定の基本的な照明法の1つでもあります。
+キーライトで投げかけられる影は、対象上で見ることができます。顔のイメージで目立つのは鼻が落とす強い影です。
 ![images/studiolighting-001.png](images/studiolighting-001.png)
 
-### Fill Light
+### フィルライト
 {: #filllight}
-The fill light is placed just above the lens on the opposite side from the key light. Its purpose is to reduce contrast and bring out detail in the shadows by simulating light reflected off nearby objects. The key light and fill light may be of equal intensity for a low-contrast result, but the key light is usually brighter and harder than the fill light. The fill light is the secondary light in the scene. It should not introduce any more dark shadows into the scene.
-In the illustration, notice that the shadow to the left of the nose and along the left side is lighter and softer than the image with the key light alone.
+フィルライトはレンズのすぐ上に、キーライトの反対側に置きます。フィルライトの目的は、近くのオブジェクトから反射して来る光を模倣することでコントラストをやわらげ、影の詳細を強調することです。低コントラストの効果を出したい場合、キーライトとフィルライトを同じ強度にしますが、キーライトの方がフィルライトよりより明るくハードであることが普通です。フィルライトはシーンでの補助光源です。このライトがシーンに新たな暗い影を作らないようにするのが大切です。
+イメージでは、キーライトのみで作られたイメージと比べて、鼻の左側の影とあごの左側の影が明るくてソフトであることが分かりま す。
 ![images/studiolighting-002.png](images/studiolighting-002.png)
 
-### Backlight
+### バックライト
 {: #backlight}
-The backlight effect is subtle but can define the edges of objects in the scene and add depth by preventing objects from blending into the background. Backlights are usually placed behind and above the object and are pointed toward the camera.
-The effectiveness of backlights depends in part on the reflectivity of the surfaces they are lighting.
-In the illustration, the light on the top of the shoulders helps separate the subject from the background. The backlight also softens the shadows and brightens the surface the object is sitting on.
+バックライトの効果は控えめですが、シーンの中のオブジェクトの輪郭を際立たせ、背景から浮き上がらせることで奥行きを感じさせます。バックライトはたいていオブジェクトの後方の上の方に、カメラの方に向けて配置されます。
+バックライトの効果は、照らしているサーフェス の反射率にある程度左右されます。
+イメージでは、肩の上のライトが対象物を背景から切り離して見せます。バックライトはまた、影を柔らかくし、オブジェクトが置かれているサーフェスを明るくします。
 ![images/studiolighting-003.png](images/studiolighting-003.png)
 
-## Light Qualities
+## 光の性質
 {: #lightquality}
-Images can be created with accurate shadows, highlights, and reflections, but without proper lighting, the goal of the shot will be missed. When setting up the lighting, consider the goal. Images work well if they are bold, graphic, and simple. Too many highlights in glassware or shadows from objects may add unnecessary complexity to a scene and detract from its essence.
-Some of the qualities to consider include:
+イメージは、正確な影やハイライト、反射によって作成できますが、適切な照明がなければ、イメージ作成の目的が達成できません。何を実現したいのかをはっきりさせてから照明をセットアップするとよいでしょう。イメージは、はっきり、生き生きと、シンプルであるときれいに見えます。ガラス製品のハイライトや物の影が多すぎるとシーンが必要以上に複雑になり、注目させたいところが目立たなくなってしまうことがあります。
+次のいくつか考慮する性質にあげられます:
 
->The contrast range of the scene
->The depth of the scene (its three-dimensional quality)
->Separation of objects from the background
->Whether the lighting should be hard of soft
->Whether the lighting should be warm or cool in color
+>シーンのコントラストレンジ
+>シーンの奥行き（3次元性）
+>オブジェクトと背景との区別
+>ハードライトとソフトライト
+>ライトの色（暖色か寒色か）
 
-### Contrast Range
+### コントラストレンジ
 {: #contrastrange}
-Contrast range is the difference between the brightest and the darkest areas with detail in a given scene. The human eye is capable of dealing with a far greater contrast range than film and can locally compensate to see detail in the extreme areas. This effect can be seen in snapshots taken on a sunny day.
-Typically, the highlight side is too bright or the shadow side is too dark, yet you had no trouble seeing detail in both the dark and light areas. The contrast range is just too great for the film to record. This is also true of rendered images, as there is a limit to the colors the computer can display.
+コントラストレンジは与えられたシーンの中で、詳細が見える一番明るいところと一番暗いところの差を意味します。人間の目はフィルムよりより幅の広いコントラストレンジを処理でき、コントラストが極端なところでも詳細が見える ように局所的に補正することができます。日当たりのよい日に撮られたスナップ写真を見れば分かるでしょう。
+普通、写真ではハイライトがある側は明るすぎ、影のある側が暗すぎますが、目で見る時は明るいところと暗いところの両方で詳細がよく見えているはずです。コントラストレンジの幅は、フィルムには収めきれません。コンピュータが表示できる色の数に制限があるので、レンダリングされたイメージにも同じ問題が見られます。
 ![images/highcontrast-001.png](images/highcontrast-001.png)
-A lower contrast image prevents details from being obscured in the highlight or shadow areas.
+低いコントラストのイメージは、ハイライトされた、または影の部分で詳細が隠されることを防ぎます。
 ![images/lowcontrast-001.png](images/lowcontrast-001.png)
 
-### Three-Dimensional Quality
+### 3次元性
 {: #three-dimensional}
-Representing three dimensions in a two-dimensional space requires an illusion of depth. An opaque object lit from the side implies depth because there is a bright highlight side and a darker shadow side. A box showing three sides will have more dimension if each side is a different value. Often the top plane will be the brightest because light usually comes from above in real life situations.
+2次元の空間で3次元を表現するには、奥行きがあるかのような目の錯覚を起こさせなければなりません。横から照らされた不透明なオブジェクトは、明るいハイライトのある側とそれより暗い影のある側があるため、奥行きが示唆されます。3つの側面が見えるボックスの場合、各側面の値が違うと立体感が強くなります。実世界でのライティングでは光は上から来ることが多いので、一番明るいのはたいてい上の平面です。
 ![images/lightbox-001.png](images/lightbox-001.png)
 
-### Separation from the Background
+### 背景との区別をはっきりさせる
 {: #separation}
-For a product to pop off the page, in addition to a three-dimensional quality and using the full contrast range, there must be good separation. That is, the edges of our subject must be decidedly lighter or darker than the background. Without separation, the subject blends into the background.
-In the illustration, the highlight at the top of the object helps separate it from the background
-The subject's shadow can sometimes aid separation and sometimes cause objects to merge with the background. A backlight can facilitate separation by creating a bright edge around the subject.
+製品がページから飛び出るようにするには、3次元性と、最大に使用されたコントラストレンジの他に、背景との区別をはっきりさせることも忘れてはなりません。つまり、対象の輪郭を背景より目立って明るくするか、暗くすることが必要です。区別がつかなければ、対象のオブジェクトは背景に溶け込んでしまいます。
+イメージでは、オブジェクトの上のハイライトはオブジェクトを背景と区別させる役割を果たします。
+対象オブジェクトの影は、場合によっては区別をいっそうはっきりさせますが、背景にオブジェクトが溶け込んでしまう感じを作り出すこともあります。バックライトの使用は、対象のオブジェクトの輪郭に明るいエッジを作ることで、区別をはっきりさせるのに役に立ちます。
 ![images/blackeggs-003.png](images/blackeggs-003.png)
 
-### Hard or Soft Light
+### ハードライトとソフトライト
 {: #hard-soft}
-One way to categorize light is hard (direct) or soft (diffused).
-A hard light casts a clearly defined hard-edged shadow.
+ハード（直射光）とソフト（拡散光）で光の性質を区別することがあります。
+ハードライトは、はっきりしたエッジを持つくっきりとした影を投げかけます。
 ![images/hardlight-001.png](images/hardlight-001.png)
-Diffused light casts a soft, sometimes indistinguishable shadow.
-Diffused light often produces a more attractive image than hard light because of its soft shadows. The larger the light and the closer it is to the subject, the softer it is. A large soft light can simulate light from a window.
+拡散光はソフトで、時には見分けがつかない影を投げかげます。
+拡散光はソフトな影が生じるので、ハードな光より拡散光の方が魅力的なイメージを作り出すことが多いでしょう。ライトが大きくなり、対象のオブジェクトに近くなるにつれて、ソフトになります。大きいソフトライトは窓からの光を模倣することができます。
 ![images/diffuselight-001.png](images/diffuselight-001.png)
-Diffuse lighting can work well for dark plastic objects, because it produces a broad highlight that helps define the shape of black shiny objects.
+拡散照明は、艶のある黒いオブジェクトの形をはっきりさせる広いハイライトを作るので、黒っぽいプラスティックのオブジェクトに最適です。
 ![images/blackeggskeyfillback.png](images/blackeggskeyfillback.png)
-When lighting a studio setup, dramatic, high contrast lighting is important. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of lights placed in a way to create light and dark areas.
-Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting.
-Flamingo nXt includes pre-set [lighting schemes](lighting-tab.html#lighting-presets) to help you get started lighting your model. The settings on the [Advanced tab](lighting-advanced-tab.html) are optimized for each lighting method.
+スタジオのセッティングの照明の際は、印象的で高コントラストな照明を使用することが重要です。つまり、暗いところは明るいところと同様に重要であるということです。印象的な照明には、暗いところと明るいところを作り出すため、いくつかのライトを配置することが必要です。
+レンダリングのための照明テクニックは写真撮影のための照明テクニックと大体同じなので、写真撮影のための照明の本から勉強し始めるとよいでしょう。
+Flamingo nXtはモデルの照明をすぐに始められるように前もって設定された[照明スキーム](lighting-tab.html#lighting-presets)を用意しています。[詳細タブ](lighting-advanced-tab.html)の設定は、それぞれの照明方法に合わせて最適化されています。

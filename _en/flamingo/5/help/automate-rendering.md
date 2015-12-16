@@ -21,7 +21,7 @@ Start by adding a job, then edit the properties to set up batch jobs.
 Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
 
 #### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+Select an existing batch job.  Then use Delete to remove the job from the batch list.
 
 #### Properties
 Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.

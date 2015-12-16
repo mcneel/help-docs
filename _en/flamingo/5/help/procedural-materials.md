@@ -47,14 +47,15 @@ The angle from the viewpoint at which the Outer component material starts.
 The angle from the viewpoint at which the Outer component material stops.
 Between the Start Angle and the Stop angle, the Inner and the Outer components blend.
 
-In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/01.png](images/01.png) is 60 degrees (in the rendering that translates to the red circle).
-The image at the left shows the the Inner material as white, and the Outer material as black.
+In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/02.png](images/02.png) is 60 degrees (in the rendering that translates to the red circle).
+
+The image at the right shows the the Inner material as white, and the Outer material as black.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
 * Between 0 and 30 degrees from the viewpoint, you see white.
-* Between 30 and 60 degrees&#160;from the viewpoint, you see a gradient from white to black.
-* Between 60 and 90 degrees&#160;from the viewpoint, you see black.
+* Between 30 and 60 degrees from the viewpoint, you see a gradient from white to black.
+* Between 60 and 90 degrees from the viewpoint, you see black.
 
 ## Blend
 {: #blend}
@@ -63,11 +64,11 @@ The Blend procedure combines two base components and controls the proportions of
 Blends work well changing an entire material definition by adding an overall color to a base patterned material.
 
 #### Blend
-Varies the percentage of each component material used in the final material.  For instance, the material below shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and 50% striped and 50% green color blended.  The image to the right shows a weak striped material with a strong green material, so the slider is at the right of the Blend slider.
+Varies the percentage of each component material used in the final material. For instance, the material below shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and a blended 50% striped and 50% green color.  The right image shows the slider to the right, showing a weak striped material with a strong green material.
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### Use image
-An Image can be used to control how two materials will interact.  When using a Bitmap image the grayscale values of the pixels define where two component materials will blend. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
+An image can be used to control how two materials will interact. When using a Bitmap image the grayscale values of the pixels define where two component materials will blend. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
 
 In the image, the same materials are used for the first and second components, but the blend is controlled by three different bitmaps.
 ![images/blendmask.png](images/blendmask.png)
@@ -80,7 +81,7 @@ If the image has an alpha channel, this can be used instead of the bitmap graysc
 The First component will be placed where there is white in the bitmap pattern, and the Second component will be placed where there is black in the bitmap pattern.
 
 #### Tiles
-The scale of the material is independent of the resolution of the bitmap used to define it. In order to scale the material correctly, decide how large an area in real units one copy of the bitmap represents. If the bitmap represents the height of six 4-unit tiles and the length represents twelve 4-unit tiles, the scale would be 48 units in the x-direction and 24 units in the y-direction. This stretches the bitmap to the proper size for the pattern.
+The scale of the material is independent of the resolution of the bitmap used to define it. To scale the material correctly, decide how large an area in real units one copy of the bitmap represents. If the bitmap represents the height of six 4-unit tiles and the length represents twelve 4-unit tiles, the scale is 48 units in the x-direction and 24 units in the y-direction. This stretches the bitmap to the proper size for the pattern.
 
 #### Width
 The width in pixels of a single instance of the image.
@@ -128,7 +129,7 @@ Alters the relative size of the slabs to each other. Vein Width is a fraction of
 
 ## Tile
 {: #tile}
-Tile is a 2-D material.&#160;Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The Tile material combines a Base component and a Joint component. Each of these materials can also include any other material.
+Tile is a 2-D material. Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The Tile material combines a Base component and a Joint component. Each of these materials can also include any other material.
 ![images/tile materials.png](images/tile materials.png)
 Scale tile differently in each direction for special effects. For example, use a tile material that is extremely long in one direction to create siding materials.
 
@@ -151,7 +152,7 @@ Specifies the width and height of the joint material.
 Maintains the ratio between the Horizontal and Vertical joint sizes.
 
 #### Offset
-Provides a relative horizontal offset per vertical tile.&#160;For example, use a setting of .5 to produce a standard running bond. This allows modeling of material such as marble tile, without the effect of having the entire floor hewn from the same block of marble.
+Provides a relative horizontal offset per vertical tile. For example, use a setting of .5 to produce a standard running bond. This allows modeling of material such as marble tile, without the effect of having the entire floor hewn from the same block of marble.
 ![images/tileoffset.png](images/tileoffset.png)
 
 #### Vary Tiles
@@ -162,7 +163,7 @@ Modifies the red, green, and blue color components.  This will slightly vary the
 ![images/tilevarycolor.png](images/tilevarycolor.png)
 
 #### X/Y/Z
-Offsets the material from the world origin for each tile randomly. Do this if a seam that marks the beginning of the material appears an in inappropriate place.
+Offsets the material from the world origin for each tile randomly. Do this if a seam that marks the beginning of the material appears in an inappropriate place.
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
 ## Wood

@@ -10,6 +10,8 @@ Artificial light sources use normal Rhino lights with added Flamingo properties 
 {: #light-tab}
 The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible through additional [Light Properties](#light-properties).
 
+<!-- TODO: There should be some mention that the Lights tab only is available for some of the Lighting presets -->
+<!-- TODO: #### Is this supposed to be a code? It's showing up as #### -->
 #### Where can I find Flamingo Lighting control?
 The Lights tab must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
 
@@ -39,9 +41,9 @@ Properties contained in the table are:
  >[Watts](#watts)
  >[Channel](#channel)
 
-Right-clicking on the Lights tab table will open the [Additional Options](#additional-options) menu.
+Right-click on the Lights tab table to open the [Additional Options](#additional-options) menu.
 
-[Light Properties](#light-properties) can also be accessed by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
+Access [Light Properties](#light-properties) by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
 
 ## Light Types
 {: #light-types}
@@ -103,7 +105,7 @@ When tagging an object as a light, use Distribution to specify the pattern the l
 
 #### Aim light *([Tagged objects only](#tag-objects-as-lights))*
 {: #aim-light}
-For tagged light which have a distribution of Spot or Diffuse, a direction must be specified.  Double-click on the "Aim >>" option and follow the command line prompts.
+For tagged light which have a distribution of Spot or Diffuse, specify a direction.  Double-click on the "Aim >>" option and follow the command line prompts.
 
 #### Watts
 {: #watts}
@@ -111,7 +113,7 @@ Specifies the electrical power of the light.  It is recommended to start with re
 
 #### Beam angle *([Spotlights only](lights-tab.html#spotlight))*
 {: #beam-angle}
-The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Find details on grip editing in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
 #### Radius
 {: #radius}
@@ -144,10 +146,10 @@ Use the intensity stored in the IES file. If this is not checked, the  [Watts](l
 
 ## Additional Options Menu
 {: #additional-options}
-Additional options for lights can be accessed by right-clicking on the light in the Light table.
+Access additional options for lights by right-clicking on the light in the Light table.
 
 ####  On
-Toggles the light [On/Off](#on)
+Toggles the light [On/Off](#on).
 
 #### Delete
 Deletes the selected light.

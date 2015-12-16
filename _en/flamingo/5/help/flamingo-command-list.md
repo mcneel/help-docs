@@ -4,10 +4,10 @@ title: Flamingo Command List
 
 
 # {{page.title}}
-
+<!-- TODO: Some of those commands have been renamed to a version without "nXt". Or all of them? -->
 ### FlamingoNXtAbout
 {: #flamingonxtabout-command}
-Displays theAbout Flamingodialog box.
+Displays the About Flamingo dialog box.
 
 ###  [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)
 {: #flamingonxtautomaterender}

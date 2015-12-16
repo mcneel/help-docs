@@ -11,8 +11,8 @@ nXt 이미지 편집기를 사용하여 다음과 같은 기능을 실행할 수
 >조명 채널의 강도를 변경합니다.
 >이미지 기반 특수 효과를 추가합니다: [옅은 안개](image-editor.html#haze), [깊이 흐림](image-editor.html#depth-blur), [글레어](image-editor.html#glare).
 >톤 매핑된 이미지를 .jpg 또는 .png와 같은 비트맵 형식으로 [저장](image-editor.html#save-tonemapped-image-as)합니다.
->Save the luminance information to an [HDR format](image-editor.html#save-hdr-image-as).
->View and save additional masked channels ( [alpha](image-editor.html#alpha-channel), [distance](image-editor.html#distance-channel), [material](image-editor.html#material-channel) ) for use in advanced compositing.
+>휘도 정보를 [HDR 형식](image-editor.html#save-hdr-image-as)으로 저장합니다.
+>좀 더 높은 수준의 합성에 사용하기 위해 추가적인 마스크 ( [알파](image-editor.html#alpha-channel), [거리](image-editor.html#distance-channel), [재질](image-editor.html#material-channel) )을 보고 저장합니다.
 >포토리얼리스틱 렌더링이 아닌 렌더링을 만들 때 사용할 수 있는 [Piranesi©](http://www.piranesi.co.uk/) 파일 형식(*.epx)으로 저장합니다.
 >렌더 팜에서 별도의 노드로 생성된 이미지를 짜집기하는 등의 작업을 할 때는 이미지를 산술로 설정하여 사용하십시오.
 >이 렌더링을 생성하는 데 사용된 [조명 설정](image-editor.html#save-lighting-settings-as)을 저장합니다. 이 조명 설정을 사용하여 더 많은 렌더링을 만들 수 있습니다.
@@ -125,7 +125,7 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 이미지 효과를 애니메이션 실행하려면
 1. 첫 번째 이미지를 설정합니다.
  
-**프레임** 편집 상자 옆에 있는 **플러스 (+)** 단추를 클릭합니다.  
+**프레임** 편집 상자 옆에 있는 **플러스 (+)** 단추를 클릭합니다.
 1. 이미지를 편집하고 프레임을 추가합니다.
 1. **이미지 &gt; 애니메이션**을 클릭하고 대화상자에서 **미리보기**를 클릭합니다.
 1. 모두 잘 설정되었으면 **애니메이션**을 클릭합니다.
@@ -158,7 +158,7 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 ## 이미지 편집기 사용
 
 ##### 이미지 로드
-1.  렌더링 이미지를 **nXtImage**로 [저장](render-window.html#export-to-nxtimage)합니다.
+1.  렌더링 결과를 **.nXtImage** 파일로 [저장](render-window.html#export-to-nxtimage)합니다.
 1. **Flamingo nXt** 메뉴에서 **유틸리티 &gt; Flamingo nXt 이미지 편집기**를 클릭합니다.
 1. **nXt 이미지 편집기**의 파일 메뉴에서 **열기**를 클릭하여 이미지를 편집기에 로드합니다.
 
@@ -218,16 +218,16 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 카메라에서 멀리 떨어져 있는 픽셀에 색을 더합니다. 이 효과는 장면에 옅은 안개 또는 안개를 추가하거나, 배경을 색으로 마스크 처리, 배경색을 변경할 때 사용할 수 있습니다.
 *![images/golden gate.png](images/golden gate.png)원본 이미지 (왼쪽), 옅은 안개 처리된 이미지 (오른쪽).*
 
-### Strength
+### 강도
 옅은 안개 색의 강도를 지정합니다.
 
-### Near
+### 가까이
 옅은 안개가 각 픽셀에 색을 추가하기 시작하는 카메라로부터의 거리.
 
 #### 지정
 거리를 지정하기 위해 이미지 상에서 한 점을 지정합니다.
 
-### Far
+### 멀리
 옅은 안개 효과가 최대치인 거리입니다. 이 지점을 넘는 모든 픽셀은 각 픽셀에 최대 옅은 안개 효과가 더해집니다.
 가까이와 멀리 사이에 있는 픽셀은 가까이에서 멀리 있는 픽셀 선상으로 옅은 안개 효과가 더해집니다.
 
@@ -246,7 +246,7 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 ![images/fx-depth-001.png](images/fx-depth-001.png)
 *원래 이미지 (왼쪽), 깊이 흐림이 적용된 이미지 (오른쪽).*
 
-### Strength
+### 강도
 흐린 정도를 지정합니다.
 
 ### 초점
@@ -270,7 +270,7 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 #### 전경
 카메라에 **정초점 영역** 범위보다 가까이 있는 픽셀을 흐리게 처리합니다.
 
-#### Both
+#### 모두
 **정초점 영역** 범위의 앞과 뒤에 있는 픽셀을 흐리게 처리합니다. 이 옵션을 사용하면 피사계 심도 (depth-of-field) 효과를 빠르게 얻을 수 있습니다. 기본 탑재된 사전 렌더링 [피사계 심도](render-tab.html#depthoffieldoption)를 사용하는 것만큼 정확하지 않습니다.
 
 ## 글레어
@@ -279,7 +279,7 @@ nXtImage 파일에 있는 3개의 추가적인 채널은, 대부분의 비트맵
 커서를 픽셀 위에 잠시 두면 글레어가 표시되며, 해당 픽셀의 전체 루멘을 알 수 있습니다.
 *![images/glare-001.png](images/glare-001.png)원래 이미지 (왼쪽), 글레어가 적용된 이미지 (오른쪽).*
 
-### Strength
+### 강도
 주변 픽셀에 영향을 주는 후광의 양을 조정합니다.
 
 ### 임계값

@@ -1,20 +1,20 @@
 ---
 title: 데칼
 ---
-
+<--TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
 
 # {{page.title}}
 데칼은 재질을 간접적으로 사용하지 않고, 개체에 직접 적용하는 비(非) 타일 방식의 이미지 맵입니다. 개체 색, 반사도 또는 범프에서 제한된 부분을 수정할 때 데칼을 사용합니다.
-Decals consist of a single instance of the image, rather than being tiled as they are when used in a [material definition](materials-tab.html).
+데칼은 [재질 정의](materials-tab.html)에서 사용되는 것처럼 타일 처리되지 않으며, 이미지 단일 인스턴스로 이루어져 있습니다.
 데칼의 용도:
 
->Hanging artwork on interior walls.
->Placing labels or logos on products.
->Adding signs to the model.
->Creating stained glass windows.
+>실내 벽에 그림 걸기.
+>제품에 레이블 또는 로고 붙이기.
+>모델에 이름 넣기.
+>스테인드글래스 창 만들기.
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode. The **Pipeline** setting must be **OpenGL** in **Options**  &gt; **Appearance**  &gt; **Advanced Settings**  &gt; **Wireframe**  &gt; **Other Settings**  &gt; **Pipeline and Conduits**.
+ **안내:** 데칼 미리보기는 OpenGL이 와이어프레임 모드에서만 사용하도록 설정된 경우 와이어프레임 뷰에서만 표시됩니다. **파이프라인** 설정은 **OpenGL** 설정(**옵션**  &gt; **뷰**  &gt; **표시 모드**  &gt; **와이어프레임**  &gt; **기타 설정**  &gt; **사용할 표시 파이프라인**)에 있습니다.
 
 ## 데칼 배치
 {: #decal-list}
@@ -22,25 +22,25 @@ Decals consist of a single instance of the image, rather than being tiled as the
 
 ###  **추가**
 {: #add-decal}
-1. Select one or more objects.
-1. On the **Edit** menu, click **Object Properties**.
-1. On the **Properties** list, click **Flamingo nXt Decals**.
-1. Click the **Add** button.
-1. In the **Open Bitmap** dialog box, select a bitmap name, and click **Open**.
-{% include_relative snippets/snippet-clearbitmapcache.md %}1. In the **Decal Properties** dialog box, select options, and click **Place**.
-1. At the prompts for points, pick points on the model to locate the decal.
-The precise sequence depends on the type of decal selected: [Planar](#decal-planarmapping), [Cylindrical](#decal-cylindricalmapping), or [UVMap](#decal-uvmapping).
+1. 하나 이상의 개체를 선택합니다.
+1. **편집** 메뉴에서 **개체 속성**을 클릭합니다.
+1. **속성** 목록에서 **Flamingo nXt 데칼**을 클릭합니다.
+1. **추가** 단추를 클릭합니다.
+1. **비트맵 열기** 대화상자에서 비트맵 이름을 선택하고 **열기**를 클릭합니다.
+{% include_relative snippets/snippet-clearbitmapcache.md %}1. **데칼 속성** 대화상자에서 옵션을 선택하고, **배치**를 클릭합니다.
+1. 점 입력 프롬프트에서 데칼을 배치할 위치를 모델에서 지정합니다.
+정확한 시퀀스는 선택된 데칼 유형( [평면형](#decal-planarmapping), [원통형](#decal-cylindricalmapping), 또는 [UV맵](#decal-uvmapping) )에 따라 달라집니다.
 
-###  **Edit Placement**
+###  **배치 편집**
 {: #decal-edit-placement}
-1. Click the **Edit Placement** button.
-1. At the **Select control point** prompt, use the graphical editor to change the placement of the decal.
-1. Press **Enter** when finished.
+1. **배치 편집** 단추를 클릭합니다.
+1. **제어점 선택** 프롬프트에서 그래픽 편집기를 사용하여 데칼의 위치를 변경합니다.
+1. 완료되면 **Enter** 키를 누릅니다.
 
 ###  **속성**
 {: #decal-properties}
-1. Click the **Properties** button.
-1. In the **Decal Properties** dialog box, use the controls to change the decal's properties.
+1. **속성** 단추를 클릭합니다.
+1. **데칼 속성** 대화상자에서 데칼 속성을 변경합니다.
 
 ###  **삭제**
 {: #decal-delete}
@@ -50,50 +50,50 @@ The precise sequence depends on the type of decal selected: [Planar](#decal-plan
 ###  **위로 이동** / **아래로 이동**
 {: #decal-movedown}
 {: #decal-moveup}
-When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
+여러 개가 겹쳐진 데칼을 하나의 개체에 적용할 때, 어떤 순서로 적용되는지가 매우 중요합니다. 데칼은 목록에 보이는 순서대로 적용됩니다. 목록에서 마지막 데칼이 가장 위에 적용됩니다.
 
->Click **Move Up** or **Move Down** to change a decal's position in the list.
+>목록에서 데칼의 위치를 변경하려면 **위로 이동** 또는 **아래로 이동**을 클릭합니다.
 
 ##### 평면 데칼을 배치하려면
-1. At the prompts, pick locations for the decal's **Width**, and **Height direction**.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+1. 프롬프트에서 데칼의 **너비**, **높이 방향** 위치를 지정합니다.
+1. **제어점 선택...** 프롬프트에서 이미지 크기, 회전 또는 위치를 제어할 제어점을 선택합니다.
+또는 데칼 배치를 완료하려면 **Enter** 키를 누릅니다.
 
 ### 옵션
 
 #### 이동
 데칼을 움직입니다. "이동의 기준점 새 위치" 프롬프트에서 Rhino Move 명령에서와 마찬가지로 원하는 위치를 입력합니다.
 
-#### UseImageAspectRatio
+#### 이미지_종횡비_사용
 스트레치된 데칼을 원래 비트맵의 종횡비에 맞춰 원래대로 되돌립니다.
 
-##### To place a cylindrical decal
-1. At the prompt, pick a location for the **Center point** of the cylinder.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### 원통형 데칼을 배치하려면
+1. 프롬프트에서 원통의 **중심점**을 지정합니다.
+1. **제어점 선택...** 프롬프트에서 이미지 크기, 회전 또는 위치를 제어할 제어점을 선택합니다.
+또는 데칼 배치를 완료하려면 **Enter** 키를 누릅니다.
 
-## Set or edit the decal placement using the control widget
+## 제어 위젯을 사용하여 데칼 배치를 설정 또는 편집
 안내: 평면형 매핑을 곡면에 사용할 때 전체 비트맵은 개체 서피스의 뒤에 있어야 합니다. 비트맵 일부가 개체 앞에 있다면 그 부분은 보이지 않습니다.
 
-#### To resize the decal width and height at the same time
+#### 데칼 너비와 높이를 동시에 크기 조정하려면
 
->Drag the control points at the corners of the control widget.
+>제어 위젯 모서리 위치로 제어점을 끌어옵니다.
 
-#### To change the decal height
+#### 데칼 높이를 변경하려면
 
->Drag the center control point on the top and bottom edges of the control widget.
+>제어 위젯의 위와 아래 가장자리 상에서 중간 제어점을 끌어옵니다.
 
-#### To change the decal width
+#### 데칼 너비를 변경하려면
 
->Drag the center control point on the left and right edges of the control widget.
+>제어 위젯의 왼쪽과 오른쪽 가장자리 상에서 중간 제어점을 끌어옵니다.
 
-#### To move the decal
+#### 데칼을 이동시키려면
 
->Drag the control point in the center of the control widget.
+>제어 위젯의 중간으로부터 제어점을 끌어옵니다.
 
-#### To rotate the decal
+#### 데칼을 회전시키려면
 
->Drag the x-, y-, or z-axis control point on the widget axis icon.
+>위젯 축 아이콘 상에서 x, y, 또는 z 축 제어점을 끌어옵니다.
 
 ## 데칼 속성
 {: #dialogbox-editdecal}
@@ -101,64 +101,63 @@ Or press **Enter** to complete the decal placement.
 
 ## 투영
 {: #projection}
-The mapping style determines how to project the decal onto the object. It is a good idea to draw construction lines in the scene to help accurately place decals. A rectangle drawn just behind a surface can act as a guide for a standard decal. Use object snaps for accurate placement.
+매핑 스타일은 데칼을 어떤 방식으로 개체에 투영하는지를 지정합니다. 장면에 구성평면을 그려 정확한 데칼 배치에 도움이 되게 하는 것이 좋습니다. 서피스 뒤에 그린 직사각형은 표준 데칼의 안내선 역할을 할 수 있습니다. 개체 스냅을 사용하여 정확하게 배치합니다.
 
-### Cylindrical
+### 원통형
 {: #decal-cylindricalmapping}
-
-###  
-The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
+원통형 매핑 유형은 와인 병에 레이블을 부착할 때처럼, 한 방향으로 곡면인 개체 상에 데칼을 배치할 때 유용합니다.
 원통형 투영은 비트맵의 세로축을 원통형의 축에 맞추고 가로축은 원통을 둘러싸이게 하여 비트맵을 원통에 매핑합니다.
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
-### Planar
-{: #decal-planarmapping}
 
-###  
+### 평면형
+{: #decal-planarmapping}
 Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
 모서리는 비트맵의 위치와 범위를 정의합니다. 직사각형의 비율이 비트맵과 동일하지 않다면 비트맵이 스트레치되거나 압축되어 직사각형에 맞춰집니다.
 평면형 매핑을 곡면에 사용할 때 전체 비트맵 투영은 개체 서피스의 뒤에 있어야 합니다. 비트맵 일부가 개체 앞에 있다면 그 부분은 보이지 않습니다.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
+
 ### UV 맵
 {: #decal-uvmapping}
-
-###  
 Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
 데칼이 개체 전체를 커버합니다. 데칼의 배치를 제어할 수 없습니다.
 UV 매핑은 이미지를 구부리고 늘리기 위해 서피스의 U 방향과 V 방향을 매개변수화하여 사용하므로, 사용자가 직접 배치할 필요가 없습니다.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
+
 ### 찾아보기
 {: #file-browse}
 이미피 파일을 바꿉니다.
+
 {% include_relative snippets/snippet-clearbitmapcache.md %}
+
 ## 세기
 {: #decalmappingstrength}
 
 ### 색
 {: #decal-color}
-Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](texture-properties-main.html#color).
+아래에 있는 재질에 대한 이미지 색의 상대적 세기를 다르게 설정합니다. [재질 텍스처 속성, 색의 세기](texture-properties-main.html#color)를 참조하십시오.
 
 ### 범프
 {: #decalmappingbump}
-Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](texture-properties-main.html#bump).
+범프 맵은 시뮬레이션된 그림자와 하이라이트 효과를 표면에 나타냅니다. [재질 텍스처 속성, 범프 세기](texture-properties-main.html#bump)를 참조하십시오.
 
-## Reflective finish
+## 반사 마무리
 {: #reflective-finish-and-highlight}
 재질 정의에서 제어되는 것과 동일한 속성을 제어합니다. 이 속성을 데칼의 영향을 받는 개체의 특정한 영역에 적용합니다. 기본적으로 데칼은 무광 마무리로 처리됩니다.
 
 ### 강도
-Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](advanced-material-properties-main.html#intensity).
+하이라이트의 세기를 조정합니다. 값이 크면 하이라이트 크기와 세기가 증가합니다. [고급 재질 속성, 강도](advanced-material-properties-main.html#intensity)를 참조하십시오.
 
-### Sharpness
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](advanced-material-properties-main.html#sharpness).
+### 선명도
+하이라이트의 크기를 설정합니다. 숫자가 작을수록 더 넓은 하이라이트가 지정됩니다. 숫자가 클수록 더 작은 하이라이트 영역으로 초점이 맞춰집니다. [고급 재질 속성, 선명도](advanced-material-properties-main.html#sharpness)를 참조하십시오.
 
-### Metallic
-Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](advanced-material-properties-main.html#metallic).
+### 금속
+기본색과 일치하도록 하이라이트 색을 설정합니다. [고급 재질 속성: 금속](advanced-material-properties-main.html#metallic)을 참조하십시오.
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
-## Advanced
+## 고급
 {: #advanced}
 
-### Double Sided
+### 양면
 {: #double}
 데칼이 서피스의 앞면과 뒷면에 모두 나타나게 합니다.
 
@@ -171,17 +170,17 @@ Sets the highlight color to match the base color. See [Advanced Material Propert
 
 ### 뒤로
 데칼 이미지의 뒤로부터 멀리 데칼을 투영합니다.
-![images/projectionbackward1.png](images/projectionbackward1.png)Front (left), back (right).
+![images/projectionbackward1.png](images/projectionbackward1.png)앞 (왼쪽), 뒤 (오른쪽).
 
 ### 앞으로
 데칼 이미지의 앞으로부터 멀리 데칼을 투영합니다.
-![images/projectionforward1.png](images/projectionforward1.png)Front (left), back (right).
+![images/projectionforward1.png](images/projectionforward1.png)앞 (왼쪽), 뒤 (오른쪽).
 
 ### 앞으로 &amp; 뒤로
 데칼을 데칼 이미지의 앞과 뒤로 모두 투영시킵니다.
 ![images/projectionforwardandback.png](images/projectionforwardandback.png)앞 (왼쪽), 뒤 (오른쪽).
 
 ### 투명도
-Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
+데칼의 투명도를 설정합니다. [투명도](advanced-material-properties-transparency.html)를 참조하십시오.
 IOR
-Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction)
+투명한 데칼의 굴절률을 설정합니다. [굴절률(index of refraction)](advanced-material-properties-transparency.html#index-of-refraction)을 참조하세요.

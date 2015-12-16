@@ -6,26 +6,26 @@ title: 환경 패널
 {: #environment-tab}
 Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
+The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
 
 Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
 ##### 이 명령은 어디에서 찾을 수 있습니까?
- 1. ![images/environments.png](images/environments.png)재질 탭
- 1. ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/environments.png](images/environments.png) 재질 편집기
+ 1. ![images/environments.png](images/environments.png)환경 탭
+ 1. ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/environments.png](images/environments.png) 환경 편집기
  1. ![images/menuicon.png](images/menuicon.png)메뉴 > 렌더링 메뉴 > 환경 편집기
  1. 명령 > EnvironmentEditor
 
-환경 편집기 패널은 별개의 섹션으로 나뉘어져 있습니다. 재질 유형에 따라 고급 패널이 달라질 수 있습니다.
+환경 편집기 패널은 별개의 섹션으로 나뉘어져 있습니다. 환경 유형에 따라 고급 패널이 달라질 수 있습니다.
 
-Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
-재질 패널
+색과 텍스처는 색 견본에서 원하는 색을 마우스로 선택하여 재질 편집기, [텍스처 팔레트](texturepalette.html), 또는 [환경 편집기](environmenteditor.html)의 색 견본/제어에 놓을 수 있습니다.
+환경 패널
 
  1. [배경 유형](#type)
- 1. [설정 막대](#material_list)
- 1. [환경 목록](#environment-list)
+ 1. [설정 막대](#settings)
+ 1. [환경 목록](#environment_list)
  1. [창 구분](#divider)
  1. [환경 속성 섹션](#properties)
  1. [이름](#name)
@@ -42,12 +42,12 @@ Select the type of background for the model.  [Environment](#flamingo-environmen
 이 막대를 사용하여 환경 목록을 탐색하세요.
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) 뒤로 화살표
-Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
+Walks back through the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) 앞으로 화살표
-Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
+Walks forward through the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 현재 선택된 환경 이름
 Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
 #### ![images/library_default.png](images/library_default.png) 도구 메뉴
@@ -61,14 +61,13 @@ This lists all the environments contained in the model. One Environment will be 
 
 From this list:
 
-* Click on an Environment to make it current. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
+* Click on an Environment to make it current. Once selected the environment's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
 * Scroll up and down in the list to see all the environments in the model.
-* Drag and drop an environment from this list onto any viewport to set it current.
 * Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
 * Right-click a thumbnail to display the Environment context menu
 * Right-click the blank area to display the New Environment Context Menu
 
-###  ![images/add_material.png](images/add_material.png) Add new environment
+###  ![images/add_material.png](images/add_material.png) 새 환경 추가
 {: #add_environment}
 Scroll down to the bottom of the Environment list to see the add icon.
 
@@ -79,15 +78,15 @@ The environments in the library act as templates for creating environments in th
 {: environment_context}
 This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
 
-### New Environment Context Menu
+### 새로운 환경 상황에 맞는 메뉴
 {: new_envrionment_context}
-This menus is available by right-clicking on a blank area of the Environment List.
+This menu is available by right-clicking on a blank area of the Environment List.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) 새로운 환경 만들기
+새로운 Flamingo 환경을 만듭니다.
 
-#### ![images/import.png](images/import.png) Import Environment from File...
-Use this command to select a previously exported Environment.
+#### ![images/import.png](images/import.png) 파일에서 환경 가져오기...
+이 명령을 사용하여 이전에 내보낸 환경을 선택합니다.
 
 #### ![images/paste.png](images/paste.png) 붙여넣기
 클립보드의 콘텐츠를 바탕으로 새로운 환경을 만듭니다.
@@ -110,39 +109,39 @@ Use this command to select a previously exported Environment.
 #### ![images/showpreview.png](images/showpreview.png) 미리보기 창 표시
 현재 선택된 썸네일의 미리보기 속성을 표시합니다. 미리보기 지오메트리, 크기. 배경, 회전 동작을 설정합니다.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) 플로팅
 조정 가능한 창에서 미리보기 이미지를 플로팅(floating)으로 설정합니다.
 
 #### 썸네일
 
-##### ![images/small.png](images/small.png) Small
+##### ![images/small.png](images/small.png) 작게
 썸네일 크기를 가장 작은 크기로 설정합니다.
 
-##### ![images/medium.png](images/medium.png) Medium
+##### ![images/medium.png](images/medium.png) 중간
 썸네일 크기를 중간 크기로 설정합니다.
 
-##### ![images/large.png](images/large.png) Large
+##### ![images/large.png](images/large.png) 크게
 썸네일 크기를 큰 크기로 설정합니다.
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in Grid mode.
-List mode always displays labels.
+##### ![images/showlabels.png](images/showlabels.png) 레이블 표시
+썸네일 이름 레이블을 그리드 모드에서 표시합니다.
+목록 모드는 항상 레이블을 표시합니다.
 
-##### ![images/showunits.png](images/showunits.png) Show Units
+##### ![images/showunits.png](images/showunits.png) 단위 표시
 크기를 모델 단위로 표시합니다.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 미리보기 자동 업데이트
 설정이 변경되면 그에 따라 자동으로 모든 미리보기를 업데이트합니다.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) 모든 미리보기 업데이트
+미리보기 자동 업데이트가 꺼져 있을 때 수동으로 미리보기를 업데이트합니다.
 
-## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
-{: divider}
+## [창 구분](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+{: #divider}
 Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
 
 ## [환경 속성 섹션](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
-{: properties}
+{: #properties}
 
 ### [환경 이름](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
@@ -158,24 +157,24 @@ Environment Panels will vary based on the type of environment and the current ac
 {: tools_menu}
 이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
-#### ![images/currentenvironment.png](images/currentenvironment.png) Set as Current Environment
+#### ![images/currentenvironment.png](images/currentenvironment.png) 현재 환경으로 설정
 This sets the target environment current.  The current environment will be used in the next rendering.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) 새로운 환경 만들기
+새로운 Flamingo 환경을 만듭니다.
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
-#### ![images/import.png](images/import.png) 파일에서 재질 가져오기
+#### ![images/import.png](images/import.png) 파일에서 환경 가져오기
 저장된 Rhino .renv 파일에서 환경을 가져옵니다.
 
 #### ![images/savetofile.png](images/savetofile.png) 파일에 저장
-Saves a environment to a Rhino .renv file.
+환경을 Rhino .renv 파일로 저장합니다.
 
-#### ![images/changetype.png](images/changetype.png) Change Type
+#### ![images/changetype.png](images/changetype.png) 유형 변경
 환경을 다른 유형으로 변경합니다.
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
+#### ![images/changetype.png](images/changetype.png) 유형 변경 (유사한 설정 복사)
 환경을 다른 유형으로 변경합니다.
 The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
 

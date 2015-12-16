@@ -1,7 +1,8 @@
 ---
+title: Flamingo Environment
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Flamingo Environment
+# ![images/environment.svg](images/environment.svg) {{page.title}}
 There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
 
 The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.

@@ -10,7 +10,9 @@ title: Material Image Properties
 ![images/solidcolors.png](images/textureset.png)
 
 Materials can be created from images. Scan photographs and real materials like wallpaper and carpet, create patterns in a paint program, or use images from other bitmap sources.
+
 Imagine that the material stretches infinitely in all directions in space. The material becomes visible only where an object passes through it. Patterns are repeated infinitely (tiled) in four directions at a specified scale.
+
 Small images that can be seamlessly tiled tend to work best. If the bitmap does not tile well, use the option to mirror the tiles. This guarantees matched edges.
 
 **Note:** To make a bitmap image cover only part of the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
@@ -114,7 +116,7 @@ Normally a Flamingo Image will apply to the main color channel of a material. Th
 This is the default setting.  An image will effect the [color](advanced-material-properties-main.html#color) of a material.
 
 ####  Specular color
-This will effect the color of [reflection channel](advanced-material-properties-main.html#highlight-color) based on the image color at that point.
+This will affect the color of [reflection channel](advanced-material-properties-main.html#highlight-color) based on the image color at that point.
 
 ####  Specular intensity
 This will change the [amount of reflection](advanced-material-properties-main.html#intensity) based on the grayscale of the image at that point.  This is used often in Texture Sets as a Specular Map.
@@ -127,13 +129,13 @@ This will adjust the sharpness vs blurriness of the [highlight](advanced-materia
 Affects the shape of the highlight.
 
 ####  Transparency
-This will effect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the grayscale of the image.
+This will affect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the grayscale of the image.
 
 ####  Translucency
-This will effect the amount of [transparency](advanced-material-properties-transparency.html#translucency) in the material based on the grayscale of the image.
+This will affect the amount of [translucency](advanced-material-properties-transparency.html#translucency) in the material based on the grayscale of the image.
 
 ####  Attenuation
-This will effect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the grayscale of the image.
+This will affect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the grayscale of the image.
 
 #### Offsets X/Y
 {: #advanced-x-y-offset}

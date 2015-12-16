@@ -3,7 +3,7 @@ title: Plant Editor
 ---
 <!-- TODO: This could use an update. -->
 
-# {{page.title}}
+# ![images/plants.svg](images/plants.svg) {{page.title}}
 {: #tree-editor}
 
 ### File Pulldown

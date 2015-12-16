@@ -1,7 +1,8 @@
 ---
+title: Libraries Panel
 ---
 
-# ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
+# ![images/libraries.svg](images/libraries.svg) {{page.title}}
 The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
 
 Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
@@ -14,7 +15,7 @@ Materials are simply files on your hard drive.  Library folders are simply Windo
 
 Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+To quickly navigate back to the Default Library locations use the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
 
 #### Organizing Libraries
 {: organizing_libraries}
@@ -52,7 +53,7 @@ There are three places to find the Libraries Options command.
 
  1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
  1. Menus > Tools pulldown > Options > Libraries.
- 
+
 
 ### Show render content
 Use this to show or hide the default render content location.
@@ -66,7 +67,7 @@ Sets a custom [library](libraries.html) location.  Changes the default location 
 ##### Browse button
 Open file browser to specify file.
 
-#### Show "Documents" folder
+#### Show Documents folder
 In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
 
 #### Show custom folders
