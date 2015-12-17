@@ -111,14 +111,14 @@ title: 데칼
 
 ### 평면형
 {: #decal-planarmapping}
-Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
+평면 매핑은 가장 일반적인 매핑 스타일입니다. 평면 또는 부드러운 곡면을 이루는 개체에 적합한 매핑입니다.
 모서리는 비트맵의 위치와 범위를 정의합니다. 직사각형의 비율이 비트맵과 동일하지 않다면 비트맵이 스트레치되거나 압축되어 직사각형에 맞춰집니다.
 평면형 매핑을 곡면에 사용할 때 전체 비트맵 투영은 개체 서피스의 뒤에 있어야 합니다. 비트맵 일부가 개체 앞에 있다면 그 부분은 보이지 않습니다.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
 
 ### UV 맵
 {: #decal-uvmapping}
-Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
+UV 매핑을 사용하는 데칼은 머리카락이나 나무 껍질 등의 개체처럼 데칼이 서피스에 맞춰 흐르고 늘어나는 경우에 유용합니다.
 데칼이 개체 전체를 커버합니다. 데칼의 배치를 제어할 수 없습니다.
 UV 매핑은 이미지를 구부리고 늘리기 위해 서피스의 U 방향과 V 방향을 매개변수화하여 사용하므로, 사용자가 직접 배치할 필요가 없습니다.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)

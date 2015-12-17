@@ -19,7 +19,7 @@ Render Farm(렌더 팜)은 2 대의 클라이언트 컴퓨터까지 무료로 �
 
 #### 공유된 팜 폴더
 {: farm-folder}
-The key to a functional render farm is a shared folder to which the master machine and all the client computers can access.  This is normally a shared network folder.  It can be a folder on the master machine or on a network.  The folder does not have to be assigned to the same name on each client, but each client does need full read/write/delete access to the folder.  The shared folder should have at least 20GB of available storage.
+기능적인 렌더 팜을 설정하기 위해, 마스터 컴퓨터와 다른 모든 클라이언트 컴퓨터가 액세스할 수 있는 공유 폴더를 설정하는 것이 중요합니다. 공유된 네트워크 폴더가 일반적으로 여기에 해당됩니다. 마스터 컴퓨터 또는 네트워크의 폴더일 수 있습니다. 이 폴더는 클라이언트마다 동일한 이름으로 지정될 필요는 없으나, 각각의 클라이언트는 해당 폴더를 읽고/쓰고/삭제하는 완전한 권한을 갖고 있어야 합니다. 공유 폴더는 사용 가능한 용량이 최소한 20GB여야 합니다.
 
 #### nXt 렌더 팜에는 두 가지 응용 프로그램이 있습니다:
 
@@ -32,18 +32,18 @@ The key to a functional render farm is a shared folder to which the master machi
 
 #### 팜 프로세스
 {: #the-farm-process}
- 1. To start a rendering using Flamingo nXt farm, instead of using the standard Render command, use the Render Farm *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
- 2. Render jobs are split into many different farm tasks. The Render Farm clients continuously check the farm output folder for new tasks. Each client will pick up a task and start to render. The Farm Monitor  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* is a good way to keep track of the job's progress.
- 3. Each farm client deposits the results in the farm folder under *job name* \Output.
- 3. As each client finishes with a job, it will continue to pick up new jobs as they are submitted to the farm.
- 4. Farm output will be in the [nXt image format (.nXtImage)](image-editor.html). Images in this format can be edited using the [nXt Image Editor](image-editor.html). The results can also be saved as TGA, PNG, TIF, and JPG files from the [nXt Image Editor](image-editor.html).
+ 1. Flamingo nXt 팜ㅇ르 사용하여 렌더링을 시작하려면, 일반적인 Render 명령을 사용하는 대신 렌더 팜 *(Flamingo nXt 5.0 메뉴 &gt; 렌더 팜)*을 사용합니다. 이 메뉴를 사용하면 렌더링 작업이 [팜 출력 폴더](options-flamingo.html#farm-output-folder)로 전송합니다. 모든 재질과 지원 정보는 자동으로 해당 작업과 함께 전송됩니다.
+ 2. 렌더링 작업은 수많은 팜 작업으로 분할됩니다. 렌더 팜 클라이언트는 팜 출력 폴더에서 새 작업 여부를 끊임없이 확인합니다. 각각의 클라이언트는 작업을 받아 렌더링을 시작합니다. 팜 모니터 *(Flamingo nXt 5.0 &gt; 렌더 팜 &gt; 팜 모니터...)* 를 사용하면 작업의 진행 과정을 확인할 수 있습니다.
+ 3. 각 팜 클라이언트는 작업 이름인 팜 폴더 (*작업 이름* \Output)에 작업 결과를 저장합니다.
+ 3. 각 클라이언트에서 작업이 완료된 후에는 팜으로 전송되는 새 작업을 받아 계속 처리합니다.
+ 4. 팜 출력은 [nXt 이미지 형식 (.nXtImage)](image-editor.html)으로 저장됩니다. 이 형식으로 된 이미지는 [nXt 이미지 편집기](image-editor.html)로 편집할 수 있습니다 결과물은 [nXt 이미지 편집기](image-editor.html)에서 TGA, PNG, TIF, JPG 파일로 저장할 수 있습니다.
 
-## Install and configure the Farm
+## 팜(Farm)의 설치와 설정
 {: #install}
-The Farmer render client and the Farm monitor are installed with Flamingo on the master Rhino machine.  For other client computers that do not have Rhino and Flamingo nXt, the Farmer client needs to be installed.
+팜 렌더 클라이언트와 팜 모니터는 Flamingo와 함께 마스터 Rhino 컴퓨터에 설치됩니다. Rhino와 Flamingo nXt가 없는 다른 클라이언트 컴퓨터에서는 Farmer 클라이언트를 설치해야 합니다.
 
 ##### Render Farmer 설치
-For machines that do not have Rhino and Flamingo installed, install the Farmer client:
+Rhino와 Flamingo가 설치되지 않은 컴퓨터에 Farmer 클라이언트를 설치합니다:
 
  1. 최신 [Render Farmer 소프트웨어](http://www.rhino3d.com/download/The-Farm/1.0/release)를 다운로드합니다.
  1. 다운로드한 설치 관리자 파일을 각각의 클라이언트 컴퓨터에 실행합니다.
@@ -55,7 +55,7 @@ For machines that do not have Rhino and Flamingo installed, install the Farmer c
 1. 아이콘을 [오른쪽 클릭](mouse-button-right.html)하고 복원을 선택합니다.
 1. nXt 파머 창의 옵션 메뉴에서 경로를 클릭하고 렌더 팜 폴더로의 경로를 선택합니다.
 
-On the computer with Rhino and Flamingo nXt set the Zoo folder in Rhino. From the Tools menu, click Options, set the common farm location to the [Farm output folder](options-flamingo.html#farm-output-folder).
+Rhino와 Flamingo nXt가 있는 컴퓨터에서, Zoo 폴더를 Rhino에서 설정합니다 도구 메뉴에서 옵션을 클릭하고 공용 팜 위치를 [팜 출력 폴더](options-flamingo.html#farm-output-folder)에 설정합니다.
 
 렌더 팜이 이제 구성되었습니다.
 
@@ -63,32 +63,32 @@ On the computer with Rhino and Flamingo nXt set the Zoo folder in Rhino. From th
 {: #using-the-render-farm-from-flamingo-nxt}
 현재 팜은 여러 대의 컴퓨터에 세 가지 방식으로 렌더링을 처리할 수 있습니다: 단일 렌더링 작업, 일괄 작업, 애니메이션.
 
-##### To verify that the client workstations are responding
-After starting the Render Farmer client on all the client computers:
+##### 클라이언트 워크스테이션이 반응하는지 확인하려면
+모든 클라이언트 컴퓨터에서 렌더 파머 클라이언트를 시작한 후:
 
- 1. On any of the computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
- 1. The client machines should appear in the upper list box.
- 1. Each Render Farmer client should be listed under the Machine list.  The Status should read Active.
+ 1. 어느 한 컴퓨터의 Windows 시작 메뉴에서 [Farm Monitor](#render-farm-monitor)를 클릭합니다.
+ 1. 클라이언트 컴퓨터가 창의 위쪽에 표시되어야 합니다.
+ 1. 각각의 Render Farmer 클라이언트는 Machine 목록에 표시되어 있어야 합니다.  Status(상태)는 Active (활성)이어야 합니다.
 
-If there is a problem with this, review the [install](#install) and [configuration topics](#configure-the-render-farm).
+관련 문제가 발생하면 [설치](#install)와 [설정 항목](#configure-the-render-farm) 을 다시 한 번 참조하세요.
 
 
-##### To submit a job to the render farm
-1. In Rhino, configure your rendering and view as you would for a normal rendering.
-1. On the Flamingo nXt menu, click Start Farm Render.
-1. The [Farm Job](#farm-job) dialog should appear.
-1. Verify the correct option and hit OK.
+##### 렌더 팜으로 작업을 전송하려면
+1. Rhino에서 일반적인 렌더링에서와 마찬가지로 렌더링과 뷰를 설정합니다. 
+1. Flamingo nXt 메뉴에서 팜 렌더링 시작을 클릭합니다.
+1. [팜 작업](#farm-job) 대화상자가 표시됩니다.
+1. 원하는 옵션을 확인하고 확인을 클릭합니다.
 
 
 ##### 팜의 모니터
-After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-monitor).
+작업을 렌더 팜으로 전송한 후, [팜 모니터](#render-farm-monitor)을 사용합니다.
 
- 1. On the master computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
- 1. A recent job should show up in the Jobs list. This can take a few minutes for large jobs.
- 1. The status of the job will change to active.
- 1. After a period of time, the machines above should pick up tasks with the same date.
- 1. The Percent complete increases as tasks are completed.
- 1. Watch for the job status Completed when the job is finished.
+ 1. 마스터 텀퓨터의 Windows 시작 메뉴에서 [Farm Monitor](#render-farm-monitor)를 클릭합니다.
+ 1. 최근 작업이 작업 목록에 표시됩니다. 작업의 크기가 크면 이 과정에 몇 분 정도 시간이 소요될 수 있습니다.
+ 1. 작업 상태가 active(활성)로 변경됩니다.
+ 1. 일정 시간이 지나면 위의 컴퓨터에서 동일한 날짜의 작업을 접수합니다.
+ 1. 작업이 완료됨에 따라 퍼센트가 증가합니다.
+ 1. 작업이 끝나면 상태가 Completed (완료)로 표시됩니다.
 
 
 ## 팜 작업 옵션
@@ -100,32 +100,32 @@ After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-m
 각각의 작업이 완료되면 출력 파일은 작업의 출력 폴더에서 찾을 수 있습니다.
 
 #### 작업 시작
-Job may be started immediately after submission, at a later time, or manually through the Farm monitor.
+전송 직후에 작업이 시작하거나, 나중에 시작할 수 있으며, 또는 팜 모니터를 통해 사용자가 시작을 직접 지정할 수 있습니다.
 
-#### Now
+#### 지금
 지금 작업을 시작합니다.
 
-#### Later (Manually)
-Start the job later using the nXt [Farm Monitor](#render-farm-monitor) to start the job.
+#### 나중에 (수동)
+nXt [팜 모니터](#render-farm-monitor)를 사용하여 나중에 시작합니다.
 
-#### After
-Start the job at a specified date and time.
+#### 시간 예약
+지정된 날짜와 시간에 작업을 시작합니다.
 
 #### 렌더링 제한 조건 패스
 {: #rendering-constraints}
 일괄 작업을 완료하는 데 필요한 패스의 수를 설정합니다. 자세한 안내는 [패스](documentproperties-flamingo.html#number-of-passes) 항목을 참조하세요.
 
 
-## Render Farm Monitor
+## 렌더 팜 모니터
 {: #render-farm-monitor}
-The Render Farm Monitor is a stand-alone program that reports the status of the client workstations and the jobs currently in the Farm. Jobs can be suspended and restarted from the monitor and a client workstation can be excluded from participating in the render farm.
+렌더 팜 모니터는 클라이언트 워크스테이션의 상태와 현재 팜(Farm)에서 실행 중인 작업을 보고하는 독립 실행형 프로그램입니다. 작업은 모니터에서 일시 중단시키거나 다시 시작할 수 있으며, 클라이언트 워크스테이션은 렌더 팜 참여에서 제외될 수 있습니다.
 
-To access the Farm Monitor from Rhino go to the Flamingo nXt 5.0 menu > Render Farm > Farm Monitor.
+Rhino에서 팜 모니터에 액세스하려면 Flamingo nXt 5.0 메뉴 > 렌더 팜 > 팜 모니터를 클릭합니다.
 
-To access the Farm Monitor from Windows, on the Start menu click **All Programs > nXt Render Farm > Farm Monitor**.
+Windows에서 팜 모니터에 액세스하려면 시작 메뉴에서 **모든 프로그램 > nXt Render Farm > Farm Monitor** 을 클릭합니다.
 
 #### 옵션
-Right-click a Machine or a Job to access options.
+컴퓨터또는 작업을 오른쪽 클릭하여 옵션에 액세스합니다.
 
 #### 새로 고침
 작업 목록을 새로 고칩니다.
@@ -147,14 +147,14 @@ Right-click a Machine or a Job to access options.
 
 ## 렌더 팜의 라이선스
 {: #licensing-the-render-farm-}
-The free version of the Render Farm lets two network computers (nodes) work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+Render Farm 무료 버전에서는 2개의 네트워크 컴퓨터(노드)에서 동시에 작업할 수 있습니다. 더 많은 네트워크 노드를 동시에 실행하고자 한다면 노드의 수에 제한이 없는 라이선스를  [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) 에서 구입하세요.
 
 라이선스를 구입하면 제품 키를 가지고 다음 순서로 팜 라이선스를 설정하여 사용하십시오.
 
 ##### 노드를 승인하려면
-1. Wait for any active farm jobs to complete before beginning your licensing.
-1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
-1. If the node is currently active, in the Windows system tray (on the taskbar), /mouse_button_right.htm');" id="a16" style="position: relative;">right-click the Render Farm icon, and then click **Close**.
+1. 라이선싱을 시작하기 전에 활성인 작업이 완료되기를 기다립니다.
+1. 제품 키를 네트워크 위치의 텍스트 파일에 저장하여 각각의 노드로 쉽게 잘라내기 및 붙여넣기 실행할 수 있게 합니다.
+1. 노드가 현재 활성 상태인 경우, Windows 시스템 트레이(작업표시줄에 위치)에서 렌더 팜 아이콘을 [오른쪽 클릭](mouse-button-right.html)하고 **닫기**를 클릭합니다.
 1. **Windows 시작** 단추를 클릭하고 **모든 프로그램**을 클릭합니다.
 nXt Render Farm 폴더에서 **Authorize Farm**을 클릭합니다.
 1. 편집 상자에서 귀하의 제품 키를 붙여넣고 **확인**을 클릭합니다.
@@ -162,7 +162,7 @@ nXt Render Farm 폴더에서 **Authorize Farm**을 클릭합니다.
 ##### 노드를 시작하려면
 1. **Windows 시작** 단추를 클릭하고 **모든 프로그램**을 클릭합니다.
 nXt Render Farm 폴더에서 **Render Farmer**를 클릭합니다.
-1.  트레이 아이콘을 오른쪽 클릭하고 메뉴에서 **복원**을 클릭합니다.
+1. 트레이 아이콘을 [오른쪽 클릭](mouse-button-right.html)하고, 메뉴에서 **복원**을 클릭합니다.
 1. 도움말 메뉴에서 **정보**를 클릭합니다.
 버전 숫자가 평가판인 경우에는 라이선스를 받을 수 없습니다.
 1. 렌더 파머 창을 최소화하여 트레이로 반환합니다.
