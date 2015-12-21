@@ -51,7 +51,7 @@ Rhino 도구모음 또는 Flamingo 조명 탭을 통해 조명을 삽입할 수 
 
 #### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) 개체를 조명으로 태그
 {: #tag-objects-as-lights}
-서피스, 솔리드를 비롯해 렌더링 가능한 개체는 광원으로 태그하여 조명의 속성을 부여할 수 있습니다. [배광](#light-distribution), [방향](#aim-light), [세기](#watts)도 적용할 수 있습니다. 조명으로 태그된 개체는 조명의 방향과 중심 위치를 나타내는 미리보기 위젯을 표시할 수 있습니다. 
+서피스, 솔리드를 비롯해 렌더링 가능한 개체는 광원으로 태그하여 조명의 속성을 부여할 수 있습니다. [배광](#light-distribution), [방향](#aim-light), [세기](#watts)도 적용할 수 있습니다. 조명으로 태그된 개체는 조명의 방향과 중심 위치를 나타내는 미리보기 위젯을 표시할 수 있습니다.
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *광원으로 태그된 LED 라이트와 헤드라이트*

@@ -179,7 +179,7 @@ Flamingo에는 특별한 환경인 *[기본 Flamingo 환경](environment.html)*�
 기본 동작은 [렌더링 옵션](http://docs.mcneel.com/rhino/5/help/ko-kr/options/rendering.htm) > [콘텐츠 형식이 변경되면 시슷한 설정 복사](http://docs.mcneel.com/rhino/5/help/ko-kr/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed) 상자의 현재 상태에 따라 결정됩니다. 이 확인란을 선택하면 기존 콘텐츠에서 호환되는 설정이 새로운 설정으로 복사됩니다.
 
 #### ![images/reset.png](images/reset.png) 기본값으로 다시 설정
-모든 환경 설정을 기본 단색 배경 (검정), 반사된 배경, 하늘과 굴절된 배경 보임으로 변경합니다. 
+모든 환경 설정을 기본 단색 배경 (검정), 반사된 배경, 하늘과 굴절된 배경 보임으로 변경합니다.
 
 #### ![images/copy.png](images/copy.png) 복사
 선택된 환경을 Windows 클립보드로 복사합니다. 클립보드는 편집기로 붙여넣기 실행되어 새 환경이 되거나, 폴더로 바로 붙여넣기 되어 [라이브러리](libraries.html) 파일이 됩니다.
