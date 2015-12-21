@@ -1,72 +1,73 @@
+﻿---
+title: 自動化彩現
 ---
----
 
-# Automated rendering
+# {{page.title}}
 
 
-## Batch rendering
+## 批次彩現
 {: #batch-rendering}
-Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
+批次彩現可設定一個工作清單，自動連續彩現數個場景。批次工作可以設定要彩現的視圖、解析度、處理數。批次工作可在本機彩現，或傳送到[彩現農場](render-farm.html)，批次彩現的工作清單會儲存在模型裡。
 
-##### Where can I find this command?
+##### 可以在哪找到這個指令?
 
- * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
+ * 功能表 > Flamingo nXt 5.0 > 更多工具 > 批次彩現
 
-### Batch Render Dialog
+### 批次彩現對話框
 {: #batch-render}
-Start by adding a job, then edit the properties to set up batch jobs.
+從新增工作開始，然後編輯工作的內容完成設定。
 
-#### Add
-Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
+#### 新增
+每個批次工作代表儲存在模型裡的一個視圖，按**新增**，從視圖清單選取模型裡的一個視圖將它加入工作清單。有工作被選取時其它按鈕才能使用。
 
-#### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+#### 刪除
+選取一個批次工作，按**刪除**，將此工作從工作列表移除。
 
-#### Properties
-Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
+#### 內容
+選取一個批次工作，按**內容**，開啟[批次彩現內容](#batch-render-properties)，可設定輸出的**檔案名稱**、**解析度**、**處理數**限制。
 
-#### Move Up
-Move the viewport name up in the list.
+#### 上移
+將選取的作業視窗名稱在清單中上移。
 
-#### Move Down
-Move the viewport name down in the list.
+#### 下移
+將選取的作業視窗名稱在清單中下移。
 
-#### Batch List
+#### 批次清單
 {: #batch-list}
-Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
+要彩現的視圖清單，雙擊一個工作可編輯它的[批次彩現內容](#batch-render-properties)。
 
-#### Rendering Status
-Displays pass, scan line, and elapsed time information about the progress of the batch process.
+#### 彩現狀態
+顯示批次彩現的進度資訊：處理數、掃描線、已使用時間。
 
-####  Stop Rendering
-Stops the batch process.
+####  停止彩現
+中止進行中的批次彩現工作。
 
-#### Render Batch Locally
+#### 本機批次彩現
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
+只使用本機電腦彩現批次工作，彩現影像會輸出至[批次彩現內容](#batch-render-properties)裡設定的位置。
 
-####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
+####  傳送批次工作至農場
+將批次工作傳送至[彩現農場](render-farm.html)，使用所有可用的農場客戶端電腦合力彩現批次工作，彩現影像會輸出至共用的農場輸出資料夾。
 
-### Batch Render Properties
+### 批次彩現內容
 {: #batch-render-properties}
 
-#### Viewport to render
-Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
+#### 彩現的作業視窗
+顯示批次工作彩現的視圖，進一步的說明請參考：[彩現標籤 > 彩現的作業視窗](render-tab.html#viewtorender)
 
-#### File name
-Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
+#### 檔案名稱
+按儲存按鈕 ![images/saveimageas.png](images/saveimageas.png) 指定彩現影像儲存的路徑與名稱。
 
-#### Alpha channel
-Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
+#### Alpha 通道
+在彩現影像裡儲存 Alpha 通道，進一步的說明請參考：[使用 Alpha 通道背景](environment-tab.html#alpha)
 
-#### Use document settings
+#### 使用文件設定
 {: #rendering-resolution}
-The default is to use the current document resolution settings to render.  If another resolution is needed, then uncheck this box and specify a resolution. See the [Render tab, Resolution](render-tab.html#resolution) topic for more details.
+預設為使用目前文件的解析度設定彩現，消勾選此核取方塊可自訂彩現解析度，進一步的說明請參考：[彩現標籤 > 解析度](render-tab.html#resolution)
 
-#### Rendering Constraints Passes
+#### 彩現限制處理數
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+設定一個批次工作用來完成彩現的處理數，進一步的說明請參考：[處理數](documentproperties-flamingo.html#number-of-passes)
 
 <!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
@@ -78,17 +79,17 @@ There are two ways to create animations in Rhino.  Animations can be configured 
 
 ##### To submit an animation job to the render farm
 1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+1. In the Configure Automated Render Command dialog, select **Render to farm**.
 &#160;
-Specify theJob name,and click theOKbutton.
+Specify the Job name,and click the OK button.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Set a type of animation from Rhino's Animation setup toolbar. Select Render Full as the Capture method.
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+Record the animation from the Animation toolbar. The render jobs will be sent to Render Farm.
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+When the jobs are finished in Render Farm, run the FlamingoNXtAutomateRender command again and select all the jobs in the dialog.
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+Click the Copy selected files to specified output folder button and select a folder where all the render images will be copied to.
 
 
 ## FlamingoNXtAutomateRender command
