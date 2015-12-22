@@ -89,7 +89,7 @@ For details on the render window menus and icons see the [Render Windows topic](
 
 ## Flamingo Tab
 {: #flamingo-tab}
-The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to managing the active Flamigno renderings.
+The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to manage the active Flamingo renderings.
 
 #### Save with alpha channel
 Saves 32-bit PNG, TIF, and BMP images including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  Use this checkbox and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
