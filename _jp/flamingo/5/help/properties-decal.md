@@ -1,7 +1,6 @@
 ---
 title: デカール
 ---
-<--TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
 
 # {{page.title}}
 デカールは、オブジェクトにマテリアルを用いて間接的にではなく直接適用できるタイリングしない画像マップです。デカールは、オブジェクトの色、反射、またはバンプの一部に変更を加えるのに用います。
