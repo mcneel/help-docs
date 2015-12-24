@@ -1,5 +1,5 @@
 ---
-title: マテリアルの詳細プロパティ
+title: 詳細マテリアルプロパティ
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
@@ -12,7 +12,7 @@ Flamingoには、[シンプルなマテリアル](material-type-simple.html)の�
 
 > [名前](#name)
 > [マテリアルプロシージャ](#procedures)
-> [詳細マテリアルのプロパティ](#advanced-materials-properties)
+> [詳細マテリアルプロパティ](#advanced-materials-properties)
 > [反射仕上げ](#reflective-finish-and-highlight)
 > [透明度のプロパティ](#transparency)
 > [プロシージャルテクスチャ](#bump-patterns)
@@ -47,7 +47,7 @@ Rhinoのモデルにあるマテリアルの名前です。マテリアルはRhi
  1. プロシージャウィンドウで、プロシージャ名を右クリックします。
  2. メニューで削除をクリックします。
 
-## マテリアルの詳細プロパティ
+## 詳細マテリアルプロパティ
 {: #advanced-materials-properties}
 
 {% include_relative snippets/snippet-material-color-select.md %}
