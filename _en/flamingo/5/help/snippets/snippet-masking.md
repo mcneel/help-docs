@@ -1,4 +1,4 @@
-
+﻿
 ### Masking
 Obscures portions of the image based on either a color value or an alpha channel stored in the image. This allows textures to have complex shaped boundaries and create complex effects such as holes in a surface.
 

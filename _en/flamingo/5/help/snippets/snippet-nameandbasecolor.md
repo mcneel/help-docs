@@ -1,4 +1,4 @@
-### Color
+﻿### Color
 Controls the local color for the material. All materials have a base color. [More about color...](select-color.html) 
 
 #### Color swatch selector

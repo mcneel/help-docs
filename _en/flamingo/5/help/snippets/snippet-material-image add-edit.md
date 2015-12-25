@@ -1,4 +1,4 @@
-##### To add a new image:
+﻿##### To add a new image:
  * Click on the *(empty - Click to assign)* text and then select and image in the file dialog.
  * Or, click the Edit Image ![images/edit_image.png](images/edit_image.png) button and select an images in the file dialog.
 

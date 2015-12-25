@@ -1,4 +1,4 @@
----
+﻿---
 title: Content Filters
 ---
 <!-- TODO: This is an orphan page, but needs to be linked to from the Material Libraries page -->
