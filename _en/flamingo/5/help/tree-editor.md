@@ -1,4 +1,4 @@
-﻿---
+---
 title: Plant Editor
 ---
 <!-- TODO: This could use an update. -->

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Sun and Sky
 ---
 

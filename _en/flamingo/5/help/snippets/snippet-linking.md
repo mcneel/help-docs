@@ -1,4 +1,4 @@
-﻿
+
 #### Linking options
 Specifies how the image file will be linked to materials.
 

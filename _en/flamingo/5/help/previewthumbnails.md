@@ -1,4 +1,4 @@
-﻿---
+---
 title: Preview Properties
 ---
 

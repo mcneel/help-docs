@@ -1,4 +1,4 @@
-﻿---
+---
 title: Flamingo Command List
 ---
 

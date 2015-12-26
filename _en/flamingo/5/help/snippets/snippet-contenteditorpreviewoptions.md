@@ -1,4 +1,4 @@
-﻿
+
 #### ![images/floatingpreview.png](images/floatingpreview.png) Floating Preview
 Floats the preview image in a resizable window.
 

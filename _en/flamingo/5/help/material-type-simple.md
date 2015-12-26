@@ -1,4 +1,4 @@
-﻿---
+---
 title: Basic Material Properties
 ---
 # ![images/paint.svg](images/paint.svg) {{page.title}}

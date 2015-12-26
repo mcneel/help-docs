@@ -1,4 +1,4 @@
-﻿
+
 
 ##### Name filter
 Use wildcards to select content items by name.

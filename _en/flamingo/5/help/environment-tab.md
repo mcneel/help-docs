@@ -1,4 +1,4 @@
-﻿---
+---
 title: Environment Panel
 ---
 

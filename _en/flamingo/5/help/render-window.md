@@ -1,4 +1,4 @@
-﻿---
+---
 title: Render Window
 ---
 

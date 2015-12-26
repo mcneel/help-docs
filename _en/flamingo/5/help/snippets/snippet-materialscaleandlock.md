@@ -1,4 +1,4 @@
-﻿
+
 #### X/Y/Z Scale
 Changes the absolute size of the pattern in the x-, y-, and z-directions.
 

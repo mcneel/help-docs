@@ -1,4 +1,4 @@
-﻿### Assign material by
+### Assign material by
 Using a plug-in library, rendering properties can be assigned to layers, or to objects that will be used with the basic Rhino renderer.
 
 #### Layer

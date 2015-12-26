@@ -1,4 +1,4 @@
-﻿
+
 #### Plan control
 
 ![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}

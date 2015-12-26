@@ -1,4 +1,4 @@
-﻿---
+---
 ---
 
 <!-- TODO: This is a combination of the old information here and the Rhino render Windows.  These two still need to be combined. -->

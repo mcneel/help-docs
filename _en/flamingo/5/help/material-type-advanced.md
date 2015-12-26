@@ -1,4 +1,4 @@
-﻿---
+---
 title: Advanced Material Properties
 ---
 

@@ -1,4 +1,4 @@
-﻿Preview Properties
+Preview Properties
 Preview thumbnail images and the background area between thumbnail images both have context menus.
 
 #### Thumbnail preview actions

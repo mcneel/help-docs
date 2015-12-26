@@ -1,4 +1,4 @@
-﻿---
+---
 title: Flamingo Help Index
 ---
 
