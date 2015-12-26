@@ -1,4 +1,4 @@
-﻿---
+---
 title: Flamingo nXt 快速入門
 ---
 
