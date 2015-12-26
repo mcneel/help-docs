@@ -1,4 +1,4 @@
-﻿---
+---
 title: Flamingo nXt 文件內容
 ---
 

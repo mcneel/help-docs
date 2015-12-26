@@ -1,4 +1,4 @@
-﻿---
+---
 title: 彩現內容過濾器
 ---
 <!-- TODO: This is an orphan page, but needs to be linked to from the Material Libraries page -->

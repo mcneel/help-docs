@@ -1,4 +1,4 @@
-﻿---
+---
 title: Flamingo 指令清單
 ---
 
