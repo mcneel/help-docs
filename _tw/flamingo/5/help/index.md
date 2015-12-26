@@ -1,4 +1,4 @@
----
+﻿---
 title: Flamingo 說明索引
 ---
 
@@ -28,7 +28,7 @@ title: Flamingo 說明索引
 
 
 # ![images/flamingotab.svg](images/flamingotab.svg) {{local_categories.name}}
-{%%}
+{% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}
 {% for topic in category.topics %}
