@@ -4,11 +4,11 @@ title: 環境パネル
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
 {: #environment-tab}
-環境はレンダリングの背景に表示されるだけではなく、モデルを取り囲む無限の球をコントロールします。シーンのオブジェクトは、環境を反射、そして屈折します。この環境の球は、背景効果のための参照サーフェスであり、選択できるオブジェクトではありません。
+環境はレンダリングの背景に表示されるだけではなく、モデルを取り囲む無限の球をコントロールします。シーンのオブジェクトは、環境を反射、そして屈折させます。この環境の球は、背景効果のための参照サーフェスであり、選択できるオブジェクトではありません。
 
-環境は、背景や反射の目に見える部分に影響します。シーンの照明に影響する効果については、[空](sun-and-sky.html)のヘルプトピックを参照してください。
+環境は、反射や背景の目に見える部分に影響します。シーンの照明に影響する効果については、[空](sun-and-sky.html)のヘルプトピックを参照してください。
 
-Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれる特別な環境が用意されています。この環境は、現在の[照明プリセット](lighting-tab.html)に同期されます。照明プリセット](lighting-tab.html)を使用することで、照明と環境が適切なシーンのデフォルトに設定されます。
+Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれる特別な環境が用意されています。この環境は、現在の[照明プリセット](lighting-tab.html)に同期されます。[照明プリセット](lighting-tab.html)を使用することで、照明と環境が適切なシーンのデフォルトに設定されます。
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
@@ -18,7 +18,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
  1. ![images/menuicon.png](images/menuicon.png)メニュー > レンダリングプルダウン > 環境エディタ
  1. コマンド > EnvironmentEditor
 
-環境エディタパネルは、個別のセクションに分かれています。環境のタイプに応じて、高度な（詳細）設定パネルは異なることがあります。
+環境エディタパネルは、個別のセクションに分かれています。環境のタイプに応じて、詳細設定パネルは異なることがあります。
 
 色やテクスチャは色見本からドラッグして、どのような他の色見本、またはマテリアルエディタ、[テクスチャパレット](texturepalette.html)、または[環境エディタ](environmenteditor.html)にもドロップすることができます。
 環境パネル
@@ -33,7 +33,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 
 ## [背景のタイプ](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #type style="clear: both;"}
-モデルの背景のタイプを選択します。[環境](#flamingo-environment)はすべてを含んだレンダリング環境で、Flamingoのデフォルト設定です。他の3つの設定は、古い形式の背景の定義方法で、「環境」に比べて非常にシンプルな設定コントロールが表示されます。詳細については、[Rhinocerosのシンプルな背景](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings)のトピックを参照してください。
+モデルの背景のタイプを選択します。「[環境](#flamingo-environment)」はすべてを含んだレンダリング環境で、Flamingoのデフォルト設定です。他の3つの設定は、古い形式の背景の定義方法で、「環境」に比べて非常にシンプルな設定コントロールが表示されます。詳細については、[Rhinocerosのシンプルな背景](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/environmenteditor.htm#Basic_settings)のトピックを参照してください。
 
 残りのこのヘルプトピックは、環境のタイプについて説明します。
 
@@ -42,10 +42,10 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 このバーを使用して、環境のリストを順番に表示します。
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) 戻る矢印
-現在の環境または前に選択された環境をうしろ向きの順番で表示します。例えば、反射または屈折レイヤのある環境です。反射または屈折の詳細設定から親環境に戻るのにこの矢印を使用してください。
+現在の環境または以前に選択された環境に戻ります。例えば、反射または屈折の層のある環境です。反射または屈折の詳細設定から親環境に戻るのにこの矢印を使用してください。
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) 進む矢印
-前に選択された環境を前向きの順番で表示します。例えば、反射または屈折レイヤのある環境です。反射または屈折の詳細設定から親環境に進むのにこの矢印を使用してください。
+以前に選択された環境から戻ります。例えば、反射または屈折の層のある環境です。反射または屈折の詳細設定から親環境に進むのにこの矢印を使用してください。
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 現在選択されている環境名
 現在の環境名と編集レベルを表示します。例えば、反射または屈折レベルがある場合、「>」が表示されます。現在の環境を確認できる場所です。
@@ -59,9 +59,9 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 {: #environment_list}
 ここにはモデルに含まれるすべての環境が表示されます。1つの環境が現在の環境として選択されます。現在の環境はレンダリングに使用されます。現在の環境には、黄色の枠が表示されます。
 
-このリストでは次のことが行えます。
+リストを使って次のことが行えます。
 
-* 環境をクリックして、現在の環境に設定できます。選択されると、環境のプロパティが下のパネルに表示されます。詳細については、[レンダリングマテリアルのプロパティ](#properties)を参照してください。
+* 環境をクリックして、現在の環境に設定できます。選択されると、環境のプロパティが下のパネルに表示されます。詳細については、[環境のプロパティ](#properties)を参照してください。
 * リストを上下にスクロールして、モデルのすべての環境を見ることができます。
 * 新規環境追加ボタン ![images/add_material.png](images/add_material.png) を使用して、リストの一番最後に新規環境を追加することができます。
 * サムネイルを右クリックすると、環境のコンテクストメニューを表示することができます。
@@ -71,7 +71,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 {: #add_environment}
 追加アイコンは、環境リストを一番下までスクロールしたところに表示されます。
 
-環境のレンダリングコンテクスト[ライブラリ]を開きます。
+環境のレンダリングコンテクスト[ライブラリ](libraries.html)を開きます。
 ライブラリの環境は、モデルの環境を作成するためのテンプレートしての役割をします。
 
 ### 環境のコンテクストメニュー
@@ -92,7 +92,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 クリップボードの内容に基づいて新規環境を作成します。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) インスタンスとしてペースト
-クリップボードの内容に基づいて、インスタンシングによって元にリンクされる新規環境を作成します。
+クリップボードの内容に基づいて、インスタンシングによって元の環境にリンクされている新規環境を作成します。
 
 #### ![images/grid.png](images/grid.png) グリッド
 プレビューをサムネイルのグリッドとして表示します。
@@ -158,7 +158,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 これらの設定は、サムネイルプレビューやサムネイル背景の右クリックコンテクストメニューにも表示されます。
 
 #### ![images/currentenvironment.png](images/currentenvironment.png) 現在の環境として設定
-ターゲットの環境を現在の環境に設定します。現在の環境は、次のレンダリングで使用されます。
+ターゲットの環境を現在の環境に設定します。現在の環境は、次回のレンダリングで使用されます。
 
 #### ![images/toolbarlus.png](images/toolbarplus.png) 新規環境を作成
 新規Flamingo環境を作成します。
@@ -176,7 +176,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 
 #### ![images/changetype.png](images/changetype.png) タイプを変更 (類似の設定をコピー)
 環境を異なるタイプに変更します。
-デフォルトの動作は、[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [コンテンツのタイプが変更された際に類似の設定をコピー](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)ボックスの現在の状態に依存します。チェックマークが付いている場合、古いコンテンツからの互換性のある設定が新しいコンテンツにコピーされます。
+デフォルトの動作は、[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/ja-jp/options/rendering.htm) >  [コンテンツのタイプが変更された際に類似の設定をコピー](http://docs.mcneel.com/rhino/5/help/ja-jp/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)ボックスの現在の状態に依存します。チェックマークが付いている場合、古いコンテンツからの互換性のある設定が新しいコンテンツにコピーされます。
 
 #### ![images/reset.png](images/reset.png) デフォルトにリセット
 すべての環境の設定をデフォルトの指定色の背景（黒）、反射背景を空、屈折背景を表示背景にします。
@@ -188,7 +188,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 クリップボードの内容に基づいて新規環境を作成します。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) インスタンスとしてペースト
-クリップボードの内容に基づいて、インスタンシングによって元にリンクされる新規環境を作成します。
+クリップボードの内容に基づいて、インスタンシングによって元の環境にリンクされている新規環境を作成します。
 
 #### ![images/delete.png](images/delete.png) 削除
 選択された環境を削除します。
@@ -197,7 +197,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 選択された環境の名前を変更します。
 
 #### ![images/duplicate.png](images/duplicate.png) 複製
-選択された環境を同じ設定で新規環境にコピーします。
+選択された環境を同じ設定でコピーし、新規環境を作成します。
 
 #### ![images/removeinstancing.png](images/removeinstancing.png) インスタンシングを取り除く
 [インスタンスされた](#paste-as-instance)環境間の接続を取り除きます。
