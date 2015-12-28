@@ -19,7 +19,7 @@ By using the nXt Image Editor, you can:
 
 To launch the editor
 
->On the **Flamingo nXt** menu, click **Utilities &gt; Flamingo nXt Image Editor**.
+>On the **Flamingo nXt 5.0** menu, click **More Tools &gt; Flamingo nXt Image Editor**.
 
 ## File menu
 {: #file-menu}
