@@ -3,8 +3,8 @@ title: Flamingo Environment
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
-<!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
-There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
+<!-- Is it "... environments in Rhino" or "in Flamingo" in the following sentence? Yes, Rhino now handles many environment types.  Flamingo Environment is one of the types.-->
+There are many types of [environments in Rhino](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm). This topic will address the Flamingo Environment type.
 
 The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
 
@@ -30,13 +30,11 @@ There are three major effects of environment in a rendering:
 >[Reflective Background](#advanced-background-reflected-sky)
 >[Refractive Background](#advanced-background-refracted-sky)
 
-<!-- TODO: Does the following sentence make sense? Is there something missing? -->
-The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
+The Visible Background is the basic background color of the scene.  The visible background is in the general properties panel. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
 
 #### Intensity
 {: #background-intensity}
-<!-- TODO: Color range normally is from 0-255... -->
-Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
+Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 255 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
 
 #### Background type
 {: #background-type}
@@ -46,7 +44,6 @@ Specifies the color scheme that will fill the background of the rendered image. 
 > [Solid and gradient color](#color-backgrounds)
 > [Image](#environment-image)
 > [HDR and planar HDR images](#hdr-background)
-
 
 ## Sky Background
 {: #environment-sky}
@@ -119,8 +116,8 @@ These are angle readouts of the Top, Middle, and Bottom colors in the current gr
 
 ## Image Background
 {: #environment-image}
-<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
-A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+
+A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A photograph, a scanned artwork, or an image created with an paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
 *A planar image set as a background.*
