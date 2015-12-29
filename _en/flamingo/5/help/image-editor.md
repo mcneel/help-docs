@@ -5,7 +5,7 @@ title: Image Editor
 # {{page.title}}
 The nXt Image Editor can edit native image files (.nXtImage) produced by any of the nXt platforms. These native files retain all of the information gathered during rendering.
 By using the nXt Image Editor, you can:
-<!-- TODO: This page needs to be updated.  One of the last we will work on. The image editor is not used much.-->
+
 
 > Adjust the [tone operator](image-editor.html#tone-mapping) settings.
 > Change the intensity of any lighting channel.
@@ -217,7 +217,7 @@ The distance of each pixel from the viewer in meters. Negative values indicate a
 The name of the material used to render the pixel.
 
 ## FX Settings
-<!-- TODO: Do we want some information here? -->
+Special Effects can be added to an image.  Many of these effects use the extra information the NXTimage format stores.  For instance the glare uses luminance space working on actual light values and the haze uses distance in the image.
 
 ### Haze
 {: #haze}
