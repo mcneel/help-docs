@@ -8,7 +8,7 @@ title: 光源
 
 ## 光源タブ
 {: #light-tab}
-光源タブは、シーンのすべての人工光源の一覧を表示します。このトピックでは、Flamingo特有の光源タブについて説明します。[Rhinoの光源タブ](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm)もあります。FlamingoとRhinoは、これらの2つのタブの間で光源設定を同期化します。Flamingoの光源タブではより多くの[光源のプロパティ](#light-properties)が使用できるので、Rhinoの光源タブよりもフレキシブルです。
+光源タブは、シーンのすべての人工光源の一覧を表示します。このトピックでは、Flamingo特有の光源タブについて説明します。[Rhinoの光源タブ](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/lights.htm)もあります。FlamingoとRhinoは、これらの2つのタブの間で光源設定を同期化します。Flamingoの光源タブではより多くの[光源のプロパティ](#light-properties)が使用できるので、Rhinoの光源タブよりもフレキシブルです。
 
 <!-- TODO: There should be some mention that the Lights tab only is available for some of the Lighting presets -->
 <!-- TODO: #### Is this supposed to be a code? It's showing up as #### -->
@@ -43,7 +43,7 @@ Flamingoは次の光源タイプをサポートします。
 
 光源タブを右クリックすると、[より多くのオプション](#additional-options)を表示するメニューが表示されます。
 
-[光源のプロパティ](#light-properties)は、光源をピックし、 [オブジェクトのプロパティパネル](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm)の光源のプロパティアイコン ![images/spotlightbutton.png](images/spotlightbutton.png) をクリックしてアクセスできます。
+[光源のプロパティ](#light-properties)は、光源をピックし、 [オブジェクトのプロパティパネル](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/properties.htm)の光源のプロパティアイコン ![images/spotlightbutton.png](images/spotlightbutton.png) をクリックしてアクセスできます。
 
 ## 光源のタイプ
 {: #light-types}
@@ -93,11 +93,11 @@ FlamingoがRhinoの現在のレンダリングアプリケーションである�
 
 #### ![images/lightbulbon.png](images/lightbulbon.png) オン/オフ
 {: #on}
-光源のオンとオフを切り替えます。光源テーブル（表）で、電球アイコンが黄色の場合、光源はオンです。電球アイコンがグレーの場合は、レンダリングで光源はオフになります。アイコンをダブルクリックすると、オン/オフを切り替えられます。プロパティダイアログでは、オン/オフのチェックボックスが表示されます。
+光源のオンとオフを切り替えます。光源テーブル（表）で電球アイコンが黄色の場合、光源はオンです。電球アイコンがグレーの場合は、レンダリングで光源はオフになります。アイコンをダブルクリックすると、オン/オフを切り替えられます。プロパティダイアログにはオン/オフのチェックボックスが表示されます。
 
 #### 表示
 {: #visible}
-デフォルトでは、光源はレンダリングに表示されますが、この表示プロパティのチェックマークを外すと、それが表示されなくなります。光源の投げかける光はｼｰﾝで表示されます。
+デフォルトでは、光源はレンダリングに表示されますが、この表示プロパティのチェックマークを外すと、それが表示されなくなります。光源が投げかける光はシーンで表示されます。
 
 #### 配光 *([タグ付けされたオブジェクトのみ](#tag-objects-as-lights))*
 {: #light-distribution}
