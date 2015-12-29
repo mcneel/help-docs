@@ -10,7 +10,7 @@ title: Flamingo nXt 文件內容
 <!-- These locations are not correct.  They need to be updated. -->
 
  1. ![images/icon-render.png](images/icon-render.png)彩現工具工具列 > ![images/environments.png](images/environments.png) 材質編輯器
- 1. ![images/menuicon.png](images/menuicon.png)功能表 > 彩現功能表 > 環境編輯器
+ 1. ![images/menuicon.png](images/menuicon.png)功能表 > 彩現 > 環境編輯器
  1. 指令 > EnvironmentEditor
 
 ## 材質
