@@ -1,238 +1,239 @@
+﻿---
+title: 材質編輯器面板
 ---
----
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Materials Editor Panel
-Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
+# ![images/paint.svg](images/paint.svg) {{page.title}}
+材質有顏色、反射、透明、貼圖、凹凸... 許多設定，預設的材質顏色是白色，光澤度、反射度、透明度皆為 0。以 Flamingo 彩現搭配 Flamingo 材質可得到最好的效果。
 
-Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.
+材質可賦予給圖層、物件、圖塊，材質可用拖放至物件或圖層的方式賦予，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
 
-Once assigned, materials are stored in the model. The material, textures, and all support files for rendering can be stored within the Rhino model with properly set [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm).
+[彩現選項](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm)的**將支援的檔案儲存在 3dm 檔案裡**起用時，材質賦予給物件或圖層後，材質與它使用的圖片會儲存在模型檔案裡。
 
-Materials, environments, and textures are stored in the model, but rendering content can also be saved to files that can be shared between models. Content can be dragged between Rhino sessions and into a folder. Color swatches can be dragged and dropped in the same way. The [Libraries Panel](libraries.html) displays the default content folder. Use this to drag and drop content into the model or to drag and drop model content to an external file.
+材質、環境、貼圖的設定都儲存在模型檔案裡，也可以匯出至檔案再匯入其它模型、從 Rhino 裡拖放至外部的資料夾，或是在兩個 Rhino 視窗之間拖放，顏色方塊的顏色也可以如此操作。[材質庫面板](libraries.html)顯示的是預設的材質庫資料夾，這裡的檔案可以拖放到作業視窗裡的物件，材質、環境、貼圖也可以拖放至這裡。
 
 ![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map .float-img-right}
 
-##### Where can I find this command?
-There several options to find the Materials tab.
+##### 可以在哪找到這個指令?
+材質面板可從三個地方開啟。
 
-* ![images/materialtab.png](images/materialtab.png)Materials tab
-* ![images/icon-render.png](images/icon-render.png)Render Tools toolbar > ![images/materialtab.png](images/materialtab.png) Material Editor
-* Menus > Render Pulldown > Materials Editor
-* On the Command line type MaterialEditor
+* ![images/materialtab.png](images/materialtab.png)材質面板
+* ![images/icon-render.png](images/icon-render.png)彩現工具工具列 > ![images/materialtab.png](images/materialtab.png) 材質編輯器
+* 功能表 > 彩現 > 材質編輯器
+* 從指令行執行 MaterialEditor 指令。
 
 The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
 
-You can drag colors and textures from the color swatch and drop onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+材質編輯器、[貼圖面板](texturepalette.html)、[環境編輯器](environmenteditor.html)的任何顏色方塊與貼圖都可以相互拖放。
 
-##### Materials Panel
+##### 材質面板
 
- 1. [Settings Bar](#settings)
- 1. [Material List](#material_list)
- 1. [Window Divider](#divider)
- 1. [Material Properties Section](#properties)
- 1. [Name](#name)
- 1. [Material Properties Panels](#panels)
+ 1. [設定列](#settings)
+ 1. [材質清單](#material_list)
+ 1. [視窗分隔條](#divider)
+ 1. [材質內容區](#properties)
+ 1. [名稱](#name)
+ 1. [材質內容面板](#panels)
 
-## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [設定列](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #settings .clear-img}
-Use this bar to navigate the material during its development.
+可用來瀏覽材質裡的設定。
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to get back to the parent material from the texture details.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) 向後按鈕
+材質可能有許多層的設定頁面，**向後**按鈕可回到上一個使用的頁面，例如：在材質 A 的貼圖頁面選取材質 B，按**向後**按鈕可回到材質 A 的貼圖頁面。
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the recently used texture from the parent material.
-
-
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
-
-#### ![images/library_default.png](images/library_default.png) Tools menu
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) 向前按鈕
+材質可能有許多層的設定頁面，**向前**按鈕可回到下一個使用的頁面，例如：在材質 A 的貼圖頁面選取材質 B，按**向後**按鈕回到材質 A 的貼圖頁面，按**向前**按鈕可再回到材質 B。
 
 
-## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 目前選取的材質的名稱
+顯示目前選取的材質的名稱與所在的設定頁面， For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
+
+#### ![images/library_default.png](images/library_default.png) 工具功能表
+顯示[工具功能表](#tools-menu)，工具功能表有與材質相關的許多指令與設定。
+
+
+## [材質清單](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #material_list}
-This lists all the materials contained in the model. From this list:
+列出模型使用的所有材質，這裡可以：
 
-* Scroll up and down in the list to see all the materials in the model.
-* Drag and drop a material from this list onto a layer in the [Layer Panel](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm) or directly onto an Object to assign it to an Object. See [Material Assignments](material_assignment.html) for more information.
-* Add a new Material using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
+* 上下捲動檢視所有的材質。
+* 將材質拖放至[圖層面板](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)裡的圖層，或直接拖放至物件賦予材質，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
+* 按材質清單末端的**新增**按鈕 ![images/add_material.png](images/add_material.png) 建立新材質。
 
 
-* Click on each material to select it. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information.
-* Right-click a thumbnail to display the Material context menu.
-* Right-click the blank area to display the New Material Context Menu.
+* 選取的材質的內容會顯示在下方的面板，詳細說明請參考[Render 材質內容](#properties)主題。
+* 在材質縮圖上按右鍵可彈出**材質功能表**。
+* 在空白的位置按右鍵可彈出**新材質功能表**。
 
-###  ![images/add_material.png](images/add_material.png) Add new material
+###  ![images/add_material.png](images/add_material.png) 建立新材質
 {: #add_material}
-Scroll down to the bottom of the Material list to see the add icon.
+按材質清單末端的**新增**按鈕。
 
-Opens the Render Content [library](libraries.html) of materials.
-The materials in the library act as templates for creating materials in the model.
+開啟內建的彩現[材質庫](libraries.html)。
+內建的材質可做為目前的模型建立新材質的範本。
 
-### Material Context Menu
+### 材質功能表
 {: material_context}
-This menu is available by right-clicking on a material listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+在一個材質上按右鍵可彈出此功能表，此功能表提供的功能請參考[工具功能表](#tools_menu)。
 
-### New Material Context Menu
+### 新材質功能表
 {: new_material_context}
-This menu is available by right-clicking on a blank area of the Material List.
+在材質清單空白的位置按右鍵可彈出此功能表。
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Material
-Creates a new basic matte white material.
+#### ![images/toolbarlus.png](images/toolbarplus.png) 建立新材質
+建立一個基本的平光白色材質。
 
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new material based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) 貼上
+將複製到剪貼簿的材質貼上建立另一個材質。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new material based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 貼上為引例
+將複製到剪貼簿的材質貼上建立另一個材質，此材質的設定與來源的材質互相連結。
 
-#### ![images/grid.png](images/grid.png) Grid
-Displays the previews as a grid of thumbnails.
+#### ![images/grid.png](images/grid.png) 圖示
+以預覽縮圖顯示。
 
-#### ![images/list.png](images/list.png) List
-Displays the previews as a list of thumbnails.
+#### ![images/list.png](images/list.png) 清單
+以有名稱的預覽縮圖顯示。
 
-#### ![images/tree.png](images/tree.png) Tree
-Displays the previews as a tree showing nesting.
+#### ![images/tree.png](images/tree.png) 樹狀清單
+以樹狀的名稱清單顯示。
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
-Displays the previews to the left of the controls.
+#### ![images/horizontal.png](images/horizontal.png) 水平配置
+將預覽縮圖或清單顯示在編輯器的左邊。
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
-Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
+#### ![images/showpreview.png](images/showpreview.png) 顯示預覽面板
+顯示目前所在的項目的預覽縮圖。
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
-Floats the preview image in a resizable window.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) 浮動
+以可以改變大小的浮動小視窗顯示預覽縮圖。
 
-#### Thumbnails
+#### 縮圖
 
-##### ![images/small.png](images/small.png) Small
-Sets the thumbnail size to the smallest size.
+##### ![images/small.png](images/small.png) 小
+將預覽縮圖設為小圖示。
 
-##### ![images/medium.png](images/medium.png) Medium
-Sets the thumbnail size to medium size.
+##### ![images/medium.png](images/medium.png) 中
+將預覽縮圖設為中圖示。
 
-##### ![images/large.png](images/large.png) Large
-Sets the thumbnail size to large size.
+##### ![images/large.png](images/large.png) 大
+將預覽縮圖設為大圖示。
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in Grid mode.
-List mode always displays labels.
+##### ![images/showlabels.png](images/showlabels.png) 顯示標籤
+當編輯器設為以**圖示**模式檢視時顯示名稱標籤。
+以**清單**模式檢視時總是會顯示名稱標籤。
 
-##### ![images/showunits.png](images/showunits.png) Show Units
-Displays size in model units.
+##### ![images/showunits.png](images/showunits.png) 顯示單位
+以模型單位顯示尺寸。
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
-Automatically updates all previews as settings change.
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 自動更新縮圖
+設定變更時自動更新所有的縮圖。
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) 更新所有縮圖
+**自動更新縮圖**停用時可手動更新所有縮圖。
 
-## [Window Divider](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [視窗分隔條](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #divider}
-Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
+移動視窗分隔條可調整材質清單可同時顯示的材質數目。
 
-## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [材質內容區](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: #properties}
 
-#### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+#### [材質名稱](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
-This is the name of the material. The material name is also saved as the file name when exporting the material to the library. Note: Materials are stored in the Rhino model. Unique materials can have the same name in different Rhino models.
+此為材質的名稱，也是材質匯出時的檔案名稱。材質是儲存在 Rhino 模型裡，不同模型裡相同名稱的材質不會相互影響。
 
-#### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+#### [材質面板](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #panels}
-The Materials Properties section is filled with several direct Material panels. Clicking on the grey title bar will roll up the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+材質內容區有許多個面板，按面板的標題列可將面板收摺或展開。
 
-Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html).
+材質面板顯示的設定因材質類型而異，詳細說明請參考 [Flamingo Materials](material-type-simple.html) 主題。
 
-## Tools menu ![images/library_default.png](images/library_default.png)
+## 工具功能表 ![images/library_default.png](images/library_default.png)
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
+工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵功能表裡找到。
 
-#### ![images/assigntoobjects.png](images/assigntoobjects.png) Assign to Selection
-Assigns the current material to selected objects.
+#### ![images/assigntoobjects.png](images/assigntoobjects.png) 賦予給選取的物件
+將選取的材質賦予給選取的物件。
 
-##### To assign a material to objects
- 1. Click Assign to Selection.
- 1. In the Rhino viewport, select the target objects.
+##### 將材質賦予給物件
+ 1. 選擇**賦予給選取的物件**。
+ 1. 在 Rhino 的作業視窗選取目標物件 。
 
-##### To preselect objects
- 1. In the Rhino viewport, select the target objects.
- 1. Click Assign to Selection.
-The target objects can be selected either before or after clicking Assign to Selection.
+##### 預選物件
+ 1. 在 Rhino 的作業視窗選取目標物件 。
+ 1. 選擇**賦予給選取的物件**。
+賦予材質的目標物件可預選或候選。
 
-##### To drag and drop materials to objects
- * Drag the material from the thumbnails or list onto the target objects.
-Drag and drop works for only one object at a time.
+##### 拖放材質至物件
+ * 將材質的預覽縮圖拖放至目標物件。
+拖放的方式一次只能賦予一個物件材質。
 
-#### ![images/assigntolayers.png](images/assigntolayers.png) Assign to Layers
-Assigns the current material to layers.
+#### ![images/assigntolayers.png](images/assigntolayers.png) 賦予給圖層
+將選取的材質賦予給選取的圖層。
 
-##### To assign a material to layers
- 1. Click Assign to Layers.
- 1. In the Choose Layers dialog box, check the boxes for the material assignment.
+##### 賦予材質給圖層
+ 1. 選擇**賦予給圖層**。
+ 1. 在**選擇圖層**對話框勾選要賦予材質的圖層。
 
-##### To assign materials from the Layers panel
- 1. In the  [Layer](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)  panel, select one or more layers and click the  [Material](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)  column.
- 1. In the Layer Material dialog box, select the material to assign.
+##### 從圖層面板賦予材質
+ 1. 在[圖層](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)面板選取一個或數個圖層，按[材質](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)欄。
+ 1. 在**圖層材質**對話框選擇一個材質。
 
 
-##### To drag and drop materials to objects
- * Drag the material from the thumbnails or list onto the target layer.
-Drag and drop works for only one layer at a time.
+##### 拖放材質至圖層
+ * 將材質的預覽縮圖拖放至目標圖層。
+拖放的方式一次只能賦予一個圖層材質。
 
-#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) Select Objects
-Select objects in the model for material assignment.
+#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) 選取物件
+選取模型中使用選取的材質的物件。
 
-#### ![images/toolbarplus.png](images/toolbarplus.png) Create New Material
-Opens the Render Content [library](libraries.html) of materials.
-The materials in the library act as templates for creating materials in the model.
+#### ![images/toolbarplus.png](images/toolbarplus.png) 建立新材質
+開啟內建的彩現[材質庫](libraries.html)。
+內建的材質可做為目前的模型建立新材質的範本。
 
-#### ![images/import.png](images/import.png) Import Material from File
-Imports materials from a saved Rhino .rmtl file.
+#### ![images/import.png](images/import.png) 從檔案匯入材質
+從 Rhino 的 .rmtl 檔案匯入材質。
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
-Saves a material to a Rhino .rmtl file.
+#### ![images/savetofile.png](images/savetofile.png) 儲存至檔案
+將材質儲存為 Rhino 的 .rmtl 檔案。
 
-#### ![images/changetype.png](images/changetype.png) Change Type
-Changes the material to a different type.
+#### ![images/changetype.png](images/changetype.png) 變更類型
+將材質變更為其它的類型。
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
-Changes the material to a different type.
-The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)  box. If checked, compatible settings from the old content will be copied to the new one.
+#### ![images/changetype.png](images/changetype.png) 變更類型 (複製類似的設定)
+將材質變更為其它的類型。
+預設的作業方式由 [Rhino 選項 &gt; 彩現](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)頁面的[當彩現內容類型變更時複製類似的設定](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)設定決定。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
-Changes all the material settings to the default white, matte, non-reflective, untextured material.
+#### ![images/reset.png](images/reset.png) 重設為預設值
+將所有設定回復為預設值。
 
-#### ![images/copy.png](images/copy.png) Copy
-Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
+#### ![images/copy.png](images/copy.png) 複製
+將選取的材質複製到 Windows 剪貼簿，可以在編輯器裡貼上建立另一個材質，或是在 Rhino 外部貼上，將材質匯出為 .rmtl 檔案。
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new material based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) 貼上
+將複製到剪貼簿的材質貼上建立另一個材質。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new material based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 貼上為引例
+將複製到剪貼簿的材質貼上建立另一個材質，此材質的設定與來源的材質互相連結。
 
-#### ![images/delete.png](images/delete.png) Delete
-Deletes the selected material.
+#### ![images/delete.png](images/delete.png) 刪除
+刪除選取的材質。
 
-#### ![images/rename.png](images/rename.png) Rename...
-Renames the selected material.
+#### ![images/rename.png](images/rename.png) 重新命名...
+重新命名選取的材質。
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
-Copies the selected material to a new material with the same settings.
+#### ![images/duplicate.png](images/duplicate.png) 建立複本
+以選取的材質建立一個設定相同的複本。
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
-Removes the connection between [instanced](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) materials.
+#### ![images/removeinstancing.png](images/removeinstancing.png) 移除引例
+解除材質引例與來源材質之間的連結關係。
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 
-#### ![images/contentfilter.png](images/contentfilter.png) Content Filter
-Opens the [Content Filters](content_filters.html) dialog box.
+#### ![images/contentfilter.png](images/contentfilter.png) 彩現內容過濾器
+開啟[彩現內容過濾器](content_filters.html)視窗。
 
-#### ![images/rename.png](images/rename.png) Properties
-Opens the [Preview Properties](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) dialog box.
+#### ![images/rename.png](images/rename.png) 內容
+開啟[預覽設定](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)對話框。
