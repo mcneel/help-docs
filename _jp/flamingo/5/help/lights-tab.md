@@ -58,7 +58,7 @@ Flamingoは次の光源タイプをサポートします。
 
 #### ![images/spotlight-01.png](images/spotlight-01.png) スポット光源
 {: #spotlight}
-スポット光源は、特定の方向に円錐形の配光を行う光源です。光源のプロパティには、[光源半径](#radius)、[ビーム角](#beam-angle)、フォールオフ半径、および方向が含まれます。光源の半径が大きいほど、ライトからの影は柔らかくなります。デフォルトでは、光源の位置にディスク形状が表示されます。グリップを使用した画面上での位置、方向、ビーム角の編集については、[Rhinocerosのスポット光源](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm)のヘルプトピックを参照してください。
+スポット光源は、特定の方向に円錐形の配光を行う光源です。光源のプロパティには、[光源半径](#radius)、[ビーム角](#beam-angle)、フォールオフ半径、および方向が含まれます。光源の半径が大きいほど、ライトからの影は柔らかくなります。デフォルトでは、光源の位置にディスク形状が表示されます。グリップを使用した画面上での位置、方向、ビーム角の編集については、[Rhinocerosのスポット光源](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/lights.htm#Spotlight)のヘルプトピックを参照してください。
 
 ![images/spotlight.png](images/spotlight.png)
 *赤い箱に向いているスポット光源*
@@ -72,7 +72,7 @@ Flamingoは次の光源タイプをサポートします。
 
 #### ![images/rectangularlight-01.png](images/rectangularlight-01.png) 矩形光源
 {: #rectangularlight}
-ディフューザーまたはバッフルがあるダウンライトを近似します。光源は、矩形の向きに基づいて光を拡散して分配します。光源の中心点には、方向矢印が表示されます。光の強度は、矩形の真正面で最大で、それから矩形からオブジェクトへの角度によって減少します。デフォルトでは、レンダリング時に白い四角形が表示されます。天井に矩形光源を使用する場合は、天井面とまったく同じ高さではなく、少し下に挿入するようにしてください。一貫した結果を得ることができます。グリップを使用した画面上での位置、方向、ビーム角の編集については、[Rhinocerosの矩形光源](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm)のトピックを参照してください。
+ディフューザーまたはバッフルがあるダウンライトを近似します。光源は、矩形の向きに基づいて光を拡散して分配します。光源の中心点には、方向矢印が表示されます。光の強度は、矩形の真正面で最大で、それから矩形からオブジェクトへの角度によって減少します。デフォルトでは、レンダリング時に白い四角形が表示されます。天井に矩形光源を使用する場合は、天井面とまったく同じ高さではなく、少し下に挿入するようにしてください。一貫した結果を得ることができます。グリップを使用した画面上での位置、方向、ビーム角の編集については、[Rhinocerosの矩形光源](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/lights.htm#RectangularLight)のトピックを参照してください。
 
 ![images/rectangular light.png](images/rectangular light.png)
 *天井のすぐ下の矩形光源*
@@ -113,7 +113,7 @@ FlamingoがRhinoの現在のレンダリングアプリケーションである�
 
 #### ビーム角 *([スポット光源のみ](lights-tab.html#spotlight))*
 {: #beam-angle}
-光源から発する光の幅をコントロールする角度（度で）です。これは画面上でグリップを使用して変更することもできます。グリップを使った編集の詳細については、[Rhinocerosのスポット光源](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm)のヘルプトピックを参照してください。
+光源から発する光の幅をコントロールする角度（度で）です。これは画面上でグリップを使用して変更することもできます。グリップを使った編集の詳細については、[Rhinocerosのスポット光源](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/lights.htm#Spotlight)のヘルプトピックを参照してください。
 
 #### 半径
 {: #radius}
