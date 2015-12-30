@@ -124,6 +124,8 @@ main_index:
           path: documentproperties-flamingo.html
         - name: Options Flamingo nXt
           path: options-flamingo.html
+        - name: Image Editor
+          path: image-editor.html
         - name: RealTime Viewport
           path: realtime.html
         - name: Flamingo Command List
