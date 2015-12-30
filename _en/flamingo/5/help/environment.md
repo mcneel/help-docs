@@ -3,7 +3,6 @@ title: Flamingo Environment
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
-<!-- Is it "... environments in Rhino" or "in Flamingo" in the following sentence? Yes, Rhino now handles many environment types.  Flamingo Environment is one of the types.-->
 There are many types of [environments in Rhino](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm). This topic will address the Flamingo Environment type.
 
 The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
