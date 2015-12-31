@@ -81,7 +81,7 @@ main_index:
     - name: オブジェクトのプロパティ
       anchor: object_properties
       topics:
-        - name: マテリアルソース
+        - name: マテリアル
           path: properties-object.html
           anchor: material-source
         - name: カスタムメッシュ生成
