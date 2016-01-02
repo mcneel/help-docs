@@ -3,10 +3,10 @@ title: レンダリングウィンドウ
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}
-レンダリングウィンドウには、露出調整やポストプロセッシング効果を追加するオプションが表示されます。レンダリングウィンドウのメインフレームは、Rhinoのレンダリングフィレームワークの一部です。レンダリングメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)を参照してください。このトピックは、Flamingo特有のレンダリングプロセスに追加された機能を説明します。
+レンダリングウィンドウには、露出調整やポストプロセッシング効果を追加するオプションが表示されます。レンダリングウィンドウのメインフレームは、Rhinoのレンダリングフィレームワークの一部です。レンダリングメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)を参照してください。このトピックは、Flamingo特有のレンダリングプロセスに追加された機能を説明します。
 
 ## アクティブなレンダリングの管理
-レンダリングを始めると、[レンダリングウィンドウ](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)が起動し、レンダリングが開始されます。Flamingoは、段階によってレンダリングイメージを更新する、マルチパスシステムです。Flamingoはまず内部モデルに変更があるかどうかを確認し、初期化プロセスを開始します。このプロセスには、数秒から数分かかる場合があります。この初期プロセスでは、モデルがインポートされ、ハードドライブからマテリアルビットマップが集められ、レンダリングイメージバッファが作成されます。レンダリングを管理するプロセスには、いくつかのキーになるステップがあります。
+レンダリングを始めると、[レンダリングウィンドウ](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)が起動し、レンダリングが開始されます。Flamingoは、段階によってレンダリングイメージを更新する、マルチパスシステムです。Flamingoはまず内部モデルに変更があるかどうかを確認し、初期化プロセスを開始します。このプロセスには、数秒から数分かかる場合があります。この初期プロセスでは、モデルがインポートされ、ハードドライブからマテリアルビットマップが集められ、レンダリングイメージバッファが作成されます。レンダリングを管理するプロセスには、いくつかのキーになるステップがあります。
 
 >[マルチパスレンダリング](#multi-pass)
 >[レンダリングを停止する](#stop-render)
@@ -85,7 +85,7 @@ nXtImage形式は、nXtレンダラーのネイティブのイメージ形式で
 レンダリングウィンドウを閉じます。
 
 #### プルダウンメニュー
-レンダリングウィンドウのメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)を参照してください。
+レンダリングウィンドウのメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)を参照してください。
 
 ## Flamingoタブ
 {: #flamingo-tab}
@@ -191,7 +191,7 @@ Flamingoのレンダリングの状態と進行状況を確認するのに、こ
 現在の[レンダリング解像度](render-tab.html#resolution)を表示します。
 
 #### 面
-モデルをレンダリングするのに使用されたメッシュ面の数を表示します。この値はRhinoでの様々な[レンダリングメッシュの設定](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm)を比較するのに便利です。
+モデルをレンダリングするのに使用されたメッシュ面の数を表示します。この値はRhinoでの様々な[レンダリングメッシュの設定](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#documentproperties/mesh.htm)を比較するのに便利です。
 
 #### 見掛けの面
 モデルにブロックがある場合、Flamingo nXtはそれぞれのインスタンスのメッシュを再生成しなくても、ブロック定義を用いてブロックインスタンスをレンダリングすることができます。見掛けの面は、ブロックインスタンスがなかった場合に、後どのくらいの一時面が生成されるかを表示します。
@@ -223,4 +223,4 @@ Flamingoのレンダリングの状態と進行状況を確認するのに、こ
 >アイソカーブ
 >注釈
 
-それぞれのフィルタの詳細については、[イメージのポストプロセス](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)のトピックを参照してください。
+それぞれのフィルタの詳細については、[イメージのポストプロセス](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)のトピックを参照してください。
