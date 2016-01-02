@@ -4,7 +4,7 @@ title: ドキュメントのプロパティ - Flamingo nXt
 
 
 # ![images/options.svg](images/options.svg) {{page.title}}
-これらの設定は、現在のモデルのみに適用されます。レンダリングの質を上げようとすると時間がかかり、速くレンダリングしたければ質が低くなることを考慮することが必要です。
+これらの設定は、現在のモデルのみに適用されます。レンダリングの質を上げようとすると時間がかかり、速くレンダリングしたければ質が低くなることを考慮することが大切です。
 
 #### コマンドの位置
 <!-- These locations are not correct.  They need to be updated. -->
