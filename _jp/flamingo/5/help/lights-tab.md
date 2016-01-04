@@ -12,7 +12,7 @@ title: 光源
 
 <!-- TODO: There should be some mention that the Lights tab only is available for some of the Lighting presets -->
 <!-- TODO: #### Is this supposed to be a code? It's showing up as #### -->
-#### Flamingo照明コントロールの位置
+##### Flamingo照明コントロールの位置
 光源タブは、[照明プリセット](lighting-tab.html#lighting-presets)または[カスタム照明設定](lighting-tab.html#sun)を通してアクティブにします。
 
  1. ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXtツールバー
