@@ -1,304 +1,306 @@
 ---
+title: 進階材質內容
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Advanced Material Properties
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
-Flamingo has both [Simple Material](material-type-simple.html) Types and an Advanced Material type.  The Advanced Material contains the complete series of property groups for a material.  Use the Advanced Material type for the maximum flexibility and control of a material.
+Flamingo 的材質內容有[簡易編輯器](material-type-simple.html)與進階編輯器，簡易編輯器裡的設定因材質類型而異，進階編輯器裡有材質的所有設定，且不因材質類型而異。
 
-The complete set of property groups in the Advanced Material are:
+材質的進階設定群組有：
 
-> [Name](#name)
-> [Material Procedure](#procedures)
-> [Advanced Material Properties](#advanced-materials-properties)
-> [Reflective Finish](#reflective-finish-and-highlight)
-> [Transparency Properties](#transparency)
-> [Procedural Textures](#bump-patterns)
-> [Bitmap Textures](#textures)
-> [Notes](#notes)
+> [名稱](#name)
+> [材質程序](#procedures)
+> [進階材質內容](#advanced-materials-properties)
+> [反射度](#reflective-finish-and-highlight)
+> [透明內容](#transparency)
+> [程序貼圖](#bump-patterns)
+> [圖片貼圖](#textures)
+> [附註](#notes)
 
-## Material Name
+## 材質名稱
 {: #name}
-This is the name of the material in the Rhino model.  Materials are stored in the Rhino model. That means a with the same name in the library or a different model will not be affected by edits to the material in the current model. To use any material in another model it must be exported to the [Library](libraries.html) first. The Name of the material will also serve as its exported file name.
+此為 Rhino 模型裡的材質名稱，材質可儲存在 Rhino 模型檔案裡。編輯目前模型的材質不會影響材質庫與其它模型裡的材質。要在其它模型使用目前模型的材質時，必需先將材質儲存到[材質庫](libraries.html)，材質的名稱即儲存的材質檔案的名稱。
 
-## Material Procedures
+## 材質程序
 {: #procedures}
-The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For standard materials, there will be only one component in the list: Base.
+材質程序可用不同的方式混合數個材質，讓材質有更多變化，您可以在一個材質程序的樹狀分支加入其它材質，標準材質在此通常只有一個底色元件。
 
-Each procedure combines two "child" materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [Angular Blend](procedural-materials.html#angular-blend), [Blend](procedural-materials.html#blend), [Marble](procedural-materials.html#marble), [Granite](procedural-materials.html#granite), [Tile](procedural-materials.html#tile), and [Wood](procedural-materials.html#wood).
+每一種材質程序都有兩個元件 (子材質)，一個元件可以再由另一個材質程序的兩個元件組成，Flamingo nXt 的材質程序有：[角度混合](procedural-materials.html#angular-blend)、[混合](procedural-materials.html#blend)、[花崗岩](procedural-materials.html#granite)、[大理石](procedural-materials.html#marble)、[拼貼](procedural-materials.html#tile)、[木紋](procedural-materials.html#wood)。
 
-As an example, the [Marble](procedural-materials.html#marble) Procedure combines a Base material and Vein Material in a swirling pattern.
+例如，[大理石](procedural-materials.html#marble)程序是由**底色**與**脈絡**兩個材質組成。
 
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
-##### To add a procedure
-1. Right-click on Base the Procedures window.
-1. On the menu, click a procedure type.
-  * [Base](procedural-materials.html#base)
-  * [Angular Blend](procedural-materials.html#angular-blend)
-  * [Blend](procedural-materials.html#blend)
-  * [Granite](procedural-materials.html#granite)
-  * [Marble](procedural-materials.html#marble)
-  * [Tile](procedural-materials.html#tile)
-  * [Wood](procedural-materials.html#wood)
+##### 加入程序
+1. 在程序面板的**底色**上按右鍵。
+1. 在彈出的清單選擇一種程序類型。
+  * [底色](procedural-materials.html#base)
+  * [角度混合](procedural-materials.html#angular-blend)
+  * [混合](procedural-materials.html#blend)
+  * [花崗岩](procedural-materials.html#granite)
+  * [大理石](procedural-materials.html#marble)
+  * [拼貼](procedural-materials.html#tile)
+  * [木紋](procedural-materials.html#wood)
 
-##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+##### 移除程序
+ 1. 在程序面板的程序名稱上按滑鼠右鍵。
+ 2. 在彈出的功能表選擇移除。
 
-## Advanced Material Properties
+## 進階材質內容
 {: #advanced-materials-properties}
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Reflective Finish and Highlight
+#### 反射與反光
 {: #reflective-finish-and-highlight}
-These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object. The reflective effect normally defined with a more mirror like reflections that reflects the objects in the rest of the the scene. It is important to now that chrome and other reflective materials do not make an interesting image unless they have something to reflect. When working with reflective materials, also think about an interesting environment and other objects for the reflective materials to reflect.
- Note : To activate these settings, the Intensity value must be greater than zero.
+這裡的設定可以改變材質反射光源與物件的特性，反光是材質反射光源的亮點，反射是材質上其它物件的反射影像。金屬與反射材質需要反射場景中的其它物件才會有較好的彩現效果，設定反射材質時請將環境與場景裡的其它物件加入考量。
+ **附註：**這些設定要在強度值大於 0 時才能使用。
 
-#### Highlight color
+#### 反光顏色
 {: #highlight-color}
-Highlight color is the color that material adds to reflections. There are three settings for this control, White, Metallic and Custom
+反光顏色是在材質反射時加入的顏色，反光顏色的設定有**白色**、**金屬**、**自訂**三種。
 
-#### White
-Materials with a white highlight will not add any color to reflections.  Materials with a white highlight are common and tend to resemble standard paint, plastics or a mirror finish.
+#### 白色
+塑膠類材質的反光通常是白色的。
 
 ![images/3-plastic.png](images/3-plastic.png)
 
-#### Metallic
+#### 金屬
 {: #metallic}
-Sets the highlight color to match the base color. Many metal finishes normally use the base color as the reflective color.  This metallic options use the material based color as a reflective color.
+將材質的反光顏色設為與材質顏色相同，
 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
-#### Custom
-In some very specialized finishes, the reflection off the object will be a different color then the base color fo the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
+#### 自訂
+某些特殊材質的反光可能與材質的顏色不同，請從[選取顏色](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) 對話框選擇反光的顏色。
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
-#### Intensity
+#### 強度
 {: #intensity}
-Adjusts the strength of the highlight. Lower values tend to make glossy objects that reflect light, but not surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
+用來調整反光的強度，數值越高使材質越能清晰反射週遭的物件與環境。
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
 #### Fresnel
 {: #fresnel}
-Pronounced (fray-NELL) Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations) .The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
-Reduce the value for very dark materials to prevent too much reflection.&#160;Increase the value for materials like varnished wood, where the Fresnel reflectivity is more pronounced.
+Fresnel 的發音近似 (fray-NELL)，它是以[菲涅耳原理](http://en.wikipedia.org/wiki/Fresnel_equations)控制物件表面的反射特性，它將物件表面的法線方向加入反射度的計算，例如彩現一個表面光滑、低反射度的球體時，球體正對視圖的部分反射度較低，球體輪廓附近的部分因為法線偏離視圖的方向，會產生類似鏡面的高反射效果。
+
+軟性的材質可以將這個數值調低，光滑的材質可以將這個數值調高，因為光滑的材質 (例如：打磨過的木頭) 會有比較明顯的菲涅耳原理的現像。
 
 ![images/highlightfresnel.png](images/highlightfresnel.png)
 
-#### Sharpness
+#### 銳利度
 {: #sharpness}
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area.  When applied to higher intensity reflectivity, it will make reflections blurry (out of focus) or sharp (in focus).
+設定物件表面反光的大小，數值越小，反光越大、越模糊，數值越大，反光越小、越銳利。
 
 ![images/highlightsharpness.png](images/highlightsharpness.png)
 
-#### Type
+#### 型式
 {: #type}
-Changes how reflections are calculated when artificial light sources are reflected. Reflections are calculated using two methods: *raycasting* and *highlight*. These two methods will eventually produce identical results; however, in certain situations, you will find that one method gets a good result more quickly. For example, objects might not look good because a light source reflection hides the material's appearance.
+設定人造光源如何反射在物件表面上，反射的計算使用兩種方式：*光線投射*與*反光*，這兩種方式最終得到的結果很類似，但某些情形下其中一種方式可能可以比較快得到好的效果。物件也可能因為光源的反射太強烈而遮蓋了材質的外觀，影響物件的彩現效果。
 
-In the illustration below for Balanced type, the object on the left has a bright white reflection that overpowers the material's appearance.
+下方是使用**平衡**型式的例子，最左邊的物件因為大片的反光掩蓋了材質紋路。
 
-Sometimes interior renderings where the light sources are small can have a spotty artifact on surfaces. The surfaces exhibiting the artifact typically have blurry reflections. Changing the reflective type to [Glossy](advanced-material-properties-main.html#glossy), [No Light Source Reflections](advanced-material-properties-main.html#no-light-source-reflection), or [Monte Carlo](advanced-material-properties-main.html#monte-carlo) can help alleviate this problem.
+某些光源較小的室內場景在彩現時會有光斑的問題，光斑通常出現在具模糊反射的材質上，將型式設為[模糊](advanced-material-properties-main.html#glossy)、[沒有光源反射](advanced-material-properties-main.html#no-light-source-reflection)或[蒙地卡羅](advanced-material-properties-main.html#monte-carlo)可排除這類的問題。
 
-#### Balanced
+#### 平衡
 {: #balanced}
-Automatically balances raycasting and highlight based on the Sharpness setting. Both the actual reflection of the light source and the artificial highlight are calculated.
+因**銳利度**的設定而異，自動在反光與光源反射之間取得平衡。
 
 ![images/highlightbalanced.png](images/highlightbalanced.png)
 
-#### Glossy
+#### 模糊
 {: #glossy}
-Increases the blurriness of the highlight and prevents raycasting. No object or light reflections are calculated, therefore performance is increased, and artifacts for materials with very blurry reflections are prevented. Some reflective subtlety may be lost.
+使反光更模糊，並關閉對人造光源與其它物件的反射計算，彩現速度會因此大幅提升，但也會降低彩現的真實感。
 
 ![images/highlightglossy.png](images/highlightglossy.png)
 
-#### Monte Carlo
+#### 蒙地卡羅
 {: #monte-carlo}
-Only raycasting is used to calculate reflections of light sources. The raycasting is initially very noisy and gradually converges to the correct solution. It is most useful when the highlight is not blurry.
+只使用光線投射法計算光源的反射，彩現一開始時光源的反射會是許多雜點，隨著時間的經過反射效果會逐漸變均勻，這個型式比較適用於光源反射不模糊的形情。
 
 ![images/highlightmontecarlo.png](images/highlightmontecarlo.png)
 
-#### No Highlight
+#### 沒有反光
 {: #no-highlight}
-Only raycasting is used to calculate reflections of light sources. This is useful when light sources are large and the material is not blurry; in which case, the highlight calculation can take a long time. The light source reflections gradually converge.
+關閉反光，只計算對人造光源與其它物件的反射。這個設定可以用在光源面積很大與材質反射不模糊的情形，因為這種情形會讓反光的計算變得很慢。
 
 ![images/highlightnohighlight.png](images/highlightnohighlight.png)
 
-#### No Light Source Reflection or No Highlight
+#### 沒有光源反射或反光
 {: #no-light-source-reflection-and-no-highlight}
-Excludes all reflections of artificial light sources and the artificial highlight effect. Object reflections are still calculated.
+關閉對人造光源的反射與反光的計算，但仍然計算對其它物件的反射。
 
 ![images/highlightnohighlightreflection.png](images/highlightnohighlightreflection.png)
 
-#### No Light Source Reflections
+#### 沒有光源反射
 {: #no-light-source-reflection}
-Excludes raycast reflections of light sources, only the highlight is used. This is sometimes useful for preventing speckle artifacts if the material is blurry and the scene contains small, bright, light sources.
+不以光線投射法計算光源的反射，只計算反光，這個方法可以用來避免場景有模糊材質與高亮度小光源時可能產生光斑的問題。
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
-## Transparency
-{: transparncy}
-The Transparency settings control&#160;properties associated with light passing through a material.
+## 透明度
+{: #transparency}
+這些設定可以用來控制光線穿過透明材質的特性。
 
 ![images/transparentmaterials.png](images/transparentmaterials.png)
 
-#### Transparency Intensity
-Changes the material from opaque to transparent. Transparent materials increase rendering time.
+#### 透明強度
+變更材質透明度的高低，透明材質會增加彩現時間。
 
 ![images/transparency.png](images/transparency.png)
 
-#### Index of Refraction
+#### 折射率
 {: #index-of-refraction}
-Determines how much refraction occurs when looking through the material at objects beyond.
+設定光線進入透明材質時的轉折角度。
 
 ![images/transparencyior.png](images/transparencyior.png)
 
-The following table shows some examples of index of refraction:
+以下是常用的透明材質的折射率：
 
- | Material      |     | IOR         |
+ | 材質      |     | 折射率         |
  |:--------------|:---:|:------------|
- | Vacuum        |     | 1.0         |
- | Air           |     | 1.0029      |
- | Ice           |     | 1.309       |
- | Water         |     | 1.33        |
- | Glass         |     | 1.52 to 1.8 |
- | Emerald       |     | 1.57        |
- | Ruby/Sapphire |     | 1.77        |
- | Diamond       |     | 2.417       |
+ | 真空        |     | 1.0         |
+ | 空氣           |     | 1.0029      |
+ | 冰           |     | 1.309       |
+ | 水         |     | 1.33        |
+ | 玻璃         |     | 1.52 to 1.8 |
+ | 翡翠       |     | 1.57        |
+ | 紅寶石/藍寶石 |     | 1.77        |
+ | 鑽石       |     | 2.417       |
 {: .grided-table}
 
-#### Translucency
+#### 混濁度
 {: #translucency}
-A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material. This is a very sensitive effect, small adjustments can make a big difference.
+當光線穿過混濁的透明材質時，某些光線會被反射、被吸收或在材質裡產生漫射的情形，使物件看起來呈半透明狀，對此數值做微小的調整就可能造成很大的效果差異。
 
 ![images/transparencytl.png](images/transparencytl.png)
 
-#### Scattering
+#### 散射
 {: #scattering}
-Controls the probability of the light encountering a particle per unit length. The [Path Tracer](render-tab.html#path-tracer) is required for this effect.
-Subsurface scattering permits light to penetrate the object's surface and scatter in any direction. Many translucent materials can be modeled using this effect. Certain surfaces, such as stone or skin can be realistically “softened” by allowing the light to penetrate a short distance.
-The material must have some transparency in order for sub-surface scattering to take place. This is a volumetric effect. The objects with this material attached must be solid or “space enclosing” for this to work properly.
+設定光線通過每個單位距離遇到的粒子，此效果必需使用[路徑追蹤](render-tab.html#path-tracer)彩現引擎。
+
+材質內部散射讓光線穿過物件的過程中往所有方向散射，半透光材質可以使用這個效果，像玉石、臘蠋或人體皮膚等材質讓光線進入物件內一小段距離可以增加真實感。
+
+一個材質必需有些許的透明度，使用這個材質的物件也必需是封閉的才能產生這種材質內部散射的效果。
 
 ![images/scattering.png](images/scattering.png)
 
-#### Attenuation
+#### 衰減
 {: #attenuation}
-Determines how much light is absorbed as it passes through the object— greater values produce a more cloudy appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation ; murky liquids have higher Attenuation values.
+設定當光線穿過透明物件時光線被物件吸收的量，設定液體材質時，清徹的液體的衰減量比較低，濃稠的液體的衰減量比較高。
 
 ![images/attenuation.png](images/attenuation.png)
 
-#### Dispersion
+#### 色散
 {: #dispersion}
-Controls how much light is split into its component wavelengths.
+控制白色光線通過透明材質時分離出不同顏色光譜的特性。
 
 ![images/dispersion.png](images/dispersion.png)
 
-#### Saturation
+#### 飽和度
 {: #saturation}
-Determines the amount of dispersion.
+設定色散的量。
 
 ![images/saturation.png](images/saturation.png)
 
-#### Blurry Transparency
+#### 模糊透明
 {: #blurry-transparency}
-When a material is partially transparent, a little noise is introduced into the transparency, to make the material look more natural.
+當材質不完全透明時，使透過該材質看到的影像有些模糊，用以增加真實感。
 
-#### Blurriness
-Controls the amount of noise added.
+#### 模糊度
+控制模糊的量。
 
 ![images/blurrytransparency.png](images/blurrytransparency.png)
 
-#### Glow
+#### 發光
 {: #glow}
-Creates the illusion of illumination.
+產生發光的效果。
 
 ![images/glow.png](images/glow.png)
 
-## Textures
+## 貼圖
 {: #textures}
-Two types of textures can be added to a material: Image Textures and Bump Patterns. Image textures are based on bitmaps, photographs or scanned images.  Bump Patterns are random or repeating patterns generated by Flamingo.
+貼圖有圖片貼圖與凹凸圖案兩種，圖片貼圖可使用照片或掃描得到的圖片，凹凸圖案是由 Flamgino 產生的隨機或重複的紋理圖案。
 
 ![images/textures.png](images/textures.png)
 
-### Images
+### 圖片
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another images may control the bump properties of the texture. To control how an image effects a material, go to the [Image Properties](material-image-properties.html) Dialog
+一個材質最多可加入四張圖片，用以增加材質的細節。加入的圖片可以是平面繪圖軟體製作的圖片、照片或掃描得到的圖片。常見的用法是以真實世界材質的照片做為材質的顏色貼圖。這四張圖片可分別控制材質的不同部分，例如：以一張圖片做為**顏色**貼圖，另一張圖片做為**凹凸**貼圖。圖片如何影響材質請參考[圖片內容](material-image-properties.html)主題。
 
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
 
-### Bump Patterns
+### 凹凸圖案
 {: #bump-patterns}
-Bumps Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
+凹凸圖案內建了幾種以數學運算產生的特殊凹凸效果，不需使用置換貼圖或其它圖片就可以快速製造材質上的凹凸紋路，凹凸圖案有：
 
-> [Sandpaper](#sandpaper)
-> [Rubble](#rubble)
-> [Pyramid](#pyramid)
-> [Wrinkled](#wrinkled)
-> [Marbled](#marbled)
+> [砂紙](#sandpaper)
+> [碎石](#rubble)
+> [金字塔](#pyramid)
+> [皺紋](#wrinkled)
+> [大理石紋](#marbled)
 
-As and example materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarser texture.
+像是灰泥、混泥土、泥土表面的紋理非常細微，除非要做非常近距離的彩現以外，通常不值得用掃描或照像的方式製作這類材質的貼圖，只要選用砂紙凹凸圖案即可模擬這類的材質效果。製作這類材質的方法是先將[底色](advanced-material-properties-main.html#color)設為該材質的顏色，凹凸圖案使用砂紙做為細紋理，使用碎石做為粗紋理。
 
-When one of the bump maps is checked, additional controls become available. More than one bump pattern can be added to a material.
+每種凹凸圖案都有不同的設定，一種凹凸圖案啟用後才可對它的選項做調整，並允許同時使用數種凹凸圖案。
 
-#### Sandpaper
+#### 砂紙
 {: #sandpaper}
-Provides a random, finely textured appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit sandpaper.
+產生不規則的細小顆粒紋理，它的設定有[縮放比](#scale)、[強度](#strength)、[旋轉](#rotation)角度。
 
 ![images/sandpaper.png](images/sandpaper.png)
-*Sandpaper progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*[縮放比](#scale)與[強度](#strength)由小至大的效果。*
 
-#### Rubble
+#### 碎石
 {: #rubble}
-Gives the appearance of a lumpy, pitted surface. It can be scaled up and used for water, dirt, and smudges on surfaces. Smudges can be made with a large [Scale](#scale) and a very small [Strength](#strength) using Rubble. Rubble bump has a larger size range than Sandpaper.
+產生坑坑洞洞的凹凸紋理，將比例放大可以產生類似海面、沙洲波浪起伏的效果，[碎石](#scale)與[砂紙](#strength)相較是屬於比較大型的凹凸紋理。
 
 ![images/rubble.png](images/rubble.png)
-*Rubble progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*[縮放比](#scale)與[強度](#strength)由小至大的效果。*
 
-#### Pyramid
+#### 金字塔
 {: #pyramid}
-Gives the appearance of small pyramidal protrusions like a knurl pattern.  [Scale](#scale) will control only the X and Y pyramid base size. [Strength](#strength) will effect the "height" effect of the pyramid.
+產生菱形的滾花凹凸紋理，[縮放比](#scale)只有 X 與 Y，可用來控制金字塔的大小，金字塔的高度由[強度](#strength)控制。
 
 ![images/pyramid.png](images/pyramid.png)
-*Pyramid showing a larger and larger [Scale](#scale).*
+*[縮放比](#scale)由小至大的效果。*
 
-#### Wrinkled
+#### 皺紋
 {: #wrinkled}
-Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+產生類似皺紋的凹凸紋理，它的設定有[縮放比](#scale)、[強度](#strength)、[旋轉](#rotation)角度。
 
 ![images/wrinkled.png](images/wrinkled.png)
-*Pyramid showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*[縮放比](#scale)由小至大，[強度](#strength)固定的效果。*
 
-#### Marbled
+#### 大理石紋
 {: #marbled}
-Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+產生類似大理石花紋的凹凸紋理，它的設定有[縮放比](#scale)、[強度](#strength)、[旋轉](#rotation)角度。
 
 ![images/marbled.png](images/marbled.png)
-*Marbled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*[縮放比](#scale)由小至大，[強度](#strength)固定的效果。*
 
-### Scale
+### 縮放比
 {: #scale}
-Scale controls the proportional size of the bumps.
+控制凹凸紋理的粗細。
 
 #### X/Y/Z
-Specifies scale in each direction separately.
+可以分別設定每一個軸向的比例。
 ![images/texturescalexy.png](images/texturescalexy.png)
 
-#### Lock
-Maintains the aspect ratio.
+#### 鎖定
+維持不同軸向之間的比例。
 
-### Strength
+### 強度
 {: #strength}
-Controls the appearance of depth.
+控制凹凸紋理的深淺。
 ![images/texturestrength.png](images/texturestrength.png)
 
-### Rotation
+### 旋轉
 {: #rotation}
-Sets the rotation angle for the pattern.
-Changes to the orientation are normally apparent only if the procedural map has an obvious pattern or if the bump map has been scaled with different x, y and z components to produce a directional pattern.
+設定凹凸紋理的旋轉角度，通常只有在 X、Y、Z 軸向的比例不相等或是凹凸紋理有方向性時才會用到此設定。
 ![images/texturerotated.png](images/texturerotated.png)
