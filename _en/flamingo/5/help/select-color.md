@@ -26,8 +26,7 @@ Click the color swatch to select a color from the Select Color dialog box.
 1. Drag the marker vertically in the inner square to define the brightness value.
 
 ##### Set in the Hue, Sat, Val boxes
-<--! TODO: There is an error in the next sentence, but I'm not sure how to resolve it correctly. -->
-1. Hue is a color's hue corresponds to its visible wavelength of light. Hue is measured in degrees from 0 to 359, which correspond roughly with a rainbow's hues in 60 degree increments: red, orange, yellow, green, blue, and violet.
+1. Hue is measured in degrees from 0 to 359, which correspond roughly with a rainbow's hues set around a circle in 60 degree increments: red, orange, yellow, green, blue, and violet.  Select the base hue that the Saturation and Value will combine to create the final color.
 1. Saturation refers to the color's intensity on a 0 to 100 scale. A saturation of 0 produces a neutral gray color that varies from black to white depending on the color's brightness. The hue has no effect on a color with a saturation component of 0. A saturation of 100 produces that hue's most intense shade.
 1. Value refers to the perceived amount of light value (or white) in the color. The Value component varies between 0 and 100. Value is also sometimes referred to as luminance or brightness.
 
