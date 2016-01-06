@@ -1,82 +1,83 @@
 ---
+title: 賦予材質
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Assignments
-Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on the how easy the model is to change and maintain in the future.
+# ![images/paint.svg](images/paint.svg) {{page.title}}
+Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on how easy the model is to change and maintain in the future.
 
-Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:
+材質有三種賦予方式：圖層、父物件、物件，這三者有層級關係，後者可覆蓋前者。
 
- 1. [Layers](#bylayer) - All objects on the layer will adopt this material, unless they are in a block or have a specific object assignment.
- 2. [Parent](#byparent) - This is used for objects within blocks.  Objects with a By Parent assignment will look to the block insert for the material.
- 3. [Individual objects](#byobject) - Materials can be assigned directly to an object, overwriting any other material assignments.
+ 1. [圖層](#bylayer) - 物件預設使用圖層的材質，除非物件的材質賦予方式是設為父物件或物件。
+ 2. [父物件](#byparent) - 賦予圖塊引例 (父物件) 材質時，圖塊裡材質賦予方式設為**父物件**的物件會使用圖塊引例的材質。
+ 3. [物件](#byobject) - 將材質直接賦予給物件，忽略圖層與與圖塊引例的材質。
 
-Assigning materials by layer is the recommended method. Using By layer makes it very easy to change the material of all the objects on a layer. Use By object assignment if you have only a few objects that you do not want on separate layers.
+將物件的材質賦予方式設為**圖層**是建議使用的方法，可方便改變一個圖層上所有物件的材質。如果一個圖層上只有少數幾個物件使用不同的材質，可將這些物件的材質賦予方式設為**物件**。
 
-Imported files may have any one of these three assignments. Many imported files will have By Object assignments.  It may take a lot of work to convert the model to By Layer assignments, but it can be beneficial if there is a lot of editing to the render materials planned.
+匯入的檔案裡的物件可能使用不同的材質賦予方式，Imported files may have any one of these three assignments. Many imported files will have By Object assignments.  It may take a lot of work to convert the model to By Layer assignments, but it can be beneficial if there is a lot of editing to the render materials planned.
 
-Once materials are assigned, the material will be saved in the current model.  Editing the material will not effect that material in other models.
+材質賦予後會儲存在模型檔案裡，編輯一個模型的材質不會影響其它模型裡的材質。
 
-## Assign materials to layers
+## 將材質賦予給圖層
 {: #bylayer}
-Assigning materials by layer assigns a material to all objects on that layer. This is the default method of assignment. To change the material assignment of the layer, use the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-Note: Deleting a material from the [Material Editor](material-editor.html) returns all objects that had the deleted material assigned to assignment by layer.
+物件預設使用賦予給圖層的材質，按[圖層面板](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)圖層後方的**材質欄**可改變圖使用的材質。
+附註：從[材質編輯器](material-editor.html)刪除物件本身使用的材質會使物件的材質賦予方式變更為**圖層**。
 
-##### Drag a material to a layer
+##### 將材質拖放至圖層
 {: #drag-dropmaterialtolayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material on to a layer name in the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog.
+1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)面板。
+1. 從**材質庫**或**材質編輯器**面板的[材質清單](material-editor.html#material_list)，將材質拖放至[圖層面板](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)的圖層上。
 
-##### To assign a material to a layer
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select a material from the Material drop-down list.
+##### 賦予材質給圖層
+1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)面板。
+1. 選取一個或數個圖層，按圖層的**材質**欄。
+1. 在**圖層材質**對話框選擇一個材質。
 
-##### Remove a material from a layer
+##### 移除圖層的材質
 {: #detachmaterialfromlayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select the Default Material Material drop-down list.
+1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)面板。
+1. 選取一個或數個圖層，按圖層的**材質**欄。
+1. 在**圖層材質**對話框選擇**預設材質**。
 
-## Assign material to Parent
+## 賦予材質給父物件
 {: #byparent}
-By parent is a seldom used, but useful, assignment. Objects within a Block instance will retain their By Layer or By Object assignments.  Objects that are using By Parent assignment will adopt the material of the block insertion.  This way objects within a block instance can adopt the material of the parent block.
+材質賦予方式中的**父物件**較罕用，它讓圖塊引例裡的物件可以使用圖塊引例的材質，或圖塊引例所屬圖層的材質。
 
-As an example, a car model might have tires on the tires layer and wheels on the wheel layer. But for rendering the body of the car might vary between individual block instances.  Assign By Parent to the car body.  Then a material can be assigned to the block insert and only the body will adopt that material.
+以汽車圖塊為例，圖塊裡的輪子與輪框分別屬於兩個圖層，兩個圖層使用不同材質。假使汽車模型的圖塊引例插入模型時車身需要有顏色變化，您可將圖塊裡車身的材質賦予方式設為**父物件**，讓車身使用圖塊引例所在圖層的材質，輪子與輪框的材質不因圖層不同而異。
 
-##### To assign a material through object properties
-1. Select objects.
-1. On the Edit menu, click Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the [Properties](properties-object.html) dialog box, on the Material page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Parent.
+##### 從物件內容賦予材質
+1. 選取物件。
+1. 從**編輯**功能表選擇 ![images/properties.png](images/properties.png) **物件內容**。
+1. 將[內容](properties-object.html)面板**材質**頁面 ![images/materialtab.png](images/materialtab.png) 的**材質賦予方式**設為**父物件**。
 
-## Assign material to objects
+## 將材質賦予給物件
 {: #byobject}
-You can assign materials from the material libraries to a layer or object. Rendering materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See  [Materials Editor](material-editor.html) .
+您可將材質庫裡的材質賦予給圖層或物件， Rendering materials are assigned to individual objects and are used by Rhino's built-in renderer.
+請參考：[材質編輯器](material-editor.html)
 
-Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
+將物件的材質賦予方式設為"圖層"是建議使用的方法，如果一個圖層上只有少數幾個物件使用不同的材質，您又不想為了這些物件建立另一個圖層，這種情形可以將這些物件的材質賦予方式設為"物件"。
 
-##### Assign a material through object properties
-1. Select objects.
-1. On the Edit menu, click the Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Object, and then click the Material from the list.
+##### 從物件內容賦予材質
+1. 選取物件。
+1. 從**編輯**功能表選擇 ![images/properties.png](images/properties.png) **物件內容**。
+1. 將[內容](properties-object.html)面板**材質** 頁面 ![images/materialtab.png](images/materialtab.png) 的**材質賦予方式**設為**物件**，從材質清單選擇一個材質。
 
-##### Drag a material onto a single object
+##### 將材質拖放至物件
 {: #drag-dropmaterialtoobject}
 
- * In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material onto an object. The object will highlight when the cursor is in the correct place to drop.
+ * 從材質庫或材質編輯器面板的[材質清單](material-editor.html#material_list)將材質拖放至物件，當滑鼠游標停留在物件上時，物件會以醒目顏色提示將被賦予材質的物件。
 
-##### Assign a material to selected objects
-1. Select objects.
-1. In the [Material List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Assign to Selected Objects.
+##### 將材質賦予給選取的物件
+1. 選取物件。
+1. 在**材質編輯器**面板的[材質清單](material-editor.html#material_list)的一個材質上按滑鼠右鍵。
+1. 在彈出的功能表選擇**賦予給選取的物件**。
 
-##### Select objects with material assignment
+##### 以材質選取物件
 {: #select-objects-with-material-assignment}
-1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Select Objects with this Material.
+1. 在**材質編輯器**面板的[材質清單](material-editor.html#material_list)的一個材質上按滑鼠右鍵。
+1. 在彈出的功能表選擇**選取物件**。
 
-##### Remove a by-object material assignment
+##### 移除物件的材質
 {: #removematerialfromobject}
-1. Select objects.
-1. On the Edit menu, click Object Properties.
-1. In the  [Properties](properties-object.html) dialog box, on the Material page, under Assign by, select Layer.
+1. 選取物件。
+1. 從**編輯**功能表選擇**物件內容**。
+1. 將[內容](properties-object.html)面板**材質**頁面的**材質賦予方式**設為**圖層**。

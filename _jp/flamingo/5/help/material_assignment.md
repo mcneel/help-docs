@@ -47,7 +47,7 @@ title: マテリアルの割り当て
 ##### オブジェクトのプロパティを使ってマテリアルを割り当てるには
 1. オブジェクトを選択します。
 1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png) をオブジェクトの編集のためにクリックします。
-1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、親の設定をクリックします。
+1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、「親の設定」をクリックします。
 
 ## マテリアルをオブジェクトに割り当てる
 {: #byobject}
@@ -59,7 +59,7 @@ title: マテリアルの割り当て
 ##### オブジェクトのプロパティを使ってマテリアルを割り当てる
 1. オブジェクトを選択します。
 1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png) をオブジェクトの編集のためにクリックします。
-1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、オブジェクトの設定をクリックし、リストでマテリアルをクリックします。
+1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、「オブジェクト」をクリックし、リストでマテリアルをクリックします。
 
 ##### マテリアルを1つのオブジェクトにドラッグする
 {: #drag-dropmaterialtoobject}

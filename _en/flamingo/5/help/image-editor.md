@@ -172,7 +172,7 @@ Displays the [distance mask](image-editor.html#distance-channel).
 
 ## Tone mapping
 {: #tone-mapping}
-Tone mapping is the process of converting the luminance data used by nXt into&#160;RGB pixels that can be displayed or printed.
+Tone mapping is the process of converting the luminance data used by nXt into RGB pixels that can be displayed or printed.
 
 
 #### Brightness
@@ -198,7 +198,7 @@ The pixel coordinate, measured from the lower left corner.
 
 #### Color
 {: #color}
-The first three fields display the RGB colors&#160;displayed in the image after tonemapping. The fourth field shows the alpha (transparency) channel, which is used for compositing.
+The first three fields display the RGB colors displayed in the image after tonemapping. The fourth field shows the alpha (transparency) channel, which is used for compositing.
 
 #### Value
 {: #value}
@@ -236,7 +236,7 @@ The distance from the camera where haze will start adding color to each pixel.
 Pick a point on the image to specify the distance.
 
 #### Far
-The distance where the haze effect is at its maximum.&#160;All pixels beyond this point have the maximum haze effect added to each pixel.
+The distance where the haze effect is at its maximum. All pixels beyond this point have the maximum haze effect added to each pixel.
 Pixels between near and far have haze added in a linear fashion from the near to the far pixels.
 
 #### Pick
@@ -267,10 +267,10 @@ Pick a point on the image to specify the focus distance.
 
 #### In-Focus Zone
 {: #in-focus-zone}
-The distance around the **Focus** that is sharp.&#160;This value is in meters.&#160;All pixels within this distance will be sharp and will be ignored by the Blur filter.&#160;Pixels beyond this distance will be progressively blurred with neighboring pixels to give the illusion of depth of field.
+The distance around the **Focus** that is sharp. This value is in meters. All pixels within this distance will be sharp and will be ignored by the Blur filter. Pixels beyond this distance will be progressively blurred with neighboring pixels to give the illusion of depth of field.
 
 #### Blur
-Controls which direction the blur filter will work.&#160;The default value is **Background**.&#160;This means all pixels farther away from the camera than the **In-Focus Zone** will progressively blur.
+Controls which direction the blur filter will work. The default value is **Background**. This means all pixels farther away from the camera than the **In-Focus Zone** will progressively blur.
 
 ![images/blur-001.png](images/blur-001.png)
 *Blur foreground (left) and background (right).*
@@ -282,11 +282,11 @@ Blurs pixels farther away from the camera than the **In-Focus Zone** range.
 Blurs pixels that are closer to the camera than the **In-Focus Zone** range.
 
 #### Both
-Blur pixels both in front and behind the **In-Focus Zone** range. This is a quick way to get a depth-of-field effect.&#160;It is not as accurate as using the built-in pre-render [Depth of field](render-tab.html#depthoffieldoption).
+Blur pixels both in front and behind the **In-Focus Zone** range. This is a quick way to get a depth-of-field effect. It is not as accurate as using the built-in pre-render [Depth of field](render-tab.html#depthoffieldoption).
 
 ### Glare
 {: #glare}
-Glare affects pixels that are brighter than the Threshold in lumens by creating a halo effect on the surrounding pixels.&#160;Only the brightest pixels in the image are affected.
+Glare affects pixels that are brighter than the Threshold in lumens by creating a halo effect on the surrounding pixels. Only the brightest pixels in the image are affected.
 Hold the cursor over the pixels to see glare and read the total lumens of that pixel.
 
 ![images/glare-001.png](images/glare-001.png)
@@ -296,7 +296,7 @@ Hold the cursor over the pixels to see glare and read the total lumens of that p
 Adjusts the amount of halo that affects the surrounding pixels.
 
 #### Threshold
-The lower limit of&#160;the&#160;value affected by the glare filter.&#160;All pixels brighter than this value will be affected.
+The lower limit of the value affected by the glare filter. All pixels brighter than this value will be affected.
 
 #### Pick
 Pick a point on the image to specify the brightness value.
