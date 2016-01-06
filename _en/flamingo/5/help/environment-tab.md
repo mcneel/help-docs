@@ -51,7 +51,7 @@ Walks forward through the previously selected environments.  For instance an env
 Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
 
 #### ![images/library_default.png](images/library_default.png) Tools Menu
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
+Displays the [Tools menu](#tools_menu).  This is an extensive menu of commands, settings and utilities related to environments.
 
 #### ![images/help_topics.png](images/help_topics.png) Help
 
@@ -61,7 +61,7 @@ This lists all the environments contained in the model. One Environment will be 
 
 From this list:
 
-* Click on an Environment to make it current. Once selected the environment's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
+* Click on an Environment to make it current. Once selected the environment's properties will show in the panels below. See [Environment Properties Section](#properties) for more information
 * Scroll up and down in the list to see all the environments in the model.
 * Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
 * Right-click a thumbnail to display the Environment context menu
@@ -154,7 +154,7 @@ The Environment Properties section is filled with a number of direct Environment
 Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
 
 ## Tools Menu ![images/library_default.png](images/library_default.png)
-{: tools_menu}
+{: #tools_menu}
 These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
 
 #### ![images/currentenvironment.png](images/currentenvironment.png) Set as Current Environment

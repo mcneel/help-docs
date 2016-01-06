@@ -204,7 +204,7 @@ title: マテリアルエディタパネル
 
 #### ![images/changetype.png](images/changetype.png) タイプを変更 (類似の設定をコピー)
 マテリアルを異なるタイプに変更します。
-デフォルトの動作は、[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [コンテンツのタイプが変更された際に類似の設定をコピー](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)ボックスの現在の状態に依存します。チェックマークが付いている場合、古いコンテンツから互換性のある設定が新しいコンテンツにコピーされます。
+デフォルトの動作は、[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm) &gt;  [コンテンツのタイプが変更された際に類似の設定をコピー](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm)ボックスの現在の状態に依存します。チェックマークが付いている場合、古いコンテンツから互換性のある設定が新しいコンテンツにコピーされます。
 
 #### ![images/reset.png](images/reset.png) デフォルトにリセット
 すべてのマテリアル設定をデフォルトの白、艶なし、反射なし、テクスチャなしのマテリアルに変更します。
@@ -228,7 +228,7 @@ title: マテリアルエディタパネル
 選択されたマテリアルを同じ設定でコピーし、新規マテリアルを作成します。
 
 #### ![images/removeinstancing.png](images/removeinstancing.png) インスタンシングを取り除く
-[インスタンスされた](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)マテリアル間の接続を取り除きます。
+[インスタンスされた](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm)マテリアル間の接続を取り除きます。
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 
@@ -236,4 +236,4 @@ title: マテリアルエディタパネル
 [コンテンツフィルタ](content_filters.html)ダイアログボックスを開きます。
 
 #### ![images/rename.png](images/rename.png) プロパティ
-[プレビューのプロパティ](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)ダイアログボックスを開きます。
+[プレビューのプロパティ](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm)ダイアログボックスを開きます。

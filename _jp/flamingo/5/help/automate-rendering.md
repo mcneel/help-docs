@@ -76,7 +76,7 @@ title: レンダリングの自動化
 
 ## アニメーション
 {: #animation}
-Rhinoでアニメーションを作成する方法には2通りあります。アニメーションは、[Rhinoのアニメーションツールバー](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm)または[Bongo](http://bongo.rhino3d.com/)アニメーションプラグインを用いて設定することができます。
+Rhinoでアニメーションを作成する方法には2通りあります。アニメーションは、[Rhinoのアニメーションツールバー](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/animation.htm)または[Bongo](http://bongo.rhino3d.com/)アニメーションプラグインを用いて設定することができます。
 
 ##### アニメーションジョブをレンダーファームに送信するには
 1. [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)コマンドを実行します。

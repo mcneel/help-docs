@@ -79,7 +79,7 @@ In some very specialized finishes, the reflection of the object will be a differ
 
 #### Intensity
 {: #intensity}
-Adjusts the strength of the highlight. Lower values tend to make glossy objects that reflect light, but not the surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
+Adjusts the highlight strength. Lower values tend to make glossy objects that reflect light, but not the surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
@@ -93,7 +93,7 @@ Reduce the value for very dark materials to prevent too much reflection. Increas
 
 #### Sharpness
 {: #sharpness}
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area.  When applied to higher intensity reflectivity, it will make reflections blurry (out of focus) or sharp (in focus).
+Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area.  When applied to higher intensity reflectivity, it makes reflections blurry (out of focus) or sharp (in focus).
 
 ![images/highlightsharpness.png](images/highlightsharpness.png)
 
@@ -190,7 +190,7 @@ The material must have some transparency in order for sub-surface scattering to 
 
 #### Attenuation
 {: #attenuation}
-Determines how much light is absorbed as it passes through the object— greater values produce a cloudier appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation ; murky liquids have higher Attenuation values.
+Determines how much light is absorbed as it passes through the object. Greater values produce a cloudier appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation. Murky liquids have high Attenuation.
 
 ![images/attenuation.png](images/attenuation.png)
 
@@ -229,7 +229,7 @@ Two types of textures can be added to a material: Image Textures and Bump Patter
 
 ### Images
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another image may control the bump properties of the texture. To control how an image affects a material, go to the [Image Properties](material-image-properties.html) Dialog.
+Use up to four bitmap images to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another image may control the bump properties of the texture. To control how an image affects a material, go to the [Image Properties](material-image-properties.html) Dialog.
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -245,7 +245,7 @@ Bump Patterns create the appearance of a specific kind of surface without using 
 > [Wrinkled](#wrinkled)
 > [Marbled](#marbled)
 
-Materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarser texture.
+Materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarse texture.
 
 When one of the bump maps is checked, more controls become available. More than one bump pattern can be added to a material.
 
@@ -279,7 +279,7 @@ Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength), 
 
 #### Marbled
 {: #marbled}
-Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit marbled.
+Gives a marbled appearance.  This is a swirling pattern. Change the [Scale](#scale), [Strength](#strength), and [Rotation](#rotation) to edit marbled.
 
 ![images/marbled.png](images/marbled.png)
 *Marbled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
