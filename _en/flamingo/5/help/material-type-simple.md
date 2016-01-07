@@ -145,7 +145,7 @@ This controls the type of reflection on the surface.  See Advanced [Type](materi
 Within the Texture Map table will be listed the textures that are part of the texture set.  Right-click on the table to add, remove or change the textures in the set.
 
 #### Add Maps...
-Use this command in the right-click menu to Add new textures to the list.  More then one texture can be added at one time. If the textures names include suffixes for one of the mapping tyeps, then the map type will be automatically added.  For instance, if a map has *-normal* in the name it will automatically be tagged as a normal map type.
+Use this command in the right-click menu to add new textures to the list.  More then one texture can be added at one time. If the textures names include suffixes for one of the mapping types, then the map type will be automatically added.  For instance, if a map has *-normal* in the name it will automatically be tagged as a normal map type.
 
 #### Remove Map
 This right-click command will remove a texture map from the table.
@@ -157,7 +157,7 @@ This right-click mapping type will contribute the the visible color of the textu
 The bump map will use the greyscale of the texture to simulate a change in height or bump in the material. For more details see [Bump Map Advanced](material-image-properties.html#bump)
 
 #### Normal
-Normal maps are special bump maps that use the red, green and blue channel of the the bitmap to adjust the bump direction at each pixels.  Because the blue channel is the the Z direction of the bump, the images tend to take on a blue hue. For more details see [Normal Map Advanced](material-image-properties.html#normal)
+Normal maps are special bump maps that use the red, green and blue channel of the bitmap to adjust the bump direction at each pixels.  Because the blue channel is the the Z direction of the bump, the images tend to take on a blue hue. For more details see [Normal Map Advanced](material-image-properties.html#normal)
 
 #### Specular
 A Specular map will use the greyscaled colors in the material to control the amount of reflection in the image at that spot. For more details see [Transparency Map Advanced](material-image-properties.html#transparency)
