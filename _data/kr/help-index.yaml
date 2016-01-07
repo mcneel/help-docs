@@ -102,7 +102,7 @@ main_index:
         - name: 식물
           path: plants.html
         - name: 식물 편집기
-          path: tree-editor.html
+          path: plant-editor.html
 
     - name: 네트워크 렌더링 (팜:Farm)
       anchor: farm
