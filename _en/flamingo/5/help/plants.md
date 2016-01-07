@@ -2,17 +2,15 @@
 title: Plants
 ---
 
-<!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
-
 # ![images/plants.svg](images/plants.svg) {{page.title}}
 Flamingo nXt includes a fun and powerful plant generator that efficiently generates complex plant forms during rendering. These plants have little impact on model size, since only a placeholder is kept in the model.
 
 ![images/plants-001.png](images/plants-001.png)
-*Flamingo nXt trees.*
+*Flamingo nXt plants.*
 
 ### Insert an nXt Plant
 {: #insert:}
-Flamingo Plants are inserted as a block.  These blocks contain points that represent the general shape of the tree.
+Flamingo Plants are inserted as a block.  These blocks contain points that represent the general shape of the plant.
 
 1. On the Flamingo nXt menu, click Plants > Insert Plant.
 1. In the Flamingo nXt Plant dialog box, click a plant name, and click Open.
@@ -25,12 +23,12 @@ Notes:
 
 ### Edit a plant
 {: #edit}
-You can move, copy, and scale a tree once it is inserted. The tree will resize appropriately. For more advanced edits to that tree structure, use the Edit plant command. Making small changes to the tree structure can be quick.  Larger changes to the tree algorithms can take more experimentation.
+You can move, copy, and scale a plant once it is inserted. The plant will resize appropriately. For more advanced edits to that plant structure, use the Edit plant command. Making small changes to the plant structure can be quick.  Larger changes to the plant algorithms can take more experimentation.
 
 1. On the Flamingo nXt menu, click Plants > Edit Plant.
 1. Select the plant to edit.
 1. Make the correct edits to the plant.
-1. Save the tree, then close the editor.  The plant in Rhino will automatically update.
+1. Save the plant, then close the editor.  The plant in Rhino will automatically update.
 
 ### Using Flamingo 2 plants
 {: #using-flamingo-2-plants}
@@ -44,5 +42,5 @@ Notes:
 * Flamingo 2 plants are different from the new plants. Currently you cannot edit Flamingo 2 plants or convert them to Flamingo nXt plants.
 
 ### Plant Editor
-{: tree-editor}
-Flamingo includes a tree editor to create custom trees.  There are a few basic tree templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](tree-editor.html) topic.
+{: plant-editor}
+Flamingo includes a plant editor to create custom plants.  There are a few basic plant templates that can be used as a starting point for a new plant type.  For details see the [Plant Editor](plant-editor.html) topic.

@@ -124,8 +124,8 @@ Set the image map and properties of the material. There are many options here. S
 
 ## Texture Set
 {: #texture-set}
-[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
-<!-- TODO: This dialog Needs a page.-->
+[Texture set materials](material-type-texture-set.html) are a coordinated set of texture which defines a material.  These coordinated sets can the created through texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
+
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
@@ -141,7 +141,32 @@ Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness]
 #### Types
 This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. **Note:** This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+### Texture maps
+Within the Texture Map table will be listed the textures that are part of the texture set.  Right-click on the table to add, remove or change the textures in the set.
 
-## Advanced Material
+#### Add Maps...
+Use this command in the right-click menu to Add new textures to the list.  More then one texture can be added at one time. If the textures names include suffixes for one of the mapping tyeps, then the map type will be automatically added.  For instance, if a map has *-normal* in the name it will automatically be tagged as a normal map type.
+
+#### Remove Map
+This right-click command will remove a texture map from the table.
+
+#### Color
+This right-click mapping type will contribute the the visible color of the texture. For more details see [Standard Mapping Type](material-image-properties.html#standard)
+
+#### Bump
+The bump map will use the greyscale of the texture to simulate a change in height or bump in the material. For more details see [Bump Map Advanced](material-image-properties.html#bump)
+
+#### Normal
+Normal maps are special bump maps that use the red, green and blue channel of the the bitmap to adjust the bump direction at each pixels.  Because the blue channel is the the Z direction of the bump, the images tend to take on a blue hue. For more details see [Normal Map Advanced](material-image-properties.html#normal)
+
+#### Specular
+A Specular map will use the greyscaled colors in the material to control the amount of reflection in the image at that spot. For more details see [Transparency Map Advanced](material-image-properties.html#transparency)
+
+#### Opacity
+An opacity map will control the transparency of a material at each pixel based on the greyscale of the image. For more details see [Normal Map Advanced](material-image-properties.html#normal)
+
+#### Displacement
+A displacement map will actually displace the rendering mesh based on the greyscale color of the map. For more details see [Displacement Map Advanced](material-image-properties.html#displacement)
+
+### Advanced Material
 The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.
