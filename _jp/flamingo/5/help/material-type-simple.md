@@ -1,38 +1,38 @@
 ---
-title: ƒ}ƒeƒŠƒAƒ‹‚ÌŠî–{ƒvƒƒpƒeƒB
+title: ãƒãƒ†ãƒªã‚¢ãƒ«ã®åŸºæœ¬ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
 ---
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Flamingo‚Ìƒ}ƒeƒŠƒAƒ‹‚ÍAˆê˜A‚ÌƒvƒƒpƒeƒB‚ÌƒOƒ‹[ƒv‚Å’è‹`‚³‚ê‚Ü‚·B‚±‚ê‚ç‚Íˆê”Ê“I‚Ég—p‚³‚ê‚éƒVƒ“ƒvƒ‹‚Èƒ}ƒeƒŠƒAƒ‹‚Ìƒ^ƒCƒv‚Ì”X‚Å‚·B‚±‚ê‚ç‚Ìƒ}ƒeƒŠƒAƒ‹‚ÍA”ñí‚ÉƒVƒ“ƒvƒ‹‚ÈƒRƒ“ƒgƒ[ƒ‹ƒZƒbƒg‚ğ’ñ‹Ÿ‚µ‚Ü‚·B‚»‚ê‚É‚æ‚Á‚ÄA‘½”‚Ì•¡G‚ÈƒRƒ“ƒgƒ[ƒ‹‚ğİ’è‚·‚é‚±‚Æ‚È‚­AƒvƒƒpƒeƒB‚ğŠÈ’P‚É•ÒW‚µ‚ÄAƒ}ƒeƒŠƒAƒ‹‚ÌŠOŒ©‚ğ•Ï‚¦‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B‚Ù‚Æ‚ñ‚Ç‚ÌƒVƒ“ƒvƒ‹‚Èƒ}ƒeƒŠƒAƒ‹‚ÍA’P‚ÉF‚ğ•ÏX‚·‚é‚¾‚¯‚ÅŠó–]‚·‚éŒø‰Ê‚ª“¾‚ç‚ê‚Ü‚·B
+Flamingoã®ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€ä¸€é€£ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®ã‚°ãƒ«ãƒ¼ãƒ—ã§å®šç¾©ã•ã‚Œã¾ã™ã€‚ã“ã‚Œã‚‰ã¯ä¸€èˆ¬çš„ã«ä½¿ç”¨ã•ã‚Œã‚‹ã‚·ãƒ³ãƒ—ãƒ«ãªãƒãƒ†ãƒªã‚¢ãƒ«ã®ã‚¿ã‚¤ãƒ—ã®æ•°ã€…ã§ã™ã€‚ã“ã‚Œã‚‰ã®ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€éå¸¸ã«ã‚·ãƒ³ãƒ—ãƒ«ãªã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚»ãƒƒãƒˆã‚’æä¾›ã—ã¾ã™ã€‚ãã‚Œã«ã‚ˆã£ã¦ã€å¤šæ•°ã®è¤‡é›‘ãªã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚’è¨­å®šã™ã‚‹ã“ã¨ãªãã€ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’ç°¡å˜ã«ç·¨é›†ã—ã¦ã€ãƒãƒ†ãƒªã‚¢ãƒ«ã®å¤–è¦‹ã‚’å¤‰ãˆã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ã»ã¨ã‚“ã©ã®ã‚·ãƒ³ãƒ—ãƒ«ãªãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€å˜ã«è‰²ã‚’å¤‰æ›´ã™ã‚‹ã ã‘ã§å¸Œæœ›ã™ã‚‹åŠ¹æœãŒå¾—ã‚‰ã‚Œã¾ã™ã€‚
 
-#### ƒVƒ“ƒvƒ‹‚Èƒ}ƒeƒŠƒAƒ‹‚Ìƒ^ƒCƒv
+#### ã‚·ãƒ³ãƒ—ãƒ«ãªãƒãƒ†ãƒªã‚¢ãƒ«ã®ã‚¿ã‚¤ãƒ—
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[’PF](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[ƒvƒ‰ƒXƒ`ƒbƒN](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[‹à‘®](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[ƒKƒ‰ƒX](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Œõ‘ò](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ƒNƒŠƒAƒtƒBƒjƒbƒVƒ…](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[FlamingoƒeƒNƒXƒ`ƒƒ](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[ƒeƒNƒXƒ`ƒƒƒZƒbƒg](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[å˜è‰²](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[é‡‘å±](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png)[ã‚¬ãƒ©ã‚¹](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png)[å…‰æ²¢](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ã‚¯ãƒªã‚¢ãƒ•ã‚£ãƒ‹ãƒƒã‚·ãƒ¥](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingoãƒ†ã‚¯ã‚¹ãƒãƒ£](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚»ãƒƒãƒˆ](#texture-set)
 
-ƒ}ƒeƒŠƒAƒ‹‚Í‚·‚×‚ÄÚ×ƒ}ƒeƒŠƒAƒ‹‚É•ÏŠ·‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·BÚ×ƒ}ƒeƒŠƒAƒ‹‚ÍAFlamingo nXt‚Åƒ}ƒeƒŠƒAƒ‹‚Ì•ÒW‚ğs‚¤‚½‚ß‚Ì‚·‚×‚Ä‚Ì‰Â”\‚ÈƒRƒ“ƒgƒ[ƒ‹‚ğ’ñ‹Ÿ‚µ‚Ü‚·Bƒ}ƒeƒŠƒAƒ‹‚Ì•L‚¢ƒRƒ“ƒgƒ[ƒ‹‚ğ—˜—p‚·‚é‚É‚ÍAÚ×ƒ}ƒeƒŠƒAƒ‹‚ğg‚¤‚©AŠù‘¶‚Ìƒ}ƒeƒŠƒAƒ‹‚ğÚ×ƒ}ƒeƒŠƒAƒ‹‚É•ÏŠ·‚µ‚Ä‚­‚¾‚³‚¢B
+ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã™ã¹ã¦è©³ç´°ãƒãƒ†ãƒªã‚¢ãƒ«ã«å¤‰æ›ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚è©³ç´°ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€Flamingo nXtã§ãƒãƒ†ãƒªã‚¢ãƒ«ã®ç·¨é›†ã‚’è¡Œã†ãŸã‚ã®ã™ã¹ã¦ã®å¯èƒ½ãªã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚’æä¾›ã—ã¾ã™ã€‚ãƒãƒ†ãƒªã‚¢ãƒ«ã®å¹…åºƒã„ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚’åˆ©ç”¨ã™ã‚‹ã«ã¯ã€è©³ç´°ãƒãƒ†ãƒªã‚¢ãƒ«ã‚’ä½¿ã†ã‹ã€æ—¢å­˜ã®ãƒãƒ†ãƒªã‚¢ãƒ«ã‚’è©³ç´°ãƒãƒ†ãƒªã‚¢ãƒ«ã«å¤‰æ›ã—ã¦ãã ã•ã„ã€‚
 
-#### Ú×ƒ}ƒeƒŠƒAƒ‹‚ÍA‚±‚ê‚ç‚ÌƒvƒƒpƒeƒBƒOƒ‹[ƒv‚©‚ç\¬‚³‚ê‚Ä‚¢‚Ü‚·:
+#### è©³ç´°ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€ã“ã‚Œã‚‰ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚°ãƒ«ãƒ¼ãƒ—ã‹ã‚‰æ§‹æˆã•ã‚Œã¦ã„ã¾ã™:
 
-> [–¼‘O](material-type-advanced.html#name)
-> [ƒ}ƒeƒŠƒAƒ‹ƒvƒƒV[ƒWƒƒ](material-type-advanced.html#procedures)
-> [Ú×ƒ}ƒeƒŠƒAƒ‹ƒvƒƒpƒeƒB](material-type-advanced.html#advanced-materials-properties)
-> [”½Ëdã‚°](material-type-advanced.html#reflective-finish-and-highlight)
-> [“§–¾“x‚ÌƒvƒƒpƒeƒB](material-type-advanced.html#transparency)
-> [ƒvƒƒV[ƒWƒƒƒ‹ƒeƒNƒXƒ`ƒƒ](material-type-advanced.html#bump-patterns)
-> [ƒrƒbƒgƒ}ƒbƒvƒeƒNƒXƒ`ƒƒ](material-type-advanced.html#textures)
-> [’‹L](material-type-advanced.html#notes)
+> [åå‰](material-type-advanced.html#name)
+> [ãƒãƒ†ãƒªã‚¢ãƒ«ãƒ—ãƒ­ã‚·ãƒ¼ã‚¸ãƒ£](material-type-advanced.html#procedures)
+> [è©³ç´°ãƒãƒ†ãƒªã‚¢ãƒ«ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£](material-type-advanced.html#advanced-materials-properties)
+> [åå°„ä»•ä¸Šã’](material-type-advanced.html#reflective-finish-and-highlight)
+> [é€æ˜åº¦ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£](material-type-advanced.html#transparency)
+> [ãƒ—ãƒ­ã‚·ãƒ¼ã‚¸ãƒ£ãƒ«ãƒ†ã‚¯ã‚¹ãƒãƒ£](material-type-advanced.html#bump-patterns)
+> [ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ãƒ†ã‚¯ã‚¹ãƒãƒ£](material-type-advanced.html#textures)
+> [æ³¨è¨˜](material-type-advanced.html#notes)
 
-ƒ}ƒeƒŠƒAƒ‹‚ÍRhino‚Ìƒ‚ƒfƒ‹‚É•Û‘¶AŠi”[‚³‚ê‚Ü‚·BˆÙ‚È‚éƒ}ƒeƒŠƒAƒ‹‚ª•ÊX‚ÌRhino‚Ìƒ‚ƒfƒ‹‚Å“¯‚¶–¼‘O‚ğ‚Â‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ãƒãƒ†ãƒªã‚¢ãƒ«ã¯Rhinoã®ãƒ¢ãƒ‡ãƒ«ã«ä¿å­˜ã€æ ¼ç´ã•ã‚Œã¾ã™ã€‚ç•°ãªã‚‹ãƒãƒ†ãƒªã‚¢ãƒ«ãŒåˆ¥ã€…ã®Rhinoã®ãƒ¢ãƒ‡ãƒ«ã§åŒã˜åå‰ã‚’æŒã¤ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-## ’PF
+## å˜è‰²
 {: #solid-color}
-’PFƒ}ƒeƒŠƒAƒ‹‚ÍA[–¼‘O](material-type-advanced.html#name)‚Æ[F](material-type-advanced.html#color)‚¾‚¯‚ğŠ—L‚µ‚Ü‚·B
+å˜è‰²ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€[åå‰](material-type-advanced.html#name)ã¨[è‰²](material-type-advanced.html#color)ã ã‘ã‚’æ‰€æœ‰ã—ã¾ã™ã€‚
 
 ![images/solidcolors.png](images/3-solidcolor.png)
 
@@ -40,133 +40,133 @@ Flamingo‚Ìƒ}ƒeƒŠƒAƒ‹‚ÍAˆê˜A‚ÌƒvƒƒpƒeƒB‚ÌƒOƒ‹[ƒv‚Å’è‹`‚³‚ê‚Ü‚·B‚±‚ê‚ç‚Íˆê”Ê“I
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %}
 
-## ƒvƒ‰ƒXƒ`ƒbƒN
+## ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯
 {: #plastic}
-ƒvƒ‰ƒXƒ`ƒbƒNƒ}ƒeƒŠƒAƒ‹‚É‚ÍA”’‚¢[ƒnƒCƒ‰ƒCƒg](material-type-advanced.html#highlight-color)A‚í‚¸‚©‚È”½Ë«‚ª‚ ‚è‚Ü‚·B
+ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯ãƒãƒ†ãƒªã‚¢ãƒ«ã«ã¯ã€ç™½ã„[ãƒã‚¤ãƒ©ã‚¤ãƒˆ](material-type-advanced.html#highlight-color)ã€ã‚ãšã‹ãªåå°„æ€§ãŒã‚ã‚Šã¾ã™ã€‚
 
 ![images/solidcolors.png](images/3-plastic.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} —\‚ßİ’è‚³‚ê‚Ä‚¢‚é[ƒnƒCƒ‰ƒCƒgF](material-type-advanced.html#highlight-color)A[‹­“x](material-type-advanced.html#intensity)A[ƒtƒŒƒlƒ‹](material-type-advanced.html#fresnel)A[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ğ•ÏX‚µ‚½‚¢ê‡‚ÍAÚ×ƒGƒfƒBƒ^‚ğg—p‚µ‚Ü‚·B
+{% include_relative snippets/snippet-material-advanced-editor.md %} äºˆã‚è¨­å®šã•ã‚Œã¦ã„ã‚‹[ãƒã‚¤ãƒ©ã‚¤ãƒˆè‰²](material-type-advanced.html#highlight-color)ã€[å¼·åº¦](material-type-advanced.html#intensity)ã€[ãƒ•ãƒ¬ãƒãƒ«](material-type-advanced.html#fresnel)ã€[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã‚’å¤‰æ›´ã—ãŸã„å ´åˆã¯ã€è©³ç´°ã‚¨ãƒ‡ã‚£ã‚¿ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-## ‹à‘®
+## é‡‘å±
 {: #metal}
-‹à‘®ƒ}ƒeƒŠƒAƒ‹‚É‚ÍA[F](material-type-advanced.html#color)‚Ìİ’è‚Æˆê’v‚·‚éF‚ÅƒnƒCƒ‰ƒCƒg‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚·B”½Ë‚Ì[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ğƒRƒ“ƒgƒ[ƒ‹‚·‚é‚±‚Æ‚à‚Å‚«‚Ü‚·B
+é‡‘å±ãƒãƒ†ãƒªã‚¢ãƒ«ã«ã¯ã€[è‰²](material-type-advanced.html#color)ã®è¨­å®šã¨ä¸€è‡´ã™ã‚‹è‰²ã§ãƒã‚¤ãƒ©ã‚¤ãƒˆãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚åå°„ã®[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
 
 ![images/solidcolors.png](images/3-metal.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### ƒVƒƒ[ƒvƒlƒX
-”½Ë‚ÌƒVƒƒ[ƒvƒlƒX‘Îƒuƒ‰[‚Ì“x‡‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹
+åå°„ã®ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹å¯¾ãƒ–ãƒ©ãƒ¼ã®åº¦åˆã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} —\‚ßİ’è‚³‚ê‚Ä‚¢‚é[ƒnƒCƒ‰ƒCƒgF](material-type-advanced.html#highlight-color)A[‹­“x](material-type-advanced.html#intensity)A[ƒtƒŒƒlƒ‹](material-type-advanced.html#fresnel)A[ƒ^ƒCƒv](material-type-advanced.html#type)‚ğ•ÏX‚µ‚½‚¢ê‡‚ÍAÚ×ƒGƒfƒBƒ^‚ğg—p‚µ‚Ü‚·B
+{% include_relative snippets/snippet-material-advanced-editor.md %} äºˆã‚è¨­å®šã•ã‚Œã¦ã„ã‚‹[ãƒã‚¤ãƒ©ã‚¤ãƒˆè‰²](material-type-advanced.html#highlight-color)ã€[å¼·åº¦](material-type-advanced.html#intensity)ã€[ãƒ•ãƒ¬ãƒãƒ«](material-type-advanced.html#fresnel)ã€[ã‚¿ã‚¤ãƒ—](material-type-advanced.html#type)ã‚’å¤‰æ›´ã—ãŸã„å ´åˆã¯ã€è©³ç´°ã‚¨ãƒ‡ã‚£ã‚¿ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-## ƒKƒ‰ƒX
+## ã‚¬ãƒ©ã‚¹
 {: #glass}
-ƒKƒ‰ƒXƒ}ƒeƒŠƒAƒ‹‚ÍA[F](material-type-advanced.html#color)‚Æ[‹üÜ—¦](advanced-material-properties-main.html#index-of-refraction)iIORj‚ª‚ ‚è‚Ü‚·B
+ã‚¬ãƒ©ã‚¹ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€[è‰²](material-type-advanced.html#color)ã¨[å±ˆæŠ˜ç‡](advanced-material-properties-main.html#index-of-refraction)ï¼ˆIORï¼‰ãŒã‚ã‚Šã¾ã™ã€‚
 
 ![images/solidcolors.png](images/3-glass.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
 #### IOR
-ƒ}ƒeƒŠƒAƒ‹‚ğ’Ê‰ß‚·‚éÛ‚ÌŒõ‚Ì‹üÜ—Ê‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[‹üÜ—¦](advanced-material-properties-main.html#index-of-refraction)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+ãƒãƒ†ãƒªã‚¢ãƒ«ã‚’é€šéã™ã‚‹éš›ã®å…‰ã®å±ˆæŠ˜é‡ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[å±ˆæŠ˜ç‡](advanced-material-properties-main.html#index-of-refraction)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} —\‚ßİ’è‚³‚ê‚Ä‚¢‚é[ƒnƒCƒ‰ƒCƒgF](material-type-advanced.html#highlight-color)A[‹­“x](material-type-advanced.html#intensity)A[ƒtƒŒƒlƒ‹](material-type-advanced.html#fresnel)A[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)A[“§–¾“x](material-type-advanced.html#transparency)‚ğ•ÏX‚µ‚½‚¢ê‡‚ÍAÚ×ƒGƒfƒBƒ^‚ğg—p‚µ‚Ü‚·B
+{% include_relative snippets/snippet-material-advanced-editor.md %} äºˆã‚è¨­å®šã•ã‚Œã¦ã„ã‚‹[ãƒã‚¤ãƒ©ã‚¤ãƒˆè‰²](material-type-advanced.html#highlight-color)ã€[å¼·åº¦](material-type-advanced.html#intensity)ã€[ãƒ•ãƒ¬ãƒãƒ«](material-type-advanced.html#fresnel)ã€[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã€[é€æ˜åº¦](material-type-advanced.html#transparency)ã‚’å¤‰æ›´ã—ãŸã„å ´åˆã¯ã€è©³ç´°ã‚¨ãƒ‡ã‚£ã‚¿ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-## Œõ‘ò
+## å…‰æ²¢
 {: #glossy}
-Œõ‘òƒ}ƒeƒŠƒAƒ‹‚É‚Í’ÊíƒnƒCƒ‰ƒCƒg[‹­“x](material-type-advanced.html#intensity)‚Æ[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ª’á‚­İ’è‚³‚ê‚Ä‚¢‚Ü‚·B
+å…‰æ²¢ãƒãƒ†ãƒªã‚¢ãƒ«ã«ã¯é€šå¸¸ãƒã‚¤ãƒ©ã‚¤ãƒˆ[å¼·åº¦](material-type-advanced.html#intensity)ã¨[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ãŒä½ãè¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 ![images/solidcolors.png](images/3-glossy.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### ‹­“x
-ƒT[ƒtƒFƒXã‚ÌŒõŒ¹‚©‚ç‚ÌƒnƒCƒ‰ƒCƒg‚Ì‹­“x‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[‹­“x](material-type-advanced.html#intensity)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### å¼·åº¦
+ã‚µãƒ¼ãƒ•ã‚§ã‚¹ä¸Šã®å…‰æºã‹ã‚‰ã®ãƒã‚¤ãƒ©ã‚¤ãƒˆã®å¼·åº¦ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[å¼·åº¦](material-type-advanced.html#intensity)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ƒnƒCƒ‰ƒCƒgƒVƒƒ[ƒvƒlƒX
-ƒT[ƒtƒFƒXã‚ÌŒõŒ¹‚©‚ç‚ÌƒnƒCƒ‰ƒCƒgƒXƒ|ƒbƒg‚ÌƒVƒƒ[ƒvƒlƒX‘Îƒuƒ‰[‚Ì“x‡ƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[ƒnƒCƒ‰ƒCƒgƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ãƒã‚¤ãƒ©ã‚¤ãƒˆã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹
+ã‚µãƒ¼ãƒ•ã‚§ã‚¹ä¸Šã®å…‰æºã‹ã‚‰ã®ãƒã‚¤ãƒ©ã‚¤ãƒˆã‚¹ãƒãƒƒãƒˆã®ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹å¯¾ãƒ–ãƒ©ãƒ¼ã®åº¦åˆã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[ãƒã‚¤ãƒ©ã‚¤ãƒˆã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} —\‚ßİ’è‚³‚ê‚Ä‚¢‚é[ƒtƒŒƒlƒ‹](material-type-advanced.html#fresnel)‚Æ[ƒ^ƒCƒv](material-type-advanced.html#type)‚ğ•ÏX‚µ‚½‚¢ê‡‚ÍAÚ×ƒGƒfƒBƒ^‚ğg—p‚µ‚Ü‚·B
+{% include_relative snippets/snippet-material-advanced-editor.md %} äºˆã‚è¨­å®šã•ã‚Œã¦ã„ã‚‹[ãƒ•ãƒ¬ãƒãƒ«](material-type-advanced.html#fresnel)ã¨[ã‚¿ã‚¤ãƒ—](material-type-advanced.html#type)ã‚’å¤‰æ›´ã—ãŸã„å ´åˆã¯ã€è©³ç´°ã‚¨ãƒ‡ã‚£ã‚¿ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-## ƒNƒŠƒAƒtƒBƒjƒbƒVƒ…
+## ã‚¯ãƒªã‚¢ãƒ•ã‚£ãƒ‹ãƒƒã‚·ãƒ¥
 {: #clearfinish}
-ƒNƒŠƒAƒtƒBƒjƒbƒVƒ…ƒ}ƒeƒŠƒAƒ‹‚ÍAÔ‚Ì“h—¿iƒyƒCƒ“ƒgjA¥Šíiƒ|[ƒZƒŠƒ“jA“©¥ŠíiƒZƒ‰ƒ~ƒbƒNjAƒjƒX‚ğ“h‚Á‚½–ØŞA‚»‚Ì‘¼‚Ìƒvƒ‰ƒXƒ`ƒbƒN‚Ü‚½‚ÍƒNƒŠƒAƒR[ƒeƒBƒ“ƒO‘w‚Ì‚ ‚éƒ}ƒeƒŠƒAƒ‹‚ğƒVƒ~ƒ…ƒŒ[ƒg‚µ‚Ü‚·BƒNƒŠƒAƒtƒBƒjƒbƒVƒ…‚ÍA‹“_‚ÉŠî‚Ã‚¢‚½ƒ}ƒeƒŠƒAƒ‹‚ÌF‚Ì•Ï‰»‚É[ƒtƒŒƒlƒ‹](material-type-advanced.html#fresnel)İ’è‚ğ—p‚¢‚Ü‚·B‚±‚ê‚ç‚Ìƒ}ƒeƒŠƒAƒ‹‚ÌF‚ÍA³–Ê‚©‚çŒ©‚½ê‡A”Z‚­‚È‚éŒXŒü‚ª‚ ‚è‚Ü‚·B‚µ‚©‚µAƒT[ƒtƒFƒX‚Ì‹È–Ê‚É‰ˆ‚Á‚Ä‹“_‚ğ‚¸‚ç‚µ‚Ä‚¢‚­‚ÆA”½Ë‚ª‹­‚­‚È‚Á‚Ä‚¢‚«‚Ü‚·BƒNƒŠƒAƒR[ƒeƒBƒ“ƒOA‚Ü‚½‚ÍƒNƒŠƒAƒ‰ƒbƒJ[dã‚°‚Ì‚ ‚éƒJ[ƒyƒCƒ“ƒg‚ªA‚æ‚¢—á‚Å‚·B
+ã‚¯ãƒªã‚¢ãƒ•ã‚£ãƒ‹ãƒƒã‚·ãƒ¥ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€è»Šã®å¡—æ–™ï¼ˆãƒšã‚¤ãƒ³ãƒˆï¼‰ã€ç£å™¨ï¼ˆãƒãƒ¼ã‚»ãƒªãƒ³ï¼‰ã€é™¶ç£å™¨ï¼ˆã‚»ãƒ©ãƒŸãƒƒã‚¯ï¼‰ã€ãƒ‹ã‚¹ã‚’å¡—ã£ãŸæœ¨æã€ãã®ä»–ã®ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯ã¾ãŸã¯ã‚¯ãƒªã‚¢ã‚³ãƒ¼ãƒ†ã‚£ãƒ³ã‚°å±¤ã®ã‚ã‚‹ãƒãƒ†ãƒªã‚¢ãƒ«ã‚’ã‚·ãƒŸãƒ¥ãƒ¬ãƒ¼ãƒˆã—ã¾ã™ã€‚ã‚¯ãƒªã‚¢ãƒ•ã‚£ãƒ‹ãƒƒã‚·ãƒ¥ã¯ã€è¦–ç‚¹ã«åŸºã¥ã„ãŸãƒãƒ†ãƒªã‚¢ãƒ«ã®è‰²ã®å¤‰åŒ–ã«[ãƒ•ãƒ¬ãƒãƒ«](material-type-advanced.html#fresnel)è¨­å®šã‚’ç”¨ã„ã¾ã™ã€‚ã“ã‚Œã‚‰ã®ãƒãƒ†ãƒªã‚¢ãƒ«ã®è‰²ã¯ã€æ­£é¢ã‹ã‚‰è¦‹ãŸå ´åˆã€æ¿ƒããªã‚‹å‚¾å‘ãŒã‚ã‚Šã¾ã™ã€‚ã—ã‹ã—ã€ã‚µãƒ¼ãƒ•ã‚§ã‚¹ã®æ›²é¢ã«æ²¿ã£ã¦è¦–ç‚¹ã‚’ãšã‚‰ã—ã¦ã„ãã¨ã€åå°„ãŒå¼·ããªã£ã¦ã„ãã¾ã™ã€‚ã‚¯ãƒªã‚¢ã‚³ãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã€ã¾ãŸã¯ã‚¯ãƒªã‚¢ãƒ©ãƒƒã‚«ãƒ¼ä»•ä¸Šã’ã®ã‚ã‚‹ã‚«ãƒ¼ãƒšã‚¤ãƒ³ãƒˆãŒã€ã‚ˆã„ä¾‹ã§ã™ã€‚
 
 ![images/solidcolors.png](images/3-clearfinish.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} —\‚ßİ’è‚³‚ê‚Ä‚¢‚é[ƒnƒCƒ‰ƒCƒgF](material-type-advanced.html#highlight-color)A[‹­“x](material-type-advanced.html#intensity)A[ƒtƒŒƒlƒ‹](material-type-advanced.html#fresnel)A[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ğ•ÏX‚µ‚½‚¢ê‡‚ÍAÚ×ƒGƒfƒBƒ^‚ğg—p‚µ‚Ü‚·B
+{% include_relative snippets/snippet-material-advanced-editor.md %} äºˆã‚è¨­å®šã•ã‚Œã¦ã„ã‚‹[ãƒã‚¤ãƒ©ã‚¤ãƒˆè‰²](material-type-advanced.html#highlight-color)ã€[å¼·åº¦](material-type-advanced.html#intensity)ã€[ãƒ•ãƒ¬ãƒãƒ«](material-type-advanced.html#fresnel)ã€[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã‚’å¤‰æ›´ã—ãŸã„å ´åˆã¯ã€è©³ç´°ã‚¨ãƒ‡ã‚£ã‚¿ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-## FlamingoƒeƒNƒXƒ`ƒƒ
+## Flamingoãƒ†ã‚¯ã‚¹ãƒãƒ£
 {: #flamingo-textured}
-ƒeƒNƒXƒ`ƒƒƒ}ƒeƒŠƒAƒ‹‚ÍA‰æ‘œ‚ğ—p‚¢‚ÄF‚âƒpƒ^[ƒ“‚ğì¬‚µ‚Ü‚·B‚±‚ÌƒVƒ“ƒvƒ‹‚Èƒ}ƒeƒŠƒAƒ‹‚©‚ç‚ÍA‰æ‘œ–¼A‰ğ‘œ“xAƒ^ƒCƒ‹‚ÌƒTƒCƒYA‚»‚µ‚ÄƒnƒCƒ‰ƒCƒg‚Ì‹­“x‚ÆƒVƒƒ[ƒvƒlƒX‚ğƒRƒ“ƒgƒ[ƒ‹‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ãƒ†ã‚¯ã‚¹ãƒãƒ£ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€ç”»åƒã‚’ç”¨ã„ã¦è‰²ã‚„ãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’ä½œæˆã—ã¾ã™ã€‚ã“ã®ã‚·ãƒ³ãƒ—ãƒ«ãªãƒãƒ†ãƒªã‚¢ãƒ«ã‹ã‚‰ã¯ã€ç”»åƒåã€è§£åƒåº¦ã€ã‚¿ã‚¤ãƒ«ã®ã‚µã‚¤ã‚ºã€ãã—ã¦ãƒã‚¤ãƒ©ã‚¤ãƒˆã®å¼·åº¦ã¨ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### ‹­“x
-ƒT[ƒtƒFƒX‚Ì‹¾‚Ì‚æ‚¤‚È”½Ë‚Ì‹­“x‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[‹­“x](material-type-advanced.html#intensity)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### å¼·åº¦
+ã‚µãƒ¼ãƒ•ã‚§ã‚¹ã®é¡ã®ã‚ˆã†ãªåå°„ã®å¼·åº¦ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[å¼·åº¦](material-type-advanced.html#intensity)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ƒVƒƒ[ƒvƒlƒX
-”½Ë‚ÌƒVƒƒ[ƒvƒlƒX‘Îƒuƒ‰[‚Ì“x‡‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹
+åå°„ã®ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹å¯¾ãƒ–ãƒ©ãƒ¼ã®åº¦åˆã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ‰æ‘œ
-ƒ}ƒeƒŠƒAƒ‹‚Ì‰æ‘œƒ}ƒbƒv‚ÆƒvƒƒpƒeƒB‚ğİ’è‚µ‚Ü‚·B‘½‚­‚ÌƒIƒvƒVƒ‡ƒ“‚ª‚ ‚è‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[‰æ‘œ](material-type-advanced.html#texture)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ç”»åƒ
+ãƒãƒ†ãƒªã‚¢ãƒ«ã®ç”»åƒãƒãƒƒãƒ—ã¨ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã‚’è¨­å®šã—ã¾ã™ã€‚å¤šãã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒã‚ã‚Šã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[ç”»åƒ](material-type-advanced.html#texture)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} ƒ}ƒeƒŠƒAƒ‹‚É—\‚ßİ’è‚³‚ê‚Ä‚¢‚é“à—e‚ğ•ÏX‚µ‚½‚¢ê‡‚ÍAÚ×ƒGƒfƒBƒ^‚ğg—p‚µ‚Ü‚·B
+{% include_relative snippets/snippet-material-advanced-editor.md %} ãƒãƒ†ãƒªã‚¢ãƒ«ã«äºˆã‚è¨­å®šã•ã‚Œã¦ã„ã‚‹å†…å®¹ã‚’å¤‰æ›´ã—ãŸã„å ´åˆã¯ã€è©³ç´°ã‚¨ãƒ‡ã‚£ã‚¿ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-## ƒeƒNƒXƒ`ƒƒƒZƒbƒg
+## ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚»ãƒƒãƒˆ
 {: #texture-set}
-[ƒeƒNƒXƒ`ƒƒƒZƒbƒgƒ}ƒeƒŠƒAƒ‹](material-type-texture-set.html)‚ÍAƒ}ƒeƒŠƒAƒ‹‚ğ˜AŒW‚µ‚Ä’è‹`‚·‚éˆê˜A‚ÌƒZƒbƒg‚ÌƒeƒNƒXƒ`ƒƒ‚Å‚·B‚±‚ê‚ç‚ÌƒZƒbƒg‚ÍAƒfƒBƒXƒvƒŒƒCƒXƒƒ“ƒgA–@üAƒoƒ“ƒvƒ}ƒbƒv‚È‚Ç‚Ìî•ñ‚ğŠÜ‚ŞƒeƒNƒXƒ`ƒƒƒ}ƒbƒv‚©‚çì¬‚Å‚«‚Ü‚·BƒfƒBƒXƒvƒŒƒCƒXƒƒ“ƒgƒ}ƒbƒv‚ÍAƒ}ƒeƒŠƒAƒ‹‚É[‚³‚ğ—^‚¦‚Ü‚·B‚±‚ê‚ç‚ÌƒeƒNƒXƒ`ƒƒƒ}ƒbƒv‚ğƒZƒbƒg‚Æ‚µ‚Ä‘g‚İ‡‚í‚¹‚é‚ÆA”ñí‚ÉƒŠƒAƒ‹‚Èƒ}ƒeƒŠƒAƒ‹‚ğì¬‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B[PixPlant software](http://www.pixplant.com/)‚ÍA•W€ƒrƒbƒgƒ}ƒbƒv‚ğg‚Á‚ÄA‚±‚ê‚ç‚ÌƒeƒNƒXƒ`ƒƒ‚ÌƒZƒbƒg‚ğì¬‚Å‚«‚é»•i‚Å‚·B
+[ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚»ãƒƒãƒˆãƒãƒ†ãƒªã‚¢ãƒ«](material-type-texture-set.html)ã¯ã€ãƒãƒ†ãƒªã‚¢ãƒ«ã‚’é€£ä¿‚ã—ã¦å®šç¾©ã™ã‚‹ä¸€é€£ã®ã‚»ãƒƒãƒˆã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ã§ã™ã€‚ã“ã‚Œã‚‰ã®ã‚»ãƒƒãƒˆã¯ã€ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚¹ãƒ¡ãƒ³ãƒˆã€æ³•ç·šã€ãƒãƒ³ãƒ—ãƒãƒƒãƒ—ãªã©ã®æƒ…å ±ã‚’å«ã‚€ãƒ†ã‚¯ã‚¹ãƒãƒ£ãƒãƒƒãƒ—ã‹ã‚‰ä½œæˆã§ãã¾ã™ã€‚ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚¹ãƒ¡ãƒ³ãƒˆãƒãƒƒãƒ—ã¯ã€ãƒãƒ†ãƒªã‚¢ãƒ«ã«æ·±ã•ã‚’ä¸ãˆã¾ã™ã€‚ã“ã‚Œã‚‰ã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ãƒãƒƒãƒ—ã‚’ã‚»ãƒƒãƒˆã¨ã—ã¦çµ„ã¿åˆã‚ã›ã‚‹ã¨ã€éå¸¸ã«ãƒªã‚¢ãƒ«ãªãƒãƒ†ãƒªã‚¢ãƒ«ã‚’ä½œæˆã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚[PixPlant software](http://www.pixplant.com/)ã¯ã€æ¨™æº–ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ã‚’ä½¿ã£ã¦ã€ã“ã‚Œã‚‰ã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ã®ã‚»ãƒƒãƒˆã‚’ä½œæˆã§ãã‚‹è£½å“ã§ã™ã€‚
 
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-#### •‚Æ‚‚³
-ƒZƒbƒg‚Ì‚·‚×‚Ä‚ÌƒeƒNƒXƒ`ƒƒ‚ÌƒTƒCƒY‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·B‚·‚×‚Ä‚Ìƒrƒbƒgƒ}ƒbƒv‚ÌƒTƒCƒY‚ğ“¯‚¶‚ÉA®—ñ‚·‚é‚æ‚¤‚É‚·‚é‚É‚ÍA‚±‚ÌƒRƒ“ƒgƒ[ƒ‹‚ğg—p‚µ‚Ü‚·B
+#### å¹…ã¨é«˜ã•
+ã‚»ãƒƒãƒˆã®ã™ã¹ã¦ã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ã®ã‚µã‚¤ã‚ºã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚ã™ã¹ã¦ã®ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ã®ã‚µã‚¤ã‚ºã‚’åŒã˜ã«ã€æ•´åˆ—ã™ã‚‹ã‚ˆã†ã«ã™ã‚‹ã«ã¯ã€ã“ã®ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-#### ‹­“x
-ƒT[ƒtƒFƒX‚Ì‹¾‚Ì‚æ‚¤‚È”½Ë‚Ì‹­“x‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[‹­“x](material-type-advanced.html#intensity)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### å¼·åº¦
+ã‚µãƒ¼ãƒ•ã‚§ã‚¹ã®é¡ã®ã‚ˆã†ãªåå°„ã®å¼·åº¦ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[å¼·åº¦](material-type-advanced.html#intensity)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ƒVƒƒ[ƒvƒlƒX
-”½Ë‚ÌƒVƒƒ[ƒvƒlƒX‘Îƒuƒ‰[‚Ì“x‡‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[ƒVƒƒ[ƒvƒlƒX](material-type-advanced.html#sharpness)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹
+åå°„ã®ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹å¯¾ãƒ–ãƒ©ãƒ¼ã®åº¦åˆã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[ã‚·ãƒ£ãƒ¼ãƒ—ãƒã‚¹](material-type-advanced.html#sharpness)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ƒ^ƒCƒv
-‚±‚ê‚ÍAƒT[ƒtƒFƒXã‚Ì”½Ë‚Ìƒ^ƒCƒv‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍAÚ×ƒvƒƒpƒeƒB‚Ì[ƒ^ƒCƒv](material-type-advanced.html#type)‚ÌƒgƒsƒbƒN‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ã‚¿ã‚¤ãƒ—
+ã“ã‚Œã¯ã€ã‚µãƒ¼ãƒ•ã‚§ã‚¹ä¸Šã®åå°„ã®ã‚¿ã‚¤ãƒ—ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€è©³ç´°ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®[ã‚¿ã‚¤ãƒ—](material-type-advanced.html#type)ã®ãƒˆãƒ”ãƒƒã‚¯ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-### ƒeƒNƒXƒ`ƒƒƒ}ƒbƒv
-ƒeƒNƒXƒ`ƒƒƒ}ƒbƒvƒe[ƒuƒ‹‚ÉƒeƒNƒXƒ`ƒƒƒZƒbƒg‚ÌƒeƒNƒXƒ`ƒƒ‚ª•\¦‚³‚ê‚Ü‚·Bƒe[ƒuƒ‹‚ğ‰EƒNƒŠƒbƒN‚µ‚ÄAƒZƒbƒg‚ÌƒeƒNƒXƒ`ƒƒ‚ğ’Ç‰ÁAíœA•ÏX‚Å‚«‚Ü‚·B
+### ãƒ†ã‚¯ã‚¹ãƒãƒ£ãƒãƒƒãƒ—
+ãƒ†ã‚¯ã‚¹ãƒãƒ£ãƒãƒƒãƒ—ãƒ†ãƒ¼ãƒ–ãƒ«ã«ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚»ãƒƒãƒˆã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’å³ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚»ãƒƒãƒˆã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚’è¿½åŠ ã€å‰Šé™¤ã€å¤‰æ›´ã§ãã¾ã™ã€‚
 
-#### ƒ}ƒbƒv‚ğ’Ç‰Á...
-‰EƒNƒŠƒbƒNƒƒjƒ…[‚Ì‚±‚ÌƒRƒ}ƒ“ƒh‚ğg—p‚µ‚ÄAƒŠƒXƒg‚ÉV‹KƒeƒNƒXƒ`ƒƒ‚ğ’Ç‰Á‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B1“x‚É•¡”‚ÌƒeƒNƒXƒ`ƒƒ‚ğ’Ç‰Á‚Å‚«‚Ü‚·BƒeƒNƒXƒ`ƒƒ–¼‚Éƒ}ƒbƒsƒ“ƒOƒ^ƒCƒv‚Ì1‚Â‚ªƒTƒtƒBƒbƒNƒXiÚ”ö«j‚Æ‚µ‚ÄŠÜ‚Ü‚ê‚Ä‚¢‚½ê‡Aƒ}ƒbƒsƒ“ƒOƒ^ƒCƒv‚ª©“®“I‚É’Ç‰Á‚³‚ê‚Ü‚·B—á‚¦‚ÎAƒ}ƒbƒv‚É*-normal*‚Æ‚ ‚Á‚½ê‡A‚»‚ê‚Í©“®“I‚É–@üƒ}ƒbƒvƒ^ƒCƒv‚Æ‚µ‚Äƒ^ƒO•t‚¯‚³‚ê‚Ü‚·B
+#### ãƒãƒƒãƒ—ã‚’è¿½åŠ ...
+å³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã“ã®ã‚³ãƒãƒ³ãƒ‰ã‚’ä½¿ç”¨ã—ã¦ã€ãƒªã‚¹ãƒˆã«æ–°è¦ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚’è¿½åŠ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚1åº¦ã«è¤‡æ•°ã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚’è¿½åŠ ã§ãã¾ã™ã€‚ãƒ†ã‚¯ã‚¹ãƒãƒ£åã«ãƒãƒƒãƒ”ãƒ³ã‚°ã‚¿ã‚¤ãƒ—ã®1ã¤ãŒã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹ï¼ˆæ¥å°¾è¾ï¼‰ã¨ã—ã¦å«ã¾ã‚Œã¦ã„ãŸå ´åˆã€ãƒãƒƒãƒ”ãƒ³ã‚°ã‚¿ã‚¤ãƒ—ãŒè‡ªå‹•çš„ã«è¿½åŠ ã•ã‚Œã¾ã™ã€‚ä¾‹ãˆã°ã€ãƒãƒƒãƒ—ã«*-normal*ã¨ã‚ã£ãŸå ´åˆã€ãã‚Œã¯è‡ªå‹•çš„ã«æ³•ç·šãƒãƒƒãƒ—ã‚¿ã‚¤ãƒ—ã¨ã—ã¦ã‚¿ã‚°ä»˜ã‘ã•ã‚Œã¾ã™ã€‚
 
-#### ƒ}ƒbƒv‚ğíœ
-‚±‚Ì‰EƒNƒŠƒbƒNƒRƒ}ƒ“ƒh‚ÍAƒe[ƒuƒ‹‚©‚çƒeƒNƒXƒ`ƒƒ‚ğíœ‚µ‚Ü‚·B
+#### ãƒãƒƒãƒ—ã‚’å‰Šé™¤
+ã“ã®å³ã‚¯ãƒªãƒƒã‚¯ã‚³ãƒãƒ³ãƒ‰ã¯ã€ãƒ†ãƒ¼ãƒ–ãƒ«ã‹ã‚‰ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
-#### F
-‚±‚Ì‰EƒNƒŠƒbƒN‚Åw’è‚Å‚«‚éƒ}ƒbƒsƒ“ƒOƒ^ƒCƒv‚ÍAƒeƒNƒXƒ`ƒƒ‚Ì–Ú‚ÉŒ©‚¦‚éF‚Ég—p‚³‚ê‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍA[•W€ƒ}ƒbƒsƒ“ƒOƒ^ƒCƒv](material-image-properties.html#standard)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### è‰²
+ã“ã®å³ã‚¯ãƒªãƒƒã‚¯ã§æŒ‡å®šã§ãã‚‹ãƒãƒƒãƒ”ãƒ³ã‚°ã‚¿ã‚¤ãƒ—ã¯ã€ãƒ†ã‚¯ã‚¹ãƒãƒ£ã®ç›®ã«è¦‹ãˆã‚‹è‰²ã«ä½¿ç”¨ã•ã‚Œã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€[æ¨™æº–ãƒãƒƒãƒ”ãƒ³ã‚°ã‚¿ã‚¤ãƒ—](material-image-properties.html#standard)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ƒoƒ“ƒv
-ƒoƒ“ƒvƒ}ƒbƒv‚ÍƒeƒNƒXƒ`ƒƒ‚ÌƒOƒŒ[ƒXƒP[ƒ‹‚ğg—p‚µ‚ÄAƒ}ƒeƒŠƒAƒ‹‚Ìƒoƒ“ƒvi‚‚³j‚Ì•Ï‰»‚ğƒVƒ~ƒ…ƒŒ[ƒg‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍA[Ú×ƒRƒ“ƒgƒ[ƒ‹‚Ìƒoƒ“ƒvƒ}ƒbƒv‚Ì‹­ã](material-image-properties.html#bump)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ãƒãƒ³ãƒ—
+ãƒãƒ³ãƒ—ãƒãƒƒãƒ—ã¯ãƒ†ã‚¯ã‚¹ãƒãƒ£ã®ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã‚’ä½¿ç”¨ã—ã¦ã€ãƒãƒ†ãƒªã‚¢ãƒ«ã®ãƒãƒ³ãƒ—ï¼ˆé«˜ã•ï¼‰ã®å¤‰åŒ–ã‚’ã‚·ãƒŸãƒ¥ãƒ¬ãƒ¼ãƒˆã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€[è©³ç´°ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ãƒãƒ³ãƒ—ãƒãƒƒãƒ—ã®å¼·å¼±](material-image-properties.html#bump)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### –@ü
-–@üƒ}ƒbƒv‚ÍAƒrƒbƒgƒ}ƒbƒv‚ÌÔA—ÎAÂƒ`ƒƒƒ“ƒlƒ‹‚ğg—p‚µ‚Ä‚»‚ê‚¼‚ê‚ÌƒsƒNƒZƒ‹‚Å‚Ìƒoƒ“ƒv‚Ì•ûŒü‚ğ’²®‚·‚é“Áê‚Èƒoƒ“ƒvƒ}ƒbƒv‚Å‚·BÂƒ`ƒƒƒ“ƒlƒ‹‚Íƒoƒ“ƒv‚ÌZ•ûŒü‚È‚Ì‚ÅA‰æ‘œ‚ÍÂ‚¢FÊ‚ğ‘Ñ‚Ñ‚éŒXŒü‚ª‚ ‚è‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍA[Ú×ƒRƒ“ƒgƒ[ƒ‹‚Ì–@ü](material-image-properties.html#normal)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### æ³•ç·š
+æ³•ç·šãƒãƒƒãƒ—ã¯ã€ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ã®èµ¤ã€ç·‘ã€é’ãƒãƒ£ãƒ³ãƒãƒ«ã‚’ä½¿ç”¨ã—ã¦ãã‚Œãã‚Œã®ãƒ”ã‚¯ã‚»ãƒ«ã§ã®ãƒãƒ³ãƒ—ã®æ–¹å‘ã‚’èª¿æ•´ã™ã‚‹ç‰¹æ®Šãªãƒãƒ³ãƒ—ãƒãƒƒãƒ—ã§ã™ã€‚é’ãƒãƒ£ãƒ³ãƒãƒ«ã¯ãƒãƒ³ãƒ—ã®Zæ–¹å‘ãªã®ã§ã€ç”»åƒã¯é’ã„è‰²å½©ã‚’å¸¯ã³ã‚‹å‚¾å‘ãŒã‚ã‚Šã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€[è©³ç´°ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®æ³•ç·š](material-image-properties.html#normal)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ‹¾–Ê”½Ë
-‹¾–Ê”½Ëƒ}ƒbƒv‚ÍAƒ}ƒeƒŠƒAƒ‹‚ÌƒOƒŒ[ƒXƒP[ƒ‹F‚ğg—p‚µ‚ÄA‚»‚ÌêŠ‚Å‚Ì‰æ‘œ‚Ì”½Ë‚Ì—Ê‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍA[Ú×ƒRƒ“ƒgƒ[ƒ‹‚Ì“§–¾“x](material-image-properties.html#transparency)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### é¡é¢åå°„
+é¡é¢åå°„ãƒãƒƒãƒ—ã¯ã€ãƒãƒ†ãƒªã‚¢ãƒ«ã®ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«è‰²ã‚’ä½¿ç”¨ã—ã¦ã€ãã®å ´æ‰€ã§ã®ç”»åƒã®åå°„ã®é‡ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€[è©³ç´°ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®é€æ˜åº¦](material-image-properties.html#transparency)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### •s“§–¾
-•s“§–¾ƒ}ƒbƒv‚ÍA‰æ‘œ‚ÌƒOƒŒ[ƒXƒP[ƒ‹‚ÉŠî‚Ã‚¢‚Ä‚»‚ê‚¼‚ê‚ÌƒsƒNƒZƒ‹‚Å‚Ìƒ}ƒeƒŠƒAƒ‹‚Ì“§–¾“x‚ğƒRƒ“ƒgƒ[ƒ‹‚µ‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍA[Ú×‚ÌƒRƒ“ƒgƒ[ƒ‹‚Ì–@üƒ}ƒbƒv](material-image-properties.html#normal)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ä¸é€æ˜
+ä¸é€æ˜ãƒãƒƒãƒ—ã¯ã€ç”»åƒã®ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã«åŸºã¥ã„ã¦ãã‚Œãã‚Œã®ãƒ”ã‚¯ã‚»ãƒ«ã§ã®ãƒãƒ†ãƒªã‚¢ãƒ«ã®é€æ˜åº¦ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€[è©³ç´°ã®ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®æ³•ç·šãƒãƒƒãƒ—](material-image-properties.html#normal)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-#### ƒfƒBƒXƒvƒŒƒCƒXƒƒ“ƒg
-ƒfƒBƒXƒvƒŒƒCƒXƒƒ“ƒgƒ}ƒbƒv‚ÍAƒ}ƒbƒv‚ÌƒOƒŒ[ƒXƒP[ƒ‹F‚ÉŠî‚Ã‚¢‚ÄƒŒƒ“ƒ_ƒŠƒ“ƒOƒƒbƒVƒ…‚ğÀÛ‚ÉˆÚ‚µiƒfƒBƒXƒvƒŒƒCƒX‚µj‚Ü‚·BÚ×‚É‚Â‚¢‚Ä‚ÍA[Ú×ƒRƒ“ƒgƒ[ƒ‹‚ÌƒfƒBƒXƒvƒŒƒCƒXƒƒ“ƒgƒ}ƒbƒv](material-image-properties.html#displacement)‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+#### ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚¹ãƒ¡ãƒ³ãƒˆ
+ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚¹ãƒ¡ãƒ³ãƒˆãƒãƒƒãƒ—ã¯ã€ãƒãƒƒãƒ—ã®ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«è‰²ã«åŸºã¥ã„ã¦ãƒ¬ãƒ³ãƒ€ãƒªãƒ³ã‚°ãƒ¡ãƒƒã‚·ãƒ¥ã‚’å®Ÿéš›ã«ç§»ã—ï¼ˆãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚¹ã—ï¼‰ã¾ã™ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯ã€[è©³ç´°ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã®ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚¹ãƒ¡ãƒ³ãƒˆãƒãƒƒãƒ—](material-image-properties.html#displacement)ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-### Ú×ƒ}ƒeƒŠƒAƒ‹
-[Flamingo Ú×](material-type-advanced)ƒ}ƒeƒŠƒAƒ‹‚ÍAFlamingo‚Ìƒ}ƒeƒŠƒAƒ‹‚Ì‚·‚×‚Ä‚ÌƒvƒƒpƒeƒB‚ÌƒZƒbƒg‚ğŠÜ‚ñ‚Å‚¢‚Ü‚·BƒVƒ“ƒvƒ‹‚Èƒ}ƒeƒŠƒAƒ‹‚ª—p“r‚É‡‚í‚È‚¢ê‡A‚±‚Ì[Flamingo Ú×](material-type-advanced)ƒ}ƒeƒŠƒAƒ‹‚ğg—p‚µ‚ÄAƒtƒŒƒLƒVƒuƒ‹‚Éƒ}ƒeƒŠƒAƒ‹‚ğì¬‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+### è©³ç´°ãƒãƒ†ãƒªã‚¢ãƒ«
+[Flamingo è©³ç´°](material-type-advanced)ãƒãƒ†ãƒªã‚¢ãƒ«ã¯ã€Flamingoã®ãƒãƒ†ãƒªã‚¢ãƒ«ã®ã™ã¹ã¦ã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®ã‚»ãƒƒãƒˆã‚’å«ã‚“ã§ã„ã¾ã™ã€‚ã‚·ãƒ³ãƒ—ãƒ«ãªãƒãƒ†ãƒªã‚¢ãƒ«ãŒç”¨é€”ã«åˆã‚ãªã„å ´åˆã€ã“ã®[Flamingo è©³ç´°](material-type-advanced)ãƒãƒ†ãƒªã‚¢ãƒ«ã‚’ä½¿ç”¨ã—ã¦ã€ãƒ•ãƒ¬ã‚­ã‚·ãƒ–ãƒ«ã«ãƒãƒ†ãƒªã‚¢ãƒ«ã‚’ä½œæˆã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
