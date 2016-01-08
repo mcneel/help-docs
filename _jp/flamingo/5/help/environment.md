@@ -3,8 +3,7 @@ title: Flamingoの環境
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
-<!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
-Rhinoには多くのタイプの環境があります。このトピックでは、Flamingoのデフォルトの環境について説明します。
+[Rhinoには多くのタイプの環境](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm)があります。このトピックでは、Flamingo環境タイプについて説明します。
 
 環境は、背景や反射の目に見える部分に影響します。シーンの照明に影響する効果については、[空](sun-and-sky-tabs.html)のヘルプトピックを参照してください。
 
@@ -30,13 +29,11 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 >[反射背景](#advanced-background-reflected-sky)
 >[屈折背景](#advanced-background-refracted-sky)
 
-<!-- TODO: Does the following sentence make sense? Is there something missing? -->
-表示背景は、基本の一般プロパティパネルで、目に見える環境です。[反射](#advanced-background-reflected-sky)および[屈折](#advanced-background-refracted-sky)背景は、違う設定ができ、高度な背景設定のセクションに表示されます。
+表示背景は、シーンの基本背景色です。表示背景は、一般のプロパティパネルで設定します。[反射](#advanced-background-reflected-sky)および[屈折](#advanced-background-refracted-sky)背景は、異なる設定ができ、高度な背景設定のセクションに表示されます。
 
 #### 強度
 {: #background-intensity}
-<!-- TODO: Color range normally is from 0-255... -->
-背景の相対的な明るさを調整します。強度の値は、背景の色を乗算し、結果を照明値にするために使用されます。色の範囲はチャンネル毎に0 - 256です。強度は、これらの値を乗算します。これは、背景がレンダリングされたモデルに比べて非常に暗い場合に、重要になります。
+背景の相対的な明るさを調整します。強度の値は、背景の色を乗算し、結果を照明値にするために使用されます。色の範囲はチャンネル毎に0 - 255です。強度は、これらの値を乗算します。これは、背景がレンダリングされたモデルに比べて非常に暗い場合に、重要になります。
 
 #### 背景のタイプ
 {: #background-type}
@@ -46,7 +43,6 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 > [色（単色）またはグラデーション色](#color-backgrounds)
 > [画像](#environment-image)
 > [HDRまたは平面HDR画像](#hdr-background)
-
 
 ## 空背景
 {: #environment-sky}
@@ -119,8 +115,8 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 
 ## 画像背景
 {: #environment-image}
-<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
-画像が背景に投影されます。これは多くの場合、既存のコンテクストにモデルを配置したり、窓に景色を設定するのに使用されます。画像にはデジタル写真や芸術作品のスキャン、ペイントプログラムで作成した画像などが使用できます。最良の結果を得るには、高解像度のイメージを背景画像として使用するとよいでしょう。また、自然の焦点整合と空気遠近法を擬似するために、シャープな画像をぼかしたりあせた色にしたりするとよいでしょう。背景画像は平面、円柱、または球状投影でシーンの背景にマッピングできます。
+
+画像が背景に投影されます。これは多くの場合、既存のコンテクストにモデルを配置したり、窓に景色を設定するのに使用されます。画像には写真や芸術作品のスキャン、ペイントプログラムで作成した画像などが使用できます。最良の結果を得るには、高解像度のイメージを背景画像として使用するとよいでしょう。また、自然の焦点整合と空気遠近法を擬似するために、シャープな画像をぼかしたりあせた色にしたりするとよいでしょう。背景画像は平面、円柱、または球状投影でシーンの背景にマッピングできます。
 
 ![images/background-image-001.png](images/background-image-001.png)
 *背景として設定された平面画像*
@@ -139,9 +135,7 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 
 それぞれの投影方法には、異なる画像配置コントロールが表示されます。
 
-<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
-
-#### 平面投影
+### 平面投影
 {: #planar}
 画像を現在のビューの平らな背景に投影します。平面投影座標は常に現在のビューに相対です。
 
@@ -174,7 +168,7 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 #### Xオフセット / Yオフセット
 背景画像のビューポートの左下の角からのオフセットをビューの幅と高さの0 - 1.0のスケールで指定します。例えば、0.25はビューサイズの25%のオフセット、0.5はビューの幅の50%などです。
 
-#### 円柱投影
+### 円柱投影
 {: #cylindrical}
 円柱投影は、モデルを囲む仮想的な円柱に画像をマッピングします。この投影法では真の円柱状の画像が最適ですが、写真から作成された標準のパノラマも効果的に使えます。
 
@@ -188,7 +182,6 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 画像マップの角度幅を指定します。角度を入力するか、コントロールウィジェットの「旗」をドラッグして幅を設定します。青い領域は角度幅の範囲を示します。
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
-<!--TODO: Image doesn't show up in file. -->
 
 * コントロールは、環境を平面図で表示します。
 * 濃いグレーの視野を表す円錐形は、現在のパースビューでの1つ前の座標を表示します。
@@ -221,7 +214,7 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 ####  ビューから角度を取得ボタン
 現在のパースビューポートに合うように回転角度を設定します。投影の値をリセットするのに便利です。
 
-#### 球投影
+### 球投影
 {: #spherical}
 球投影は画像を完全な球にマッピングします。一般的に、正距円筒図法の球体画像が使用されないとこの方法でよい結果は得られません。正距円筒図法の画像の縦横比は2:1の長方形です。
 

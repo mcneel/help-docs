@@ -1,48 +1,46 @@
 ---
-title: 植物
+title: �A��
 ---
 
-<!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
-
 # ![images/plants.svg](images/plants.svg) {{page.title}}
-Flamingo nXtには、レンダリングの際に複雑な植物形状を効率的に生成する、簡単でパワフルな植物ジェネレータが含まれています。モデルにはプレースホルダーのみが置かれるので、植物はモデルのサイズにあまり影響を与えません。
+Flamingo nXt�ɂ́A�����_�����O�̍ۂɕ��G�ȐA���`��������I�ɐ�������A�ȒP�Ńp���t���ȐA���W�F�l���[�^���܂܂�Ă��܂��B���f���ɂ̓v���[�X�z���_�[�݂̂��u�����̂ŁA�A���̓��f���̃T�C�Y�ɂ͂��܂�e���͗^���܂���B
 
 ![images/plants-001.png](images/plants-001.png)
-*Flamingo nXtの樹木*
+*Flamingo nXt�̐A��*
 
-### nXtの植物を挿入する
+### nXt�̐A����}������
 {: #insert:}
-Flamingoの植物は、ブロックとして挿入されます。これらのブロックは、樹木の一般的な形状を表す点を含んでいます。
+Flamingo�̐A���́A�u���b�N�Ƃ��đ}������܂��B�����̃u���b�N�́A�A���̈�ʓI�Ȍ`���\���_���܂�ł��܂��B
 
-1. Flamingo nXtメニューの植物 > 植物を挿入をクリックします。
-1. Flamingo nXt植物ダイアログボックスで、植物名をクリックし、開くをクリックします。
-1. プロンプトで、モデルの中の植物の位置をピックします。
+1. Flamingo nXt���j���[�̐A�� > �A����}�����N���b�N���܂��B
+1. Flamingo nXt�A���_�C�A���O�{�b�N�X�ŁA�A�������N���b�N���A�J�����N���b�N���܂��B
+1. �v�����v�g�ŁA���f���̒��̐A���̈ʒu���s�b�N���܂��B
 
-メモ:
+����:
 
-* モデルに正しい単位が設定されていることを確認してください。
-* 植物は、スケール変更、コピー、回転することができます。
+* ���f���ɐ������P�ʂ��ݒ肳��Ă��邱�Ƃ��m�F���Ă��������B
+* �A���́A�X�P�[���ύX�A�R�s�[�A��]���邱�Ƃ��ł��܂��B
 
-### 植物を編集する
+### �A����ҏW����
 {: #edit}
-植物は一度挿入すると、移動、コピー、スケーリングが行えます。樹木は適切にサイズ変更されます。樹木の構造をより詳細に編集したい場合は、植物の編集コマンドを使用してください。樹木の構造にに小さな変更を加えるのは、比較的簡単に行えます。樹木のアルゴリズムに大きな変更を加えるのは、いろいろな試行が必要な場合もあります。
+�A���͈�x�}������ƁA�ړ��A�R�s�[�A�X�P�[�����O���s���܂��B�A���͓K�؂ɃT�C�Y�ύX����܂��B�A���̍\�������ڍׂɕҏW�������ꍇ�́A�A���̕ҏW�R�}���h���g�p���Ă��������B�A���̍\���ɏ����ȕύX��������̂́A��r�I�ȒP�ɍs���܂��B�A���̃A���S���Y���ɑ傫�ȕύX��������̂́A���낢��Ȏ��s���K�v�ȏꍇ������܂��B
 
-1. Flamingo nXtメニューの植物 > 植物を編集をクリックします。
-1. 編集する植物を選択します。
-1. 植物を正しく編集します。
-1. 植物を保存し、エディタを閉じます。Rhinoの植物が自動的に更新されます。
+1. Flamingo nXt���j���[�̐A�� > �A����ҏW���N���b�N���܂��B
+1. �ҏW����A����I�����܂��B
+1. �A���𐳂����ҏW���܂��B
+1. �A����ۑ����A�G�f�B�^����܂��BRhino�̐A���������I�ɍX�V����܂��B
 
-### Flamingo 2の植物を使用する
+### Flamingo 2�̐A�����g�p����
 {: #using-flamingo-2-plants}
-1. Flamingo nXtメニューの植物 > Flaming 2の植物を挿入をクリックします。
-1. Flamingo nXt植物ダイアログボックスで、植物名をクリックし、開くをクリックします。
-1. プロンプトで、モデルの中の植物の位置をピックします。
+1. Flamingo nXt���j���[�̐A�� > Flaming 2�̐A����}�����N���b�N���܂��B
+1. Flamingo nXt�A���_�C�A���O�{�b�N�X�ŁA�A�������N���b�N���A�J�����N���b�N���܂��B
+1. �v�����v�g�ŁA���f���̒��̐A���̈ʒu���s�b�N���܂��B
 
-メモ:
+����:
 
-* Flamingo 2の植物が既に挿入されているモデルは、いくつかの制限はありますが動作するはずです。
-* Flamingo 2の植物は、新しい植物とは異なります。Flamingo 2の植物は今のところ編集やFlamingo nXtの植物への変換は行えません。
+* Flamingo 2�̐A�������ɑ}������Ă��郂�f���́A�������̐����͂���܂������삷��͂��ł��B
+* Flamingo 2�̐A���́A�V�����A���Ƃ͈قȂ�܂��BFlamingo 2�̐A���͍��̂Ƃ���ҏW��Flamingo nXt�̐A���ւ̕ϊ��͍s���܂���B
 
-### 植物エディタ
-{: tree-editor}
-Flamingoには、カスタムの樹木を作成できる樹木エディタが搭載されています。新規の植物タイプを簡単に作成できるための基本的な樹木テンプレートがいくつか用意されています。詳細については、[植物エディタ](tree-editor.html)のトピックを参照してください。
+### �A���G�f�B�^
+{: plant-editor}
+Flamingo�ɂ́A�J�X�^���̐A�����쐬�ł���A���G�f�B�^�����ڂ���Ă��܂��B�V�K�̐A���^�C�v���ȒP�ɍ쐬�ł��邽�߂̊�{�I�ȐA���e���v���[�g���������p�ӂ���Ă��܂��B�ڍׂɂ��ẮA[�A���G�f�B�^](tree-editor.html)�̃g�s�b�N���Q�Ƃ��Ă��������B

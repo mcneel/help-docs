@@ -1,226 +1,225 @@
 ---
-title: レンダリングウィンドウ
+title: �����_�����O�E�B���h�E
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}
-レンダリングウィンドウには、露出調整やポストプロセッシング効果を追加するオプションが表示されます。レンダリングウィンドウのメインフレームは、Rhinoのレンダリングフィレームワークの一部です。レンダリングメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)を参照してください。このトピックは、Flamingo特有のレンダリングプロセスに追加された機能を説明します。
+�����_�����O�E�B���h�E�ɂ́A�I�o������|�X�g�v���Z�b�V���O���ʂ�ǉ�����I�v�V�������\������܂��B�����_�����O�E�B���h�E�̃��C���t���[���́ARhino�̃����_�����O�t�B���[�����[�N�̈ꕔ�ł��B�����_�����O���j���[�ƃA�C�R���̏ڍׂɂ��ẮA[�����_�����O�E�B���h�E�̃g�s�b�N](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)���Q�Ƃ��Ă��������B���̃g�s�b�N�́AFlamingo���L�̃����_�����O�v���Z�X�ɒǉ����ꂽ�@�\��������܂��B
 
-## アクティブなレンダリングの管理
-レンダリングを始めると、[レンダリングウィンドウ](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)が起動し、レンダリングが開始されます。Flamingoは、段階によってレンダリングイメージを更新する、マルチパスシステムです。Flamingoはまず内部モデルに変更があるかどうかを確認し、初期化プロセスを開始します。このプロセスには、数秒から数分かかる場合があります。この初期プロセスでは、モデルがインポートされ、ハードドライブからマテリアルビットマップが集められ、レンダリングイメージバッファが作成されます。レンダリングを管理するプロセスには、いくつかのキーになるステップがあります。
+## �A�N�e�B�u�ȃ����_�����O�̊Ǘ�
+�����_�����O���n�߂�ƁA[�����_�����O�E�B���h�E](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)���N�����A�����_�����O���J�n����܂��BFlamingo�́A�i�K�ɂ���ă����_�����O�C���[�W���X�V����A�}���`�p�X�V�X�e���ł��BFlamingo�͂܂��������f���ɕύX�����邩�ǂ������m�F���A�������v���Z�X���J�n���܂��B���̃v���Z�X�ɂ́A���b���琔��������ꍇ������܂��B���̏����v���Z�X�ł́A���f�����C���|�[�g����A�n�[�h�h���C�u����}�e���A���r�b�g�}�b�v���W�߂��A�����_�����O�C���[�W�o�b�t�@���쐬����܂��B�����_�����O���Ǘ�����v���Z�X�ɂ́A�������̃L�[�ɂȂ�X�e�b�v������܂��B
 
->[マルチパスレンダリング](#multi-pass)
->[レンダリングを停止する](#stop-render)
->[イメージを調整する](#adjusting)
->[イメージを保存する](#saving)
+>[�}���`�p�X�����_�����O](#multi-pass)
+>[�����_�����O���~����](#stop-render)
+>[�C���[�W�𒲐�����](#adjusting)
+>[�C���[�W��ۑ�����](#saving)
 
-### マルチパスレンダリング
+### �}���`�p�X�����_�����O
 {: #multi-pass}
-Flamingo nXtは、まったく新しいレンダリングエンジンです。マルチパスのリファインメント方法を用いることで、複雑なインターフェイスに時間や労力を取られることなく、より高度なレンダリング効果を可能にします。最初の数回のレンダリングパスでは、変わったアーチファクトが見られます。例えば、影が非常にシャープで直線的であるなどです。しかし、パスを重ねるにつれ、影はブレンドされて柔らかみを帯びて行きます。同じく各レンダリングパスで向上していく他の多くの効果もあります。レンダリングプロセスを確認するには[Flamingoタブ](#flamingo-tab)を使用してください。
+Flamingo nXt�́A�܂������V���������_�����O�G���W���ł��B�}���`�p�X�̃��t�@�C�������g���@��p���邱�ƂŁA���G�ȃC���^�[�t�F�C�X�Ɏ��Ԃ�J�͂�����邱�ƂȂ��A��荂�x�ȃ����_�����O���ʂ��\�ɂ��܂��B�ŏ��̐���̃����_�����O�p�X�ł́A�ς�����A�[�`�t�@�N�g�������܂��B�Ⴆ�΁A�e�����ɃV���[�v�Œ����I�ł���Ȃǂł��B�������A�p�X���d�˂�ɂ�A�e�̓u�����h����ď_�炩�݂�ттčs���܂��B�������e�����_�����O�p�X�Ō��サ�Ă������̑����̌��ʂ�����܂��B�����_�����O�v���Z�X���m�F����ɂ�[Flamingo�^�u](#flamingo-tab)���g�p���Ă��������B
 
-このように、nXtのレンダリングには「終り」がなく、レンダリングをいつ停止するのかを決定するだけになります。レンダリングを続けてより良くすることも、変更や保存のために好きな時にいつでも停止することもできます。
+���̂悤�ɁAnXt�̃����_�����O�ɂ́u�I��v���Ȃ��A�����_�����O������~����̂������肷�邾���ɂȂ�܂��B�����_�����O�𑱂��Ă��ǂ����邱�Ƃ��A�ύX��ۑ��̂��߂ɍD���Ȏ��ɂ��ł���~���邱�Ƃ��ł��܂��B
 
 ![images/passes-wide-1.gif](images/passes-wide-1.gif)
 
-それぞれのパスで向上される効果には次のものが含まれます。
+���ꂼ��̃p�X�Ō��コ�����ʂɂ͎��̂��̂��܂܂�܂��B
 
->照明（有効な場合、グローバルイルミネーションなど）
->ソフトシャドウ
->反射（不鮮明な)
->屈折
->アンチエイリアシング
->被写界深度
+>�Ɩ��i�L���ȏꍇ�A�O���[�o���C���~�l�[�V�����Ȃǁj
+>�\�t�g�V���h�E
+>���ˁi�s�N����)
+>����
+>�A���`�G�C���A�V���O
+>��ʊE�[�x
 
-### レンダリングを停止する
+### �����_�����O���~����
 {: #stop-render}
-レンダリングは複数の方法で停止することができます。
+�����_�����O�͕����̕��@�Œ�~���邱�Ƃ��ł��܂��B
 
-![images/close-x.png](images/close-x.png) すぐにレンダリングを停止して、レンダリングウィンドを閉じるには、ウィンドウの右上にある「X」ボタンをクリックします。素早くモデルに戻って変更を加えたい場合に最適の方法です。
+![images/close-x.png](images/close-x.png) �����Ƀ����_�����O���~���āA�����_�����O�E�B���h�����ɂ́A�E�B���h�E�̉E��ɂ���uX�v�{�^�����N���b�N���܂��B�f�������f���ɖ߂��ĕύX�����������ꍇ�ɍœK�̕��@�ł��B
 
-![images/stop.png](images/stop.png) 現在のパスの最後でレンダリングを停止したい場合は、レイトレースを停止ボタンをクリックします。これはイメージを保存する前に使用するのに最適です。
+![images/stop.png](images/stop.png) ���݂̃p�X�̍Ō�Ń����_�����O���~�������ꍇ�́A���C�g���[�X���~�{�^�����N���b�N���܂��B����̓C���[�W��ۑ�����O�Ɏg�p����̂ɍœK�ł��B
 
-![images/stop.png](images/stop.png) すぐにレンダリングを停止して、レンダリングウィンドウを開いたままの状態にしておきたい場合は、レイトレースを停止ボタンをダブルクリックします。
+![images/stop.png](images/stop.png) �����Ƀ����_�����O���~���āA�����_�����O�E�B���h�E���J�����܂܂̏�Ԃɂ��Ă��������ꍇ�́A���C�g���[�X���~�{�^�����_�u���N���b�N���܂��B
 
-### レンダリングを調整する
+### �����_�����O�𒲐�����
 {: #adjusting}
-レンダリングを停止後、[Flamingoタブ](#flamingo-tab)のコントロールを使用して、イメージと照明を調整します。これらのツールはハイエンドのイメージを作り出そうとしている場合に非常に大切です。
+�����_�����O���~��A[Flamingo�^�u](#flamingo-tab)�̃R���g���[�����g�p���āA�C���[�W�ƏƖ��𒲐����܂��B�����̃c�[���̓n�C�G���h�̃C���[�W�����o�����Ƃ��Ă���ꍇ�ɔ��ɑ�؂ł��B
 
-イメージの調整に使用できるコントロールには次が含まれます。
+�C���[�W�̒����Ɏg�p�ł���R���g���[���ɂ͎����܂܂�܂��B
 
->[イメージ調整](#adjust-image)
->[チャンネル](#channels)
->[ポストエフェクト](#post-process-effects)
+>[�C���[�W����](#adjust-image)
+>[�`�����l��](#channels)
+>[�|�X�g�G�t�F�N�g](#post-process-effects)
 
 
-### イメージを保存する
+### �C���[�W��ۑ�����
 {: #saving}
-イメージの使用目的によって、保存方法をいろいろと帰ることができます。通常、ほとんどのイメージはJPGまたはPNG画像ファイルとして保存するのがお勧めですが、他のオプションもあります。
+�C���[�W�̎g�p�ړI�ɂ���āA�ۑ����@�����낢��ƋA�邱�Ƃ��ł��܂��B�ʏ�A�قƂ�ǂ̃C���[�W��JPG�܂���PNG�摜�t�@�C���Ƃ��ĕۑ�����̂������߂ł����A���̃I�v�V����������܂��B
 
-#### ![images/saveimageas.png](images/saveimageas.png) イメージを保存
-イメージを調整した後は、JPGまたはPNG 画像ファイルを保存するのが通常のプロセスです。  
+#### ![images/saveimageas.png](images/saveimageas.png) �C���[�W��ۑ�
+�C���[�W�𒲐�������́AJPG�܂���PNG �摜�t�@�C����ۑ�����̂��ʏ�̃v���Z�X�ł��B  
 
-JPG画像は、とても効率的で、サイズの小さいファイル形式です。Webに載せるまたはメールで送信する画像に適しています。しかし、効率的な代わりに、いくつかの色はイメージから取り除かれます。
+JPG�摜�́A�ƂĂ������I�ŁA�T�C�Y�̏������t�@�C���`���ł��BWeb�ɍڂ���܂��̓��[���ő��M����摜�ɓK���Ă��܂��B�������A�����I�ȑ���ɁA�������̐F�̓C���[�W�����菜����܂��B
 
-PNGは、100%の色情報とアルファチャンネル情報を持つ圧縮された形式です。高品質のイメージに適した形式です。
+PNG�́A100%�̐F���ƃA���t�@�`�����l�����������k���ꂽ�`���ł��B���i���̃C���[�W�ɓK�����`���ł��B
 
-#### 保存（背景アルファチャンネルを含める）
+#### �ۑ��i�w�i�A���t�@�`�����l�����܂߂�j
 {: #save-with-alpha-channel}
-32ビットのPNG、TIF、BMPイメージをアルファチャンネル背景を含めて保存します。質の高い合成に用いてください。レンダリングはアルファチャンネルを含めて保存されると、背景が黒で表示されます。[Flamingoタブ](#flamingo-tab)と[保存ダイアログ](#saving)ボックスには、アルファチャンネルを保存するためのチェックボックスがあります。PNG形式がアルファ情報を保存するのに適した形式です。
+32�r�b�g��PNG�ATIF�ABMP�C���[�W���A���t�@�`�����l���w�i���܂߂ĕۑ����܂��B���̍��������ɗp���Ă��������B�����_�����O�̓A���t�@�`�����l�����܂߂ĕۑ������ƁA�w�i�����ŕ\������܂��B[Flamingo�^�u](#flamingo-tab)��[�ۑ��_�C�A���O](#saving)�{�b�N�X�ɂ́A�A���t�@�`�����l����ۑ����邽�߂̃`�F�b�N�{�b�N�X������܂��BPNG�`�����A���t�@����ۑ�����̂ɓK�����`���ł��B
 
-#### ネイティブFlamingo nXtファイルにエクスポート（.nXtImage）
+#### �l�C�e�B�uFlamingo nXt�t�@�C���ɃG�N�X�|�[�g�i.nXtImage�j
 {: #export-to-nxtimage}
-非圧縮の輝度および色情報を保存します。[アルファ](environment-tab.html#alpha)を含むすべてのレンダリングチャンネルを保存します。nXtのイメージファイルは[イメージエディタ](image-editor.html)で開くことができ、[露出](#adjust-image)や[ポストプロセッシング効果](#effects)を適用して別のビットマップ形式で保存することができます。
+�񈳏k�̋P�x����ѐF����ۑ����܂��B[�A���t�@](environment-tab.html#alpha)���܂ނ��ׂẴ����_�����O�`�����l����ۑ����܂��BnXt�̃C���[�W�t�@�C����[�C���[�W�G�f�B�^](image-editor.html)�ŊJ�����Ƃ��ł��A[�I�o](#adjust-image)��[�|�X�g�v���Z�b�V���O����](#effects)��K�p���ĕʂ̃r�b�g�}�b�v�`���ŕۑ����邱�Ƃ��ł��܂��B
 
-nXtImage形式は、nXtレンダラーのネイティブのイメージ形式です。レンダリングのほとんどの情報を保存するので、推奨する保存形式です。この形式で保存されたイメージは、[nXtイメージエディタ](image-editor.html)で操作することができ、特殊効果を追加できます。このエディタでは、nXtでサポートされているすべての形式を含む、一般的によく使用されている多くの標準形式に保存ができます。[Piranesi EPixファイル（.epx）](http://www.piranesi.co.uk/)形式に保存することもできます。
+nXtImage�`���́AnXt�����_���[�̃l�C�e�B�u�̃C���[�W�`���ł��B�����_�����O�̂قƂ�ǂ̏���ۑ�����̂ŁA��������ۑ��`���ł��B���̌`���ŕۑ����ꂽ�C���[�W�́A[nXt�C���[�W�G�f�B�^](image-editor.html)�ő��삷�邱�Ƃ��ł��A������ʂ�ǉ��ł��܂��B���̃G�f�B�^�ł́AnXt�ŃT�|�[�g����Ă��邷�ׂĂ̌`�����܂ށA��ʓI�ɂ悭�g�p����Ă��鑽���̕W���`���ɕۑ����ł��܂��B[Piranesi EPix�t�@�C���i.epx�j](http://www.piranesi.co.uk/)�`���ɕۑ����邱�Ƃ��ł��܂��B
 
-#### HDRファイルにエクスポート
+#### HDR�t�@�C���ɃG�N�X�|�[�g
 {: #export-to-hdr}
-非圧縮の輝度および色情報を保存します。.hdr形式は、輝度データを直接ハイ・ダイナミック・レンジ形式に保存します。通常の写真のような輝度のない背景は、これらの形式の1つで保存すると黒で表示されます。
+�񈳏k�̋P�x����ѐF����ۑ����܂��B.hdr�`���́A�P�x�f�[�^�𒼐ڃn�C�E�_�C�i�~�b�N�E�����W�`���ɕۑ����܂��B�ʏ�̎ʐ^�̂悤�ȋP�x�̂Ȃ��w�i�́A�����̌`����1�ŕۑ�����ƍ��ŕ\������܂��B
 
-#### EXRファイルにエクスポート
+#### EXR�t�@�C���ɃG�N�X�|�[�g
 {: #export-to-exr}
-フリーソフトウェアライセンスの下でリリースされた、インダストリアル・ライト&マジック（ILM）によって作られたソフトウェアツールのセットと共にオープン標準としてリリースされたハイ・ダイナミック・レンジ画像ファイル形式です。このファイル形式は、符号1ビット、指数5ビット、仮数10ビットの16ビット/チャンネルの浮動小数点値（半精度）をサポートします。これは、30を超える値の露出のダイナミックレンジを可能にします。[Wikipediaの記事: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)を参照してください。
-.exr形式は、輝度データを直接ハイ・ダイナミック・レンジ形式に保存します。通常の写真のような輝度のない背景は、これらの形式の1つで保存すると黒で表示されます。
+�t���[�\�t�g�E�F�A���C�Z���X�̉��Ń����[�X���ꂽ�A�C���_�X�g���A���E���C�g&�}�W�b�N�iILM�j�ɂ���č��ꂽ�\�t�g�E�F�A�c�[���̃Z�b�g�Ƌ��ɃI�[�v���W���Ƃ��ă����[�X���ꂽ�n�C�E�_�C�i�~�b�N�E�����W�摜�t�@�C���`���ł��B���̃t�@�C���`���́A����1�r�b�g�A�w��5�r�b�g�A����10�r�b�g��16�r�b�g/�`�����l���̕��������_�l�i�����x�j���T�|�[�g���܂��B����́A30�𒴂���l�̘I�o�̃_�C�i�~�b�N�����W���\�ɂ��܂��B[Wikipedia�̋L��: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)���Q�Ƃ��Ă��������B
+.exr�`���́A�P�x�f�[�^�𒼐ڃn�C�E�_�C�i�~�b�N�E�����W�`���ɕۑ����܂��B�ʏ�̎ʐ^�̂悤�ȋP�x�̂Ȃ��w�i�́A�����̌`����1�ŕۑ�����ƍ��ŕ\������܂��B
 
-#### ![images/close-x.png](images/close-x.png) 閉じる
-レンダリングウィンドウを閉じます。
+#### ![images/close-x.png](images/close-x.png) ����
+�����_�����O�E�B���h�E����܂��B
 
-#### プルダウンメニュー
-レンダリングウィンドウのメニューとアイコンの詳細については、[レンダリングウィンドウのトピック](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)を参照してください。
+#### �v���_�E�����j���[
+�����_�����O�E�B���h�E�̃��j���[�ƃA�C�R���̏ڍׂɂ��ẮA[�����_�����O�E�B���h�E�̃g�s�b�N](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)���Q�Ƃ��Ă��������B
 
-## Flamingoタブ
+## Flamingo�^�u
 {: #flamingo-tab}
-レンダリングウィンドウのFlamingoタブは、Flamingoレンダリングエンジン特有の多くの追加コントロールを表示します。これらのコントロールを理解しておくことは、アクティブなFlamignoのレンダリングを管理するのに重要です。
+�����_�����O�E�B���h�E��Flamingo�^�u�́AFlamingo�����_�����O�G���W�����L�̑����̒ǉ��R���g���[����\�����܂��B�����̃R���g���[���𗝉����Ă������Ƃ́A�A�N�e�B�u��Flamingo�̃����_�����O���Ǘ�����̂ɏd�v�ł��B
 
-#### 保存（背景アルファチャンネルを含める）
-32ビットのPNG、TIF、BMPイメージをアルファチャンネル背景を含めて保存します。これらのファイルは質の高い合成に用いられます。レンダリングはアルファチャンネルを含めて保存されると、背景が黒で表示されます。アルファイメージを保存するには、このチェックボックスや[保存ダイアログ](#saving)ボックスを使用します。PNG形式がアルファ情報を保存するのに適した形式です。
+#### �ۑ��i�w�i�A���t�@�`�����l�����܂߂�j
+32�r�b�g��PNG�ATIF�ABMP�C���[�W���A���t�@�`�����l���w�i���܂߂ĕۑ����܂��B�����̃t�@�C���͎��̍��������ɗp�����܂��B�����_�����O�̓A���t�@�`�����l�����܂߂ĕۑ������ƁA�w�i�����ŕ\������܂��B�A���t�@�C���[�W��ۑ�����ɂ́A���̃`�F�b�N�{�b�N�X��[�ۑ��_�C�A���O](#saving)�{�b�N�X���g�p���܂��BPNG�`�����A���t�@����ۑ�����̂ɓK�����`���ł��B
 
-## 進行状況
+## �i�s��
 {: #progress}
-Flamingoのレンダリングの状態と進行状況を確認するのに、この情報を用います。
+Flamingo�̃����_�����O�̏�ԂƐi�s�󋵂��m�F����̂ɁA���̏���p���܂��B
 
-#### 動作
-モデルで進行中のレンダリングの現在の状況を表示します。
+#### ����
+���f���Ői�s���̃����_�����O�̌��݂̏󋵂�\�����܂��B
 
-状況のメッセージには次のものが含まれます。
+�󋵂̃��b�Z�[�W�ɂ͎��̂��̂��܂܂�܂��B
 
-* レンダリング開始 - レンダリングが開始されると、モデルの変換とレンダリングのためのメモリのセットアップを含むいくつかのセットアップ作業が行われます。
-* 操作完了 - 停止ボタンをクリックし、レンダリングエンジンがパスを終了すると、操作が完了されます。
-* パス完了 - 1つのパスが完了する度にこのメッセージが表示されます。
-* レンダリングを再開 - 再開が可能な場合に、このメッセージが表示されます。
-* 更新中 - レンダリングエンジンがパスを処理中です。レンダリングが更新中です。
+* �����_�����O�J�n - �����_�����O���J�n�����ƁA���f���̕ϊ��ƃ����_�����O�̂��߂̃������̃Z�b�g�A�b�v���܂ނ������̃Z�b�g�A�b�v��Ƃ��s���܂��B
+* ���슮�� - ��~�{�^�����N���b�N���A�����_�����O�G���W�����p�X���I������ƁA���삪��������܂��B
+* �p�X���� - 1�̃p�X����������x�ɂ��̃��b�Z�[�W���\������܂��B
+* �����_�����O���ĊJ - �ĊJ���\�ȏꍇ�ɁA���̃��b�Z�[�W���\������܂��B
+* �X�V�� - �����_�����O�G���W�����p�X���������ł��B�����_�����O���X�V���ł��B
 
-#### パス
-現在Flamingoがレンダリング中のパスです。Flamingoは、マルチパスレンダリングエンジンです。それぞれのパスは、レンダリングをリファインし、照明効果や複雑なレンダリング効果を加えていきます。
+#### �p�X
+����Flamingo�������_�����O���̃p�X�ł��BFlamingo�́A�}���`�p�X�����_�����O�G���W���ł��B���ꂼ��̃p�X�́A�����_�����O�����t�@�C�����A�Ɩ����ʂ╡�G�ȃ����_�����O���ʂ������Ă����܂��B
 
-#### スキャンライン
-パスは、水平方向のピクセルに沿って進行します。ピクセルのそれぞれの行がスキャンラインです。この部分は、レンダリングエンジンから返された現在のスキャンラインを表示します。
+#### �X�L�������C��
+�p�X�́A���������̃s�N�Z���ɉ����Đi�s���܂��B�s�N�Z���̂��ꂼ��̍s���X�L�������C���ł��B���̕����́A�����_�����O�G���W������Ԃ��ꂽ���݂̃X�L�������C����\�����܂��B
 
-#### 経過時間
-レンダリング開始時からの経過時間です。これにはレンダリングのセットアップ時間は含まれません。
+#### �o�ߎ���
+�����_�����O�J�n������̌o�ߎ��Ԃł��B����ɂ̓����_�����O�̃Z�b�g�A�b�v���Ԃ͊܂܂�܂���B
 
-#### レイ/秒
-シーンで処理される秒毎のレイの数です。
+#### ���C/�b
+�V�[���ŏ��������b���̃��C�̐��ł��B
 
-#### ピクセル/秒
-イメージで処理される秒毎のピクセルの数です。
+#### �s�N�Z��/�b
+�C���[�W�ŏ��������b���̃s�N�Z���̐��ł��B
 
-## イメージ調整
+## �C���[�W����
 {: #adjust-image}
-これはFlamingoで最も重要なコントロールの1つです。このコントロールを使えば、カメラのように、イメージの露出を調整できます。これは、レンダリングを明るくまたは暗くする、またはコントラストを付け加える、または色の彩度を上げる最良の方法です。この調整処理は、[トーンマッピング](https://en.wikipedia.org/wiki/Tone_mapping)と呼ばれます。Flamingoは、画面やプリンタで表示できるよりもより広い範囲の色や明るさを扱える輝度空間でレンダリング処理を行います。トーンマッピングは、輝度データを画面に表示または印刷される赤、緑、青（RGB）のピクセルに変換する処理です。これらの設定は、イメージの保存方法もコントロールします。
+�����Flamingo�ōł��d�v�ȃR���g���[����1�ł��B���̃R���g���[�����g���΁A�J�����̂悤�ɁA�C���[�W�̘I�o�𒲐��ł��܂��B����́A�����_�����O�𖾂邭�܂��͈Â�����A�܂��̓R���g���X�g��t��������A�܂��͐F�̍ʓx���グ��ŗǂ̕��@�ł��B���̒��������́A[�g�[���}�b�s���O](https://en.wikipedia.org/wiki/Tone_mapping)�ƌĂ΂�܂��BFlamingo�́A��ʂ�v�����^�ŕ\���ł���������L���͈͂̐F�▾�邳��������P�x��ԂŃ����_�����O�������s���܂��B�g�[���}�b�s���O�́A�P�x�f�[�^����ʂɕ\���܂��͈�������ԁA�΁A�iRGB�j�̃s�N�Z���ɕϊ����鏈���ł��B�����̐ݒ�́A�C���[�W�̕ۑ����@���R���g���[�����܂��B
 
 ![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
-*デフォルトイメージ（左）。明るさ（0.20）、焼き込み（0.16）、彩度（1.20）を適用して補正したイメージ。*
-再レンダリングしないでイメージの明るさと全体の色を素早く調整したい場合にこのプロセスを使用します。
+*�f�t�H���g�C���[�W�i���j�B���邳�i0.20�j�A�Ă����݁i0.16�j�A�ʓx�i1.20�j��K�p���ĕ␳�����C���[�W�B*
+�ă����_�����O���Ȃ��ŃC���[�W�̖��邳�ƑS�̂̐F��f���������������ꍇ�ɂ��̃v���Z�X���g�p���܂��B
 
-### 明るさ
+### ���邳
 {: #brightness}
-イメージの全体の明るさを調整します。例えば、モデルの中の白いサーフェスがグレーにレンダリングされている場合は、サーフェスが白く見えるまで明るさの度合いを上げてください。反対に、屋外のシーンが露出オーバーになっているような場合、これでよいと思えるまでシーンの明るさの度合いを下げることができます。
+�C���[�W�̑S�̖̂��邳�𒲐����܂��B�Ⴆ�΁A���f���̒��̔����T�[�t�F�X���O���[�Ƀ����_�����O����Ă���ꍇ�́A�T�[�t�F�X������������܂Ŗ��邳�̓x�������グ�邱�Ƃ��ł��܂��B���΂ɁA���O�̃V�[�����I�o�I�[�o�[�ɂȂ��Ă���悤�ȏꍇ�A����ł悢�Ɗ�����܂ŃV�[���̖��邳�̓x�����������邱�Ƃ��ł��܂��B
 
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*デフォルトの明るさ（左）、値を上げた状態*
+*�f�t�H���g�̖��邳�i���j�A�l���グ�����*
 
 {% include_relative snippets/snippet-brightness.md %}
 
-### 焼き込み
+### �Ă�����
 {: #burn}
-イメージの白点を調整します。これはイメージの中で最も明るい白色です。少量の焼きこみは、白い部分をより追加して暗い部分とのコントラストを加えることで、レンダリングをより印象的に、はっきりさせます。
-[Wikipediaの記事: White point](http://en.wikipedia.org/wiki/White_point)を参照してください。
+�C���[�W�̔��_�𒲐����܂��B����̓C���[�W�̒��ōł����邢���F�ł��B���ʂ̏Ă����݂́A�������������ǉ����ĈÂ������Ƃ̃R���g���X�g�������邱�ƂŁA�����_�����O������ۓI�ɁA�͂����肳���܂��B
+[Wikipedia�̋L��: White point](http://en.wikipedia.org/wiki/White_point)���Q�Ƃ��Ă��������B
 
 ![images/burn-001.png](images/burn-001.png)
-*デフォルト設定で焼き込み（左）、値を上げた状態*
+*�f�t�H���g�ݒ�ŏĂ����݁i���j�A�l���グ�����*
 
-### 彩度
+### �ʓx
 {: #saturation}
-彩度は、イメージの色の量をコントロールします。彩度が0.0の場合、グレースケールのイメージになります。彩度を1.00よりも大きくすると、色がより鮮やかになります。
+�ʓx�́A�C���[�W�̐F�̗ʂ��R���g���[�����܂��B�ʓx��0.0�̏ꍇ�A�O���[�X�P�[���̃C���[�W�ɂȂ�܂��B�ʓx��1.00�����傫������ƁA�F�����N�₩�ɂȂ�܂��B
 
 ![images/saturationdefault.png](images/saturationdefault.png)
-*デフォルトの彩度（右）、3程値を上げた状態（左）*
+*�f�t�H���g�̍ʓx�i�E�j�A3���l���グ����ԁi���j*
 
-### ヒストグラム
+### �q�X�g�O����
 {: #histogram}
-イメージの調整コントロールが適用された後に、イメージの明るいそして暗い部分の分布を図（グラフ）で表示します。ヒストグラム表示の左端は真っ暗な状態（黒）です。右端は一番明るい状態（白）を表示します。これはイメージの重点を置きたい部分を決定するのにとても良い方法です。イメージにあらゆる範囲の値があるように調整するのがよい目標でしょう。 例えば、ヒストグラムがグラフの右端に達する前に止まっている場合、明るさや焼き込みを使うと右端（一番明るい）まで値が分布されるようになります。[Wikipediaの記事: Histogram](http://en.wikipedia.org/wiki/Histogram)を参照してください。インターネットには、デジタル写真の露出を確認するのにヒストグラムを用いることに関する多くの情報があります。原理はレンダリングも同じです。
-<!--'Use more brightness or burn will stretch the values' - This needs rewritten.-->
+�C���[�W�̒����R���g���[�����K�p���ꂽ��ɁA�C���[�W�̖��邢�����ĈÂ������̕��z��}�i�O���t�j�ŕ\�����܂��B�q�X�g�O�����\���̍��[�͐^���Âȏ�ԁi���j�ł��B�E�[�͈�Ԗ��邢��ԁi���j��\�����܂��B����̓C���[�W�̏d�_��u���������������肷��̂ɂƂĂ��ǂ����@�ł��B�C���[�W�ɂ�����͈͂̒l������悤�ɒ�������̂��悢�ڕW�ł��傤�B �Ⴆ�΁A�q�X�g�O�������O���t�̉E�[�ɒB����O�Ɏ~�܂��Ă���ꍇ�A���邳��Ă����݂�����荂���l�ɂ���ƉE�[�i���A��Ԗ��邢�j�܂Œl�����z�����悤�ɂȂ�܂��B[Wikipedia�̋L��: Histogram](http://en.wikipedia.org/wiki/Histogram)���Q�Ƃ��Ă��������B�C���^�[�l�b�g�ɂ́A�f�W�^���ʐ^�̘I�o���m�F����̂Ƀq�X�g�O������p���邱�ƂɊւ��鑽���̏�񂪂���܂��B�����̓����_�����O�������ł��B
 
 ![images/histogram.png](images/histogram.png)
-*暗い部分が少なく、広い範囲の明るい色のあるヒストグラムの例。（しかし、右端に達する前にグラフが下がることから完全な白のピクセルは少ししかないことが分かります。）*
+*�C���[�W�̐F�̕��z��\�����Ă���q�X�g�O�����̗�B�D�F�̃O���t���A�Â����������Ȃ��i�����j�A�L���͈̖͂��邢�F������i�E���j���Ƃ�\���Ă��܂��B�i�������A�E�[�i���A��Ԗ��邢�j�ɒB����O�ɃO���t�������邱�Ƃ��犮�S�Ȕ��̃s�N�Z���͏��������Ȃ����Ƃ�������܂��B�j*
 
-#### ヒストグラムのオプション
-ヒストグラムのイメージを右クリックすると、下のオプションが表示されます。これらのオプションは、ヒストグラムの情報の表示方法を変更します。（ヒストグラムの値は変更されません。）
+#### �q�X�g�O�����̃I�v�V����
+�q�X�g�O�����̃C���[�W���E�N���b�N����ƁA���̃I�v�V�������\������܂��B�����̃I�v�V�����́A�q�X�g�O�����̏��̕\�����@��ύX���܂��B�i�q�X�g�O�����̒l�͕ύX����܂���B�j
 
-* **フィット** - 縦方向の一番高い部分をグラフにフィットさせます。
-* **中央値** - 縦方向の中央値をフィットさせます。これは、ヒストグラムの両端の詳細を確認するのによい方法です。
-* **平均値** - 縦方向の平均値をフィットさせます。
-* **並べ替えたグラフを表示** - すべての値をイメージにある量に基づいて並べ替えます。
-* **スケールを表示** - ヒストグラムの一番下に沿って、対応する値を表示します。
-* **グラフの色...** - グラフの色を設定します。
+* **�t�B�b�g** - �c�����̈�ԍ����������O���t�Ƀt�B�b�g�����܂��B
+* **�����l** - �c�����̒����l���t�B�b�g�����܂��B����́A�q�X�g�O�����̗��[�̏ڍׂ��m�F����̂ɂ悢���@�ł��B
+* **���ϒl** - �c�����̕��ϒl���t�B�b�g�����܂��B
+* **���בւ����O���t��\��** - ���ׂĂ̒l���C���[�W�ɂ���ʂɊ�Â��ĕ��בւ��܂��B
+* **�X�P�[����\��** - �q�X�g�O�����̈�ԉ��ɉ����āA�Ή�����l��\�����܂��B
+* **�O���t�̐F...** - �O���t�̐F��ݒ肵�܂��B
 
-### 露出を固定
+### �I�o���Œ�
 {: #lock-exposure}
-露出設定を固定すると、照明を変更しても補正のための露出調整はされません。
+�I�o�ݒ���Œ肷��ƁA�Ɩ���ύX���Ă��␳�̂��߂̘I�o�����͂���܂���B
 
-## レンダリング停止条件
+## �����_�����O��~����
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}
 {% include_relative snippets/snippet-renderconstraints.md %}
 
-## 情報
+## ���
 {: #information}
 
-#### 解像度
-現在の[レンダリング解像度](render-tab.html#resolution)を表示します。
+#### �𑜓x
+���݂�[�����_�����O�𑜓x](render-tab.html#resolution)��\�����܂��B
 
-#### 面
-モデルをレンダリングするのに使用されたメッシュ面の数を表示します。この値はRhinoでの様々な[レンダリングメッシュの設定](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#documentproperties/mesh.htm)を比較するのに便利です。
+#### ��
+���f���������_�����O����̂Ɏg�p���ꂽ���b�V���ʂ̐���\�����܂��B���̒l��Rhino�ł̗l�X��[�����_�����O���b�V���̐ݒ�](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#documentproperties/mesh.htm)���r����̂ɕ֗��ł��B
 
-#### 見掛けの面
-モデルにブロックがある場合、Flamingo nXtはそれぞれのインスタンスのメッシュを再生成しなくても、ブロック定義を用いてブロックインスタンスをレンダリングすることができます。見掛けの面は、ブロックインスタンスがなかった場合に、後どのくらいの一時面が生成されるかを表示します。
+#### ���|���̖�
+���f���Ƀu���b�N������ꍇ�AFlamingo nXt�͂��ꂼ��̃C���X�^���X�̃��b�V�����Đ������Ȃ��Ă��A�u���b�N��`��p���ău���b�N�C���X�^���X�������_�����O���邱�Ƃ��ł��܂��B���|���̖ʂ́A�u���b�N�C���X�^���X���Ȃ������ꍇ�ɁA��ǂ̂��炢�̈ꎞ�ʂ���������邩��\�����܂��B
 
-#### 照明の情報
-レンダリングの現在の照明設定に関するいくつかの情報が表示されます。表示される情報は次のとおりです。
+#### �Ɩ��̏��
+�����_�����O�̌��݂̏Ɩ��ݒ�Ɋւ��邢�����̏�񂪕\������܂��B�\���������͎��̂Ƃ���ł��B
 
->[プリセット](lighting-tab.html)
->[太陽](sun-and-sky-tabs.html#sun)
->[空](sun-and-sky-tabs.html#sky)
->[光源](lights-tab.html)
->[間接光](lighting-tab.html#indirect)
->[環境光　オン/オフ](lighting-tab.html#ambient)
+>[�v���Z�b�g](lighting-tab.html)
+>[���z](sun-and-sky-tabs.html#sun)
+>[��](sun-and-sky-tabs.html#sky)
+>[����](lights-tab.html)
+>[�Ԑڌ�](lighting-tab.html#indirect)
+>[�����@�I��/�I�t](lighting-tab.html#ambient)
 
-## チャンネル
+## �`�����l��
 {: #channels}
-リアルタイムで光源チャンネルを変更する場合に、これらのコントロールを使用します。8つのチャンネルの1つに光源を割り当てます。レンダリングが表示されたら、レンダリングイメージの照明を調整します。これはレンダリングで複数の光源のバランスを調整するのにとても便利です。詳細については、[レンダリングチャンネル](render-channel.html#adjustng-channels)のトピックを参照してください。
+���A���^�C���Ō����`�����l����ύX����ꍇ�ɁA�����̃R���g���[�����g�p���܂��B8�̃`�����l����1�Ɍ��������蓖�Ă܂��B�����_�����O���\�����ꂽ��A�����_�����O�C���[�W�̏Ɩ��𒲐����܂��B����̓����_�����O�ŕ����̌����̃o�����X�𒲐�����̂ɂƂĂ��֗��ł��B�ڍׂɂ��ẮA[�����_�����O�`�����l��](render-channel.html#adjustng-channels)�̃g�s�b�N���Q�Ƃ��Ă��������B
 
-## ポストエフェクト
+## �|�X�g�G�t�F�N�g
 {: #post-process-effects}
-イメージがレンダリングされたら、ポストプロセッシング効果を適用できます。これらはオン、オフを切り替えられ、リストで順序を変えることもできます。設定はそれぞれの効果によって変わります。次のエフェクトがあります。
+�C���[�W�������_�����O���ꂽ��A�|�X�g�v���Z�b�V���O���ʂ�K�p�ł��܂��B�����̓I���A�I�t��؂�ւ����A���X�g�ŏ�����ς��邱�Ƃ��ł��܂��B�ݒ�͂��ꂼ��̌��ʂɂ���ĕς��܂��B���̃G�t�F�N�g������܂��B
 
->フォグ
->グロー
->グレア
->被写界深度
->点
->曲線
->アイソカーブ
->注釈
+>�t�H�O
+>�O���[
+>�O���A
+>��ʊE�[�x
+>�_
+>�Ȑ�
+>�A�C�\�J�[�u
+>����
 
-それぞれのフィルタの詳細については、[イメージのポストプロセス](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)のトピックを参照してください。
+���ꂼ��̃t�B���^�̏ڍׂɂ��ẮA[�C���[�W�̃|�X�g�v���Z�X](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/render.htm#The_Render_Window)�̃g�s�b�N���Q�Ƃ��Ă��������B

@@ -49,10 +49,11 @@ Librariesコマンドは、マテリアル、テクスチャ、環境のライ�
 ![images/options.png](images/options.png)ライブラリオプションを使用すると、![images/library_default.png](images/library_default.png)メニューに表示される内容を変更することができます。
 
 ##### コマンドの位置
-ライブラリオプションコマンドは、3箇所からアクセスできます。 <!-- TODO: Where is the third place? -->
+ライブラリオプションコマンドは、3箇所からアクセスできます。
 
  1. ライブラリタブ > ライブラリパネルの右上の![images/library_default.png](images/library_default.png) > 設定...
  1. メニュー > ツールプルダウン > オプション > ライブラリ
+ 1. メニュー > 植物 > ライブラリ
 
 
 ### レンダリングコンテンツを表示

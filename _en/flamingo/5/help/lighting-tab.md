@@ -6,7 +6,7 @@ title: Lighting Presets
 Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
-*Image by Christopher Soto Gutiérrez.*
+*Image by Christopher Soto Guti辿rrez.*
 
 #### Where can I find Flamingo Lighting control?
 
