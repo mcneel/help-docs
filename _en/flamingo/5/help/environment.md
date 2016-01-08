@@ -135,9 +135,7 @@ Select one of three image projections from the drop-down control:
 
 Each projection method has its own set of controls for positioning the image.
 
-<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
-
-#### Planar Projection
+### Planar Projection
 {: #planar}
 Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
 
@@ -170,7 +168,7 @@ Specifies the size of the background image in the 0 - 1.0 scale of the view widt
 #### X Offset / Y Offset
 Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
-#### Cylindrical Projection
+### Cylindrical Projection
 {: #cylindrical}
 Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
 
@@ -184,7 +182,6 @@ The angle from view checkbox will keep the image in sync with the current view. 
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
-<!--TODO: Image doesn't show up in file. -->
 
 * The control shows the environment in plan view.
 * The dark grey cone of vision shows the last coordinates in the current perspective view.
@@ -217,7 +214,7 @@ Specifies the vertical angles of the image based on horizontal groundplane direc
 ####  Get Angles From View button
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
-#### Spherical Projection
+### Spherical Projection
 {: #spherical}
 Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
 

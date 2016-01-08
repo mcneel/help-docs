@@ -1,15 +1,16 @@
 ---
+title: Nach Updates suchen
 ---
 
-# Check for Updates
-This is an automated check for the current version of Flamingo NXT 5.0.
+# {{page.title}}
+Zur Einstellung der automatischen Suche nach neuen Versionen von Flamingo nXt 5.0.
 
-#### Current Update status
+#### Aktueller Update-Status
 
-#### Last Checked
+#### Zuletzt überprüft
 
-#### Update frequency
+#### Update-Frequenz
 
-### Check now...
+### Jetzt überprüfen...
 
-## Troubleshooting Updates
+## Problembehandlung für Updates

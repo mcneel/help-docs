@@ -158,12 +158,10 @@ Saturation controls the amount of color in the image. A saturation of 0.00 will 
 
 ### Histogram
 {: #histogram}
-Graphically displays the distribution of the light and dark areas in the image after the Adjust images controls are applied. The left edge of the chart are the darks to black.  The right edge shows the amount of light colors to white. This is a great way to determine the important parts of the image. A good goal is to adjust the image to have a full range of values in the image.  For instance, if the histogram stops before getting to the far right of the graph, use more brightness or burn will stretch the values toward the right or bright edge. See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
-<!--'Use more brightness or burn will stretch the values' - This needs rewritten.-->
+Graphically displays the distribution of the light and dark areas in the image after the Adjust images controls are applied. The left edge of the chart are the darks to black.  The right edge of the graph shows the amount of light colors to white. This is a great way to determine the important parts of the image. A good goal is to adjust the image to have a full range of values in the image.  For instance, if the histogram stops before getting to the far right of the graph, use more brightness or higher burn to push the brighter portions of the render to white. See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
 
 ![images/histogram.png](images/histogram.png)
-*An example histogram with few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
-<!-- TODO: 'Although there a few completely white pixels because the graph falls off before the right edge.' incomplete sentence -->
+*An example histogram showing the distribution of color in an image.  The gray graph shows a few dark areas (left side) and a large range of lighter colors (right side).  This graph also shows there a few completely white pixels because the graph falls short of the right edge (bright colors to white are at the extreme right).*
 
 #### Histogram options
 Right-click the histogram image for the following options.  These options simply change the way the histogram displays the information. They do not actually change the values in the histogram.

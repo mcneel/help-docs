@@ -2,6 +2,5 @@
 ---
 
 
-# Progress Form
-This process may take some time. Please be patient.
-
+# Fortschrittsdialog
+Dieser Prozess könnte etwas Zeit beanspruchen. Bitte haben Sie Geduld.
