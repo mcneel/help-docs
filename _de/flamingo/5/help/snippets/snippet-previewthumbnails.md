@@ -1,75 +1,74 @@
-Preview Properties
-Preview thumbnail images and the background area between thumbnail images both have context menus.
+Vorschaueigenschaften
+Sowohl die Bilder der Vorschauminiaturansichten wie der Hintergrundbereich zwischen den Miniaturansichtsbildern verfügen über Kontextmenüs.
 
-#### Thumbnail preview actions
+#### Funktionen der Miniaturansichtsvorschau
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click and drag to change the view.
+>![images/number-onestep.gif](images/number-onestep.gif)Durch Klick mit der rechten Maustaste und Ziehen kann die Ansicht geändert werden.
 
-This does not have much affect if the preview object is a sphere, but if it is a cube, cone, or other shape, rotating the view or object shows the preview object from different viewpoints.
+Dies hat keinen großen Einfluss, wenn das Vorschauobjekt eine Kugel ist, aber wenn es sich um einen Würfel oder Kegel oder eine andere Form handelt, wird beim Drehen der Ansicht oder des Objekts das Vorschauobjekt aus verschiedenen Blickwinkeln aus angezeigt.
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click to display a context menu.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click to display a larger preview window below the thumbnails.
->![images/number-onestep.gif](images/number-onestep.gif)Drag the preview thumbnails to reorder the list.
->![images/number-onestep.gif](images/number-onestep.gif)Press the [onmouseover="if (parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event)" onclick="javascript:BSSCPopup('../Popup_Actions/Ctrl_Key.htm');;return false" id="a16" style="position: relative; font-weight: normal;">Ctrl]() key while dragging to duplicate a material.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click the larger preview to open a floating window that can be resized to get a higher resolution view of the preview.
+>![images/number-onestep.gif](images/number-onestep.gif)Durch Klick mit der rechten Maustaste wird ein Kontextmenü angezeigt.
+>![images/number-onestep.gif](images/number-onestep.gif)Durch einen Doppelklick wird ein größeres Vorschaufenster unter den Miniaturansichten angezeigt.
+>![images/number-onestep.gif](images/number-onestep.gif)Durch Ziehen der Vorschauminiaturansichten kann die Liste neu geordnet werden.
+>![images/number-onestep.gif](images/number-onestep.gif)Durch Drücken der Strg-Taste beim Ziehen wird ein Material dupliziert.
+>![images/number-onestep.gif](images/number-onestep.gif)Durch einen Doppelklick auf die größere Vorschau wird ein Dialogfenster geöffnet, das eine Vorschauansicht in höherer Auflösung anzeigt.
 
-This window has all the same functionality as the original preview image including the context menu and the ability to drag and drop onto other materials or objects in the model.
+Dieses Fenster verfügt über die gleichen Funktionen wie das Originalvorschaubild, einschließlich Kontextmenü und die Fähigkeit von Drag&Drop auf andere Materialien oder Objekte im Modell.
 
-### Geometry
+### Geometrie
 
-#### Materials
-Materials can use various geometry types.
-![images/thumbnailsphere.png](images/thumbnailsphere.png) *Sphere* 
-![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Pyramid* 
-![images/thumbnailcube.png](images/thumbnailcube.png) *Cube* 
+#### Materialien
+Materialien können verschiedene Geometrietypen verwenden.
+![images/thumbnailsphere.png](images/thumbnailsphere.png) *Kugel* 
+![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Pyramide* 
+![images/thumbnailcube.png](images/thumbnailcube.png) *Würfel* 
 ![images/thumbnailtorus.png](images/thumbnailtorus.png) *Torus* 
-![images/thumbnailcone.png](images/thumbnailcone.png) *Cone* 
-![images/thumbnailplane.png](images/thumbnailplane.png) *Plane* 
+![images/thumbnailcone.png](images/thumbnailcone.png) *Kegel* 
+![images/thumbnailplane.png](images/thumbnailplane.png) *Ebene* 
 
-#### Environments
-Environments only use the cone and sphere.
-![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cone and sphere* 
+#### Umgebungen
+Umgebungen verwenden nur Kegel und Kugel.
+![images/environmentthumbnail.png](images/environmentthumbnail.png) *Kegel und Kugel* 
 
-#### Textures
-Textures are displayed only as a two-dimensional, flat surface facing the camera.
+#### Texturen
+Texturen werden nur als zweidimensionale, flache Fläche angezeigt, die auf die Kamera gerichtet ist.
 ![images/texturepreview.png](images/texturepreview.png)
 
-#### Size
-Sets the unit size for the thumbnail.
+#### Größe
+Definiert die Einheitsgröße für die Miniaturansicht.
 
-### View
-Controls the right-mouse drag object or camera rotation.
+### Ansicht
+Steuert das Ziehen des Objekts oder die Kamerarotation anhand der rechten Maustaste.
 
-#### Rotate object
-Right-mouse drag rotates the object.
+#### Ein Objekt drehen
+Ziehen mit der rechten Maustaste dreht das Objekt.
 
-#### Rotate camera
-Right-mouse drag rotates the camera.
+#### Kamera drehen
+Ziehen mit der rechten Maustaste dreht die Kamera.
 
-#### X angle
-Sets the horizontal rotation angle for the object or camera.
+#### X-Winkel
+Definiert den horizontalen Rotationswinkel für Objekt oder Kamera.
 
-#### Y angle
-Sets the vertical rotation angle for the object or camera.
+#### Y-Winkel
+Definiert den vertikalen Rotationswinkel für Objekt oder Kamera.
 
-### Background
-Controls the appearance of the thumbnail background.
+### Hintergrund
+Steuert die Erscheinung des Miniaturansichtshintergrunds.
 
-#### None
-The default gray environment is used.
+#### Nichts
+Es wird die graue Standardumgebung verwendet.
 ![images/thumbnailbackground-001.png](images/thumbnailbackground-001.png)
 
-#### Checkered
-A gray checkered background is used.
+#### Kariert
+Ein grauer karierter Hintergrund wird verwendet.
 ![images/thumbnailbackground-002.png](images/thumbnailbackground-002.png)
 
-#### Custom
-Any material or texture can be used as a custom background.
+#### Benutzerdefiniert
+Beliebige Materialien oder Texturen können als benutzerdefinierter Hintergrund verwendet werden.
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 
-####  **Save as Defaults** 
-Saves the thumbnail properties as the default settings.
+#### **Als Standard speichern** 
+Speichert die Miniaturansichtseigenschaften als Standardeinstellungen.
 
-####  **Load from Defaults** 
-Loads the thumbnail properties from the default settings.
-
+#### **Von Standardwerten laden** 
+Lädt die Miniaturansichtseigenschaften aus den Standardeinstellungen.

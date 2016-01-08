@@ -1,161 +1,166 @@
 ---
+title: Lichter
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png){:height="75px" width="75px"} Lights
-Artificial light sources use normal Rhino lights with added Flamingo properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
+# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
+Künstliche Lichtquellen verwenden zur Steuerung der Lichtverteilung normale Rhino-Lichter mit zusätzlichen Flamingo-Eigenschaften. Wenn Lichtquellen für die Beleuchtung verwendet werden, sollte der Typ verwendet werden, der der modellierten Lampe am meisten entspricht.
 
 
-## Lights Tab
+## Lichter-Reiter
 {: #light-tab}
-The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible through additional [Light Properties](#light-properties).
+Der Reiter für Lichter enthält eine Liste mit allen künstlichen Lichtern der Szene. In diesem Hilfethema wird der Lichter-Reiter von Flamingo beschrieben.  Es gibt außerdem einen [Rhino-Lichter-Reiter](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#commands/lights.htm).  Flamingo und Rhino synchronisieren die Einstellungen der beiden Reiter.  Der Flamingo eigene Reiter ist dank zusätzlicher [Lichteigenschaften](#light-properties) etwas flexibler.
 
-#### Where can I find Flamingo Lighting control?
-The Lights tab must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+Der Reiter für Lichter kann über die [Beleuchtungsvoreinstellungen](lighting-tab.html#lighting-presets) oder die [benutzerdefinierten Beleuchtungseinstellungen](lighting-tab.html#sun) geöffnet werden.
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
+<!-- #### Is this supposed to be a code? It's showing up as ####. To fix this, there needs to be a new line above the headline for the markdown to work.-->
 
-From the Lights tab lights you can insert, turn off/on, and change the strength and channel of each light.
+#### Wo befindet sich die Flamingo-Beleuchtungssteuerung?
+Wenn der Lichter-Reiter über die [Beleuchtungsvoreinstellungen](lighting-tab.html#lighting-presets) oder [benutzerdefinierte Beleuchtungseinstellungen](lighting-tab.html#sun) geöffnet wird, ist der Lichter-Reiter hier zu finden:
 
-Flamingo supports these light types:
+ 1. ![images/options.png](images/options.png) Werkzeugleisten >![images/flamingo-icon.png](images/flamingo-icon.png) Flamingo nXt
+ 1. ![images/menuicon.png](images/menuicon.png) Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo-Reiter > Lichter
 
-> [Tag objects as lights](#tag-objects-as-lights)
-> [Spotlight](#spotlight)
-> [Point light](#pointlight)
-> [Rectangular light](#rectangularlight)
-> [Linear light](#linearlight)
+In diesem Reiter können Lichter eingesetzt, ein- und ausgeschaltet sowie ihre Stärke und der Kanal angepasst werden.
 
-**Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
+Flamingo unterstützt die folgenden Lichttypen:
 
-Some light properties are displayed on the Lights tab table for quick editing of common properties.
+> [Objekte als Lichter markieren](#tag-objects-as-lights)
+> [Spotlicht](#spotlight)
+> [Punktlicht](#pointlight)
+> [Rechteckiges Licht](#rectangularlight)
+> [Lineares Licht](#linearlight)
 
-Properties contained in the table are:
+**Hinweis:** Gerichtete Rhino-Lichter ![images/directionallightbutton.png](images/directionallightbutton.png) werden nicht unterstützt. Sie erscheinen nicht in der Lichterliste und können keine Flamingo-nXt-Eigenschaften annehmen.
 
- >[On/Off](#on)
+Einige Lichteigenschaften werden in der Tabelle im Lichter-Reiter angezeigt und können so einfach bearbeitet werden.
+
+Zu den in der Tabelle vorhandenen Eigenschaften gehören:
+
+ >[Ein/Aus](#on)
  >[Name](#name)
- >[Distribution](#light-distribution)
- >[Aim](#aim-light)
- >[Watts](#watts)
- >[Channel](#channel)
+ >[Verteilung](#light-distribution)
+ >[Richtung](#aim-light)
+ >[Watt](#watts)
+ >[Kanal](#channel)
 
-Right-clicking on the Lights tab table will open the [Additional Options](#additional-options) menu.
+Durch Klick mit der rechten Maustaste auf die Lichtertabelle wird das Kontextmenü mit [zusätzlichen Optionen](#additional-options) geöffnet.
 
-[Light Properties](#light-properties) can also be accessed by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
+Auf die [Lichteigenschaften](#light-properties) kann auch zugegriffen werden, indem das Licht ausgewählt wird und im [Objekteigenschaften-Panel](http://docs.mcneel.com/rhino/5/help/de-de/commands/properties.htm) die Lichteigenschaften ![images/spotlightbutton.png](images/spotlightbutton.png) ausgewählt werden.
 
-## Light Types
+## Lichttypen
 {: #light-types}
-Lights can be inserted from the Rhino toolbars or the Flamingo Lights tab. Objects can be tagged as lights with Flamingo.
+Lichter können aus der Rhino-Werkzeugleiste oder dem Flamingo-Lichter-Reiter aus eingesetzt werden. Objekte können mit Flamingo als Lichter markiert werden.
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Tag objects as lights
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Objekte als Lichter markieren
 {: #tag-objects-as-lights}
-Any renderable object (surface, solid, etc.) can be tagged as a light source and given light properties. Additional properties such as [distribution](#light-distribution), [direction](#aim-light), and [strength](#watts) can be assigned. Objects tagged as lights may display a preview widget showing direction of the light and its center location.
+Ein beliebiges renderbares Objekt (Fläche, Volumenkörper, etc.) kann als Lichtquelle markiert werden und Lichteigenschaften zugeordnet bekommen. Zusätzliche Eigenschaften wie [Verteilung](#light-distribution), [Richtung](#aim-light) und [Stärke](#watts) können zugewiesen werden. Als Lichter markierte Objekte zeigen ein Vorschau-Widget mit der Richtung des Lichts und seines Mittelpunkts an.
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
-*LED driving lights and headlights tagged as light sources*
+*Als Lichtquellen markierte Scheinwerfer und Fernlichter*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) Spotlight
+#### ![images/spotlight-01.png](images/spotlight-01.png) Spotlicht
 {: #spotlight}
-Spotlight is a conical light distribution with a specific direction.  The light properties include a [source radius](#radius), [beam angle](#beam-angle), falloff radius, and direction. The larger the source radius, the softer the shadows will be from the light. By default there is a visible disk at the light location. Information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+Ein Spotlicht ist eine konische Lichtverteilung mit einer Richtung.  Zu den Lichteigenschaften gehören ein [Quellenradius](#radius), ein [Strahlwinkel](#beam-angle), ein Falloff-Radius und eine Richtung. Je größer der Quellenradius, desto sanfter sind die vom Licht erzeugten Schatten. Standardmäßig ist an der Position des Lichts eine sichtbare Scheibe. Weitere Informationen zum Bearbeiten der Position, Richtung und des Strahlwinkels auf dem Bildschirm mithilfe von Kontrollpunkten finden Sie im Hilfethema zum [Rhinoceros-Spotlicht](http://docs.mcneel.com/rhino/5/help/de-de/commands/spotlight.htm).
 
 ![images/spotlight.png](images/spotlight.png)
-*A Spotlight pointed at the red box*
+*Ein auf den roten Quader gerichtetes Spotlicht*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) Point Light
+#### ![images/pointlight-01.png](images/pointlight-01.png) Punktlicht
 {: #pointlight}
-Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the point light is partially obscured by an object that intersects the light.
+Punktlichter sind kleine Kugeln, die ihr Licht in alle Richtungen gleichmäßig verteilen. Für dieses Licht kann der [Radius](#radius) eingestellt werden. Je größer der Radius, desto sanfter sind die vom Licht erzeugten Schatten. Standardmäßig ist an der Position des Lichts beim Rendern eine sichtbare Lichtkugel vorhanden. Wenn das Punktlicht teilweise von einem Objekt verdunkelt wird, das dieses schneidet, können ungewöhnliche Effekte auftreten.
 
 ![images/pointlight.png](images/pointlight.png)
-*A small point light close to the right wall*
+*Ein kleines Punktlicht nahe der rechten Wand*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) RectangularLight
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) Rechteckiges Licht
 {: #rectangularlight}
-Provides an approximation of a recessed light with a diffuser or baffles. The light distributes light in a diffuse pattern based on the orientation of the rectangle. A direction arrow is drawn at the center point of the light. Full strength light is directly in front of the rectangle.  Then the light falls off at an angle to the objects from the rectangle. By default a white rectangle will be visible when rendering. A common mistake is to insert these rectangles at exactly the same height as a ceiling plane. For consistent results, make sure the lights are slightly below the ceiling. For information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros RectangularLight](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm) help topic.
+Liefert eine Annäherung an eine Einbauleuchte mit einem Diffusor oder Umlenkblech. Das Licht wird dabei in einem diffusen Muster basierend auf der Ausrichtung des Rechtecks gestreut. Im Zentrum des Lichts zeigt ein Pfeil die Richtung an. Die volle Stärke des Lichts entfaltet sich direkt vor dem Rechteck.  Von dort aus nimmt die Intensität je nach Winkel ab. Beim Rendern wird standardmäßig ein weißes Rechteck angezeigt. Ein häufiger Fehler ist es, diese Rechtecke genau auf der Höhe der Decke anzubringen. Um ein konsistentes Ergebnis zu erhalten, sollten Sie die Lichter etwas unter der Decke anbringen. Weitere Informationen zum Bearbeiten der Position, Richtung und des Strahlwinkels auf dem Bildschirm mithilfe von Kontrollpunkten finden Sie im Hilfethema zum [Rechteckigen Licht in Rhinoceros](http://docs.mcneel.com/rhino/5/help/de-de/commands/rectangularlight.htm).
 
 ![images/rectangular light.png](images/rectangular light.png)
-*A rectangular light just below the ceiling*
+*Ein rechteckiges Licht direkt unter der Decke*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) LinearLight
+#### ![images/linearlight-01.png](images/linearlight-01.png) Lineares Licht
 {: #linearlight}
-Distributes light in a cylindrical pattern that imitates a fluorescent tube. Light properties for this light include [source radius](#radius) and length. The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light cylinder at the light location when rendering. Note that unusual effects can happen if the cylindrical light is partially obscured by an object that intersects the light. Use Rhino Control points to activate the grips on the light to edit on the screen.
+Verteilt Licht in einem zylindrischen Muster, das eine Leuchtstoffröhre imitiert. Zu den einstellbaren Eigenschaften dieses Lichts gehören der [Radius](#radius) und die Länge der Lichtquelle. Je größer der Radius, desto sanfter sind die vom Licht erzeugten Schatten. Standardmäßig wird an der Position des Lichts beim Rendern ein Lichtzylinder angezeigt. Wenn das Licht teilweise von einem Objekt verdunkelt wird, das dieses schneidet, können ungewöhnliche Effekte auftreten. Mit den Rhino-Kontrollpunkten kann das Licht auf dem Bildschirm angepasst werden.
 
 ![images/linearlight.png](images/linearlight.png)
 
-## Light Properties
+## Lichteigenschaften
 {: #light-properties}
-When Flamingo is the current rendering application in Rhino, additional properties can be set for lights. Lights have some but not all properties in common.
+Wenn Flamingo der aktuelle Renderer in Rhino ist, können zusätzliche Eigenschaften für die Lichter definiert werden. Lichter haben einige aber nicht alle Eigenschaften gemein.
 
 #### Name
 {: #name}
-The name of the light object. This is an easy way to differentiate lights which are the same type in the model.
+Der Name des Lichtobjekts. Dieser dient der einfachen Unterscheidung von Lichtern desselben Typs im Modell.
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) On/Off
+#### ![images/lightbulbon.png](images/lightbulbon.png) Ein/Aus
 {: #on}
-Toggles the light on and off. In the Light table,  if the light bulb icon is yellow the light is on. If the light bulb icon is gray the light will be off in the rendering. Double-click on the icon to toggle it On/Off. In the properties dialog, there is an On/Off Checkbox.
+Schaltet das Licht ein und aus. Ein gelbes Glühbirnensymbol in der Lichttabelle bedeutet, dass das Licht eingeschaltet ist. Erscheint das Symbol grau, ist das Licht im Rendering deaktiviert. Durch einen Doppelklick auf das Symbol kann das Licht ein- bzw. ausgeschaltet werden. Im Eigenschaftendialog gibt es ein Kontrollkästchen zum ein- und ausschalten des Lichts.
 
-#### Visible
+#### Sichtbar
 {: #visible}
-By default lights will show themselves as a bright light source in the rendering.  By unchecking the Visible property, the light object itself will be invisible in the rendering.  Still, the light will project its light into the scene.
+Standardmäßig werden Lichter im Rendering als helle Lichtquellen dargestellt.  Durch Deaktivieren der Option *Sichtbar* wird das Lichtobjekt selbst im Rendering unsichtbar.  Das von ihm ausgehende Licht wird aber dennoch in die Szene projiziert.
 
-#### Light distribution *([Tagged objects only](#tag-objects-as-lights))*
+#### Lichtverteilung *([Nur markierte Objekte](#tag-objects-as-lights))*
 {: #light-distribution}
-When tagging an object as a light, use Distribution to specify the pattern the light projects into the scene. In the light panel, double-click on the distribution cell to get an options drop-down. Distribution types include: [All Directions](#pointlight), [Spot](#spotlight) and [Diffuse](#rectangularlight). Both Spot and Diffuse require a [direction](#aim-light) to be specified.
+Wenn ein Objekt als Licht markiert wird, kann über die Verteilung das Muster eingestellt werden, das vom Licht in die Szene geworfen wird. Durch einen Doppelklick auf die Zelle mit der Verteilungseinstellung kann ein Dropdownmenü mit den entsprechenden Optionen geöffnet werden. Zu den Verteilungstypen gehören: [Alle Richtungen](#pointlight), [Spotlicht](#spotlight) und [Diffus](#rectangularlight). Für das Spotlicht und das diffuse Licht muss eine [Richtung](#aim-light) eingestellt werden.
 
-#### Aim light *([Tagged objects only](#tag-objects-as-lights))*
+#### Richtung des Lichts *([Nur markierte Objekte](#tag-objects-as-lights))*
 {: #aim-light}
-For tagged light which have a distribution of Spot or Diffuse, a direction must be specified.  Double-click on the "Aim >>" option and follow the command line prompts.
+Für markierte Lichter mit einer Verteilung als Spotlicht oder diffuses Licht muss eine Richtung angegeben werden.  Klicken Sie dazu doppelt auf die Zelle mit der Angabe "Richtung >>" und folgen sie den Anweisungen der Befehlszeile.
 
-#### Watts
+#### Watt
 {: #watts}
-Specifies the electrical power of the light.  It is recommended to start with realistic values for the scene. In the light table, double-click on the cell to change the value.
+Dieser Wert bestimmt die elektrische Leistung des Lichts.  Nach Möglichkeit sollte dabei mit einem realistischen Wert für die Szene begonnen werden. Um den Wert zu ändern, klicken Sie doppelt auf die entsprechende Zelle.
 
-#### Beam angle *([Spotlights only](lights-tab.html#spotlight))*
+#### Strahlwinkel *([Nur Spotlichter](lights-tab.html#spotlight))*
 {: #beam-angle}
-The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+Der Winkel in Grad, der die Breite einer Lichtquelle bestimmt. Dieser kann auch durch Verwendung von Kontrollpunkten auf dem Bildschirm verändert werden.  Weitere Informationen zum Bearbeiten mit Kontrollpunkten finden Sie im Hilfethema zum [Rhinoceros-Spotlicht](http://docs.mcneel.com/rhino/5/help/de-de/commands/spotlight.htm).
 
 #### Radius
 {: #radius}
-The size of the visible light source. Smaller lights cast sharper shadows.
+Die Größe der sichtbaren Lichtquelle. Kleinere Lichter werfen schärfere Schatten.
 
-#### Color
+#### Farbe
 {: #color}
-The color for the light the source emanates.
+Die Farbe des von der Lichtquelle ausgestrahlten Lichts.
 
-#### Use material color *([Tagged objects only](#tag-objects-as-lights))*
-Uses the color of the material assigned to the light object for the light it produces.
+#### Materialfarbe verwenden *([Nur markierte Objekte](#tag-objects-as-lights))*
+Verwendet die Farbe des Materials, das dem Lichtobjekt zugeordnet ist, für das Licht.
 
-#### Channel
+#### Kanal
 {: #channel}
-Lights can be assigned to one of eight channels. This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html) topic.
+Lichter können einem von acht Kanälen zugewiesen werden. Mit dieser Eigenschaft können Sie die Beleuchtung in Ihrem gerenderten Bild in Echtzeit anpassen, nachdem das Rendering erzeugt wurde. Dies ist eine sehr mächtige Funktion zur Ausbalancierung mehrerer Lichtquellen in einem Rendering. Weitere Informationen finden Sie im Hilfethema zum [Rendering von Kanälen](render-channel.html).
 
-#### IES File
+#### IES-Datei
 {: #iesfile}
-IES (Illuminating Engineering Society) files are photometry files that define the distribution of light from a light source. Light fixture manufacturers often provide these files. By using the IES file to define your distribution, you can more accurately depict your light source. The geometry of the tagged light object has no relationship to the distribution of light. The definition of the light distribution comes from the photometry file alone.
+IES-Dateien (Illuminating Engineering Society) sind Photometrie-Dateien, die die Verteilung von Licht aus einer Lichtquelle definieren. Lichtvorrichtungshersteller liefern oft diese Dateien. Indem Sie die IES-Datei verwenden, um Ihre Verteilung zu definieren, können Sie Ihre Lichtquelle genauer darstellen. Die Geometrie des markierten Lichtobjekts weist keine Beziehung zur Verteilung des Lichts auf. Die Definition der Lichtverteilung stammt allein von der Photometrie-Datei.
 
-Notes:
+Hinweise:
 
-* Flamingo nXt supports Type C goniometry files, which includes the majority of IES files. Type A files, which are occasionally used by the automobile industry to define headlights, and Type B files, which are sometimes used to define floodlighting, are not supported.
-* IES distributions include the effects of light fixture elements such as baffles, reflectors, and diffusers.
-* IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
+* Flamingo nXt unterstützt Goniometrie-Dateien vom Typ C, worunter die meisten IES-Dateien fallen. Dateien vom Typ A, die manchmal von der Automobilindustrie für die Scheinwerfer verwendet werden, und Dateien vom Typ B, die manchmal für Flutlichtbeleuchtung verwendet werden, werden nicht unterstützt.
+* IES-Verteilungen beinhalten die Effekte von Lichtvorrichtungselementen wie Reflektoren, Umlenkblechen und Diffusoren.
+* IES-Verteilungen sind oft asymmetrisch, der Prozess der Quellenrichtung beinhaltet also nicht nur ein Ziel, sondern auch einen Rotationswinkel.
 
-#### Brightness from file
-Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
+#### Helligkeit aus Datei
+Verwendet die Intensität, die in der IES-Datei gespeichert ist. Bei Deaktivierung dieser Option wird die Helligkeit aus den eingestellten [Watt](lights-tab.html#watts) berechnet.
 
 
-## Additional Options Menu
+## Zusätzliche Optionen
 {: #additional-options}
-Additional options for lights can be accessed by right-clicking on the light in the Light table.
+Durch Klick mit der rechten Maustaste auf ein Licht in der Lichttabelle können zusätzliche Optionen aufgerufen werden.
 
-####  On
-Toggles the light [On/Off](#on)
+####  Ein
+Schaltet das Licht [ein und aus](#on).
 
-#### Delete
-Deletes the selected light.
+#### Löschen
+Löscht das ausgewählte Licht.
 
-#### Remove light tag
-Removes the [tag](#tag-objects-as-lights) that makes an object a light.
+#### Lichtmarkierung entfernen
+Entfernt die [Lichtmarkierung](#tag-objects-as-lights) eines Objekts.
 
-#### Properties
-Access the [Light Properties](#light-properties) for that light.
+#### Eigenschaften
+Die [Lichteigenschaften](#light-properties) dieses Lichts.
 
-#### Select objects and matching items
-Selects the light in the viewport.
+#### Objekte und passende Listenelemente auswählen
+Wählt das Licht im Ansichtsfenster aus.

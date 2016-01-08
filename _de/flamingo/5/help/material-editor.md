@@ -1,238 +1,239 @@
 ---
+title: Materialeditor-Panel
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Materials Editor Panel
-Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
+# ![images/paint.svg](images/paint.svg) {{page.title}}
+Materialien enthalten die Spezifikationen für Farbe, Reflexionsvermögen, Transparenz, Texturen und Bump-Maps eines Flächen-Finish. Alle Materialien verfügen über Grundeinstellungen. Das Standardmaterial ist weiß und matt, ohne Reflexionsvermögen oder Transparenz. Die besten Resultate erzielen Sie mit Flamingo-spezifischen Materialien.
 
-Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.
+Materialien können Ebenen, Objekten und Blöcken zugewiesen werden. Diese Zuweisungen können durch Drag&Drop auf Objekte oder verschiedene Steuerelemente definiert werden. Weitere Informationen finden Sie im Hilfethema zur [Materialzuweisung](material_assignment.html).
 
-Once assigned, materials are stored in the model. The material, textures, and all support files for rendering can be stored within the Rhino model with properly set [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm).
+Nach der Zuweisung werden Materialien im Modell gespeichert. Mit den korrekt eingestellten [Rendering-Optionen](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#options/rendering.htm) können das Material, die Texturen und alle Render-Unterstützungsdateien im Rhino-Modell gespeichert werden.
 
-Materials, environments, and textures are stored in the model, but rendering content can also be saved to files that can be shared between models. Content can be dragged between Rhino sessions and into a folder. Color swatches can be dragged and dropped in the same way. The [Libraries Panel](libraries.html) displays the default content folder. Use this to drag and drop content into the model or to drag and drop model content to an external file.
+Materialien, Umgebungen und Texturen werden im Modell gespeichert, der Renderinhalt kann aber auch in Dateien gespeichert werden, die von mehreren Modellen gemeinsam genutzt werden. Der Inhalt kann zwischen Rhino-Sitzungen und in einen Ordner gezogen werden. Farbräder können auf die gleiche Art und Weise per Drag&Drop abgelegt werden. Das [Bibliotheken-Panel](libraries.html) zeigt den standardmäßigen Inhaltsordner an. Verwenden Sie dies, um Inhalt in das Modell zu ziehen und abzulegen oder um Modellinhalt in eine externe Datei zu ziehen und abzulegen.
 
 ![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map .float-img-right}
 
-##### Where can I find this command?
-There several options to find the Materials tab.
+##### Wo befindet sich dieser Befehl?
+Auf den Materialreiter können Sie auf mehrere Arten zugreifen.
 
-* ![images/materialtab.png](images/materialtab.png)Materials tab
-* ![images/icon-render.png](images/icon-render.png)Render Tools toolbar > ![images/materialtab.png](images/materialtab.png) Material Editor
-* Menus > Render Pulldown > Materials Editor
-* On the Command line type MaterialEditor
+* ![images/materialtab.png](images/materialtab.png) Materialreiter
+* ![images/icon-render.png](images/icon-render.png) Werkzeugleiste Rendern > ![images/materialtab.png](images/materialtab.png) Materialeditor
+* Menü > Rendern > Materialeditor
+* Durch Eingabe des Befehls Materialeditor in der Befehlszeile
 
-The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
+Das Materialeditor-Panel ist in mehrere Abschnitte unterteilt.  Je nach Materialtyp werden andere erweiterte Optionen angezeigt.
 
-You can drag colors and textures from the color swatch and drop onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
+Farben und Texturen können per Drag&Drop aus dem Farbenrad in ein anderes Farbenrad oder eine sonstigen Steuerung im Materialeditor, der [Texturenpalette](texturepalette.html) oder dem [Umgebungseditor](environmenteditor.html) gezogen werden.
 
-##### Materials Panel
+##### Material-Panel
 
- 1. [Settings Bar](#settings)
- 1. [Material List](#material_list)
- 1. [Window Divider](#divider)
- 1. [Material Properties Section](#properties)
+ 1. [Einstellungsleiste](#Einstellungen)
+ 1. [Liste der Materialien](#material_list)
+ 1. [Fensterteiler](#divider)
+ 1. [Materialeigenschaften](#properties)
  1. [Name](#name)
- 1. [Material Properties Panels](#panels)
+ 1. [Materialeigenschaften-Panels](#panels)
 
-## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [Einstellungsleiste](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #settings .clear-img}
-Use this bar to navigate the material during its development.
+In dieser Leiste können Sie durch die Liste der Materialien navigieren.
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to get back to the parent material from the texture details.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) Pfeil zurück
+Zum Zurückblättern durch das aktuelle Material oder die bereits vorher ausgewählten Materialien.  Materialien mit Texturen haben beispielsweise mehrere Ebenen.  Mit diesem Pfeil können Sie von den Texturdetails zum übergeordneten Material zurückkehren.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-Walks back though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to get back to the recently used texture from the parent material.
-
-
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
-
-#### ![images/library_default.png](images/library_default.png) Tools menu
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) Pfeil vorwärts
+Zum Vorwärtsblättern durch das aktuelle Material oder die bereits vorher ausgewählten Materialien.  Materialien mit Texturen haben beispielsweise mehrere Ebenen.  Mit diesem Pfeil können Sie vom übergeordneten Material zur zuletzt verwendeten Textur zurückkehren.
 
 
-## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Aktuell ausgewählter Materialname
+Zeigt den Namen und die Ebene des aktuellen Materials an.  Wenn beispielsweise eine Textur oder eine prozedurale Materialebene vorhanden ist, wird ein ">" angezeigt. Hier können Sie nachsehen, in welchem Bereich eines Materials sich der Editor befindet.
+
+#### ![images/library_default.png](images/library_default.png) Werkzeugmenü
+Zeigt das [Werkzeugmenü](#tools-menu) an.  Dies ist ein umfassendes Menü mit Befehlen, Einstellungsmöglichkeiten und Werkzeugen für Materialien.
+
+
+## [Liste der Materialien](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #material_list}
-This lists all the materials contained in the model. From this list:
+Die Liste aller im Modell verwendeten Materialien. Funktionen dieser Liste:
 
-* Scroll up and down in the list to see all the materials in the model.
-* Drag and drop a material from this list onto a layer in the [Layer Panel](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm) or directly onto an Object to assign it to an Object. See [Material Assignments](material_assignment.html) for more information.
-* Add a new Material using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
+* Sie können durch die Liste scrollen und sich so alle Materialien im Modell ansehen.
+* Sie können ein Material dieser Liste per Drag&Drop auf eine Ebene im [Ebenenpanel](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#commands/layer.htm) oder direkt auf ein Objekt ziehen, um es zuzuweisen. Weitere Informationen finden Sie im Hilfethema zur [Materialzuweisung](material_assignment.html).
+* Durch Klick auf die Plus-Schaltfläche ![images/add_material.png](images/add_material.png) am Ende der Liste kann ein neues Material hinzugefügt werden.
 
 
-* Click on each material to select it. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information.
-* Right-click a thumbnail to display the Material context menu.
-* Right-click the blank area to display the New Material Context Menu.
+* Klicken Sie auf ein Material, um es auszuwählen. Nach Auswahl einer Umgebung werden ihre Materialeigenschaften in den Panels unten angezeigt. Weitere Informationen finden Sie im Hilfethema [Rendermaterialeigenschaften](#properties).
+* Durch Klick mit der rechten Maustaste auf ein Material wird das Kontextmenü des Materials angezeigt.
+* Durch Klick mit der rechten Maustaste in den leeren Bereich der Liste wird das Kontextmenü für ein neues Material angezeigt.
 
-###  ![images/add_material.png](images/add_material.png) Add new material
+###  ![images/add_material.png](images/add_material.png) Hinzufügen eines neuen Materials
 {: #add_material}
-Scroll down to the bottom of the Material list to see the add icon.
+Scrollen Sie ans untere Ende der Liste der Materialien und klicken Sie auf die Plus-Schaltfläche.
 
-Opens the Render Content [library](libraries.html) of materials.
-The materials in the library act as templates for creating materials in the model.
+Dadurch wird die [Bibliothek](libraries.html) der Renderumgebungen angezeigt.
+Die Materialien in der Bibliothek verhalten sich wie Vorlagen, um Materialien im Modell zu erzeugen.
 
-### Material Context Menu
+### Kontextmenü des Materials
 {: material_context}
-This menu is available by right-clicking on a material listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+Dieses Menü wird durch Klick mit der rechten Maustaste auf ein Material geöffnet.  Weitere Infos zu den zahlreichen Optionen in diesem Menü finden Sie im Hilfethema zum [Werkzeugmenü](#tools_menu).
 
-### New Material Context Menu
+### Kontextmenü für ein neues Material
 {: new_material_context}
-This menu is available by right-clicking on a blank area of the Material List.
+Dieses Menü kann durch einen Rechtsklick in den leeren Bereich der Materialliste geöffnet werden.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Material
-Creates a new basic matte white material.
+#### ![images/toolbarlus.png](images/toolbarplus.png) Neues Material anlegen
+Erzeugt ein neues grundlegendes mattes weißes Material.
 
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new material based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) Einfügen
+Zur Einfügen eines Materials aus der Zwischenablage.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new material based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Als Instanz einfügen
+Erzeugt ein neues Material aus dem Inhalt der Zwischenablage, das mit dem Originalmaterial verknüpft ist.
 
-#### ![images/grid.png](images/grid.png) Grid
-Displays the previews as a grid of thumbnails.
+#### ![images/grid.png](images/grid.png) Raster
+Zeigt die Vorschau als Raster von Miniaturansichten an.
 
-#### ![images/list.png](images/list.png) List
-Displays the previews as a list of thumbnails.
+#### ![images/list.png](images/list.png) Liste
+Zeigt die Vorschau als Liste von Miniaturansichten an.
 
-#### ![images/tree.png](images/tree.png) Tree
-Displays the previews as a tree showing nesting.
+#### ![images/tree.png](images/tree.png) Baum
+Zeigt die Vorschau als verzweigtes Baumverzeichnis an.
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
-Displays the previews to the left of the controls.
+#### ![images/horizontal.png](images/horizontal.png) Horizontales Layout
+Zeigt die Vorschau auf der linken Seite der Steuerungen an.
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
-Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
+#### ![images/showpreview.png](images/showpreview.png) Vorschaufenster anzeigen
+Zeigt die Vorschaueigenschaften für die zur Zeit ausgewählte Miniaturansicht an. Definiert Vorschau-Geometrie, Größe, Hintergrund, Drehverhalten.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
-Floats the preview image in a resizable window.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) Schweben
+Lässt das Vorschaubild in einem Fenster, dessen Größe angepasst werden kann, schweben.
 
-#### Thumbnails
+#### Miniaturansichten
 
-##### ![images/small.png](images/small.png) Small
-Sets the thumbnail size to the smallest size.
+##### ![images/small.png](images/small.png) Klein
+Miniaturansichten werden sehr klein angezeigt.
 
-##### ![images/medium.png](images/medium.png) Medium
-Sets the thumbnail size to medium size.
+##### ![images/medium.png](images/medium.png) Mittel
+Miniaturansichten werden in mittlerer Größe angezeigt.
 
-##### ![images/large.png](images/large.png) Large
-Sets the thumbnail size to large size.
+##### ![images/large.png](images/large.png) Groß
+Miniaturansichten werden groß angezeigt.
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in Grid mode.
-List mode always displays labels.
+##### ![images/showlabels.png](images/showlabels.png) Labels anzeigen
+Zeigt im Rastermodus Labels mit den Namen der Miniaturansichten an.
+Im Listenmodus werden immer Labels angezeigt.
 
-##### ![images/showunits.png](images/showunits.png) Show Units
-Displays size in model units.
+##### ![images/showunits.png](images/showunits.png) Einheiten anzeigen
+Zeigt die Größe in Modelleinheiten an.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
-Automatically updates all previews as settings change.
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Vorschau mit autom. Aktualisierung
+Alle Vorschauansichten werden bei Änderungen der Einstellungen aktualisiert.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) Alle Vorschauansichten aktualisieren
+Zur manuellen Aktualisierung der Vorschauen, wenn die Option Vorschau mit autom. Aktualisierung deaktiviert ist.
 
-## [Window Divider](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [Fensterteiler](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #divider}
-Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
+Durch Ziehen an diesem Element kann die Länge der Materialliste angepasst werden. Wenn die Materialliste verlängert wird, wird dementsprechend der Abschnitt der Materialeigenschaften verkürzt.
 
-## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [Materialeigenschaften](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: #properties}
 
-#### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+#### [Name des Materials](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #name}
-This is the name of the material. The material name is also saved as the file name when exporting the material to the library. Note: Materials are stored in the Rhino model. Unique materials can have the same name in different Rhino models.
+Der Name des Materials. Der Name des Materials wird beim Export des Materials in eine Bibliothek als Dateiname verwendet. Hinweis: Materialien werden im Rhino-Modell gespeichert. Verschiedene Materialien in unterschiedlichen Modellen können daher denselben Namen haben.
 
-#### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+#### [Materialpanels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #panels}
-The Materials Properties section is filled with several direct Material panels. Clicking on the grey title bar will roll up the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+Im Abschnitt der Materialeigenschaften gibt es mehrere Panels mit Einstellungsmöglichkeiten. Durch Klick auf die Titelleiste eines Panels kann dieses zu- bzw. aufgeklappt werden.
 
-Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html).
+Je nach Art des Materials und der aktuell eingestellten Materialebene werden andere Panels angezeigt. Weitere Informationen zu den einzelnen Materialpanels finden Sie im Hilfethema [Flamingo-Materialien](material-type-simple.html).
 
-## Tools menu ![images/library_default.png](images/library_default.png)
+## Werkzeugmenü ![images/library_default.png](images/library_default.png)
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
+Diese Einstellungen erscheinen auch auf Kontextmenüs (Klick mit der rechten Maustaste) für Miniaturansichten und Miniaturansichtshintergründe.
 
-#### ![images/assigntoobjects.png](images/assigntoobjects.png) Assign to Selection
-Assigns the current material to selected objects.
+#### ![images/assigntoobjects.png](images/assigntoobjects.png) Der Auswahl zuordnen
+Ordnet den ausgewählten Objekten das aktuelle Material zu.
 
-##### To assign a material to objects
- 1. Click Assign to Selection.
- 1. In the Rhino viewport, select the target objects.
+##### Objekten ein Material zuweisen
+ 1. Klicken Sie auf *Der Auswahl zuordnen*.
+ 1. Wählen Sie im Rhino-Ansichtsfenster die Zielobjekte aus.
 
-##### To preselect objects
- 1. In the Rhino viewport, select the target objects.
- 1. Click Assign to Selection.
-The target objects can be selected either before or after clicking Assign to Selection.
+##### Objekte vorauswählen
+ 1. Wählen Sie im Rhino-Ansichtsfenster die Zielobjekte aus.
+ 1. Klicken Sie auf *Der Auswahl zuordnen*.
+Die Zielobjekte können ausgewählt werden, bevor oder nachdem Sie auf Der Auswahl zuordnen klicken.
 
-##### To drag and drop materials to objects
- * Drag the material from the thumbnails or list onto the target objects.
-Drag and drop works for only one object at a time.
+##### Drag & Drop von Materialien auf Objekte
+ * Ziehen Sie das Material aus den Miniaturansichten oder aus der Liste auf die Zielobjekte.
+Drag & Drop funktioniert jeweils nur für ein Objekt gleichzeitig.
 
-#### ![images/assigntolayers.png](images/assigntolayers.png) Assign to Layers
-Assigns the current material to layers.
+#### ![images/assigntolayers.png](images/assigntolayers.png) Den Ebenen zuordnen
+Ordnet das aktuelle Material den Ebenen zu.
 
-##### To assign a material to layers
- 1. Click Assign to Layers.
- 1. In the Choose Layers dialog box, check the boxes for the material assignment.
+##### Zuweisung eines Materials zu einer Ebene
+ 1. Klicken Sie auf *Den Ebenen zuordnen*.
+ 1. Wählen Sie im Dialogfenster *Ebenen auswählen* die entsprechenden Ebenen aus.
 
-##### To assign materials from the Layers panel
- 1. In the  [Layer](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)  panel, select one or more layers and click the  [Material](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)  column.
- 1. In the Layer Material dialog box, select the material to assign.
+##### Materialien aus dem Ebenen-Panel zuordnen
+ 1. Wählen Sie im [Ebenen](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#commands/layer.htm)-Panel eine oder mehrere Ebenen und klicken Sie auf die Spalte  [Material](http://docs.mcneel.com/rhino/5/help/de-de/commands/layer.htm#Material).
+ 1. Wählen Sie im Dialogfenster *Ebenenmaterial* das zuzuweisende Material aus.
 
 
-##### To drag and drop materials to objects
- * Drag the material from the thumbnails or list onto the target layer.
-Drag and drop works for only one layer at a time.
+##### Drag & Drop eines Materials auf eine Ebene
+ * Ziehen Sie das Material aus der Miniaturansicht oder Liste auf die Zielebene.
+Drag & Drop funktioniert nur für jeweils eine Ebene.
 
-#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) Select Objects
-Select objects in the model for material assignment.
+#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) Objekte auswählen
+Objekte im Modell für die Materialzuordnung auswählen.
 
-#### ![images/toolbarplus.png](images/toolbarplus.png) Create New Material
-Opens the Render Content [library](libraries.html) of materials.
-The materials in the library act as templates for creating materials in the model.
+#### ![images/toolbarplus.png](images/toolbarplus.png) Neues Material anlegen
+Dadurch wird die [Bibliothek](libraries.html) der Renderumgebungen angezeigt.
+Die Materialien in der Bibliothek verhalten sich wie Vorlagen, um Materialien im Modell zu erzeugen.
 
-#### ![images/import.png](images/import.png) Import Material from File
-Imports materials from a saved Rhino .rmtl file.
+#### ![images/import.png](images/import.png) Material aus Datei importieren
+Importiert Materialien aus einer gespeicherten .rmtl Rhino-Datei.
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
-Saves a material to a Rhino .rmtl file.
+#### ![images/savetofile.png](images/savetofile.png) In Datei speichern
+Speichert ein Material in eine .rmtl Rhino-Datei.
 
-#### ![images/changetype.png](images/changetype.png) Change Type
-Changes the material to a different type.
+#### ![images/changetype.png](images/changetype.png) Typ ändern
+Wechselt den Materialtyp.
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
-Changes the material to a different type.
-The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)  box. If checked, compatible settings from the old content will be copied to the new one.
+#### ![images/changetype.png](images/changetype.png) Typ ändern (ähnliche Einstellungen kopieren)
+Wechselt den Materialtyp.
+Das Standardverhalten hängt vom aktuellen Status der [Renderoptionen](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) >  [Ähnliche Einstellungen kopieren, wenn Inhaltstyp geändert wird](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) ab. Wenn aktiviert, werden kompatible Eigenschaften vom alten Inhalt in den neuen Inhalt kopiert.
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
-Changes all the material settings to the default white, matte, non-reflective, untextured material.
+#### ![images/reset.png](images/reset.png) Auf Standard zurücksetzen
+Alle Materialeinstellungen werden gleichzeitig auf ein standardmäßiges weißes, mattes, nicht reflektierendes und nicht texturiertes Material zurückgesetzt.
 
-#### ![images/copy.png](images/copy.png) Copy
-Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
+#### ![images/copy.png](images/copy.png) Kopieren
+Kopiert das ausgewählte Material in die Windows Zwischenablage. Der Inhalt der Zwischenablage kann dann in den Editor zur Erzeugung eines neuen Materials oder direkt in einen Ordner zur Erzeugung einer [Bibliotheksdatei](libraries.html) eingefügt werden.
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new material based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) Einfügen
+Zur Einfügen eines Materials aus der Zwischenablage.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new material based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Als Instanz einfügen
+Erzeugt ein neues Material aus dem Inhalt der Zwischenablage, das mit dem Originalmaterial verknüpft ist.
 
-#### ![images/delete.png](images/delete.png) Delete
-Deletes the selected material.
+#### ![images/delete.png](images/delete.png) Löschen
+Löscht das ausgewählte Material.
 
-#### ![images/rename.png](images/rename.png) Rename...
-Renames the selected material.
+#### ![images/rename.png](images/rename.png) Umbenennen...
+Benennt das ausgewählte Material um.
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
-Copies the selected material to a new material with the same settings.
+#### ![images/duplicate.png](images/duplicate.png) Duplizieren
+Kopiert das ausgewählte Material in ein neues Material mit den gleichen Einstellungen.
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
-Removes the connection between [instanced](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) materials.
+#### ![images/removeinstancing.png](images/removeinstancing.png) Instanziierung entfernen
+Dadurch wird die Verbindung zwischen [instanziierten](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) Materialien entfernt.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 
-#### ![images/contentfilter.png](images/contentfilter.png) Content Filter
-Opens the [Content Filters](content_filters.html) dialog box.
+#### ![images/contentfilter.png](images/contentfilter.png) Inhaltsfilter
+Öffnet das Dialogfenster der [Inhaltsfilter](content_filters.html).
 
-#### ![images/rename.png](images/rename.png) Properties
-Opens the [Preview Properties](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) dialog box.
+#### ![images/rename.png](images/rename.png) Eigenschaften
+Dadurch wird das Dialogfenster der [Vorschaueigenschaften](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) geöffnet.

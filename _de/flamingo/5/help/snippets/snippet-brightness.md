@@ -1,2 +1,1 @@
-Note: In nXt, the overall brightness of a scene cannot be controlled by boosting the intensity of the light sources. The automatic exposure adjustment built into the tone-mapping process will defeat this. Adjust overall scene brightness by using the **Brightness** control.
-
+Hinweis: In nXt kann die allgemeine Helligkeit einer Szene nicht gesteuert werden, indem die Intensität der Lichtquellen verstärkt wird. Die automatische Belichtungseinstellung, die im Tone-Mapping-Prozess integriert ist, vereitelt dies. Passen Sie die allgemeine Szenenhelligkeit an, indem Sie die Option **Helligkeit** verwenden.

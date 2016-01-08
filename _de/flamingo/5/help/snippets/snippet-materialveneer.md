@@ -1,4 +1,3 @@
 
-### Veneer
-Causes the material to appear as a planar pattern on the surfaces of the object instead of cutting through the object.
-
+### Verkleidung
+Das Material erscheint als planares Muster auf den Flächen des Objekts, anstatt dass es durch das Objekt hindurch schneidet.

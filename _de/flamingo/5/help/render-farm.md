@@ -1,167 +1,168 @@
 ---
+title: Farm-Rendering
 ---
 
-# Farm Rendering
-The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers used only as render farm clients.
+# {{page.title}}
+Die Flamingo-nXt-Renderfarm verwendet die Leistung von mehreren Computern, um einzelne Bilder, Stapelaufträge von mehreren Bildern oder ansichtsgestützte Animationen zu rendern. Auf den Computern, die als Clients der Renderfarm dienen, muss weder Rhino noch Flamingo nXt installiert sein.
 
-#### A typical Farm layout
+#### Eine typische Farm-Konfiguration
 {: #render-farm}
 
 ![images/renderfarm-002.png](images/renderfarm-002.png){: style="margin-top:25px;"}
 
->![images/01.png](images/01.png)A computer with Rhino and Flamingo nXt.
->![images/02.png](images/02.png)Network server or shared farm folder.
->![images/03.png](images/03.png)Two render farm clients. (The nXt Render Farm comes with two free copies of the client software.
->![images/04.png](images/04.png)Additional purchased render farm clients.
+>![images/01.png](images/01.png)Ein Computer mit Rhino und Flamingo nXt.
+>![images/02.png](images/02.png)Ein Netzwerkserver oder freigegebener Farmordner.
+>![images/03.png](images/03.png)Zwei Renderfarm-Clients. (Die nXt Renderfarm enthält zwei kostenlose Kopien der Client-Software.)
+>![images/04.png](images/04.png)Zusätzliche Renderfarm-Clients.
 
-The Render Farm is free for up to two client computers. To add more client computers, purchase the nXt Render Farm license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+Die Renderfarm ist für bis zu zwei Client-Computer kostenlos. Wenn Sie weitere Clients hinzufügen möchten, erwerben Sie die nXt-Renderfarmlizenz [hier](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
-#### Shared Farm folder
+#### Gemeinsamer Farmordner
 {: farm-folder}
-The key to a functional render farm is a shared folder to which the master machine and all the client computers can access.  This is normally a shared network folder.  It can be a folder on the master machine or on a network.  The folder does not have to be assigned to the same name on each client, but each client does need full read/write/delete access to the folder.  The shared folder should have at least 20GB of available storage.
+Der Schlüssel zu einer funktionierenden Renderfarm ist ein gemeinsam genutzter Ordner, auf den der Master-Rechner und alle Client-Computer gleichsam zugreifen können.  Dies ist normalerweise ein gemeinsam genutzter Netzwerkordner.  Dabei kann es sich um einen Ordner auf dem Master-Rechner oder in einem Netzwerk handeln.  Der Ordner muss nicht auf jedem Client demselben Namen zugewiesen sein, aber jeder Client benötigt vollen Lese-, Schreib- und Löschzugriff auf den Ordner.  Der freigegebene Ordner sollte über mindestens 20 GB freien Speicherplatz verfügen.
 
-#### The nXt Render Farm includes two Applications:
+#### Die nXt-Renderfarm beinhaltet zwei Anwendungen:
 
-##### The Farmer render client (nXtFarmer64.exe)
-A small program that runs on each network rendering client and waits for jobs to be generated. Normally, render farms proceed silently without displaying the renderings on a monitor as they progress. Rendering in this manner allows you to use more computer power for lengthy tasks but does not allow interacting with the rendering as it progresses.
+##### Farmer-Render-Client (nXtFarmer64.exe)
+Ein kleines Programm, das auf jedem Netzwerk-Render-Client ausgeführt wird und darauf wartet, dass Aufträge generiert werden. Normalerweise arbeiten Renderfarmen im Hintergrund, ohne den Rendering-Prozess auf einem Monitor anzuzeigen. Wenn Sie auf diese Weise rendern, können Sie eine höhere Computerleistung für längere Aufgaben verwenden, dafür aber nicht auf das Rendering einwirken.
 
-##### The Farm monitor (nXtFarmMonitor64.exe)
-An applet that shows you the state of your render jobs and provides some simple control tools.
-For advanced installations, the nXt Render Farm software lets you work with third-party render managers. The following procedures apply to the Render Farm included with Flamingo nXt. If you are planning to use third-party render farm software, some of these procedures will be different.
+##### Farm-Monitor (nXtFarmMonitor64.exe)
+Ein Applet, das den Status Ihrer Renderaufträge anzeigt und einige einfache Steuerungswerkzeuge bietet.
+Für fortgeschrittene Installationen lässt Sie die nXt Renderfarm-Software mit Rendermanagern von Drittenwicklern arbeiten. Die folgenden Anwendungsverfahren gelten für die mit Flamingo nXt mitgelieferte Renderfarm. Wenn Sie Renderfarmen von Drittentwicklern verwenden, können einige dieser Verfahren anders sein.
 
-#### The Farm Process
+#### Der Farmprozess
 {: #the-farm-process}
- 1. To start a rendering using Flamingo nXt farm, instead of using the standard Render command, use the Render Farm *(Flamingo nXt menu &gt; Render Farm)*. This will submit a render job to the [Farm output folder](options-flamingo.html#farm-output-folder). All materials and support information will automatically be submitted along with the job.
- 2. Render jobs are split into many different farm tasks. The Render Farm clients continuously check the farm output folder for new tasks. Each client will pick up a task and start to render. The Farm Monitor  *(Flamingo nXt &gt; Utilities &gt; Farm Monitor)* is a good way to keep track of the job's progress.
- 3. Each farm client deposits the results in the farm folder under *job name* \Output.
- 3. As each client finishes with a job, it will continue to pick up new jobs as they are submitted to the farm.
- 4. Farm output will be in the [nXt image format (.nXtImage)](image-editor.html). Images in this format can be edited using the [nXt Image Editor](image-editor.html). The results can also be saved as TGA, PNG, TIF, and JPG files from the [nXt Image Editor](image-editor.html).
+ 1. Zum Start eines Renderings mit der Flamingo-nXt-Farm verwenden Sie statt des Befehls *Rendern* die Renderfarm *(Flamingo-nXt-5.0-Menü &gt; Renderfarm)*. Dadurch wird ein Renderauftrag an den [Farm-Ausgabeordner](options-flamingo.html#farm-output-folder) übermittelt. Alle Materialien und Support-Informationen werden automatisch mit dem Auftrag mitgeliefert.
+ 2. Renderaufträge werden in viele verschiedene Farmaufgaben aufgeteilt. Die Renderfarm-Clients überprüfen den Farm-Ausgabeordner beständig nach neuen Aufgaben. Jeder Client nimmt sich eine Aufgabe und beginnt zu rendern. Mit dem Farm-Monitor  *(Flamingo nXt 5.0 &gt; Renderfarm &gt; Farm-Monitor...)* können Sie den Fortschritt eines Auftrags überprüfen.
+ 3. Jeder Farm-Client speichert die Resultate im Farmordner unter *Auftragsname\Ausgabe*.
+ 3. Während jeder Client einen Auftrag beendet, werden gleichzeitig neue Aufträge, die an die Farm gesendet werden, aufgenommen.
+ 4. Die Ausgabe einer Farm erfolgt im [nXt-Bildformat (.nXtImage)](image-editor.html). Bilder in diesem Format können mit dem [nXt-Bildeditor](image-editor.html) bearbeitet werden. Die Ergebnisse können im [nXt-Bildeditor](image-editor.html) auch als TGA-, PNG-, TIF- oder JPG-Datei abgespeichert werden.
 
-## Install and configure the Farm
+## Installation und Konfiguration der Farm
 {: #install}
-The Farmer render client and the Farm monitor are installed with Flamingo on the master Rhino machine.  For other client computers that do not have Rhino and Flamingo nXt, the Farmer client needs to be installed.
+Der Farm-Render-Client und der Farm-Monitor werden zusammen mit Flamingo auf dem Rhino-Master-Rechner installiert.  Auf anderen Client-Computern ohne Rhino und Flamingo nXt muss der Farm-Client installiert werden.
 
-##### Installing the Render Farmer
-For machines that do not have Rhino and Flamingo installed, install the Farmer client:
+##### Installation des Render-Farmers
+Client-Computer, auf denen Rhino und Flamingo nicht installiert sind, benötigen den Farmer-Client:
 
- 1. Download the current [Render Farmer software](http://www.rhino3d.com/download/The-Farm/1.0/release).
- 1. Run the downloaded installer on each of the client computers.
- 1. From the Start menu, run the Render Farmer on each machine.
- The Render Farmer will appear as an icon in the system tray.
+ 1. Laden Sie die aktuelle [Render-Farmer-Software](http://www.rhino3d.com/download/The-Farm/1.0/release) herunter.
+ 1. Führen Sie das heruntergeladene Installationsprogramm auf jedem der Client-Rechner aus.
+ 1. Führen Sie den Render-Farmer auf jedem Client-Computer aus.
+ 1. Der Render-Farmer erscheint als Symbol in der Taskleiste.
 
-##### To configure the Render Farm
+##### Konfiguration der Renderfarm
 {: #configure-the-render-farm}
-1.  [Right-click](mouse-button-right.html) on the icon and select Restore.
-1. In the nXt Farmer window, on the Options menu, click Path and select the path to the Render Farm folder.
+1.  [Klicken Sie mit der rechten Maustaste](mouse-button-right.html) auf das Symbol und wählen Sie *Wiederherstellen*.
+1. Klicken Sie im nXt-Farmer-Fenster im Menü *Optionen* auf *Pfad* und wählen Sie den Pfad zum Ordner der Renderfarm aus.
 
-On the computer with Rhino and Flamingo nXt set the Zoo folder in Rhino. From the Tools menu, click Options, set the common farm location to the [Farm output folder](options-flamingo.html#farm-output-folder).
+Stellen Sie auf dem Computer mit Rhino und Flamingo nXt den Rhino-Zoo-Ordner ein. Klicken Sie im Menü *Werkzeuge* auf *Optionen* und stellen Sie den gemeinsam genutzten Farm-Ordner als [Ausgabeordner der Farm](options-flamingo.html#farm-output-folder) ein.
 
-The Render Farm is now configured.
+Die Renderfarm ist nun konfiguriert.
 
-## Using the Render Farm
+## Verwendung der Renderfarm
 {: #using-the-render-farm-from-flamingo-nxt}
-Currently, the farm can be used three ways for processing renderings on multiple computers: single rendering jobs, batch jobs, and animations.
+Die Farm kann zur Zeit auf drei Arten verwendet werden, um Renderings auf mehreren Computern zu bearbeiten: Einzelne Rendering-Aufträge, Batch-Aufträge und Animationen.
 
-##### To verify that the client workstations are responding
-After starting the Render Farmer client on all the client computers:
+##### Überprüfung der Client-Rechner auf korrekte Funktionsweise
+Nach dem Start des Render-Farmers auf allen Client-Computern:
 
- 1. On any of the computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
- 1. The client machines should appear in the upper list box.
- 1. Each Render Farmer client should be listed under the Machine list.  The Status should read Active.
+ 1. Klicken Sie auf einem beliebigen Computer im Windows-Startmenü auf [Farm Monitor](#render-farm-monitor).
+ 1. Die Client-Rechner sollten im oberen Listenkästchen erscheinen.
+ 1. In der Liste der Rechner sollten alle Render-Farmer-Clients aufgelistet sein.  Ihr Status sollte *Aktiv* sein.
 
-If there is a problem with this, review the [install](#install) and [configuration topics](#configure-the-render-farm).
-
-
-##### To submit a job to the render farm
-1. In Rhino, configure your rendering and view as you would for a normal rendering.
-1. On the Flamingo nXt menu, click Start Farm Render.
-1. The [Farm Job](#farm-job) dialog should appear.
-1. Verify the correct option and hit OK.
+Falls ein Problem auftaucht, konsultieren Sie die Hilfethemen zu [Installation](#install) und [Konfiguration](#configure-the-render-farm).
 
 
-##### Monitoring the Farm
-After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-monitor).
-
- 1. On the master computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
- 1. A recent job should show up in the Jobs list. This can take a few minutes for large jobs.
- 1. The status of the job will change to active.
- 1. After a period of time, the machines above should pick up tasks with the same date.
- 1. The Percent complete increases as tasks are completed.
- 1. Watch for the job status Completed when the job is finished.
+##### Übermittlung eines Auftrags an die Renderfarm
+1. Stellen Sie das Rendering und die Ansicht in Rhino ganz normal ein.
+1. Klicken Sie im Flamingo-nXt-Menü auf *Renderfarm* > *Renderfarm starten*.
+1. Das Dialogfenster für einen [Farm-Auftrag](#farm-job) wird geöffnet.
+1. Wählen Sie die gewünschte Option aus und klicken Sie auf OK.
 
 
-## Farm Job Options
+##### Überwachung der Farm
+Verwenden Sie zur Überwachung eines Renderauftrags den [Farm Monitor](#render-farm-monitor).
+
+ 1. Gehen Sie dazu auf dem Master-Rechner im Windows-Startmenü auf [Farm Monitor](#render-farm-monitor).
+ 1. In der Liste der Aufträge sollte ein kürzlich angelegter Auftrag angezeigt werden. Dies kann für große Aufträge eine Weile dauern.
+ 1. Der Status des Auftrags wird auf *Aktiv* geändert.
+ 1. Nach einiger Zeit nehmen die Rechner der Farm Aufgaben desselben Datums auf.
+ 1. Je mehr Aufgaben abgeschlossen werden, desto größer ist der Wert für *Prozent abgeschlossen*.
+ 1. Wenn der Auftrag abgeschlossen ist, ändert sich der Status auf *Abgeschlossen*.
+
+
+## Optionen von Farm-Aufträgen
 {: #farm-job}
 
 #### Name
 {: #job-name}
-The date and time is automatically pre-pended to the name you choose. A sub-folder for the job is created in the Render Farm shared folder. An output folder is also created in the new job folder.
-After each job is complete, output can be found in the job's output folder.
+Datum und Uhrzeit werden automatisch dem Namen, den Sie auswählen, vorangestellt. Es wird ein Unterordner für den Auftrag im freigegebenen Renderfarm-Ordner erstellt. Ein Ausgabeordner wird ebenfalls im neuen Auftragsordner erzeugt.
+Nach Abschluss eines Auftrags steht die Ausgabe im Ausgabeordner der Aufträge zur Verfügung.
 
-#### Start job
-Job may be started immediately after submission, at a later time, or manually through the Farm monitor.
+#### Auftrag starten
+Ein Auftrag kann direkt nach dem Anlegen, zu einem späteren Zeitpunkt oder manuell über den Farm-Monitor gestartet werden.
 
-#### Now
-Start the job now.
+#### Jetzt
+Der Auftrag wird sofort gestartet.
 
-#### Later (Manually)
-Start the job later using the nXt [Farm Monitor](#render-farm-monitor) to start the job.
+#### Später (manuell)
+Der Auftrag kann zu einem späteren Zeitpunkt manuell mithilfe des [Farm-Monitors](#render-farm-monitor) gestartet werden.
 
-#### After
-Start the job at a specified date and time.
+#### Nach
+Der Auftrag wird zu einem bestimmten Zeitpunkt gestartet.
 
-#### Rendering Constraints Passes
+#### Renderbeschränkungen
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+Zur Angabe der Anzahl Durchgänge bis zum Abschluss dieses Stapelauftrags.  Weitere Infos finden Sie im Abschnitt [Durchgänge](documentproperties-flamingo.html#number-of-passes).
 
 
-## Render Farm Monitor
+## Farm-Monitor
 {: #render-farm-monitor}
-The Render Farm Monitor is a stand-alone program that reports the status of the client workstations and the jobs currently in the Farm. Jobs can be suspended and restarted from the monitor and a client workstation can be excluded from participating in the render farm.
+Der Farm-Monitor ist ein eigenständiges Programm, das den Status der Client-Computer und die in der Farm vorhandenen Aufgaben anzeigt. Aufträge können vom Monitor aus unterbrochen und neu gestartet werden und ein Client-Computer kann von der Renderfarm ausgeschlossen werden.
 
-To access the Farm Monitor from Rhino go to the Flamingo nXt 5.0 menu > Render Farm > Farm Monitor.
+Gehen Sie zum Ausführen des Farm-Monitors im Rhino-Menü auf *Flamingo nXt 5.0 > Renderfarm > Farm-Monitor*.
 
-To access the Farm Monitor from Windows, on the Start menu click **All Programs > nXt Render Farm > Farm Monitor**.
+Sie finden das Programm auch direkt im Windows-Startmenü unter *Alle Programme > nXt Render Farm > Farm Monitor*.
 
-#### Options
-Right-click a Machine or a Job to access options.
+#### Optionen
+Klicken Sie mit der rechten Maustaste auf einen Rechner oder Auftrag, um auf die Optionen zuzugreifen.
 
-#### Refresh
-Refresh job list.
+#### Aktualisieren
+Auftragsliste aktualisieren.
 
-#### Suspend Machine
-Exclude workstation from participating in the Render Farm.
+#### Gerät anhalten
+Arbeitsstation aus der Renderfarm-Teilname ausschließen.
 
-#### Resume Machine
-Resume workstation to participating in the Render Farm.
+#### Gerät fortsetzen
+Fortsetzen der Teilnahme der Arbeitsstation an der Renderfarm.
 
-#### Suspend Job
-Pause the specified job.
+#### Auftrag anhalten
+Pause im Auftrag.
 
-#### Resume Job
-Resume the specified job.
+#### Auftrag fortsetzen
+Den Auftrag fortsetzen.
 
-#### Remove Job
-Delete the specified job from the list.
+#### Auftrag entfernen
+Löschen Sie den definierten Auftrag aus der Liste.
 
-## Licensing the Render Farm
+## Lizenzierung der Renderfarm
 {: #licensing-the-render-farm-}
-The free version of the Render Farm allows two network computers (nodes) to work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+Mit der kostenlosen Version der Renderfarm können zwei Netzwerk-Computer (Knoten) an mehreren Aufträgen gleichzeitig arbeiten. Wenn Sie weitere Clients hinzufügen möchten, können Sie eine Lizenz mit unbegrenzter Anzahl Knoten [hier](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) erwerben.
 
-Once you have purchased your license and have acquired a product key, use the following procedures to license your farm.
+Nach dem Kauf der Lizenz und Erhalt des Produktcodes führen Sie das folgende Verfahren aus, um Ihre Farm zu lizenzieren.
 
-##### To authorize the node
-1. Wait for any active farm jobs to complete before beginning your licensing.
-1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
-1. If the node is currently active, in the Windows system tray (on the taskbar), /mouse_button_right.htm');" id="a16" style="position: relative;">right-click the Render Farm icon, and then click **Close**.
-1. Click the **Windows Start** button, and then click **All Programs**.
-In the nXt Render Farm folder, click **Authorize Farm**.
-1. In the edit box, paste or type your Product Key and click **OK**.
+##### Autorisierung eines Knotens
+1. Warten Sie, bis alle aktiven Farm-Aufträge vervollständigt wurden, bevor Sie mit der Lizenzierung beginnen.
+1. Speichern Sie Ihren Produktcode in einer Textdatei an einem Netzwerk-Standort, damit Sie ihn einfach und schnell in jeden Knoten einfügen können.
+1. Wenn der Knoten gerade aktiv ist, [klicken Sie mit der rechten Maustaste](mouse-button-right.html) das Symbol der Renderfarm und anschließend auf **Schließen**.
+1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.
+Klicken Sie im Ordner der nXt-Renderfarm auf **Farm autorisieren**.
+1. Geben Sie im Bearbeitungskästchen den Lizenzschlüssel ein und klicken Sie auf **OK**.
 
-##### To start the node
-1. Click the **Windows Start** button, and then click **All Programs**.
-In the nXt Render Farm folder, click **Render Farmer**.
-1.  p('../mouse_button_right.htm');" id="a17" style="position: relative;">Right-click the tray icon, and on the menu, click **Restore**.
-1. On the Help menu, click **About**.
-If the version number indicates an Evaluation version, licensing has not been successful.
-1. Minimize the Render Farmer window to return it to the tray.
+##### Start eines Knotens
+1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.
+Klicken Sie im Ordner der Renderfarm auf **Render-Farmer**.
+1.  [Klicken Sie mit der rechten Maustaste](mouse-button-right.html) auf das Taskleistensymbol und wählen Sie im Kontextmenü **Wiederherstellen**.
+1. Klicken Sie im Hilfe-Menü auf **Info**.
+Wenn die Versionsnummer auf eine Testversion hinweist, war die Lizenzierung nicht erfolgreich.
+1. Minimieren Sie das Fenster des Render-Farmer.
