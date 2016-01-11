@@ -1,61 +1,62 @@
 
-### Masking
-Obscures portions of the image based on either a color value or an alpha channel stored in the image. This allows textures to have complex shaped boundaries and create complex effects such as holes in a surface.
+### Masque
+Bloque des portions de l'image en fonction d'une valeur de couleur ou d'un canal alpha enregistré dans l'image. Il est ainsi possible d'obtenir des textures avec des bords aux formes complexes et créer des effets tels que des trous dans une surface. 
 
-In this example, an image with an alpha-channel background is placed as a decal on a rectangular surface. Masking for materials works the same..
+Dans cet exemple, une image avec un arrière-plan canal alpha est placée sous forme de décalcomanie sur une surface rectangulaire. Les masques des matériaux fonctionnent de la même façon.
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
-*Original decal image. The gray checkered area represents the image alpha channel.*
+*Image de décalcomanie originale. La zone en damier gris représente le canal alpha de l'image.*
 
-Masking information can come from three sources in the bitmap:
+Les informations sur le masque peuvent provenir de trois sources dans l'image :
 
-> [None](#nomask)
-> [Alpha Channel](#alphamask)
-> [Color](#colormask)
+> [Aucun](#nomask)
+> [Canal Alpha](#alphamask)
+> [Couleur](#colormask)
 
-#### None
+#### Aucun
 {: #nomask}
-With no masking, the image obscures the underlying material. Masking allows the material to show through the image where the alpha channel or masking color exists. The material assigned to a planar surface in this example has a red base color
+Sans masque, l'image assombrit le matériau situé en-dessous. Le masque permet de voir le matériau à travers l'image là où se trouve le canal alpha ou la couleur du masque. Le matériau assigné à une surface plane dans cet exemple possède une couleur de base rouge.
 
 ![images/masking-002.png](images/masking-002.png)
-*Without masking (left) the image covers the surface, with masking (right), the red material shows through.*
+*Sans masque (gauche), l'image couvre la surface, avec masque (droite), le matériau rouge se voit à travers.*
 
-#### Alpha Channel
+#### Canal Alpha
 {: #alphamask}
-Uses the image's [alpha channel](environment-tab.html#alpha) to define the masked area if one exists.
+Utilise le [canal alpha](environment-tab.html#alpha) de l'image, s'il en existe un, pour définir la zone masquée.
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
-*Original on the left. The gray checkered area represents the image alpha channel. On the right is the image over a water surface.*
+*Original à gauche. La zone en damier gris représente le canal alpha de l'image. À droite se trouve l'image sur une surface d'eau.*
 
-The alpha channel is a portion of each pixel's data that is reserved for transparency information. Alpha channels create and store masks that let you isolate and protect parts of an image while you apply color changes, filters, or other effects to the rest of the image. Each pixel in an image is described as channels of data that define the mixture of the red, green, and blue (RGB) colors. The alpha channel is an 8-bit (256-level) grayscale representation of the image that masks the color of the underlying pixel. The value of the alpha mask determines the intensity of the pixel color. If the Alpha channel is 100%, the images pixel will be complete transparent.  At other alpha strengths. the image pixels will blended with transparency.
+Le canal alpha est une portion de chaque donnée de pixel qui est réservée aux informations sur la transparence. Les canaux alpha créent et stockent des masque qui vous permettent d'isoler et de protéger des parties d'une image pendant que vous appliquez les changements de couleur, les filtres ou d'autres effets sur le reste de l'image. Chaque pixel dans une image est décrit sous forme de canaux de données qui définissent le mélange de rouge, vert et bleu (RVB). Le canal alpha est une représentation en nuances de gris de 8 bits (256 niveaux) de l'image qui est utilisée pour masquer la couleur du pixel sous-jacent. La valeur du masque alpha détermine l'intensité de la couleur du pixel. Si le canal alpha est à 100 %, les pixels seront complètement transparents.  Sinon, les pixels se mélangeront avec la transparence.
 
-#### Color
+#### Couleur
 {: #colormask}
-If alpha channel does not exist in an image, a color in the image can be specified as a mask. There is also a sensitivity number to make the mask more or less sensitivity to a single specific color as a masked color. Selecting the Color option will activate the Color Dropper, Color Selector and Sensitivity controls.
+Si le canal alpha n'existe pas dans un image, une couleur dans l'image peut être définie comme masque. Il existe également une valeur de sensibilité afin de rendre le masque plus ou moins sensible à une couleur spécifique. Lorsque l'option Couleur est sélectionnée, la pipette, le sélecteur et la sensibilité sont activés. 
 
-#### Color Dropper
-Click to select the mask color from the bitmap. Click on the Color Dropper, then on the bitmap to pick the color. This control is only available when the Color option is selected.
+#### Pipette
+Cliquez pour sélectionner la couleur dans l'image. Cliquez sur la pipette puis sur l'image pour choisir la couleur. Ce contrôle n'est disponible que lorsque l'option Couleur est sélectionnée.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Sensitivity
-The value indicates the size of the area around the color that is also masked. Must be greater than 0.0 for color masking to occur. This control is only available when the Color option is selected.
+#### Sensibilité
+La valeur indique la taille de la zone qui est également masquée autour de la couleur. La sensibilité doit être supérieure à 0 pour que le masque de couleur ait un effet sur l'objet. Ce contrôle n'est disponible que lorsque l'option Couleur est sélectionnée.
 
-#### Blur
-Partially masks pixels. The value determines the magnitude of partial masking around the masked color. This control is only available when the Color option is selected.
+#### Flou
+Masque partiellement les pixels. La valeur détermine l'importance du masque partiel autour de la couleur masquée. Ce contrôle n'est disponible que lorsque l'option Couleur est sélectionnée.
 
-#### Reverse
-Inverts the mask—pixels that would have been masked are now included, and vice versa.
+#### Inverser
+Inverse le masque. Les  pixels qui auraient dû être masqués sont maintenant inclus et vice-versa.
 
 ![images/masking-007.png](images/masking-007.png)  
 
 #### Transparent
-Makes the masked area of the underlying object transparent so other objects or the background behind the object can be seen through the object. Normally, the material of the object shows through in that area.
-Transparent masking allows a more natural shadow and allows the background objects to show. The underlying material could simply be transparent, but sometimes it is useful to make the surface behind the decal transparent while keeping other areas of the surface opaque.
+La zone masquée de l'objet sous-jacent est transparente, ainsi les autres objets ou l'arrière-plan se trouvant derrière l'objet peut être vu à travers celui-ci. Normalement, le matériau de l'objet se voit dans cette zone.
+
+Un masque transparent permet d'obtenir une ombre plus naturelle et de voir les objets situés derrière. Le matériau sous-jacent pourrait aussi simplement être transparent mais dans certains cas il est plus intéressant de rendre la surface derrière la décalcomanie transparente et de maintenir les autres zones de la surface opaques.
 
 ![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
 
-#### Show masked colors
-Graphically displays the effects of masking as the parameters change. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.
+#### Montrer les couleurs masquées
+Affiche directement les résultats du masque lorsque les paramètres sont modifiés. Utilisez le [sélecteur de couleur](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) pour changer la couleur d'affichage des pixels masqués. La zone masquée ne change pas lorsque vous changez la couleur d'affichage ou si vous activez ou désactivez la case. Ce n'est qu'un outil de visualisation facilitant la modification du masque.
 
 ![images/masking-008.png](images/masking-008.png)

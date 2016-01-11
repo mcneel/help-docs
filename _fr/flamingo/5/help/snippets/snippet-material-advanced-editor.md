@@ -1,2 +1,2 @@
-#### Advanced Editor
-Opens the [Advanced Material Properties](material-type-advanced.html) dialog box for more control over this material.
+#### Éditeur avancé
+Ouvre la boîte de dialogue [Propriétés avancées du matériau](material-type-advanced.html) afin d'accéder à d'autres options pour ce matériau.
