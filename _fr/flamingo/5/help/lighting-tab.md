@@ -1,106 +1,106 @@
 ---
-title: Préréglages d'éclairage
+title: PrÃ©rÃ©glages d'Ã©clairage
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
-L'éclairage est la partie la plus importante et la plus souvent négligée lors de la création d'images. Ce n'est pas uniquement une façon d'éclairer le modèle. L'éclairage définit l'ambiance et il s'agit d'un composant clé dans la définition de la scène.
+L'Ã©clairage est la partie la plus importante et la plus souvent nÃ©gligÃ©e lors de la crÃ©ation d'images. Ce n'est pas uniquement une faÃ§on d'Ã©clairer le modÃ¨le. L'Ã©clairage dÃ©finit l'ambiance et il s'agit d'un composant clÃ© dans la dÃ©finition de la scÃ¨ne.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
-*Image de Christopher Soto Gutiérrez.*
+*Image de Christopher Soto GutiÃ©rrez.*
 
-#### Où puis-je trouver les contrôles d'éclairage de Flamingo ?
+#### OÃ¹ puis-je trouver les contrÃ´les d'Ã©clairage de Flamingo ?
 
 * ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration.
 * Cliquez avec le bouton de droite et cochez Flamingo nXt.
 
 
-Essayez de respecter les instructions suivantes lorsque vous définissez l'éclairage de votre modèle :
+Essayez de respecter les instructions suivantes lorsque vous dÃ©finissez l'Ã©clairage de votre modÃ¨le :
 
-* Commencez avec un préréglage d'éclairage.
-* Étant donné que Flamingo nXt simule l'éclairage du monde réel, donnez des informations précises si possible. 
-* Évitez d'utiliser des niveaux d'intensité irréalistes pour les sources de lumière.
-* Définissez correctement les unités dans le modèle. L'éclairage ne sera pas correct si les unités ne sont pas. Par exemple, si votre modèle est en millimètres, définissez les unités du modèle en millimètres.
-* Réglez la luminosité globale du rendu en utilisant le contrôle [Luminosité](render-window.html#brightness) dans la fenêtre d'affichage du rendu. N'essayez pas d'ajuster la luminosité globale de la scène en changeant l'intensité de toutes les sources de lumière ; le réglage d'[exposition automatique](render-window.html#brightness) annulerait cette augmentation. 
+* Commencez avec un prÃ©rÃ©glage d'Ã©clairage.
+* Ã‰tant donnÃ© que Flamingo nXt simule l'Ã©clairage du monde rÃ©el, donnez des informations prÃ©cises si possible. 
+* Ã‰vitez d'utiliser des niveaux d'intensitÃ© irrÃ©alistes pour les sources de lumiÃ¨re.
+* DÃ©finissez correctement les unitÃ©s dans le modÃ¨le. L'Ã©clairage ne sera pas correct si les unitÃ©s ne sont pas. Par exemple, si votre modÃ¨le est en millimÃ¨tres, dÃ©finissez les unitÃ©s du modÃ¨le en millimÃ¨tres.
+* RÃ©glez la luminositÃ© globale du rendu en utilisant le contrÃ´le [LuminositÃ©](render-window.html#brightness) dans la fenÃªtre d'affichage du rendu. N'essayez pas d'ajuster la luminositÃ© globale de la scÃ¨ne en changeant l'intensitÃ© de toutes les sources de lumiÃ¨reÂ ; le rÃ©glage d'[exposition automatique](render-window.html#brightness) annulerait cette augmentation. 
 
-Pour améliorer les techniques d'éclairage, soyez attentifs à la lumière et à son influence sur les surfaces. Les matériaux peuvent masquer certains effets d'ombres et de réflexions, certains experts du rendu appliquent donc l'éclairage à leurs modèles avant d'appliquer les matériaux. Essayez de voir la lumière objectivement, comme un appareil photo.
+Pour amÃ©liorer les techniques d'Ã©clairage, soyez attentifs Ã  la lumiÃ¨re et Ã  son influence sur les surfaces. Les matÃ©riaux peuvent masquer certains effets d'ombres et de rÃ©flexions, certains experts du rendu appliquent donc l'Ã©clairage Ã  leurs modÃ¨les avant d'appliquer les matÃ©riaux. Essayez de voir la lumiÃ¨re objectivement, comme un appareil photo.
 
-## Préréglages d'éclairage
+## PrÃ©rÃ©glages d'Ã©clairage
 {: #lighting-presets}
-Une bonne option pour commencer à définir un éclairage est d'utiliser les préréglages qui correspondent à des situations d'éclairage du monde réel. Flamingo nXt possède des réglages de l'éclairage qui peuvent vous aider à démarrer avec l'éclairage de votre modèle. De nombreuses autres options d'éclairage sont disponibles, mais les préréglages sont souvent suffisants pour la plupart des rendus. Choisissez le schéma de préréglages qui se rapproche le plus à votre scène.
+Une bonne option pour commencer Ã  dÃ©finir un Ã©clairage est d'utiliser les prÃ©rÃ©glages qui correspondent Ã  des situations d'Ã©clairage du monde rÃ©el. Flamingo nXt possÃ¨de des rÃ©glages de l'Ã©clairage qui peuvent vous aider Ã  dÃ©marrer avec l'Ã©clairage de votre modÃ¨le. De nombreuses autres options d'Ã©clairage sont disponibles, mais les prÃ©rÃ©glages sont souvent suffisants pour la plupart des rendus. Choisissez le schÃ©ma de prÃ©rÃ©glages qui se rapproche le plus Ã  votre scÃ¨ne.
 
-L'éclairage de Flamingo nXt utilise quatre modes prédéfinis :
+L'Ã©clairage de Flamingo nXt utilise quatre modes prÃ©dÃ©finis :
 
-> [Éclairage de studio](lighting-tab.html#studio-lighting)
-> [Lumière du jour extérieure](lighting-tab.html#exterior-daylight)
-> [Lumière du jour intérieure](lighting-tab.html#interior-daylight)
-> [Éclairage artificiel](lighting-tab.html#artificial-lighting)
+> [Ã‰clairage de studio](lighting-tab.html#studio-lighting)
+> [LumiÃ¨re du jour extÃ©rieure](lighting-tab.html#exterior-daylight)
+> [LumiÃ¨re du jour intÃ©rieure](lighting-tab.html#interior-daylight)
+> [Ã‰clairage artificiel](lighting-tab.html#artificial-lighting)
 
-### Éclairage de studio
+### Ã‰clairage de studio
 {: #studio-lighting}
-Ce schéma imite l'éclairage d'un studio de photographie. Il est très adapté au rendu d'objets isolés de petite taille ou de taille moyenne.  Utilisez-le également pour une scène bien éclairée par un environnement HDR.
+Ce schÃ©ma imite l'Ã©clairage d'un studio de photographie. Il est trÃ¨s adaptÃ© au rendu d'objets isolÃ©s de petite taille ou de taille moyenne.  Utilisez-le Ã©galement pour une scÃ¨ne bien Ã©clairÃ©e par un environnement HDR.
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} Un fichier image à grande plage dynamique (HDR) fournit l'éclairage principal. La lumière de l'image HDR imite les niveaux d'éclairage intérieur du studio. Les paramètres HDR sont définis dans l'[onglet Ciel](sun-and-sky-tabs.html#sky). Vous pouvez également ajouter des lumières artificielles à votre scène en utilisant l'onglet Lumières. L'arrière-plan visible dans le préréglage Studio est noir.
+![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} Un fichier image Ã  grande plage dynamique (HDR) fournit l'Ã©clairage principal. La lumiÃ¨re de l'image HDR imite les niveaux d'Ã©clairage intÃ©rieur du studio. Les paramÃ¨tres HDR sont dÃ©finis dans l'[onglet Ciel](sun-and-sky-tabs.html#sky). Vous pouvez Ã©galement ajouter des lumiÃ¨res artificielles Ã  votre scÃ¨ne en utilisant l'onglet LumiÃ¨res. L'arriÃ¨re-plan visible dans le prÃ©rÃ©glage Studio est noir.
 
-L'éclairage Studio est optimisé pour le rendu de petits articles tels que des bijoux ou des produits industriels qui sont présentés sur des supports ou des tables. Dans ce schéma, le soleil est désactivé et un ciel défini avec une image HDR apporte une base de réflexion pour les objets brillants.
+L'Ã©clairage Studio est optimisÃ© pour le rendu de petits articles tels que des bijoux ou des produits industriels qui sont prÃ©sentÃ©s sur des supports ou des tables. Dans ce schÃ©ma, le soleil est dÃ©sactivÃ© et un ciel dÃ©fini avec une image HDR apporte une base de rÃ©flexion pour les objets brillants.
 
-Pour un plus grand contrôle, utilisez les sources de lumière pour éclairer la scène. Lors de la mise en place des lumières d'un studio, il est important d'avoir un éclairage scénique. Cet éclairage est obtenu en produisant de grands contrastes. En d'autres termes, les zones sombres sont aussi importantes que les zones claires. L'éclairage scénique demande un certain nombre de sources de lumière placées de façon à créer des zones très sombres et des zones très claires.
+Pour un plus grand contrÃ´le, utilisez les sources de lumiÃ¨re pour Ã©clairer la scÃ¨ne. Lors de la mise en place des lumiÃ¨res d'un studio, il est important d'avoir un Ã©clairage scÃ©nique. Cet Ã©clairage est obtenu en produisant de grands contrastes. En d'autres termes, les zones sombres sont aussi importantes que les zones claires. L'Ã©clairage scÃ©nique demande un certain nombre de sources de lumiÃ¨re placÃ©es de faÃ§on Ã  crÃ©er des zones trÃ¨s sombres et des zones trÃ¨s claires.
 
-Les techniques d'éclairage pour la photographie sont généralement les mêmes que l'éclairage pour le rendu. Si vous voulez en apprendre plus sur ce thème, vous devriez donc commencer par un livre sur l'éclairage en photographie. Pour plus d'informations sur les paramètres d'un éclairage de studio, consultez la section : [Bases de l'éclairage de studio](../guides/studio-lighting-basics.html).
+Les techniques d'Ã©clairage pour la photographie sont gÃ©nÃ©ralement les mÃªmes que l'Ã©clairage pour le rendu. Si vous voulez en apprendre plus sur ce thÃ¨me, vous devriez donc commencer par un livre sur l'Ã©clairage en photographie. Pour plus d'informations sur les paramÃ¨tres d'un Ã©clairage de studio, consultez la section : [Bases de l'Ã©clairage de studio](../guides/studio-lighting-basics.html).
 
-### Lumière du jour extérieure
+### LumiÃ¨re du jour extÃ©rieure
 {: #exterior-daylight .clear-img}
-Ce schéma simule la lumière du jour pour des rendus extérieurs utilisant le soleil et le ciel naturels.
+Ce schÃ©ma simule la lumiÃ¨re du jour pour des rendus extÃ©rieurs utilisant le soleil et le ciel naturels.
 
-![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} Définissez les paramètres dans les onglets [Soleil](sun-and-sky-tabs.html#sun) et [Ciel](sun-and-sky-tabs.html#sky). Définissez les [angles du soleil](sun-and-sky-tabs.html#set-azimuth-and-altitude) directement ou utilisez la [position géographique](sun-and-sky-tabs.html#set-location-on-earth), la date et l'heure. L'arrière-plan visible par défaut correspond au ciel simulé.
+![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} DÃ©finissez les paramÃ¨tres dans les onglets [Soleil](sun-and-sky-tabs.html#sun) et [Ciel](sun-and-sky-tabs.html#sky). DÃ©finissez les [angles du soleil](sun-and-sky-tabs.html#set-azimuth-and-altitude) directement ou utilisez la [position gÃ©ographique](sun-and-sky-tabs.html#set-location-on-earth), la date et l'heure. L'arriÃ¨re-plan visible par dÃ©faut correspond au ciel simulÃ©.
 
-L'éclairage de l'extérieur d'un bâtiment est le modèle d'éclairage le plus simple. La plupart des scènes extérieures n'auront besoin de rien d'autre que le [soleil](sun-and-sky-tabs.html#sun)  par défaut.
+L'Ã©clairage de l'extÃ©rieur d'un bÃ¢timent est le modÃ¨le d'Ã©clairage le plus simple. La plupart des scÃ¨nes extÃ©rieures n'auront besoin de rien d'autre que le [soleil](sun-and-sky-tabs.html#sun)  par dÃ©faut.
 
-Lorsque le [soleil](sun-and-sky-tabs.html#sun) est activé, la scène doit être définie comme [intérieure](#interior) ou [extérieure](#exterior) . En effet, la contribution de la lumière du ciel, de la lumière réfléchie par le sol et de la lumière réfléchie par les autres surface est très différente dans les scènes intérieures et extérieures. L'utilisation des bons paramètres [Intérieur/Extérieur](#indirect) donne un éclairage très efficace et réaliste.
+Lorsque le [soleil](sun-and-sky-tabs.html#sun) est activÃ©, la scÃ¨ne doit Ãªtre dÃ©finie comme [intÃ©rieure](#interior) ou [extÃ©rieure](#exterior) . En effet, la contribution de la lumiÃ¨re du ciel, de la lumiÃ¨re rÃ©flÃ©chie par le sol et de la lumiÃ¨re rÃ©flÃ©chie par les autres surface est trÃ¨s diffÃ©rente dans les scÃ¨nes intÃ©rieures et extÃ©rieures. L'utilisation des bons paramÃ¨tres [IntÃ©rieur/ExtÃ©rieur](#indirect) donne un Ã©clairage trÃ¨s efficace et rÃ©aliste.
 
-Parfois il est facile de déterminer si une scène est un intérieur ou un extérieur. Si le point de vue est en dehors d'un bâtiment, il s'agit d'une scène extérieure. Si le point de vue se trouve à l'intérieur d'une pièce, il s'agit d'un intérieur. Mais certains types de scènes ne sont pas aussi évidents. Prenez par exemple les cours, les belvédères, les vues décomposées et les sections. Si une cour est beaucoup plus large que haute, elle laisse alors pénétrer une grande quantité de lumière du ciel, essayez de l'éclairer comme une scène extérieure. Si elle est plus haute que large, essayez d'éclairer la scène comme un intérieur. Dans ce cas, un des trucs est d'ajouter des entrées de lumière du jour au-dessus de la cour pour aider à diriger la lumière du ciel dans la scène.
+Parfois il est facile de dÃ©terminer si une scÃ¨ne est un intÃ©rieur ou un extÃ©rieur. Si le point de vue est en dehors d'un bÃ¢timent, il s'agit d'une scÃ¨ne extÃ©rieure. Si le point de vue se trouve Ã  l'intÃ©rieur d'une piÃ¨ce, il s'agit d'un intÃ©rieur. Mais certains types de scÃ¨nes ne sont pas aussi Ã©vidents. Prenez par exemple les cours, les belvÃ©dÃ¨res, les vues dÃ©composÃ©es et les sections. Si une cour est beaucoup plus large que haute, elle laisse alors pÃ©nÃ©trer une grande quantitÃ© de lumiÃ¨re du ciel, essayez de l'Ã©clairer comme une scÃ¨ne extÃ©rieure. Si elle est plus haute que large, essayez d'Ã©clairer la scÃ¨ne comme un intÃ©rieur. Dans ce cas, un des trucs est d'ajouter des entrÃ©es de lumiÃ¨re du jour au-dessus de la cour pour aider Ã  diriger la lumiÃ¨re du ciel dans la scÃ¨ne.
 
-Les lumières peuvent également simuler l'éclairage d'un paysage. Utilisez des projecteurs pour mettre en valeur des caractéristiques architecturales et les arbres. Cet effet est très utile pour les scènes de nuit ou très sombres. Pendant la journée, le soleil sera normalement plus puissant que tout autre éclairage artificiel dans une scène extérieure, comme dans le monde réel.
+Les lumiÃ¨res peuvent Ã©galement simuler l'Ã©clairage d'un paysage. Utilisez des projecteurs pour mettre en valeur des caractÃ©ristiques architecturales et les arbres. Cet effet est trÃ¨s utile pour les scÃ¨nes de nuit ou trÃ¨s sombres. Pendant la journÃ©e, le soleil sera normalement plus puissant que tout autre Ã©clairage artificiel dans une scÃ¨ne extÃ©rieure, comme dans le monde rÃ©el.
 
-Les vues éclatées, les sections et les dessins techniques mentionnés ci-dessus sont également assez compliqués. La décision dépend des résultats désirés. Pour une scène extérieure avec le rendu le plus rapide, utilisez la méthode de rendu extérieur. Si cette méthode ne donne pas une image assez intéressante, essayez d'utiliser un rendu intérieur. L'intérieur peut être plus intéressant mais la définition de l'éclairage prend plus de temps.
+Les vues Ã©clatÃ©es, les sections et les dessins techniques mentionnÃ©s ci-dessus sont Ã©galement assez compliquÃ©s. La dÃ©cision dÃ©pend des rÃ©sultats dÃ©sirÃ©s. Pour une scÃ¨ne extÃ©rieure avec le rendu le plus rapide, utilisez la mÃ©thode de rendu extÃ©rieur. Si cette mÃ©thode ne donne pas une image assez intÃ©ressante, essayez d'utiliser un rendu intÃ©rieur. L'intÃ©rieur peut Ãªtre plus intÃ©ressant mais la dÃ©finition de l'Ã©clairage prend plus de temps.
 
-### Lumière du jour intérieure
+### LumiÃ¨re du jour intÃ©rieure
 {: #interior-daylight .clear-img}
-Ce schéma simule un intérieur éclairé par la lumière naturelle.
+Ce schÃ©ma simule un intÃ©rieur Ã©clairÃ© par la lumiÃ¨re naturelle.
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} Il est divisé en deux composants : la lumière directe du soleil  transmise par le [soleil](sun-and-sky-tabs.html#sun) et la lumière indirecte du soleil transmise par le [ciel](sun-and-sky-tabs.html#sky), le sol et les autres objets extérieurs.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} Il est divisÃ© en deux composants : la lumiÃ¨re directe du soleil  transmise par le [soleil](sun-and-sky-tabs.html#sun) et la lumiÃ¨re indirecte du soleil transmise par le [ciel](sun-and-sky-tabs.html#sky), le sol et les autres objets extÃ©rieurs.
 
-Les paramètres du [soleil](sun-and-sky-tabs.html#sun) et du [ciel](sun-and-sky-tabs.html#sky) sont similaires aux préréglages d'un éclairage [extérieur](lighting-tab.html#exterior-daylight).
-La lumière directe du soleil implique un calcul direct et il vous suffit d'indiquer l'heure, la date et le lieu afin d'assurer la précision des résultats.
+Les paramÃ¨tres du [soleil](sun-and-sky-tabs.html#sun) et du [ciel](sun-and-sky-tabs.html#sky) sont similaires aux prÃ©rÃ©glages d'un Ã©clairage [extÃ©rieur](lighting-tab.html#exterior-daylight).
+La lumiÃ¨re directe du soleil implique un calcul direct et il vous suffit d'indiquer l'heure, la date et le lieu afin d'assurer la prÃ©cision des rÃ©sultats.
 
-Remarques sur les rendus intérieurs :
+Remarques sur les rendus intÃ©rieursÂ :
 {: .clear-img}
 
-* Dans la mesure du possible, essayez d'utiliser des valeurs précises pour vos [lumières](lights-tab.html), pour les [paramètres du ciel](sun-and-sky-tabs.html#sky) ainsi que les vitres des fenêtres.
-* Étant donné que le soleil et le ciel sont plus brillants que les autres lumières, vous ne verrez peut-être pas beaucoup de différence lors de l'ajout d'un éclairage artificiel si le soleil est activé. C'est normal. Évitez d'augmenter artificiellement la puissance de vos sources de lumière.
-* Vous pouvez baisser l'intensité du [soleil](sun-and-sky-tabs.html#sun-intensity) ou du [ciel](sun-and-sky-tabs.html#sky-intensity). Ces paramètres simulent un ciel dégagé, la réduction de leur intensité permettra de simuler des conditions plus sombres, comme s'il y avait des nuages.
-* Un rendu [multi-canaux](lights-tab.html#channel) peut vous aider à obtenir l'image que vous voulez, tout en conservant des données précises.
+* Dans la mesure du possible, essayez d'utiliser des valeurs prÃ©cises pour vos [lumiÃ¨res](lights-tab.html), pour les [paramÃ¨tres du ciel](sun-and-sky-tabs.html#sky) ainsi que les vitres des fenÃªtres.
+* Ã‰tant donnÃ© que le soleil et le ciel sont plus brillants que les autres lumiÃ¨res, vous ne verrez peut-Ãªtre pas beaucoup de diffÃ©rence lors de l'ajout d'un Ã©clairage artificiel si le soleil est activÃ©. C'est normal. Ã‰vitez d'augmenter artificiellement la puissance de vos sources de lumiÃ¨re.
+* Vous pouvez baisser l'intensitÃ© du [soleil](sun-and-sky-tabs.html#sun-intensity) ou du [ciel](sun-and-sky-tabs.html#sky-intensity). Ces paramÃ¨tres simulent un ciel dÃ©gagÃ©, la rÃ©duction de leur intensitÃ© permettra de simuler des conditions plus sombres, comme s'il y avait des nuages.
+* Un rendu [multi-canaux](lights-tab.html#channel) peut vous aider Ã  obtenir l'image que vous voulez, tout en conservant des donnÃ©es prÃ©cises.
 
-### Éclairage artificiel
+### Ã‰clairage artificiel
 {: #artificial-lighting}
-![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} Ce schéma offre une simulation d'un intérieur architectural éclairé par des lampes la nuit. Utilisez l'[onglet des lumières](lights-tab.html) ou les [commandes de lumière de Rhino](lights-tab.html#rhino-light-commands) pour insérer et gérer des objets lumineux dans votre modèle.
+![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} Ce schÃ©ma offre une simulation d'un intÃ©rieur architectural Ã©clairÃ© par des lampes la nuit. Utilisez l'[onglet des lumiÃ¨res](lights-tab.html) ou les [commandes de lumiÃ¨re de Rhino](lights-tab.html#rhino-light-commands) pour insÃ©rer et gÃ©rer des objets lumineux dans votre modÃ¨le.
 
-L'éclairage indirect, c'est-à-dire la lumière qui est réfléchie par les surfaces, est activé lorsqu'un des deux préréglages intérieurs est sélectionné et désactivé pour l'éclairage studio et extérieur. Ce type d'éclairage est un composant important d'une simulation d'éclairage intérieur. Pour les extérieurs et les modèles de studio, les effets de l'éclairage indirect sont plus subtils, c'est pourquoi il est désactivé par défaut.
+L'Ã©clairage indirect, c'est-Ã -dire la lumiÃ¨re qui est rÃ©flÃ©chie par les surfaces, est activÃ© lorsqu'un des deux prÃ©rÃ©glages intÃ©rieurs est sÃ©lectionnÃ© et dÃ©sactivÃ© pour l'Ã©clairage studio et extÃ©rieur. Ce type d'Ã©clairage est un composant important d'une simulation d'Ã©clairage intÃ©rieur. Pour les extÃ©rieurs et les modÃ¨les de studio, les effets de l'Ã©clairage indirect sont plus subtils, c'est pourquoi il est dÃ©sactivÃ© par dÃ©faut.
 
-### Éclairage personnalisé
+### Ã‰clairage personnalisÃ©
 {: #custom  style="clear:both;"}
-Cet onglet permet de mélanger tous les paramètres d'éclairage.  Par exemple, si la scène est une lumière du jour extérieure dans laquelle un environnement HDR a été ajouté, utilisez l'onglet Personnalisé pour désactiver ou activer des parties du modèle d'éclairage.  Si les valeurs d'un schéma par défaut sont modifiées, le schéma devient un schéma personnalisé.
+Cet onglet permet de mÃ©langer tous les paramÃ¨tres d'Ã©clairage.  Par exemple, si la scÃ¨ne est une lumiÃ¨re du jour extÃ©rieure dans laquelle un environnement HDR a Ã©tÃ© ajoutÃ©, utilisez l'onglet PersonnalisÃ© pour dÃ©sactiver ou activer des parties du modÃ¨le d'Ã©clairage.  Si les valeurs d'un schÃ©ma par dÃ©faut sont modifiÃ©es, le schÃ©ma devient un schÃ©ma personnalisÃ©.
 
 ####  [Soleil](sun-and-sky-tabs.html#sun)
 {: #sun}
-Vous pouvez activer et désactiver l'onglet du soleil dans le menu contextuel. L'onglet [Soleil](sun-and-sky-tabs.html#sun) permet de modifier les paramètres de la position du soleil. 
+Vous pouvez activer et dÃ©sactiver l'onglet du soleil dans le menu contextuel. L'onglet [Soleil](sun-and-sky-tabs.html#sun) permet de modifier les paramÃ¨tres de la position du soleil. 
 
 ![images/lightsunon.png](images/lightsunon.png)
-*Soleil activé et désactivé.*
-Le soleil est une source de lumière directionnelle très brillante située infiniment loin du modèle. Les contrôles du soleil définissent sa direction en utilisant des coordonnées sphériques. Pour plus d'informations, consultez la rubrique sur l'[onglet Soleil](sun-and-sky-tabs.html#sun).
+*Soleil activÃ© et dÃ©sactivÃ©.*
+Le soleil est une source de lumiÃ¨re directionnelle trÃ¨s brillante situÃ©e infiniment loin du modÃ¨le. Les contrÃ´les du soleil dÃ©finissent sa direction en utilisant des coordonnÃ©es sphÃ©riques. Pour plus d'informations, consultez la rubrique sur l'[onglet Soleil](sun-and-sky-tabs.html#sun).
 
 ####  [Ciel](sun-and-sky-tabs.html#sky)
 {: #sky}
-Définissez le canal du ciel sur une des quatre options :
+DÃ©finissez le canal du ciel sur une des quatre optionsÂ :
 
 > Auto
 > HDRI
@@ -108,95 +108,95 @@ Définissez le canal du ciel sur une des quatre options :
 > Image
 
 Pour plus d'informations, consultez la rubrique sur l'[onglet Ciel](sun-and-sky-tabs.html#sky).
-Le ciel est une source de lumière hémisphérique située infiniment loin du modèle.
+Le ciel est une source de lumiÃ¨re hÃ©misphÃ©rique situÃ©e infiniment loin du modÃ¨le.
 
-#### Désactivé
+#### DÃ©sactivÃ©
 {: #off}
-Désactive le ciel.
+DÃ©sactive le ciel.
 ![images/chromenosky.png](images/chromenosky.png)
 
 #### Auto
 {: #auto}
-Offre un modèle analytique basé sur les conditions du ciel dans le monde réel. Les paramètres de l'onglet [Soleil](sun-and-sky-tabs.html) contrôlent l'apparence et les qualités de lumière du ciel.
+Offre un modÃ¨le analytique basÃ© sur les conditions du ciel dans le monde rÃ©el. Les paramÃ¨tres de l'onglet [Soleil](sun-and-sky-tabs.html) contrÃ´lent l'apparence et les qualitÃ©s de lumiÃ¨re du ciel.
 ![images/chromeautosky.png](images/chromeautosky.png)
 
 #### Image HDR
 {: #hdri}
-Une image HDR apporte une base pour les réflexions des objets brillants.
+Une image HDR apporte une base pour les rÃ©flexions des objets brillants.
 ![images/chromehdrbackground.png](images/chromehdrbackground.png)
 
 #### Couleur
 {: #color}
-Le ciel sera composé d'une couleur unie ou d'un dégradé de deux ou trois couleurs et il utilisera des contrôles similaires à ceux de la section [Environnement : Arrière-plan d'une couleur ou dégradés](environment-tab.html#color-and-gradient-backgrounds).
+Le ciel sera composÃ© d'une couleur unie ou d'un dÃ©gradÃ© de deux ou trois couleurs et il utilisera des contrÃ´les similaires Ã  ceux de la section [Environnement : ArriÃ¨re-plan d'une couleur ou dÃ©gradÃ©s](environment-tab.html#color-and-gradient-backgrounds).
 ![images/colorsky.png](images/colorsky.png)
 
 #### Image
 {: #image}
-Le ciel est constitué d'une image avec une projection plane, cylindrique ou sphérique, comme dans [Environnement : Image](environment-tab.html#image).
+Le ciel est constituÃ© d'une image avec une projection plane, cylindrique ou sphÃ©rique, comme dans [Environnement : Image](environment-tab.html#image).
 ![images/chromeimagesky.png](images/chromeimagesky.png)
 
 
-### Luminosité de studio
+### LuminositÃ© de studio
 {: #studio-brightness}
-La luminosité du [soleil](sun-and-sky-tabs.html) et du ciel sont réduites, afin d'imiter les niveaux d'éclairage intérieur d'un studio de photographie.
+La luminositÃ© du [soleil](sun-and-sky-tabs.html) et du ciel sont rÃ©duites, afin d'imiter les niveaux d'Ã©clairage intÃ©rieur d'un studio de photographie.
 ![images/studiobrightnessoffandon.png](images/studiobrightnessoffandon.png)
-*Luminosité de studio désactivée (gauche) et activée (droite).*
+*LuminositÃ© de studio dÃ©sactivÃ©e (gauche) et activÃ©e (droite).*
 
-### Lumières
+### LumiÃ¨res
 {: #lights}
-Active ou désactive l'éclairage artificiel.
+Active ou dÃ©sactive l'Ã©clairage artificiel.
 
 ![images/lightsonandoff.png](images/lightsonandoff.png)
-*Lumières activées (gauche) et désactivées (droite).*
+*LumiÃ¨res activÃ©es (gauche) et dÃ©sactivÃ©es (droite).*
 
 ### Indirect
 {: #indirect}
-Définit l'éclairage qui se réfléchit à partir des surfaces. Par défaut, cette option est activée pour l'éclairage intérieur et désactivée pour l'extérieur et l'éclairage de studio. Il est possible d'activer l'éclairage indirect pour les rendus d' extérieurs.
+DÃ©finit l'Ã©clairage qui se rÃ©flÃ©chit Ã  partir des surfaces. Par dÃ©faut, cette option est activÃ©e pour l'Ã©clairage intÃ©rieur et dÃ©sactivÃ©e pour l'extÃ©rieur et l'Ã©clairage de studio. Il est possible d'activer l'Ã©clairage indirect pour les rendus d' extÃ©rieurs.
 
-#### Méthode
-Définit la méthode de calcul de l'éclairage indirect.
+#### MÃ©thode
+DÃ©finit la mÃ©thode de calcul de l'Ã©clairage indirect.
 
-#### Désactivé
-L'éclairage indirect est désactivé.
+#### DÃ©sactivÃ©
+L'Ã©clairage indirect est dÃ©sactivÃ©.
 
-#### Intérieur
+#### IntÃ©rieur
 {: #interior}
-Optimise l'éclairage indirect pour les scènes intérieures.
+Optimise l'Ã©clairage indirect pour les scÃ¨nes intÃ©rieures.
 
-#### Extérieur
+#### ExtÃ©rieur
 {: #exterior}
-Optimise l'éclairage indirect pour les scènes extérieures.
+Optimise l'Ã©clairage indirect pour les scÃ¨nes extÃ©rieures.
 
-L'éclairage indirect réfléchi à partir des autres surfaces peut apporter de la subtilité du réalisme à vous rendues extérieures. En particulier, les parties inférieures d'objets suspendus, tels que les avancées de toit ou les balcons, sont rendues avec plus de précision avec un éclairage indirect.
+L'Ã©clairage indirect rÃ©flÃ©chi Ã  partir des autres surfaces peut apporter de la subtilitÃ© du rÃ©alisme Ã  vous rendues extÃ©rieures. En particulier, les parties infÃ©rieures d'objets suspendus, tels que les avancÃ©es de toit ou les balcons, sont rendues avec plus de prÃ©cision avec un Ã©clairage indirect.
 
 #### Rebonds
 {: #bounces}
-Définit le nombre de réflexions entraînées par un éclairage indirect.
+DÃ©finit le nombre de rÃ©flexions entraÃ®nÃ©es par un Ã©clairage indirect.
 
-### Lumière ambiante
+### LumiÃ¨re ambiante
 {: #ambient}
-La lumière ambiante est une lumière constante ajoutée au rendu. Ces paramètres contrôlent l'intensité de la lumière ambiante sous forme de pourcentage de la lumière ambiante totale calculée dans la scène.
+La lumiÃ¨re ambiante est une lumiÃ¨re constante ajoutÃ©e au rendu. Ces paramÃ¨tres contrÃ´lent l'intensitÃ© de la lumiÃ¨re ambiante sous forme de pourcentage de la lumiÃ¨re ambiante totale calculÃ©e dans la scÃ¨ne.
 
-En général, si la lumière ambiante est réduite, les images présentent un contraste plus important. Une lumière ambiante trop importante peut entraîner une image plate et fade et une lumière ambiante trop faible peut donner un contraste trop important.
+En gÃ©nÃ©ral, si la lumiÃ¨re ambiante est rÃ©duite, les images prÃ©sentent un contraste plus important. Une lumiÃ¨re ambiante trop importante peut entraÃ®ner une image plate et fade et une lumiÃ¨re ambiante trop faible peut donner un contraste trop important.
 
 #### Aucune
-Aucune lumière ambiante.
+Aucune lumiÃ¨re ambiante.
 
-#### Extérieur
-Optimise la lumière ambiante pour les scènes extérieures.
+#### ExtÃ©rieur
+Optimise la lumiÃ¨re ambiante pour les scÃ¨nes extÃ©rieures.
 
-#### Intérieur
-Optimise la lumière ambiante pour les scènes intérieures.
+#### IntÃ©rieur
+Optimise la lumiÃ¨re ambiante pour les scÃ¨nes intÃ©rieures.
 
 #### Studio
-Optimise la lumière ambiante pour les scènes de studio.
+Optimise la lumiÃ¨re ambiante pour les scÃ¨nes de studio.
 
-## Enregistrer un éclairage personnalisé
+## Enregistrer un Ã©clairage personnalisÃ©
 
-### Enregistrer le schéma d'éclairage
+### Enregistrer le schÃ©ma d'Ã©clairage
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Enregistre le schéma d'éclairage actuel.
+![images/saveschemeicon.png](images/saveschemeicon.png) Enregistre le schÃ©ma d'Ã©clairage actuel.
 
-### Ouvrir un schéma d'éclairage
+### Ouvrir un schÃ©ma d'Ã©clairage
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Ouvre un schéma d'éclairage enregistré.
+![images/importfromfile.png](images/importfromfile.png) Ouvre un schÃ©ma d'Ã©clairage enregistrÃ©.

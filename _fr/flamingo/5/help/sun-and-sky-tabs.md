@@ -3,169 +3,169 @@ title: Soleil et ciel
 ---
 
 # ![imagessun.svg](images/sun.svg) {{page.title}}
-Le [soleil](#sun) et le [ciel](#sky) sont étroitement liés entre eux. Le soleil peut modifier la luminosité du ciel en mode automatique. Si le soleil est activé et que le ciel est une image HDR, il est important d'équilibrer leurs intensités. 
+Le [soleil](#sun) et le [ciel](#sky) sont Ã©troitement liÃ©s entre eux. Le soleil peut modifier la luminositÃ© du ciel en mode automatique. Si le soleil est activÃ© et que le ciel est une image HDR, il est important d'Ã©quilibrer leurs intensitÃ©s. 
 
 ## Soleil
 {: #sun}
-Le soleil est une lumière parallèle invisible très puissante. Les facteurs simulant des conditions du monde réel tels que la latitude et la longitude, l'heure de la journée et la saison contrôlent la direction et la luminosité du soleil.
+Le soleil est une lumiÃ¨re parallÃ¨le invisible trÃ¨s puissante. Les facteurs simulant des conditions du monde rÃ©el tels que la latitude et la longitude, l'heure de la journÃ©e et la saison contrÃ´lent la direction et la luminositÃ©Â du soleil.
 
-Cette rubrique de l'aide couvre les contrôles de Flamingo pour le soleil. Le contrôle du [soleil de Rhinoceros](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/sun.htm) peut également être utilisé pour placer le soleil. Flamingo synchronisera les deux contrôles.  
+Cette rubrique de l'aide couvre les contrÃ´les de Flamingo pour le soleil. Le contrÃ´le du [soleil de Rhinoceros](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/sun.htm) peut Ã©galement Ãªtre utilisÃ© pour placer le soleil. Flamingo synchronisera les deux contrÃ´les.  
 
-##### Où puis-je trouver les contrôles du soleil de Flamingo ?
+##### OÃ¹ puis-je trouver les contrÃ´les du soleil de Flamingo ?
 
-Le soleil doit être activé à travers les [préréglages d'éclairage](lighting-tab.html#lighting-presets) ou les [paramètres d'éclairage personnalisé](lighting-tab.html#sun).
+Le soleil doit Ãªtre activÃ© Ã  travers les [prÃ©rÃ©glages d'Ã©clairage](lighting-tab.html#lighting-presets) ou les [paramÃ¨tres d'Ã©clairage personnalisÃ©](lighting-tab.html#sun).
 
 * ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt
 * ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Soleil
 
-**Remarque :** L'onglet Soleil ne sera visible que si le soleil est activé dans un préréglage d'éclairage. 
+**RemarqueÂ :** L'onglet Soleil ne sera visible que si le soleil est activÃ© dans un prÃ©rÃ©glage d'Ã©clairage. 
 
-Les angles solaires devront être indiqués afin de pouvoir calculer la lumière du soleil. Vous pouvez indiquer la direction du soleil de deux façons : avec la date, l'heure et le lieu ou directement avec l'angle. Utilisez le positionnement selon la date, l'heure et le lieu si vous essayez de simuler le soleil réel dans une étude de l'emplacement du modèle. Le positionnement par angle direct permet de contrôler l'angle de la lumière sans faire référence à un soleil réel. Utilisez cette option pour essayer des effets de lumière.
+Les angles solaires devront Ãªtre indiquÃ©s afin de pouvoir calculer la lumiÃ¨re du soleil. Vous pouvez indiquer la direction du soleil de deux faÃ§ons : avec la date, l'heure et le lieu ou directement avec l'angle. Utilisez le positionnement selon la date, l'heure et le lieu si vous essayez de simuler le soleil rÃ©el dans une Ã©tude de l'emplacement du modÃ¨le. Le positionnement par angle direct permet de contrÃ´ler l'angle de la lumiÃ¨re sans faire rÃ©fÃ©rence Ã  un soleil rÃ©el. Utilisez cette option pour essayer des effets de lumiÃ¨re.
 
 ![images/sydneymorning.png](images/sydneymorning.png)  ![images/stockholmmorning.png](images/stockholmmorning.png)
-*Sydney, Australie, 21 juin, 09h30 (à gauche). Stockholm, Suède, 21 Juin, 09h30 (à droite).*
+*Sydney, Australie, 21 juin, 09h30 (Ã  gauche). Stockholm, SuÃ¨de, 21 Juin, 09h30 (Ã  droite).*
 
-### Définir l'azimut et l'altitude
+### DÃ©finir l'azimut et l'altitude
 {: #set-azimuth-and-altitude}
-Utiliser des angles pour définir manuellement la direction du soleil. Active les contrôles de l'[azimut](#azimuth) et de l'[altitude](#altitude).
+Utiliser des angles pour dÃ©finir manuellement la direction du soleil. Active les contrÃ´les de l'[azimut](#azimuth) et de l'[altitude](#altitude).
 
 #### Azimut
 {: #azimuth}
-Définit la direction du soleil en degrés angulaires à partir du Nord (0) sur le plan horizontal.  La carte circulaire montre le monde sur une vue en plan. 
+DÃ©finit la direction du soleil en degrÃ©s angulaires Ã  partir du Nord (0) sur le plan horizontal.  La carte circulaire montre le monde sur une vue en plan. 
 
 #### Altitude
 {: #altitude}
-Définit la hauteur du soleil dans le ciel en degrés angulaires à partir de l'équateur (0).  La carte en demi-cercle simule une section dans la direction verticale des coordonnées dans le repère général. 
+DÃ©finit la hauteur du soleil dans le ciel en degrÃ©s angulaires Ã  partir de l'Ã©quateur (0).  La carte en demi-cercle simule une section dans la direction verticale des coordonnÃ©es dans le repÃ¨re gÃ©nÃ©ral. 
 
-### Définir le lieu sur la terre
+### DÃ©finir le lieu sur la terre
 {: #set-location-on-earth}
-Utilisez l'angle du soleil pour placer le soleil en fonction de la date, de l'heure et du lieu. **Remarque :** Comme pour tous les calculateurs de soleil, la précision du positionnement du soleil peut varier. Si une précision absolue est nécessaire, nous vous recommandons de vérifier la position du soleil. 
+Utilisez l'angle du soleil pour placer le soleil en fonction de la date, de l'heure et du lieu. **RemarqueÂ :** Comme pour tous les calculateurs de soleil, la prÃ©cision du positionnement du soleil peut varier. Si une prÃ©cision absolue est nÃ©cessaire, nous vous recommandons de vÃ©rifier la position du soleil. 
 
 #### Date
 {: #date}
-Définit la date.
+DÃ©finit la date.
 
 #### Temps
 {: #time}
 Indique l'heure.
 
-#### Heure d'été
+#### Heure d'Ã©tÃ©
 {: #daylight-savings-time}
 Avance l'heure d'une heure.
 
 #### Latitude/Longitude
 {: #latitude-longitude}
 Entrez une latitude et une longitude ou choisissez une position sur la carte.
-Les nombres seront également actualisés pour afficher la latitude et la longitude de la position sélectionnée sur la carte avec la souris.
+Les nombres seront Ã©galement actualisÃ©s pour afficher la latitude et la longitude de la position sÃ©lectionnÃ©e sur la carte avec la souris.
 
 #### Fuseau horaire
 {: #time-zone}
-Affiche le fuseau horaire à partir de la latitude et la longitude du lieu indiqué.
+Affiche le fuseau horaire Ã  partir de la latitude et la longitude du lieu indiquÃ©.
 
 #### Liste des villes
 {: #city-list}
-Utilisez cette liste pour sélectionner une ville afin de définir le lieu.
+Utilisez cette liste pour sÃ©lectionner une ville afin de dÃ©finir le lieu.
 
 #### Carte
 {: #map}
-Cliquez sur la carte pour sélectionner un lieu. Faites glisser la carte avec le bouton de gauche pour la déplacer.
+Cliquez sur la carte pour sÃ©lectionner un lieu. Faites glisser la carte avec le bouton de gauche pour la dÃ©placer.
 
-### Intensité du soleil
+### IntensitÃ© du soleil
 {: #sun-intensity}
-Permet de modifier la luminosité du composant de lumière directe de la lumière du jour (le soleil). L'intensité du soleil est automatiquement calculée selon les angles solaires et les conditions du ciel mais elle peut être modifiée pour s'équilibrer avec les autres lumières.
+Permet de modifier la luminositÃ© du composant de lumiÃ¨re directe de la lumiÃ¨re du jour (le soleil). L'intensitÃ© du soleil est automatiquement calculÃ©e selon les angles solaires et les conditions du ciel mais elle peut Ãªtre modifiÃ©e pour s'Ã©quilibrer avec les autres lumiÃ¨res.
 
 ### Reflet du soleil
 {: #sun-highlight}
-La netteté du reflet du soleil.
+La nettetÃ© du reflet du soleil.
 
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
 *Reflet du soleil=0 (gauche) et 1 (droite).*
 
-**Remarque :** Des défauts de reflet solaire peuvent parfois être vus sur les rendus extérieurs lorsque le paramètre de Reflet du soleil est activé. Pour atténuer ou éliminer cet artefact, définissez le Reflet du soleil sur une plus petite valeur.
+**RemarqueÂ :** Des dÃ©fauts de reflet solaire peuvent parfois Ãªtre vus sur les rendus extÃ©rieurs lorsque le paramÃ¨tre de Reflet du soleil est activÃ©. Pour attÃ©nuer ou Ã©liminer cet artefact, dÃ©finissez le Reflet du soleil sur une plus petite valeur.
 {: #speckle-artifacts}
 
 {% include_relative snippets/snippet-sunchannel.md %}
 
 #### Direction du nord
 {: #north}
-**Remarque :** Nord correspond à la direction y positive du repère général.
+**RemarqueÂ :** Nord correspond Ã  la direction y positive du repÃ¨re gÃ©nÃ©ral.
 
 ## Ciel
 {: #sky}
-Le ciel est une grande sphère autour du rendu qui peut être utilisée pour l'éclairage. Le ciel est très différent de l'environnement. Le ciel contrôle l'éclairage. L'environnement contrôle ce qui est réfléchi et visible en arrière-plan. Dans de nombreux cas le ciel et l'environnement devront être définis différemment l'un de l'autre. 
+Le ciel est une grande sphÃ¨re autour du rendu qui peut Ãªtre utilisÃ©e pour l'Ã©clairage. Le ciel est trÃ¨s diffÃ©rent de l'environnement. Le ciel contrÃ´le l'Ã©clairage. L'environnement contrÃ´le ce qui est rÃ©flÃ©chi et visible en arriÃ¨re-plan. Dans de nombreux cas le ciel et l'environnement devront Ãªtre dÃ©finis diffÃ©remment l'un de l'autre. 
 
-#### Où puis-je trouver les contrôles du ciel de Flamingo ?
-Le ciel doit être activé à travers les [préréglages d'éclairage](lighting-tab.html#lighting-presets) ou les [paramètres d'éclairage personnalisé](lighting-tab.html#sky).
+#### OÃ¹ puis-je trouver les contrÃ´les du ciel de Flamingo ?
+Le ciel doit Ãªtre activÃ© Ã  travers les [prÃ©rÃ©glages d'Ã©clairage](lighting-tab.html#lighting-presets) ou les [paramÃ¨tres d'Ã©clairage personnalisÃ©](lighting-tab.html#sky).
 
  1. ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Ciel
 
-Les schémas d'éclairage prédéfinis pour la lumière du jour [Extérieure](lighting-tab.html#exterior-daylight) et [Intérieure](lighting-tab.html#interior-daylight) utilisent le ciel automatique par défaut. Le schéma d'éclairage de [studio](lighting-tab.html#studio-lighting) prédéfini utilise un éclairage par image HDR.
+Les schÃ©mas d'Ã©clairage prÃ©dÃ©finis pour la lumiÃ¨re du jour [ExtÃ©rieure](lighting-tab.html#exterior-daylight) et [IntÃ©rieure](lighting-tab.html#interior-daylight) utilisent le ciel automatique par dÃ©faut. Le schÃ©ma d'Ã©clairage de [studio](lighting-tab.html#studio-lighting) prÃ©dÃ©fini utilise un Ã©clairage par image HDR.
 
-Le ciel peut être défini de cinq façon différentes :
+Le ciel peut Ãªtre dÃ©fini de cinq faÃ§on diffÃ©rentesÂ :
 
->[Désactivé](lighting-tab.html#off)
+>[DÃ©sactivÃ©](lighting-tab.html#off)
 >[Ciel automatique](#automatic-sky)
->[Image à grande plage dynamique (HDRI)](#high-dynamic-range-image-sky)
+>[Image Ã  grande plage dynamique (HDRI)](#high-dynamic-range-image-sky)
 >[Couleur](#color-sky)
 >[Image](#image-sky)
 
-Les deux meilleurs paramètres pour les types d'éclairage zénithal sont [Image HDR](#high-dynamic-range-image-sky) et [Ciel automatique](#automatic-sky). Le ciel avec image HDR utilise une image contenant des valeurs d'éclairage enregistrées sur chaque pixel pour définir l'éclairage et les réflexions. Le ciel automatique utilise une nébulosité et une position du soleil dans le monde réel pour simuler le ciel.  Ces paramètres produiront les rendus les plus dynamiques. 
+Les deux meilleurs paramÃ¨tres pour les types d'Ã©clairage zÃ©nithal sont [Image HDR](#high-dynamic-range-image-sky) et [Ciel automatique](#automatic-sky). Le ciel avec image HDR utilise une image contenant des valeurs d'Ã©clairage enregistrÃ©es sur chaque pixel pour dÃ©finir l'Ã©clairage et les rÃ©flexions. Le ciel automatique utilise une nÃ©bulositÃ© et une position du soleil dans le monde rÃ©el pour simuler le ciel.  Ces paramÃ¨tres produiront les rendus les plus dynamiques. 
 
 ### Ciel automatique
 {: #automatic-sky}
-Le ciel automatique utilise les paramètre de l'[onglet Soleil](sun-and-sky-tabs.html) pour déterminer la gamme de couleurs et l'intensité de la lumière zénithale. Par exemple, lorsque le soleil est haut dans le ciel, l'éclairage et les couleurs du ciel sont très différents de ceux appliqués lorsque le soleil est bas. 
+Le ciel automatique utilise les paramÃ¨tre de l'[onglet Soleil](sun-and-sky-tabs.html) pour dÃ©terminer la gamme de couleurs et l'intensitÃ© de la lumiÃ¨re zÃ©nithale. Par exemple, lorsque le soleil est haut dans le ciel, l'Ã©clairage et les couleurs du ciel sont trÃ¨s diffÃ©rents de ceux appliquÃ©s lorsque le soleil est bas. 
 
 ![images/sky-002.png](images/sky-002.png)
 *Ciel automatique : soleil haut (gauche) et bas (droite) dans le ciel.*
 
-#### Nébulosité
+#### NÃ©bulositÃ©
 {: #sky-cloudiness}
-Lorsque la nébulosité est désactivée, le ciel est considéré comme dégagé et des ombres dures sont créées. Plus la nébulosité est élevée, moins il y a de contraste entre la lumière et les ombres. Une nébulosité plus importante créera des ombres plus légères et un effet d'éclairage plus régulier. Le paramètre d'opacité touche de nombreux aspects du calcul de la lumière du jour, y compris la quantité relative de lumière directe et indirecte, le mode de calcul de la lumière indirecte et la couleur de l'arrière-plan si le mode ciel automatique a été sélectionné. La nébulosité varie de 0 (dégagé) à 1 (complètement couvert). La gamme de nébulosité entre 0.35 et 0.50 est très sensible et dynamique. 
+Lorsque la nÃ©bulositÃ© est dÃ©sactivÃ©e, le ciel est considÃ©rÃ© comme dÃ©gagÃ© et des ombres dures sont crÃ©Ã©es. Plus la nÃ©bulositÃ© est Ã©levÃ©e, moins il y a de contraste entre la lumiÃ¨re et les ombres. Une nÃ©bulositÃ© plus importante crÃ©era des ombres plus lÃ©gÃ¨res et un effet d'Ã©clairage plus rÃ©gulier. Le paramÃ¨tre d'opacitÃ© touche de nombreux aspects du calcul de la lumiÃ¨re du jour, y compris la quantitÃ© relative de lumiÃ¨re directe et indirecte, le mode de calcul de la lumiÃ¨re indirecte et la couleur de l'arriÃ¨re-plan si le mode ciel automatique a Ã©tÃ© sÃ©lectionnÃ©. La nÃ©bulositÃ© varie de 0 (dÃ©gagÃ©) Ã  1 (complÃ¨tement couvert). La gamme de nÃ©bulositÃ© entre 0.35 et 0.50 est trÃ¨s sensible et dynamique. 
 
 ![images/cloudiness0.png](images/cloudiness0.png)
-*Nébulosité 0 (gauche) et 1 (droite).*
+*NÃ©bulositÃ© 0 (gauche) et 1 (droite).*
 
-#### Intensité du ciel
+#### IntensitÃ© du ciel
 {: #sky-intensity}
-Permet de modifier la luminosité du composant de lumière indirecte de la lumière du jour (le ciel). L'intensité de la lumière zénithale est automatiquement calculée selon les angles solaires et les conditions du ciel mais elle peut être modifiée. **Remarque :** Ce paramètre n'est important que si la scène possède d'autres lumières qui doivent être compensées. Si aucune autre lumière n'est définie, le contrôle de tonalité compensera l'exposition et l'image rendue ne sera pas plus brillante ni plus terne en fonction de ce paramètre.
+Permet de modifier la luminositÃ© du composant de lumiÃ¨re indirecte de la lumiÃ¨re du jour (le ciel). L'intensitÃ© de la lumiÃ¨re zÃ©nithale est automatiquement calculÃ©e selon les angles solaires et les conditions du ciel mais elle peut Ãªtre modifiÃ©e. **RemarqueÂ :** Ce paramÃ¨tre n'est important que si la scÃ¨ne possÃ¨de d'autres lumiÃ¨res qui doivent Ãªtre compensÃ©es. Si aucune autre lumiÃ¨re n'est dÃ©finie, le contrÃ´le de tonalitÃ© compensera l'exposition et l'image rendue ne sera pas plus brillante ni plus terne en fonction de ce paramÃ¨tre.
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### Ciel avec image à grande plage dynamique
+### Ciel avec image Ã  grande plage dynamique
 {: #high-dynamic-range-image-sky}
-Une [image à grande plage dynamique (HDR)](https://fr.wikipedia.org/wiki/Imagerie_%C3%A0_grande_gamme_dynamique) est un fichier image spécial en 2D. Ces images contiennent une plus grande plage de valeurs au niveau de chaque pixel qu'un fichier image standard, comme .jpg ou .png. Ces données supplémentaires peuvent être utilisées pour éclairer les modèles. Si les valeurs contenues dans l'image HDR sont justes, l'éclairage peut être précis. Cet effet peut produire un éclairage très dynamique dans la scène. Le schéma d'éclairage de studio prédéfini utilise des images HDR pour le ciel. Si vous considérez l'éclairage de studio comme une activité d'intérieur, imaginez l'image HDR comme un plafond qui émet de la lumière à partir des couleurs de l'image.
+Une [image Ã  grande plage dynamique (HDR)](https://fr.wikipedia.org/wiki/Imagerie_%C3%A0_grande_gamme_dynamique) est un fichier image spÃ©cial en 2D. Ces images contiennent une plus grande plage de valeurs au niveau de chaque pixel qu'un fichier image standard, comme .jpg ou .png. Ces donnÃ©es supplÃ©mentaires peuvent Ãªtre utilisÃ©es pour Ã©clairer les modÃ¨les. Si les valeurs contenues dans l'image HDR sont justes, l'Ã©clairage peut Ãªtre prÃ©cis. Cet effet peut produire un Ã©clairage trÃ¨s dynamique dans la scÃ¨ne. Le schÃ©ma d'Ã©clairage de studio prÃ©dÃ©fini utilise des images HDR pour le ciel. Si vous considÃ©rez l'Ã©clairage de studio comme une activitÃ© d'intÃ©rieur, imaginez l'image HDR comme un plafond qui Ã©met de la lumiÃ¨re Ã  partir des couleurs de l'image.
 
 ![images/lighting-001.png](images/lighting-001.png)
-*Éclairage avec une image HDR.*
+*Ã‰clairage avec une image HDR.*
 
-Les images HDR contiennent normalement des valeurs de rayonnement exprimées en watts. Si ce n'est pas le cas, l'intensité de ces images HDR devra probablement être ajustée pour obtenir des niveaux corrects d'illumination.
+Les images HDR contiennent normalement des valeurs de rayonnement exprimÃ©es en watts. Si ce n'est pas le cas, l'intensitÃ© de ces images HDR devra probablement Ãªtre ajustÃ©e pour obtenir des niveaux corrects d'illumination.
 
-En plus du ciel, une autre image HDR peut être utilisée pour chacun des trois arrière-plans : [Visible](environment-tab.html#advanced-background), [Réfléchi ](environment-tab.html#advanced-background) et [Réfracté ](environment-tab.html#advanced-background).
+En plus du ciel, une autre image HDR peut Ãªtre utilisÃ©e pour chacun des trois arriÃ¨re-plans : [Visible](environment-tab.html#advanced-background), [RÃ©flÃ©chi ](environment-tab.html#advanced-background) et [RÃ©fractÃ© ](environment-tab.html#advanced-background).
 
 #### Image HDR
-Définit le fichier image HDR à utiliser. Cliquer sur l'image pour choisir une autre image. 
+DÃ©finit le fichier image HDR Ã  utiliser. Cliquer sur l'image pour choisir une autre image. 
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*Projection cylindrique équidistante.*
+*Projection cylindrique Ã©quidistante.*
 
-Les images HDR peuvent avoir deux types de projection afin de d'envelopper correctement l'image autour de la sphère du ciel. La plus connue est la projection cylindrique équidistante. Ces images sont rectangulaires avec des proportions de 2:1. Les images cylindriques équidistantes ont une résolution uniforme sur toute l'image. La deuxième projection est la projection sphérique. Les images HDR sphériques sont carrées avec une courbure élevée. Les projections sphériques présentent une résolution réduite au niveau de la jonction. 
+Les images HDR peuvent avoir deux types de projection afin de d'envelopper correctement l'image autour de la sphÃ¨re du ciel. La plus connue est la projection cylindrique Ã©quidistante. Ces images sont rectangulaires avec des proportions de 2:1. Les images cylindriques Ã©quidistantes ont une rÃ©solution uniforme sur toute l'image. La deuxiÃ¨me projection est la projection sphÃ©rique. Les images HDR sphÃ©riques sont carrÃ©es avec une courbure Ã©levÃ©e. Les projections sphÃ©riques prÃ©sentent une rÃ©solution rÃ©duite au niveau de la jonction. 
 
-#### Intensité
-Modifie la luminosité de la lumière émise par l'image HDR. Ce paramètre n'est important que si la scène possède d'autres lumières qui doivent être compensées. Si aucune autre lumière n'est définie, le contrôle de tonalité compensera l'exposition et l'image rendue ne sera pas plus brillante ni plus terne en fonction de ce paramètre.
+#### IntensitÃ©
+Modifie la luminositÃ©Â de la lumiÃ¨re Ã©mise par l'image HDR. Ce paramÃ¨tre n'est important que si la scÃ¨ne possÃ¨de d'autres lumiÃ¨res qui doivent Ãªtre compensÃ©es. Si aucune autre lumiÃ¨re n'est dÃ©finie, le contrÃ´le de tonalitÃ© compensera l'exposition et l'image rendue ne sera pas plus brillante ni plus terne en fonction de ce paramÃ¨tre.
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
-*Intensité HDR faible et élevée.*
+*IntensitÃ© HDR faible et Ã©levÃ©e.*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}Dans l'illustration, l'image a été tournée afin que le reflet du soleil apparaisse sur l'objet. Indiquer les degrés de rotation ou déplacez l'indicateur de rotation.
+{% include_relative snippets/snippet-rotatehdrimage.md %}Dans l'illustration, l'image a Ã©tÃ© tournÃ©e afin que le reflet du soleil apparaisse sur l'objet. Indiquer les degrÃ©s de rotation ou dÃ©placez l'indicateur de rotation.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
-*Image tournée de sorte que le soleil apparaisse sur l'objet.*
+*Image tournÃ©e de sorte que le soleil apparaisse sur l'objet.*
 
 #### Saturation
-La saturation de la couleur de la lumière. Étant donné que la lumière d'une image HDR provient de la couleur des pixels de l'image, des effets de couleur indésirables peuvent se produire parfois. Choisissez une saturation peu élevée si vous ne voulez utiliser que la lumière de l'image, sans la couleur.
+La saturation de la couleur de la lumiÃ¨re. Ã‰tant donnÃ© que la lumiÃ¨re d'une image HDR provient de la couleur des pixels de l'image, des effets de couleur indÃ©sirables peuvent se produire parfois. Choisissez une saturation peu Ã©levÃ©e si vous ne voulez utiliser que la lumiÃ¨re de l'image, sans la couleur.
 
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)
-*Saturation faible (gauche) et élevée (droite.*
+*Saturation faible (gauche) et Ã©levÃ©e (droite.*
 
 {% include_relative snippets/snippet-mirrorimage.md %}
 
@@ -173,20 +173,20 @@ La saturation de la couleur de la lumière. Étant donné que la lumière d'une imag
 
 ### Couleur
 {: #color-sky}
-Il est possible d'utiliser une couleur ou un dégradé de couleurs pour éclairer la scène. Les couleurs du ciel sont multipliées par la valeur de l'intensité afin de donner aux couleurs une valeur d'éclairage. 
+Il est possible d'utiliser une couleur ou un dÃ©gradÃ© de couleurs pour Ã©clairer la scÃ¨ne. Les couleurs du ciel sont multipliÃ©es par la valeur de l'intensitÃ© afin de donner aux couleurs une valeur d'Ã©clairage. 
 
-#### Intensité
-La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 256 par canal. L'intensité multipliera ces valeurs.
+#### IntensitÃ©
+La valeur de l'intensitÃ© est utilisÃ©e pour multiplier les couleurs du ciel afin d'obtenir une valeur d'Ã©clairage.  Les couleurs peuvent aller de 0 Ã  256 par canal. L'intensitÃ© multipliera ces valeurs.
 
 #### Type de couleur
-Il existe trois façons de contrôler la couleur du ciel. Les contrôles sont similaires à ceux de l'environnement. Voir les contrôles de l'[arrière-plan avec une couleur](environment-tab.html#environment-color-and-gradient-backgrounds) pour plus d'informations. 
+Il existe trois faÃ§ons de contrÃ´ler la couleur du ciel. Les contrÃ´les sont similaires Ã  ceux de l'environnement. Voir les contrÃ´les de l'[arriÃ¨re-plan avec une couleur](environment-tab.html#environment-color-and-gradient-backgrounds) pour plus d'informations. 
 
 ### Image
 {: #image-sky}
-Il est possible d'utiliser une image pour éclairer la scène. Les couleurs de l'image sont multipliées par la valeur de l'intensité afin de donner aux couleurs une valeur d'éclairage.
+Il est possible d'utiliser une image pour Ã©clairer la scÃ¨ne. Les couleurs de l'image sont multipliÃ©es par la valeur de l'intensitÃ© afin de donner aux couleurs une valeur d'Ã©clairage.
 
-#### Intensité
-La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 256 par canal. L'intensité multipliera ces valeurs.
+#### IntensitÃ©
+La valeur de l'intensitÃ© est utilisÃ©e pour multiplier les couleurs du ciel afin d'obtenir une valeur d'Ã©clairage.  Les couleurs peuvent aller de 0 Ã  256 par canal. L'intensitÃ© multipliera ces valeurs.
 
 #### Projection de l'image
-Il existe plusieurs façons de contrôler le placage d'une image sur le ciel. Les contrôles sont similaires à ceux de l'image en arrière-plan.  Voir les contrôles de l'[arrière-plan avec une image](environment-tab.html#environment-image) pour plus d'informations.
+Il existe plusieurs faÃ§ons de contrÃ´ler le placage d'une image sur le ciel. Les contrÃ´les sont similaires Ã  ceux de l'image en arriÃ¨re-plan.  Voir les contrÃ´les de l'[arriÃ¨re-plan avec une image](environment-tab.html#environment-image) pour plus d'informations.

@@ -1,16 +1,16 @@
 ---
-title: Rechercher les mises à jour
+title: Rechercher les mises Ã  jour
 ---
 
 # {{page.title}}
-Cette fonction est une vérification automatique de la version actuelle de Flamingo nXt 5.0. 
+Cette fonction est une vÃ©rification automatique de la version actuelle de Flamingo nXt 5.0. 
 
-#### Statut de la mise à jour actuelle
+#### Statut de la mise Ã  jour actuelle
 
-#### Dernière vérification
+#### DerniÃ¨re vÃ©rification
 
-#### Fréquence de mise à jour
+#### FrÃ©quence de mise Ã  jour
 
-### Vérifier maintenant...
+### VÃ©rifier maintenant...
 
-## Identification des problèmes de mises à jour
+## Identification des problÃ¨mes de mises Ã  jour

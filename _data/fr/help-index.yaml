@@ -2,49 +2,49 @@ main_index:
   name: Rubriques de l'aide de Flamingo
   anchor: all_topics
   categories:
-    - name: Bibliothèques
+    - name: BibliothÃ¨ques
       anchor: libraries
       topics:
-        - name: Panneau Bibliothèques
+        - name: Panneau BibliothÃ¨ques
           path: libraries.html
           anchor: test
-        - name: Bibliothèque de matériaux
+        - name: BibliothÃ¨que de matÃ©riaux
           path: libraries.html
           anchor: material
-        - name: Bibliothèque d'environnements
+        - name: BibliothÃ¨que d'environnements
           path: libraries.html
           anchor: environment
-        - name: Bibliothèque de plantes
+        - name: BibliothÃ¨que de plantes
           path: libraries.html
           anchor: plant
-        - name: Paramètres de la bibliothèque
+        - name: ParamÃ¨tres de la bibliothÃ¨que
           path: libraries.html
           anchor: settings
 
-    - name: Matériaux
+    - name: MatÃ©riaux
       anchor: materials
       topics:
-        - name: Éditeur de matériaux
+        - name: Ã‰diteur de matÃ©riaux
           path: material-editor.html
-        - name: Assigner des matériaux
+        - name: Assigner des matÃ©riaux
           path: material_assignment.html
-        - name: Propriétés de base du matériau
+        - name: PropriÃ©tÃ©s de base du matÃ©riau
           path: material-type-simple.html
-        - name: Propriétés avancées du matériau
+        - name: PropriÃ©tÃ©s avancÃ©es du matÃ©riau
           path: material-type-advanced.html
-        - name: Propriétés d'image du matériau
+        - name: PropriÃ©tÃ©s d'image du matÃ©riau
           path: material-image-properties.html
-        - name: Types de matériaux algorithmiques
+        - name: Types de matÃ©riaux algorithmiques
           path: procedural-materials.html
-        - name: Matériaux avec ensemble de textures
+        - name: MatÃ©riaux avec ensemble de textures
           path: texture-set-materials.html
-        - name: Sélecteur de couleur
+        - name: SÃ©lecteur de couleur
           path: select-color.html
 
-    - name: Éclairage
+    - name: Ã‰clairage
       anchor: lighting
       topics:
-        - name: Préréglages d'éclairage
+        - name: PrÃ©rÃ©glages d'Ã©clairage
           path: lighting-tab.html
         - name: Soleil
           path: sun-and-sky-tabs.html
@@ -52,13 +52,13 @@ main_index:
         - name: Ciel
           path: sun-and-sky-tabs.html
           anchor: sky
-        - name: Lumières
+        - name: LumiÃ¨res
           path: lights-tab.html
 
     - name: Environnement
       anchor: environment
       topics:
-       - name: Éditeur d'environnement
+       - name: Ã‰diteur d'environnement
          path: environment-tab.html
        - name: Environnement de Flamingo
          path: environment.html
@@ -68,32 +68,32 @@ main_index:
       topics:
         - name: Onglet Rendu
           path: render-tab.html
-        - name: Fenêtre de rendu
+        - name: FenÃªtre de rendu
           path: render-window.html
         - name: Canaux
           path: render-channel.html
-        - name: Éditeur d'images
+        - name: Ã‰diteur d'images
           path: image-editor.html
-        - name: Rendu automatisé
+        - name: Rendu automatisÃ©
           path: automate-rendering.html
 
 
-    - name: Propriétés des objets
+    - name: PropriÃ©tÃ©s des objets
       anchor: object_properties
       topics:
-        - name: Source du matériau
+        - name: Source du matÃ©riau
           path: properties-object.html
           anchor: material-source
-        - name: Maillage personnalisé
+        - name: Maillage personnalisÃ©
           path: properties-object.html
           anchor: custom-meshes
         - name: Placage de texture
           path: properties-object.html
           anchor: texture-mapping
-        - name: Propriétés de la décalcomanie
+        - name: PropriÃ©tÃ©s de la dÃ©calcomanie
           path: properties-object.html
           anchor: decals
-        - name: Propriétés de l'objet
+        - name: PropriÃ©tÃ©s de l'objet
           path: properties-object.html
 
     - name: Plantes
@@ -101,10 +101,10 @@ main_index:
       topics:
         - name: Plantes
           path: plants.html
-        - name: Éditeur de plantes
+        - name: Ã‰diteur de plantes
           path: tree-editor.html
 
-    - name: Rendu en réseau (ferme)
+    - name: Rendu en rÃ©seau (ferme)
       anchor: farm
       topics:
         - name: Installer la ferme
@@ -120,15 +120,15 @@ main_index:
     - name: Divers
       anchor: misc
       topics:
-        - name: Propriétés du document
+        - name: PropriÃ©tÃ©s du document
           path: documentproperties-flamingo.html
         - name: Options de Flamingo nXt
           path: options-flamingo.html
-        - name: Fenêtre RealTime
+        - name: FenÃªtre RealTime
           path: realtime.html
         - name: Liste de commandes de Flamingo
           path: flamingo-command-list.html
-        - name: Sélectionner une couleur
+        - name: SÃ©lectionner une couleur
           path: select-color.html
         - name: Bienvenue
           path: welcome.html

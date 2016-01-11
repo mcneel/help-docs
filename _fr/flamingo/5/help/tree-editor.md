@@ -9,47 +9,47 @@ title: Editeur de plantes
 ### Menu Fichier
 
 #### Nouveau
-Créer une nouvelle définition de plante en utilisant un fichier modèle.
+CrÃ©er une nouvelle dÃ©finition de plante en utilisant un fichier modÃ¨le.
 
  | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
- | **Standard**                                |   **Conifère**                             | **Cime large**                       |
+ | **Standard**                                |   **ConifÃ¨re**                             | **Cime large**                       |
  | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
  | **Palmier**                                    |  **Couvre-sol**                          | **Complexe**                                  
 {: .plant-table}
 
 #### Ouvrir
-Ouvre une définition d'arbre existante.
+Ouvre une dÃ©finition d'arbre existante.
 
 #### Enregistrer
-Enregistre la définition d'arbre actuelle.
+Enregistre la dÃ©finition d'arbre actuelle.
 
 #### Enregistrer sous
-Enregistre la définition d'arbre actuelle sous un autre nom.
+Enregistre la dÃ©finition d'arbre actuelle sous un autre nom.
 
 ### Menus Lancer de rayons
-Calcule le rendu de l'image d'aperçu.
+Calcule le rendu de l'image d'aperÃ§u.
 ![images/shadedvsrendered.png](images/shadedvsrendered.png)
-*Défaut (gauche) et Lancer de rayons (droite.*
+*DÃ©faut (gauche) et Lancer de rayons (droite.*
 
-#### Démarrer
-Lancer le rendu de l'image d'aperçu.
+#### DÃ©marrer
+Lancer le rendu de l'image d'aperÃ§u.
 
-#### Arrêter
-Arrêter le rendu de l'image d'aperçu.
+#### ArrÃªter
+ArrÃªter le rendu de l'image d'aperÃ§u.
 
 Menu Vue
-Déplacez la souris en maintenant le bouton gauche pour faire tourner la caméra de la vue autour de la cible.
-Déplacez la souris en maintenant le bouton droit pour faire tourner la cible autour de la caméra. 
-Faites tourner la molette de la souris pour zoomer en avant et en arrière.
+DÃ©placez la souris en maintenant le bouton gauche pour faire tourner la camÃ©ra de la vue autour de la cible.
+DÃ©placez la souris en maintenant le bouton droit pour faire tourner la cible autour de la camÃ©ra. 
+Faites tourner la molette de la souris pour zoomer en avant et en arriÃ¨re.
 
-#### Restaurer les valeurs par défaut
-Restaure la vue ombrée par défaut.
+#### Restaurer les valeurs par dÃ©faut
+Restaure la vue ombrÃ©e par dÃ©faut.
 
 #### Afficher les feuilles
-Affiche l'aperçu de l'arbre avec des feuilles.
+Affiche l'aperÃ§uÂ de l'arbre avec des feuilles.
 ![images/leaves-001.png](images/leaves-001.png)
 *Sans feuilles (gauche) et avec feuilles (droite).*
 
-### Menu Paramètres
-Définissez les unités de l'éditeur de sorte à ce qu'elle correspondent avec les unités de travail. 
+### Menu ParamÃ¨tres
+DÃ©finissez les unitÃ©s de l'Ã©diteur de sorte Ã  ce qu'elle correspondent avec les unitÃ©s de travail. 

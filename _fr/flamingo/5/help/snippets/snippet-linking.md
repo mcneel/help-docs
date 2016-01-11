@@ -1,14 +1,14 @@
 
 #### Options de liaison
-Indique comment le fichier image sera lié aux matériaux.
+Indique comment le fichier image sera liÃ© aux matÃ©riaux.
 
-#### Lié
-Crée un lien vers le fichier image. Le fichier doit se trouver sur le disque local.
+#### LiÃ©
+CrÃ©e un lien vers le fichier image. Le fichier doit se trouver sur le disque local.
 
-#### Incorporé
-Les informations sur l'image sont insérées dans le fichier actuel.
+#### IncorporÃ©
+Les informations sur l'image sont insÃ©rÃ©es dans le fichier actuel.
 
-#### Liée et incorporée
-Si l'image est trouvée sur le disque avant le rendu, le fichier externe est utilisé. Si l'image ne peut pas être trouvée sur le disque, la définition interne sera utilisée.
+#### LiÃ©e et incorporÃ©e
+Si l'image est trouvÃ©e sur le disque avant le rendu, le fichier externe est utilisÃ©. Si l'image ne peut pas Ãªtre trouvÃ©e sur le disque, la dÃ©finition interne sera utilisÃ©e.
 
-Remarque : Pour voir les changements des fichiers liés ou liés et incorporés, ouvrez le menu Flamingo nXt, cliquez sur Outils puis sur Effacer le caché de bitmap. 
+RemarqueÂ : Pour voir les changements des fichiers liÃ©s ou liÃ©s et incorporÃ©s, ouvrez le menu Flamingo nXt, cliquez sur Outils puis sur Effacer le cachÃ© de bitmap. 

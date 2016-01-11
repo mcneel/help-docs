@@ -1,5 +1,5 @@
 
 ## Enregistrer le contenu de rendu
-Les matériaux, les environnements et les textures sont enregistrés dans le modèle, mais le contenu de rendu peut également être enregistré dans des fichiers qui peuvent être partagés entre les modèles. Le contenu peut être déplacé entre différentes sessions de Rhino ou dans un dossier.
-Les palettes de couleur peuvent également être déplacées de la même façon.
-Le panneau ** [Bibliothèques](libraries.html) ** affiche le dossier de contenu par défaut. Utilisez cette fonction pour déposer un contenu dans le modèle ou le contenu d'un modèle dans un fichier externe.
+Les matÃ©riaux, les environnements et les textures sont enregistrÃ©s dans le modÃ¨le, mais le contenu de rendu peut Ã©galement Ãªtre enregistrÃ© dans des fichiers qui peuvent Ãªtre partagÃ©s entre les modÃ¨les. Le contenu peut Ãªtre dÃ©placÃ© entre diffÃ©rentes sessions de Rhino ou dans un dossier.
+Les palettes de couleur peuvent Ã©galement Ãªtre dÃ©placÃ©es de la mÃªme faÃ§on.
+Le panneau ** [BibliothÃ¨ques](libraries.html) ** affiche le dossier de contenu par dÃ©faut. Utilisez cette fonction pour dÃ©poser un contenu dans le modÃ¨le ou le contenu d'un modÃ¨le dans un fichier externe.

@@ -1,50 +1,50 @@
 ---
-title: Fenêtre de sélection de la couleur
+title: FenÃªtre de sÃ©lection de la couleur
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Le sélecteur de couleurs est utilisé dans de nombreux groupes et propriétés. Dans tous les cas il fonctionne de la même façon. 
+Le sÃ©lecteur de couleurs est utilisÃ© dans de nombreux groupes et propriÃ©tÃ©s. Dans tous les cas il fonctionne de la mÃªme faÃ§on. 
 
 
-Le sélecteur est constitué de deux parties :
+Le sÃ©lecteur est constituÃ© de deux partiesÂ :
 
 ![images/colorswatch-002.svg](images/colorswatch-002.svg)
 
 1. [Palette de couleurs](#swatch) - Cliquez sur la couleur de votre choix.
-1. [Menu d'options](#options) - Cliquez sur la flèche pour voir d'autres outils. 
+1. [Menu d'options](#options) - Cliquez sur la flÃ¨che pour voir d'autres outils. 
 
 ## Palette de couleurs ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
 {: #swatch}
-Cliquez sur la palette de couleurs pour sélectionner une couleur dans la boîte de dialogue Sélectionner une couleur.
+Cliquez sur la palette de couleurs pour sÃ©lectionner une couleur dans la boÃ®te de dialogue SÃ©lectionner une couleur.
 
-##### Sélection dans la liste des couleurs nommées
-* Sélectionnez une couleur dans la liste des noms à gauche. 
+##### SÃ©lection dans la liste des couleurs nommÃ©es
+* SÃ©lectionnez une couleur dans la liste des noms Ã  gauche. 
 
-##### Sélection avec le roue de couleurs
-1. Déplacez le marqueur autour de la roue pour définir la teinte.
-1. Déplacez le marqueur horizontalement dans le carré intérieur pour définir le niveau de saturation.
-1. Déplacez le marqueur verticalement dans le carré intérieur pour définir la valeur de la luminosité.
+##### SÃ©lection avec le roue de couleurs
+1. DÃ©placez le marqueur autour de la roue pour dÃ©finir la teinte.
+1. DÃ©placez le marqueur horizontalement dans le carrÃ© intÃ©rieur pour dÃ©finir le niveau de saturation.
+1. DÃ©placez le marqueur verticalement dans le carrÃ© intÃ©rieur pour dÃ©finir la valeur de la luminositÃ©.
 
-##### Définir les valeurs de teinte, de saturation et de valeur
-1. La teinte est mesurée en degrés (de 0 à 359), ce qui correspond plus ou moins aux teintes d'un arc en ciel définies autour d'un cercle en incréments de 60 degrés : rouge, orange, jaune, vert, bleu et violet.  Sélectionnez la teinte de base qui sera combinée par la saturation et la valeur afin de créer la couleur finale. 
-1. La saturation représente l'intensité de la couleur sur une échelle allant de 0 à 100. Une saturation égale à 0 crée une couleur gris neutre qui varie entre le noir et le blanc suivant la luminosité. La teinte n'a pas d'effet sur une couleur si la saturation est nulle. Une saturation égale à 100 donne la nuance la plus intense de la teinte.
-1. La valeur est la quantité de valeur de lumière (ou de blanc) perçue dans la couleur. Le composant de Valeur varie entre 0 et 100. La valeur est parfois aussi appelée luminance ou luminosité.
+##### DÃ©finir les valeurs de teinte, de saturation et de valeur
+1. La teinte est mesurÃ©e en degrÃ©s (de 0 Ã  359), ce qui correspond plus ou moins aux teintes d'un arc en ciel dÃ©finies autour d'un cercle en incrÃ©ments de 60 degrÃ©s : rouge, orange, jaune, vert, bleu et violet.  SÃ©lectionnez la teinte de base qui sera combinÃ©e par la saturation et la valeur afin de crÃ©er la couleur finale. 
+1. La saturation reprÃ©sente l'intensitÃ© de la couleur sur une Ã©chelle allant de 0 Ã  100. Une saturation Ã©gale Ã  0 crÃ©e une couleur gris neutre qui varie entre le noir et le blanc suivant la luminositÃ©. La teinte n'a pas d'effet sur une couleur si la saturation est nulle. Une saturation Ã©gale Ã  100 donne la nuance la plus intense de la teinte.
+1. La valeur est la quantitÃ© de valeur de lumiÃ¨re (ou de blanc) perÃ§ue dans la couleur. Le composant de Valeur varie entre 0 et 100. La valeur est parfois aussi appelÃ©e luminance ou luminositÃ©.
 
 #### Rouge, Vert, Bleu (RVB)
 {: #rgb}
-Cette méthode est utilisée par les ordinateurs pour projeter une couleur à l'écran. Chaque pixel est une combinaison de trois couleurs avec différentes intensités. Le rouge pur est entièrement rouge sans vert ni bleu. Pour le noir pur, les valeurs de rouge, de vert et de bleu sont égales à 0 et pour le blanc pur, ces trois valeurs sont égales à 255.
+Cette mÃ©thode est utilisÃ©e par les ordinateurs pour projeter une couleur Ã  l'Ã©cran. Chaque pixel est une combinaison de trois couleurs avec diffÃ©rentes intensitÃ©s. Le rouge pur est entiÃ¨rement rouge sans vert ni bleu. Pour le noir pur, les valeurs de rouge, de vert et de bleu sont Ã©gales Ã  0 et pour le blanc pur, ces trois valeurs sont Ã©gales Ã  255.
 
 ## Options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
 {: #options}
 
-#### Sélecteur de couleur
-Ouvre la boîte de dialogue de la [Palette de couleurs](#swatch) décrite ci-dessus. Le résultat est le même que de cliquer sur la palette de couleurs. 
+#### SÃ©lecteur de couleur
+Ouvre la boÃ®te de dialogue de la [Palette de couleurs](#swatch) dÃ©crite ci-dessus. Le rÃ©sultat est le mÃªme que de cliquer sur la palette de couleurs. 
 
 #### Pipette
-Permet de choisir la couleur directement à l'écran à l'aide d'une pipette.
+Permet de choisir la couleur directement Ã  l'Ã©cran Ã  l'aide d'une pipette.
 
 #### Copier
-Copie la couleur dans la palette de couleurs. La couleur pourra ensuite être collée dans un autre sélecteur de couleur en utilisant l'option Coller. 
+Copie la couleur dans la palette de couleurs. La couleur pourra ensuite Ãªtre collÃ©e dans un autre sÃ©lecteur de couleur en utilisant l'option Coller. 
 
 #### Coller
-Colle la couleur d'une palette vers une autre. Après avoir utilisé la commande Copier, utilisez l'option Coller. 
+Colle la couleur d'une palette vers une autre. AprÃ¨s avoir utilisÃ© la commande Copier, utilisez l'option Coller. 

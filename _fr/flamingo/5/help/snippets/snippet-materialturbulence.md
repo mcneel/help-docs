@@ -1,3 +1,3 @@
 
 #### Turbulence
-Donne une apparence sinueuse en pliant et en tordant les différents composants.
+Donne une apparence sinueuse en pliant et en tordant les diffÃ©rents composants.

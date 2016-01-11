@@ -1,9 +1,9 @@
 
 ### Remarque
 
-#### Actualiser la dÈfinition de l'image
-Lorsqu'un fichier image est modifiÈ avec un Èditeur tel que PhotoShop, vous devez actualiser la dÈfinition de l'image dans Flamingo nXt.
+#### Actualiser la d√©finition de l'image
+Lorsqu'un fichier image est modifi√© avec un √©diteur tel que PhotoShop, vous devez actualiser la d√©finition de l'image dans Flamingo nXt.
 
 #### Pour actualiser l'image
 
->Dans le menu **Flamingo nXt**, cliquez sur **Outils** puis sur **Effacer le cachÈ de bitmap**.
+>Dans le menu **Flamingo nXt**, cliquez sur **Outils** puis sur **Effacer le cach√© de bitmap**.

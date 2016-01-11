@@ -1,75 +1,75 @@
 ---
-title: Bibliothèques
+title: BibliothÃ¨ques
 ---
 
 # ![images/libraries.svg](images/libraries.svg) {{page.title}}
-La commande Bibliothèques ouvre le panneau Bibliothèques pour gérer les bibliothèques de matériaux, textures et environnements.
+La commande BibliothÃ¨ques ouvre le panneau BibliothÃ¨ques pour gÃ©rer les bibliothÃ¨ques de matÃ©riaux, textures et environnements.
 
-Le contenu de rendu peut également être enregistré dans des fichiers pour créer des bibliothèques externes qui peuvent être partagées entre les modèles. Le contenu peut également être déplacé entre différentes sessions de Rhino ou dans un dossier.
+Le contenu de rendu peut Ã©galement Ãªtre enregistrÃ© dans des fichiers pour crÃ©er des bibliothÃ¨ques externes qui peuvent Ãªtre partagÃ©es entre les modÃ¨les. Le contenu peut Ã©galement Ãªtre dÃ©placÃ© entre diffÃ©rentes sessions de Rhino ou dans un dossier.
 
-Les palettes de couleur peuvent également être déplacées de la même façon.
+Les palettes de couleur peuvent Ã©galement Ãªtre dÃ©placÃ©es de la mÃªme faÃ§on.
 
-Le panneau des bibliothèques affiche les dossiers de contenu que vous avez définis. Utilisez ce panneau pour déplacer du contenu dans le modèle ou pour enregistrer le contenu du document dans un dossier en dehors du modèle.
+Le panneau des bibliothÃ¨ques affiche les dossiers de contenu que vous avez dÃ©finis. Utilisez ce panneau pour dÃ©placer du contenu dans le modÃ¨le ou pour enregistrer le contenu du document dans un dossier en dehors du modÃ¨le.
 
-Les matériaux sont simplement des fichiers sur votre disque dur. Les dossiers de bibliothèques sont simplement des dossiers de Windows. Vous pouvez copier, coller et déplacer des dossiers comme vous le feriez avec les fichiers et dossier de Windows. 
+Les matÃ©riaux sont simplement des fichiers sur votre disque dur. Les dossiers de bibliothÃ¨ques sont simplement des dossiers de Windows. Vous pouvez copier, coller et dÃ©placer des dossiers comme vous le feriez avec les fichiers et dossier de Windows. 
 
-Utilisez la barre d'adresse en haut de l'onglet des bibliothèques pour rechercher un dossier sur votre ordinateur. 
+Utilisez la barre d'adresse en haut de l'onglet des bibliothÃ¨ques pour rechercher un dossier sur votre ordinateur. 
 
-Pour revenir rapidement au dossier des bibliothèques par défaut, utilisez l'icône en forme de clé en haut à droite. ![images/library_default.png](images/library_default.png)
+Pour revenir rapidement au dossier des bibliothÃ¨ques par dÃ©faut, utilisez l'icÃ´ne en forme de clÃ© en haut Ã  droite. ![images/library_default.png](images/library_default.png)
 
-#### Organisation des bibliothèques
+#### Organisation des bibliothÃ¨ques
 {: organizing_libraries}
-Les bibliothèques sont simplement des fichiers. Vous pouvez copier, coller et déplacer des dossiers. Utilisez l'explorateur de Windows pour modifier les dossiers et les documents. Pour choisir les dossiers définis par défaut dans l'onglet Bibliothèques, utilisez les [paramètres des bibliothèques](#settings) ![images/library_default.png](images/library_default.png).
+Les bibliothÃ¨ques sont simplement des fichiers. Vous pouvez copier, coller et dÃ©placer des dossiers. Utilisez l'explorateur de Windows pour modifier les dossiers et les documents. Pour choisir les dossiers dÃ©finis par dÃ©faut dans l'onglet BibliothÃ¨ques, utilisez les [paramÃ¨tres des bibliothÃ¨ques](#settings) ![images/library_default.png](images/library_default.png).
 
-## Bibliothèque de matériaux
+## BibliothÃ¨que de matÃ©riaux
 {: #material}
-Les matériaux des bibliothèques sont des fichiers sur le disque dur.  Une fois défini dans le modèle, chaque matériau est enregistré dans le modèle. Toute modification réalisée sur le matériau ne modifiera pas le matériau original sur le disque dur. 
+Les matÃ©riaux des bibliothÃ¨ques sont des fichiers sur le disque dur.  Une fois dÃ©fini dans le modÃ¨le, chaque matÃ©riau est enregistrÃ© dans le modÃ¨le. Toute modification rÃ©alisÃ©e sur le matÃ©riau ne modifiera pas le matÃ©riau original sur le disque dur. 
 
-Vous pouvez faire glisser des matériaux dans le modèle pour les assigner à des objets. Les matériaux peuvent être utilisés de différentes façons :
+Vous pouvez faire glisser des matÃ©riaux dans le modÃ¨le pour les assigner Ã  des objets. Les matÃ©riaux peuvent Ãªtre utilisÃ©s de diffÃ©rentes faÃ§onsÂ :
 
-#### Assignés aux calques
-Faites glisser un matériau directement sur le nom du calque dans le panneau Calques. Cette méthode est recommandée car tous les objets se trouvant sur le calque adopteront par défaut le matériau défini. Le matériau peut être modifié assez rapidement par la suite en déposant un autre matériau sur le calque. 
+#### AssignÃ©s aux calques
+Faites glisser un matÃ©riau directement sur le nom du calque dans le panneau Calques. Cette mÃ©thode est recommandÃ©e car tous les objets se trouvant sur le calque adopteront par dÃ©faut le matÃ©riau dÃ©fini. Le matÃ©riau peut Ãªtre modifiÃ© assez rapidement par la suite en dÃ©posant un autre matÃ©riau sur le calque. 
 
-#### Assignés à un objet
-Faites glisser un matériau directement sur un objet dans n'importe quelle fenêtre. L'assignation par calque sera remplacée par une assignation par objet. 
+#### AssignÃ©s Ã  un objet
+Faites glisser un matÃ©riau directement sur un objet dans n'importe quelle fenÃªtre. L'assignation par calque sera remplacÃ©e par une assignation par objet. 
 
-#### Assignés à un bloc
-Faites glisser un matériau sur un bloc afin que tous les objets ayant l'option Par parent définie adoptent ce matériau. Tout objet appartenant au bloc dont la source de matériau est définie par parent utilisera le matériau du bloc. 
+#### AssignÃ©s Ã  un bloc
+Faites glisser un matÃ©riau sur un bloc afin que tous les objets ayant l'option Par parent dÃ©finie adoptent ce matÃ©riau. Tout objet appartenant au bloc dont la source de matÃ©riau est dÃ©finie par parent utilisera le matÃ©riau du bloc. 
 
-## Bibliothèque de plantes
+## BibliothÃ¨que de plantes
 {: #plant}
-Dans le dossier par défaut des bibliothèques, se trouve un dossier Plantes.  Utilisez-le pour insérer des plantes dans le modèle.  Une fois définie dans le modèle, chaque plante est enregistrée dans le modèle.  Toute modification réalisée sur la plante ne modifiera pas la plante originale sur le disque dur. Déplacez des plantes dans une fenêtre pour les placer dans le modèle. Pour plus d'informations, voir le sujet [Aide sur les plantes](plants.html).
+Dans le dossier par dÃ©faut des bibliothÃ¨ques, se trouve un dossier Plantes.  Utilisez-le pour insÃ©rer des plantes dans le modÃ¨le.  Une fois dÃ©finie dans le modÃ¨le, chaque plante est enregistrÃ©e dans le modÃ¨le.  Toute modification rÃ©alisÃ©e sur la plante ne modifiera pas la plante originale sur le disque dur. DÃ©placez des plantes dans une fenÃªtre pour les placer dans le modÃ¨le. Pour plus d'informations, voir le sujet [Aide sur les plantes](plants.html).
 
-## Bibliothèque d'environnements
+## BibliothÃ¨que d'environnements
 {: #environment}
-Les environnements peuvent être enregistrés dans la bibliothèque.  Ceci permet de transférer les paramètre d'un environnement d'un modèle à un autre. Pour plus d'informations, consultez la section [Environnements](environment-tab.html).
+Les environnements peuvent Ãªtre enregistrÃ©s dans la bibliothÃ¨que.  Ceci permet de transfÃ©rer les paramÃ¨tre d'un environnement d'un modÃ¨le Ã  un autre. Pour plus d'informations, consultez la section [Environnements](environment-tab.html).
 
-## Paramètres de la bibliothèque
+## ParamÃ¨tres de la bibliothÃ¨que
 {: #settings}
-Utilisez ![images/options.png](images/options.png)les options des bibliothèques pour changer les valeurs par défaut affichées sous le ![images/library_default.png](images/library_default.png) menu.
+Utilisez ![images/options.png](images/options.png)les options des bibliothÃ¨ques pour changer les valeurs par dÃ©faut affichÃ©es sous le ![images/library_default.png](images/library_default.png) menu.
 
-##### Où puis-je trouver cette commande ?
-Les options des bibliothèques sont accessibles de trois façons différentes.
+##### OÃ¹ puis-je trouver cette commande ?
+Les options des bibliothÃ¨ques sont accessibles de trois faÃ§ons diffÃ©rentes.
 
- 1. Onglet Bibliothèques > ![images/library_default.png](images/library_default.png) en haut à droite du panneau Bibliothèques > Paramètres...
- 1. Menus > Outils > Options > Bibliothèques.
- 1. Menus > Panneaux > Bibliothèques. 
+ 1. Onglet BibliothÃ¨ques > ![images/library_default.png](images/library_default.png) en haut Ã  droite du panneau BibliothÃ¨ques > ParamÃ¨tres...
+ 1. Menus > Outils > Options > BibliothÃ¨ques.
+ 1. Menus > Panneaux > BibliothÃ¨ques. 
 
 
 ### Afficher le contenu de rendu
-Utilisez ceci pour montrer ou cacher la position du contenu de rendu par défaut. 
+Utilisez ceci pour montrer ou cacher la position du contenu de rendu par dÃ©faut. 
 
-#### Utiliser l'emplacement par défaut des bibliothèques (Mes documents)
-Par défaut, les [bibliothèques de contenu](libraries.html) sont dans un sous dossier du répertoire *Mes documents*.
+#### Utiliser l'emplacement par dÃ©faut des bibliothÃ¨ques (Mes documents)
+Par dÃ©faut, les [bibliothÃ¨ques de contenu](libraries.html) sont dans un sous dossier du rÃ©pertoire *Mes documents*.
 
 #### Personnaliser
-Définit un emplacement personnalisé pour les [bibliothèques](libraries.html).  Modifie l'emplacement par défaut des [bibliothèques de contenu](libraries.html) sur cet ordinateur.
+DÃ©finit un emplacement personnalisÃ© pour les [bibliothÃ¨ques](libraries.html).  Modifie l'emplacement par dÃ©faut des [bibliothÃ¨ques de contenu](libraries.html) sur cet ordinateur.
 
 ##### Bouton Parcourir
 Ouvrir le navigateur pour choisir le fichier.
 
 #### Afficher le dossier Documents
-Le dossier Documents indiqué sera affiché dans le menu du [panneau Bibliothèques](libraries.html).
+Le dossier Documents indiquÃ© sera affichÃ© dans le menu du [panneau BibliothÃ¨ques](libraries.html).
 
-#### Afficher les dossiers personnalisés
-Les dossiers personnalisés indiqués seront affichés dans le menu du [panneau Bibliothèques](libraries.html).
+#### Afficher les dossiers personnalisÃ©s
+Les dossiers personnalisÃ©s indiquÃ©s seront affichÃ©s dans le menu du [panneau BibliothÃ¨ques](libraries.html).

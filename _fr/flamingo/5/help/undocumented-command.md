@@ -1,8 +1,8 @@
 ---
-title: Fonction non documentée
+title: Fonction non documentÃ©e
 ---
 
 
-# Fonction non documentée
-Aucune documentation n'a été écrite à propos de cet élément.
+# Fonction non documentÃ©e
+Aucune documentation n'a Ã©tÃ© Ã©crite Ã  propos de cet Ã©lÃ©ment.
 Posez vos questions sur cette fonction sur ** [//news.flamingo3d.com/flamingo](flamingo) **.

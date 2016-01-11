@@ -1,87 +1,87 @@
 ---
-title: Matériaux algorithmiques
+title: MatÃ©riaux algorithmiques
 ---
 
 #  ![images/paint.svg](images/paint.svg) {{page.title}}
-L'arbre des algorithmes combine un ou plusieurs matériaux en utilisant des règles pour définir l'interaction entre eux. L'arbre affiche les composants utilisés pour créer ce matériau et vous permet d'ajouter des composants. Pour des matériaux simples, il n'y aura qu'un seul composant dans la liste : Base.
+L'arbre des algorithmes combine un ou plusieurs matÃ©riaux en utilisant des rÃ¨gles pour dÃ©finir l'interaction entre eux. L'arbre affiche les composants utilisÃ©s pour crÃ©er ce matÃ©riau et vous permet d'ajouter des composants. Pour des matÃ©riaux simples, il n'y aura qu'un seul composant dans la liste : Base.
 
-Chaque algorithme combine deux sous-matériaux en utilisant une méthode déterminée. Chaque sous-matériau peut à son tour être constitué d'un algorithme, en combinant deux sous-matériaux. De cette façon, des matériaux extrêmement élaborés peuvent être créés à partir de composants simples. Algorithmes de combinaison de matériaux :
+Chaque algorithme combine deux sous-matÃ©riaux en utilisant une mÃ©thode dÃ©terminÃ©e. Chaque sous-matÃ©riau peut Ã  son tour Ãªtre constituÃ© d'un algorithme, en combinant deux sous-matÃ©riaux. De cette faÃ§on, des matÃ©riaux extrÃªmement Ã©laborÃ©s peuvent Ãªtre crÃ©Ã©s Ã  partir de composants simples. Algorithmes de combinaison de matÃ©riaux :
 
 > [Base](#base)
-> [Mélange angulaire](#angular-blend)
-> [Mélange](#blend)
+> [MÃ©lange angulaire](#angular-blend)
+> [MÃ©lange](#blend)
 > [Marbre](#marble)
 > [Granit](#granite)
-> [Mosaïque](#tile)
+> [MosaÃ¯que](#tile)
 > [Bois](#wood)
 
 ##### Pour ajouter un algorithme
-1. Cliquez avec le bouton de droite dans la fenêtre des Algorithmes.
+1. Cliquez avec le bouton de droite dans la fenÃªtre des Algorithmes.
 1. Dans le menu, cliquez sur un type d'algorithme.
 
 ##### Pour supprimer un algorithme
- 1. Dans la fenêtre Algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
+ 1. Dans la fenÃªtre Algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
  2. Dans le menu, cliquez sur Supprimer.
 
 ## Base
 {: #base}
-Ce matériau est le matériau simple de base sans couche. Il s'agit de l'algorithme par défaut. 
+Ce matÃ©riau est le matÃ©riau simple de base sans couche. Il s'agit de l'algorithme par dÃ©faut. 
 
-## Mélange angulaire
+## MÃ©lange angulaire
 {: #angular-blend}
-De nombreux matériaux changent de couleur, de réflexion ou de transparence en fonction de l'angle selon lequel le matériau est regardé. L'algorithme de mélange angulaire mélange deux matériaux en fonction de l'angle de vue sur la surface de l'objet.
+De nombreux matÃ©riaux changent de couleur, de rÃ©flexion ou de transparence en fonction de l'angle selon lequel le matÃ©riau est regardÃ©. L'algorithme de mÃ©lange angulaire mÃ©lange deux matÃ©riaux en fonction de l'angle de vue sur la surface de l'objet.
 
 ![images/angularblendmaterials.png](images/angularblendmaterials.png)
-L'algorithme Mélange angulaire mélange deux composants différents pour créer des effets spéciaux. Les deux couches utilisées par l'algorithme sont la couche intérieure et extérieure.
+L'algorithme MÃ©lange angulaire mÃ©lange deux composants diffÃ©rents pour crÃ©er des effets spÃ©ciaux. Les deux couches utilisÃ©es par l'algorithme sont la couche intÃ©rieure et extÃ©rieure.
 
-#### Intérieur
-De 0 degré à partir du point de vue jusqu'à l'angle de départ, le composant intérieur se verra entièrement. Vous pouvez considérer cet élément comme le matériau de base.
+#### IntÃ©rieur
+De 0 degrÃ© Ã  partir du point de vue jusqu'Ã  l'angle de dÃ©part, le composant intÃ©rieur se verra entiÃ¨rement. Vous pouvez considÃ©rer cet Ã©lÃ©ment comme le matÃ©riau de base.
 
-#### Extérieur
-À partir de l'angle final jusqu'à 90 degrés, le matériau extérieur sera le seul visible. Vous pouvez considérer cet élément comme le revêtement.
+#### ExtÃ©rieur
+Ã€ partir de l'angle final jusqu'Ã  90 degrÃ©s, le matÃ©riau extÃ©rieur sera le seul visible. Vous pouvez considÃ©rer cet Ã©lÃ©ment comme le revÃªtement.
 
-#### Angle de départ
-L'angle avec le point de vue à partir duquel le composant extérieur commence.
+#### Angle de dÃ©part
+L'angle avec le point de vue Ã  partir duquel le composant extÃ©rieur commence.
 
 #### Angle final
-L'angle avec le point de vue à partir duquel le composant extérieur s'arrête.
-Entre l'angle de départ et l'angle final, les composants intérieur et extérieur se mélangent.
+L'angle avec le point de vue Ã  partir duquel le composant extÃ©rieur s'arrÃªte.
+Entre l'angle de dÃ©part et l'angle final, les composants intÃ©rieur et extÃ©rieur se mÃ©langent.
 
-Dans l'illustration ci-dessous, l'angle de départ![images/01.png](images/01.png) est égal à 30 degrés (ce qui, dans le rendu, se traduit par le cercle vert à droite) et l'angle final![images/02.png](images/02.png) est égal à 60 degrés (ce qui, dans le rendu, se traduit par le cercle rouge).
+Dans l'illustration ci-dessous, l'angle de dÃ©part![images/01.png](images/01.png) est Ã©gal Ã  30 degrÃ©s (ce qui, dans le rendu, se traduit par le cercle vert Ã  droite) et l'angle final![images/02.png](images/02.png) est Ã©gal Ã  60 degrÃ©s (ce qui, dans le rendu, se traduit par le cercle rouge).
 
-L'image de droite montre un matériau intérieur blanc et un matériau extérieur noir.
+L'image de droite montre un matÃ©riau intÃ©rieur blanc et un matÃ©riau extÃ©rieur noir.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
-* Entre 0 et 30 degrés à partir du point de vue, vous voyez le blanc.
-* Entre 30 et 60 degrés à partir du point de vue, vous voyez un dégradé passant du blanc au noir.
-* Entre 60 et 90 degrés à partir du point de vue, vous voyez noir.
+* Entre 0 et 30 degrÃ©s Ã  partir du point de vue, vous voyez le blanc.
+* Entre 30 et 60 degrÃ©s Ã  partir du point de vue, vous voyez un dÃ©gradÃ© passant du blanc au noir.
+* Entre 60 et 90 degrÃ©s Ã  partir du point de vue, vous voyez noir.
 
-## Mélange
+## MÃ©lange
 {: #blend}
-L'algorithme de mélange combine deux composants de base et permet de définir les proportions de chacun. Tous les bois inclus dans la bibliothèque de Flamingo utilisent un algorithme de mélange pour donner une finition brillante et foncée au bois.
+L'algorithme de mÃ©lange combine deux composants de base et permet de dÃ©finir les proportions de chacun. Tous les bois inclus dans la bibliothÃ¨que de Flamingo utilisent un algorithme de mÃ©lange pour donner une finition brillante et foncÃ©e au bois.
 ![images/blend-001.png](images/blend-001.png)
-Les mélanges permettent de changer entièrement la définition d'un matériau en ajoutant une couleur à un motif de base.
+Les mÃ©langes permettent de changer entiÃ¨rement la dÃ©finition d'un matÃ©riau en ajoutant une couleur Ã  un motif de base.
 
-#### Mélange
-Permet de changer le pourcentage de chaque matériau utilisé pour le matériau final.  Par exemple, le matériau ci-dessous montre un mélange entre un matériau rayé et une couleur verte unie. Pour l'image de gauche, le glisseur est situé vers la gauche, ce qui donne plus d'importance au matériau rayé et réduit la force du matériau vert.  Pour l'image du milieu, le glisseur est situé au milieu et les deux matériaux sont mélangés à parts égales.  Pour l'image de droite, le glisseur est situé vers la droite, ce qui donne moins d'importance au matériau rayé et renforce le matériau vert.
+#### MÃ©lange
+Permet de changer le pourcentage de chaque matÃ©riau utilisÃ© pour le matÃ©riau final.  Par exemple, le matÃ©riau ci-dessous montre un mÃ©lange entre un matÃ©riau rayÃ© et une couleur verte unie. Pour l'image de gauche, le glisseur est situÃ© vers la gauche, ce qui donne plus d'importance au matÃ©riau rayÃ© et rÃ©duit la force du matÃ©riau vert.  Pour l'image du milieu, le glisseur est situÃ© au milieu et les deux matÃ©riaux sont mÃ©langÃ©s Ã  parts Ã©gales.  Pour l'image de droite, le glisseur est situÃ© vers la droite, ce qui donne moins d'importance au matÃ©riau rayÃ© et renforce le matÃ©riau vert.
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### Utiliser une image
-Une image peut être utilisée pour contrôler l'interaction entre les deux matériaux. Lorsqu'une image est utilisée, les valeurs d'échelle de gris des pixels définissent le mélange entre les deux composants. Utilisez une image en échelle de gris pour créer des nuances intermédiaires entre le premier et le deuxième composant. Le premier composant sera placé sur les parties noires de l'image et le deuxième composant sera placé sur les parties blanches.
+Une image peut Ãªtre utilisÃ©e pour contrÃ´ler l'interaction entre les deux matÃ©riaux. Lorsqu'une image est utilisÃ©e, les valeurs d'Ã©chelle de gris des pixels dÃ©finissent le mÃ©lange entre les deux composants. Utilisez une image en Ã©chelle de gris pour crÃ©er des nuances intermÃ©diaires entre le premier et le deuxiÃ¨me composant. Le premier composant sera placÃ© sur les parties noires de l'image et le deuxiÃ¨me composant sera placÃ© sur les parties blanches.
 
-Dans l'image, les mêmes matériaux sont utilisés pour le premier et le deuxième composants, mais le mélange est contrôlé par trois images différentes.
+Dans l'image, les mÃªmes matÃ©riaux sont utilisÃ©s pour le premier et le deuxiÃ¨me composants, mais le mÃ©lange est contrÃ´lÃ© par trois images diffÃ©rentes.
 ![images/blendmask.png](images/blendmask.png)
-La résolution de l'image du masque joue sur la qualité du matériau. Des images de haute résolution vous permettront de regarder le matériau de plus près sans perdre de qualité mais elles utiliseront plus de mémoire.
+La rÃ©solution de l'image du masque joue sur la qualitÃ© du matÃ©riau. Des images de haute rÃ©solution vous permettront de regarder le matÃ©riau de plus prÃ¨s sans perdre de qualitÃ© mais elles utiliseront plus de mÃ©moire.
 
 #### Utiliser le canal alpha
-Si l'image possède un canal alpha, il peut être utilisé au lieu de l'échelle de gris de l'image pour déterminer le mélange des couleurs.
+Si l'image possÃ¨de un canal alpha, il peut Ãªtre utilisÃ© au lieu de l'Ã©chelle de gris de l'image pour dÃ©terminer le mÃ©lange des couleurs.
 
 #### Inverser
-Le premier composant sera placé sur les parties blanches de l'image et le deuxième sur les parties noires.
+Le premier composant sera placÃ© sur les parties blanches de l'image et le deuxiÃ¨me sur les parties noires.
 
-#### Mosaïque
-L'échelle du matériau lors du rendu ne dépend pas de la résolution de l'image. Afin de définir correctement l'échelle du matériau, vous devez définir la taille, en unités réelles, de la zone représentée par une copie de l'image. Si la hauteur de l'image représente six carreaux de 4 unités et la longueur représente douze carreaux de 4 unités, l'échelle est de 48 unités dans la direction des x et de 24 unités dans la direction des y. L'image est alors ajustée à la taille appropriée pour le motif.
+#### MosaÃ¯que
+L'Ã©chelle du matÃ©riau lors du rendu ne dÃ©pend pas de la rÃ©solution de l'image. Afin de dÃ©finir correctement l'Ã©chelle du matÃ©riau, vous devez dÃ©finir la taille, en unitÃ©s rÃ©elles, de la zone reprÃ©sentÃ©e par une copie de l'image. Si la hauteur de l'image reprÃ©sente six carreaux de 4 unitÃ©s et la longueur reprÃ©sente douze carreaux de 4 unitÃ©s, l'Ã©chelle est de 48 unitÃ©s dans la direction des x et de 24 unitÃ©s dans la direction des y. L'image est alors ajustÃ©e Ã  la taille appropriÃ©e pour le motif.
 
 #### Largeur
 La largeur en pixels d'une seule copie de l'image.
@@ -91,54 +91,54 @@ La hauteur en pixels d'une seule copie de l'image.
 
 ## Granit
 {: #granite}
-Crée un matériau 3D dont le composant de base est incrusté de tâches d'un deuxième matériau. L'algorithme de granit combine un composant de point (spot) réparti de façon aléatoire dans un composant de base. L'algorithme du granit définit comment les composants de base et de point se combinent. Les algorithmes de granit peuvent être utilisés pour une grande variété de matériaux tels que la rouille, le plastique brillant et autres matériaux mouchetés de façon aléatoire.
+CrÃ©e un matÃ©riau 3D dont le composant de base est incrustÃ© de tÃ¢ches d'un deuxiÃ¨me matÃ©riau. L'algorithme de granit combine un composant de point (spot) rÃ©parti de faÃ§on alÃ©atoire dans un composant de base. L'algorithme du granit dÃ©finit comment les composants de base et de point se combinent. Les algorithmes de granit peuvent Ãªtre utilisÃ©s pour une grande variÃ©tÃ© de matÃ©riaux tels que la rouille, le plastique brillant et autres matÃ©riaux mouchetÃ©s de faÃ§on alÃ©atoire.
 ![images/granitematerials.png](images/granitematerials.png)
 
 #### Base/Point
-Les composants de Base et de Point sont deux matériaux. Leurs propriétés sont définies comme pour tout autre matériau.
+Les composants de Base et de Point sont deux matÃ©riaux. Leurs propriÃ©tÃ©s sont dÃ©finies comme pour tout autre matÃ©riau.
 ![images/granitescale.png](images/granitescale.png)
 {% include_relative snippets/snippet-materialscaleandlock.md %}
 
-#### Densité
-Une fraction du motif dans son ensemble. La taille relative des points est proportionnelle à cette valeur.
+#### DensitÃ©
+Une fraction du motif dans son ensemble. La taille relative des points est proportionnelle Ã  cette valeur.
 ![images/granitedensity.png](images/granitedensity.png)
 {% include_relative snippets/snippet-materialblend.md %}
 ![images/graniteblend.png](images/graniteblend.png)
 
 ## Marbre
 {: #marble}
-Crée des tranches alternant les composants de base et de nervure. L'algorithme du marbre définit comment les composants de base et de veine se combinent. Les  dalles sont infiniment larges et l'orientation de l'objet joue sur la façon dont les dalles sont orientées par rapport à l'objet.
+CrÃ©e des tranches alternant les composants de base et de nervure. L'algorithme du marbre dÃ©finit comment les composants de base et de veine se combinent. Les  dalles sont infiniment larges et l'orientation de l'objet joue sur la faÃ§on dont les dalles sont orientÃ©es par rapport Ã  l'objet.
 
 ![images/marbled.png](images/marbled.png)
 
-Le [placage de texture](properties-object.html#mapping) des objets contrôle l'orientation du matériau sur l'objet.
+Le [placage de texture](properties-object.html#mapping) des objets contrÃ´le l'orientationÂ du matÃ©riau sur l'objet.
 ![images/materialunmapped.png](images/materialunmapped.png)
 *Pas de placage de texture (gauche). Avec placage de texture (droite).*
 
 #### Base/Veine
-Les composants de Base et de Veine sont deux matériaux. Leurs propriétés sont définies comme pour tout autre matériau.
+Les composants de Base et de Veine sont deux matÃ©riaux. Leurs propriÃ©tÃ©s sont dÃ©finies comme pour tout autre matÃ©riau.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
 #### Largeur de la veine
-Permet de changer la taille relative des tranches les unes par rapport aux autres. La valeur donnée à la largeur de veine est une fraction de la distance entre une rayure de la base et la suivante. Les valeurs peuvent aller de 0 (zéro) pour indiquer qu'il n'y a pas de composant de veine à 1 pour aucun composant de base.
+Permet de changer la taille relative des tranches les unes par rapport aux autres. La valeur donnÃ©e Ã  la largeur de veine est une fraction de la distance entre une rayure de la base et la suivante. Les valeurs peuvent aller de 0 (zÃ©ro) pour indiquer qu'il n'y a pas de composant de veine Ã  1 pour aucun composant de base.
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-*Revêtement (gauche) ; normal (droite).*
+*RevÃªtement (gauche) ; normal (droite).*
 
-## Mosaïque
+## MosaÃ¯que
 {: #tile}
-La mosaïque est un matériau 2D. Le [placage de texture](properties-object.html#mapping) des objets contrôle l'orientation du matériau sur l'objet. L'algorithme de mosaïque est constitué d'un composant de base et d'un composant de jointure. Chacun des composants peut inclure d'autres matériaux.
+La mosaÃ¯que est un matÃ©riau 2D. Le [placage de texture](properties-object.html#mapping) des objets contrÃ´le l'orientationÂ du matÃ©riau sur l'objet. L'algorithme de mosaÃ¯que est constituÃ© d'un composant de base et d'un composant de jointure. Chacun des composants peut inclure d'autres matÃ©riaux.
 ![images/tile materials.png](images/tile materials.png)
-Utilisez une taille différente dans chaque direction afin de créer des effets spéciaux. Par exemple, utilisez une mosaïque très longue dans une direction pour créer des matériaux de pavement.
+Utilisez une taille diffÃ©rente dans chaque direction afin de crÃ©er des effets spÃ©ciaux. Par exemple, utilisez une mosaÃ¯que trÃ¨s longue dans une direction pour crÃ©er des matÃ©riaux de pavement.
 
-#### Mosaïque
-Définit la taille générale de la mosaïque. La largeur et la hauteur peuvent être définies indépendamment l'une de l'autre.
+#### MosaÃ¯que
+DÃ©finit la taille gÃ©nÃ©rale de la mosaÃ¯que. La largeur et la hauteur peuvent Ãªtre dÃ©finies indÃ©pendamment l'une de l'autre.
 ![images/tilescale.png](images/tilescale.png)
 
 #### Largeur/Hauteur
-Définit la largeur et la hauteur des carreaux.
+DÃ©finit la largeurÂ et la hauteur des carreaux.
 {% include_relative snippets/snippet-lock-widthheight.md %}
 
 #### Joint
@@ -146,41 +146,41 @@ Change la taille de la jointure.
 ![images/tilejointsize.png](images/tilejointsize.png)
 
 #### Jointure horizontale / Jointure verticale
-Définit la largeur et la hauteur de la jointure.
+DÃ©finit la largeur et la hauteur de la jointure.
 
 #### Verrouiller
 Conserve le rapport entre la taille des jointures horizontale et verticale.
 
-#### Décalage
-Permet d'obtenir un décalage horizontal relatif. Par exemple, utilisez un décalage de .5 pour créer une structure standard de panneresse. Ceci permet de modéliser des matériaux tels que des mosaïques de marbre, sans avoir l'impression que tout le sol a été taillé dans un seul bloc de marbre.
+#### DÃ©calage
+Permet d'obtenir un dÃ©calage horizontal relatif. Par exemple, utilisez un dÃ©calage de .5 pour crÃ©er une structure standard de panneresse. Ceci permet de modÃ©liser des matÃ©riaux tels que des mosaÃ¯ques de marbre, sans avoir l'impression que tout le sol a Ã©tÃ© taillÃ© dans un seul bloc de marbre.
 ![images/tileoffset.png](images/tileoffset.png)
 
 #### Variation des carreaux
-Ajoute un effet aléatoire à la couleur du matériau pour chaque carreau. Cette option permet de modéliser des matériaux tels que des briques non uniformes.
+Ajoute un effet alÃ©atoire Ã  la couleur du matÃ©riau pour chaque carreau. Cette option permet de modÃ©liser des matÃ©riaux tels que des briques non uniformes.
 
 #### R/V/B
-Modifie les composantes rouge, verte et bleue de la couleur.  Le matériau de base de chaque carreau variera alors légèrement de façon aléatoire.
+Modifie les composantes rouge, verte et bleue de la couleur.  Le matÃ©riau de base de chaque carreau variera alors lÃ©gÃ¨rement de faÃ§on alÃ©atoire.
 ![images/tilevarycolor.png](images/tilevarycolor.png)
 
 #### X/Y/Z
-Décale le matériau par rapport à l'origine du repère général pour chaque carreau de façon aléatoire. Le décalage peut être intéressant si une jointure qui marque le début du matériau est mal placée.
+DÃ©cale le matÃ©riau par rapport Ã  l'origine du repÃ¨re gÃ©nÃ©ral pour chaque carreau de faÃ§on alÃ©atoire. Le dÃ©calage peut Ãªtre intÃ©ressant si une jointure qui marque le dÃ©but du matÃ©riau est mal placÃ©e.
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
 ## Bois
 {: #wood}
-Le bois est constitué de cylindres concentriques avec une alternance des composants de base et d'anneau. L'algorithme du bois définit comment les composants de base et d'anneau se combinent.
+Le bois est constituÃ© de cylindres concentriques avec une alternance des composants de base et d'anneau. L'algorithme du bois dÃ©finit comment les composants de base et d'anneau se combinent.
 
-Utiliser cette méthode pour créer des matériaux imitant le bois si les objets ne sont pas vus de près. Si vous avez besoin d'un bois plus détaillé, utilisez un [matériau avec texture](material-type-simple.html#textured) pour le définir. Si votre point de vue n'est pas trop proche du bois, une couleur unie peut être utilisée pour remplacer le bois sans que l'image ne perde de qualité. Le rendu sera alors plus rapide. Un autre avantage du bois est que le grain est correctement dessiné, quel que soit l'angle sous lequel il est vu. L'extrémité du grain se verra sur les extrémités et le grain parallèle sur les côtés de l'objet.
+Utiliser cette mÃ©thode pour crÃ©er des matÃ©riaux imitant le bois si les objets ne sont pas vus de prÃ¨s. Si vous avez besoin d'un bois plus dÃ©taillÃ©, utilisez un [matÃ©riau avec texture](material-type-simple.html#textured) pour le dÃ©finir. Si votre point de vue n'est pas trop proche du bois, une couleur unie peut Ãªtre utilisÃ©e pour remplacer le bois sans que l'image ne perde de qualitÃ©. Le rendu sera alors plus rapide. Un autre avantage du bois est que le grain est correctement dessinÃ©, quel que soit l'angle sous lequel il est vu. L'extrÃ©mitÃ© du grain se verra sur les extrÃ©mitÃ©s et le grain parallÃ¨le sur les cÃ´tÃ©s de l'objet.
 ![images/woodmaterials.png](images/woodmaterials.png)
 
 #### Base/Anneau
-Les composants de Base et d'Anneau sont deux matériaux. Leurs propriétés sont définies comme pour tout autre matériau.
+Les composants de Base et d'Anneau sont deux matÃ©riaux. Leurs propriÃ©tÃ©s sont dÃ©finies comme pour tout autre matÃ©riau.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
 
 #### Largeur des anneaux
-Une fraction de la distance entre une rayure de la base et la suivante. Les valeurs peuvent aller de 0 (zéro) pour indiquer qu'il n'y a pas de composant d'anneau à 1 pour aucun composant de base.
+Une fraction de la distance entre une rayure de la base et la suivante. Les valeurs peuvent aller de 0 (zÃ©ro) pour indiquer qu'il n'y a pas de composant d'anneau Ã  1 pour aucun composant de base.
 ![images/woodringwidth.png](images/woodringwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/woodveneer.png](images/woodveneer.png)
-Revêtement (gauche) ; normal (droite)
+RevÃªtement (gauche) ; normal (droite)

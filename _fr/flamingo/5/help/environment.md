@@ -3,241 +3,241 @@ title: Environnement de Flamingo
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
-Rhino possède de nombreux [types d'environnements](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/environmenteditor.htm). Cette rubrique traite de l'environnement de Flamingo.
+Rhino possÃ¨de de nombreux [types d'environnements](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/environmenteditor.htm). Cette rubrique traite de l'environnement de Flamingo.
 
-L'environnement agit sur la partie visible de l'arrière-plan et des réflexions.  Pour des effets agissant sur l'éclairage de la scène, consultez la rubrique de l'aide sur le [Ciel](sun-and-sky-tabs.html).
+L'environnement agit sur la partie visible de l'arriÃ¨re-plan et des rÃ©flexions.  Pour des effets agissant sur l'Ã©clairage de la scÃ¨ne, consultez la rubrique de l'aide sur le [Ciel](sun-and-sky-tabs.html).
 
-Flamingo possède un environnement spécial appelé **Environnement par défaut de Flamingo**.  Cet environnement est synchronisé avec les [Préréglages d'éclairage](lighting-tab.html). En utilisant les [Préréglages d'éclairage](lighting-tab.html), l'éclairage et l'environnement seront définis avec les valeurs par défaut adaptées à la scène.
+Flamingo possÃ¨de un environnement spÃ©cial appelÃ© **Environnement par dÃ©faut de Flamingo**.  Cet environnement est synchronisÃ© avec les [PrÃ©rÃ©glages d'Ã©clairage](lighting-tab.html). En utilisant les [PrÃ©rÃ©glages d'Ã©clairage](lighting-tab.html), l'Ã©clairage et l'environnement seront dÃ©finis avec les valeurs par dÃ©faut adaptÃ©es Ã  la scÃ¨ne.
 
-Les propriétés de l'environnement de Flamingo sont divisées en plusieurs groupes :
+Les propriÃ©tÃ©s de l'environnement de Flamingo sont divisÃ©es en plusieurs groupesÂ :
 
 > [Nom](#name)
 > [Environnement de Flamingo](#environment)
-> [Couleur de l'arrière-plan](#color-backgrounds)
-> [Arrière-plan avancé](#advanced-background-reflected-sky)
+> [Couleur de l'arriÃ¨re-plan](#color-backgrounds)
+> [ArriÃ¨re-plan avancÃ©](#advanced-background-reflected-sky)
 
 
 ## Nom de l'environnement
 {: #name}
-Cette section indique le nom de l'environnement dans le modèle de Rhino. Les environnements sont enregistrés dans le modèle de Rhino. Ce qui signifie qu'un environnement portant le même nom dans la bibliothèque ou un autre modèle ne sera pas affecté par les modifications réalisées sur l'environnement de ce modèle. Pour utiliser un environnement dans un autre modèle il doit toit d'abord être exporté vers la [bibliothèque](libraries.html). Le nom de l'environnement servira également à définir le nom du fichier exporté. 
+Cette section indique le nom de l'environnement dans le modÃ¨le de Rhino. Les environnements sont enregistrÃ©s dans le modÃ¨le de Rhino. Ce qui signifie qu'un environnement portant le mÃªme nom dans la bibliothÃ¨que ou un autre modÃ¨le ne sera pas affectÃ© par les modifications rÃ©alisÃ©es sur l'environnement de ce modÃ¨le. Pour utiliser un environnement dans un autre modÃ¨le il doit toit d'abord Ãªtre exportÃ© vers la [bibliothÃ¨que](libraries.html). Le nom de l'environnement servira Ã©galement Ã  dÃ©finir le nom du fichier exportÃ©. 
 
 ## Environnement de Flamingo
 {: #environment}
-L'environnement a trois fonctions dans un rendu :
+L'environnement a trois fonctions dans un renduÂ :
 
->Arrière-plan visible
->[Arrière-plan réfléchissant](#advanced-background-reflected-sky)
->[Arrière-plan réfringent](#advanced-background-reflected-sky)
+>ArriÃ¨re-plan visible
+>[ArriÃ¨re-plan rÃ©flÃ©chissant](#advanced-background-reflected-sky)
+>[ArriÃ¨re-plan rÃ©fringent](#advanced-background-reflected-sky)
 
-L'arrière-plan visible est la couleur de base dans l'arrière-plan de la scène. Il est défini dans le panneaux des propriétés générales. Les arrière-plans [réfléchissant](#advanced-background-reflected-sky) et [réfringent](#advanced-background-refracted-sky) peuvent différer et sont disponibles dans la section Arrière-plan avancé.
+L'arriÃ¨re-plan visible est la couleur de base dans l'arriÃ¨re-plan de la scÃ¨ne. Il est dÃ©fini dans le panneaux des propriÃ©tÃ©s gÃ©nÃ©rales. Les arriÃ¨re-plans [rÃ©flÃ©chissant](#advanced-background-reflected-sky) et [rÃ©fringent](#advanced-background-refracted-sky) peuvent diffÃ©rer et sont disponibles dans la section ArriÃ¨re-plan avancÃ©.
 
-#### Intensité
+#### IntensitÃ©
 {: #background-intensity}
-Modifie la clarté relative de l'arrière-plan. La valeur de l'intensité est utilisée pour multiplier les couleurs de l'arrière-plan afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 255 par canal. L'intensité multipliera ces valeurs.  Ce paramètre devient important si l'arrière-plan est très sombre par rapport au modèle rendu. 
+Modifie la clartÃ© relative de l'arriÃ¨re-plan. La valeur de l'intensitÃ© est utilisÃ©e pour multiplier les couleurs de l'arriÃ¨re-plan afin d'obtenir une valeur d'Ã©clairage.  Les couleurs peuvent aller de 0 Ã  255 par canal. L'intensitÃ© multipliera ces valeurs.  Ce paramÃ¨tre devient important si l'arriÃ¨re-plan est trÃ¨s sombre par rapport au modÃ¨le rendu. 
 
-#### Type d'arrière-plan
+#### Type d'arriÃ¨re-plan
 {: #background-type}
-Définit le schéma de couleur qui remplira l'arrière-plan de l'image rendue. Il existe différents types d'arrière-plans :
+DÃ©finit le schÃ©ma de couleur qui remplira l'arriÃ¨re-plan de l'image rendue. Il existe diffÃ©rents types d'arriÃ¨re-plans :
 
 > [Ciel](#environment-sky)
-> [Uni et dégradé de couleurs](#color-backgrounds)
+> [Uni et dÃ©gradÃ© de couleurs](#color-backgrounds)
 > [Image](#environment-image)
 > [Images HDR et HDR planes](#hdr-background)
 
-## Ciel en arrière-plan
+## Ciel en arriÃ¨re-plan
 {: #environment-sky}
-L'environnement Ciel utilise les paramètres du soleil et du ciel définis dans l'onglet [Éclairage(lighting-tab.html) .  Il s'agit du paramètre par défaut pour les rendus utilisant le ciel. 
+L'environnement Ciel utilise les paramÃ¨tres du soleil et du ciel dÃ©finis dans l'onglet [Ã‰clairage(lighting-tab.html) .  Il s'agit du paramÃ¨tre par dÃ©faut pour les rendus utilisant le ciel. 
 
 ![images/background-sky-001.png](images/background-sky-001.png)
 *Automatique (gauche) et image HDR et soleil (droite).*
 
-## Couleur en arrière-plan
+## Couleur en arriÃ¨re-plan
 {: #color-backgrounds}
-Les paramètres de couleur pour l'arrière-plan sont toujours présents. Une couleur est toujours définie pour l'arrière-plan même si elle est entièrement masquée par une image, une image HDR ou le ciel.
+Les paramÃ¨tres de couleur pour l'arriÃ¨re-plan sont toujours prÃ©sents. Une couleur est toujours dÃ©finie pour l'arriÃ¨re-plan mÃªme si elle est entiÃ¨rement masquÃ©e par une image, une image HDR ou le ciel.
 
 ### Couleur unie
 {: #solid-color}
-Un arrière-plan de couleur unie est composé d'une seule couleur qui remplit tout l'arrière-plan.
+Un arriÃ¨re-plan de couleur unie est composÃ© d'une seule couleur qui remplit tout l'arriÃ¨re-plan.
 
 ![images/background-color-001.png](images/background-color-001.png)
-*Arrière-plan de couleur unie.*
-Voir [Contrôle de couleur](#enviroment-sky-color-controls) ci-dessous pour plus d'informations sur la modification de la couleur unie.
+*ArriÃ¨re-plan de couleur unie.*
+Voir [ContrÃ´le de couleur](#enviroment-sky-color-controls) ci-dessous pour plus d'informations sur la modification de la couleur unie.
 
-#### Dégradé de deux couleurs
+#### DÃ©gradÃ© de deux couleurs
 {: #two-color-gradient}
-Les arrière-plans avec un dégradé de deux ou trois couleurs ne sont appliqués que dans les vues en perspective. Les arrière-plans avec un dégradé de deux couleurs interpolent la couleur de l'arrière-plan entre deux couleurs sélectionnées.
+Les arriÃ¨re-plans avec un dÃ©gradÃ© de deux ou trois couleurs ne sont appliquÃ©s que dans les vues en perspective. Les arriÃ¨re-plans avec un dÃ©gradÃ© de deux couleurs interpolent la couleur de l'arriÃ¨re-plan entre deux couleurs sÃ©lectionnÃ©es.
 
 ![images/background-color-002.png](images/background-color-002.png)
-*Arrière-plan avec un dégradé de deux couleurs : bleu et jaune.*
-Voir [Contrôles de couleur](#enviroment-sky-color-controls) ci-dessous pour plus d'informations sur la modification d'un dégradé de deux couleurs.
+*ArriÃ¨re-plan avec un dÃ©gradÃ© de deux couleurs : bleu et jaune.*
+Voir [ContrÃ´les de couleur](#enviroment-sky-color-controls) ci-dessous pour plus d'informations sur la modification d'un dÃ©gradÃ© de deux couleurs.
 
-#### Dégradé de trois couleurs
+#### DÃ©gradÃ© de trois couleurs
 {: #three-color-gradient}
-Les arrière-plans avec un dégradé de trois couleurs interpolent la couleur de l'arrière-plan entre trois couleurs sélectionnées.
+Les arriÃ¨re-plans avec un dÃ©gradÃ© de trois couleurs interpolent la couleur de l'arriÃ¨re-plan entre trois couleurs sÃ©lectionnÃ©es.
 ![images/background-color-003.png](images/background-color-003.png)
-*Arrière-plan avec un dégradé de trois couleurs : bleu, blanc et jaune.*
-Voir [Contrôles de couleur](#enviroment-sky-color-controls) ci-dessous pour plus d'informations sur la modification d'un dégradé de trois couleurs.
+*ArriÃ¨re-plan avec un dÃ©gradÃ© de trois couleurs : bleu, blanc et jaune.*
+Voir [ContrÃ´les de couleur](#enviroment-sky-color-controls) ci-dessous pour plus d'informations sur la modification d'un dÃ©gradÃ© de trois couleurs.
 
-### Contrôles de couleur
+### ContrÃ´les de couleur
 {: #enviroment-sky-color-controls}
-Le nombre de contrôles disponibles peut varier en fonction du type d'arrière-plan actuellement sélectionné. Les arrière-plans avec un dégradé auront jusqu'à trois sélecteurs de couleur qui peuvent comprendre une couleur supérieure, médiane et inférieure.
+Le nombre de contrÃ´les disponibles peut varier en fonction du type d'arriÃ¨re-plan actuellement sÃ©lectionnÃ©. Les arriÃ¨re-plans avec un dÃ©gradÃ© auront jusqu'Ã  trois sÃ©lecteurs de couleur qui peuvent comprendre une couleur supÃ©rieure, mÃ©diane et infÃ©rieure.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### Inverser les couleurs
-Utilisez ce bouton pour inverser la couleur du dégradé entre le haut et le bas.
+Utilisez ce bouton pour inverser la couleur du dÃ©gradÃ© entre le haut et le bas.
 
-#### Contrôle de placage du dégradé
+#### ContrÃ´le de placage du dÃ©gradÃ©
 {: #gradient-mapping}
-Les couleurs d'un arrière-plan avec dégradé de couleurs doivent être plaquées sur la sphère de l'environnement. Utilisez un système de placage de dégradé pour ce faire.  Les contrôle de placage du dégradé ne seront activés que lorsqu'un dégradé de deux ou trois couleurs est sélectionné. Les dégradés ne peuvent être plaqués que dans les vues en perspective.
+Les couleurs d'un arriÃ¨re-plan avec dÃ©gradÃ© de couleurs doivent Ãªtre plaquÃ©es sur la sphÃ¨re de l'environnement. Utilisez un systÃ¨me de placage de dÃ©gradÃ© pour ce faire.  Les contrÃ´le de placage du dÃ©gradÃ© ne seront activÃ©s que lorsqu'un dÃ©gradÃ© de deux ou trois couleurs est sÃ©lectionnÃ©. Les dÃ©gradÃ©s ne peuvent Ãªtre plaquÃ©s que dans les vues en perspective.
 
-#### Angles à partir d'une vue
+#### Angles Ã  partir d'une vue
 {: #angle-from-views}
-Si l'option Angles à partir d'une vue est cochée, le dégradé de couleurs actuel sera synchronisé avec la vue en perspective actuelle.  La couleur supérieure sera plaquée en haut de la vue et la couleur inférieure en bas.  Toutes les autres couleurs seront réparties entre ces extrémités. 
+Si l'option Angles Ã  partir d'une vue est cochÃ©e, le dÃ©gradÃ© de couleurs actuel sera synchronisÃ© avec la vue en perspective actuelle.  La couleur supÃ©rieure sera plaquÃ©e en haut de la vue et la couleur infÃ©rieure en bas.  Toutes les autres couleurs seront rÃ©parties entre ces extrÃ©mitÃ©s. 
 
-#### Icône de visualisation de l'altitude
+#### IcÃ´ne de visualisation de l'altitude
 {: #colorrange}
-Si la fenêtre active est une projection en perspective, vous pouvez contrôler les couleurs supérieure et inférieure et l'étendue du dégradé par rapport à votre vue.
+Si la fenÃªtre active est une projection en perspective, vous pouvez contrÃ´ler les couleurs supÃ©rieure et infÃ©rieure et l'Ã©tendue du dÃ©gradÃ© par rapport Ã  votre vue.
 
 ![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
-* Le contrôle affiche l'environnement dans une vue de section. La marqueur 90 degrés correspond à la coordonnée Z vers le haut. La coordonnée 0 représente le plan au sol horizontal. La marqueur -90 degrés correspond à la coordonnée Z vers le bas.
-* Le cône de vision gris affiche la dernière coordonnée de la vue en perspective actuelle. 
-* La flèche rouge représente la position de la couleur supérieure. La couleur supérieure sera affichée à cet angle et au-dessus. 
-* La double flèche verte représente le milieu du mélange entre les couleurs supérieure et inférieure. S'il s'agit d'un dégradé de trois couleurs il s'agit également de la position de la couleur du milieu. 
-* La flèche rouge représente la position de la couleur inférieure. En-dessous de cet angle, seule la couleur inférieure apparaîtra. 
+* Le contrÃ´le affiche l'environnement dans une vue de section. La marqueur 90 degrÃ©s correspond Ã  la coordonnÃ©e Z vers le haut. La coordonnÃ©e 0 reprÃ©sente le plan au sol horizontal. La marqueur -90 degrÃ©s correspond Ã  la coordonnÃ©e Z vers le bas.
+* Le cÃ´ne de vision gris affiche la derniÃ¨re coordonnÃ©e de la vue en perspective actuelle. 
+* La flÃ¨che rouge reprÃ©sente la position de la couleur supÃ©rieure. La couleur supÃ©rieure sera affichÃ©e Ã  cet angle et au-dessus. 
+* La double flÃ¨che verte reprÃ©sente le milieu du mÃ©lange entre les couleurs supÃ©rieure et infÃ©rieure. S'il s'agit d'un dÃ©gradÃ© de trois couleurs il s'agit Ã©galement de la position de la couleur du milieu. 
+* La flÃ¨che rouge reprÃ©sente la position de la couleur infÃ©rieure. En-dessous de cet angle, seule la couleur infÃ©rieure apparaÃ®tra. 
 
-####  Obtenir les angles à partir du bouton de la vue
-Utilisez ce bouton pour effacer les contrôles de placage du dégradé et utiliser les coordonnées de la vue en perspective actuelle. 
+####  Obtenir les angles Ã  partir du bouton de la vue
+Utilisez ce bouton pour effacer les contrÃ´les de placage du dÃ©gradÃ© et utiliser les coordonnÃ©es de la vue en perspective actuelle. 
 
-#### Angles supérieur/milieu/inférieur
-Ces valeurs correspondent aux couleurs supérieure, médiane et inférieure du dégradé actuel. Ils correspondent à la position des flèches rouge, verte et bleu dans l'icône de visualisation de l'altitude. 
+#### Angles supÃ©rieur/milieu/infÃ©rieur
+Ces valeurs correspondent aux couleurs supÃ©rieure, mÃ©diane et infÃ©rieure du dÃ©gradÃ© actuel. Ils correspondent Ã  la position des flÃ¨ches rouge, verte et bleu dans l'icÃ´ne de visualisation de l'altitude. 
 
-## Image en arrière-plan
+## Image en arriÃ¨re-plan
 {: #environment-image}
 
-Une image est projetée sur l'arrière-plan. Cette fonctions est souvent utilisée pour placer un modèle dans un contexte existant ou pour définir une vue derrière des fenêtres. Une photographie, une illustration scannée ou une image créée avec un programme de dessin peuvent être utilisées comme image. Pour obtenir de meilleurs résultats, utilisez des images de haute résolution pour les arrière-plans. Vous pouvez aussi rendre les images plus floues ou plus claires pour simuler une mise au point naturelle ou une perspective aérienne. L'image en l'arrière-plan peut être plaquée dans la scène en utilisant une projection plane, cylindrique ou sphérique. 
+Une image est projetÃ©e sur l'arriÃ¨re-plan. Cette fonctions est souvent utilisÃ©e pour placer un modÃ¨le dans un contexte existant ou pour dÃ©finir une vue derriÃ¨re des fenÃªtres. Une photographie, une illustration scannÃ©e ou une image crÃ©Ã©e avec un programme de dessin peuvent Ãªtre utilisÃ©es comme image. Pour obtenir de meilleurs rÃ©sultats, utilisez des images de haute rÃ©solution pour les arriÃ¨re-plans. Vous pouvez aussi rendre les images plus floues ou plus claires pour simuler une mise au point naturelle ou une perspective aÃ©rienne. L'image en l'arriÃ¨re-plan peut Ãªtre plaquÃ©e dans la scÃ¨ne en utilisant une projection plane, cylindrique ou sphÃ©rique. 
 
 ![images/background-image-001.png](images/background-image-001.png)
-*Une image plane définie comme arrière-plan.*
+*Une image plane dÃ©finie comme arriÃ¨re-plan.*
 
 ### Fichier image
 {: #image-properties}
-Définissez l'image en arrière-plan en cliquant sur le bouton *(vide - cliquer pour assigner)*, puis sélectionnez une image.  Pour assigner une autre image, cliquez sur l'image en miniature. 
+DÃ©finissez l'image en arriÃ¨re-plan en cliquant sur le bouton *(vide - cliquer pour assigner)*, puis sÃ©lectionnez une image.  Pour assigner une autre image, cliquez sur l'image en miniature. 
 
 ### Projection
 {: #backgroud-image-projection}
-Sélectionnez une des trois projections d'image dans le menu déroulant :
+SÃ©lectionnez une des trois projections d'image dans le menu dÃ©roulantÂ :
 
 >[Plane](#planar)
 >[Cylindrique](#cylindrical)
->[Sphérique](#spherical)
+>[SphÃ©rique](#spherical)
 
-Chaque méthode de projection possède ses propres options pour positionner l'image.
+Chaque mÃ©thode de projection possÃ¨de ses propres options pour positionner l'image.
 
 ### Projection plane
 {: #planar}
-L'image est projetée sur un arrière plan plat dans la vue actuelle. Les coordonnées de la projection plane sont toujours relatives à la vue actuelle. 
+L'image est projetÃ©e sur un arriÃ¨re plan plat dans la vue actuelle. Les coordonnÃ©es de la projection plane sont toujours relatives Ã  la vue actuelle. 
 
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 
-#### Angle à partir d'une vue
-La case angle à partir de vue permettra de synchroniser l'image avec la vue actuelle. L'image sera alors étirée pour l'adapter à la vue actuelle.
+#### Angle Ã  partir d'une vue
+La case angle Ã  partir de vue permettra de synchroniser l'image avec la vue actuelle. L'image sera alors Ã©tirÃ©e pour l'adapter Ã  la vue actuelle.
 
-#### Contrôle de positionnement de l'image
-Utilisez le contrôle de positionnement de l'image pour la placer l'image par rapport à la vue actuelle. La forme de la fenêtre apparaît sous forme de rectangle gris foncé. Faites glisser le rectangle rose ou utilisez les options numériques pour déplacer ou changer l'échelle de l'image en arrière-plan par rapport à la vue. 
-
-![images/background-image-003.png](images/background-image-003.png)
-*Zone de la fenêtre active (1), taille et forme de l'image (2).*
-
-#### Échelle X / Échelle Y
-Définit la taille de l'image en arrière-plan en appliquant une échelle de 0 à 1 à la largeur et la hauteur de la fenêtre. Par exemple, une valeur de 1.0 représente 100 % de la taille de la vue, une valeur de 0.5 représente 50 % de la largeur de la vue, etc. 
-
-#### Décalage X / Décalage Y
-Définit le décalage de l'image en arrière-plan à partir du coin inférieur gauche de la fenêtre en appliquant une échelle de 0 à 1 à la largeur et la hauteur de la vue.  Par exemple, une valeur de 0.25 représente 25 % de la taille de la vue, une valeur de 0.5 représente 50 % de la largeur de la vue, etc.
-
-#### Contrôle de positionnement de l'image
-Utilisez le contrôle de positionnement de l'image pour la placer l'image par rapport à la vue actuelle. La forme de la fenêtre apparaît sous forme de rectangle gris foncé. Faites glisser le rectangle rose ou utilisez les options numériques pour déplacer ou changer l'échelle de l'image en arrière-plan par rapport à la vue. 
+#### ContrÃ´le de positionnement de l'image
+Utilisez le contrÃ´le de positionnement de l'image pour la placer l'image par rapport Ã  la vue actuelle. La forme de la fenÃªtre apparaÃ®t sous forme de rectangle gris foncÃ©. Faites glisser le rectangle rose ou utilisez les options numÃ©riques pour dÃ©placer ou changer l'Ã©chelle de l'image en arriÃ¨re-plan par rapport Ã  la vue. 
 
 ![images/background-image-003.png](images/background-image-003.png)
-*Zone de la fenêtre active (1), taille et forme de l'image (2).*
+*Zone de la fenÃªtre active (1), taille et forme de l'image (2).*
 
-#### Échelle X / Échelle Y
-Définit la taille de l'image en arrière-plan en appliquant une échelle de 0 à 1 à la largeur et la hauteur de la fenêtre. Par exemple, une valeur de 1.0 représente 100 % de la taille de la vue, une valeur de 0.5 représente 50 % de la largeur de la vue, etc. 
+#### Ã‰chelle X / Ã‰chelle Y
+DÃ©finit la taille de l'image en arriÃ¨re-plan en appliquant une Ã©chelle de 0 Ã  1 Ã  la largeur et la hauteur de la fenÃªtre. Par exemple, une valeur de 1.0 reprÃ©sente 100Â % de la taille de la vue, une valeur de 0.5 reprÃ©sente 50Â % de la largeur de la vue, etc. 
 
-#### Décalage X / Décalage Y
-Définit le décalage de l'image en arrière-plan à partir du coin inférieur gauche de la fenêtre en appliquant une échelle de 0 à 1 à la largeur et la hauteur de la vue.  Par exemple, une valeur de 0.25 représente 25 % de la taille de la vue, une valeur de 0.5 représente 50 % de la largeur de la vue, etc.
+#### DÃ©calage X / DÃ©calage Y
+DÃ©finit le dÃ©calage de l'image en arriÃ¨re-plan Ã  partir du coin infÃ©rieur gauche de la fenÃªtre en appliquant une Ã©chelle de 0 Ã  1 Ã  la largeur et la hauteur de la vue.  Par exemple, une valeur de 0.25 reprÃ©sente 25Â % de la taille de la vue, une valeur de 0.5 reprÃ©sente 50Â % de la largeur de la vue, etc.
+
+#### ContrÃ´le de positionnement de l'image
+Utilisez le contrÃ´le de positionnement de l'image pour la placer l'image par rapport Ã  la vue actuelle. La forme de la fenÃªtre apparaÃ®t sous forme de rectangle gris foncÃ©. Faites glisser le rectangle rose ou utilisez les options numÃ©riques pour dÃ©placer ou changer l'Ã©chelle de l'image en arriÃ¨re-plan par rapport Ã  la vue. 
+
+![images/background-image-003.png](images/background-image-003.png)
+*Zone de la fenÃªtre active (1), taille et forme de l'image (2).*
+
+#### Ã‰chelle X / Ã‰chelle Y
+DÃ©finit la taille de l'image en arriÃ¨re-plan en appliquant une Ã©chelle de 0 Ã  1 Ã  la largeur et la hauteur de la fenÃªtre. Par exemple, une valeur de 1.0 reprÃ©sente 100Â % de la taille de la vue, une valeur de 0.5 reprÃ©sente 50Â % de la largeur de la vue, etc. 
+
+#### DÃ©calage X / DÃ©calage Y
+DÃ©finit le dÃ©calage de l'image en arriÃ¨re-plan Ã  partir du coin infÃ©rieur gauche de la fenÃªtre en appliquant une Ã©chelle de 0 Ã  1 Ã  la largeur et la hauteur de la vue.  Par exemple, une valeur de 0.25 reprÃ©sente 25Â % de la taille de la vue, une valeur de 0.5 reprÃ©sente 50Â % de la largeur de la vue, etc.
 
 ### Projection cylindrique
 {: #cylindrical}
-La projection cylindrique plaque l'image sur un cylindre imaginaire entourant le modèle. Même si cette projection donne les meilleurs résultats avec des images cylindriques, elle peut aussi être utilisée avec des panoramas standards créés à partir de photographies.
+La projection cylindrique plaque l'image sur un cylindre imaginaire entourant le modÃ¨le. MÃªme si cette projection donne les meilleurs rÃ©sultats avec des images cylindriques, elle peut aussi Ãªtre utilisÃ©e avec des panoramas standards crÃ©Ã©s Ã  partir de photographies.
 
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
-Spécifiez la taille et la position du placage selon l'angle de hauteur et l'angle de largeur. Utilisez les outils graphiques et la souris pour positionner et redimensionner l'image. Le cône de vision est affiché dans le graphique sous forme de zone gris clair.
+SpÃ©cifiez la taille et la position du placage selon l'angle de hauteur et l'angle de largeur. Utilisez les outils graphiques et la souris pour positionner et redimensionner l'image. Le cÃ´ne de vision est affichÃ© dans le graphique sous forme de zone gris clair.
 
-#### Angle à partir d'une vue
-La case angle à partir de vue permettra de synchroniser l'image avec la vue actuelle. L'image sera alors étirée pour l'adapter à la vue actuelle.
+#### Angle Ã  partir d'une vue
+La case angle Ã  partir de vue permettra de synchroniser l'image avec la vue actuelle. L'image sera alors Ã©tirÃ©e pour l'adapter Ã  la vue actuelle.
 
-#### Contrôle du plan
-Détermine la largeur angulaire du placage de l'image. Indiquez un angle ou faites glisser les drapeaux dans l'application de contrôle pour définir la largeur. La zone bleue indique les dimensions de la largeur angulaire.
+#### ContrÃ´le du plan
+DÃ©termine la largeur angulaire du placage de l'image. Indiquez un angle ou faites glisser les drapeaux dans l'application de contrÃ´le pour dÃ©finir la largeur. La zone bleue indique les dimensions de la largeur angulaire.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
 
-* Le contrôle affiche l'environnement dans une vue en plan. 
-* Le cône de vision gris foncé affiche les dernières coordonnées dans la vue en perspective actuelle.
-* Le cône bleu affiche l'intervalle d'angles où l'image sera visible. 
-* La flèche bleue représente la coordonnée gauche du placage de l'image. 
-* Le point rouge représente le centre de l'image en arrière-plan.
-* La flèche violette représente la coordonnée droite du placage de l'image.
+* Le contrÃ´le affiche l'environnement dans une vue en plan. 
+* Le cÃ´ne de vision gris foncÃ© affiche les derniÃ¨res coordonnÃ©es dans la vue en perspective actuelle.
+* Le cÃ´ne bleu affiche l'intervalle d'angles oÃ¹ l'image sera visible. 
+* La flÃ¨che bleue reprÃ©sente la coordonnÃ©e gauche du placage de l'image. 
+* Le point rouge reprÃ©sente le centre de l'image en arriÃ¨re-plan.
+* La flÃ¨che violette reprÃ©sente la coordonnÃ©e droite du placage de l'image.
 
-#### Contrôle vertical
+#### ContrÃ´le vertical
 {: .clear-img}
-Définit les dimensions verticales de la projection cylindrique. Indiquez un angle ou faites glisser les drapeaux dans l'application de contrôle pour définir les angles supérieur et inférieur. La projection cylindrique est limitée à 45 degrés au-dessus et en dessous de l'horizon.
+DÃ©finit les dimensions verticales de la projection cylindrique. Indiquez un angle ou faites glisser les drapeaux dans l'application de contrÃ´le pour dÃ©finir les angles supÃ©rieur et infÃ©rieur. La projection cylindrique est limitÃ©e Ã  45 degrÃ©s au-dessus et en dessous de l'horizon.
 
 ![images/background-cylinder-001.png](images/background-cylinder-001.png){: .float-img-left}
 
-* Le contrôle affiche le cylindre dans une vue de section.
-* Le cône de vision gris affiche les dernières coordonnées dans la vue en perspective actuelle.
-* La flèche bleue représente la bordure inférieure du placage de l'image.
-* La flèche rouge représente la bordure supérieure du placage de l'image.
+* Le contrÃ´le affiche le cylindre dans une vue de section.
+* Le cÃ´ne de vision gris affiche les derniÃ¨res coordonnÃ©es dans la vue en perspective actuelle.
+* La flÃ¨che bleue reprÃ©sente la bordure infÃ©rieure du placage de l'image.
+* La flÃ¨che rouge reprÃ©sente la bordure supÃ©rieure du placage de l'image.
 
 #### Rotation
 {: .clear-img}
-Définit la rotation de l'image. Le point rouge indique le centre de l'image.
+DÃ©finit la rotation de l'image. Le point rouge indique le centre de l'image.
 
 #### Largeur
-Définit la largeur de l'image en degrés par rapport à la vue en plan. 
+DÃ©finit la largeur de l'image en degrÃ©s par rapport Ã  la vue en plan. 
 
 #### Haut/Bas
-Définit les angles verticaux de l'image en fonction de la direction du plan au sol horizontal dans le modèle.
+DÃ©finit les angles verticaux de l'image en fonction de la direction du plan au sol horizontal dans le modÃ¨le.
 
-####  Obtenir les angles à partir de la vue
-Définit l'angle de rotation en fonction de la  fenêtre perspective actuelle.  Cette option permet par exemple de redéfinir les valeur de la projection.
+####  Obtenir les angles Ã  partir de la vue
+DÃ©finit l'angle de rotation en fonction de la  fenÃªtre perspective actuelle.  Cette option permet par exemple de redÃ©finir les valeur de la projection.
 
-### Projection sphérique
+### Projection sphÃ©rique
 {: #spherical}
-La projection sphérique plaque l'image sur une sphère complète. Cette méthode produit généralement de bons résultats si une image cylindrique équidistante est utilisée.  Le rapport de forme d'une image cylindrique équidistante est un rectangle de 2:1.
+La projection sphÃ©rique plaque l'image sur une sphÃ¨re complÃ¨te. Cette mÃ©thode produit gÃ©nÃ©ralement de bons rÃ©sultats si une image cylindrique Ã©quidistante est utilisÃ©e.  Le rapport de forme d'une image cylindrique Ã©quidistante est un rectangle de 2:1.
 
-#### Angle à partir d'une vue
-La case angle à partir de vue permettra de synchroniser l'image avec la vue actuelle. L'image sera alors étirée pour l'adapter à la vue actuelle.
+#### Angle Ã  partir d'une vue
+La case angle Ã  partir de vue permettra de synchroniser l'image avec la vue actuelle. L'image sera alors Ã©tirÃ©e pour l'adapter Ã  la vue actuelle.
 
-#### Contrôle sphérique
-Détermine la direction du placage de l'image. Indiquez un angle ou faites glisser l'indicateur dans l'application de contrôle pour définir la largeur. Le point rouge représente le centre de l'image en arrière-plan.
+#### ContrÃ´le sphÃ©rique
+DÃ©termine la direction du placage de l'image. Indiquez un angle ou faites glisser l'indicateur dans l'application de contrÃ´le pour dÃ©finir la largeur. Le point rouge reprÃ©sente le centre de l'image en arriÃ¨re-plan.
 
 #### Rotation
 {: .clear-img}
-Définit la rotation de l'image. Le point rouge indique le centre de l'image.
+DÃ©finit la rotation de l'image. Le point rouge indique le centre de l'image.
 
-####  Obtenir les angles à partir de la vue
-Définit l'angle de rotation en fonction de la  fenêtre perspective actuelle.  Cette option permet par exemple de redéfinir les valeur de la projection.
+####  Obtenir les angles Ã  partir de la vue
+DÃ©finit l'angle de rotation en fonction de la  fenÃªtre perspective actuelle.  Cette option permet par exemple de redÃ©finir les valeur de la projection.
 
-## Arrière-plan HDR
+## ArriÃ¨re-plan HDR
 {: #hdr-background}
-L'utilisation d'une image HDR comme environnement permet de mieux contrôler la relation entre la lumière de l'arrière plan et les autres lumières de l'image. Cette option est particulièrement utile pour représenter un espace intérieur avec un espace clair extérieur passant par une fenêtre. Une image d'environnement HDR dispose d'une plage de lumières plus grande qu'une image bitmap normale et elle peut posséder un canal ; ainsi, le contraste peut être géré dans un  rendu [multicanal](lights-tab.html#channel) .
+L'utilisation d'une image HDR comme environnement permet de mieux contrÃ´ler la relation entre la lumiÃ¨re de l'arriÃ¨re plan et les autres lumiÃ¨res de l'image. Cette option est particuliÃ¨rement utile pour reprÃ©senter un espace intÃ©rieur avec un espace clair extÃ©rieur passant par une fenÃªtre. Une image d'environnement HDR dispose d'une plage de lumiÃ¨res plus grande qu'une image bitmap normale et elle peut possÃ©der un canal ; ainsi, le contraste peut Ãªtre gÃ©rÃ© dans un  rendu [multicanal](lights-tab.html#channel) .
 
 #### Fichier image
 {: #hdri-image}
-Définissez l'image HDR en arrière-plan en cliquant sur le bouton *(vide - cliquer pour assigner)*, puis sélectionnez une image.  Pour assigner une autre image, cliquez sur l'image en miniature.
+DÃ©finissez l'image HDR en arriÃ¨re-plan en cliquant sur le bouton *(vide - cliquer pour assigner)*, puis sÃ©lectionnez une image.  Pour assigner une autre image, cliquez sur l'image en miniature.
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
@@ -247,51 +247,51 @@ Définissez l'image HDR en arrière-plan en cliquant sur le bouton *(vide - clique
 ## Options d'image HDR plane
 {: #planar-hdr-options}
 
-Les images à grande plage dynamique planes sont rarement utilisées mais peuvent être très utiles.  Une image HDR offre une large gamme de possibilités de couleurs. Les fichiers HDR peuvent être très utiles pour les fenêtre extérieures de rendus architecturaux où l'arrière-plan est trop clair ou trop foncé.  Un placage plan est toujours utilisé pour les fichiers HDR.
+Les images Ã  grande plage dynamique planes sont rarement utilisÃ©es mais peuvent Ãªtre trÃ¨s utiles.  Une image HDR offre une large gamme de possibilitÃ©s de couleurs. Les fichiers HDR peuvent Ãªtre trÃ¨s utiles pour les fenÃªtre extÃ©rieures de rendus architecturaux oÃ¹ l'arriÃ¨re-plan est trop clair ou trop foncÃ©.  Un placage plan est toujours utilisÃ© pour les fichiers HDR.
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
-*Une image en arrière plan (gauche) et une image HDR plane (droite) présentent des différences d'éclairage subtiles en arrière-plan.*
+*Une image en arriÃ¨re plan (gauche) et une image HDR plane (droite) prÃ©sentent des diffÃ©rences d'Ã©clairage subtiles en arriÃ¨re-plan.*
 
 #### Fichier image
 {: #hdri-planar-image}
-Définissez l'image HDR en arrière-plan en cliquant sur le bouton *(vide - cliquer pour assigner)*, puis sélectionnez une image.  Pour assigner une autre image, cliquez sur l'image en miniature.
+DÃ©finissez l'image HDR en arriÃ¨re-plan en cliquant sur le bouton *(vide - cliquer pour assigner)*, puis sÃ©lectionnez une image.  Pour assigner une autre image, cliquez sur l'image en miniature.
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Arrière-plan avancé
+## ArriÃ¨re-plan avancÃ©
 {: #advanced-background}
-Les paramètres de l'arrière-plan avancé contrôlent les environnements qui ne sont pas visibles dans les rendus, mais qui se voient dans les réflexions et réfractions sur les objets. Il est ainsi possible d'avoir un environnement visible différent de celui utilisé pour les réfractions et réfractions sur les objets. Par exemple, dans l'illustration ci-dessous, l'arrière-plan est noir mais l'environnement de réflexion est une image HDR d'un intérieur.
+Les paramÃ¨tres de l'arriÃ¨re-plan avancÃ© contrÃ´lent les environnements qui ne sont pas visibles dans les rendus, mais qui se voient dans les rÃ©flexions et rÃ©fractions sur les objets. Il est ainsi possible d'avoir un environnement visible diffÃ©rent de celui utilisÃ© pour les rÃ©fractions et rÃ©fractions sur les objets. Par exemple, dans l'illustration ci-dessous, l'arriÃ¨re-plan est noir mais l'environnement de rÃ©flexion est une image HDR d'un intÃ©rieur.
 
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*Environnement normal (gauche) et environnement de réflexion avec un ciel HDR (droite).*
+*Environnement normal (gauche) et environnement de rÃ©flexion avec un ciel HDR (droite).*
 
-### Réfléchi
+### RÃ©flÃ©chi
 {: #advanced-background-reflected-sky}
-Un environnement de réflexion n'est pas visible dans l'image rendue mais il se reflète dans les objets brillants.
+Un environnement de rÃ©flexion n'est pas visible dans l'image rendue mais il se reflÃ¨te dans les objets brillants.
 
 #### Ciel
-Les objets reflètent le ciel tel qu'il est défini dans les paramètres [Éclairage : Soleil et ciel](sun-and-sky-tabs.html).
+Les objets reflÃ¨tent le ciel tel qu'il est dÃ©fini dans les paramÃ¨tres [Ã‰clairage : Soleil et ciel](sun-and-sky-tabs.html).
 
-#### Personnalisé
-Les objets reflètent un arrière-plan constitué [d'une couleur unie, d'un dégradé de couleurs](#color-backgrounds), d'une [image](#environment-image) ou d'une image à grande plage dynamique [(HDR)](#hdr-image).
+#### PersonnalisÃ©
+Les objets reflÃ¨tent un arriÃ¨re-plan constituÃ© [d'une couleur unie, d'un dÃ©gradÃ© de couleurs](#color-backgrounds), d'une [image](#environment-image) ou d'une image Ã  grande plage dynamique [(HDR)](#hdr-image).
 
-#### Arrière-plan visible
-Les objets reflètent l'arrière-plan visible tel qu'il est défini dans les  paramètres [Environnementt](environment-tab.html).
+#### ArriÃ¨re-plan visible
+Les objets reflÃ¨tent l'arriÃ¨re-plan visible tel qu'il est dÃ©fini dans les  paramÃ¨tres [Environnementt](environment-tab.html).
 
-### Réfracté
+### RÃ©fractÃ©
 {: #advanced-background-refracted-sky}
 
 #### Ciel
-Les objets réfractent le ciel tel qu'il est défini dans les paramètres [Éclairage : Soleil et ciel](sun-and-sky-tabs.html).
+Les objets rÃ©fractent le ciel tel qu'il est dÃ©fini dans les paramÃ¨tres [Ã‰clairage : Soleil et ciel](sun-and-sky-tabs.html).
 
 #### Personnaliser
-Les objets réfractent un arrière-plan constitué [d'une couleur unie, d'un dégradé de couleurs](#color-and-gradient-backgrounds), d'une [image](#image) ou d'une image à grande plage dynamique [(HDR)](#hdr-image).
+Les objets rÃ©fractent un arriÃ¨re-plan constituÃ© [d'une couleur unie, d'un dÃ©gradÃ© de couleurs](#color-and-gradient-backgrounds), d'une [image](#image) ou d'une image Ã  grande plage dynamique [(HDR)](#hdr-image).
 
-#### Arrière-plan visible
-Les objets réfractent l'arrière-plan visible tel qu'il est défini dans les  paramètres [Environnementt](environment-tab.html).
+#### ArriÃ¨re-plan visible
+Les objets rÃ©fractent l'arriÃ¨re-plan visible tel qu'il est dÃ©fini dans les  paramÃ¨tres [Environnementt](environment-tab.html).
 
 #### Objets alpha non transparents
 {: #no-transparent-alpha-objects}
-Le canal alpha ne sera pas visible à travers les objets transparents et le compositing du canal alpha ne sera pas possible à travers les objets transparents.
-Si des images doivent être collées dans le canal alpha, désactivez ce paramètre.
+Le canal alpha ne sera pas visible Ã  travers les objets transparents et le compositing du canal alpha ne sera pas possible Ã  travers les objets transparents.
+Si des images doivent Ãªtre collÃ©es dans le canal alpha, dÃ©sactivez ce paramÃ¨tre.

@@ -1,3 +1,3 @@
 
-#### Mélange
-Atténue les limites entre les composants.
+#### MÃ©lange
+AttÃ©nue les limites entre les composants.

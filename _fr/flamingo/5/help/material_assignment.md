@@ -1,83 +1,83 @@
 ---
-title: Assignations de matériaux
+title: Assignations de matÃ©riaux
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Les objets de la scène possèdent une source de matériau, c'est-à-dire l'endroit où ils adoptent leur matériau de rendu. Les matériaux peuvent être assignés de différentes façons. La méthode utilisée pour assigner les matériaux a un rôle important sur la facilité de modification ultérieure du modèle.
+Les objets de la scÃ¨ne possÃ¨dent une source de matÃ©riau, c'est-Ã -dire l'endroit oÃ¹ ils adoptent leur matÃ©riau de rendu. Les matÃ©riaux peuvent Ãªtre assignÃ©s de diffÃ©rentes faÃ§ons. La mÃ©thode utilisÃ©e pour assigner les matÃ©riaux a un rÃ´le important sur la facilitÃ© de modification ultÃ©rieure du modÃ¨le.
 
-Les matériaux peuvent être assignés de trois façons. Ces méthodes ont une relation de hiérarchie, ainsi une méthode en bas de liste remplacera une assignation plus haute dans la liste. 
+Les matÃ©riaux peuvent Ãªtre assignÃ©s de trois faÃ§ons. Ces mÃ©thodes ont une relation de hiÃ©rarchie, ainsi une mÃ©thode en bas de liste remplacera une assignation plus haute dans la liste. 
 
- 1. [Calques](#bylayer) - Tous les objets se trouvant sur le calque adopteront ce matériau, sauf s'ils sont inclus dans un bloc ou si un matériau leur est assigné spécifiquement. 
- 2. [Parent](#byparent) - Cette assignation est utilisée pour les objets dans des blocs. Le matériau des objets dont l'assignation est définie par parent sera déterminé par l'insertion du bloc. 
- 3. [Objets individuels](#byobject) - Les matériaux peuvent être assignés directement un objet, ce qui remplace toute autre assignation de matériau.
+ 1. [Calques](#bylayer) - Tous les objets se trouvant sur le calque adopteront ce matÃ©riau, sauf s'ils sont inclus dans un bloc ou si un matÃ©riau leur est assignÃ© spÃ©cifiquement. 
+ 2. [Parent](#byparent) - Cette assignation est utilisÃ©e pour les objets dans des blocs. Le matÃ©riau des objets dont l'assignation est dÃ©finie par parent sera dÃ©terminÃ© par l'insertion du bloc. 
+ 3. [Objets individuels](#byobject) - Les matÃ©riaux peuvent Ãªtre assignÃ©s directement un objet, ce qui remplace toute autre assignation de matÃ©riau.
 
-Nous recommandons d'assigner les matériaux par calque. L'assignation par calque permet de changer facilement le matériau de tous les objets se trouvant sur un calque. Utiliser l'assignation par objet si vous avez uniquement quelques objets que vous ne voulez pas placer sur des calques séparés.
+Nous recommandons d'assigner les matÃ©riaux par calque. L'assignation par calque permet de changer facilement le matÃ©riau de tous les objets se trouvant sur un calque. Utiliser l'assignation par objet si vous avez uniquement quelques objets que vous ne voulez pas placer sur des calques sÃ©parÃ©s.
 
-Les fichiers importés peuvent utiliser ces trois assignations indifféremment. La plupart des fichiers importés utilisent l'assignation par objet.  La conversion du modèle en assignation par calque peut représenter beaucoup de travail mais elle peut être très utile si les matériaux de rendu doivent être modifiés.
+Les fichiers importÃ©s peuvent utiliser ces trois assignations indiffÃ©remment. La plupart des fichiers importÃ©s utilisent l'assignation par objet.  La conversion du modÃ¨le en assignation par calque peut reprÃ©senter beaucoup de travail mais elle peut Ãªtre trÃ¨s utile si les matÃ©riaux de rendu doivent Ãªtre modifiÃ©s.
 
-Lorsque les matériaux sont assignés, ils sont enregistrés dans le modèle actuel.  La modification d'un matériau n'affectera pas ce matériau dans d'autres modèles.
+Lorsque les matÃ©riaux sont assignÃ©s, ils sont enregistrÃ©s dans le modÃ¨le actuel.  La modification d'un matÃ©riau n'affectera pas ce matÃ©riau dans d'autres modÃ¨les.
 
-## Assigner des matériaux aux calques
+## Assigner des matÃ©riaux aux calques
 {: #bylayer}
-Lorsque vous assignez un matériau par calque, celui-ci est assigné à tous les objets se trouvant sur ce calque. Il s'agit de la méthode d'assignation par défaut. Pour changer le matériau assigné à un calque, utilisez la boîte de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
-Note : Lorsqu'un matériau est supprimé dans l'[éditeur de matériaux](material-editor.html), tous les objets qui possédaient ce matériau retrouvent une assignation par calque.
+Lorsque vous assignez un matÃ©riau par calque, celui-ci est assignÃ© Ã  tous les objets se trouvant sur ce calque. Il s'agit de la mÃ©thode d'assignation par dÃ©faut. Pour changer le matÃ©riau assignÃ© Ã  un calque, utilisez la boÃ®te de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
+Note : Lorsqu'un matÃ©riau est supprimÃ© dans l'[Ã©diteur de matÃ©riaux](material-editor.html), tous les objets qui possÃ©daient ce matÃ©riau retrouvent une assignation par calque.
 
-##### Faire glisser un matériau sur un calque
+##### Faire glisser un matÃ©riau sur un calque
 {: #drag-dropmaterialtolayer}
-1. Dans Rhino, ouvrez la boîte de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
-1. Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, déplacez un matériau sur le nom d'un calque dans la boîte de dialogue des [calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
+1. Dans Rhino, ouvrez la boÃ®te de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
+1. Dans la [liste des matÃ©riaux ](material-editor.html#material_list), dans l'onglet BibliothÃ¨que ou l'onglet Ã‰diteur de matÃ©riaux, dÃ©placez un matÃ©riau sur le nom d'un calque dans la boÃ®te de dialogue des [calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
 
-##### Pour assigner un matériau à un calque
-1. Dans Rhino, ouvrez la boîte de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
-1. Sélectionnez un ou plusieurs calques et cliquez dans la colonne Matériau.
-1. Dans la boîte de dialogue Matériau du calque, sélectionnez un matériau dans la liste déroulante des matériaux.
+##### Pour assigner un matÃ©riau Ã  un calque
+1. Dans Rhino, ouvrez la boÃ®te de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
+1. SÃ©lectionnez un ou plusieurs calques et cliquez dans la colonneÂ MatÃ©riau.
+1. Dans la boÃ®te de dialogue MatÃ©riau du calque, sÃ©lectionnez un matÃ©riau dans la liste dÃ©roulante des matÃ©riaux.
 
-##### Supprimer un matériau assigné à un calque
+##### Supprimer un matÃ©riau assignÃ© Ã  un calque
 {: #detachmaterialfromlayer}
-1. Dans Rhino, ouvrez la boîte de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
-1. Sélectionnez un ou plusieurs calques et cliquez dans la colonne Matériau.
-1. Dans la boîte de dialogue Matériau du calque, sélectionnez le matériau par défaut dans la liste déroulante.
+1. Dans Rhino, ouvrez la boÃ®te de dialogue [Calques](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/layer.htm).
+1. SÃ©lectionnez un ou plusieurs calques et cliquez dans la colonneÂ MatÃ©riau.
+1. Dans la boÃ®te de dialogue MatÃ©riau du calque, sÃ©lectionnez le matÃ©riau par dÃ©faut dans la liste dÃ©roulante.
 
-## Assigner un matériau par parent
+## Assigner un matÃ©riau par parent
 {: #byparent}
-Cette assignation est rarement utilisée mais très utile. Les objets faisant parti d'une occurrence de bloc conservent leur assignation par calque ou par objet.  Cependant, les objets qui utilisent l'assignation par parents adoptent le matériau de l'insertion de bloc.  Ainsi, les objets contenus dans une occurrence de bloc peuvent adopter le matériau du bloc parent. 
+Cette assignation est rarement utilisÃ©e mais trÃ¨s utile. Les objets faisant parti d'une occurrence de bloc conservent leur assignation par calque ou par objet.  Cependant, les objets qui utilisent l'assignation par parents adoptent le matÃ©riau de l'insertion de bloc.  Ainsi, les objets contenus dans une occurrence de bloc peuvent adopter le matÃ©riau du bloc parent. 
 
-Par exemple, un modèle de voiture peut avoir des pneus sur le calque Pneus et des roues sur le calque Roues. Mais pour le rendu, la carrosserie de la voiture peut varier en fonction des occurrences de bloc individuelles.  Vous pouvez définir le matériau de la carrosserie de la voiture par parent,  puis assigner un matériau à l'insertion de bloc afin que seule la carrosserie adopte ce matériau.
+Par exemple, un modÃ¨le de voiture peut avoir des pneus sur le calque Pneus et des roues sur le calque Roues. Mais pour le rendu, la carrosserie de la voiture peut varier en fonction des occurrences de bloc individuelles.  Vous pouvez dÃ©finir le matÃ©riau de la carrosserie de la voiture par parent,  puis assigner un matÃ©riau Ã  l'insertion de bloc afin que seule la carrosserie adopte ce matÃ©riau.
 
-##### Pour assigner un matériau par les propriétés objet
-1. Sélectionnez des objets.
-1. Dans le menu Édition, cliquez sur Propriétés de l'objet ![images/properties.png](images/properties.png) pour modifier l'objet. 
-1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériau ![images/materialtab.png] (images/materialtab.png), sous Assigner par, cliquez sur Par parent. 
+##### Pour assigner un matÃ©riau par les propriÃ©tÃ©s objet
+1. SÃ©lectionnez des objets.
+1. Dans le menu Ã‰dition, cliquez sur PropriÃ©tÃ©s de l'objet ![images/properties.png](images/properties.png) pour modifier l'objet. 
+1. Dans la boÃ®te de dialogue [PropriÃ©tÃ©s](properties-object.html), dans la section MatÃ©riau ![images/materialtab.png] (images/materialtab.png), sous Assigner par, cliquez sur Par parent. 
 
-## Assigner un matériau à des objets
+## Assigner un matÃ©riau Ã  des objets
 {: #byobject}
-Vous pouvez assigner des matériaux des bibliothèques de matériaux à un calque ou un objet. Les matériaux de rendu sont assignés aux objets et sont utilisés par le système de rendu intégré dans Rhino.
-Voir [Éditeur de matériaux](material-editor.html).
+Vous pouvez assigner des matÃ©riaux des bibliothÃ¨ques de matÃ©riaux Ã  un calque ou un objet. Les matÃ©riaux de rendu sont assignÃ©s aux objets et sont utilisÃ©s par le systÃ¨me de rendu intÃ©grÃ© dans Rhino.
+Voir [Ã‰diteur de matÃ©riaux](material-editor.html).
 
-Nous recommandons d'assigner les matériaux par calque. N'assignez les matériaux par objet que si vous avez quelques objets que vous ne voulez pas placer sur des calques séparés.
+Nous recommandons d'assigner les matÃ©riaux par calque. N'assignez les matÃ©riaux par objet que si vous avez quelques objets que vous ne voulez pas placer sur des calques sÃ©parÃ©s.
 
-##### Assigner un matériau par les propriétés objet
-1. Sélectionnez des objets.
-1. Dans le menu Édition, cliquez sur [Propriétés de l'objet![images/properties.png](images/properties.png) pour modifier l'objet.
-1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériaux ![images/materialtab.png](images/materialtab.png) sous Assigner par, cliquez sur Par objet puis cliquez sur le matériau dans la liste.
+##### Assigner un matÃ©riau par les propriÃ©tÃ©s objet
+1. SÃ©lectionnez des objets.
+1. Dans le menu Ã‰dition, cliquez sur [PropriÃ©tÃ©s de l'objet![images/properties.png](images/properties.png) pour modifier l'objet.
+1. Dans la boÃ®te de dialogue [PropriÃ©tÃ©s](properties-object.html), dans la section MatÃ©riaux ![images/materialtab.png](images/materialtab.png) sous Assigner par, cliquez sur Par objet puis cliquez sur le matÃ©riau dans la liste.
 
-##### Faire glisser un matériau sur un objet
+##### Faire glisser un matÃ©riau sur un objet
 {: #drag-dropmaterialtoobject}
 
- * Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, déplacez un matériau sur un objet. L'objet est affiché en surbrillance lorsque le curseur est au bon endroit pour déposer le matériau.
+ * Dans la [liste des matÃ©riaux ](material-editor.html#material_list), dans l'onglet BibliothÃ¨que ou l'onglet Ã‰diteur de matÃ©riaux, dÃ©placez un matÃ©riau sur un objet. L'objet est affichÃ© en surbrillance lorsque le curseur est au bon endroit pour dÃ©poser le matÃ©riau.
 
-##### Assigner un matériau aux objets sélectionnés
-1. Sélectionnez des objets.
-1. Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, cliquez avec le bouton de droit sur un matériau dans la palette Matériaux du modèle. 
-1. Dans le menu, cliquez sur Assigner aux objets sélectionnés.
+##### Assigner un matÃ©riau aux objets sÃ©lectionnÃ©s
+1. SÃ©lectionnez des objets.
+1. Dans la [liste des matÃ©riaux ](material-editor.html#material_list), dans l'onglet BibliothÃ¨que ou l'onglet Ã‰diteur de matÃ©riaux, cliquez avec le bouton de droit sur un matÃ©riau dans la palette MatÃ©riaux du modÃ¨le. 
+1. Dans le menu, cliquez sur Assigner aux objets sÃ©lectionnÃ©s.
 
-##### Sélectionner des objets en fonction de leur matériau
+##### SÃ©lectionner des objets en fonction de leur matÃ©riau
 {: #select-objects-with-material-assignment}
-1. Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, cliquez avec le bouton de droit sur un Matériaux dans la palette Matériaux du modèle.
-1. Dans le menu, cliquez sur Sélectionner les objets possédant ce matériau.
+1. Dans la [liste des matÃ©riaux ](material-editor.html#material_list), dans l'onglet BibliothÃ¨que ou l'onglet Ã‰diteur de matÃ©riaux, cliquez avec le bouton de droit sur un MatÃ©riaux dans la palette MatÃ©riaux du modÃ¨le.
+1. Dans le menu, cliquez sur SÃ©lectionner les objets possÃ©dant ce matÃ©riau.
 
-##### Supprimer un matériau assigné à un objet
+##### Supprimer un matÃ©riau assignÃ© Ã  un objet
 {: #removematerialfromobject}
-1. Sélectionnez des objets.
-1. Dans le menu Édition, cliquez sur Propriétés de l'objet.
-1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériau, sous Assigner par, sélectionnez Calque.
+1. SÃ©lectionnez des objets.
+1. Dans le menu Ã‰dition, cliquez sur PropriÃ©tÃ©s de l'objet.
+1. Dans la boÃ®te de dialogue [PropriÃ©tÃ©s](properties-object.html), dans la section MatÃ©riau, sous Assigner par, sÃ©lectionnez Calque.

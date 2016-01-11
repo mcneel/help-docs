@@ -1,74 +1,74 @@
-Propriétés de l'aperçu
-Les images miniatures d'aperçu ainsi que la zone de fond des miniatures ont un menu contextuel.
+PropriÃ©tÃ©s de l'aperÃ§u
+Les images miniatures d'aperÃ§u ainsi que la zone de fond des miniatures ont un menu contextuel.
 
 #### Actions sur les miniatures
 
 >![images/number-onestep.gif](images/number-onestep.gif) Cliquez avec le bouton de droite pour changer la vue. 
 
-Le changement ne sera pas très intéressant sir l'objet est un sphère mais s'il s'agit d'un cube, d'un cône ou d'une autre forme, la rotation de la vue ou des objets permet de voir l'objet sous un autre angle.
+Le changement ne sera pas trÃ¨s intÃ©ressant sir l'objet est un sphÃ¨re mais s'il s'agit d'un cube, d'un cÃ´ne ou d'une autre forme, la rotation de la vue ou des objets permet de voir l'objet sous un autre angle.
 
 >![images/number-onestep.gif](images/number-onestep.gif) Cliquez avec le bouton de droite pour afficher un menu contextuel. .
->![images/number-onestep.gif](images/number-onestep.gif) Double cliquez pour afficher une plus grande fenêtre d'aperçu en-dessous des miniatures.
->![images/number-onestep.gif](images/number-onestep.gif) Déplacez les miniatures pour changer l'ordre de la liste.
->![images/number-onestep.gif](images/number-onestep.gif) Appuyez sur la touche Ctrl et déplacez les miniatures pour dupliquer un matériau.
->![images/number-onestep.gif](images/number-onestep.gif) Double cliquez sur le plus grand aperçu pour ouvrir une fenêtre flottante dont la taille peut être modifiée pour obtenir une vue de l'aperçu avec une meilleure résolution.
+>![images/number-onestep.gif](images/number-onestep.gif) Double cliquez pour afficher une plus grande fenÃªtre d'aperÃ§u en-dessous des miniatures.
+>![images/number-onestep.gif](images/number-onestep.gif) DÃ©placez les miniatures pour changer l'ordre de la liste.
+>![images/number-onestep.gif](images/number-onestep.gif) Appuyez sur la touche Ctrl et dÃ©placez les miniatures pour dupliquer un matÃ©riau.
+>![images/number-onestep.gif](images/number-onestep.gif) Double cliquez sur le plus grand aperÃ§u pour ouvrir une fenÃªtre flottante dont la taille peut Ãªtre modifiÃ©e pour obtenir une vue de l'aperÃ§u avec une meilleure rÃ©solution.
 
-Cette fenêtre possède les mêmes fonctions que l'image d'aperçu originale, y compris le menu contextuel et la possibilité de la faire glisser et de la déposer sur d'autres matériaux ou objets dans le modèle.
+Cette fenÃªtre possÃ¨de les mÃªmes fonctions que l'image d'aperÃ§u originale, y compris le menu contextuel et la possibilitÃ© de la faire glisser et de la dÃ©poser sur d'autres matÃ©riaux ou objets dans le modÃ¨le.
 
-### Géométrie
+### GÃ©omÃ©trie
 
-#### Matériaux
-Les matériaux peuvent utiliser plusieurs types de géométrie.
-![images/thumbnailsphere.png](images/thumbnailsphere.png) *Sphère* 
+#### MatÃ©riaux
+Les matÃ©riaux peuvent utiliser plusieurs types de gÃ©omÃ©trie.
+![images/thumbnailsphere.png](images/thumbnailsphere.png) *SphÃ¨re* 
 ![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Pyramide* 
 ![images/thumbnailcube.png](images/thumbnailcube.png) *Cube* 
 ![images/thumbnailtorus.png](images/thumbnailtorus.png) *Tore* 
-![images/thumbnailcone.png](images/thumbnailcone.png) *Cône* 
+![images/thumbnailcone.png](images/thumbnailcone.png) *CÃ´ne* 
 ![images/thumbnailplane.png](images/thumbnailplane.png) *Plan* 
 
 #### Environnements
-Les environnements utilisent uniquement le cône et la sphère.
-![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cône et sphère* 
+Les environnements utilisent uniquement le cÃ´ne et la sphÃ¨re.
+![images/environmentthumbnail.png](images/environmentthumbnail.png) *CÃ´ne et sphÃ¨re* 
 
 #### Textures
-Les textures sont affichées uniquement sous forme de surfaces plates en deux dimensions faces à la caméra.
+Les textures sont affichÃ©es uniquement sous forme de surfaces plates en deux dimensions faces Ã  la camÃ©ra.
 ![images/texturepreview.png](images/texturepreview.png)
 
 #### Taille
-Définit la taille de l'unité pour les miniatures.
+DÃ©finit la taille de l'unitÃ© pour les miniatures.
 
 ### Vue
-Contrôle déplacement des objets ou la rotation de la caméra avec le bouton de droite.
+ContrÃ´le dÃ©placement des objets ou la rotation de la camÃ©ra avec le bouton de droite.
 
 #### Rotation de l'objet
 Si vous cliquez avec le bouton de droite et faites glisser la souris sur la miniature, l'objet tourne.
 
-#### Rotation de la caméra
-Si vous cliquez avec le bouton de droite et faites glisser la souris sur la miniature, la caméra tourne.
+#### Rotation de la camÃ©ra
+Si vous cliquez avec le bouton de droite et faites glisser la souris sur la miniature, la camÃ©ra tourne.
 
 #### Angle X
-Définit l'angle de rotation horizontale de l'objet ou de la caméra.
+DÃ©finit l'angle de rotation horizontale de l'objet ou de la camÃ©ra.
 
 #### Angle Y
-Définit l'angle de rotation verticale de l'objet ou de la caméra.
+DÃ©finit l'angle de rotation verticale de l'objet ou de la camÃ©ra.
 
-### Arrière-plan
-Contrôle l'apparence de l'arrière-plan de la miniature.
+### ArriÃ¨re-plan
+ContrÃ´le l'apparence de l'arriÃ¨re-plan de la miniature.
 
 #### Aucun
-L'environnement gris par défaut est utilisé.
+L'environnement gris par dÃ©faut est utilisÃ©.
 ![images/thumbnailbackground-001.png](images/thumbnailbackground-001.png)
 
 #### Damier
-Un arrière-plan en damier gris est utilisé.
+Un arriÃ¨re-plan en damier gris est utilisÃ©.
 ![images/thumbnailbackground-002.png](images/thumbnailbackground-002.png)
 
 #### Personnaliser
-Une texture ou un matériau peut être utilisé comme arrière-plan.
+Une texture ou un matÃ©riau peut Ãªtre utilisÃ© comme arriÃ¨re-plan.
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 
-####  **Enregistrer comme défaut** 
-Enregistre les propriétés de la miniature comme paramètres par défaut.
+####  **Enregistrer comme dÃ©faut** 
+Enregistre les propriÃ©tÃ©s de la miniature comme paramÃ¨tres par dÃ©faut.
 
-####  **Charger les valeurs par défaut** 
-Charge les propriétés de la miniature à partir des paramètres par défaut.
+####  **Charger les valeurs par dÃ©faut** 
+Charge les propriÃ©tÃ©s de la miniature Ã  partir des paramÃ¨tres par dÃ©faut.

@@ -1,9 +1,9 @@
-##### Pour ajouter une nouvelle image :
- * Cliquez sur *(vide - cliquer pour assigner)* puis sélectionnez une image dans la boîte de dialogue. 
- * Ou, cliquez sur le bouton Modifier l'image ![images/edit_image.png](images/edit_image.png) et sélectionnez une image dans la boîte de dialogue. 
+##### Pour ajouter une nouvelle imageÂ :
+ * Cliquez sur *(vide - cliquer pour assigner)* puis sÃ©lectionnez une image dans la boÃ®te de dialogue. 
+ * Ou, cliquez sur le bouton Modifier l'image ![images/edit_image.png](images/edit_image.png) et sÃ©lectionnez une image dans la boÃ®te de dialogue. 
 
-##### Pour modifier la façon dont une image agit sur une surface :
- * Cliquez sur le nom de l'image dans le liste. La boîte de dialogue des [propriétés de l'image](material-image-properties.html) s'ouvrira.  Pour revenir au matériau principal, cliquez sur le nom du matériau dans l'[Éditeur de matériaux](material-editor.html#settings).
+##### Pour modifier la faÃ§on dont une image agit sur une surfaceÂ :
+ * Cliquez sur le nom de l'image dans le liste. La boÃ®te de dialogue des [propriÃ©tÃ©s de l'image](material-image-properties.html) s'ouvrira.  Pour revenir au matÃ©riau principal, cliquez sur le nom du matÃ©riau dans l'[Ã‰diteur de matÃ©riaux](material-editor.html#settings).
 
-##### Pour remplacer une image par une autre :
-  * Cliquez sur le bouton Modifier l'image ![images/edit_image.png](images/edit_image.png) et sélectionnez une image dans la boîte de dialogue.
+##### Pour remplacer une image par une autreÂ :
+  * Cliquez sur le bouton Modifier l'image ![images/edit_image.png](images/edit_image.png) et sÃ©lectionnez une image dans la boÃ®te de dialogue.

@@ -1,23 +1,23 @@
 ---
-title: Démarrer avec Flamingo
+title: DÃ©marrer avec Flamingo
 ---
 
 
-# ![images/flamingotab.svg](images/flamingotab.svg) Démarrer avec Flamingo nXt
-Flamingo nXt crée des fichiers d'animation et d'image haute qualité et photoréalistes à partir de modèles 3-D dans Rhinoceros®. Flamingo nXt 5 est une mise à jour de Flamingo qui se combine avec les fonctions de rendu intégrées dans Rhino 5. Cette version est en cours de développement.
+# ![images/flamingotab.svg](images/flamingotab.svg) DÃ©marrer avec Flamingo nXt
+Flamingo nXt crÃ©e des fichiers d'animation et d'image haute qualitÃ© et photorÃ©alistes Ã  partir de modÃ¨les 3-D dans RhinocerosÂ®. Flamingo nXt 5 est une mise Ã  jour de Flamingo qui se combine avec les fonctions de rendu intÃ©grÃ©es dans Rhino 5. Cette version est en cours de dÃ©veloppement.
 
-Téléchargez et installez Flamingo depuis la page de [téléchargement de Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
+TÃ©lÃ©chargez et installez Flamingo depuis la page de [tÃ©lÃ©chargement de Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
 
 Vous pouvez rejoindre la discussion technique sur le [forum de Flamingo](http://discourse.mcneel.com/c/rendering/flamingo).
 
 ## Installation
 
-* Flamingo 5 Bêta ne peut être installé que si une version précédente de Flamingo nXt est déjà installée.
-* Rhino 5 Version révisée 12 doit être installé pour utiliser Flamingo nXt 5.
+* Flamingo 5 BÃªta ne peut Ãªtre installÃ© que si une version prÃ©cÃ©dente de Flamingo nXt est dÃ©jÃ  installÃ©e.
+* Rhino 5 Version rÃ©visÃ©e 12 doit Ãªtre installÃ© pour utiliser Flamingo nXt 5.
 
-Après avoir téléchargé et lancé le fichier RHI, lancez Rhino.
+AprÃ¨s avoir tÃ©lÃ©chargÃ© et lancÃ© le fichier RHI, lancez Rhino.
 
-Sur le [site web de Flamingo nXt](http://nxt.flamingo3d.com/) vous trouverez des informations sur l'assistance technique, des tutoriels, des exemples et des informations pour commencer à utiliser **Flamingo nXt**.
+Sur le [site web de Flamingo nXt](http://nxt.flamingo3d.com/) vous trouverez des informations sur l'assistance technique, des tutoriels, des exemples et des informations pour commencer Ã  utiliser **Flamingo nXt**.
 
 > [Tutoriels](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
 > [Galerie](http://nxt.flamingo3d.com/photo)
@@ -25,34 +25,34 @@ Sur le [site web de Flamingo nXt](http://nxt.flamingo3d.com/) vous trouverez des
 
 ## Le panneau de commande de Flamingo nXt
 {: #control-panel}
-Cette version de Flamingo présente une interface intégrée dans les outils de rendu de Rhino 5. Le panneau de configuration de Flamingo nXt présente différents onglets permettant de configurer le modèle pour le rendu :
+Cette version de Flamingo prÃ©sente une interface intÃ©grÃ©e dans les outils de rendu de Rhino 5. Le panneau de configuration de Flamingo nXt prÃ©sente diffÃ©rents onglets permettant de configurer le modÃ¨le pour le rendu :
 
-> [Matériaux](materials-tab.html)
-> [Éclairage](lighting-tab.html)
+> [MatÃ©riaux](materials-tab.html)
+> [Ã‰clairage](lighting-tab.html)
 > [Environnement](environment-tab.html)
 > [Rendu](render-tab.html)
 
-## Pour accéder au panneau de commande de Flamingo
+## Pour accÃ©der au panneau de commande de Flamingo
 * Dans le menu Flamingo nXt 5.0, cliquez sur Montrer le panneau de configuration.
 
 ## Bases du rendu
 {: #rendering-basics}
-Le rendu des modèles terminés se fait en quatre étapes principales :
+Le rendu des modÃ¨les terminÃ©s se fait en quatre Ã©tapes principales :
 
- 1. [Définir des matériaux](material-editor.html)
- 1. [Définir l'éclairage](lighting-tab.html)
- 1. [Définir un environnement](environment-tab.html)
- 1. [Définir les conditions du rendu](render-tab.html)
+ 1. [DÃ©finir des matÃ©riaux](material-editor.html)
+ 1. [DÃ©finir l'Ã©clairage](lighting-tab.html)
+ 1. [DÃ©finir un environnement](environment-tab.html)
+ 1. [DÃ©finir les conditions du rendu](render-tab.html)
 
 ##### Pour commencer un rendu
 * Dans le menu Rendu ou Flamingo nXt, cliquez sur  Rendu.
 * Ou, dans la barre d'outils Standard, cliquez sur le bouton Rendu.
 
-### Arrêter le rendu
-Par défaut, le processus de rendu continuera à améliorer l'image, passe par passe, jusqu'à ce que vous cliquiez sur le bouton Arrêter le rendu. Ceci vous permet de gérer le rapport temps/qualité. Plus le rendu continue pendant longtemps, plus il se rapproche du résultat entièrement calculé. Vous pouvez arrêter un rendu à tout moment.
+### ArrÃªter le rendu
+Par dÃ©faut, le processus de rendu continuera Ã  amÃ©liorer l'image, passe par passe, jusqu'Ã Â ce que vous cliquiez sur le bouton ArrÃªter le rendu. Ceci vous permet de gÃ©rer le rapport temps/qualitÃ©. Plus le rendu continue pendant longtemps, plus il se rapproche du rÃ©sultat entiÃ¨rement calculÃ©. Vous pouvez arrÃªter un rendu Ã  tout moment.
 
 ###  Reprendre le rendu
-Le bouton Arrêter le rendu permet d'interrompre le rendu après la fin de la passe en cours.
-Le texte affiché sur le bouton indique ensuite Reprendre le rendu. Si vous arrêtez le rendu avant que les contraintes du nombre de passes ou de temps n'aient été atteintes, vous pouvez cliquer sur le bouton Reprendre le rendu pour continuer.
+Le bouton ArrÃªter le rendu permet d'interrompre le rendu aprÃ¨s la fin de la passe en cours.
+Le texte affichÃ© sur le bouton indique ensuite Reprendre le rendu. Si vous arrÃªtez le rendu avant que les contraintes du nombre de passes ou de temps n'aient Ã©tÃ© atteintes, vous pouvez cliquer sur le bouton Reprendre le rendu pour continuer.
 
-Utilisez les paramètres [Nombre de passes](render-window.html#number-of-passes) ou [Temps](render-window.html#time) dans la [fenêtre de rendu](render-window.html) ou dans les [Propriétés du document > Flamingo nXt](documentproperties-flamingo.html) pour définir un point d'arrêt automatique.
+Utilisez les paramÃ¨tres [Nombre de passes](render-window.html#number-of-passes) ou [Temps](render-window.html#time) dans la [fenÃªtre de rendu](render-window.html) ou dans les [PropriÃ©tÃ©s du document > Flamingo nXt](documentproperties-flamingo.html) pour dÃ©finir un point d'arrÃªt automatique.

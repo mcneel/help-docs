@@ -3,179 +3,179 @@ title: Rectangle Rendu
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}
-La fenêtre de rendu offre des options pour régler l'exposition et ajouter des effets par post-traitement. Le cadre principal de la fenêtre de rendu fait partie du cadre de rendu de Rhino.  Pour plus d'informations sur les menus et icônes de la fenêtre de rendu, consultez la [rubrique sur la fenêtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).  Cette rubrique couvre les options supplémentaires apportées spécifiquement par Flamingo.
+La fenÃªtre de rendu offre des options pour rÃ©gler l'exposition et ajouter des effets par post-traitement. Le cadre principal de la fenÃªtre de rendu fait partie du cadre de rendu de Rhino.  Pour plus d'informations sur les menus et icÃ´nes de la fenÃªtre de rendu, consultez la [rubrique sur la fenÃªtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).  Cette rubrique couvre les options supplÃ©mentaires apportÃ©es spÃ©cifiquement par Flamingo.
 
-## Gérer un rendu en cours
-Lorsque le rendu est lancé, la [fenêtre de rendu](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm) s'ouvre et le calcul du rendu débute.  Le système de Flamingo utilise plusieurs passes qui actualisent l'image rendue par étapes. Flamingo recherche tout d'abord les modifications sur son modèle interne puis lance un processus d'initialisation. Ce processus peut prendre quelques secondes voire plusieurs minutes. Le modèle est importé, les images des matériaux sont copiées à partir du disque dur et la mémoire tampon de l'image rendue est créée. Il est possible de gérer le rendu à plusieurs moments :
+## GÃ©rer un rendu en cours
+Lorsque le rendu est lancÃ©, la [fenÃªtre de rendu](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm) s'ouvre et le calcul du rendu dÃ©bute.  Le systÃ¨me de Flamingo utilise plusieurs passes qui actualisent l'image rendue par Ã©tapes. Flamingo recherche tout d'abord les modifications sur son modÃ¨le interne puis lance un processus d'initialisation. Ce processus peut prendre quelques secondes voire plusieurs minutes. Le modÃ¨le est importÃ©, les images des matÃ©riaux sont copiÃ©es Ã  partir du disque dur et la mÃ©moire tampon de l'image rendue est crÃ©Ã©e. Il est possible de gÃ©rer le rendu Ã  plusieurs momentsÂ :
 
 >[Rendu multi-passes](#multi-pass)
->[Arrêter un rendu](#stop-render)
+>[ArrÃªter un rendu](#stop-render)
 >[Ajuster une image](#adjusting)
 >[Enregistrer une image](#saving)
 
 ### Rendu multi-passes
 {: #multi-pass}
-Flamingo nXt est un tout nouveau moteur de rendu. Le rendu avec un perfectionnement en plusieurs passes permet des effets de rendu plus avancés sans interface compliquée. Les premières passes de rendu produiront des défauts inattendus.  Par exemple, vous verrez que les ombres sont très précises et linéaires au début. Les ombres seront de plus en plus douces à chaque passe et se mélangeront petit à petit. De nombreux autres effets s'amélioreront à chaque passe de rendu.  Utilisez l'[onglet Flamingo](#flamingo-tab) pour suivre le processus de rendu. 
+Flamingo nXt est un tout nouveau moteur de rendu. Le rendu avec un perfectionnement en plusieurs passes permet des effets de rendu plus avancÃ©s sans interface compliquÃ©e. Les premiÃ¨res passes de rendu produiront des dÃ©fauts inattendus.  Par exemple, vous verrez que les ombres sont trÃ¨s prÃ©cises et linÃ©aires au dÃ©but. Les ombres seront de plus en plus douces Ã  chaque passe et se mÃ©langeront petit Ã  petit. De nombreux autres effets s'amÃ©lioreront Ã  chaque passe de rendu.  Utilisez l'[onglet Flamingo](#flamingo-tab) pour suivre le processus de rendu. 
 
-De cette façon, le rendu de nXt n'est jamais vraiment terminé ; c'est à vous de décider du moment où il est assez bien pour l'arrêter. Vous pouvez laisser les images qui semblent correctes continuer à s'améliorer. Mais, si vous voulez réaliser une modification ou enregistrer une image, vous pouvez également arrêter un rendu à tout moment.
+De cette faÃ§on, le rendu de nXt n'est jamais vraiment terminÃ©Â ; c'est Ã  vous de dÃ©cider du moment oÃ¹ il est assez bien pour l'arrÃªter. Vous pouvez laisser les images qui semblent correctes continuer Ã  s'amÃ©liorer. Mais, si vous voulez rÃ©aliser une modification ou enregistrer une image, vous pouvez Ã©galement arrÃªter un rendu Ã  tout moment.
 
 ![images/passes-wide-1.gif](images/passes-wide-1.gif)
 
-Parmi les effets qui s'améliorent à chaque passe :
+Parmi les effets qui s'amÃ©liorent Ã  chaque passe :
 
->Éclairage (comme l'illumination globale si elle est activée)
+>Ã‰clairage (comme l'illumination globale si elle est activÃ©e)
 >Ombres floues
->Réflexions (floues)
->Réfraction
->Anticrénelage
+>RÃ©flexions (floues)
+>RÃ©fraction
+>AnticrÃ©nelage
 >Profondeur de champ
 
-### Arrêter un rendu
+### ArrÃªter un rendu
 {: #stop-render}
-Différentes options permettent d'arrêter le rendu :
+DiffÃ©rentes options permettent d'arrÃªter le rendu :
 
-![images/close-x.png](images/close-x.png) Cliquer sur le bouton X en haut à droite de la fenêtre de rendu pour arrêter immédiatement le rendu et fermer la fenêtre de rendu. C'est la meilleure option pour revenir rapidement au modèle afin de réaliser des modifications.
+![images/close-x.png](images/close-x.png) Cliquer sur le bouton X en haut Ã  droite de la fenÃªtre de rendu pour arrÃªter immÃ©diatement le rendu et fermer la fenÃªtre de rendu. C'est la meilleure option pour revenir rapidement au modÃ¨le afin de rÃ©aliser des modifications.
 
-![images/stop.png](images/stop.png) Cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu à la fin de la passe en cours. C'est la meilleure option pour enregistrer une image.
+![images/stop.png](images/stop.png) Cliquer sur le bouton ArrÃªter le lancer de rayons pour arrÃªter le rendu Ã  la fin de la passe en cours. C'est la meilleure option pour enregistrer une image.
 
-![images/stop.png](images/stop.png) Double cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu immédiatement et laisser la fenêtre de rendu ouverte.
+![images/stop.png](images/stop.png) Double cliquer sur le bouton ArrÃªter le lancer de rayons pour arrÃªter le rendu immÃ©diatement et laisser la fenÃªtre de rendu ouverte.
 
 ### Ajuster un rendu
 {: #adjusting}
-Après avoir arrêté une image, utilisez les contrôles de l'[onglet Flamingo](#flamingo-tab) pour ajuster rapidement l'image et l'éclairage. Cet ensemble d'outils est très important pour la production d'images de haute qualité. 
+AprÃ¨s avoir arrÃªtÃ© une image, utilisez les contrÃ´les de l'[onglet Flamingo](#flamingo-tab) pour ajuster rapidement l'image et l'Ã©clairage. Cet ensemble d'outils est trÃ¨s important pour la production d'images de haute qualitÃ©. 
 
-Contrôles permettant d'ajuster les images :
+ContrÃ´les permettant d'ajuster les imagesÂ :
 
 >[Ajuster l'image](#adjust-image)
 >[Canaux](#channels)
->[Effets postérieurs](#post-process-effects)
+>[Effets postÃ©rieurs](#post-process-effects)
 
 
 ### Enregistrer des images
 {: #saving}
-Plusieurs options sont disponibles pour enregistrer une image en fonction de son utilisation postérieure. La plupart des images pourront être enregistrées au format JPG ou PNG. Mais il existe d'autres options.
+Plusieurs options sont disponibles pour enregistrer une image en fonction de son utilisation postÃ©rieure. La plupart des images pourront Ãªtre enregistrÃ©es au format JPG ou PNG. Mais il existe d'autres options.
 
 #### ![images/saveimageas.png](images/saveimageas.png) Enregistrer l'image
-Après avoir ajusté l'image, le procédé normal consiste à enregistrer le fichier au format JPG ou PNG.  
+AprÃ¨s avoir ajustÃ© l'image, le procÃ©dÃ© normal consiste Ã  enregistrer le fichier au format JPG ou PNG.  
 
-Une image JPG est un format de fichier très performant et assez petit. Ce format convient très bien aux images publiées sur Internet ou envoyées par mail. Mais cette performance a un prix, en effet certaines couleurs sont supprimées de l'image. 
+Une image JPG est un format de fichier trÃ¨s performant et assez petit. Ce format convient trÃ¨s bien aux images publiÃ©es sur Internet ou envoyÃ©es par mail. Mais cette performance a un prix, en effet certaines couleurs sont supprimÃ©es de l'image. 
 
-PNG est un format comprimé qui contient 100 % des informations de couleur et de canal Alpha. Ce format convient très bien aux images de haute qualité.
+PNG est un format comprimÃ© qui contient 100Â % des informations de couleur et de canal Alpha. Ce format convient trÃ¨s bien aux images de haute qualitÃ©.
 
-#### Enregistrer avec le canal alpha de l'arrière-plan
+#### Enregistrer avec le canal alpha de l'arriÃ¨re-plan
 {: #save-with-alpha-channel}
-Enregistre une image 32 bits au format PNG, TIF ou BMP avec l'arrière-plan du canal alpha. Utilisez les versions canal alpha des formats de fichier pour la composition haute qualité. Les arrière-plans apparaîtront en noir lorsque le rendu sera enregistré avec le canal alpha.  Une case dans l'[onglet Flamingo](#flamingo-tab) et la [boîte de dialogue Enregistrer](#saving) permet d'enregistrer le canal alpha. Le format de fichier PNG permet de capturer les informations sur le canal alpha.
+Enregistre une image 32 bits au format PNG, TIF ou BMP avec l'arriÃ¨re-plan du canal alpha. Utilisez les versions canal alpha des formats de fichier pour la composition haute qualitÃ©. Les arriÃ¨re-plans apparaÃ®tront en noir lorsque le rendu sera enregistrÃ©Â avec le canal alpha.  Une case dans l'[onglet Flamingo](#flamingo-tab) et la [boÃ®te de dialogue Enregistrer](#saving) permet d'enregistrer le canal alpha. Le format de fichier PNG permet de capturer les informations sur le canal alpha.
 
 #### Exporter vers un fichier natif de Flamingo nXt (.nXtImage)
 {: #export-to-nxtimage}
-Enregistre les informations de couleur et de luminance non comprimées. Enregistre tous les canaux de rendu, y compris le canal [alpha](environment-tab.html#alpha). Les fichiers nXt Image peuvent être ouverts dans l'[éditeur d'images](image-editor.html). Vous pouvez alors ajuster l'[exposition](#adjust-image) et appliquer des [effets](#effects) avant d'enregistrer l'image dans un autre format.
+Enregistre les informations de couleur et de luminance non comprimÃ©es. Enregistre tous les canaux de rendu, y compris le canal [alpha](environment-tab.html#alpha). Les fichiers nXt Image peuvent Ãªtre ouverts dans l'[Ã©diteur d'images](image-editor.html). Vous pouvez alors ajuster l'[exposition](#adjust-image) et appliquer des [effets](#effects) avant d'enregistrer l'image dans un autre format.
 
-Le format .nXtImage est le format d'image natif des moteurs de rendu nXt. Ce format est recommandé pour l'enregistrement de vos rendus car il conserve la plupart des informations sur votre rendu. Les images enregistrées dans ce format peuvent être manipulées dans l'[éditeur d'images nXt](image-editor.html) et des effets spéciaux peuvent être ajoutés. Cet éditeur permet d'enregistrer dans  nombreux formats standards, y compris tous les formats pris en charge dans nXt. Il est également possible d'enregistrer au format [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/).
+Le format .nXtImage est le format d'image natif des moteurs de rendu nXt. Ce format est recommandÃ© pour l'enregistrement de vos rendus car il conserve la plupart des informations sur votre rendu. Les images enregistrÃ©es dans ce format peuvent Ãªtre manipulÃ©es dans l'[Ã©diteur d'images nXt](image-editor.html) et des effets spÃ©ciaux peuvent Ãªtre ajoutÃ©s. Cet Ã©diteur permet d'enregistrer dans  nombreux formats standards, y compris tous les formats pris en charge dans nXt. Il est Ã©galement possible d'enregistrer au format [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/).
 
 #### Exporter vers un fichier HDR
 {: #export-to-hdr}
-Enregistre les informations de couleur et de luminance non comprimées. Le format .hdr enregistre les données de luminance directement dans un format à grande plage dynamique. Les arrière-plans sans luminance, comme les photographies normales, apparaissent en noir s'ils sont enregistrés dans un de ces formats.
+Enregistre les informations de couleur et de luminance non comprimÃ©es. Le format .hdr enregistre les donnÃ©es de luminance directement dans un format Ã  grande plage dynamique. Les arriÃ¨re-plans sans luminance, comme les photographies normales, apparaissent en noir s'ils sont enregistrÃ©s dans un de ces formats.
 
 #### Exporter vers un fichier EXR
 {: #export-to-exr}
-Format de fichier image à grande plage dynamique créé par la société Industrial Light and Magic (ILM) et distribué sous forme de licence libre. Ce format de fichier gère les nombres flottants en 16 bits par canal avec un bit pour le signe, cinq bits pour l'exposant et dix bits pour la mantisse. Ceci permet d'avoir une plage dynamique de plus de trente niveaux d'exposition. Voir l'article de Wikipedia : OpenEXR](http://fr.wikipedia.org/wiki/OpenEXR).
-Le format EXR enregistre les données de luminance directement dans un format à grande plage dynamique. Les arrière-plans sans luminance, comme les photographies normales, apparaissent en noir s'ils sont enregistrés dans un de ces formats.
+Format de fichier image Ã  grande plage dynamique crÃ©Ã© par la sociÃ©tÃ© Industrial Light and Magic (ILM) et distribuÃ© sous forme de licence libre. Ce format de fichier gÃ¨re les nombres flottants en 16 bits par canal avec un bit pour le signe, cinq bits pour l'exposant et dix bits pour la mantisse. Ceci permet d'avoir une plage dynamique de plus de trente niveaux d'exposition. Voir l'article de Wikipedia : OpenEXR](http://fr.wikipedia.org/wiki/OpenEXR).
+Le format EXR enregistre les donnÃ©es de luminance directement dans un format Ã  grande plage dynamique. Les arriÃ¨re-plans sans luminance, comme les photographies normales, apparaissent en noir s'ils sont enregistrÃ©s dans un de ces formats.
 
 #### ![images/close-x.png](images/close-x.png) Quitter
-Ferme la fenêtre de rendu.
+Ferme la fenÃªtre de rendu.
 
-#### Menus déroulants
-Pour plus d'informations sur les menus et icônes de la fenêtre de rendu, consultez la [rubrique sur la fenêtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).
+#### Menus dÃ©roulants
+Pour plus d'informations sur les menus et icÃ´nes de la fenÃªtre de rendu, consultez la [rubrique sur la fenÃªtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).
 
 ## Onglet de Flamingo
 {: #flamingo-tab}
-L'onglet Flamingo de la fenêtre de rendu apporte de nombreuses options spécifiques au moteur de rendu de Flamingo. La compréhension de ces options est indispensable pour bien gérer les rendus de Flamingo.
+L'onglet Flamingo de la fenÃªtre de rendu apporte de nombreuses options spÃ©cifiques au moteur de rendu de Flamingo. La comprÃ©hension de ces options est indispensable pour bien gÃ©rer les rendus de Flamingo.
 
 #### Enregistrer avec le canal alpha
-Enregistre des images 32 bits au format PNG, TIF ou BMP avec l'arrière-plan du canal alpha. Les versions canal alpha des formats de fichier sont utilisées pour la composition haute qualité. Les arrière-plans apparaîtront en noir lorsque le rendu sera enregistré avec le canal alpha.  Utilisez cette case et la case de la [boîte de dialogue Enregistrer](#saving) pour enregistrer le canal alpha. Le format de fichier PNG permet de capturer les informations sur le canal alpha.
+Enregistre des images 32 bits au format PNG, TIF ou BMP avec l'arriÃ¨re-plan du canal alpha. Les versions canal alpha des formats de fichier sont utilisÃ©es pour la composition haute qualitÃ©. Les arriÃ¨re-plans apparaÃ®tront en noir lorsque le rendu sera enregistrÃ©Â avec le canal alpha.  Utilisez cette case et la case de la [boÃ®te de dialogue Enregistrer](#saving) pour enregistrer le canal alpha. Le format de fichier PNG permet de capturer les informations sur le canal alpha.
 
 ## Avancement
 {: #progress}
-Utilisez les informations sur l'avancement pour vérifier le statut d'un rendu de Flamingo. 
+Utilisez les informations sur l'avancement pour vÃ©rifier le statut d'un rendu de Flamingo. 
 
 #### Action
 Affiche le statut actuel du calcul de rendu. 
 
-Messages de statut :
+Messages de statutÂ :
 
-* Rendu démarré - Une fois qu'un rendu est lancé, Flamingo réalise quelques tâches telles que la conversion du modèle et la configuration de la mémoire nécessaire au rendu. 
-* Action réalisée - Lorsque le bouton Arrêter est utilisé et que le moteur de rendu a terminé la passe en cours, l'action est réalisée. 
-* Passe terminée - Ce message est affiché à chaque fois qu'une passe est terminée. 
-* Reprendre le rendu - S'il est possible de reprendre le rendu, ce message est affiché. 
+* Rendu dÃ©marrÃ© - Une fois qu'un rendu est lancÃ©, Flamingo rÃ©alise quelques tÃ¢ches telles que la conversion du modÃ¨le et la configuration de la mÃ©moire nÃ©cessaire au rendu. 
+* Action rÃ©alisÃ©e - Lorsque le bouton ArrÃªter est utilisÃ© et que le moteur de rendu a terminÃ© la passe en cours, l'action est rÃ©alisÃ©e. 
+* Passe terminÃ©e - Ce message est affichÃ© Ã  chaque fois qu'une passe est terminÃ©e. 
+* Reprendre le rendu - S'il est possible de reprendre le rendu, ce message est affichÃ©. 
 * Actualisation - Le moteur de rendu est au milieu d'une passe, en cours d'actualisation du rendu. 
 
 #### Passe
-Passe actuellement en cours de rendu. Flamingo est un moteur de rendu fonctionnant avec plusieurs passes. Chaque passe améliore les effets d'éclairage et de rendu complexes.
+Passe actuellement en cours de rendu. Flamingo est un moteur de rendu fonctionnant avec plusieurs passes. Chaque passe amÃ©liore les effets d'Ã©clairage et de rendu complexes.
 
 #### Ligne de balayage
-Une passe avance le long d'une bande de pixels horizontaux.  Chaque ligne de pixels est une ligne de balayage. Cette information indique la ligne de balayage envoyée par le moteur de rendu.
+Une passe avance le long d'une bande de pixels horizontaux.  Chaque ligne de pixels est une ligne de balayage. Cette information indique la ligne de balayage envoyÃ©e par le moteur de rendu.
 
-#### Temps total écoulé
-Temps écoulé depuis le début du rendu.  Le temps de préparation pour le rendu n'est pas compris dans cette valeur.
+#### Temps total Ã©coulÃ©
+Temps Ã©coulÃ© depuis le dÃ©but du rendu.  Le temps de prÃ©paration pour le rendu n'est pas compris dans cette valeur.
 
 #### Rayons / seconde
-Nombre de rayons calculés dans la scène par seconde.
+Nombre de rayons calculÃ©s dans la scÃ¨ne par seconde.
 
 #### Pixels / seconde
-Nombre de pixels calculés dans l'image par seconde.
+Nombre de pixels calculÃ©s dans l'image par seconde.
 
 ## Ajuster l'image
 {: #adjust-image}
-Cette option est une des plus importantes de Flamingo. Tout comme sur un appareil-photo, vous pouvez ajuster l'exposition de l'image. Cette option est idéale pour rendre des rendus plus clairs, plus foncés, ajouter du contraste ou augmenter la saturation de couleur. Ce réglage est appelé l'[adaptation des tons](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo travaille dans l'espace de luminance, une gamme beaucoup plus importante de couleurs et d'intensités que celle pouvant être affichée sur un écran ou une imprimante. L'adaptation des tons est le procédé de conversion des données de luminance en pixels rouges, verts et bleus (RVB) qui peuvent être affichés sur un écran ou imprimés. Les paramètres contrôlent également comment les images sont enregistrées.
+Cette option est une des plus importantes de Flamingo. Tout comme sur un appareil-photo, vous pouvez ajuster l'exposition de l'image. Cette option est idÃ©ale pour rendre des rendus plus clairs, plus foncÃ©s, ajouter du contraste ou augmenter la saturation de couleur. Ce rÃ©glage est appelÃ© l'[adaptation des tons](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo travaille dans l'espace de luminance, une gamme beaucoup plus importante de couleurs et d'intensitÃ©s que celle pouvant Ãªtre affichÃ©e sur un Ã©cran ou une imprimante. L'adaptation des tons est le procÃ©dÃ© de conversion des donnÃ©es de luminance en pixels rouges, verts et bleus (RVB) qui peuvent Ãªtre affichÃ©s sur un Ã©cran ou imprimÃ©s. Les paramÃ¨tres contrÃ´lent Ã©galement comment les images sont enregistrÃ©es.
 
 ![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
-*L'image de gauche est celle produite par défaut. L'image corrigée après avoir appliqué une luminosité de 0.20, une densité de 0.16 et une saturation de 1.20.*
-Utilisez ce procédé pour ajuster rapidement la luminosité d'une image ainsi que sa couleur générale sans relancer le rendu.
+*L'image de gauche est celle produite par dÃ©faut. L'image corrigÃ©e aprÃ¨s avoir appliquÃ© une luminositÃ© de 0.20, une densitÃ© de 0.16 et une saturation de 1.20.*
+Utilisez ce procÃ©dÃ© pour ajuster rapidement la luminositÃ© d'une image ainsi que sa couleur gÃ©nÃ©rale sans relancer le rendu.
 
-### Luminosité
+### LuminositÃ©
 {: #brightness}
-Ajuste la luminosité générale de l'image. Par exemple, si une surface blanche est rendue en gris, augmentez la luminosité jusqu'à ce que la surface apparaisse blanche. Ou, si une scène extérieure semble surexposée, diminuez la luminosité jusqu'à ce que les résultats soient plus corrects.
+Ajuste la luminositÃ© gÃ©nÃ©rale de l'image. Par exemple, si une surface blanche est rendue en gris, augmentez la luminositÃ© jusqu'Ã  ce que la surface apparaisse blanche. Ou, si une scÃ¨ne extÃ©rieure semble surexposÃ©e, diminuez la luminositÃ© jusqu'Ã  ce que les rÃ©sultats soient plus corrects.
 
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*Luminosité par défaut (gauche) et augmentée.*
+*LuminositÃ© par dÃ©faut (gauche) et augmentÃ©e.*
 
 {% include_relative snippets/snippet-brightness.md %}
 
-### Densité
+### DensitÃ©
 {: #burn}
-Ajuste le point blanc de l'image. Il s'agit de la couleur blanche la plus claire de l'image. Un peu de densité peut apporter un effet de scène, de la vie et de la netteté au rendu en ajoutant plus de zones de blanc afin de contraster avec les zones sombres.
+Ajuste le point blanc de l'image. Il s'agit de la couleur blanche la plus claire de l'image. Un peu de densitÃ© peut apporter un effet de scÃ¨ne, de la vie et de la nettetÃ© au rendu en ajoutant plus de zones de blanc afin de contraster avec les zones sombres.
 Voir l'article de Wikipedia : Point blanc](https://fr.wikipedia.org/wiki/Point_blanc).
 
 ![images/burn-001.png](images/burn-001.png)
-*Densité par défaut (gauche) et augmentée.*
+*DensitÃ© par dÃ©faut (gauche) et augmentÃ©e.*
 
 ### Saturation
 {: #saturation}
-La saturation contrôle la quantité de couleurs d'une image. Une saturation nulle donnera une image en échelle de gris. Les valeurs supérieures à 1 peuvent donner des couleurs plus  extrêmes.
+La saturation contrÃ´le la quantitÃ© de couleurs d'une image. Une saturation nulle donnera une image en Ã©chelle de gris. Les valeurs supÃ©rieures Ã  1 peuvent donner des couleurs plus  extrÃªmes.
 
 ![images/saturationdefault.png](images/saturationdefault.png)
-*Saturation par défaut (gauche) et multipliée par 3 (droite).*
+*Saturation par dÃ©faut (gauche) et multipliÃ©e par 3 (droite).*
 
 ### Histogramme
 {: #histogram}
-Affiche la distribution de la lumière et des zones sombres de l'image après l'application des ajustements sur l'image. Le bord gauche du diagramme représente les couleurs sombres jusqu'au noir.  Le bord droit du diagramme montre la quantité de couleurs claires jusqu'au blanc. Cette représentation est très utile pour déterminer les parties importantes de l'image. Il peut être intéressant d'ajuster l'image jusqu'à obtenir toute la gamme de valeurs dans l'image.  Par exemple, si l'histogramme s'arrête avant d'atteindre l'extrémité droite du diagramme, ajoutez de la luminosité ou de la densité afin de faire tendre vers le blanc les portions les plus claires du rendu. Voir : [Article de Wikipedia : Histogramme](https://fr.wikipedia.org/wiki/Histogramme). Internet contient de nombreux articles sur l'utilisation des histogrammes pour évaluer l'exposition en photographie numérique. Les principes sont les mêmes pour le rendu.
+Affiche la distribution de la lumiÃ¨re et des zones sombres de l'image aprÃ¨s l'application des ajustements sur l'image. Le bord gauche du diagramme reprÃ©sente les couleurs sombres jusqu'au noir.  Le bord droit du diagramme montre la quantitÃ© de couleurs claires jusqu'au blanc. Cette reprÃ©sentation est trÃ¨s utile pour dÃ©terminer les parties importantes de l'image. Il peut Ãªtre intÃ©ressant d'ajuster l'image jusqu'Ã  obtenir toute la gamme de valeurs dans l'image.  Par exemple, si l'histogramme s'arrÃªte avant d'atteindre l'extrÃ©mitÃ© droite du diagramme, ajoutez de la luminositÃ© ou de la densitÃ© afin de faire tendre vers le blanc les portions les plus claires du rendu. Voir : [Article de Wikipedia : Histogramme](https://fr.wikipedia.org/wiki/Histogramme). Internet contient de nombreux articles sur l'utilisation des histogrammes pour Ã©valuer l'exposition en photographie numÃ©rique. Les principes sont les mÃªmes pour le rendu.
 
 ![images/histogram.png](images/histogram.png)
-*Exemple  d'histogramme montrant la distribution de couleurs dans une image. Le diagramme gris montre quelques zones sombres (côté gauche) et une grande gamme de couleurs claires (côté droite). Ce diagramme montre également qu'il existe quelques pixels entièrement blancs étant donné le diagramme est coupé sur le bord droit (les couleurs claires jusqu'au blanc sont représentées sur l'extrémité droite). 
+*ExempleÂ  d'histogramme montrant la distribution de couleurs dans une image. Le diagramme gris montre quelques zones sombres (cÃ´tÃ© gauche) et une grande gamme de couleurs claires (cÃ´tÃ© droite). Ce diagramme montre Ã©galement qu'il existe quelques pixels entiÃ¨rement blancs Ã©tant donnÃ© le diagramme est coupÃ© sur le bord droit (les couleurs claires jusqu'au blanc sont reprÃ©sentÃ©es sur l'extrÃ©mitÃ© droite). 
 
 #### Options de l'histogramme
-Cliquez avec le bouton de droite sur l'image de l'histogramme pour voir les options suivantes.  Ces options changement la façon dont l'histogramme affiche les informations. Elles ne changement pas les valeurs de l'histogramme. 
+Cliquez avec le bouton de droite sur l'image de l'histogramme pour voir les options suivantes.  Ces options changement la faÃ§on dont l'histogramme affiche les informations. Elles ne changement pas les valeurs de l'histogramme. 
 
-* **Ajuster** - Cette option ajuste les verticales les plus élevées du graphique. 
-* **Médiane** - Cette option ajuste la valeur médiane sur la verticale. Elle permet de voir les détails au niveau des bords du diagramme. 
+* **Ajuster** - Cette option ajuste les verticales les plus Ã©levÃ©es du graphique. 
+* **MÃ©diane** - Cette option ajuste la valeur mÃ©diane sur la verticale. Elle permet de voir les dÃ©tails au niveau des bords du diagramme. 
 * **Moyenne** - Cette option ajuste la valeur moyenne sur la verticale.
-* **Afficher le diagramme trié** - Cette option trie toutes les valeurs en fonction de leur quantité dans l'image. 
-* **Afficher l'échelle** - Affiche les valeurs correspondantes le long de la partie inférieure du diagramme. 
-* **Couleur du diagramme...** - Définit la couleur du diagramme.
+* **Afficher le diagramme triÃ©** - Cette option trie toutes les valeurs en fonction de leur quantitÃ© dans l'image. 
+* **Afficher l'Ã©chelle** - Affiche les valeurs correspondantes le long de la partie infÃ©rieure du diagramme. 
+* **Couleur du diagramme...** - DÃ©finit la couleur du diagramme.
 
 ### Verrouiller l'exposition
 {: #lock-exposure}
-Si les paramètres d'exposition sont verrouillés, lorsque vous changez l'éclairage, l'exposition n'est pas modifiée en fonction.
+Si les paramÃ¨tres d'exposition sont verrouillÃ©s, lorsque vous changez l'Ã©clairage, l'exposition n'est pas modifiÃ©e en fonction.
 
 ## Contraintes de rendu
 {: #number-of-passes}
@@ -186,40 +186,40 @@ Si les paramètres d'exposition sont verrouillés, lorsque vous changez l'éclairag
 ## Informations
 {: #information}
 
-#### Résolution
-Affiche la [résolution de rendu](render-tab.html#resolution) actuelle. 
+#### RÃ©solution
+Affiche la [rÃ©solution de rendu](render-tab.html#resolution) actuelle. 
 
 #### Faces
-Affiche le nombre de faces de maillage utilisées pour rendre le modèle.  Cette valeur permet de comparer plusieurs [paramètres de maillage de rendu](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#documentproperties/mesh.htm) dans Rhino.
+Affiche le nombre de faces de maillage utilisÃ©es pour rendre le modÃ¨le.  Cette valeur permet de comparer plusieurs [paramÃ¨tres de maillage de rendu](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#documentproperties/mesh.htm) dans Rhino.
 
 #### Faces apparentes
-Lorsque le modèle contient des blocs, Flamingo nXt peut utiliser la définition de bloc pour rendre les instances sans mailler chaque instance séparément. L'affichage des faces apparentes montre combien de faces temporaires seraient générées en plus si les occurrences de bloc n'existaient pas.
+Lorsque le modÃ¨le contient des blocs, Flamingo nXt peut utiliser la dÃ©finition de bloc pour rendre les instances sans mailler chaque instance sÃ©parÃ©ment. L'affichage des faces apparentes montre combien de faces temporaires seraient gÃ©nÃ©rÃ©es en plus si les occurrences de bloc n'existaient pas.
 
-#### Informations sur l'éclairage
-Informations sur la configuration actuelle de l'éclairage du rendu.  Liste des informations données sur l'éclairage :
+#### Informations sur l'Ã©clairage
+Informations sur la configuration actuelle de l'Ã©clairage du rendu.  Liste des informations donnÃ©es sur l'Ã©clairageÂ :
 
->[Préréglages](lighting-tab.html)
+>[PrÃ©rÃ©glages](lighting-tab.html)
 >[Soleil](sun-and-sky-tabs.html#sun)
 >[Ciel](sun-and-sky-tabs.html#sky)
->[Lumières](lights-tab.html)
+>[LumiÃ¨res](lights-tab.html)
 >[Indirecte](lighting-tab.html#indirect)
->[Lumière ambiante Activée/Désactivée](lighting-tab.html#ambient)
+>[LumiÃ¨re ambiante ActivÃ©e/DÃ©sactivÃ©e](lighting-tab.html#ambient)
 
 ## Canaux
 {: #channels}
-Utilisez ces contrôles pour changer les canaux de lumières en temps réel. Assignez des lumières à un des huit canaux disponibles. Après le rendu, ajustez l'éclairage dans l'image rendue. Cette fonction permet de travailler sur l'équilibrage de plusieurs sources de lumière dans un rendu. Pour plus d'informations, voir la  rubrique [Canaux de rendu](render-channel.html#adjustng-channels).
+Utilisez ces contrÃ´les pour changer les canaux de lumiÃ¨res en temps rÃ©el. Assignez des lumiÃ¨res Ã  un des huit canaux disponibles. AprÃ¨s le rendu, ajustez l'Ã©clairage dans l'image rendue. Cette fonction permet de travailler sur l'Ã©quilibrage de plusieurs sources de lumiÃ¨re dans un rendu. Pour plus d'informations, voir la  rubrique [Canaux de rendu](render-channel.html#adjustng-channels).
 
-## Effets postérieurs
+## Effets postÃ©rieurs
 {: #post-process-effects}
-Applique des effets de traitement postérieur après avoir calculé le rendu de l'image. Les effets peuvent être activés et désactivés et l'ordre de la liste peut être modifié. Chaque effet a ses propres paramètres. Effets disponibles :
+Applique des effets de traitement postÃ©rieur aprÃ¨s avoir calculÃ© le rendu de l'image. Les effets peuvent Ãªtre activÃ©s et dÃ©sactivÃ©s et l'ordre de la liste peut Ãªtre modifiÃ©. Chaque effet a ses propres paramÃ¨tres. Effets disponibles :
 
 >Brouillard
 >Incandescence
->Éclat
+>Ã‰clat
 >Profondeur de champ
 >Points
 >Courbes
->Courbes isoparamétriques
+>Courbes isoparamÃ©triques
 >Annotations
 
 Pour plus d'informations sur les filtres voir la rubrique [post-traitement des images](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).

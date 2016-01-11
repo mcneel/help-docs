@@ -1,235 +1,235 @@
 ---
-title: Propriétés avancées du matériau
+title: PropriÃ©tÃ©s avancÃ©es du matÃ©riau
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
-Flamingo possède des [matériaux simples](material-type-simple.html) et des matériaux plus complexes. Les matériaux complexes comprennent tous les groupes de propriétés disponibles pour un matériau. Utilisez les matériaux complexes pour avoir un maximum de flexibilité et de contrôle sur un matériau. 
+Flamingo possÃ¨de des [matÃ©riaux simples](material-type-simple.html) et des matÃ©riaux plus complexes. Les matÃ©riaux complexes comprennent tous les groupes de propriÃ©tÃ©s disponibles pour un matÃ©riau. Utilisez les matÃ©riaux complexes pour avoir un maximum de flexibilitÃ© et de contrÃ´le sur un matÃ©riau. 
 
-Les propriétés des matériaux complexes sont divisées en plusieurs groupes :
+Les propriÃ©tÃ©s des matÃ©riaux complexes sont divisÃ©es en plusieurs groupesÂ :
 
 > [Nom](#name)
-> [Algorithmes du matériau](#procedures)
-> [Propriétés avancées du matériau](#advanced-materials-properties)
-> [Finition réfléchissante ](#reflective-finish-and-highlight)
-> [Propriétés de transparence](#transparency)
+> [Algorithmes du matÃ©riau](#procedures)
+> [PropriÃ©tÃ©s avancÃ©es du matÃ©riau](#advanced-materials-properties)
+> [Finition rÃ©flÃ©chissante ](#reflective-finish-and-highlight)
+> [PropriÃ©tÃ©s de transparence](#transparency)
 > [Textures algorithmiques](#bump-patterns)
 > [Textures bitmap](#textures)
 > [Notes](#notes)
 
-## Nom du matériau
+## Nom du matÃ©riau
 {: #name}
-Cette section indique le nom du matériau dans le modèle de Rhino.  Les matériaux sont enregistrés dans le modèle de Rhino. Ce qui signifie qu'un matériau portant le même nom dans la bibliothèque ou un autre modèle ne sera pas affecté par les modifications réalisées sur le matériau de ce modèle. Pour utiliser un matériau dans un autre modèle il doit toit d'abord être exporté vers la [bibliothèque](libraries.html). Le nom du matériau servira également à définir le nom du fichier exporté.
+Cette section indique le nom du matÃ©riau dans le modÃ¨le de Rhino.  Les matÃ©riaux sont enregistrÃ©s dans le modÃ¨le de Rhino. Ce qui signifie qu'un matÃ©riau portant le mÃªme nom dans la bibliothÃ¨que ou un autre modÃ¨le ne sera pas affectÃ© par les modifications rÃ©alisÃ©es sur le matÃ©riau de ce modÃ¨le. Pour utiliser un matÃ©riau dans un autre modÃ¨le il doit toit d'abord Ãªtre exportÃ© vers la [bibliothÃ¨que](libraries.html). Le nom du matÃ©riau servira Ã©galement Ã  dÃ©finir le nom du fichier exportÃ©.
 
-## Algorithmes du matériau
+## Algorithmes du matÃ©riau
 {: #procedures}
-L'arbre des algorithmes combine un ou plusieurs matériaux en utilisant des règles pour définir l'interaction entre eux. L'arbre affiche les composants utilisés pour créer ce matériau et vous permet d'ajouter des composants. Pour des matériaux standards, il n'y aura qu'un seul composant dans la liste : Base.
+L'arbre des algorithmes combine un ou plusieurs matÃ©riaux en utilisant des rÃ¨gles pour dÃ©finir l'interaction entre eux. L'arbre affiche les composants utilisÃ©s pour crÃ©er ce matÃ©riau et vous permet d'ajouter des composants. Pour des matÃ©riaux standards, il n'y aura qu'un seul composant dans la liste : Base.
 
-Chaque algorithme combine deux sous-matériaux en utilisant une méthode déterminée. Chaque sous-matériau peut à son tour être constitué d'un algorithme, en combinant deux sous-matériaux. De cette façon, des matériaux extrêmement élaborés peuvent être créés à partir de composants simples. Algorithmes permettant de combiner des matériaux : [Mélange angulaire](procedural-materials.html#angular-blend), [Mélange](procedural-materials.html#blend), [Marbre](procedural-materials.html#marble), [Granit](procedural-materials.html#granite), [Mosaïque](procedural-materials.html#tile) et [Bois](procedural-materials.html#wood).
+Chaque algorithme combine deux sous-matÃ©riaux en utilisant une mÃ©thode dÃ©terminÃ©e. Chaque sous-matÃ©riau peut Ã  son tour Ãªtre constituÃ© d'un algorithme, en combinant deux sous-matÃ©riaux. De cette faÃ§on, des matÃ©riaux extrÃªmement Ã©laborÃ©s peuvent Ãªtre crÃ©Ã©s Ã  partir de composants simples. Algorithmes permettant de combiner des matÃ©riauxÂ : [MÃ©lange angulaire](procedural-materials.html#angular-blend), [MÃ©lange](procedural-materials.html#blend), [Marbre](procedural-materials.html#marble), [Granit](procedural-materials.html#granite), [MosaÃ¯que](procedural-materials.html#tile) et [Bois](procedural-materials.html#wood).
 
-Par exemple, le [Marbre](procedural-materials.html#marble) combine un matériau de base et un matériau de veine en utilisant un motif en tourbillon. 
+Par exemple, le [Marbre](procedural-materials.html#marble) combine un matÃ©riau de base et un matÃ©riau de veine en utilisant un motif en tourbillon. 
 
 
 ##### Pour ajouter un algorithme
-1. Cliquez avec le bouton de droite sur Base dans la fenêtre Algorithmes.
+1. Cliquez avec le bouton de droite sur Base dans la fenÃªtre Algorithmes.
 1. Dans le menu, cliquez sur un type d'algorithme.
   * [Base](procedural-materials.html#base)
-  * [Mélange angulaire](procedural-materials.html#angular-blend)
-  * [Mélange](procedural-materials.html#blend)
+  * [MÃ©lange angulaire](procedural-materials.html#angular-blend)
+  * [MÃ©lange](procedural-materials.html#blend)
   * [Granit](procedural-materials.html#granite)
   * [Marbre](procedural-materials.html#marble)
-  * [Mosaïque](procedural-materials.html#tile)
+  * [MosaÃ¯que](procedural-materials.html#tile)
   * [Bois](procedural-materials.html#wood)
 
 ##### Pour supprimer un algorithme
- 1. Dans la fenêtre Algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
+ 1. Dans la fenÃªtre Algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
  2. Dans le menu, cliquez sur Supprimer.
 
-## Propriétés avancées du matériau
+## PropriÃ©tÃ©s avancÃ©es du matÃ©riau
 {: #advanced-materials-properties}
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Reflet et finition réfléchissante
+#### Reflet et finition rÃ©flÃ©chissante
 {: #reflective-finish-and-highlight}
-Ces paramètres font varier la façon dont un matériau réfléchit la lumière et les objets. L'effet de reflet est normalement associé avec les zones des matériaux brillants où la lumière rencontre l'objet. L'effet réfléchissant est normalement défini avec des réflexions telles un miroir reflétant les objets dans le reste de la scène. Il est important de savoir que le chrome et les autres matériaux réfléchissants ne sont pas rendus correctement s'ils ne peuvent pas refléter quelque chose. Lorsque vous travaillez avec des matériaux réfléchissants, pensez également à un environnement intéressant et d'autres objets que les matériaux pourront réfléchir. 
- Remarque : Pour activer ces paramètres, la valeur d'intensité doit être supérieure à zéro.
+Ces paramÃ¨tres font varier la faÃ§on dont un matÃ©riau rÃ©flÃ©chit la lumiÃ¨re et les objets. L'effet de reflet est normalement associÃ© avec les zones des matÃ©riaux brillants oÃ¹ la lumiÃ¨re rencontre l'objet. L'effet rÃ©flÃ©chissant est normalement dÃ©fini avec des rÃ©flexions telles un miroir reflÃ©tant les objets dans le reste de la scÃ¨ne. Il est important de savoir que le chrome et les autres matÃ©riaux rÃ©flÃ©chissants ne sont pas rendus correctement s'ils ne peuvent pas reflÃ©ter quelque chose. Lorsque vous travaillez avec des matÃ©riaux rÃ©flÃ©chissants, pensez Ã©galement Ã  un environnement intÃ©ressant et d'autres objets que les matÃ©riaux pourront rÃ©flÃ©chir. 
+ RemarqueÂ : Pour activer ces paramÃ¨tres, la valeur d'intensitÃ© doit Ãªtre supÃ©rieure Ã  zÃ©ro.
 
 #### Couleur du reflet
 {: #highlight-color}
-La couleur du reflet est la couleur ajoutée par le matériau aux réflexions. Trois paramètres sont possibles pour ce contrôle : Blanc, Métallique et Personnalisé. 
+La couleur du reflet est la couleur ajoutÃ©e par le matÃ©riau aux rÃ©flexions. Trois paramÃ¨tres sont possibles pour ce contrÃ´leÂ : Blanc, MÃ©tallique et PersonnalisÃ©. 
 
 #### Blanc
-Les matériaux avec un reflet blanc n'ajouteront aucune couleur aux réflexions. Les matériaux avec un reflet blanc sont courants et tendent à ressembler aux peintures standard, aux plastiques ou à une finition de miroir.
+Les matÃ©riaux avec un reflet blanc n'ajouteront aucune couleur aux rÃ©flexions. Les matÃ©riaux avec un reflet blanc sont courants et tendent Ã  ressembler aux peintures standard, aux plastiques ou Ã  une finition de miroir.
 
 ![images/3-plastic.png](images/3-plastic.png)
 
-#### Métallique
+#### MÃ©tallique
 {: #metallic}
-Définit la même couleur pour le reflet que pour la couleur de base de l'objet. De nombreuses finitions de métaux utilisent normalement la couleur de base comme couleur réfléchissante. Cette option utilise la couleur de base du matériau comme couleur réfléchissante. 
+DÃ©finit la mÃªme couleur pour le reflet que pour la couleur de base de l'objet. De nombreuses finitions de mÃ©taux utilisent normalement la couleur de base comme couleur rÃ©flÃ©chissante. Cette option utilise la couleur de base du matÃ©riau comme couleur rÃ©flÃ©chissante. 
 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Personnaliser
-Pour certaines finitions très spéciales, la réflexion de l'objet sera d'une couleur différente de celle du matériau.  Il s'agit normalement de matériaux composés de plusieurs couches. Utilisez l'option Personnalisé pour définir la couleur du reflet. Utilisez le [sélecteur de couleur](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) pour choisir la couleur de la réflexion. 
+Pour certaines finitions trÃ¨s spÃ©ciales, la rÃ©flexion de l'objet sera d'une couleur diffÃ©rente de celle du matÃ©riau.  Il s'agit normalement de matÃ©riaux composÃ©s de plusieurs couches. Utilisez l'option PersonnalisÃ© pour dÃ©finir la couleur du reflet. Utilisez le [sÃ©lecteur de couleur](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) pour choisir la couleur de la rÃ©flexion. 
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
-#### Intensité
+#### IntensitÃ©
 {: #intensity}
-Ajuste l'intensité du reflet. Des valeurs plus petites tendent à créer des objets brillants qui réfléchissent la lumière mais pas les objets autour. Des valeurs élevées augmentent la taille et l'intensité du reflet et des réflexions.  Les valeurs les plus élevées créeront un matériau tel un miroir, réfléchissant les autres objets et l'environnement de la scène. 
+Ajuste l'intensitÃ© du reflet. Des valeurs plus petites tendent Ã  crÃ©er des objets brillants qui rÃ©flÃ©chissent la lumiÃ¨re mais pas les objets autour. Des valeurs Ã©levÃ©es augmentent la taille et l'intensitÃ© du reflet et des rÃ©flexions.  Les valeurs les plus Ã©levÃ©es crÃ©eront un matÃ©riau tel un miroir, rÃ©flÃ©chissant les autres objets et l'environnement de la scÃ¨ne. 
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
 #### Fresnel
 {: #fresnel}
-Prononcé [frè-nel]. Contrôle la réflectivité des matériaux opaques, un phénomène connu sous le nom de [Réflexion de Fresnel](https://fr.wikipedia.org/wiki/Coefficients_de_Fresnel).  Le paramètre de Fresnel reproduit la tendance de nombreux matériaux à devenir plus réfléchissants (proche d'un miroir) lorsqu'ils sont regardés en oblique et à devenir plus mats lorsqu'ils sont regardés à la perpendiculaire.
+PrononcÃ© [frÃ¨-nel]. ContrÃ´le la rÃ©flectivitÃ© des matÃ©riaux opaques, un phÃ©nomÃ¨ne connu sous le nom de [RÃ©flexion de Fresnel](https://fr.wikipedia.org/wiki/Coefficients_de_Fresnel).  Le paramÃ¨treÂ de Fresnel reproduit la tendance de nombreux matÃ©riaux Ã  devenir plus rÃ©flÃ©chissants (proche d'un miroir) lorsqu'ils sont regardÃ©s en oblique et Ã  devenir plus mats lorsqu'ils sont regardÃ©s Ã  la perpendiculaire.
 
-Réduisez la valeur pour les matériaux très foncés afin d'éviter une réflexion trop importante. Augmentez la valeur pour les matériaux tels que le bois vernis, pour lesquels la réflexion de Fresnel est plus prononcée.
+RÃ©duisez la valeur pour les matÃ©riaux trÃ¨s foncÃ©s afin d'Ã©viter une rÃ©flexion trop importante. Augmentez la valeur pour les matÃ©riaux tels que le bois vernis, pour lesquels la rÃ©flexion de Fresnel est plus prononcÃ©e.
 
 ![images/highlightfresnel.png](images/highlightfresnel.png)
 
-#### Netteté
+#### NettetÃ©
 {: #sharpness}
-Définit la taille du reflet. De petites valeurs donnent un reflet plus ample ; de grandes valeurs concentrent le reflet sur une plus petite zone.  Lorsque cette option est appliquée à une réflectivité d'intensité plus élevée, les réflexions sont floues ou nettes. 
+DÃ©finit la taille du reflet. De petites valeurs donnent un reflet plus ample ; de grandes valeurs concentrent le reflet sur une plus petite zone.  Lorsque cette option est appliquÃ©e Ã  une rÃ©flectivitÃ© d'intensitÃ© plus Ã©levÃ©e, les rÃ©flexions sont floues ou nettes. 
 
 ![images/highlightsharpness.png](images/highlightsharpness.png)
 
 #### Type
 {: #type}
-Change comment les réflexions sont calculées lorsque des sources de lumière artificielles sont réfléchies. Les réflexions sont calculées selon deux méthodes : *raycasting* et *reflet*. Ces deux méthodes produiront finalement des résultats identiques ; cependant, dans certains cas, vous verrez qu'une des méthodes donne un bon résultat plus rapidement. Par exemple, les objets peuvent voir un mauvaise aspect car une réflexion de source de lumière cache l'apparence du matériau.
+Change comment les rÃ©flexions sont calculÃ©es lorsque des sources de lumiÃ¨re artificielles sont rÃ©flÃ©chies. Les rÃ©flexions sont calculÃ©es selon deux mÃ©thodes : *raycasting* et *reflet*. Ces deux mÃ©thodes produiront finalement des rÃ©sultats identiquesÂ ; cependant, dans certains cas, vous verrez qu'une des mÃ©thodes donne un bon rÃ©sultat plus rapidement. Par exemple, les objets peuvent voir un mauvaise aspect car une rÃ©flexion de source de lumiÃ¨re cache l'apparence du matÃ©riau.
 
-Dans l'illustration suivante concernant le type Équilibré, l'objet à gauche présente une réflexion blanche très claire qui masque l'apparence du matériau.
+Dans l'illustration suivante concernant le type Ã‰quilibrÃ©, l'objet Ã  gauche prÃ©sente une rÃ©flexion blanche trÃ¨s claire qui masque l'apparence du matÃ©riau.
 
-Les rendus d'intérieur avec de petites sources de lumière peuvent parfois présenter un aspect tacheté sur les surfaces.  Les surfaces présentant cet aspect ont normalement des réflexions floues. La modification du type de réflexion, pour utiliser une réflexion [brillante](advanced-material-properties-main.html#glossy), [aucune réflexion de la source de lumière](advanced-material-properties-main.html#no-light-source-reflection) ou une réflexion de [Monte Carlo](advanced-material-properties-main.html#monte-carlo), peut aider à résoudre ce problème. 
+Les rendus d'intÃ©rieur avec de petites sources de lumiÃ¨re peuvent parfois prÃ©senter un aspect tachetÃ© sur les surfaces.  Les surfaces prÃ©sentant cet aspect ont normalement des rÃ©flexions floues. La modification du type de rÃ©flexion, pour utiliser une rÃ©flexion [brillante](advanced-material-properties-main.html#glossy), [aucune rÃ©flexion de la source de lumiÃ¨re](advanced-material-properties-main.html#no-light-source-reflection) ou une rÃ©flexion de [Monte Carlo](advanced-material-properties-main.html#monte-carlo), peut aider Ã  rÃ©soudre ce problÃ¨me. 
 
-#### Équilibré
+#### Ã‰quilibrÃ©
 {: #balanced}
-Équilibre automatiquement le raycasting et le reflet en fonction du paramètre de Netteté. La réflexion réelle de la source de lumière ainsi que le reflet artificiel sont tous deux calculés.
+Ã‰quilibre automatiquement le raycasting et le reflet en fonction du paramÃ¨tre de NettetÃ©. La rÃ©flexion rÃ©elle de la source de lumiÃ¨re ainsi que le reflet artificiel sont tous deux calculÃ©s.
 
 ![images/highlightbalanced.png](images/highlightbalanced.png)
 
 #### Brillant
 {: #glossy}
-Augmente l'aspect flou du reflet et empêche le raycasting. Aucune réflexion n'est calculée, aussi bien pour les objets que pour les lumières, La performance est donc meilleure et les défauts sur les matériaux présentant des réflexions très floues sont évités. On peut cependant perdre un peu de subtilité au niveau des réflexions.
+Augmente l'aspect flou du reflet et empÃªche le raycasting. Aucune rÃ©flexion n'est calculÃ©e, aussi bien pour les objets que pour les lumiÃ¨res, La performance est donc meilleure et les dÃ©fauts sur les matÃ©riaux prÃ©sentant des rÃ©flexions trÃ¨s floues sont Ã©vitÃ©s. On peut cependant perdre un peu de subtilitÃ© au niveau des rÃ©flexions.
 
 ![images/highlightglossy.png](images/highlightglossy.png)
 
 #### Monte Carlo
 {: #monte-carlo}
-Seul le raycasting est utilisé pour calculer les réflexions des sources de lumière. Le raycasting présente initialement un bruit assez important pour converger ensuite vers une solution correcte. Il est plus utile lorsque le reflet n'est pas flou.
+Seul le raycasting est utilisÃ© pour calculer les rÃ©flexions des sources de lumiÃ¨re. Le raycasting prÃ©sente initialement un bruit assez important pour converger ensuite vers une solution correcte. Il est plus utile lorsque le reflet n'est pas flou.
 
 ![images/highlightmontecarlo.png](images/highlightmontecarlo.png)
 
 #### Aucun reflet
 {: #no-highlight}
-Seul le raycasting est utilisé pour calculer les réflexions des sources de lumière. Cette option est utile lorsque les sources de lumière sont large et le matériau n'est pas brillant ; dans ce cas, le calcul du reflet peut prendre beaucoup de temps. Les réflexions de la source de lumière convergent petit à petit.
+Seul le raycasting est utilisÃ© pour calculer les rÃ©flexions des sources de lumiÃ¨re. Cette option est utile lorsque les sources de lumiÃ¨re sont large et le matÃ©riau n'est pas brillant ; dans ce cas, le calcul du reflet peut prendre beaucoup de temps. Les rÃ©flexions de la source de lumiÃ¨re convergent petit Ã  petit.
 
 ![images/highlightnohighlight.png](images/highlightnohighlight.png)
 
-#### Aucune réflexion ni reflet de la source de lumière
+#### Aucune rÃ©flexion ni reflet de la source de lumiÃ¨re
 {: #no-light-source-reflection-and-no-highlight}
-Exclue toutes les réflexions des sources de lumière artificielles et tous les effets de reflet artificiels. Les réflexions des objets sont toujours calculées.
+Exclue toutes les rÃ©flexions des sources de lumiÃ¨re artificielles et tous les effets de reflet artificiels. Les rÃ©flexions des objets sont toujours calculÃ©es.
 
 ![images/highlightnohighlightreflection.png](images/highlightnohighlightreflection.png)
 
-#### Aucune réflexion de la source de lumière
+#### Aucune rÃ©flexion de la source de lumiÃ¨re
 {: #no-light-source-reflection}
-Exclue les réflexions raycast des sources de lumière. Seul le reflet est utilisé. Cette option est utile parfois pour éviter des artefacts mouchetés si le matériau est flou et si la scène contient des sources de lumière petites et brillantes.
+Exclue les rÃ©flexions raycast des sources de lumiÃ¨re. Seul le reflet est utilisÃ©. Cette option est utile parfois pour Ã©viter des artefacts mouchetÃ©s si le matÃ©riau est flou et si la scÃ¨ne contient des sources de lumiÃ¨re petites et brillantes.
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
 ## Transparence
 {: #transparency}
-Les paramètres de transparence contrôlent les propriétés liées au passage de la lumière à travers un matériau.
+Les paramÃ¨tres de transparence contrÃ´lent les propriÃ©tÃ©s liÃ©es au passage de la lumiÃ¨re Ã  travers un matÃ©riau.
 
 ![images/transparentmaterials.png](images/transparentmaterials.png)
 
-#### Intensité de la transparence
-Fait varier le matériau entre opaque et transparent. Les matériaux transparents augmentent les temps de rendu.
+#### IntensitÃ© de la transparence
+Fait varier le matÃ©riau entre opaque et transparent. Les matÃ©riaux transparents augmentent les temps de rendu.
 
 ![images/transparency.png](images/transparency.png)
 
-#### Indice de réfraction
+#### Indice de rÃ©fraction
 {: #index-of-refraction}
-Détermine la quantité de réfraction produite lorsque l'on regarde des objets au travers de ce matériau.
+DÃ©termine la quantitÃ© de rÃ©fraction produite lorsque l'on regarde des objets au travers de ce matÃ©riau.
 
 ![images/transparencyior.png](images/transparencyior.png)
 
-Le tableau suivant montre des exemples d'indices de réfraction :
+Le tableau suivant montre des exemples d'indices de rÃ©fraction :
 
- | Matériau      |     | Indice de réfraction         |
+ | MatÃ©riau      |     | Indice de rÃ©fraction         |
  |:--------------|:---:|:------------|
  | Vide        |     | 1         |
  | Air           |     | 1,0029      |
  | Glace           |     | 1,309       |
  | Eau         |     | 1,33        |
  | Verre         |     | entre 1,52 et 1,8 |
- | Émeraude        |     | 1,57        |
+ | Ã‰meraude        |     | 1,57        |
  | Rubis/Saphir        |     | 1,77        |
  | Diamant       |     | 2,417       |
 {: .grided-table}
 
-#### Translucidité
+#### TransluciditÃ©
 {: #translucency}
-Une mesure de la diffusion. Une translucidité élevée produit un effet "sablé", car une plus grande quantité de lumière est dispersée aléatoirement à travers le matériau. Il s'agit d'un effet très sensible. De petits réglages peuvent faire une grande différence. 
+Une mesure de la diffusion. Une transluciditÃ© Ã©levÃ©e produit un effet "sablÃ©", car une plus grande quantitÃ© de lumiÃ¨re est dispersÃ©e alÃ©atoirement Ã  travers le matÃ©riau. Il s'agit d'un effet trÃ¨s sensible. De petits rÃ©glages peuvent faire une grande diffÃ©rence. 
 
 ![images/transparencytl.png](images/transparencytl.png)
 
 #### Diffusion
 {: #scattering}
-Contrôle la probabilité que la lumière rencontre une particule par unité de longueur. Le [Path Tracer](render-tab.html#path-tracer) doit être activé pour pouvoir utiliser cet effet.
+ContrÃ´le la probabilitÃ© que la lumiÃ¨re rencontre une particule par unitÃ© de longueur. Le [Path Tracer](render-tab.html#path-tracer)Â doit Ãªtre activÃ© pour pouvoir utiliser cet effet.
 
-La dispersion en sous-surface permet à la lumière de pénétrer la surface de l'objet et de se disperser dans une direction. Beaucoup de matériaux translucides peuvent être modélisés avec cet effet. Certaines surfaces, telles que la pierre ou la peau peuvent être "adoucies" de façon réaliste en permettant à la lumière de pénétrer sur une courte distance.
+La dispersion en sous-surface permet Ã  la lumiÃ¨re de pÃ©nÃ©trer la surface de l'objet et de se disperser dans une direction. Beaucoup de matÃ©riaux translucides peuvent Ãªtre modÃ©lisÃ©s avec cet effet. Certaines surfaces, telles que la pierre ou la peau peuvent Ãªtre "adoucies" de faÃ§on rÃ©aliste en permettant Ã  la lumiÃ¨re de pÃ©nÃ©trer sur une courte distance.
 
-Le matériau doit avoir une certaine transparence pour que la dispersion en sous-surface puisse avoir lieu. Il s'agit d'un effet de volume. Les objets avec ce type de matériau doivent être solides ou "enfermer un espace" pour que l'effet fonctionne correctement.
+Le matÃ©riau doit avoir une certaine transparence pour que la dispersion en sous-surface puisse avoir lieu. Il s'agit d'un effet de volume. Les objets avec ce type de matÃ©riau doivent Ãªtre solides ou "enfermer un espace" pour que l'effet fonctionne correctement.
 
 ![images/scattering.png](images/scattering.png)
 
-#### Atténuation
+#### AttÃ©nuation
 {: #attenuation}
-Détermine la quantité de lumière absorbée lorsqu'elle passe à travers l'objet. Plus les valeurs sont élevées plus l'apparence est trouble. Utilisez l'atténuation pour modéliser des liquides. Les liquides limpides ont une atténuation faible. Les liquides troubles ont une atténuation élevée. 
+DÃ©termine la quantitÃ© de lumiÃ¨re absorbÃ©e lorsqu'elle passe Ã  travers l'objet. Plus les valeurs sont Ã©levÃ©es plus l'apparence est trouble. Utilisez l'attÃ©nuation pour modÃ©liser des liquides. Les liquides limpides ont une attÃ©nuation faible. Les liquides troubles ont une attÃ©nuation Ã©levÃ©e. 
 
 ![images/attenuation.png](images/attenuation.png)
 
 #### Dispersion
 {: #dispersion}
-Contrôle la quantité de lumière divisée suivant les longueurs d'onde de ses composants.
+ContrÃ´le la quantitÃ© de lumiÃ¨re divisÃ©e suivant les longueurs d'onde de ses composants.
 
 ![images/dispersion.png](images/dispersion.png)
 
 #### Saturation
 {: #saturation}
-Détermine la quantité de dispersion.
+DÃ©termine la quantitÃ© de dispersion.
 
 ![images/saturation.png](images/saturation.png)
 
 #### Transparence floue
 {: #blurry-transparency}
-Lorsqu'un matériau est partiellement transparent, un petit bruit est introduit dans la transparence, afin que le résultat soit plus naturel.
+Lorsqu'un matÃ©riau est partiellement transparent, un petit bruit est introduit dans la transparence, afin que le rÃ©sultat soit plus naturel.
 
 #### Flou
-Contrôle la quantité de bruit ajouté.
+ContrÃ´le la quantitÃ© de bruit ajoutÃ©.
 
 ![images/blurrytransparency.png](images/blurrytransparency.png)
 
 #### Incandescence
 {: #glow}
-Crée l'illusion d'une illumination.
+CrÃ©e l'illusion d'une illumination.
 
 ![images/glow.png](images/glow.png)
 
 ## Textures
 {: #textures}
-Deux types de textures peuvent être ajoutées à un matériau : Textures d'image et motifs de relief Les textures d'image sont basées sur des bitmaps, des photographies ou des images scannées. Les motifs de relief sont des motifs aléatoires ou répétés générés par Flamingo. 
+Deux types de textures peuvent Ãªtre ajoutÃ©es Ã  un matÃ©riau : Textures d'image et motifs de relief Les textures d'image sont basÃ©es sur des bitmaps, des photographies ou des images scannÃ©es. Les motifs de relief sont des motifs alÃ©atoires ou rÃ©pÃ©tÃ©s gÃ©nÃ©rÃ©s par Flamingo. 
 
 ![images/textures.png](images/textures.png)
 
 ### Images
 {: #images}
-Il est possible d'utiliser jusqu'à quatre images pour ajouter des détails à un matériau. Les placages d'images peuvent être utilisés de plusieurs façons : pour modifier la couleur de la surface ou la qualité tridimensionnelle de la surface. Les placages d'image sont des motifs en deux dimensions créés avec des programmes de dessin à base de trames ou en scannant des photographies ou d'autres matériaux. Une des méthodes les plus courantes est d'utiliser l'image d'un matériau réel pour définir la couleur. Les images peuvent être constituées de quatre images maximum. Il se peut parfois qu'une image contrôle la couleur et une autre le relief de la texture. Pour choisir comment une image joue sur un matériau, ouvrez la boîte de dialogue [Propriétés de l'image](material-image-properties.html).
+Il est possible d'utiliser jusqu'Ã  quatre images pour ajouter des dÃ©tails Ã  un matÃ©riau. Les placages d'images peuvent Ãªtre utilisÃ©s de plusieurs faÃ§ons : pour modifier la couleur de la surface ou la qualitÃ© tridimensionnelle de la surface. Les placages d'image sont des motifs en deux dimensions crÃ©Ã©s avec des programmes de dessin Ã  base de trames ou en scannant des photographies ou d'autres matÃ©riaux. Une des mÃ©thodes les plus courantes est d'utiliser l'image d'un matÃ©riau rÃ©el pour dÃ©finir la couleur. Les images peuvent Ãªtre constituÃ©es de quatre images maximum. Il se peut parfois qu'une image contrÃ´le la couleur et une autre le relief de la texture. Pour choisir comment une image joue sur un matÃ©riau, ouvrez la boÃ®te de dialogue [PropriÃ©tÃ©s de l'image](material-image-properties.html).
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -237,70 +237,70 @@ Il est possible d'utiliser jusqu'à quatre images pour ajouter des détails à un m
 
 ### Motifs de relief
 {: #bump-patterns}
-Les motifs de relief créent l'apparence d'un certain type de surface sans utiliser de placage de déplacement ni de placages supplémentaires. Les reliefs utilisent des règles mathématiques pour donner l'illusion d'aspérités et de creux sur la surface d'un matériau. Motifs disponibles :
+Les motifs de relief crÃ©ent l'apparence d'un certain type de surface sans utiliser de placage de dÃ©placement ni de placages supplÃ©mentaires. Les reliefs utilisent des rÃ¨gles mathÃ©matiques pour donner l'illusion d'aspÃ©ritÃ©s et de creux sur la surface d'un matÃ©riau. Motifs disponibles :
 
 > [Papier de verre](#sandpaper)
-> [Crépi](#rubble)
+> [CrÃ©pi](#rubble)
 > [Pyramide](#pyramid)
-> [Plissé](#wrinkled)
-> [Marbré](#marbled)
+> [PlissÃ©](#wrinkled)
+> [MarbrÃ©](#marbled)
 
-Les matériaux tels que le stuc, le béton et l'argile ont une texture fine. Il n'est probablement pas nécessaire de scanner une pièce du matériau pour créer une image sauf s'il doit être vu de très près. L'utilisation d'un placage algorithmique de type papier de verre sur une [couleur de base](advanced-material-properties-main.html#color) simule ce type de motif fin. Créez une [couleur de base](advanced-material-properties-main.html#color) qui sera la couleur du matériau. Ajoutez ensuite un relief algorithmique au matériau. Utilisez Papier de verre pour obtenir une texture fine et Crépi pour une texture grossière.
+Les matÃ©riaux tels que le stuc, le bÃ©ton et l'argile ont une texture fine. Il n'est probablement pas nÃ©cessaire de scanner une piÃ¨ce du matÃ©riau pour crÃ©er une image sauf s'il doit Ãªtre vu de trÃ¨s prÃ¨s. L'utilisation d'un placage algorithmique de type papier de verre sur une [couleur de base](advanced-material-properties-main.html#color) simule ce type de motif fin. CrÃ©ez une [couleur de base](advanced-material-properties-main.html#color) qui sera la couleur du matÃ©riau. Ajoutez ensuite un relief algorithmique au matÃ©riau. Utilisez Papier de verre pour obtenir une texture fine et CrÃ©pi pour une texture grossiÃ¨re.
 
-Lorsqu'un placage de relief est sélectionné, d'autres options deviennent disponibles. Il est possible d'ajouter plusieurs motifs de relief à un seul matériau.
+Lorsqu'un placage de relief est sÃ©lectionnÃ©, d'autres options deviennent disponibles. Il est possible d'ajouter plusieurs motifs de relief Ã  un seul matÃ©riau.
 
 #### Papier de verre
 {: #sandpaper}
-Le papier de verre donne une apparence fine et aléatoire. Changez l'[échelle](#scale), l'[intensité](#strength) et la [rotation](#rotation) pour modifier le papier de verre. 
+Le papier de verre donne une apparence fine et alÃ©atoire. Changez l'[Ã©chelle](#scale), l'[intensitÃ©](#strength) et la [rotation](#rotation) pour modifier le papier de verre. 
 
 ![images/sandpaper.png](images/sandpaper.png)
-*Papier de verre dont l'[échelle](#scale) et l'[intensité](#strength) passent de faibles à élevées.*
+*Papier de verre dont l'[Ã©chelle](#scale) et l'[intensitÃ©](#strength) passent de faibles Ã  Ã©levÃ©es.*
 
-#### Crépi
+#### CrÃ©pi
 {: #rubble}
-Donne l'apparence d'une surface grumeleuse, piquetée. Son échelle peut être modifiée et il peut être utilisé pour représenter de l'eau, une surface sale et des taches. Des tâches peuvent être créées en utilisant un crépi avec une grande [échelle](#scale) et une très faible [intensité](#strength). Le placage de type crépi offre un éventail de taille plus grand que le papier de verre.
+Donne l'apparence d'une surface grumeleuse, piquetÃ©e. Son Ã©chelle peut Ãªtre modifiÃ©e et il peut Ãªtre utilisÃ© pour reprÃ©senter de l'eau, une surface sale et des taches. Des tÃ¢ches peuvent Ãªtre crÃ©Ã©es en utilisant un crÃ©pi avec une grande [Ã©chelle](#scale) et une trÃ¨s faible [intensitÃ©](#strength). Le placage de type crÃ©pi offre un Ã©ventail de taille plus grand que le papier de verre.
 
 ![images/rubble.png](images/rubble.png)
-*Crépi dont l'[échelle](#scale) et l'[intensité](#strength) passent de faibles à élevées.*
+*CrÃ©pi dont l'[Ã©chelle](#scale) et l'[intensitÃ©](#strength) passent de faibles Ã  Ã©levÃ©es.*
 
 #### Pyramide
 {: #pyramid}
-Donne l'apparence de petites protubérances formant un motif pyramidal.  L'[échelle](#scale) contrôlera uniquement la taille X et Y de la base de la pyramide. L'[intensité](#strength) jouera sur l'effet de hauteur de la pyramide. 
+Donne l'apparence de petites protubÃ©rances formant un motif pyramidal.  L'[Ã©chelle](#scale) contrÃ´lera uniquement la taille X et Y de la base de la pyramide. L'[intensitÃ©](#strength) jouera sur l'effet de hauteur de la pyramide. 
 
 ![images/pyramid.png](images/pyramid.png)
-*Pyramide avec une [échelle](#scale) plus élevée.*
+*Pyramide avec une [Ã©chelle](#scale) plus Ã©levÃ©e.*
 
-#### Plissé
+#### PlissÃ©
 {: #wrinkled}
-Donne une apparence plissée. Changez l'[échelle](#scale), l'[intensité](#strength) et la [rotation](#rotation) pour modifier le plissé.
+Donne une apparence plissÃ©e. Changez l'[Ã©chelle](#scale), l'[intensitÃ©](#strength) et la [rotation](#rotation) pour modifier le plissÃ©.
 
 ![images/wrinkled.png](images/wrinkled.png)
-*Plissé avec une [échelle](#scale) plus élevée. L'[intensité](#strength) reste constante.*
+*PlissÃ© avec une [Ã©chelle](#scale) plus Ã©levÃ©e. L'[intensitÃ©](#strength) reste constante.*
 
-#### Marbré
+#### MarbrÃ©
 {: #marbled}
-Donne une apparence marbrée.  Il s'agit d'un motif en tourbillon. Changez l'[échelle](#scale), l'[intensité](#strength) et la [rotation](#rotation) pour modifier le marbré.
+Donne une apparence marbrÃ©e.  Il s'agit d'un motif en tourbillon. Changez l'[Ã©chelle](#scale), l'[intensitÃ©](#strength) et la [rotation](#rotation) pour modifier le marbrÃ©.
 
 ![images/marbled.png](images/marbled.png)
-*Marbré avec une [échelle](#scale) plus élevée. L'[intensité](#strength) reste constante.*
+*MarbrÃ© avec une [Ã©chelle](#scale) plus Ã©levÃ©e. L'[intensitÃ©](#strength) reste constante.*
 
-### Échelle
+### Ã‰chelle
 {: #scale}
-Contrôle la taille proportionnelle des reliefs.
+ContrÃ´le la taille proportionnelle des reliefs.
 
 #### X/Y/Z
-Définit l'échelle dans chaque direction séparément.
+DÃ©finit l'Ã©chelle dans chaque direction sÃ©parÃ©ment.
 ![images/texturescalexy.png](images/texturescalexy.png)
 
 #### Verrouiller
 Conserve les proportions de l'image.
 
-### Intensité
+### IntensitÃ©
 {: #strength}
-Contrôle l'apparence de profondeur.
+ContrÃ´le l'apparence de profondeur.
 ![images/texturestrength.png](images/texturestrength.png)
 
 ### Rotation
 {: #rotation}
-Définit l'angle de rotation du motif. Les changements réalisés sur l'orientation ne sont normalement apparents que si le placage algorithmique a un motif évident ou si le relief a été modifié avec différentes valeurs pour les directions x, y et z afin de produire un motif directionnel.
+DÃ©finit l'angle de rotation du motif. Les changements rÃ©alisÃ©s sur l'orientation ne sont normalement apparents que si le placage algorithmique a un motif Ã©vident ou si le relief a Ã©tÃ© modifiÃ© avec diffÃ©rentes valeurs pour les directions x, y et z afin de produire un motif directionnel.
 ![images/texturerotated.png](images/texturerotated.png)

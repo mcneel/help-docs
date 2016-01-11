@@ -1,2 +1,2 @@
 #### Nom
-Cette section indique le nom du matériau. Voir la rubrique [Nom](material-type-advanced.html#name) pour plus d'informations. 
+Cette section indique le nom du matÃ©riau. Voir la rubrique [Nom](material-type-advanced.html#name) pour plus d'informations. 

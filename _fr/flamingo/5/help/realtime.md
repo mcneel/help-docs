@@ -1,11 +1,11 @@
 ---
-title: Aperçu en temps réel
+title: AperÃ§u en temps rÃ©el
 ---
 
 # {{page.title}}
-Flamingo NXT 5 comprend un générateur d'aperçu en temps réel.  Fenêtre expérimentale pour voir si un aperçu rapide de la scène rendue est intéressant.
+Flamingo NXT 5 comprend un gÃ©nÃ©rateur d'aperÃ§u en temps rÃ©el.  FenÃªtre expÃ©rimentale pour voir si un aperÃ§u rapide de la scÃ¨ne rendue est intÃ©ressant.
 
-#### Pour lancer la ferme de rendu en temps réel
-1. Ouvre le menu Flamingo nXt 5.0 > Afficher l'aperçu en temps réel
-1. Sélectionnez un fenêtre en cliquant à l'intérieur
-3. La vue en temps réel de Flamingo devrait s'afficher
+#### Pour lancer la ferme de rendu en temps rÃ©el
+1. Ouvre le menu Flamingo nXt 5.0 > Afficher l'aperÃ§u en temps rÃ©el
+1. SÃ©lectionnez un fenÃªtre en cliquant Ã  l'intÃ©rieur
+3. La vue en temps rÃ©el de Flamingo devrait s'afficher

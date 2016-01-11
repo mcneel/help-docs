@@ -4,169 +4,169 @@ title: Panneau Environnement
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
 {: #environment-tab}
-Les environnements ne sont pas uniquement ce qui peut être vu à l'arrière-plan d'un rendu, mais ils contrôlent également une sphère infinie enveloppant le modèle. Les objets dans la scène réfléchiront et réfracteront l'environnement. La sphère de l'environnement n'est pas un objet qui peut être sélectionné mais une surface de référence pour les effets d'arrière-plan.
+Les environnements ne sont pas uniquement ce qui peut Ãªtre vu Ã  l'arriÃ¨re-plan d'un rendu, mais ils contrÃ´lent Ã©galement une sphÃ¨re infinie enveloppant le modÃ¨le. Les objets dans la scÃ¨ne rÃ©flÃ©chiront et rÃ©fracteront l'environnement. La sphÃ¨re de l'environnement n'est pas un objet qui peut Ãªtre sÃ©lectionnÃ© mais une surface de rÃ©fÃ©rence pour les effets d'arriÃ¨re-plan.
 
-L'environnement agit sur la partie visible de l'arrière-plan et des réflexions.  Pour des effets agissant sur l'éclairage de la scène, consultez la rubrique de l'aide sur le [Ciel](sun-and-sky.html).
+L'environnement agit sur la partie visible de l'arriÃ¨re-plan et des rÃ©flexions.  Pour des effets agissant sur l'Ã©clairage de la scÃ¨ne, consultez la rubrique de l'aide sur le [Ciel](sun-and-sky.html).
 
-Flamingo possède un environnement spécial appelé *[Environnement par défaut de Flamingo](environment.html)*.  Cet environnement est synchronisé avec les [Préréglages d'éclairage](lighting-tab.html). En utilisant les [Préréglages d'éclairage](lighting-tab.html), l'éclairage et l'environnement seront définis avec les valeurs par défaut adaptées à la scène.
+Flamingo possÃ¨de un environnement spÃ©cial appelÃ© *[Environnement par dÃ©faut de Flamingo](environment.html)*.  Cet environnement est synchronisÃ© avec les [PrÃ©rÃ©glages d'Ã©clairage](lighting-tab.html). En utilisant les [PrÃ©rÃ©glages d'Ã©clairage](lighting-tab.html), l'Ã©clairage et l'environnement seront dÃ©finis avec les valeurs par dÃ©faut adaptÃ©es Ã  la scÃ¨ne.
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
-##### Où puis-je trouver cette commande ?
+##### OÃ¹ puis-je trouver cette commande ?
  1. ![images/environments.png](images/environments.png)Onglet Environnement
- 1. ![images/icon-render.png](images/icon-render.png)Barres d'outils Outils  pour le rendu > ![images/environments.png](images/environments.png) Éditeur d'environnement
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Rendu > Éditeur d'environnement
- 1. Commande > ÉditeurEnvironnement
+ 1. ![images/icon-render.png](images/icon-render.png)Barres d'outils Outils  pour le rendu > ![images/environments.png](images/environments.png) Ã‰diteur d'environnement
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Rendu > Ã‰diteur d'environnement
+ 1. Commande > Ã‰diteurEnvironnement
 
-Le panneau de l'éditeur d'environnement est divisé en plusieurs sections.  En fonction du type de environnement, les panneaux avancés peuvent varier.
+Le panneau de l'Ã©diteur d'environnement est divisÃ© en plusieurs sections.  En fonction du type de environnement, les panneaux avancÃ©s peuvent varier.
 
-Il est possible de faire glisser les couleurs et les textures à partir de la palette et de les déposer sur une autre palette ou sur une option de l'éditeur de matériaux, de la [palette textures](texturepalette.html) ou de [l'éditeur d'environnement](environmenteditor.html).
+Il est possible de faire glisser les couleurs et les textures Ã  partir de la palette et de les dÃ©poser sur une autre palette ou sur une option de l'Ã©diteur de matÃ©riaux, de la [palette textures](texturepalette.html) ou de [l'Ã©diteur d'environnement](environmenteditor.html).
 Panneau Environnement
 
- 1. [Type d'arrière-plan](#type)
- 1. [Barre de paramètres](#settings)
+ 1. [Type d'arriÃ¨re-plan](#type)
+ 1. [Barre de paramÃ¨tres](#settings)
  1. [Liste d'environnements](#environment_list)
- 1. [Diviseur de fenêtre](#divider)
- 1. [Section des propriétés de l'environnement](#properties)
+ 1. [Diviseur de fenÃªtre](#divider)
+ 1. [Section des propriÃ©tÃ©s de l'environnement](#properties)
  1. [Nom](#name)
- 1. [Panneaux des propriétés de l'environnement](#panels)
+ 1. [Panneaux des propriÃ©tÃ©s de l'environnement](#panels)
 
-## [Type d'arrière-plan](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [Type d'arriÃ¨re-plan](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #type style="clear: both;"}
-Sélectionnez le type d'arrière-plan pour le modèle.  L'[environnement](#flamingo-environment) est un environnement de rendu tout compris et devrait être le paramètre par défaut pour Flamingo.  Les trois aux paramètres présentent un ensemble de paramètres beaucoup plus simple qui correspond à l'ancien mode de définition des arrière-plans. Pour plus d'informations, consultez la rubrique [arrière-plan simple de Rhinoceros](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings).
+SÃ©lectionnez le type d'arriÃ¨re-plan pour le modÃ¨le.  L'[environnement](#flamingo-environment) est un environnement de rendu tout compris et devrait Ãªtre le paramÃ¨tre par dÃ©faut pour Flamingo.  Les trois aux paramÃ¨tres prÃ©sentent un ensemble de paramÃ¨tres beaucoup plus simple qui correspond Ã  l'ancien mode de dÃ©finition des arriÃ¨re-plans. Pour plus d'informations, consultez la rubrique [arriÃ¨re-plan simple de Rhinoceros](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings).
 
 Le reste de cette rubrique couvre le type d'environnement.
 
-## [Barre de paramètres](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [Barre de paramÃ¨tres](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #settings}
 Utilisez cette barre pour mieux naviguer dans la liste des environnements.
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Flèche de retour arrière
-Sélectionne l'environnement précédent.  Par exemple un environnement avec des couches réfléchissantes ou réfringentes.  Utilisez cette flèche pour revenir à l'environnement parent depuis les détails de réflexion ou réfraction.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) FlÃ¨che de retour arriÃ¨re
+SÃ©lectionne l'environnement prÃ©cÃ©dent.  Par exemple un environnement avec des couches rÃ©flÃ©chissantes ou rÃ©fringentes.  Utilisez cette flÃ¨che pour revenir Ã  l'environnement parent depuis les dÃ©tails de rÃ©flexion ou rÃ©fraction.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Flèche pour avancer
-Sélectionne l'environnement suivant.  Par exemple un environnement avec des couches réfléchissantes ou réfringentes.  Utilisez cette flèche pour passer à l'environnement parent suivant depuis les détails de réflexion ou réfraction.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) FlÃ¨che pour avancer
+SÃ©lectionne l'environnement suivant.  Par exemple un environnement avec des couches rÃ©flÃ©chissantes ou rÃ©fringentes.  Utilisez cette flÃ¨che pour passer Ã  l'environnement parent suivant depuis les dÃ©tails de rÃ©flexion ou rÃ©fraction.
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Nom de l'environnement actuellement sélectionné
-Affiche le nom de l'environnement actuel et le niveau d'édition.  Par exemple, si un niveau Réfléchi ou Réfracté existe, le signe > est affiché. Vous pouvez voir ici l'environnement actuel. 
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Nom de l'environnement actuellement sÃ©lectionnÃ©
+Affiche le nom de l'environnement actuel et le niveau d'Ã©dition.  Par exemple, si un niveau RÃ©flÃ©chi ou RÃ©fractÃ© existe, le signe > est affichÃ©. Vous pouvez voir ici l'environnement actuel. 
 
 #### ![images/library_default.png](images/library_default.png) Menu Outils
-Affiche le [menu Outils](#tools-menu).    Ce menu contient de nombreuses commandes, paramètres et outils concernant les environnements. 
+Affiche le [menu Outils](#tools-menu).    Ce menu contient de nombreuses commandes, paramÃ¨tres et outils concernant les environnements. 
 
 #### ![images/help_topics.png](images/help_topics.png) Aide
 
 ## [Liste des environnements](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #environment_list}
-Affiche une liste de tous environnements disponibles dans le modèle. Un environnement sera sélectionné comme environnement actuel. L'environnement actuel est utilisé pour le rendu. Des petits signes jaunes sont affichés dans les coins de l'environnement actuel. 
+Affiche une liste de tous environnements disponibles dans le modÃ¨le. Un environnement sera sÃ©lectionnÃ© comme environnement actuel. L'environnement actuel est utilisÃ© pour le rendu. Des petits signes jaunes sont affichÃ©s dans les coins de l'environnement actuel. 
 
-À partir de cette liste :
+Ã€ partir de cette liste :
 
-* Cliquez sur un environnement pour le définir comme environnement actuel. Une fois sélectionné, les propriétés de l'environnement seront affichées dans les panneaux inférieurs. Voir [Propriétés des matériaux de rendu](#properties) pour plus d'informations.
-* Naviguez dans la liste pour voir tous les environnements du modèle.
+* Cliquez sur un environnement pour le dÃ©finir comme environnement actuel. Une fois sÃ©lectionnÃ©, les propriÃ©tÃ©s de l'environnement seront affichÃ©es dans les panneaux infÃ©rieurs. Voir [PropriÃ©tÃ©s des matÃ©riaux de rendu](#properties) pour plus d'informations.
+* Naviguez dans la liste pour voir tous les environnements du modÃ¨le.
 * Ajoutez un nouvel environnement, en utilisant le bouton Ajouter ![images/add_material.png](images/add_material.png) en bas de la liste. 
 * Cliquez avec le bouton de droite sur une miniature pour afficher le menu contextuel de l'environnement
-* Cliquez avec le  bouton de droite dans la zone vide pour afficher le menu contextuel de création d'un nouvel environnement
+* Cliquez avec le  bouton de droite dans la zone vide pour afficher le menu contextuel de crÃ©ation d'un nouvel environnement
 
 ###  ![images/add_material.png](images/add_material.png) Ajouter un nouvel environnement
 {: #add_environment}
-L'icône ajouter se trouve en bas de la liste des environnements. 
+L'icÃ´ne ajouter se trouve en bas de la liste des environnements. 
 
-Il ouvre le [bibliothèque](libraries.html) d'environnements du contenu de rendu.
-Les environnements de la bibliothèque agissent comme des modèles pour créer d'autres environnements dans le document.
+Il ouvre le [bibliothÃ¨que](libraries.html) d'environnements du contenu de rendu.
+Les environnements de la bibliothÃ¨que agissent comme des modÃ¨les pour crÃ©er d'autres environnements dans le document.
 
 ### Menu contextuel de l'environnement
 {: environment_context}
-Le menu est disponible en cliquant avec le bouton droit sur un élément de la liste d'environnements. Consultez le [menu Outils](#tools_menu) pour plus d'informations sur les options de ce menu. 
+Le menu est disponible en cliquant avec le bouton droit sur un Ã©lÃ©ment de la liste d'environnements. Consultez le [menu Outils](#tools_menu) pour plus d'informations sur les options de ce menu. 
 
-### Menu contextuel de création d'un nouvel environnement
+### Menu contextuel de crÃ©ation d'un nouvel environnement
 {: new_envrionment_context}
 Ce menu est disponible en cliquant avec le bouton droit dans une zone vide de la liste d'environnements.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Créer un nouvel environnement
-Crée un nouvel environnement de Flamingo.
+#### ![images/toolbarlus.png](images/toolbarplus.png) CrÃ©er un nouvel environnement
+CrÃ©e un nouvel environnement de Flamingo.
 
-#### ![images/import.png](images/import.png) Importer un environnement à partir d'un fichier...
-Utilisez cette commande pour sélectionner un environnement précédemment exporté. 
+#### ![images/import.png](images/import.png) Importer un environnement Ã  partir d'un fichier...
+Utilisez cette commande pour sÃ©lectionner un environnement prÃ©cÃ©demment exportÃ©. 
 
 #### ![images/paste.png](images/paste.png) Coller
-Crée un nouvel environnement à partir du contenu du presse-papiers.
+CrÃ©e un nouvel environnement Ã  partir du contenu du presse-papiers.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Coller comme occurrence
-Crée un nouvel environnement à partir du contenu du presse-papiers qui est lié à l'original par instanciation.
+CrÃ©e un nouvel environnement Ã  partir du contenu du presse-papiers qui est liÃ© Ã  l'original par instanciation.
 
 #### ![images/grid.png](images/grid.png) Grille
-Affiche les aperçus sous forme de grille de miniatures.
+Affiche les aperÃ§us sous forme de grille de miniatures.
 
 #### ![images/list.png](images/list.png) Liste
-Affiche les aperçus sous forme de liste de miniatures.
+Affiche les aperÃ§us sous forme de liste de miniatures.
 
 #### ![images/tree.png](images/tree.png) Arbre
-Affiche les aperçus sous forme d'arbre affichant les différentes branches.
+Affiche les aperÃ§us sous forme d'arbre affichant les diffÃ©rentes branches.
 
 #### ![images/horizontal.png](images/horizontal.png) Mise en page horizontale
-Affiche les aperçus à gauche des contrôles.
+Affiche les aperÃ§us Ã  gauche des contrÃ´les.
 
-#### ![images/showpreview.png](images/showpreview.png) Afficher le panneau d'aperçu
-Affiche les propriétés d'aperçu pour la miniature sélectionnée. Vous pouvez définir la géométrie de l'aperçu, sa taille, l'arrière-plan utilisé et la méthode de rotation.
+#### ![images/showpreview.png](images/showpreview.png) Afficher le panneau d'aperÃ§u
+Affiche les propriÃ©tÃ©s d'aperÃ§u pour la miniature sÃ©lectionnÃ©e. Vous pouvez dÃ©finir la gÃ©omÃ©trie de l'aperÃ§u, sa taille, l'arriÃ¨re-plan utilisÃ© et la mÃ©thode de rotation.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Aperçu flottant
-Affiche l'image d'aperçu dans une fenêtre flottante dont la taille peut être modifiée.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) AperÃ§u flottant
+Affiche l'image d'aperÃ§u dans une fenÃªtre flottante dont la taille peut Ãªtre modifiÃ©e.
 
 #### Miniatures
 
 ##### ![images/small.png](images/small.png) Petit
-Définit la plus petite taille de miniature.
+DÃ©finit la plus petite taille de miniature.
 
 ##### ![images/medium.png](images/medium.png) Moyen
-Définit la taille moyenne de miniature.
+DÃ©finit la taille moyenne de miniature.
 
 ##### ![images/large.png](images/large.png) Grand
-Définit la plus grande taille de miniature.
+DÃ©finit la plus grande taille de miniature.
 
-##### ![images/showlabels.png](images/showlabels.png) Afficher les étiquettes
-Affiche les étiquettes du nom de la miniature en mode Grille.
-Le mode Liste affiche toujours les étiquettes.
+##### ![images/showlabels.png](images/showlabels.png) Afficher les Ã©tiquettes
+Affiche les Ã©tiquettes du nom de la miniature en mode Grille.
+Le mode Liste affiche toujours les Ã©tiquettes.
 
-##### ![images/showunits.png](images/showunits.png) Afficher les unités
-Affiche la taille dans les unités du modèle.
+##### ![images/showunits.png](images/showunits.png) Afficher les unitÃ©s
+Affiche la taille dans les unitÃ©s du modÃ¨le.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Actualisation automatique de l'aperçu
-Actualise automatiquement tous les aperçus lorsque les paramètres sont modifiés.
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Actualisation automatique de l'aperÃ§u
+Actualise automatiquement tous les aperÃ§us lorsque les paramÃ¨tres sont modifiÃ©s.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Actualiser tous les aperçus
-Actualise les aperçus manuellement lorsque l'option Actualisation automatique de l'aperçu est désactivée.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) Actualiser tous les aperÃ§us
+Actualise les aperÃ§us manuellement lorsque l'option Actualisation automatique de l'aperÃ§u est dÃ©sactivÃ©e.
 
-## [Diviseur de fenêtre](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [Diviseur de fenÃªtre](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: #divider}
-Déplacez le diviseur pour modifier la longueur de la liste des environnements par rapport à la longueur de la section des propriétés de l'environnement.
+DÃ©placez le diviseur pour modifier la longueur de la liste des environnements par rapport Ã  la longueur de la section des propriÃ©tÃ©s de l'environnement.
 
-## [Section des propriétés de l'environnement](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+## [Section des propriÃ©tÃ©s de l'environnement](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: #properties}
 
 ### [Nom de l'environnement](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
-Cette section indique le nom de l'environnement. Le nom de l'environnement est également enregistré comme nom du fichier lors de l'exportation de l'environnement vers la bibliothèque. **Remarque :** Les environnements sont sauvegardés dans le modèle de Rhino, des environnements uniques peuvent avoir le même nom dans différents modèles de Rhino.
+Cette section indique le nom de l'environnement. Le nom de l'environnement est Ã©galement enregistrÃ© comme nom du fichier lors de l'exportation de l'environnement vers la bibliothÃ¨que. **RemarqueÂ :** Les environnements sont sauvegardÃ©s dans le modÃ¨le de Rhino, des environnements uniques peuvent avoir le mÃªme nom dans diffÃ©rents modÃ¨les de Rhino.
 
 ### [Panneaux Environnement](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
 {: #panels}
-La section des propriétés de l'environnement comprend plusieurs panneaux. Chaque panneau peut être ouvert ou fermé en cliquant sur la barre de titre en gris. Cliquez sur la barre de titre pour afficher le contenu.
+La section des propriÃ©tÃ©s de l'environnement comprend plusieurs panneaux. Chaque panneau peut Ãªtre ouvert ou fermÃ© en cliquant sur la barre de titre en gris. Cliquez sur la barre de titre pour afficher le contenu.
 
 Les panneaux de l'environnement varieront en fonction du type d'environnement et du niveau actif de l'environnement actuel. Pour plus d'informations sur chaque panneau, consultez la section [Environnement de Flamingo](environment.html).
 
 ## Menu Outils ![images/library_default.png](images/library_default.png)
 {: tools_menu}
-Ces paramètres apparaissent également dans les menus contextuels du bouton de droite de la souris pour les aperçus et arrière-plan miniatures.
+Ces paramÃ¨tres apparaissent Ã©galement dans les menus contextuels du bouton de droite de la souris pour les aperÃ§us et arriÃ¨re-plan miniatures.
 
-#### ![images/currentenvironment.png](images/currentenvironment.png) Définir comme environnement actuel
-L'environnement cible est défini comme environnement actuel.  L'environnement actuel sera utilisé lors du prochain rendu.
+#### ![images/currentenvironment.png](images/currentenvironment.png) DÃ©finir comme environnement actuel
+L'environnement cible est dÃ©fini comme environnement actuel.  L'environnement actuel sera utilisÃ© lors du prochain rendu.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Créer un nouvel environnement
-Crée un nouvel environnement de Flamingo.
+#### ![images/toolbarlus.png](images/toolbarplus.png) CrÃ©er un nouvel environnement
+CrÃ©e un nouvel environnement de Flamingo.
 <!-- Cette partie vient de la page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-Ces paramètres apparaissent également dans les menus contextuels du bouton de droite de la souris pour les aperçus et arrière-plan miniatures.
+Ces paramÃ¨tres apparaissent Ã©galement dans les menus contextuels du bouton de droite de la souris pour les aperÃ§us et arriÃ¨re-plan miniatures.
 
-#### ![images/import.png](images/import.png) Importer un environnement à partir d'un fichier
-Importe un environnement à partir d'un fichier .renv de Rhino.
+#### ![images/import.png](images/import.png) Importer un environnement Ã  partir d'un fichier
+Importe un environnement Ã  partir d'un fichier .renv de Rhino.
 
 #### ![images/savetofile.png](images/savetofile.png) Enregistrer dans un fichier
 Enregistre un fichier environnement .renv de Rhino.
@@ -174,38 +174,38 @@ Enregistre un fichier environnement .renv de Rhino.
 #### ![images/changetype.png](images/changetype.png) Modifier le type
 Change le type d'un environnement.
 
-#### ![images/changetype.png](images/changetype.png) Modifier le type (Copier les paramètres)
+#### ![images/changetype.png](images/changetype.png) Modifier le type (Copier les paramÃ¨tres)
 Change le type d'un environnement.
-Le comportement par défaut dépend du statut actuel de la case [Options de rendu](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copier les paramètres similaires lorsque le type de contenu est modifié](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed). Si cette case est cochée, les paramètres compatibles de l'ancien contenu seront copiés dans le nouveau.
+Le comportement par dÃ©faut dÃ©pend du statut actuel de la case [Options de rendu](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copier les paramÃ¨tres similaires lorsque le type de contenu est modifiÃ©](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed). Si cette case est cochÃ©e, les paramÃ¨tres compatibles de l'ancien contenu seront copiÃ©s dans le nouveau.
 
-#### ![images/reset.png](images/reset.png) Valeurs par défaut
-Redéfinit tous les paramètres par défaut de l'environnement (arrière-plan uni noir, arrière-plan réfléchi, ciel et arrière-plan réfracté visible).
+#### ![images/reset.png](images/reset.png) Valeurs par dÃ©faut
+RedÃ©finit tous les paramÃ¨tres par dÃ©faut de l'environnement (arriÃ¨re-plan uni noir, arriÃ¨re-plan rÃ©flÃ©chi, ciel et arriÃ¨re-plan rÃ©fractÃ© visible).
 
 #### ![images/copy.png](images/copy.png) Copier
-Copie l'environnement sélectionné dans le presse-papiers de Windows. Le presse-papiers peut ensuite être collé dans l'éditeur afin de créer un nouvel environnement ou collé directement dans un dossier pour créer un  fichier de [bibliothèque](libraries.html) file.
+Copie l'environnement sÃ©lectionnÃ© dans le presse-papiers de Windows. Le presse-papiers peut ensuite Ãªtre collÃ© dans l'Ã©diteur afin de crÃ©er un nouvel environnement ou collÃ© directement dans un dossier pour crÃ©er un  fichier de [bibliothÃ¨que](libraries.html) file.
 
 #### ![images/paste.png](images/paste.png) Coller
-Crée un nouvel environnement à partir du contenu du presse-papiers.
+CrÃ©e un nouvel environnement Ã  partir du contenu du presse-papiers.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Coller comme occurrence
-Crée un nouvel environnement à partir du contenu du presse-papiers qui est lié à l'original par instanciation.
+CrÃ©e un nouvel environnement Ã  partir du contenu du presse-papiers qui est liÃ© Ã  l'original par instanciation.
 
 #### ![images/delete.png](images/delete.png) Supprimer
-Supprime l'environnement sélectionné.
+Supprime l'environnement sÃ©lectionnÃ©.
 
 #### ![images/rename.png](images/rename.png) Renommer...
-Renomme l'environnement sélectionné.
+Renomme l'environnement sÃ©lectionnÃ©.
 
 #### ![images/duplicate.png](images/duplicate.png) Dupliquer
-Copie l'environnement sélectionné sur un nouvel environnement avec les mêmes paramètres.
+Copie l'environnement sÃ©lectionnÃ© sur un nouvel environnement avec les mÃªmes paramÃ¨tres.
 
 #### ![images/removeinstancing.png](images/removeinstancing.png) Supprimer l'instanciation
-Supprime la connexion entre les environnements [copiés par instance](#paste-as-instance) .
+Supprime la connexion entre les environnements [copiÃ©s par instance](#paste-as-instance) .
 
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 #### ![images/contentfilter.png](images/contentfilter.png) Filtre de contenu
-Ouvre la boîte de dialogue [Filtres de contenu](content_filters.html) .
+Ouvre la boÃ®te de dialogue [Filtres de contenu](content_filters.html) .
 
-#### ![images/rename.png](images/rename.png) Propriétés
-Ouvre la  boîte de dialogue [Propriétés de l'aperçu](previewproperties.html).
+#### ![images/rename.png](images/rename.png) PropriÃ©tÃ©s
+Ouvre la  boÃ®te de dialogue [PropriÃ©tÃ©s de l'aperÃ§u](previewproperties.html).

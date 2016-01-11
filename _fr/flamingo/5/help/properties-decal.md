@@ -1,126 +1,126 @@
 ---
-title: Décalcomanies
+title: DÃ©calcomanies
 ---
 1<!-- This is an old page, I am not sure it needs to be updated or translated,  The new Flamingo products used Rhino decals documented in Rhino help. -->
 
 # {{page.title}}
-Les décalcomanies sont des placages d'image sans mosaïque appliqués directement sur les objets au lieu d'utiliser un matériau. Utilisez les décalcomanies pour modifier une partie déterminée de la couleur, de la réflectivité ou du reliefs d'un objet.
-Les décalcomanies sont composées d'une seule image et ne sont pas disposées en mosaïque comme dans une [définition de matériaux](materials-tab.html).
-Les décalcomanies peuvent être utilisées pour :
+Les dÃ©calcomanies sont des placages d'image sans mosaÃ¯que appliquÃ©s directement sur les objets au lieu d'utiliser un matÃ©riau. Utilisez les dÃ©calcomanies pour modifier une partie dÃ©terminÃ©e de la couleur, de la rÃ©flectivitÃ© ou du reliefs d'un objet.
+Les dÃ©calcomanies sont composÃ©es d'une seule image et ne sont pas disposÃ©es en mosaÃ¯que comme dans une [dÃ©finition de matÃ©riaux](materials-tab.html).
+Les dÃ©calcomanies peuvent Ãªtre utilisÃ©es pour :
 
->Accrocher des illustrations sur des murs intérieurs.
->Placer des étiquettes ou des logos sur un produit.
->Ajouter des marques au modèle.
->Créer des vitraux.
+>Accrocher des illustrations sur des murs intÃ©rieurs.
+>Placer des Ã©tiquettes ou des logos sur un produit.
+>Ajouter des marques au modÃ¨le.
+>CrÃ©er des vitraux.
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Remarque :** Les aperçus des décalcomanies ne sont visibles dans les vues filaires que si OpenGL est activé pour le mode filaire. Le paramètre **Canal d'affichage** doit être défini sur **OpenGL** dans **Options**  &gt; **Vue**  &gt; **Modes d'affichage**  &gt; **Filaire**  &gt; **Autres paramètres**  &gt; **Canal d'affichage**.
+ **RemarqueÂ :** Les aperÃ§us des dÃ©calcomanies ne sont visibles dans les vues filaires que si OpenGL est activÃ© pour le mode filaire. Le paramÃ¨tre **Canal d'affichage** doit Ãªtre dÃ©fini sur **OpenGL** dans **Options**  &gt; **Vue**  &gt; **Modes d'affichage**  &gt; **Filaire**  &gt; **Autres paramÃ¨tres**  &gt; **Canal d'affichage**.
 
-## Positionnement de la décalcomanie
+## Positionnement de la dÃ©calcomanie
 {: #decal-list}
 {: #decal-placement}
 
 ###  **Ajouter**
 {: #add-decal}
-1. Sélectionnez un ou plusieurs objets.
-1. Dans le menu **Édition**, cliquez sur **Propriétés de l'objet**.
-1. Dans la liste des **Propriétés**, cliquez sur **Décalcomanies de Flamingo nXt**.
+1. SÃ©lectionnez un ou plusieurs objets.
+1. Dans le menu **Ã‰dition**, cliquez sur **PropriÃ©tÃ©s de l'objet**.
+1. Dans la liste des **PropriÃ©tÃ©s**, cliquez sur **DÃ©calcomanies de Flamingo nXt**.
 1. Cliquer sur le bouton **Ajouter**.
-1. Dans la boîte de dialogue Ouvrir une image, choisissez un fichier image et cliquez sur Ouvrir**.
-{% include_relative snippets/snippet-clearbitmapcache.md %}1. Dans la boîte de dialogue Propriétés de la décalcomanie, sélectionnez les options et cliquez sur Positionner**.
-1. Aux invites demandant les points, choisissez des points dans le modèle pour positionner la décalcomanie.
-La séquence précise dépend du type de décalcomanie sélectionné : [Plane](#decal-planarmapping), [Cylindrique](#decal-cylindricalmapping) ou [Placage UV](#decal-uvmapping).
+1. Dans la boÃ®te de dialogue Ouvrir une image, choisissez un fichier image et cliquez sur Ouvrir**.
+{% include_relative snippets/snippet-clearbitmapcache.md %}1. Dans la boÃ®te de dialogue PropriÃ©tÃ©s de la dÃ©calcomanie, sÃ©lectionnez les options et cliquez sur Positionner**.
+1. Aux invites demandant les points, choisissez des points dans le modÃ¨le pour positionner la dÃ©calcomanie.
+La sÃ©quence prÃ©cise dÃ©pend du type de dÃ©calcomanie sÃ©lectionnÃ© : [Plane](#decal-planarmapping), [Cylindrique](#decal-cylindricalmapping) ou [Placage UV](#decal-uvmapping).
 
 ###  **Changer de position**
 {: #decal-edit-placement}
 1. Cliquez sur le bouton **Changer de position**.
-1. À l'invite Sélectionner un point de contrôle, utilisez l'éditeur graphique pour changer la position de la décalcomanie.
-1. Appuyez sur **Entrée** une fois terminé.
+1. Ã€ l'invite SÃ©lectionner un point de contrÃ´le, utilisez l'Ã©diteur graphique pour changer la position de la dÃ©calcomanie.
+1. Appuyez sur **EntrÃ©e** une fois terminÃ©.
 
-###  **Propriétés**
+###  **PropriÃ©tÃ©s**
 {: #decal-properties}
-1. Cliquez sur le bouton **Propriétés**.
-1. Dans la boîte de dialogue Propriétés de la décalcomanie, utilisez les différentes options pour changer les caractéristiques de la décalcomanie.
+1. Cliquez sur le bouton **PropriÃ©tÃ©s**.
+1. Dans la boÃ®te de dialogue PropriÃ©tÃ©s de la dÃ©calcomanie, utilisez les diffÃ©rentes options pour changer les caractÃ©ristiques de la dÃ©calcomanie.
 
 ###  **Supprimer**
 {: #decal-delete}
 
 >Cliquez sur le bouton **Supprimer**.
 
-###  **Déplacer vers le haut** / **Déplacer vers le bas**
+###  **DÃ©placer vers le haut** / **DÃ©placer vers le bas**
 {: #decal-movedown}
 {: #decal-moveup}
-Quand plusieurs décalcomanies sont superposées sur un seul objet, l'ordre dans lequel elles sont appliquées peut être important. Les décalcomanies sont appliquées dans l'ordre dans lequel elles apparaissent dans la liste. La dernière décalcomanie de la liste est au-dessus des autres.
+Quand plusieurs dÃ©calcomanies sont superposÃ©es sur un seul objet, l'ordre dans lequel elles sont appliquÃ©es peut Ãªtre important. Les dÃ©calcomanies sont appliquÃ©es dans l'ordre dans lequel elles apparaissent dans la liste. La derniÃ¨re dÃ©calcomanie de la liste est au-dessus des autres.
 
->Cliquez sur Vers le haut ou Vers le bas pour changer la position de la décalcomanie dans la liste.
+>Cliquez sur Vers le haut ou Vers le bas pour changer la position de la dÃ©calcomanie dans la liste.
 
-##### Pour placer une décalcomanie plane
-1. Aux différentes invites, choisissez les points définissant la Largeur et la Direction de la hauteur**.
-1. À l'invite Sélectionner un point de contrôle..., sélectionnez un point de contrôle pour ajuster la taille, la rotation et la position de l'image.
-Ou appuyez sur Entrée pour terminer le placement de la décalcomanie.
+##### Pour placer une dÃ©calcomanie plane
+1. Aux diffÃ©rentes invites, choisissez les points dÃ©finissant la Largeur et la Direction de la hauteur**.
+1. Ã€ l'invite SÃ©lectionner un point de contrÃ´le..., sÃ©lectionnez un point de contrÃ´le pour ajuster la taille, la rotation et la position de l'image.
+Ou appuyez sur EntrÃ©e pour terminer le placement de la dÃ©calcomanie.
 
 ### Options
 
-#### Déplacer
-Déplace la décalcomanie. Aux invites Point de départ et Point final, entrez des points tout comme pour la commande Déplacer de Rhino.
+#### DÃ©placer
+DÃ©place la dÃ©calcomanie. Aux invites Point de dÃ©part et Point final, entrez des points tout comme pour la commande DÃ©placer de Rhino.
 
 #### UtiliserRapportImage
-La décalcomanie est étirée en fonction du rapport de l'image originale.
+La dÃ©calcomanie est Ã©tirÃ©e en fonction du rapport de l'image originale.
 
-##### Pour placer une décalcomanie cylindrique
-1. À l'invite, choisissez la position du centre du cylindre.
-1. À l'invite Sélectionner un point de contrôle..., sélectionnez un point de contrôle pour ajuster la taille, la rotation et la position de l'image.
-Ou appuyez sur Entrée pour terminer le placement de la décalcomanie.
+##### Pour placer une dÃ©calcomanie cylindrique
+1. Ã€ l'invite, choisissez la position du centre du cylindre.
+1. Ã€ l'invite SÃ©lectionner un point de contrÃ´le..., sÃ©lectionnez un point de contrÃ´le pour ajuster la taille, la rotation et la position de l'image.
+Ou appuyez sur EntrÃ©e pour terminer le placement de la dÃ©calcomanie.
 
-## Définissez ou modifiez le placement de la décalcomanie en utilisant l'application de contrôle
-Note : Si vous utilisez un placage plan sur un objet courbé, toute l'image doit se trouver derrière la surface de l'objet. Les portions de l'image qui se trouvent devant la surface ne seront pas visibles.
+## DÃ©finissez ou modifiez le placement de la dÃ©calcomanie en utilisant l'application de contrÃ´le
+Note : Si vous utilisez un placage plan sur un objet courbÃ©, toute l'image doit se trouver derriÃ¨re la surface de l'objet. Les portions de l'image qui se trouvent devant la surface ne seront pas visibles.
 
-#### Pour modifier la largeur et la hauteur de la décalcomanie en même temps
+#### Pour modifier la largeur et la hauteur de la dÃ©calcomanie en mÃªme temps
 
->Faites glisser les points de contrôle situés au sommet de l'application.
+>Faites glisser les points de contrÃ´le situÃ©s au sommet de l'application.
 
-#### Pour changer la hauteur d'une décalcomanie
+#### Pour changer la hauteur d'une dÃ©calcomanie
 
->Faites glisser le point de contrôle situé au milieu des bords supérieur et inférieur de l'application.
+>Faites glisser le point de contrÃ´le situÃ© au milieu des bords supÃ©rieur et infÃ©rieur de l'application.
 
-#### Pour changer la largeur d'une décalcomanie
+#### Pour changer la largeurÂ d'une dÃ©calcomanie
 
->Faites glisser le point de contrôle situé au milieu des bords gauche et droite de l'application.
+>Faites glisser le point de contrÃ´le situÃ© au milieu des bords gauche et droite de l'application.
 
-#### Pour déplacer la décalcomanie
+#### Pour dÃ©placer la dÃ©calcomanie
 
->Faites glisser le point de contrôle situé au centre de l'application.
+>Faites glisser le point de contrÃ´le situÃ© au centre de l'application.
 
-#### Pour faire tourner la décalcomanie
+#### Pour faire tourner la dÃ©calcomanie
 
->Faites glisser le point de contrôle de l'axe x, y ou z sur l'icône de l'application.
+>Faites glisser le point de contrÃ´le de l'axe x, y ou z sur l'icÃ´ne de l'application.
 
-## Propriétés de la décalcomanie
+## PropriÃ©tÃ©s de la dÃ©calcomanie
 {: #dialogbox-editdecal}
-La couleur de l'objet est remplacée par la couleur de la décalcomanie ou les deux couleurs sont mélangées. Ce résultat est celui le plus souvent recherché lors de l'utilisation des décalcomanies.
+La couleur de l'objet est remplacÃ©e par la couleur de la dÃ©calcomanie ou les deux couleurs sont mÃ©langÃ©es. Ce rÃ©sultat est celui le plus souvent recherchÃ© lors de l'utilisation des dÃ©calcomanies.
 
 ## Projection
 {: #projection}
-Le style de placage indique comment projeter la décalcomanie sur l'objet. Vous pouvez dessiner des lignes de construction dans votre scène pour vous aider à placer la décalcomanie avec précision. Un rectangle dessiné juste derrière une surface peut servir de guide au moment de placer une décalcomanie normale. Utilisez les accrochages aux objets pour un positionnement précis.
+Le style de placage indique comment projeter la dÃ©calcomanie sur l'objet. Vous pouvez dessiner des lignes de construction dans votre scÃ¨ne pour vous aider Ã  placer la dÃ©calcomanie avec prÃ©cision. Un rectangle dessinÃ© juste derriÃ¨re une surface peut servir de guide au moment de placer une dÃ©calcomanie normale. Utilisez les accrochages aux objets pour un positionnement prÃ©cis.
 
 ### Cylindrique
 {: #decal-cylindricalmapping}
-Le placage cylindrique est utile pour placer des décalcomanies sur des objets qui sont courbés dans une seule direction, tels que les étiquettes sur des bouteilles de vin.
-Lorsque l'image est plaquée sur le cylindre, son axe vertical est placé le long de l'axe du cylindre et son axe horizontal autour de celui-ci.
+Le placage cylindrique est utile pour placer des dÃ©calcomanies sur des objets qui sont courbÃ©s dans une seule direction, tels que les Ã©tiquettes sur des bouteilles de vin.
+Lorsque l'image est plaquÃ©e sur le cylindre, son axe vertical est placÃ© le long de l'axe du cylindre et son axe horizontal autour de celui-ci.
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
 
 ### Plan
 {: #decal-planarmapping}
-Ce style de placage est le plus commun. Il est utilisé pour effectuer un placage sur des objets plats ou présentant une légère une courbure.
-Les sommets définissent la position de l'image et ses dimensions. Si le rectangle n'a pas les mêmes proportions que la texture, cette dernière sera étirée ou comprimée en conséquence.
-Lors d'un placage plan sur un objet courbé, toute la projection de l'image doit se trouver derrière la surface de l'objet. Les portions de l'image qui se trouvent devant la surface ne seront pas visibles.
+Ce style de placage est le plus commun. Il est utilisÃ© pour effectuer un placage sur des objets plats ou prÃ©sentant une lÃ©gÃ¨re une courbure.
+Les sommets dÃ©finissent la position de l'image et ses dimensions. Si le rectangle n'a pas les mÃªmes proportions que la texture, cette derniÃ¨re sera Ã©tirÃ©e ou comprimÃ©e en consÃ©quence.
+Lors d'un placage plan sur un objet courbÃ©, toute la projection de l'image doit se trouver derriÃ¨re la surface de l'objet. Les portions de l'image qui se trouvent devant la surface ne seront pas visibles.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
 
 ### Placage UV
 {: #decal-uvmapping}
-Les décalcomanies utilisant un placage UV sont utiles pour les objets tels que les cheveux, les écorces d'arbres où la décalcomanie doit glisser et s'étirer pour s'adapter à la surface.
-La décalcomanie couvre tout l'objet, il n'est pas possible de contrôler le placement.
-Le placage UV utilise la paramétrisation u et v de la surface pour courber et étirer l'image ; aucun positionnement manuel n'est donc nécessaire.
+Les dÃ©calcomanies utilisant un placage UV sont utiles pour les objets tels que les cheveux, les Ã©corces d'arbres oÃ¹ la dÃ©calcomanie doit glisser et s'Ã©tirer pour s'adapter Ã  la surface.
+La dÃ©calcomanie couvre tout l'objet, il n'est pas possible de contrÃ´ler le placement.
+Le placage UV utilise la paramÃ©trisation u et v de la surface pour courber et Ã©tirer l'image ; aucun positionnement manuel n'est donc nÃ©cessaire.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
 
 ### Parcourir
@@ -129,58 +129,58 @@ Change le fichier image.
 
 {% include_relative snippets/snippet-clearbitmapcache.md %}
 
-## Intensité
+## IntensitÃ©
 {: #decalmappingstrength}
 
 ### Couleur
 {: #decal-color}
-Fait varier l'intensité relative de la couleur de l'image par rapport au matériau sous-jacent. Voir aussi, [Propriétés de la texture d'un matériau, Intensité de la couleur](texture-properties-main.html#color).
+Fait varier l'intensitÃ© relative de la couleur de l'image par rapport au matÃ©riau sous-jacent. Voir aussi, [PropriÃ©tÃ©s de la texture d'un matÃ©riau, IntensitÃ© de la couleur](texture-properties-main.html#color).
 
 ### Relief
 {: #decalmappingbump}
-Les placages de relief créent des ombres et des reflets simulés sur la surface. Voir aussi, [Propriétés de la texture d'un matériau, Intensité du relief](texture-properties-main.html#bump).
+Les placages de relief crÃ©ent des ombres et des reflets simulÃ©s sur la surface. Voir aussi, [PropriÃ©tÃ©s de la texture d'un matÃ©riau, IntensitÃ© du relief](texture-properties-main.html#bump).
 
-## Finition réfléchissante
+## Finition rÃ©flÃ©chissante
 {: #reflective-finish-and-highlight}
-Les options de finition de la décalcomanie sont les mêmes que celles de définition d'un matériau. Appliquez ces propriétés aux zones spécifiques de l'objet où se trouve la décalcomanie. Par défaut, la finition des décalcomanies est mate.
+Les options de finition de la dÃ©calcomanie sont les mÃªmes que celles de dÃ©finition d'un matÃ©riau. Appliquez ces propriÃ©tÃ©s aux zones spÃ©cifiques de l'objet oÃ¹ se trouve la dÃ©calcomanie. Par dÃ©faut, la finition des dÃ©calcomanies est mate.
 
-### Intensité
-Définit l'intensité du reflet. Des valeurs élevées augmentent la taille et l'intensité du reflet. Voir [Propriétés avancées du matériau, Intensité](advanced-material-properties-main.html#intensity).
+### IntensitÃ©
+DÃ©finit l'intensitÃ© du reflet. Des valeurs Ã©levÃ©es augmentent la taille et l'intensitÃ© du reflet. Voir [PropriÃ©tÃ©s avancÃ©es du matÃ©riau, IntensitÃ©](advanced-material-properties-main.html#intensity).
 
-### Netteté
-Définit la taille du reflet. De petites valeurs donnent un reflet plus ample ; de grandes valeurs concentrent le reflet sur une plus petite zone. Voir [Propriétés avancées du matériau, Netteté](advanced-material-properties-main.html#sharpness).
+### NettetÃ©
+DÃ©finit la taille du reflet. De petites valeurs donnent un reflet plus ample ; de grandes valeurs concentrent le reflet sur une plus petite zone. Voir [PropriÃ©tÃ©s avancÃ©es du matÃ©riau, NettetÃ©](advanced-material-properties-main.html#sharpness).
 
-### Métallique
-Définit la même couleur pour le reflet que pour la couleur de base de l'objet. Voir [Propriétés avancées du matériau : Métallique](advanced-material-properties-main.html#metallic).
+### MÃ©tallique
+DÃ©finit la mÃªme couleur pour le reflet que pour la couleur de base de l'objet. Voir [PropriÃ©tÃ©s avancÃ©es du matÃ©riau : MÃ©tallique](advanced-material-properties-main.html#metallic).
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
-## Paramètres avancés
+## ParamÃ¨tres avancÃ©s
 {: #advanced}
 
 ### Double face
 {: #double}
-La décalcomanie apparaît sur la face arrière de la surface sur laquelle elle est placée, ainsi que sur la face avant.
+La dÃ©calcomanie apparaÃ®t sur la face arriÃ¨re de la surface sur laquelle elle est placÃ©e, ainsi que sur la face avant.
 
 ### Miroir
 {: #mirror}
-Copie symétriquement l'image de la décalcomanie.
+Copie symÃ©triquement l'image de la dÃ©calcomanie.
 
 ## Direction de projection
 {: #projection-direction}
 
-### Arrière
-Projette la décalcomanie à partir de la face arrière de l'image de la décalcomanie.
-![images/projectionbackward1.png](images/projectionbackward1.png)Avant (gauche), arrière (droite)
+### ArriÃ¨re
+Projette la dÃ©calcomanie Ã  partir de la face arriÃ¨re de l'image de la dÃ©calcomanie.
+![images/projectionbackward1.png](images/projectionbackward1.png)Avant (gauche), arriÃ¨re (droite)
 
 ### Avant
-Projette la décalcomanie à partir de la face avant de l'image de la décalcomanie.
-![images/projectionforward1.png](images/projectionforward1.png)Avant (gauche), arrière (droite)
+Projette la dÃ©calcomanie Ã  partir de la face avant de l'image de la dÃ©calcomanie.
+![images/projectionforward1.png](images/projectionforward1.png)Avant (gauche), arriÃ¨re (droite)
 
-### Avant et Arrière
-Projette la décalcomanie à partir des deux faces (avant et la face arrière) de l'image de la décalcomanie.
-![images/projectionforwardandback.png](images/projectionforwardandback.png)Avant (gauche), arrière (droite)
+### Avant et ArriÃ¨re
+Projette la dÃ©calcomanie Ã  partir des deux faces (avant et la face arriÃ¨re) de l'image de la dÃ©calcomanie.
+![images/projectionforwardandback.png](images/projectionforwardandback.png)Avant (gauche), arriÃ¨re (droite)
 
 ### Transparence
-Définit la transparence de la décalcomanie. Voir [Transparence](advanced-material-properties-transparency.html).
-Indice de réfraction
-Définit l'indice de réfraction de la décalcomanie transparente. Voir [Indice de réfraction](advanced-material-properties-transparency.html#index-of-refraction)
+DÃ©finit la transparence de la dÃ©calcomanie. Voir [Transparence](advanced-material-properties-transparency.html).
+Indice de rÃ©fraction
+DÃ©finit l'indice de rÃ©fraction de la dÃ©calcomanie transparente. Voir [Indice de rÃ©fraction](advanced-material-properties-transparency.html#index-of-refraction)

@@ -1,3 +1,3 @@
 
-### Revêtement
-Le matériau apparaît sous forme de motif plan sur les surfaces de l'objet au lieu de traverser l'objet.
+### RevÃªtement
+Le matÃ©riau apparaÃ®t sous forme de motif plan sur les surfaces de l'objet au lieu de traverser l'objet.

@@ -1,7 +1,7 @@
 
 
 ##### Filtrer par nom
-Utilisez les caractères joker pour sélectionner des éléments de contenu par leur nom.
+Utilisez les caractÃ¨res joker pour sÃ©lectionner des Ã©lÃ©ments de contenu par leur nom.
 
 ###### Inverser
 Inverse le filtrage par nom.
@@ -9,24 +9,24 @@ Inverse le filtrage par nom.
 ###### Effacer
 Effacer le filtrage par nom.
 
-###### Afficher les matériaux non assignés
-Affiche les matériaux qui ne sont assignés ni à des objets ni des calques.
+###### Afficher les matÃ©riaux non assignÃ©s
+Affiche les matÃ©riaux qui ne sont assignÃ©s ni Ã  des objets ni des calques.
 
-###### Afficher les matériaux de la version 4
-Affiche les matériaux qui ont été créés dans Rhino 4.
+###### Afficher les matÃ©riaux de la version 4
+Affiche les matÃ©riaux qui ont Ã©tÃ© crÃ©Ã©s dans Rhino 4.
 
-###### Afficher les matériaux, les environnements et les textures masqués
-Affiche les éléments qui sont masqués par leur moteur de rendu.
+###### Afficher les matÃ©riaux, les environnements et les textures masquÃ©s
+Affiche les Ã©lÃ©ments qui sont masquÃ©s par leur moteur de rendu.
 
-###### Afficher les matériaux, les environnements et les textures de référence
-Affiche les éléments qui sont générés par des [références de session](worksession.html) ou des [blocs liés](insert.html).
+###### Afficher les matÃ©riaux, les environnements et les textures de rÃ©fÃ©rence
+Affiche les Ã©lÃ©ments qui sont gÃ©nÃ©rÃ©s par des [rÃ©fÃ©rences de session](worksession.html) ou des [blocs liÃ©s](insert.html).
 
 ##### Afficher le contenu pour ces moteurs de rendu
 
 ###### Universel
 
-######  **Tout vérifier**
+######  **Tout vÃ©rifier**
 
-######  **Désactiver tout**
+######  **DÃ©sactiver tout**
 
 ###### **Inverser**

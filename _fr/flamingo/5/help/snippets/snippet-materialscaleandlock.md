@@ -1,6 +1,6 @@
 
-#### Échelle X/Y/Z
+#### Ã‰chelle X/Y/Z
 Change la taille absolue du motif dans les directions x, y et z.
 
 #### Verrouiller
-Conserve la proportion entre l'échelle X, l'échelle Y et l'Échelle  Z.
+Conserve la proportion entre l'Ã©chelle X, l'Ã©chelle Y et l'Ã‰chelleÂ  Z.

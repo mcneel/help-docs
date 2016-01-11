@@ -5,9 +5,9 @@ title: Liste de commandes de Flamingo
 
 # {{page.title}}
 
-#### Flamingo¿Propos
+#### Flamingo√ÄPropos
 {: #flamingoabout-command}
-Affiche la boÓte de dialogue ¿ propos de Flamingo.
+Affiche la bo√Æte de dialogue √Ä propos de Flamingo.
 
 #### [FlamingoRenduAutomatique](automate-rendering.html#flamingonxtautomaterender)
 {: #flamingoautomaterender}
@@ -15,12 +15,12 @@ Affiche la boÓte de dialogue ¿ propos de Flamingo.
 #### [FlamingoRenduParLots](automate-rendering.html#batch-render)
 {: #flamingobatchrender}
 
-#### [FlamingoVÈrifierMises¿Jour](http://nxt.flamingo3d.com/)
+#### [FlamingoV√©rifierMises√ÄJour](http://nxt.flamingo3d.com/)
 {: #flamingocheckforupdates}
 
-#### FlamingoEffacerCachÈBitmap
+#### FlamingoEffacerCach√©Bitmap
 {: #flamingoclearbitmapcache}
-RafraÓchit la dÈfinition d'une image lorsque le fichier d'origine est modifier en utilisant un Èditeur d'images comme par exemple PhotoShop.
+Rafra√Æchit la d√©finition d'une image lorsque le fichier d'origine est modifier en utilisant un √©diteur d'images comme par exemple PhotoShop.
 
 #### [FlamingoModifierPlante](plants.html)
 {: #flamingoeditplant}
@@ -35,38 +35,38 @@ RafraÓchit la dÈfinition d'une image lorsque le fichier d'origine est modifier e
 {: #flamingohelp}
 Ouvre le fichier d'aide.
 
-#### [Flamingo…diteurImages](image-editor.html)
+#### [Flamingo√âditeurImages](image-editor.html)
 {: #flamingoimageeditor}
 
-#### [FlamingoInsÈrerPlanteFlamingo2](plants.html)
+#### [FlamingoIns√©rerPlanteFlamingo2](plants.html)
 {: #flamingoinsertflamingo2plant}
 
 #### FlamingoMoteurRenduActuel
 {: #flamingomakecurrent}
-Flamingo NXT sera dÈfini comme moteur de rendu actuel dans Rhino.
+Flamingo NXT sera d√©fini comme moteur de rendu actuel dans Rhino.
 
-#### [Flamingo…diteurPlantes](plants.html)
+#### [Flamingo√âditeurPlantes](plants.html)
 {: #flamingoplanteditor}
-Ouvre [l'Èditeur de plantes](plants.html).
+Ouvre [l'√©diteur de plantes](plants.html).
 
 #### [FlamingoContraintesRendu](documentproperties-flamingo.html#render-constraints)
 {: #flamingorenderconstraints}
-DÈfinit les [contraintes de rendu](documentproperties-flamingo.html#render-constraints)
+D√©finit les [contraintes de rendu](documentproperties-flamingo.html#render-constraints)
 
 #### [FlamingoFermeRendu](automate-rendering.html#render-farm)
 {: #flamingorenderfarm}
 
-#### FlamingoTÈlÈchargerClientFerme
+#### FlamingoT√©l√©chargerClientFerme
 {: #flamingodownloadfarmclient}
-Utilisez cette commande pour tÈlÈcharger le client de la ferme de rendu. 
+Utilisez cette commande pour t√©l√©charger le client de la ferme de rendu. 
 
 #### [FlamingoContraintesScriptRendu](render-window.html#render-constraints)
 {: #flamingorenderscriptconstraints}
-DÈfinit les [contraintes de rendu](documentproperties-flamingo.html#render-constraints) lorsqu'un rendu est lancÈ ‡ partir d'un script. 
+D√©finit les [contraintes de rendu](documentproperties-flamingo.html#render-constraints) lorsqu'un rendu est lanc√© √† partir d'un script. 
 
-#### FlamingoContraintesFenÍtreRendu
+#### FlamingoContraintesFen√™treRendu
 {: #flamingorenderwindowconstraints}
-DÈfinit les [contraintes de rendu](documentproperties-flamingo.html#render-constraints) lorsque la commande **RectangleRendu** est utilisÈe pour le rendu.
+D√©finit les [contraintes de rendu](documentproperties-flamingo.html#render-constraints) lorsque la commande **RectangleRendu** est utilis√©e pour le rendu.
 
 #### [FlamingoAfficherPanneauConfiguration](welcome.html#control-panel)
 {: #flamingoshowcontrolpanel}

@@ -1,67 +1,67 @@
 ---
-title: Propriétés du document de Flamingo nXt
+title: PropriÃ©tÃ©s du document de Flamingo nXt
 ---
 
 
 # ![images/options.svg](images/options.svg) {{page.title}}
-Ces paramètres concernent uniquement le modèle actuel. Le temps nécessaire au calcul du rendu et la qualité désirée sont proportionnels.
+Ces paramÃ¨tres concernent uniquement le modÃ¨le actuel. Le temps nÃ©cessaire au calcul du rendu et la qualitÃ© dÃ©sirÃ©e sont proportionnels.
 
-#### Où puis-je trouver cette commande ?
+#### OÃ¹ puis-je trouver cette commande ?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Barres d'outils Outils  pour le rendu > ![images/environments.png](images/environments.png) Éditeur de matériaux
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Rendu > Éditeur d'environnement
- 1. Commande > ÉditeurEnvironnement
+ 1. ![images/icon-render.png](images/icon-render.png)Barres d'outils Outils  pour le rendu > ![images/environments.png](images/environments.png) Ã‰diteur de matÃ©riaux
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Rendu > Ã‰diteur d'environnement
+ 1. Commande > Ã‰diteurEnvironnement
 
-## Matériaux
+## MatÃ©riaux
 {: #materials}
-Utilisez ces contrôles pour changer rapidement la façon dont Flamingo calcule le rendu des surfaces.  Ces paramètres ne changeront pas les matériaux assignés aux objets et aux calques mais ils changeront la façon dont Flamingo produit la couleur sur chaque surface. 
+Utilisez ces contrÃ´les pour changer rapidement la faÃ§on dont Flamingo calcule le rendu des surfaces.  Ces paramÃ¨tres ne changeront pas les matÃ©riaux assignÃ©s aux objets et aux calques mais ils changeront la faÃ§on dont Flamingo produit la couleur sur chaque surface. 
 
-#### Utiliser des matériaux
+#### Utiliser des matÃ©riaux
 {: #use-materials}
-Le rendu est réalisé en utilisant les matériaux créés dans Flamingo nXt et Rhino. Les objets sans matériau sont rendus en blanc. Si aucune des options, Utiliser des matériaux ni Utiliser les couleurs de l'objet, n'est cochée, tous les objets seront rendus en blanc. 
+Le rendu est rÃ©alisÃ© en utilisant les matÃ©riaux crÃ©Ã©s dans Flamingo nXt et Rhino. Les objets sans matÃ©riau sont rendus en blanc. Si aucune des options, Utiliser des matÃ©riaux ni Utiliser les couleurs de l'objet, n'est cochÃ©e, tous les objets seront rendus en blanc. 
 
 #### Utiliser la couleur de l'objet
 {: #use-object-color}
-Le rendu est réalisé en utilisant les couleurs assignées à l'objet dans ses propriétés ou dans son calque. Remarque : Les deux cases, Utiliser des matériaux et Utiliser la couleur de l'objet peuvent être cochées en même temps. Dans ce cas, si un matériau est assigné à l'objet, il est utilisé pour le rendu ; sinon, la couleur de l'objet ou du calque est utilisée.
+Le rendu est rÃ©alisÃ© en utilisant les couleurs assignÃ©es Ã  l'objet dans ses propriÃ©tÃ©s ou dans son calque. Remarque : Les deux cases, Utiliser des matÃ©riaux et Utiliser la couleur de l'objet peuvent Ãªtre cochÃ©es en mÃªme temps. Dans ce cas, si un matÃ©riau est assignÃ© Ã  l'objet, il est utilisÃ© pour le rendu ; sinon, la couleur de l'objet ou du calque est utilisÃ©e.
 
 #### Canal d'incandescence
 {: #channel}
-Les matériaux comprenant un niveau d'incandescence s'allumeront mais n'éclaireront pas les autres objets. (Marquez l'objet comme lumière pour éclairer les autres objets.)  Définissez l'incandescence avec un canal afin de permettre d'ajuster la luminosité après le rendu sans avoir à recalculer toute la scène. 
+Les matÃ©riaux comprenant un niveau d'incandescence s'allumeront mais n'Ã©claireront pas les autres objets. (Marquez l'objet comme lumiÃ¨re pour Ã©clairer les autres objets.)  DÃ©finissez l'incandescence avec un canal afin de permettre d'ajuster la luminositÃ© aprÃ¨s le rendu sans avoir Ã  recalculer toute la scÃ¨ne. 
 
 ## Rebonds
 {: #bounces}
-Lorsqu'un rayon entre dans une scène, il rebondit plusieurs fois avant d'être éliminé.  En limitant le nombre de rebonds, il est possible d'accélérer le rendu de façon considérable. Mais si la limite est trop faible, certains effets peuvent manquer ou apparaître en noir.  Les valeurs par défaut conviennent parfaitement pour la plupart des rendus mais elles doivent être modifiées dans certains cas.
+Lorsqu'un rayon entre dans une scÃ¨ne, il rebondit plusieurs fois avant d'Ãªtre Ã©liminÃ©.  En limitant le nombre de rebonds, il est possible d'accÃ©lÃ©rer le rendu de faÃ§on considÃ©rable. Mais si la limite est trop faible, certains effets peuvent manquer ou apparaÃ®tre en noir.  Les valeurs par dÃ©faut conviennent parfaitement pour la plupart des rendus mais elles doivent Ãªtre modifiÃ©es dans certains cas.
 
-#### Réflectif
+#### RÃ©flectif
 {: #reflective-bounces}
-Détermine combien de niveaux de réflexions sont permis ; en d'autres termes, combien de fois un rayon de lumière se réfléchira dans les objets. Si vous entrez 0, il n'y aura pas de réflexions. De plus grandes valeurs entraînent des temps de rendu plus élevés. Augmentez cette valeur si une vue regarde une surface réfléchissante qui rebondit sur une vue réfléchissante adjacente et que les réflexions commencent à devenir complètement noires. 
+DÃ©termine combien de niveaux de rÃ©flexions sont permis ; en d'autres termes, combien de fois un rayon de lumiÃ¨re se rÃ©flÃ©chira dans les objets. Si vous entrez 0, il n'y aura pas de rÃ©flexions. De plus grandes valeurs entraÃ®nent des temps de rendu plus Ã©levÃ©s. Augmentez cette valeur si une vue regarde une surface rÃ©flÃ©chissante qui rebondit sur une vue rÃ©flÃ©chissante adjacente et que les rÃ©flexions commencent Ã  devenir complÃ¨tement noires. 
 
-#### Réfringent
+#### RÃ©fringent
 {: #refractive-bounces}
-Détermine combien de niveaux de réfractions sont permis ; en d'autres termes, combien de fois un rayon de lumière sera réfracté dans les objets. Une valeur nulle désactive les réfractions. De plus grandes valeurs entraînent des temps de rendu plus élevés. Augmentez cette valeur si une vue regarde à travers de nombreuses couches et apparaît finalement noire et non transparente. 
+DÃ©termine combien de niveaux de rÃ©fractions sont permis ; en d'autres termes, combien de fois un rayon de lumiÃ¨re sera rÃ©fractÃ© dans les objets. Une valeur nulle dÃ©sactive les rÃ©fractions. De plus grandes valeurs entraÃ®nent des temps de rendu plus Ã©levÃ©s. Augmentez cette valeur si une vue regarde Ã  travers de nombreuses couches et apparaÃ®t finalement noire et non transparente. 
 
 #### Indirecte
 {: #indirect-bounces}
-Détermine combien de niveaux de lumière indirecte sont permis ; en d'autres termes, combien de fois un rayon de lumière indirecte rebondira sur les objets. Si vous entrez 0, il n'y aura pas de réflexions. De plus grandes valeurs entraînent des temps de rendu plus élevés.
+DÃ©termine combien de niveaux de lumiÃ¨re indirecte sont permis ; en d'autres termes, combien de fois un rayon de lumiÃ¨re indirecte rebondira sur les objets. Si vous entrez 0, il n'y aura pas de rÃ©flexions. De plus grandes valeurs entraÃ®nent des temps de rendu plus Ã©levÃ©s.
 
-## Éclairage indirect
+## Ã‰clairage indirect
 {: #indirect-settings}
-Les paramètres d'éclairage indirect affectent uniquement les rayons qui rebondissent d'une surface et transportent la lumière vers une autre surface.
+Les paramÃ¨tres d'Ã©clairage indirect affectent uniquement les rayons qui rebondissent d'une surface et transportent la lumiÃ¨re vers une autre surface.
 
-#### Étalement de la couleur
+#### Ã‰talement de la couleur
 {: #color-bleed}
-L'étalement de la couleur contrôle la quantité de couleur transférée dans un rebond de lumière indirect d'une surface vers une autre.  Par défaut, la valeur maximale est définie afin d'augmenter la dynamique du rendu. 
+L'Ã©talement de la couleur contrÃ´le la quantitÃ© de couleur transfÃ©rÃ©e dans un rebond de lumiÃ¨re indirect d'une surface vers une autre.  Par dÃ©faut, la valeur maximale est dÃ©finie afin d'augmenter la dynamique du rendu. 
 
-#### Réflexions de Monte Carlo
+#### RÃ©flexions de Monte Carlo
 {: #monte-carlo}
-Le paramètre de Monte Carlo dans l'éclairage indirect contrôle comment Flamingo échantillonne la lumière indirecte. Lorsqu'il est activé, la lumière indirecte devient très floue au cours des premières passes. Mais ensuite, au fur et à mesure des passes, l'effet général de Monte Carlo indirect sera un effet indirect plus subtil et potentiellement plus détaillé. Les scènes qui reposent fortement sur l'éclairage indirect peuvent tirer profit des réflexions indirectes de Monte Carlo. 
+Le paramÃ¨tre de Monte Carlo dans l'Ã©clairage indirect contrÃ´le comment Flamingo Ã©chantillonne la lumiÃ¨re indirecte. Lorsqu'il est activÃ©, la lumiÃ¨re indirecte devient trÃ¨s floue au cours des premiÃ¨res passes. Mais ensuite, au fur et Ã  mesure des passes, l'effet gÃ©nÃ©ral de Monte Carlo indirect sera un effet indirect plus subtil et potentiellement plus dÃ©taillÃ©. Les scÃ¨nes qui reposent fortement sur l'Ã©clairage indirect peuvent tirer profit des rÃ©flexions indirectes de Monte Carlo. 
 
 ## Divers
 
-#### Utiliser les lumières des calques désactivés
+#### Utiliser les lumiÃ¨res des calques dÃ©sactivÃ©s
 {: #uselightsonlayersthatareoff}
-Permet d'utiliser les lumières qui se trouvent sur des calques désactivés ou qui sont cachées.
+Permet d'utiliser les lumiÃ¨res qui se trouvent sur des calques dÃ©sactivÃ©s ou qui sont cachÃ©es.
 
 ### Contraintes de rendu
 {: #number-of-passes}

@@ -1,3 +1,3 @@
 
 #### Miroir
-Retourne l'image de gauche à droite.
+Retourne l'image de gauche Ã  droite.

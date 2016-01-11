@@ -1,24 +1,24 @@
 ### Couleur
-Contrôle la couleur locale du matériau. Tous les matériaux ont une couleur de base. [Plus d'informations sur la couleur...](select-color.html) 
+ContrÃ´le la couleur locale du matÃ©riau. Tous les matÃ©riaux ont une couleur de base. [Plus d'informations sur la couleur...](select-color.html) 
 
 #### Palette de couleurs
-Cliquez dans la palette de couleurs pour sélectionner des couleurs dans la boîte de dialogue [Sélectionner une couleur](select-color.html) .
+Cliquez dans la palette de couleurs pour sÃ©lectionner des couleurs dans la boÃ®te de dialogue [SÃ©lectionner une couleur](select-color.html) .
 
-### Aperçu
-L'image d'aperçu montre le matériau comme il apparaîtra sur les objets dans le modèle. Le style et la taille de l'aperçu font partie de la définition du matériau.
- **Remarque ** : La taille par défaut de l'objet d'aperçu peut être définie dans [Options: Flamingo nXt](options-flamingo.html).
+### AperÃ§u
+L'image d'aperÃ§u montre le matÃ©riau comme il apparaÃ®tra sur les objets dans le modÃ¨le. Le style et la taille de l'aperÃ§u font partie de la dÃ©finition du matÃ©riau.
+ **RemarqueÂ **Â : La taille par dÃ©faut de l'objet d'aperÃ§u peut Ãªtre dÃ©finie dans [Options: Flamingo nXt](options-flamingo.html).
 ![images/previewer.png](images/previewer.png)
 
->Cliquer avec le bouton droit dans le volet d'aperçu du matériau pour définir les options qui contrôlent l'apparence de l'aperçu :
+>Cliquer avec le bouton droit dans le volet d'aperÃ§u du matÃ©riau pour dÃ©finir les options qui contrÃ´lent l'apparence de l'aperÃ§u :
 
-#### Sphère
-Utilise une sphère pour l'aperçu.
+#### SphÃ¨re
+Utilise une sphÃ¨re pour l'aperÃ§u.
 
-#### Boîte
-Utilise une boîte pour l'aperçu. La largeur de la boîte correspond au rayon de la sphère.
+#### BoÃ®te
+Utilise une boÃ®te pour l'aperÃ§u. La largeur de la boÃ®te correspond au rayon de la sphÃ¨re.
 
 #### Plan
-Utilise un plan pour l'aperçu. La largeur du plan correspond au rayon de la sphère.
+Utilise un plan pour l'aperÃ§u. La largeur du plan correspond au rayon de la sphÃ¨re.
 
-#### Rayon de la sphère
-Définit le rayon de la sphère d'aperçu ainsi que la largeur de la boîte et du plan. Utilisez une taille proche de celle des objets sur lesquels vous voulez appliquer le matériau afin d'avoir un bon aperçu.
+#### Rayon de la sphÃ¨re
+DÃ©finit le rayon de la sphÃ¨re d'aperÃ§u ainsi que la largeur de la boÃ®te et du plan. Utilisez une taille proche de celle des objets sur lesquels vous voulez appliquer le matÃ©riau afin d'avoir un bon aperÃ§u.

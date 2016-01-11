@@ -4,20 +4,20 @@ title: Options de Flamingo nXt
 
 
 # ![images/options.svg](images/options.svg) {{page.title}}
-Ces paramètres concernent l'application Flamingo.  Si vous les modifications réalisées ici sont appliquées à Flamingo en général. 
+Ces paramÃ¨tres concernent l'application Flamingo.  Si vous les modifications rÃ©alisÃ©es ici sont appliquÃ©es Ã  Flamingo en gÃ©nÃ©ral. 
 
 {: #default-decal-link-state}
 {% include_relative snippets/snippet-linking.md %}
 
-#### Dossier partagé de la ferme
+#### Dossier partagÃ© de la ferme
 {: #farm-output-folder}
-Le dossier partagé des travaux de la ferme de rendu. Il s'agit également de l'emplacement où la ferme enregistrera les résultats. Utilisez l'icône du dossier ![images/folderopen32x32.png](images/folderopen32x32.png) pour choisir un nouvel emplacement.
+Le dossier partagÃ© des travaux de la ferme de rendu. Il s'agit Ã©galement de l'emplacement oÃ¹ la ferme enregistrera les rÃ©sultats. Utilisez l'icÃ´ne du dossier ![images/folderopen32x32.png](images/folderopen32x32.png) pour choisir un nouvel emplacement.
 
-#### Afficher les lumières marquées
-Utilisez cette propriété pour afficher la direction d'une lumière marquée.  Cette option s'applique aux spots et aux distributions de lumière diffuse.
+#### Afficher les lumiÃ¨res marquÃ©es
+Utilisez cette propriÃ©tÃ© pour afficher la direction d'une lumiÃ¨re marquÃ©e.  Cette option s'applique aux spots et aux distributions de lumiÃ¨re diffuse.
 
-#### Aperçu rapide dans OpenGL
-Les miniatures des matériaux sont affichées avec OpenGL avant l'affichage du matériau rendu.  L'affichage des matériaux peut être ainsi plus rapide mais l'image OpenGL peut être différente du matériau réel.
+#### AperÃ§u rapide dans OpenGL
+Les miniatures des matÃ©riaux sont affichÃ©es avec OpenGL avant l'affichage du matÃ©riau rendu.  L'affichage des matÃ©riaux peut Ãªtre ainsi plus rapide mais l'image OpenGL peut Ãªtre diffÃ©rente du matÃ©riau rÃ©el.
 
-#### Enregistrer les fichiers natifs de l'historique à la fin du rendu
-Par défaut, Flamingo enregistre la dernière image rendue en cache au cas où il soit nécessaire de la réafficher dans le futur.
+#### Enregistrer les fichiers natifs de l'historique Ã  la fin du rendu
+Par dÃ©faut, Flamingo enregistre la derniÃ¨re image rendue en cache au cas oÃ¹ il soit nÃ©cessaire de la rÃ©afficher dans le futur.

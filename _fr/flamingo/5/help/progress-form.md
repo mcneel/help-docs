@@ -3,4 +3,4 @@
 
 
 # Indicateur de progression
-Ce procédé peut prendre du temps. Merci d'être patient.
+Ce procÃ©dÃ© peut prendre du temps. Merci d'Ãªtre patient.

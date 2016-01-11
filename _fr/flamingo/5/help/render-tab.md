@@ -3,134 +3,134 @@ title: Options du rendu
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
-L'onglet Rendu contrôle les principales propriétés du rendu final. Utilisez cet onglet pour contrôler la qualité et la durée d'un rendu. La résolution de l'image finale est un des paramètres qui a le plus d'influence sur le temps de rendu global.
+L'onglet Rendu contrÃ´le les principales propriÃ©tÃ©s du rendu final. Utilisez cet onglet pour contrÃ´ler la qualitÃ© et la durÃ©e d'un rendu. La rÃ©solution de l'image finale est un des paramÃ¨tres qui a le plus d'influence sur le temps de rendu global.
 
-Note : Nous vous conseillons de garder une résolution de rendu faible pour les rendus d'essai. Utilisez les résolutions élevées uniquement pour les rendus finaux.
+Note : Nous vous conseillons de garder une rÃ©solution de rendu faible pour les rendus d'essai. Utilisez les rÃ©solutions Ã©levÃ©es uniquement pour les rendus finaux.
 
-#### Où puis-je trouver les contrôles d'éclairage de Flamingo ?
+#### OÃ¹ puis-je trouver les contrÃ´les d'Ã©clairage de Flamingo ?
 
  1. ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt > Onglet Options du rendu
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Flamingo nXt > onglet Options du rendu
 
 
-## Fenêtre à rendre
+## FenÃªtre Ã  rendre
 {: #viewtorender}
-Définit la vue que Flamingo nXt 5 utilisera pour le rendu.  Ce paramètre est  utile lorsque vous travaillez sur le modèle et le rendu et qu'une vue en particulier doit toujours être utilisée pour le rendu.  La vue en perspective est souvent la vue intéressante par exemple.  En définissant cette option, vous n'êtes plus obligé de vérifier que la vue est active avant de lancer le rendu.
+DÃ©finit la vue que Flamingo nXt 5 utilisera pour le rendu.  Ce paramÃ¨tre est  utile lorsque vous travaillez sur le modÃ¨le et le rendu et qu'une vue en particulier doit toujours Ãªtre utilisÃ©e pour le rendu.  La vue en perspective est souvent la vue intÃ©ressante par exemple.  En dÃ©finissant cette option, vous n'Ãªtes plus obligÃ© de vÃ©rifier que la vue est active avant de lancer le rendu.
 
 #### Vue active
-Utilisez cette option pour utiliser la vue active lors du rendu.  Il s'agit du paramètre par défaut.
+Utilisez cette option pour utiliser la vue active lors du rendu.  Il s'agit du paramÃ¨tre par dÃ©faut.
 
-#### Liste des fenêtres disponibles
-Cette liste affiche toutes les vues nommées du modèle. Sélectionnez la vue nommée qui devrait toujours être utilisée pour le rendu. 
+#### Liste des fenÃªtres disponibles
+Cette liste affiche toutes les vues nommÃ©es du modÃ¨le. SÃ©lectionnez la vue nommÃ©e qui devrait toujours Ãªtre utilisÃ©e pour le rendu. 
 
-## Résolution de rendu
+## RÃ©solution de rendu
 {: #resolution}
-La résolution de rendu est un des paramètres les plus importants.  Cette option définit la taille et la résolution de l'image à enregistrer dans le fichier de Rhino.  Le temps de rendu est exponentiellement proportionnelle à la résolution. Il est donc important de manipuler ce paramètre avec précaution. 
+La rÃ©solution de rendu est un des paramÃ¨tres les plus importants.  Cette option dÃ©finit la taille et la rÃ©solution de l'image Ã  enregistrer dans le fichier de Rhino.  Le temps de rendu est exponentiellement proportionnelle Ã  la rÃ©solution. Il est donc important de manipuler ce paramÃ¨tre avec prÃ©caution. 
 
 #### Pixels totaux
 {: #resolutionimagepixels}
-Définit le nombre total de pixels dans le rendu final, en utilisant la vue actuelle pour déterminer la proportion hauteur/largeur.  Ce paramètre est très intéressant à utiliser pour les rendus. C'est la meilleure option pour que le rendu concorde avec la vue actuelle. Il est très facile d'augmenter ou de diminuer la résolution de l'image en changeant simplement le nombre total de pixels. 
+DÃ©finit le nombre total de pixels dans le rendu final, en utilisant la vue actuelle pour dÃ©terminer la proportion hauteur/largeur.  Ce paramÃ¨tre est trÃ¨s intÃ©ressant Ã  utiliser pour les rendus. C'est la meilleure option pour que le rendu concorde avec la vue actuelle. Il est trÃ¨s facile d'augmenter ou de diminuer la rÃ©solution de l'image en changeant simplement le nombre total de pixels. 
 
-### Résolution de la fenêtre
-Utilise la taille de la fenêtre en pixels pour déterminer la taille de l'image rendue.  Ceci permet de créer une reproduction à l'échelle des proportions et de la résolution de la fenêtre.  Ce mode est utile mais peut ralentir considérablement le rendu d'une fenêtre plein écran par rapport à une fenêtre occupant un quart d'écran comme dans la configuration standard.
+### RÃ©solution de la fenÃªtre
+Utilise la taille de la fenÃªtre en pixels pour dÃ©terminer la taille de l'image rendue.  Ceci permet de crÃ©er une reproduction Ã  l'Ã©chelle des proportions et de la rÃ©solution de la fenÃªtre.  Ce mode est utile mais peut ralentir considÃ©rablement le rendu d'une fenÃªtre plein Ã©cran par rapport Ã  une fenÃªtre occupant un quart d'Ã©cran comme dans la configuration standard.
 
 ### Taille de l'image
 {: #resolutionprintedsize}
-La taille de l'image définira la résolution finale à partir de plusieurs variables.  C'est la meilleure option pour obtenir une taille et une résolution exactes. Si la hauteur et la largeur du rendu final ne correspondent pas aux proportions de la vue rendue, la vue peut être tronquée verticalement ou horizontalement. Note : Ces options peuvent donner des rendus de très haute résolution pouvant prendre très longtemps.  Utilise ces contrôles pour des rendus finaux haute résolution.
+La taille de l'image dÃ©finira la rÃ©solution finale Ã  partir de plusieurs variables.  C'est la meilleure option pour obtenir une taille et une rÃ©solution exactes. Si la hauteur et la largeur du rendu final ne correspondent pas aux proportions de la vue rendue, la vue peut Ãªtre tronquÃ©e verticalement ou horizontalement. Note : Ces options peuvent donner des rendus de trÃ¨s haute rÃ©solution pouvant prendre trÃ¨s longtemps.  Utilise ces contrÃ´les pour des rendus finaux haute rÃ©solution.
 
-Quatre types d'unités peuvent être utilisés :
+Quatre types d'unitÃ©s peuvent Ãªtre utilisÃ©sÂ :
 
 >Pixels
 >Pouces
->Millimètres
->Centimètres
+>MillimÃ¨tres
+>CentimÃ¨tres
 
 #### Pixels
-Définit les pixels comme unités de l'image rendue. Utilisez ce paramètre pour définir simplement la largeur et la hauteur du rendu final en utilisant le nombre de pixels. 
+DÃ©finit les pixels comme unitÃ©s de l'image rendue. Utilisez ce paramÃ¨tre pour dÃ©finir simplement la largeur et la hauteur du rendu final en utilisant le nombre de pixels. 
 
 #### Pouces
-Définit les pouces comme unités de mise en page. Les pouces sont utilisés en combinaison avec les paramètres de résolution pour déterminer la résolution finale de l'image rendue.  Pour déterminer la résolution finale, multipliez le nombre de pouces sur la largeur et la hauteur par la valeur de résolution en PPP.
+DÃ©finit les pouces comme unitÃ©s de mise en page. Les pouces sont utilisÃ©s en combinaison avec les paramÃ¨tres de rÃ©solution pour dÃ©terminer la rÃ©solution finale de l'image rendue.  Pour dÃ©terminer la rÃ©solution finale, multipliez le nombre de pouces sur la largeurÂ et la hauteur par la valeur de rÃ©solution en PPP.
 
-#### Millimètres
-Définit les millimètres comme unités de mise en page. Les millimètres sont utilisés en combinaison avec les paramètres de résolution pour déterminer la résolution finale de l'image rendue.  Pour déterminer la résolution finale, multipliez le nombre de millimètres sur la largeur et la hauteur par la valeur de résolution en points par millimètre.
+#### MillimÃ¨tres
+DÃ©finit les millimÃ¨tres comme unitÃ©s de mise en page. Les millimÃ¨tres sont utilisÃ©s en combinaison avec les paramÃ¨tres de rÃ©solution pour dÃ©terminer la rÃ©solution finale de l'image rendue.  Pour dÃ©terminer la rÃ©solution finale, multipliez le nombre de millimÃ¨tres sur la largeurÂ et la hauteur par la valeur de rÃ©solution en points par millimÃ¨tre.
 
-#### Centimètres
-Définit les centimètres comme unités de mise en page. Les centimètres sont utilisés en combinaison avec les paramètres de résolution pour déterminer la résolution finale de l'image rendue.  Pour déterminer la résolution finale, multipliez le nombre de centimètres sur la largeur et la hauteur par la valeur de résolution en points par centimètre.
+#### CentimÃ¨tres
+DÃ©finit les centimÃ¨tres comme unitÃ©s de mise en page. Les centimÃ¨tres sont utilisÃ©s en combinaison avec les paramÃ¨tres de rÃ©solution pour dÃ©terminer la rÃ©solution finale de l'image rendue.  Pour dÃ©terminer la rÃ©solution finale, multipliez le nombre de centimÃ¨tres sur la largeurÂ et la hauteur par la valeur de rÃ©solution en points par centimÃ¨tre.
 
 #### Appliquer les proportions de la vue
-Utilisez ce paramètre pour conserver les proportions entre la largeur et la hauteur de la vue actuelle. Vous vous assurez ainsi que toute la vue est rendue dans l'image finale.
+Utilisez ce paramÃ¨tre pour conserver les proportions entre la largeur et la hauteur de la vue actuelle. Vous vous assurez ainsi que toute la vue est rendue dans l'image finale.
 
 #### Largeur
-Largeur de l'image imprimée dans les unités actuelles.  Multipliez ce paramètre par le paramètre de résolution pour obtenir la taille de l'image finale en nombre de pixels.
+Largeur de l'image imprimÃ©e dans les unitÃ©s actuelles.  Multipliez ce paramÃ¨tre par le paramÃ¨tre de rÃ©solution pour obtenir la taille de l'image finale en nombre de pixels.
 
 #### Hauteur
-Hauteur de l'image imprimée en unités actuelle.  Multipliez ce paramètre par le paramètre de résolution pour obtenir la taille de l'image finale en nombre de pixels.
+Hauteur de l'image imprimÃ©e en unitÃ©s actuelle.  Multipliez ce paramÃ¨tre par le paramÃ¨tre de rÃ©solution pour obtenir la taille de l'image finale en nombre de pixels.
 
-### Résolution
+### RÃ©solution
 {: #printsizepixelsperunit}
 {: #printsizedpi}
 {: #printsizeresolution}
 
 #### Affichage
-L'image est rendue en utilisant la résolution de la fenêtre en PPP. Il s'agit de la densité de pixels sur un appareil. Cette valeur est normalement exprimée en [points par pouce (PPP)](https://fr.wikipedia.org/wiki/Point_par_pouce).
+L'image est rendue en utilisant la rÃ©solution de la fenÃªtre en PPP. Il s'agit de la densitÃ© de pixels sur un appareil. Cette valeur est normalement exprimÃ©e en [points par pouce (PPP)](https://fr.wikipedia.org/wiki/Point_par_pouce).
 
 #### Personnaliser
-L'image est rendue avec une résolution personnalisée. Tapez la résolution personnalisée pour la largeur et la hauteur dans la case **Pixels par: **.
+L'image est rendue avec une rÃ©solution personnalisÃ©e. Tapez la rÃ©solution personnalisÃ©e pour la largeur et la hauteur dans la case **Pixels par: **.
 
-#### Imprimante, qualité brouillon
-Définit la résolution sur 100 pixels par pouce ou 4 pixels par mm.
+#### Imprimante, qualitÃ© brouillon
+DÃ©finit la rÃ©solution sur 100 pixels par pouce ou 4 pixels par mm.
 
-#### Imprimante, qualité normale
-Définit la résolution sur 150 pixels par pouce ou 6 pixels par mm.
+#### Imprimante, qualitÃ© normale
+DÃ©finit la rÃ©solution sur 150 pixels par pouce ou 6 pixels par mm.
 
-#### Imprimante, haute qualité
-Définit la résolution sur 300 pixels par pouce ou 12 pixels par mm. Il s'agit d'une résolution assez élevée pour le rendu. Elle fonctionne pour les petits rendus mais pour un grand poster ou des rendus de la taille d'un mur, la résolution globale peut finir très élevée avec ce paramètre. Les résolutions élevées donnent des temps de rendu très longs. 
+#### Imprimante, haute qualitÃ©
+DÃ©finit la rÃ©solution sur 300 pixels par pouce ou 12 pixels par mm. Il s'agit d'une rÃ©solution assez Ã©levÃ©e pour le rendu. Elle fonctionne pour les petits rendus mais pour un grand poster ou des rendus de la taille d'un mur, la rÃ©solution globale peut finir trÃ¨s Ã©levÃ©e avec ce paramÃ¨tre. Les rÃ©solutions Ã©levÃ©es donnent des temps de rendu trÃ¨s longs. 
 
 #### Pixels par
-Lorsque le contrôle de la résolution est sur Personnaliser, utilisez cette case pour définir la résolution par unité sélectionnée. Lorsque vous sélectionnez une résolution prédéfinie, cette valeur indique la résolution actuelle.
+Lorsque le contrÃ´le de la rÃ©solution est sur Personnaliser, utilisez cette case pour dÃ©finir la rÃ©solution par unitÃ© sÃ©lectionnÃ©e. Lorsque vous sÃ©lectionnez une rÃ©solution prÃ©dÃ©finie, cette valeur indique la rÃ©solution actuelle.
 
 ## Profondeur de champ
 {: #depthoffieldoption}
-Cet effet crée un flou de profondeur de champ qui imite un objectif d'appareil-photo. Un objectif ne peut effectuer sa mise au point qu'à une distance précise mais la baisse de netteté se fait progressivement autour de la distance focale.
+Cet effet crÃ©e un flou de profondeur de champ qui imite un objectif d'appareil-photo. Un objectif ne peut effectuer sa mise au point qu'Ã  une distance prÃ©cise mais la baisse de nettetÃ© se fait progressivement autour de la distance focale.
 
-#### Activé
+#### ActivÃ©
 Active l'effet de profondeur de champ.
 
-#### Intensité
-Contrôle la taille de la zone de mise au point. Une intensité nulle permet d'avoir une image entièrement nette. L'augmentation de l'intensité rend les zones en dehors de la distance focale plus flou et diminue la taille de la zone nette.
+#### IntensitÃ©
+ContrÃ´le la taille de la zone de mise au point. Une intensitÃ© nulle permet d'avoir une image entiÃ¨rement nette. L'augmentation de l'intensitÃ© rend les zones en dehors de la distance focale plus flou et diminue la taille de la zone nette.
 
 #### Distance focale
 {: #focaldistance}
-Définit la distance pour la profondeur de champ. La distance autour du point du champ de profondeur à laquelle les objets seront nets. Si la Distance focale est définie à 10 unités, les objets se trouvant à 7 unités derrière le point du champ de profondeur et à 3 unités devant seront nets.
+DÃ©finit la distance pour la profondeur de champ. La distance autour du point du champ de profondeur Ã  laquelle les objets seront nets. Si la Distance focale est dÃ©finie Ã  10 unitÃ©s, les objets se trouvant Ã  7 unitÃ©s derriÃ¨re le point du champ de profondeur et Ã  3 unitÃ©s devant seront nets.
 
-#### Sélectionner >>
-Choisissez un point dans le modèle pour la distance focale.
+#### SÃ©lectionner >>
+Choisissez un point dans le modÃ¨le pour la distance focale.
 
 ## Moteur de rendu
 {: #render-engine}
-Flamingo possède trois moteurs de rendu différents.  Chaque moteur de rendu produira des résultats légèrement différents dans des conditions de rendu normales. 
+Flamingo possÃ¨de trois moteurs de rendu diffÃ©rents.  Chaque moteur de rendu produira des rÃ©sultats lÃ©gÃ¨rement diffÃ©rents dans des conditions de rendu normales. 
 
-Flamingo utilise des techniques de rendu progressif à plusieurs étapes pour créer les images. Les étapes progressives peuvent donner des défauts dans le rendu. Ces défauts sont des effets produits avant la fin du rendu. Techniquement, les trois moteurs de rendu produiront le même rendu après un temps suffisant. Mais dans la réalité le temps est toujours un facteur de contrainte. Il convient donc de choisir le moteur de rendu qui donnera le meilleur rendu de la scène après le plus petit nombre d'étapes.
+Flamingo utilise des techniques de rendu progressif Ã  plusieurs Ã©tapes pour crÃ©er les images. Les Ã©tapes progressives peuvent donner des dÃ©fauts dans le rendu. Ces dÃ©fauts sont des effets produits avant la fin du rendu. Techniquement, les trois moteurs de rendu produiront le mÃªme rendu aprÃ¨s un temps suffisant. Mais dans la rÃ©alitÃ© le temps est toujours un facteur de contrainte. Il convient donc de choisir le moteur de rendu qui donnera le meilleur rendu de la scÃ¨ne aprÃ¨s le plus petit nombre d'Ã©tapes.
 
-Il est facile de simplement sélectionner un moteur de rendu différent puis de lancer le rendu afin de voir le résultat.
+Il est facile de simplement sÃ©lectionner un moteur de rendu diffÃ©rent puis de lancer le rendu afin de voir le rÃ©sultat.
 
-### Défaut
-L'algorithme par défaut produit une simulation de très haute qualité. Le moteur par défaut est un bon moteur de rendu pour une grande variété de scènes.  Les deux autres moteurs de rendu présentent des atouts importants mais également de grandes faiblesses. Le moteur par défaut est un bon point de départ. 
+### DÃ©faut
+L'algorithme par dÃ©faut produit une simulation de trÃ¨s haute qualitÃ©. Le moteur par dÃ©faut est un bon moteur de rendu pour une grande variÃ©tÃ© de scÃ¨nes.  Les deux autres moteurs de rendu prÃ©sentent des atouts importants mais Ã©galement de grandes faiblesses. Le moteur par dÃ©faut est un bon point de dÃ©part. 
 
-Il présente un défaut très voyant dans les premières passes. Il s'agit d'ombres durs se superposant. Ces ombres seront adoucies au fur et à mesure de l'avancement du rendu. Le moteur par défaut permet ainsi de donner un résultat plus rapidement mais peut prendre plus de passes pour adoucir réellement toutes les ombres.
+Il prÃ©sente un dÃ©faut trÃ¨s voyant dans les premiÃ¨res passes. Il s'agit d'ombres durs se superposant. Ces ombres seront adoucies au fur et Ã  mesure de l'avancement du rendu. Le moteur par dÃ©faut permet ainsi de donner un rÃ©sultat plus rapidement mais peut prendre plus de passes pour adoucir rÃ©ellement toutes les ombres.
 
-La différence au niveau de la qualité entre la méthode par défaut et le Path tracer peut être  subtile, en particulier si l'éclairage indirect est activé. La différence de qualité n'est peut-être pas assez importante comparée au temps de traitement en plus.
+La diffÃ©rence au niveau de la qualitÃ© entre la mÃ©thode par dÃ©faut et le Path tracer peut Ãªtre  subtile, en particulier si l'Ã©clairage indirect est activÃ©. La diffÃ©rence de qualitÃ© n'est peut-Ãªtre pas assez importante comparÃ©e au temps de traitement en plus.
 
 ### Path tracer
 {: #path-tracer}
-Le Path Tracer commence par afficher une image avec des grains qui est améliorée à chaque passe pour devenir de plus en plus nette. Ce processus est appelé la convergence*. Le Path Tracer peut apporter une meilleure finition pour beaucoup de modèles (avec une configuration simple) mais le calcul est plus complexe et prend donc plus de temps. **Remarque :** Ce moteur peut entraîner l'apparition de points brillants et d'un effet moucheté pendant le processus de rendu. Ces artefacts sont normaux et disparaîtront après quelques passes.
+Le Path Tracer commence par afficher une image avec des grains qui est amÃ©liorÃ©e Ã  chaque passe pour devenir de plus en plus nette. Ce processus est appelÃ© la convergence*. Le Path Tracer peut apporter une meilleure finition pour beaucoup de modÃ¨les (avec une configuration simple) mais le calcul est plus complexe et prend donc plus de temps. **RemarqueÂ :** Ce moteur peut entraÃ®ner l'apparition de points brillants et d'un effet mouchetÃ© pendant le processus de rendu. Ces artefacts sont normaux et disparaÃ®tront aprÃ¨s quelques passes.
 
-Vous pouvez calculer certains effets complexes, tels que les caustiques ou la transparence flou  avec plus de précision en utilisant le Path tracer. Les images rendues avec des instances, des plantes et des placages de déplacement peuvent converger plus vite. Le Path Tracer est presque toujours plus facile à configurer que la méthode par défaut. Les paramètres avancés tels que les réflexions, les entrées de lumière du jour et l'éclairage ambiant ne sont pas utilisés lorsque le moteur Path tracer est sélectionné.
+Vous pouvez calculer certains effets complexes, tels que les caustiques ou la transparence flou  avec plus de prÃ©cision en utilisant le Path tracer. Les images rendues avec des instances, des plantes et des placages de dÃ©placement peuvent converger plus vite. Le Path Tracer est presque toujours plus facile Ã  configurer que la mÃ©thode par dÃ©faut. Les paramÃ¨tres avancÃ©s tels que les rÃ©flexions, les entrÃ©es de lumiÃ¨re du jour et l'Ã©clairage ambiant ne sont pas utilisÃ©s lorsque le moteur Path tracer est sÃ©lectionnÃ©.
 
-Les images rendues avec le Path tracer prendront normalement plus de temps à converger que les images rendues avec la méthode par défaut. Les simulations de l'éclairage naturel d'un intérieur, en particulier les scènes dont les fenêtres sont assez petites, prennent beaucoup plus de temps.
+Les images rendues avec le Path tracer prendront normalement plus de temps Ã  converger que les images rendues avec la mÃ©thode par dÃ©faut. Les simulations de l'Ã©clairage naturel d'un intÃ©rieur, en particulier les scÃ¨nes dont les fenÃªtres sont assez petites, prennent beaucoup plus de temps.
 
 ### Hybride
-Le moteur hybride essaie d'utiliser le meilleur des deux moteurs, Défaut et Path tracer, en utilisant des effets provenant de ces derniers. Il calcule toujours la lumière indirecte.  Le défaut du moteur hybride est un important motif de points qui réduira après plusieurs passes. Dans certains cas il faudra un grand nombre de passes pour supprimer ce motif de points. Il peut s'agir du meilleur moteur pour de nombreux rendus.
+Le moteur hybride essaie d'utiliser le meilleur des deux moteurs, DÃ©faut et Path tracer, en utilisant des effets provenant de ces derniers. Il calcule toujours la lumiÃ¨re indirecte.  Le dÃ©faut du moteur hybride est un important motif de points qui rÃ©duira aprÃ¨s plusieurs passes. Dans certains cas il faudra un grand nombre de passes pour supprimer ce motif de points. Il peut s'agir du meilleur moteur pour de nombreux rendus.
 
-###  **Paramètres avancés**
-Ouvre la boîte de dialogue Propriétés du document, section [Flamingo nXt](documentproperties-flamingo.html). Plusieurs propriétés avancées de rendu peuvent être définies ici pour jouer sur la qualité finale du rendu. 
+###  **ParamÃ¨tres avancÃ©s**
+Ouvre la boÃ®te de dialogue PropriÃ©tÃ©s du document, section [Flamingo nXt](documentproperties-flamingo.html). Plusieurs propriÃ©tÃ©s avancÃ©es de rendu peuvent Ãªtre dÃ©finies ici pour jouer sur la qualitÃ© finale du rendu. 

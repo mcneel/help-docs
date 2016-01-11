@@ -1,13 +1,13 @@
-### Assigner un matériau par
-Des propriétés de rendu peuvent être assignées aux calques ou aux objet à l'aide d'une bibliothèque d'un module afin de les utiliser dans le moteur de rendu de base de Rhino.
+### Assigner un matÃ©riau par
+Des propriÃ©tÃ©s de rendu peuvent Ãªtre assignÃ©es aux calques ou aux objet Ã  l'aide d'une bibliothÃ¨que d'un module afin de les utiliser dans le moteur de rendu de base de Rhino.
 
 #### Calque
-Le matériau de rendu de l'objet est celui assigné au calque. Pour changer le matériau assigné à un calque, utilisez la boîte de dialogue [**Calques** ](layer.html) .
- **Remarque** : Lorsqu'un matériau est supprimé dans l'**[éditeur de matériaux](materialeditor.html) **, tous les objets qui possédaient ce matériau retrouvent une assignation par calque.
+Le matÃ©riau de rendu de l'objet est celui assignÃ© au calque. Pour changer le matÃ©riau assignÃ© Ã  un calque, utilisez la boÃ®te de dialogue [**Calques** ](layer.html) .
+ **Remarque**Â : Lorsqu'un matÃ©riau est supprimÃ© dans l'**[Ã©diteur de matÃ©riaux](materialeditor.html) **, tous les objets qui possÃ©daient ce matÃ©riau retrouvent une assignation par calque.
 
 #### Parent
-Le matériau de rendu de l'objet est défini à partir de l'objet parent.
+Le matÃ©riau de rendu de l'objet est dÃ©fini Ã  partir de l'objet parent.
 
 #### Objet
-Les matériaux de rendu sont assignés aux objets et sont utilisés par le système de rendu intégré dans Rhino.
-Voir ** [ÉditeurMatériaux](materialeditor.html) **.
+Les matÃ©riaux de rendu sont assignÃ©s aux objets et sont utilisÃ©s par le systÃ¨me de rendu intÃ©grÃ© dans Rhino.
+Voir ** [Ã‰diteurMatÃ©riaux](materialeditor.html) **.

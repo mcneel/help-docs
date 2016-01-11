@@ -1,36 +1,36 @@
 
-#### ![images/floatingpreview.png](images/floatingpreview.png) Aperçu flottant
-Affiche l'image d'aperçu dans une fenêtre flottante dont la taille peut être modifiée.
+#### ![images/floatingpreview.png](images/floatingpreview.png) AperÃ§u flottant
+Affiche l'image d'aperÃ§u dans une fenÃªtre flottante dont la taille peut Ãªtre modifiÃ©e.
 
 #### ![images/grid.png](images/grid.png) Grille
-Affiche les aperçus sous forme de grille de miniatures. Par défaut, les éditeurs présentent l'affichage Grille.
+Affiche les aperÃ§us sous forme de grille de miniatures. Par dÃ©faut, les Ã©diteurs prÃ©sentent l'affichage Grille.
 
 #### ![images/list.png](images/list.png) Liste
-Affiche les aperçus sous forme de liste de miniatures.
+Affiche les aperÃ§us sous forme de liste de miniatures.
 
 #### ![images/tree.png](images/tree.png) Arbre
-Affiche les aperçus sous forme d'arbre affichant les différentes branches.
+Affiche les aperÃ§us sous forme d'arbre affichant les diffÃ©rentes branches.
 
 #### ![images/small.png](images/small.png) Petit
-Définit la plus petite taille de miniature.
+DÃ©finit la plus petite taille de miniature.
 
 #### ![images/medium.png](images/medium.png) Moyen
-Définit la taille moyenne de miniature.
+DÃ©finit la taille moyenne de miniature.
 
 #### ![images/large.png](images/large.png) Grand
-Définit la plus grande taille de miniature.
+DÃ©finit la plus grande taille de miniature.
 
 #### ![images/horizontal.png](images/horizontal.png) Mise en page horizontale
-Affiche les aperçus à gauche des contrôles.
+Affiche les aperÃ§us Ã  gauche des contrÃ´les.
 
-#### ![images/showlabels.png](images/showlabels.png) Afficher les étiquettes
-Affiche les étiquettes du nom de la miniature en mode Grille.
+#### ![images/showlabels.png](images/showlabels.png) Afficher les Ã©tiquettes
+Affiche les Ã©tiquettes du nom de la miniature en mode Grille.
 ![images/thumbnaillabel-001.png](images/thumbnaillabel-001.png)
- **Le mode Liste affiche toujours les étiquettes.
+ **Le mode Liste affiche toujours les Ã©tiquettes.
 
-#### ![images/showunits.png](images/showunits.png) Afficher les unités
-Affiche la taille dans les unités du modèle.
+#### ![images/showunits.png](images/showunits.png) Afficher les unitÃ©s
+Affiche la taille dans les unitÃ©s du modÃ¨le.
 ![images/thumbnaillabel-002.png](images/thumbnaillabel-002.png)
 
-#### ![images/rename.png](images/rename.png) Afficher le panneau d'aperçu
-Affiche les propriétés d'aperçu pour la miniature sélectionnée. Vous pouvez définir la géométrie de l'aperçu, sa taille, l'arrière-plan utilisé et la méthode de rotation.
+#### ![images/rename.png](images/rename.png) Afficher le panneau d'aperÃ§u
+Affiche les propriÃ©tÃ©s d'aperÃ§u pour la miniature sÃ©lectionnÃ©e. Vous pouvez dÃ©finir la gÃ©omÃ©trie de l'aperÃ§u, sa taille, l'arriÃ¨re-plan utilisÃ© et la mÃ©thode de rotation.

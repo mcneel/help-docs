@@ -1,2 +1,2 @@
-#### Éditeur avancé
-Ouvre la boîte de dialogue [Propriétés avancées du matériau](material-type-advanced.html) afin d'accéder à d'autres options pour ce matériau.
+#### Ã‰diteur avancÃ©
+Ouvre la boÃ®te de dialogue [PropriÃ©tÃ©s avancÃ©es du matÃ©riau](material-type-advanced.html) afin d'accÃ©der Ã  d'autres options pour ce matÃ©riau.

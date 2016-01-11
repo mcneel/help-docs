@@ -3,44 +3,44 @@ title: Plantes
 ---
 
 # ![images/plants.svg](images/plants.svg) {{page.title}}
-Flamingo nXt comprend un générateur de plantes puissant et intéressant qui génère des formes végétales complexes lors du rendu. Ces plantes ont peu d'impact sur la taille du modèle puisque celui-ci ne contient en réalité qu'une représentation des plantes.
+Flamingo nXt comprend un gÃ©nÃ©rateur de plantes puissant et intÃ©ressant qui gÃ©nÃ¨re des formes vÃ©gÃ©tales complexes lors du rendu. Ces plantes ont peu d'impact sur la taille du modÃ¨le puisque celui-ci ne contient en rÃ©alitÃ© qu'une reprÃ©sentation des plantes.
 
 ![images/plants-001.png](images/plants-001.png)
 *Plantes de Flamingo nXt.*
 
-### Insérer une plante de nXt
+### InsÃ©rer une plante de nXt
 {: #insert:}
-Les plantes de Flamingo sont insérées sous forme de blocs.  Ces blocs contiennent des points qui représentent la forme générale de la plante.
+Les plantes de Flamingo sont insÃ©rÃ©es sous forme de blocs.  Ces blocs contiennent des points qui reprÃ©sentent la forme gÃ©nÃ©rale de la plante.
 
-1. Dans le menu Flamingo nXt, cliquez sur Plantes > Insérer une plante.
-1. Dans la boîte de dialogue Ouvrir, cliquez sur le nom d'une plante puis sur Ouvrir.
-1. À l'invite, placez votre plante dans le modèle.
+1. Dans le menu Flamingo nXt, cliquez sur Plantes > InsÃ©rer une plante.
+1. Dans la boÃ®te de dialogue Ouvrir, cliquez sur le nom d'une plante puis sur Ouvrir.
+1. Ã€ l'invite, placez votre plante dans le modÃ¨le.
 
-Remarques :
+RemarquesÂ :
 
-* Vérifiez que les unités sont définies correctement dans le modèle.
-* Il est possible de changer l'échelle, de copier et de faire tourner les plantes.
+* VÃ©rifiez que les unitÃ©s sont dÃ©finies correctement dans le modÃ¨le.
+* Il est possible de changer l'Ã©chelle, de copier et de faire tourner les plantes.
 
 ### Modifier une plante
 {: #edit}
-Une fois insérée, une plante peut être déplacée, copiée et sa taille peut être modifiée. La taille de la plante sera redéfinie correctement. Si vous voulez réaliser des modifications plus détaillées sur la structure de la plante, utilisez l'éditeur de plantes. Les petites modifications sur la structure de la plante peuvent être rapides.  En revanche, des modifications plus importantes sur les algorithmes de la plante peuvent demander plus d'expérience.
+Une fois insÃ©rÃ©e, une plante peut Ãªtre dÃ©placÃ©e, copiÃ©e et sa taille peut Ãªtre modifiÃ©e. La taille de la plante sera redÃ©finie correctement. Si vous voulez rÃ©aliser des modifications plus dÃ©taillÃ©es sur la structure de la plante, utilisez l'Ã©diteur de plantes. Les petites modifications sur la structure de la plante peuvent Ãªtre rapides.  En revanche, des modifications plus importantes sur les algorithmes de la plante peuvent demander plus d'expÃ©rience.
 
 1. Dans le menu Flamingo nXt, cliquez sur Plantes > Modifier une plante.
-1. Sélectionnez la plante à modifier.
-1. Réalisez les modifications nécessaires.
-1. Enregistrez la plante, puis fermez l'éditeur.  La plante sera automatiquement mise à jour dans Rhino.
+1. SÃ©lectionnez la plante Ã  modifier.
+1. RÃ©alisez les modifications nÃ©cessaires.
+1. Enregistrez la plante, puis fermez l'Ã©diteur.  La plante sera automatiquement mise Ã  jour dans Rhino.
 
 ### Utiliser des plantes de Flamingo 2
 {: #using-flamingo-2-plants}
-1. Dans le menu Flamingo nXt, cliquez sur Plantes > Insérer une plante de Flamingo 2.
-1. Dans la boîte de dialogue Ouvrir, cliquez sur le nom d'une plante puis sur Ouvrir.
-1. À l'invite, placez votre plante dans le modèle.
+1. Dans le menu Flamingo nXt, cliquez sur Plantes > InsÃ©rer une plante de Flamingo 2.
+1. Dans la boÃ®te de dialogue Ouvrir, cliquez sur le nom d'une plante puis sur Ouvrir.
+1. Ã€ l'invite, placez votre plante dans le modÃ¨le.
 
-Remarques :
+RemarquesÂ :
 
-* Les modèles contenant des plantes de Flamingo 2 devraient fonctionner avec quelques restrictions.
-* Les plantes de Flamingo 2 sont différentes des nouvelles plantes. Actuellement, vous ne pouvez pas modifier des plantes de Flamingo 2 ou les convertir en plantes de Flamingo nXt.
+* Les modÃ¨les contenant des plantes de Flamingo 2 devraient fonctionner avec quelques restrictions.
+* Les plantes de Flamingo 2 sont diffÃ©rentes des nouvelles plantes. Actuellement, vous ne pouvez pas modifier des plantes de Flamingo 2 ou les convertir en plantes de Flamingo nXt.
 
-### Éditeur de plantes
+### Ã‰diteur de plantes
 {: plant-editor}
-Flamingo comprend un éditeur de plantes permettant de créer des plantes personnalisées.  Quelques modèle de base peuvent être utilisés comme point de départ pour créer un nouveau type de plante.  Pour plus d'informations, voir la rubrique [Éditeur de plantes](plant-editor.html).
+Flamingo comprend un Ã©diteur de plantes permettant de crÃ©er des plantes personnalisÃ©es.  Quelques modÃ¨le de base peuvent Ãªtre utilisÃ©s comme point de dÃ©part pour crÃ©er un nouveau type de plante.  Pour plus d'informations, voir la rubrique [Ã‰diteur de plantes](plant-editor.html).
