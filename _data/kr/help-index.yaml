@@ -124,6 +124,8 @@ main_index:
           path: documentproperties-flamingo.html
         - name: 옵션 Flamingo nXt
           path: options-flamingo.html
+        - name: 이미지 편집기
+          path: image-editor.html
         - name: RT(실시간) 뷰포트
           path: realtime.html
         - name: Flamingo 명령 목록
