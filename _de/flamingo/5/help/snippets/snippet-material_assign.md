@@ -1,13 +1,13 @@
-### Assign material by
-Using a plug-in library, rendering properties can be assigned to layers, or to objects that will be used with the basic Rhino renderer.
+### Material zuordnen nach
+Anhand einer Plug-in-Bibliothek können Rendereigenschaften Ebenen zugeordnet werden, oder Objekten, die mit dem wesentlichen Rhino-Renderer verwendet werden.
 
-#### Layer
-The object inherits the render material assigned to the layer. To change the material assignment of the layer, use the [ **Layers** ](layer.html) dialog box.
- **Note** : Deleting a material from the ** [Material Editor](materialeditor.html) **, returns all objects that had the deleted material assigned to assignment by layer.
+#### Ebene
+Das Objekt übernimmt das der Ebene zugeordnete Rendermaterial. Verwenden Sie das Dialogfenster [ **Ebenen** ](layer.html), um die Materialzuordnung einer Ebene zu ändern.
+ **Hinweis** : Beim Löschen eines Materials aus dem ** [Materialeditor](materialeditor.html) ** wird der Zuweisungstyp für alle Objekte, denen das Material zugewiesen war, auf *Nach Ebene* zurückgesetzt.
 
-#### Parent
-The object inherits the render material from its parent object.
+#### Übergeordnet
+Das Objekt übernimmt das dem übergeordneten Objekt zugeordnete Rendermaterial.
 
-#### Object
-Render materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See ** [MaterialEditor](materialeditor.html) **.
+#### Objekt
+Rendermaterialien werden an einzelne Objekte zugeordnet und von Rhinos integriertem Renderer verwendet.
+Siehe ** [Materialeditor](materialeditor.html) **.

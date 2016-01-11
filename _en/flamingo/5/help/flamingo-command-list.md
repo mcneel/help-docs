@@ -47,7 +47,7 @@ This will set Flamingo NXt 5 as the current renderer in Rhino.
 
 #### [FlamingoPlantEditor](plants.html)
 {: #flamingoplanteditor}
-Opens the [Tree Editor](plants.html).
+Opens the [Plant Editor](plants.html).
 
 #### [FlamingoRenderConstraints](documentproperties-flamingo.html#render-constraints)
 {: #flamingorenderconstraints}

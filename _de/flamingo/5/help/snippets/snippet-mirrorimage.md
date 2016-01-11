@@ -1,3 +1,3 @@
 
-#### Mirror
-Reverses the image from left to right.
+#### Gespiegelt
+Kehrt das Bild von links nach rechts um.

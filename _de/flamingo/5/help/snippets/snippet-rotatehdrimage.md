@@ -1,11 +1,11 @@
 
-#### Plan control
+#### Plansteuerung
 
-![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}
+![images/hdri-spherical-proj.png](images/hdri-spherical-proj.png){: .float-img-left}
 
-* Click on the plan control to rotate the HDRI correctly.
-* The red dot signifies the center of the HDRI image.
+* Klicken Sie auf die Plansteuerung, um das HDRI-Bild korrekt zu drehen.
+* Der rote Punkt entspricht der Bildmitte.
 
-#### Rotation
+#### Drehung
 {: .clear-img}
-Rotates the image so a different part of the image lights the model.
+Dreht das Bild so, dass ein anderer Teil des Bilds das Modell beleuchtet.

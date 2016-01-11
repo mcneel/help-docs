@@ -51,7 +51,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 現在の環境名と編集レベルを表示します。例えば、反射または屈折レベルがある場合、「>」が表示されます。現在の環境を確認できる場所です。
 
 #### ![images/library_default.png](images/library_default.png) ツールメニュー
-[ツールメニュー](#tools-menu)を表示します。環境に関するコマンド、設定、ユーティリティの包括的なメニューです。
+[ツールメニュー](#tools_menu)を表示します。環境に関するコマンド、設定、ユーティリティの包括的なメニューです。
 
 #### ![images/help_topics.png](images/help_topics.png) ヘルプ
 
@@ -154,7 +154,7 @@ Flamingoには、*[デフォルトFlamingo環境](environment.html)*と呼ばれ
 環境パネルは、環境のタイプによって、そして現在のアクティブな環境レベルによって異なります。それぞれの環境パネルの詳細については、[Flamingoの環境](environment.html)を参照してください。
 
 ## ツールメニュー ![images/library_default.png](images/library_default.png)
-{: tools_menu}
+{: #tools_menu}
 これらの設定は、サムネイルプレビューやサムネイル背景の右クリックコンテクストメニューにも表示されます。
 
 #### ![images/currentenvironment.png](images/currentenvironment.png) 現在の環境として設定

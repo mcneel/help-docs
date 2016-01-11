@@ -1,31 +1,32 @@
 ---
+title: Grundebene
 ---
 
-# Ground plane
+# {{page.title}}
 {: #ground-plane}
 
-The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
+Die Grundebene bietet dem Bild eine unendliche horizontale Plattform, die sich zum Horizont hin in alle Richtungen erstreckt und sich auf einer definierten Höhe befindet. Eine Grundebene wird viel schneller gerendert, als wenn Sie eine große planare Fläche als Basis verwenden.
 
-### Enabled
+### Aktiviert
 {: #groundplane-enabled}
-Turns the ground plane on.
+Aktiviert die Grundebene.
 ![images/groundplane-002a.png](images/groundplane-002a.png)
-*Ground plane disabled (left) and enabled (right).*
+*Grundebene deaktiviert (links) und aktiviert (rechts).*
 
 ### Alpha
 {: #groundplane-alpha}
-Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
+Wendet einen transparenten Alpha-Kanal an die Grundebene an, so dass das Bild mit dem geworfenen Schatten in ein anderes Bild eingefügt werden kann. Weitere Infos: [Wikipedia-Artikel: Alpha-Blending](https://de.wikipedia.org/wiki/Alpha_Blending).
 ![images/groundplane-004a.png](images/groundplane-004a.png)
- *Ground plane shows shadow, but is otherwise transparent in the image.*
+ *Die Grundebene zeigt Schatten an, ist aber sonst im Bild transparent.*
 
-### Elevation
+### Höhe
 {: #groundplane-elevation}
-Specifies the ground plane's height above zero.
+Definiert die Höhe der Grundebene oberhalb von 0.
 ![images/groundplane-005a.png](images/groundplane-005a.png)
-*Ground plane elevation above zero.*
+*Höhe der Grundebene über 0.*
 
 ### Material
 {: #groundplane-material}
-Assigns a [material](simple-material-properties.html) to the ground plane.
+Weist der Grundebene ein [Material](simple-material-properties.html) zu.
 ![images/groundplane-003a.png](images/groundplane-003a.png)
-*Ground plane with raised elevation and water material.*
+*Höher angesetzte Grundebene und Wassermaterial.*

@@ -1,7 +1,7 @@
 
 #### 平面図コントロール
 
-![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}
+![images/hdri-spherical-proj.png](images/hdri-spherical-proj.png){: .float-img-left}
 
 * HDRIを正しく回転するには、平面図コントロールをクリックします。
 * 赤い点は、HDRI画像の中央を表します。
