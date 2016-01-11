@@ -1,4 +1,3 @@
 
-### Veneer
-Causes the material to appear as a planar pattern on the surfaces of the object instead of cutting through the object.
-
+### Revêtement
+Le matériau apparaît sous forme de motif plan sur les surfaces de l'objet au lieu de traverser l'objet.

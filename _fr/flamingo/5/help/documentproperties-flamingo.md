@@ -1,68 +1,69 @@
 ---
+title: Propriétés du document de Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Document Properties: Flamingo nXt
-These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
+# ![images/options.svg](images/options.svg) {{page.title}}
+Ces paramètres concernent uniquement le modèle actuel. Le temps nécessaire au calcul du rendu et la qualité désirée sont proportionnels.
 
-#### Where can I find this command?
+#### Où puis-je trouver cette commande ?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
- 1. Command > EnvironmentEditor
+ 1. ![images/icon-render.png](images/icon-render.png)Barres d'outils Outils  pour le rendu > ![images/environments.png](images/environments.png) Éditeur de matériaux
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Rendu > Éditeur d'environnement
+ 1. Commande > ÉditeurEnvironnement
 
-## Materials
+## Matériaux
 {: #materials}
-Use these controls to quickly change how Flamingo renders the surfaces in a rendering.  These settings will not change the material assignments on the objects and layers, but will change how Flamingo produces the color of each surface.
+Utilisez ces contrôles pour changer rapidement la façon dont Flamingo calcule le rendu des surfaces.  Ces paramètres ne changeront pas les matériaux assignés aux objets et aux calques mais ils changeront la façon dont Flamingo produit la couleur sur chaque surface. 
 
-#### Use materials
+#### Utiliser des matériaux
 {: #use-materials}
-Renders using materials created in Flamingo nXt and Rhino materials. Objects that have no material assignment render white. If neither the Use materials or the Use Object colors is checked, then all the objects will render white.
+Le rendu est réalisé en utilisant les matériaux créés dans Flamingo nXt et Rhino. Les objets sans matériau sont rendus en blanc. Si aucune des options, Utiliser des matériaux ni Utiliser les couleurs de l'objet, n'est cochée, tous les objets seront rendus en blanc. 
 
-#### Use object color
+#### Utiliser la couleur de l'objet
 {: #use-object-color}
-Renders using the colors assigned through Rhino object or layer color. Note : Both Use materials and Use object color can be checked. In this case, objects that have materials assigned will use those materials. Other objects will render using their object or layer color.
+Le rendu est réalisé en utilisant les couleurs assignées à l'objet dans ses propriétés ou dans son calque. Remarque : Les deux cases, Utiliser des matériaux et Utiliser la couleur de l'objet peuvent être cochées en même temps. Dans ce cas, si un matériau est assigné à l'objet, il est utilisé pour le rendu ; sinon, la couleur de l'objet ou du calque est utilisée.
 
-#### Glow Channel
+#### Canal d'incandescence
 {: #channel}
-Materials that contain any level of glow will light up, but will not illuminate other objects. (Tag the object as a light to illuminate other objects.)  Set the Glow on a Channel, allowing the brightness of the glow to be adjusted after rendering without re-rendering.
+Les matériaux comprenant un niveau d'incandescence s'allumeront mais n'éclaireront pas les autres objets. (Marquez l'objet comme lumière pour éclairer les autres objets.)  Définissez l'incandescence avec un canal afin de permettre d'ajuster la luminosité après le rendu sans avoir à recalculer toute la scène. 
 
-## Bounces
+## Rebonds
 {: #bounces}
-When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are two low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
+Lorsqu'un rayon entre dans une scène, il rebondit plusieurs fois avant d'être éliminé.  En limitant le nombre de rebonds, il est possible d'accélérer le rendu de façon considérable. Mais si la limite est trop faible, certains effets peuvent manquer ou apparaître en noir.  Les valeurs par défaut conviennent parfaitement pour la plupart des rendus mais elles doivent être modifiées dans certains cas.
 
-#### Reflective
+#### Réflectif
 {: #reflective-bounces}
-Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times. Increase this number of there is a view that is looking at a reflective surface that bounces off an adjacent reflective and the reflections start to go completely black.
+Détermine combien de niveaux de réflexions sont permis ; en d'autres termes, combien de fois un rayon de lumière se réfléchira dans les objets. Si vous entrez 0, il n'y aura pas de réflexions. De plus grandes valeurs entraînent des temps de rendu plus élevés. Augmentez cette valeur si une vue regarde une surface réfléchissante qui rebondit sur une vue réfléchissante adjacente et que les réflexions commencent à devenir complètement noires. 
 
-#### Refractive
+#### Réfringent
 {: #refractive-bounces}
-Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times. Increase this number of there is a view that looks through many layers and ultimately looks black and not look transparent.
+Détermine combien de niveaux de réfractions sont permis ; en d'autres termes, combien de fois un rayon de lumière sera réfracté dans les objets. Une valeur nulle désactive les réfractions. De plus grandes valeurs entraînent des temps de rendu plus élevés. Augmentez cette valeur si une vue regarde à travers de nombreuses couches et apparaît finalement noire et non transparente. 
 
-#### Indirect
+#### Indirecte
 {: #indirect-bounces}
-Determines how many levels of indirect light are permitted; in other words, how many times an indirect light ray will bounce off objects. A setting of 0 disables reflections. Higher values cause longer rendering times.
+Détermine combien de niveaux de lumière indirecte sont permis ; en d'autres termes, combien de fois un rayon de lumière indirecte rebondira sur les objets. Si vous entrez 0, il n'y aura pas de réflexions. De plus grandes valeurs entraînent des temps de rendu plus élevés.
 
-## Indirect lighting
+## Éclairage indirect
 {: #indirect-settings}
-The indirect lighting settings only effect the rays that bounce off one surface an carry light to another surface.
+Les paramètres d'éclairage indirect affectent uniquement les rayons qui rebondissent d'une surface et transportent la lumière vers une autre surface.
 
-#### Color Bleed
+#### Étalement de la couleur
 {: #color-bleed}
-Color bleed controls the amount of color transferred in a indirect bounce of light from one surface to another.  By default this is set to the maximum value to increase dynamics in the rendering.  
+L'étalement de la couleur contrôle la quantité de couleur transférée dans un rebond de lumière indirect d'une surface vers une autre.  Par défaut, la valeur maximale est définie afin d'augmenter la dynamique du rendu. 
 
-#### Monte Carlo Reflections
+#### Réflexions de Monte Carlo
 {: #monte-carlo}
-Monte Carlo in indirect lighting controls how Flamingo samples indirect light. When activated, the indirect light will become very noisy in the early passes.  But over all, as the passes progress, the overall effect of Monte Carlo indirect will be a more subtle and potentially more detail indirect effect. Scenes that rely heavily on indirect light may benefit from Mote Carlo indirection reflections.
+Le paramètre de Monte Carlo dans l'éclairage indirect contrôle comment Flamingo échantillonne la lumière indirecte. Lorsqu'il est activé, la lumière indirecte devient très floue au cours des premières passes. Mais ensuite, au fur et à mesure des passes, l'effet général de Monte Carlo indirect sera un effet indirect plus subtil et potentiellement plus détaillé. Les scènes qui reposent fortement sur l'éclairage indirect peuvent tirer profit des réflexions indirectes de Monte Carlo. 
 
-## Miscellaneous
+## Divers
 
-#### Use lights on layers that are off
+#### Utiliser les lumières des calques désactivés
 {: #uselightsonlayersthatareoff}
-Uses lights on layers that are turned off and hidden lights.
+Permet d'utiliser les lumières qui se trouvent sur des calques désactivés ou qui sont cachées.
 
-### Render constraints
+### Contraintes de rendu
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}

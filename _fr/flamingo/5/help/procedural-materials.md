@@ -1,184 +1,186 @@
 ---
+title: Matériaux algorithmiques
 ---
 
-#  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Procedural Materials
-The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
+#  ![images/paint.svg](images/paint.svg) {{page.title}}
+L'arbre des algorithmes combine un ou plusieurs matériaux en utilisant des règles pour définir l'interaction entre eux. L'arbre affiche les composants utilisés pour créer ce matériau et vous permet d'ajouter des composants. Pour des matériaux simples, il n'y aura qu'un seul composant dans la liste : Base.
 
-Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include
+Chaque algorithme combine deux sous-matériaux en utilisant une méthode déterminée. Chaque sous-matériau peut à son tour être constitué d'un algorithme, en combinant deux sous-matériaux. De cette façon, des matériaux extrêmement élaborés peuvent être créés à partir de composants simples. Algorithmes de combinaison de matériaux :
 
 > [Base](#base)
-> [Angular Blend](#angular-blend)
-> [Blend](#blend)
-> [Marble](#marble)
-> [Granite](#granite)
-> [Tile](#tile)
-> [Wood](#wood)
+> [Mélange angulaire](#angular-blend)
+> [Mélange](#blend)
+> [Marbre](#marble)
+> [Granit](#granite)
+> [Mosaïque](#tile)
+> [Bois](#wood)
 
-##### To add a procedure
-1. Right-clickanywhere in the Procedures window.
-1. On the menu, click a procedure type.
+##### Pour ajouter un algorithme
+1. Cliquez avec le bouton de droite dans la fenêtre des Algorithmes.
+1. Dans le menu, cliquez sur un type d'algorithme.
 
-##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+##### Pour supprimer un algorithme
+ 1. Dans la fenêtre Algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
+ 2. Dans le menu, cliquez sur Supprimer.
 
 ## Base
 {: #base}
-This is the basic simple material with no layers. This is the default procedure.
+Ce matériau est le matériau simple de base sans couche. Il s'agit de l'algorithme par défaut. 
 
-## Angular Blend
+## Mélange angulaire
 {: #angular-blend}
-Many material change color, reflection or transparency based on the angle the material is viewed. The Angular Blend procedure blends between two materials based on the angle of view to the surface of the object.
+De nombreux matériaux changent de couleur, de réflexion ou de transparence en fonction de l'angle selon lequel le matériau est regardé. L'algorithme de mélange angulaire mélange deux matériaux en fonction de l'angle de vue sur la surface de l'objet.
 
 ![images/angularblendmaterials.png](images/angularblendmaterials.png)
-The Angular Blend procedure blends between two different materials to create special effects. The two layers in the procedure are the Inner and the Outer Layer.
+L'algorithme Mélange angulaire mélange deux composants différents pour créer des effets spéciaux. Les deux couches utilisées par l'algorithme sont la couche intérieure et extérieure.
 
-#### Inner
-From 0 degrees from the viewpoint to the Start angle, the Inner component will show completely. Think of this as a base material.
+#### Intérieur
+De 0 degré à partir du point de vue jusqu'à l'angle de départ, le composant intérieur se verra entièrement. Vous pouvez considérer cet élément comme le matériau de base.
 
-#### Outer
-From the Stop angle to 90 degrees from the view, the Outer component will be the only material showing. Think of this as a coating.
+#### Extérieur
+À partir de l'angle final jusqu'à 90 degrés, le matériau extérieur sera le seul visible. Vous pouvez considérer cet élément comme le revêtement.
 
-#### Start angle
-The angle from the viewpoint at which the Outer component material starts.
+#### Angle de départ
+L'angle avec le point de vue à partir duquel le composant extérieur commence.
 
-#### Stop angle
-The angle from the viewpoint at which the Outer component material stops.
-Between the Start Angle and the Stop angle, the Inner and the Outer components blend.
+#### Angle final
+L'angle avec le point de vue à partir duquel le composant extérieur s'arrête.
+Entre l'angle de départ et l'angle final, les composants intérieur et extérieur se mélangent.
 
-In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/01.png](images/01.png) is 60 degrees (in the rendering that translates to the red circle).
-The image at the left shows the the Inner material as white, and the Outer material as black.
+Dans l'illustration ci-dessous, l'angle de départ![images/01.png](images/01.png) est égal à 30 degrés (ce qui, dans le rendu, se traduit par le cercle vert à droite) et l'angle final![images/02.png](images/02.png) est égal à 60 degrés (ce qui, dans le rendu, se traduit par le cercle rouge).
+
+L'image de droite montre un matériau intérieur blanc et un matériau extérieur noir.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
-* Between 0 and 30 degrees from the viewpoint, you see white.
-* Between 30 and 60 degrees&#160;from the viewpoint, you see a gradient from white to black.
-* Between 60 and 90 degrees&#160;from the viewpoint, you see black.
+* Entre 0 et 30 degrés à partir du point de vue, vous voyez le blanc.
+* Entre 30 et 60 degrés à partir du point de vue, vous voyez un dégradé passant du blanc au noir.
+* Entre 60 et 90 degrés à partir du point de vue, vous voyez noir.
 
-## Blend
+## Mélange
 {: #blend}
-The Blend procedure combines two base components and controls the proportions of each. All of the standard library wood materials use a Blend procedure to change the finish of the wood from clear matte to dark shiny.
+L'algorithme de mélange combine deux composants de base et permet de définir les proportions de chacun. Tous les bois inclus dans la bibliothèque de Flamingo utilisent un algorithme de mélange pour donner une finition brillante et foncée au bois.
 ![images/blend-001.png](images/blend-001.png)
-Blends work well changing an entire material definition by adding an overall color to a base patterned material.
+Les mélanges permettent de changer entièrement la définition d'un matériau en ajoutant une couleur à un motif de base.
 
-#### Blend
-Varies the percentage of each component material used in the final material.  For instance the material blow shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and 50% striped and 50% green color blended.  The image to the right shows a weak striped material with a strong green material, so the slider is at the right of the Blend slider.
+#### Mélange
+Permet de changer le pourcentage de chaque matériau utilisé pour le matériau final.  Par exemple, le matériau ci-dessous montre un mélange entre un matériau rayé et une couleur verte unie. Pour l'image de gauche, le glisseur est situé vers la gauche, ce qui donne plus d'importance au matériau rayé et réduit la force du matériau vert.  Pour l'image du milieu, le glisseur est situé au milieu et les deux matériaux sont mélangés à parts égales.  Pour l'image de droite, le glisseur est situé vers la droite, ce qui donne moins d'importance au matériau rayé et renforce le matériau vert.
 ![images/blendpercent.png](images/blendpercent.png)
 
-#### Use image
-Bitmap images usually consisting of grayscale patterns define where two component materials will show. The materials are blended by the value of the gray pixels in the image. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
-In the image, the same materials are used for the first and second components, but the blend is controlled by three different bitmaps.
+#### Utiliser une image
+Une image peut être utilisée pour contrôler l'interaction entre les deux matériaux. Lorsqu'une image est utilisée, les valeurs d'échelle de gris des pixels définissent le mélange entre les deux composants. Utilisez une image en échelle de gris pour créer des nuances intermédiaires entre le premier et le deuxième composant. Le premier composant sera placé sur les parties noires de l'image et le deuxième composant sera placé sur les parties blanches.
+
+Dans l'image, les mêmes matériaux sont utilisés pour le premier et le deuxième composants, mais le mélange est contrôlé par trois images différentes.
 ![images/blendmask.png](images/blendmask.png)
-The resolution of the mask bitmap affects the quality of the material. Higher resolution bitmaps allow a viewpoint closer to the material with fewer quality issues, but they also use more memory.
+La résolution de l'image du masque joue sur la qualité du matériau. Des images de haute résolution vous permettront de regarder le matériau de plus près sans perdre de qualité mais elles utiliseront plus de mémoire.
 
-#### Use Alpha channel
-If the image has an alpha channel, this can be used instead of the bitmap grayscale to determine where the colors blend.
+#### Utiliser le canal alpha
+Si l'image possède un canal alpha, il peut être utilisé au lieu de l'échelle de gris de l'image pour déterminer le mélange des couleurs.
 
-#### Reverse
-The First component will be placed where there is white in the bitmap pattern, and the Second component will be placed where there is black in the bitmap pattern.
+#### Inverser
+Le premier composant sera placé sur les parties blanches de l'image et le deuxième sur les parties noires.
 
-#### Tiles
-The scale of the material is independent of the resolution of the bitmap used to define it. In order to scale the material correctly, decide how large an area in real units one copy of the bitmap represents. If the bitmap represents the height of six 4-unit tiles and the length represents twelve 4-unit tiles, the scale would be 48 units in the x-direction and 24 units in the y-direction. This stretches the bitmap to the proper size for the pattern.
+#### Mosaïque
+L'échelle du matériau lors du rendu ne dépend pas de la résolution de l'image. Afin de définir correctement l'échelle du matériau, vous devez définir la taille, en unités réelles, de la zone représentée par une copie de l'image. Si la hauteur de l'image représente six carreaux de 4 unités et la longueur représente douze carreaux de 4 unités, l'échelle est de 48 unités dans la direction des x et de 24 unités dans la direction des y. L'image est alors ajustée à la taille appropriée pour le motif.
 
-#### Width
-The width in pixels of a single instance of the image.
+#### Largeur
+La largeur en pixels d'une seule copie de l'image.
 
-#### Height
-The height in pixels of a single instance of the image.
+#### Hauteur
+La hauteur en pixels d'une seule copie de l'image.
 
-## Granite
+## Granit
 {: #granite}
-Creates a 3-D material with solid pockets of a second material embedded in the Base component. The Granite procedure combines a randomly distributed Spot component in a Base component. The Granite procedure defines how the Base and Spot components combine. Granite procedures can be used for a variety of different materials including rust, sparkly plastic, and other randomly spotted materials.
+Crée un matériau 3D dont le composant de base est incrusté de tâches d'un deuxième matériau. L'algorithme de granit combine un composant de point (spot) réparti de façon aléatoire dans un composant de base. L'algorithme du granit définit comment les composants de base et de point se combinent. Les algorithmes de granit peuvent être utilisés pour une grande variété de matériaux tels que la rouille, le plastique brillant et autres matériaux mouchetés de façon aléatoire.
 ![images/granitematerials.png](images/granitematerials.png)
 
-#### Base/Spot
-The Base and Spot components are two materials. Their properties are specified in the same way as any material.
+#### Base/Point
+Les composants de Base et de Point sont deux matériaux. Leurs propriétés sont définies comme pour tout autre matériau.
 ![images/granitescale.png](images/granitescale.png)
 {% include_relative snippets/snippet-materialscaleandlock.md %}
 
-#### Density
-A fraction of the whole pattern. Increasing this setting increases the relative size of the spots.
+#### Densité
+Une fraction du motif dans son ensemble. La taille relative des points est proportionnelle à cette valeur.
 ![images/granitedensity.png](images/granitedensity.png)
 {% include_relative snippets/snippet-materialblend.md %}
 ![images/graniteblend.png](images/graniteblend.png)
 
-## Marble
+## Marbre
 {: #marble}
-Creates alternating slabs of Base and Vein components. The Marble procedure defines how the Base and Vein components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object.
+Crée des tranches alternant les composants de base et de nervure. L'algorithme du marbre définit comment les composants de base et de veine se combinent. Les  dalles sont infiniment larges et l'orientation de l'objet joue sur la façon dont les dalles sont orientées par rapport à l'objet.
 
 ![images/marbled.png](images/marbled.png)
 
-Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object.
+Le [placage de texture](properties-object.html#mapping) des objets contrôle l'orientation du matériau sur l'objet.
 ![images/materialunmapped.png](images/materialunmapped.png)
-No texture mapping (left). With texture mapping (right).
+*Pas de placage de texture (gauche). Avec placage de texture (droite).*
 
-#### Base/Vein
-The Base and Vein components are two materials. Their properties are specified in the same way as any material.
+#### Base/Veine
+Les composants de Base et de Veine sont deux matériaux. Leurs propriétés sont définies comme pour tout autre matériau.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
-#### Vein Width
-Alters the relative size of the slabs to each other. Vein Width is a fraction of the distance from one Base stripe to the next. Values range from 0 (zero) for no Vein component to 1 for no Base component.
+#### Largeur de la veine
+Permet de changer la taille relative des tranches les unes par rapport aux autres. La valeur donnée à la largeur de veine est une fraction de la distance entre une rayure de la base et la suivante. Les valeurs peuvent aller de 0 (zéro) pour indiquer qu'il n'y a pas de composant de veine à 1 pour aucun composant de base.
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-Veneer (left), normal (right).
+*Revêtement (gauche) ; normal (droite).*
 
-## Tile
+## Mosaïque
 {: #tile}
-Tile is a 2-D material.&#160;Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The Tile material combines a Base component and a Joint component. Each of these materials can also include any other material.
+La mosaïque est un matériau 2D. Le [placage de texture](properties-object.html#mapping) des objets contrôle l'orientation du matériau sur l'objet. L'algorithme de mosaïque est constitué d'un composant de base et d'un composant de jointure. Chacun des composants peut inclure d'autres matériaux.
 ![images/tile materials.png](images/tile materials.png)
-Scale tile differently in each direction for special effects. For example, use a tile material that is extremely long in one direction to create siding materials.
+Utilisez une taille différente dans chaque direction afin de créer des effets spéciaux. Par exemple, utilisez une mosaïque très longue dans une direction pour créer des matériaux de pavement.
 
-#### Tile
-Sets the overall tile size. The width and height sizes can be set independently.
+#### Mosaïque
+Définit la taille générale de la mosaïque. La largeur et la hauteur peuvent être définies indépendamment l'une de l'autre.
 ![images/tilescale.png](images/tilescale.png)
 
-#### Width/Height
-Specifies the width and height of the tiles.
+#### Largeur/Hauteur
+Définit la largeur et la hauteur des carreaux.
 {% include_relative snippets/snippet-lock-widthheight.md %}
 
 #### Joint
-Specifies the size of the joint material.
+Change la taille de la jointure.
 ![images/tilejointsize.png](images/tilejointsize.png)
 
-#### Horizontal joint/Vertical joint
-Specifies the width and height of the joint material.
+#### Jointure horizontale / Jointure verticale
+Définit la largeur et la hauteur de la jointure.
 
-#### Lock
-Maintains the ratio between the Horizontal and Vertical joint sizes.
+#### Verrouiller
+Conserve le rapport entre la taille des jointures horizontale et verticale.
 
-#### Offset
-Provides a relative horizontal offset per vertical tile.&#160;For example, use a setting of .5 to produce a standard running bond. This allows modeling of material such as marble tile, without the effect of having the entire floor hewn from the same block of marble.
+#### Décalage
+Permet d'obtenir un décalage horizontal relatif. Par exemple, utilisez un décalage de .5 pour créer une structure standard de panneresse. Ceci permet de modéliser des matériaux tels que des mosaïques de marbre, sans avoir l'impression que tout le sol a été taillé dans un seul bloc de marbre.
 ![images/tileoffset.png](images/tileoffset.png)
 
-#### Vary Tiles
-Add randomness to the material color for each tile. This makes it possible to model material such as non-uniform bricks.
+#### Variation des carreaux
+Ajoute un effet aléatoire à la couleur du matériau pour chaque carreau. Cette option permet de modéliser des matériaux tels que des briques non uniformes.
 
-#### R/G/B
-Modifies the red, green, and blue color components.  This will slightly vary the base material of each tile randomly.
+#### R/V/B
+Modifie les composantes rouge, verte et bleue de la couleur.  Le matériau de base de chaque carreau variera alors légèrement de façon aléatoire.
 ![images/tilevarycolor.png](images/tilevarycolor.png)
 
 #### X/Y/Z
-Offsets the material from the world origin for each tile randomly. Do this if a seam that marks the beginning of the material appears an in inappropriate place.
+Décale le matériau par rapport à l'origine du repère général pour chaque carreau de façon aléatoire. Le décalage peut être intéressant si une jointure qui marque le début du matériau est mal placée.
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
-## Wood
+## Bois
 {: #wood}
-Wood consists of concentric cylinders of alternating Base and Ring components. The Wood settings define how the Base and Ring components combine.
+Le bois est constitué de cylindres concentriques avec une alternance des composants de base et d'anneau. L'algorithme du bois définit comment les composants de base et d'anneau se combinent.
 
-Use this method to create wood materials if objects are not closely viewed. If detailed wood is needed, use a [Texture material](material-type-simple.html#textured) to do wood.  If the viewpoint is not close to the wood, a solid color can be used to take the place of wood without sacrificing image quality. This allows faster rendering. An additional advantages of using a wood material is that when rendering different sides of an object, the wood grain will look correct. End grain will show on the ends and parallel grain will show on the sides of an object.
+Utiliser cette méthode pour créer des matériaux imitant le bois si les objets ne sont pas vus de près. Si vous avez besoin d'un bois plus détaillé, utilisez un [matériau avec texture](material-type-simple.html#textured) pour le définir. Si votre point de vue n'est pas trop proche du bois, une couleur unie peut être utilisée pour remplacer le bois sans que l'image ne perde de qualité. Le rendu sera alors plus rapide. Un autre avantage du bois est que le grain est correctement dessiné, quel que soit l'angle sous lequel il est vu. L'extrémité du grain se verra sur les extrémités et le grain parallèle sur les côtés de l'objet.
 ![images/woodmaterials.png](images/woodmaterials.png)
 
-#### Base/Ring
-The Base and Ring components are two materials. Their properties are specified in the same way as any material.
+#### Base/Anneau
+Les composants de Base et d'Anneau sont deux matériaux. Leurs propriétés sont définies comme pour tout autre matériau.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
 
-#### Ring Width
-A fraction of the distance between one Base stripe and the next. Values range from 0 (zero) for no Ring component to 1 for no Base component.
+#### Largeur des anneaux
+Une fraction de la distance entre une rayure de la base et la suivante. Les valeurs peuvent aller de 0 (zéro) pour indiquer qu'il n'y a pas de composant d'anneau à 1 pour aucun composant de base.
 ![images/woodringwidth.png](images/woodringwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/woodveneer.png](images/woodveneer.png)
-Veneer (left), normal (right).
+Revêtement (gauche) ; normal (droite)

@@ -1,75 +1,74 @@
-Preview Properties
-Preview thumbnail images and the background area between thumbnail images both have context menus.
+Propriétés de l'aperçu
+Les images miniatures d'aperçu ainsi que la zone de fond des miniatures ont un menu contextuel.
 
-#### Thumbnail preview actions
+#### Actions sur les miniatures
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click and drag to change the view.
+>![images/number-onestep.gif](images/number-onestep.gif) Cliquez avec le bouton de droite pour changer la vue. 
 
-This does not have much affect if the preview object is a sphere, but if it is a cube, cone, or other shape, rotating the view or object shows the preview object from different viewpoints.
+Le changement ne sera pas très intéressant sir l'objet est un sphère mais s'il s'agit d'un cube, d'un cône ou d'une autre forme, la rotation de la vue ou des objets permet de voir l'objet sous un autre angle.
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click to display a context menu.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click to display a larger preview window below the thumbnails.
->![images/number-onestep.gif](images/number-onestep.gif)Drag the preview thumbnails to reorder the list.
->![images/number-onestep.gif](images/number-onestep.gif)Press the [onmouseover="if (parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event)" onclick="javascript:BSSCPopup('../Popup_Actions/Ctrl_Key.htm');;return false" id="a16" style="position: relative; font-weight: normal;">Ctrl]() key while dragging to duplicate a material.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click the larger preview to open a floating window that can be resized to get a higher resolution view of the preview.
+>![images/number-onestep.gif](images/number-onestep.gif) Cliquez avec le bouton de droite pour afficher un menu contextuel. .
+>![images/number-onestep.gif](images/number-onestep.gif) Double cliquez pour afficher une plus grande fenêtre d'aperçu en-dessous des miniatures.
+>![images/number-onestep.gif](images/number-onestep.gif) Déplacez les miniatures pour changer l'ordre de la liste.
+>![images/number-onestep.gif](images/number-onestep.gif) Appuyez sur la touche Ctrl et déplacez les miniatures pour dupliquer un matériau.
+>![images/number-onestep.gif](images/number-onestep.gif) Double cliquez sur le plus grand aperçu pour ouvrir une fenêtre flottante dont la taille peut être modifiée pour obtenir une vue de l'aperçu avec une meilleure résolution.
 
-This window has all the same functionality as the original preview image including the context menu and the ability to drag and drop onto other materials or objects in the model.
+Cette fenêtre possède les mêmes fonctions que l'image d'aperçu originale, y compris le menu contextuel et la possibilité de la faire glisser et de la déposer sur d'autres matériaux ou objets dans le modèle.
 
-### Geometry
+### Géométrie
 
-#### Materials
-Materials can use various geometry types.
-![images/thumbnailsphere.png](images/thumbnailsphere.png) *Sphere* 
-![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Pyramid* 
+#### Matériaux
+Les matériaux peuvent utiliser plusieurs types de géométrie.
+![images/thumbnailsphere.png](images/thumbnailsphere.png) *Sphère* 
+![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Pyramide* 
 ![images/thumbnailcube.png](images/thumbnailcube.png) *Cube* 
-![images/thumbnailtorus.png](images/thumbnailtorus.png) *Torus* 
-![images/thumbnailcone.png](images/thumbnailcone.png) *Cone* 
-![images/thumbnailplane.png](images/thumbnailplane.png) *Plane* 
+![images/thumbnailtorus.png](images/thumbnailtorus.png) *Tore* 
+![images/thumbnailcone.png](images/thumbnailcone.png) *Cône* 
+![images/thumbnailplane.png](images/thumbnailplane.png) *Plan* 
 
-#### Environments
-Environments only use the cone and sphere.
-![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cone and sphere* 
+#### Environnements
+Les environnements utilisent uniquement le cône et la sphère.
+![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cône et sphère* 
 
 #### Textures
-Textures are displayed only as a two-dimensional, flat surface facing the camera.
+Les textures sont affichées uniquement sous forme de surfaces plates en deux dimensions faces à la caméra.
 ![images/texturepreview.png](images/texturepreview.png)
 
-#### Size
-Sets the unit size for the thumbnail.
+#### Taille
+Définit la taille de l'unité pour les miniatures.
 
-### View
-Controls the right-mouse drag object or camera rotation.
+### Vue
+Contrôle déplacement des objets ou la rotation de la caméra avec le bouton de droite.
 
-#### Rotate object
-Right-mouse drag rotates the object.
+#### Rotation de l'objet
+Si vous cliquez avec le bouton de droite et faites glisser la souris sur la miniature, l'objet tourne.
 
-#### Rotate camera
-Right-mouse drag rotates the camera.
+#### Rotation de la caméra
+Si vous cliquez avec le bouton de droite et faites glisser la souris sur la miniature, la caméra tourne.
 
-#### X angle
-Sets the horizontal rotation angle for the object or camera.
+#### Angle X
+Définit l'angle de rotation horizontale de l'objet ou de la caméra.
 
-#### Y angle
-Sets the vertical rotation angle for the object or camera.
+#### Angle Y
+Définit l'angle de rotation verticale de l'objet ou de la caméra.
 
-### Background
-Controls the appearance of the thumbnail background.
+### Arrière-plan
+Contrôle l'apparence de l'arrière-plan de la miniature.
 
-#### None
-The default gray environment is used.
+#### Aucun
+L'environnement gris par défaut est utilisé.
 ![images/thumbnailbackground-001.png](images/thumbnailbackground-001.png)
 
-#### Checkered
-A gray checkered background is used.
+#### Damier
+Un arrière-plan en damier gris est utilisé.
 ![images/thumbnailbackground-002.png](images/thumbnailbackground-002.png)
 
-#### Custom
-Any material or texture can be used as a custom background.
+#### Personnaliser
+Une texture ou un matériau peut être utilisé comme arrière-plan.
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 
-####  **Save as Defaults** 
-Saves the thumbnail properties as the default settings.
+####  **Enregistrer comme défaut** 
+Enregistre les propriétés de la miniature comme paramètres par défaut.
 
-####  **Load from Defaults** 
-Loads the thumbnail properties from the default settings.
-
+####  **Charger les valeurs par défaut** 
+Charge les propriétés de la miniature à partir des paramètres par défaut.

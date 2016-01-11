@@ -1,191 +1,192 @@
 ---
+title: Soleil et ciel
 ---
 
-# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} Sun and Sky
-The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Auto mode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
+# ![imagessun.svg](images/sun.svg) {{page.title}}
+Le [soleil](#sun) et le [ciel](#sky) sont étroitement liés entre eux. Le soleil peut modifier la luminosité du ciel en mode automatique. Si le soleil est activé et que le ciel est une image HDR, il est important d'équilibrer leurs intensités. 
 
-## Sun
+## Soleil
 {: #sun}
-The Sun is a powerful invisible parallel light. Factors simulating real-world conditions such as latitude and longitude, time of day, and season control the Sun's direction and brightness.
+Le soleil est une lumière parallèle invisible très puissante. Les facteurs simulant des conditions du monde réel tels que la latitude et la longitude, l'heure de la journée et la saison contrôlent la direction et la luminosité du soleil.
 
-This help topic reviews the Flamingo Sun control.  The [Rhinoceros Sun](http://docs.mcneel.com/rhino/5/help/en-us/commands/sun.htm) control may also be used to place the sun.  Flamingo will keep the two sun controls in sync.
+Cette rubrique de l'aide couvre les contrôles de Flamingo pour le soleil. Le contrôle du [soleil de Rhinoceros](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/sun.htm) peut également être utilisé pour placer le soleil. Flamingo synchronisera les deux contrôles.  
 
-##### Where can I find Flamingo Sun control?
+##### Où puis-je trouver les contrôles du soleil de Flamingo ?
 
-The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+Le soleil doit être activé à travers les [préréglages d'éclairage](lighting-tab.html#lighting-presets) ou les [paramètres d'éclairage personnalisé](lighting-tab.html#sun).
 
-* ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
+* ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt
+* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Soleil
 
-Note: The Sun tab will only be visible if the Sun is activated through a Lighting Pre-set.
+**Remarque :** L'onglet Soleil ne sera visible que si le soleil est activé dans un préréglage d'éclairage. 
 
-Solar angles are required to perform sunlight calculations. There are two ways to specify the sun direction: by date, time, and place; and by direct angle. Use date, time, and place positioning to simulate the real sun in a study of your model's site. Direct sun angle controls the light angle without reference to a real sun. Use the direct sun angle to try lighting effects.
+Les angles solaires devront être indiqués afin de pouvoir calculer la lumière du soleil. Vous pouvez indiquer la direction du soleil de deux façons : avec la date, l'heure et le lieu ou directement avec l'angle. Utilisez le positionnement selon la date, l'heure et le lieu si vous essayez de simuler le soleil réel dans une étude de l'emplacement du modèle. Le positionnement par angle direct permet de contrôler l'angle de la lumière sans faire référence à un soleil réel. Utilisez cette option pour essayer des effets de lumière.
 
 ![images/sydneymorning.png](images/sydneymorning.png)  ![images/stockholmmorning.png](images/stockholmmorning.png)
-*Sydney, Australia, 21-June, 09:30 (on the left). Stockholm, Sweden, 21-June, 09:30 (on the right).*
+*Sydney, Australie, 21 juin, 09h30 (à gauche). Stockholm, Suède, 21 Juin, 09h30 (à droite).*
 
-### Set azimuth and altitude
+### Définir l'azimut et l'altitude
 {: #set-azimuth-and-altitude}
-Use solar angles to manually set the sun's direction. Enables [Azimuth](#azimuth) and [Altitude](#altitude) controls.
+Utiliser des angles pour définir manuellement la direction du soleil. Active les contrôles de l'[azimut](#azimuth) et de l'[altitude](#altitude).
 
-#### Azimuth
+#### Azimut
 {: #azimuth}
-Sets the sun's direction in angle degrees from North (0) in the horizontal plane.  The circular map shows the world in a plan view.
+Définit la direction du soleil en degrés angulaires à partir du Nord (0) sur le plan horizontal.  La carte circulaire montre le monde sur une vue en plan. 
 
 #### Altitude
 {: #altitude}
-Sets the sun's height in the sky in angle degrees from the Equator (0).  The half circle map simulates a section through the vertical direction of the world coordinates.
+Définit la hauteur du soleil dans le ciel en degrés angulaires à partir de l'équateur (0).  La carte en demi-cercle simule une section dans la direction verticale des coordonnées dans le repère général. 
 
-### Set location on Earth
+### Définir le lieu sur la terre
 {: #set-location-on-earth}
-Use the sun angle calculator to place the sun based on Date, Time, Location.  Note: As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
+Utilisez l'angle du soleil pour placer le soleil en fonction de la date, de l'heure et du lieu. **Remarque :** Comme pour tous les calculateurs de soleil, la précision du positionnement du soleil peut varier. Si une précision absolue est nécessaire, nous vous recommandons de vérifier la position du soleil. 
 
 #### Date
 {: #date}
-Specifies the date.
+Définit la date.
 
-#### Time
+#### Temps
 {: #time}
-Specifies the local time of day.
+Indique l'heure.
 
-#### Daylight savings time
+#### Heure d'été
 {: #daylight-savings-time}
-Sets the time forward by one hour.
+Avance l'heure d'une heure.
 
 #### Latitude/Longitude
 {: #latitude-longitude}
-Enter a latitude and longitude or pick a location on the map.
-The numbers will also update to display the latitude and longitude of a location picked on the map with the mouse cursor.
+Entrez une latitude et une longitude ou choisissez une position sur la carte.
+Les nombres seront également actualisés pour afficher la latitude et la longitude de la position sélectionnée sur la carte avec la souris.
 
-#### Time zone
+#### Fuseau horaire
 {: #time-zone}
-Displays the time zone based on Latitude and Longitude for the current location.
+Affiche le fuseau horaire à partir de la latitude et la longitude du lieu indiqué.
 
-#### City list
+#### Liste des villes
 {: #city-list}
-Use this to select a major city to set the location.
+Utilisez cette liste pour sélectionner une ville afin de définir le lieu.
 
-#### Map
+#### Carte
 {: #map}
-Click the map to specify a location. Drag with the left mouse button to pan the map.
+Cliquez sur la carte pour sélectionner un lieu. Faites glisser la carte avec le bouton de gauche pour la déplacer.
 
-### Sun intensity
+### Intensité du soleil
 {: #sun-intensity}
-Modifies the brightness of the sun (direct) daylight component. The intensity of sun is automatically calculated based on solar angles and sky conditions, but can be modified to balance with other lights.
+Permet de modifier la luminosité du composant de lumière directe de la lumière du jour (le soleil). L'intensité du soleil est automatiquement calculée selon les angles solaires et les conditions du ciel mais elle peut être modifiée pour s'équilibrer avec les autres lumières.
 
-### Sun highlight
+### Reflet du soleil
 {: #sun-highlight}
-The sharpness of the sun highlight.
+La netteté du reflet du soleil.
 
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
-*Sun highlight=0 (left) and 1 (right).*
+*Reflet du soleil=0 (gauche) et 1 (droite).*
 
-Note : Solar highlight artifacts can sometimes be seen on exterior renderings when the Sun highlight setting is used. To mitigate or eliminate this artifact, set the Sun highlight to a smaller value.
+**Remarque :** Des défauts de reflet solaire peuvent parfois être vus sur les rendus extérieurs lorsque le paramètre de Reflet du soleil est activé. Pour atténuer ou éliminer cet artefact, définissez le Reflet du soleil sur une plus petite valeur.
 {: #speckle-artifacts}
 
 {% include_relative snippets/snippet-sunchannel.md %}
 
-#### North Direction
+#### Direction du nord
 {: #north}
-Note : North is the World Y direction.
+**Remarque :** Nord correspond à la direction y positive du repère général.
 
-## Sky
+## Ciel
 {: #sky}
-The Sky is a large sphere around the rendering that can be used for lighting. The Sky is very different from environment.  Sky controls lighting. Environment controls what is reflected and visible in the background. There are many situations where the Sky and Environment might be set differently.
+Le ciel est une grande sphère autour du rendu qui peut être utilisée pour l'éclairage. Le ciel est très différent de l'environnement. Le ciel contrôle l'éclairage. L'environnement contrôle ce qui est réfléchi et visible en arrière-plan. Dans de nombreux cas le ciel et l'environnement devront être définis différemment l'un de l'autre. 
 
-#### Where can I find Flamingo Sky control?
-The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sky).
+#### Où puis-je trouver les contrôles du ciel de Flamingo ?
+Le ciel doit être activé à travers les [préréglages d'éclairage](lighting-tab.html#lighting-presets) ou les [paramètres d'éclairage personnalisé](lighting-tab.html#sky).
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sky
+ 1. ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt
+ 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Ciel
 
-The lighting preset schemes for [Exterior](lighting-tab.html#exterior-daylight) and [Interior](lighting-tab.html#interior-daylight) daylight use the Automatic sky by default. The [Studio](lighting-tab.html#studio-lighting) lighting preset scheme uses HDR image lighting by default.
+Les schémas d'éclairage prédéfinis pour la lumière du jour [Extérieure](lighting-tab.html#exterior-daylight) et [Intérieure](lighting-tab.html#interior-daylight) utilisent le ciel automatique par défaut. Le schéma d'éclairage de [studio](lighting-tab.html#studio-lighting) prédéfini utilise un éclairage par image HDR.
 
-Sky can be set five ways:
+Le ciel peut être défini de cinq façon différentes :
 
->[Off](lighting-tab.html#off)
->[Automatic Sky](#automatic-sky)
->[High Dynamic Range Image (HDRI)](#high-dynamic-range-image-sky)
->[Color](#color-sky)
+>[Désactivé](lighting-tab.html#off)
+>[Ciel automatique](#automatic-sky)
+>[Image à grande plage dynamique (HDRI)](#high-dynamic-range-image-sky)
+>[Couleur](#color-sky)
 >[Image](#image-sky)
 
-The two best settings for sky lighting types are [HDR image](#high-dynamic-range-image-sky) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
+Les deux meilleurs paramètres pour les types d'éclairage zénithal sont [Image HDR](#high-dynamic-range-image-sky) et [Ciel automatique](#automatic-sky). Le ciel avec image HDR utilise une image contenant des valeurs d'éclairage enregistrées sur chaque pixel pour définir l'éclairage et les réflexions. Le ciel automatique utilise une nébulosité et une position du soleil dans le monde réel pour simuler le ciel.  Ces paramètres produiront les rendus les plus dynamiques. 
 
-### Automatic Sky
+### Ciel automatique
 {: #automatic-sky}
-Automatic sky uses settings from the [Sun tab](sun-and-sky-tabs.html) to specify the color range and intensity of the skylight.  For instance, when the sun is high in the sky, the lighting and colors of the sky are very different than when the sun is low in the sky.
+Le ciel automatique utilise les paramètre de l'[onglet Soleil](sun-and-sky-tabs.html) pour déterminer la gamme de couleurs et l'intensité de la lumière zénithale. Par exemple, lorsque le soleil est haut dans le ciel, l'éclairage et les couleurs du ciel sont très différents de ceux appliqués lorsque le soleil est bas. 
 
 ![images/sky-002.png](images/sky-002.png)
-*Automatic sky: sun high (left) and low (right) in the sky.*
+*Ciel automatique : soleil haut (gauche) et bas (droite) dans le ciel.*
 
-#### Cloudiness
+#### Nébulosité
 {: #sky-cloudiness}
-When Cloudiness is turned off, the sky is considered clear and strong shadows are created. The greater the cloudiness, the less contrast there will be between the light and shadows. Greater cloudiness will create lighter shadows and a more even lighting effect. The Cloudiness setting affects many aspects of the daylight calculation, including the relative amounts of direct vs. indirect lighting, the way indirect lighting is calculated, and the background color if Automatic Sky mode has been selected. The Cloudiness setting varies from 0 (clear) to 1 (completely overcast). The cloudiness settings around 0.35 - 0.50 is a very sensitive and dynamic range.
+Lorsque la nébulosité est désactivée, le ciel est considéré comme dégagé et des ombres dures sont créées. Plus la nébulosité est élevée, moins il y a de contraste entre la lumière et les ombres. Une nébulosité plus importante créera des ombres plus légères et un effet d'éclairage plus régulier. Le paramètre d'opacité touche de nombreux aspects du calcul de la lumière du jour, y compris la quantité relative de lumière directe et indirecte, le mode de calcul de la lumière indirecte et la couleur de l'arrière-plan si le mode ciel automatique a été sélectionné. La nébulosité varie de 0 (dégagé) à 1 (complètement couvert). La gamme de nébulosité entre 0.35 et 0.50 est très sensible et dynamique. 
 
 ![images/cloudiness0.png](images/cloudiness0.png)
-*Cloudiness 0 (left) and 1 (right).*
+*Nébulosité 0 (gauche) et 1 (droite).*
 
-#### Sky intensity
+#### Intensité du ciel
 {: #sky-intensity}
-Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified. Note: This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+Permet de modifier la luminosité du composant de lumière indirecte de la lumière du jour (le ciel). L'intensité de la lumière zénithale est automatiquement calculée selon les angles solaires et les conditions du ciel mais elle peut être modifiée. **Remarque :** Ce paramètre n'est important que si la scène possède d'autres lumières qui doivent être compensées. Si aucune autre lumière n'est définie, le contrôle de tonalité compensera l'exposition et l'image rendue ne sera pas plus brillante ni plus terne en fonction de ce paramètre.
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### High-Dynamic-Range Image Sky
+### Ciel avec image à grande plage dynamique
 {: #high-dynamic-range-image-sky}
-A [high-dynamic-range (HDR or HDRI)](https://en.wikipedia.org/wiki/High-dynamic-range_imaging) image is a special 2-D image file. These images contain a much broader range of values at each pixel then standard image files, such as a .jpg or .png. This extra data can be used to light models. If the values contained in the HDR are accurate, then the lighting will be accurate. This can produce very dynamic lighting in a scene. The preset Studio Lighting scheme uses HDR images for the sky. If you are thinking of studio lighting as an indoor activity, think of the HDR image as a ceiling that emits light based on the colors in the image.
+Une [image à grande plage dynamique (HDR)](https://fr.wikipedia.org/wiki/Imagerie_%C3%A0_grande_gamme_dynamique) est un fichier image spécial en 2D. Ces images contiennent une plus grande plage de valeurs au niveau de chaque pixel qu'un fichier image standard, comme .jpg ou .png. Ces données supplémentaires peuvent être utilisées pour éclairer les modèles. Si les valeurs contenues dans l'image HDR sont justes, l'éclairage peut être précis. Cet effet peut produire un éclairage très dynamique dans la scène. Le schéma d'éclairage de studio prédéfini utilise des images HDR pour le ciel. Si vous considérez l'éclairage de studio comme une activité d'intérieur, imaginez l'image HDR comme un plafond qui émet de la lumière à partir des couleurs de l'image.
 
 ![images/lighting-001.png](images/lighting-001.png)
-*HDRi lighting.*
+*Éclairage avec une image HDR.*
 
-It is assumed that HDR images contain radiance values expressed in watts units. If this is not the case, the intensity of these HDR images may need to be adjusted in order to achieve proper illumination levels.
+Les images HDR contiennent normalement des valeurs de rayonnement exprimées en watts. Si ce n'est pas le cas, l'intensité de ces images HDR devra probablement être ajustée pour obtenir des niveaux corrects d'illumination.
 
-In addition to the Sky, a different HDR image can be used for each of the three visible backgrounds: [Visible](environment-tab.html#advanced-background), [Reflected](environment-tab.html#advanced-background), and [Refracted](environment-tab.html#advanced-background) background.
+En plus du ciel, une autre image HDR peut être utilisée pour chacun des trois arrière-plans : [Visible](environment-tab.html#advanced-background), [Réfléchi ](environment-tab.html#advanced-background) et [Réfracté ](environment-tab.html#advanced-background).
 
-#### HDRI Image
-Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
+#### Image HDR
+Définit le fichier image HDR à utiliser. Cliquer sur l'image pour choisir une autre image. 
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*Equarectangular projection.*
+*Projection cylindrique équidistante.*
 
-HDR images come in two projection types which allow the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
+Les images HDR peuvent avoir deux types de projection afin de d'envelopper correctement l'image autour de la sphère du ciel. La plus connue est la projection cylindrique équidistante. Ces images sont rectangulaires avec des proportions de 2:1. Les images cylindriques équidistantes ont une résolution uniforme sur toute l'image. La deuxième projection est la projection sphérique. Les images HDR sphériques sont carrées avec une courbure élevée. Les projections sphériques présentent une résolution réduite au niveau de la jonction. 
 
-#### Intensity
-Modifies the brightness of the HDR image light. This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+#### Intensité
+Modifie la luminosité de la lumière émise par l'image HDR. Ce paramètre n'est important que si la scène possède d'autres lumières qui doivent être compensées. Si aucune autre lumière n'est définie, le contrôle de tonalité compensera l'exposition et l'image rendue ne sera pas plus brillante ni plus terne en fonction de ce paramètre.
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
-*Low and high HDR intensity.*
+*Intensité HDR faible et élevée.*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
+{% include_relative snippets/snippet-rotatehdrimage.md %}Dans l'illustration, l'image a été tournée afin que le reflet du soleil apparaisse sur l'objet. Indiquer les degrés de rotation ou déplacez l'indicateur de rotation.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
-*Image rotated so the sun appears on the object.*
+*Image tournée de sorte que le soleil apparaisse sur l'objet.*
 
 #### Saturation
-The color saturation for the light. Since the light from an HDR image is the color of the pixels in the image, this sometimes produces unwanted color effects. Set the saturation low if you want the light from the image, but not the color.
+La saturation de la couleur de la lumière. Étant donné que la lumière d'une image HDR provient de la couleur des pixels de l'image, des effets de couleur indésirables peuvent se produire parfois. Choisissez une saturation peu élevée si vous ne voulez utiliser que la lumière de l'image, sans la couleur.
 
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)
-*Low (left) and high (right) saturation.*
+*Saturation faible (gauche) et élevée (droite.*
 
 {% include_relative snippets/snippet-mirrorimage.md %}
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### Color
+### Couleur
 {: #color-sky}
-It is possible to use a color or gradient of color to light the scene. The colors in the sky are multiplied by the intensity value to give the colors a lighting value.
+Il est possible d'utiliser une couleur ou un dégradé de couleurs pour éclairer la scène. Les couleurs du ciel sont multipliées par la valeur de l'intensité afin de donner aux couleurs une valeur d'éclairage. 
 
-#### Intensity
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+#### Intensité
+La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 256 par canal. L'intensité multipliera ces valeurs.
 
-#### Color type
-There are three ways to control the color of the sky.  These are similar to the Color Environment controls.  See [Color Background](environment-tab.html#environment-color-and-gradient-backgrounds) controls for more information.
+#### Type de couleur
+Il existe trois façons de contrôler la couleur du ciel. Les contrôles sont similaires à ceux de l'environnement. Voir les contrôles de l'[arrière-plan avec une couleur](environment-tab.html#environment-color-and-gradient-backgrounds) pour plus d'informations. 
 
 ### Image
 {: #image-sky}
-It is possible to use an image to light the scene. The colors in the image are multiplied by the intensity value to give the colors a lighting value.
+Il est possible d'utiliser une image pour éclairer la scène. Les couleurs de l'image sont multipliées par la valeur de l'intensité afin de donner aux couleurs une valeur d'éclairage.
 
-#### Intensity
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+#### Intensité
+La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 256 par canal. L'intensité multipliera ces valeurs.
 
-#### Image Projection
-There are many ways to control how an image is mapped to the sky.  These are similar to the Image Background controls.  See [Image Background](environment-tab.html#environment-image) controls for more information.
+#### Projection de l'image
+Il existe plusieurs façons de contrôler le placage d'une image sur le ciel. Les contrôles sont similaires à ceux de l'image en arrière-plan.  Voir les contrôles de l'[arrière-plan avec une image](environment-tab.html#environment-image) pour plus d'informations.

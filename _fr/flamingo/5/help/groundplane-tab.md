@@ -1,31 +1,32 @@
 ---
+title: Plan au sol
 ---
 
-# Ground plane
+# {{page.title}}
 {: #ground-plane}
 
-The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
+Le plan au sol fournit une plate-forme horizontale infinie à l'image, qui s'étend jusqu'à l'horizon dans toutes les directions et positionnée à une élévation définie. Le rendu sera beaucoup plus rapide si vous utilisez un plan au sol que si vous utilisez une grande surface plane.
 
-### Enabled
+### Activé
 {: #groundplane-enabled}
-Turns the ground plane on.
+Active le plan au sol
 ![images/groundplane-002a.png](images/groundplane-002a.png)
-*Ground plane disabled (left) and enabled (right).*
+*Plan au sol désactivé (gauche) et activé (droite).*
 
 ### Alpha
 {: #groundplane-alpha}
-Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
+Cette option applique un canal alpha transparent sur le plan au sol afin que l'image puisse être combinée avec l'ombre projetée dans une autre image. Voir : [article Wikipedia : Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
 ![images/groundplane-004a.png](images/groundplane-004a.png)
- *Ground plane shows shadow, but is otherwise transparent in the image.*
+ *Le plan au sol affiche une ombre mais sinon, il est transparent dans l'image.*
 
-### Elevation
+### Élévation
 {: #groundplane-elevation}
-Specifies the ground plane's height above zero.
+Définit l'élévation du plan au sol au-dessus de zéro.
 ![images/groundplane-005a.png](images/groundplane-005a.png)
-*Ground plane elevation above zero.*
+*Élévation du plan au sol au-dessus de zéro.*
 
-### Material
+### Matériau
 {: #groundplane-material}
-Assigns a [material](simple-material-properties.html) to the ground plane.
+Assigne un [matériau](simple-material-properties.html) au plan au sol.
 ![images/groundplane-003a.png](images/groundplane-003a.png)
-*Ground plane with raised elevation and water material.*
+*Plan au sol plus élevé avec une texture d'eau.*

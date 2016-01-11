@@ -6,4 +6,4 @@ layout: toc-page
 # Flamingo
 {: .toc-title }
 
-This help topic is under construction
+Cette rubrique de l'aide est en cours d'élaboration.

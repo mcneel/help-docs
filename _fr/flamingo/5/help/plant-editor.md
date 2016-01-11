@@ -1,7 +1,7 @@
 ---
 title: Editeur de plantes
 ---
-<!-- TODO: This could use an update. -->
+<!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
 
 # ![images/plants.svg](images/plants.svg) {{page.title}}
 {: #tree-editor}

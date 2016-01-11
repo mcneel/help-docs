@@ -1,3 +1,3 @@
 
-#### Mirror
-Reverses the image from left to right.
+#### Miroir
+Retourne l'image de gauche à droite.

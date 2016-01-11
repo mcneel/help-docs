@@ -1,4 +1,4 @@
 
-#### Sky channel
+#### Canal du ciel
 {: #sky-channel}
-Specify the [lighting channel](lights-tab.html#channel) the Sky will render to. It is very useful to place the Sky on a specific channel when trying to balance the sky strength with other light sources. The default channel is 0. Rendering to a channel will allow the strength of the skylight to be quickly adjusted after a rendering without the need to re-render.
+Détermine le [canal d'éclairage](lights-tab.html#channel) sur lequel sera rendu le ciel. Il est très utile de placer le ciel sur un canal spécifique lorsque vous voulez essayer d'équilibrer l'intensité du ciel par rapport aux autres sources de lumière. Le canal utilisé par défaut est le 0. Si le ciel se trouve sur un canal, il sera alors possible d'ajuster rapidement l'intensité de sa lumière après le rendu sans avoir à recalculer ce dernier. 
