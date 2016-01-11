@@ -3,8 +3,7 @@ title: Flamingo 환경
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
-<!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
-Rhino에는 다양한 유형의 환경이 있습니다. 이 항목에서는 Flamingo의 기본 환경에 대해 설명합니다.
+[Rhino에는 다양한 유형의 환경](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/environmenteditor.htm)이 있습니다. 이 항목에서는 Flamingo 환경 유형에 대해 설명합니다.
 
 환경은 배경에서 보이는 부분과 반사에 영향을 미칩니다. 장면의 조명에 영향을 미치는 효과에 대한 자세한 정보는 [하늘](sun-and-sky-tabs.html) 도움말 항목을 참조하세요.
 
@@ -30,13 +29,11 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 >[반사된 배경](#advanced-background-reflected-sky)
 >[굴절된 배경](#advanced-background-refracted-sky)
 
-<!-- TODO: Does the following sentence make sense? Is there something missing? -->
-보이는 배경이 기본 일반 속성 패널이고, 보이는 환경입니다. [반사](#advanced-background-reflected-sky)와 [굴절](#advanced-background-refracted-sky) 배경은 서로 다를 수 있으며, 고급 배경 섹션에서 사용할 수 있습니다.
+보이는 배경이 장면의 기본 배경입니다. 보이는 배경은 일반 속성 패널에 있습니다. [반사](#advanced-background-reflected-sky)와 [굴절](#advanced-background-refracted-sky) 배경은 서로 다를 수 있으며, 고급 배경 섹션에서 사용할 수 있습니다.
 
 #### 강도
 {: #background-intensity}
-<!-- TODO: Color range normally is from 0-255... -->
-배경의 상대적인 밝기를 수정합니다. 강도 값은 환경의 색과 라이트 밸류의 결과를 곱하는 데 사용됩니다. 색의 범위는 채널당 0에서 256까지입니다. 강도는 이 값을 증가시킵니다. 배경이 렌더링된 모델에 비교했을 때 매우 어둡게 보이는 경우, 이 설정이 매우 중요해집니다.
+배경의 상대적인 밝기를 수정합니다. 강도 값은 환경의 색과 라이트 밸류의 결과를 곱하는 데 사용됩니다. 색의 범위는 채널당 0에서 255까지입니다. 강도는 이 값을 증가시킵니다. 배경이 렌더링된 모델에 비교했을 때 매우 어둡게 보이는 경우, 이 설정이 매우 중요해집니다.
 
 #### 배경 유형
 {: #background-type}
@@ -46,7 +43,6 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 > [단색과 그라데이션](#color-backgrounds)
 > [이미지](#environment-image)
 > [HDR과 평면형 HDR 이미지](#hdr-background)
-
 
 ## 하늘 배경
 {: #environment-sky}
@@ -119,8 +115,8 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 
 ## 이미지 배경
 {: #environment-image}
-<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
-배경 이미지는 배경에 투영됩니다. 많은 경우, 기존 콘텍스트에 모델을 배치하거나, 창에 뷰를 설정하는 데 사용됩니다. 디지털 사진, 스캔한 이미지, 이미지 편집 소프트웨어에서 만든 이미지를 사용할 수 있습니다. 가장 좋은 결과를 얻으려면 고해상도 이미지를 배경에 사용하세요. 자연스런 초점과 원근감을 표현하기 위해 선명한 이미지를 조금 흐리게 처리하는 것도 좋은 생각이라고 할 수 있습니다.
+
+배경 이미지는 배경에 투영됩니다. 많은 경우, 기존 콘텍스트에 모델을 배치하거나, 창에 뷰를 설정하는 데 사용됩니다. 사진, 스캔한 예술 작품, 이미지 편집 소프트웨어에서 만든 이미지를 사용할 수 있습니다. 가장 좋은 결과를 얻으려면 고해상도 이미지를 배경에 사용하세요. 자연스런 초점과 원근감을 표현하기 위해 선명한 이미지를 조금 흐리게 처리하는 것도 좋은 생각이라고 할 수 있습니다.
 
 ![images/background-image-001.png](images/background-image-001.png)
 *배경으로 설정된 평면 이미지*
@@ -139,9 +135,7 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 
 각 투영 방식에는 이미지의 위치를 제어하는 설정이 각각 있습니다.
 
-<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
-
-#### 평면 투영
+### 평면 투영
 {: #planar}
 현재 뷰에서 평면 배경에 이미지를 투영합니다. 평면 투영 좌표는 항상 현재 뷰에 상대적입니다.
 
@@ -174,7 +168,7 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 #### X 간격띄우기 / Y 간격띄우기
 뷰 너비와 옾이의 0~1.0 비율로, 뷰포트 왼쪽 아래 모서리로부터 배경 이미지의 간격띄우기를 지정합니다. 예를 들어, 0.25 값은 뷰 크기의 25%로 간격띄우기 실행하며, 0.5 값은 뷰 너비의 50% 간격띄우기 실행됩니다.
 
-#### 원통형 투영
+### 원통형 투영
 {: #cylindrical}
 원통형 투영은 모델을 둘러싸고 있는 상상 속의 원통에 이미지를 매핑합니다. 이 투영 방법은 실제로 원통형인 이미지에 가장 적합하지만, 사진을 기반으로 구성된 일반적인 파노라마에도 잘 적용됩니다.
 
@@ -188,7 +182,6 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 이미지 맵의 각도 너비를 지정합니다. 각도를 입력하거나, 제어 위젯에서 플래그를 끌어 너비를 지정합니다. 파란색 영역은 각도 너비 범위를 나타냅니다.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
-<!--TODO: Image doesn't show up in file. -->
 
 * 이 제어는 환경을 평면 뷰에 표시합니다.
 * 시야를 나타내는 진한 회색 원뿔은 현재 투시 뷰의 마지막 좌표를 나타냅니다.
@@ -221,7 +214,7 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 ####  뷰와 일치하는 각도 설정 단추
 현재 투시 뷰포트에 일치하는 회전 각도를 설정합니다. 투영의 값을 다시 설정할 때 유용합니다.
 
-#### 구형태 투영
+### 구형태 투영
 {: #spherical}
 구(球) 형태 투영은 이미지를 완전한 구체로 매핑합니다. 이 방식은 일반적으로 등장방형인 구 형태 이미지를 사용할 때 좋은 결과물을 만들어냅니다. 등장방향 이미지는 2:1 직사각형 종횡비를 갖습니다.
 
