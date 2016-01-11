@@ -10,10 +10,12 @@ title: 조명
 {: #light-tab}
 조명 탭에는 장면의 모든 인공 조명의 목록이 표시됩니다. 이 항목은 Flamingo의 조명 탭에 대해 설명합니다. [Rhino에도 조명 탭](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#commands/lights.htm)이 있습니다. Flamingo와 Rhino의 조명은 두 탭에서 서로 동기화됩니다. Flamingo 조명 탭은 추가적인 [조명 속성](#light-properties)을 통해서 더욱 유연하게 사용할 수 있습니다.
 
-<!-- TODO: There should be some mention that the Lights tab only is available for some of the Lighting presets -->
-<!-- TODO: #### Is this supposed to be a code? It's showing up as #### -->
-#### Flamingo 조명 제어는 어디에 있습니까?
 조명 탭은 [조명 기본 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sun)에서 활성화해야 합니다.
+
+<!-- #### Is this supposed to be a code? It's showing up as ####. To fix this, there needs to be a new line above the headline for the markdown to work.-->
+
+#### Flamingo 조명 제어는 어디에 있습니까?
+[조명 미리 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sun)에서 조명 탭이 활성화된 경우, 조명 탭을 다음 위치에서 찾을 수 있습니다:
 
  1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
  1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo 탭 > 조명
