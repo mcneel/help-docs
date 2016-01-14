@@ -11,7 +11,7 @@ title: Materialbildeigenschaften
 
 Materialien können aus Bildern erzeugt werden. Sie können Fotos und echte Materialien (wie Tapete und Teppich) einscannen, Muster in einem Malprogramm erstellen oder Bilder aus anderen Bildquellen verwenden.
 
-Stellen Sie sich vor, dass das Material unendlich in alle Richtungen gestreckt wird. Das Material wird nur dort sichtbar, wo ein Objekt hindurch verläuft. Muster werden unendlich in vier Richtungen in einer bestimmten Skala wiederholt (gekachelt).
+Stellen Sie sich vor, dass das Material unendlich in alle Richtungen gestreckt wird. Das Material wird nur dort sichtbar, wo ein Objekt hindurch verläuft. Muster werden unendlich in vier Richtungen in einer bestimmten Skalierung wiederholt (gekachelt).
 
 Kleine Bilder, die nahtlos aneinander gekachelt werden können, eignen sich am besten. Wenn die Bitmap nicht gut gekachelt werden kann, verwenden Sie die Funktion, um die Kacheln zu spiegeln. Dies garantiert passende Kanten.
 
@@ -104,7 +104,7 @@ Definiert den Startpunkt der Verschiebung bezüglich der Flächennormalen. Ein D
 
 #### Facettengröße
 {: #facet-size}
-Die Größe der Facetten des Displacement-Polygonnetzes. Je größer dieser Wert, desto detailreicher ist das Displacement, desto größer wird aber auch das Rendering und der Speicherverbrauch.
+Die Größe der Facetten des Displacement-Polygonnetzes. Je größer dieser Wert, desto detailreicher ist das Displacement, desto größer werden aber auch das Rendering und der Speicherverbrauch.
 
 ![images/shadedvsrendered.png](images/shadedvsrendered.png)
 

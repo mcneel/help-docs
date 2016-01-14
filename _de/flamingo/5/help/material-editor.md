@@ -3,7 +3,7 @@ title: Materialeditor-Panel
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Materialien enthalten die Spezifikationen für Farbe, Reflexionsvermögen, Transparenz, Texturen und Bump-Maps eines Flächen-Finish. Alle Materialien verfügen über Grundeinstellungen. Das Standardmaterial ist weiß und matt, ohne Reflexionsvermögen oder Transparenz. Die besten Resultate erzielen Sie mit Flamingo-spezifischen Materialien.
+Materialien enthalten die Spezifikationen für Farbe, Reflexionsvermögen, Transparenz, Texturen und Bump-Maps eines Flächen-Finishs. Alle Materialien verfügen über Grundeinstellungen. Das Standardmaterial ist weiß und matt, ohne Reflexionsvermögen oder Transparenz. Die besten Resultate erzielen Sie mit Flamingo-spezifischen Materialien.
 
 Materialien können Ebenen, Objekten und Blöcken zugewiesen werden. Diese Zuweisungen können durch Drag&Drop auf Objekte oder verschiedene Steuerelemente definiert werden. Weitere Informationen finden Sie im Hilfethema zur [Materialzuweisung](material_assignment.html).
 
@@ -23,7 +23,7 @@ Auf den Materialreiter können Sie auf mehrere Arten zugreifen.
 
 Das Materialeditor-Panel ist in mehrere Abschnitte unterteilt.  Je nach Materialtyp werden andere erweiterte Optionen angezeigt.
 
-Farben und Texturen können per Drag&Drop aus dem Farbenrad in ein anderes Farbenrad oder eine sonstigen Steuerung im Materialeditor, der [Texturenpalette](texturepalette.html) oder dem [Umgebungseditor](environmenteditor.html) gezogen werden.
+Farben und Texturen können per Drag&Drop aus dem Farbenrad in ein anderes Farbenrad oder eine sonstige Steuerung im Materialeditor, der [Texturenpalette](texturepalette.html) oder dem [Umgebungseditor](environmenteditor.html) gezogen werden.
 
 ##### Material-Panel
 
@@ -152,7 +152,7 @@ Je nach Art des Materials und der aktuell eingestellten Materialebene werden and
 ## Werkzeugmenü ![images/library_default.png](images/library_default.png)
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-Diese Einstellungen erscheinen auch auf Kontextmenüs (Klick mit der rechten Maustaste) für Miniaturansichten und Miniaturansichtshintergründe.
+Diese Einstellungen erscheinen auch in Kontextmenüs (Klick mit der rechten Maustaste) für Miniaturansichten und Miniaturansichtshintergründe.
 
 #### ![images/assigntoobjects.png](images/assigntoobjects.png) Der Auswahl zuordnen
 Ordnet den ausgewählten Objekten das aktuelle Material zu.
@@ -204,13 +204,13 @@ Wechselt den Materialtyp.
 
 #### ![images/changetype.png](images/changetype.png) Typ ändern (ähnliche Einstellungen kopieren)
 Wechselt den Materialtyp.
-Das Standardverhalten hängt vom aktuellen Status der [Renderoptionen](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) >  [Ähnliche Einstellungen kopieren, wenn Inhaltstyp geändert wird](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) ab. Wenn aktiviert, werden kompatible Eigenschaften vom alten Inhalt in den neuen Inhalt kopiert.
+Das Standardverhalten hängt vom aktuellen Status der Einstellung für [Renderoptionen](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) >  [Ähnliche Einstellungen kopieren, wenn Inhaltstyp geändert wird](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) ab. Wenn aktiviert, werden kompatible Eigenschaften vom alten Inhalt in den neuen Inhalt kopiert.
 
 #### ![images/reset.png](images/reset.png) Auf Standard zurücksetzen
-Alle Materialeinstellungen werden gleichzeitig auf ein standardmäßiges weißes, mattes, nicht reflektierendes und nicht texturiertes Material zurückgesetzt.
+Alle Materialeinstellungen werden gleichzeitig auf ein standardmäßiges, weißes, mattes, nicht reflektierendes und nicht texturiertes Material zurückgesetzt.
 
 #### ![images/copy.png](images/copy.png) Kopieren
-Kopiert das ausgewählte Material in die Windows Zwischenablage. Der Inhalt der Zwischenablage kann dann in den Editor zur Erzeugung eines neuen Materials oder direkt in einen Ordner zur Erzeugung einer [Bibliotheksdatei](libraries.html) eingefügt werden.
+Kopiert das ausgewählte Material in die Windows-Zwischenablage. Der Inhalt der Zwischenablage kann dann in den Editor zur Erzeugung eines neuen Materials oder direkt in einen Ordner zur Erzeugung einer [Bibliotheksdatei](libraries.html) eingefügt werden.
 
 #### ![images/paste.png](images/paste.png) Einfügen
 Zur Einfügen eines Materials aus der Zwischenablage.

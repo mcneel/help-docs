@@ -9,11 +9,11 @@ Renderinhalt kann in Dateien gespeichert werden, die dann externe Bibliotheken e
 
 Farbräder können auf die gleiche Art und Weise per Drag&Drop abgelegt werden.
 
-Im Bibliotheken-Panel werden die Ordner mit den angelegten Bibliotheken angezeigt. Verwenden Sie dies für das Drag&Drop von Inhalt in das Modell oder um Dokumenteninhalt an einen Standort außerhalb des Modells zu speichern.
+Im Bibliotheken-Panel werden die Ordner mit den angelegten Bibliotheken angezeigt. Sie können damit Inhalt per Drag&Drop in das Modell ziehen oder Dokumenteninhalt an einem Ort außerhalb des Modells speichern.
 
-Materialien sind Dateien auf Ihrer Festplatte.  Bibliotheksordner sind normale Windows-Ordner.  Sie können diese Ordner kopieren, einfügen und verschieben, wie Sie es mit jedem anderen Windows Ordner tun würden.
+Materialien sind Dateien auf Ihrer Festplatte.  Bibliotheksordner sind normale Windows-Ordner.  Sie können diese Ordner kopieren, einfügen und verschieben, wie Sie es mit jedem anderen Windows-Ordner tun würden.
 
-In der Adresszeile im oberen Bereich des Bibliothekenreites können Sie den Ort eines Ordner auf Ihrem Computer eingeben.
+In der Adresszeile im oberen Bereich des Bibliothekenreiters können Sie den Ort eines Ordners auf Ihrem Computer eingeben.
 
 Um wieder schnell zurück zum Standardordner zu gelangen, verwenden Sie die Schaltfläche mit dem Schraubenschlüssel im oberen rechten Bereich. ![images/library_default.png](images/library_default.png)
 
