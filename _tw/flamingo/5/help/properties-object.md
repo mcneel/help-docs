@@ -65,7 +65,7 @@ Rhino 有一些網格修改功能可以增加模型彩現的細節，包括：�
 
 #### 日光入口
 {: #daylight-portal}
-日光入口可用在室內場景的採光開口，協助將室外的[太陽與天光](lighting-tab.html#interior-daylight)照明導入室內，使室內場景有充分的自然照明亮度，日光入口只有在[太陽](sun-and-sky-tabs.html#sun)開啟時才有作用。使用[室內日光](lighting-tab.html#interior-daylight)預設組時，所有透明的物件會自動被當做日光入口物件，使用攝影棚照明與戶外日光預設組時則不會，如果您仍想將太陽與天空的光線導入室內，可以開啟窗戶玻璃物件的日光入口選項。
+日光入口可用在室內場景的採光開口，協助將室外的[太陽與天空](lighting-tab.html#interior-daylight)照明導入室內，使室內場景有充分的自然照明亮度，日光入口只有在[太陽](sun-and-sky-tabs.html#sun)開啟時才有作用。使用[室內日光](lighting-tab.html#interior-daylight)預設組時，所有透明的物件會自動被當做日光入口物件，使用攝影棚照明與戶外日光預設組時則不會，如果您仍想將太陽與天空的光線導入室內，可以開啟窗戶玻璃物件的日光入口選項。
 
 ![images/daylightportal-001.png](images/daylightportal-001.png)
 *使用 (左) 與未使用 (右) 日光入口。*
