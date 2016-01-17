@@ -1,7 +1,8 @@
 ---
+title: 輸入授權碼
 ---
 
 <!-- TODO: Do we need and install page with CD key stuff?  Currently this is not listed on the index page. -->
 
-# Enter CD Key
-Flamingo can be installed as either a Network Node (License obtained from [Zoo](http://www.rhino3d.com/zoo.htm) ) or Stand-alone Node (License saved locally).
+# {{page.title}}
+Flamingo 可以安裝為網路單機 (從 [Zoo](http://www.rhino3d.com/zoo.htm) 取得授權) 或獨立單機 (授權儲存在電腦本機)。

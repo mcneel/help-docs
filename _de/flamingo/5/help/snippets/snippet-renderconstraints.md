@@ -1,7 +1,7 @@
-Sets the default time and number of passes constraints. The default recommended setting is to set these render constraints off and let the render engine continue until it is closed or manually stopped. These may be changed using the controls in the Render Window. Setting the Number of passes and Time to 0 allows the rendering to continue until you click Stop Rendering.
+Definiert Standardzeit und Einschränkungen der Anzahl Durchgänge. Die empfohlene Standardeinstellung ist die Deaktivierung dieser Renderbeschränkungen, wobei die Render Engine so lange weiterlaufen soll, bis sie geschlossen oder manuell angehalten wird. Diese können mit den Steuerungen im Renderfenster geändert werden. Wenn *Anzahl Durchgänge* und *Zeit* auf 0 eingestellt werden, wird das Rendering solange fortgeführt, bis Sie es manuell anhalten.
 
-#### Time
-Specifies the amount of time in Hours/Minutes/Seconds the render will continue to process. Note : The rendering stops after the last pass after the time limit has been reached. If you click Resume Rendering, the rendering will continue for one additional pass.
+#### Zeit
+Zur Einstellung, wie lange das Rendering (in Stunden/Minuten/Sekunden) ausgeführt werden soll. Hinweis: Das Rendering stoppt nach dem letzten Durchgang, nachdem die Zeiteinschränkung erreicht wurde. Wenn Sie auf *Rendering fortführen* klicken, wird das Rendering einen zusätzlichen Durchgang fortgeführt.
 
-#### Number of passes
-Specifies the number of rendering passes the render will process. Note : Any time you click Resume Rendering, the counter for the number of passes is reset. For example, if you set the number of passes to 10 and stop the rendering after pass 8, the rendering will continue until it reaches 18 passes. Normally renderings may take 10 - 15 passes to start to converge. Architectural interiors may need up to 30 passes to start to converge.
+#### Anzahl Durchgänge
+Definiert die Anzahl Render-Durchgänge, die das Rendering bearbeitet. Hinweis: Jedes Mal, wenn Sie auf *Rendering fortführen* klicken, wird der Zähler für die Anzahl Durchgänge zurück gesetzt. Wenn Sie zum Beispiel die Anzahl Durchgänge auf 10 einstellen und das Rendering nach dem achten Durchgang stoppen, wird das Rendering fortgeführt, bis 18 Durchgänge erreicht werden. Normalerweise benötigen Renderings 10 - 15 Durchgänge, bis sie sich einem Endresultat annähern. Architektonische Innenrenderings können dafür bis zu 30 Druchgänge benötigen.

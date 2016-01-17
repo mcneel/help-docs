@@ -1,7 +1,8 @@
 ---
+title: Entrer le code CD
 ---
 
-<!-- TODO: Do we need and install page with CD key stuff?  Currently this is not listed on the index page. -->
+<!-- This page is not used at this time.  We will see if we need it in the future. -->
 
-# Enter CD Key
-Flamingo can be installed as either a Network Node (License obtained from [Zoo](http://www.rhino3d.com/zoo.htm) ) or Stand-alone Node (License saved locally).
+# {{page.title}}
+Flamingo peut être installé en tant que nœud de réseau (licence obtenue à partir du [Zoo](http://www.rhino3d.com/zoo.htm) ou comme licence autonome (licence enregistrée localement).

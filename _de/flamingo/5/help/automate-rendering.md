@@ -1,74 +1,77 @@
 ---
+title: Automatisiertes Rendering
 ---
 
-# Automated rendering
+# {{page.title}}
 
 
-## Batch rendering
+## Stapel-Rendering
 {: #batch-rendering}
-Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
+Stapelaufträge dienen der automatischen Abarbeitung mehrerer Aufträge. Bei einem Stapelauftrag können die Ansicht, die Auflösung und die Anzahl Durchgänge eingestellt werden. Stapelrenderings können auf einem einzelnen Computer ausgeführt oder an einer [Renderfarm](render-farm.html) geschickt werden. Öffnen Sie die Stapelliste und fügen Sie neue Aufträge hinzu. Die Stapelaufträge werden im Modell gespeichert.
 
-##### Where can I find this command?
+##### Wo befindet sich dieser Befehl?
 
- * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
+ * Menü > Flamingo nXt 5.0 > Weitere Werkzeuge > Stapel-Rendering
 
-### Batch Render Dialog
+### Stapelrenderdialog
 {: #batch-render}
-Start by adding a job, then edit the properties to set up batch jobs.
+Fügen Sie einen Auftrag hinzu und stellen Sie anschließend seine Eigenschaften ein.
 
-#### Add
-Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
+#### Hinzufügen
+Jedem Stapelauftrag liegt eine im Modell gespeicherte Ansicht zugrunde.  Klicken Sie auf die Schaltfläche Hinzufügen und wählen Sie aus der Liste der im Modell vorhandenen Ansichten.  Alle anderen Menüeinträge werden aktiviert, nachdem ein Auftrag hinzugefügt und ausgewählt wurde.
 
-#### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+#### Löschen
+Wählen Sie einen vorhandenen Stapelauftrag aus.  Klicken Sie anschließend auf Löschen, um den Auftrag aus der Stapelliste zu entfernen.
 
-#### Properties
-Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
+#### Eigenschaften
+Wählen Sie einen vorhandenen Stapelauftrag aus und bestimmen Sie seine [Stapelrendereigenschaften](#batch-render-properties) über den Menüeintrag Eigenschaften.  In den Eigenschaften können der Dateiname, die Auflösung und die Anzahl Durchgänge eines Auftrags eingestellt werden.
 
-#### Move Up
-Move the viewport name up in the list.
+#### Nach oben
+Name des Ansichtsfensters in der Liste nach oben verschieben.
 
-#### Move Down
-Move the viewport name down in the list.
+#### Nach unten
+Name des Ansichtsfensters in der Liste nach unten verschieben.
 
-#### Batch List
+#### Stapelliste
 {: #batch-list}
-Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
+Zeigt Informationen über die Liste der zu rendernden Ansichten an. Klicken Sie doppelt auf einen vorhandenen Auftrag, um die [Stapelrendereigenschaften](#batch-render-properties) einzustellen.
 
-#### Rendering Status
-Displays pass, scan line, and elapsed time information about the progress of the batch process.
+#### Renderstatus
+Zeigt Informationen über Durchgang, Abtastlinie und Abgelaufene Zeit des Batch-Prozesses an.
 
-####  Stop Rendering
-Stops the batch process.
+####  Rendering anhalten
+Stoppt den Batch-Prozess.
 
-#### Render Batch Locally
+#### Stapel lokal rendern
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
+Verwendet nur den aktuellen Computer, um die Batch-Aufträge zu rendern. Die gerenderten Bilder werden im Verzeichnis gespeichert, das in den [Stapelrendereigenschaften](#batch-render-properties) eingestellt wurde.
 
-####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
+####  Stapel an Farm senden
+Die Stapelaufträge werden an eine [Renderfarm](render-farm.html) geschickt. Die Aufträge werden mit allen erhältlichen Farm-Clients gerendert. Die Renderbilder werden in den gemeinsamen Farm-Ordner ausgegeben.
 
-### Batch Render Properties
+### Stapelrendereigenschaften
 {: #batch-render-properties}
 
-#### Viewport to render
-Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
+#### Zu renderndes Ansichtsfenster
+Bestimmt die Anzeige, die von diesem Auftrag gerendert wird. Weitere Infos finden Sie im Reiter Renderoptionen im Abschnitt [Zu renderndes Ansichtsfenster](render-tab.html#viewtorender).
 
-#### File name
-Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
+#### Dateiname
+Klicken Sie auf die Schaltfläche Speichern ![images/saveimageas.png](images/saveimageas.png) und geben Sie einen Dateinamen für das gerenderte Bild an.
 
-#### Alpha channel
-Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
+#### Alphakanal
+Zur Einstellung, ob der Alphakanal ebenfalls im Bild gespeichert werden soll.  Weitere Infos finden Sie im Abschnitt [Alphakanalhintergrund verwenden](environment-tab.html#alpha).
 
-#### Use document settings
+#### Dokumenteinstellungen verwenden
 {: #rendering-resolution}
-The default is to use the current document resolution settings to render.  If another resolution is needed, then uncheck this box and specify a resolution. See the [Render tab, Resolution](render-tab.html#resolution) topic for more details.
+Standardmäßig wird die Auflösung des aktuellen Dokuments für das Rendering verwendet.  Wenn Sie eine andere Auflösung verwenden möchten, deaktivieren Sie diese Option und geben sie die gewünschte Auflösung ein. Weitere Infos finden Sie in der Beschreibung der [Auflösung](render-tab.html#resolution) in den Renderoptionen.
 
-#### Rendering Constraints Passes
+#### Renderbeschränkungen
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+Zur Angabe der Anzahl Durchgänge bis zum Abschluss dieses Stapelauftrags.  Weitere Infos finden Sie im Abschnitt [Durchgänge](documentproperties-flamingo.html#number-of-passes).
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 
@@ -78,17 +81,17 @@ There are two ways to create animations in Rhino.  Animations can be configured 
 
 ##### To submit an animation job to the render farm
 1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+1. In the Configure Automated Render Command dialog, select **Render to farm**.
 &#160;
-Specify theJob name,and click theOKbutton.
+Specify the Job name,and click the OK button.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Set a type of animation from Rhino's Animation setup toolbar. Select Render Full as the Capture method.
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+Record the animation from the Animation toolbar. The render jobs will be sent to Render Farm.
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+When the jobs are finished in Render Farm, run the FlamingoNXtAutomateRender command again and select all the jobs in the dialog.
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+Click the Copy selected files to specified output folder button and select a folder where all the render images will be copied to.
 
 
 ## FlamingoNXtAutomateRender command

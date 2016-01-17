@@ -1,198 +1,202 @@
 ---
+title: 照明預設組
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Lighting Presets
-Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
+# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+照明是彩現時最重要也是最容易被忽視的部分。照明不只是照亮模型這麼簡單，它可以營造出特殊的氛圍，也是彩現成功與否的關鍵。
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
-*Image by Christopher Soto Gutiérrez.*
+*由 Christopher Soto Gutiérrez 提供的圖片。*
 
-#### Where can I find Flamingo Lighting control?
+#### 可以在哪找到 Flamingo 的燈光設定?
 
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
-* Right-click any tab and check Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo nXt。
+* 在標籤面板的標籤上按右鍵，勾選 Flamingo nXt。
 
 
-Use the following guidelines when lighting your model:
+請使用下列要點彩現模型：
 
-* Start with a lighting preset.
-* Since Flamingo nXt simulates real-world lighting, provide accurate information whenever possible.
-* Avoid using unrealistic intensity levels for light sources.
-* Set the units correctly for your model. The lighting will not be correct unless the units are correct. For example, if your model is in millimeters, set the model units to millimeters.
-* Adjust the overall brightness of your rendering by using the [Brightness](render-window.html#brightness) control on the rendering display. Do not attempt to adjust the overall scene brightness by changing the intensity of all the light sources; the automatic [exposure](render-window.html#brightness) adjustment will defeat this.
+* 從選擇適當的照明預設組開始。
+* Flamingo nXt 模擬真實世界的照明情形，請選擇適當的照明預設組。
+* 避免燈光使用非真實的亮度。
+* 模型單位要設定正確，模型的單位設定不正確，燈光計算就不可能正確。例如：如果您是以公釐建立模型，請確定模型的單位也是設為公釐。
+* 提高場景的整體亮度請使用彩現視窗的[亮度](render-window.html#brightness)設定，提高場景中每一個燈光的亮度不是好方法，因為 Flamingo nXt 的自動[曝光](render-window.html#brightness)功能會讓您對燈光做的調整適得其反。
 
-To improve lighting techniques, be aware of the light and how it affects various surfaces. Materials can mask some of the effects of shadows and reflections, so some rendering experts apply lighting to their models before applying materials. Try to see light objectively, the way a camera does.
+要提升照明設定的技巧需要注意光線如何影響不同的曲面，物件的材質會干擾眼睛對照明的陰影與反射的判斷，所以有些彩現專家會先把場景照明設定好後再賦予物件材質，並試著從攝影機的角度觀看物件。
 
-## Lighting Presets
+## 照明預設組
 {: #lighting-presets}
-A great starting place for lighting is the included Lighting presets that correspond to real-world lighting situations. Flamingo nXt provides lighting presets that can help get you started lighting your model. There are many more lighting options available, but the presets are often sufficient for many different renderings. Choose the Preset scheme that most closely resembles your scene.
+Flamingo nXt 內建了幾組預設的照明配置，讓您可以快速設定場景照明，與照明相關的設定選項眾多，但預設的幾組配置通常可以應付大部分的情形，請選擇與您的場景最相似的照明預設組。
 
-Lighting in Flamingo nXt uses four preset methods categories:
+Flamingo nXt 內建的四個照明預設組：
 
-> [Studio lighting](lighting-tab.html#studio-lighting)
-> [Exterior daylight](lighting-tab.html#exterior-daylight)
-> [Interior daylight](lighting-tab.html#interior-daylight)
-> [Artificial lighting](lighting-tab.html#artificial-lighting)
+> [攝影棚照明](lighting-tab.html#studio-lighting)
+> [戶外日光](lighting-tab.html#exterior-daylight)
+> [室內日光](lighting-tab.html#interior-daylight)
+> [人工照明](lighting-tab.html#artificial-lighting)
 
-### Studio lighting
+### 攝影棚照明
 {: #studio-lighting}
-This scheme mimics the lighting found in a photographer's studio. It is most useful for rendering small-to-medium-sized objects in isolation.  It can also be used for any scene that is well lit through an HDRI environment.
+這個照明預設組模擬攝影棚的照明配置，常用於中小型物件單獨攝影的情形，也可用於 HDRi 環境能充分照明的場景。
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](sun-and-sky-tabs.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
+![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} 它的主要光源來自一張 HDR (高動態範圍) 圖片，HDR 圖片的照明亮度已適當降低，以符合真實攝影棚內的照明亮度。HDR 的設定位於[天空頁面](sun-and-sky-tabs.html#sky)，您也可以在燈光頁面加入其它燈光物件。此外，攝影棚照明的預設背景是黑色的。
 
-Studio lighting is optimized for tabletop setups for small design articles such as jewelry and product designs. In the preset scheme, the sun is off and an HDR image sky provides something for shiny objects to reflect.
+攝影棚照明預設組是針對中小型物件 (珠寶與產品設計) 的桌上攝影最佳化的照明配置。在這個預設組裡，太陽是關閉的，並以一張 HDR 圖片做為表面具反射性質的物件的反射影像。
 
-For greater control, use light sources to light the scene. When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires several light sources placed in a way to create very light and very dark areas.
+攝影棚照明通常需要較大的明暗對比度，陰暗處與明亮處一樣重要，要達到這個目的需要在場景裡加入額外的燈光，並對燈光做特殊安排，讓場景有明顯的陰暗與明亮區域的分別。
 
-Lighting techniques for photography are generally the same as lighting for rendering. So a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](../guides/studio-lighting-basics.html).
+彩現的照明設定基本上與真實的攝影沒有什麼不同，所以您可以將討論攝影技術的書籍做為彩現的參考資料，更多關於攝影棚照明設定的資訊請參考[攝影棚照明的基本技巧](../guides/studio-lighting-basics.html)。
 
-### Exterior daylight
+### 戶外日光
 {: #exterior-daylight .clear-img}
-This scheme simulates daylight for architectural exteriors using a natural sun and sky.
+這個預設組以太陽與天空模擬建築物外觀彩現適用的場景照明。
 
-![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
-Lighting a building exterior is the most straightforward lighting model. Most exterior lighting will need no more than the default [Sun](sun-and-sky-tabs.html#sun) light source.
+![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} 太陽與天空的設定可以在[太陽](sun-and-sky-tabs.html#sun)與[天空](sun-and-sky-tabs.html#sky)頁面裡修改，您可以直接設定想要的[太陽角度](sun-and-sky-tabs.html#set-azimuth-and-altitude)，或以[地理位置](sun-and-sky-tabs.html#set-location-on-earth)、日期及時間計算太陽的角度，這個預設組預設的背景是虛擬的天空。
 
-When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be designated as an [interior](#interior) or an [exterior](#exterior). This is because the contribution of the sky light, reflected light from the ground, and light reflected off other surfaces is much different when inside as opposed to outside. Using the correct [Interior/Exterior](#indirect) setting results in effective and realistic lighting.
+建築物外觀彩現的戶外照明設定最為簡單，通常只需要預設的[太陽](sun-and-sky-tabs.html#sun)做為光源即可。
 
-Sometimes it is easy to determine if a scene is an interior or an exterior. If the viewpoint is outside a building, it is an exterior scene. If the viewpoint is inside a room, it is an interior. Some kinds of scenes are not so clear. This includes courtyards, gazebos, exploded views, and sections. If a courtyard is much wider than it is tall, thereby letting in a lot of skylight, try lighting it as an exterior scene. If it is taller than it is wide, try lighting the scene as an interior. In this case, one of the tricks is to add daylight portals at the top of the courtyard to help direct the skylight into the scene.
+當[太陽](sun-and-sky-tabs.html#sun)開啟時，場景設定必需區分[室內](#interior)或[戶外](#exterior)，因為天空的亮度、地面反射的光線與物件反射的光線的對照明的影響在室內與戶外有很大的差別，正確地設定[室內/戶外](#indirect)可以讓彩現較有效率，效果也會較為真實。
 
-Lights can also simulate landscape lighting. Use spotlights to highlight architectural features and trees. This works well for night or twilight scenes. During the day, the sun normally will overpower any artificial lighting in an outdoor scene, just as it will in the real world.
+通常室內與戶外場景很容易區別，當攝影機位於建築物之外即為戶外場景；攝影機位於建築物之內即為室內場景。但有些場景就不是有那麼明顯的區別，例如：建築物的中庭、建築物的爆炸圖或剖面圖。以建築物的中庭為例，當中庭的面積大，四周建物較低時，這樣的場景會有比較多的天空照明，可以把它當做戶外場景看待。當中庭的面積小，四周較高時，場景會比較類似室內場景，這樣情形可以在中庭上放置"日光入口"物件，將天空的照明導入場景。
 
-Exploded views, sections, and axonometric drawings from above also pose a special challenge. The decision depends on the desired results. For an exterior scene with the quickest rendering, use the exterior rendering method. If this method is not producing an interesting enough image, try using an interior rendering. This may make the interior more interesting, but it takes more time to set up the lighting.
+戶外場景除了以太陽與天空照明以外，人工照明有時也是不可或缺的角色，尤其是在晚上或傍晚照明不足的場景都需要人工照明的輔助。但人工照明在大白天的戶外場景就像真實世界一樣會被戶外高亮度的環境掩蓋，對場景的影響微乎其微。
 
-### Interior daylight
+爆炸圖、剖面圖、立體正投影圖這類特殊彩現的照明選擇取決於需要的效果，需要較快的彩現速度可使用戶外照明，效果達不到要求時可改用室內照明，室內照明的設定會比較花時間。
+
+### 室內日光
 {: #interior-daylight .clear-img}
-This scheme simulates an interior lit by natural light.
+模擬室內場景以自然光源照明的情形。
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} 它的照明包含來自[太陽](sun-and-sky-tabs.html#sun)的直接照明與來自[天空](sun-and-sky-tabs.html#sky)、地面及其它物件的間接照明。
 
-The [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) settings are similar to the [Exterior](lighting-tab.html#exterior-daylight) preset.
-The direct sunlight component of day lighting involves a straightforward calculation -- normally simply specify the time, date, and location to ensure accuracy.
+它的[太陽](sun-and-sky-tabs.html#sun)與[天空](sun-and-sky-tabs.html#sky)的設定與[戶外日光](lighting-tab.html#exterior-daylight)類似。
+白天場景來自太陽的直接照明的設定最為簡單，通常只要提供日期、時間與位置就可以正確計算出太陽的照射角度與方向。
 
-Notes on interior renderings:
+室內彩現的要點：
 {: .clear-img}
 
-* Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
-* Because the sun and sky are much brighter than other lights, you may not see much effect from adding artificial lighting when the sun is on. This is normal. Avoid artificially boosting the power of your light sources.
-* You can set the [Sun](sun-and-sky-tabs.html#sun-intensity) or [Sky](sun-and-sky-tabs.html#sky-intensity) intensity to a lower value. Since these settings simulate a clear sky, reducing their intensity will simulate cloudy or darker day lighting conditions.
-* A [multi-channel](lights-tab.html#channel) rendering may help you get the picture you want, while still preserving accurate data.
+* 設定[燈光](lights-tab.html)、[天空](sun-and-sky-tabs.html#sky)與窗戶的玻璃材質時請盡可能使用正確的數值。
+* 太陽與天空的亮度遠超過燈光的亮度，所以在陽太與天空開啟時燈光對場景的照明不會有明顯的影響，這是與真實世界相仿的正常情形，請忽因此大幅提高燈光的亮度。
+* 您可以將[太陽](sun-and-sky-tabs.html#sun-intensity)或[天空](sun-and-sky-tabs.html#sky-intensity)的亮度調低，模擬多雲或陰天的狀況。
+* 使用[多通道](lights-tab.html#channel)彩現可以保留各種照明的精確資訊，彩現完成後可以再調整每一個光源的強弱。
 
-### Artificial lighting
+### 人工照明
 {: #artificial-lighting}
-![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
+![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} 模擬夜間室內以人造燈光照明的場景，您可以使用[燈光頁面](lights-tab.html)或 [Rhino 的燈光指令](lights-tab.html#rhino-light-commands)在模型裡加入燈光物件。
 
-Indirect lighting, the lighting reflected off surfaces, is on when one of the two interior presets are selected and off for studio and exterior. This type of lighting is a significant component of an interior simulation. For exteriors and studio models the effects of indirect lighting is more subtle and is therefore turned off by default.
+室內日光與人工照明的間接照明 (物件表面反射的光源) 預設是開啟的，攝影棚照明與戶外日光的間接照明預設則是關閉的。間接照明對室內場景彩現有很顯著的影響，但對於戶外與攝影棚場景的影響較細微，所以預設是關閉的。
 
-### Custom Lighting
+### 自訂照明
 {: #custom  style="clear:both;"}
-Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRI environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
+Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRi environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
 
-####  [Sun](sun-and-sky-tabs.html#sun)
+####  [太陽](sun-and-sky-tabs.html#sun)
 {: #sun}
-Turn on and off the Sun tab in the drop down. The [Sun tab](sun-and-sky-tabs.html#sun) contains the controls for altering the parameters of the sun position.
+開啟/關閉太陽頁面，[太陽頁面](sun-and-sky-tabs.html#sun)有控制太陽位置的設定。
 
 ![images/lightsunon.png](images/lightsunon.png)
-*Sun on and off.*
-The sun is a very bright directional light source infinitely far from the model. The controls for the sun specify its direction using spherical coordinates. For more details, see the [Sun tab](sun-and-sky-tabs.html#sun) topic.
+*太陽開啟與關閉。*
+太陽是一個位在無限遠而且極亮的平行光源，太陽的位置可以使用經緯度設定，請參考[太陽頁面](sun-and-sky-tabs.html#sun)說明主題。
 
-####  [Sky](sun-and-sky-tabs.html#sky)
+####  [天空](sun-and-sky-tabs.html#sky)
 {: #sky}
-Set the Sky channel to one of four options:
+天空有以下四種設定可以選擇：
 
-> Auto
-> HDRI
-> Color
-> Image
+> 自動
+> HDRi
+> 顏色
+> 圖片
 
-For details, see the [Sky tab](sun-and-sky-tabs.html#sky) topic.
-Defines a hemispherical light source infinitely far away from the model.
+詳細說明請參考[天空頁面](sun-and-sky-tabs.html#sky)說明主題。
+一個位於無限遠、環繞模型的半球體光源。
 
-#### Off
+#### 關閉
 {: #off}
-Turns the sky off.
+關閉天空。
 ![images/chromenosky.png](images/chromenosky.png)
 
-#### Auto
+#### 自動
 {: #auto}
-Provides an analytical model based on real-world sky conditions. The settings on the [Sun](sun-and-sky-tabs.html) tab control the appearance and light qualities of the sky.
+以真實天空的分析模型計算天空的光源，[太陽](sun-and-sky-tabs.html)頁面的設定可以控制天空的樣子與照明的品質。
 ![images/chromeautosky.png](images/chromeautosky.png)
 
 #### HDRi
 {: #hdri}
-An HDR image provides something for shiny objects to reflect.
+HDR 圖片可以做為表面具反射性質的物件的反射影像。
 ![images/chromehdrbackground.png](images/chromehdrbackground.png)
 
-#### Color
+#### 顏色
 {: #color}
-Sets the sky to a solid color or a two- or three-color gradient using controls similar to [Environment: Color and Gradient Backgrounds](environment-tab.html#color-and-gradient-backgrounds).
+將天空設為單一顏色、雙色漸層或三色漸層，設定與[環境背景類型：顏色與漸層色](environment-tab.html#color-and-gradient-backgrounds)類似。
 ![images/colorsky.png](images/colorsky.png)
 
-#### Image
+#### 圖片
 {: #image}
-Uses an image background with a planar, cylindrical, or spherical projection similar to [Environment: Image](environment-tab.html#image).
+以圖片做為背景，圖片的投影方式可以有：平面、圓柱體、球體，設定與[環境背景類型：圖片](environment-tab.html#image)類似。
 ![images/chromeimagesky.png](images/chromeimagesky.png)
 
 
-### Studio Brightness
+### 攝影棚亮度
 {: #studio-brightness}
-Reduces the brightness of the [sun](sun-and-sky-tabs.html) and sky to mimic the interior lighting levels of a photographer's studio.
+降低[太陽](sun-and-sky-tabs.html)與天空的亮度，模擬攝影棚的室內照明效果。
 ![images/studiobrightnessoffandon.png](images/studiobrightnessoffandon.png)
-*Studio Brightness off (left) and on (right).*
+*攝影棚亮度關閉 (左) 與開啟 (右)。*
 
-### Lights
+### 燈光
 {: #lights}
-Turns artificial lighting on and off.
+開啟或關閉人工照明。
 
 ![images/lightsonandoff.png](images/lightsonandoff.png)
-*Lights on (left) and off (right).*
+*燈光開啟 (左) 與關閉 (右)。*
 
-### Indirect
+### 間接照明
 {: #indirect}
-Defines the lighting reflected from surfaces. By default, it is on for interior lighting and off for exterior and studio lighting preset schemes. It is possible to turn on indirect lighting for exterior renderings.
+間接照明是指物體表面反射的光源，間接照明在**室內日光**預設是開啟的，在**戶外日光**與**攝影棚照明**預設是關閉的，但您也可以選擇在使用戶外日光的場景開啟間接照明。
 
-#### Method
-Sets the calculation method for indirect lighting.
+#### 方式
+設定間接照明的計算方法。
 
-#### Off
-Turns indirect lighting calculation off.
+#### 關閉
+關閉間接照明的計算。
 
-#### Interior
+#### 室內
 {: #interior}
-Optimizes the indirect lighting for indoor situations.
+對室內場景的接間照明最佳化。
 
-#### Exterior
+#### 戶外
 {: #exterior}
-Optimizes the indirect lighting for outdoor situations.
-Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately when using indirect lighting.
+對戶外場景的接間照明最佳化。
 
-#### Bounces
+從物件表面反射的光源可以在戶外場景加入細微的照明效果，增加彩現的真實感，尤其是在凸出物件的下方，例如：屋簷與陽台的下方可以受到間接照明照亮，不會有一片死黑、不真實的情形。
+
+#### 反彈數
 {: #bounces}
-Specifies the number of reflections caused by an indirect light.
+設定光線從物件表面反彈產生間接照明的次數。
 
-### Ambient
+### 環境光
 {: #ambient}
-Ambient light is a constant light added to the rendering. These settings control the intensity of the ambient light as a percentage of the total estimated ambient light in the scene.
-Decreasing the amount of ambient light generally produces images with more contrast. Too much ambient light can make a rendered image seem flat and uninteresting; too little can cause excessive contrast.
+環境光可以提高場景的整體亮度，這裡的設定可以控制環境光的強弱。
 
-#### None
-No ambient light.
+降低環境光的強度可以提高彩現影像的對比度，太強的環境光會讓彩現影像看起來平淡無趣，太弱又會造成對比度過高的問題。
 
-#### Exterior
-Optimizes ambient light for exterior scenes.
+#### 無
+沒有環境光。
 
-#### Interior
-Optimizes ambient light for interior scenes.
+#### 戶外
+使用針對戶外場景最佳化的環境光。
 
-#### Studio
-Optimizes ambient light for studio scenes.
+#### 室內
+使用針對室內場景最佳化的環境光。
 
-## Saving Custom Lighting
+#### 攝影棚
+使用針對攝影棚場景最佳化的環境光。
 
-### Save lighting scheme
+## 儲存自訂的照明
+
+### 儲存照明配置
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Saves the current lighting scheme.
+![images/saveschemeicon.png](images/saveschemeicon.png) 儲存目前的照明配置。
 
-### Open lighting scheme
+### 開啟照明配置
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Opens a saved lighting scheme.
+![images/importfromfile.png](images/importfromfile.png) 開啟已儲存的照明配置。

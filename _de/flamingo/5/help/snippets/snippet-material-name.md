@@ -1,2 +1,2 @@
 #### Name
-This is the name of the material. See the Advanced [Name](material-type-advanced.html#name) property for details.
+Der Name des Materials. Weitere Informationen finden Sie im Hilfethema zum [Namen](material-type-advanced.html#name).

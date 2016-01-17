@@ -7,21 +7,21 @@ title: マテリアルエディタパネル
 
 マテリアルは、レイヤ、オブジェクト、そしてブロックに割り当てることができます。割り当ては、オブジェクトへドラッグアンドドロップすることで、またいろいろなコントロールを使用して行えます。詳細については、[マテリアルの割り当て](material_assignment.html)を参照してください。
 
-マテリアルは割り当てると、モデルに格納されます。 マテリアル、テクスチャ、そしてレンダリングのすべてのサポートファイルは、Rhinoのモデルに[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm)を正しく設定して格納することができます。
+マテリアルは割り当てると、モデルに格納されます。 マテリアル、テクスチャ、そしてレンダリングのすべてのサポートファイルは、Rhinoのモデルに正しく設定した[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#options/rendering.htm)と共に格納することができます。
 
 マテリアル、環境、そしてテクスチャはモデルに格納されますが、レンダリングコンテンツはモデル間で共有できるファイルに保存することもできます。コンテンツはRhinoのセッション間で、そしてフォルダにドラッグできます。色見本も同じようにドラッグアンドドロップできます。[ライブラリパネル](libraries.html)はデフォルトのコンテンツフォルダを表示します。これを、モデルにコンテンツをドラッグアンドドロップするのに、またはモデルコンテンツを外部ファイルにドラッグアンドドロップするのに使用してください。
 
 ![images/material_editor_panel.svg](images/material_editor_panel.svg){:  #panel_map .float-img-right}
 
 ##### コマンドの位置
-マテリアルをタブを表示するには、いくつかのオプションがあります。
+マテリアルをタブを表示する方法には、いくつかのオプションがあります。
 
 * ![images/materialtab.png](images/materialtab.png)マテリアルタブ
 * ![images/icon-render.png](images/icon-render.png)レンダリングツールツールバー > ![images/materialtab.png](images/materialtab.png) マテリアルエディタ
 * メニュー > レンダリングプルダウン > マテリアルエディタ
-* コマンドラインでMaterialEditorと入力します。
+* コマンドラインでMaterialEditorと入力
 
-マテリアルエディタパネルは、個別のセクションに分かれています。マテリアルのタイプに応じて、高度な（詳細）設定パネルは異なることがあります。
+マテリアルエディタパネルは、複数のセクションに分かれています。選択されたマテリアルのタイプに応じて、マテリアルプロパティは異なることがあります。
 
 色やテクスチャは色見本からドラッグして、どのような他の色見本、またはマテリアルエディタ、[テクスチャパレット](texturepalette.html)、または[環境エディタ](environmenteditor.html)にもドロップすることができます。
 
@@ -36,17 +36,17 @@ title: マテリアルエディタパネル
 
 ## [設定バー](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #settings .clear-img}
-このバーを使用して、マテリアルのリストを順番に表示します。
+このバーを使用すると、マテリアルのリストを順番に表示することができます。
 
 #### ![images/met_leftarrow.png](images/met-leftarrow.png) 戻る矢印
-現在のマテリアルまたは前に選択されたマテリアルを後ろ向きの順番で表示します。例えば、テクスチャのあるマテリアルには複数のレイヤがあります。テクスチャの詳細から親マテリアルに戻るのにこの矢印を使用してください。
+現在のマテリアルまたは以前に選択されたマテリアルに戻ります。例えば、テクスチャのあるマテリアルには複数の層があります。テクスチャの詳細から親マテリアルに戻るのにこの矢印を使用してください。
 
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png) 進む矢印
-現在のマテリアルまたは前に選択されたマテリアルを前向きの順番で表示します。例えば、テクスチャのあるマテリアルには複数のレイヤがあります。親マテリアルから最近使用したテクスチャに戻るのにこの矢印を使用してください。
+現在のマテリアルまたは以前に選択されたマテリアルから戻ります。例えば、テクスチャのあるマテリアルには複数の層があります。親マテリアルから最近使用したテクスチャに戻るのにこの矢印を使用してください。
 
 
 #### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 現在選択されているマテリアル名
-現在のマテリアル名とレベルを表示します。例えば、テクスチャまたはマテリアルプロシージャルレベルがある場合、「>」が表示されます。現在のマテリアルを確認できる場所です。
+現在のマテリアル名とレベルを表示します。例えば、テクスチャまたはマテリアルプロシージャルレベルがある場合、「>」が表示されます。どのマテリアル、またはマテリアルのどのレベルを編集しているのかを確認できる場所です。
 
 #### ![images/library_default.png](images/library_default.png) ツールメニュー
 [ツールメニュー](#tools-menu)を表示します。マテリアルに関するコマンド、設定、ユーティリティの包括的なメニューです。
@@ -57,15 +57,15 @@ title: マテリアルエディタパネル
 ここにはモデルに含まれるすべてのマテリアルが表示されます。リストを使って次のことが行えます。
 
 * リストを上下にスクロールして、モデルのすべてのマテリアルを見ることができます。
-* このリストから[レイヤパネル](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)のレイヤに、またはオブジェクトにマテリアルを直接ドラッグアンドドロップしてオブジェクトに割り当てます。詳細については、[マテリアルの割り当て](material_assignment.html)を参照してください。
+* このリストから[レイヤパネル](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/layer.htm)のレイヤに、またはオブジェクトにマテリアルを直接ドラッグアンドドロップしてオブジェクトに割り当てることができます。詳細については、[マテリアルの割り当て](material_assignment.html)を参照してください。
 * 新規マテリアル追加ボタン ![images/add_material.png](images/add_material.png) を使用して、リストの一番最後に新規マテリアルを追加することができます。
 
 
-* それぞれのマテリアルをクリックして選択します。選択されると、マテリアルのプロパティが下のパネルに表示されます。詳細については、[レンダリングマテリアルのプロパティ](#properties) を参照してください。
-* サムネイルを右クリックすると、マテリアルコンテクストメニューが表示されます。
+* それぞれのマテリアルをクリックして選択できます。選択されると、マテリアルのプロパティが下のパネルに表示されます。詳細については、[レンダリングマテリアルのプロパティ](#properties) を参照してください。
+* サムネイルを右クリックすると、マテリアルコンテクストメニューを表示できます。
 * 何も表示されていない部分を右クリックすると、新規マテリアルのコンテクストメニューを表示することができます。
 
-###  ![images/add_material.png](images/add_material.png) 新規マテリアルを追加ボタン
+###  ![images/add_material.png](images/add_material.png) 新規マテリアルを追加
 {: #add_material}
 追加アイコンは、マテリアルリストを一番下までスクロールしたところに表示されます。
 
@@ -88,7 +88,7 @@ title: マテリアルエディタパネル
 クリップボードの内容に基づいて新規マテリアルを作成します。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) インスタンスとしてペースト
-クリップボードの内容に基づいて、インスタンシングによって元にリンクされる新規マテリアルを作成します。
+クリップボードの内容に基づいて、インスタンシングによって元のマテリアルにリンクされている新規マテリアルを作成します。
 
 #### ![images/grid.png](images/grid.png) グリッド
 プレビューをサムネイルのグリッドとして表示します。
@@ -178,16 +178,16 @@ title: マテリアルエディタパネル
  1. レイヤを選択ダイアログボックスで、マテリアルを割り当てるレイヤのボックスにチェックマークを付けます。
 
 ##### レイヤパネルからマテリアルを割り当てるには
- 1. [レイヤ](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)パネルで、1つまたは複数のレイヤを選択し、[マテリアル](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)カラムをクリックします。
+ 1. [レイヤ](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/layer.htm)パネルで、1つまたは複数のレイヤを選択し、[マテリアル](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/layer.htm#Material)カラムをクリックします。
  1. レイヤのマテリアルダイアログボックスで、割り当てるマテリアルを選択します。
 
 
-##### マテリアルをオブジェクトにドラッグアンドドロップするには
+##### マテリアルをレイヤにドラッグアンドドロップするには
  * マテリアルをサムネイルまたはリストからターゲットレイヤにドラッグします。
 ドラッグアンドドロップは、一度に1つのレイヤに対して行えます。
 
 #### ![images/materials_selectobjects.png](images/materials_selectobjects.png) オブジェクトを選択
-マテリアルを割り当てるモデルのオブジェクトを選択します。
+モデルの中の選択されているマテリアルが割り当てられたオブジェクトを選択します。
 
 #### ![images/toolbarplus.png](images/toolbarplus.png) 新規マテリアルを作成
 マテリアルのレンダリングコンテクスト[ライブラリ](libraries.html)を開きます。
@@ -204,7 +204,7 @@ title: マテリアルエディタパネル
 
 #### ![images/changetype.png](images/changetype.png) タイプを変更 (類似の設定をコピー)
 マテリアルを異なるタイプに変更します。
-デフォルトの動作は、[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [コンテンツのタイプが変更された際に類似の設定をコピー](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)ボックスの現在の状態に依存します。チェックマークが付いている場合、古いコンテンツからの互換性のある設定が新しいコンテンツにコピーされます。
+デフォルトの動作は、[レンダリングのオプション](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm) &gt;  [コンテンツのタイプが変更された際に類似の設定をコピー](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm)ボックスの現在の状態に依存します。チェックマークが付いている場合、古いコンテンツから互換性のある設定が新しいコンテンツにコピーされます。
 
 #### ![images/reset.png](images/reset.png) デフォルトにリセット
 すべてのマテリアル設定をデフォルトの白、艶なし、反射なし、テクスチャなしのマテリアルに変更します。
@@ -216,7 +216,7 @@ title: マテリアルエディタパネル
 クリップボードの内容に基づいて新規マテリアルを作成します。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) インスタンスとしてペースト
-クリップボードの内容に基づいて、インスタンシングによって元にリンクされる新規マテリアルを作成します。
+クリップボードの内容に基づいて、インスタンシングによって元のマテリアルにリンクされている新規マテリアルを作成します。
 
 #### ![images/delete.png](images/delete.png) 削除
 選択されたマテリアルを削除します。
@@ -225,10 +225,10 @@ title: マテリアルエディタパネル
 選択されたマテリアルの名前を変更します。
 
 #### ![images/duplicate.png](images/duplicate.png) 複製
-選択されたマテリアルを同じ設定で新規マテリアルにコピーします。
+選択されたマテリアルを同じ設定でコピーし、新規マテリアルを作成します。
 
 #### ![images/removeinstancing.png](images/removeinstancing.png) インスタンシングを取り除く
-[インスタンスされた](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)マテリアル間の接続を取り除きます。
+[インスタンスされた](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm)マテリアル間の接続を取り除きます。
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 
@@ -236,4 +236,4 @@ title: マテリアルエディタパネル
 [コンテンツフィルタ](content_filters.html)ダイアログボックスを開きます。
 
 #### ![images/rename.png](images/rename.png) プロパティ
-[プレビューのプロパティ](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)ダイアログボックスを開きます。
+[プレビューのプロパティ](http://docs.mcneel.com/rhino/5/help/ja-jp/popup_moreinformation/materialtoolsmenu.htm)ダイアログボックスを開きます。

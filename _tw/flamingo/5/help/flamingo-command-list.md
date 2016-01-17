@@ -1,12 +1,13 @@
 ---
+title: Flamingo 指令清單
 ---
 
 
-# Flamingo Command List
-
+# {{page.title}}
+<!---->
 ### FlamingoNXtAbout
 {: #flamingonxtabout-command}
-Displays theAbout Flamingodialog box.
+顯示 Flamingo nXt 的關於對話框。
 
 ###  [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)
 {: #flamingonxtautomaterender}
@@ -22,56 +23,56 @@ Displays theAbout Flamingodialog box.
 
 ### FlamingoNXtClearBitmapCache
 {: #flamingonxtclearbitmapcache}
-Refreshes the bitmap definition when a bitmap file is changed using an image editor such as Photoshop.
+當外部連結的圖片以其它程式修改後可以使用這個指令重新載入。
 
 ### FlamingoNXtConvertLegacyMaterialLibrary
 {: #flamingonxtconvertlegacymateriallibrary}
-Extracts Flamingo 2.x materials from a specified MLIB file as Flamingo nXt ArMaterial files in a specified output folder.
+將 Flamingo 2.0 的材質從選取的 MLIB 檔案轉換為 Flamingo nXt 的 ArMaterial 材質檔案，並儲存至設定的輸出資料夾。
 
 ### FlamingoNXtCreateThumbNails
 {: #flamingonxtcreatethumbnails}
-Iterates recursively through a folder and generates a material preview for every ArMaterial file in the folder and sub folders. Specify how many passes it uses when generating the preview.
+產生選取的資料夾 (包括子資料夾) 裡所有 ArMaterial 材質檔案的預覽縮圖，可以設定建立預覽縮圖使用的彩現處理數。
 
 ###  [FlamingoNXtDecal](properties-decal.html)
 {: #flamingonxtdecal}
 
 ###  [FlamingoNXtDrawLightsForObjectsTaggedAsLights](lights-tab.html#tag-objects-as-lights)
 {: #flamingonxtdrawlightsforobjectstaggedaslights}
-Turns on a display conduit that decorates objects that are [tagged as lights](lights-tab.html#tag-objects-as-lights) with a preview of how the light is pointed and were its location is.
+在[標記為燈光的物件](lights-tab.html#tag-objects-as-lights)上顯示燈光物件，可以看出燈光的照射方向。
 
 ###  [FlamingoNXtEditPlant](plants.html)
 {: #flamingonxteditplant}
 
 ###  [FlamingoNXtExportAllMaterials](materials-tab.html#exportallmaterials)
 {: #flamingonxtexportallmaterials}
-Exports each material in a model to a file.
+將模型裡的每一個材質匯出為個別的 ArMaterial 檔案。
 
 ### FlamingoNXtFindZeroFaceMeshes
 {: #flamingonxtfindzerofacemeshes}
-A diagnostic utility that finds Flamingo nXt render meshes that have faces with no area.
+一個可以找出未含有任何網格面的 Flamingo nXt 網格的指令。
 
 ### FlamingoNXtHelp
 {: #flamingonxthelp}
-Opens theHelpfile.
+開啟說明檔案。
 
 ### FlamingoNxtOldStylePlant
 {: #flamingonxtoldstyleplant}
-Inserts a Flamingo 2-style [plant](plants.html).
+插入 Flamingo 2.0 的[植物](plants.html)。
 
 ###  [FlamingoNXtPlant](plants.html)
 {: #flamingonxtplant}
 
 ###  [FlamingoNXtPlantEditor](plants.html)
 {: #flamingonxtplanteditor}
-Opens the [Tree Editor](plants.html).
+開啟[植物編輯器](plants.html)。
 
 ###  [FlamingoNXtRenderConstraints](documentproperties-flamingo.html#render-constraints)
 {: #flamingonxtrenderconstraints}
-Sets [render constraints](documentproperties-flamingo.html#render-constraints) :
+設定[彩現限制](documentproperties-flamingo.html#render-constraints)：
 
 ### FlamingoNXtRenderWindowConstraints
 {: #flamingonxtrenderwindowconstraints}
-Sets [render constraints](documentproperties-flamingo.html#render-constraints) when **RenderWindow** is used for rendering.
+在指令行設定**彩現視窗**的[彩現限制](documentproperties-flamingo.html#render-constraints)設定。
 
 ###  [FlamingoNXtRenderFarm](automate-rendering.html#render-farm)
 {: #flamingonxtrenderfarm}
@@ -87,9 +88,9 @@ Sets [render constraints](documentproperties-flamingo.html#render-constraints) w
 
 ### FlamingoNXtUpdateLinkedPlants
 {: #flamingonxtupdatelinkedplants}
-Updates plant definitions that have been modified in the current model.
+更新模型裡已修改過的植物。
 
 ###  [FlamingoNXtWebPage](http://nxt.flamingo3d.com/)
 {: #flamingonxtwebpage}
-Opens the Flamingo nXt web page.
+開啟 Flamingo nXt 的網站。
 &#160;

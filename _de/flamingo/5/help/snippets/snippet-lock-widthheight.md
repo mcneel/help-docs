@@ -1,3 +1,3 @@
 
-#### Lock
-Maintains the ratio between the Width and Height.
+#### Sperren
+Behält das Seitenverhältnis zwischen Breite und Höhe bei.

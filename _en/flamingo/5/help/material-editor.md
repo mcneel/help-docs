@@ -182,7 +182,7 @@ Assigns the current material to layers.
  1. In the Layer Material dialog box, select the material to assign.
 
 
-##### To drag and drop materials to objects
+##### To drag and drop a material to a layer
  * Drag the material from the thumbnails or list onto the target layer.
 Drag and drop works for only one layer at a time.
 

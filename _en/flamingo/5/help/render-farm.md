@@ -106,7 +106,7 @@ Job may be started immediately after submission, at a later time, or manually th
 Start the job now.
 
 #### Later (Manually)
-Start the job later using the nXt [Farm Monitor](#render-farm-monitor) to start the job.
+Start the job later using the nXt [Farm Monitor](#render-farm-monitor).
 
 #### After
 Start the job at a specified date and time.

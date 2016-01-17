@@ -102,7 +102,7 @@ main_index:
         - name: Plants
           path: plants.html
         - name: Plant Editor
-          path: tree-editor.html
+          path: plant-editor.html
 
     - name: Network Rendering (Farm)
       anchor: farm
@@ -124,6 +124,8 @@ main_index:
           path: documentproperties-flamingo.html
         - name: Options Flamingo nXt
           path: options-flamingo.html
+        - name: Image Editor
+          path: image-editor.html
         - name: RealTime Viewport
           path: realtime.html
         - name: Flamingo Command List

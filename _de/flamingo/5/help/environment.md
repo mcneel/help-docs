@@ -1,296 +1,297 @@
 ---
+title: Flamingo-Umgebung
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Flamingo Environment
-There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
+# ![images/environment.svg](images/environment.svg) {{page.title}}
+In Rhino gibt es viele verschiedene [Umgebungstypen](http://docs.mcneel.com/rhino/5/help/de-de/commands/environmenteditor.htm). In diesem Abschnitt wird die Flamingo-Umgebung behandelt.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
+Die Umgebung hat Einfluss auf den sichtbaren Teil des Hintergrunds und auf Reflexionen.  Effekte für die Beleuchtung der Szene sind im Hilfethema [Himmel](sun-and-sky-tabs.html) beschrieben.
 
-Flamingo comes with a special environment called **Default Flamingo Environment**.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
+Flamingo verfügt über eine **Flamingo-Standardumgebung**.  Diese Umgebung wird mit den aktuellen [Beleuchtungsvoreinstellungen](lighting-tab.html) synchronisiert. Bei Verwendung der [Beleuchtungsvoreinstellungen](lighting-tab.html) werden sowohl die Beleuchtung als auch die Umgebung auf geeignete Standardwerte eingestellt.
 
-The complete set of property groups in the Flamingo Environment are:
+Die einzustellenden Eigenschaften für eine Flamingo-Umgebung sind:
 
 > [Name](#name)
-> [Flamingo Environment](#environment)
-> [Background Color](#color-backgrounds)
-> [Advanced Background](#advanced-background-reflected-sky)
+> [Flamingo-Umgebung](#environment)
+> [Hintergrundfarbe](#color-backgrounds)
+> [Erweiterter Hintergrund](#advanced-background-reflected-sky)
 
 
-## Environment Name
+## Name der Umgebung
 {: #name}
-This is the name of the environment in the Rhino model.  Environments are stored in the Rhino model. That means that the same name in the library or a different model will not be affected by edits to the environment in the current model. To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
+Der Name der Umgebung im Rhino-Modell.  Umgebungen werden im Rhino-Modell gespeichert. Das bedeutet, dass derselbe Name in verschiedenen Modellen für unterschiedliche Umgebungen verwendet werden kann. Zur Verwendung einer Umgebung in einem anderen Modell muss sie zuerst in die [Bibliothek](libraries.html) exportiert werden. Der Name der Umgebung dient beim Export als Dateiname.
 
-## Flamingo Environment
+## Flamingo-Umgebung
 {: #environment}
-There are three major effects of environment in a rendering:
+Für eine Umgebung gibt es in einem Rendering drei wesentliche Effekte:
 
->Visible Background
->[Reflective Background](#advanced-background-reflected-sky)
->[Refractive Background](#advanced-background-refracted-sky)
+>Sichtbarer Hintergrund
+>[Reflektierter Hintergrund](#advanced-background-reflected-sky)
+>[Gebrochener Hintergrund](#advanced-background-refracted-sky)
 
-The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
+Der sichtbare Hintergrund ist die grundlegende Hintergrundfarbe der Szene.  Der sichtbare Hintergrund kann im Panel der allgemeinen Eigenschaften eingestellt werden. Der [reflektierte](#advanced-background-reflected-sky) und [gebrochene](#advanced-background-refracted-sky) Hintergrund kann abweichen und ist im Abschnitt des erweiterten Hintergrunds verfügbar.
 
-#### Intensity
+#### Intensität
 {: #background-intensity}
-Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
+Ändert die relative Helligkeit des Hintergrunds. Der Wert für die Intensität wird verwendet, um die Farben im Hintergrund zu multiplizieren und so einen Beleuchtungswert zu erhalten.  Farben können je Kanal einen Wert von 0-255 haben. Die Intensität multipliziert diese Werte.  Dies ist wichtig, wenn der Hintergrund im Vergleich zum gerenderten Modell sehr dunkel erscheint.
 
-#### Background type
+#### Hintergrundtyp
 {: #background-type}
-Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be the following types:
+Definiert das Farbschema, das den Hintergrund des gerenderten Bilds füllen wird. Für Hintergründe stehen die folgenden Typen zur Verfügung:
 
-> [Sky](#environment-sky)
-> [Solid and gradient color](#color-backgrounds)
-> [Image](#environment-image)
-> [HDR and planar HDR images](#hdr-background)
+> [Himmel](#environment-sky)
+> [Einfarbig oder Farbverläufe](#color-backgrounds)
+> [Bild](#environment-image)
+> [HDR- und planares HDR-Bild](#hdr-background)
 
-
-## Sky Background
+## Himmel
 {: #environment-sky}
-The Sky environment uses the sun and sky settings from the [Lighting](lighting-tab.html) tabs for settings.  It is the default setting for the renderings that see the sky in the renderings.
+Die Himmelsumgebung verwendet die Konfiguration von Sonne und Himmel aus den [Beleuchtungsvoreinstellungen](lighting-tab.html).  Dies ist die Standardvoreinstellung für Renderings mit einem Himmel.
 
 ![images/background-sky-001.png](images/background-sky-001.png)
-*Automatic (left) and HDR image and sun (right).*
+*Automatisch (links) und HDR-Bild und Sonne (rechts).*
 
-## Color Background
+## Farbe
 {: #color-backgrounds}
-Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
+Es ist immer eine Steuerung für die Hintergrundfarbe vorhanden. Eine Hintergrundfarbe ist auch dann vorhanden, wenn diese komplett hinter einem Bild, HDRI-Bild oder Himmelshintergrund verborgen ist.
 
-#### Solid Color
+#### Einfarbig
 {: #solid-color}
-A solid color background consists of a single color that fills the background.
+Ein Hintergrund in Volltonfarbe besteht aus einer einzigen Farbe, die die Hintergrundkugel füllt.
 
 ![images/background-color-001.png](images/background-color-001.png)
-*Solid color background.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Solid Color.
+*Einfarbiger Hintergrund.*
+Weitere Infos zum Bearbeiten einer Farbe finden Sie im Hilfethema zu den [Farbsteuerungen](#enviroment-sky-color-controls) unten.
 
-#### Two-Color Gradient
+#### Zweifarbiger Farbverlauf
 {: #two-color-gradient}
-Two- and three-color gradient backgrounds only apply to perspective views. Two-color gradient backgrounds interpolate the background color between two selected colors.
+Zwei- und dreifarbige Farbverlaufshintergründe werden nur auf perspektivische Ansichten angewendet. Ein zweifarbiger Farbverlauf interpoliert die Hintergrundfarbe zwischen zwei ausgewählten Farben.
 
 ![images/background-color-002.png](images/background-color-002.png)
-*Two-color gradient background: blue and yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing a two-color gradient.
+*Zweifarbiger Farbverlaufshintergrund: Blau und Gelb.*
+Weitere Infos zum Bearbeiten eines zweifarbigen Farbverlaufs finden Sie im Hilfethema zu den [Farbsteuerungen](#enviroment-sky-color-controls) unten.
 
-#### Three-Color Gradient
+#### Dreifarbiger Farbverlauf
 {: #three-color-gradient}
-Three-color gradient backgrounds interpolate the background color between three selected colors.
+Dreifarbige Gradientenhintergründe interpolieren die Hintergrundfarbe zwischen drei ausgewählten Farben.
 ![images/background-color-003.png](images/background-color-003.png)
-*Three-color gradient background: blue, white, yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Three-color Gradient.
+*Dreifarbiger Farbverlaufshintergrund: Blau, Weiß, Gelb.*
+Weitere Infos zum Bearbeiten eines dreifarbigen Farbverlaufs finden Sie im Hilfethema zu den [Farbsteuerungen](#enviroment-sky-color-controls) unten.
 
-### Color controls
+### Farbsteuerungen
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
+Die Anzahl der Steuerelemente hängt von dem ausgewählten Farbhintergrundstyp ab. Farbverlaufshintergründe haben drei Farbwähler für die obere, mittlere und untere Farbe.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Swap Colors
-Use this button to rearrange the color in the gradient from top to bottom
+#### Farben austauschen
+Durch Klick auf diese Schaltfläche kann die obere und untere Farbe des Farbverlauf ausgetauscht werden.
 
-#### Gradient mapping control
+#### Farbverlauf-Mapping
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
+Die Farben eines Farbverlaufshintergrunds müssen auf die Umgebungskugel gemappt werden. Dies kann mit den Steuerelementen für das Farbverlauf-Mapping eingestellt werden.  Dieses ist nur dann aktiv, wenn ein zwei- oder dreifarbiger Farbverlauf ausgewählt wurde. Ein Farbverlauf kann nur auf perspektivische Ansichten angewendet werden.
 
-#### Angles from views
+#### Winkel aus Ansicht
 {: #angle-from-views}
-If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+Wenn diese Option ausgewählt wurde, wird der aktuelle Farbverlauf mit der aktuell gerenderten perspektivischen Ansicht synchronisiert.  Die obere Farbe wird auf den oberen Bereich der Ansicht gemappt und die untere Farbe auf den unteren Bereich der Ansicht.  Alle anderen Farben werden gleichmäßig zwischen diesen Extremen verteilt.
 
-#### View Altitude Mapper
+#### Ansichtshöhenmapping
 {: #colorrange}
-If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
+Wenn das aktuelle Ansichtsfenster eine perspektivische Projektion ist, können die obere und untere Farbe sowie die Grenzen des Farbverlaufs eingestellt werden.
 
 ![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
-* The control shows the environment in section view.  The 90 degree marker is the Z-up coordinate. The 0 coordinate represents the horizontal ground plane. The -90 degree marker is the Z-down coordinate.
-* The grey cone of vision shows the last coordinates of the current perspective view.
-* The Red arrow represents the location of the top color. At this angle and above will be the top color.
-* The Green double-arrow represents the middle of the gradient blend between the top and bottom colors.  If it is a three color gradient this is also the location of the middle color.
-* The Blue arrow represents the location of the bottom color.  Below this angle there will only be bottom color.
+* Die Steuerung zeigt die Umgebung in einer Schnittansicht.  Die 90-Grad-Markierung weist in die positive z-Richtung. Die 0-Koordinate entspricht der horizontalen Grundebene. Die -90-Grad-Markierung weist in die negative z-Richtung.
+* Der graue Bereich zeigt die letzten Koordinaten der aktuellen perspektivischen Ansicht an.
+* Der rote Pfeil zeigt die Grenze an, ab der die Ansicht nach oben hin mit der oberen Farbe gefüllt ist.
+* Der grüne Doppelpfeil entspricht der Mitte des Farbverlaufs zwischen der oberen und der unteren Farbe.  Bei einem dreifarbigen Farbverlauf befindet sich hier die mittlere Farbe.
+* Der blaue Pfeil zeigt die Grenze an, ab der die Ansicht nach unten hin mit der unteren Farbe gefüllt ist.
 
-####  Get angles from View Button
-Use this button to reset the Gradient mapping control to the current perspective view coordinates.
+####  Winkel aus Ansicht ableiten
+Mit dieser Schaltfläche kann die Verlaufssteuerung auf die Koordinaten der aktuellen perspektivischen Ansicht zurückgesetzt werden.
 
-#### Top/Middle/Bottom Angles
-These are angle readouts of the Top, Middle, and Bottom colors in the current gradients.  They correspond to the location of the Red, Green, and Blue arrows in the View altitude mapper.
+#### Winkel oben/Mitte/unten
+Diese Winkel bestimmen die Einstellung für die obere, mittlere und untere Farbe im aktuellen Farbverlauf.  Sie entsprechen daher auch der Stellung des roten, grünen und blauen Pfeils in der Ansichtshöhenmapping-Steuerung.
 
-## Image Background
+## Bildhintergrund
 {: #environment-image}
-A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+
+Ein Hintergrundbild wird auf den Hintergrund projiziert. Dies wird oftmals verwendet, um ein Modell in einen vorhandenen Kontext zu setzen oder eine Ansicht aus dem Fenster einzustellen. Als Quelle hierfür kann ein beliebiges digitales Bild verwendet werden. Je höher die Auflösung des Bilds, desto bessere Resultate können erzielt werden. Durch Weichzeichnen oder Aufhellen scharfer Bilder können natürliche Brennpunkte oder Vogelperspektiven simuliert werden. Das Hintergrundbild kann in einer planaren, zylindrischen oder kugelförmigen Projektion auf die Szene abgebildet werden.
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar images set as a background.*
+*Ein planares Bild als Hintergrund.*
 
-### Image File
+### Bilddatei
 {: #image-properties}
-Set the background image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Wählen Sie das Hintergrundbild durch Klick auf die große Schaltfläche mit dem Text *(leer - zum Zuweisen hier klicken)*.  Klicken Sie zum Zuweisen eines anderen Bilds auf die Miniaturansicht des aktuellen Bilds.
 
-### Projection
+### Projektion
 {: #backgroud-image-projection}
-Select one of three image projections from the drop-down control:
+Wählen Sie eine Bildprojektion im Dropdownmenü aus:
 
 >[Planar](#planar)
->[Cylindrical](#cylindrical)
->[Spherical](#spherical)
+>[Zylindrisch](#cylindrical)
+>[Kugelförmig](#spherical)
 
-Each projection method has its own set of controls for positioning the image.
+Jede Projektionsmethode verfügt über eigene Optionen zur Positionierung des Bilds.
 
-#### Planar Projection
+### Planare Projektion
 {: #planar}
-Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
+Projiziert das Bild auf einen flachen Hintergrund in der aktuellen Ansicht. Die planaren Projektionskoordinaten sind immer relativ zur aktuellen Ansicht.
 
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### Winkel aus Ansicht ableiten
+Diese Option sorgt dafür, dass das Bild stets mit der aktuellen Ansicht synchronisiert wird.  Dabei kann das Bild zur Anpassung gestreckt werden.
 
-#### Image Placement Control
-Use the placement control to place the image relative to the current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
-
-![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
-
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### Image Placement Control
-Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
+#### Steuerelement zur Bildpositionierung
+Mit dieser Steuerung kann die Position des Bildes relativ zur aktuellen Ansicht eingestellt werden. Die Form des Ansichtsfensters wird dabei als dunkelgraues Rechteck wiedergegeben. Durch Ziehen des pinken Rechtecks oder Verwendung der numerischen Steuerung kann das Hintergrundbild relativ zur Ansicht verschoben oder skaliert werden.
 
 ![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
+*Hintergrundbereich (1), Bildgröße und Form (2).*
 
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### x-Skalierung / y-Skalierung
+Damit wird die Größe des Hintergrundbilds skaliert wobei der Wert 1.0 genau der Höhe bzw. Breite der Ansicht entspricht. Bei Eingabe einer x-Skalierung 1.0 beispielsweise nimmt das Hintergrundbild 100 % der Breite der Ansicht ein, während ein Wert von 0.5 bedeutet, dass es auf 50 % der Breite skaliert wird.
 
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### x-Versatz / y-Versatz
+Damit kann das Hintergrundbild ausgehend von der linken unteren Ecke des Ansichtsfensters mit einem Wert bezüglich der Breite und Höhe des Ansichtsfensters versetzt werden, wobei der Wert 1.0 einem Versatz von 100 % entspricht. So wird das Hintergrundbild bei Eingabe eines x-Versatzes von 0.25 beispielsweise um 25 % der Breite des Ansichtsfensters versetzt, bei 0.5 sind es 50 % usw.
 
-#### Cylindrical Projection
+#### Steuerelement zur Bildpositionierung
+Mit dieser Steuerung kann die Position des Bildes relativ zur aktuellen Ansicht eingestellt werden. Die Form des Ansichtsfensters wird dabei als dunkelgraues Rechteck wiedergegeben. Durch Ziehen des pinken Rechtecks oder Verwendung der numerischen Steuerung kann das Hintergrundbild relativ zur Ansicht verschoben oder skaliert werden.
+
+![images/background-image-003.png](images/background-image-003.png)
+*Hintergrundbereich (1), Bildgröße und Form (2).*
+
+#### x-Skalierung / y-Skalierung
+Damit wird die Größe des Hintergrundbilds skaliert wobei der Wert 1.0 genau der Höhe bzw. Breite der Ansicht entspricht. Bei Eingabe einer x-Skalierung 1.0 beispielsweise nimmt das Hintergrundbild 100 % der Breite der Ansicht ein, während ein Wert von 0.5 bedeutet, dass es auf 50 % der Breite skaliert wird.
+
+#### x-Versatz / y-Versatz
+Damit kann das Hintergrundbild ausgehend von der linken unteren Ecke des Ansichtsfensters mit einem Wert bezüglich der Breite und Höhe des Ansichtsfensters versetzt werden, wobei der Wert 1.0 einem Versatz von 100 % entspricht. So wird das Hintergrundbild bei Eingabe eines x-Versatzes von 0.25 beispielsweise um 25 % der Breite des Ansichtsfensters versetzt, bei 0.5 sind es 50 % usw.
+
+### Zylindrische Projektion
 {: #cylindrical}
-Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
+Die zylindrische Projektion spannt das Bild auf einen imaginären, das Modell umgebenden Zylinder. Obwohl diese Projektion mit echten zylindrischen Bildern am besten funktioniert, kann sie auch mit von Fotos erzeugten Standardpanoramen effektiv verwendet werden.
 
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
-Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
+Bestimmen Sie Größe und Position der Bild-Map in Höhen- und Breitenwinkeln. Verwenden Sie die grafischen Werkzeuge und die Maus, um das Bild zu positionieren und seine Größe zu ändern. Der aktuelle Sichtkegel wird in der Grafik als hellgrau schattierter Bereich angezeigt.
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### Winkel aus Ansicht ableiten
+Diese Option sorgt dafür, dass das Bild stets mit der aktuellen Ansicht synchronisiert wird.  Dabei kann das Bild zur Anpassung gestreckt werden.
 
-#### Plan control
-Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
+#### Plansteuerung
+Definiert die Winkelbreite der Bild-Map. Geben Sie einen Winkel ein oder ziehen Sie die Pfeile im Steuerelement, um die Breite einzustellen. Der blaue Bereich entspricht den Abmessungen der Winkelbreite.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
 
-* The control shows the environment in plan view.
-* The dark grey cone of vision shows the last coordinates in the current perspective view.
-* The blue cone shows the range of angles the image will be visible.
-* The blue arrow represents the left coordinate of the image map.
-* The red dot represents the middle of the background image.
-* The purple arrow represents the right coordinate of the image map.
+* Die Steuerung zeigt die Umgebung in einer Planansicht an.
+* Der dunkelgraue Bereich zeigt die letzten Koordinaten der aktuellen perspektivischen Ansicht an.
+* Der blaue Bereich zeigt den Winkelbereich des sichtbaren Bilds an.
+* Der blaue Pfeil entspricht der linken Koordinate der Bild-Map.
+* Der rote Punkt markiert die Bildmitte.
+* Der violette Pfeil entspricht der rechten Koordinate der Bild-Map.
 
-#### Vertical control
+#### Vertikalsteuerung
 {: .clear-img}
-Specifies the vertical extents of the cylindrical projection. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45 degrees above or below the horizon.
+Damit werden die vertikalen Ausmaße der zylindrischen Projektion eingestellt. Geben Sie einen Winkel ein oder ziehen Sie die Pfeile im Steuerelement, um den oberen und unteren Winkel einzustellen. Die zylindrische Projektion ist auf 45 Grad ober- oder unterhalb des Horizonts limitiert.
 
 ![images/background-cylinder-001.png](images/background-cylinder-001.png){: .float-img-left}
 
-* The control shows the cylinder in section view.
-* The grey cone of vision shows the last coordinates in the current perspective view.
-* The blue arrow represents the bottom border of the image map.
-* The red arrow represents the top border of the image map.
+* Die Steuerung zeigt den Zylinder in einer Schnittansicht.
+* Der graue Bereich zeigt die letzten Koordinaten der aktuellen perspektivischen Ansicht an.
+* Der blaue Pfeil entspricht dem unteren Rand der Bild-Map.
+* Der rote Pfeil entspricht dem oberen Rand der Bild-Map.
 
-#### Rotation
+#### Drehung
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+Zur Bestimmung der Drehung des Bilds. Der rote Punkt markiert die Bildmitte.
 
-#### Width
-Specifies the width of the image in degrees relative the the plan view.
+#### Breite
+Zur Bestimmung der Breite des Bilds in Grad bezüglich der Planansicht.
 
-#### Top/Bottom
-Specifies the vertical angles of the image based on horizontal groundplane direction in the model
+#### Oben / Unten
+Zur Bestimmung der vertikalen Winkel des Bilds basierend auf der horizontalen Richtung der Grundebene im Modell.
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  Winkel aus Ansicht ableiten
+Mit dieser Schaltfläche wird der Drehwinkel so eingestellt, dass er mit dem aktuellen perspektivischen Ansichtsfenster übereinstimmt.  Dies ist hilfreich, um die Projektionswerte wieder zurückzusetzen.
 
-#### Spherical Projection
+### Kugelförmige Projektion
 {: #spherical}
-Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
+Die kugelförmige Projektion mappt das Bild auf eine vollständige Kugel. Diese Methode erzeugt normalerweise gute Resultate, wenn Sie über ein Bild in Rektangularprojektion verfügen.  Eine Rektangularprojektion hat ein rechteckiges Seitenverhältnis von 2 zu 1.
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### Winkel aus Ansicht ableiten
+Diese Option sorgt dafür, dass das Bild stets mit der aktuellen Ansicht synchronisiert wird.  Dabei kann das Bild zur Anpassung gestreckt werden.
 
-#### Spherical control
-Specifies the direction of the image map. Enter an angle or drag the flag in the control widget to set the width. The red dot represents the middle of the background image.
+#### Kugelsteuerung
+Zur Einstellung der Richtung der Bild-Map. Geben Sie einen Winkel ein oder ziehen Sie den Pfeil im Steuerelement, um die Breite einzustellen. Der rote Punkt markiert die Bildmitte.
 
-#### Rotation
+#### Drehung
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+Zur Bestimmung der Drehung des Bilds. Der rote Punkt markiert die Bildmitte.
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  Winkel aus Ansicht ableiten
+Mit dieser Schaltfläche wird der Drehwinkel so eingestellt, dass er mit dem aktuellen perspektivischen Ansichtsfenster übereinstimmt.  Dies ist hilfreich, um die Projektionswerte wieder zurückzusetzen.
 
-## HDRI Background
+## HDRi-Hintergrund
 {: #hdr-background}
-Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+Wenn Sie ein HDR-Bild als Umgebung verwenden, haben Sie mehr Kontrolle über die Beziehung zwischen dem Licht im Hintergrund und anderen Lichtern im Bild. Dies ist vor allem hilfreich, um einen Innenraum mit einer hellen Außenszene darzustellen, die durch ein Fenster hindurch gesehen wird. Ein HDR-Umgebungsbild hat eine größere Helligkeitspalette als ein normales Bitmap-Bild und es kann ihm ein Kanal zur Verwaltung des Kontrasts in einem [Mehrkanal](lights-tab.html#channel)-Rendering zugewiesen werden.
 
-#### Image File
+#### Bilddatei
 {: #hdri-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Wählen Sie das HDRI-Hintergrundbild durch Klick auf die große Schaltfläche mit dem Text *(leer - zum Zuweisen hier klicken)*.  Klicken Sie zum Zuweisen eines anderen Bilds auf die Miniaturansicht des aktuellen Bilds.
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Planar HDRI options
+## Optionen von planarem HDRi
 {: #planar-hdr-options}
 
-Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
+Planare HDRI-Bilder werden selten verwendet, können aber sehr hilfreich sein.  HDRI bietet einen breiteren Bereich an Farbmöglichkeiten. Sehr geeignet sind planare HDRI-Bilder für den Außenbereich hinter Fenstern in Architektur-Renderings, bei denen der Hintergrund zu hell oder dunkel ist.  Planare HDRI-Bilder werden immer planar gemappt.
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
-*Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
+*Hintergrundbild (links) und planares HDR (rechts) zeigen feine Beleuchtungsunterschiede im Hintergrund.*
 
-#### Image File
+#### Bilddatei
 {: #hdri-planar-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Wählen Sie das HDRI-Hintergrundbild durch Klick auf die große Schaltfläche mit dem Text *(leer - zum Zuweisen hier klicken)*.  Klicken Sie zum Zuweisen eines anderen Bilds auf die Miniaturansicht des aktuellen Bilds.
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Advanced Background
+## Erweiterter Hintergrund
 {: #advanced-background}
-The Advanced Background settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects. This lets the visible environment look one way, while reflections and refractions might be reacting to a different environment.  For instance, in the illustration below the background is black, but the reflected environment is an HDR image of a building interior.
+Die erweiterten Hintergrundeinstellungen steuern Umgebungen, die im Rendering nicht sichtbar sind, aber in Reflexionen und Lichtbrechungen für die Objekte angezeigt werden. Dadurch kann die sichtbare Umgebung ein bestimmtes Aussehen haben, während Reflexionen und Lichtbrechungen auf eine andere Umgebung reagieren.  So erscheint der Hintergrund in der Abbildung unten beispielsweise schwarz, aber die reflektierte Umgebung ist ein HDR-Bild eines Gebäudes von Innen.
 
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*Normal environment (left) and reflected HDR sky environment (right).*
+*Normale Umgebung (links) und reflektierte HDRI-Himmelsumgebung (rechts).*
 
-### Reflected
+### Reflektiert
 {: #advanced-background-reflected-sky}
-A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
+Eine reflektierte Umgebung ist im gerenderten Bild nicht sichtbar, aber sie wird in glänzenden Objekten reflektiert.
 
-#### Sky
-Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### Himmel
+Objekte reflektieren den Himmel so, wie es in den Einstellungen für [Beleuchtung: Sonne und Himmel](sun-and-sky-tabs.html) festgelegt wurde.
 
-#### Custom
-Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-image), or [HDR](#hdr-background) background.
+#### Benutzerdefiniert
+Objekte reflektieren einen durch eine [Farbe oder einen Farbverlauf](#color-backgrounds), ein [Bild](#environment-image) oder ein [HDR-Bild](#hdr-background) definierten Hintergrund.
 
-#### Visible Background
-Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
+#### Sichtbarer Hintergrund
+Objekte reflektieren den sichtbaren Hintergrund, wie es in den Einstellungen für die [Umgebung](environment-tab.html) festgelegt wurde.
 
-### Refracted
+### Gebrochen
 {: #advanced-background-refracted-sky}
 
-#### Sky
-Objects refract the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### Himmel
+Objekte brechen den Himmel, wie es in den Einstellungen für [Beleuchtung: Sonne und Himmel](sun-and-sky-tabs.html) festgelegt wurde.
 
-#### Custom
-Objects refract a [Color or gradient](#color-and-gradient-backgrounds), [Image](#image), or [HDR](#hdr-background) background.
+#### Benutzerdefiniert
+Objekte brechen einen durch eine [Farbe oder einen Farbverlauf](#color-and-gradient-backgrounds), ein [Bild](#image) oder ein [HDR-Bild](#hdr-background) definierten Hintergrund.
 
-#### Visible Background
-Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
+#### Sichtbarer Hintergrund
+Objekte brechen den sichtbaren Hintergrund, wie es in den Einstellungen für die [Umgebung](environment-tab.html) festgelegt wurde.
 
-#### No Transparent Object Alpha
+#### Kein transparentes Objekt-Alpha
 {: #no-transparent-alpha-objects}
-Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
-If images will be pasted into the alpha channel, turn this setting off.
+Verhindert, dass der Alphakanal durch transparente Objekte hindurch sichtbar ist und verhindert die Zusammensetzung des Alphakanals durch transparente Objekte.
+Wenn Bilder in den Alpha-Kanal eingefügt werden, deaktivieren Sie diese Option.

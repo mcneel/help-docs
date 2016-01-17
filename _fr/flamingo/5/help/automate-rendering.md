@@ -1,122 +1,125 @@
 ---
+title: Rendu automatisé
 ---
 
-# Automated rendering
+# {{page.title}}
 
 
-## Batch rendering
+## Rendu par lots
 {: #batch-rendering}
-Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
+Les travaux par lots vous permettent d'envoyer plusieurs travaux pour calculer automatiquement le rendu. Un travail par lot peut définir une vue, une résolution et un nombre de passes. Les rendus par lot peuvent être lancés seuls ou envoyés à la [ferme de rendu](render-farm.html). Ouvrez la liste de lots et ajoutez les travaux dans cette liste. La liste des travaux par lots sera enregistrée dans le modèle.
 
-##### Where can I find this command?
+##### Où puis-je trouver cette commande ?
 
- * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
+ * Menus > Flamingo nXt 5.0 > Plus d'outils > Rendu par lot
 
-### Batch Render Dialog
+### Boîte de dialogue du rendu par lots
 {: #batch-render}
-Start by adding a job, then edit the properties to set up batch jobs.
+Commencez par ajouter un travail, puis modifiez les propriétés pour définir des travaux par lots.
 
-#### Add
-Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
+#### Ajouter
+Chaque travail par lots est basé sur une vue enregistrée dans le modèle. Cliquez sur l'élément Ajouter pour sélectionner dans une liste de vues dans le modèle.  Tous les autres éléments du menu sont activés lorsqu'un travail est ajouté et sélectionné.
 
-#### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+#### Supprimer
+Sélectionnez un travail par lots existant.  Puis utilisez Supprimer pour retirer le travail de la liste.
 
-#### Properties
-Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
+#### Propriétés
+Sélectionnez un travail par lots existant, puis utilisez Propriétés pour définir les [propriétés de rendu par lots](#batch-render-properties).  Les propriétés comprennent le nom du fichier, la résolution et le nombre de passes pour chaque travail.
 
-#### Move Up
-Move the viewport name up in the list.
+#### Vers le haut
+Déplacer le nom de la vue vers le haut dans la liste.
 
-#### Move Down
-Move the viewport name down in the list.
+#### Vers le bas
+Déplacer le nom de la vue vers le bas dans la liste.
 
-#### Batch List
+#### Liste du lot
 {: #batch-list}
-Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
+Affiche des informations sur la liste des vues à rendre. Double cliquez sur un travail existant, pour modifier les [propriétés de rendu par lots](#batch-render-properties).
 
-#### Rendering Status
-Displays pass, scan line, and elapsed time information about the progress of the batch process.
+#### Statut du rendu
+Affiche les informations concernant les passes, les lignes de balayage et le temps écoulé du traitement par lots.
 
-####  Stop Rendering
-Stops the batch process.
+####  Arrêter le rendu
+Arrête le traitement par lots.
 
-#### Render Batch Locally
+#### Rendre le lot localement
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
+Utilise uniquement l'ordinateur actuel pour calculer le rendu des travaux par lot. Les images rendues seront placées dans le dossier indiqué dans les [propriétés du travail par lots](#batch-render-properties).
 
-####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
+####  Envoyer le lot vers la ferme
+Envoie le travail de rendu par lots vers la [ferme de rendu](render-farm.html). Les travaux seront rendus par tous les clients disponibles de la ferme. Les images rendues seront placées dans le dossier partagé de la ferme.
 
-### Batch Render Properties
+### Propriétés du rendu par lot
 {: #batch-render-properties}
 
-#### Viewport to render
-Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
+#### Fenêtre à rendre
+Affiche la vue qui sera rendue lors de ce travail. Voir [Onglet Rendu, Fenêtre à rendre](render-tab.html#viewtorender).
 
-#### File name
-Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
+#### Nom du fichier
+Cliquez sur le bouton Enregistrer ![images/saveimageas.png](images/saveimageas.png) et indiquez le nom que vous voulez donner au fichier de l'image rendue.
 
-#### Alpha channel
-Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
+#### Canal Alpha
+Enregistrer l’image avec le canal alpha.  Voir la section [Utiliser un arrière-plan avec canal alpha](environment-tab.html#alpha) pour plus d'informations. 
 
-#### Use document settings
+#### Utiliser les paramètres du document
 {: #rendering-resolution}
-The default is to use the current document resolution settings to render.  If another resolution is needed, then uncheck this box and specify a resolution. See the [Render tab, Resolution](render-tab.html#resolution) topic for more details.
+Les paramètres de résolution du document actif sont utilisés par défaut pour le rendu. Si une autre résolution est nécessaire, désactivez cette case et indiquez la résolution. Voir la rubrique [Onglet Rendu, Résolution](render-tab.html#resolution) pour plus d'informations.
 
-#### Rendering Constraints Passes
+#### Passes de contraintes de rendu
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+Définir le nombre de passes nécessaires pour terminer le travail de rendu. Voir la rubrique [Passes](documentproperties-flamingo.html#number-of-passes) pour plus d'informations.
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 
 ## Animations
 {: #animation}
-There are two ways to create animations in Rhino.  Animations can be configured using [Rhino's Animation toolbar](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm) or using the [Bongo](http://bongo.rhino3d.com/) animation plugin.
+Deux options sont disponibles pour créer des animations dans Rhino.  Les animations peuvent être configurées en utilisant la [barre d'outils Animation de Rhino](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm) ou en utilisant le module d'animation [Bongo](http://bongo.rhino3d.com/).
 
-##### To submit an animation job to the render farm
-1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+##### Pour envoyer un travail d'animation vers la ferme de rendu
+1. Lancez la commande [FlamingoNXtRenduAutomatique](automate-rendering.html#flamingonxtautomaterender).
+1. Dans la boîte de dialogue Configurer le rendu automatique, sélectionnez **Rendu vers la ferme**.
 &#160;
-Specify theJob name,and click theOKbutton.
+Indiquez le nom d'un travail et cliquez sur le bouton Accepter.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Définissez un type d'animation dans la barre d'outils Configuration de l'animation de Rhino. Sélectionnez rendu entier comme méthode de capture.
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+Enregistrez l'animation à partir de la barre d'outils Animation. Les travaux de rendu seront envoyés vers la ferme de rendu.
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+Lorsque les travaux sont terminés, lancez à nouveau la commande FlamingoNXtRenduAutomatique et sélectionnez tous les travaux de la boîte de dialogue.
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+Cliquez sur le bouton Copier les fichiers sélectionnés vers le dossier de destination indiqué et sélectionnez un dossier où copier toutes les images rendues.
 
 
-## FlamingoNXtAutomateRender command
+## Commande FlamingoNXtRenduAutomatique
 {: #flamingonxtautomaterender}
 
 
-## Configure Automated Render Command
+## Configurer la commande de rendu automatique
 
-### Enabled
-Redirects the default **Render** command to use the **Render Farm**.
+### Activé
+La commande **Rendu** par défaut utilise maintenant automatiquement la **ferme de rendu**.
 
-### Use default render dialog
-Resets the **Render** command to render directly instead of to the farm.
+### Utiliser la fenêtre de rendu par défaut
+La commande **Rendu** effectuera le rendu directement au lieu de l'envoyer vers la ferme.
 
-### Number of render passes to render
-Specifies the number of render passes.
+### Nombre de passes de rendu
+Indique le nombre de passes de rendu.
 
-### Render to farm
-Redirects the **Render** command to render to the farm.
+### Rendu vers la ferme
+La commande **Rendu** enverra directement le rendu vers la ferme.
 
-### Job name
-Specifies the **Render Farm**  [Job name](automate-rendering.html#job-name).
+### Nom du travail
+Définit le [nom du travail](automate-rendering.html#job-name) dans la **ferme de rendu**.
 
-## Render constraints
+## Contraintes de rendu
 
-### Number of render passes to render
-Specifies the [number of passes](documentproperties-flamingo.html#number-of-passes).
+### Nombre de passes de rendu
+Définit le [nombres de passes](documentproperties-flamingo.html#number-of-passes).
 
-### Save alpha channel
-Saves the [alpha channel](render-window.html#save-with-alpha-channel) background.
+### Enregistrer le canal alpha
+Enregistre l'arrière-plan avec [canal alpha](render-window.html#save-with-alpha-channel).
 -->

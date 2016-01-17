@@ -49,10 +49,11 @@ Libraries 명령은 재질, 텍스처, 환경 라이브러리를 관리하는 �
 ![images/library_default.png](images/library_default.png) 메뉴 아래 표시된 라이브러리 기본값을 변경하려면 ![images/options.png](images/options.png)라이브러리 옵션을 사용합니다.
 
 ##### 이 명령은 어디에서 찾을 수 있습니까?
-라이브러리 옵션 명령은 세 가지 방법으로 사용할 수 있습니다. <!-- TODO: Where is the third place? -->
+라이브러리 옵션 명령을 찾는 방법에는 세 가지가 있습니다.
 
  1. 라이브러리 패널의 오른쪽 위의 ![images/library_default.png](images/library_default.png) 라이브러리 탭 > 설정...
  1. 메뉴 > 도구 메뉴 > 옵션 > 라이브러리.
+ 1. 메뉴 > 패널 > 라이브러리
 
 
 ### 렌더링 콘텐츠 표시

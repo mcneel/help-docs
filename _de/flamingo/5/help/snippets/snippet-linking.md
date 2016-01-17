@@ -1,14 +1,14 @@
 
-#### Linking options
-Specifies how the image file will be linked to materials.
+#### Verknüpfungsoptionen
+Definiert, wie die Bilddatei mit den Materialien verknüpft wird.
 
-#### Linked
-Creates a link to the image file. The file must be present on the local disk.
+#### Verknüpft
+Erzeugt einen Link zur Bilddatei. Die Datei muss auf dem lokalen Datenträger vorhanden sein.
 
-#### Embedded
-Embeds the image information in the current file.
+#### Eingebettet
+Bettet die Bildinformationen in die aktuelle Datei ein.
 
-#### Linked and embedded
-If the bitmap is found on the disk before rendering, the external file is used. If the image cannot be found on the disk, the internal definition will be used.
+#### Verknüpft und eingebettet
+Wenn sich die Bitmap vor dem Rendern auf dem Datenträger befindet, wird die externe Datei verwendet. Wenn die Datei nicht auf dem Datenträger gefunden wird, wird die interne Definition verwendet.
 
-Note: To see changes in linked or linked and embedded files go to the Flamingo nXt menu, click Utilities and then click Clear bitmap cache.
+Hinweis: Zur Anzeige von Änderungen in verknüpften oder verknüpften und eingebetteten Dateien gehen Sie im Flamingo-nXt-Menü auf *Weitere Werkzeuge* und wählen Sie die Option *Bitmap-Cache leeren*.

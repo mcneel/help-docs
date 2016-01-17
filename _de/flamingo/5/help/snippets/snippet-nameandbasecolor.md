@@ -1,24 +1,24 @@
-### Color
-Controls the local color for the material. All materials have a base color. [More about color...](select-color.html) 
+### Farbe
+Steuert die lokale Farbe für das Material. Alle Materialien verfügen über eine Grundfarbe. [Mehr über Farben ...](select-color.html) 
 
-#### Color swatch selector
-Click the color swatch to select colors from the [Select Color](select-color.html) dialog box.
+#### Farbenrad
+Klicken Sie in das Farbenrad, um im Dialogfenster [Farbe auswählen](select-color.html) eine Farbe auszuwählen.
 
-### Preview
-The preview image shows the material as it will appear on objects in the model. The style and size of the preview are part of the material definition.
- **Note** : Set the default size for the preview object in [Options: Flamingo nXt](options-flamingo.html).
+### Vorschau
+Das Vorschaubild zeigt das Material, so wie es auf den Objekten im Modell erscheinen wird, an. Stil und Größe der Vorschau sind Teil der Materialdefinition.
+ **Hinweis** : Definieren Sie die Standardgröße für das Vorschauobjekt unter [Optionen: Flamingo nXt](options-flamingo.html).
 ![images/previewer.png](images/previewer.png)
 
->Right-click the material preview pane to specify options that control the preview's appearance:
+>Klicken Sie mit der rechten Maustaste auf das Materialvorschaufeld, um die Optionen festzulegen, mit denen die Darstellung der Vorschau eingestellt wird.
 
-#### Sphere
-Sets the preview object to a sphere.
+#### Kugel
+Definiert das Vorschauobjekt als Kugel.
 
-#### Box
-Sets the preview object to a box with a width equaling the sphere radius.
+#### Quader
+Definiert das Vorschauobjekt als Quader, mit einer Breite, die dem Kugelradius gleicht.
 
-#### Plane
-Sets the preview object to a plane with a width equaling the sphere radius.
+#### Ebene
+Definiert das Vorschauobjekt als Ebene, mit einer Breite, die dem Kugelradius gleicht.
 
-#### Sphere radius
-Sets the preview sphere radius and box and plane width. Set the size to approximate the size of the objects to which the material will be assigned to help visualize the material.
+#### Kugelradius
+Definiert Vorschaukugelradius und Quader- und Ebenenbreite. Stellen Sie als Hilfe für die Visualisierung des Materials die Größe so ein, dass sie der Größe der Objekte ähnelt, denen das Material zugeordnet wird.

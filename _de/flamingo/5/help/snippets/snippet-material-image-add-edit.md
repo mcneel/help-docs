@@ -1,9 +1,10 @@
-##### To add a new image:
- * Click on the *(empty - Click to assign)* text and then select and image in the file dialog.
- * Or, click the Edit Image ![images/edit_image.png](images/edit_image.png) button and select an images in the file dialog.
+##### Hinzufügen eines neuen Bilds:
+ * Klicken Sie auf *(leer - klicken zum Zuordnen)* und wählen Sie dann ein Bild im Dateiauswahldialog.
+ * Oder klicken Sie auf die Schaltfläche zur Bildbearbeitung ![images/edit_image.png](images/edit_image.png) und wählen Sie ein Bild im Dateiauswahldialog.
 
-##### To edit an how an image effects a surface:
- * Click on the name of the image in the list. This will present the [Image Properties](material-image-properties.html) Dialog.  To get back to the main material, click on the material name in the [Material Editor](material-editor.html#settings)
+##### Einstellung der Art, wie ein Bild eine Fläche beeinflusst:
+ * Klicken Sie auf den Namen des Bilds in der Liste. Dadurch wird das Dialogfenster [Bildeigenschaften](material-image-properties.html) geöffnet.  Um zum Hauptmaterial zurückzukehren, klicken Sie auf den Namen des Materials im [Materialeditor](material-editor.html#settings).
 
-##### To replace an image with a different image:
-  * Click the Edit Image ![images/edit_image.png](images/edit_image.png) button and select an images in the file dialog.
+##### Ersetzen eines Bilds mit einem anderen Bild:
+  * Klicken Sie auf die Schaltfläche zur Bildbearbeitung ![images/edit_image.png](images/edit_image.png) und wählen Sie ein Bild im Dateiauswahldialog.
+  

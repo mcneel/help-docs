@@ -3,8 +3,7 @@ title: Flamingo Environment
 ---
 
 # ![images/environment.svg](images/environment.svg) {{page.title}}
-<!-- TODO: Is it "... environments in Rhino" or "in Flamingo" in the following sentence? -->
-There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
+There are many types of [environments in Rhino](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm). This topic will address the Flamingo Environment type.
 
 The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
 
@@ -30,13 +29,11 @@ There are three major effects of environment in a rendering:
 >[Reflective Background](#advanced-background-reflected-sky)
 >[Refractive Background](#advanced-background-refracted-sky)
 
-<!-- TODO: Does the following sentence make sense? Is there something missing? -->
-The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
+The Visible Background is the basic background color of the scene.  The visible background is in the general properties panel. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
 
 #### Intensity
 {: #background-intensity}
-<!-- TODO: Color range normally is from 0-255... -->
-Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
+Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 255 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
 
 #### Background type
 {: #background-type}
@@ -46,7 +43,6 @@ Specifies the color scheme that will fill the background of the rendered image. 
 > [Solid and gradient color](#color-backgrounds)
 > [Image](#environment-image)
 > [HDR and planar HDR images](#hdr-background)
-
 
 ## Sky Background
 {: #environment-sky}
@@ -119,8 +115,8 @@ These are angle readouts of the Top, Middle, and Bottom colors in the current gr
 
 ## Image Background
 {: #environment-image}
-<!-- TODO: "A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image." doesn't sound very 2015-ish... -->
-A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+
+A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A photograph, a scanned artwork, or an image created with an paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
 
 ![images/background-image-001.png](images/background-image-001.png)
 *A planar image set as a background.*
@@ -139,9 +135,7 @@ Select one of three image projections from the drop-down control:
 
 Each projection method has its own set of controls for positioning the image.
 
-<!-- TODO: The hierarchy of the following section is inconsistent. "Planar Projection", "Cylindrical Projection" and "Spherical Projection" should be parent elements of the  respective following topics like "Angle from View", "Image Placement Control" etc. -->
-
-#### Planar Projection
+### Planar Projection
 {: #planar}
 Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
 
@@ -174,7 +168,7 @@ Specifies the size of the background image in the 0 - 1.0 scale of the view widt
 #### X Offset / Y Offset
 Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
 
-#### Cylindrical Projection
+### Cylindrical Projection
 {: #cylindrical}
 Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
 
@@ -188,7 +182,6 @@ The angle from view checkbox will keep the image in sync with the current view. 
 Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
-<!--TODO: Image doesn't show up in file. -->
 
 * The control shows the environment in plan view.
 * The dark grey cone of vision shows the last coordinates in the current perspective view.
@@ -221,7 +214,7 @@ Specifies the vertical angles of the image based on horizontal groundplane direc
 ####  Get Angles From View button
 Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
 
-#### Spherical Projection
+### Spherical Projection
 {: #spherical}
 Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
 

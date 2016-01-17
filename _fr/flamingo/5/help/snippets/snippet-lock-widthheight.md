@@ -1,3 +1,3 @@
 
-#### Lock
-Maintains the ratio between the Width and Height.
+#### Verrouiller
+Conserve les proportions entre la Largeur et la Hauteur.

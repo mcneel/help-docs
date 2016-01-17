@@ -49,10 +49,11 @@ Environments can be saved in the library.  This lets Environment settings to be 
 Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
 
 ##### Where can I find this command?
-There are three places to find the Libraries Options command. <!-- TODO: Where is the third place? -->
+There are three places to find the Libraries Options command.
 
  1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
  1. Menus > Tools pulldown > Options > Libraries.
+ 1. Menus > Panels > Libraries.
 
 
 ### Show render content

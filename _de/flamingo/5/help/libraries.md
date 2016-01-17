@@ -1,73 +1,75 @@
 ---
+title: Bibliotheken-Panel
 ---
 
-# ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
-The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
+# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+Mit dem Befehl Bibliotheken kann das Bibliotheken-Panel geöffnet werden, um Material-, Textur- und Umgebungsbibliotheken zu verwalten.
 
-Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
+Renderinhalt kann in Dateien gespeichert werden, die dann externe Bibliotheken erzeugen und zwischen Modellen verwendet werden können. Inhalt kann auch in andere Rhino-Sitzungen oder einen Ordner gezogen werden.
 
-Color swatches can be dragged and dropped in the same way.
+Farbräder können auf die gleiche Art und Weise per Drag&Drop abgelegt werden.
 
-The Libraries panel displays a view into the content folders you have set up. Use this to drag and drop content into the model or to store document content to a location outside the model.
+Im Bibliotheken-Panel werden die Ordner mit den angelegten Bibliotheken angezeigt. Sie können damit Inhalt per Drag&Drop in das Modell ziehen oder Dokumenteninhalt an einem Ort außerhalb des Modells speichern.
 
-Materials are simply files on your hard drive.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
+Materialien sind Dateien auf Ihrer Festplatte.  Bibliotheksordner sind normale Windows-Ordner.  Sie können diese Ordner kopieren, einfügen und verschieben, wie Sie es mit jedem anderen Windows-Ordner tun würden.
 
-Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
+In der Adresszeile im oberen Bereich des Bibliothekenreiters können Sie den Ort eines Ordners auf Ihrem Computer eingeben.
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+Um wieder schnell zurück zum Standardordner zu gelangen, verwenden Sie die Schaltfläche mit dem Schraubenschlüssel im oberen rechten Bereich. ![images/library_default.png](images/library_default.png)
 
-#### Organizing Libraries
+#### Organisation der Bibliotheken
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+Bibliotheken sind einfache Dateien, die Sie kopieren, einfügen und in Ihren Ordnern verschieben können. Verwenden Sie den Windows Explorer, um die Ordner und Dokumente zu bearbeiten. In den [Bibliothekseinstellungen](#settings) ![images/library_default.png](images/library_default.png) können Sie festlegen, welche Ordner standardmäßig angezeigt werden.
 
-## Materials Library
+## Materialbibliothek
 {: #material}
-Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
+Materialien sind Dateien auf Ihrer Festplatte.  Wenn ein Material einem Modell zugewiesen wurde, wird es im Modell gespeichert.  Änderungen am zugewiesenen Material haben keinen Einfluss auf das Originalmaterial auf der Festplatte.
 
-Drag and drop materials to assign materials to the model. Materials can be assigned to:
+Materialien können einem Modell per Drag&Drop zugewiesen werden. Für die Zuweisung eines Materials gibt es mehrere Möglichkeiten:
 
-#### Layer Assignment
-Drag a material directly onto the layer name in the Layers Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
+#### Zuweisung nach Ebene
+Ziehen Sie dazu ein Material direkt auf den Ebenennamen im Ebenenpanel. Diese Methode ist empfehlenswert, da so allen Objekten auf der Ebene das entsprechende Material zugewiesen wird. Wenn das Material später geändert werden soll, kann einfach ein neues Material auf der Ebene abgelegt werden.
 
-#### Object Assignment
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
+#### Zuweisung nach Objekt
+Ziehen Sie dazu ein Material direkt auf ein Objekt in einem beliebigen Ansichtsfenster. Dadurch wird die Zuweisung *nach Ebene* überschrieben und das Material *nach Objekt* zugewiesen.
 
-#### Block Assignment
-Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
+#### Zuweisung nach Block
+Ziehen Sie dazu ein Material auf einen Block. Dadurch wird allen Objekten des Blocks mit der Definition *Nach übergeordnet* dieses Material zugewiesen.  Alle Objekte im Block mit einer Materialquelle *Nach übergeordnet* übernehmen das Material des Blocks.
 
-## Plant Library
+## Pflanzenbibliothek
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+Im Standard-Bibliotheksordner gibt es einen Pflanzenordner.  Von hier aus können Sie Pflanzen ins Modell einfügen.  Wenn eine Pflanze im Modell platziert wird, wird sie im Modell gespeichert. Änderungen an einer zugewiesenen Pflanze hat keinen Einfluss auf die Originalpflanze auf der Festplatte. Pflanzen können per Drag&Drop in ein Ansichtsfenster im Modell platziert werden. Weitere Informationen finden Sie im Hilfethema zu [Pflanzen](plants.html).
 
-## Environment Library
+## Umgebungsbibliothek
 {: #environment}
-Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
+Umgebungen können in der Bibliothek gespeichert werden.  Dadurch können Umgebungseinstellungen von einem Modell in ein anderes kopiert werden.  Weitere Infos finden Sie im Hilfethema zu [Umgebungen](environment-tab.html).
 
-## Library Settings
+## Bibliothekseinstellungen
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+In den ![images/options.png](images/options.png) Bibliotheksoptionen können die Standardeinstellungen der Bibliothek im Menü ![images/library_default.png](images/library_default.png) eingestellt werden.
 
-##### Where can I find this command?
-There are three places to find the Libraries Options command.
+##### Wo befindet sich dieser Befehl?
+Es gibt drei Möglichkeiten zum Öffnen der Bibliotheksoptionen.
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
- 1. Menus > Tools pulldown > Options > Libraries.
- 
+ 1. Bibliotheken-Reiter > ![images/library_default.png](images/library_default.png) im oberen rechten Bereich des Bibliotheken-Panels > Einstellungen...
+ 1. Rhino-Menü > Werkzeuge > Optionen > Bibliotheken
+ 1. Menü > Panels > Bibliotheken.
 
-### Show render content
-Use this to show or hide the default render content location.
 
-#### Use default library location (My Documents)
-By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
+### Renderinhalt anzeigen
+Mit dieser Option können Sie den Standardordner des Renderinhalts anzeigen oder ausblenden.
 
-#### Custom
-Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
+#### Standardmäßige Bibliotheksstandorte verwenden (Eigene Dokumente)
+Die [Inhaltsbibliotheken](libraries.html) befinden sich standardmäßig in einem Unterordner des Ordners *Eigene Dokumente*.
 
-##### Browse button
-Open file browser to specify file.
+#### Benutzerdefiniert
+Zur Einstellung eines benutzerdefinierten Orts für die [Bibliotheken](libraries.html).  Dadurch wird der Standardordner der [Inhaltsbibliotheken](libraries.html) für diesen Computer geändert.
 
-#### Show "Documents" folder
-In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
+##### Schaltfläche Durchsuchen
+Öffnet einen Dateibrowser, um die Datei anzugeben.
 
-#### Show custom folders
-In the [Libraries panel](libraries.html), designated custom folders will display in the menu.
+#### Den Ordner "Dokumente" anzeigen
+Im [Bibliotheken-Panel](libraries.html) wird der angegebene Dokumentenordner im Menü angezeigt.
+
+#### Benutzerdefinierte Ordner anzeigen
+Zur Anzeige benutzerdefinierter Ordner im Menü des [Bibliotheken-Panels](libraries.html).

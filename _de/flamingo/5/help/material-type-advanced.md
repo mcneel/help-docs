@@ -1,304 +1,306 @@
 ---
+title: Erweiterte Materialeigenschaften
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Advanced Material Properties
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
-Flamingo has both [Simple Material](material-type-simple.html) Types and an Advanced Material type.  The Advanced Material contains the complete series of property groups for a material.  Use the Advanced Material type for the maximum flexibility and control of a material.
+Flamingo hat sowohl [einfache](material-type-simple.html) als auch erweiterte Materialtypen.  In den erweiterten Materialeinstellungen stehen alle Eigenschaftsgruppen für ein Material zur Verfügung.  Diese können verwendet werden, um die maximale Flexibilität und Kontrolle über ein Material zu erhalten.
 
-The complete set of property groups in the Advanced Material are:
+Zu den einstellbaren Eigenschaften gehören:
 
 > [Name](#name)
-> [Material Procedure](#procedures)
-> [Advanced Material Properties](#advanced-materials-properties)
-> [Reflective Finish](#reflective-finish-and-highlight)
-> [Transparency Properties](#transparency)
-> [Procedural Textures](#bump-patterns)
-> [Bitmap Textures](#textures)
-> [Notes](#notes)
+> [Materialprozeduren](#procedures)
+> [Erweiterte Materialeigenschaften](#advanced-materials-properties)
+> [Reflektierendes Finish](#reflective-finish-and-highlight)
+> [Transparenzeigenschaften](#transparency)
+> [Prozedurale Texturen](#bump-patterns)
+> [Bitmap-Texturen](#textures)
+> [Bemerkungen](#notes)
 
-## Material Name
+## Materialname
 {: #name}
-This is the name of the material in the Rhino model.  Materials are stored in the Rhino model. That means a with the same name in the library or a different model will not be affected by edits to the material in the current model. To use any material in another model it must be exported to the [Library](libraries.html) first. The Name of the material will also serve as its exported file name.
+Der Name des Materials im Rhino-Modell.  Materialien werden im Rhino-Modell gespeichert. Das bedeutet, dass derselbe Name in verschiedenen Modellen für unterschiedliche Materialien verwendet werden kann. Zur Verwendung eines Materials in einem anderen Modell muss es zuerst in die [Bibliothek](libraries.html) exportiert werden. Der Name des Materials dient beim Export als Dateiname.
 
-## Material Procedures
+## Materialprozeduren
 {: #procedures}
-The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For standard materials, there will be only one component in the list: Base.
+Der Prozeduren-Baum kombiniert ein oder mehrere Materialien unter Verwendung einer Reihe von Regeln zur Interaktion der Materialien. Das Verzeichnis zeigt die Komponenten an, die zur Erzeugung dieses Materials verwendet werden, und erlaubt Ihnen, Prozeduren hinzuzufügen. Einfache Materialien haben nur eine Komponente in der Liste: Basis.
 
-Each procedure combines two "child" materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include [Angular Blend](procedural-materials.html#angular-blend), [Blend](procedural-materials.html#blend), [Marble](procedural-materials.html#marble), [Granite](procedural-materials.html#granite), [Tile](procedural-materials.html#tile), and [Wood](procedural-materials.html#wood).
+Jede Prozedur besteht aus zwei untergeordneten Materialien, wobei eine spezifische Methode verwendet wird. Jedes dieser untergeordneten Materialien kann selbst aus einer Prozedur bestehen und zwei eigene untergeordnete Materialien besitzen. Auf diese Weise können aus einfacheren Komponenten sehr komplizierte Materialien geformt werden. Zu den Prozeduren zur Kombination von Materialien gehören: [Winkelüberblendung](procedural-materials.html#angular-blend), [Überblendung](procedural-materials.html#blend), [Marmor](procedural-materials.html#marble), [Granit](procedural-materials.html#granite), [Kachel](procedural-materials.html#tile) und [Holz](procedural-materials.html#wood).
 
-As an example, the [Marble](procedural-materials.html#marble) Procedure combines a Base material and Vein Material in a swirling pattern.
+Eine [Marmor](procedural-materials.html#marble)-Prozedur beispielsweise kombiniert ein Grundmaterial und ein Adermaterial in einem verwirbelten Muster.
 
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
-##### To add a procedure
-1. Right-click on Base the Procedures window.
-1. On the menu, click a procedure type.
-  * [Base](procedural-materials.html#base)
-  * [Angular Blend](procedural-materials.html#angular-blend)
-  * [Blend](procedural-materials.html#blend)
-  * [Granite](procedural-materials.html#granite)
-  * [Marble](procedural-materials.html#marble)
-  * [Tile](procedural-materials.html#tile)
-  * [Wood](procedural-materials.html#wood)
+##### Eine Prozedur hinzufügen
+1. Klicken Sie im Prozeduren-Fenster mit der rechten Maustaste auf den Eintrag *Basis*.
+1. Klicken Sie im Menü auf einen Prozedurentyp.
+  * [Basis](procedural-materials.html#base)
+  * [Winkelüberblendung](procedural-materials.html#angular-blend)
+  * [Überblendung](procedural-materials.html#blend)
+  * [Granit](procedural-materials.html#granite)
+  * [Marmor](procedural-materials.html#marble)
+  * [Kachel](procedural-materials.html#tile)
+  * [Holz](procedural-materials.html#wood)
 
-##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+##### Eine Prozedur entfernen
+ 1. Klicken Sie im Prozeduren-Fenster mit der rechten Maustaste auf den Namen einer Prozedur.
+ 2. Klicken Sie im Menü auf **Entfernen**.
 
-## Advanced Material Properties
+## Erweiterte Materialeigenschaften
 {: #advanced-materials-properties}
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Reflective Finish and Highlight
+#### Reflektierendes Finish und Glanzlicht
 {: #reflective-finish-and-highlight}
-These settings vary the way a material reflects light and objects. The highlight effect is normally associated with light areas on glossy materials where the light hits the object. The reflective effect normally defined with a more mirror like reflections that reflects the objects in the rest of the the scene. It is important to now that chrome and other reflective materials do not make an interesting image unless they have something to reflect. When working with reflective materials, also think about an interesting environment and other objects for the reflective materials to reflect.
- Note : To activate these settings, the Intensity value must be greater than zero.
+Diese Einstellungen variieren die Art und Weise, wie ein Material Licht und Objekte reflektiert. Der Glanzlichteffekt wird normalerweise mit beleuchteten Flächen auf glänzenden Materialien in Verbindung gebracht, wo das Licht auf das Objekt trifft. Der reflektierende Effekt hat normalerweise spiegelartige Reflexionen zur Folge, die Objekte in der Szene reflektieren. In diesem Zusammenhang wichtig ist die Tatsache, dass Chrom und andere reflektierende Materialien nur dann ein interessantes Bild ergeben, wenn es etwas gibt, das sich darin spiegelt. Denken Sie daher bei der Arbeit mit reflektierenden Materialien auch an eine interessante Umgebung und andere Objekte, die vom reflektierenden Material gespiegelt werden können.
+ Hinweis: Um diese Einstellungen zu aktivieren, muss der Intensitätswert größer als Null sein.
 
-#### Highlight color
+#### Glanzlichtfarbe
 {: #highlight-color}
-Highlight color is the color that material adds to reflections. There are three settings for this control, White, Metallic and Custom
+Die Glanzlichtfarbe ist diejenige, die ein Material zu Reflexionen hinzufügt. Für diese Steuerung gibt es drei Einstellungsmöglichkeiten: weiß, metallisch und benutzerdefiniert.
 
-#### White
-Materials with a white highlight will not add any color to reflections.  Materials with a white highlight are common and tend to resemble standard paint, plastics or a mirror finish.
+#### Weiß
+Materialien mit weißer Glanzlichtfarbe fügen der Reflexion keine Farbe hinzu.  Dadurch können Materialien wie Standardfarbe, Plastik oder Spiegelflächen simuliert werden.
 
 ![images/3-plastic.png](images/3-plastic.png)
 
-#### Metallic
+#### Metallisch
 {: #metallic}
-Sets the highlight color to match the base color. Many metal finishes normally use the base color as the reflective color.  This metallic options use the material based color as a reflective color.
+Stellt die Glanzlichtfarbe so ein, dass sie mit der Grundfarbe übereinstimmt. Oftmals wird dabei die Grundfarbe als Reflexionsfarbe verwendet.  Für die Option *Metallisch* wird die Materialfarbe als Reflexionsfarbe verwendet.
 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
-#### Custom
-In some very specialized finishes, the reflection off the object will be a different color then the base color fo the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
+#### Benutzerdefiniert
+Für einige sehr spezielle Finishs hat die Reflexion des Objekts eine andere Farbe als die Grundfarbe des Materials.  Dies gilt normalerweise für Materialien, die aus mehreren Ebenen bestehen. Mit der Option *Benutzerdefiniert* kann eine beliebige Farbe für das Glanzlicht festgelegt werden. Verwenden Sie den [Farbwähler](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) zur Auswahl einer Reflexionsfarbe.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
-#### Intensity
+#### Intensität
 {: #intensity}
-Adjusts the strength of the highlight. Lower values tend to make glossy objects that reflect light, but not surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
+Zur Anpassung der Intensität des Glanzlichts. Niedrigere Werte haben meist glänzende Objekte zur Folge, die zwar Licht, nicht aber die umgebenden Objekte reflektieren. Höhere Werte erhöhen Größe und Intensität des Glanzlichts und der Reflexionen.  Werden die Werte sehr hoch angesetzt, wird das Material spiegelartig, wobei andere Objekte und die Umgebung reflektiert werden.
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
 #### Fresnel
 {: #fresnel}
-Pronounced (fray-NELL) Controls the reflectivity of opaque materials, a phenomenon known as [Fresnel reflection of conductors](http://en.wikipedia.org/wiki/Fresnel_equations) .The Fresnel setting &#160;models the tendency of many materials to become more specular (mirror-like) at glancing angles while retaining more matte properties at perpendicular viewing angles.
-Reduce the value for very dark materials to prevent too much reflection.&#160;Increase the value for materials like varnished wood, where the Fresnel reflectivity is more pronounced.
+Aussprache: "Fre-nell". Damit wird das Reflexionsvermögen von undurchsichtigen Materialien gesteuert, einem Phänomen, das als [Fresnel-Reflexion](https://de.wikipedia.org/wiki/Fresnelsche_Formeln) bekannt ist. Mit der Fresnel-Einstellung werden viele Materialien mit zunehmendem Blickwinkel (d.h. je schräger man schaut) reflektierender (spiegelähnlicher) und mit abnehmendem Blickwinkel (d.h., je senkrechter man darauf schaut) matter.
+
+Reduzieren Sie den Wert für sehr dunkle Materialien, um eine zu große Reflexion zu verhindern. Erhöhen Sie den Wert für Materialien wie lackiertes Holz, bei denen die Fresnel-Reflexion deutlicher ist.
 
 ![images/highlightfresnel.png](images/highlightfresnel.png)
 
-#### Sharpness
+#### Schärfe
 {: #sharpness}
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area.  When applied to higher intensity reflectivity, it will make reflections blurry (out of focus) or sharp (in focus).
+Definiert die Größe des Glanzlichts. Je kleiner die Zahl, desto breiter das Glanzlicht; größere Zahlen konzentrieren das Glanzlicht auf einen kleineren Bereich.  Bei Anwendung auf ein Reflexionsvermögen mit höherer Intensität werden die Reflexionen unscharf oder scharf.
 
 ![images/highlightsharpness.png](images/highlightsharpness.png)
 
-#### Type
+#### Typ
 {: #type}
-Changes how reflections are calculated when artificial light sources are reflected. Reflections are calculated using two methods: *raycasting* and *highlight*. These two methods will eventually produce identical results; however, in certain situations, you will find that one method gets a good result more quickly. For example, objects might not look good because a light source reflection hides the material's appearance.
+Ändert die Art und Weise, wie Reflexionen berechnet werden, wenn künstliche Lichtquellen reflektiert werden. Reflexionen werden anhand von zwei Methoden berechnet: *Raycasting* und *Glanzlicht*. Diese zwei Methoden erzeugen identische Resultate; in gewissen Situationen werden Sie jedoch feststellen, dass eine der beiden Methoden schneller ein gutes Resultat erzeugt. Es kann beispielsweise vorkommen, dass Objekte nicht gut aussehen, weil die Reflexion einer Lichtquelle die Darstellung des Materials verdeckt.
 
-In the illustration below for Balanced type, the object on the left has a bright white reflection that overpowers the material's appearance.
+In der Abbildung unten des Typs *Ausgeglichen* weist das Objekt auf der linken Seite eine helle weiße Reflexion auf, die die Darstellung des Materials überdeckt.
 
-Sometimes interior renderings where the light sources are small can have a spotty artifact on surfaces. The surfaces exhibiting the artifact typically have blurry reflections. Changing the reflective type to [Glossy](advanced-material-properties-main.html#glossy), [No Light Source Reflections](advanced-material-properties-main.html#no-light-source-reflection), or [Monte Carlo](advanced-material-properties-main.html#monte-carlo) can help alleviate this problem.
+Innen-Renderings mit kleinen Lichtquellen können fleckige Artefakte auf Flächen zur Folge haben. Die Flächen mit den Artefakten weisen normalerweise unscharfe Reflexionen auf. Durch Änderung des Reflextionstyps auf [Glänzend](advanced-material-properties-main.html#glossy), [Keine Reflexionen von Lichtquellen](advanced-material-properties-main.html#no-light-source-reflection) oder [Monte Carlo](advanced-material-properties-main.html#monte-carlo) kann das Problem gelindert oder behoben werden.
 
-#### Balanced
+#### Ausgeglichen
 {: #balanced}
-Automatically balances raycasting and highlight based on the Sharpness setting. Both the actual reflection of the light source and the artificial highlight are calculated.
+Mit dieser Option werden Raycasting und Glanzlicht basierend auf der Einstellung für die Schärfe automatisch ausgeglichen. Dabei werden sowohl die tatsächliche Reflexion der Lichtquelle als auch das künstliche Glanzlicht berechnet.
 
 ![images/highlightbalanced.png](images/highlightbalanced.png)
 
-#### Glossy
+#### Glänzend
 {: #glossy}
-Increases the blurriness of the highlight and prevents raycasting. No object or light reflections are calculated, therefore performance is increased, and artifacts for materials with very blurry reflections are prevented. Some reflective subtlety may be lost.
+Erhöht die Unschärfe des Glanzlichts und vermeidet Raycasting. Es werden weder Objekt- noch Lichtreflexionen berechnet. Daher kann die Leistung verbessert und Artefakte für Materialien mit sehr unscharfen Reflexionen verhindert werden. Allerdings kann es zu einem gewissen Verlust im Detailgrad der Reflexionen führen.
 
 ![images/highlightglossy.png](images/highlightglossy.png)
 
 #### Monte Carlo
 {: #monte-carlo}
-Only raycasting is used to calculate reflections of light sources. The raycasting is initially very noisy and gradually converges to the correct solution. It is most useful when the highlight is not blurry.
+Es wird nur Raycasting verwendet, um Reflexionen von Lichtquellen zu berechnen. Das Raycasting enthält anfänglich viele Störungen und nähert sich stufenweise der richtigen Lösung. Es ist sehr hilfreich, wenn das Glanzlicht nicht unscharf ist.
 
 ![images/highlightmontecarlo.png](images/highlightmontecarlo.png)
 
-#### No Highlight
+#### Kein Glanzlicht
 {: #no-highlight}
-Only raycasting is used to calculate reflections of light sources. This is useful when light sources are large and the material is not blurry; in which case, the highlight calculation can take a long time. The light source reflections gradually converge.
+Es wird nur Raycasting verwendet, um Reflexionen von Lichtquellen zu berechnen. Dies ist hilfreich, wenn die Lichtquellen groß sind und das Material nicht unscharf ist. In diesem Fall kann die Glanzlichtberechnung sehr lange dauern. Die Reflexionen der Lichtquellen laufen stufenweise zusammen.
 
 ![images/highlightnohighlight.png](images/highlightnohighlight.png)
 
-#### No Light Source Reflection or No Highlight
+#### Keine Reflexionen von Lichtquellen oder Kein Glanzlicht
 {: #no-light-source-reflection-and-no-highlight}
-Excludes all reflections of artificial light sources and the artificial highlight effect. Object reflections are still calculated.
+Schließt alle Reflexionen von künstlichen Lichtquellen und den künstlichen Glanzlichteffekt aus. Die Objektreflexionen werden berechnet.
 
 ![images/highlightnohighlightreflection.png](images/highlightnohighlightreflection.png)
 
-#### No Light Source Reflections
+#### Keine Reflexionen von Lichtquellen
 {: #no-light-source-reflection}
-Excludes raycast reflections of light sources, only the highlight is used. This is sometimes useful for preventing speckle artifacts if the material is blurry and the scene contains small, bright, light sources.
+Schließt Raycasting-Reflexionen von Lichtquellen aus. Es wird nur das Glanzlicht verwendet. Dies ist manchmal hilfreich, um Fleckenartefakte zu umgehen, wenn das Material unscharf ist und die Szene kleine, helle Lichtquellen enthält.
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
-## Transparency
-{: transparncy}
-The Transparency settings control&#160;properties associated with light passing through a material.
+## Transparenz
+{: #transparency}
+Die Einstellung für die Transparenz steuert die Eigenschaften, die mit dem Licht zusammen hängen, das durch ein Material scheint.
 
 ![images/transparentmaterials.png](images/transparentmaterials.png)
 
-#### Transparency Intensity
-Changes the material from opaque to transparent. Transparent materials increase rendering time.
+#### Transparenzintensität
+Ändert das Decal von undurchsichtig auf transparent. Transparente Materialien erhöhen die Rendering-Zeit.
 
 ![images/transparency.png](images/transparency.png)
 
-#### Index of Refraction
+#### Brechungsindex
 {: #index-of-refraction}
-Determines how much refraction occurs when looking through the material at objects beyond.
+Bestimmt den Lichtbrechungswert, wenn Objekte durch das Material hindurch betrachtet werden.
 
 ![images/transparencyior.png](images/transparencyior.png)
 
-The following table shows some examples of index of refraction:
+In der folgenden Tabelle sind einige reale Brechungsindexwerte aufgelistet:
 
  | Material      |     | IOR         |
  |:--------------|:---:|:------------|
- | Vacuum        |     | 1.0         |
- | Air           |     | 1.0029      |
- | Ice           |     | 1.309       |
- | Water         |     | 1.33        |
- | Glass         |     | 1.52 to 1.8 |
- | Emerald       |     | 1.57        |
- | Ruby/Sapphire |     | 1.77        |
- | Diamond       |     | 2.417       |
+ | Vakuum        |     | 1,0         |
+ | Luft           |     | 1,0029      |
+ | Eis           |     | 1,309       |
+ | Wasser         |     | 1,33        |
+ | Glas         |     | 1,52 bis 1,8 |
+ | Smaragd       |     | 1,57        |
+ | Rubin/Saphir |     | 1,77        |
+ | Diamant       |     | 2,417       |
 {: .grided-table}
 
-#### Translucency
+#### Transluzenz
 {: #translucency}
-A measure of diffusion. High translucency produces a “sandblasted” effect, since more light is scattered randomly through the material. This is a very sensitive effect, small adjustments can make a big difference.
+Ein Diffusionsmaß. Eine hohe Transluzenz erzeugt einen "sandgestrahlten" Effekt, da mehr Licht willkürlich durch das Modell zerstreut wird. Dies ist ein sehr empfindlicher Effekt. Kleine Anpassungen können einen großen Unterschied machen.
 
 ![images/transparencytl.png](images/transparencytl.png)
 
-#### Scattering
+#### Streuung
 {: #scattering}
-Controls the probability of the light encountering a particle per unit length. The [Path Tracer](render-tab.html#path-tracer) is required for this effect.
-Subsurface scattering permits light to penetrate the object's surface and scatter in any direction. Many translucent materials can be modeled using this effect. Certain surfaces, such as stone or skin can be realistically “softened” by allowing the light to penetrate a short distance.
-The material must have some transparency in order for sub-surface scattering to take place. This is a volumetric effect. The objects with this material attached must be solid or “space enclosing” for this to work properly.
+Steuert die Wahrscheinlichkeit, dass das Licht auf ein Partikel pro Einheitslänge trifft. Für diesen Effekt wird die [Pfadverfolgung](render-tab.html#path-tracer) benötigt. 
+
+Durch Unterflächenstreuung kann das Licht die Fläche des Objekts durchdringen und in eine beliebige Richtung streuen. Mit diesem Effekt können viele durchsichtige Materialien modelliert werden. Bestimmte Flächen wie Stein oder Haut können realistisch "aufgeweicht" werden, indem man dem Licht das Eindringen über eine kurze Distanz erlaubt.
+
+Das Material muss Transparenz aufweisen, damit eine Unterflächenstreuung stattfinden kann. Es handelt sich um einen volumetrischen Effekt. Die Objekte mit diesem Material müssen solide sein oder ein Volumen umgeben, damit dies richtig funktioniert.
 
 ![images/scattering.png](images/scattering.png)
 
-#### Attenuation
+####  Lichtabnahme
 {: #attenuation}
-Determines how much light is absorbed as it passes through the object— greater values produce a more cloudy appearance. Use Attenuation to model liquids. Clear liquids have low Attenuation ; murky liquids have higher Attenuation values.
+Bestimmt, wie viel Licht absorbiert wird, wenn es durch ein Objekt verläuft. Größere Werte führen zu einer wolkigeren Darstellung. Die Lichtabnahme bietet sich für die Modellierung von Flüssigkeiten an. Klare Flüssigkeiten haben eine niedrige Lichtabnahme. Trübe Flüssigkeiten haben eine hohe Lichtabnahme.
 
 ![images/attenuation.png](images/attenuation.png)
 
 #### Dispersion
 {: #dispersion}
-Controls how much light is split into its component wavelengths.
+Steuert, wie viel Licht in seine entsprechenden Wellenlängen unterteilt wird.
 
 ![images/dispersion.png](images/dispersion.png)
 
-#### Saturation
+#### Sättigung
 {: #saturation}
-Determines the amount of dispersion.
+Bestimmt den Unschärfewert.
 
 ![images/saturation.png](images/saturation.png)
 
-#### Blurry Transparency
+#### Unscharfe Transparenz
 {: #blurry-transparency}
-When a material is partially transparent, a little noise is introduced into the transparency, to make the material look more natural.
+Wenn ein Material teilweise transparent ist, wird ein geringes Rauschen in die Transparenz eingefügt, damit das Material natürlicher aussieht.
 
-#### Blurriness
-Controls the amount of noise added.
+#### Unschärfe
+Steuert die Intensität des Rauschens.
 
 ![images/blurrytransparency.png](images/blurrytransparency.png)
 
-#### Glow
+#### Leuchten
 {: #glow}
-Creates the illusion of illumination.
+Erzeugt die Illusion von Beleuchtung.
 
 ![images/glow.png](images/glow.png)
 
-## Textures
+## Texturen
 {: #textures}
-Two types of textures can be added to a material: Image Textures and Bump Patterns. Image textures are based on bitmaps, photographs or scanned images.  Bump Patterns are random or repeating patterns generated by Flamingo.
+Einem Material können zwei Arten von Texturen hinzugefügt werden: Bildtexturen und Bump-Muster. Bildtexturen basieren auf Bitmaps, Fotos oder eingescannten Bildern.  Bump-Muster sind zufällige oder sich wiederholende Muster, die von Flamingo erzeugt wurden.
 
 ![images/textures.png](images/textures.png)
 
-### Images
+### Bilder
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another images may control the bump properties of the texture. To control how an image effects a material, go to the [Image Properties](material-image-properties.html) Dialog
+Es können bis zu vier Bitmap-Bilder verwendet werden, um das Material detailreicher zu gestalten. Bild-Maps können auf viele Arten verwendet werden, wie beispielsweise für die Oberflächenfarbe oder die scheinbare dreidimensionale Flächenqualität. Bild-Maps sind zweidimensionale Muster, die mit Hilfe von rasterbasierten Malprogrammen oder durch Scannen von Fotos oder anderen Materialien erzeugt werden. Üblicherweise wird dabei das Bild eines realen Materials als Materialfarbe verwendet. Bilder können aus bis zu vier Bildern bestehen. So kann beispielsweise ein Bild die Farbe und ein weiteres die Bump-Eigenschaften der Textur steuern. In den [Bildeigenschaften](material-image-properties.html) kann eingestellt werden, welchen Einfluss ein Bild auf ein Material hat.
 
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
 
-### Bump Patterns
+### Bump-Muster
 {: #bump-patterns}
-Bumps Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
+Mit Bump-Mustern wird die Darstellung eines speziellen Oberflächentyps ohne Displacement-Maps oder sonstige zusätzliche Maps erzeugt. Bumps verwenden mathematische Regeln, um auf der Fläche des Materials den Eindruck von Unebenheit zu erwecken. Zu den Mustern zählen:
 
-> [Sandpaper](#sandpaper)
-> [Rubble](#rubble)
-> [Pyramid](#pyramid)
-> [Wrinkled](#wrinkled)
-> [Marbled](#marbled)
+> [Sandpapier](#sandpaper)
+> [Schotter](#rubble)
+> [Pyramide](#pyramid)
+> [Faltig](#wrinkled)
+> [Marmoriert](#marbled)
 
-As and example materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarser texture.
+Materialien wie Stuck, Beton und Ton haben eine feine Textur. Es lohnt sich wahrscheinlich nicht, einen Teil des Materials zu scannen, um eine Bitmap zu erzeugen, außer sie wird aus der Nähe betrachtet. Die Verwendung einer prozeduralen Sandpapier-Bump-Map auf einer [Grundfarbe](advanced-material-properties-main.html#color) simuliert diese Art feines Muster. Erzeugen Sie eine [Grundfarbe](advanced-material-properties-main.html#color) für das Material. Fügen Sie dann dem Material eine prozedurale Bump hinzu. Verwenden Sie Sandpapier für eine feine und Schotter für eine grobe Textur.
 
-When one of the bump maps is checked, additional controls become available. More than one bump pattern can be added to a material.
+Bei Auswahl einer Bump-Map werden weitere Steuerelemente verfügbar. Einem Material kann mehr als ein Bump-Muster hinzugefügt werden.
 
-#### Sandpaper
+#### Sandpapier
 {: #sandpaper}
-Provides a random, finely textured appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit sandpaper.
+Ergibt eine zufällige, fein texturierte Darstellung. Zum Bearbeiten des Sandpapiers können die [Skalierung](#scale), [Stärke](#strength) und [Drehung](#rotation) eingestellt werden.
 
 ![images/sandpaper.png](images/sandpaper.png)
-*Sandpaper progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*Entwicklung von Sandpapier von niedriger bis hoher [Skalierung](#scale) und [Stärke](#strength).*
 
-#### Rubble
+#### Schotter
 {: #rubble}
-Gives the appearance of a lumpy, pitted surface. It can be scaled up and used for water, dirt, and smudges on surfaces. Smudges can be made with a large [Scale](#scale) and a very small [Strength](#strength) using Rubble. Rubble bump has a larger size range than Sandpaper.
+Erzeugt die Erscheinung einer klumpigen, körnigen Fläche. Es kann vergrößert und für Wasser, Schmutz und Flecken auf Flächen verwendet werden. Mit einer großen [Skalierung](#scale) und einer sehr kleinen [Stärke](#strength) entstehen bei Verwendung von Schotter schwarze Flecken. Schotter weist einen größeren Umfang auf als Sandpapier.
 
 ![images/rubble.png](images/rubble.png)
-*Rubble progressing from smaller to larger [Scale](#scale) and [Strength](#strength).*
+*Entwicklung von Schotter von niedriger bis hoher [Skalierung](#scale) und [Stärke](#strength).*
 
-#### Pyramid
+#### Pyramide
 {: #pyramid}
-Gives the appearance of small pyramidal protrusions like a knurl pattern.  [Scale](#scale) will control only the X and Y pyramid base size. [Strength](#strength) will effect the "height" effect of the pyramid.
+Erzeugt den Anschein pyramidenförmiger Vorsprünge wie bei einem Rändelmuster.  Über die [Skalierung](#scale) wird die x-/y-Grundfläche der Pyramide gesteuert. Über die [Stärke](#strength) wird der Höheneffekt der Pyramide geregelt.
 
 ![images/pyramid.png](images/pyramid.png)
-*Pyramid showing a larger and larger [Scale](#scale).*
+*Entwicklung eines Pyramidenmusters mit immer größerer [Skalierung](#scale).*
 
-#### Wrinkled
+#### Faltig
 {: #wrinkled}
-Gives a wrinkled appearance. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+Erzeugt ein faltiges Muster. Die Darstellung kann durch Anpassung der [Skalierung](#scale), [Stärke](#strength) und [Drehung](#rotation) eingestellt werden.
 
 ![images/wrinkled.png](images/wrinkled.png)
-*Pyramid showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*Entwicklung eines Faltenmusters mit immer größerer [Skalierung](#scale). Die [Stärke](#strength) ist konstant.*
 
-#### Marbled
+#### Marmoriert
 {: #marbled}
-Gives a marbled appearance.  This is swirling pattern. Change the [Scale](#scale), [Strength](#strength) and [Rotation](#rotation) to edit wrinkled.
+Erzeugt eine Marmordarstellung.  Dies ist ein verwirbeltes Muster. Die Darstellung kann durch Anpassung der [Skalierung](#scale), [Stärke](#strength) und [Drehung](#rotation) eingestellt werden.
 
 ![images/marbled.png](images/marbled.png)
-*Marbled showing a larger and larger [Scale](#scale). [Strength](#strength) is held constant.*
+*Entwicklung eines Marmormusters mit immer größerer [Skalierung](#scale). Die [Stärke](#strength) ist konstant.*
 
-### Scale
+### Skalierung
 {: #scale}
-Scale controls the proportional size of the bumps.
+Steuert die proportionale Größe der Bumps.
 
 #### X/Y/Z
-Specifies scale in each direction separately.
+Zur spezifischen Einstellung der Skalierung für jede Richtung.
 ![images/texturescalexy.png](images/texturescalexy.png)
 
-#### Lock
-Maintains the aspect ratio.
+#### Sperren
+Zur Beibehaltung des Seitenverhältnisses.
 
-### Strength
+### Stärke
 {: #strength}
-Controls the appearance of depth.
+Zur Einstellung der Tiefendarstellung.
 ![images/texturestrength.png](images/texturestrength.png)
 
-### Rotation
+### Drehung
 {: #rotation}
-Sets the rotation angle for the pattern.
-Changes to the orientation are normally apparent only if the procedural map has an obvious pattern or if the bump map has been scaled with different x, y and z components to produce a directional pattern.
+Zur Einstellung des Drehwinkels des Musters. Änderungen der Ausrichtung sind normalerweise nur sichtbar, wenn die prozedurale Map über ein offensichtliches Muster verfügt oder wenn die Bump-Map mit verschiedenen x-, y- und z-Komponenten skaliert wurde, um ein Richtungsmuster zu erhalten.
 ![images/texturerotated.png](images/texturerotated.png)

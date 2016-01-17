@@ -2,84 +2,84 @@
 ---
 <!-- TODO: Make sure to update this page and get working in the guides section of the documentation. -->
 
-# Studio Lighting Basics
+# Grundlagen der Studiobeleuchtung
 {: #studio-lighting-bascis}
-Studio lighting must be set up similar to a photographer's studio. For greater control, use light sources to light the scene.
+Die Studiobeleuchtung muss ähnlich konfiguriert werden wie in einem Fotostudio. Um eine bessere Kontrolle zu haben, verwenden Sie Lichtquellen, um die Szene zu beleuchten.
 ![images/lighting-001.png](images/lighting-001.png)
-When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of light sources placed in a way to create very light and very dark areas.
-The most basic studio lighting arrangement uses a key light (1), a fill light (2), and a back light (3). This is the most common lighting arrangement for standalone characters and objects in the studio. A three-point setup will give good results right away and is an excellent starting point for creating special effects. Spotlights are useful because you can control their direction and hot spot to give the scene drama.
+Beim Beleuchten eines Studios ist eine dramatische Beleuchtung wichtig. Erzeugen Sie dramatische Beleuchtung, indem Sie viel Kontrast erstellen. Das bedeutet, dass dunkle Bereiche genauso wichtig sind wie helle Bereiche. Dramatische Beleuchtung benötigt eine Anzahl von Lichtquellen, die auf eine Art und Weise platziert sind, dass sie sehr helle und sehr dunkle Bereiche erzeugen.
+Für die elementarste Studiobeleuchtung wird ein Haupt- (1), ein Füll- (2) und ein Hinterlicht (3) verwendet. Das ist die am meisten verwendete Beleuchtungskonfiguration für alleinstehende Personen und Objekte in einem Studio. Eine Dreipunkt-Konfiguration ergibt sofort gute Resultate und ist ein ausgezeichneter Startpunkt, um Spezialeffekte zu erzeugen. Spotlichter sind hilfreich, weil Sie deren Richtung und Einfallspunkt kontrollieren, um der Szene mehr Realismus zu verleihen.
 ![images/studiolighting-004.png](images/studiolighting-004.png)
 
-## Camera Angle
+## Kamerawinkel
 {: #cameraangle}
-Lighting setups always depend on the angle of the camera to the subject. It is a good idea to start lighting by deciding on the camera angle. Use the **Camera** or **NamedView** commands to set up the position and angle of the camera. This will help determine the position of the lights.
+Die Lichteinstellungen hängen immer vom Winkel der Kamera zum Objekt ab. Am besten beginnen Sie damit, den Kamerawinkel zu definieren. Verwenden Sie die Befehle **Kamera oder **BenannteAnsicht**, um Position und Winkel der Kamera einzustellen. So können Sie die Position der Lichter bestimmen.
 
-## Basic Three-Light Setup
+## Grundeinstellung mit drei Lichtern
 {: basic-three-light-setup}
-A basic studio lighting setup includes three lights, a key light, a fill light, and a backlight.
+Eine grundlegende Studiobeleuchtungskonfiguration besteht aus drei Lichtern: Hauptlicht, Fülllicht, Hinterlicht.
 
-### Key Light
+### Hauptlicht
 {: #keylight}
-The key light is the dominant light in the scene. It sets the mood, provides direction, shows dimension and texture, and creates the darkest shadows. A key light is usually set 30 to 45 degrees to the side of and above the object depending on the subject matter.
-The closer the key light is to the camera, the less modeling and texture it produces. A key light is usually higher than the lens, and throws shadows down. As the key light moves to the side, the three-dimensional quality of the object increases. In a classic portraiture setup, the key light is set at about a 45-degree angle between the subject and the camera and high enough to throw shadows down, but not so high that the subject's eyes are in shadow.
-If the key light is a soft light, little or no fill may be required. It is a basic solution for lighting small studio setups as well.
-The shadow cast by the key light will be visible on the subject. In images of faces, this often shows up as a strong shadow cast by the nose.
+Das Hauptlicht ist das wichtigste Licht in der Szene. Es definiert die Atmosphäre, gibt die Richtung an, zeigt die Dimension und Textur an und erzeugt die dunkelsten Schatten. Ein Hauptlicht wird normalerweise 30 bis 45 Grad seitlich und oberhalb des Objekts platziert, je nach Sujet.
+Je näher sich das Hauptlicht an der Kamera befindet, desto weniger Modellierung und Textur erzeugt es. Ein Hauptlicht befindet sich meistens höher als die Linse und wirft Schatten nach unten. Wenn das Hauptlicht auf die Seite verschoben wird, wird die dreidimensionale Qualität des Objekts erhöht. Bei einem klassischen Porträt wird das Licht in einem 45-Grad-Winkel zwischen dem Aufnahmegegenstand und der Kamera aufgestellt, hoch genug, um Schatten nach unten zu werfen, aber nicht so hoch, dass die Augen des Aufnahmegegenstands im Schatten liegen.
+Wenn das Hauptlicht ein weiches Licht ist, wird wahrscheinlich nur ein kleines oder gar kein Fülllicht benötigt. Es handelt sich um eine grundlegende Lösung für die Beleuchtung kleiner Studioszenen.
+Der vom Hauptlicht geworfene Schatten wird auf dem Aufnahmegegenstand sichtbar sein. Auf Bildern von Gesichtern erzeugt diese Technik oft einen starken von der Nase erzeugten Schatten.
 ![images/studiolighting-001.png](images/studiolighting-001.png)
 
-### Fill Light
+### Fülllicht
 {: #filllight}
-The fill light is placed just above the lens on the opposite side from the key light. Its purpose is to reduce contrast and bring out detail in the shadows by simulating light reflected off nearby objects. The key light and fill light may be of equal intensity for a low-contrast result, but the key light is usually brighter and harder than the fill light. The fill light is the secondary light in the scene. It should not introduce any more dark shadows into the scene.
-In the illustration, notice that the shadow to the left of the nose and along the left side is lighter and softer than the image with the key light alone.
+Das Fülllicht wird genau oberhalb der Linse platziert, auf der entgegengesetzten Seite des Hauptlichts. Es reduziert den Kontrast und bringt mit Hilfe einer Simulation von Licht, das von nahegelegenen Objekten reflektiert wird, Details in den Schatten hervor. Haupt- und Fülllicht können dieselbe Intensität aufweisen, um einen schwachen Kontrast zu erzeugen, aber das Hauptlicht ist meistens heller und härter als das Fülllicht. Das Fülllicht ist die sekundäre Beleuchtung einer Szene. Es sollte keine weiteren dunklen Schatten in die Szene einbringen.
+Auf dem Bild ist der Schatten links neben der Nase und entlang der linken Seite heller und weicher als auf dem Bild nur mit dem Hauptlicht.
 ![images/studiolighting-002.png](images/studiolighting-002.png)
 
-### Backlight
+### Hinterlicht
 {: #backlight}
-The backlight effect is subtle but can define the edges of objects in the scene and add depth by preventing objects from blending into the background. Backlights are usually placed behind and above the object and are pointed toward the camera.
-The effectiveness of backlights depends in part on the reflectivity of the surfaces they are lighting.
-In the illustration, the light on the top of the shoulders helps separate the subject from the background. The backlight also softens the shadows and brightens the surface the object is sitting on.
+Der Hinterlichteffekt ist subtil kann aber die Kanten von Objekten in der Szene definieren und dient zur Steigerung der Tiefe und Hintergrundabhebung der Objekte. Hinterlichter werden meistens hinter und oberhalb des Objekts platziert und sind gegen die Kamera gerichtet.
+Die Wirksamkeit von Hinterlichtern hängt zum Teil vom Reflexionsvermögen der beleuchteten Flächen ab.
+Im Bild hilft das Licht oberhalb der Schultern dabei, das Sujet vom Hintergrund abzuheben. Das Hinterlicht macht auch die Schatten weicher und erhellt die Fläche, auf der das Objekt liegt.
 ![images/studiolighting-003.png](images/studiolighting-003.png)
 
-## Light Qualities
+## Lichtqualitäten
 {: #lightquality}
-Images can be created with accurate shadows, highlights, and reflections, but without proper lighting, the goal of the shot will be missed. When setting up the lighting, consider the goal. Images work well if they are bold, graphic, and simple. Too many highlights in glassware or shadows from objects may add unnecessary complexity to a scene and detract from its essence.
-Some of the qualities to consider include:
+Bilder können mit scharfen Schatten, Glanzlichtern und Reflexionen erzeugt werden, aber ohne passende Beleuchtung werden Sie keine schönen Renderings erhalten. Bei der Konfiguration der Beleuchtung sollten Sie überlegen, welchen Effekt Sie erzielen wollen. Gute Bilder sind ausdrucksvoll, grafisch und einfach. Zu viele Glanzlichter auf Glasobjekten oder Schatten von Objekten könnten eine Szene unnötig komplex machen und das Wesentliche, das wir zu betonen versuchen, beeinträchtigen.
+Qualitäten, die in Betracht gezogen werden müssen:
 
->The contrast range of the scene
->The depth of the scene (its three-dimensional quality)
->Separation of objects from the background
->Whether the lighting should be hard of soft
->Whether the lighting should be warm or cool in color
+>Der Kontrastumfang der Szene
+>Die Tiefe der Szene (die dreidimensionale Qualität)
+>Abgrenzung von Objekten vom Hintergrund
+>Weichheit oder Härte der Beleuchtung
+>Wärme oder Kälte der Beleuchtungsfarbe
 
-### Contrast Range
+### Kontrastumfang
 {: #contrastrange}
-Contrast range is the difference between the brightest and the darkest areas with detail in a given scene. The human eye is capable of dealing with a far greater contrast range than film and can locally compensate to see detail in the extreme areas. This effect can be seen in snapshots taken on a sunny day.
-Typically, the highlight side is too bright or the shadow side is too dark, yet you had no trouble seeing detail in both the dark and light areas. The contrast range is just too great for the film to record. This is also true of rendered images, as there is a limit to the colors the computer can display.
+Der Kontrastumfang ist die Differenz zwischen den hellsten und dunkelsten Flächen in einer gegebenen Szene. Das menschliche Auge besitzt einen größeren Kontrastumfang als ein Film und kann lokal kompensieren, um Details in sehr hellen oder sehr dunklen Bereichen zu sehen. Dieser Effekt kann auf Schnappschüssen gesehen werden, die an einem sonnigen Tag gemacht wurden.
+Eigentlich ist die beleuchtete Seite viel zu hell oder die Schattenseite viel zu dunkel, aber Sie werden kein Problem damit haben, die Details sowohl auf der hellen wie auf der dunklen Seite zu sehen. Der Kontrastumfang ist einfach viel zu groß und kann nicht auf Film aufgenommen werden. Dasselbe trifft auf gerenderte Bilder zu, weil der Computer bei der Farbenanzeige limitiert ist.
 ![images/highcontrast-001.png](images/highcontrast-001.png)
-A lower contrast image prevents details from being obscured in the highlight or shadow areas.
+Ein Bild mit niedrigerem Kontrast verhindert, dass die Details in den hellen oder dunklen Bereichen verdunkelt werden.
 ![images/lowcontrast-001.png](images/lowcontrast-001.png)
 
-### Three-Dimensional Quality
+### Dreidimensionale Qualität
 {: #three-dimensional}
-Representing three dimensions in a two-dimensional space requires an illusion of depth. An opaque object lit from the side implies depth because there is a bright highlight side and a darker shadow side. A box showing three sides will have more dimension if each side is a different value. Often the top plane will be the brightest because light usually comes from above in real life situations.
+Damit drei Dimensionen in einem zweidimensionalen Raum dargestellt werden können, muss eine Tiefenillusion erzeugt werden. Ein undurchsichtiges, seitlich beleuchtetes Objekt deutet Tiefe an, weil es eine helle Glanzlichtseite und eine dunklere Schattenseite aufweist. Eine Box mit drei sichtbaren Seiten wird mehr Dimension haben, wenn jede Seite einen anderen Wert hat. Oft ist die oberste Ebene die hellste, weil das Licht in realen Situationen normalerweise von oben kommt.
 ![images/lightbox-001.png](images/lightbox-001.png)
 
-### Separation from the Background
+### Abgrenzung vom Hintergrund
 {: #separation}
-For a product to pop off the page, in addition to a three-dimensional quality and using the full contrast range, there must be good separation. That is, the edges of our subject must be decidedly lighter or darker than the background. Without separation, the subject blends into the background.
-In the illustration, the highlight at the top of the object helps separate it from the background
-The subject's shadow can sometimes aid separation and sometimes cause objects to merge with the background. A backlight can facilitate separation by creating a bright edge around the subject.
+Damit ein Produkt aus einer Seite hervorsticht, muss es sich gut vom Hintergrund trennen und zusätzlich über dreidimensionale Qualität verfügen. Mit anderen Worten, die Kanten des Aufnahmegegenstands müssen bedeutend heller oder dunkler als der Hintergrund sein. Ohne Trennung wird das Objekt in den Hintergrund überblenden.
+Im Bild hilft das Glanzlicht oben am Objekt, das Sujet vom Hintergrund abzuheben.
+Der Schatten des Objekts kann manchmal bei der Trennung helfen und manchmal dazu führen, dass Objekte sich mit dem Hintergrund mischen. Ein Hinterlicht kann die Trennung vereinfachen, weil es eine helle Kante um das Objekt erzeugt.
 ![images/blackeggs-003.png](images/blackeggs-003.png)
 
-### Hard or Soft Light
+### Hartes oder weiches Licht
 {: #hard-soft}
-One way to categorize light is hard (direct) or soft (diffused).
-A hard light casts a clearly defined hard-edged shadow.
+Licht kann in zwei Gruppen unterteilt werden: hartes (direktes) Licht und weiches (diffuses) Licht.
+Ein hartes Licht wirft einen klar definierten, scharfkantigen Schatten.
 ![images/hardlight-001.png](images/hardlight-001.png)
-Diffused light casts a soft, sometimes indistinguishable shadow.
-Diffused light often produces a more attractive image than hard light because of its soft shadows. The larger the light and the closer it is to the subject, the softer it is. A large soft light can simulate light from a window.
+Ein diffuses Licht wirft einen weichen, manchmal kaum erkennbaren Schatten.
+Diffuses Licht erzeugt aufgrund seiner weichen Schatten oft ein attraktiveres Bild als hartes Licht. Je größer das Licht und je näher es sich am Objekt befindet, desto weicher ist es. Ein großes weiches Licht kann Licht von einem Fenster simulieren.
 ![images/diffuselight-001.png](images/diffuselight-001.png)
-Diffuse lighting can work well for dark plastic objects, because it produces a broad highlight that helps define the shape of black shiny objects.
+Diese Beleuchtungsart kann für dunkle Plastikobjekte nützlich sein, weil es ein breites Licht erzeugt, das die Form von schwarzen glänzenden Objekten definiert.
 ![images/blackeggskeyfillback.png](images/blackeggskeyfillback.png)
-When lighting a studio setup, dramatic, high contrast lighting is important. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of lights placed in a way to create light and dark areas.
-Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting.
-Flamingo nXt includes pre-set [lighting schemes](lighting-tab.html#lighting-presets) to help you get started lighting your model. The settings on the [Advanced tab](lighting-advanced-tab.html) are optimized for each lighting method.
+Beim Beleuchten eines Studios ist es wichtig, dramatisches Licht mit hohem Kontrast zu haben. Das bedeutet, dass dunkle Bereiche genauso wichtig sind wie helle Bereiche. Dramatische Beleuchtung benötigt eine Anzahl Lichter, die so angeordnet sind, dass sie helle und dunkle Flächen erzeugen.
+Die Beleuchtungstechniken für Fotografie sind normalerweise die gleichen wie die Beleuchtung für das Rendering. Ein guter Start wäre also eines der vielen Bücher über fotografische Beleuchtung.
+Flamingo nXt enthält vordefinierte [Beleuchtungsschemen](lighting-tab.html#lighting-presets), die Sie als Ausgangspunkt für die Beleuchtung Ihres Modells verwenden können. Die Einstellungen im Reiter [Erweitert](lighting-advanced-tab.html) sind für jede Beleuchtungsmethode optimiert.

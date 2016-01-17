@@ -1,48 +1,51 @@
 ---
+title: Materialbildeigenschaften
 ---
 
 
-# ![images/images.svg](images/images.svg){:height="75px" width="75px"} Material Image Properties
+# ![images/images.svg](images/images.svg) {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
 ![images/solidcolors.png](images/textureset.png)
 
-Materials can be created from images. Scan photographs and real materials like wallpaper and carpet, create patterns in a paint program, or use images from other sources of bitmap.
-Imagine that the material stretches infinitely in all directions in space. The material becomes visible only where an object passes through it. Patterns are repeated infinitely (tiled) in four directions at a specified scale.
-Small images that can be seamlessly tiled tend to work best. If the bitmap does not tile well, use the option to mirror the tiles. This guarantees matched edges.
+Materialien können aus Bildern erzeugt werden. Sie können Fotos und echte Materialien (wie Tapete und Teppich) einscannen, Muster in einem Malprogramm erstellen oder Bilder aus anderen Bildquellen verwenden.
 
-Note : To make a bitmap image cover only part on the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
+Stellen Sie sich vor, dass das Material unendlich in alle Richtungen gestreckt wird. Das Material wird nur dort sichtbar, wo ein Objekt hindurch verläuft. Muster werden unendlich in vier Richtungen in einer bestimmten Skalierung wiederholt (gekachelt).
 
-Image maps can be used many ways. A common method is to use a picture of a real-world material as the materials color.
+Kleine Bilder, die nahtlos aneinander gekachelt werden können, eignen sich am besten. Wenn die Bitmap nicht gut gekachelt werden kann, verwenden Sie die Funktion, um die Kacheln zu spiegeln. Dies garantiert passende Kanten.
+
+**Hinweis:** Wenn ein Bild nur einen Teil eines Objekts abdecken soll (wie ein Etikett auf einer Weinflasche oder ein Logo auf einem Produkt), verwenden Sie stattdessen die [Decal](properties-decal.html)-Funktion.
+
+Bild-Maps können auf viele Arten verwendet werden. Eine übliche Methode ist die Verwendung eines Bildes eines realen Materials als Materialfarbe.
 
 ## Name
-Image Textures can be named.  This name is used by the Texture library of the RDK and has no real impact on Flamingo.
+Bildtexturen können benannt werden.  Dieser Name wird von der Texturbibliothek des RDK verwendet und hat keine wirkliche Funktion in Flamingo.
 
-## Flamingo Image
+## Flamingo-Bild
 
-### Image preview
+### Bildvorschau
 {: #image-preview}
-Displays a preview of the selected image file. Hold the mouse over the image to a see a pop-up of the image file name.  Click on the image to select a different image.
+Zeigt eine Vorschau der ausgewählten Bilddatei an. Lassen Sie den Mauszeiger über dem Bild schweben, um ein Pop-up des Bilddateinamens anzeigen zu lassen.  Klicken Sie auf das Bild, um ein anderes auszuwählen.
 
-#### Image resolution
+#### Bildauflösung
 {: #image-resolution}
-Displays the resolution in pixels of the current image file.
+Zeigt die Auflösung der aktuellen Bilddatei in Pixel an.
 
-### Tiles
+### Kacheln
 {: #tiles}
-Image maps used in material definitions are always repeated (tiled). These settings specify how large each instance (tile) will be in current model units.
+In Materialdefinitionen verwendete Bild-Maps werden immer wiederholt (gekachelt). Diese Einstellung definiert die Größe jeder Instanz (Kachel) in den aktuellen Modelleinheiten.
 
-#### Width/Height
+#### Höhe/Breite
 {: #width-height}
-Sets the tile size in model units.
+Zur Einstellung der Größe der Kacheln in Modelleinheiten.
 {% include_relative snippets/snippet-lock-widthheight.md %}
 
 {% include_relative snippets/snippet-masking.md %}
 
-### Mapping type
+### Mapping-Typ
 {: #mapping-type}
-Images normally apply to the color channel. But there are other ways to use images.  Images can be set as:
+Bilder werden normalerweise auf den Farbkanal angewandt. Aber es gibt auch andere Möglichkeiten zur Verwendung von Bildern.  Bilder können eingestellt werden als:
 
 > [Standard](#standard)
 > [Normal](#normal)
@@ -50,93 +53,93 @@ Images normally apply to the color channel. But there are other ways to use imag
 
 ### Standard
 {: standard}
-The image provides color and visual bump to the material. Use the Strength and Bump values to control how the bitmap will influence the material.
+Farbe und visuelle Reliefs des Bilds werden auf das Material übertragen. Mit den Einstellungsmöglichkeiten für Farb- und Bump-Intensität kann festgelegt werden, wie das Bild das Material beeinflusst.
 
-#### Color Strength
+#### Farbintensität
 {: #color}
-Determines how much the image map influences the appearance of the material. In the example below, the underlying material is magenta colored. The color strength increases until the underlying color is completely masked by the black and white texture.
+Bestimmt, wie stark die Bild-Map die Darstellung des Materials beeinflusst. Im Beispiel unten erscheint das darunter liegende Material in der Farbe Magenta. Die Farbintensität wird erhöht, bis die darunter liegende Farbe vollständig von der schwarzen und weißen Textur maskiert ist.
 
 ![images/brik-b14.png](images/brik-b14.png)![images/strength.png](images/strength.png)
-*Color strength 0.2, 0.5, 1.0.*
+*Farbintensität von 0.2, 0.5, 1.0.*
 
-#### Bump Strength
+#### Bump-Intensität
 {: #bump}
-Simulates bumps and wrinkles on the surface of an object by perturbing the surface normals of the object. The underlying object is not changed. In the illustration, the material on the left uses displacement mapping, while the material on the right uses bump mapping set at its highest value. Using negative bump numbers will reverse the effect. The edge and shadow are smooth for the bump-mapped material. See: [Wikipedia article: Bump mapping](http://en.wikipedia.org/wiki/Bump_mapping).
+Simuliert Bumps und Falten auf der Fläche eines Objekts, indem die Flächennormalen auf dem Objekt geändert werden. Das darunter liegende Objekt wird nicht geändert. In der Abbildung verwendet das Material links Displacement-Mapping, während das Material rechts Bump-Mapping mit den höchsten eingestellten Werten verwendet. Negative Bump-Zahlen haben den umgekehrten Effekt. Kanten und Schatten sind bei einem Material mit Bump-Mapping glatt. Weitere Infos: [Wikipedia-Artikel: Bumpmapping](https://de.wikipedia.org/wiki/Bumpmapping).
 
 ![images/bumpvsdisplacement.png](images/bumpvsdisplacement.png)
-*Bump strength, 0.5 (left) and 1.0 (right).*
+*Bump-Intensität, 0.5 (links) und 1.0 (rechts).*
 
 ### Normal
 {: #normal}
-Fakes the lighting of bumps and dents without using more polygons to the render mesh. See: [Wikipedia article: Normal mapping](http://en.wikipedia.org/wiki/Normal_mapping).
+Wird dazu verwendet, größeren Detailreichtum in Schattierungen zu erzielen, ohne die Zahl der Polygone im Rendernetz zu erhöhen. Weitere Infos: [Wikipedia-Artikel: Normal Mapping](https://de.wikipedia.org/wiki/Normal_Mapping).
 
-Normal maps work very similar to bump maps, in that they modify the normal of the surface. The effect is essentially the same as bump; but normal maps allow more control over the normal than a bump. A bump map uses the grey average of the RGB in a bitmap. The RGB of a normal map corresponds to the modification of the XYZ of the normal. Because the blue channel of the image controls the Z-direction of the normal, normal maps have a considerable blue color to them.
+Normal-Maps funktionieren ähnlich wie Bump-Maps und ändern wie diese die Normale der Fläche. Der Effekt ist im Grunde der gleiche wie bei einem Bump, wobei Normal-Maps jedoch mehr Kontrolle über die Normale erlauben als eine Bump. Eine Bump-Map verwendet den Graudurchschnitt der RGB-Werte einer Bitmap. Die RGB-Werte einer Normal-Map entsprechen den Änderungen der XYZ der Normalen. Da der blaue Kanal des Bilds die Z-Richtung der Normalen steuert, haben Normal-Maps einen hohen Blauanteil.
 
 ### Displacement
 {: #displacement}
-This image map will displaces the surface render mesh based on the color values in the image. The effect is a change in the actual geometric position of the surface. The displacement is often along the local surface normal. See: [Wikipedia article: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
+Beim Displacement-Mapping wird das Rendernetz der Fläche den Farbwerten im Bild entsprechend verschoben. Dieser Effekt bedeutet eine Änderung in der tatsächlichen geometrischen Position der Fläche. Die Verschiebung geschieht oftmals entlang der lokalen Flächennormalen. Weitere Infos: [Wikipedia-Artikel: Displacement Mapping](https://de.wikipedia.org/wiki/Displacement_Mapping).
 
- Note : Use displacement mapping sparingly for small objects. Displacement increases rendering time considerably.
+ **Hinweis:** Verwenden Sie das Displacement-Mapping für kleine Objekte sparsam. Displacement erhöht die Rendering-Zeit beträchtlich.
 
 ![images/displacement.png](images/displacement.png)
 
-#### Height
+#### Höhe
 {: #height}
-The height of the highest point of displacement.
+Höhe des höchsten Verschiebungspunkts.
 
 ![images/displacementheight.png](images/displacementheight.png)
 
-#### Offset
+#### Versatz
 {: #offset}
-Sets the starting point of the displacement with reference to the surface normal. The displacement can take place completely outside, inside or some ratio inside and outside the part.
+Definiert den Startpunkt der Verschiebung bezüglich der Flächennormalen. Ein Displacement kann außerhalb, innerhalb oder teilweise inner- und außerhalb des Teils stattfinden.
 
 ![images/displacementz-001.png](images/displacementz-001.png)
-*Z-offset = -1.0*
+*Z-Versatz = -1.0*
 
 ![images/displacementz-002.png](images/displacementz-002.png)
-*Z-offset = -0.5*
+*Z-Versatz = -0.5*
 
 ![images/displacementz-003.png](images/displacementz-003.png)
-*Z-offset = 0.0*
+*Z-Versatz = -0.0*
 
-#### Facet size
+#### Facettengröße
 {: #facet-size}
-The size of the facets of the displacement mesh. This will increase the detail in the displacement, but also will increase rendering size and memory usage.
+Die Größe der Facetten des Displacement-Polygonnetzes. Je größer dieser Wert, desto detailreicher ist das Displacement, desto größer werden aber auch das Rendering und der Speicherverbrauch.
 
-![images/facetsize.png](images/facetsize.png)
+![images/shadedvsrendered.png](images/shadedvsrendered.png)
 
-## Flamingo Image Advanced
+## Erweiterte Einstellungen
 {: #advanced}
-Normally a Flamingo Image will apply to the main color channel of a material. The Flamingo Advanced dialog specifies other channels that the bitmap can effect.  These are used for very special effects.
+Ein Flamingo-Bild wird normalerweise auf den Hauptfarbkanal eines Materials angewandt. In den erweiterten Einstellungen für das Flamingo-Bild können weitere Kanäle ausgewählt werden, auf die das Bild angewandt werden soll.  Diese werden für besondere Effekte verwendet.
 
-####  Base color
-This is the default setting.  An image will effect the [color](advanced-material-properties-main.html#color) of a material.
+####  Grundfarbe
+Dies ist die Standardeinstellung.  Das Bild hat Einfluss auf die [Farbe](advanced-material-properties-main.html#color) eines Materials.
 
-####  Specular color
-This will effect the color of [reflection channel](advanced-material-properties-main.html#highlight-color) based on the image color at that point.
+####  Spiegelfarbe
+Diese beeinflusst die Farbe des [Reflexionskanals](advanced-material-properties-main.html#highlight-color) basierend auf der Farbe des Bilds an diesem Punkt.
 
-####  Specular intensity
-This will change the [amount of reflection](advanced-material-properties-main.html#intensity) based on the greyscale of the image at that point.  This is used often in Texture Sets as a Specular Map.
+####  Spiegelintensität
+Dadurch wird der [Reflexionsbetrag](advanced-material-properties-main.html#intensity) basierend auf dem Graustufenwert des Bilds an diesem Punkt bestimmt.  Dies wird in Texturensätzen oft als Spiegel-Map verwendet.
 
-####  Highlight sharpness
-This will adjust the sharpness vs blurriness of the [highlight](advanced-material-properties-main.html#intensity) based on the grey scale value of the map at that point.
+####  Glanzlichtschärfe
+Dadurch wird die Schärfe und Unschärfe des [Glanzlichts](advanced-material-properties-main.html#intensity) basierend auf dem Graustufenwert des Bilds an diesem Punkt angepasst.
 
-#### Highlight shape
+#### Glanzlichtform
 {: #advanced-highlight-shape}
-Affects the shape of the highlight.
+Beeinflusst die Form des Glanzlichts.
 
-####  Transparency
-This will effect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the greyscale of the image.
+####  Transparenz
+Dies beeinflusst den Umfang der [Transparenz](advanced-material-properties-main.html#intensity) des Materials basierend auf dem Graustufenwert des Bilds.
 
-####  Translucency
-This will effect the amount of [transparency](advanced-material-properties-transparency.html#translucency) in the material based on the greyscale of the image.
+####  Transluzenz
+Dies beeinflusst den Betrag der [Transluzenz](advanced-material-properties-transparency.html#translucency) des Materials basierend auf dem Graustufenwert des Bilds.
 
-####  Attenuation
-This will effect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the greyscale of the image.
+####  Lichtabnahme
+Dadurch wird die [Lichtabnahme](advanced-material-properties-transparency.html#attenuation) des Materials basierend auf dem Graustufenwert des Bilds beeinflusst.
 
-#### Offsets X/Y
+#### x-/y-Versatz
 {: #advanced-x-y-offset}
-Offsets the material from the x- and y-axis.
+Versetzt das Material entlang der x- bzw. y-Achse.
 
-####  Rotation
-This will rotate the image map.  Use the rotate the image 90 or 180 degrees if needed to re-orient the image from its default rotation.
+#### Drehung
+Dadurch wird die Bild-Map gedreht.  Dies kann verwendet werden, um das Bild bei Bedarf um beispielsweise 90 oder 180 Grad zu drehen.

@@ -1,184 +1,186 @@
 ---
+title: 程序材質
 ---
 
-#  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Procedural Materials
-The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
+#  ![images/paint.svg](images/paint.svg) {{page.title}}
+材質程序可用不同的方式混合數個材質，讓材質有更多變化，您可以在一個材質程序的樹狀分支加入其它材質，標準材質在此通常只有一個**底色**元件。
 
-Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include
+每一種程序貼圖都有兩個元件 (子材質)，一個元件可以再由另一個程序貼圖的兩個元件組成，Flamingo nXt 的程序貼圖有下列幾種：
 
-> [Base](#base)
-> [Angular Blend](#angular-blend)
-> [Blend](#blend)
-> [Marble](#marble)
-> [Granite](#granite)
-> [Tile](#tile)
-> [Wood](#wood)
+> [底色](#base)
+> [角度混合](#angular-blend)
+> [混合](#blend)
+> [大理石](#marble)
+> [花崗岩](#granite)
+> [拼貼](#tile)
+> [木紋](#wood)
 
-##### To add a procedure
-1. Right-clickanywhere in the Procedures window.
-1. On the menu, click a procedure type.
+##### 加入程序
+1. Right-click anywhere in the Procedures window.
+1. 在彈出的清單中選擇一種程序貼圖。
 
-##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+##### 移除程序
+ 1. 在**程序**面板的程序名稱上按右鍵。
+ 2. 在彈出的功能表選擇移除。
 
-## Base
+## 底色
 {: #base}
-This is the basic simple material with no layers. This is the default procedure.
+未使用任何程序的基本材質。
 
-## Angular Blend
+## 角度混合
 {: #angular-blend}
-Many material change color, reflection or transparency based on the angle the material is viewed. The Angular Blend procedure blends between two materials based on the angle of view to the surface of the object.
+許多材質會因檢視角度差異改變顏色、反射度、透明度，角度混合程序以視角與曲面之間的角度混合兩種材質。
 
 ![images/angularblendmaterials.png](images/angularblendmaterials.png)
-The Angular Blend procedure blends between two different materials to create special effects. The two layers in the procedure are the Inner and the Outer Layer.
+角度混合程序使用**內側材質**與**外側材質**兩個元件產生特殊的材質效果。
 
-#### Inner
-From 0 degrees from the viewpoint to the Start angle, the Inner component will show completely. Think of this as a base material.
+#### 內側材質
+物件正對視圖的部分 (0 度) 至**起始角度**之間是以純**內側材質**顯示，可以將它視為物件的底色材質。
 
-#### Outer
-From the Stop angle to 90 degrees from the view, the Outer component will be the only material showing. Think of this as a coating.
+#### 外側材質
+**終止角度**至偏離視圖 90 度之間的部分是以純**外側材質**顯示，可以將它視為類似亮光漆的塗層。
 
-#### Start angle
-The angle from the viewpoint at which the Outer component material starts.
+#### 起始角度
+**外側材質**開始淡入的角度。
 
-#### Stop angle
-The angle from the viewpoint at which the Outer component material stops.
-Between the Start Angle and the Stop angle, the Inner and the Outer components blend.
+#### 終止角度
+**內側材質**完全淡出的角度。
+**起始角度**與**終止角度**之間是**內側材質**與**外側材質**漸變的部分。
 
-In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/01.png](images/01.png) is 60 degrees (in the rendering that translates to the red circle).
-The image at the left shows the the Inner material as white, and the Outer material as black.
+下圖中的起始角度 ![images/01.png](images/01.png) 是 30 度 (綠色圓圈)，終止角度 ![images/02.png](images/02.png) 是 60 度 (紅色圓圈)。
+
+綠色圓圈之內以純內側材質 (白色) 彩現，紅色圓圈之外以純外側材質 (黑色) 彩現。
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
-* Between 0 and 30 degrees from the viewpoint, you see white.
-* Between 30 and 60 degrees&#160;from the viewpoint, you see a gradient from white to black.
-* Between 60 and 90 degrees&#160;from the viewpoint, you see black.
+* 0 至 30 度之間完全是白色。
+* 30 至 60 度之間是白色漸變至黑色的漸層範圍。
+* 60 至 90 度之間完全是黑色。
 
-## Blend
+## 混合
 {: #blend}
-The Blend procedure combines two base components and controls the proportions of each. All of the standard library wood materials use a Blend procedure to change the finish of the wood from clear matte to dark shiny.
+混合程序由兩個基本材質組成，可以控制兩個材質的混合比例。Flamingo nXt 內建的材質庫裡的木紋材質有很多都是從混合程序建立的，以混合數值控制木紋材質的反射度 (材質二具反射性質)。
 ![images/blend-001.png](images/blend-001.png)
-Blends work well changing an entire material definition by adding an overall color to a base patterned material.
+混合程序可以用混合值做整體的混合控制，或以一張圖片來控制混合度。
 
-#### Blend
-Varies the percentage of each component material used in the final material.  For instance the material blow shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and 50% striped and 50% green color blended.  The image to the right shows a weak striped material with a strong green material, so the slider is at the right of the Blend slider.
+#### 混合
+調整兩個材質的混合量，以下圖的例子而言，當混合滑桿在最左邊時，材質以紅色紋理的第一個材質顯示。當混合滑桿在最右邊時，材質以綠色紋理的第二個材質顯示。當混合滑桿在正中間時，紅色與綠色紋理各以 50% 混合顯示。
 ![images/blendpercent.png](images/blendpercent.png)
 
-#### Use image
-Bitmap images usually consisting of grayscale patterns define where two component materials will show. The materials are blended by the value of the gray pixels in the image. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
-In the image, the same materials are used for the first and second components, but the blend is controlled by three different bitmaps.
+#### 使用圖片
+以一張圖片來控制兩個材質的混合量，圖片像素的灰階值決定兩個材質的混合比例，黑色的像素顯示**材質一**，白色的像素顯示**材質二**，灰色的像素混合兩個材質。
+
+下圖中的物件使用的混合程序的兩個材質完全一樣，但兩個材質的混合以三張不同的圖片控制。
 ![images/blendmask.png](images/blendmask.png)
-The resolution of the mask bitmap affects the quality of the material. Higher resolution bitmaps allow a viewpoint closer to the material with fewer quality issues, but they also use more memory.
+控制材質混合的圖片 (遮罩) 的解析度會影響材質的品質，使用高解析度的圖片會有比較好的效果，但也會使用較多的記憶體。
 
-#### Use Alpha channel
-If the image has an alpha channel, this can be used instead of the bitmap grayscale to determine where the colors blend.
+#### 使用 Alpha 通道
+如果使用的圖片內含 Alpha 通道，可以使用 Alpha 通道來混合兩種材質，不使用圖片的灰階值。
 
-#### Reverse
-The First component will be placed where there is white in the bitmap pattern, and the Second component will be placed where there is black in the bitmap pattern.
+#### 反轉
+對調兩種材質在物件上顯示的部分。
 
-#### Tiles
-The scale of the material is independent of the resolution of the bitmap used to define it. In order to scale the material correctly, decide how large an area in real units one copy of the bitmap represents. If the bitmap represents the height of six 4-unit tiles and the length represents twelve 4-unit tiles, the scale would be 48 units in the x-direction and 24 units in the y-direction. This stretches the bitmap to the proper size for the pattern.
+#### 拼貼
+圖片顯示在物件上的大小是以模型單位計算，與圖片的像素多少無關，例如您想讓一張圖片在一個 100 x 100 模型單位的平面上顯示 5 x 10 的拼貼數，可以將圖片拼貼的寬度設為 20，高度設為 10。
 
-#### Width
-The width in pixels of a single instance of the image.
+#### 寬度
+圖片在物件上顯示的模型單位寬度。
 
-#### Height
-The height in pixels of a single instance of the image.
+#### 高度
+圖片在物件上顯示的模型單位高度。
 
-## Granite
+## 花崗岩
 {: #granite}
-Creates a 3-D material with solid pockets of a second material embedded in the Base component. The Granite procedure combines a randomly distributed Spot component in a Base component. The Granite procedure defines how the Base and Spot components combine. Granite procedures can be used for a variety of different materials including rust, sparkly plastic, and other randomly spotted materials.
+建立模擬花崗岩紋路的 3D 程序，它是由**底色**與**雜點**兩個材質組成，雜點是以亂數產生隨機分布在底色上，有不規則紋路的材質都以使用這個程序。
 ![images/granitematerials.png](images/granitematerials.png)
 
-#### Base/Spot
-The Base and Spot components are two materials. Their properties are specified in the same way as any material.
+#### 底色/雜點
+**底色**與**雜點**兩個材質的設定與一般材質完全一樣。
 ![images/granitescale.png](images/granitescale.png)
 {% include_relative snippets/snippet-materialscaleandlock.md %}
 
-#### Density
-A fraction of the whole pattern. Increasing this setting increases the relative size of the spots.
+#### 雜點密度
+設定雜點占材質面積的比例，數值越大雜點就越大。
 ![images/granitedensity.png](images/granitedensity.png)
 {% include_relative snippets/snippet-materialblend.md %}
 ![images/graniteblend.png](images/graniteblend.png)
 
-## Marble
+## 大理石
 {: #marble}
-Creates alternating slabs of Base and Vein components. The Marble procedure defines how the Base and Vein components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object.
+模擬大理石紋路的程序，由**底色**與**脈絡**兩種顏色組成。
 
 ![images/marbled.png](images/marbled.png)
 
-Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object.
+材質如何對應到物件上由物件的[貼圖軸](properties-object.html#mapping)控制。
 ![images/materialunmapped.png](images/materialunmapped.png)
-No texture mapping (left). With texture mapping (right).
+*沒有貼圖軸 (左) 與有貼圖軸 (右)。*
 
-#### Base/Vein
-The Base and Vein components are two materials. Their properties are specified in the same way as any material.
+#### 底色/脈絡
+**底色**與**脈絡**兩個材質的設定與一般材質完全一樣。
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
-#### Vein Width
-Alters the relative size of the slabs to each other. Vein Width is a fraction of the distance from one Base stripe to the next. Values range from 0 (zero) for no Vein component to 1 for no Base component.
+#### 脈絡寬度
+這個設定是**底色**與**脈絡**的寬度比例，例如將**脈絡寬度**設為 0.9 時，**底色**的寬度為 0.1。將脈絡寬度設為 1 時完全沒有底色，設為 0 時完全沒有脈絡。
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-Veneer (left), normal (right).
+*使用 (左) 與未使用 (右) 飾片選項。*
 
-## Tile
+## 拼貼
 {: #tile}
-Tile is a 2-D material.&#160;Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The Tile material combines a Base component and a Joint component. Each of these materials can also include any other material.
+拼貼是一種 2D 程序，使用[貼圖軸](properties-object.html#mapping)可以控制拼貼方格的走向，它由**底色**與**貼縫**兩個元件組成，這兩個元件可以是材質或程序。
 ![images/tile materials.png](images/tile materials.png)
-Scale tile differently in each direction for special effects. For example, use a tile material that is extremely long in one direction to create siding materials.
+寬度與高度使用不同的比例可以做出一些特殊的效果，例如細長的拼貼可以用來做為房至外牆的材質使用。
 
-#### Tile
-Sets the overall tile size. The width and height sizes can be set independently.
+#### 拼貼
+設定拼貼方格的大小，寬度與高度可以分開設定。
 ![images/tilescale.png](images/tilescale.png)
 
-#### Width/Height
-Specifies the width and height of the tiles.
+#### 寬度/高度
+設定拼貼中一格的寬度與高度。
 {% include_relative snippets/snippet-lock-widthheight.md %}
 
-#### Joint
-Specifies the size of the joint material.
+#### 貼縫
+拼貼的貼縫設定。
 ![images/tilejointsize.png](images/tilejointsize.png)
 
-#### Horizontal joint/Vertical joint
-Specifies the width and height of the joint material.
+#### 水平/垂直貼縫寬度
+設定水平貼縫與垂直貼縫的寬度。
 
-#### Lock
-Maintains the ratio between the Horizontal and Vertical joint sizes.
+#### 鎖定
+維持**水平貼縫**與**垂直貼縫**寬度的比例。
 
-#### Offset
-Provides a relative horizontal offset per vertical tile.&#160;For example, use a setting of .5 to produce a standard running bond. This allows modeling of material such as marble tile, without the effect of having the entire floor hewn from the same block of marble.
+#### 偏移
+將相鄰的拼貼方格錯開，設為 0.5 可以產生類似磚牆上磚塊的排列方式。將大理石程序代入底色元件可以產生大理石地磚的材質。
 ![images/tileoffset.png](images/tileoffset.png)
 
-#### Vary Tiles
-Add randomness to the material color for each tile. This makes it possible to model material such as non-uniform bricks.
+#### 拼貼變化
+讓拼貼的每一格的花樣不規則變化，產生類似馬賽克磁磚的效果。
 
 #### R/G/B
-Modifies the red, green, and blue color components.  This will slightly vary the base material of each tile randomly.
+使拼貼的每一格的底色材質顏色隨機變化。
 ![images/tilevarycolor.png](images/tilevarycolor.png)
 
 #### X/Y/Z
-Offsets the material from the world origin for each tile randomly. Do this if a seam that marks the beginning of the material appears an in inappropriate place.
+使拼貼的每一格的圖片隨機偏移。
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
-## Wood
+## 木紋
 {: #wood}
-Wood consists of concentric cylinders of alternating Base and Ring components. The Wood settings define how the Base and Ring components combine.
+**底色**是木頭的原色，**環狀紋**是木頭的年輪，可以控制環狀紋的寬度與變化度及兩個材質如何混合。
 
-Use this method to create wood materials if objects are not closely viewed. If detailed wood is needed, use a [Texture material](material-type-simple.html#textured) to do wood.  If the viewpoint is not close to the wood, a solid color can be used to take the place of wood without sacrificing image quality. This allows faster rendering. An additional advantages of using a wood material is that when rendering different sides of an object, the wood grain will look correct. End grain will show on the ends and parallel grain will show on the sides of an object.
+如果木質物件不需要近距離彩現可使用此程序，需要近距離彩現請使用[貼圖材質](material-type-simple.html#textured)。物件距離很遠時，木紋會以單一顏色取代，這樣可以在不犧牲彩現品質的情形下加快彩現速度。木紋程序的優點是可以做出木紋橫剖面紋路 (年輪) 與縱剖面紋路 (平行紋) 對齊的效果。
 ![images/woodmaterials.png](images/woodmaterials.png)
 
-#### Base/Ring
-The Base and Ring components are two materials. Their properties are specified in the same way as any material.
+#### 底色/環狀紋
+**底色**與**環狀紋**兩個材質的設定與一般材質完全一樣。
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
 
-#### Ring Width
-A fraction of the distance between one Base stripe and the next. Values range from 0 (zero) for no Ring component to 1 for no Base component.
+#### 環狀紋寬度
+這個設定是**底色**與**環狀紋**的寬度比例，將環狀紋寬度設為 1 時完全沒有底色，設為 0 時完全沒有環狀紋。
 ![images/woodringwidth.png](images/woodringwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/woodveneer.png](images/woodveneer.png)
-Veneer (left), normal (right).
+使用 (左) 與未使用 (右) 飾片選項。
