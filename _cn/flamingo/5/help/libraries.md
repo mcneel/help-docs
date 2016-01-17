@@ -1,73 +1,75 @@
 ---
+title: 材质库面板
 ---
 
-# ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
-The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
+# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+Libraries 指令可以打开材质库面板，在材质库面板中，可以管理材质、贴图以及环境等资源。
 
-Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
+渲染内容可以保存到文件以创建外部材质库，渲染内容可以在 Rhino 窗口与文件夹之间拖拽。
 
-Color swatches can be dragged and dropped in the same way.
+色卡也可以以这种方式进行拖拽。
 
-The Libraries panel displays a view into the content folders you have set up. Use this to drag and drop content into the model or to store document content to a location outside the model.
+材质库面板中显示出了您设置的文件夹中的内容，这样您就可以将本机上存放在模型外的材质拖拽到模型中了。
 
-Materials are simply files on your hard drive.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
+材质以普通文件的型式存放在您的硬盘里，材质库文件夹也是 Windows 中的普通文件夹，您可以像操作普通 Windows 文件和文件夹一样，对材质文件和文件夹进行复制、粘贴、移动等操作。
 
-Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
+通过材质库选项卡顶部的地址栏，您可以浏览您计算机中的任意文件夹。
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+点击右上角的扳手图标，可以快速回到默认的材质库文件夹。 ![images/library_default.png](images/library_default.png)
 
-#### Organizing Libraries
+#### 管理材质库
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+材质库只是普通的文件，您可以文件夹间复制、粘贴、移动材质。使可以用 Windows 资源管理器编辑文件夹与文件。在[材质库设置](#settings) ![images/library_default.png](images/library_default.png) 中可以设置材质库的默认文件夹。
 
-## Materials Library
+## 材质库
 {: #material}
-Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
+材质库中的材质只是硬盘上的文件，把材质赋予给模型以后，材质就保存在了模型中，对模型中材质的更改，不会影响到硬盘上的材质。
 
-Drag and drop materials to assign materials to the model. Materials can be assigned to:
+直接将材质拖拽到模型上赋材质，材质可以赋给：
 
-#### Layer Assignment
-Drag a material directly onto the layer name in the Layers Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
+#### 通过图层赋予材质
+直接将材质拖拽到图层面板中图层的名称上即可。推荐使用此方法，材质赋予给图层以后，该图层中全部物件也被赋予了此材质，要更换图层的材质只需要把其他材质再拖放到该图层即可。
 
-#### Object Assignment
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
+#### 将材质赋予给物件
+直接将材质拖放到任意工作视窗中的物件上即可，此操作将会覆盖该物件由图层得到的材质。
 
-#### Block Assignment
-Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
+#### 通过图块赋予材质
+将材质拖放到图块上，该图块中的所有设置为“以父物件”的子物件将被赋予此材质，所有获取了此材质的子物件将处于选中状态。
 
-## Plant Library
+## 植物库
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+默认情况下打开材质库显示的是植物文件夹，从这里可以将植物放置到模型中， 植物放置到模型以后将保存在模型中，在模型中对植物做出的更改不会影响到硬盘上材质库中原来的植物。将植物拖放到任意工作视窗可以将植物放入模型。更多详情请参考[植物](plants.html)帮助主题。
 
-## Environment Library
+## 环境库
 {: #environment}
-Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
+环境可以保存在材质库中，这样就可以将一个模型中的材质用在另一个模型中，更多详情请查阅[环境](environment-tab.html)。
 
-## Library Settings
+## 材质库设置
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+使用 ![images/options.png](images/options.png) 中材质库页面下的设置更改 ![images/library_default.png](images/library_default.png) 功能表中默认打开的材质库文件夹。
 
-##### Where can I find this command?
-There are three places to find the Libraries Options command.
+##### 在哪里可以找到这个指令？
+可以从下面三个地方找到材质库选项指令
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
- 1. Menus > Tools pulldown > Options > Libraries.
- 
+ 1. 材质库选项卡 > ![images/library_default.png](images/library_default.png) 位于材质库面板的右上角 > 设置...
+ 1. 功能表 > 工具下拉菜单 > 选项 > 材质库。
+ 1. 功能表 > 面板 > 材质库。
 
-### Show render content
-Use this to show or hide the default render content location.
 
-#### Use default library location (My Documents)
-By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
+### 显示渲染内容
+显示或隐藏默认渲染内容的位置。
 
-#### Custom
-Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
+#### 使用默认材质路径(我的文档)
+默认情况下，[渲染材质库](libraries.html) 是*我的文档*的子目录。
 
-##### Browse button
-Open file browser to specify file.
+#### 自定义
+设置一个自定义的[材质库](libraries.html)文件夹。更改此计算机上的[渲染材质库](libraries.html)默认目录。
 
-#### Show "Documents" folder
-In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
+##### 浏览按钮
+打开资源管理器选择文件。
 
-#### Show custom folders
-In the [Libraries panel](libraries.html), designated custom folders will display in the menu.
+#### 显示“文档”文件夹
+在[材质库面板](libraries.html)的功能表中打开渲染内容时所显示的文件夹。
+
+#### 显示自定义文件夹
+在[材质库面板](libraries.html)的功能表中打开自定义文件夹时所显示的文件夹。

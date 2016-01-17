@@ -1,37 +1,38 @@
 ---
+title: 基本材质属性
 ---
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
-Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
+# ![images/paint.svg](images/paint.svg){{page.title}}
+Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you can change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is needed to get a different look.
 
-#### Simple Material Types:
+#### 简易材质类型:
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Solid Color](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastic](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metal](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[Glass](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Glossy](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
+>![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[单一颜色](#solid-color)
+>![images/newplasticmaterial.png](images/newplasticmaterial.png)[塑胶](#plastic)
+>![images/newmetalmaterial.png](images/newmetalmaterial.png)[金属](#metal)
+>![images/newglassmaterial.png](images/newglassmaterial.png)[玻璃](#glass)
+>![images/newglossymaterial.png](images/newglossymaterial.png)[模糊](#glossy)
+>![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
+>![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo 贴图](#flamingo-textured)
+>![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[贴图组](#texture-set)
 
-Any material can be converted to an advanced material.  Advanced materials present all the possible controls to edit a material in Flamingo nXt.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
+任何材质都可以转化为高级材质，高级材质提供了 Flamingo nXt 中所有可编辑的材质特性。 为了在最大程度上控制材质，您可以直接使用高级材质或将现有的材质转化为高级材质。
 
-#### Advanced Materials are comprised of these property groups:
+#### 高级材质包含如下属性组：
 
-> [Name](material-type-advanced.html#name)
-> [Material Procedure](material-type-advanced.html#procedures)
-> [Advanced Material Properties](material-type-advanced.html#advanced-materials-properties)
-> [Reflective Finish](material-type-advanced.html#reflective-finish-and-highlight)
-> [Transparency Properties](material-type-advanced.html#transparency)
-> [Procedural Textures](material-type-advanced.html#bump-patterns)
-> [Bitmap Textures](material-type-advanced.html#textures)
-> [Notes](material-type-advanced.html#notes)
+>[名称](material-type-advanced.html#name)
+>[程序材质](material-type-advanced.html#procedures)
+>[高级材质属性](material-type-advanced.html#advanced-materials-properties)
+>[反射](material-type-advanced.html#reflective-finish-and-highlight)
+>[透明属性](material-type-advanced.html#transparency)
+>[程序贴图](material-type-advanced.html#bump-patterns)
+>[位图贴图](material-type-advanced.html#textures)
+>[附注](material-type-advanced.html#notes)
 
-Materials are saved and stored in the Rhino model. Unique materials can have the same name in different Rhino models.
+材质保存于 Rhino 模型当中，相同名称的不同材质可以存在于不同的模型中。
 
-## Solid Color
+## 单一颜色
 {: #solid-color}
-Solid Color materials have only a [name](material-type-advanced.html#name) and a [color](material-type-advanced.html#color).
+单一颜色材质只有[名称](material-type-advanced.html#name)与[颜色](material-type-advanced.html#color)。
 
 ![images/solidcolors.png](images/3-solidcolor.png)
 
@@ -39,108 +40,108 @@ Solid Color materials have only a [name](material-type-advanced.html#name) and a
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %}
 
-## Plastic
+## 塑料
 {: #plastic}
-Plastic materials are slightly reflective with a white [highlight](material-type-advanced.html#highlight-color).
+塑料材质默认的[高光](material-type-advanced.html#highlight-color)颜色为白色。
 
 ![images/solidcolors.png](images/3-plastic.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 使用高级编辑器修改[高光颜色](material-type-advanced.html#highlight-color), [强度](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), 以及[锐利度](material-type-advanced.html#sharpness)的预设。
 
-## Metal
+## 金属
 {: #metal}
-Metal materials have a highlight whose color matches the [color](material-type-advanced.html#color). You can also control the [Sharpness](material-type-advanced.html#sharpness) of the reflection.
+金属材质的高光颜色与金属的[颜色](material-type-advanced.html#color)一致，金属材质的材质属性里有控制反射与高光[锐利度](material-type-advanced.html#sharpness)的设置。
 
 ![images/solidcolors.png](images/3-metal.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### 锐利度
+控制反射的锐利度与模糊强度，更多详细信息请查阅[锐利度](material-type-advanced.html#sharpness)主题。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 使用高级编辑器修改[高光颜色](material-type-advanced.html#highlight-color), [强度](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) 以及[类型](material-type-advanced.html#type)的预设。
 
-## Glass
+## 玻璃
 {: #glass}
-Glass materials have a [color](material-type-advanced.html#color) and an [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) (IOR).
+玻璃材质有可以调整的[颜色](material-type-advanced.html#color)和[折射率](advanced-material-properties-main.html#index-of-refraction) (Index of Refraction, IOR) 设置。
 
 ![images/solidcolors.png](images/3-glass.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Index of Refraction
-Controls the amount light bends through the material. See Advanced [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) topic for more details.
+#### 折射率
+控制光线通过材质发生折射的程度，获得更多详细请查阅[折射率](advanced-material-properties-main.html#index-of-refraction)主题。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Sharpness](material-type-advanced.html#sharpness) and [Transparency](material-type-advanced.html#transparency)
+{% include_relative snippets/snippet-material-advanced-editor.md %} 使用高级编辑器修改[高光颜色](material-type-advanced.html#highlight-color), [强度](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [锐利度](material-type-advanced.html#sharpness)以及[透明度](material-type-advanced.html#transparency)的预设。
 
-## Glossy
+## 模糊
 {: #glossy}
-Glossy materials generally have a low Highlight [Intensity](material-type-advanced.html#intensity) and [Sharpness](material-type-advanced.html#sharpness).
+模糊材质通常有[低强度](material-type-advanced.html#intensity)的高光以及[锐利度](material-type-advanced.html#sharpness)。
 
 ![images/solidcolors.png](images/3-glossy.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
-Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### 强度
+控制表面反射的高光强度，获得更多信息请查阅[强度](material-type-advanced.html#intensity)主题。
 
-#### Highlight Sharpness
-Controls sharpenss vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### 高光锐利度
+控制表面高光的锐利度与模糊强度，获得更多信息请查阅[高光锐利度](material-type-advanced.html#sharpness)主题。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 使用高级编辑器修改 [Fresnel](material-type-advanced.html#fresnel) 和[类型](material-type-advanced.html#type)预设。
 
-## ClearFinish
+## 亮光漆面
 {: #clearfinish}
-The ClearFinish material simulates car paint, porcelain, ceramics, varnished woods, or any material with a plastic or clear-coat layer. ClearFinish uses the [Fresnel](material-type-advanced.html#fresnel) setting to change the material color based on angle to the view. These materials tend to be a deep color when looked at straight on, but as the surface curves away from the view, they become more and more reflective. Car paints with a clear-coat or clear lacquer finishes are good examples.
+亮光漆面材质模拟汽车烤漆、瓷器、陶瓷、上了亮漆的木头或任何表面有透明涂层的物件，亮光漆面材质使用 [Fresnel](material-type-advanced.html#fresnel) 设置依据物件表面的法线方向与视图方向的夹角改变材质颜色，物件正对视图的部分的材质颜色比较深，偏离视图方向的部分反射度会提高。汽车烤漆就是很好的例子。
 
 ![images/solidcolors.png](images/3-clearfinish.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} 使用高级编辑器修改[高光颜色](material-type-advanced.html#highlight-color), [强度](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), 以及[锐利度](material-type-advanced.html#sharpness)的预设。
 
-## Flamingo Textured
+## Flamingo 贴图
 {: #flamingo-textured}
-Textured materials use images to create colors and patterns. The image name, resolution, tile size, and highlight intensity and sharpness are controllable from this simple material.
+贴图材质以图片取代材质的颜色，贴图材质的简易材质属性里有使用的图片的名称与分辨率信息及调整拼贴、反光强度与锐利度的设置。
 
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
-Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### 强度
+控制表面镜面反射的强度，请查阅[强度](material-type-advanced.html#intensity)主题以获得更多信息。
 
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### 锐利度
+控制反射的锐利度与模糊强度，更多详细信息请查阅[锐利度](material-type-advanced.html#sharpness)主题。
 
-#### Image
-Set the image map and properties of the material. There are many options here. See the Advanced [Images](material-type-advanced.html#texture) topic for more details.
+#### 图像
+设置材质的图像映射以及属性，这里有许多设置选项，请查阅[图像](material-type-advanced.html#texture)主题获取更多信息。
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material.
+{% include_relative snippets/snippet-material-advanced-editor.md %} 使用高级编辑器修改此材质的预设。
 
-## Texture Set
+## 贴图组
 {: #texture-set}
-[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these set of textures.
+[贴图组材质](texture-set-materials.html)贴图组材质支持包含置换、法线向量、凹凸等效果的第三方贴图映射，通过组合这些贴图映射可以创建出特别复杂的材质，[PixPlant 软件](http://www.pixplant.com/) 可以使用标准的位图创建出具有这些特性的贴图。
 <!-- TODO: This dialog Needs a page.-->
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-#### Width and Height
+#### 宽度与高度
 Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
 
-#### Intensity
-Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### 强度
+控制表面镜面反射的强度，请查阅[强度](material-type-advanced.html#intensity)主题以获得更多信息。
 
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### 锐利度
+控制反射的锐利度与模糊强度，更多详细信息请查阅[锐利度](material-type-advanced.html#sharpness)主题。
 
-#### Types
-This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
+#### 类型
+控制表面的反射类型，查阅[类型](material-type-advanced.html#type)主题以获得更多信息。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+{% include_relative snippets/snippet-material-advanced-editor.md %} 使用高级编辑器修改此材质的预设。 **附注:** 这是一个多种默认材质组合而成的复合材质，使用高级编辑器修改并不会同步所有属性。
 
-## Advanced Material
-The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.
+## 高级材质
+[Flamingo 高级](material-type-advanced)材质包含了 Flamingo 材质所有的可设置属性，如果简易材质不满足您的使用需求，使用 [Flamingo 高级](material-type-advanced)材质可以让您更加灵活的创建材质。
