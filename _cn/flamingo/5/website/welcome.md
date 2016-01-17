@@ -3,7 +3,7 @@ layout: fullwidth-page
 title: Flamingo 入门
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg)Flamingo nXt® 入门
+# ![images/flamingotab.svg](http://help.mcneel.com/en/flamingo/5/website/images/flamingotab.svg)Flamingo nXt® 入门
 Flamingo nXt 可以在 Rhinoceros ® 内部将模型渲染为高质量、照片级的静态与动画图片文件，Flamingo nXt 5 是 Flamingo 的升级版，并集合了 Rhino 5 内置渲染的功能，此版本仍是开发中的版本（WIP）。
 
 您可以在 [Flamingo nXt 5 下载](http://www.rhino3d.com/download/flamingo/5/beta)页面下载并安装 Flamingo。
