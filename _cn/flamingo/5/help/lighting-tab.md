@@ -1,94 +1,96 @@
----
+﻿---
+title: 照明预设组
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Lighting Presets
-Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
+# ![images/flamingotab.svg](images/flamingotab.svg){{page.title}}
+照明是渲染时最重要也是最容易被忽视的部分。照明不只是照亮模型这么简单，它可以营造出特殊的氛围，也是渲染成功与否的关键。
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
-*Image by Christopher Soto Gutiérrez.*
+*由 Christopher Soto Gutiérrez 提供的图片。*
 
-#### Where can I find Flamingo Lighting control?
+#### 在哪里可以找到 Flamingo 照明控制？
 
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
-* Right-click any tab and check Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 下拉菜单 > 显示控制面板 > Flamingo nXt。
+* 在任意面板上点击鼠标右键，勾选 Flamingo nXt。
 
 
-Use the following guidelines when lighting your model:
+请使用下列要点渲染模型：
 
-* Start with a lighting preset.
-* Since Flamingo nXt simulates real-world lighting, provide accurate information whenever possible.
-* Avoid using unrealistic intensity levels for light sources.
-* Set the units correctly for your model. The lighting will not be correct unless the units are correct. For example, if your model is in millimeters, set the model units to millimeters.
-* Adjust the overall brightness of your rendering by using the [Brightness](render-window.html#brightness) control on the rendering display. Do not attempt to adjust the overall scene brightness by changing the intensity of all the light sources; the automatic [exposure](render-window.html#brightness) adjustment will defeat this.
+* 使用灯光预设。
+* Flamingo nXt 模拟真实世界的灯光进行计算，所以尽可能提供精确的信息。
+* 避免灯光使用非真实的亮度。
+* 模型单位要设置正确，模型的单位设置不正确，灯光计算就不可能正确。例如：如果您是设置毫米创建模型，请确定模型的单位也是设置为毫米。
+* 提高场景的整体亮度请使用渲染视窗的[亮度](render-window.html#brightness)设置，提高场景中的每一个灯光的亮度不是好方法，因为 Flamingo nXt 的自动[曝光](render-window.html#brightness)功能会让您对灯光的调整适得其反。
 
 To improve lighting techniques, be aware of the light and how it affects various surfaces. Materials can mask some of the effects of shadows and reflections, so some rendering experts apply lighting to their models before applying materials. Try to see light objectively, the way a camera does.
 
 ## Lighting Presets
 {: #lighting-presets}
-A great starting place for lighting is the included Lighting presets that correspond to real-world lighting situations. Flamingo nXt provides lighting presets that can help get you started lighting your model. There are many more lighting options available, but the presets are often sufficient for many different renderings. Choose the Preset scheme that most closely resembles your scene.
+A great starting place for lighting is the included Lighting presets that correspond to real-world lighting situations. Flamingo nXt provides lighting presets that can get you started lighting your model. There are many more lighting options available, but the presets are often enough for many different renderings. Choose the Preset scheme that most closely resembles your scene.
 
-Lighting in Flamingo nXt uses four preset methods categories:
+Flamingo nXt 内置了下列四组默认的照明设置:
 
-> [Studio lighting](lighting-tab.html#studio-lighting)
-> [Exterior daylight](lighting-tab.html#exterior-daylight)
-> [Interior daylight](lighting-tab.html#interior-daylight)
-> [Artificial lighting](lighting-tab.html#artificial-lighting)
+>[摄影棚照明](lighting-tab.html#studio-lighting)
+>[户外日光](lighting-tab.html#exterior-daylight)
+>[室内日光](lighting-tab.html#interior-daylight)
+>[人工照明](lighting-tab.html#artificial-lighting)
 
-### Studio lighting
+### 摄影棚照明
 {: #studio-lighting}
-This scheme mimics the lighting found in a photographer's studio. It is most useful for rendering small-to-medium-sized objects in isolation.  It can also be used for any scene that is well lit through an HDRI environment.
+这个照明默认组模拟摄影棚的照明配置，常用于中小型物件单独摄影的情形，它的主要光源来自一张 HDR （高动态）图片，HDR图片的照明亮度已适当降低，以符合真实摄影棚内的照明亮度。
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} A high-dynamic-range (HDR) image file provides the primary lighting. The light from the HDR image resembles the interior lighting levels of the studio. The HDR settings are on the [Sky tab](sun-and-sky-tabs.html#sky). You can also add artificial lights to your scene using the Lights tab. The visible background in the Studio preset is black.
+![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left}高动态(HDR)贴图能够提供照亮场景的主要照明，HDR 贴图中的照明效果可以达到摄影棚室内灯光的照明级别。HDR 的设置位于[天光](sun-and-sky-tabs.html#sky)选项卡中，您也可以在灯光页面加入其它灯光物件。此外，摄影棚照明默认背景是黑色的。
 
-Studio lighting is optimized for tabletop setups for small design articles such as jewelry and product designs. In the preset scheme, the sun is off and an HDR image sky provides something for shiny objects to reflect.
+摄影棚照明默认组是针对中小型物件（珠宝与产品设计）的桌面摄影最佳化的配置。在这个默认组里，太阳是关闭的，并以一张 HDR 图片做为表面具反射性质的物件的反射图片。
 
-For greater control, use light sources to light the scene. When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires several light sources placed in a way to create very light and very dark areas.
+使用灯光来为场景照明可以更加有效的控制照明效果。摄影棚照明通常需要较大的明暗对比度，阴暗处与明亮处一样重要，要达到这个目的需要在场景里加入额外的灯光，并对灯光做特殊安排，让场景有明显的阴暗与明亮区域的分别。
 
-Lighting techniques for photography are generally the same as lighting for rendering. So a good place to start learning is one of the many books on the subject of photographic lighting. For more information about setting up studio lighting, see: [Studio Lighting Basics](../guides/studio-lighting-basics.html).
+渲染的照明设置基本上是与真实的摄影没有什么不同，所以您可以将讨论摄影技术的书籍作为渲染的参考资料，更多关于摄影棚照明设置的信息请见：[摄影棚照明的基本技巧](../guides/studio-lighting-basics.html)。
 
-### Exterior daylight
+### 户外日光
 {: #exterior-daylight .clear-img}
-This scheme simulates daylight for architectural exteriors using a natural sun and sky.
+此配置以太阳与天空模拟建筑物外观渲染使用的场景照明。
 
-![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right} Specify settings on the [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) tabs. Set [sun angles](sun-and-sky-tabs.html#set-azimuth-and-altitude) directly or use [geographical location](sun-and-sky-tabs.html#set-location-on-earth), date, and time. The default visible background for this preset is the simulated sky.
-Lighting a building exterior is the most straightforward lighting model. Most exterior lighting will need no more than the default [Sun](sun-and-sky-tabs.html#sun) light source.
+![images/exteriorlighting-001.png](images/exteriorlighting-001.png){: .float-img-right}[太阳](sun-and-sky-tabs.html#sun)与[天光](sun-and-sky-tabs.html#sky)的设置可以在太阳与天光页面里修改，您可以直接设置想要的[太阳角度](sun-and-sky-tabs.html#set-azimuth-and-altitude)，或以[地理位置](sun-and-sky-tabs.html#set-location-on-earth)、日期及时间计算太阳的角度，这个默认组默认的背景是虚拟的天空。
 
-When the [Sun](sun-and-sky-tabs.html#sun) is turned on, the scene must be designated as an [interior](#interior) or an [exterior](#exterior). This is because the contribution of the sky light, reflected light from the ground, and light reflected off other surfaces is much different when inside as opposed to outside. Using the correct [Interior/Exterior](#indirect) setting results in effective and realistic lighting.
+建筑外观渲染的户外照明设置最为简单，通常只需要默认的[太阳](sun-and-sky-tabs.html#sun)做为光源即可。
 
-Sometimes it is easy to determine if a scene is an interior or an exterior. If the viewpoint is outside a building, it is an exterior scene. If the viewpoint is inside a room, it is an interior. Some kinds of scenes are not so clear. This includes courtyards, gazebos, exploded views, and sections. If a courtyard is much wider than it is tall, thereby letting in a lot of skylight, try lighting it as an exterior scene. If it is taller than it is wide, try lighting the scene as an interior. In this case, one of the tricks is to add daylight portals at the top of the courtyard to help direct the skylight into the scene.
+当[太阳](sun-and-sky-tabs.html#sun)打开时，场景设置必需区分[室內](#interior)或[户外](#exterior)，因为天空的亮度、地面反射的光线与物件反射的光线对照明的影响在室内与户外有很大的差别，正确的设置[室內/户外](#indirect)可以让渲染较有效率，效果也会较为真实。
 
-Lights can also simulate landscape lighting. Use spotlights to highlight architectural features and trees. This works well for night or twilight scenes. During the day, the sun normally will overpower any artificial lighting in an outdoor scene, just as it will in the real world.
+通常室内与户外场景很容易区别，当摄像机位于建筑物之外即为户外场景；摄像机位于建筑物之内即为室内场景。但有些场景就不是那么有明显的区别，例如：建筑物的中庭、建筑物的爆炸图或剖面图。以建筑物的中庭为例，当中庭的面积大，四周建筑较低时，这样的场景会有较多的天光照明，可以把它当作户外场景看待。当中庭面积小，四周较高时，场景会比较类似室内场景，这种情形可以在中庭上摆设“日光入口”物件，将天空的照明导入场景。
 
-Exploded views, sections, and axonometric drawings from above also pose a special challenge. The decision depends on the desired results. For an exterior scene with the quickest rendering, use the exterior rendering method. If this method is not producing an interesting enough image, try using an interior rendering. This may make the interior more interesting, but it takes more time to set up the lighting.
+户外场景除了以太阳与天空的照明外，人造灯也是不可缺的角色，尤其是在晚上或旁晚照明不足的场景都需要人造灯的辅助。但人造灯在大白天的户外场景就像真实世界一样会被户外高亮度的环境掩盖，对场景的影响微乎其微。
 
-### Interior daylight
+爆炸图、剖面图、立体正投影图这类特殊渲染的照明选择取决于需要效果，需要较快的渲染速度可以使用户外照明，效果达不到要求时可以改用室内照明，室内照明的设置会较花时间。
+
+### 室内日光
 {: #interior-daylight .clear-img}
-This scheme simulates an interior lit by natural light.
+模拟室内场景以自然光源照明的情形。
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} It consists of two components: direct sunlight transmitted from the [Sun](sun-and-sky-tabs.html#sun) and indirect sunlight transmitted via the [Sky](sun-and-sky-tabs.html#sky), the ground, and other exterior objects.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left}它的照明包含来自[太阳](sun-and-sky-tabs.html#sun)的直接照明与来自[天光](sun-and-sky-tabs.html#sky)、地面及其它物件的间接光。
 
-The [Sun](sun-and-sky-tabs.html#sun) and [Sky](sun-and-sky-tabs.html#sky) settings are similar to the [Exterior](lighting-tab.html#exterior-daylight) preset.
-The direct sunlight component of day lighting involves a straightforward calculation -- normally simply specify the time, date, and location to ensure accuracy.
+它的[太阳](sun-and-sky-tabs.html#sun)和[天光](sun-and-sky-tabs.html#sky)的设置与[户外日光](lighting-tab.html#exterior-daylight)类似。
+白天场景来自太阳的直接照明的设置最简单，通常只要提供日期、时间与位置就可以正确计算太阳的照射角度与方向。
 
-Notes on interior renderings:
+室内渲染的附注：
 {: .clear-img}
 
-* Use accurate values for your [lights](lights-tab.html), [sky settings](sun-and-sky-tabs.html#sky), and window glass materials if possible.
-* Because the sun and sky are much brighter than other lights, you may not see much effect from adding artificial lighting when the sun is on. This is normal. Avoid artificially boosting the power of your light sources.
-* You can set the [Sun](sun-and-sky-tabs.html#sun-intensity) or [Sky](sun-and-sky-tabs.html#sky-intensity) intensity to a lower value. Since these settings simulate a clear sky, reducing their intensity will simulate cloudy or darker day lighting conditions.
-* A [multi-channel](lights-tab.html#channel) rendering may help you get the picture you want, while still preserving accurate data.
+* 设置[灯光](lights-tab.html)、[天光](sun-and-sky-tabs.html#sky)与窗户的玻璃材质时请尽可能的使用正确数值。
+* 太阳与天空的亮度远超过灯光的亮度，所以在太阳与天空打开时灯光对场景的照明不会有明显的影响，这是与真实世界相仿的正常情形，请勿因此而提高灯光的亮度。
+* 您可以将[太阳](sun-and-sky-tabs.html#sun-intensity)或[天光](sun-and-sky-tabs.html#sky-intensity)的亮度调低，模拟多云或阴天的状况。
+* 使用[多通道](lights-tab.html#channel)渲染可以保留各种照明的精确信息，渲染完成后可以再调整每一个光源的强弱。
 
-### Artificial lighting
+### 人工照明
 {: #artificial-lighting}
-![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} This scheme provides a simulation of an architectural interior at night, lit by lamps. Use the [Lights tab](lights-tab.html) or [Rhino light commands](lights-tab.html#rhino-light-commands) to insert and manage light objects in your model.
+![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"}模拟夜间室内以人造光照明的场景，您可以使用[灯光选项卡](lights-tab.html)或 [Rhino 的灯光指令](lights-tab.html#rhino-light-commands)在模型里加入灯光物件。
 
-Indirect lighting, the lighting reflected off surfaces, is on when one of the two interior presets are selected and off for studio and exterior. This type of lighting is a significant component of an interior simulation. For exteriors and studio models the effects of indirect lighting is more subtle and is therefore turned off by default.
+间接照明是由物件表面反射光线产生的照明效果，有室内和室外两种预设的配置， is on when one of the two interior presets is selected and off for studio and exterior. This type of lighting is a significant component of an interior simulation. For exteriors and studio models the effects of indirect lighting is more subtle and is thus turned off by default.
 
-### Custom Lighting
+### 自定义照明
 {: #custom  style="clear:both;"}
-Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRI environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
+Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRi environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
 
-####  [Sun](sun-and-sky-tabs.html#sun)
+#### [太阳](sun-and-sky-tabs.html#sun)
 {: #sun}
 Turn on and off the Sun tab in the drop down. The [Sun tab](sun-and-sky-tabs.html#sun) contains the controls for altering the parameters of the sun position.
 
@@ -96,14 +98,14 @@ Turn on and off the Sun tab in the drop down. The [Sun tab](sun-and-sky-tabs.htm
 *Sun on and off.*
 The sun is a very bright directional light source infinitely far from the model. The controls for the sun specify its direction using spherical coordinates. For more details, see the [Sun tab](sun-and-sky-tabs.html#sun) topic.
 
-####  [Sky](sun-and-sky-tabs.html#sky)
+#### [天光](sun-and-sky-tabs.html#sky)
 {: #sky}
 Set the Sky channel to one of four options:
 
-> Auto
-> HDRI
-> Color
-> Image
+>Auto
+>HDRI
+>颜色
+>图像
 
 For details, see the [Sky tab](sun-and-sky-tabs.html#sky) topic.
 Defines a hemispherical light source infinitely far away from the model.
@@ -123,12 +125,12 @@ Provides an analytical model based on real-world sky conditions. The settings on
 An HDR image provides something for shiny objects to reflect.
 ![images/chromehdrbackground.png](images/chromehdrbackground.png)
 
-#### Color
+#### 颜色
 {: #color}
 Sets the sky to a solid color or a two- or three-color gradient using controls similar to [Environment: Color and Gradient Backgrounds](environment-tab.html#color-and-gradient-backgrounds).
 ![images/colorsky.png](images/colorsky.png)
 
-#### Image
+#### 图像
 {: #image}
 Uses an image background with a planar, cylindrical, or spherical projection similar to [Environment: Image](environment-tab.html#image).
 ![images/chromeimagesky.png](images/chromeimagesky.png)
@@ -140,14 +142,14 @@ Reduces the brightness of the [sun](sun-and-sky-tabs.html) and sky to mimic the 
 ![images/studiobrightnessoffandon.png](images/studiobrightnessoffandon.png)
 *Studio Brightness off (left) and on (right).*
 
-### Lights
+### 灯光
 {: #lights}
 Turns artificial lighting on and off.
 
 ![images/lightsonandoff.png](images/lightsonandoff.png)
 *Lights on (left) and off (right).*
 
-### Indirect
+### 间接照明
 {: #indirect}
 Defines the lighting reflected from surfaces. By default, it is on for interior lighting and off for exterior and studio lighting preset schemes. It is possible to turn on indirect lighting for exterior renderings.
 
@@ -164,7 +166,8 @@ Optimizes the indirect lighting for indoor situations.
 #### Exterior
 {: #exterior}
 Optimizes the indirect lighting for outdoor situations.
-Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately when using indirect lighting.
+
+Indirect lighting reflected from other surfaces can add subtlety and realism to your exterior rendering. In particular, the undersides of overhanging features such as eaves or balconies render more accurately with indirect lighting.
 
 #### Bounces
 {: #bounces}
@@ -173,6 +176,7 @@ Specifies the number of reflections caused by an indirect light.
 ### Ambient
 {: #ambient}
 Ambient light is a constant light added to the rendering. These settings control the intensity of the ambient light as a percentage of the total estimated ambient light in the scene.
+
 Decreasing the amount of ambient light generally produces images with more contrast. Too much ambient light can make a rendered image seem flat and uninteresting; too little can cause excessive contrast.
 
 #### None
@@ -191,8 +195,8 @@ Optimizes ambient light for studio scenes.
 
 ### Save lighting scheme
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Saves the current lighting scheme.
+![images/saveschemeicon.png](images/saveschemeicon.png)Saves the current lighting scheme.
 
 ### Open lighting scheme
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Opens a saved lighting scheme.
+![images/importfromfile.png](images/importfromfile.png)Opens a saved lighting scheme.
