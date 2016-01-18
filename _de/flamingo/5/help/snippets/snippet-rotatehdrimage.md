@@ -3,7 +3,7 @@
 
 ![images/hdri-spherical-proj.png](images/hdri-spherical-proj.png){: .float-img-left}
 
-* Klicken Sie auf die Plansteuerung, um das HDRI-Bild korrekt zu drehen.
+* Klicken Sie auf die Plansteuerung, um das HDR-Bild korrekt zu drehen.
 * Der rote Punkt entspricht der Bildmitte.
 
 #### Drehung
