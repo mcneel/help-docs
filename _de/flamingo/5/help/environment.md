@@ -37,7 +37,7 @@ Der sichtbare Hintergrund ist die grundlegende Hintergrundfarbe der Szene.  Der 
 
 #### Hintergrundtyp
 {: #background-type}
-Definiert das Farbschema, das den Hintergrund des gerenderten Bilds füllen wird. Für Hintergründe stehen die folgenden Typen zur Verfügung:
+Definiert das Farbschema, das den Hintergrund des gerenderten Bilds füllt. Für Hintergründe stehen die folgenden Typen zur Verfügung:
 
 > [Himmel](#environment-sky)
 > [Einfarbig oder Farbverläufe](#color-backgrounds)
@@ -57,7 +57,7 @@ Es ist immer eine Steuerung für die Hintergrundfarbe vorhanden. Eine Hintergrun
 
 #### Einfarbig
 {: #solid-color}
-Ein Hintergrund in Volltonfarbe besteht aus einer einzigen Farbe, die die Hintergrundkugel füllt.
+Ein einfarbiger Hintergrund besteht aus einer einzigen Farbe, die die Hintergrundkugel füllt.
 
 ![images/background-color-001.png](images/background-color-001.png)
 *Einfarbiger Hintergrund.*
@@ -73,19 +73,19 @@ Weitere Infos zum Bearbeiten eines zweifarbigen Farbverlaufs finden Sie im Hilfe
 
 #### Dreifarbiger Farbverlauf
 {: #three-color-gradient}
-Dreifarbige Gradientenhintergründe interpolieren die Hintergrundfarbe zwischen drei ausgewählten Farben.
+Dreifarbige Farbverlaufshintergründe interpolieren die Hintergrundfarbe zwischen drei ausgewählten Farben.
 ![images/background-color-003.png](images/background-color-003.png)
 *Dreifarbiger Farbverlaufshintergrund: Blau, Weiß, Gelb.*
 Weitere Infos zum Bearbeiten eines dreifarbigen Farbverlaufs finden Sie im Hilfethema zu den [Farbsteuerungen](#enviroment-sky-color-controls) unten.
 
 ### Farbsteuerungen
 {: #enviroment-sky-color-controls}
-Die Anzahl der Steuerelemente hängt von dem ausgewählten Farbhintergrundstyp ab. Farbverlaufshintergründe haben drei Farbwähler für die obere, mittlere und untere Farbe.
+Die Anzahl der Steuerelemente hängt von dem ausgewählten Farbhintergrundtyp ab. Farbverlaufshintergründe haben drei Farbwähler für die obere, mittlere und untere Farbe.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### Farben austauschen
-Durch Klick auf diese Schaltfläche kann die obere und untere Farbe des Farbverlauf ausgetauscht werden.
+Durch Klick auf diese Schaltfläche werden die obere und untere Farbe des Farbverlaufs gegeneinander ausgetauscht.
 
 #### Farbverlauf-Mapping
 {: #gradient-mapping}
@@ -151,7 +151,7 @@ Mit dieser Steuerung kann die Position des Bildes relativ zur aktuellen Ansicht 
 *Hintergrundbereich (1), Bildgröße und Form (2).*
 
 #### x-Skalierung / y-Skalierung
-Damit wird die Größe des Hintergrundbilds skaliert wobei der Wert 1.0 genau der Höhe bzw. Breite der Ansicht entspricht. Bei Eingabe einer x-Skalierung 1.0 beispielsweise nimmt das Hintergrundbild 100 % der Breite der Ansicht ein, während ein Wert von 0.5 bedeutet, dass es auf 50 % der Breite skaliert wird.
+Damit wird die Größe des Hintergrundbilds skaliert, wobei der Wert 1.0 genau der Höhe bzw. Breite der Ansicht entspricht. Bei Eingabe einer x-Skalierung 1.0 beispielsweise nimmt das Hintergrundbild 100 % der Breite der Ansicht ein, während ein Wert von 0.5 bedeutet, dass es auf 50 % der Breite skaliert wird.
 
 #### x-Versatz / y-Versatz
 Damit kann das Hintergrundbild ausgehend von der linken unteren Ecke des Ansichtsfensters mit einem Wert bezüglich der Breite und Höhe des Ansichtsfensters versetzt werden, wobei der Wert 1.0 einem Versatz von 100 % entspricht. So wird das Hintergrundbild bei Eingabe eines x-Versatzes von 0.25 beispielsweise um 25 % der Breite des Ansichtsfensters versetzt, bei 0.5 sind es 50 % usw.
@@ -237,7 +237,7 @@ Wenn Sie ein HDR-Bild als Umgebung verwenden, haben Sie mehr Kontrolle über die
 
 #### Bilddatei
 {: #hdri-image}
-Wählen Sie das HDRI-Hintergrundbild durch Klick auf die große Schaltfläche mit dem Text *(leer - zum Zuweisen hier klicken)*.  Klicken Sie zum Zuweisen eines anderen Bilds auf die Miniaturansicht des aktuellen Bilds.
+Wählen Sie das HDR-Hintergrundbild durch Klick auf die große Schaltfläche mit dem Text *(leer - zum Zuweisen hier klicken)*.  Klicken Sie zum Zuweisen eines anderen Bilds auf die Miniaturansicht des aktuellen Bilds.
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
@@ -247,7 +247,7 @@ Wählen Sie das HDRI-Hintergrundbild durch Klick auf die große Schaltfläche mi
 ## Optionen von planarem HDRi
 {: #planar-hdr-options}
 
-Planare HDRI-Bilder werden selten verwendet, können aber sehr hilfreich sein.  HDRI bietet einen breiteren Bereich an Farbmöglichkeiten. Sehr geeignet sind planare HDRI-Bilder für den Außenbereich hinter Fenstern in Architektur-Renderings, bei denen der Hintergrund zu hell oder dunkel ist.  Planare HDRI-Bilder werden immer planar gemappt.
+Planare HDR-Bilder werden selten verwendet, können aber sehr hilfreich sein.  Das HDR-Format bietet einen breiteren Bereich an Farbmöglichkeiten. Sehr geeignet sind planare HDR-Bilder für den Außenbereich hinter Fenstern in Architektur-Renderings, bei denen der Hintergrund zu hell oder dunkel ist.  Planare HDR-Bilder werden immer planar gemappt.
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
@@ -255,7 +255,7 @@ Planare HDRI-Bilder werden selten verwendet, können aber sehr hilfreich sein.  
 
 #### Bilddatei
 {: #hdri-planar-image}
-Wählen Sie das HDRI-Hintergrundbild durch Klick auf die große Schaltfläche mit dem Text *(leer - zum Zuweisen hier klicken)*.  Klicken Sie zum Zuweisen eines anderen Bilds auf die Miniaturansicht des aktuellen Bilds.
+Wählen Sie das HDR-Hintergrundbild durch Klick auf die große Schaltfläche mit dem Text *(leer - zum Zuweisen hier klicken)*.  Klicken Sie zum Zuweisen eines anderen Bilds auf die Miniaturansicht des aktuellen Bilds.
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
@@ -294,4 +294,4 @@ Objekte brechen den sichtbaren Hintergrund, wie es in den Einstellungen für die
 #### Kein transparentes Objekt-Alpha
 {: #no-transparent-alpha-objects}
 Verhindert, dass der Alphakanal durch transparente Objekte hindurch sichtbar ist und verhindert die Zusammensetzung des Alphakanals durch transparente Objekte.
-Wenn Bilder in den Alpha-Kanal eingefügt werden, deaktivieren Sie diese Option.
+Deaktivieren Sie diese Option, wenn Bilder in den Alphakanal eingefügt werden.

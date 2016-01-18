@@ -1,6 +1,6 @@
 
 #### ![images/floatingpreview.png](images/floatingpreview.png) Schwebende Vorschau
-Lässt das Vorschaubild in einem Fenster, dessen Größe angepasst werden kann, schweben.
+Lässt das Vorschaubild in einem Fenster schweben, dessen Größe angepasst werden kann.
 
 #### ![images/grid.png](images/grid.png) Raster
 Zeigt die Vorschau als Raster von Miniaturansichten an. Die Standardwerte der Editoren werden auf den Modus **Raster** eingestellt.
@@ -12,7 +12,7 @@ Zeigt die Vorschau als Liste von Miniaturansichten an.
 Zeigt die Vorschau als verzweigtes Baumverzeichnis an.
 
 #### ![images/small.png](images/small.png) Klein
-Miniaturansichten werden sehr klein angezeigt.
+Miniaturansichten werden klein angezeigt.
 
 #### ![images/medium.png](images/medium.png) Mittel
 Miniaturansichten werden in mittlerer Größe angezeigt.
