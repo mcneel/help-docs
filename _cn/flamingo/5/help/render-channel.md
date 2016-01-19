@@ -1,55 +1,55 @@
 ---
+title: 通道
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Channels
+# ![images/render.svg](images/render.svg) {{page.title}}
 {: #channel}
-A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
+Flamingo nXt 5 中一个非常实用的功能就是可以把灯光设置到八个通道中的一个，包括太阳和天空在内的每个光源都可以设置到通道上，渲染时每个通道都使用其各自的图层，渲染完成后，不需要再重新渲染就可以在渲染完成的图像上调节灯光平衡。  
 
-Channels are very effective when:
+在下列情况使用通道非常有效：
 
-* Trying to balance an HDRI Environment and the Sunlight.  Not all HDRI environments are calibrated.  It is useful to set the HDRi Sky on one channel and the Sun on another.  Then adjust the relative strength of the Sky light vs the sun after rendering.
-* Studio renderings that use a key, fill, and backlight setup. Set each light on a different channel, then adjust their strength real-time in the rendering using channels.
-* When using different banks of lights in an exterior or interior rendering.  Each bank of lights can be set on a channel and effectively have their own dimmer to control their strength.
-* Rendering with all the lights on, then turning off and on certain lights. No need to render an interior to create a night shot and a daytime rendering.
+* 需要调节 HDRI 环境与日光之间的平滑时，将日光和 HDRi 天光分别设置到一个通道上，渲染完成后实时调整它们之间的亮度平衡关系。
+* 使用主光、辅光与背光等进行摄影棚渲染时，将每个灯光设置到不同的通道，渲染完成后实时调整它们之间的亮度平衡关系。
+* 使用多组灯光进行室内或室外渲染时，每组中的灯光都使用一个专用于该组的通道，这样就可以分别控制每组灯光的强度了。
+* 打开所有的灯光进行一次渲染，渲染完成后通过通道打开或关闭相应的灯光，不用重新渲染，就能搭配出白天和夜晚的不同效果。
 
-Once this image is rendered, each channel can be individually scaled either in the Render Window before saving or it can be saved to an .nXtImage file for later editing.
+图像渲染完成后就可以在渲染窗口中调节，也可以保存到 .nXtImage 文件中稍后进行调节。
 
-Use channels to adjust the strength of lights relative to each other, not to brighten the whole image.  If you need to brighten the whole image at once, use the Adjust Image controls.
+通道用于单独调整每个灯光的强度，而不是用于整体调亮图片，如果您需要把整个图像调亮，请使用“调整图片”中的控制选项。
 
-<!-- TODO: Find original video clip.It is probably best to embed it from Vimeo.-->
-Click to play video clip.
-<!-- TODO: Is this supposed to link to a video? -->
+<video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
+*点击播放视频。*
 
-The following conditions are necessary to produce and manipulate a multi-channel image:
+通过多个通道调整图像必须注意以下几点：
 
- 1. All participating lights must be on.
- 2. Each light source must be assigned to a channel. By default, Sun and Sky are set to channel 0, artificial lights are set to 1.
- 3. Immediately after rendering, use the Channel controls in the render window.
- 3. The only saved format that preserves this channel information is the .nXtImage format. Lighting can be adjusted there and then the image is saved to a bitmap format.
+ 1. 灯光必须是打开的渲染完成后才可以调节。
+ 2. 想要调节的光源必须指定通道，默认情况下太阳和天光的通道为 0，人造灯光的通道为 1。
+ 3. 渲染开始后通道就可以使用了。
+ 3. 唯一可以保存这些通道信息的格式是.nXtImage 格式，调整完成以后可以再从.nXtImage 格式保存为位图格式。
 
-## Setting Channels
+## 设置通道
 {: setting}
-The first step in setting up a muti-channel rendering is to set each light to channel. The channel number is usually set in each light property.  For information on setting specific lights to a channel see:
+进行多通道渲染的第一步是设置每个灯光的通道，通常在灯光属性中设置通道号，特定灯光设置通道的方法请参考：
 
->[Sun Channel](sun-and-sky-tabs.html#sun-channel)
->[Sky Channel](sun-and-sky-tabs.html#sky-channel)
->[Artificial Light Channel](lights-tab.html#channel)
->[Material Glow](documentproperties-flamingo.html#channel)
+>[日光通道](sun-and-sky-tabs.html#sun-channel)
+>[天光通道](sun-and-sky-tabs.html#sky-channel)
+>[人工照明通道](lights-tab.html#channel)
+>[材质眩光](documentproperties-flamingo.html#channel)
 
-Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
+任意数量的灯光可以使用相同的灯光通道，该通道就可以同时控制多个灯光，调整时该通道中的所有灯光将保持彼此之间的相对亮度关系。
 
-## Adjusting Channels
+## 调整通道
 {: adjusting}
-Lighting channels can be adjusted immediately after rendering, or in the Flamingo image editor if the rendering is saved as an nXtImage file.  Channels can be adjusted while Flamingo continues to render, but we recommend that you stop the rendering before making major adjustments.
+渲染完成后可以直接在渲染窗口中调整，也可以保存为 nXtImage 文件后在 Flamingo 图像编辑器中编辑。Flamingo 渲染过程中就可以使用通道，但我们还是建议您在渲染过程中不要做调整。
 
-#### Where can I find Flamingo Lighting control?
-The channel controls are found on the Flamingo nXt tab in the [render window](render-window.html) under Channels.
+#### 在哪里可以找到 Flamingo 照明控制？
+可以在[渲染窗口](render-window.html)中的 Flamingo 选项卡下的“通道”里找到。
 
-There are eight channel controls 0-7. Only the channels that have lights on them will activate.
+八个通道的编号分别为 0-7，只有当中含有灯光是才会生效。
 
 ![images/channel-slider.png](images/channel-slider.png)
-Each channel has a slider and a spinner value.  The spinner value represents the maximum value of the slider. If the slider is all the way to right, then the full value of the spinner is used to multiply the lighting amounts on that channel.  It follows that the slider at 50% will multiply all the lighting on that channel layer by half the spinner amount.  A slider slid all the way to the left will turn off all the lighting on that channel.
+每个通道都有一个滑杆和一个可变数值，该数值表示滑杆的最大值，如果滑杆位于最右侧，表示照明亮度为该可变数值与原始亮度的乘积，滑块位于中间表示该通道中所有灯光的亮度为它们原始亮度乘以该可变数值的一半，滑块位于最左侧将关闭该通道中所有灯光。
 
-The value of the spinner can be very important.  Because Sun and Sky can be many times brighter then artificial lights, the spinner value on artificial lights  might need to be increased to 20 or 50 to see any difference.
+可变数值非常重要，因为太阳和天光的亮度是人造灯光的好多倍，可能在太阳和天光的影响下，该值增加到 20 或 50 也看不出任何调整效果。
 
-After adjusting the channels correctly, then save the image as a JPG or PNG file as the final rendering.
+通道调整完成以后，可以将最终的渲染结果保存为 JPG 或 PNG 文件。
