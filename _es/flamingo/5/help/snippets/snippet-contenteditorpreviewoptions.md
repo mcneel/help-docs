@@ -1,36 +1,36 @@
 
-#### ![images/floatingpreview.png](images/floatingpreview.png) Floating Preview
-Floats the preview image in a resizable window.
+#### ![images/floatingpreview.png](images/floatingpreview.png) Vista previa flotante
+Pone flotante la imagen de vista previa en una ventana de tamaño ajustable.
 
-#### ![images/grid.png](images/grid.png) Grid
-Displays the previews as a grid of thumbnails. The editors default to **Grid** mode.
+#### ![images/grid.png](images/grid.png) Rejilla
+Muestra las vistas previas como rejilla de miniaturas. Los editores usan el modo **Rejilla** de manera predeterminada.
 
-#### ![images/list.png](images/list.png) List
-Displays the previews as a list of thumbnails.
+#### ![images/list.png](images/list.png) Lista
+Muestra las vistas previas como lista de miniaturas.
 
-#### ![images/tree.png](images/tree.png) Tree
-Displays the previews as a tree showing nesting.
+#### ![images/tree.png](images/tree.png) Árbol
+Muestra las vistas previas en forma de árbol anidado.
 
-#### ![images/small.png](images/small.png) Small
-Sets the thumbnail size to the smallest size.
+#### ![images/small.png](images/small.png) Pequeño
+Define el tamaño de las miniaturas al tamaño más pequeño.
 
-#### ![images/medium.png](images/medium.png) Medium
-Sets the thumbnail size to medium size.
+#### ![images/medium.png](images/medium.png) Mediano
+Define el tamaño de las miniaturas al tamaño mediano.
 
-#### ![images/large.png](images/large.png) Large
-Sets the thumbnail size to large size.
+#### ![images/large.png](images/large.png) Grande
+Define el tamaño de las miniaturas al tamaño grande.
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
-Displays the previews to the left of the controls.
+#### ![images/horizontal.png](images/horizontal.png) Disposición horizontal
+Muestra las vistas previas a la izquierda de los controles.
 
-#### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in **Grid** mode.
+#### ![images/showlabels.png](images/showlabels.png) Mostrar etiquetas
+Muestra las etiquetas de los nombres de las miniaturas en el modo Rejilla.
 ![images/thumbnaillabel-001.png](images/thumbnaillabel-001.png)
- **List** mode always displays labels.
+El modo **Lista** siempre muestra las etiquetas.
 
-#### ![images/showunits.png](images/showunits.png) Show Units
-Displays size in model units.
+#### ![images/showunits.png](images/showunits.png) Mostrar unidades
+Muestra el tamaño en unidades del modelo.
 ![images/thumbnaillabel-002.png](images/thumbnaillabel-002.png)
 
-#### ![images/rename.png](images/rename.png) Show Preview Pane
-Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
+#### ![images/rename.png](images/rename.png) Mostrar panel de vista previa
+Muestra las propiedades de vista previa de la miniatura seleccionada. Define la geometría, el tamaño, el fondo y el comportamiento de rotación de la vista previa.

@@ -2,47 +2,47 @@
 ---
 
 # ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
-The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
+El selector de color se usa para muchos grupos y propiedades de materiales. En todos los casos, funciona de un modo similar.
 
 
-There are two parts of the selector:
+El selector tiene dos partes:
   ![images/colorswatch-002.svg](images/colorswatch-002.svg)
 
-1. [Color Swatch](#swatch) - Click on the color fo the main color selector
-1. [Options Menu](#options) - Click on the arrow for additional color utilities
+1. [Muestra de color](#swatch) - Haga clic en en el color del selector de color principal
+1. [Opciones Menú](#opciones) - Haga clic en la flecha para las utilidades de color adicionales
 
-## Color Swatch ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## Muestra de color ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
 {: #swatch}
-Click the color swatch to select a color from the Select Color dialog box.
+Haga clic en la muestra de color para seleccionar un color en el cuadro de diálogo Seleccionar color.
 
-##### Select from the Named Color List
-* Select a color from the list of names on the left.
+##### Seleccionar en la lista de colores guardados
+* Seleccione un color de la lista de nombres a la izquierda.
 
-##### Select from the color wheel selector
-1. Drag the marker around the outer wheel to define the hue.
-1. Drag the marker horizontally in the inner square to define the saturation level.
-1. Drag the marker vertically in the inner square to define the brightness value.
+##### Seleccionar desde el selector de color
+1. Arrastre el marcador alrededor de la rueda exterior para definir el matiz.
+1. Arrastre el marcador horizontalmente en el cuadrado interior para definir el nivel de saturación.
+1. Arrastre el marcador verticalmente en el cuadrado interior para definir el valor del brillo.
 
-##### Set in the Hue, Sat, Val boxes
-1. Hue is a color's hue corresponds to its visible wavelength of light. Hue is measured in degrees from 0 to 359, which correspond roughly with a rainbow's hues in 60 degree increments: red, orange, yellow, green, blue, and violet.
-1. Saturation refers to the color's intensity on a 0 to 100 scale. A saturation of 0 produces a neutral gray color that varies from black to white depending on the color's brightness. The hue has no effect on a color with a saturation component of 0. A saturation of 100 produces that hue's most intense shade.
-1. Value refers to the perceived amount of light value (or white) in the color. The Value component varies between 0 and 100. Value is also sometimes referred to as luminance or brightness.
+##### Definir los valores de Tono, Sat. y Val.
+1. Un tono de color corresponde a su longitud de onda de luz visible.  El tono se calcula en grados, desde el 0 al 359, que se corresponden más o menos con los tonos de un arcoiris en incrementos de 60 grados: rojo, naranja, amarillo, verde, azul y violeta.
+1. La saturación hace referencia a la intensidad del color, en una escala de 0 a 100. Una saturación de 0 produce un color gris neutro que varía de negro a blanco según el brillo del color. El tono no influye en un color con un componente de saturación de 0. Una saturación de 100 hace que el tono tenga un matiz más intenso.
+1. El valor hace referencia al valor (o blanco) de cantidad de luz percibida en el color. El componente de Valor varía entre 0 y 100. El valor también se conoce a veces como luminancia o brillo.
 
-##### Red, Green, Blue (RGB)
+##### Rojo, verde y azul (RGB)
 {: #rgb}
-This method is used by computers to project color onto the monitor. Each pixel is a combination of the three colors in varying intensities. Pure red is entirely red with no green or blue. Pure black has red, green, and blue set to 0, and pure white has red, green, and blue set to 255.
+Este método es el que utilizan los ordenadores para proyectar color en el monitor. Cada píxel es una combinación de tres colores en diversas intensidades. El rojo puro es completamente rojo sin verde ni azul. El negro puro tiene los valores de rojo, verde y azul establecidos en 0, y el blanco puro tiene los valores de rojo, verde y azul en 255.
 
-## Menu options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## Opciones de menú ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
 {: #options}
 
-#### Color Picker
-Opens the [Color Swatch](#swatch) dialog box described above. This is the same as clicking on the color swatch.
+#### Selector de color
+Abre el cuadro de diálogo [Muestra de color](swatch) descrito anteriormente. Esta acción es igual que hacer clic en la muestra de color.
 
-#### Eye Dropper
-Allows picking the color from anywhere on the screen using a eye dropper tool
+#### Cuentagotas
+Permite seleccionar el color de cualquier parte de la pantalla mediante un cuentagotas.
 
-#### Copy
-Copies the color in the color swatch. To be used in another color selector by using the Paste option.
+#### Copiar
+Copia el color en el selector de color. Para usar en otro selector de color utilizando la opción Pegar.
 
-#### Paste
-Pastes the color from one color swatch to another. After using the Copy command above, use this Paste option.
+#### Pegar
+Pega el color de un selector de color a otro. Después de utilizar el comando Copiar, utilice esta opción de Pegar.

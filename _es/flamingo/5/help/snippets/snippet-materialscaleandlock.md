@@ -1,6 +1,6 @@
 
-#### X/Y/Z Scale
-Changes the absolute size of the pattern in the x-, y-, and z-directions.
+#### Escala X/Y/Z
+Cambia el tamaño absoluto del patrón en las direcciones X, Y y Z.
 
-#### Lock
-Maintains the ratio between the X Scale, Y Scale, and Z scale.
+#### Bloquear
+Mantiene la relación de aspecto entre la Escala X, la Escala Y y la Escalar Z.

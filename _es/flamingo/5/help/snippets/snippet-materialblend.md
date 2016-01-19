@@ -1,3 +1,3 @@
 
-#### Blend
-Blurs the boundaries between the components.
+#### Mezclar
+Difumina los contornos entre los componentes.

@@ -2,186 +2,185 @@
 ---
 
 
-# Decals
-Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps.
-Decals consist of a single instance of the image, rather than being tiled as they are when used in a [material definition](materials-tab.html).
-Some uses for decals include:
+# Calcomanías
+Las calcomanías son mapas de imagen sin mosaico que se aplican directamente a los objetos en lugar de indirectamente utilizando un material. Utilice calcomanías para modificar una parte limitada del color de un objeto, reflectividad o relieves.
+Las calcomanías están formadas por una sola imagen, en lugar de repetirse en varias direcciones como cuando se usan en una [definición de material](materials-tab.html).
+Las calcomanías se usan principalmente para:
 
->Hanging artwork on interior walls.
->Placing labels or logos on products.
->Adding signs to the model.
->Creating stained glass windows.
+>Colgar obras de arte en paredes interiores.
+>Colocar etiquetas o logotipos sobre productos.
+>Añadir símbolos o carteles en el modelo.
+>Crear ventanas de vidrio de colores.
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode.&#160;The **Pipeline** setting must be **OpenGL** in **Options** &#160;&gt; **Appearance** &#160;&gt; **Advanced Settings** &#160;&gt; **Wireframe** &#160;&gt; **Other Settings** &#160;&gt; **Pipeline and Conduits**.
+ **Nota:** Las previsualizaciones de las calcomanías sólo se mostrarán en las vistas alámbricas si el OpenGL está activado para el modo alámbrico.&#160;La configuración del **Canal de visualización** debe ser **OpenGL** en **Opciones** &#160;&gt; **Apariencia** &#160;&gt; **Configuración avanzada** &#160;&gt; **Estructura alámbrica** &#160;&gt; **Otras opciones** &#160;&gt; **Canal de visualización y conductos**.
 
-## Decal Placement
+## Colocación de calcomanías
 {: #decal-list}
 {: #decal-placement}
 
-###  **Add** 
+###  **Añadir** 
 {: #add-decal}
-1. Select one or more objects.
-1. On the **Edit** menu, click **Object Properties**.
-1. On the **Properties** list, click **Flamingo nXt Decals**.
-1. Click the **Add** button.
-1. In the **Open Bitmap** dialog box, select a bitmap name, and click **Open**.
-{% include_relative snippets/snippet-clearbitmapcache.md %}1. In the **Decal Properties** dialog box, select options, and click **Place**.
-1. At the prompts for points, pick points on the model to locate the decal.
-The precise sequence depends on the type of decal selected: [Planar](#decal-planarmapping), [Cylindrical](#decal-cylindricalmapping), or [UVMap](#decal-uvmapping).
+1. Seleccione uno o más objetos.
+1. En el menú **Edición**, haga clic en **Propiedades de objeto**.
+1. En la lista **Propiedades**, haga clic en **Calcomanías de Flamingo nXt**.
+1. Haga clic en el botón Agregar.
+1. En el cuadro de diálogo **Abrir bitmap**, seleccione un nombre de bitmap y haga clic en **Abrir**.
+{% include_relative snippets/snippet-clearbitmapcache.md %}1. En el cuadro de diálogo **Propiedades de calcomanía** seleccione opciones y haga clic en **Colocar**.
+1. Cuando le solicite puntos, designe puntos en el modelo para localizar la calcomanía.
+La secuencia precisa depende del tipo de calcomanía seleccionado: [Plana](#decal-planarmapping), [Cilíndrica](#decal-cylindricalmapping) o [MapaUV](#decal-uvmapping).
 
-###  **Edit Placement** 
+###  **Editar colocación** 
 {: #decal-edit-placement}
-1. Click the **Edit Placement** button.
-1. At the **Select control point** prompt, use the graphical editor to change the placement of the decal.
-1. Press **Enter** when finished.
+1. Haga clic en el botón **Editar colocación**.
+1. Cuando le solicite **Seleccione un punto de control**, utilice el editor gráfico para cambiar la posición de la calcomanía.
+1. Pulse **Intro** cuando termine.
 
-###  **Properties** 
+###  **Propiedades** 
 {: #decal-properties}
-1. Click the **Properties** button.
-1. In the **Decal Properties** dialog box, use the controls to change the decal's properties.
+1. Haga clic en el botón Propiedades.
+1. En el cuadro de diálogo **Propiedades de calcomanía**, utilice las opciones para cambiar las características de la calcomanía.
 
-###  **Delete** 
+###  **Eliminar** 
 {: #decal-delete}
 
->Click the **Delete** button.
+>Haga clic en el botón **Eliminar**.
 
-###  **Move up** / **Move down** 
+###  **Subir** / **Bajar** 
 {: #decal-movedown}
 {: #decal-moveup}
-When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
+Cuando se aplican muchas calcomanías superpuestas a un solo objeto, es importante el orden en que se aplican. Las calcomanías se aplican en el orden en que aparecen en la lista. La última calcomanía de la lista aparece en la parte superior.
 
->Click **Move Up** or **Move Down** to change a decal's position in the list.
+>Haga clic en **Subir** o **Bajar** para cambiar la posición de una calcomanía en la lista.
 
-##### To place a planar decal
-1. At the prompts, pick locations for the decal's **Width**, and **Height direction**.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### Para colocar una calcomanía plana
+1. Cuando se lo solicite, seleccione las posiciones para la dirección de la **Anchura** y la **Altura**.
+1. Cuando le solicite Seleccione un punto de control..., seleccione un punto de control para ajustar el tamaño, la rotación o la posición de la imagen.
+O bien, pulse **Intro** para completar la colocación de la calcomanía.
 
-### Options
+### Opciones
 
-#### Move
-Moves the decal. At the Point to move from and the Point to move to prompts, enter any locations as for the Rhino Move command.
+#### Mover
+Mueve la calcomanía. Cuando le solicite Punto desde el que mover y Punto al que mover, introduzca las posiciones como para el comando Mover de Rhino.
 
-#### UseImageAspectRatio
-Restores a stretched decal to the aspect ratio of the original bitmap.
+#### UsarRelaciónDeAspectoDeImagen
+Restaura el tamaño original del bitmap de una calcomanía estirada.
 
-##### To place a cylindrical decal
-1. At the prompt, pick a location for the **Center point** of the cylinder.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### Para colocar una calcomanía cilíndrica
+1. Cuando se lo solicite, seleccione una posición para el Punto central cilindro.
+1. Cuando le solicite Seleccione un punto de control..., seleccione un punto de control para ajustar el tamaño, la rotación o la posición de la imagen.
+O bien, pulse **Intro** para completar la colocación de la calcomanía.
 
-## Set or edit the decal placement using the control widget
-Note: When using the planar mapping on a curved object, the entire bitmap must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+## Defina o edite la colocación de la calcomanía utilizando el cuadro de control
+Nota: Si está utilizando el mapeado plano en un objeto curvado, todo el bitmap debe estar situado detrás de la superficie del objeto. Las partes del bitmap que estén delante de la superficie no serán visibles.
 
-#### To resize the decal width and height at the same time
+#### Para cambiar el tamaño de la anchura y la altura al mismo tiempo
 
->Drag the control points at the corners of the control widget.
+>Arrastre los puntos de control en las esquinas del cuadro de control.
 
-#### To change the decal height
+#### Para cambiar la altura de la calcomanía
 
->Drag the center control point on the top and bottom edges of the control widget.
+>Arrastre el punto de control central de los bordes centrales superiores e inferiores del cuadro de control.
 
-#### To change the decal width
+#### Para cambiar la anchura de la calcomanía
 
->Drag the center control point on the left and right edges of the control widget.
+>Arrastre el punto de control central de los bordes de la izquierda y la derecha del cuadro de control.
 
-#### To move the decal
+#### Para mover la calcomanía
 
->Drag the control point in the center of the control widget.
+>Arrastre el punto de control central del cuadro de control.
 
-#### To rotate the decal
+#### Para rotar la calcomanía
 
->Drag the x-, y-, or z-axis control point on the widget axis icon.
+>Arrastre el punto de control del eje X, Y o Z en el icono del eje del widget.
 
-## Decal Properties
+## Propiedades de calcomanía
 {: #dialogbox-editdecal}
-The information from the bitmap replaces or blends the object's color with the decal's color. This is the most common use of decals.
+La información del bitmap reemplaza o mezcla el color del objeto con el color de la calcomanía. Éste es el uso más común de las calcomanías.
 
-## Projection
+## Proyección
 {: #projection}
-The mapping style determines how to project the decal onto the object. It is a good idea to draw construction lines in the scene to help accurately place decals. A rectangle drawn just behind a surface can act as a guide for a standard decal. Use object snaps for accurate placement.
+El estilo de mapeado determina cómo proyectar la calcomanía sobre el objeto. Es conveniente dibujar líneas de construcción en la escena para ayudar a colocar las calcomanías con precisión. Un rectángulo dibujado justo detrás de una superficie puede actuar como guía para una calcomanía estándar. Utilice las referencias a objetos para colocar la calcomanía con precisión.
 
-### Cylindrical
+### Cilíndrico
 {: #decal-cylindricalmapping}
 
 ### &#160;
-The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
-The cylindrical projection maps the bitmap onto the cylinder with the bitmap's vertical axis along the cylinder's axis, and the horizontal axis around the cylinder.
+El mapeado cilíndrico es útil para colocar calcomanías en objetos que se curvan hacia una dirección, como las etiquetas en botellas de vino.
+La proyección cilíndrica mapea el bitmap sobre el cilindro con el eje vertical del bitmap a lo largo del eje del cilindro, y el eje horizontal se curva alrededor del cilindro, como en una etiqueta de vino.
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
-### Planar
+### Plana
 {: #decal-planarmapping}
 
 ### &#160;
-Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
-The corners define the bitmap's location and extents. If the rectangle does not have the same proportions as the bitmap, the bitmap will be stretched or compressed to fit.
-When using planar mapping on a curved object, the entire bitmap projection must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+El mapeado plano es el estilo de mapeado más común. Es apropiado al mapear objetos planos o suavemente curvados.
+Las esquinas definen la ubicación del bitmap y la extensión. Si el rectángulo no tiene las mismas proporciones que su bitmap, el bitmap se estirará o comprimirá para ajustarse al rectángulo.
+Si está utilizando el mapeado plano en un objeto curvado, toda la proyección bitmap debe estar situada detrás de la superficie del objeto. Las partes del bitmap que estén delante de la superficie no serán visibles.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
-### UV Map
+### Mapa UV
 {: #decal-uvmapping}
 
 ### &#160;
-Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
-The decal covers the entire object; there is no control over the decal placement.
-UV mapping uses the u- and v-parameterization of the surface to bend and stretch the image; therefore, no manual placement is necessary.
+Las calcomanías que usan el mapeado UV sirven para objetos como el cabello y la corteza de un árbol, por ejemplo, donde es necesario que la calcomanía se mueva y se estire para ajustarse a la superficie.
+La calcomanía cubre todo el objeto, no hay control sobre la colocación de la calcomanía.
+El mapeado UV utiliza la parametrización U y V de la superficie para curvar y estirar la imagen.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
-### Browse
+### Examinar
 {: #file-browse}
-Change the image file.
+Cambia el archivo de imagen.
 {% include_relative snippets/snippet-clearbitmapcache.md %}
-## Strength
+## Intensidad
 {: #decalmappingstrength}
 
 ### Color
 {: #decal-color}
-Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](texture-properties-main.html#color).
+Varía la fuerza relativa del color de la imagen con respecto al material subyacente. Consulte también [Propiedades de textura de material, Intensidad de color](texture-properties-main.html#color).
 
-### Bump
+### Relieve
 {: #decalmappingbump}
-Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](texture-properties-main.html#bump).
+Los mapas de relieve crean sombras simuladas y brillos en la superficie. Consulte también [Propiedades de textura de material, Intensidad de relieve](texture-properties-main.html#bump).
 
-## Reflective finish
+## Acabado reflectante
 {: #reflective-finish-and-highlight}
-Controls the same properties that are controlled by a material definition. Apply these properties to the specific areas of the object that are affected by the decal. By default, decals have a matte finish.
+Controla las mismas propiedades que controla una definición de material. Aplique estas propiedades en áreas específicas del objeto influenciadas por la calcomanía. Por defecto, las calcomanías tienen un acabado mate.
 
-### Intensity
-Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](advanced-material-properties-main.html#intensity).
+### Intensidad
+Ajusta la intensidad del brillo. Los valores más altos aumentan el tamaño y la fuerza del brillo. Consulte [Propiedades de material avanzadas, Intensidad](advanced-material-properties-main.html#intensity).
 
-### Sharpness
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](advanced-material-properties-main.html#sharpness).
+### Definición
+Determina el tamaño del brillo. Los valores más bajos especifican una iluminación más amplia; los valores más altos focalizan la iluminación en una área más reducida. Consulte [Propiedades de material avanzadas, Definición](advanced-material-properties-main.html#sharpness).
 
-### Metallic
-Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](advanced-material-properties-main.html#metallic).
+### Metálico
+Define el color del brillo igual que el color base. Propiedades de material avanzadas: Metálico](advanced-material-properties-main.html#metallic).
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
-## Advanced
+## Avanzada
 {: #advanced}
 
-### Double Sided
+### Doble cara
 {: #double}
-Causes the decal to appear on the back face of the surface on which it is placed as well as the front face.
+Hace que la calcomanía aparezca tanto en la cara dorsal de la superficie en la que está colocada como en la cara frontal.
 
-### Mirror
+### Reflejar
 {: #mirror}
-Mirrors the decal image.
+Espejos la imagen de calcomanía.
 
-## Projection direction
+## Dirección de proyección
 {: #projection-direction}
 
-### Backward
-Projects the decal away from the back of the decal image.
-![images/projectionbackward1.png](images/projectionbackward1.png)Front (left), back (right).
+### Detrás
+Proyecta la calcomanía detrás de la imagen de calcomanía.
+![images/projectionbackward1.png](images/projectionbackward1.png)Frontal (izquierda), Posterior (derecha).
 
-### Forward
-Projects the decal away from the front of the decal image.
-![images/projectionforward1.png](images/projectionforward1.png)Front (left), back (right).
+### Delante
+Proyecta la calcomanía delante de la imagen de calcomanía.
+![images/projectionforward1.png](images/projectionforward1.png)Frontal (izquierda), Posterior (derecha).
 
-### Forward &amp; Backward
-Projects the decal away from both the front and the back of the decal image.
-![images/projectionforwardandback.png](images/projectionforwardandback.png)Front (left), back (right).
+### Delante y detrás
+Proyecta la calcomanía en la parte frontal y posterior de la imagen de calcomanía.
+![images/projectionforwardandback.png](images/projectionforwardandback.png)Frontal (izquierda), Posterior (derecha).
 
-### Transparency
-Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
+### Transparencia
+Define el nivel de transparencia para el área con máscara. Consulte [Transparencia](advanced-material-properties-transparency.html).
 IOR
-Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction) 
-
+Define el índice de refracción de la calcomanía transparente. Consulte [Índice de refracción](advanced-material-properties-transparency.html#index-of-refraction) 

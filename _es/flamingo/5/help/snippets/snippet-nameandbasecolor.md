@@ -1,24 +1,24 @@
 ### Color
-Controls the local color for the material. All materials have a base color. [More about color...](select-color.html) 
+Controla el color local del material. Todos materiales tienen un color base. [Más información sobre el color...](select-color.html) 
 
-#### Color swatch selector
-Click the color swatch to select colors from the [Select Color](select-color.html) dialog box.
+#### Selector de muestra de color
+Haga clic en la muestra de color para seleccionar los colores en el cuadro de diálogo [Seleccionar color](select-color.html).
 
-### Preview
-The preview image shows the material as it will appear on objects in the model. The style and size of the preview are part of the material definition.
- **Note** : Set the default size for the preview object in [Options: Flamingo nXt](options-flamingo.html).
+### Vista previa
+La imagen de vista previa muestra el material tal y como aparecerá en los objetos del modelo. El estilo y el tamaño de la vista previa son parte de la definición del material.
+ **Nota** : Defina el tamaño predeterminado del objeto de vista previa en [Opciones: Flamingo nXt](options-flamingo.html).
 ![images/previewer.png](images/previewer.png)
 
->Right-click the material preview pane to specify options that control the preview's appearance:
+>Haga clic con el botón derecho el el panel de vista previa del material para especificar las opciones que controlan la apariencia de la vista previa:
 
-#### Sphere
-Sets the preview object to a sphere.
+#### Esfera
+Selecciona una esfera como objeto de vista previa.
 
-#### Box
-Sets the preview object to a box with a width equaling the sphere radius.
+#### Caja
+Selecciona una caja como objeto de vista previa, con una anchura igual al radio de la esfera.
 
-#### Plane
-Sets the preview object to a plane with a width equaling the sphere radius.
+#### Plano
+Selecciona una plano como objeto de vista previa, con una anchura igual al radio de la esfera.
 
-#### Sphere radius
-Sets the preview sphere radius and box and plane width. Set the size to approximate the size of the objects to which the material will be assigned to help visualize the material.
+#### Radio de esfera
+Define el radio de esfera de la vista previa y la anchura de la caja y el plano. Ajuste un tamaño que se aproxime al tamaño de los objetos a los que se asignará el material para facilitar la visualización del material.

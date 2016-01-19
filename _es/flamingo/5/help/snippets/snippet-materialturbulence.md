@@ -1,3 +1,3 @@
 
-#### Turbulence
-Produces the swirled appearance by causing the alternating components to bend and twist.
+#### Turbulencia
+Produce la apariencia remolinada, haciendo que los componentes alternos se doblen y retuerzan.

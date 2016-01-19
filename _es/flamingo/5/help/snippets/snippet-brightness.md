@@ -1,2 +1,1 @@
-Note: In nXt, the overall brightness of a scene cannot be controlled by boosting the intensity of the light sources. The automatic exposure adjustment built into the tone-mapping process will defeat this. Adjust overall scene brightness by using the **Brightness** control.
-
+Nota: En nXt, el brillo global de la escena no se puede controlar aumentando la intensidad de las fuentes de luz. El ajuste de exposición automática incorporado en el proceso de mapeo de tonos anula esta opción. Ajuste el brillo global de la escena utilizando el control de Brillo.
