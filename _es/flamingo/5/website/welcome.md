@@ -2,42 +2,42 @@
 layout: fullwidth-page
 ---
 
-# Getting Started with Flamingo nXt®
-Flamingo nXt creates high quality, photorealistic, still, and animation image files from 3-D models inside Rhinoceros ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a work in progress version.
+# Empezar con Flamingo nXt®
+Flamingo  utiliza las tecnologías de trazado de rayos y radiosidad para crear   imágenes fotorrealistas, panoramas y animaciones de alta calidad desde modelos 3D en Rhinoceros®. Flamingo nXt 5 es una actualización de Flamingo que se integra con las funciones de renderizado de Rhino 5. La versión actual es una versión en progreso.
 
-Flamingo can be downloaded and installed from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/beta).
+Flamingo se puede descargar e instalar desde [Descargar Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
 
-You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo).
+Puede participar en las discusiones técnicas del [Foro de Flamingo en Discourse](http://discourse.mcneel.com/c/rendering/flamingo).
 
-## Installation
+## Instalación
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
+La beta de Flamingo 5 requiere tener instalada una versión anterior de Flamingo nXt.
+Es necesario tener Rhino 5 Service Release 12 para poder ejecutar Flamingo nXt 5.
+Después de descargar y ejecutar el instalador RHI, inicie Rhino.
 
-For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
-
-
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical support](http://nxt.flamingo3d.com/forum)
-
-## Getting started guides
-The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
-
-> [Materials](..\materials\materials-tab.html)
-> [Lighting](../lighting/lighting-tab.html)
-> [Environment](../environment/environment-tab.html)
-> [Render](../render/render-tab.html)
-
-## Help documentation
- * On the Flamingo nXt menu, click Control Panel.
-
-## Flamingo information and support
- For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
+Para obtener soporte técnico, tutoriales, ejemplos e información sobre cómo empezar a utilizar Flamingo nXt, visite el [sitio web de Flamingo nXt](http://nxt.flamingo3d.com/).
 
 
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical Support](http://www.flamingo3d.com/en/support/)
-> [Forum](http://discourse.mcneel.com/c/rendering/flamingo)
+> [Tutoriales](http://nxt.flamingo3d.com/page/tutoriales-y-documentacion)
+> [Galería](http://nxt.flamingo3d.com/photo)
+> [Soporte técnico](http://nxt.flamingo3d.com/forum)
+
+## Manuales de iniciación
+El panel de control de Flamingo nXt contiene fichas para configurar el modelo para el renderizado:
+
+> [Materiales](../materials/materials-tab.html)
+> [Iluminación](../lighting/lighting-tab.html)
+> [Entorno](../environment/environment-tab.html)
+> [Renderizado](../render/render-tab.html)
+
+## Documentación de ayuda
+ * En el menú Flamingo nXt, haga clic en Panel de control.
+
+## Información y soporte de Flamingo
+ Para obtener soporte técnico, tutoriales, ejemplos e información sobre cómo empezar a utilizar Flamingo nXt, visite el [sitio web de Flamingo nXt](http://www.flamingo3d.com/).
+
+
+> [Tutoriales](http://nxt.flamingo3d.com/page/tutoriales-y-documentacion)
+> [Galería](http://nxt.flamingo3d.com/photo)
+> [Soporte técnico](http://www.flamingo3d.com/es/support/)
+> [Foro](http://discourse.mcneel.com/c/rendering/flamingo)
