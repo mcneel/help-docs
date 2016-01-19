@@ -1,73 +1,74 @@
 ---
+title: Pannello Librerie
 ---
 
-# ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
-The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
+# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+Il comando Librerie apre il pannello Librerie per gestire le librerie dei materiali, delle texture e degli ambienti.
 
-Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
+I contenuti di rendering possono essere salvati su dei file per creare delle librerie esterne che possono essere condivise dai modelli. I contenuti si possono anche trascinare da una sessione all'altra di Rhino e su una cartella.
 
-Color swatches can be dragged and dropped in the same way.
+I campioni di colore si possono trascinare e rilasciare nello stesso modo.
 
-The Libraries panel displays a view into the content folders you have set up. Use this to drag and drop content into the model or to store document content to a location outside the model.
+Il pannello Librerie mostra una vista delle cartelle dei contenuti impostate. Lo si usi per trascinare e rilasciare i contenuti nel modello oppure per memorizzare i contenuti del documento all'esterno del modello.
 
-Materials are simply files on your hard drive.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
+I materiali sono semplicemente dei file che si trovano sul disco rigido.  Le cartelle delle librerie sono semplicemente delle cartelle di Windows.  Tali cartelle si possono copiare ed incollare e spostare, così come si farebbe con qualsiasi altro file o cartella di Windows.
 
-Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
+Si usi la barra degli indirizzi della parte superiore della scheda Librerie per accedere a qualsiasi cartella del computer.
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+Per ritornare velocemente al percorso delle librerie predefinito, si usi l'icona con la chiave inglese in alto a destra. ![images/library_default.png](images/library_default.png)
 
-#### Organizing Libraries
+#### Organizzare le librerie
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+Le librerie sono semplicemente dei file.  Le cartelle si possono copiare ed incollare, così come spostare. Per modificare le cartelle ed i documenti, si usi Windows Explorer. Per specificare altre cartelle come cartelle predefinite della scheda Librerie, si usino le [Impostazioni librerie](#settings) ![images/library_default.png](images/library_default.png).
 
-## Materials Library
+## Libreria dei materiali
 {: #material}
-Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
+I materiali delle librerie sono file che si trovano sul disco rigido.  Una volta assegnato al modello, il materiale viene memorizzato e salvato con il modello. Eventuali modifiche al materiale assegnato non modificano il materiale originale che si trova sul disco rigido.
 
-Drag and drop materials to assign materials to the model. Materials can be assigned to:
+Per assegnare un materiale ad un modello, trascinarlo e rilasciarlo sul modello. L'assegnazione dei materiali può essere di vari tipi:
 
-#### Layer Assignment
-Drag a material directly onto the layer name in the Layers Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
+#### Assegnazione per livello
+Trascinare un materiale direttamente sul nome del livello desiderato all'interno del pannello dei livelli. Si tratta del metodo consigliato, visto che di default il materiale viene assegnato a tutti gli oggetti che si trovano su quel determinato livello. Successive modifiche al materiale possono risultare piuttosto veloci rilasciando semplicemente un altro materiale sul livello.
 
-#### Object Assignment
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
+#### Assegnazione per oggetto
+Trascinare un materiale direttamente su un oggetto in qualsiasi vista. In questo modo, l'assegnazione del materiale per livello passa ad essere per oggetto.
 
-#### Block Assignment
-Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
+#### Assegnazione per blocco
+Trascinando un materiale su un blocco, tutti gli oggetti del blocco con assegnazione Per genitore assumeranno quel materiale.  Tutti gli oggetti del blocco aventi assegnazione del materiale Per genitore assumeranno il materiale del blocco.
 
-## Plant Library
+## Libreria delle piante
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+Nella cartella delle librerie predefinita, c'è una cartella di piante.  Da qui, si possono sistemare delle piante nel modello.  Una volta sistemata nel modello, la pianta viene memorizzata e salvata con il modello.  Eventuali modifiche alla pianta assegnata non modificano la pianta originale che si trova sul disco rigido. Per sistemare un pianta nel modello, trascinarla e rilasciarla su una vista. Per ulteriori informazioni, si veda l'argomento della guida in linea [Piante](plants.html).
 
-## Environment Library
+## Libreria degli ambienti
 {: #environment}
-Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
+Gli ambienti si possono salvare nella libreria.  In questo modo, le impostazioni ambiente si possono passare da un modello all'altro.  Per maggiori informazioni, si veda [Ambienti](environment-tab.html).
 
-## Library Settings
+## Impostazioni delle librerie
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+Si usino le opzioni delle librerie ![images/options.png](images/options.png) per cambiare le impostazioni predefinite mostrate nel menu ![images/library_default.png](images/library_default.png).
 
-##### Where can I find this command?
-There are three places to find the Libraries Options command.
+##### Dove trovo questo comando?
+Le opzioni delle librerie sono accessibili in tre modi diversi. <!-- TODO: Where is the third place? -->
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
- 1. Menus > Tools pulldown > Options > Libraries.
- 
+ 1. Scheda Librerie > ![images/library_default.png](images/library_default.png) nella parte superiore destra del pannello Librerie > Impostazioni...
+ 1. Menu Strumenti > Opzioni > Librerie.
 
-### Show render content
-Use this to show or hide the default render content location.
 
-#### Use default library location (My Documents)
-By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
+### Mostra contenuti di rendering
+Si usi questa opzione per mostrare o nascondere il percorso predefinito dei contenuti di rendering.
 
-#### Custom
-Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
+#### Usa percorso delle librerie predefinito (Documenti)
+Di default, le [librerie di contenuti](libraries.html) sono una sottocartella della cartella *Documenti*.
 
-##### Browse button
-Open file browser to specify file.
+#### Personalizza
+Imposta un percorso personalizzato per le [librerie](libraries.html).   Cambia il percorso predefinito delle [librerie di contenuti](libraries.html) per il computer in uso.
 
-#### Show "Documents" folder
-In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
+##### Pulsante "Sfoglia"
+Apre il browser per specificare un file.
 
-#### Show custom folders
-In the [Libraries panel](libraries.html), designated custom folders will display in the menu.
+#### Mostra cartella "Documenti"
+Nel [pannello Librerie](libraries.html), la cartella "Documenti" designata verrà visualizzata nel menu.
+
+#### Mostra cartelle personalizzate
+Nel [pannello Librerie](libraries.html), le cartelle personalizzate designate verranno visualizzate nel menu.

@@ -1,9 +1,9 @@
 
-### Note
+### Nota
 
-#### Refresh the image definition
-When a bitmap file is changed using an image editor such as Photoshop, you must refresh the bitmap definition in Flamingo nXt.
+#### Actualizar la definición de la imagen
+Cuando un archivo bitmap se modifica con un editor de imágenes como Photoshop, debe actualizar la definición del bitmap en Flamingo nXt.
 
-#### To refresh the bitmap
+#### Para actualizar el bitmap
 
->On the **Flamingo nXt** menu, click **Utilities** &gt; **Clear bitmap cache**.
+>En el menú **Flamingo nXt**, haga clic en **Utilidades** >  **Borrar caché de bitmaps**.

@@ -47,7 +47,7 @@ Der Winkel vom Blickpunkt, an dem das äußere Komponentenmaterial beginnt.
 Der Winkel vom Blickpunkt, an dem das äußere Komponentenmaterial endet.
 Zwischen Startwinkel und Endwinkel werden die innere und äußere Komponente überblendet.
 
-In der Abbildung unten liegt der Startwinkel ![images/01.png](images/01.png) bei 30 Grad (was im Rendering dem grünen Kreis auf der rechten Seite entspricht) und der Endwinkel ![images/02.png](images/02.png) bei 60 Grad (was im Rendering dem roten Kreis enspricht).
+In der Abbildung unten liegt der Startwinkel ![images/01.png](images/01.png) bei 30 Grad (was im Rendering dem grünen Kreis auf der rechten Seite entspricht) und der Endwinkel ![images/02.png](images/02.png) bei 60 Grad (was im Rendering dem roten Kreis entspricht).
 
 Im Bild rechts ist das innere Material weiß und das äußere Material schwarz.
 
@@ -81,7 +81,7 @@ Wenn das Bild über einen Alphakanal verfügt, kann dieser statt der Bitmap-Grau
 Die erste Komponente wird dort platziert, wo das Bitmap-Muster weiß ist und die zweite Komponente, wo das Bitmap-Muster schwarz ist.
 
 #### Kacheln
-Die Skala des Materials hängt nicht von der Auflösung der Bitmap ab. Damit das Material richtig skaliert wird, bestimmen Sie die Größe des Bereichs in echten Einheiten, die eine Bitmap-Kopie darstellt. Wenn die Bitmap die Höhe von sechs Kacheln à 4 Einheiten darstellt und die Länge zwölf Kacheln à 4 Einheiten, beträgt die Skala 48 Einheiten in x-Richtung und 24 Einheiten in y-Richtung. Das passt die Bitmap an die angemessene Größe für das Muster an.
+Die Skalierung des Materials hängt nicht von der Auflösung der Bitmap ab. Damit das Material richtig skaliert wird, bestimmen Sie die Größe des Bereichs in echten Einheiten, die eine Bitmap-Kopie darstellt. Wenn die Bitmap die Höhe von sechs Kacheln à 4 Einheiten darstellt und die Länge zwölf Kacheln à 4 Einheiten, beträgt die Skalierung 48 Einheiten in x-Richtung und 24 Einheiten in y-Richtung. Das passt die Bitmap an die angemessene Größe für das Muster an.
 
 #### Breite
 Die Breite in Pixel einer einzelnen Instanz des Bildes.
@@ -116,7 +116,7 @@ Das [Texturmapping](properties-object.html#mapping) für die Objekte steuert die
 *Kein Texturmapping (links). Mit Texturmapping (rechts).*
 
 #### Basis/Maser
-Die Basis- und Masekomponente sind zwei Materialien. Ihre Eigenschaften werden wie bei einem beliebigen Material definiert.
+Die Basis- und Maserkomponente sind zwei Materialien. Ihre Eigenschaften werden wie bei einem beliebigen Material definiert.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
 #### Maserbreite
@@ -129,9 +129,9 @@ Die Basis- und Masekomponente sind zwei Materialien. Ihre Eigenschaften werden w
 
 ## Kachel
 {: #tile}
-Bei Kachel handelt es sich um ein 2D-Material. Das [Texturmapping](properties-object.html#mapping) für die Objekte steuert die Ausrichtung des Materials auf dem Objekt. Das Kachelmaterial vereint eine Basiskomponente und eine Verbindungskomponente. Jedes dieser Materialien kann auch andere Materialien enthalten.
+Kacheln ergeben ein 2D-Material. Das [Texturmapping](properties-object.html#mapping) für die Objekte steuert die Ausrichtung des Materials auf dem Objekt. Das Kachelmaterial vereint eine Basiskomponente und eine Verbindungskomponente. Jedes dieser Materialien kann auch andere Materialien enthalten.
 ![images/tile materials.png](images/tile materials.png)
-Für Spezialeffekte skalieren Sie die Kachel unterschiedlich in jede Richtung. Verwenden Sie eine Kachelprozedur, die in eine Richtung extrem lang ist, um ein "Seiten"material zu erzeugen.
+Für Spezialeffekte skalieren Sie die Kachel unterschiedlich in jede Richtung. Verwenden Sie ein in eine Richtung extrem langes Kachelmaterial zur Erzeugung von Verkleidungsmaterialien.
 
 #### Kachel
 Definiert die gesamte Kachelgröße. Breite und Höhe können unabhängig voneinander eingestellt werden.
@@ -152,11 +152,11 @@ Definiert die Breite und Höhe des Verbindungsmaterials.
 Behält das Seitenverhältnis zwischen horizontaler und vertikaler Verbindung bei.
 
 #### Versatz
-Liefert einen relativen horizontalen Versatz pro vertikale Kachel. Verwenden Sie z.B. eine Einstellung von .5, um einen standardmäßigen Läuferverband zu erzeugen. So können Sie Materialien wie Marmorkachel modellieren, ohne das Gefühl zu haben, dass der ganze Boden aus dem gleichen Marmorblock erzeugt wurde.
+Liefert einen relativen horizontalen Versatz pro vertikale Kachel. Verwenden Sie z.B. eine Einstellung von .5, um einen standardmäßigen Läuferverband zu erzeugen. So können Sie Materialien wie Marmorkacheln modellieren, ohne das Gefühl zu haben, dass der ganze Boden aus dem gleichen Marmorblock erzeugt wurde.
 ![images/tileoffset.png](images/tileoffset.png)
 
 #### Kacheln variieren
-Fügt der Materialfarbe für jede Kachel Willkürlichkeit hinzu. Auf diese Weise kann Material wie ungleichmäßige Ziegel modelliert werden.
+Die Materialfarbe einer Kachel wird unter Hinzufügung einer gewissen Zufälligkeit berechnet. Auf diese Weise können Materialien wie ungleichmäßige Ziegel modelliert werden.
 
 #### R/G/B
 Ändert die rote, grüne oder blaue Farbkomponente. Dadurch wird das Grundmaterial einer Kachel auf eine zufällige Weise leicht modifiziert.
@@ -170,7 +170,7 @@ Dadurch wird das Material vom Weltursprung aus für jede Kachel zufällig verset
 {: #wood}
 Holz besteht aus konzentrischen Zylindern alternierender Basis- und Ringkomponenten. Die Holzeinstellungen bestimmen, wie sich die Basis- und Ringkomponenten zusammensetzen.
 
-Verwenden Sie diese Methode, wenn Ihre Holzmaterialien nicht aus der Nähe betrachtet werden. Wenn Sie ein detailliertes Holz benötigen, verwenden Sie ein [Texturmaterial](material-type-simple.html#textured).  Wenn der Blickpunkt nicht nahe am Holz liegt, kann eine solide Farbe Holz ersetzen, ohne dadurch die Bildqualität zu schmälern. Das Rendering ist damit schneller. Ein Vorteil des Holzmaterials ist, dass die Holzmaserung richtig aussieht, wenn verschiedene Seiten eines Objekts gerendert werden. Die Endmaserung wird an den Enden und die parallele Maserung an den Seiten eines Objekts sichtbar sein.
+Verwenden Sie diese Methode, wenn Ihre Holzmaterialien nicht aus der Nähe betrachtet werden. Wenn Sie ein detailliertes Holz benötigen, verwenden Sie ein [Texturmaterial](material-type-simple.html#textured).  Wenn der Blickpunkt nicht nahe am Holz liegt, kann eine solide Farbe Holz ersetzen, ohne dadurch die Bildqualität zu schmälern. Das Rendering wird dadurch schneller. Ein Vorteil des Holzmaterials ist, dass die Holzmaserung richtig aussieht, wenn verschiedene Seiten eines Objekts gerendert werden. Die Endmaserung wird an den Enden und die parallele Maserung an den Seiten eines Objekts sichtbar sein.
 ![images/woodmaterials.png](images/woodmaterials.png)
 
 #### Basis/Ring

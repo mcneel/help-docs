@@ -1,2 +1,1 @@
- [id="a1" style="position: relative; ">Not&#160;on&#160;toolbars.]() 
-
+ [id="a1" style="position: relative; ">Non si trova nelle barre strumenti.]() 

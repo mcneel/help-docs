@@ -1,31 +1,31 @@
 ---
 ---
 
-# Ground plane
+# Piano d'appoggio
 {: #ground-plane}
 
-The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
+Il piano d'appoggio costituisce una "piattaforma" infinita orizzontale per l'immagine, si allunga sull'orizzonte in tutte le direzioni e viene sistemato dall'utente ad una determinata altezza. L'uso di un piano d'appoggio velocizza i tempi di rendering rispetto all'uso di una superficie planare estesa come base.
 
-### Enabled
+### Attivato
 {: #groundplane-enabled}
-Turns the ground plane on.
+Attiva il piano d'appoggio.
 ![images/groundplane-002a.png](images/groundplane-002a.png)
-*Ground plane disabled (left) and enabled (right).*
+*Piano d'appoggio disattivato (sinistra) e piano d'appoggio attivato (destra).*
 
-### Alpha
+### Alfa
 {: #groundplane-alpha}
-Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
+Applica un canale alfa trasparente al piano d'appoggio in modo tale che l'immagine possa essere combinata con l'ombra proiettata in un'altra immagine. Vedi: [Articolo di Wikipedia: Compositing con canale alfa](http://en.wikipedia.org/wiki/Alpha_compositing).
 ![images/groundplane-004a.png](images/groundplane-004a.png)
- *Ground plane shows shadow, but is otherwise transparent in the image.*
+ *Il piano d'appoggio mostra un'ombra, ma è comunque trasparente nell'immagine.*
 
-### Elevation
+### Elevazione
 {: #groundplane-elevation}
-Specifies the ground plane's height above zero.
+Specifica l'altezza del piano d'appoggio rispetto allo zero.
 ![images/groundplane-005a.png](images/groundplane-005a.png)
-*Ground plane elevation above zero.*
+*Elevazione del piano d'appoggio sopra lo zero.*
 
-### Material
+### Materiale
 {: #groundplane-material}
-Assigns a [material](simple-material-properties.html) to the ground plane.
+Assegna un [materiale](simple-material-properties.html) al piano d'appoggio.
 ![images/groundplane-003a.png](images/groundplane-003a.png)
-*Ground plane with raised elevation and water material.*
+*Piano d'appoggio con elevazione innalzata e materiale acqua.*

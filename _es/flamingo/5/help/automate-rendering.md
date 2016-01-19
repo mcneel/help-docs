@@ -1,72 +1,72 @@
 ---
 ---
 
-# Automated rendering
+# Renderizado automatizado
 
 
-## Batch rendering
+## Renderizado por lotes
 {: #batch-rendering}
-Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
+Los trabajos por lotes permiten enviar varios trabajos para renderizar automáticamente. Un trabajo de procesamiento por lotes puede especificar una vista, resolución y número de pases determinados. Los renderizados por lotes pueden iniciarse de manera individual o enviarse al [Render Farm](render-farm.html). Abra la lista de procesamiento por lotes y añada los trabajos. La lista de trabajos por lotes se guardará en el modelo.
 
-##### Where can I find this command?
+##### ¿Dónde puedo encontrar este comando?
 
- * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
+ * Menús > Flamingo nXt 5.0 > Más herramientas > Renderizado por lotes
 
-### Batch Render Dialog
+### Diálogo de renderizado por lotes
 {: #batch-render}
-Start by adding a job, then edit the properties to set up batch jobs.
+Empiece añadiendo un trabajo y, a continuación, edite las propiedades para configurar los trabajos por lotes.
 
-#### Add
-Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
+#### Añadir
+Cada trabajo por lotes se basa en una vista guardada en el modelo.  Haga clic en en Añadir elemento para seleccionar una vista en la lista de vistas del modelo.  Todos los demás elementos del menú se activarán cuando se añada y seleccione un trabajo.
 
-#### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+#### Eliminar
+Seleccione un trabajo por lotes existente.  A continuación, haga clic en Eliminar para quitar el trabajo de la lista por lotes.
 
-#### Properties
-Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
+#### Propiedades
+Seleccione un trabajo por lotes existente y, a continuación, utilice las Propiedades para definir las [Propiedades del renderizado por lotes](#batch-render-properties). Las Propiedades incluyen el nombre de archivo, la resolución y el número de pases para cada trabajo.
 
-#### Move Up
-Move the viewport name up in the list.
+#### Subir
+Sube el nombre de la vista un nivel en la lista.
 
-#### Move Down
-Move the viewport name down in the list.
+#### Bajar
+Baja el nombre de la vista un nivel en la lista.
 
-#### Batch List
+#### Lista por lotes
 {: #batch-list}
-Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
+Muestra información sobre la lista de vistas a renderizar. Haga doble clic en un trabajo existente para editar las [Propiedades del renderizado por lotes](#batch-render-properties).
 
-#### Rendering Status
-Displays pass, scan line, and elapsed time information about the progress of the batch process.
+#### Estado del renderizado
+Muestra información de pases, línea de escaneado y tiempo transcurrido sobre el progreso del procesamiento por lotes.
 
-####  Stop Rendering
-Stops the batch process.
+####  Detener renderizado
+Detiene el procesamiento por lotes.
 
-#### Render Batch Locally
+#### Renderizar por lotes localmente
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
+Utiliza solo el equipo actual para renderizar los trabajos por lotes. Las imágenes renderizadas se guardarán en la ubicación especificada en las [Propiedades de renderizado por lotes](#batch-render-properties).
 
-####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
+####  Enviar lotes a Render Farm
+Envía los trabajos por lotes al [Render Farm](render-farm.html). Los trabajos serán renderizados por todos los clientes del Farm disponibles. Las imágenes renderizadas se guardarán en la carpeta compartida del Farm.
 
-### Batch Render Properties
+### Propiedades del renderizado por lotes
 {: #batch-render-properties}
 
-#### Viewport to render
-Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
+#### Ventana a renderizar
+Muestra la ventana que se renderizará. Consulte [Ficha Renderizao, Ventana a renderizar](render-tab.html#viewtorender).
 
-#### File name
-Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
+#### Nombre de archivo
+Haga clic en el botón Guardar ![images/saveimageas.png](images/saveimageas.png) y especifique un nombre de archivo para la imagen renderizada.
 
-#### Alpha channel
-Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
+#### Canal alfa
+Guarda la imagen con el canal alfa.  Consulte la opción [Usar fondo de canal alfa](environment-tab.html#alpha) para obtener más información.
 
-#### Use document settings
+#### Usar configuración de documento
 {: #rendering-resolution}
-The default is to use the current document resolution settings to render.  If another resolution is needed, then uncheck this box and specify a resolution. See the [Render tab, Resolution](render-tab.html#resolution) topic for more details.
+La opción predeterminada es utilizar la configuración de resolución del documento actual para renderizar. Si necesita indicar otra resolución, desactive esta casilla y especifique una resolución. Consulte el tema [ficha Renderizado, Resolución](render-tab.html#resolution) para obtener más información.
 
-#### Rendering Constraints Passes
+#### Pases de restricciones de renderizado
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+Define el número de pases necesarios para terminar el trabajo de procesamiento por lotes.  Consulte el tema [Pases](documentproperties-flamingo.html#number-of-passes) para obtener más información.
 
 <!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
@@ -82,7 +82,7 @@ There are two ways to create animations in Rhino.  Animations can be configured 
 &#160;
 Specify theJob name,and click theOKbutton.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Set a type of animation from Rhino'sAnimation setuptoolbar. Select RenderFull as the Capture method.
 &#160;
 Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
 &#160;

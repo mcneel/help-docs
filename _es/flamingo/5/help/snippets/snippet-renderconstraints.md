@@ -1,7 +1,7 @@
-Sets the default time and number of passes constraints. The default recommended setting is to set these render constraints off and let the render engine continue until it is closed or manually stopped. These may be changed using the controls in the Render Window. Setting the Number of passes and Time to 0 allows the rendering to continue until you click Stop Rendering.
+Define el tiempo predeterminado y el número de restricciones de pases. La opción predeterminada recomendada es desactivar las restricciones de renderizado y permitir que el motor de renderizado continúe hasta que se cierre o se detenga manualmente. Estos valores pueden cambiarse utilizando los controles de la ventana de renderizado. Al definir el Número de pases y el Tiempo, el renderizado continúa hasta que se hace clic en Detener renderizado.
 
-#### Time
-Specifies the amount of time in Hours/Minutes/Seconds the render will continue to process. Note : The rendering stops after the last pass after the time limit has been reached. If you click Resume Rendering, the rendering will continue for one additional pass.
+#### Tiempo
+Especifica la cantidad de tiempo en Horas/Minutos/Segundos que continuará procesándose el renderizado. Nota : El renderizado se detendrá después del último pase cuando se alcance el límite de tiempo. Si hace clic en Reanudar renderizado, el renderizado continuará un pase más.
 
-#### Number of passes
-Specifies the number of rendering passes the render will process. Note : Any time you click Resume Rendering, the counter for the number of passes is reset. For example, if you set the number of passes to 10 and stop the rendering after pass 8, the rendering will continue until it reaches 18 passes. Normally renderings may take 10 - 15 passes to start to converge. Architectural interiors may need up to 30 passes to start to converge.
+#### Número de pases
+Especifica el número de pases de renderizado que se procesarán en el renderizado. Nota : Cada vez que que se hace clic en Reanudar renderizado, el contador de número de pases se reinicia. Por ejemplo, si define el número de pases a 10 y detiene el renderizado después del pase 8, el renderizado continuará hasta llegar a los 18 pases. Normalmente, los renderizados tardan entre 10-15 pases para empezar a converger. Los interiores de arquitectura pueden tardar hasta 30 pases para empezar a converger.

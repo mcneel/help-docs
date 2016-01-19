@@ -4,7 +4,7 @@ title: Kanäle
 
 # ![images/render.svg](images/render.svg) {{page.title}}
 {: #channel}
-Ein sehr nützliches Feature von Flamingo nXt 5 ist die Möglichkeit zur Organisation der Lichter in acht Kanälen. Jede Lichtquelle in der Zeichnung, einschließlich Sonne und Himmel, kann einem Kanal zugeordnet werden. Beim Rendern wird das Licht eines Kanals auf eine eigene Ebene gesetzt.  So kann die Intensität eines Kanals nach Abschluss des Renderings angepasst werden.  Die Änderung wird in Echtzeit und ohne erneutes Rendering vorgenommen.  
+Ein sehr nützliches Feature von Flamingo nXt 5 ist die Möglichkeit zur Organisation der Lichter in acht Kanälen. Jede Lichtquelle in der Zeichnung einschließlich Sonne und Himmel kann einem Kanal zugeordnet werden. Beim Rendern wird das Licht eines Kanals auf eine eigene Ebene gesetzt.  So kann die Intensität eines Kanals nach Abschluss des Renderings angepasst werden.  Die Änderung wird in Echtzeit und ohne erneutes Rendering vorgenommen.  
 
 Kanäle sind besonders für die folgenden Fälle nützlich:
 
@@ -13,14 +13,14 @@ Kanäle sind besonders für die folgenden Fälle nützlich:
 * Bei der Verwendung mehrerer Reihen von Lichtern in einem Innen- oder Außenrendering.  Jede Lichtreihe kann auf einen anderen Kanal gesetzt werden und hat so einen eigenen Dimmer zur Einstellung der Intensität.
 * Rendering mit allen Lichtern und anschließendem Ein- und Ausschalten bestimmter Lichter. So müssen für eine Nacht- und eine Tagesansicht keine zwei verschiedenen Bilder gerendert werden.
 
-Wenn das Bild gerendert wurde, kann jeder Kanal einzeln skaliert werden, entweder vor dem Speichern im Renderfenster oder er kann in eine nXtImage-Datei für eine Bearbeitung zu einem späteren Zeitpunkt exportiert werden.
+Nach dem Rendern des Bilds kann jeder Kanal vor dem Speichern im Renderfenster einzeln skaliert werden. Eine andere Möglichkeit ist das Speichern des Bilds als nXtImage-Datei zur späteren Bearbeitung.
 
 Verwenden Sie dabei die Kanäle zur Anpassung der Intensität der Lichtquellen untereinander und nicht, um das ganze Bild aufzuhellen.  Wenn Sie das ganze Bild auf einmal heller einstellen möchten, verwenden Sie dazu die Option *Bild anpassen*.
 
 <video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
 *Zum Abspielen des Videos klicken*
 
-Die folgenden Bedingungen sind nötig, um ein Mehrkanalbild zu erzeugen und ändern:
+Die folgenden Bedingungen sind nötig, um ein Mehrkanalbild zu erzeugen und zu ändern:
 
  1. Alle beteiligten Lichter müssen aktiviert sein.
  2. Jeder Lichtquelle muss ein Kanal zugeordnet sein. Sonne und Himmel sind standardmäßig auf Kanal 0 gesetzt, künstliche Lichter auf Kanal 1.

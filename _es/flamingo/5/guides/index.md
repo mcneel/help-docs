@@ -2,73 +2,72 @@
 layout: fullwidth-page
 ---
 
-# Getting Started with Flamingo nXt 5®
+# Introducción a Flamingo nXt 5®
  
-## Installation
+## Instalación
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
-Startup notes
+La beta de Flamingo 5 requiere tener instalada una versión anterior de Flamingo nXt.
+Es necesario tener Rhino 5 Service Release 12 para poder ejecutar Flamingo nXt 5.
+Después de descargar y ejecutar el instalador RHI, inicie Rhino.
+Notas iniciales
 
-This version of Flamingo features an interface which is integrated with the Rhino 5 rendering tools. This made several necessary changes to the rendering interface. At this time it is important to find the Flamingo interface when first starting up Flamingo:
+Esta versión de Flamingo ofrece una interfaz integrada en las herramientas de renderizado de Rhino 5. Por este motivo, se han realizado varios cambios necesarios en la interfaz de renderizado. Es importante encontrar la interfaz Flamingo al iniciar Flamingo por primera vez:
 
-The Flamingo control panel can be found under the Render Pulldown > Flamingo nXt 5 > Show Control Panel
-The Flamingo nXt tab contains Flamingo specific controls:
-Sky
-Lighting Manager
-Custom Lighting controls
-Render Options
-Once in the control panel, Right-click in the tab area and select the panels:
-Libraries
-Environment
-Groundplane
-Etc…
+El panel de control de Flamingo se encuentra en el desplegable Renderizado > Flamingo nXt 5 > Mostrar panel de control
+La ficha Flamingo nXt contiene controles específicos de Flamingo:
+Cielo
+Administrador de iluminación
+Controles de iluminación personalizados
+Opciones de renderizado
+Una vez en panel de control, haga clic con el botón derecho en el área de la ficha y seleccione los paneles:
+Librerías
+Entorno
+Plano de suelo
+Etc.
  
-## To access the Flamingo control panel
-  * On the **Flamingo nXt** menu, click **Control Panel**.
+## Para acceder al Panel de control de Flamingo
+  * En el menú **Flamingo nXt**, haga clic en **Panel de control**.
 
-  ## The Flamingo nXt Control Panel
-The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
+  ## Panel de control de Flamingo nXt
+El panel de control de **Flamingo nXt** contiene fichas para configurar el modelo para el renderizado:
 
- *  [Materials](..\materials\materials-tab.html) 
- *  [Lighting](../lighting/lighting-tab.html) 
- *  [Environment](../environment/environment-tab.html) 
- *  [Render](../render/render-tab.html) 
+ *  [Materiales](..\materials\materials-tab.html) 
+ *  [Iluminación](../lighting/lighting-tab.html) 
+ *  [Entorno](../environment/environment-tab.html) 
+ *  [Renderizado](../render/render-tab.html) 
 
-## Rendering Basics
+## Conceptos básicos sobre renderizado
  
-Rendering your finished model comprises four basic steps:
+El renderizado de un modelo acabado comprende cuatro pasos básicos:
 
- *  [Set up materials](..\materials\materials-tab.html) 
- *  [Set up lighting](../lighting/lighting-tab.html) 
- *  [Set up an environment](../environment/environment-tab.html) 
- *  [Set up rendering conditions](../render/render-tab.html) 
+ *  [Configurar los materiales](..\materials\materials-tab.html) 
+ *  [Configurar la iluminación](../lighting/lighting-tab.html) 
+ *  [Configurar un entorno](../environment/environment-tab.html) 
+ *  [Configurar las condiciones de renderizado](../render/render-tab.html) 
 
-#### To start a rendering
+#### Para iniciar un renderizado
 
- * On the **Render** or **Flamingo nXt** menu, click **Render**.
-- Or -
+ * En el menú **Renderizado** o **Flamingo nXt**, haga clic en **Renderizar**.
+- O bien -
 
- * On the **Standard** toolbar, click the **Render** button.
+ * En la barra de herramientas **Estándar**, haga clic en el botón **Renderizar**.
 
-### Stop Rendering
- 
-
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
-
-
-###  <kbd>Resume Rendering</kbd> 
+### Detener renderizado
  
 
-Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
+De manera predeterminada, el proceso de renderizado continuará refinando la imagen, pase tras pase, hasta que haga clic en el botón Detener renderizado. Esta opción permite controlar la relación tiempo-calidad. Cuanto más tiempo continúe el renderizado, más se parecerá al  resultado "correcto" del renderizado completo. El digitalizador se puede recalibrar en cualquier momento.
 
-The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
 
-Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
+###  <kbd>Reanudar renderizado</kbd> 
+ 
+
+Al hacer clic en el botón **Detener renderizado**, se suspende el proceso de renderizado después de completarse el pase en curso.
+
+A continuación, el botón cambia a **Reanudar renderizado**. Si ha detenido el renderizado antes del número de pases o si se han alcanzado las restricciones de tiempo, puede hacer clic en el botón **Reanudar renderizado** para continuar.
+
+Utilice las opciones de [Número de pases](..\render\render-window.html#number-of-passes) o [Tiempo](..\render\render-window.html#time) en la [Ventana de renderizado](..\render\render-window.html) o en [Propiedades de documento > Flamingo nXt](..\render\documentproperties-flamingo.html) para definir un punto de detención automática.
 
 &#160;
 
-Revised: 22-Dec-2011 14:45
-
+Revisión: 22-Dic-2015 14:45
 

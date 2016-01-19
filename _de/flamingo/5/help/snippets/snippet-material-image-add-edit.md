@@ -7,3 +7,4 @@
 
 ##### Ersetzen eines Bilds mit einem anderen Bild:
   * Klicken Sie auf die Schaltfläche zur Bildbearbeitung ![images/edit_image.png](images/edit_image.png) und wählen Sie ein Bild im Dateiauswahldialog.
+  

@@ -1,5 +1,4 @@
 
-
 ##### Namenfilter
 Platzhalter verwenden, um Inhaltselemente nach Namen auszuwählen.
 

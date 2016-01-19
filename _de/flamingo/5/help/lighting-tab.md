@@ -39,13 +39,13 @@ Für die Beleuchtung in Flamingo nXt gibt es vier voreingestellte Kategorien:
 {: #studio-lighting}
 Dieses Schema ahmt die Beleuchtung eines Fotostudios nach. Es eignet sich am besten für das Rendering kleiner bis mittelgroßer, freistehender Objekte.  Es kann außerdem gut für alle Szenen verwendet werden, die durch eine HDRi-Umgebung gut beleuchtet sind.
 
-![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} Die primäre Beleuchtung wird aus einem HDR-Bild abgeleitet. Das Licht aus dem HDR-Bild ähnelt der internen Beleuchtung des Studios. Die HDRI-Einstellungen befinden sich im Reiter [Himmel](sun-and-sky-tabs.html#sky). Sie können Ihrer Szene auch künstliche Lichter anhand des Reiters Lichter hinzufügen. Der sichtbare Hintergrund in der Studio-Voreinstellung ist schwarz.
+![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} Die primäre Beleuchtung wird aus einem HDR-Bild abgeleitet. Das Licht aus dem HDR-Bild ähnelt der internen Beleuchtung des Studios. Die HDRI-Einstellungen befinden sich im Reiter [Himmel](sun-and-sky-tabs.html#sky). Über den Lichter-Reiter können Sie können Ihrer Szene auch künstliche Lichter hinzufügen. Der sichtbare Hintergrund in der Studio-Voreinstellung ist schwarz.
 
 Die Studiobeleuchtung ist für Tischinstallationen mit kleinen Artikeln wie Schmuckstücken optimiert. Im voreingestellten Schema ist die Sonne deaktiviert und ein HDR-Bild als Himmel liefert etwas, worauf glänzende Objekte reflektieren können.
 
 Um eine bessere Kontrolle zu haben, verwenden Sie Lichtquellen, um die Szene zu beleuchten. Beim Beleuchten eines Studios ist eine dramatische Beleuchtung wichtig. Erzeugen Sie dramatische Beleuchtung, indem Sie viel Kontrast erstellen. Das bedeutet, dass dunkle Bereiche genauso wichtig sind wie helle Bereiche. Eine dramatische Beleuchtung benötigt mehrere Lichtquellen, die so platziert werden müssen, dass sehr helle und sehr dunkle Bereiche erzeugt werden.
 
-Für das Rendering gelten normalerweise dieselben Beleuchtungstechniken wie für die Fotografie, weswegen eines der vielen Bücher zur Fotografischen Beleuchtung ein guter Ausgangspunkt für die Beschäftigung mit diesem Thema ist. Für weitere Informationen über die Konfiguration von Studiobeleuchtung werfen Sie einen Blick auf: [Grundlagen der Studiobeleuchtung](../guides/studio-lighting-basics.html).
+Für das Rendering gelten normalerweise dieselben Beleuchtungstechniken wie für die Fotografie, weswegen eines der vielen Bücher zur fotografischen Beleuchtung ein guter Ausgangspunkt für die Beschäftigung mit diesem Thema ist. Für weitere Informationen über die Konfiguration von Studiobeleuchtung werfen Sie einen Blick auf: [Grundlagen der Studiobeleuchtung](../guides/studio-lighting-basics.html).
 
 ### Tageslicht außen
 {: #exterior-daylight .clear-img}
@@ -57,17 +57,17 @@ Die Beleuchtung eines Gebäudes ist das einfachste Beleuchtungsmodell. Außenbel
 
 Wenn die [Sonne](sun-and-sky-tabs.html#sun) aktiviert ist, muss die Szene als [Innen](#interior)- oder [Außenszene](#exterior) eingestellt werden. Der Grund dafür ist, dass die Verteilung des Himmelslichts, vom Boden reflektiertes Licht und von anderen Flächen reflektiertes Licht innen anders als außen ist. Die Verwendung der korrekten [Innen- und Außeneinstellungen](#indirect) ergibt eine effektive und realistische Beleuchtung.
 
-Manchmal ist es einfach zu bestimmen, ob es sich um eine Innen- oder Außenszene handelt. Wenn sich der Blickpunkt außerhalb eines Gebäudes befindet, ist es eine Außenszene. Wenn sich der Blickpunkt in einem Raum befindet, ist es eine Innenszene. Bei einigen Szenen ist das nicht so klar. Dies beinhaltet Höfe, Terrassen, zerlegte Ansichten und Querschnitte. Wenn ein Hof viel breiter als höher ist und sehr viel Himmelslicht einlässt, versuchen Sie, den Hof als Außenszene zu beleuchten. Wenn der Hof höher als breiter ist, versuchen Sie, ihn als Innenszene zu beleuchten. In diesem Fall fügen Sie Tageslichtportale oben am Hof hinzu, die das Himmelslicht in die Szene lenken.
+Manchmal ist es einfach zu bestimmen, ob es sich um eine Innen- oder Außenszene handelt. Wenn sich der Blickpunkt außerhalb eines Gebäudes befindet, ist es eine Außenszene. Wenn sich der Blickpunkt in einem Raum befindet, ist es eine Innenszene. Bei einigen Szenen ist das nicht so klar. Dazu gehören Innenhöfe, Terrassen, zerlegte Ansichten und Querschnitte. Wenn ein Innenhof viel breiter als hoch ist und sehr viel Himmelslicht hereinlässt, können Sie versuchen, ihn als Außenszene zu beleuchten. Wenn er höher als breit ist, kann eine Innenszene die ideale Beleuchtung sein. Eine Möglichkeit in diesem Fall ist das Hinzufügen von Tageslichtportalen im oberen Bereich des Innenhofs, die das Himmelslicht in die Szene lenken.
 
-Lichter können auch Landschaftsbeleuchtung simulieren. Verwenden Sie Spotlichter, um architektonische Eigenschaften und Bäume hervorzuheben. Dies funktioniert sehr gut für Nacht- oder Dämmerungsszenen. Während des Tages ist die Sonne normalerweise stärker als die künstliche Beleuchtung in einer Außenszene, so wie es auch in der realen Welt geschieht.
+Lichter dienen auch der Simulation von Landschaftsbeleuchtungen. Verwenden Sie Spotlichter, um architektonische Eigenschaften und Bäume hervorzuheben. Dies funktioniert sehr gut für Nacht- oder Dämmerungsszenen. Während des Tages ist die Sonne normalerweise stärker als die künstliche Beleuchtung in einer Außenszene, so wie es auch in der realen Welt geschieht.
 
-Zerlegte Ansichten, Querschnitte und axonometrische Zeichnungen sind auch eine besondere Herausforderung. Die Entscheidung hängt vom gewünschten Resultat ab. Verwenden Sie für eine Außenszene mit dem schnellsten Rendering die Außenrendering-Methode. Sollte diese Methode kein interessantes Bild erzeugen, verwenden Sie ein Innenrendering. Die Innenszene könnte auf diese Weise interessanter erscheinen, aber der Zeitaufwand ist auch größer, wenn Sie diese Art von Beleuchtung konfigurieren.
+Zerlegte Ansichten, Querschnitte und axonometrische Zeichnungen sind ebenfalls eine besondere Herausforderung. Die Entscheidung hängt vom gewünschten Resultat ab. Verwenden Sie für eine Außenszene mit dem schnellsten Rendering die Außenrendering-Methode. Sollte diese Methode kein interessantes Bild erzeugen, verwenden Sie ein Innenrendering. Dadurch wird der Innenbereich interessanter, wobei die Konfiguration der Beleuchtung mehr Zeit in Anspruch nimmt.
 
 ### Tageslicht innen
 {: #interior-daylight .clear-img}
 Dieses Schema simuliert eine Innenszene, die von natürlichem Licht beleuchtet wird.
 
-![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} Es besteht aus zwei Komponenten: direktem Sonnenlicht von der [Sonne](sun-and-sky-tabs.html#sun) und indirektem Sonnenlicht über den [Himmel](sun-and-sky-tabs.html#sky), den Grund und andere Aßenobjekte.
+![images/interiordaylightnoportals.png](images/interiordaylightnoportals.png){: .float-img-left} Es besteht aus zwei Komponenten: direktem Sonnenlicht von der [Sonne](sun-and-sky-tabs.html#sun) und indirektem Sonnenlicht über den [Himmel](sun-and-sky-tabs.html#sky), den Grund und andere Außenobjekte.
 
 Die Einstellungen für [Sonne](sun-and-sky-tabs.html#sun) und [Himmel](sun-and-sky-tabs.html#sky) ähneln denen der Voreinstellung für die [Außenbeleuchtung](lighting-tab.html#exterior-daylight).
 Bei der direkten Sonnenlichtkomponente des Tageslichts wird eine direkte Berechnung verwendet - normalerweise müssen Sie nur Zeit, Datum und Ort angeben, damit die Genauigkeit garantiert ist.
@@ -78,17 +78,17 @@ Hinweis zu Innenrenderings:
 * Verwenden Sie nach Möglichkeit präzise Werte für Ihre [Lichter](lights-tab.html), [Himmelseinstellungen](sun-and-sky-tabs.html#sky) und Fensterglasmaterialien.
 * Da Sonne und Himmel viel heller als andere Lichter sind, werden Sie vielleicht keinen großen Unterschied bemerken, wenn Sie bei aktivierter Sonne künstliche Beleuchtung hinzufügen. Das ist normal. Verstärken Sie die Intensität Ihrer Lichtquellen nicht künstlich.
 * Die Intensität der [Sonne](sun-and-sky-tabs.html#sun-intensity) oder des [Himmels](sun-and-sky-tabs.html#sky-intensity) kann auf einen niedrigeren Wert eingestellt werden. Da diese Einstellungen einen klaren Himmel simulieren, werden bei Reduzierung der Intensität bewölkte oder dunklere Tageslichtbedingungen simuliert.
-* Ein [Mehrkanal](lights-tab.html#channel)-Rendering ist eine gute Option zur Erzielung des gewünschten Ergebnisses unter Beibehaltung präziser Daten.
+* Ein [Mehrkanal](lights-tab.html#channel)-Rendering ist eine gute Möglichkeit zur Erzielung des gewünschten Ergebnisses unter Beibehaltung präziser Daten.
 
 ### Künstliche Beleuchtung
 {: #artificial-lighting}
 ![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} Dieses Schema liefert die Simulation einer nächtlichen Architekturinnenszene, die mit Lampen beleuchtet wurde. Im Reiter [Lichter](lights-tab.html) oder mit den Rhino-Befehlen für [Lichter](lights-tab.html#rhino-light-commands) können Lichtobjekte ins Modell eingesetzt und verwaltet werden.
 
-Die indirekte Beleuchtung (die Beleuchtung, die von Flächen reflektiert wird) ist aktiviert, wenn eine der zwei Voreinstellungen für Innen ausgewählt und für Studio und Außen deaktiviert ist. Diese Beleuchtungsart ist eine wichtige Komponente für die Simulation einer Innenszene. Für Außenszenen und Studiomodelle ist der Effekt von indirekter Beleuchtung subtiler und erscheint deshalb standardmäßig deaktiviert.
+Die indirekte Beleuchtung (die Beleuchtung, die von Flächen reflektiert wird) ist bei Auswahl einer der beiden Voreinstellungen für Innen aktiviert und für die Studio- und Außenvoreinstellung deaktiviert. Diese Beleuchtungsart ist eine wichtige Komponente für die Simulation einer Innenszene. Für Außenszenen und Studiomodelle ist der Effekt von indirekter Beleuchtung subtiler und erscheint deshalb standardmäßig deaktiviert.
 
 ### Benutzerdefinierte Beleuchtung
 {: #custom  style="clear:both;"}
-Im Reiter für benutzerdefinierte Beleuchtung können verschiedene Beleuchtungsvoreinstellungen kombiniert werden.  Wenn die Szene beispielsweise auf *Tageslicht außen* eingestellt und zusätzlich mit einer HDRI-Umgebung beleuchtet wird, können im Reiter für benutzerdefinierte Beleuchtung Teile der Beleuchtungsmodells de-/aktiviert werden.  Wenn die Voreinstellungswerte eines Schemas verändert werden, wird aus diesem automatisch ein benutzerdefiniertes Schema.
+Im Reiter für benutzerdefinierte Beleuchtung können verschiedene Beleuchtungsvoreinstellungen kombiniert werden.  Wenn die Szene beispielsweise auf *Tageslicht außen* eingestellt und zusätzlich mit einer HDRI-Umgebung beleuchtet wird, können im Reiter für benutzerdefinierte Beleuchtung Teile des Beleuchtungsmodells de-/aktiviert werden.  Wenn die Voreinstellungswerte eines Schemas verändert werden, wird aus diesem automatisch ein benutzerdefiniertes Schema.
 
 ####  [Sonne](sun-and-sky-tabs.html#sun)
 {: #sun}
@@ -122,7 +122,7 @@ Liefert ein analytisches Modell, das sich auf tatsächliche Himmelsbedingungen s
 
 #### HDRi
 {: #hdri}
-Ein HDR-Bild bietet etwas, worauf glänzende Objekte reflektieren können.
+Ein HDR-Bild wird auf glänzenden Objekten reflektiert.
 ![images/chromehdrbackground.png](images/chromehdrbackground.png)
 
 #### Farbe
@@ -132,7 +132,7 @@ Zur Einstellung des Himmels in einer einzelnen Farbe oder einem zwei- bzw. dreif
 
 #### Bild
 {: #image}
-Verwendet einen Bildhintergrund mit einer planaren, zylindrischen oder kugelförmigen Projektion ähnlich wie bei [Umgebung: Bild](environment-tab.html#image).
+Verwendet einen Bildhintergrund mit einer planen, zylindrischen oder kugelförmigen Projektion ähnlich wie bei [Umgebung: Bild](environment-tab.html#image).
 ![images/chromeimagesky.png](images/chromeimagesky.png)
 
 
@@ -151,7 +151,7 @@ Aktiviert und deaktiviert künstliche Beleuchtung.
 
 ### Indirekt
 {: #indirect}
-Definiert die Beleuchtung, die von Flächen reflektiert wird. Standardmäßig ist es für Innenbeleuchtug aktiviert und für vordefinierte Schemen von Außen- und Studiobeleuchtung deaktiviert. Es ist möglich, die indirekte Beleuchtung für Außenrenderings zu aktivieren.
+Definiert die Beleuchtung, die von Flächen reflektiert wird. Standardmäßig ist es für Innenbeleuchtung aktiviert und für vordefinierte Schemen von Außen- und Studiobeleuchtung deaktiviert. Es ist möglich, die indirekte Beleuchtung für Außenrenderings zu aktivieren.
 
 #### Methode
 Definiert die Berechnungsmethode für indirekte Beleuchtung.

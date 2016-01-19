@@ -1,2 +1,2 @@
 #### Color
-Use the Color Selector to set the main color.  See the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) topic for details.
+Utilice el Selector de color para escoger el color principal.  Consulte el tema [Selector de color](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) para obtener más información.

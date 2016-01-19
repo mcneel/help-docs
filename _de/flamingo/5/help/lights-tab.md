@@ -67,7 +67,7 @@ Ein Spotlicht ist eine konische Lichtverteilung mit einer Richtung.  Zu den Lich
 
 #### ![images/pointlight-01.png](images/pointlight-01.png) Punktlicht
 {: #pointlight}
-Punktlichter sind kleine Kugeln, die ihr Licht in alle Richtungen gleichmäßig verteilen. Für dieses Licht kann der [Radius](#radius) eingestellt werden. Je größer der Radius, desto sanfter sind die vom Licht erzeugten Schatten. Standardmäßig ist an der Position des Lichts beim Rendern eine sichtbare Lichtkugel vorhanden. Wenn das Punktlicht teilweise von einem Objekt verdunkelt wird, das dieses schneidet, können ungewöhnliche Effekte auftreten.
+Punktlichter sind kleine Kugeln, die ihr Licht in alle Richtungen gleichmäßig verteilen. Für dieses Licht kann der [Radius](#radius) eingestellt werden. Je größer der Radius, desto sanfter sind die vom Licht erzeugten Schatten. Standardmäßig ist an der Position des Lichts beim Rendern eine sichtbare Lichtkugel vorhanden. Wenn das Punktlicht teilweise von einem Objekt verdunkelt wird, das es schneidet, können ungewöhnliche Effekte auftreten.
 
 ![images/pointlight.png](images/pointlight.png)
 *Ein kleines Punktlicht nahe der rechten Wand*
@@ -81,13 +81,13 @@ Liefert eine Annäherung an eine Einbauleuchte mit einem Diffusor oder Umlenkble
 
 #### ![images/linearlight-01.png](images/linearlight-01.png) Lineares Licht
 {: #linearlight}
-Verteilt Licht in einem zylindrischen Muster, das eine Leuchtstoffröhre imitiert. Zu den einstellbaren Eigenschaften dieses Lichts gehören der [Radius](#radius) und die Länge der Lichtquelle. Je größer der Radius, desto sanfter sind die vom Licht erzeugten Schatten. Standardmäßig wird an der Position des Lichts beim Rendern ein Lichtzylinder angezeigt. Wenn das Licht teilweise von einem Objekt verdunkelt wird, das dieses schneidet, können ungewöhnliche Effekte auftreten. Mit den Rhino-Kontrollpunkten kann das Licht auf dem Bildschirm angepasst werden.
+Verteilt Licht in einem zylindrischen Muster, das eine Leuchtstoffröhre imitiert. Zu den einstellbaren Eigenschaften dieses Lichts gehören der [Radius](#radius) und die Länge der Lichtquelle. Je größer der Radius, desto sanfter sind die vom Licht erzeugten Schatten. Standardmäßig wird an der Position des Lichts beim Rendern ein Lichtzylinder angezeigt. Wenn das Licht teilweise von einem Objekt verdunkelt wird, das es schneidet, können ungewöhnliche Effekte auftreten. Mit den Rhino-Kontrollpunkten kann das Licht auf dem Bildschirm angepasst werden.
 
 ![images/linearlight.png](images/linearlight.png)
 
 ## Lichteigenschaften
 {: #light-properties}
-Wenn Flamingo der aktuelle Renderer in Rhino ist, können zusätzliche Eigenschaften für die Lichter definiert werden. Lichter haben einige aber nicht alle Eigenschaften gemein.
+Wenn Flamingo der aktuelle Renderer in Rhino ist, können zusätzliche Eigenschaften für die Lichter definiert werden. Lichter haben einige gemeinsame Eigenschaften.
 
 #### Name
 {: #name}
@@ -95,7 +95,7 @@ Der Name des Lichtobjekts. Dieser dient der einfachen Unterscheidung von Lichter
 
 #### ![images/lightbulbon.png](images/lightbulbon.png) Ein/Aus
 {: #on}
-Schaltet das Licht ein und aus. Ein gelbes Glühbirnensymbol in der Lichttabelle bedeutet, dass das Licht eingeschaltet ist. Erscheint das Symbol grau, ist das Licht im Rendering deaktiviert. Durch einen Doppelklick auf das Symbol kann das Licht ein- bzw. ausgeschaltet werden. Im Eigenschaftendialog gibt es ein Kontrollkästchen zum ein- und ausschalten des Lichts.
+Schaltet das Licht ein und aus. Ein gelbes Glühbirnensymbol in der Lichttabelle bedeutet, dass das Licht eingeschaltet ist. Erscheint das Symbol grau, ist das Licht im Rendering deaktiviert. Durch einen Doppelklick auf das Symbol kann das Licht ein- bzw. ausgeschaltet werden. Im Eigenschaftendialog gibt es ein Kontrollkästchen zum Ein- und Ausschalten des Lichts.
 
 #### Sichtbar
 {: #visible}
@@ -107,7 +107,7 @@ Wenn ein Objekt als Licht markiert wird, kann über die Verteilung das Muster ei
 
 #### Richtung des Lichts *([Nur markierte Objekte](#tag-objects-as-lights))*
 {: #aim-light}
-Für markierte Lichter mit einer Verteilung als Spotlicht oder diffuses Licht muss eine Richtung angegeben werden.  Klicken Sie dazu doppelt auf die Zelle mit der Angabe "Richtung >>" und folgen sie den Anweisungen der Befehlszeile.
+Für markierte Lichter mit einer Verteilung als Spotlicht oder diffuses Licht muss eine Richtung angegeben werden.  Klicken Sie dazu doppelt auf die Zelle mit der Angabe "Richtung >>" und folgen Sie den Anweisungen der Befehlszeile.
 
 #### Watt
 {: #watts}
@@ -126,7 +126,7 @@ Die Größe der sichtbaren Lichtquelle. Kleinere Lichter werfen schärfere Schat
 Die Farbe des von der Lichtquelle ausgestrahlten Lichts.
 
 #### Materialfarbe verwenden *([Nur markierte Objekte](#tag-objects-as-lights))*
-Verwendet die Farbe des Materials, das dem Lichtobjekt zugeordnet ist, für das Licht.
+Als Lichtfarbe wird die Farbe des dem Lichtobjekt zugeordneten Materials verwendet.
 
 #### Kanal
 {: #channel}
@@ -134,11 +134,11 @@ Lichter können einem von acht Kanälen zugewiesen werden. Mit dieser Eigenschaf
 
 #### IES-Datei
 {: #iesfile}
-IES-Dateien (Illuminating Engineering Society) sind Photometrie-Dateien, die die Verteilung von Licht aus einer Lichtquelle definieren. Lichtvorrichtungshersteller liefern oft diese Dateien. Indem Sie die IES-Datei verwenden, um Ihre Verteilung zu definieren, können Sie Ihre Lichtquelle genauer darstellen. Die Geometrie des markierten Lichtobjekts weist keine Beziehung zur Verteilung des Lichts auf. Die Definition der Lichtverteilung stammt allein von der Photometrie-Datei.
+IES-Dateien (Illuminating Engineering Society) sind Photometrie-Dateien, die die Verteilung von Licht aus einer Lichtquelle definieren. Lichtvorrichtungshersteller liefern oft diese Dateien. Durch die Verwendung von IES-Dateien zur Bestimmung der Verteilung kann die Lichtquelle präziser dargestellt werden. Die Geometrie des markierten Lichtobjekts weist keine Beziehung zur Verteilung des Lichts auf. Die Definition der Lichtverteilung stammt allein aus der Photometrie-Datei.
 
 Hinweise:
 
-* Flamingo nXt unterstützt Goniometrie-Dateien vom Typ C, worunter die meisten IES-Dateien fallen. Dateien vom Typ A, die manchmal von der Automobilindustrie für die Scheinwerfer verwendet werden, und Dateien vom Typ B, die manchmal für Flutlichtbeleuchtung verwendet werden, werden nicht unterstützt.
+* Flamingo nXt unterstützt Goniometrie-Dateien vom Typ C, worunter die meisten IES-Dateien fallen. Dateien vom Typ A, die manchmal von der Automobilindustrie für Scheinwerfer verwendet werden, und Dateien vom Typ B, die manchmal für Flutlichtbeleuchtung verwendet werden, werden nicht unterstützt.
 * IES-Verteilungen beinhalten die Effekte von Lichtvorrichtungselementen wie Reflektoren, Umlenkblechen und Diffusoren.
 * IES-Verteilungen sind oft asymmetrisch, der Prozess der Quellenrichtung beinhaltet also nicht nur ein Ziel, sondern auch einen Rotationswinkel.
 

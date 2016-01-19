@@ -162,6 +162,7 @@ Use the placement control to place the image relative the to current view. The v
 ![images/background-image-003.png](images/background-image-003.png)
 *Current viewport area (1), image size and shape (2).*
 
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
 #### X Scale / Y Scale
 Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
 

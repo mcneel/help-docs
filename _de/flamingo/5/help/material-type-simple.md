@@ -74,7 +74,7 @@ Glasmaterialien haben eine [Farbe](material-type-advanced.html#color) und einen 
 #### Brechungsindex
 Zur Einstellung der Lichtbrechung bei Durchquerung des Materials. Weitere Informationen finden Sie im Hilfethema zum [Brechungsindex](advanced-material-properties-main.html#index-of-refraction).
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Verwenden Sie den Erweiterten Editor, um die Voreinstellungen für [Glanzlichtfarbe](material-type-advanced.html#highlight-color), [Intensität](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Schärfe](material-type-advanced.html#sharpness) und [Transparenz](material-type-advanced.html#transparency) zu überschreiben).
+{% include_relative snippets/snippet-material-advanced-editor.md %} Verwenden Sie den Erweiterten Editor, um die Voreinstellungen für [Glanzlichtfarbe](material-type-advanced.html#highlight-color), [Intensität](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Schärfe](material-type-advanced.html#sharpness) und [Transparenz](material-type-advanced.html#transparency) zu überschreiben.
 
 ## Glänzend
 {: #glossy}
@@ -124,7 +124,7 @@ Zur Einstellung der Bild-Map und der Eigenschaften des Materials. Dafür stehen 
 
 ## Texturensatz
 {: #texture-set}
-[Texturensetmaterialien](material-type-texture-set.html) bestehen aus einem aufeinander abgestimmten Texturensatz, der das Material definiert.  Diese Materialien können mit Textur-Maps erstellt werden, die Informationen wie Displacement, Normal- oder Bump-Maps enthalten. Displacement-Maps verleihen dem Material Tiefe. Durch Kombination dieser Texturen-Maps können sehr realistische Materialien erzeugt werden. Mit dem Programm [PixPlant](http://www.pixplant.com/) kann aus einer normalen Bitmap ein Texturensatz erzeugt werden.
+[Texturensatzmaterialien](material-type-texture-set.html) bestehen aus einem aufeinander abgestimmten Texturensatz, der das Material definiert.  Diese Materialien können mit Textur-Maps erstellt werden, die Informationen wie Displacement, Normal- oder Bump-Maps enthalten. Displacement-Maps verleihen dem Material Tiefe. Durch Kombination dieser Texturen-Maps können sehr realistische Materialien erzeugt werden. Mit dem Programm [PixPlant](http://www.pixplant.com/) kann aus einer normalen Bitmap ein Texturensatz erzeugt werden.
 
 ![images/solidcolors.png](images/textureset.png)
 
@@ -142,7 +142,7 @@ Zur Einstellung der Schärfe und Unschärfe der Reflexion. Weitere Informationen
 Dadurch wird der Reflexionstyp auf der Fläche gesteuert.  Weitere Informationen finden Sie im Hilfethema [Typ](material-type-advanced.html#type).
 
 ### Textur-Maps
-In der Textur-Map-Tabelle sind die Texturen aufgelistet, die Teil des Texturensets sind.  Durch Klick mit der rechten Maustaste auf die Tabelle können Texturen hinzugefügt, entfernt oder geändert werden.
+In der Textur-Map-Tabelle sind die Texturen aufgelistet, die Teil des Texturensatzes sind.  Durch Klick mit der rechten Maustaste auf die Tabelle können Texturen hinzugefügt, entfernt oder geändert werden.
 
 #### Maps hinzufügen...
 Mit dieser Option im Kontextmenü können neue Texturen zur Liste hinzugefügt werden.  Es kann mehr als eine Textur auf einmal hinzugefügt werden. Wenn ein Name einer Textur ein Suffix mit einem der Mapping-Typen enthält, wird der Textur automatisch dieser Mapping-Typ hinzugefügt.  Wenn eine Map beispielsweise *-normal* im Namen trägt, wird sie automatisch als Normal-Map getaggt.

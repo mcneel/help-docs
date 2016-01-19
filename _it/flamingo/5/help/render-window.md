@@ -1,223 +1,223 @@
 ---
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Render Window
-The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
+# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Finestra di rendering
+La finestra di rendering fornisce opzioni per la regolazione dell'esposizione e per l'aggiunta di effetti di post-processing. La struttura principale della finestra di rendering fa parte del quadro di rendering di Rhino.  Per maggiori dettagli sui menu e le icone della finestra di rendering, si veda l'argomento [Finestra di rendering](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#information/renderwindowpostprocess.htm).  Questo argomento tratta delle aggiunte specifiche di Flamingo al processo di rendering.
 
-## Managing an Active Rendering
-Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model then starts an initialization process.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
+## Gestione di un rendering attivo
+Una volta iniziato il rendering, appare la [Finestra di rendering](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#information/renderwindowpostprocess.htm) ed inizia il rendering.  Flamingo è un sistema multipassata che aggiorna l'immagine renderizzata in varie fasi. Quando si avvia un rendering, Flamingo prima controlla se ci sono eventuali modifiche nel suo modello interno e quindi inizia un processo di inizializzazione.  Questo processo può richiedere alcuni secondi o alcuni minuti.  In questa fase viene importato il modello, le bitmap dei materiali vengono raccolte dal disco rigido e viene creato il buffer dell'immagine di rendering. Esistono dei passi chiave nel processo di gestione del rendering:
 
->[Multiple pass rendering](#multi-pass)
->[Stopping a rendering](#stop-render)
->[Adjusting the Image](#adjusting)
->[Saving the Image](#saving)
+>[Rendering multipassata](#multi-pass)
+>[Arresto di un rendering](#stop-render)
+>[Regolazione dell'immagine](#adjusting)
+>[Salvataggio dell'immagine](#saving)
 
-### Multiple Pass Rendering
+### Rendering multipassata
 {: #multi-pass}
-Flamingo nXt is a completely new rendering engine. Using a method of multi-pass refinement allows more advanced rendering effects without the overhead of a complicated interface. In the first few rendering passes, there will be unusual artifacts.  For instance you will see shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each rendering pass.  Use the [Flamingo Tab](#flamingo-tab) to monitor the rendering process.
+Flamingo nXt è un motore di rendering completamente nuovo. Usando un metodo di rifinitura multipassata, consente degli effetti di rendering più avanzati senza avere un'interfaccia complicata. Nelle prime passate di rendering, ci saranno degli strani artefatti.  All'inizio, le ombre appariranno molto nette e lineari. Quindi, sfumandosi tra di loro ad ogni successiva passata, esse diventeranno più morbide. Ad ogni passata di rendering, migliorano molti altri effetti.  Si usi la [scheda Flamingo](#flamingo-tab) per monitorare il processo di rendering.
 
-In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. You can let images that look good continue to improve. But, if you want to change or save something, you can also stop an image at any time.
+In un certo senso, i rendering di nXt non sono mai del tutto "finiti"; sta a voi decidere quando la loro qualità soddisfa le vostre esigenze e quindi quando fermarvi. Siete liberi di lasciare che le immagini continuino a migliorare. Se volete modificare o salvare qualcosa, potete anche arrestare un'immagine in qualsiasi momento.
 
 ![images/passes-wide-1.gif](images/passes-wide-1.gif)
 
-Some of the effects that improve on each pass are:
+Alcuni degli effetti che migliorano ad ogni passata:
 
->Lighting (such as global illumination if enabled)
->Soft Shadows
->Reflections (blurry)
->Refraction
->Anti-aliasing
->Depth of field
+>Illuminazione (come l'illuminazione globale, se attivata)
+>Ombre morbide
+>Riflessioni (diffuse)
+>Rifrazione
+>Antialiasing
+>Profondità di campo
 
-### Stopping a rendering
+### Arresto di un rendering
 {: #stop-render}
-You can stop the rendering in a number of ways:
+È possibile arrestare il rendering in vari modi:
 
-![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
+![images/close-x.png](images/close-x.png) Cliccare sulla â€œXâ€ in alto a destra della finestra di rendering per arrestare il rendering immediatamente e chiudere la finestra di rendering. Il miglior metodo per ritornare velocemente al modello per effettuare delle modifiche.
 
-![images/stop.png](images/stop.png) Click the Stop Raytrace button to stop the rendering at the end of the current pass. This is the best option before saving and image.
+![images/stop.png](images/stop.png) Cliccare sul pulsante Arresta rendering per arrestare il rendering al termine della passata in corso. La migliore opzione prima di salvare un'immagine.
 
-![images/stop.png](images/stop.png) Double-click the Stop Raytrace to stop the rendering immediately and leave the render window open.
+![images/stop.png](images/stop.png) Fare doppio clic sul pulsante Arresta rendering per arrestare il rendering immediatamente e lasciare aperta la finestra di rendering.
 
-### Adjusting a rendering
+### Regolazione di un rendering
 {: #adjusting}
-After stopping and image, use the controls in the [Flamingo Tab](#flamingo-tab) to quickly adjust the image and lighting. This is a very important set of tools when producing high end images.
+Dopo aver arrestato un'immagine, si usino i controlli della [scheda Flamingo](#flamingo-tab) per regolare velocemente l'immagine e l'illuminazione. Si tratta di una serie di strumenti molto importanti per la generazione di immagini di alta qualità.
 
-Controls used for images adjustment include:
+Tra i controlli usati per la regolazione delle immagini si includono:
 
->[Adjust Image](#adjust-image)
->[Channels](#channels)
->[Post Effects](#post-process-effects)
+>[Regola immagine](#adjust-image)
+>[Canali](#channels)
+>[Effetti di post-processing](#post-process-effects)
 
 
-### Saving Images
+### Salvataggio delle immagini
 {: #saving}
-There are many ways to save an image depending on the plans for the image.  Normally saving as a JPG or PNG image file is the recommended process for most images.  But there are other options.
+Un'immagine può essere salvata in vari modi, a seconda di ciò che si desidera fare con essa.  Per la maggior parte delle immagini, salvare come immagine JPG o PNG è la procedura consigliata.  Tuttavia, esistono altre opzioni.
 
-#### ![images/saveimageas.png](images/saveimageas.png) Save Image
-Saving a JPG or PNG image file is the normal process after adjusting the image.  
+#### ![images/saveimageas.png](images/saveimageas.png) Salva immagine
+Salvare come file immagine JPG o PNG è la procedura normale dopo aver regolato un'immagine.  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
+ Il JPG è un formato immagine molto efficiente che genera file di dimensioni ridotte.  Questo formato è adatto per le immagini che andranno poi inserite in un sito o inviate per email.  Tuttavia, rimuove alcuni colori dalle immagini.
 
-PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
+Il PNG è un formato compresso che contiene il 100% delle informazioni sul colore e sul canale alfa. È un formato adatto ad immagini di alta qualità.
 
-#### Save with background alpha channel
+#### Salva con canale alfa
 {: #save-with-alpha-channel}
-Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+Salva l'immagine nei formati PNG a 32-bit, TIF e BMP includendo lo sfondo con canale alfa. Le versioni con canale alfa dei formati file vengono usate in operazioni di compositing di alta qualità. Quando il rendering viene salvato con canale alfa, gli sfondi appaiono neri.  Per salvare il canale alfa, si usi la relativa casella di selezione che si trova nella [scheda Flamingo](#flamingo-tab) o nella [finestra di dialogo di salvataggio](#saving). Il formato file PNG è quello corretto da usare per catturare le informazioni alfa.
 
-#### Export to native Flamingo nXt file (.nXtImage)
+#### Esporta su file nativo di Flamingo nXt (.nXtImage)
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
-The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
+Salva informazioni non compresse su luminanza e colore. Salva tutti i canali renderizzati, compreso il canale [alfa](environment-tab.html#alpha). I file nXtImage si possono aprire nell'[Editor delle immagini](image-editor.html) per applicare loro dei valori di [esposizione](#adjust-image) ed [effetti di post-processing](#effects) o per risalvare le immagini in un altro formato bitmap.
+Il formato .nXtImage è il formato immagine nativo dei motori di rendering nXt. Si tratta del formato raccomandato per l'archiviazione dei rendering, visto che conserva il massimo numero di informazioni sui rendering generati. Le immagini archiviate in questo formato possono essere manipolate nell'[Editor delle immagini di nXt](image-editor.html) ed è inoltre possibile aggiungervi degli effetti speciali. Da questo editor, è possibile salvare in molti formati file standard, compresi tutti i formati supportati in nXt. Si può anche salvare nel formato [file EPix di Piranesi (.epx)](http://www.piranesi.co.uk/).
 
-#### Export to HDR file
+#### Esporta su file HDR
 {: #export-to-hdr}
-Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
+Salva informazioni non compresse su luminanza e colore. Il formato .hdr conserva i dati sulla luminanza direttamente in un formato ad alta gamma dinamica. Gli sfondi senza dati di luminanza, come le normali fotografie, appaiono neri se salvati in uno di questi formati.
 
-#### Export to EXR file
+#### Esporta su file EXR
 {: #export-to-exr}
-A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
-The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
+Un formato file per immagini ad alta gamma dinamica rilasciato come standard aperto assieme ad un set di strumenti software creati dalla Industrial Light and Magic (ILM), a loro volta rilasciati con una licenza di software libero. Questo formato file supporta valori in virgola mobile a 16 bit per canale (in mezza precisione) con 1 bit per il segno, 5 bit per l'esponente e 10 bit per la mantissa. Ciò consente un intervallo dinamico di oltre trenta stop di esposizione. Vedi [articolo di Wikipedia: OpenEXR](https://it.wikipedia.org/wiki/OpenEXR).
+Il formato .exr conserva i dati sulla luminanza direttamente in un formato ad alta gamma dinamica. Gli sfondi senza dati di luminanza, come le normali fotografie, appaiono neri se salvati in uno di questi formati.
 
-#### ![images/close-x.png](images/close-x.png) Exit
-Closes the render window.
+#### ![images/close-x.png](images/close-x.png) Esci
+Chiude la finestra di rendering.
 
-#### Pulldown Menus
-For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).
+#### Menu a discesa
+Per maggiori dettagli sui menu e le icone della finestra di rendering, si veda l'argomento [Finestra di rendering](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#information/renderwindowpostprocess.htm).
 
-## Flamingo Tab
+## Scheda Flamingo
 {: #flamingo-tab}
-The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to managing the active Flamigno renderings.
+La scheda Flamingo della finestra di rendering aggiunge molti controlli specifici del motore di rendering di Flamingo. La comprensione di questi controlli è importante per la gestione dei rendering attivi di Flamingo.
 
-#### Save with alpha channel
-Saves 32-bit PNG, TIF, and BMP images including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  Use this checkbox and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+#### Salva con canale alfa
+Salva le immagini PNG a 32-bit, TIF e BMP includendo lo sfondo con canale alfa. Le versioni con canale alfa dei formati file vengono usate in operazioni di compositing di alta qualità. Quando il rendering viene salvato con canale alfa, gli sfondi appaiono neri.  Si usino questa casella di selezione e quella che si trova nella [finestra di dialogo di salvataggio](#saving) per salvare correttamente il canale alfa. Il formato file PNG è quello corretto da usare per catturare le informazioni alfa.
 
-## Progress
+## Progresso
 {: #progress}
-Use the Progress information to check the status and progress of a Flamingo rendering.
+Si usino le informazioni della sezione Progresso per verificare lo stato e l'avanzamento di un rendering di Flamingo.
 
-#### Action
-Shows the current status of the rendering as is works through the model.
+#### Azione
+Mostra lo stato attuale del rendering del modello.
 
-Status messages include:
+Tra i messaggi di stato si includono:
 
-* Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
-* Action Done - Once the Stop button has been hit and the render engine finishes a pass, then the stop action is done.
-* Pass Complete - This message posts each time a pass is complete.
-* Resume Rendering - In cases that a resume is possible this is displayed.
-* Updating - The render engine is in the middle of a pass, currently updating the rendering.
+* Rendering iniziato - Una volta iniziato il rendering, inizia la fase di conversione del modello e l'impostazione di memoria per il rendering.
+* Azione completata - Una volta premuto il pulsante di arresto e dopo che il motore di rendering ha ultimato una passata, l'azione di arresto giunge a compimento.
+* Passata completa - Questo messaggio viene visualizzato al completamento di ciascuna passata.
+* Riprendi rendering - Viene visualizzato nei casi in cui è possibile una ripresa del rendering.
+* Aggiornamento in corso - Il motore di rendering si trova nel mezzo di una passata e sta aggiornando il rendering.
 
-#### Pass
-This is the current pass Flamingo is rendering.  Flamingo is a multi-pass render engine.  Each pass will refine add lighting effects and refine the complex rendering effects.
+#### Passata
+La passata che Flamingo sta renderizzando.  Flamingo è un motore di rendering multipassata.  In ciascuna passata, vengono aggiunti gli effetti di illuminazione e vengono rifiniti gli effetti di rendering complessi.
 
-#### Scan line
-A pass progresses along a stretch of horizontal pixels.  Each row of pixels is a scanline.  This reports the current scanline returned from the render engine.
+#### Linea di scansione
+Una passata procede lungo un tratto di pixel orizzontali.  Ciascuna riga di pixel è una linea di scansione.  Questo valore riporta la linea di scansione corrente restituita dal motore di rendering.
 
-#### Elapsed time
-This is the time that has passed from the beginning of the rendering.  This does not include the setup time for the rendering.
+#### Tempo trascorso
+Il tempo trascorso dall'inizio del rendering.  Non include il tempo di configurazione del rendering.
 
-#### Rays / second
-The number of rays resolved into the scene per second.
+#### Raggi / secondo
+Il numero di raggi risolti nella scena per secondo.
 
-#### Pixels / second
-The number of pixels resolved in the image per second.
+#### Pixel / secondo
+Il numero di pixel risolti nell'immagine per secondo.
 
-## Adjust Image
+## Regola immagine
 {: #adjust-image}
-This is one of the most important controls in Flamingo. Just like a camera, you can adjust image exposure.  This is the best way to make renderings brighter, darker, add contrast, or increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness than can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
+Si tratta di uno dei controlli più importanti di Flamingo. Così come in una fotocamera, è possibile regolare l'esposizione dell'immagine.  Questo controllo è ideale per rendere più luminosi o più scuri i rendering, aggiungere del contrasto o aumentare la saturazione del colore. Questo processo di regolazione viene denominato [mappatura dei toni](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo lavora nello spazio della luminanza, un intervallo di colori e luminosità molto più ampio rispetto a quello visualizzabile sul monitor di un computer o su una stampa.  La mappatura dei toni è un processo che consiste nel convertire i dati sulla luminanza in pixel Rossi, Verdi e Blu (RGB) visualizzabili su uno schermo o stampabili. Le impostazioni controllano anche in che modo vengono salvate le immagini.
 
 ![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
-*The default image on the left. The corrected image after applying brightness (0.20), burn (0.16) and saturation (1.20).*
-Use this process to quickly adjust the brightness of an image and overall color of an image without needing to re-render.
+*L'immagine predefinita sulla sinistra. L'immagine corretta dopo l'applicazione di luminosità (0.20), sovraesposizione (0.16) e saturazione (1.20).*
+Si usi questo processo per regolare velocemente la luminosità di un'immagine ed il suo colore d'insieme senza il bisogno di effettuare di nuovo il rendering.
 
-### Brightness
+### Luminosità
 {: #brightness}
-Adjusts the overall brightness of the image. For example, if a white surface in the model is rendering gray, increase the brightness until the surface appears white. Or, if the exterior scene seems overexposed, decrease the brightness until the scene appears more correct.
+Definisce la luminosità globale. Per esempio, se una superficie bianca viene renderizzata come grigia, si aumenti il valore di luminosità affinché essa appaia di colore bianco. Oppure, se una scena esterna appare sovraesposta, si diminuisca il valore di luminosità sino a raggiungere il risultato desiderato.
 
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*Brightness at default (left) and increased.*
+*Luminosità sul valore predefinito (sinistra) ed impostata su un valore più alto (destra).*
 
 {% include_relative snippets/snippet-brightness.md %}
 
-### Burn
+### Sovraesposizione
 {: #burn}
-Adjusts the image white point. This is the brightest white color in the image. A little burn can add drama, life, and sharpness to a rendering by adding more areas of white to contrast with the dark areas.
-See [Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point).
+Regola il punto di bianco dell'immagine. Si tratta del bianco più luminoso dell'immagine. Una leggera sovraesposizione può aggiungere intensità, vivacità e chiarezza ad un rendering applicando ulteriori zone di bianco per contrastare le zone scure.
+Vedi [articolo di Wikipedia: Punto bianco](http://en.wikipedia.org/wiki/White_point).
 
 ![images/burn-001.png](images/burn-001.png)
-*Burn at the default setting (left) and increased.*
+*Sovraesposizione sul valore predefinito (sinistra) ed impostata su un valore più alto (destra).*
 
-### Saturation
+### Saturazione
 {: #saturation}
-Saturation controls the amount of color in the image. A saturation of 0.00 will result in a grayscale image. Values above 1.00 can make colors richer.
+La saturazione controlla la quantità di colore nell'immagine. Una saturazione pari a 0.00 dà un'immagine in scala di grigi. Valori superiori a 1.00 possono rendere i colori più ricchi.
 
 ![images/saturationdefault.png](images/saturationdefault.png)
-*Saturation at the default (left) and increased by about 3 (right).*
+*Saturazione sul valore predefinito (sinistra) ed aumentata di circa 3 (destra).*
 
-### Histogram
+### Istogramma
 {: #histogram}
-Graphically displays the distribution of the light and dark areas in the image after the Adjust images controls have been applied. The left edge of the chart are the darks to black.  The right edge shows the amount of light colors to white. This is a great way to determine the important parts of the image. A good goal is to adjust the image to have a full range of values in the image.  For instance if the histogram stops before getting to the far right of the graph,  then use more brightness or burn will stretch the values toward the right or bright edge. See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
+Mostra graficamente la distribuzione delle zone chiare e scure nell'immagine dopo l'applicazione dei controlli di "Regola immagine". Sulla sinistra del grafico si trovano i toni più scuri fino al nero. Sulla destra, i toni più chiari fino al bianco. Aiuta a determinare le parti importanti dell'immagine. Un buon obiettivo è regolare l'immagine affinché essa presenti una gamma completa di valori.  Per esempio, se l'istogramma si arresta prima di arrivare sull'estrema destra del grafico, si usino valori maggiori di luminosità o sovraesposizione per spingere verso il bianco le porzioni più chiare del rendering. Vedi: [Articolo di Wikipedia: Istogramma](http://en.wikipedia.org/wiki/Histogram). Su internet troverete numerosi articoli sull'uso degli istogrammi per valutare l'esposizione nella fotografia digitale. Gli stessi principi si possono applicare al rendering.
 
 ![images/histogram.png](images/histogram.png)
-*An example histogram with very few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
+*Un esempio di istogramma con pochissime zone scure ed un ampio intervallo di colori chiari.  Questo grafico mostra anche l'esistenza di alcuni pixel completamente bianchi poiché cade prima di raggiungere il bordo destro (sull'estrema destra si trovano i colori luminosi fino al bianco).*
 
-#### Histogram options
-Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
+#### Opzioni dell'istogramma
+Cliccare con il tasto destro sull'istogramma per visualizzare le seguenti opzioni.  Queste opzioni cambiano semplicemente il modo in cui l'istogramma mostra le informazioni. Esse in realtà non modificano i valori dell'istogramma.
 
-* **Fit** - This fits the highest verticals into the chart.
-* **Median** - This fits the median value in the vertical. This is a good way to see the details at the edges of the chart.
-* **Mean** - This fits the mean value in the vertical direction.
-* **Show Sorted Graph** - This sorts all the values based on the amount they exist in the image.
-* **Show Scale** - Shows the corresponding values along the bottom of the chart.
-* **Graph Color...** - Set the graph color.
+* **Adatta** - Adatta le verticali più alte al grafico.
+* **Mediana** - Adatta il valore mediano alla verticale. Utile per vedere i dettagli sui bordi del grafico.
+* **Media** - Adatta il valore medio alla direzione verticale.
+* **Mostra grafico ordinato** - Ordina tutti i valori in base alla quantità con cui appaiono nell'immagine.
+* **Mostra scala** - Mostra i valori corrispondenti lungo la parte inferiore del grafico.
+* **Colore del grafico...** - Impostare il colore del grafico.
 
-### Lock exposure
+### Blocca esposizione
 {: #lock-exposure}
-When the exposure settings are locked, changing the lighting will not adjust the exposure to compensate.
+Se i parametri relativi all'esposizione sono bloccati, le variazioni apportate all'illuminazione non avranno effetto sull'esposizione.
 
-## Render Constraints
+## Restrizioni rendering
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}
 {% include_relative snippets/snippet-renderconstraints.md %}
 
-## Information
+## Informazioni
 {: #information}
 
-#### Resolution
-Displays the current [rendering resolution](render-tab.html#resolution).
+#### Risoluzione
+Mostra la [risoluzione del rendering](render-tab.html#resolution) corrente.
 
-#### Faces
-Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.
+#### Facce
+Mostra il numero di facce mesh usate per renderizzare il modello.  Un buon valore per paragonare varie [impostazioni delle mesh di rendering](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#documentproperties/mesh.htm) in Rhino.
 
-#### Apparent faces
-When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The Apparent faces display shows how many more temporary faces would be generated if the block instances did not exist.
+#### Facce visibili
+In presenza di blocchi nel modello, Flamingo nXt è in grado di usare le definizioni dei blocchi per renderizzare le istanze di blocco senza ricalcolare le mesh di ciascuna istanza. Facce visibili mostra quante ulteriori facce provvisorie verrebbero generate se non esistessero le istanze di blocco.
 
-#### Lighting information
-This is some information on the current lighting setup of the rendering.  Here is a list of lighting information listed:
+#### Informazioni sull'illuminazione
+Alcune informazioni sulle impostazioni di illuminazione correnti del rendering.  Le informazioni sull'illuminazione elencate sono:
 
->[Presets](lighting-tab.html)
->[Sun](sun-and-sky-tabs.html#sun)
->[Sky](sun-and-sky-tabs.html#sky)
->[Lights](lights-tab.html)
->[Indirect](lighting-tab.html#indirect)
->[Ambient On/Off](lighting-tab.html#ambient)
+>[Impostazioni predefinite](lighting-tab.html)
+>[Sole](sun-and-sky-tabs.html#sun)
+>[Cielo](sun-and-sky-tabs.html#sky)
+>[Luci](lights-tab.html)
+>[Indiretta](lighting-tab.html#indirect)
+>[Ambiente On/Off](lighting-tab.html#ambient)
 
-## Channels
+## Canali
 {: #channels}
-Use these controls to change the lights channels in real time. Assign lights to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
+Si usino questi controlli per cambiare i canali delle luci in tempo reale. Assegnare le luci ad uno degli otto canali. Quindi, regolare l'illuminazione dell'immagine renderizzata una volta generato il rendering. Questa funzione risulta potente quando si tratta di bilanciare varie sorgenti di luce in un rendering. Per maggiori informazioni, si veda l'argomento [Canali di rendering](render-channel.html#adjustng-channels).
 
-## Post Effects
+## Effetti di post-processing
 {: #post-process-effects}
-Apply post-processing effects after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
+Applicare gli effetti di post-processing dopo aver effettuato il rendering dell'immagine. Tali effetti si possono attivare, disattivare e riordinare all'interno dell'elenco. Ciascun effetto possiede i suoi propri settaggi. Elenco degli effetti:
 
->Fog
->Glow
+>Nebbia
+>Bagliore
 >Glare
->Depth of Field
->Points
->Curves
->Isocurves
->Annotations
+>Profondità di campo
+>Punti
+>Curve
+>Isocurve
+>Annotazioni
 
-For more details on specific filters see the [Post-process images](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) topic.
+Per maggiori informazioni sui vari filtri, si veda l'argomento [Post-processing di immagini](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).

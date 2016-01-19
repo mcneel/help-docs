@@ -7,7 +7,7 @@ title: Automatisiertes Rendering
 
 ## Stapel-Rendering
 {: #batch-rendering}
-Stapelaufträge dienen der automatischen Abarbeitung mehrerer Aufträge. Bei einem Stapelauftrag können die Ansicht, die Auflösung und die Anzahl Durchgänge eingestellt werden. Stapelrenderings können auf einem einzelnen Computer ausgeführt oder an einer [Renderfarm](render-farm.html) geschickt werden. Öffnen Sie die Stapelliste und fügen Sie neue Aufträge hinzu. Die Stapelaufträge werden im Modell gespeichert.
+Stapelaufträge dienen der automatischen Abarbeitung mehrerer Aufträge. Bei einem Stapelauftrag können die Ansicht, die Auflösung und die Anzahl der Durchgänge eingestellt werden. Stapelrenderings können auf einem einzelnen Computer ausgeführt oder an einer [Renderfarm](render-farm.html) geschickt werden. Öffnen Sie die Stapelliste und fügen Sie neue Aufträge hinzu. Die Stapelaufträge werden im Modell gespeichert.
 
 ##### Wo befindet sich dieser Befehl?
 
@@ -37,10 +37,10 @@ Name des Ansichtsfensters in der Liste nach unten verschieben.
 Zeigt Informationen über die Liste der zu rendernden Ansichten an. Klicken Sie doppelt auf einen vorhandenen Auftrag, um die [Stapelrendereigenschaften](#batch-render-properties) einzustellen.
 
 #### Renderstatus
-Zeigt Informationen über Durchgang, Abtastlinie und Abgelaufene Zeit des Batch-Prozesses an.
+Zeigt Informationen über Durchgang, Abtastlinie und abgelaufene Zeit des Stapelprozesses an.
 
 ####  Rendering anhalten
-Stoppt den Batch-Prozess.
+Stoppt den Stapelprozess.
 
 #### Stapel lokal rendern
 {: #render-batch-locally}
@@ -67,7 +67,7 @@ Standardmäßig wird die Auflösung des aktuellen Dokuments für das Rendering v
 
 #### Renderbeschränkungen
 {: #rendering-constraints}
-Zur Angabe der Anzahl Durchgänge bis zum Abschluss dieses Stapelauftrags.  Weitere Infos finden Sie im Abschnitt [Durchgänge](documentproperties-flamingo.html#number-of-passes).
+Zur Angabe der Anzahl der Durchgänge bis zum Abschluss dieses Stapelauftrags.  Weitere Infos finden Sie im Abschnitt [Durchgänge](documentproperties-flamingo.html#number-of-passes).
 
 <!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
 The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.

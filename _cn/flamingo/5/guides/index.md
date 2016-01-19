@@ -1,74 +1,48 @@
 ---
 layout: fullwidth-page
+title: Guide Index
 ---
 
-# Getting Started with Flamingo nXt 5®
- 
-## Installation
+# 入门 Flamingo nXt 5®
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
-Startup notes
+## 第一个教学
+* [第一个渲染教学]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/getting-started-tutorial.html)
+* [摄影棚布光技巧]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
 
-This version of Flamingo features an interface which is integrated with the Rhino 5 rendering tools. This made several necessary changes to the rendering interface. At this time it is important to find the Flamingo interface when first starting up Flamingo:
+## 进入 Flamingo 控制面板
+  * 在 **Flamingo nXt** 功能表中，点击 **控制面板**。
 
-The Flamingo control panel can be found under the Render Pulldown > Flamingo nXt 5 > Show Control Panel
-The Flamingo nXt tab contains Flamingo specific controls:
-Sky
-Lighting Manager
-Custom Lighting controls
-Render Options
-Once in the control panel, Right-click in the tab area and select the panels:
-Libraries
-Environment
-Groundplane
-Etc…
- 
-## To access the Flamingo control panel
-  * On the **Flamingo nXt** menu, click **Control Panel**.
+## Flamingo nXt 控制面板
+**Flamingo nXt**  **控制面板**中用于设置渲染模型的选项卡包括:
 
-  ## The Flamingo nXt Control Panel
-The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
+ *  [材质]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
+ *  [照明]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
+ *  [环境]({{site.baseurl}}/{{page.language}}/flamingo/5/help/environment-tab.html)
+ *  [渲染]({{site.baseurl}}/{{page.language}}/flamingo/5/help/render-tab.html)
 
- *  [Materials](..\materials\materials-tab.html) 
- *  [Lighting](../lighting/lighting-tab.html) 
- *  [Environment](../environment/environment-tab.html) 
- *  [Render](../render/render-tab.html) 
+## 渲染基础
 
-## Rendering Basics
- 
-Rendering your finished model comprises four basic steps:
+要渲染出最终的模型，需要完成下列四个步骤：
 
- *  [Set up materials](..\materials\materials-tab.html) 
- *  [Set up lighting](../lighting/lighting-tab.html) 
- *  [Set up an environment](../environment/environment-tab.html) 
- *  [Set up rendering conditions](../render/render-tab.html) 
+ *  [设置材质](..\materials\materials-tab.html)
+ *  [设置照明](../lighting/lighting-tab.html)
+ *  [设置环境](../environment/environment-tab.html)
+ *  [设置渲染条件](../render/render-tab.html)
 
-#### To start a rendering
+#### 开始渲染
 
- * On the **Render** or **Flamingo nXt** menu, click **Render**.
-- Or -
+ * 在**渲染**功能表中，点击**渲染**。
+           - 或 -
+ * 在**标准**工具列中，点击**渲染**按钮。
 
- * On the **Standard** toolbar, click the **Render** button.
-
-### Stop Rendering
- 
-
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
+### 停止渲染
 
 
-###  <kbd>Resume Rendering</kbd> 
- 
+默认情况下，在您点击**停止渲染** ![images/stop.png](images/stop.png) 按钮之前，图像会在渲染过程中被一遍一遍的逐步精细化，这让您可以在渲染质量和时间消耗之间做一个权衡，渲染时间越久，渲染越接近 &quot;正确&quot 的结果，您可以随时停止渲染。
 
-Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
 
-The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
-
-Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
+通过[渲染窗口](..\render\render-window.html)或[文件属性 &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) 中的[队列数](..\render\render-window.html#number-of-passes)或[时间](..\render\render-window.html#time)来设置停止渲染的条件。
 
 &#160;
 
-Revised: 22-Dec-2011 14:45
-
-
+修订: 2011年12月22日 14:45
