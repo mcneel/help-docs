@@ -1,10 +1,11 @@
 ---
+title: Anteprima in tempo reale
 ---
 
-# Reatime preview
-Flamingo NXT 5 includes a realtime preview.  This is an experimental viewport to see if a quick preview of the rendered scene is valuable.
+# {{page.title}}
+Flamingo nXt 5 include una funzione di anteprima in tempo reale.  Si tratta di una finestra sperimentale che consente di valutare se un'anteprima veloce della scena renderizzata può servire o meno.
 
-#### To start the Realtime viewport
-1. Go to the Flamingo NXT 5.0 pulldown > Show Realtime Preview
-1. Select a viewport by clicking inside the view.
-3. The Flamingo RT view should display.
+#### Per lanciare la finestra RealTime
+1. Andare al menu di Flamingo nXt 5.0 > Mostra anteprima in tempo reale
+1. Selezionare una vista facendo clic al suo interno
+3. Apparirà la finestra Flamingo RT

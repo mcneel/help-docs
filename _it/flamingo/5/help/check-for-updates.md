@@ -1,15 +1,15 @@
 ---
 ---
 
-# Check for Updates
-This is an automated check for the current version of Flamingo NXT 5.0.
+# Verifica aggiornamenti
+Si tratta di una verifica automatica della presenza di aggiornamenti alla versione corrente di Flamingo NXT 5.0.
 
-#### Current Update status
+#### Stato dell'aggiornamento attuale
 
-#### Last Checked
+#### Ultima verifica
 
-#### Update frequency
+#### Frequenza di aggiornamento
 
-### Check now...
+### Verifica ora...
 
-## Troubleshooting Updates
+## Risoluzione dei problemi relativi agli aggiornamenti

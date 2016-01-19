@@ -1,77 +1,78 @@
 ---
+title: Proprietà anteprima
 ---
 
-# Preview Properties
-Preview thumbnail images and the background area between thumbnail images both have context menus.
+# {{page.title}}
+Sia le immagini delle anteprime in miniatura che l'area dello sfondo tra le immagini delle anteprime presentano dei menu di scelta rapida.
 
-#### Thumbnail preview actions
+#### Azioni relative alle anteprime in miniatura
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click and drag to change the view.
+>![images/number-onestep.gif](images/number-onestep.gif)Cliccare con il tasto destro e trascinare per cambiare la vista.
 
-This does not have much affect if the preview object is a sphere, but if it is a cube, cone, or other shape, rotating the view or object shows the preview object from different viewpoints.
+Ciò non ha molto effetto se l'oggetto di anteprima è una sfera, ma se si tratta di un cubo, un cono o un'altra forma, la rotazione della vista o dell'oggetto mostra l'oggetto di anteprima da diversi punti di vista.
 
->![images/number-onestep.gif](images/number-onestep.gif)Right-click to display a context menu.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click to display a larger preview window below the thumbnails.
->![images/number-onestep.gif](images/number-onestep.gif)Drag the preview thumbnails to reorder the list.
->![images/number-onestep.gif](images/number-onestep.gif)Press the [onmouseover="if (parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event)" onclick="javascript:BSSCPopup('../Popup_Actions/Ctrl_Key.htm');;return false" id="a16" style="position: relative; font-weight: normal;">Ctrl]() key while dragging to duplicate a material.
->![images/number-onestep.gif](images/number-onestep.gif)Double-click the larger preview to open a floating window that can be resized to get a higher resolution view of the preview.
+>![images/number-onestep.gif](images/number-onestep.gif)Cliccare con il tasto destro per visualizzare il menu di scelta rapida.
+>![images/number-onestep.gif](images/number-onestep.gif)Fare doppio clic per visualizzare una finestra di anteprima più grande sotto le anteprime in miniatura.
+>![images/number-onestep.gif](images/number-onestep.gif)Trascinare le anteprime in miniatura per riordinare l'elenco.
+>![images/number-onestep.gif](images/number-onestep.gif)Premere il tasto Ctrl durante il trascinamento per duplicare un materiale.
+>![images/number-onestep.gif](images/number-onestep.gif)Fare doppio clic sull'anteprima più grande per aprire una finestra mobile che può essere ridimensionata per ottenere una vista dell'anteprima a maggiore risoluzione.
 
-This window has all the same functionality as the original preview image including the context menu and the ability to drag and drop onto other materials or objects in the model.
+Questa finestra ha le stesse funzionalità dell'immagine di anteprima originale, compresi il menu di scelta rapida e la possibilità di trascinare la selezione su altri materiali od oggetti del modello.
 
-### Geometry
+### Geometria
 
-#### Materials
-Materials can use various geometry types.
-![images/thumbnailsphere.png](images/thumbnailsphere.png) *Sphere*
-![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Pyramid*
-![images/thumbnailcube.png](images/thumbnailcube.png) *Cube*
-![images/thumbnailtorus.png](images/thumbnailtorus.png) *Torus*
-![images/thumbnailcone.png](images/thumbnailcone.png) *Cone*
-![images/thumbnailplane.png](images/thumbnailplane.png) *Plane*
+#### Materiali
+I materiali possono usare vari tipi di geometria.
+![images/thumbnailsphere.png](images/thumbnailsphere.png) *Sfera*
+![images/thumbnailpyramid.png](images/thumbnailpyramid.png) *Piramide*
+![images/thumbnailcube.png](images/thumbnailcube.png) *Cubo*
+![images/thumbnailtorus.png](images/thumbnailtorus.png) *Toroide*
+![images/thumbnailcone.png](images/thumbnailcone.png) *Cono*
+![images/thumbnailplane.png](images/thumbnailplane.png) *Piano*
 
-#### Environments
-Environments only use the cone and sphere.
-![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cone and sphere*
+#### Ambienti
+Gli ambienti usano solo il cono e la sfera.
+![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cono e sfera*
 
-#### Textures
-Textures are displayed only as a two-dimensional, flat surface facing the camera.
+#### Texture
+Le texture vengono visualizzate solo come superfici bidimensionali piane rivolte verso la camera.
 ![images/texturepreview.png](images/texturepreview.png)
 
-#### Size
-Sets the unit size for the thumbnail.
+#### Dimensione
+Imposta le dimensioni dell'unità per la miniatura.
 
-### View
-Controls the right-mouse drag object or camera rotation.
+### Vista
+Controlla la rotazione dell'oggetto o della camera mediante trascinamento con il tasto destro del mouse.
 
-#### Rotate object
-Right-mouse drag rotates the object.
+#### Ruota oggetto
+Il trascinamento con il tasto destro del mouse ruota l'oggetto.
 
-#### Rotate camera
-Right-mouse drag rotates the camera.
+#### Ruota camera
+Il trascinamento con il tasto destro del mouse ruota la camera.
 
-#### X angle
-Sets the horizontal rotation angle for the object or camera.
+#### Angolo X
+Imposta l'angolo di rotazione orizzontale per l'oggetto o la camera.
 
-#### Y angle
-Sets the vertical rotation angle for the object or camera.
+#### Angolo Y
+Imposta l'angolo di rotazione verticale per l'oggetto o la camera.
 
-### Background
-Controls the appearance of the thumbnail background.
+### Sfondo
+Controlla l'aspetto dello sfondo delle anteprime.
 
-#### None
-The default gray environment is used.
+#### Nessuno
+Si usa l'ambiente grigio predefinito.
 ![images/thumbnailbackground-001.png](images/thumbnailbackground-001.png)
 
-#### Checkered
-A gray checkered background is used.
+#### A scacchiera
+Si usa un ambiente grigio a scacchiera.
 ![images/thumbnailbackground-002.png](images/thumbnailbackground-002.png)
 
-#### Custom
-Any material or texture can be used as a custom background.
+#### Personalizzato
+Come sfondo personalizzato, si può usare un materiale o una texture qualsiasi.
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 
-####  **Save as Defaults**
-Saves the thumbnail properties as the default settings.
+####  **Salva come impostaz. predef**
+Salva le proprietà della miniatura come impostazioni predefinite.
 
-####  **Load from Defaults**
-Loads the thumbnail properties from the default settings.
+####  **Carica da impostaz. predef**
+Carica le proprietà della miniatura dalle impostazioni predefinite.

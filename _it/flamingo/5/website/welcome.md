@@ -2,42 +2,42 @@
 layout: fullwidth-page
 ---
 
-# Getting Started with Flamingo nXt®
-Flamingo nXt creates high quality, photorealistic, still, and animation image files from 3-D models inside Rhinoceros ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a work in progress version.
+# Guida introduttiva a Flamingo nXt®
+Flamingo nXt genera immagini ed animazioni fotorealistiche di alta qualità a partire da modelli 3D all'interno di Rhinoceros ®. Flamingo nXt 5 è un aggiornamento di Flamingo che si integra con le funzionalità di rendering predefinite di Rhino 5. Attualmente è in fase WIP (work in progress).
 
-Flamingo can be downloaded and installed from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/beta).
+Flamingo si può scaricare ed installare da qui: [Download di Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
 
-You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo).
+Per partecipare alle discussioni tecniche sul programma, aderite al [forum di Discourse su Flamingo](http://discourse.mcneel.com/c/rendering/flamingo).
 
-## Installation
+## Installazione
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
+La beta di Flamingo 5 richiede l'installazione di una versione precedente di Flamingo nXt.
+Per poter eseguire Flamingo nXt 5, è necessaria la Service Release 12 di Rhino 5.
+Dopo aver scaricato ed eseguito il programma di installazione RHI, avviare Rhino.
 
-For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
-
-
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical support](http://nxt.flamingo3d.com/forum)
-
-## Getting started guides
-The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
-
-> [Materials](..\materials\materials-tab.html)
-> [Lighting](../lighting/lighting-tab.html)
-> [Environment](../environment/environment-tab.html)
-> [Render](../render/render-tab.html)
-
-## Help documentation
- * On the Flamingo nXt menu, click Control Panel.
-
-## Flamingo information and support
- For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
+Per ricevere supporto tecnico e visionare tutorial, esempi ed informazioni introduttive su Flamingo nXt, si visiti il [sito web di Flamingo nXt](http://nxt.flamingo3d.com/).
 
 
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical Support](http://www.flamingo3d.com/en/support/)
+> [Tutorial](http://nxt.flamingo3d.com/page/tutorial-e-documentazione)
+> [Galleria](http://nxt.flamingo3d.com/photo)
+> [Supporto tecnico](http://nxt.flamingo3d.com/forum)
+
+## Guide introduttive
+Il pannello di controllo di Flamingo nXt fornisce le seguenti schede per impostare un modello per il rendering:
+
+> [Materiali](..\materials\materials-tab.html)
+> [Illuminazione](../lighting/lighting-tab.html)
+> [Ambiente](../environment/environment-tab.html)
+> [Rendering](../render/render-tab.html)
+
+## Documentazione di aiuto
+ * Dal menu Flamingo nXt, cliccare su Pannello di controllo.
+
+## Informazioni e supporto su Flamingo
+  Per ricevere supporto tecnico e visionare tutorial, esempi ed informazioni introduttive su Flamingo nXt, si visiti il [sito web di Flamingo nXt](http://www.flamingo3d.com/).
+
+
+> [Tutorial](http://nxt.flamingo3d.com/page/tutorial-e-documentazione)
+> [Galleria](http://nxt.flamingo3d.com/photo)
+> [Supporto tecnico](http://www.flamingo3d.com/it/support/)
 > [Forum](http://discourse.mcneel.com/c/rendering/flamingo)

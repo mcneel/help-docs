@@ -1,3 +1,3 @@
 
-#### Lock
-Maintains the ratio between the Width and Height.
+#### Blocca
+Conserva l'aspect ratio tra la Larghezza e l'Altezza.

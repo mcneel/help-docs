@@ -1,187 +1,186 @@
 ---
+title: Decal
 ---
+<--TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
 
+# {{page.title}}
+Le decal sono mappe immagine non a mattonella applicabili direttamente sugli oggetti (anziché indirettamente tramite un materiale). Le decal si possono usare per modificare, in una zona determinata, il colore di un oggetto, la sua riflettività o i rilievi della sua superficie.
+Le decal sono costituite da singole istanze di immagini, anziché da immagini affiancate, come accade quando sono usate nella [definizione di un materiale](materials-tab.html).
+Le decal possono essere usate per:
 
-# Decals
-Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps.
-Decals consist of a single instance of the image, rather than being tiled as they are when used in a [material definition](materials-tab.html).
-Some uses for decals include:
-
->Hanging artwork on interior walls.
->Placing labels or logos on products.
->Adding signs to the model.
->Creating stained glass windows.
+>Decorare pareti interne con lavori artistici.
+>Disporre etichette e loghi su prodotti.
+>Inserire simboli nei modelli.
+>Creare vetrate.
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode.&#160;The **Pipeline** setting must be **OpenGL** in **Options** &#160;&gt; **Appearance** &#160;&gt; **Advanced Settings** &#160;&gt; **Wireframe** &#160;&gt; **Other Settings** &#160;&gt; **Pipeline and Conduits**.
+ **Nota:** Le anteprime delle decal si visualizzano nelle viste wireframe solo se l'OpenGL è attivato per la modalità wireframe. L'impostazione **Pipeline** deve essere **OpenGL** in **Opzioni**  &gt; **Vista**  &gt; **Modalità di visualizzazione**  &gt; **Wireframe**  &gt; **Altre impostazioni**  &gt; **Mostra assegnazione pipeline**.
 
-## Decal Placement
+## Posizionamento delle decal
 {: #decal-list}
 {: #decal-placement}
 
-###  **Add** 
+###  **Aggiungi**
 {: #add-decal}
-1. Select one or more objects.
-1. On the **Edit** menu, click **Object Properties**.
-1. On the **Properties** list, click **Flamingo nXt Decals**.
-1. Click the **Add** button.
-1. In the **Open Bitmap** dialog box, select a bitmap name, and click **Open**.
-{% include_relative snippets/snippet-clearbitmapcache.md %}1. In the **Decal Properties** dialog box, select options, and click **Place**.
-1. At the prompts for points, pick points on the model to locate the decal.
-The precise sequence depends on the type of decal selected: [Planar](#decal-planarmapping), [Cylindrical](#decal-cylindricalmapping), or [UVMap](#decal-uvmapping).
+1. Selezionare uno o più oggetti.
+1. Dal menu **Modifica**, cliccare su **Proprietà oggetto**.
+1. Dall'elenco delle **Proprietà**, fare clic su **Decal di Flamingo nXt**.
+1. Fare clic sul pulsante **Aggiungi**.
+1. Nella finestra di dialogo **Apri bitmap**, selezionare il nome di una bitmap e fare clic su **Apri**.
+{% include_relative snippets/snippet-clearbitmapcache.md %}1. Nella finestra di dialogo **Proprietà decal**, specificare le opzioni e fare clic su **Colloca**.
+1. Ai prompt, selezionare dei punti sul modello per posizionare la decal.
+La sequenza precisa dipende dal tipo di decal selezionato: [Planare](#decal-planarmapping), [Cilindrica](#decal-cylindricalmapping) o [MappaUV](#decal-uvmapping).
 
-###  **Edit Placement** 
+###  **Modifica collocazione**
 {: #decal-edit-placement}
-1. Click the **Edit Placement** button.
-1. At the **Select control point** prompt, use the graphical editor to change the placement of the decal.
-1. Press **Enter** when finished.
+1. Cliccare sul pulsante **Modifica collocazione**.
+1. Al prompt **Selezionare un punto di controllo**, usare l'editor grafico per cambiare la posizione della decal.
+1. Premere **Invio** al termine.
 
-###  **Properties** 
+###  **Proprietà**
 {: #decal-properties}
-1. Click the **Properties** button.
-1. In the **Decal Properties** dialog box, use the controls to change the decal's properties.
+1. Cliccare sul pulsante **Proprietà**.
+1. Nella finestra di dialogo **Proprietà decal**, usare i controlli per cambiare le proprietà della decal.
 
-###  **Delete** 
+###  **Elimina**
 {: #decal-delete}
 
->Click the **Delete** button.
+>Cliccare sul pulsante **Elimina**.
 
-###  **Move up** / **Move down** 
+###  **Sposta su** / **Sposta giù**
 {: #decal-movedown}
 {: #decal-moveup}
-When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
+Quando varie decal sovrapposte sono applicate su un singolo oggetto, il loro ordine di applicazione può essere importante. Le decal vengono applicate seguendo l'ordine di apparizione nel relativo elenco. L'ultima decal dell'elenco è quella più superficiale.
 
->Click **Move Up** or **Move Down** to change a decal's position in the list.
+>Cliccare su **Sposta su** o su **Sposta giù** per cambiare la posizione di una decal all'interno dell'elenco.
 
-##### To place a planar decal
-1. At the prompts, pick locations for the decal's **Width**, and **Height direction**.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### Per sistemare una decal planare
+1. Ai prompt, selezionare con un clic i punti per la **Larghezza** e la **Direzione altezza** della decal.
+1. Al prompt **Selezionare un punto di controllo...**, selezionare un punto di controllo per regolare le dimensioni, la rotazione e la posizione dell'immagine.
+Oppure premere **Invio** per concludere la sistemazione della decal.
 
-### Options
+### Opzioni
 
-#### Move
-Moves the decal. At the Point to move from and the Point to move to prompts, enter any locations as for the Rhino Move command.
+#### Sposta
+Sposta la decal. Ai prompt Punto di riferimento e Punto di destinazione, specificare le posizioni come per il comando Sposta di Rhino.
 
-#### UseImageAspectRatio
-Restores a stretched decal to the aspect ratio of the original bitmap.
+#### UsaAspectRatioImmagine
+Ripristina una decal modificata in una direzione alla sua dimensione originaria definita dal rapporto di aspetto della bitmap iniziale.
 
-##### To place a cylindrical decal
-1. At the prompt, pick a location for the **Center point** of the cylinder.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### Per sistemare una decal cilindrica
+1. Al prompt, specificare un punto per il **Centro** del cilindro.
+1. Al prompt **Selezionare un punto di controllo...**, selezionare un punto di controllo per regolare le dimensioni, la rotazione e la posizione dell'immagine.
+Oppure premere **Invio** per concludere la sistemazione della decal.
 
-## Set or edit the decal placement using the control widget
-Note: When using the planar mapping on a curved object, the entire bitmap must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+## Impostare o modificare la posizione della decal usando il widget di controllo
+Nota: Quando si usa la mappatura planare su un oggetto curvo, la proiezione della bitmap deve giacere sotto la superficie dell'oggetto. Le porzioni di bitmap che giacciono di fronte alla superficie non sono visibili.
 
-#### To resize the decal width and height at the same time
+#### Per ridimensionare la larghezza e l'altezza della decal allo stesso tempo
 
->Drag the control points at the corners of the control widget.
+>Trascinare i punti di controllo sui vertici del widget di controllo.
 
-#### To change the decal height
+#### Per modificare l'altezza di una decal
 
->Drag the center control point on the top and bottom edges of the control widget.
+>Trascinare il punto di controllo centrale dei bordi superiore ed inferiore del widget di controllo.
 
-#### To change the decal width
+#### Per modificare la larghezza di una decal
 
->Drag the center control point on the left and right edges of the control widget.
+>Trascinare il punto di controllo centrale dei bordi sinistro e destro del widget di controllo.
 
-#### To move the decal
+#### Per spostare la decal
 
->Drag the control point in the center of the control widget.
+>Trascinare il punto di controllo al centro del widget di controllo.
 
-#### To rotate the decal
+#### Per ruotare la decal
 
->Drag the x-, y-, or z-axis control point on the widget axis icon.
+>Trascinare il punto di controllo degli assi x, y o z sull'icona degli assi del widget.
 
-## Decal Properties
+## Proprietà delle decal
 {: #dialogbox-editdecal}
-The information from the bitmap replaces or blends the object's color with the decal's color. This is the most common use of decals.
+Le informazioni di una bitmap si possono usare per sostituire o combinare i colori di un oggetto con i colori della decal. Si tratta senza dubbio dell'uso più comune di una decal.
 
-## Projection
+## Proiezione
 {: #projection}
-The mapping style determines how to project the decal onto the object. It is a good idea to draw construction lines in the scene to help accurately place decals. A rectangle drawn just behind a surface can act as a guide for a standard decal. Use object snaps for accurate placement.
+Lo stile di mappatura determina in che modo viene proiettata la decal sull'oggetto. È consigliabile tracciare delle linee di costruzione di riferimento nella scena per un posizionamento più accurato della decal. Per una decal standard, si può usare un rettangolo guida tracciato giusto dietro alla superficie di destinazione. Per una collocazione più accurata, è opportuno fare uso degli snap all'oggetto.
 
-### Cylindrical
+### Cilindrica
 {: #decal-cylindricalmapping}
-
-### &#160;
-The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
-The cylindrical projection maps the bitmap onto the cylinder with the bitmap's vertical axis along the cylinder's axis, and the horizontal axis around the cylinder.
+La mappatura cilindrica è particolarmente idonea per disporre decal su oggetti la cui curvatura si estende in una sola direzione, come ad esempio accade con le etichette di bottiglie.
+La proiezione cilindrica mappa la bitmap sul cilindro, con l'asse verticale della bitmap parallelo all'asse del cilindro e l'asse orizzontale lungo il perimetro laterale del cilindro.
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
-### Planar
+
+### Planare
 {: #decal-planarmapping}
-
-### &#160;
-Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
-The corners define the bitmap's location and extents. If the rectangle does not have the same proportions as the bitmap, the bitmap will be stretched or compressed to fit.
-When using planar mapping on a curved object, the entire bitmap projection must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+La mappatura planare è lo stile di mappatura più comune. È specialmente adatta per mappature su oggetti piatti o lievemente incurvati.
+I vertici definiscono la posizione della bitmap e la sua estensione. Se il rettangolo non ha le stesse proporzioni di quelle della bitmap, essa verrà stirata o ridotta in modo tale da farla combaciare con il rettangolo.
+Quando si usa la mappatura planare su un oggetto curvato, la proiezione della bitmap deve giacere sotto la superficie dell'oggetto. Le porzioni di bitmap che giacciono di fronte alla superficie non sono visibili.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
-### UV Map
-{: #decal-uvmapping}
 
-### &#160;
-Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
-The decal covers the entire object; there is no control over the decal placement.
-UV mapping uses the u- and v-parameterization of the surface to bend and stretch the image; therefore, no manual placement is necessary.
+### Mappa UV
+{: #decal-uvmapping}
+La mappatura UV è particolarmente indicata quando la decal viene fatta scorrere lungo una superficie affinché si adatti ad essa.
+La decal copre l'intero oggetto, non c'è nessun controllo sulla sua posizione.
+La mappatura UV usa la parametrizzazione di u e v della superficie per piegare ed allungare l'immagine.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
-### Browse
+
+### Sfoglia
 {: #file-browse}
-Change the image file.
+Cambia il file immagine.
+
 {% include_relative snippets/snippet-clearbitmapcache.md %}
-## Strength
+
+## Intensità
 {: #decalmappingstrength}
 
-### Color
+### Colore
 {: #decal-color}
-Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](texture-properties-main.html#color).
+Varia l'intensità relativa del colore dell'immagine rispetto al materiale sottostante. Vedi anche [Proprietà texture materiale, Intensità del colore](texture-properties-main.html#color).
 
-### Bump
+### Rilievo
 {: #decalmappingbump}
-Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](texture-properties-main.html#bump).
+Le mappe di rilievo simulano dei rilievi su una superficie tramite effetti d'ombra e di luce. Vedi anche [Proprietà texture materiale, Intensità del rilievo](texture-properties-main.html#bump).
 
-## Reflective finish
+## Rifinitura riflettente
 {: #reflective-finish-and-highlight}
-Controls the same properties that are controlled by a material definition. Apply these properties to the specific areas of the object that are affected by the decal. By default, decals have a matte finish.
+Controllano le stesse proprietà impostate nella definizione di un materiale. Ciò permette all'utente di applicare queste proprietà ad aree specifiche dell'oggetto che sono influenzate dalla decal. Di default, le decal possiedono una rifinitura opaca.
 
-### Intensity
-Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](advanced-material-properties-main.html#intensity).
+### Intensità
+Regola l'intensità delle zone di massima riflessione luminosa. Quanto maggiori i valori, tanto maggiori le dimensioni e l'intensità dei punti di massima illuminazione. Vedi [Proprietà dei materiali avanzate, Intensità](advanced-material-properties-main.html#intensity).
 
-### Sharpness
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](advanced-material-properties-main.html#sharpness).
+### Nitidezza
+Imposta le dimensioni delle zone di massima riflessione luminosa. Valori inferiori definiscono zone di massima riflessione luminosa più ampie; valori maggiori concentrano le riflessioni speculari su un'area minore. Vedi [Proprietà dei materiali avanzate, Nitidezza](advanced-material-properties-main.html#sharpness).
 
-### Metallic
-Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](advanced-material-properties-main.html#metallic).
+### Metallico
+Imposta il colore delle riflessioni speculari in modo che corrisponda al colore base dell'oggetto. Vedi [Proprietà dei materiali avanzate: Metallico](advanced-material-properties-main.html#metallic).
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
-## Advanced
+## Avanzato
 {: #advanced}
 
-### Double Sided
+### Due lati
 {: #double}
-Causes the decal to appear on the back face of the surface on which it is placed as well as the front face.
+Fa sì che la decal appaia sia sul lato anteriore che su quello posteriore della superficie su cui viene sistemata.
 
-### Mirror
+### Copia speculare
 {: #mirror}
-Mirrors the decal image.
+Riflette l'immagine decal.
 
-## Projection direction
+## Direzione di proiezione
 {: #projection-direction}
 
-### Backward
-Projects the decal away from the back of the decal image.
-![images/projectionbackward1.png](images/projectionbackward1.png)Front (left), back (right).
+### Indietro
+Proietta la decal indietro rispetto alla parte posteriore dell'immagine della decal.
+![images/projectionbackward1.png](images/projectionbackward1.png)Anteriore (sinistra), posteriore (destra).
 
-### Forward
-Projects the decal away from the front of the decal image.
-![images/projectionforward1.png](images/projectionforward1.png)Front (left), back (right).
+### Avanti
+Proietta la decal in avanti rispetto alla parte anteriore dell'immagine della decal.
+![images/projectionforward1.png](images/projectionforward1.png)Anteriore (sinistra), posteriore (destra).
 
-### Forward &amp; Backward
-Projects the decal away from both the front and the back of the decal image.
-![images/projectionforwardandback.png](images/projectionforwardandback.png)Front (left), back (right).
+### Avanti e Indietro
+Proietta la decal sia in avanti che indietro rispetto all'immagine della decal.
+![images/projectionforwardandback.png](images/projectionforwardandback.png)Anteriore (sinistra), posteriore (destra).
 
-### Transparency
-Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
+### Trasparenza
+Imposta la quantità di trasparenza per la decal. Vedi [Trasparenza](advanced-material-properties-transparency.html).
 IOR
-Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction) 
-
+Imposta l'indice di rifrazione della decal trasparente. Vedi [Indice di rifrazione](advanced-material-properties-transparency.html#index-of-refraction)

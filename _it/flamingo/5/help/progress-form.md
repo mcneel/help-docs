@@ -2,6 +2,5 @@
 ---
 
 
-# Progress Form
-This process may take some time. Please be patient.
-
+# Modulo di avanzamento
+Questo processo può richiedere un certo tempo. Attendere.
