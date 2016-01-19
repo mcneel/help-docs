@@ -1,113 +1,113 @@
 main_index:
-  name: Flamingo Help Topics
+  name: Temas de la Ayuda de Flamingo
   anchor: all_topics
   categories:
-    - name: Libraries
+    - name: Librerías
       anchor: libraries
       topics:
-        - name: Libraries Panel
+        - name: Panel de librerías
           path: libraries.html
           anchor: test
-        - name: Material Library
+        - name: Librería de materiales
           path: libraries.html
           anchor: material
-        - name: Environment Library
+        - name: Librería de entornos
           path: libraries.html
           anchor: environment
-        - name: Plant Library
+        - name: Librería de plantas
           path: libraries.html
           anchor: plant
-        - name: Library Settings
+        - name: Configuración de librerías
           path: libraries.html
           anchor: settings
 
-    - name: Materials
+    - name: Materiales
       anchor: materials
       topics:
-        - name: Material Editor
+        - name: Editor de materiales
           path: material-editor.html
-        - name: Assign Materials
+        - name: Asignar materiales
           path: material_assignment.html
-        - name: Basic Material Properties
+        - name: Propiedades de material de renderizado básico
           path: material-type-simple.html
-        - name: Advanced Material Properties
+        - name: Propiedades de material avanzadas
           path: material-type-advanced.html
-        - name: Material Image Properties
+        - name: Propiedades de imagen de material
           path: material-image-properties.html
-        - name: Procedural Material Types
+        - name: Tipos de material algorítmicos
           path: procedural-materials.html
-        - name: Texture Set Materials
+        - name: Materiales de conjunto de texturas
           path: texture-set-materials.html
-        - name: Color Selector
+        - name: Selector de color
           path: select-color.html
 
-    - name: Lighting
+    - name: Iluminación
       anchor: lighting
       topics:
-        - name: Lighting Presets
+        - name: Preajustes de iluminación
           path: lighting-tab.html
-        - name: Sun
+        - name: Sol
           path: sun-and-sky-tabs.html
           anchor: sun
-        - name: Sky
+        - name: Cielo
           path: sun-and-sky-tabs.html
           anchor: sky
-        - name: Lights
+        - name: Luces
           path: lights-tab.html
 
-    - name: Environment
+    - name: Entorno
       anchor: environment
       topics:
-       - name: Environment Editor
+       - name: Editor de entorno
          path: environment-tab.html
-       - name: Flamingo Environment
+       - name: Entorno de Flamingo
          path: environment.html
 
-    - name: Rendering
+    - name: Renderizado
       anchor: rendering
       topics:
-        - name: Render tab
+        - name: Ficha Renderizado
           path: render-tab.html
-        - name: Render Window
+        - name: Ventana de renderizado
           path: render-window.html
-        - name: Channels
+        - name: Canales
           path: render-channel.html
-        - name: Image Editor
+        - name: Editor de imágenes
           path: image-editor.html
-        - name: Automated Rendering
+        - name: Renderizado automatizado
           path: automate-rendering.html
 
 
-    - name: Object Properties
+    - name: Propiedades de objeto
       anchor: object_properties
       topics:
-        - name: Material Source
+        - name: Origen del material
           path: properties-object.html
           anchor: material-source
-        - name: Custom Meshing
+        - name: Mallado personalizado
           path: properties-object.html
           anchor: custom-meshes
-        - name: Texture Mapping
+        - name: Mapeado de texturas
           path: properties-object.html
           anchor: texture-mapping
-        - name: Decal Properties
+        - name: Propiedades de calcomanía
           path: properties-object.html
           anchor: decals
-        - name: Object properties
+        - name: Propiedades de objeto
           path: properties-object.html
 
-    - name: Plants
+    - name: Plantas
       anchor: plants
       topics:
-        - name: Plants
+        - name: Plantas
           path: plants.html
-        - name: Plant Editor
+        - name: Editor de plantas
           path: tree-editor.html
 
-    - name: Network Rendering (Farm)
+    - name: Renderizado en red (Farm)
       anchor: farm
       topics:
-        - name: Installing the Farm
+        - name: Instalación de Farm
           path: render-farm.html
           anchor: install
         - name: Render Farm
@@ -120,15 +120,15 @@ main_index:
     - name: Misc
       anchor: misc
       topics:
-        - name: Document Properties
+        - name: Propiedades de documento
           path: documentproperties-flamingo.html
-        - name: Options Flamingo nXt
+        - name: Opciones de Flamingo nXt
           path: options-flamingo.html
-        - name: RealTime Viewport
+        - name: Vista en tiempo real
           path: realtime.html
-        - name: Flamingo Command List
+        - name: Lista de comandos de Flamingo
           path: flamingo-command-list.html
-        - name: Select color
+        - name: Seleccionar color
           path: select-color.html
-        - name: Welcome
+        - name: Bienvenida
           path: welcome.html
