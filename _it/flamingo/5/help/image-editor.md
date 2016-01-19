@@ -13,7 +13,7 @@ Usando l'editor delle immagini di nXt è possibile:
 > [Salvare](image-editor.html#save-tonemapped-image-as) un'immagine sottoposta a mappatura dei toni in un formato bitmap quale .jpg o .png.
 >Salvare le informazioni sulla luminanza in un [formato HDR](image-editor.html#save-hdr-image-as).
 >Visualizzare e salvare dei canali mascherati aggiuntivi ( [alfa](image-editor.html#alpha-channel), [distanza](image-editor.html#distance-channel), [materiale](image-editor.html#material-channel) ), da usare in operazioni di compositing avanzato.
->Salvare nel formato file [PiranesiÂ©](http://www.piranesi.co.uk/) (*.epx), il quale può essere usato per realizzare dei rendering non fotorealistici.
+>Salvare nel formato file [Piranesi©](http://www.piranesi.co.uk/) (*.epx), il quale può essere usato per realizzare dei rendering non fotorealistici.
 >Usare l'[aritmetica](image-editor.html#arithmetic) delle immagini per operazioni quali la fusione di un'immagine generata dai diversi nodi della render farm.
 >Salvare le [impostazioni di illuminazione](image-editor.html#save-lighting-settings-as) usate per generare un rendering. Queste impostazioni di illuminazione possono essere usate per generare ulteriori rendering.
 
@@ -113,7 +113,8 @@ Tiene conto della maschera del canale alfa quando effettua la fusione.
 
 #### Combina Path Tracing
 Combina tra di loro varie immagini renderizzate con il motore Path Tracer in modo che, per esempio, la combinazione di dieci immagini renderizzate con 20 passate ciascuna equivalga ad un'immagine renderizzata con 200 passate.
-*![images/combinedpathtrace200.png](images/combinedpathtrace200.png) *Immagine renderizzata con 20 passate (sinistra); 10 immagini renderizzate con 20 passate per creare un'immagine renderizzata con 200 passate (destra).* *
+*![images/combinedpathtrace200.png](images/combinedpathtrace200.png) 
+*Immagine renderizzata con 20 passate (sinistra); 10 immagini renderizzate con 20 passate per creare un'immagine renderizzata con 200 passate (destra).* *
 
 ### Applica patch
 {: #apply-patch}
@@ -216,7 +217,8 @@ Il nome del materiale usato per renderizzare il pixel.
 ## Nebbia
 {: #haze}
 Aggiunge colore ai pixel più lontani dalla camera. Questo effetto può essere usato per applicare un effetto foschia o nebbia ad una scena oppure per mascherare uno sfondo con colore o cambiare il colore dello sfondo.
-*![images/golden gate.png](images/golden gate.png)Immagine originale (sinistra) e con effetto nebbia (destra).*
+*![images/golden gate.png](images/golden gate.png)
+Immagine originale (sinistra) e con effetto nebbia (destra).*
 
 ### Intensità
 Specifica l'intensità del colore della nebbia.
@@ -262,7 +264,8 @@ L'estensione della zona nitida attorno al **Fuoco**. Questo valore si misura in 
 
 ### Sfocatura
 Controlla la direzione dell'effetto del filtro di sfocatura. L'impostazione di default è **Sfondo**. Ciò significa che tutti i pixel più lontani dalla camera rispetto all'intervallo della **Zona a fuoco** verranno sfuocati progressivamente.
-*![images/blur-001.png](images/blur-001.png)Sfocatura primo piano (sinistra) e sfondo (destra).*
+*![images/blur-001.png](images/blur-001.png)
+Sfocatura primo piano (sinistra) e sfondo (destra).*
 
 #### Sfondo
 Sfuoca i pixel più lontani dalla camera rispetto all'intervallo della **Zona a fuoco**.
@@ -277,7 +280,8 @@ Sfuoca sia i pixel sul davanti che quelli posteriori rispetto all'intervallo del
 {: #glare}
 Il glare ha effetto sui pixel più luminosi rispetto alla Soglia in lumen, creando un effetto alone sui pixel circostanti. Vengono influenzati solo i pixel più luminosi dell'immagine.
 Portare il cursore sui pixel per visualizzarne il glare e leggere il totale dei lumen in corrispondenza dei pixel indicati.
-*![images/glare-001.png](images/glare-001.png)Immagine originale (sinistra) e con effetto glare (destra).*
+*![images/glare-001.png](images/glare-001.png)
+Immagine originale (sinistra) e con effetto glare (destra).*
 
 ### Intensità
 Regola la quantità di alone che ha effetto sui pixel circostanti.
@@ -291,5 +295,6 @@ Selezionare un punto sull'immagine per specificare il valore di luminosità.
 ## Vignetta
 {: #vignette}
 Sfuma i colori sui bordi dell'immagine per creare un effetto alone.
-*![images/fx-vignette-001.png](images/fx-vignette-001.png)Immagine originale (sinistra) e con effetto vignetta (destra).*
+*![images/fx-vignette-001.png](images/fx-vignette-001.png)
+Immagine originale (sinistra) e con effetto vignetta (destra).*
 <!-- TODO: The captions for pictures under Glare and Vignette are starting to the right of the pictures, not under the pictures. -->
