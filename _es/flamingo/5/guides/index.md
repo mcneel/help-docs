@@ -23,7 +23,7 @@ Una vez en panel de control, haga clic con el botón derecho en el área de la f
 Librerías
 Entorno
 Plano de suelo
-Etcâ€¦
+Etc.
  
 ## Para acceder al Panel de control de Flamingo
   * En el menú **Flamingo nXt**, haga clic en **Panel de control**.
