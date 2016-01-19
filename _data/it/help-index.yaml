@@ -1,5 +1,5 @@
 main_index:
-  name: Argomenti della guida in linea di Flamingo
+  name: Guida in linea di Flamingo
   anchor: all_topics
   categories:
     - name: Librerie
@@ -44,7 +44,7 @@ main_index:
     - name: Illuminazione
       anchor: lighting
       topics:
-        - name: Impostazioni di illuminazione predefinite
+        - name: Impostazioni predefinite
           path: lighting-tab.html
         - name: Sole
           path: sun-and-sky-tabs.html
@@ -110,10 +110,10 @@ main_index:
         - name: Installazione della Render Farm
           path: render-farm.html
           anchor: install
-        - name: la Render Farm
+        - name: La Render Farm
           path: render-farm.html
           anchor: farm
-        - name: il Farm Monitor
+        - name: Il Farm Monitor
           path: render-farm.html
           anchor: monitor
 
@@ -126,7 +126,7 @@ main_index:
           path: options-flamingo.html
         - name: Finestra RealTime
           path: realtime.html
-        - name: elenco dei comandi di Flamingo
+        - name: Elenco dei comandi di Flamingo
           path: flamingo-command-list.html
         - name: Selezione dei colori
           path: select-color.html
