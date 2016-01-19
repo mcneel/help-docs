@@ -2,7 +2,7 @@
 layout: fullwidth-page
 ---
 
-# Empezar con Flamingo nXt®
+# Introducción a Flamingo nXt®
 Flamingo  utiliza las tecnologías de trazado de rayos y radiosidad para crear   imágenes fotorrealistas, panoramas y animaciones de alta calidad desde modelos 3D en Rhinoceros®. Flamingo nXt 5 es una actualización de Flamingo que se integra con las funciones de renderizado de Rhino 5. La versión actual es una versión en progreso.
 
 Flamingo se puede descargar e instalar desde [Descargar Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
