@@ -39,7 +39,7 @@ Pflanzen können nach dem Einsetzen verschoben, kopiert und skaliert werden. Die
 Hinweise:
 
 * Modelle mit bereits eingefügten Flamingo-2-Pflanzen sollten ohne Einschränkungen funktionieren.
-* Flamingo-2-Pflanzen unterscheiden sich von den neuen Pflanzen. Zur Zeit können Sie keine Flamingo 2 Pflanzen bearbeiten oder sie in Flamingo nXt Pflanzen umwandeln.
+* Flamingo-2-Pflanzen unterscheiden sich von den neuen Pflanzen. Zur Zeit können noch keine Flamingo-2-Pflanzen bearbeitet oder in Flamingo-nXt-Pflanzen umgewandelt werden.
 
 ### Pflanzeneditor
 {: plant-editor}

@@ -20,7 +20,7 @@ Zeigt den Splash-Screen an.
 
 #### FlamingoBitmapCacheLeeren
 {: #flamingoclearbitmapcache}
-Aktualisiert die Bitmap-Definition, wenn eine Bitmap-Datei anhand eines Bildeditors wie Photoshop geändert wird.
+Aktualisiert die Bitmap-Definition, wenn eine Bitmap-Datei mit einer Bildbearbeitungssoftware wie Photoshop geändert wird.
 
 #### [FlamingoPflanzeBearbeiten](plants.html)
 {: #flamingoeditplant}
@@ -86,7 +86,7 @@ Zur Einstellung der [Renderbeschränkungen](documentproperties-flamingo.html#ren
 
 #### [FlamingoWebsite](http://nxt.flamingo3d.com/)
 {: #flamingowebpage}
-Öffnet die Flamingo nXt Webseite.
+Öffnet die Flamingo-nXt-Website.
 
 #### [FlamingoPflanze](plants.html)
 {: #flamingoplant}
