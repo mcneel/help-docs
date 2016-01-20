@@ -1,6 +1,6 @@
 ---
 ---
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Propiedades de material
 Los materiales de Flamingo se definen mediante una serie de grupos de propiedades. Se trata de tipos de materiales simples de materiales de uso común.  Estos materiales presentan un grupo de controles sencillo. Estos controles facilitan el acceso a las propiedades que hay que cambiar para que un material tenga un aspecto diferente sin la complejidad de los controles avanzados. En la mayoría de materiales simples, cambiar el color es lo único necesario para obtener un aspecto diferente.
 
 #### Tipos de materiales simples:
