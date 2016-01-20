@@ -1,37 +1,37 @@
 ---
 ---
 # ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Properties
-Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you will usually want to change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is necessary to get a different look.
+Los materiales de Flamingo se definen mediante una serie de grupos de propiedades. Se trata de tipos de materiales simples de materiales de uso común.  Estos materiales presentan un grupo de controles sencillo. Estos controles facilitan el acceso a las propiedades que hay que cambiar para que un material tenga un aspecto diferente sin la complejidad de los controles avanzados. En la mayoría de materiales simples, cambiar el color es lo único necesario para obtener un aspecto diferente.
 
-#### Simple Material Types:
+#### Tipos de materiales simples:
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Solid Color](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastic](#plastic)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Color sólido](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plástico](#plastic)
 > ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metal](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[Glass](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Glossy](#glossy)
+> ![images/newglassmaterial.png](images/newglassmaterial.png)[Vidrio](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png)[Brillante](#glossy)
 > ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Texturizado](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Conjunto de texturas](#texture-set)
 
-Any material can be converted to an advanced material.  Advanced materials present all the possible controls to edit a material in Flamingo nXt.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
+Cualquier material se puede convertir en un material avanzado.  Los materiales avanzados disponen de todos los controles posibles para editar un material en Flamingo nXt.  Para tener el máximo control de un material, utilice los Materiales avanzados o convierta el material existente en un material avanzado.
 
-#### Advanced Materials are comprised of these property groups:
+#### Los materiales avanzados incluyen los siguientes grupos de propiedades:
 
-> [Name](material-type-advanced.html#name)
-> [Material Procedure](material-type-advanced.html#procedures)
-> [Advanced Material Properties](material-type-advanced.html#advanced-materials-properties)
-> [Reflective Finish](material-type-advanced.html#reflective-finish-and-highlight)
-> [Transparency Properties](material-type-advanced.html#transparency)
-> [Procedural Textures](material-type-advanced.html#bump-patterns)
-> [Bitmap Textures](material-type-advanced.html#textures)
-> [Notes](material-type-advanced.html#notes)
+> [Nombre](material-type-advanced.html#name)
+> [Composiciones de material](material-type-advanced.html#procedures)
+> [Propiedades de material avanzadas](material-type-advanced.html#advanced-materials-properties)
+> [Acabado reflectante](material-type-advanced.html#reflective-finish-and-highlight)
+> [Propiedades de transparencia](material-type-advanced.html#transparency)
+> [Texturas algorítmicas](material-type-advanced.html#bump-patterns)
+> [Texturas bitmap](material-type-advanced.html#textures)
+> [Notas](material-type-advanced.html#notes)
 
-Materials are saved and stored in the Rhino model. Unique materials can have the same name in different Rhino models.
+Los materiales se guardan en el modelo de Rhino. Los materiales únicos pueden tener el mismo nombre en diferentes modelos de Rhino.
 
-## Solid Color
+## Color sólido
 {: #solid-color}
-Solid Color materials have only a [name](material-type-advanced.html#name) and a [color](material-type-advanced.html#color).
+Los materiales de color sólido solo tienen un [nombre](material-type-advanced.html#name) y un [color](material-type-advanced.html#color).
 
 ![images/solidcolors.png](images/3-solidcolor.png)
 
@@ -39,108 +39,108 @@ Solid Color materials have only a [name](material-type-advanced.html#name) and a
 {% include_relative snippets/snippet-material-color-select.md %}
 {% include_relative snippets/snippet-material-advanced-editor.md %}
 
-## Plastic
+## Plástico
 {: #plastic}
-Plastic materials are slightly reflective with a white [highlight](material-type-advanced.html#highlight-color).
+Los materiales de plástico son ligeramente reflectantes con un [brillo](material-type-advanced.html#highlight-color) de color blanco.
 
 ![images/solidcolors.png](images/3-plastic.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} Utilice el Editor avanzado para reemplazar los preajustes de [Color de brillo](material-type-advanced.html#highlight-color), [Intensidad](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) y [Definición](material-type-advanced.html#sharpness).
 
 ## Metal
 {: #metal}
-Metal materials have a highlight whose color matches the [color](material-type-advanced.html#color). You can also control the [Sharpness](material-type-advanced.html#sharpness) of the reflection.
+Los materiales de metal tienen un brillo del mismo color que el [color](material-type-advanced.html#color). También puede controlar la [Definición](material-type-advanced.html#sharpness) del reflejo.
 
 ![images/solidcolors.png](images/3-metal.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### Definición
+Controla la definición del brillo. Consulte el tema [Definición](material-type-advanced.html#sharpness) en las propiedades de material avanzadas para obtener más información.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
+{% include_relative snippets/snippet-material-advanced-editor.md %} Utilice el Editor avanzado para reemplazar los preajustes de [Color de brillo](material-type-advanced.html#highlight-color), [Intensidad](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) y [Tipo](material-type-advanced.html#type). 
 
-## Glass
+## Vidrio
 {: #glass}
-Glass materials have a [color](material-type-advanced.html#color) and an [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) (IOR).
+Los materiales de vidrio tienen un [Color](material-type-advanced.html#color) y un [Índice de refracción](advanced-material-properties-main.html#index-of-refraction) (IOR).
 
 ![images/solidcolors.png](images/3-glass.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Index of Refraction
-Controls the amount light bends through the material. See Advanced [Index of Refraction](advanced-material-properties-main.html#index-of-refraction) topic for more details.
+#### Índice de refracción
+Controla la cantidad de luz que se refracta en el material. Consulte el tema [Índice de Refracción](advanced-material-properties-main.html#index-of-refraction) en las propiedades de material avanzadas para obtener más información.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the pre-sets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Sharpness](material-type-advanced.html#sharpness) and [Transparency](material-type-advanced.html#transparency)
+{% include_relative snippets/snippet-material-advanced-editor.md %} Utilice el Editor avanzado para reemplazar los preajustes de [Color de brillo](material-type-advanced.html#highlight-color), [Intensidad](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Definición](material-type-advanced.html#sharpness) y [Transparencia](material-type-advanced.html#transparency).
 
-## Glossy
+## Brillante
 {: #glossy}
-Glossy materials generally have a low Highlight [Intensity](material-type-advanced.html#intensity) and [Sharpness](material-type-advanced.html#sharpness).
+Los materiales brillantes normalmente tienen una [Intensidad](material-type-advanced.html#intensity) de brillo y [Definición](material-type-advanced.html#sharpness) bajas.
 
 ![images/solidcolors.png](images/3-glossy.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
-Controls strength of the highlight from lights on the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### Intensidad
+Controla la intensidad del brillo de las luces en la superficie. Consulte el tema [Intensidad](material-type-advanced.html#intensity) en las propiedades de material avanzadas para obtener más información.
 
-#### Highlight Sharpness
-Controls sharpenss vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### Definición del brillo
+Controla la definición del brillo de las luces en la superficie. Consulte el tema [Definición del brillo](material-type-advanced.html#sharpness) en las propiedades de material avanzadas para obtener más información.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
+{% include_relative snippets/snippet-material-advanced-editor.md %} Utilice el Editor avanzado para reemplazar los preajustes de [Fresnel](material-type-advanced.html#fresnel) y [Tipo](material-type-advanced.html#type).
 
 ## ClearFinish
 {: #clearfinish}
-The ClearFinish material simulates car paint, porcelain, ceramics, varnished woods, or any material with a plastic or clear-coat layer. ClearFinish uses the [Fresnel](material-type-advanced.html#fresnel) setting to change the material color based on angle to the view. These materials tend to be a deep color when looked at straight on, but as the surface curves away from the view, they become more and more reflective. Car paints with a clear-coat or clear lacquer finishes are good examples.
+El componente ClearFinish es un procedimiento en capas que simula la pintura de coche, porcelana, cerámica, madera barnizada o cualquier otro material que contenga una capa de pintura o de plástico. ClearFinish utiliza la opción [Fresnel](material-type-advanced.html#fresnel) para cambiar el color del material según el ángulo respecto a la vista. Estos materiales suelen ser de color oscuro cuando se mira directamente a la superficie, pero a medida que la superficie se encorva alejándose de la vista, los materiales se vuelven muy brillantes. Un buen ejemplo es la pintura de coches con acabados satinados o laqueados.
 
 ![images/solidcolors.png](images/3-clearfinish.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Highlight color](material-type-advanced.html#highlight-color), [Intensity](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) and [Sharpness](material-type-advanced.html#sharpness).
+{% include_relative snippets/snippet-material-advanced-editor.md %} Utilice el Editor avanzado para reemplazar los preajustes de [Color de brillo](material-type-advanced.html#highlight-color), [Intensidad](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel) y [Definición](material-type-advanced.html#sharpness).
 
-## Flamingo Textured
+## Texturizado de Flamingo
 {: #flamingo-textured}
-Textured materials use images to create colors and patterns. The image name, resolution, tile size, and highlight intensity and sharpness are controllable from this simple material.
+Los materiales texturizados utilizan imágenes para crear colores y patrones. El nombre de la imagen, la resolución, el tamaño de loseta y la intensidad y definición del brillo se controlan desde este material simple.
 
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
-#### Intensity
-Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### Intensidad
+Controla la intensidad del reflejo de espejo de la superficie. Consulte el tema [Intensidad](material-type-advanced.html#intensity) en las propiedades de material avanzadas para obtener más información.
 
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### Definición
+Controla la definición del brillo. Consulte el tema [Definición](material-type-advanced.html#sharpness) en las propiedades de material avanzadas para obtener más información.
 
-#### Image
-Set the image map and properties of the material. There are many options here. See the Advanced [Images](material-type-advanced.html#texture) topic for more details.
+#### Imagen
+Define el mapa de imagen y las propiedades del material. Aquí hay muchas opciones. Consulte el tema [Imágenes](material-type-advanced.html#texture) de las propiedades de material avanzadas para obtener más información.
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material.
+{% include_relative snippets/snippet-material-advanced-editor.md %} Utilice el Editor avanzado para reemplazar los preajustes de este material.
 
-## Texture Set
+## Conjunto de texturas
 {: #texture-set}
-[Texture set materials](texture-set-materials.html) support third-party texture maps that contain information such as displacement, normal, or bump maps. Displacement maps cause the material to have depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these set of textures.
+[Los materiales de conjunto de texturas](texture-set-materials.html) son compatibles con mapas de texturas de terceros que contienen información de mapas de desplazamiento, de normal o de relieve. Los mapas de desplazamiento hacen que el material tenga profundidad. La combinación de estos mapas de textura en conjunto puede crear materiales muy realistas. [PixPlant](http://www.pixplant.com/) es un programa de software que puede usar un bitmap estándar y crear este conjunto de texturas.
 <!-- TODO: This dialog Needs a page.-->
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-#### Width and Height
-Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
+#### Anchura y altura
+  Controla el tamaño de todas las texturas del conjunto.  Utilice este control para que todos los bitmaps tengan el mismo tamaño y estén alineados.
 
-#### Intensity
-Controls strength of the mirror-like reflection of the surface. See Advanced [Intensity](material-type-advanced.html#intensity) topic for more details.
+#### Intensidad
+Controla la intensidad del reflejo de espejo de la superficie. Consulte el tema [Intensidad](material-type-advanced.html#intensity) en las propiedades de material avanzadas para obtener más información.
 
-#### Sharpness
-Controls the sharpness vs blurriness of the reflection. See Advanced [Sharpness](material-type-advanced.html#sharpness) topic for more details.
+#### Definición
+Controla la definición del brillo. Consulte el tema [Definición](material-type-advanced.html#sharpness) en las propiedades de material avanzadas para obtener más información.
 
-#### Types
-This controls the type of reflection on the surface.  See Advanced [Type](material-type-advanced.html#type) topic for more details.
+#### Tipos
+Controla el tipo de reflexión en la superficie.  Consulte el tema [Tipo](material-type-advanced.html#type) en las propiedades de material avanzadas para obtener más información.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets on this material. Note: This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+{% include_relative snippets/snippet-material-advanced-editor.md %} Utilice el Editor avanzado para reemplazar los preajustes de este material. Nota: Este es un material complejo que utiliza muchas texturas superpuestas definidas con varios valores predeterminados.  El uso del editor avanzado no mantendrá todas las propiedades sincronizadas.
 
-## Advanced Material
-The [Flamingo Advanced](material-type-advanced) material contains a complete set of properties for a Flamingo Material.  If none of these simple materials work, use the [Flamingo Advanced](material-type-advanced) Material to create a material and have the greatest flexibility in creating materials.
+## Material avanzado
+El material [Avanzado de Flamingo](material-type-advanced) contiene un conjunto completo de propiedades de un material de Flamingo. Si ninguno de estos materiales simples funciona, utilice el material [Avanzado de Flamingo](material-type-advanced) para crear un material y tener la máxima flexibilidad en la creación de materiales.
