@@ -1,5 +1,5 @@
 ---
-title: Propriétés du document de Flamingo nXt
+title: Propriétés du document
 ---
 
 

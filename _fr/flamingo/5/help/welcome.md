@@ -23,7 +23,7 @@ Sur le [site web de Flamingo nXt](http://nxt.flamingo3d.com/) vous trouverez des
 > [Galerie](http://nxt.flamingo3d.com/photo)
 > [Assistance technique](http://nxt.flamingo3d.com/forum)
 
-## Le panneau de commande de Flamingo nXt
+## Panneau de configuration
 {: #control-panel}
 Cette version de Flamingo présente une interface intégrée dans les outils de rendu de Rhino 5. Le panneau de configuration de Flamingo nXt présente différents onglets permettant de configurer le modèle pour le rendu :
 
@@ -32,7 +32,7 @@ Cette version de Flamingo présente une interface intégrée dans les outils de 
 > [Environnement](environment-tab.html)
 > [Rendu](render-tab.html)
 
-## Pour accéder au panneau de commande de Flamingo
+## Accéder au panneau de configuration
 * Dans le menu Flamingo nXt 5.0, cliquez sur Montrer le panneau de configuration.
 
 ## Bases du rendu
