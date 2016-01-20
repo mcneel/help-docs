@@ -1,7 +1,8 @@
---- 
+---
+title: Opzioni di rendering
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Opzioni di rendering
+# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
 La scheda di rendering controlla le proprietà principali del rendering finale.  Si usi questa scheda per controllare la qualità ed il tempo che può impiegare un rendering.  La risoluzione dell'immagine finale è uno dei fattori che influisce maggiormente sui tempi di rendering globali.
 
 Nota: Una buona prassi è quella di mantenere bassa la risoluzione di rendering durante i rendering iniziali. Si usino risoluzioni alte solo nei rendering finali.
@@ -14,7 +15,7 @@ Nota: Una buona prassi è quella di mantenere bassa la risoluzione di rendering 
 
 ## Vista da renderizzare
 {: #viewtorender}
-Impostare la vista che verrà renderizzata da Flamingo nXt 5.  Questa impostazione è molto utile quando si sta lavorando sul modello e va renderizzata sempre una vista specifica.  Ad esempio, la vista Prospettica è spesso la vista di interesse.  Impostando questo menu, non è necessario accertarsi che la vista sia corrente prima di iniziare il rendering.
+Impostare la vista che verrà renderizzata da Flamingo nXt 5.  Questa impostazione è utile quando si sta lavorando sul modello e va renderizzata sempre una vista specifica.  Ad esempio, spesso la vista di interesse è la vista Prospettica.  Impostando questo menu, non è necessario accertarsi che la vista sia corrente prima di iniziare il rendering.
 
 #### Vista attiva
 Usare questa opzione per renderizzare la vista corrente attiva.  Si tratta dell'impostazione predefinita.
@@ -31,11 +32,11 @@ La risoluzione di rendering è una delle impostazioni di rendering più importan
 Imposta il numero totale di pixel presenti nel rendering finale, usando la vista corrente per i rapporti di altezza e larghezza.  Un'impostazione ottima da usare mentre si sta lavorando sui rendering.  La migliore impostazione da usare con l'opzione vista corrente. La risoluzione dell'immagine si può aumentare o diminuire cambiando semplicemente il numero totale di pixel.
 
 ### Risoluzione della vista
-Usa le dimensioni della vista in pixel per determinare le dimensioni dell'immagine renderizzata.  Ciò crea una rappresentazione 1 a 1 del rapporto di aspetto e della risoluzione della vista.  Si tratta di una modalità utile, ma che può diventare lenta quando si renderizza una vista a tutto schermo in contrapposizione ad una vista a un quarto di schermo nella configurazione standard a 4 viste di Rhino.
+Usa le dimensioni della vista in pixel per determinare le dimensioni dell'immagine renderizzata.  Ciò crea una rappresentazione 1 a 1 del rapporto di aspetto e della risoluzione della vista.  Si tratta di una modalità utile, ma che può diventare lenta quando si renderizza una vista a tutto schermo in contrapposizione ad una vista a un quarto di schermo nella configurazione delle viste standard di Rhino.
 
 ### Dimensione immagine
 {: #resolutionprintedsize}
-Imposta la risoluzione finale in base ad una serie di variabili diverse. Questa opzione si usa per definire delle dimensioni specifiche ed una risoluzione determinata per l'immagine finale. Se l'altezza e la larghezza del rendering finale non danno lo stesso rapporto di aspetto della vista che si sta renderizzando, la vista può venire tagliata sui bordi superiore ed inferiore o laterali. Nota: Questi controlli possono inoltre portare a dei rendering con delle risoluzioni molto alte, i quali possono richiedere dei tempi molto lunghi per il completamento.  Si usino per rendering finali con risoluzioni elevate.
+Imposta la risoluzione finale in base ad una serie di variabili diverse.  Questa opzione si usa per definire delle dimensioni specifiche ed una risoluzione determinata per l'immagine finale. Se l'altezza e la larghezza del rendering finale non danno lo stesso rapporto di aspetto della vista che si sta renderizzando, la vista può venire tagliata sui bordi superiore ed inferiore o laterali. Nota: Questi controlli possono inoltre portare a dei rendering con delle risoluzioni molto alte, i quali possono richiedere dei tempi molto lunghi per il completamento.  Si usino per rendering finali con risoluzioni elevate.
 
 Si possono usare quattro tipi di unità:
 
@@ -71,7 +72,7 @@ L'altezza dell'immagine stampata nelle unità correnti.  Moltiplicare questa imp
 {: #printsizeresolution}
 
 #### Schermo
-L'immagine viene renderizzata usando la risoluzione DPI (punti per pollice) della vista. Si tratta della densità di pixel su un dispositivo. Normalmente esprime i [punti per pollice (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
+L'immagine viene renderizzata usando la risoluzione DPI (punti per pollice) della vista. Si tratta della densità di pixel su un dispositivo.  Normalmente esprime i [punti per pollice (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch).
 
 #### Personalizza
 L'immagine viene renderizzata usando una risoluzione personalizzata. Definire la risoluzione personalizzata specificando l'altezza e la larghezza della vista nel controllo **Pixels per:**.
@@ -111,14 +112,14 @@ All'interno di Flamingo ci sono tre motori di rendering diversi.  In condizioni 
 
 Flamingo usa delle tecniche progressive a più passi per generare i rendering.  Ad ogni passo, ci possono essere degli artefatti nel rendering. Gli artefatti lasciano degli insoliti effetti incompiuti in un rendering.  Tecnicamente, con un periodo sufficiente di tempo, tutti e tre i mototi di rendering generano lo stesso rendering.  Il tempo, però, è sempre un fattore limitante. Il trucco è quindi quello di selezionare il motore di rendering che renderizzi al meglio la scena corrente nel minor numero di passi.
 
-Selezionare un motore di rendering diverso e quindi renderizzare per visualizzare i risultati è molto semplice.
+Selezionare un motore di rendering diverso e quindi renderizzare per visualizzare i risultati è semplice.
 
 ### Predefinito
 L'algoritmo predefinito produce simulazioni di elevata qualità. Il motore di rendering predefinito è efficace per un'ampia varietà di scene.  Gli altri due motori hanno maggiori punti forti, ma anche maggiori punti deboli.  Il motore predefinito è un buon punto di partenza.
 
 Il motore di rendering predefinito presenta un artefatto abbastanza evidente nelle prime passate.  Si tratta di ombre "dure" che si sovrappongono.  Con l'avanzare delle passate, queste ombre diventano più morbide.  Il motore predefinito è quindi in grado di restituire velocemente un risultato, ma può richiedere più passate per ammorbidire le ombre.
 
-La differenza in termini di qualità tra il metodo predefinito ed il metodo path tracer può essere quasi impercettibile, specialmente se l'illuminazione indiretta è attivata. Le differenze in termini di qualità possono non valere la pena, verificandosi a discapito dei tempi di calcolo.
+La differenza in termini di qualità tra il metodo predefinito ed il metodo path tracer può essere piuttosto impercettibile, specialmente se l'illuminazione indiretta è attivata. Le differenze in termini di qualità possono non valere la pena, verificandosi a discapito dei tempi di calcolo.
 
 ### Path Tracer
 {: #path-tracer}
