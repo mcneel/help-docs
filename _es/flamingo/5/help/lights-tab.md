@@ -1,7 +1,7 @@
 ---
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png){:height="75px" width="75px"} Lights
+# ![images/lights-tab.png](images/lights-tab.png){:height="75px" width="75px"} Luces
 Las fuentes de luz artificial utilizan las luces normales de Rhino con propiedades añadidas de Flamingo al control de distribución de la luz. Si utiliza fuentes de luz, elija el tipo que representa más exactamente la lámpara real que se está modelado.
 
 

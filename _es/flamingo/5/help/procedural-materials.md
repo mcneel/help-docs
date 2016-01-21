@@ -1,11 +1,11 @@
 ---
 ---
 
-#  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Procedural Materials
-El árbol Procedimientos combina uno o más materiales utilizando un conjunto de reglas para definir la interacción de los materiales. El árbol muestra los componentes que se usan para crear el material y permite añadir otros componentes. Para materiales simples, en la lista sólo habrá un componente: Base.
+#  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Materiales algorítmicos
+El árbol de Materiales algorítmicos combina uno o más materiales utilizando un conjunto de reglas para definir la interacción de los materiales. El árbol muestra los componentes que se usan para crear el material y permite añadir otros componentes. Para materiales simples, en la lista sólo habrá un componente: Base.
 <!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
-Cada componente combina dos materiales "secundarios" utilizando un método específico. Cada uno de los materiales secundarios puede, a su vez, estar formado por un componente, combinando dos materiales secundarios propios. De este modo, se pueden crear materiales sumamente elaborados a partir de elementos más simples. Los procedimientos para combinar materiales son:
+Cada componente combina dos materiales "secundarios" utilizando un método específico. Cada uno de los materiales secundarios puede, a su vez, estar formado por un componente, combinando dos materiales secundarios propios. De este modo, se pueden crear materiales sumamente elaborados a partir de elementos más simples. Los materiales algorítmico para combinar son:
 
 > [Base](#base)
 > [Mezcla angular](#angular-blend)
@@ -17,19 +17,19 @@ Cada componente combina dos materiales "secundarios" utilizando un método espec
 
 ##### Para agregar un material algorítmico
 1. Haga clic con el botón derecho en cualquier parte de la ventana Material algorítmico.
-1. En el menú, haga clic en un tipo de procedimiento.
+1. En el menú, haga clic en un tipo de material algorítmico.
 
-##### Para quitar un procedimiento
- 1. En la ventana Material algorítmico, haga clic con el botón derecho en el nombre del procedimiento.
+##### Para quitar un material algorítmico
+ 1. En la ventana Material algorítmico, haga clic con el botón derecho en el nombre del material algorítmico.
  2. En el menú, haga clic en Quitar.
 
 ## Base
 {: #base}
-Este es el material básico simple sin capas. Es el procedimiento predeterminado.
+Este es el material básico simple sin capas. Es el material algorítmico predeterminado.
 
 ## Mezcla angular
 {: #angular-blend}
-Muchos materiales cambian de color, reflexión o transparencia según el ángulo en el que se visualiza el material. El procedimiento de Mezcla angular mezcla dos materiales según el ángulo de visión respecto a la superficie del objeto.
+Muchos materiales cambian de color, reflexión o transparencia según el ángulo en el que se visualiza el material. El material algorítmico de Mezcla angular mezcla dos materiales según el ángulo de visión respecto a la superficie del objeto.
 
 ![images/angularblendmaterials.png](images/angularblendmaterials.png)
 La Mezcla angular mezcla dos materiales diferentes para crear efectos especiales. Las dos capas del material algorítmico son la capa Interior y Exterior.

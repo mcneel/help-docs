@@ -2,7 +2,7 @@
 ---
 
 
-# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Options: Flamingo nXt
+# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Opciones: Flamingo nXt
 Esta configuración se aplica a la aplicación de Flamingo.  Los cambios realizados aquí repercutirán en el funcionamiento general de Flamingo.
 
 {: #default-decal-link-state}

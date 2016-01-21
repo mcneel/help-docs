@@ -2,7 +2,7 @@
 ---
 
 
-# ![images/images.svg](images/images.svg){:height="75px" width="75px"} Material Image Properties
+# ![images/images.svg](images/images.svg){:height="75px" width="75px"} Propiedades de imagen de material
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
