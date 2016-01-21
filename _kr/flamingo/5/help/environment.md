@@ -162,6 +162,7 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 ![images/background-image-003.png](images/background-image-003.png)
 *현재 뷰포트 영역 (1), 이미지 크기와 형태 (2).*
 
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
 #### X 방향 크기 / Y 방향 크기
 뷰 너비와 높이의 0 ~1.0 비율로 배경 이미지의 크기를 지정합니다. 예를 들어, 1.0 값은 뷰 크기의 100%이고, 0.5 값은 뷰 너비의 50%를 나타냅니다.
 
