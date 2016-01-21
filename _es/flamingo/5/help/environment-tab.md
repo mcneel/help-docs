@@ -1,7 +1,7 @@
 ---
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Environment Panel
+# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Panel de entorno
 {: #environment-tab}
 Los entornos no son solo lo que se ve en el fondo de un renderizado, sino que controlan una esfera infinita que rodea al modelo. Los objetos de la escena reflejarán y refractarán el entorno. La esfera del entorno no es un objeto que pueda seleccionar, sino una superficie de referencia para los efectos del fondo.
 

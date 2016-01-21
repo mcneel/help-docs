@@ -7,3 +7,4 @@
 
 ##### Para reemplazar una imagen con otra:
   * Haga clic en el botón Editar imagen ![images/edit_image.png](images/edit_image.png) y seleccione una imagen en el diálogo de archivos.
+  

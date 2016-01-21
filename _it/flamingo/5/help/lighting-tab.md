@@ -1,11 +1,11 @@
 ---
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Impostazioni di illuminazione predefinite
+# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Impostazioni predefinite
 L'illuminazione è uno degli aspetti più importanti e da non trascurare quando si crea un'immagine. Non si tratta solo di un modo di illuminare il modello. L'illuminazione è fondamentale per creare una determinata atmosfera e rappresenta un ingrediente chiave nella determinazione della composizione di un'immagine.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
-*Immagine di Christopher Soto GutiÃ©rrez.*
+*Immagine di Christopher Soto Gutiérrez.*
 
 #### Dove trovo il controllo di illuminazione di Flamingo?
 

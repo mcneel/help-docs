@@ -7,3 +7,4 @@
 
 ##### Per sostituire un'immagine con un'immagine diversa:
   * Fare clic sul pulsante Modifica immagine ![images/edit_image.png](images/edit_image.png) e selezionare un'immagine nella finestra di dialogo.
+  

@@ -1,70 +1,71 @@
 ---
+title: 物件属性
 ---
 
 
-#  ![images/properties.svg](images/properties.svg){:height="75px" width="75px"} Object Properties
-Flamingo nXt object properties only affect the way objects are rendered in Flamingo nXt.
+#  ![images/properties.svg](images/properties.svg) {{page.title}}
+物件属性里与 Flamingo nXt 相关的设置只有在以 Flamingo nXt 渲染时才有作用。
 
-### ![images/materialtab.png](images/materialtab.png) Material Source
+### ![images/materialtab.png](images/materialtab.png) 材质来源
 {: #material-source}
-A material can be assigned to layers, blocks, and objects.  For details on Assigning material see the [Material Assignments](material_assignment.html) topic. If the material is set to ByObject, then the material properties are also displayed in this dialog.  For more details on editing a material, see [Material Properties](material-type-simple.html).
+材质可以赋予给图层、图块以及物件，赋予材质的更多详情请参考[材质赋予](material_assignment.html)主题。材质赋予方式如果选为“物件”，材质属性也将显示在物件属性对话框中，编辑材质的更多详情请参考[材质属性](material-type-simple.html)。
 
-### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Texture mapping
+### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) 贴图轴
 {: #texture-mapping}
-Mapping controls how a material is located (mapped) on a particular object. The method used to assign a material whether to a layer or object does not effect mapping. For materials that have no noticeable pattern, it is normally not necessary to control the mapping. Use mapping where the material is directional or has an obvious pattern. Even in these cases, the default mapping may be adequate. Mapping remains with the object and follows it if it is moved, rotated, or scaled. For details on the mapping types see the [Texture Mapping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm) topic.
+贴图轴决定了材质如何附着在物件上。 无论材质赋予方式是以物件还是以图层，都会受到贴图轴的影响，当材质没有可辨别性的纹理时，通常不必设置贴图轴，需要控制贴图轴的方向时才需要设置贴图轴，即便需要设置贴图轴，预设的几种贴图轴类型也足以应付大多数情况。对物件执行移动、旋转、缩放等操作贴图轴也跟着变动，不会影响材质附着在物件上的相对关系。了解贴图轴类型的详细信息请参考[贴图轴](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm)主题。
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
-*Two different mapping directions*
+*两个不同方向的贴图轴*
 
-### ![images/decalproperties.png](images/decalproperties.png) Decals
+### ![images/decalproperties.png](images/decalproperties.png) 印花
 {: #decals}
-Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps. See the [Rhino Decals](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm) for details on creating and placing decals.
+印花是直接在物件上贴图的方法，这种贴图方法不需要依靠材质，可以在物件的局部贴图。使用印花可以修改物件局部的颜色、反射或凹凸。创建与放置印花的详细信息请参考[Rhino 印花](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm)。
 
 ![images/freshmilk.png](images/freshmilk.png) ![images/decal-planar-001.png](images/decal-planar-001.png)
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
-*Four different decal examples*
+*四个不同的印花*
 
-### ![images/apply-edge-softening.png](images/apply-edge-softening.png) Custom Meshes
+### ![images/apply-edge-softening.png](images/apply-edge-softening.png) 自定义网格
 {: #custom-meshes}
-Several custom mesh modifiers can be used in Rhino to detail rendered models. Use these modifiers to round edges, add panel shut lines, and create cables from curves.
+在 Rhino 中有几种自定义网格可以在渲染模型时渲染出细节。这些自定义网格可以为渲染网格增加圆角、渲染圆管、装饰线、置换。
 
-For more details go to the topics below:
+详细信息请参考下列主题:
 
->[Edge softening](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyedgesoftening.htm)
->[Curve piping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applycurvepiping.htm)
->[Shut Lining](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyshutlining.htm)
->[Displacement](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applydisplacement.htm)
+>[渲染圆角](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyedgesoftening.htm)
+>[渲染圆管](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applycurvepiping.htm)
+>[装饰线](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyshutlining.htm)
+>[置换](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applydisplacement.htm)
 
-### ![images/object-flamingo.png](images/object-flamingo.png) Flamingo Properties
+### ![images/object-flamingo.PNG](images/object-flamingo.PNG) Flamingo 属性
 {: #flamingo-properties}
 
-#### Alpha channel
+#### Alpha 通道
 {: #alpha-channel}
-Makes the object invisible. Shadows cast by and on the object are rendered. The image can then be overlaid on another image and the shadows will show in the composite image.
+使物件在渲染中不可见，但该物件仍然可以投射阴影与接受阴影投射，这样渲染图片可以用来将阴影合成至其他图片上。
 
 ![images/building.png](images/building.png)
-In the example above, a few simple planar surfaces that match the image were created to catch shadows cast on the building by the trees. The planes were tagged with the Alpha channel property so when they were rendered, they were invisible, but still displayed the shadows. This partially transparent image was then overlaid onto the image.
+这个例子是在模型中创建一些树的模型与用来代替真实图片里建筑物的几个平面，这些平面可以接受树模型的阴影投射。在这些平面的物件属性打开 Alpha 通道，让他们不会出现在渲染图片里，经过一些 Alpha 通道的应用处理后可以将树与树的阴影加到原来的照片上。
 
-#### Caustics
+#### 焦散
 {: #caustics}
-The light rays reflected or refracted by a curved object or the projection of those rays on another surface. Caustics should be used in very specific situations. Caustics are only rendered with the [Path Tracer](render-tab.html#path-tracer) engine or the [Hybrid](render-tab.html#hybrid) render engine.  Caustic calculations takes many passes to converge. See [Wikipedia article: Caustic (optics)](http://en.wikipedia.org/wiki/Caustic_(optics)) for more information.
+光线经过有弧度的物件的反射或折射后，可能会聚焦在其他物件的表面，这种情形称为焦散。焦散只有在一些特定情况下才使用。焦散只能使用[路径追踪](render-tab.html#path-tracer)渲染引擎或[混合](render-tab.html#hybrid)渲染引擎，需要经过很多队列的计算才能得到焦散效果。更多信息请参考[维基百科: Caustic (optics)](http://en.wikipedia.org/wiki/Caustic_(optics))。
 
 ![images/kaustik.png](images/kaustik.png)
-*Caustics produced by a glass of water.*
+*由玻璃杯和水产生的焦散。*
 
 ![images/caustics-001.png](images/caustics-001.png)
-*Without caustics (left), and with caustics (right).*
+*没有焦散（左）与有焦散（右）的渲染图片。*
 
-#### Thin
+#### 薄片
 {: #thin}
-A space-enclosing, transparent object is normally treated as a solid for transparent refraction. Setting the Thin property means that each surface will be treated as a two-sided object for refraction. This is the setting to use if single surfaces as glass are used for architectural models.
+实体物件赋予玻璃材质时通常会被当成实心的玻璃物件渲染，在物件的属性打开薄片选项，渲染时曲面会被视为双面的薄片物件，所以实体会被视为空心物件。此设置用于将面作为薄片而非实体的一个面时使用，例如建筑模型的玻璃。
 
 ![images/thin.png](images/thin.png) ![images/thinoff.png](images/thinoff.png)
-*Base Rhino model (left), Normal (middle) and Thin (right).*
+*立方体未使用（左）与使用（右）薄片选项渲染时的差别。*
 
-#### Daylight portal
+#### 日光入口
 {: #daylight-portal}
-A daylight portal is an opening for [Sun and Sky lighting](lighting-tab.html#interior-daylight) for an interior rendering. A Daylight portal pulls sun, sky, and ground light into an interior space in a natural way. Daylight portals only have an effect when the [Sun](sun-and-sky-tabs.html#sun) is turned on. When the lighting scheme is set to [Interior daylight](lighting-tab.html#interior-daylight), all transparent surfaces act as daylight portals automatically. It is only when the lighting scheme is set to Studio or Exterior daylight and you still want to bring outside sun and sky light into an interior space that you must manually tag the windows as daylight portals.
+室内渲染时可以打开日光入口使用[太阳和天光照明](lighting-tab.html#interior-daylight)照亮室内场景。日光入口物件可以协助将室外的自然光导入室内，使室内场景有充分的自然照明亮度，日光入口只有在[太阳](sun-and-sky-tabs.html#sun)打开时才有作用。使用[室內日光](lighting-tab.html#interior-daylight)预设组时，所有透明的物件会自动当作日光入口物件，使用摄影棚照明与户外日光默认组时则不会，如果您仍想将太阳与天光导入室内，可以打开窗户玻璃物件的日光入口选项。
 
 ![images/daylightportal-001.png](images/daylightportal-001.png)
-*With daylight portal (left), without daylight portal (right).*
+*使用（左）与未使用（右）日光入口。0*

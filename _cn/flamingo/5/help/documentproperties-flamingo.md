@@ -1,68 +1,69 @@
 ---
+Title: Flamingo nXt 文件属性
 ---
 
 
-# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Document Properties: Flamingo nXt
-These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
+# ![images/options.svg](images/options.svg) {{page.title}}
+这些设置仅应用于当前的模型，可以让您在渲染品质与速度之间取舍。
 
-#### Where can I find this command?
+#### 在哪里可以找到这个指令？
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
- 1. Command > EnvironmentEditor
+ 1. ![images/icon-render.png](images/icon-render.png)渲染工具工具列 > ![images/environments.png](images/environments.png) 材质编辑器
+ 1. ![images/menuicon.png](images/menuicon.png)功能表 > 渲染下拉菜单 > 环境编辑器
+ 1. 指令 > EnvironmentEditor
 
-## Materials
+## 材质
 {: #materials}
-Use these controls to quickly change how Flamingo renders the surfaces in a rendering.  These settings will not change the material assignments on the objects and layers, but will change how Flamingo produces the color of each surface.
+使用这些设置快速更改 Flamingo 渲染时的特性。这些设置不会更改物件和图层上被赋予的材质，但是将会决定 Flamingo 渲染每个面生成颜色的方式。
 
-#### Use materials
+#### 使用材质
 {: #use-materials}
-Renders using materials created in Flamingo nXt and Rhino materials. Objects that have no material assignment render white. If neither the Use materials or the Use Object colors is checked, then all the objects will render white.
+以赋予给物件的 Flamingo nXt 或 Rhino 材质渲染，未赋予材质的物件以白色渲染。
 
-#### Use object color
+#### 使用物件颜色
 {: #use-object-color}
-Renders using the colors assigned through Rhino object or layer color. Note : Both Use materials and Use object color can be checked. In this case, objects that have materials assigned will use those materials. Other objects will render using their object or layer color.
+使用物件属性设置的显示颜色渲染。附注：使用材质与使用物件颜色可以同时启用，让有赋予材质的物件以材质渲染，未赋予材质的物件以物件属性的显示颜色渲染。
 
-#### Glow Channel
+#### 光晕通道
 {: #channel}
-Materials that contain any level of glow will light up, but will not illuminate other objects. (Tag the object as a light to illuminate other objects.)  Set the Glow on a Channel, allowing the brightness of the glow to be adjusted after rendering without re-rendering.
+材质上可以产生很亮的光晕，但是光晕不能照亮其他物件。(将物件标记为灯光物件可以照亮其他物件。)  将光晕设置到一个通道上，这样在渲染完成后就可以直接在图像上实时调节光晕的亮度而不用重新进行渲染。
 
-## Bounces
+## 反弹数
 {: #bounces}
-When a ray enters a scene it will bounce a few times before being eliminated.  Limiting the number of bounces allows the render to render much faster. But if the limits are two low, then effects can be missing or go black.  The defaults here are very good for the majority of renderings, but in certain cases may need to be changed.
+当每束光线从光源发出进入场景后，照到物件上会反弹到其他物件上，这里设置的是允许反弹的最大次数，反弹达到这个数量就不再反弹。但如果反弹数设置的太少，会丢失反射效果或场景中有些地方呈现出黑色，默认设置在大多数情况下都有很好的表现，只有个别情况下才需要修改。
 
-#### Reflective
+#### 反射
 {: #reflective-bounces}
-Determines how many levels of reflections are permitted; in other words, how many times a light ray will reflect off objects. A setting of 0 disables reflections. Higher values cause longer rendering times. Increase this number of there is a view that is looking at a reflective surface that bounces off an adjacent reflective and the reflections start to go completely black.
+设置渲染时一条射线反射的最大次数，达到设置的次数反射计算即停止，设置为 0 代表不计算反射，数值越大渲染需要的时间越长。当场景中出现本应该反射出相邻的物件但却呈现出黑色的情况，就需要调高此值。
 
-#### Refractive
+#### 折射
 {: #refractive-bounces}
-Determines how many levels of refractions are permitted; in other words, how many times a light ray will refract off objects. A setting of 0 disables refractions. Higher values cause longer rendering times. Increase this number of there is a view that looks through many layers and ultimately looks black and not look transparent.
+设置渲染时一条射线折射的最大次数，达到设置的次数折射计算即停止，设置为 0 代表不计算折射，数值越大渲染需要的时间越长。场景中本应该折射出的影像呈现出黑色时需要调高此项。
 
-#### Indirect
+#### 间接照明
 {: #indirect-bounces}
-Determines how many levels of indirect light are permitted; in other words, how many times an indirect light ray will bounce off objects. A setting of 0 disables reflections. Higher values cause longer rendering times.
+设置渲染时间光源自物件表面反弹的最大次数，达到设置的次数间接光计算即停止，设置为0代表不计算间接光源，数值越大渲染需要的时间越长。
 
-## Indirect lighting
+## 间接照明
 {: #indirect-settings}
-The indirect lighting settings only effect the rays that bounce off one surface an carry light to another surface.
+间接照明设置只对照射在物件上反弹出来照射在另一个面上的光照有效果。
 
-#### Color Bleed
+#### 溢色
 {: #color-bleed}
-Color bleed controls the amount of color transferred in a indirect bounce of light from one surface to another.  By default this is set to the maximum value to increase dynamics in the rendering.  
+溢色控制光线从一个面反射到另一个面时随之传播的颜色总量。默认设置中溢色为最大值，随反射携带的颜色在最大程度上对渲染产生影响。  
 
-#### Monte Carlo Reflections
+#### 蒙特卡洛反射
 {: #monte-carlo}
-Monte Carlo in indirect lighting controls how Flamingo samples indirect light. When activated, the indirect light will become very noisy in the early passes.  But over all, as the passes progress, the overall effect of Monte Carlo indirect will be a more subtle and potentially more detail indirect effect. Scenes that rely heavily on indirect light may benefit from Mote Carlo indirection reflections.
+蒙特卡洛控制 Flamingo 如何对间接照明进行采样。启用时，渲染初期画面会出现很多噪点，但随着渲染的进行，蒙特卡洛能够展现出间接照明的细节，将间接照明表现的很生动，对间接照明非常依赖的场景，启用蒙特卡洛反射会有不错的效果。
 
-## Miscellaneous
+## 其他
 
-#### Use lights on layers that are off
+#### 使用隐藏的灯光
 {: #uselightsonlayersthatareoff}
-Uses lights on layers that are turned off and hidden lights.
+使用隐藏图层中的灯光和被隐藏的灯光。
 
-### Render constraints
+### 渲染约束
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}

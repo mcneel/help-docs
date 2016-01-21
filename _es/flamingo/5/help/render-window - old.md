@@ -3,7 +3,7 @@
 
 <!-- TODO: This is a combination of the old information here and the Rhino render Windows.  These two still need to be combined. -->
 
-# Renderizar por ventana
+# Ventana de renderizado
 La ventana de renderizado proporciona opciones para el ajuste de exposición y los efectos de postprocesamiento. La ventana principal de renderizado de Rhino forma parte del sistema de renderizado de Rhino.  Para obtener más información sobre los menús y los iconos de renderizado, consulte el tema [Ventanas de renderizado](http://docs.mcneel.com/rhino/5/help/es-es/index.htm#information/renderwindowpostprocess.htm) de la ayuda de Rhino.
 
 ### Menús desplegables

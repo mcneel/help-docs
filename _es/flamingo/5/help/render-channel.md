@@ -1,7 +1,7 @@
 ---
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Channels
+# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Canales
 {: #channel}
 Una función muy útil en Flamingo nXt 5 es la posibilidad de definir luces en uno de los ocho canales. Cada fuente de luz del dibujo, incluidos el sol y el cielo, se puede asignar a un canal. En el momento del renderizado, la luz de cada canal se coloca en su propia capa.  Cuando el renderizado termina, se puede ajustar la intensidad de los canales.  El cambio es en tiempo real sin la necesidad de volver a renderizar.  
 

@@ -1,7 +1,7 @@
 ---
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Selector de color
 El selector de color se usa para muchos grupos y propiedades de materiales. En todos los casos, funciona de un modo similar.
 
 

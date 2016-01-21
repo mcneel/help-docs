@@ -2,7 +2,7 @@
 ---
 
 
-#  ![images/properties.svg](images/properties.svg){:height="75px" width="75px"} Object Properties
+#  ![images/properties.svg](images/properties.svg){:height="75px" width="75px"} Propiedades de objeto
 Las propiedades de objeto de Flamingo nXt sólo afectan al modo en que se renderizan los objetos en Flamingo nXt.
 
 ### ![images/materialtab.png](images/materialtab.png) Origen del material

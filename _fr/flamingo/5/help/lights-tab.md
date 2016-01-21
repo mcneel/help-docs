@@ -26,7 +26,7 @@ Flamingo permet d'insérer différents types de lumières :
 
 > [Marquer des objets en tant que lumières](#tag-objects-as-lights)
 > [Projecteur](#spotlight)
-> [Lumière ponctuelle)](#pointlight)
+> [Lumière ponctuelle](#pointlight)
 > [Lumière rectangulaire](#rectangularlight)
 > [Lumière linéaire](#linearlight)
 

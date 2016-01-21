@@ -1,7 +1,7 @@
 ---
 ---
 
-# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} Sun and Sky
+# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} Sol y cielo
 El [Sol](#sun) y el [Cielo](#sky) están estrechamente relacionados. El Sol puede cambiar el brillo del Cielo en el Modo automático. Si el Sol está activado y el Cielo es un HDRI, el equilibrio de sus intensidades es importante.
 
 ## Sol

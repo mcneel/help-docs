@@ -43,7 +43,7 @@ A modo de ejemplo, la composición de [Mármol](procedural-materials.html#marble
   * [Loseta](procedural-materials.html#tile)
   * [Madera](procedural-materials.html#wood)
 
-##### Para quitar un procedimiento
+##### Para quitar un material algorítmico
  1. En la ventana Procedimientos, haga clic con el botón derecho en el nombre del procedimiento.
  2. En el menú, haga clic en Quitar.
 
