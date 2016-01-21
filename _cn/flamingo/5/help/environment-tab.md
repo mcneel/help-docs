@@ -1,211 +1,211 @@
 ---
+Title: 环境面板
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Environment Panel
+# ![images/environment.svg](images/environment.svg) {{page.title}}
 {: #environment-tab}
-Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
+环境不仅仅是指渲染中看得见的背景，而是指包裹在整个模型周围的环境。场景中的物件上将会反射和折射出环境。 环境领域不是一种对象,您可以 选取、但参考 曲面 的背景效果。环境并不是一个可选取的物件，但它可以影响物件表面的反射以及渲染的背景效果。
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
+环境对背景的可见部分及反射产生影响，关于影响场景照明的效果请参考帮助主题[天光](sun-and-sky.html)。
 
-Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
+Flamingo 自带的环境称之为[默认的 Flamingo 环境](environment.html)，此环境与当前的[照明预设](lighting-tab.html)同步，使用[照明预设](lighting-tab.html)，可以将照明和环境同时设置到相应的场景预设。
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
-##### Where can I find this command?
- 1. ![images/environments.png](images/environments.png)Materials Tab
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
- 1. Command > EnvironmentEditor
+##### 在哪里可以找到这个指令？
+ 1. ![images/environments.png](images/environments.png)环境选项卡
+ 1. ![images/icon-render.png](images/icon-render.png)渲染工具工具列 > ![images/environments.png](images/environments.png) 环境编辑器
+ 1. ![images/menuicon.png](images/menuicon.png)功能表 > 渲染下拉菜单 > 环境编辑器
+ 1. 指令 > EnvironmentEditor
 
-The Environment Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
+环境编辑器由不同的几部分组成，环境类型不同，高级面板中所显示出的内容也不同。
 
-Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
-Materials Panel
+您可以将颜色和贴图从色卡中拖放到环境编辑器、[贴图面板](texturepalette.html)或[环境编辑器](environmenteditor.html)中的其他色卡或控件上。
+环境面板
 
- 1. [Background Type](#type)
- 1. [Settings Bar](#material_list)
- 1. [Environment List](#environment-list)
- 1. [Window Divider](#divider)
- 1. [Environment Properties Section](#properties)
- 1. [Name](#name)
- 1. [Environment Property Panels](#panels)
+ 1. [背景类型](#type)
+ 1. [设置栏](#settings)
+ 1. [环境列表](#environment_list)
+ 1. [窗口折叠器](#divider)
+ 1. [环境属性栏](#properties)
+ 1. [名称](#name)
+ 1. [环境属性面板](#panels)
 
-## [Background Type](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [背景类型](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #type style="clear: both;"}
-Select the type of background for the model.  [Environment](#flamingo-environment) is an all inclusive rendering environment and should be the default setting for Flamingo.  The other three settings present a much more simplified set of settings that reflect older ways of defining backgrounds. For more information see the [Rhinoceros Simple Background](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings) topic
+为模型选取背景类型，[环境](#flamingo-environment)类型包含了其他几个类型，Flamingo 的默认背景类型是“环境”，其他三种类型通过一些简单的选项来定义背景。更多信息请参考 [Rhinoceros 简单背景](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings)主题。
 
-The reset of this help topic covers the Environment type.
+本主题主要探讨“环境”类型。
 
-## [Settings Bar](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [设置栏](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #settings}
-Use this bar to help navigate the Environment list.
+使用此栏浏览环境列表。
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) 后退箭头
+使用此箭头返回当前环境的上一级或返回上一个选择的环境，例如，环境中含有折射或反射层，使用此按钮可以从折射或反射层返回到上一层父环境。
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) 向前箭头
+使用此箭头前往上一个选择的环境，例如，环境中含有折射或反射层，使用此按钮可以从父环境进入刚刚访问过的折射或反射层。
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 当前选取环境的名称
+显示当前环境的名称和层级，例如当前所在折射或反射层的名称显示在 “>” 标记之后，您就可以了解目前位于哪个环境的子层级下。
 
-#### ![images/library_default.png](images/library_default.png) Tools Menu
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
+#### ![images/library_default.png](images/library_default.png) 工具菜单
+显示[工具菜单](#tools-menu)，这是一个扩展菜单，包含一些环境相关的设置和工具。
 
-#### ![images/help_topics.png](images/help_topics.png) Help
+#### ![images/help_topics.png](images/help_topics.png) 说明
 
-## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [环境列表](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #environment_list}
-This lists all the environments contained in the model. One Environment will be selected as the current environment. The current environment is used in the rendering. Yellow corners will show up surrounding the current Environment.
+列表中列出了当前模型中所有的环境，选取一个环境为当前使用的环境，该环境四周将出现黄色的角。
 
-From this list:
+您可以在此列表中进行如下操作：
 
-* Click on an Environment to make it current. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
-* Scroll up and down in the list to see all the environments in the model.
-* Drag and drop an environment from this list onto any viewport to set it current.
-* Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
-* Right-click a thumbnail to display the Environment context menu
-* Right-click the blank area to display the New Environment Context Menu
+* 在环境上点击可以选取环境，被选取环境的属性显示在下方的面板中，更多信息请参考[渲染材质属性](#properties)。
+* 在列表中上下滚动鼠标查看模型中所有的环境。
+* 点击列表最下方的添加按钮![images/add_material.png](images/add_material.png)可以在列表中增加新的环境。
+* 在环境缩略图上点击鼠标右键可以打开快显菜单。
+* 在列表中的空白区域点击鼠标右键也可以打开一个快显菜单，可以在该菜单中新建环境。
 
-###  ![images/add_material.png](images/add_material.png) Add new environment
+###  ![images/add_material.png](images/add_material.png) 添加新环境
 {: #add_environment}
-Scroll down to the bottom of the Environment list to see the add icon.
+滚动到环境列表底部，可以看到新增按钮。
 
-Opens the Render Content [library](libraries.html) of environments.
-The environments in the library act as templates for creating environments in the model.
+弹出环境的渲染内容[材质库](libraries.html)。
+可以通过此环境库中的环境作为模板建立新的材质。
 
-### Environment Context Menu
+### 环境快显菜单
 {: environment_context}
-This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+在列表中点击鼠标右键可以打开快显菜单，该菜单中的相关选项请参考[工具菜单](#tools_menu)。
 
-### New Environment Context Menu
+### 新建环境快显菜单
 {: new_envrionment_context}
-This menus is available by right-clicking on a blank area of the Environment List.
+在环境列表中的空白区域点击鼠标右键可以打开此菜单。
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) 建立新环境
+建立一个新的 Flamingo 环境。
 
-#### ![images/import.png](images/import.png) Import Environment from File...
-Use this command to select a previously exported Environment.
+#### ![images/import.png](images/import.png) 从文件导入环境
+使用此功能可以导入以前导出的环境。
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new environment based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) 粘贴
+使用剪贴板中的内容建立新的环境。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 粘贴为引例
+从剪贴板中的内容创建一个与源环境相关联的引例环境。
 
-#### ![images/grid.png](images/grid.png) Grid
-Displays the previews as a grid of thumbnails.
+#### ![images/grid.png](images/grid.png) 图示
+以缩略图图示显示。
 
-#### ![images/list.png](images/list.png) List
-Displays the previews as a list of thumbnails.
+#### ![images/list.png](images/list.png) 清单
+以缩略图列表显示。
 
-#### ![images/tree.png](images/tree.png) Tree
-Displays the previews as a tree showing nesting.
+#### ![images/tree.png](images/tree.png) 层级列表
+显示为嵌套层级图。
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
-Displays the previews to the left of the controls.
+#### ![images/horizontal.png](images/horizontal.png) 水平布局
+将预览显示在控制选项的左侧。
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
-Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
+#### ![images/showpreview.png](images/showpreview.png) 显示预览面板
+显示当前所选材质的预览，可以设置该预览所使用的几何形状、大小、背景和旋转特性。
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
-Floats the preview image in a re-sizable window.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) 浮动
+将缩略图显示在一个可调大小的浮动窗口中。
 
-#### Thumbnails
+#### 缩略图
 
-##### ![images/small.png](images/small.png) Small
-Sets the thumbnail size to the smallest size.
+##### ![images/small.png](images/small.png) 小
+设置为小缩略图。
 
-##### ![images/medium.png](images/medium.png) Medium
-Sets the thumbnail size to medium size.
+##### ![images/medium.png](images/medium.png) 中
+设置为中缩略图。
 
-##### ![images/large.png](images/large.png) Large
-Sets the thumbnail size to large size.
+##### ![images/large.png](images/large.png) 大
+设置为大缩略图。
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in Grid mode.
-List mode always displays labels.
+##### ![images/showlabels.png](images/showlabels.png) 显示名称
+以图示模式显示时显示缩略图名称标签。
+列表模式将始终显示标签。
 
-##### ![images/showunits.png](images/showunits.png) Show Units
-Displays size in model units.
+##### ![images/showunits.png](images/showunits.png) 显示单位
+以模型单位显示大小。
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
-Automatically updates all previews as settings change.
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 自动更新缩略图
+更改设置时自动更新缩略图。
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) 更新所有缩略图
+自动更新缩略图关闭时，可以通过此选项手动更新。
 
-## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
-{: divider}
-Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
+## [窗口折叠器](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+{: #divider}
+在这个窗口折叠器上按下并拖动鼠标可以改变环境列表的长度， 环境列表长度增大，环境属性栏的长度就会减少。
 
-## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
-{: properties}
+## [环境属性栏](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+{: #properties}
 
-### [Environment Name](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+### [环境名称](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
-This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. **Note:** Environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
+这是环境的名称，将环境导出到材质库时，环境名称也将作为保存文件的名称。 附注: 环境保存于 Rhino 模型当中，不同的环境，在不同的模型中可以具有相同的名称。
 
-### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
+### [环境面板](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
 {: #panels}
-The Environment Properties section is filled with a number of direct Environment panels. Clicking on the grey title bar will rollup the environment panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+环境属性栏中含有几个可卷展的环境面板。 点击标题所在的灰色区域可以折叠或展开环境面板。点击标题可以显示出其中的内容。
 
-Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
+当前选择的环境类型不同，环境面板中的可设置的内容也不同， 环境面板中具体的控制参数信息，请参考 [Flamingo 环境](environment.html)。
 
-## Tools Menu ![images/library_default.png](images/library_default.png)
+## 工具菜单 ![images/library_default.png](images/library_default.png)
 {: tools_menu}
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
+在列表中的缩略图上或列表中的空白区域点击鼠标右键弹出的快显菜单中也可以访问这些设置。
 
-#### ![images/currentenvironment.png](images/currentenvironment.png) Set as Current Environment
-This sets the target environment current.  The current environment will be used in the next rendering.
+#### ![images/currentenvironment.png](images/currentenvironment.png) 设置为目前的环境
+将目标环境设置为目前使用的环境，目前的环境将使用在之后的渲染当中。
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) 建立新环境
+建立一个新的 Flamingo 环境。
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
+在列表中的缩略图上或列表中的空白区域点击鼠标右键弹出的快显菜单中也可以访问这些设置。
 
-#### ![images/import.png](images/import.png) Import Material from File
-Imports environments from a saved Rhino .renv file.
+#### ![images/import.png](images/import.png) 从文件导入环境
+从已保存的 Rhino .renv 文件中导入环境。
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
-Saves a environment to a Rhino .renv file.
+#### ![images/savetofile.png](images/savetofile.png) 保存到文件
+将环境保存为 Rhino .renv 文件。
 
-#### ![images/changetype.png](images/changetype.png) Change Type
-Changes the environment to a different type.
+#### ![images/changetype.png](images/changetype.png) 更改类型
+将环境更改为其他类型。
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
-Changes the environment to a different type.
-The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
+#### ![images/changetype.png](images/changetype.png) 更改类型 (复制类似的设定)
+将环境更改为其他类型。
+取决于[渲染选项](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm)  > [渲染内容发生改变时复制相似的设置](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)是否勾选，如果勾选了此项，变更渲染内容时，相互兼容的设置将会从旧的渲染内容复制到新的渲染内容。
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
-Changes all the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
+#### ![images/reset.png](images/reset.png) 重置为默认值
+将环境设置重置为默认的单一颜色背景(黑色)、反射背景，可见的天空和折射背景。
 
-#### ![images/copy.png](images/copy.png) Copy
-Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
+#### ![images/copy.png](images/copy.png) 复制
+将选取的环境复制到 Windows 剪贴板，然后可以将其粘贴到环境编辑器中生成一个新的环境，也可以直接粘贴到文件夹中作为[材质库](libraries.html)中的文件。
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new environment based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) 粘贴
+使用剪贴板中的内容建立新的环境。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) 粘贴为引例
+从剪贴板中的内容创建一个与源环境相关联的引例环境。
 
-#### ![images/delete.png](images/delete.png) Delete
-Deletes the selected environment.
+#### ![images/delete.png](images/delete.png) 删除
+删除所选的环境。
 
-#### ![images/rename.png](images/rename.png) Rename...
-Renames the selected environment.
+#### ![images/rename.png](images/rename.png) 重命名...
+重命名所选的环境。
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
-Copies the selected environment to a new environment with the same settings.
+#### ![images/duplicate.png](images/duplicate.png) 建立副本
+通过所选环境的设置，建立一个新的环境。
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
-Removes the connection between [instanced](#paste-as-instance) environments.
+#### ![images/removeinstancing.png](images/removeinstancing.png) 移除引例
+移除[引例环境](#paste-as-instance)与源环境之间的连接关系。
 
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
-#### ![images/contentfilter.png](images/contentfilter.png) Content Filter
-Opens the [Content Filters](content_filters.html) dialog box.
+#### ![images/contentfilter.png](images/contentfilter.png) 渲染属性过滤器
+打开[渲染属性过滤器](content_filters.html)对话框。
 
-#### ![images/rename.png](images/rename.png) Properties
-Opens the [Preview Properties](previewproperties.html) dialog box.
+#### ![images/rename.png](images/rename.png) 属性
+打开[预览属性](previewproperties.html)对话框。
