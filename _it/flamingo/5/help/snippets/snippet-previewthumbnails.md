@@ -72,3 +72,4 @@ Salva le proprietà della miniatura come impostazioni predefinite.
 
 ####  **Carica da impostaz. predef** 
 Carica le proprietà della miniatura dalle impostazioni predefinite.
+
