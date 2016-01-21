@@ -37,7 +37,9 @@ Les matériaux avec couleur unie ont uniquement un [nom](material-type-advanced.
 ![images/solidcolors.png](images/3-solidcolor.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 {% include_relative snippets/snippet-material-color-select.md %}
+
 {% include_relative snippets/snippet-material-advanced-editor.md %}
 
 ## Plastique
@@ -47,7 +49,9 @@ Les matériaux plastiques sont légèrement réfléchissants avec un [reflet](ma
 ![images/solidcolors.png](images/3-plastic.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 {% include_relative snippets/snippet-material-color-select.md %}
+
 {% include_relative snippets/snippet-material-advanced-editor.md %} Utilisez l'éditeur avancé pour remplacer les réglages de la [couleur du reflet](material-type-advanced.html#highlight-color), de l'[intensité](material-type-advanced.html#intensity), de [Fresnel](material-type-advanced.html#fresnel) et de [netteté](material-type-advanced.html#sharpness).
 
 ## Métal
@@ -57,7 +61,9 @@ Pour les matériaux métalliques, la couleur du reflet est la même que la [coul
 ![images/solidcolors.png](images/3-metal.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 {% include_relative snippets/snippet-material-color-select.md %}
+
 #### Netteté
 Contrôle la netteté ou le flou de la réflexion. Voir la rubrique sur la [netteté](material-type-advanced.html#sharpness) pour plus d'informations. 
 
@@ -70,7 +76,9 @@ Les matériaux en verre ont une [couleur](material-type-advanced.html#color) et 
 ![images/solidcolors.png](images/3-glass.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 {% include_relative snippets/snippet-material-color-select.md %}
+
 #### Indice de réfraction
 Contrôle l'inclinaison de la lumière lorsqu'elle passe à travers le matériau. Voir la rubrique [indice de réfraction](advanced-material-properties-main.html#index-of-refraction) pour plus d'informations.
 
@@ -83,7 +91,9 @@ Les matériaux brillants présentent une [intensité](material-type-advanced.htm
 ![images/solidcolors.png](images/3-glossy.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 {% include_relative snippets/snippet-material-color-select.md %}
+
 #### Intensité
 Contrôle l'intensité du reflet des lumières sur la surface. Voir la rubrique détaillée sur l'[intensté](material-type-advanced.html#intensity) pour plus d'informations. 
 
@@ -99,7 +109,9 @@ Le matériau ClearFinish simule la peinture des voitures, la porcelaine, la cér
 ![images/solidcolors.png](images/3-clearfinish.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 {% include_relative snippets/snippet-material-color-select.md %}
+
 {% include_relative snippets/snippet-material-advanced-editor.md %} Utilisez l'éditeur avancé pour remplacer les réglages de la [couleur du reflet](material-type-advanced.html#highlight-color), de l'[intensité](material-type-advanced.html#intensity), de [Fresnel](material-type-advanced.html#fresnel) et de [netteté](material-type-advanced.html#sharpness).
 
 ## Texturé de Flamingo 
@@ -109,7 +121,9 @@ Les matériaux texturés utilisent des images pour définir des motifs et des co
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 {% include_relative snippets/snippet-material-color-select.md %}
+
 #### Intensité
 Contrôle l'intensité de la réflexion en miroir de la surface. Voir la rubrique détaillée sur l'[intensté](material-type-advanced.html#intensity) pour plus d'informations.
 
@@ -120,6 +134,7 @@ Contrôle la netteté ou le flou de la réflexion. Voir la rubrique sur la [nett
 Définit le placage d'image et les propriétés du matériau. Cette rubrique contient de nombreuses options. Voir la rubrique détaillée sur les [images](material-type-advanced.html#texture) pour plus d'informations. 
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
+
 {% include_relative snippets/snippet-material-advanced-editor.md %} Utilisez l'éditeur avancé pour remplacer les réglages de ce matériau. 
 
 ## Ensemble de textures
@@ -129,6 +144,7 @@ Les [matériaux avec ensemble de textures](material-type-texture-set.html) sont 
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
+
 #### Largeur et Hauteur
 Contrôle la taille de toutes les textures de l'ensemble. Utilisez ce contrôle pour conserver une cohérence au niveau de la taille et de l'alignement de toutes les images.
 

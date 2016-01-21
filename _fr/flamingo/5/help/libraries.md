@@ -5,13 +5,13 @@ title: Bibliothèques
 # ![images/libraries.svg](images/libraries.svg) {{page.title}}
 La commande Bibliothèques ouvre le panneau Bibliothèques pour gérer les bibliothèques de matériaux, textures et environnements.
 
-Le contenu de rendu peut également être enregistré dans des fichiers pour créer des bibliothèques externes qui peuvent être partagées entre les modèles. Le contenu peut également être déplacé entre différentes sessions de Rhino ou dans un dossier.
+Il est possible d'enregistrer le contenu de rendu dans des fichiers pour créer des bibliothèques externes afin de les partager entre les modèles. Le contenu peut également être déplacé entre différentes sessions de Rhino ou dans un dossier.
 
-Les palettes de couleur peuvent également être déplacées de la même façon.
+De la même façon, il est possible de déplacer les palettes de couleur.
 
 Le panneau des bibliothèques affiche les dossiers de contenu que vous avez définis. Utilisez ce panneau pour déplacer du contenu dans le modèle ou pour enregistrer le contenu du document dans un dossier en dehors du modèle.
 
-Les matériaux sont simplement des fichiers sur votre disque dur. Les dossiers de bibliothèques sont simplement des dossiers de Windows. Vous pouvez copier, coller et déplacer des dossiers comme vous le feriez avec les fichiers et dossier de Windows. 
+Les matériaux sont simplement des fichiers sur votre disque dur. Les dossiers de bibliothèques sont simplement des dossiers de Windows. Vous pouvez copier, coller et déplacer des dossiers comme vous le feriez avec les fichiers et dossiers de Windows. 
 
 Utilisez la barre d'adresse en haut de l'onglet des bibliothèques pour rechercher un dossier sur votre ordinateur. 
 
@@ -42,11 +42,11 @@ Dans le dossier par défaut des bibliothèques, se trouve un dossier Plantes.  U
 
 ## Bibliothèque d'environnements
 {: #environment}
-Les environnements peuvent être enregistrés dans la bibliothèque.  Ceci permet de transférer les paramètre d'un environnement d'un modèle à un autre. Pour plus d'informations, consultez la section [Environnements](environment-tab.html).
+Les environnements peuvent être enregistrés dans la bibliothèque.  Ceci permet de transférer les paramètres d'un environnement d'un modèle à un autre. Pour plus d'informations, consultez la section [Environnements](environment-tab.html).
 
 ## Paramètres de la bibliothèque
 {: #settings}
-Utilisez ![images/options.png](images/options.png)les options des bibliothèques pour changer les valeurs par défaut affichées sous le ![images/library_default.png](images/library_default.png) menu.
+Utilisez ![images/options.png](images/options.png)les options des bibliothèques pour changer les valeurs par défaut affichées sous le menu ![images/library_default.png](images/library_default.png).
 
 ##### Où puis-je trouver cette commande ?
 Les options des bibliothèques sont accessibles de trois façons différentes.
@@ -66,7 +66,7 @@ Par défaut, les [bibliothèques de contenu](libraries.html) sont dans un sous d
 Définit un emplacement personnalisé pour les [bibliothèques](libraries.html).  Modifie l'emplacement par défaut des [bibliothèques de contenu](libraries.html) sur cet ordinateur.
 
 ##### Bouton Parcourir
-Ouvrir le navigateur pour choisir le fichier.
+Ouvre le navigateur pour choisir le fichier.
 
 #### Afficher le dossier Documents
 Le dossier Documents indiqué sera affiché dans le menu du [panneau Bibliothèques](libraries.html).
