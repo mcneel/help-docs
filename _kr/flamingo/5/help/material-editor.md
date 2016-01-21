@@ -57,7 +57,7 @@ title: 재질 편집기 패널
 모델에 포함된 모든 재질 목록입니다. 이 목록으로 다음과 같은 작업이 가능합니다:
 
 * 목록에서 위/아래로 스크롤하여 모델의 모든 재질을 봅니다.
-* 이 목록에서 재질을 마우스로 끌어 [레이어 패널](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)의 레이어에 놓거나 직접 개체에 놓아 재질을 지정합니다. 자세한 정보는 [재질 적용](material_assignment.html)을 참조하세요.
+* 이 목록에서 재질을 마우스로 끌어 [레이어 패널](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#commands/layer.htm)의 레이어에 놓거나 직접 개체에 놓아 재질을 지정합니다. 자세한 정보는 [재질 적용](material_assignment.html)을 참조하세요.
 * 목록의 아래쪽에 있는 새 재질 추가 단추 ![images/add_material.png](images/add_material.png) 를 사용하여 새로운 재질을 추가합니다.
 
 

@@ -51,7 +51,7 @@ Flamingo에는 특별한 환경인 *[기본 Flamingo 환경](environment.html)*�
 현재 환경의 이름과 편집 레벨을 표시합니다. 예를 들어, 반사 또는 굴절 레벨이 있으면 ">" 기호가 표시됩니다. 현재 환경을 보기에 좋은 위치입니다.
 
 #### ![images/library_default.png](images/library_default.png) 도구 메뉴
-[도구 메뉴](#tools_menu)를 표시합니다. 이것은 환경과 관련된 명령, 설정, 유틸리티의 확장된 메뉴입니다.
+[도구 메뉴](#tools-menu)를 표시합니다. 이것은 환경과 관련된 명령, 설정, 유틸리티의 확장된 메뉴입니다.
 
 #### ![images/help_topics.png](images/help_topics.png) 도움말
 
@@ -61,7 +61,7 @@ Flamingo에는 특별한 환경인 *[기본 Flamingo 환경](environment.html)*�
 
 이 목록에서:
 
-* 환경을 클릭하여 현재로 지정합니다. 일단 환경을 선택하면 환경의 속성이 아래의 패널에 표시됩니다. 자세한 정보는 [환경 속성 섹션](#properties)을 참조하세요.
+* 환경을 클릭하여 현재로 지정합니다. 일단 환경을 선택하면 환경의 속성이 아래의 패널에 표시됩니다. 자세한 정보는 [렌더링 재질 속성](#properties)을 참조하세요.
 * 목록에서 위/아래로 스크롤하여 모델의 모든 환경을 봅니다.
 * 목록의 아래쪽에 있는 새 환경 추가 단추 ![images/add_material.png](images/add_material.png) 를 사용하여 새로운 환경을 추가합니다.
 * 썸네일을 오른쪽 클릭하면 환경 관련 메뉴가 표시됩니다.
@@ -154,7 +154,7 @@ Flamingo에는 특별한 환경인 *[기본 Flamingo 환경](environment.html)*�
 환경 패널은 환경의 유형과 현재 활성인 환경의 레벨에 따라 달라집니다. 특정 환경 패널에 대한 자세한 정보는 [Flamingo 환경](environment.html)을 참조하세요.
 
 ## 도구 메뉴 ![images/library_default.png](images/library_default.png)
-{: #tools_menu}
+{: tools_menu}
 이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
 #### ![images/currentenvironment.png](images/currentenvironment.png) 현재 환경으로 설정
