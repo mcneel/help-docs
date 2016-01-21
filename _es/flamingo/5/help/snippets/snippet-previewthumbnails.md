@@ -72,3 +72,4 @@ Guarda las propiedades de miniatura como configuración predeterminada.
 
 ####  **Cargar de predeterminados** 
 Carga las propiedades de miniatura como configuración predeterminada.
+
