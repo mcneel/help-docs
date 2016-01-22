@@ -66,7 +66,7 @@ title: Flamingo 指令列表
 
 #### FlamingoRenderWindowConstraints
 {: #flamingorenderwindowconstraints}
-Sets [render constraints](documentproperties-flamingo.html#render-constraints) when **RenderWindow** is used for rendering.
+在指令行中设置**渲染窗口**中的[渲染约束](documentproperties-flamingo.html#render-constraints)选项。
 
 #### [FlamingoShowControlPanel](welcome.html#control-panel)
 {: #flamingoshowcontrolpanel}

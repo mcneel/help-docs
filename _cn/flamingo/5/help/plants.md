@@ -4,7 +4,7 @@ title: 植物
 
 <!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
 
-# ![images/plants.svg](images/plants.svg){{page.title}}
+# ![images/plants.svg](images/plants.svg) {{page.title}}
 Flamingo nXt 内建植物创建功能，可以在渲染时快速创建复杂的植物模型，这些植物在模型里是以点云表示，所以不会让模型变大。
 
 ![images/plants-001.png](images/plants-001.png)

@@ -1,9 +1,9 @@
 ---
-Title: 材质贴图属性
+title: 材质贴图属性
 ---
 
 
-# ![images/images.svg](images/images.svg){{page.title}}
+# ![images/images.svg](images/images.svg) {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ Title: 材质贴图属性
 {: #mapping-type}
 图片通常都应用在颜色通道上作为贴图，但是图片也可以用于以下用途：
 
->[标准](#standard)
->[法线向量](#normal)
->[置换](#displacement)
+> [标准](#standard)
+> [法线向量](#normal)
+> [置换](#displacement)
 
 ### 标准
 {: standard}
@@ -112,34 +112,34 @@ Title: 材质贴图属性
 {: #advanced}
 Flamingo 通常都是将图片应用在颜色通道上作为贴图，在 Flamingo 高级编辑器中可以使用贴图制作一些其他效果。
 
-#### 基本颜色
+####  基本颜色
 这是默认设置，图片可以作为材质的[颜色](advanced-material-properties-main.html#color)。
 
-#### 反光颜色
+####  反光颜色
 将会使用贴图控制[反射通道](advanced-material-properties-main.html#highlight-color)的颜色。
 
-#### 反光强度
+####  反光强度
 图片各个位置的灰度值将更改材质上对应位置的[反射总量](advanced-material-properties-main.html#intensity)。此项常常用在贴图组中作为反光贴图。
 
-#### 高光锐利度
+####  高光锐利度
 图片各个位置的灰度值将更改材质上对应位置[高光](advanced-material-properties-main.html#intensity)的锐利度与模糊度。
 
 #### 高光形状
 {: #advanced-highlight-shape}
 影响高光的形状。
 
-#### 透明度
+####  透明度
 图片各个位置的灰度值将更改材质上对应位置的[透明度](advanced-material-properties-main.html#intensity)。
 
-#### 半透明
+####  半透明
 图片各个位置的灰度值将更改材质上对应位置的[半透明](advanced-material-properties-transparency.html#translucency)。
 
-#### 衰减
+####  衰减
 图片各个位置的灰度值将更改材质上对应位置的[衰减](advanced-material-properties-transparency.html#attenuation)。
 
 #### 偏移 X/Y
 {: #advanced-x-y-offset}
 材质在 X/Y 方向的偏移量。
 
-#### 旋转
+####  旋转
 设置图像贴图的旋转角度。例如贴图在物件上方向不对，可以使用 90 或 180 度将图像转正。
