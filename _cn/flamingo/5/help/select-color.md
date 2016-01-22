@@ -2,7 +2,7 @@
 title: 颜色选择器 
 ---
 
-# ![images/paint.svg](images/paint.svg){{page.title}}
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 在很多材质及属性设置中都会用到颜色选择器，而且选择颜色的操作步骤都非常类似。
 
 
@@ -13,7 +13,7 @@ title: 颜色选择器
 1. [色卡](#swatch) - 点击色卡可以打开选取颜色对话框。
 1. [选项功能表](#options) - 点击箭头标记可以打开附加的颜色工具。
 
-## 色卡![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## 色卡 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
 {: #swatch}
 点击色卡从“选取颜色”对话框中选取一个颜色。
 
@@ -34,7 +34,7 @@ title: 颜色选择器
 {: #rgb}
 这种记录颜色的方式用于计算机将颜色显示在显示器上。每个像素点的颜色都是将三种颜色值进行混合得到。纯粹的红色不含绿色和蓝色。纯黑色中红色、绿色、蓝色值都为 0，纯白色中红色、绿色、蓝色值都为 255。
 
-## 功能表选项![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## 功能表选项 ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
 {: #options}
 
 #### 调色盘

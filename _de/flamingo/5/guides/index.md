@@ -12,7 +12,7 @@ title: Anleitungsindex
 ## Zugriff auf das Flamingo-Bedienfenster
   * Klicken Sie im Menü **Flamingo nXt 5.0** auf **Bedienfenster anzeigen**.
 
-  ## Das Flamingo-nXt-Bedienfenster
+## Das Flamingo-nXt-Bedienfenster
 Im **Bedienfenster** von **Flamingo nXt** finden Sie mehrere Reiter mit den Funktionen zur Einstellung des Renderings:
 
  *  [Materialien]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)

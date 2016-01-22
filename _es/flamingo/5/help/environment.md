@@ -1,296 +1,296 @@
 ---
 ---
 
-# ![images/environment.svg](images/environment.svg) Flamingo Environment
-There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
+# ![images/environment.svg](images/environment.svg) Entorno de Flamingo
+Rhino dispone de muchos tipos de entornos. Este tema se basa en el Entorno predeterminado de Flamingo.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
+El entorno repercute en la parte visible del fondo y los reflejos.  Para obtener más información sobre los efectos que afectan a la iluminación de la escena, consulte el tema [Cielo](sun-and-sky-tabs.html) de la Ayuda.
 
-Flamingo comes with a special environment called **Default Flamingo Environment**.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
+Flamingo viene con un entorno especial denominado **Entorno predeterminado de Flamingo**.  Este entorno se sincronizará con el actual [Preajuste de iluminación](lighting-tab.html). Al utilizar los [Preajustes de iluminación](lighting-tab.html), tanto la Iluminación como el entorno usarán las opciones predeterminadas de escena apropiadas.
 
-The complete set of property groups in the Flamingo Environment are:
+El conjunto completo de grupos de propiedades del Entorno de Flamingo son:
 
-> [Name](#name)
-> [Flamingo Environment](#environment)
-> [Background Color](#color-backgrounds)
-> [Advanced Background](#advanced-background-reflected-sky)
+> [Nombre](#name)
+> [Entorno de Flamingo](#environment)
+> [Color de fondo](#color-backgrounds)
+> [Fondo avanzado](#advanced-background-reflected-sky)
 
 
-## Environment Name
+## Nombre de entorno
 {: #name}
-This is the name of the environment in the Rhino model.  Environments are stored in the Rhino model. That means that the same name in the library or a different model will not be affected by edits to the environment in the current model. To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
+Es el nombre del entorno del modelo de Rhino.  Los entornos se guardan en el modelo de Rhino. Eso significa un modelo con el mismo nombre en la librería no se verá afectado por los cambios en el entorno en el modelo actual. Para utilizar cualquier entorno en otro modelo, debe exportarse a la [Librería](libraries.html) primero. El nombre del entorno también servirá como nombre de archivo exportado.
 
-## Flamingo Environment
+## Entorno de Flamingo
 {: #environment}
-There are three major effects of environment in a rendering:
+Hay tres efectos principales de entorno en un renderizado:
 
->Visible Background
->[Reflective Background](#advanced-background-reflected-sky)
->[Refractive Background](#advanced-background-refracted-sky)
+>Fondo visible
+>[Fondo reflectante](#advanced-background-reflected-sky)
+>[Fondo refractivo](#advanced-background-refracted-sky)
 
-The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
+El Fondo es visible se encuentra en los paneles de las propiedades generales básicas y es el entorno visible. Los fondos [Reflectante](#advanced-background-reflected-sky) y [Refractivo](#advanced-background-refracted-sky) pueden ser diferentes y se encuentran en la sección Fondo avanzado.
 
-#### Intensity
+#### Intensidad
 {: #background-intensity}
-Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
+Modifica la luminosidad relativa del fondo. El valor de Intensidad se usa para multiplicar los colores del fondo y dan como resultado un valor de iluminación.  El rango de colores oscila entre el 0 y el 256 por canal. La intensidad multiplicará esos valores.  Esto es importante si el fondo se ve muy oscuro en comparación con el modelo renderizado.
 
-#### Background type
+#### Tipo de fondo
 {: #background-type}
-Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be the following types:
+Especifica el esquema de color que rellenará el fondo de la imagen renderizada. Los fondos pueden ser de los siguientes tipos:
 
-> [Sky](#environment-sky)
-> [Solid and gradient color](#color-backgrounds)
-> [Image](#environment-image)
-> [HDR and planar HDR images](#hdr-background)
+> [Cielo](#environment-sky)
+> [Color sólido y gradiente](#color-backgrounds)
+> [Imagen](#environment-image)
+> [Imágenes HDR y HDR plano](#hdr-background)
 
 
-## Sky Background
+## Fondo del cielo
 {: #environment-sky}
-The Sky environment uses the sun and sky settings from the [Lighting](lighting-tab.html) tabs for settings.  It is the default setting for the renderings that see the sky in the renderings.
+El entorno de Cielo utiliza las opciones de sol y cielo de las fichas de [Iluminación](lighting-tab.html) para realizar la configuración.  Es la opción predeterminada de los renderizados incluyen el cielo.
 
 ![images/background-sky-001.png](images/background-sky-001.png)
-*Automatic (left) and HDR image and sun (right).*
+*Cielo automático (izquierda) e imagen HDR y sol (derecha).*
 
-## Color Background
+## Color de fondo
 {: #color-backgrounds}
-Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
+Los controles del color de fondo siempre están presentes. Siempre hay un fondo de color, incluso si el color está completamente oculto por una imagen, HDRI o fondo de cielo.
 
-#### Solid Color
+#### Color sólido
 {: #solid-color}
-A solid color background consists of a single color that fills the background.
+Un fondo de color sólido es un único color que rellena el fondo.
 
 ![images/background-color-001.png](images/background-color-001.png)
-*Solid color background.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Solid Color.
+*Fondo de color sólido.*
+Consulte los [Controles de color](#enviroment-sky-color-controls) para obtener más información sobre el Color sólido.
 
-#### Two-Color Gradient
+#### Gradiente de dos colores
 {: #two-color-gradient}
-Two- and three-color gradient backgrounds only apply to perspective views. Two-color gradient backgrounds interpolate the background color between two selected colors.
+Los fondos de gradiente de dos y tres colores solo se aplican a las vistas perspectivas. Los fondos gradientes de dos colores interpolan el color de fondo entre dos colores seleccionados.
 
 ![images/background-color-002.png](images/background-color-002.png)
-*Two-color gradient background: blue and yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing a two-color gradient.
+*Fondo gradiente de dos colores: azul y amarillo.*
+Consulte los [Controles de color](#enviroment-sky-color-controls) para obtener más información sobre cómo editar un gradiente de dos colores.
 
-#### Three-Color Gradient
+#### Gradiente de tres colores
 {: #three-color-gradient}
-Three-color gradient backgrounds interpolate the background color between three selected colors.
+Las opciones de fondo gradiente de tres colores interpolan el color de fondo entre tres colores seleccionados.
 ![images/background-color-003.png](images/background-color-003.png)
-*Three-color gradient background: blue, white, yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Three-color Gradient.
+*Fondo con gradiente de tres colores: azul, blanco, amarillo.*
+Consulte los [Controles de color](#enviroment-sky-color-controls) para obtener más información sobre cómo editar un gradiente de tres colores.
 
-### Color controls
+### Controles de color
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
+El número de controles disponibles puede cambiar según el tipo de color de fondo seleccionado. Los fondos gradientes tendrán hasta tres selectores de color que pueden incluir un color superior, medio e inferior.
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Swap Colors
-Use this button to rearrange the color in the gradient from top to bottom
+#### Intercambiar colores
+Utilice este botón para reorganizar el color en el gradiente desde la parte superior a la inferior.
 
-#### Gradient mapping control
+#### Control de mapeado gradiente
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
+Los colores de un fondo de color gradiente tienen que estar mapeados en la esfera del entorno. Para ello se usa el mapeador de gradientes. Los controles de mapeado gradiente se activarán solo cuando se seleccione un gradiente de dos o tres colores. Los gradientes solo se mapean en las vistas perspectivas.
 
-#### Angles from views
+#### Ángulos desde vistas
 {: #angle-from-views}
-If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+Si se activa la opción Ángulos de vista, el gradiente de color actual se sincronizará con la vista en perspectiva renderizada actual.  El color superior se mapeará en la parte superior de la vista y el color inferior se mapeará en la parte inferior de la vista.  Todos los demás colores se distribuirán uniformemente entre esos extremos.
 
-#### View Altitude Mapper
+#### Mapeador de altitud de vista
 {: #colorrange}
-If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
+Si la vista actual es una proyección en perspectiva, se pueden controlar los colores de la parte superior e inferior y la extensión del gradiente respecto a la vista.
 
 ![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
-* The control shows the environment in section view.  The 90 degree marker is the Z-up coordinate. The 0 coordinate represents the horizontal ground plane. The -90 degree marker is the Z-down coordinate.
-* The grey cone of vision shows the last coordinates of the current perspective view.
-* The Red arrow represents the location of the top color. At this angle and above will be the top color.
-* The Green double-arrow represents the middle of the gradient blend between the top and bottom colors.  If it is a three color gradient this is also the location of the middle color.
-* The Blue arrow represents the location of the bottom color.  Below this angle there will only be bottom color.
+* El control muestra el entorno en la vista de sección.  El marcador de 90 grados es la coordenada Z-arriba. La coordenada 0 representa el plano de suelo horizontal. El marcador de 90 grados es la coordenada Z-abajo.
+* El cono de visión gris muestra las últimas coordenadas de la vista perspectiva actual.
+* La flecha roja representa la ubicación del color superior. En este ángulo y por encima se encuentra el color superior.
+* La doble flecha de color verde representa la zona media de la mezcla gradiente entre los colores superior e inferior.  Si es un gradiente de tres colores, esta es también la ubicación del color del medio.
+* La flecha azul representa la ubicación del color inferior.  Debajo de este ángulo se encuentra el color inferior.
 
-####  Get angles from View Button
-Use this button to reset the Gradient mapping control to the current perspective view coordinates.
+####  Obtener ángulos desde vista
+Utilice este botón para restablecer el control de mapeado gradiente a las coordenadas de la vista perspectiva actual.
 
-#### Top/Middle/Bottom Angles
-These are angle readouts of the Top, Middle, and Bottom colors in the current gradients.  They correspond to the location of the Red, Green, and Blue arrows in the View altitude mapper.
+#### Ángulos superior/medio/inferior 
+Son los ángulos de los colores Superior, Medio e Inferior de los gradientes actuales.  Se corresponden con la ubicación de las flechas Rojo, Verde y Azul del Mapeador de altitud de vista.
 
-## Image Background
+## Imagen de fondo
 {: #environment-image}
-A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+Una imagen de fondo puede proyectarse sobre el fondo. Muchas veces se utiliza para colocar un modelo en un contexto existente o para definir una vista en algunas ventanas. Para la imagen se pueden utilizar fotografías digitales, obras de arte escaneadas o imágenes creadas con software de dibujo. Para obtener mejores resultados, utilice imágenes de alta resolución para imágenes de fondo. También es una buena idea difuminar y reducir la definición de las imágenes para simular un enfoque natural y una perspectiva aérea. La imagen de fondo se puede mapear al fondo en una proyección plana, cilíndrica o esférica en la escena.
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar images set as a background.*
+*Imagen plana establecida como fondo.*
 
-### Image File
+### Archivo de imagen
 {: #image-properties}
-Set the background image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Defina la imagen de fondo haciendo clic en el botón *(vacío - haga clic aquí para asignar)* y, a continuación, seleccione un bitmap.  Para asignar una imagen diferente, haga clic en el botón de la imagen en miniatura.
 
-### Projection
+### Proyección
 {: #backgroud-image-projection}
-Select one of three image projections from the drop-down control:
+Seleccione una de las tres proyecciones de imagen desde el control desplegable:
 
->[Planar](#planar)
->[Cylindrical](#cylindrical)
->[Spherical](#spherical)
+>[Plana](#planar)
+>[Cilíndrica](#cylindrical)
+>[Esférica](#spherical)
 
-Each projection method has its own set of controls for positioning the image.
+Cada método de proyección tiene sus propias opciones de configuración para posicionar la imagen.
 
-#### Planar Projection
+#### Proyección plana
 {: #planar}
-Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
+Proyecta la imagen en un fondo plano en la vista activa. Las coordenadas de proyección plana siempre son relativas a la vista actual.
 
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### Ángulo desde vista
+La casilla Ángulo desde vista mantiene la imagen sincronizada con la vista activa.  La imagen se estirará para ajustarla a la vista activa.
 
-#### Image Placement Control
-Use the placement control to place the image relative to the current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
-
-![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
-
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### Image Placement Control
-Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
+#### Control de colocación de imagen
+ Utilice el control de colocación para colocar la imagen relativa a la vista activa.  La forma de la vista se muestra como un rectángulo gris oscuro. Arrastre el rectángulo rosa o utilice los controles numéricos para mover o escalar la imagen de fondo relativa a la vista.
 
 ![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
+*Área de vista activa (1), tamaño de imagen y forma (2).*
 
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### Escala X / Escala Y
+Especifica el tamaño de la imagen de fondo en la escala de 0-1.0 de la anchura y la altura de la vista. Por ejemplo, un valor 1.0 es el 100% del tamaño de la vista, un valor 0.5 es el 50% de la anchura de la vista, etc...
 
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### Desfase X / Desfase Y
+Especifica el desfase de la imagen de fondo desde la esquina inferior izquierda de la vista en una escala de 0-1.0 de la anchura y la altura de la vista. Por ejemplo, un valor 0.25 es un 25% de desfase del tamaño de la vista, un valor 0.5 es un 50% de desfase de la anchura de la vista, etc...
 
-#### Cylindrical Projection
+#### Control de colocación de imagen
+Utilice el control de colocación para colocar la imagen en relación con la vista activa. La forma de la vista se muestra como un rectángulo gris oscuro. Arrastre el rectángulo rosa o utilice los controles numéricos para mover o escalar la imagen de fondo relativa a la vista.
+
+![images/background-image-003.png](images/background-image-003.png)
+*Área de vista activa (1), tamaño de imagen y forma (2).*
+
+#### Escala X / Escala Y
+Especifica el tamaño de la imagen de fondo en la escala de 0-1.0 de la anchura y la altura de la vista. Por ejemplo, un valor 1.0 es el 100% del tamaño de la vista, un valor 0.5 es el 50% de la anchura de la vista, etc...
+
+#### Desfase X / Desfase Y
+Especifica el desfase de la imagen de fondo desde la esquina inferior izquierda de la vista en una escala de 0-1.0 de la anchura y la altura de la vista. Por ejemplo, un valor 0.25 es un 25% de desfase del tamaño de la vista, un valor 0.5 es un 50% de desfase de la anchura de la vista, etc...
+
+#### Proyección cilíndrica
 {: #cylindrical}
-Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
+La proyección cilíndrica mapea la imagen en un cilindro imaginario que delimita el modelo. Aunque esta proyección funciona mejor en imágenes cilíndricas verdaderas, también se puede usar eficazmente con panoramas estándar creados a partir de fotografías.
 
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
-Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
+Especifique el tamaño y la posición del mapa de imagen en ángulos de altura y anchura. Utilice las herramientas gráficas y el ratón para posicionar y ajustar el tamaño de la imagen. El cono de visión actual se muestra en el gráfico con una zona sombreada en gris claro.
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### Ángulo desde vista
+La casilla Ángulo desde vista mantiene la imagen sincronizada con la vista activa.  La imagen se estirará para ajustarla a la vista activa.
 
-#### Plan control
-Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
+#### Control de plano
+Especifica la anchura angular del mapa de imagen. Introduzca un ángulo o arrastre las banderas del widget de control para definir la anchura. El área azul indica la extensión de la anchura angular.
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
 
-* The control shows the environment in plan view.
-* The dark grey cone of vision shows the last coordinates in the current perspective view.
-* The blue cone shows the range of angles the image will be visible.
-* The blue arrow represents the left coordinate of the image map.
-* The red dot represents the middle of the background image.
-* The purple arrow represents the right coordinate of the image map.
+* El control muestra el entorno en la vista en planta.
+* El cono de visión oscuro muestra las últimas coordenadas en la vista perspectiva actual.
+* El cono azul muestra el intervalo de ángulos en que la imagen estará visible.
+* La flecha azul representa la coordenada izquierda del mapa de imagen.
+* El punto rojo representa el centro de la imagen de fondo.
+* La flecha morada representa la coordenada derecha del mapa de imagen.
 
-#### Vertical control
+#### Control vertical
 {: .clear-img}
-Specifies the vertical extents of the cylindrical projection. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45 degrees above or below the horizon.
+Especifica la extensión vertical de la proyección cilíndrica. Introduzca un ángulo o arrastre las banderas del widget de control para definir los ángulos superior e inferior. La proyección cilíndrica está limitada a 45 grados por encima o por debajo del horizonte.
 
 ![images/background-cylinder-001.png](images/background-cylinder-001.png){: .float-img-left}
 
-* The control shows the cylinder in section view.
-* The grey cone of vision shows the last coordinates in the current perspective view.
-* The blue arrow represents the bottom border of the image map.
-* The red arrow represents the top border of the image map.
+* El control muestra el cilindro en la vista de sección.
+* El cono de visión gris muestra las últimas coordenadas en la vista perspectiva actual.
+* La flecha azul representa el borde inferior del mapa de imagen.
+* La flecha roja representa el borde superior del mapa de imagen.
 
-#### Rotation
+#### Rotación
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+Especifica la rotación de la imagen. El punto rojo indica el centro del imagen.
 
-#### Width
-Specifies the width of the image in degrees relative the the plan view.
+#### Anchura
+Especifica la anchura de la imagen en grados en relación con la vista en planta.
 
-#### Top/Bottom
-Specifies the vertical angles of the image based on horizontal groundplane direction in the model
+#### Superior/Inferior
+Especifica los ángulos verticales de la imagen en base a la dirección horizontal del plano de suelo en el modelo.
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  Obtener ángulos desde vista
+Define el ángulo de rotación para que coincida con la vista perspectiva actual.  Sirve para restablecer los valores de la proyección.
 
-#### Spherical Projection
+#### Proyección esférica
 {: #spherical}
-Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
+La proyección esférica mapea la imagen en una esfera completa. Normalmente este método produce buenos resultados solo si se usa con una imagen esférica equirectangular. Una imagen equirectangular tiene una relación de aspecto de un rectángulo 2:1.
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### Ángulo desde vista
+La casilla Ángulo desde vista mantiene la imagen sincronizada con la vista activa.  La imagen se estirará para ajustarla a la vista activa.
 
-#### Spherical control
-Specifies the direction of the image map. Enter an angle or drag the flag in the control widget to set the width. The red dot represents the middle of the background image.
+#### Control esférico
+Especifica la dirección del mapa de imagen. Introduzca un ángulo o arrastre la bandera del widget de control para definir la anchura. El punto rojo representa el centro de la imagen de fondo.
 
-#### Rotation
+#### Rotación
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+Especifica la rotación de la imagen. El punto rojo indica el centro del imagen.
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  Obtener ángulos desde vista
+Define el ángulo de rotación para que coincida con la vista perspectiva actual.  Sirve para restablecer los valores de la proyección.
 
-## HDRI Background
+## Fondo HDRi
 {: #hdr-background}
-Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+El uso de una imagen HDR como entorno permite más control de la relación entre la luz del fondo y otras luces de la imagen. Esta opción es especialmente útil para describir un espacio interior con un espacio exterior luminoso que se vea a través de una ventana. Una imagen de entorno HDR tiene más rango de claridad que una imagen bitmap normal y se le puede asignar un canal para poder gestionar el contraste entre el interior y el exterior en un renderizado de [varios canales](lights-tab.html#channel).
 
-#### Image File
+#### Archivo de imagen
 {: #hdri-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Defina la imagen de fondo HDRI haciendo clic en el botón *(vacío - haga clic aquí para asignar)* y, a continuación, seleccione un bitmap.  Para asignar una imagen diferente, haga clic en el botón de la imagen en miniatura.
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Planar HDRI options
+## Opciones de HDRI plano
 {: #planar-hdr-options}
 
-Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
+Las imágenes de alto rango dinámico planas se utilizan muy poco, pero pueden ser muy útiles.  Un HDRI ofrece una amplia gama de posibilidades de color. Un buen uso de los archivos HDRI planos es fuera de las ventanas en los renderizados arquitectónicos donde el fondo puede ser demasiado claro o demasiado oscuro.  Los archivos HDRI planos siempre son mapeados planos.
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
-*Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
+*La imagen de fondo (izquierda) y el HDR plano (derecha) muestran una sutil diferencia de iluminación en el fondo.*
 
-#### Image File
+#### Archivo de imagen
 {: #hdri-planar-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+Defina la imagen de fondo HDRI haciendo clic en el botón *(vacío - haga clic aquí para asignar)* y, a continuación, seleccione un bitmap. Para asignar una imagen diferente, haga clic en el botón de la imagen en miniatura.
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Advanced Background
+## Fondo avanzado
 {: #advanced-background}
-The Advanced Background settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects. This lets the visible environment look one way, while reflections and refractions might be reacting to a different environment.  For instance, in the illustration below the background is black, but the reflected environment is an HDR image of a building interior.
+Las opciones de Fondo avanzado controlan los entornos que no están visibles en el renderizado, pero que se muestran en los reflejos y las refracciones de los objetos. Esto permite que el entorno visible se muestre en una dirección, mientras que los reflejos y las refracciones podrían reaccionar a un entorno diferente.  Por ejemplo, en la imagen el fondo es negro, pero el entorno reflejado es una imagen HDR del interior de un edificio.
 
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*Normal environment (left) and reflected HDR sky environment (right).*
+*Entorno normal (izquierda) y entorno de cielo HDR reflejado (derecha).*
 
-### Reflected
+### Reflejado
 {: #advanced-background-reflected-sky}
-A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
+Un entorno reflejado no es visible en la imagen renderizada, pero se refleja en objetos con brillo.
 
-#### Sky
-Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### Cielo
+Los objetos reflejan el cielo, como se especifica en las opciones de [Iluminación: sol y cielo](sun-and-sky-tabs.html) 
 
-#### Custom
-Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-image), or [HDR](#hdr-background) background.
+#### Personalizada
+Los objetos reflejan un fondo de [Color o gradiente](#color-backgrounds), [Imagen](#environment-image) o [HDR](#hdr-background).
 
-#### Visible Background
-Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
+#### Fondo visible
+Los objetos reflejan el fondo visible, como se especifica en las opciones de [Entorno](environment-tab.html).
 
-### Refracted
+### Refractado
 {: #advanced-background-refracted-sky}
 
-#### Sky
-Objects refract the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### Cielo
+Los objetos refractan el cielo, como se especifica en las opciones de [Iluminación: sol y cielo](sun-and-sky-tabs.html). 
 
-#### Custom
-Objects refract a [Color or gradient](#color-and-gradient-backgrounds), [Image](#image), or [HDR](#hdr-background) background.
+#### Personalizada
+Los objetos refractan un fondo de [Color o gradiente](#color-and-gradient-backgrounds), [Imagen](#image) o [HDRI](#hdr-background).
 
-#### Visible Background
-Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
+#### Fondo visible
+Los objetos refractan el fondo visible, como se especifica en las opciones de [Entorno](environment-tab.html).
 
-#### No Transparent Object Alpha
+#### Objetos alfa no transparentes
 {: #no-transparent-alpha-objects}
-Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
-If images will be pasted into the alpha channel, turn this setting off.
+Impide ver el canal alfa a través de los objetos transparentes y evita la composición de canal alfa a través de objetos transparentes.
+Si las imágenes se van a pegar en el canal alfa, desactive esta opción.

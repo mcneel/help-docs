@@ -1,15 +1,16 @@
 ---
+title: 检查更新
 ---
 
-# Check for Updates
-This is an automated check for the current version of Flamingo NXT 5.0.
+# {{page.title}}
+自动检查是否有当前版本 Flamingo NXT 5.0 的更新。
 
-#### Current Update status
+#### 当前更新状态
 
-#### Last Checked
+#### 最后一次检查
 
-#### Update frequency
+#### 更新频率
 
-### Check now...
+### 立刻检查...
 
-## Troubleshooting Updates
+## 更新检查排疑解难

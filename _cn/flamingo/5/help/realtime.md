@@ -1,10 +1,11 @@
 ---
+title: 实时预览
 ---
 
-# Reatime preview
-Flamingo NXT 5 includes a realtime preview.  This is an experimental viewport to see if a quick preview of the rendered scene is valuable.
+# {{page.title}}
+Flamingo nXt 5 有实时预览功能，可以在实时预览窗口中快速预览渲染场景。
 
-#### To start the Realtime viewport
-1. Go to the Flamingo NXT 5.0 pulldown > Show Realtime Preview
-1. Select a viewport by clicking inside the view.
-3. The Flamingo RT view should display.
+#### 启动实时预览工作视窗
+1. 在 Flamingo nXt 5.0 下拉菜单 > 显示实时预览
+1. 选择一个工作视窗。
+3. 将显示 Flamingo 实时预览。

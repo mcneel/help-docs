@@ -2,6 +2,6 @@
 ---
 
 
-# Progress Form
-This process may take some time. Please be patient.
+# 进度窗口
+需要一些时间完成，请耐心等待。
 

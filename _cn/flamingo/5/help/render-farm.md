@@ -1,5 +1,5 @@
 ---
-Title: 通过渲染农场渲染
+title: 批量渲染
 ---
 
 # {{page.title}}
@@ -28,7 +28,7 @@ Flamingo nXt 的渲染农场可以联合数部计算机的运算能力，合力�
 
 ##### 渲染农场监视器 (nXtFarmMonitor64.exe)
 可以用来查看渲染工作的进度，含有一些简单的管理功能。
-For advanced installations, the nXt Render Farm software lets you work with third-party render managers. The following procedures apply to the Render Farm included with Flamingo nXt. If you are planning to use third-party render farm software, some of these procedures will be different.
+nXt 渲染农场运行使用第三方渲染管理器，下面的步骤适用于 Flamingo nXt 的渲染农场，如果您打算使用第三方软件来管理批量渲染，步骤可能有所不同。
 
 #### 渲染农场工作步骤
 {: #the-farm-process}
@@ -40,7 +40,7 @@ For advanced installations, the nXt Render Farm software lets you work with thir
 
 ## 安装与配置渲染农场
 {: #install}
-The Farmer render client and the Farm monitor are installed with Flamingo on the master Rhino machine.  For other client computers that do not have Rhino and Flamingo nXt, the Farmer client needs to be installed.
+对于安装有 Rhino 和 Flamingo 的主机来说，渲染农场监视器和客户端都已经随 Flamingo 安装好了。对于没有安装 Rhino 和 Flamingo nXtthe 的客户端机器来说，需要单独安装客户端。
 
 ##### 安装渲染农场
 在没有安装 Rhino 和 Flamingo 的计算机上安装渲染农场客户端：

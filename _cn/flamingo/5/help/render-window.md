@@ -2,7 +2,7 @@
 title: 渲染窗口
 ---
 
-# ![images/render.svg](images/render.svg){{page.title}}
+# ![images/render.svg](images/render.svg) {{page.title}}
 渲染窗口中可以调整曝光度与后处理设置， 渲染主窗口是 Rhino 渲染框架的一部分。了解渲染窗口功能表与图标的详情，请查阅[渲染窗口主题](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)。此主题主要论述 Flamingo 具体的渲染过程。
 
 ## 管理正在进行的渲染
@@ -34,11 +34,11 @@ Flamingo nXt 是一个全新的渲染引擎， 使用多队列精炼运算，不
 {: #stop-render}
 您可以通过以下几种方式停止渲染:
 
-![images/close-x.png](images/close-x.png)点击渲染窗口右上角的“X” 按钮立刻停止渲染并关闭渲染窗口，这是要停止渲染快速回到模型进行修改最好的方式。
+![images/close-x.png](images/close-x.png) 点击渲染窗口右上角的“X” 按钮立刻停止渲染并关闭渲染窗口，这是要停止渲染快速回到模型进行修改最好的方式。
 
-![images/stop.png](images/stop.png)点击停止光线跟踪按钮，在本次队列处理完成后停止渲染，这是在保存图像之前停止渲染最好的方式。
+![images/stop.png](images/stop.png) 点击停止光线跟踪按钮，在本次队列处理完成后停止渲染，这是在保存图像之前停止渲染最好的方式。
 
-![images/stop.png](images/stop.png)双击停止光线跟踪按钮，立刻停止渲染并保持渲染窗口的打开状态。
+![images/stop.png](images/stop.png) 双击停止光线跟踪按钮，立刻停止渲染并保持渲染窗口的打开状态。
 
 ### 调整渲染
 {: #adjusting}
@@ -55,7 +55,7 @@ Flamingo nXt 是一个全新的渲染引擎， 使用多队列精炼运算，不
 {: #saving}
 图像可以保存为多种格式以适用于各种不同的用途。通常推荐保存为 JPG 或 PNG 文件，但也有其他的选择。
 
-#### ![images/saveimageas.png](images/saveimageas.png)保存图像
+#### ![images/saveimageas.png](images/saveimageas.png) 保存图像
 图像调整后通常保存为 JPG 或 PNG 图像文件。  
 
 JPG 图像是一种非常高效小尺寸的文件格式，非常适合发布在互联网或通过电子邮件发送，但是高效的背后，牺牲了一些颜色信息。
@@ -81,7 +81,7 @@ PNG 是一种包含了全部颜色信息与 Alpha 通道信息的压缩格式，
 一种高动态范围图像（HDRi）格式，由 Industrial Light and Magic (ILM) 公司连同多种软件一起发布的一种开放的图像格式标准， 依照自由软件许可协议发布。此文件格式支持每通道 16 位浮点值（半精密），包含一位正负值、五位指数以及十位尾数，共可以表示30阶的高动态范围曝光度。请参考[维基百科: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)。
 .exr 格式直接将亮度信息保存为高动态范围格式 （HDR）。不发光的背景（如普通的照片作为背景）保存为这些格式的时候将呈现为黑色。
 
-#### ![images/close-x.png](images/close-x.png)退出
+#### ![images/close-x.png](images/close-x.png) 退出
 关闭渲染窗口。
 
 #### 折叠功能表
@@ -128,7 +128,7 @@ PNG 是一种包含了全部颜色信息与 Alpha 通道信息的压缩格式，
 {: #adjust-image}
 这是 Flamingo 中最重要的控制，就像一台照相机，您可以调整它的曝光度。 是使渲染图像更亮、更暗、增加对比度或增加色彩饱和度的最佳手段。这个调整过程称之为[色调映射](https://en.wikipedia.org/wiki/Tone_mapping)。Flamingo 所工作的亮度范围，已经超出了显示器或打印机能够显示的颜色和亮度。色调映射就是把超出范围的亮度数据转化为可以显示和打印的红绿蓝（RGB）值。此设置也决定图像如何保存。
 
-![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)![images/tonefinals-correction.png](images/tonefinals-correction.png)
+![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
 *左边为默认图像，正确的图像经过了修正：亮度 (0.20), 加亮 (0.16) ,饱和度(1.20)。*
 通过此过程调整图像的亮度和整体颜色之后，就不用再重新进行渲染了。
 
