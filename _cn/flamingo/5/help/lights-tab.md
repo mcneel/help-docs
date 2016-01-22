@@ -53,7 +53,7 @@ Flamingo 支持这些灯光类型:
 
 #### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) 标记物件为灯光
 {: #tag-objects-as-lights}
-任意可渲染的物件(曲面、实体等)都可以标记为光源，并赋予[照明方式](#light-distribution)、[方向](#aim-light)、[强度](#watts)等属性。 tagged as lights may display a preview widget showing direction of the light and its center location.
+任意可渲染的物件(曲面、实体等)都可以标记为光源，并赋予[照明方式](#light-distribution)、[方向](#aim-light)、[强度](#watts)等属性。 标记为灯光的物件会显示出光照方向与中心位置。
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *LED 日间行车灯及大灯都是直接将模型标记为光源*

@@ -1,5 +1,5 @@
 ---
-Title: 赋予材质
+title: 赋予材质
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}

@@ -91,7 +91,7 @@ nXtImage 文件内含三种通道信息，可以在大部分的平面绘图软�
 
 ### 运算
 {: #arithmetic}
-Allows piecing together or overlaying segments of images rendered using the [Render Farm Single Image](automate-rendering.html#single-images) function.
+允许使用这些图层混合将图像混合在一起，或将[批量渲染](automate-rendering.html#single-images)的图像进行混合。
 
 ##### 组合渲染切片：
 

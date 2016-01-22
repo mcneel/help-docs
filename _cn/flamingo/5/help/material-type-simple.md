@@ -1,32 +1,32 @@
 ---
 title: 基本材质属性
 ---
-# ![images/paint.svg](images/paint.svg){{page.title}}
-Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you can change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is needed to get a different look.
+# ![images/paint.svg](images/paint.svg) {{page.title}}
+Flamingo 材质由一系列材质属性分组构成，有一些属性是简易材质类型所共有的。简易材质的设置非常简单，不需要进行复杂的设置就可使材质呈现出不同的效果，对多数简易材质而言，修改颜色就可以让它看起来显得不同。
 
 #### 简易材质类型:
 
->![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[单一颜色](#solid-color)
->![images/newplasticmaterial.png](images/newplasticmaterial.png)[塑胶](#plastic)
->![images/newmetalmaterial.png](images/newmetalmaterial.png)[金属](#metal)
->![images/newglassmaterial.png](images/newglassmaterial.png)[玻璃](#glass)
->![images/newglossymaterial.png](images/newglossymaterial.png)[模糊](#glossy)
->![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
->![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo 贴图](#flamingo-textured)
->![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[贴图组](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[单一颜色](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[塑胶](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[金属](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png)[玻璃](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png)[模糊](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[亮光漆面](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo 贴图](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[贴图组](#texture-set)
 
 任何材质都可以转化为高级材质，高级材质提供了 Flamingo nXt 中所有可编辑的材质特性。 为了在最大程度上控制材质，您可以直接使用高级材质或将现有的材质转化为高级材质。
 
 #### 高级材质包含如下属性组：
 
->[名称](material-type-advanced.html#name)
->[程序材质](material-type-advanced.html#procedures)
->[高级材质属性](material-type-advanced.html#advanced-materials-properties)
->[反射](material-type-advanced.html#reflective-finish-and-highlight)
->[透明属性](material-type-advanced.html#transparency)
->[程序贴图](material-type-advanced.html#bump-patterns)
->[位图贴图](material-type-advanced.html#textures)
->[附注](material-type-advanced.html#notes)
+> [名称](material-type-advanced.html#name)
+> [程序材质](material-type-advanced.html#procedures)
+> [高级材质属性](material-type-advanced.html#advanced-materials-properties)
+> [反射](material-type-advanced.html#reflective-finish-and-highlight)
+> [透明属性](material-type-advanced.html#transparency)
+> [程序贴图](material-type-advanced.html#bump-patterns)
+> [位图贴图](material-type-advanced.html#textures)
+> [附注](material-type-advanced.html#notes)
 
 材质保存于 Rhino 模型当中，相同名称的不同材质可以存在于不同的模型中。
 
@@ -130,7 +130,7 @@ Flamingo materials are defined by a series of property groups. These are a serie
 
 {% include_relative snippets/snippet-material-name.md %}
 #### 宽度与高度
-Controls size of all the textures in the set.  Use this control to keep all the bitmaps sized and aligned together.
+控制设置中所有贴图的大小，使用此项同时调整所有的位图尺寸。
 
 #### 强度
 控制表面镜面反射的强度，请查阅[强度](material-type-advanced.html#intensity)主题以获得更多信息。

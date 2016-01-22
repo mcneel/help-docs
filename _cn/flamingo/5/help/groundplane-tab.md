@@ -1,31 +1,32 @@
 ---
+title: 底平面
 ---
 
-# Ground plane
+# {{page.title}}
 {: #ground-plane}
 
-The ground plane provides an infinite horizontal platform for the image that stretches to the horizon in all directions positioned at a defined elevation. The ground plane renders much faster than using a large planar surface as a base.
+底平面是一个无限延伸的水平面，在渲染中可以处于任何海拔高度位置。在渲染中使用底平面要比用一个非常大的曲面速度快很多。
 
-### Enabled
+### 启用
 {: #groundplane-enabled}
-Turns the ground plane on.
+打开底平面。
 ![images/groundplane-002a.png](images/groundplane-002a.png)
-*Ground plane disabled (left) and enabled (right).*
+*使用 (左) 与不使用 (右) 底平面 *
 
-### Alpha
+### Alpha 通道
 {: #groundplane-alpha}
-Applies a transparent alpha channel to the ground plane so the image can be composited with the cast shadow into another image. See: [Wikipedia article: Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
+渲染时在底平面加入 Alpha 通道（透明通道），透明通道可用于渲染图片的后处理，将渲染的物件、阴影与另一张图片合成，请参考：[维基百科：Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing)。
 ![images/groundplane-004a.png](images/groundplane-004a.png)
- *Ground plane shows shadow, but is otherwise transparent in the image.*
+ *底平面上除了阴影以外的部分都是透明的。*
 
-### Elevation
+### 高度
 {: #groundplane-elevation}
-Specifies the ground plane's height above zero.
+设置底平面在原点之上的高度。 
 ![images/groundplane-005a.png](images/groundplane-005a.png)
-*Ground plane elevation above zero.*
+*底平面的高度在原点之上。*
 
-### Material
+### 材质
 {: #groundplane-material}
-Assigns a [material](simple-material-properties.html) to the ground plane.
+设置底平面使用的[材质](simple-material-properties.html)。
 ![images/groundplane-003a.png](images/groundplane-003a.png)
-*Ground plane with raised elevation and water material.*
+*提高的底平面加上水材质的效果。*

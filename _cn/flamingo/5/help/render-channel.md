@@ -34,7 +34,7 @@ Flamingo nXt 5 中一个非常实用的功能就是可以把灯光设置到八�
 >[日光通道](sun-and-sky-tabs.html#sun-channel)
 >[天光通道](sun-and-sky-tabs.html#sky-channel)
 >[人工照明通道](lights-tab.html#channel)
->[材质眩光](documentproperties-flamingo.html#channel)
+>[材质光晕](documentproperties-flamingo.html#channel)
 
 任意数量的灯光可以使用相同的灯光通道，该通道就可以同时控制多个灯光，调整时该通道中的所有灯光将保持彼此之间的相对亮度关系。
 

@@ -29,7 +29,7 @@ Flamingo 环境设置属性有:
 >[反射的背景](#advanced-background-reflected-sky)
 >[折射的背景](#advanced-background-refracted-sky)
 
-The Visible Background is the basic background color of the scene.  The visible background is in the general properties panel. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
+可见背景是场景中能够被直接看到的基本背景颜色，可见背景在常规属性面板中就可以设置，[反射](#advanced-background-reflected-sky)与[折射](#advanced-background-refracted-sky)的背景可以设置为不同的内容，需要在高级背景栏中设置。
 
 #### 强度
 {: #background-intensity}
@@ -116,7 +116,7 @@ The Visible Background is the basic background color of the scene.  The visible 
 ## 图像背景
 {: #environment-image}
 
-A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A photograph, a scanned artwork, or an image created with an paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+以图片投影作为背景。常常用于将模型放置到一个现成的环境中或将背景呈现为窗外的景色。该图片可以是数码相片，扫描的图画作品或是以绘图软件制作的图片。做为环境背景的图片最好选用高分辨率的图片，将图片稍微做点模糊处理并提高亮度可以模拟真实世界的深度感与辽阔的场景。背景图像可以映射到平面、圆柱或球体上投影到场景中。
 
 ![images/background-image-001.png](images/background-image-001.png)
 *一张作为背景的平面图像*
@@ -129,7 +129,7 @@ A background image is projected onto the background. Many times this is used to 
 {: #backgroud-image-projection}
 从下拉菜单中选取以下三种投影方式
 
->[Planar](#planar)
+>[平面](#planar)
 >[圆柱](#cylindrical)
 >[球体](#spherical)
 

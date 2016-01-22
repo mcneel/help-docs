@@ -2,7 +2,7 @@
 title: 高级材质属性
 ---
 
-# ![images/paint.svg](images/paint.svg){{page.title}}
+# ![images/paint.svg](images/paint.svg) {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingo 既有[简易材质](material-type-simple.html)类型也有高级材质
 
 高级材质设置组有:
 
->[名称](#name)
->[程序材质](#procedures)
->[高级材质属性](#advanced-materials-properties)
->[反射](#reflective-finish-and-highlight)
->[透明属性](#transparency)
->[程序贴图](#bump-patterns)
->[位图贴图](#textures)
->[附注](#notes)
+> [名称](#name)
+> [程序材质](#procedures)
+> [高级材质属性](#advanced-materials-properties)
+> [反射](#reflective-finish-and-highlight)
+> [透明属性](#transparency)
+> [程序贴图](#bump-patterns)
+> [位图贴图](#textures)
+> [附注](#notes)
 
 ## 材质名称
 {: #name}
@@ -79,7 +79,7 @@ Flamingo 既有[简易材质](material-type-simple.html)类型也有高级材质
 
 #### 强度
 {: #intensity}
-Adjusts the strength of the highlight. Lower values tend to make glossy objects that reflect light, but not the surrounding objects. Larger values increase the size and strength of the highlight and reflections.  The highest values will make the material mirror-like, reflecting other objects and the environment in the scene.
+调节高光的强度。设置为较低的值，光滑的物件能够反射出光线，但并不能反射出周围的物件影像，设置为较高的值，能够增加高光的亮度并产生一定的反射效果，设置为最高的值将产生镜面效果，能够反射出周围的其他物件以及周围环境。
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
@@ -227,9 +227,9 @@ Frnsenl的发音近似（fray-NELL），它是以[菲涅耳](http://en.wikipedia
 
 ![images/textures.png](images/textures.png)
 
-### 图像
+### 图片
 {: #images}
-Up to four bitmap images can be used to add detail to a material. Image maps can be used many ways including the surface color and apparent three-dimensional surface quality. Image maps are two-dimensional patterns created using raster-based paint programs, by scanning photographs or other materials. A common method is to use a picture of a real-world material as the materials color. Images can consist of up to four images. Sometimes one image controls the color and another image may control the bump properties of the texture. To control how an image affects a material, go to the [Image Properties](material-image-properties.html) Dialog.
+一个材质最多可以添加四张图片，贴图可以用于很多用途，包括作为曲面的颜色或用于定义曲面其他的材质特性。图像贴图可以由其他图片处理软件得到，或通过扫描仪扫描照片和其他材质得到。一种常用的方法是直接扫描真实世界的材质作为材质颜色。一个材质最多可以添加四张图片，分别用于控制颜色、凹凸属性等，关于贴图如何影响材质，请参考[贴图属性](material-image-properties.html)。
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -239,11 +239,11 @@ Up to four bitmap images can be used to add detail to a material. Image maps can
 {: #bump-patterns}
 凹凸贴图内建了几种以数学运算产生的特殊凹凸效果，不需要使用置换贴图或其他图片就可以快速制造材质上的凹凸纹理，每种凹凸图案都有不同的设置，一种凹凸图案启用后才可以对其选项做调整，并允许同时使用数种凹凸图案。凹凸图案有：
 
->[砂纸](#sandpaper)
->[碎石](#rubble)
->[棱锥](#pyramid)
->[褶皱](#wrinkled)
->[大理石](#marbled)
+> [砂纸](#sandpaper)
+> [碎石](#rubble)
+> [棱锥](#pyramid)
+> [褶皱](#wrinkled)
+> [大理石](#marbled)
 
 像是灰泥、混泥土、泥土表面的纹理非常细微，除非要做非常近距离的渲染以外，通常不值得用扫描或照相的方式制作这类材质的贴图，只要在[基础材质颜色](advanced-material-properties-main.html#color)上套用砂纸凹凸图案即可模拟这类的材质效果。制作这类材质的方法是先将[基础材质颜色](advanced-material-properties-main.html#color)设为该材质的颜色，凹凸图案使用砂纸做为细纹理，使用碎石做为粗纹理。
 
