@@ -1,5 +1,5 @@
-
-
+---
+layout: fullwidth-page
 title: Índice de guías
 ---
 
