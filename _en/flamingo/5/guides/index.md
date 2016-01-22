@@ -3,6 +3,8 @@ layout: fullwidth-page
 title: Guide Index
 ---
 
+<!-- TODO: Links to update: "First Rendering Tutorial" and everything below "Rendering Basics" -->
+
 # Getting Started with Flamingo nXt 5®
 
 ## First tutorials
