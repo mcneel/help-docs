@@ -9,9 +9,9 @@ Les matériaux peuvent être assignés de trois façons. Ces méthodes ont une r
 
  1. [Calques](#bylayer) - Tous les objets se trouvant sur le calque adopteront ce matériau, sauf s'ils sont inclus dans un bloc ou si un matériau leur est assigné spécifiquement. 
  2. [Parent](#byparent) - Cette assignation est utilisée pour les objets dans des blocs. Le matériau des objets dont l'assignation est définie par parent sera déterminé par l'insertion du bloc. 
- 3. [Objets individuels](#byobject) - Les matériaux peuvent être assignés directement un objet, ce qui remplace toute autre assignation de matériau.
+ 3. [Objets individuels](#byobject) - Les matériaux peuvent être assignés directement à un objet, ce qui remplace toute autre assignation de matériau.
 
-Nous recommandons d'assigner les matériaux par calque. L'assignation par calque permet de changer facilement le matériau de tous les objets se trouvant sur un calque. Utiliser l'assignation par objet si vous avez uniquement quelques objets que vous ne voulez pas placer sur des calques séparés.
+Nous recommandons d'assigner les matériaux par calque. L'assignation par calque permet de changer facilement le matériau de tous les objets se trouvant sur un calque. Utilisez l'assignation par objet si vous avez uniquement quelques objets que vous ne voulez pas placer sur des calques séparés.
 
 Les fichiers importés peuvent utiliser ces trois assignations indifféremment. La plupart des fichiers importés utilisent l'assignation par objet.  La conversion du modèle en assignation par calque peut représenter beaucoup de travail mais elle peut être très utile si les matériaux de rendu doivent être modifiés.
 
@@ -47,7 +47,7 @@ Par exemple, un modèle de voiture peut avoir des pneus sur le calque Pneus et d
 ##### Pour assigner un matériau par les propriétés objet
 1. Sélectionnez des objets.
 1. Dans le menu Édition, cliquez sur Propriétés de l'objet ![images/properties.png](images/properties.png) pour modifier l'objet. 
-1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériau ![images/materialtab.png] (images/materialtab.png), sous Assigner par, cliquez sur Par parent. 
+1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériau ![images/materialtab.png] (images/materialtab.png) sous Assigner par, cliquez sur Par parent. 
 
 ## Assigner un matériau à des objets
 {: #byobject}
@@ -58,7 +58,7 @@ Nous recommandons d'assigner les matériaux par calque. N'assignez les matériau
 
 ##### Assigner un matériau par les propriétés objet
 1. Sélectionnez des objets.
-1. Dans le menu Édition, cliquez sur [Propriétés de l'objet![images/properties.png](images/properties.png) pour modifier l'objet.
+1. Dans le menu Édition, cliquez sur Propriétés de l'objet ![images/properties.png](images/properties.png) pour modifier l'objet.
 1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériaux ![images/materialtab.png](images/materialtab.png) sous Assigner par, cliquez sur Par objet puis cliquez sur le matériau dans la liste.
 
 ##### Faire glisser un matériau sur un objet
@@ -68,12 +68,12 @@ Nous recommandons d'assigner les matériaux par calque. N'assignez les matériau
 
 ##### Assigner un matériau aux objets sélectionnés
 1. Sélectionnez des objets.
-1. Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, cliquez avec le bouton de droit sur un matériau dans la palette Matériaux du modèle. 
+1. Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, cliquez avec le bouton de droite sur un matériau dans la palette Matériaux du modèle. 
 1. Dans le menu, cliquez sur Assigner aux objets sélectionnés.
 
 ##### Sélectionner des objets en fonction de leur matériau
 {: #select-objects-with-material-assignment}
-1. Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, cliquez avec le bouton de droit sur un Matériaux dans la palette Matériaux du modèle.
+1. Dans la [liste des matériaux ](material-editor.html#material_list), dans l'onglet Bibliothèque ou l'onglet Éditeur de matériaux, cliquez avec le bouton de droite sur un Matériaux dans la palette Matériaux du modèle.
 1. Dans le menu, cliquez sur Sélectionner les objets possédant ce matériau.
 
 ##### Supprimer un matériau assigné à un objet
