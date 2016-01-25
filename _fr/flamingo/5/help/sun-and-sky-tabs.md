@@ -27,7 +27,7 @@ Les angles solaires devront être indiqués afin de pouvoir calculer la lumière
 
 ### Définir l'azimut et l'altitude
 {: #set-azimuth-and-altitude}
-Utiliser des angles pour définir manuellement la direction du soleil. Active les contrôles de l'[azimut](#azimuth) et de l'[altitude](#altitude).
+Utilise des angles pour définir manuellement la direction du soleil. Active les contrôles de l'[azimut](#azimuth) et de l'[altitude](#altitude).
 
 #### Azimut
 {: #azimuth}
@@ -45,7 +45,7 @@ Utilisez l'angle du soleil pour placer le soleil en fonction de la date, de l'he
 {: #date}
 Définit la date.
 
-#### Temps
+#### Heure
 {: #time}
 Indique l'heure.
 
@@ -121,7 +121,7 @@ Le ciel automatique utilise les paramètre de l'[onglet Soleil](sun-and-sky-tabs
 
 #### Nébulosité
 {: #sky-cloudiness}
-Lorsque la nébulosité est désactivée, le ciel est considéré comme dégagé et des ombres dures sont créées. Plus la nébulosité est élevée, moins il y a de contraste entre la lumière et les ombres. Une nébulosité plus importante créera des ombres plus légères et un effet d'éclairage plus régulier. Le paramètre d'opacité touche de nombreux aspects du calcul de la lumière du jour, y compris la quantité relative de lumière directe et indirecte, le mode de calcul de la lumière indirecte et la couleur de l'arrière-plan si le mode ciel automatique a été sélectionné. La nébulosité varie de 0 (dégagé) à 1 (complètement couvert). La gamme de nébulosité entre 0.35 et 0.50 est très sensible et dynamique. 
+Lorsque la nébulosité est désactivée, le ciel est considéré comme dégagé et des ombres dures sont créées. Plus la nébulosité est élevée, moins il y a de contraste entre la lumière et les ombres. Une nébulosité plus importante créera des ombres plus légères et un effet d'éclairage plus régulier. Le paramètre de nébulosité touche de nombreux aspects du calcul de la lumière du jour, y compris la quantité relative de lumière directe et indirecte, le mode de calcul de la lumière indirecte et la couleur de l'arrière-plan si le mode ciel automatique a été sélectionné. La nébulosité varie de 0 (dégagé) à 1 (complètement couvert). La gamme de nébulosité entre 0.35 et 0.50 est très sensible et dynamique. 
 
 ![images/cloudiness0.png](images/cloudiness0.png)
 *Nébulosité 0 (gauche) et 1 (droite).*
@@ -157,7 +157,7 @@ Modifie la luminosité de la lumière émise par l'image HDR. Ce paramètre n'e
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *Intensité HDR faible et élevée.*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}Dans l'illustration, l'image a été tournée afin que le reflet du soleil apparaisse sur l'objet. Indiquer les degrés de rotation ou déplacez l'indicateur de rotation.
+{% include_relative snippets/snippet-rotatehdrimage.md %}Dans l'illustration, l'image a été tournée afin que le reflet du soleil apparaisse sur l'objet. Indiquez les degrés de rotation ou déplacez l'indicateur de rotation.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *Image tournée de sorte que le soleil apparaisse sur l'objet.*
 
@@ -176,7 +176,7 @@ La saturation de la couleur de la lumière. Étant donné que la lumière d'une 
 Il est possible d'utiliser une couleur ou un dégradé de couleurs pour éclairer la scène. Les couleurs du ciel sont multipliées par la valeur de l'intensité afin de donner aux couleurs une valeur d'éclairage. 
 
 #### Intensité
-La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 256 par canal. L'intensité multipliera ces valeurs.
+La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 255 par canal. L'intensité multipliera ces valeurs.
 
 #### Type de couleur
 Il existe trois façons de contrôler la couleur du ciel. Les contrôles sont similaires à ceux de l'environnement. Voir les contrôles de l'[arrière-plan avec une couleur](environment-tab.html#environment-color-and-gradient-backgrounds) pour plus d'informations. 
@@ -186,7 +186,7 @@ Il existe trois façons de contrôler la couleur du ciel. Les contrôles sont si
 Il est possible d'utiliser une image pour éclairer la scène. Les couleurs de l'image sont multipliées par la valeur de l'intensité afin de donner aux couleurs une valeur d'éclairage.
 
 #### Intensité
-La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 256 par canal. L'intensité multipliera ces valeurs.
+La valeur de l'intensité est utilisée pour multiplier les couleurs du ciel afin d'obtenir une valeur d'éclairage.  Les couleurs peuvent aller de 0 à 255 par canal. L'intensité multipliera ces valeurs.
 
 #### Projection de l'image
 Il existe plusieurs façons de contrôler le placage d'une image sur le ciel. Les contrôles sont similaires à ceux de l'image en arrière-plan.  Voir les contrôles de l'[arrière-plan avec une image](environment-tab.html#environment-image) pour plus d'informations.

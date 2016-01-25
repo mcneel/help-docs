@@ -25,7 +25,7 @@ Cette liste affiche toutes les vues nommées du modèle. Sélectionnez la vue no
 
 ## Résolution de rendu
 {: #resolution}
-La résolution de rendu est un des paramètres les plus importants.  Cette option définit la taille et la résolution de l'image à enregistrer dans le fichier de Rhino.  Le temps de rendu est exponentiellement proportionnelle à la résolution. Il est donc important de manipuler ce paramètre avec précaution. 
+La résolution de rendu est un des paramètres les plus importants.  Cette option définit la taille et la résolution de l'image à enregistrer dans le fichier de Rhino.  Le temps de rendu est exponentiellement proportionnel à la résolution. Il est donc important de manipuler ce paramètre avec précaution. 
 
 #### Pixels totaux
 {: #resolutionimagepixels}
@@ -36,7 +36,7 @@ Utilise la taille de la fenêtre en pixels pour déterminer la taille de l'image
 
 ### Taille de l'image
 {: #resolutionprintedsize}
-La taille de l'image définira la résolution finale à partir de plusieurs variables.  C'est la meilleure option pour obtenir une taille et une résolution exactes. Si la hauteur et la largeur du rendu final ne correspondent pas aux proportions de la vue rendue, la vue peut être tronquée verticalement ou horizontalement. Note : Ces options peuvent donner des rendus de très haute résolution pouvant prendre très longtemps.  Utilise ces contrôles pour des rendus finaux haute résolution.
+La taille de l'image définira la résolution finale à partir de plusieurs variables.  C'est la meilleure option pour obtenir une taille et une résolution exactes. Si la hauteur et la largeur du rendu final ne correspondent pas aux proportions de la vue rendue, la vue peut être tronquée verticalement ou horizontalement. Note : Ces options peuvent donner des rendus de très haute résolution pouvant prendre très longtemps.  Utilisez ces contrôles pour des rendus finaux haute résolution.
 
 Quatre types d'unités peuvent être utilisés :
 
@@ -74,7 +74,7 @@ Hauteur de l'image imprimée en unités actuelle.  Multipliez ce paramètre par 
 #### Affichage
 L'image est rendue en utilisant la résolution de la fenêtre en PPP. Il s'agit de la densité de pixels sur un appareil. Cette valeur est normalement exprimée en [points par pouce (PPP)](https://fr.wikipedia.org/wiki/Point_par_pouce).
 
-#### Personnaliser
+#### Personnalisée
 L'image est rendue avec une résolution personnalisée. Tapez la résolution personnalisée pour la largeur et la hauteur dans la case **Pixels par: **.
 
 #### Imprimante, qualité brouillon
@@ -83,11 +83,11 @@ Définit la résolution sur 100 pixels par pouce ou 4 pixels par mm.
 #### Imprimante, qualité normale
 Définit la résolution sur 150 pixels par pouce ou 6 pixels par mm.
 
-#### Imprimante, haute qualité
+#### Imprimante, qualité élevée
 Définit la résolution sur 300 pixels par pouce ou 12 pixels par mm. Il s'agit d'une résolution assez élevée pour le rendu. Elle fonctionne pour les petits rendus mais pour un grand poster ou des rendus de la taille d'un mur, la résolution globale peut finir très élevée avec ce paramètre. Les résolutions élevées donnent des temps de rendu très longs. 
 
 #### Pixels par
-Lorsque le contrôle de la résolution est sur Personnaliser, utilisez cette case pour définir la résolution par unité sélectionnée. Lorsque vous sélectionnez une résolution prédéfinie, cette valeur indique la résolution actuelle.
+Lorsque le contrôle de la résolution est sur Personnalisée, utilisez cette case pour définir la résolution par unité sélectionnée. Lorsque vous sélectionnez une résolution prédéfinie, cette valeur indique la résolution actuelle.
 
 ## Profondeur de champ
 {: #depthoffieldoption}
@@ -117,15 +117,15 @@ Il est facile de simplement sélectionner un moteur de rendu différent puis de 
 ### Défaut
 L'algorithme par défaut produit une simulation de très haute qualité. Le moteur par défaut est un bon moteur de rendu pour une grande variété de scènes.  Les deux autres moteurs de rendu présentent des atouts importants mais également de grandes faiblesses. Le moteur par défaut est un bon point de départ. 
 
-Il présente un défaut très voyant dans les premières passes. Il s'agit d'ombres durs se superposant. Ces ombres seront adoucies au fur et à mesure de l'avancement du rendu. Le moteur par défaut permet ainsi de donner un résultat plus rapidement mais peut prendre plus de passes pour adoucir réellement toutes les ombres.
+Il présente un défaut très voyant dans les premières passes. Il s'agit d'ombres dures se superposant. Ces ombres seront adoucies au fur et à mesure de l'avancement du rendu. Le moteur par défaut permet ainsi de donner un résultat plus rapidement mais peut prendre plus de passes pour adoucir réellement toutes les ombres.
 
 La différence au niveau de la qualité entre la méthode par défaut et le Path tracer peut être  subtile, en particulier si l'éclairage indirect est activé. La différence de qualité n'est peut-être pas assez importante comparée au temps de traitement en plus.
 
 ### Path tracer
 {: #path-tracer}
-Le Path Tracer commence par afficher une image avec des grains qui est améliorée à chaque passe pour devenir de plus en plus nette. Ce processus est appelé la convergence*. Le Path Tracer peut apporter une meilleure finition pour beaucoup de modèles (avec une configuration simple) mais le calcul est plus complexe et prend donc plus de temps. **Remarque :** Ce moteur peut entraîner l'apparition de points brillants et d'un effet moucheté pendant le processus de rendu. Ces artefacts sont normaux et disparaîtront après quelques passes.
+Le Path Tracer commence par afficher une image avec des grains qui est améliorée à chaque passe pour devenir de plus en plus nette. Ce processus est appelé la *convergence*. Le Path Tracer peut apporter une meilleure finition pour beaucoup de modèles (avec une configuration simple) mais le calcul est plus complexe et prend donc plus de temps. **Remarque :** Ce moteur peut entraîner l'apparition de points brillants et d'un effet moucheté pendant le processus de rendu. Ces défauts sont normaux et disparaîtront après quelques passes.
 
-Vous pouvez calculer certains effets complexes, tels que les caustiques ou la transparence flou  avec plus de précision en utilisant le Path tracer. Les images rendues avec des instances, des plantes et des placages de déplacement peuvent converger plus vite. Le Path Tracer est presque toujours plus facile à configurer que la méthode par défaut. Les paramètres avancés tels que les réflexions, les entrées de lumière du jour et l'éclairage ambiant ne sont pas utilisés lorsque le moteur Path tracer est sélectionné.
+Vous pouvez calculer certains effets complexes, tels que les caustiques ou la transparence floue  avec plus de précision en utilisant le Path tracer. Les images rendues avec des instances, des plantes et des placages de déplacement peuvent converger plus vite. Le Path Tracer est presque toujours plus facile à configurer que la méthode par défaut. Les paramètres avancés tels que les réflexions, les entrées de lumière du jour et l'éclairage ambiant ne sont pas utilisés lorsque le moteur Path tracer est sélectionné.
 
 Les images rendues avec le Path tracer prendront normalement plus de temps à converger que les images rendues avec la méthode par défaut. Les simulations de l'éclairage naturel d'un intérieur, en particulier les scènes dont les fenêtres sont assez petites, prennent beaucoup plus de temps.
 

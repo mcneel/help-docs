@@ -1,5 +1,5 @@
 ---
-title: Rectangle Rendu
+title: Fenêtre de rendu
 ---
 
 # ![images/render.svg](images/render.svg) {{page.title}}

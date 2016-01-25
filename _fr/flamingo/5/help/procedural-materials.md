@@ -16,11 +16,11 @@ Chaque algorithme combine deux sous-matériaux en utilisant une méthode déterm
 > [Bois](#wood)
 
 ##### Pour ajouter un algorithme
-1. Cliquez avec le bouton de droite dans la fenêtre des Algorithmes.
+1. Cliquez avec le bouton de droite dans la fenêtre des algorithmes.
 1. Dans le menu, cliquez sur un type d'algorithme.
 
 ##### Pour supprimer un algorithme
- 1. Dans la fenêtre Algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
+ 1. Dans la fenêtre des algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
  2. Dans le menu, cliquez sur Supprimer.
 
 ## Base
@@ -55,7 +55,7 @@ L'image de droite montre un matériau intérieur blanc et un matériau extérieu
 
 * Entre 0 et 30 degrés à partir du point de vue, vous voyez le blanc.
 * Entre 30 et 60 degrés à partir du point de vue, vous voyez un dégradé passant du blanc au noir.
-* Entre 60 et 90 degrés à partir du point de vue, vous voyez noir.
+* Entre 60 et 90 degrés à partir du point de vue, vous voyez le noir.
 
 ## Mélange
 {: #blend}
@@ -141,7 +141,7 @@ Définit la taille générale de la mosaïque. La largeur et la hauteur peuvent 
 Définit la largeur et la hauteur des carreaux.
 {% include_relative snippets/snippet-lock-widthheight.md %}
 
-#### Joint
+#### Jointure
 Change la taille de la jointure.
 ![images/tilejointsize.png](images/tilejointsize.png)
 
@@ -170,7 +170,7 @@ Décale le matériau par rapport à l'origine du repère général pour chaque c
 {: #wood}
 Le bois est constitué de cylindres concentriques avec une alternance des composants de base et d'anneau. L'algorithme du bois définit comment les composants de base et d'anneau se combinent.
 
-Utiliser cette méthode pour créer des matériaux imitant le bois si les objets ne sont pas vus de près. Si vous avez besoin d'un bois plus détaillé, utilisez un [matériau avec texture](material-type-simple.html#textured) pour le définir. Si votre point de vue n'est pas trop proche du bois, une couleur unie peut être utilisée pour remplacer le bois sans que l'image ne perde de qualité. Le rendu sera alors plus rapide. Un autre avantage du bois est que le grain est correctement dessiné, quel que soit l'angle sous lequel il est vu. L'extrémité du grain se verra sur les extrémités et le grain parallèle sur les côtés de l'objet.
+Utilisez cette méthode pour créer des matériaux imitant le bois si les objets ne sont pas vus de près. Si vous avez besoin d'un bois plus détaillé, utilisez un [matériau avec texture](material-type-simple.html#textured) pour le définir. Si votre point de vue n'est pas trop proche du bois, une couleur unie peut être utilisée pour remplacer le bois sans que l'image ne perde de qualité. Le rendu sera alors plus rapide. Un autre avantage du bois est que le grain est correctement dessiné, quel que soit l'angle sous lequel il est vu. L'extrémité du grain se verra sur les extrémités et le grain parallèle sur les côtés de l'objet.
 ![images/woodmaterials.png](images/woodmaterials.png)
 
 #### Base/Anneau

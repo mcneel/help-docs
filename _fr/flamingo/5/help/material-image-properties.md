@@ -9,11 +9,11 @@ title: Propriétés de l'image du matériau
 ![images/textures.png](images/textures.png)
 ![images/solidcolors.png](images/textureset.png)
 
-Les matériaux peuvent être créés à partir d'images. Scannez des photos ou des objets tels que de la  de la moquette, créez des motifs dans un programme de dessin ou utilisez des images provenant d'autres sources.
+Les matériaux peuvent être créés à partir d'images. Scannez des photos ou des objets tels que de la tapisserie ou de la moquette, créez des motifs dans un programme de dessin ou utilisez des images provenant d'autres sources.
 
 Imaginez que le matériau se prolonge infiniment dans toutes les directions de l'espace. Le matériau ne devient visible que lorsqu'un objet passe à travers. Les motifs se répètent infiniment (mosaïque) dans les quatre directions avec une échelle déterminée.
 
-Les petites images, qui peuvent être accolées sans que la jointure ne soit visible donnent de meilleurs résultats. Si la mosaïque ne se crée pas correctement, utilisez l'option Mirror tiles pour copier l'image par symétrie. Cette méthode permet de s'assurer que les bords coïncident.
+Les petites images, qui peuvent être accolées sans que la jointure ne soit visible donnent de meilleurs résultats. Si la mosaïque ne se crée pas correctement, utilisez l'option Symétrie des carreaux pour copier l'image par symétrie. Cette méthode permet de s'assurer que les bords coïncident.
 
 **Remarque :** Pour qu'une image ne couvre qu'une seule partie d'un objet (étiquette sur une bouteille de vin ou logo sur un produit) utilisez plutôt la fonction [décalcomanie](properties-decal.html).
 
@@ -45,10 +45,10 @@ Définit la taille de la mosaïque en unités du modèle.
 
 ### Type de placage
 {: #mapping-type}
-Les images sont normalement appliquées au canal de couleur. Mais il existe d'autres façons d'utiliser les images. Les images peuvent être définies en tant que :
+Les images sont normalement appliquées au canal de couleur. Mais il existe d'autres façons d'utiliser les images. Les images peuvent être définies en tant que placage :
 
 > [Standard](#standard)
-> [Normale](#normal)
+> [Normal](#normal)
 > [Déplacement](#displacement)
 
 ### Standard
@@ -79,7 +79,7 @@ Les placages normaux fonctionnent comme les placages de relief étant donné qu'
 {: #displacement}
 Le placage d'image déplace le maillage de rendu de la surface à partir des valeurs de couleur de l'image. L'effet produit est un changement de position géométrique de la surface. Le déplacement se fait souvent le long de la normale de la surface. Voir : [Article de Wikipedia : Displacement mapping](https://fr.wikipedia.org/wiki/Displacement_mapping).
 
- ** Remarque :** utilisez le placage de déplacement avec parcimonie pour les petits objets. Le déplacement augmente considérablement le temps de rendu.
+ **Remarque :** utilisez le placage de déplacement avec parcimonie pour les petits objets. Le déplacement augmente considérablement le temps de rendu.
 
 ![images/displacement.png](images/displacement.png)
 
@@ -108,7 +108,7 @@ La taille des facettes du maillage de déplacement. Le déplacement sera plus d�
 
 ![images/facetsize.png](images/facetsize.png)
 
-## Image avancée de Flamingo
+## Texture complexe de Flamingo
 {: #advanced}
 Une image de Flamingo sera normalement appliquée au canal principal de couleur d'un matériau. La boîte de dialogue des options avancées de Flamingo permet de définir d'autres canaux affectés par l'image. Ces canaux sont utilisés pour obtenir des effets très particuliers. 
 
@@ -119,27 +119,27 @@ Il s'agit du paramètre par défaut.  Une image affectera la [couleur](advanced-
 Dans ce cas, c'est la couleur du [canal de réflexion](advanced-material-properties-main.html#highlight-color) définie à partir de la couleur de l'image en ce point, qui est affectée. 
 
 ####  Intensité spéculaire
-Cette option modifiera la [quantité de réflexion](advanced-material-properties-main.html#intensity) calculée à partir de l'échelle de gris de l'image en ce point. Elle est souvent utilisée dans les ensembles de texture en tant que placage spéculaire. 
+Cette option modifie la [quantité de réflexion](advanced-material-properties-main.html#intensity) calculée à partir de l'échelle de gris de l'image en ce point. Elle est souvent utilisée dans les ensembles de texture en tant que placage spéculaire. 
 
 ####  Netteté du reflet
-Cette option modifiera la netteté par rapport au flou du [reflet](advanced-material-properties-main.html#intensity) calculée à partir de l'échelle de gris du placage en ce point. 
+Cette option modifie la netteté par rapport au flou du [reflet](advanced-material-properties-main.html#intensity) calculée à partir de l'échelle de gris du placage en ce point. 
 
 #### Forme du reflet
 {: #advanced-highlight-shape}
 Joue sur la forme du reflet.
 
 ####  Transparence
-Cette option modifiera la quantité de [transparence](advanced-material-properties-transparency.html) du matériau calculée à partir de l'échelle de gris de l'image.
+Cette option modifie la quantité de [transparence](advanced-material-properties-transparency.html) du matériau calculée à partir de l'échelle de gris de l'image.
 
 ####  Translucidité
-Cette option modifiera la quantité de [translucidité](advanced-material-properties-transparency.html#translucency) du matériau calculée à partir de l'échelle de gris de l'image.
+Cette option modifie la quantité de [translucidité](advanced-material-properties-transparency.html#translucency) du matériau calculée à partir de l'échelle de gris de l'image.
 
 ####  Atténuation
-Cette option modifiera la quantité d'[atténuation](advanced-material-properties-transparency.html#attenuation) du matériau calculée à partir de l'échelle de gris de l'image.
+Cette option modifie la quantité d'[atténuation](advanced-material-properties-transparency.html#attenuation) du matériau calculée à partir de l'échelle de gris de l'image.
 
 #### Décalage X/Y
 {: #advanced-x-y-offset}
 Décale le matériau à partir des axes X et Y.
 
 #### Rotation
-Une rotation sera appliquée au placage d'image. Utilisez pour faire pivoter l'image de 90 ou 180 degrés si nécessaire afin de la réorienter. 
+Une rotation est appliquée au placage d'image. Utilisez pour faire pivoter l'image de 90 ou 180 degrés si nécessaire afin de la réorienter. 

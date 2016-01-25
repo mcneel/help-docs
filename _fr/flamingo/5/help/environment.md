@@ -19,17 +19,17 @@ Les propriétés de l'environnement de Flamingo sont divisées en plusieurs grou
 
 ## Nom de l'environnement
 {: #name}
-Cette section indique le nom de l'environnement dans le modèle de Rhino. Les environnements sont enregistrés dans le modèle de Rhino. Ce qui signifie qu'un environnement portant le même nom dans la bibliothèque ou un autre modèle ne sera pas affecté par les modifications réalisées sur l'environnement de ce modèle. Pour utiliser un environnement dans un autre modèle il doit toit d'abord être exporté vers la [bibliothèque](libraries.html). Le nom de l'environnement servira également à définir le nom du fichier exporté. 
+Cette section indique le nom de l'environnement dans le modèle de Rhino. Les environnements sont enregistrés dans le modèle de Rhino. Ce qui signifie qu'un environnement portant le même nom dans la bibliothèque ou un autre modèle ne sera pas affecté par les modifications réalisées sur l'environnement de ce modèle. Pour utiliser un environnement dans un autre modèle il doit tout d'abord être exporté vers la [bibliothèque](libraries.html). Le nom de l'environnement servira également à définir le nom du fichier exporté. 
 
 ## Environnement de Flamingo
 {: #environment}
 L'environnement a trois fonctions dans un rendu :
 
 >Arrière-plan visible
->[Arrière-plan réfléchissant](#advanced-background-reflected-sky)
->[Arrière-plan réfringent](#advanced-background-reflected-sky)
+>[Arrière-plan réfléchi](#advanced-background-reflected-sky)
+>[Arrière-plan réfracté](#advanced-background-reflected-sky)
 
-L'arrière-plan visible est la couleur de base dans l'arrière-plan de la scène. Il est défini dans le panneaux des propriétés générales. Les arrière-plans [réfléchissant](#advanced-background-reflected-sky) et [réfringent](#advanced-background-refracted-sky) peuvent différer et sont disponibles dans la section Arrière-plan avancé.
+L'arrière-plan visible est la couleur de base dans l'arrière-plan de la scène. Il est défini dans le panneaux des propriétés générales. Les arrière-plans [réfléchi](#advanced-background-reflected-sky) et [réfracté](#advanced-background-refracted-sky) peuvent différer et sont disponibles dans la section Arrière-plan avancé.
 
 #### Intensité
 {: #background-intensity}
@@ -46,7 +46,7 @@ Définit le schéma de couleur qui remplira l'arrière-plan de l'image rendue. I
 
 ## Ciel en arrière-plan
 {: #environment-sky}
-L'environnement Ciel utilise les paramètres du soleil et du ciel définis dans l'onglet [Éclairage(lighting-tab.html) .  Il s'agit du paramètre par défaut pour les rendus utilisant le ciel. 
+L'environnement Ciel utilise les paramètres du soleil et du ciel définis dans l'onglet [Éclairage](lighting-tab.html).  Il s'agit du paramètre par défaut pour les rendus utilisant le ciel. 
 
 ![images/background-sky-001.png](images/background-sky-001.png)
 *Automatique (gauche) et image HDR et soleil (droite).*
@@ -111,7 +111,7 @@ Si la fenêtre active est une projection en perspective, vous pouvez contrôler 
 Utilisez ce bouton pour effacer les contrôles de placage du dégradé et utiliser les coordonnées de la vue en perspective actuelle. 
 
 #### Angles supérieur/milieu/inférieur
-Ces valeurs correspondent aux couleurs supérieure, médiane et inférieure du dégradé actuel. Ils correspondent à la position des flèches rouge, verte et bleu dans l'icône de visualisation de l'altitude. 
+Ces valeurs correspondent aux couleurs supérieure, médiane et inférieure du dégradé actuel. Elles correspondent à la position des flèches rouge, verte et bleu dans l'icône de visualisation de l'altitude. 
 
 ## Image en arrière-plan
 {: #environment-image}
@@ -145,7 +145,7 @@ L'image est projetée sur un arrière plan plat dans la vue actuelle. Les coordo
 La case angle à partir de vue permettra de synchroniser l'image avec la vue actuelle. L'image sera alors étirée pour l'adapter à la vue actuelle.
 
 #### Contrôle de positionnement de l'image
-Utilisez le contrôle de positionnement de l'image pour la placer l'image par rapport à la vue actuelle. La forme de la fenêtre apparaît sous forme de rectangle gris foncé. Faites glisser le rectangle rose ou utilisez les options numériques pour déplacer ou changer l'échelle de l'image en arrière-plan par rapport à la vue. 
+Utilisez le contrôle de positionnement de l'image pour placer l'image par rapport à la vue actuelle. La forme de la fenêtre apparaît sous forme de rectangle gris foncé. Faites glisser le rectangle rose ou utilisez les options numériques pour déplacer ou changer l'échelle de l'image en arrière-plan par rapport à la vue. 
 
 ![images/background-image-003.png](images/background-image-003.png)
 *Zone de la fenêtre active (1), taille et forme de l'image (2).*
@@ -157,7 +157,7 @@ Définit la taille de l'image en arrière-plan en appliquant une échelle de 0 �
 Définit le décalage de l'image en arrière-plan à partir du coin inférieur gauche de la fenêtre en appliquant une échelle de 0 à 1 à la largeur et la hauteur de la vue.  Par exemple, une valeur de 0.25 représente 25 % de la taille de la vue, une valeur de 0.5 représente 50 % de la largeur de la vue, etc.
 
 #### Contrôle de positionnement de l'image
-Utilisez le contrôle de positionnement de l'image pour la placer l'image par rapport à la vue actuelle. La forme de la fenêtre apparaît sous forme de rectangle gris foncé. Faites glisser le rectangle rose ou utilisez les options numériques pour déplacer ou changer l'échelle de l'image en arrière-plan par rapport à la vue. 
+Utilisez le contrôle de positionnement de l'image pour placer l'image par rapport à la vue actuelle. La forme de la fenêtre apparaît sous forme de rectangle gris foncé. Faites glisser le rectangle rose ou utilisez les options numériques pour déplacer ou changer l'échelle de l'image en arrière-plan par rapport à la vue. 
 
 ![images/background-image-003.png](images/background-image-003.png)
 *Zone de la fenêtre active (1), taille et forme de l'image (2).*
@@ -285,7 +285,7 @@ Les objets reflètent l'arrière-plan visible tel qu'il est défini dans les  pa
 #### Ciel
 Les objets réfractent le ciel tel qu'il est défini dans les paramètres [Éclairage : Soleil et ciel](sun-and-sky-tabs.html).
 
-#### Personnaliser
+#### Personnalisé
 Les objets réfractent un arrière-plan constitué [d'une couleur unie, d'un dégradé de couleurs](#color-and-gradient-backgrounds), d'une [image](#image) ou d'une image à grande plage dynamique [(HDR)](#hdr-image).
 
 #### Arrière-plan visible

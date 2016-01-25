@@ -18,7 +18,7 @@ Flamingo possède un environnement spécial appelé *[Environnement par défaut 
  1. ![images/menuicon.png](images/menuicon.png)Menus > Rendu > Éditeur d'environnement
  1. Commande > ÉditeurEnvironnement
 
-Le panneau de l'éditeur d'environnement est divisé en plusieurs sections.  En fonction du type de environnement, les panneaux avancés peuvent varier.
+Le panneau de l'éditeur d'environnement est divisé en plusieurs sections.  En fonction du type d'environnement, les panneaux avancés peuvent varier.
 
 Il est possible de faire glisser les couleurs et les textures à partir de la palette et de les déposer sur une autre palette ou sur une option de l'éditeur de matériaux, de la [palette textures](texturepalette.html) ou de [l'éditeur d'environnement](environmenteditor.html).
 Panneau Environnement
@@ -33,7 +33,7 @@ Panneau Environnement
 
 ## [Type d'arrière-plan](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #type style="clear: both;"}
-Sélectionnez le type d'arrière-plan pour le modèle.  L'[environnement](#flamingo-environment) est un environnement de rendu tout compris et devrait être le paramètre par défaut pour Flamingo.  Les trois aux paramètres présentent un ensemble de paramètres beaucoup plus simple qui correspond à l'ancien mode de définition des arrière-plans. Pour plus d'informations, consultez la rubrique [arrière-plan simple de Rhinoceros](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings).
+Sélectionnez le type d'arrière-plan pour le modèle.  L'[environnement](#flamingo-environment) est un environnement de rendu tout compris et devrait être le paramètre par défaut pour Flamingo.  Les trois aux paramètres présentent un ensemble de paramètres beaucoup plus simple qui correspond à l'ancien mode de définition des arrière-plans. Pour plus d'informations, consultez la rubrique [arrière-plan simple de Rhinoceros](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/environmenteditor.htm#Basic_settings).
 
 Le reste de cette rubrique couvre le type d'environnement.
 
@@ -57,7 +57,7 @@ Affiche le [menu Outils](#tools-menu).    Ce menu contient de nombreuses command
 
 ## [Liste des environnements](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #environment_list}
-Affiche une liste de tous environnements disponibles dans le modèle. Un environnement sera sélectionné comme environnement actuel. L'environnement actuel est utilisé pour le rendu. Des petits signes jaunes sont affichés dans les coins de l'environnement actuel. 
+Affiche une liste de tous les environnements disponibles dans le modèle. Un environnement sera sélectionné comme environnement actuel. L'environnement actuel est utilisé pour le rendu. Des petits signes jaunes sont affichés dans les coins de l'environnement actuel. 
 
 À partir de cette liste :
 
@@ -123,11 +123,11 @@ Définit la taille moyenne de miniature.
 ##### ![images/large.png](images/large.png) Grand
 Définit la plus grande taille de miniature.
 
-##### ![images/showlabels.png](images/showlabels.png) Afficher les étiquettes
+##### ![images/showlabels.png](images/showlabels.png) Montrer les étiquettes
 Affiche les étiquettes du nom de la miniature en mode Grille.
 Le mode Liste affiche toujours les étiquettes.
 
-##### ![images/showunits.png](images/showunits.png) Afficher les unités
+##### ![images/showunits.png](images/showunits.png) Montrer les unités
 Affiche la taille dans les unités du modèle.
 
 ##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Actualisation automatique de l'aperçu
@@ -171,14 +171,14 @@ Importe un environnement à partir d'un fichier .renv de Rhino.
 #### ![images/savetofile.png](images/savetofile.png) Enregistrer dans un fichier
 Enregistre un fichier environnement .renv de Rhino.
 
-#### ![images/changetype.png](images/changetype.png) Modifier le type
+#### ![images/changetype.png](images/changetype.png) Changer le type
 Change le type d'un environnement.
 
-#### ![images/changetype.png](images/changetype.png) Modifier le type (Copier les paramètres)
+#### ![images/changetype.png](images/changetype.png) Changer le type (Copier les paramètres)
 Change le type d'un environnement.
 Le comportement par défaut dépend du statut actuel de la case [Options de rendu](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copier les paramètres similaires lorsque le type de contenu est modifié](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed). Si cette case est cochée, les paramètres compatibles de l'ancien contenu seront copiés dans le nouveau.
 
-#### ![images/reset.png](images/reset.png) Valeurs par défaut
+#### ![images/reset.png](images/reset.png) Rétablir les valeurs par défaut
 Redéfinit tous les paramètres par défaut de l'environnement (arrière-plan uni noir, arrière-plan réfléchi, ciel et arrière-plan réfracté visible).
 
 #### ![images/copy.png](images/copy.png) Copier
@@ -187,7 +187,7 @@ Copie l'environnement sélectionné dans le presse-papiers de Windows. Le presse
 #### ![images/paste.png](images/paste.png) Coller
 Crée un nouvel environnement à partir du contenu du presse-papiers.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Coller comme occurrence
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Coller comme instance
 Crée un nouvel environnement à partir du contenu du presse-papiers qui est lié à l'original par instanciation.
 
 #### ![images/delete.png](images/delete.png) Supprimer
