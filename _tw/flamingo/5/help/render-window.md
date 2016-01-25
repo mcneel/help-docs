@@ -1,223 +1,227 @@
 ---
+title: 彩現視窗
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Render Window
-The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
+# ![images/render.svg](images/render.svg) {{page.title}}
+彩現視窗有可以調整曝光度與後處理效果的設定，彩現視窗的大部分功能來自 Rhino，關於功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)說明主題，本說明主題只涉及 Flamingo 提供的功能。
 
-## Managing an Active Rendering
-Once the rendering starts, the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts ups and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. When a rendering starts, Flamingo first looks for any changes to its internal model then starts an initialization process.  This process can take a few seconds or a few minutes.  This is the time the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
+## 管理進行中的彩現
+彩現開始後會開啟[彩現視窗](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)，Flamingo 使用多層次彩現，彩現影像會持續更新。Flamingo 彩現一開始的初始化階段可能需要幾秒鐘或幾分鐘，此階段的工作是匯入模型與收集材質貼圖使用的圖片，並建立彩現影像緩衝區。彩現模型一般有幾個步驟：
 
->[Multiple pass rendering](#multi-pass)
->[Stopping a rendering](#stop-render)
->[Adjusting the Image](#adjusting)
->[Saving the Image](#saving)
+>[多層次彩現](#multi-pass)
+>[停止彩現](#stop-render)
+>[調整影像](#adjusting)
+>[儲存圖片](#saving)
 
-### Multiple Pass Rendering
+### 多層次彩現
 {: #multi-pass}
-Flamingo nXt is a completely new rendering engine. Using a method of multi-pass refinement allows more advanced rendering effects without the overhead of a complicated interface. In the first few rendering passes, there will be unusual artifacts.  For instance you will see shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each rendering pass.  Use the [Flamingo Tab](#flamingo-tab) to monitor the rendering process.
+Flamingo nXt 使用全新的彩現引擎，使用多層次細化得到進階彩現效果，同時簡化操作界面的複雜度。彩現一開始的幾個處理數彩現影像可能會有些瑕疵，例如：邊緣銳利相互重疊的許多陰影。這些陰影隨著處理數增加逐漸混合變細緻。有許多其它彩現效果也會隨著處理數增加而改善。請 [Flamingo 標籤](#flamingo-tab) to track the rendering process.
 
-In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. You can let images that look good continue to improve. But, if you want to change or save something, you can also stop an image at any time.
+除非您設定時間、處理數限制或是在彩現品質達到要求時手動停止，否則 Flamingo nXt 會持續細化彩現影像，永不停止。
 
 ![images/passes-wide-1.gif](images/passes-wide-1.gif)
 
-Some of the effects that improve on each pass are:
+每個處理數改善的項目：
 
->Lighting (such as global illumination if enabled)
->Soft Shadows
->Reflections (blurry)
->Refraction
->Anti-aliasing
->Depth of field
+>照明
+>柔化陰影
+>模糊反射
+>折射
+>反鋸齒
+>景深
 
-### Stopping a rendering
+### 停止彩現
 {: #stop-render}
-You can stop the rendering in a number of ways:
+停止彩現有許多方法：
 
-![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
+![images/close-x.png](images/close-x.png) 按彩現視窗右上角的 "X" 可立即停止彩現並關閉彩現視窗，讓您可以快速回到 Rhino 視窗修改模型或彩現設定。
 
-![images/stop.png](images/stop.png) Click the Stop Raytrace button to stop the rendering at the end of the current pass. This is the best option before saving and image.
+![images/stop.png](images/stop.png) 按**停止彩現**按鈕，在目前的處理數完成後停止彩現，如果您想儲存目前的彩現影像可使用此方法。
 
 ![images/stop.png](images/stop.png) Double-click the Stop Raytrace to stop the rendering immediately and leave the render window open.
 
-### Adjusting a rendering
+### 調整影像
 {: #adjusting}
-After stopping and image, use the controls in the [Flamingo Tab](#flamingo-tab) to quickly adjust the image and lighting. This is a very important set of tools when producing high end images.
+彩現停止後可用 [Flamingo 標籤](#flamingo-tab)頁面的設定調整彩現影像的亮度，這些影像調整設定是製作高品質彩現的重要功能。
 
-Controls used for images adjustment include:
+調整彩現影像的功能有：
 
->[Adjust Image](#adjust-image)
->[Channels](#channels)
->[Post Effects](#post-process-effects)
+>[調整影像](#adjust-image)
+>[通道](#channels)
+>[後處理效果](#post-process-effects)
 
 
-### Saving Images
+### 儲存圖片
 {: #saving}
-There are many ways to save an image depending on the plans for the image.  Normally saving as a JPG or PNG image file is the recommended process for most images.  But there are other options.
+儲存彩現影像有許多方法，使用何種方法因用途而異，通常建議儲存為 JPG 或 PNG 格式，但也可以儲存為其它圖片格式。
 
-#### ![images/saveimageas.png](images/saveimageas.png) Save Image
-Saving a JPG or PNG image file is the normal process after adjusting the image.  
+#### ![images/saveimageas.png](images/saveimageas.png) 儲存圖片
+彩現影像調整完成後通常是儲存為 JPG 或 PNG 格式方便後續的影像處理作業。  
 
-A JPG image is a very efficient, small file format.  This is very good for images that will be placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
+JPG 圖片檔案小，適合做為網頁圖片或以電子郵件寄送，為了使檔案變小，它使用破壞性壓縮，可能降低彩現影像的品質。
 
-PNG is a compressed format that contains 100% of the color information and alpha channel information. This is a good format for high quality images.
+PNG 圖片使用非破壞性壓縮，可完整保留彩現影像的所有像素、顏色資訊，並有 Alpha 通道，是高品質圖片常用的格式。
 
-#### Save with background alpha channel
+#### 儲存 (含背景 Alpha 通道)
 {: #save-with-alpha-channel}
-Saves image as a 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  There is a checkbox on the [Flamingo Tab](#flamingo-tab) and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+儲存含有 Alpha 通道的 32 位元 PNG、TIF、BMP 圖片格式，方便應用於影像合成，彩現影像背景的部分在 Alpha 通道裡為黑色。在 [Flamingo 標籤](#flamingo-tab)頁面與[另存新當](#saving)對話框都有儲存 Alpha 通道的選項。
 
-#### Export to native Flamingo nXt file (.nXtImage)
+#### 輸出 Flamingo nXt 的原生檔案 (.nXtImage)
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image resaved to another bitmap format.
-The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
+儲存未壓縮，含照明、[Alpha](environment-tab.html#alpha)、距離、材質通道的 nXtImage 檔案格式，可以在 Flamingo nXt 的[彩現影像編輯器](image-editor.html)開啟調整[曝光度](#adjust-image)與加入數種[後處理效果](#effects)，再儲存為一般的圖片格式。
 
-#### Export to HDR file
+.nXtImage 格式是不同平台的 nXt 彩現器的原生檔案，此為建議使用的檔案格式，因為它可以保留最多的彩現資訊，可以使用 [nXt 彩現影像編輯器](image-editor.html)做後續調整、加入特殊效果、輸出數種常見的圖片格式與 [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) 格式。
+
+#### 輸出 HDR 檔案
 {: #export-to-hdr}
-Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
+輸出含高動態範圍 (High Dynamic Range) 亮度資訊的圖片格式。
 
-#### Export to EXR file
+#### 輸出 EXR 檔案
 {: #export-to-exr}
-A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
-The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
+EXR 是由 Industrial Light and Magic (ILM) 制定的一種開放的高動態範圍圖片格式標準，這種格式支援每個通道 16 位元的浮點數值 (半精度)，以一個位元表示正負號，五個位元表示指數，十個位元表示尾數，共可以表示三十階的高動態範圍曝光度，進一步的資訊請參考：[Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)。
+EXR 是可儲存高動態範圍 (High Dynamic Range) 亮度資訊的圖片格式，以無亮度資訊背景 (例如：一般照片) 彩現的影像儲存為這類格式時背景會變為黑色。
 
-#### ![images/close-x.png](images/close-x.png) Exit
-Closes the render window.
+#### ![images/close-x.png](images/close-x.png) 結束
+關閉彩現視窗。
 
-#### Pulldown Menus
-For details on the render window menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).
+#### 功能表
+功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)說明主題
 
-## Flamingo Tab
+## Flamingo 標籤頁面
 {: #flamingo-tab}
-The Flamingo Tab in the Render window adds many controls specific to the Flamingo render engine.  Understanding these controls is key to managing the active Flamigno renderings.
+Render 視窗的 **Flamingo 標籤頁面**有許多 Flamingo 彩現引擎特有的設定，了解這些設定對建立高品質彩現影像有很大的幫助。
 
-#### Save with alpha channel
-Saves 32-bit PNG, TIF, and BMP images including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.  Use this checkbox and the [Save dialog](#saving) box to successfully save the alpha channel. The PNG file format is the proper format to use to capture the alpha information.
+#### 儲存 (含 Alpha 通道)
+儲存含有 Alpha 通道的 32 位元 PNG、TIF、BMP 圖片格式，方便應用於影像合成，彩現影像中背景的部分在 Alpha 通道裡為黑色。此核取方塊與[另存新檔](#saving)對話框的**儲存 Alpha 通道**都勾選時才能將 Alpha 通道儲存到圖片裡。
 
-## Progress
+## 進度
 {: #progress}
-Use the Progress information to check the status and progress of a Flamingo rendering.
+進度資訊可用來檢視 Flamingo 彩現的狀態。
 
-#### Action
-Shows the current status of the rendering as is works through the model.
+#### 動作
+顯示目前的彩現狀態。
 
-Status messages include:
+狀態訊息有：
 
-* Rendering Started - Once a rendering begins, there is some setup work that includes converting the model and setting up memory for the rendering.
-* Action Done - Once the Stop button has been hit and the render engine finishes a pass, then the stop action is done.
-* Pass Complete - This message posts each time a pass is complete.
-* Resume Rendering - In cases that a resume is possible this is displayed.
-* Updating - The render engine is in the middle of a pass, currently updating the rendering.
+* 彩現已開始 - 彩現一開始有些準備工作要進行，例如：轉換模型與設定彩現用的記憶體。
+* 作業已完成 - 按下**停止彩現**、達到**時間**或**處理數**限制彩現完全停止。
+* 處理數完成 - 完成一個處理數。
+* Resume Rendering - If a resume is possible, this displays.
+* 正在更新 - 一個處理數完成之後下一個處理數開始之前。
 
-#### Pass
-This is the current pass Flamingo is rendering.  Flamingo is a multi-pass render engine.  Each pass will refine add lighting effects and refine the complex rendering effects.
+#### 處理數
+顯示目前正在彩現的處理數，Flamingo 是多層次彩現引擎，每個處理數都會細化照明、陰影與複雜的彩現效果。
 
-#### Scan line
-A pass progresses along a stretch of horizontal pixels.  Each row of pixels is a scanline.  This reports the current scanline returned from the render engine.
+#### 掃描線
+目前正在處理的掃描線，掃描線是水平方向像素組成的直線，一個處理數代表彩現影像的掃描線數目。
 
-#### Elapsed time
-This is the time that has passed from the beginning of the rendering.  This does not include the setup time for the rendering.
+#### 已使用時間
+彩現開始的準備工作完成後算起到目前經過的時間。
 
-#### Rays / second
-The number of rays resolved into the scene per second.
+#### 射線/秒
+每秒鐘解算射入場景的射線數目。
 
-#### Pixels / second
-The number of pixels resolved in the image per second.
+#### 像素/秒
+每秒鐘解算的像素數目。
 
-## Adjust Image
+## 調整影像
 {: #adjust-image}
-This is one of the most important controls in Flamingo. Just like a camera, you can adjust image exposure.  This is the best way to make renderings brighter, darker, add contrast, or increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness than can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
+Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整影像的曝光度。如果您想將彩現影像變亮、變暗、修改對比或色彩飽和度，都可以在這裡調整，這此功能稱為[色調對應](https://en.wikipedia.org/wiki/Tone_mapping)。Flamingo 可計算的亮度範圍遠大於電腦螢幕可顯示的範圍，色調對應是 Flamingo 將亮度資訊轉換為螢幕色彩顯示範圍 (RGB) 的方法。
 
 ![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
-*The default image on the left. The corrected image after applying brightness (0.20), burn (0.16) and saturation (1.20).*
-Use this process to quickly adjust the brightness of an image and overall color of an image without needing to re-render.
+*原來的彩現影像 (左)、套用亮度 (0.20)、加亮 (0.16)、飽和度 (1.2) 後的結果(右)。*
+彩現影像的亮度或顏色不理想時可用這裡的功能快速調整，不必重新彩現。
 
-### Brightness
+### 亮度
 {: #brightness}
-Adjusts the overall brightness of the image. For example, if a white surface in the model is rendering gray, increase the brightness until the surface appears white. Or, if the exterior scene seems overexposed, decrease the brightness until the scene appears more correct.
+調整中間色 (Gamma 值)，可以用來平衡彩現影像明暗區域的比例，當彩現影像裡應該是白色的部分顯示為灰色時可以適度調高這個數值。
 
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*Brightness at default (left) and increased.*
+*亮度值調高前 (左) 後 (右) 的差別。*
 
 {% include_relative snippets/snippet-brightness.md %}
 
-### Burn
+### 加亮
 {: #burn}
-Adjusts the image white point. This is the brightest white color in the image. A little burn can add drama, life, and sharpness to a rendering by adding more areas of white to contrast with the dark areas.
-See [Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point).
+調整高亮度區域的範圍，這個數值對高亮度區域的影響大於低亮度區域，可以用來製造過度曝光的效果。
+請參考：[Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point)。
 
 ![images/burn-001.png](images/burn-001.png)
-*Burn at the default setting (left) and increased.*
+*加亮值調高前 (左) 後 (右) 的差別。*
 
-### Saturation
+### 飽和度
 {: #saturation}
-Saturation controls the amount of color in the image. A saturation of 0.00 will result in a grayscale image. Values above 1.00 can make colors richer.
+用來控制彩現影像色彩的鮮豔度，飽和度為 0 時會變為灰階影像，飽和度在 1 以上時，數值越大色彩越鮮豔，飽和度數值的最大限制為 2。
 
 ![images/saturationdefault.png](images/saturationdefault.png)
-*Saturation at the default (left) and increased by about 3 (right).*
+*飽和度調高前 (左) 後 (右) 的差別。*
 
-### Histogram
+### 色階分布圖
 {: #histogram}
-Graphically displays the distribution of the light and dark areas in the image after the Adjust images controls have been applied. The left edge of the chart are the darks to black.  The right edge shows the amount of light colors to white. This is a great way to determine the important parts of the image. A good goal is to adjust the image to have a full range of values in the image.  For instance if the histogram stops before getting to the far right of the graph,  then use more brightness or burn will stretch the values toward the right or bright edge. See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
+以圖形顯示彩現影像所有像素的明暗度分布，中央到左側邊緣代表偏暗到黑色，中央到右側邊緣代表偏亮到白色。通常我們必需調整彩現影像，使像素分布在左至右的整個範圍。例如：當彩現影像的像素分布未達右側邊緣時，請調高**亮度**或**加亮**數值，使像素分布延展到右側邊緣，請參考：[Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram)。網路上也有許多關於數位影像如何利用色階分布圖的文章可參考。
+<!--'Use more brightness or burn will stretch the values' - This needs rewritten.-->
 
 ![images/histogram.png](images/histogram.png)
-*An example histogram with very few dark areas and a large range of light colors.  Although there a few completely white pixels because the graph falls off before the right edge.*
+*此為色階分布圖的例子，此圖形代表一張圖片大部分像素的顏色屬中間偏亮，偏暗至黑色的像素非常少，幾乎無純白色的像素 (右側邊緣)。*
+<!-- TODO: 'Although there a few completely white pixels because the graph falls off before the right edge.' incomplete sentence -->
 
-#### Histogram options
-Right-click the histogram image for the following options.  This options simply change the way the histogram displays the information. They do not actually change the values in the histogram.
+#### 色階分布圖選項
+在色階分布圖上按滑鼠右鍵有一些選項可設定色階分布的特性，修改這些選項不會影響彩現影像。
 
-* **Fit** - This fits the highest verticals into the chart.
-* **Median** - This fits the median value in the vertical. This is a good way to see the details at the edges of the chart.
-* **Mean** - This fits the mean value in the vertical direction.
-* **Show Sorted Graph** - This sorts all the values based on the amount they exist in the image.
-* **Show Scale** - Shows the corresponding values along the bottom of the chart.
-* **Graph Color...** - Set the graph color.
+* **完整** - 以色階分布圖的最高點做為垂直方向的顯示範圍。
+* **中間值** - 以色階分布圖的中間值做為垂直方向的顯示範圍。
+* **平均值** - 以色階分布圖的平均值做為垂直方向的顯示範圍。
+* **顯示排序後的圖形** - 以不同亮度值的像素數目重新排序圖形。
+* **顯示灰階尺** - 在色階分布圖顯示灰階漸層色條。
+* **圖形顏色...** - 設定色階分布圖使用的顏色。
 
-### Lock exposure
+### 鎖定曝光度
 {: #lock-exposure}
-When the exposure settings are locked, changing the lighting will not adjust the exposure to compensate.
+當曝光度鎖定時，變更照明亮度不會自動調整曝光補償。
 
-## Render Constraints
+## 彩現限制
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}
 {% include_relative snippets/snippet-renderconstraints.md %}
 
-## Information
+## 資訊
 {: #information}
 
-#### Resolution
-Displays the current [rendering resolution](render-tab.html#resolution).
+#### 解析度
+顯示目前的[彩現解析度](render-tab.html#resolution)。
 
-#### Faces
-Displays the number of mesh faces used to render the model.  This a a good value to compare various [render mesh settings](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm) in Rhino.
+#### 網格面
+顯示模型彩現時使用的網格面數，可做為設定 Rhino 的[彩現網格轉換](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm)設定。
 
-#### Apparent faces
-When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The Apparent faces display shows how many more temporary faces would be generated if the block instances did not exist.
+#### 網格面 (含圖塊引例)
+當彩現的模型含有圖塊引例時，Flamingo nXt 可以使用單一圖塊定義的網格面彩現它的所有引例，因為參與彩現計算的網格面減少，可以縮短彩現時間，此數值顯示的是包含圖塊引例在內的網格面數。
 
-#### Lighting information
-This is some information on the current lighting setup of the rendering.  Here is a list of lighting information listed:
+#### 照明資訊
+目前彩現的場景的照明資訊，包括：
 
->[Presets](lighting-tab.html)
->[Sun](sun-and-sky-tabs.html#sun)
->[Sky](sun-and-sky-tabs.html#sky)
->[Lights](lights-tab.html)
->[Indirect](lighting-tab.html#indirect)
->[Ambient On/Off](lighting-tab.html#ambient)
+>[預設組](lighting-tab.html)
+>[太陽](sun-and-sky-tabs.html#sun)
+>[天空](sun-and-sky-tabs.html#sky)
+>[燈光](lights-tab.html)
+>[間接照明](lighting-tab.html#indirect)
+>[環境光開啟/關閉](lighting-tab.html#ambient)
 
-## Channels
+## 通道
 {: #channels}
-Use these controls to change the lights channels in real time. Assign lights to one of eight channels. Then adjust the lighting in the rendered image after the rendering has been produced. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
+Use these controls to change the lights channels in real time. Assign lights to one of eight channels. After you produce the rendering, adjust the lighting in the rendered image. This is a powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html#adjustng-channels) topic.
 
-## Post Effects
+## 後處理效果
 {: #post-process-effects}
-Apply post-processing effects after the image is rendered. These can be turned on and off and reordered in the list. Each effect has its own settings. Effects include:
+Apply post-processing effects after rendering the image. Turn post-processing effects on and off and reorder in the list. Each effect has its own settings. Effects include:
 
->Fog
->Glow
->Glare
->Depth of Field
->Points
->Curves
->Isocurves
->Annotations
+>霧氣
+>光暈
+>光芒
+>景深
+>點物件
+>曲線
+>結構線
+>註解
 
 For more details on specific filters see the [Post-process images](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) topic.
