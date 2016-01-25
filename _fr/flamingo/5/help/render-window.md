@@ -70,7 +70,7 @@ Enregistre une image 32 bits au format PNG, TIF ou BMP avec l'arrière-plan du c
 {: #export-to-nxtimage}
 Enregistre les informations de couleur et de luminance non comprimées. Enregistre tous les canaux de rendu, y compris le canal [alpha](environment-tab.html#alpha). Les fichiers nXt Image peuvent être ouverts dans l'[éditeur d'images](image-editor.html). Vous pouvez alors ajuster l'[exposition](#adjust-image) et appliquer des [effets](#effects) avant d'enregistrer l'image dans un autre format.
 
-Le format .nXtImage est le format d'image natif des moteurs de rendu nXt. Ce format est recommandé pour l'enregistrement de vos rendus car il conserve la plupart des informations sur votre rendu. Les images enregistrées dans ce format peuvent être manipulées dans l'[éditeur d'images nXt](image-editor.html) et des effets spéciaux peuvent être ajoutés. Cet éditeur permet d'enregistrer dans  nombreux formats standards, y compris tous les formats pris en charge dans nXt. Il est également possible d'enregistrer au format [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/).
+Le format .nXtImage est le format d'image natif des moteurs de rendu nXt. Ce format est recommandé pour l'enregistrement de vos rendus car il conserve la plupart des informations sur votre rendu. Les images enregistrées dans ce format peuvent être manipulées dans l'[éditeur d'images nXt](image-editor.html) et des effets spéciaux peuvent être ajoutés. Cet éditeur permet d'enregistrer dans de nombreux formats standards, y compris tous les formats pris en charge dans nXt. Il est également possible d'enregistrer au format [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/).
 
 #### Exporter vers un fichier HDR
 {: #export-to-hdr}
@@ -78,14 +78,14 @@ Enregistre les informations de couleur et de luminance non comprimées. Le forma
 
 #### Exporter vers un fichier EXR
 {: #export-to-exr}
-Format de fichier image à grande plage dynamique créé par la société Industrial Light and Magic (ILM) et distribué sous forme de licence libre. Ce format de fichier gère les nombres flottants en 16 bits par canal avec un bit pour le signe, cinq bits pour l'exposant et dix bits pour la mantisse. Ceci permet d'avoir une plage dynamique de plus de trente niveaux d'exposition. Voir l'article de Wikipedia : OpenEXR](http://fr.wikipedia.org/wiki/OpenEXR).
+Format de fichier image à grande plage dynamique créé par la société Industrial Light and Magic (ILM) et distribué sous forme de licence libre. Ce format de fichier gère les nombres flottants en 16 bits par canal avec un bit pour le signe, cinq bits pour l'exposant et dix bits pour la mantisse. Ceci permet d'avoir une plage dynamique de plus de trente niveaux d'exposition. Voir l'[article de Wikipedia : OpenEXR](http://fr.wikipedia.org/wiki/OpenEXR).
 Le format EXR enregistre les données de luminance directement dans un format à grande plage dynamique. Les arrière-plans sans luminance, comme les photographies normales, apparaissent en noir s'ils sont enregistrés dans un de ces formats.
 
 #### ![images/close-x.png](images/close-x.png) Quitter
 Ferme la fenêtre de rendu.
 
 #### Menus déroulants
-Pour plus d'informations sur les menus et icônes de la fenêtre de rendu, consultez la [rubrique sur la fenêtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).
+Pour plus d'informations sur les menus et icônes de la fenêtre de rendu, consultez la [rubrique sur la fenêtre de rendu de Rhino](docs.mcneel.com/rhino/5/help/fr-fr/commands/render.htm#The_Render_Window).
 
 ## Onglet de Flamingo
 {: #flamingo-tab}
@@ -144,7 +144,7 @@ Ajuste la luminosité générale de l'image. Par exemple, si une surface blanche
 ### Densité
 {: #burn}
 Ajuste le point blanc de l'image. Il s'agit de la couleur blanche la plus claire de l'image. Un peu de densité peut apporter un effet de scène, de la vie et de la netteté au rendu en ajoutant plus de zones de blanc afin de contraster avec les zones sombres.
-Voir l'article de Wikipedia : Point blanc](https://fr.wikipedia.org/wiki/Point_blanc).
+Voir l'[article de Wikipedia : Point blanc](https://fr.wikipedia.org/wiki/Point_blanc).
 
 ![images/burn-001.png](images/burn-001.png)
 *Densité par défaut (gauche) et augmentée.*
@@ -161,10 +161,10 @@ La saturation contrôle la quantité de couleurs d'une image. Une saturation nul
 Affiche la distribution de la lumière et des zones sombres de l'image après l'application des ajustements sur l'image. Le bord gauche du diagramme représente les couleurs sombres jusqu'au noir.  Le bord droit du diagramme montre la quantité de couleurs claires jusqu'au blanc. Cette représentation est très utile pour déterminer les parties importantes de l'image. Il peut être intéressant d'ajuster l'image jusqu'à obtenir toute la gamme de valeurs dans l'image.  Par exemple, si l'histogramme s'arrête avant d'atteindre l'extrémité droite du diagramme, ajoutez de la luminosité ou de la densité afin de faire tendre vers le blanc les portions les plus claires du rendu. Voir : [Article de Wikipedia : Histogramme](https://fr.wikipedia.org/wiki/Histogramme). Internet contient de nombreux articles sur l'utilisation des histogrammes pour évaluer l'exposition en photographie numérique. Les principes sont les mêmes pour le rendu.
 
 ![images/histogram.png](images/histogram.png)
-*Exemple  d'histogramme montrant la distribution de couleurs dans une image. Le diagramme gris montre quelques zones sombres (côté gauche) et une grande gamme de couleurs claires (côté droite). Ce diagramme montre également qu'il existe quelques pixels entièrement blancs étant donné le diagramme est coupé sur le bord droit (les couleurs claires jusqu'au blanc sont représentées sur l'extrémité droite). 
+*Exemple d'histogramme montrant la distribution de couleurs dans une image. Le diagramme gris montre quelques zones sombres (côté gauche) et une grande gamme de couleurs claires (côté droite). Ce diagramme montre également qu'il existe quelques pixels entièrement blancs étant donné que le diagramme est coupé sur le bord droit (les couleurs claires jusqu'au blanc sont représentées sur l'extrémité droite).* 
 
 #### Options de l'histogramme
-Cliquez avec le bouton de droite sur l'image de l'histogramme pour voir les options suivantes.  Ces options changement la façon dont l'histogramme affiche les informations. Elles ne changement pas les valeurs de l'histogramme. 
+Cliquez avec le bouton de droite sur l'image de l'histogramme pour voir les options suivantes.  Ces options changent la façon dont l'histogramme affiche les informations. Elles ne changent pas les valeurs de l'histogramme. 
 
 * **Ajuster** - Cette option ajuste les verticales les plus élevées du graphique. 
 * **Médiane** - Cette option ajuste la valeur médiane sur la verticale. Elle permet de voir les détails au niveau des bords du diagramme. 
@@ -222,4 +222,4 @@ Applique des effets de traitement postérieur après avoir calculé le rendu de 
 >Courbes isoparamétriques
 >Annotations
 
-Pour plus d'informations sur les filtres voir la rubrique [post-traitement des images](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).
+Pour plus d'informations sur les filtres voir la rubrique [post-traitement des images](docs.mcneel.com/rhino/5/help/fr-fr/commands/render.htm#The_Render_Window).

@@ -52,4 +52,4 @@ Affiche l'aperçu de l'arbre avec des feuilles.
 *Sans feuilles (gauche) et avec feuilles (droite).*
 
 ### Menu Paramètres
-Définissez les unités de l'éditeur de sorte à ce qu'elle correspondent avec les unités de travail. 
+Définissez les unités de l'éditeur de sorte à ce qu'elles correspondent avec les unités de travail. 

@@ -11,7 +11,7 @@ Les canaux sont très utiles pour :
  * Essayer d'équilibrer un environnement HDR et la lumière du soleil.  Tous les environnements HDR ne sont pas calibrés.  Il est donc utile de pouvoir définir le ciel HDR sur un canal et le soleil sur un autre.  L'intensité relative de la lumière du soleil par rapport à celle du ciel peut alors être ajustée après le rendu.
  * Définir des rendus de studio qui utilisent des configurations avec des lumières principales, d'appoint et de contre-jour. Définissez chaque lumière sur un canal différent, puis ajustez leur intensité en temps réel dans le rendu.
 * Utiliser différents ensembles de lumières dans un rendu extérieur ou intérieur.  Chaque ensemble de lumières peut être défini sur un canal et posséder son propre variateur afin de contrôler son intensité.
- * Calculer un rendu avec toutes les lumières activées puis désactiver certaines lumières. Il n'est pas nécessaire de calculer plusieurs fois le rendu d'un intérieur afin de créer une prise de vue de nuit et une autre de jours.
+ * Calculer un rendu avec toutes les lumières activées puis désactiver certaines lumières. Il n'est pas nécessaire de calculer plusieurs fois le rendu d'un intérieur afin de créer une prise de vue de nuit et une autre de jour.
 
 Lorsque l'image est rendue, il est possible de modifier chaque canal dans la fenêtre de rendu ou d'enregistrer l'image dans un fichier .nXtImage pour la modifier plus tard.
 
@@ -29,14 +29,14 @@ Les conditions suivantes doivent être réunies pour produire et manipuler une i
 
 ## Définition des canaux 
 {: setting}
-Afin de définir un rendu avec plusieurs canaux, la première étape consiste à placer chaque lumière sur un canal. Le numéro du canal est normalement défini dans les propriétés de chaque lumière.  Pour plus d'informations sur définir des lumières spécifiques sur un canal, consultez :
+Afin de définir un rendu avec plusieurs canaux, la première étape consiste à placer chaque lumière sur un canal. Le numéro du canal est normalement défini dans les propriétés de chaque lumière.  Pour plus d'informations sur comment définir des lumières spécifiques sur un canal, consultez :
 
 >[Canal du soleil](sun-and-sky-tabs.html#sun-channel)
 >[Canal du ciel](sun-and-sky-tabs.html#sky-channel)
 >[Canal de lumière artificielle](lights-tab.html#channel)
 >[Incandescence de matériau](documentproperties-flamingo.html#channel)
 
-Un canal peut posséder une ou plusieurs lumières. Le réglage du canal est un multiplicateur. L'intensité relative des lumières d'un même canal 
+Un canal peut posséder une ou plusieurs lumières. Le réglage du canal est un multiplicateur. Les lumières se trouvant sur un même canal conserveront leurs intensités relatives les unes aux autres lorsqu'elles seront ajustées. 
 
 ## Réglages des canaux 
 {: adjusting}
