@@ -19,7 +19,7 @@ Avec l'éditeur d'image nXt, vous pouvez :
 
 Pour lancer l'éditeur
 
-> Dans le menu **Flamingo nXt 5.0**, cliquez sur **Plus d'outils &gt; Éditeur d'images de Flamingo nXt**.
+> Dans le menu **Flamingo nXt 5.0**, cliquez sur **Plus d'outils > Éditeur d'images de Flamingo nXt**.
 
 ## Menu Fichier
 {: #file-menu}
@@ -59,7 +59,7 @@ Les fichiers nXtImage contiennent trois canaux supplémentaires qui peuvent êt
 
 ##### Remarques :
 
- 1. Le canal alpha peut être inclus avec une image dont les tonalités ont été réparties en sélectionnant un format de fichier avec canal alpha lors de l'enregistrement d'une image dont les tonalités ont été réparties.
+ 1. Le canal alpha peut être inclus avec une image dont les tonalités ont été réparties en sélectionnant un format de fichier avec canal alpha lors de l'enregistrement.
  1. Les canaux de distance et de matériaux ne sont pas anticrénelés et peuvent laisser apparaître des défauts aux bords marqués. L'ajout d'une petite quantité de flou gaussien à un masque avant de l'utiliser peut aider à adoucir ces bords.
  1. Le canal de matériaux n'encodera que 255 matériaux différents. Si votre modèle contient plus de matériaux, certaines couleurs de masque seront répétées.
 
@@ -100,7 +100,7 @@ Permet d'assembler ou de superposer des segments d'images rendus en utilisant la
  1. Dans le menu **Image**, cliquez sur **Arithmétique** puis sur **Ajouter**.
  1. Sélectionnez toutes les autres images de la séquence.
 
-*Remarque :** Ne sélectionnez pas la première image (000000.nXtImage) à nouveau, sinon elle sera ajoutée deux fois.
+**Remarque :** Ne sélectionnez pas la première image (000000.nXtImage) à nouveau, sinon elle sera ajoutée deux fois.
 
 #### Ajouter
 Ajoute les valeurs de pixel d'une couche sur l'autre. Lorsque les valeurs sont supérieures à 255 (dans le cas de RVB), la couleur blanche est affichée.
@@ -165,8 +165,8 @@ Affiche le [masque de distance](image-editor.html#material-channel).
 
 ##### Charger une image
 
- 1.  [Enregistrer](render-window.html#export-to-nxtimage) vos résultats de rendu dans un fichier **.nXtImage**.
- 1. Dans le menu **Flamingo nXt**, cliquez sur **Outils &gt Éditeur d'images de Flamingo nXt**.
+ 1.  [Enregistrez](render-window.html#export-to-nxtimage) vos résultats de rendu dans un fichier **.nXtImage**.
+ 1. Dans le menu **Flamingo nXt**, cliquez sur **Outils > Éditeur d'images de Flamingo nXt**.
  1. Dans l'**Éditeur d'image de nXt**, dans le menu Fichier, cliquez sur **Ouvrir** pour charger l'image dans l'éditeur d'images.
 
 
@@ -190,7 +190,7 @@ Voir [Fenêtre de rendu : Saturation](render-window.html#saturation).
 Voir [Fenêtre de rendu : Histogramme](render-window.html#histogram).
 
 ## Champs de statut
-Les champs de statut sont situés en bas de l'écran. Lorsque vous déplacez le curseur sur l'images, ces champs affichent les informations sur chaque pixel.
+Les champs de statut sont situés en bas de l'écran. Lorsque vous déplacez le curseur sur l'image, ces champs affichent les informations sur chaque pixel.
 
 #### Pixel
 {: #pixel}
@@ -267,7 +267,7 @@ Cliquez dans l'image pour indiquer la distance de mise au point.
 
 #### Zone nette
 {: #in-focus-zone}
-L'étendue de la zone nette autour de la **Mise au point**. Cette valeur est exprimée en mètres. Tous les pixels à cette distance seront nets et seront ignorés par le filtre de flou. Les pixels au-delà de cette distance seront progressivement estompés avec les pixels adjacents afin de donner l'impression de profondeur.
+L'étendue de la zone nette autour du **Foyer**. Cette valeur est exprimée en mètres. Tous les pixels à cette distance seront nets et seront ignorés par le filtre de flou. Les pixels au-delà de cette distance seront progressivement estompés avec les pixels adjacents afin de donner l'impression de profondeur.
 
 #### Flou
 Contrôle la direction dans laquelle le filtre de flou fonctionnera. La valeur par défaut est définie sur **Arrière-plan**. Ceci signifie que tous les pixels plus éloignés de la caméra que la **Zone nette** deviendront progressivement flous.
