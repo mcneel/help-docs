@@ -2,7 +2,9 @@
 layout: fullwidth-page
 title: Flamingo 처음 시작
 ---
+
 <!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
+
 # ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt® 처음 시작
 Flamingo nXt는 Rhinoceros ®안에서 3D 모델을 가지고, 고화질의 마치 사진과도 같은 스틸과 애니메이션 이미지를 만듭니다. Flamingo nXt 5는, Rhino 5에 탑재된 렌더링 기능과 통합되는 Flamingo의 업데이트 버전입니다. 현재 개발 중(WIP: Work in Progress)인 버전입니다.
 
