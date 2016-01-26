@@ -4,7 +4,7 @@ title: Options de Flamingo nXt
 
 
 # ![images/options.svg](images/options.svg) {{page.title}}
-Ces paramètres concernent l'application Flamingo.  Si vous les modifications réalisées ici sont appliquées à Flamingo en général. 
+Ces paramètres concernent l'application Flamingo.  Les modifications réalisées ici sont appliquées à Flamingo en général. 
 
 {: #default-decal-link-state}
 {% include_relative snippets/snippet-linking.md %}

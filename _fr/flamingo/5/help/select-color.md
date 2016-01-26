@@ -25,10 +25,10 @@ Cliquez sur la palette de couleurs pour sélectionner une couleur dans la boîte
 1. Déplacez le marqueur horizontalement dans le carré intérieur pour définir le niveau de saturation.
 1. Déplacez le marqueur verticalement dans le carré intérieur pour définir la valeur de la luminosité.
 
-##### Définir les valeurs de teinte, de saturation et de valeur
-1. La teinte est mesurée en degrés (de 0 à 359), ce qui correspond plus ou moins aux teintes d'un arc en ciel définies autour d'un cercle en incréments de 60 degrés : rouge, orange, jaune, vert, bleu et violet.  Sélectionnez la teinte de base qui sera combinée par la saturation et la valeur afin de créer la couleur finale. 
+##### Définir les valeurs de teinte, de saturation et de luminosité
+1. La teinte est mesurée en degrés (de 0 à 359), ce qui correspond plus ou moins aux teintes d'un arc en ciel définies autour d'un cercle en incréments de 60 degrés : rouge, orange, jaune, vert, bleu et violet.  Sélectionnez la teinte de base qui sera combinée par la saturation et la luminosité afin de créer la couleur finale. 
 1. La saturation représente l'intensité de la couleur sur une échelle allant de 0 à 100. Une saturation égale à 0 crée une couleur gris neutre qui varie entre le noir et le blanc suivant la luminosité. La teinte n'a pas d'effet sur une couleur si la saturation est nulle. Une saturation égale à 100 donne la nuance la plus intense de la teinte.
-1. La valeur est la quantité de valeur de lumière (ou de blanc) perçue dans la couleur. Le composant de Valeur varie entre 0 et 100. La valeur est parfois aussi appelée luminance ou luminosité.
+1. La luminosité est la quantité de valeur de lumière (ou de blanc) perçue dans la couleur. Le composant de luminosité varie entre 0 et 100. La luminosité est parfois aussi appelée luminance ou valeur.
 
 #### Rouge, Vert, Bleu (RVB)
 {: #rgb}

@@ -2,10 +2,10 @@
 #### Options de liaison
 Indique comment le fichier image sera lié aux matériaux.
 
-#### Lié
+#### Liée
 Crée un lien vers le fichier image. Le fichier doit se trouver sur le disque local.
 
-#### Incorporé
+#### Incorporée
 Les informations sur l'image sont insérées dans le fichier actuel.
 
 #### Liée et incorporée

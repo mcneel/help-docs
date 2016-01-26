@@ -52,8 +52,8 @@ Installez le client de la ferme sur les ordinateurs où Rhino et Flamingo nXt ne
 
 ##### Pour configurer la ferme de rendu
 {: #configure-the-render-farm}
-1.  [Cliquez avec le bouton de droite](mouse-button-right.html) sur l'icône et sélectionnez Rétablir.
-1. Dans la fenêtre nXt Farmer, dans le menu Options, cliquez sur le Path et sélectionnez le chemin du dossier de la ferme de rendu.
+1.  [Cliquez avec le bouton de droite](mouse-button-right.html) sur l'icône et sélectionnez Restaurer.
+1. Dans la fenêtre nXt Farmer, dans le menu Options, cliquez sur Chemin... et sélectionnez le chemin du dossier de la ferme de rendu.
 
 Sur l'ordinateur avec Rhino et Flamingo nXt, définissez le dossier du Zoo dans Rhino. Dans le menu Outils, cliquez sur Options, définissez l'emplacement commun de la ferme à partir du [dossier de destination de la ferme](options-flamingo.html#farm-output-folder).
 
@@ -106,7 +106,7 @@ Un travail peut être démarré juste après avoir été envoyé, plus tard ou m
 Lancer le travail maintenant.
 
 #### Plus tard (Manuellement)
-Le travail est lancé plus tard en utilisant le [moniteur de la ferme](#render-farm-monitor) de rendu).
+Le travail est lancé plus tard en utilisant le [moniteur de la ferme](#render-farm-monitor) de rendu.
 
 #### Après
 Lancer le travail à une date et une heure précise.
@@ -162,7 +162,7 @@ Dans le dossier nXt Render Farm, cliquez sur **Authorize Farm**.
 ##### Pour commencer le nœud
 1. Cliquez sur le bouton **Démarrer de Windows** puis sur **Tous les programmes**.
 Dans le dossier nXt Render Farm, cliquez sur **Render Farmer**.
-1. [Cliquez avec le bouton de droite](mouse-button-right.html) sur l'icône de la barre de tâche et, dans le menu contextuel, cliquez sur **Restore**.
+1. [Cliquez avec le bouton de droite](mouse-button-right.html) sur l'icône de la barre de tâche et, dans le menu contextuel, cliquez sur **Restaurer**.
 1. Dans le menu Aide, cliquez sur **À propos**.
 Si le numéro de version indique une version d’évaluation, l'activation de la licence ne s'est pas faite correctement.
 1. Minimiser la fenêtre Render Farmer dans la barre de tâches.

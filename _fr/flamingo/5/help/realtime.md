@@ -7,5 +7,5 @@ Flamingo NXT 5 comprend un générateur d'aperçu en temps réel.  Fenêtre exp�
 
 #### Pour lancer la ferme de rendu en temps réel
 1. Ouvre le menu Flamingo nXt 5.0 > Afficher l'aperçu en temps réel
-1. Sélectionnez un fenêtre en cliquant à l'intérieur
+1. Sélectionnez une fenêtre en cliquant à l'intérieur
 3. La vue en temps réel de Flamingo devrait s'afficher

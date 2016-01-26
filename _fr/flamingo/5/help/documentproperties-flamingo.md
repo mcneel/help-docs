@@ -9,10 +9,8 @@ Ces paramètres concernent uniquement le modèle actuel. Le temps nécessaire au
 #### Où puis-je trouver cette commande ?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Barres d'outils Outils  pour le rendu > ![images/environments.png](images/environments.png) Éditeur de matériaux
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Rendu > Éditeur d'environnement
- 1. Commande > ÉditeurEnvironnement
-
+  1. ![images/menuicon.png](images/menuicon.png)Menus > Fichier > Propriétés
+ 
 ## Matériaux
 {: #materials}
 Utilisez ces contrôles pour changer rapidement la façon dont Flamingo calcule le rendu des surfaces.  Ces paramètres ne changeront pas les matériaux assignés aux objets et aux calques mais ils changeront la façon dont Flamingo produit la couleur sur chaque surface. 
