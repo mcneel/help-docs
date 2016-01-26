@@ -48,7 +48,7 @@ Dans l'exemple ci-dessus, quelques surfaces planes simples correspondant à l'im
 
 #### Caustiques
 {: #caustics}
-Les rayons de lumière réfléchis ou réfractés par un objet courbé ou la projection de ces rayons sur une autre surface. Les caustiques s'utilisent dans des situations très spécifiques. Elle ne sont rendues qu'avec le moteur [Path Tracer](render-tab.html#path-tracer) ou [Hybride](render-tab.html#hybrid) Les calculs des caustiques demandent un grand nombre de passes pour donner un résultat. Voir l'article de Wikipedia : Caustique (optique)](https://fr.wikipedia.org/wiki/Caustique) pour plus d'informations. 
+Les rayons de lumière réfléchis ou réfractés par un objet courbé ou la projection de ces rayons sur une autre surface. Les caustiques s'utilisent dans des situations très spécifiques. Elle ne sont rendues qu'avec le moteur [Path Tracer](render-tab.html#path-tracer) ou [Hybride](render-tab.html#hybrid) Les calculs des caustiques demandent un grand nombre de passes pour donner un résultat. Voir l'[article de Wikipedia : Caustique (optique)](https://fr.wikipedia.org/wiki/Caustique) pour plus d'informations. 
 
 ![images/kaustik.png](images/kaustik.png)
 *Les caustiques produites par un verre d'eau.*
@@ -65,7 +65,7 @@ Un objet renfermant un espace et transparent est normalement traité comme un so
 
 #### Entrée de lumière
 {: #daylight-portal}
-Une entrée de lumière naturelle est une ouverture laissant entrer l'[éclairage du soleil et du ciel](lighting-tab.html#interior-daylight) dans un rendu intérieur. Une entrée de lumière envoie la lumière du soleil, du ciel et du sol dans un espace intérieur de façon naturelle. Les entrées de lumière n'ont un effet que lorsque le [soleil](sun-and-sky-tabs.html#sun) est activé. Lorsque le schéma d'éclairage [Lumière du jour intérieure](lighting-tab.html#interior-daylight)est utilisé, toutes les surfaces transparentes agissent automatiquement comme des entrées de lumière. En revanche, si vous voulez apporter la lumière extérieure du soleil et du ciel dans une scène avec un schéma d'éclairage Studio ou Extérieur, vous devez marquer manuellement les fenêtres comme des entrées de lumière.
+Une entrée de lumière naturelle est une ouverture laissant entrer l'[éclairage du soleil et du ciel](lighting-tab.html#interior-daylight) dans un rendu intérieur. Une entrée de lumière envoie la lumière du soleil, du ciel et du sol dans un espace intérieur de façon naturelle. Les entrées de lumière n'ont un effet que lorsque le [soleil](sun-and-sky-tabs.html#sun) est activé. Lorsque le schéma d'éclairage [Lumière du jour intérieure](lighting-tab.html#interior-daylight) est utilisé, toutes les surfaces transparentes agissent automatiquement comme des entrées de lumière. En revanche, si vous voulez apporter la lumière extérieure du soleil et du ciel dans une scène avec un schéma d'éclairage Studio ou Extérieur, vous devez marquer manuellement les fenêtres comme des entrées de lumière.
 
 ![images/daylightportal-001.png](images/daylightportal-001.png)
 *Avec entrée de lumière (gauche), sans entrée de lumière (droite).*

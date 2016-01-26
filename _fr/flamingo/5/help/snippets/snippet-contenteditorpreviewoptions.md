@@ -23,12 +23,12 @@ Définit la plus grande taille de miniature.
 #### ![images/horizontal.png](images/horizontal.png) Mise en page horizontale
 Affiche les aperçus à gauche des contrôles.
 
-#### ![images/showlabels.png](images/showlabels.png) Afficher les étiquettes
+#### ![images/showlabels.png](images/showlabels.png) Montrer les étiquettes
 Affiche les étiquettes du nom de la miniature en mode Grille.
 ![images/thumbnaillabel-001.png](images/thumbnaillabel-001.png)
- **Le mode Liste affiche toujours les étiquettes.
+ Le mode **Liste** affiche toujours les étiquettes.
 
-#### ![images/showunits.png](images/showunits.png) Afficher les unités
+#### ![images/showunits.png](images/showunits.png) Montrer les unités
 Affiche la taille dans les unités du modèle.
 ![images/thumbnaillabel-002.png](images/thumbnaillabel-002.png)
 

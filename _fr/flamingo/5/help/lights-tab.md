@@ -60,7 +60,7 @@ Tout objet pouvant être rendu (surface, solide, etc.) peut être marqué en tan
 
 #### ![images/spotlight-01.png](images/spotlight-01.png) Projecteur
 {: #spotlight}
-Un projecteur est une lumière avec une distribution conique dans une direction donnée. Les propriétés de la lumière comprennent un [rayon de la source](#radius), un [angle de faisceau](#beam-angle), un rayon d'atténuation et une direction. Plus le rayon de la source est grand, plus les ombres de la lumière seront douces. Un disque est visible par défaut à l'emplacement de la lumière. Vous trouverez des informations sur la modification de la position, de la direction et de l'angle du faisceau à l'écran à l'aide de poignées dans la rubrique [Projecteur](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/spotlight.htm) de l'aide de Rhino.
+Un projecteur est une lumière avec une distribution conique dans une direction donnée. Les propriétés de la lumière comprennent un [rayon de la source](#radius), un [angle de faisceau](#beam-angle), un rayon d'atténuation et une direction. Plus le rayon de la source est grand, plus les ombres de la lumière seront douces. Un disque est visible par défaut à l'emplacement de la lumière. Vous trouverez des informations sur la modification de la position, de la direction et de l'angle du faisceau à l'écran à l'aide de poignées dans la rubrique [Projecteur](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/lights.htm#Spotlight) de l'aide de Rhino.
 
 ![images/spotlight.png](images/spotlight.png)
 *Un projecteur dirigé sur la boîte rouge*
@@ -72,14 +72,14 @@ Les lumières ponctuelles sont de petites sphères qui distribuent une lumière 
 ![images/pointlight.png](images/pointlight.png)
 *Une petite lumière ponctuelle près du mur blanc*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) LumièreRectangulaire
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) Lumière rectangulaire
 {: #rectangularlight}
-Imite un spot encastré équipé d'un diffuseur ou de déflecteurs. La lumière est distribuée de façon diffuse en fonction de l'orientation du rectangle. Une flèche de direction est dessinée au centre de la lumière. L'intensité maximale est diffusée en face du rectangle. La lumière diminue ensuite lorsqu'elle s'éloigne du centre du rectangle. Un rectangle blanc est visible par défaut lors du rendu. Ces rectangles ne doivent pas être insérés à la même hauteur que le plan du plafond. Pour des résultats plus réguliers, les lumières doivent être placées légèrement en-dessous du plafond. Vous trouverez des informations sur la modification de la position, de la direction et de l'angle du faisceau à l'écran à l'aide de poignées dans la rubrique [Lumière rectangulaire](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/spotlight.htm) de l'aide de Rhino.
+Imite un spot encastré équipé d'un diffuseur ou de déflecteurs. La lumière est distribuée de façon diffuse en fonction de l'orientation du rectangle. Une flèche de direction est dessinée au centre de la lumière. L'intensité maximale est diffusée en face du rectangle. La lumière diminue ensuite lorsqu'elle s'éloigne du centre du rectangle. Un rectangle blanc est visible par défaut lors du rendu. Ces rectangles ne doivent pas être insérés à la même hauteur que le plan du plafond. Pour des résultats plus réguliers, les lumières doivent être placées légèrement en-dessous du plafond. Vous trouverez des informations sur la modification de la position, de la direction et de l'angle du faisceau à l'écran à l'aide de poignées dans la rubrique [Lumière rectangulaire](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/lights.htm#Spotlight) de l'aide de Rhino.
 
 ![images/rectangular light.png](images/rectangular light.png)
 *Une lumière rectangulaire juste en dessous du plafond*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) LumièreLinéaire
+#### ![images/linearlight-01.png](images/linearlight-01.png) Lumière linéaire
 {: #linearlight}
 Distribue la lumière sur un modèle cylindrique qui imite un néon. Il est possible de définir le [rayon de la source](#radius) et la longueur de ces lumières. Plus le rayon est grand, plus les ombres projetées par la lumière sont douces. Un cylindre de lumière est visible par défaut à l'emplacement de la lumière lors du rendu. Des effets insolites peuvent se produire si la lumière cylindrique est partiellement masquée par un objet qui coupe la lumière. Utilisez les points de contrôle de Rhino pour activer les poignées des lumières afin de les modifier à l'écran. 
 
@@ -107,7 +107,7 @@ Lorsqu'un objet est marqué en tant que lumière, utilisez ce paramètre pour d�
 
 #### Diriger la lumière *([Objets marqués uniquement](#tag-objects-as-lights))*
 {: #aim-light}
-Pour les lumières marquées ayant une distribution Spot ou Diffuse, indiquez une direction.   Double-cliquez sur l'icône "Objectif >>" et suivez les invites de la ligne de commandes.
+Pour les lumières marquées ayant une distribution Spot ou Diffuse, indiquez une direction.   Double-cliquez sur l'icône Objectif >> et suivez les invites de la ligne de commandes.
 
 #### Watts
 {: #watts}
@@ -115,7 +115,7 @@ Définit la puissance électrique de la lumière. Nous recommandons de commencer
 
 #### Angle du faisceau *([Projecteurs uniquement](lights-tab.html#spotlight))*
 {: #beam-angle}
-L'angle en degrés qui contrôle la largeur de la lumière émanant de la source. Cette valeur peut également être modifiée en utilisant les poignées à l'écran.  Vous trouverez des informations sur la modification à l'aide de poignées dans la rubrique [Projecteur](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/spotlight.htm) de l'aide de Rhino.
+L'angle en degrés qui contrôle la largeur de la lumière émanant de la source. Cette valeur peut également être modifiée en utilisant les poignées à l'écran.  Vous trouverez des informations sur la modification à l'aide de poignées dans la rubrique [Projecteur](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/lights.htm#Spotlight) de l'aide de Rhino.
 
 #### Rayon
 {: #radius}
@@ -143,7 +143,7 @@ Remarques :
 * Les distributions IES sont souvent asymétriques, il est donc nécessaire de définir non seulement une cible mais également un angle de rotation pour diriger la source de lumière.
 
 #### Luminosité à partir d'un fichier
-Utiliser l'intensité enregistrée dans le fichier IES. Si cette option n'est pas cochée, le paramètre [Watts](lights-tab.html#watts) est utilisé.
+Utilise l'intensité enregistrée dans le fichier IES. Si cette option n'est pas cochée, le paramètre [Watts](lights-tab.html#watts) est utilisé.
 
 
 ## Menu des options supplémentaires

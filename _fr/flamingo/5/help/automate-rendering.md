@@ -59,7 +59,7 @@ Affiche la vue qui sera rendue lors de ce travail. Voir [Onglet Rendu, Fenêtre 
 Cliquez sur le bouton Enregistrer ![images/saveimageas.png](images/saveimageas.png) et indiquez le nom que vous voulez donner au fichier de l'image rendue.
 
 #### Canal Alpha
-Enregistrer l’image avec le canal alpha.  Voir la section [Utiliser un arrière-plan avec canal alpha](environment-tab.html#alpha) pour plus d'informations. 
+Enregistre l’image avec le canal alpha.  Voir la section [Utiliser un arrière-plan avec canal alpha](environment-tab.html#alpha) pour plus d'informations. 
 
 #### Utiliser les paramètres du document
 {: #rendering-resolution}

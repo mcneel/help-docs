@@ -1,135 +1,135 @@
 ---
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Render Options
-The render tab controls the main properties of the final rendering.  Use this tab to control quality and length of time a rendering can take.  Resolution of the final image is one of the biggest influences on overall rendering times.
+# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Opciones de renderizado
+La ficha renderizado controla las propiedades principales del renderizado final.  Utilice esta ficha para controlar la calidad y la duración que puede tardar un renderizado.  La resolución de la imagen final es lo que más influye en el tiempo de renderizado total.
 
-Note: A good practice is to leave the rendering resolution low during draft renderings. Use high resolution renderings for final renderings only.
+Nota: Una buena práctica es usar una resolución de renderizado baja durante los renderizados de prueba. Utilice renderizados de alta resolución solo en los renderizados finales.
 
-#### Where can I find Flamingo Lighting control?
+#### ¿Dónde se encuentra el control de iluminación de Flamingo?
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
+ 1. ![images/options.png](images/options.png)Barras de herramientas >![images/flamingo-icon.png](images/flamingo-icon.png)Barra de herramientas de Flamingo nXt > Ficha Opciones de renderizado
+ 1. ![images/menuicon.png](images/menuicon.png)Menús > Flamingo  5.0 > Mostrar panel de control > Flamingo nXt > Ficha Opciones de renderizado
 
 
-## Viewport to render
+## Ventana a renderizar
 {: #viewtorender}
-Set the view that Flamingo nXt 5 will be rendering.  This is a very useful setting when working on the model and rendering, but there is one specific view that should always render.  For instance, Perspective view is many times the view of interest.  By setting this drop down, then you do not need to make sure the view is current before starting the rendering.
+  Defina la vista que renderizará Flamingo nXt 5.  Se trata de una opción muy útil cuando se trabaja en el modelo y el renderizado, pero hay una vista específica que siempre se renderiza.  Por ejemplo, la vista Perspectiva es muchas veces la vista de interés.  Al definir esta opción en la lista desplegable, no es necesario asegurarse que la vista es activa antes de empezar el renderizado.
 
-#### Active view
-Use this option to render the current active view.  This is the default setting.
+#### Vista activa
+Utilice esta opción para renderizar la vista activa actual.  Es la opción predeterminada.
 
-#### List of available viewports
-This list includes all the named views in the model.  Select the view name that should always be rendered.
+#### Lista de vistas disponibles
+  Esta lista incluye todas las vistas guardadas en el modelo.  Seleccione el nombre de la vista que siempre debe renderizarse.
 
-## Rendering resolution
+## Resolución de renderizado
 {: #resolution}
-The Rendering resolution is one of the most important render settings.  This control sets the image size and resolution to be saved in the Rhino file.  Increasing resolution will exponentially increase rendering time.  So, it is important to handle this setting carefully.
+La resolución de renderizado es una de las opciones de renderizado más importantes.  Este control ajusta el tamaño y la resolución de la imagen que se guarda en el archivo de Rhino.  Si se aumenta la resolución, aumentará exponencialmente el tiempo de renderizado.  De modo que es importante manejar esta opción con cautela.
 
-#### Total pixels
+#### Píxeles totales
 {: #resolutionimagepixels}
-Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
+Define el número de píxeles totales en el renderizado final, utilizando la vista actual para los índices de altura y anchura.  Es una buena opción para usar cuando se trabaja con renderizados.  Es el mejor ajuste para igualar la vista actual con el renderizado. Es simple aumentar o disminuir la resolución de la imagen simplemente cambiando el número total de píxeles.
 
-### Viewport resolution
-Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
+### Resolución de vista
+Utiliza el tamaño de la vista en píxeles para determinar el tamaño de la imagen renderizada.  Esto crea una recreación de 1 a 1 de la relación de aspecto y la resolución de la vista.  Este modo resulta útil, pero puede ser más lento cuando se renderiza una vista de pantalla completa que cuando se renderiza una vista en la la configuración de vista estándar de Rhino 4.
 
-### Image size
+### Tamaño de imagen
 {: #resolutionprintedsize}
-Image size will set the final resolution based on several different variables.  This is the best way to match an exact size and resolution of a final image. If the height and width of the final rendering does not match the same aspect ratio of the view being rendered, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very long time to complete.  Use these controls for final high resolution renderings.
+El tamaño de la imagen definirá la resolución final en función de diferentes variables.  Es la mejor manera de igualar un tamaño exacto y la resolución de una imagen final. Si la altura y la anchura del renderizado final no coincide con la misma relación de aspecto de la vista que está renderizando, puede que la vista se recorte por la parte superior, inferior o lateral de la vista. Nota: Estos controles también pueden generar renderizado de resolución muy alta que pueden tardar mucho tiempo en completarse.  Utilice estos controles para renderizados finales con alta resolución.
 
-There are four unit types which can be used:
+Hay cuatro tipos de unidades que pueden utilizarse:
 
->Pixels
->Inches
->Millimeters
->Centermeters
+>Píxeles
+>Pulgadas
+>Milímetros
+>Centímetros
 
-#### Pixels
-Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.
+#### Píxeles
+Define la imagen de renderizado en píxeles.  Utilice este ajuste para definir la anchura y altura final del renderizado final mediante el número de píxeles.
 
-#### Inches
-Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of inches in width and height by the resolution DPI value.
+#### Pulgadas
+Define las unidades de página en pulgadas. Las pulgadas se utilizan en combinación con los ajustes de resolución para determinar la resolución final de la imagen renderizada.  Para determinar la resolución final, multiplique el número de pulgadas en anchura y altura por el valor PPP de la resolución.
 
-#### Millimeters
-Sets the page units to millimeters. Use millimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of millimeters in width and height by the resolution dots per millimeter value.
+#### Milímetros
+Define las unidades de página en milímetros. Utilice milímetros en combinación con los ajustes de resolución para determinar la resolución final de la imagen renderizada. Para determinar la resolución final, multiplique el número de milímetros en anchura y altura por el valor de puntos de resolución por milímetro.
 
-#### Centimeters
-Sets the page units to centimeters. Use centimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of centimeters in width and height by the resolution dots per centimeter value.
+#### Centímetros
+Define las unidades de página en centímetros. Utilice centímetros en combinación con los ajustes de resolución para determinar la resolución final de la imagen renderizada.  Para determinar la resolución final, multiplique el número de centímetros en anchura y altura por el valor de puntos de resolución por centímetro.
 
-#### Apply view aspect ratio
-Use this setting to keep the width and height setting in the same aspect ratio to the current view.  This will assure the complete view is rendered in the final image.
+#### Aplicar relación de aspecto de vista
+Utilice este ajuste para mantener el ajuste de anchura y altura en la misma relación de aspecto que la vista actual.  Esto asegurará que la vista completa se renderiza en la imagen final.
 
-#### Width
-Printed image width in current unit size.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
+#### Anchura
+Anchura de la imagen impresa en el tamaño de la unidad actual.  Multiplique este valor por el ajuste de resolución para lograr el tamaño de imagen final en número total de píxeles.
 
-#### Height
-Printed image height in current size units.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
+#### Altura
+Altura de la imagen impresa en unidades del tamaño actual.  Multiplique este valor por el ajuste de resolución para lograr el tamaño de imagen final en número total de píxeles.
 
-### Resolution
+### Resolución
 {: #printsizepixelsperunit}
 {: #printsizedpi}
 {: #printsizeresolution}
 
-#### Display
-The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
+#### Visualización
+La imagen se renderiza utilizando la resolución en PPP de la vista. Se trata de la densidad de píxeles en un dispositivo. Normalmente expresa los [puntos por pulgada (PPP)](https://es.wikipedia.org/wiki/Puntos_por_pulgada)
 
-#### Custom
-The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
+#### Personalizada
+La imagen se renderiza utilizando la resolución personalizada. Introduzca la resolución de anchura y altura personalizadas en **Píxeles por: control**.
 
-#### Printer, draft quality
-Set the resolution to 100 pixels per inch or 4 pixels per mm.
+#### Impresora, calidad de borrador
+Establece la resolución a 100 píxeles por pulgada o 4 píxeles por mm.
 
-#### Printer, normal quality
-Set the resolution to 150 pixels per inch or 6 pixels per mm.
+#### Impresora, calidad normal
+Establece la resolución a 150 píxeles por pulgada o 6 píxeles por mm.
 
-#### Printer, high quality
-Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. High resolutions can lead to long rendering times.
+#### Impresora, calidad alta
+Establece la resolución a 300 píxeles por pulgada o 12 píxeles por mm. Es una resolución bastante alta para un renderizado.  Funciona bien para renderizados más pequeños, pero para renderizados de gran tamaño o pósters, la resolución general puede ser muy alta con este ajuste. Las resoluciones altas pueden necesitar largos tiempos de renderizado.
 
-#### Pixels per
-When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a preset resolution is selected, this control displays the current resolution.
+#### Píxeles por
+Cuando el control de Resolución está definido en Personalizado, utilícelo para ajustar la resolución por unidad seleccionada. Cuando se selecciona una resolución preseleccionada, este control muestra la resolución actual.
 
-## Depth of field
+## Profundidad de campo
 {: #depthoffieldoption}
-This effect creates a depth of field blur that mimics a photographer's lens. A lens can only focus precisely at exactly one distance, but the decrease in sharpness is gradual around the focal distance.
+Este efecto crea un desenfoque de profundidad de campo similar al de un objetivo fotográfico. Un objetivo sólo puede enfocar con precisión a una distancia, pero la disminución de la nitidez es gradual alrededor de la distancia focal.
 
-#### Enabled
-Turns on the depth-of-field effect.
+#### Activado
+Activa el efecto de profundidad de campo.
 
-#### Strength
-Controls the size of the focus area. Setting Strength to zero makes the entire image is sharp. Increasing the Strength makes the areas outside the focal distance more blurry and makes the area in focus smaller.
+#### Intensidad
+Controla el tamaño del área focal. Si la Intensidad se ajusta a cero, toda la imagen será nítida. Al aumentar la Intensidad, las áreas fuera de la distancia focal se verán más borrosas y el área focal será más pequeña.
 
-#### Focal distance
+#### Distancia focal
 {: #focaldistance}
-Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If the Focal distance is set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
+Define la distancia para la profundidad de campo. Es la distancia alrededor del punto de profundidad de campo en el que los objetos estarán enfocados. Si la Distancia focal es de diez unidades, los objetos alrededor de siete unidades detrás del punto de profundidad de campo y tres unidades delante del punto de profundidad de campo estarán enfocados.
 
-#### Pick >>
-Pick a point in the model for the focal distance.
+#### Designar >>
+Designa un punto en el modelo para la distancia focal.
 
-## Render Engine
+## Motor de renderizado
 {: #render-engine}
-There are three different render engines within Flamingo.  Each render engine will produce slightly different results in normal rendering conditions.
+Hay tres motores de renderizado diferentes en Flamingo.  Cada motor de render producirá resultados algo diferentes en condiciones normales de renderizado.
 
-Flamingo use progressive, multi-step rendering techniques to create renderings.  With progressive steps, as Flamingo does, there can be unfinished artifacts in the rendering at each step. Artifacts are render effects that leave unusual uncompleted effects in a rendering.  Technically all three render engines will result in the the same rendering, given enough time.  But realistically time is always a limiting factor. So, the trick is to select a render engine that will best render the current scene in the least number of steps.
+Flamingo utiliza técnicas de renderizado progresivas de varios pasos para crear renderizados.  Con pasos progresivos, como los que hace Flamingo, no puede haber artefactos inacabados en cada paso del renderizado. Los artefactos son efectos de renderizado que generan resultados incompletos en un renderizado.  Técnicamente los tres motores de renderizado generarán el mismo renderizado, con el tiempo suficiente.  Pero siendo realistas, el tiempo siempre es un factor limitante. Por tanto, el truco consiste en seleccionar el motor de renderizado que mejor renderice la escena actual en el menor número de pasos.
 
-It is very easy to simply select a different render engine and then render to see the results.
+Es muy fácil seleccionar un motor de renderizado diferente y luego renderizar para ver los resultados.
 
-### Default
-The default algorithm produces a very high-quality simulation. The default engine is a good render engine for a wide variety of scenes.  While the other two engines have greater strengths, they also have greater weaknesses.  The Default engine is a good starting point.
+### Predeterminada
+El algoritmo predeterminado produce una simulación de gran calidad. El motor predeterminado es un buen motor de renderizado para una amplia variedad de escenas.  Mientras que los otros dos motores tienen grandes ventajas, también tienen grandes debilidades.  El motor predeterminado es un buen punto de inicio.
 
-The default render engine has a very noticeable artifact in the renderings in the early passes.  The artifact is hard overlapping shadows.  As passes progress these shadows will soften up.  This allows the default engine to return a result quickly, but may take more passes to actually soften the shadows out.
+El motor de renderizado predeterminado tiene un artefacto muy notable en los primeros pases de los renderizados.  El artefacto se superpone a las sombras.  A medida que los pases avanzan, estas sombras se suavizan.  El motor predeterminado genera un resultado rápidamente, pero puede tardar más pasos para suavizar las sombras.
 
-The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
+La diferencia de calidad entre el método predeterminado puede ser muy sutil, sobre todo si se activa la iluminación indirecta. La diferencia de calidad no puede que no compense el tiempo de procesamiento adicional.
 
 ### Path Tracer
 {: #path-tracer}
-The path tracer begins by displaying a grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. **Note:** Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
+El Path Tracer comienza mostrando una imagen granulada que poco a poco se va refinando y suavizando. Este proceso se denomina *convergencia*. El Path Tracer puede ofrecer una mejor calidad de producto acabado en muchos modelos (con una configuración más sencilla), pero a expensas de un cálculo más complejo y lento. **Nota:** El uso del Path Tracer puede crear puntos luminosos o artefactos durante el proceso de renderizado. Estos artefactos son normales con el Path Tracer y desaparecerán con el tiempo.
 
-Certain advanced effects, such as caustics or blurry transmission, can be calculated with better accuracy using the path tracer. Images rendered with instancing, plants, and displacement maps can converge faster. The path tracer is usually easier to set up than the default method. Advanced settings such as reflection shaders, daylight portals, and ambient lighting are not used when the path tracer engine is selected.
+Algunos efectos avanzados, como la cáustica o la transmisión de desenfoque, pueden calcularse con mayor precisión utilizando el Path Tracer. Las imágenes renderizadas con referencias, plantas y mapas de desplazamiento pueden converger más rápidamente. El Path Tracer normalmente es más fácil de configurar que el método Predeterminado. Las opciones avanzadas, como los sombreadores de reflexión, las entradas de luz diurna y la iluminación ambiente, no se utilizan cuando está seleccionado el motor Path Tracer.
 
-Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer to finish.
+Las imágenes renderizadas con el Path Tracer normalmente tardan más en converger que las imágenes renderizadas con el método predeterminado. Las simulaciones de luz diurna interior, concretamente las escenas donde las ventanas son pequeñas, tardan mucho más en terminar.
 
-### Hybrid
-The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. in some situations it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
+### Híbrido
+El motor Híbrido es un intento de sacar lo mejor del motor Predeterminado y del motor Path Tracer.  Utiliza efectos de ambos.  El motor Híbrido siempre calculará la luz indirecta.  El artefacto del motor Híbrido es un extenso patrón de puntos que reducirá múltiples pases. En algunas situaciones, puede aplicar muchos pases para quitar ese patrón de puntos. Para muchos renderizados, puede que sea el mejor motor para utilizar.
 
-###  **Advanced**
-Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page. There are several advanced rendering properties that can be set here to further customize the final rendering quality.
+###  **Avanzado**
+Abre el cuadro de diálogo Propiedades de documento en la página de [Flamingo nXt](documentproperties-flamingo.html). Hay varias propiedades avanzadas de renderizado que se pueden configurar para personalizar aún más la calidad del renderizado final.

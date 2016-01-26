@@ -20,7 +20,7 @@ Affiche la boîte de dialogue À propos de Flamingo.
 
 #### FlamingoEffacerCachéBitmap
 {: #flamingoclearbitmapcache}
-Rafraîchit la définition d'une image lorsque le fichier d'origine est modifier en utilisant un éditeur d'images comme par exemple PhotoShop.
+Rafraîchit la définition d'une image lorsque le fichier d'origine est modifié en utilisant un éditeur d'images comme par exemple PhotoShop.
 
 #### [FlamingoModifierPlante](plants.html)
 {: #flamingoeditplant}

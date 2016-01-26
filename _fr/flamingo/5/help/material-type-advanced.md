@@ -11,7 +11,7 @@ Flamingo possède des [matériaux simples](material-type-simple.html) et des mat
 Les propriétés des matériaux complexes sont divisées en plusieurs groupes :
 
 > [Nom](#name)
-> [Algorithmes du matériau](#procedures)
+> [Matériau algorithmique](#procedures)
 > [Propriétés avancées du matériau](#advanced-materials-properties)
 > [Finition réfléchissante ](#reflective-finish-and-highlight)
 > [Propriétés de transparence](#transparency)
@@ -23,7 +23,7 @@ Les propriétés des matériaux complexes sont divisées en plusieurs groupes :
 {: #name}
 Cette section indique le nom du matériau dans le modèle de Rhino.  Les matériaux sont enregistrés dans le modèle de Rhino. Ce qui signifie qu'un matériau portant le même nom dans la bibliothèque ou un autre modèle ne sera pas affecté par les modifications réalisées sur le matériau de ce modèle. Pour utiliser un matériau dans un autre modèle il doit toit d'abord être exporté vers la [bibliothèque](libraries.html). Le nom du matériau servira également à définir le nom du fichier exporté.
 
-## Algorithmes du matériau
+## Matériau algorithmique
 {: #procedures}
 L'arbre des algorithmes combine un ou plusieurs matériaux en utilisant des règles pour définir l'interaction entre eux. L'arbre affiche les composants utilisés pour créer ce matériau et vous permet d'ajouter des composants. Pour des matériaux standards, il n'y aura qu'un seul composant dans la liste : Base.
 
@@ -33,7 +33,7 @@ Par exemple, le [Marbre](procedural-materials.html#marble) combine un matériau 
 
 
 ##### Pour ajouter un algorithme
-1. Cliquez avec le bouton de droite sur Base dans la fenêtre Algorithmes.
+1. Cliquez avec le bouton de droite sur Base dans la fenêtre Matériau algorithmique.
 1. Dans le menu, cliquez sur un type d'algorithme.
   * [Base](procedural-materials.html#base)
   * [Mélange angulaire](procedural-materials.html#angular-blend)
@@ -44,7 +44,7 @@ Par exemple, le [Marbre](procedural-materials.html#marble) combine un matériau 
   * [Bois](procedural-materials.html#wood)
 
 ##### Pour supprimer un algorithme
- 1. Dans la fenêtre Algorithmes, cliquez avec le bouton droit sur le nom de l'algorithme.
+ 1. Dans la fenêtre Matériau algorithmique, cliquez avec le bouton droit sur le nom de l'algorithme.
  2. Dans le menu, cliquez sur Supprimer.
 
 ## Propriétés avancées du matériau
@@ -72,7 +72,7 @@ Définit la même couleur pour le reflet que pour la couleur de base de l'objet.
 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
-#### Personnaliser
+#### Personnalisé
 Pour certaines finitions très spéciales, la réflexion de l'objet sera d'une couleur différente de celle du matériau.  Il s'agit normalement de matériaux composés de plusieurs couches. Utilisez l'option Personnalisé pour définir la couleur du reflet. Utilisez le [sélecteur de couleur](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) pour choisir la couleur de la réflexion. 
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
@@ -99,7 +99,7 @@ Définit la taille du reflet. De petites valeurs donnent un reflet plus ample ; 
 
 #### Type
 {: #type}
-Change comment les réflexions sont calculées lorsque des sources de lumière artificielles sont réfléchies. Les réflexions sont calculées selon deux méthodes : *raycasting* et *reflet*. Ces deux méthodes produiront finalement des résultats identiques ; cependant, dans certains cas, vous verrez qu'une des méthodes donne un bon résultat plus rapidement. Par exemple, les objets peuvent voir un mauvaise aspect car une réflexion de source de lumière cache l'apparence du matériau.
+Change comment les réflexions sont calculées lorsque des sources de lumière artificielles sont réfléchies. Les réflexions sont calculées selon deux méthodes : le *raycasting* et le *reflet*. Ces deux méthodes produiront finalement des résultats identiques ; cependant, dans certains cas, vous verrez qu'une des méthodes donne un bon résultat plus rapidement. Par exemple, les objets peuvent voir un mauvaise aspect car une réflexion de source de lumière cache l'apparence du matériau.
 
 Dans l'illustration suivante concernant le type Équilibré, l'objet à gauche présente une réflexion blanche très claire qui masque l'apparence du matériau.
 
@@ -123,7 +123,7 @@ Seul le raycasting est utilisé pour calculer les réflexions des sources de lum
 
 ![images/highlightmontecarlo.png](images/highlightmontecarlo.png)
 
-#### Aucun reflet
+#### Sans reflet
 {: #no-highlight}
 Seul le raycasting est utilisé pour calculer les réflexions des sources de lumière. Cette option est utile lorsque les sources de lumière sont large et le matériau n'est pas brillant ; dans ce cas, le calcul du reflet peut prendre beaucoup de temps. Les réflexions de la source de lumière convergent petit à petit.
 
@@ -137,7 +137,7 @@ Exclue toutes les réflexions des sources de lumière artificielles et tous les 
 
 #### Aucune réflexion de la source de lumière
 {: #no-light-source-reflection}
-Exclue les réflexions raycast des sources de lumière. Seul le reflet est utilisé. Cette option est utile parfois pour éviter des artefacts mouchetés si le matériau est flou et si la scène contient des sources de lumière petites et brillantes.
+Exclue les réflexions de raycasting des sources de lumière. Seul le reflet est utilisé. Cette option est utile parfois pour éviter des artefacts mouchetés si le matériau est flou et si la scène contient des sources de lumière petites et brillantes.
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
@@ -174,7 +174,7 @@ Le tableau suivant montre des exemples d'indices de réfraction :
 
 #### Translucidité
 {: #translucency}
-Une mesure de la diffusion. Une translucidité élevée produit un effet "sablé", car une plus grande quantité de lumière est dispersée aléatoirement à travers le matériau. Il s'agit d'un effet très sensible. De petits réglages peuvent faire une grande différence. 
+Une mesure de la diffusion. Une translucidité élevée produit un effet sablé, car une plus grande quantité de lumière est dispersée aléatoirement à travers le matériau. Il s'agit d'un effet très sensible. De petits réglages peuvent faire une grande différence. 
 
 ![images/transparencytl.png](images/transparencytl.png)
 
@@ -182,7 +182,7 @@ Une mesure de la diffusion. Une translucidité élevée produit un effet "sablé
 {: #scattering}
 Contrôle la probabilité que la lumière rencontre une particule par unité de longueur. Le [Path Tracer](render-tab.html#path-tracer) doit être activé pour pouvoir utiliser cet effet.
 
-La dispersion en sous-surface permet à la lumière de pénétrer la surface de l'objet et de se disperser dans une direction. Beaucoup de matériaux translucides peuvent être modélisés avec cet effet. Certaines surfaces, telles que la pierre ou la peau peuvent être "adoucies" de façon réaliste en permettant à la lumière de pénétrer sur une courte distance.
+La dispersion en sous-surface permet à la lumière de pénétrer la surface de l'objet et de se disperser dans une direction. Beaucoup de matériaux translucides peuvent être modélisés avec cet effet. Certaines surfaces, telles que la pierre ou la peau peuvent être adoucies de façon réaliste en permettant à la lumière de pénétrer sur une courte distance.
 
 Le matériau doit avoir une certaine transparence pour que la dispersion en sous-surface puisse avoir lieu. Il s'agit d'un effet de volume. Les objets avec ce type de matériau doivent être solides ou "enfermer un espace" pour que l'effet fonctionne correctement.
 
@@ -223,7 +223,7 @@ Crée l'illusion d'une illumination.
 
 ## Textures
 {: #textures}
-Deux types de textures peuvent être ajoutées à un matériau : Textures d'image et motifs de relief Les textures d'image sont basées sur des bitmaps, des photographies ou des images scannées. Les motifs de relief sont des motifs aléatoires ou répétés générés par Flamingo. 
+Deux types de textures peuvent être ajoutées à un matériau : les textures d'image et les motifs de relief. Les textures d'image sont basées sur des bitmaps, des photographies ou des images scannées. Les motifs de relief sont des motifs aléatoires ou répétés générés par Flamingo. 
 
 ![images/textures.png](images/textures.png)
 

@@ -19,14 +19,14 @@ Essayez de respecter les instructions suivantes lorsque vous définissez l'écla
 * Commencez avec un préréglage d'éclairage.
 * Étant donné que Flamingo nXt simule l'éclairage du monde réel, donnez des informations précises si possible. 
 * Évitez d'utiliser des niveaux d'intensité irréalistes pour les sources de lumière.
-* Définissez correctement les unités dans le modèle. L'éclairage ne sera pas correct si les unités ne sont pas. Par exemple, si votre modèle est en millimètres, définissez les unités du modèle en millimètres.
+* Définissez correctement les unités dans le modèle. L'éclairage ne sera pas correct si les unités ne le sont pas. Par exemple, si votre modèle est en millimètres, définissez les unités du modèle en millimètres.
 * Réglez la luminosité globale du rendu en utilisant le contrôle [Luminosité](render-window.html#brightness) dans la fenêtre d'affichage du rendu. N'essayez pas d'ajuster la luminosité globale de la scène en changeant l'intensité de toutes les sources de lumière ; le réglage d'[exposition automatique](render-window.html#brightness) annulerait cette augmentation. 
 
 Pour améliorer les techniques d'éclairage, soyez attentifs à la lumière et à son influence sur les surfaces. Les matériaux peuvent masquer certains effets d'ombres et de réflexions, certains experts du rendu appliquent donc l'éclairage à leurs modèles avant d'appliquer les matériaux. Essayez de voir la lumière objectivement, comme un appareil photo.
 
 ## Préréglages d'éclairage
 {: #lighting-presets}
-Une bonne option pour commencer à définir un éclairage est d'utiliser les préréglages qui correspondent à des situations d'éclairage du monde réel. Flamingo nXt possède des réglages de l'éclairage qui peuvent vous aider à démarrer avec l'éclairage de votre modèle. De nombreuses autres options d'éclairage sont disponibles, mais les préréglages sont souvent suffisants pour la plupart des rendus. Choisissez le schéma de préréglages qui se rapproche le plus à votre scène.
+Une bonne option pour commencer à définir un éclairage est d'utiliser les préréglages qui correspondent à des situations d'éclairage du monde réel. Flamingo nXt possède des réglages de l'éclairage qui peuvent vous aider à démarrer avec l'éclairage de votre modèle. De nombreuses autres options d'éclairage sont disponibles, mais les préréglages sont souvent suffisants pour la plupart des rendus. Choisissez le schéma de préréglages qui se rapproche le plus de votre scène.
 
 L'éclairage de Flamingo nXt utilise quatre modes prédéfinis :
 
@@ -151,7 +151,7 @@ Active ou désactive l'éclairage artificiel.
 
 ### Indirect
 {: #indirect}
-Définit l'éclairage qui se réfléchit à partir des surfaces. Par défaut, cette option est activée pour l'éclairage intérieur et désactivée pour l'extérieur et l'éclairage de studio. Il est possible d'activer l'éclairage indirect pour les rendus d' extérieurs.
+Définit l'éclairage qui se réfléchit à partir des surfaces. Par défaut, cette option est activée pour l'éclairage intérieur et désactivée pour l'extérieur et l'éclairage de studio. Il est possible d'activer l'éclairage indirect pour les rendus d'extérieurs.
 
 #### Méthode
 Définit la méthode de calcul de l'éclairage indirect.
@@ -167,7 +167,7 @@ Optimise l'éclairage indirect pour les scènes intérieures.
 {: #exterior}
 Optimise l'éclairage indirect pour les scènes extérieures.
 
-L'éclairage indirect réfléchi à partir des autres surfaces peut apporter de la subtilité du réalisme à vous rendues extérieures. En particulier, les parties inférieures d'objets suspendus, tels que les avancées de toit ou les balcons, sont rendues avec plus de précision avec un éclairage indirect.
+L'éclairage indirect réfléchi à partir des autres surfaces peut apporter de la subtilité et du réalisme à vos rendus extérieurs. En particulier, les parties inférieures d'objets suspendus, tels que les avancées de toit ou les balcons, sont rendues avec plus de précision avec un éclairage indirect.
 
 #### Rebonds
 {: #bounces}
