@@ -1,13 +1,13 @@
-### Assign material by
-Using a plug-in library, rendering properties can be assigned to layers, or to objects that will be used with the basic Rhino renderer.
+### 材質賦予方式
+以不同的方式設定物件使用的材質。
 
-#### Layer
-The object inherits the render material assigned to the layer. To change the material assignment of the layer, use the [ **Layers** ](layer.html) dialog box.
- **Note** : Deleting a material from the ** [Material Editor](materialeditor.html) **, returns all objects that had the deleted material assigned to assignment by layer.
+#### 圖層
+物件使用所屬圖層的材質設定，在[**圖層**](layer.html)面板裡圖層的材質欄位可設定圖層使用的材質。
+ **附註：**從**[材質編輯器](materialeditor.html)**刪除物件本身使用的材質會使物件的材質賦予方式變更為**圖層**。
 
-#### Parent
-The object inherits the render material from its parent object.
+#### 父物件
+物件使用父物件的材質設定。
 
-#### Object
-Render materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See ** [MaterialEditor](materialeditor.html) **.
+#### 物件
+賦予 Rhino 內建彩現器的材質給物件。
+請參考：**[材質編輯器](materialeditor.html)**

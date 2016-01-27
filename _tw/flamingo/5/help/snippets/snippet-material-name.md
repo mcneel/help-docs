@@ -1,2 +1,2 @@
-#### Name
-This is the name of the material. See the Advanced [Name](material-type-advanced.html#name) property for details.
+#### 名稱
+材質的名稱，詳細說明請參考[材質名稱](material-type-advanced.html#name)。
