@@ -1,2 +1,2 @@
-Note: In nXt, the overall brightness of a scene cannot be controlled by boosting the intensity of the light sources. The automatic exposure adjustment built into the tone-mapping process will defeat this. Adjust overall scene brightness by using the **Brightness** control.
+**附註：**在 Flamingo nXt 裡場景的整體亮度無法以提高燈光強度的方式增加，因為自動曝光功能會抵消以增加的燈光亮度，要調整場景的整體亮度請使用彩現視窗右邊調整影像下的**亮度**設定。
 
