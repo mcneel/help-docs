@@ -12,7 +12,7 @@ title: Guide Index
 * [Studio Lighting Tips]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
 
 ## To access the Flamingo control panel
-  * On the **Flamingo nXt** menu, click **Control Panel**.
+  * On the **Flamingo nXt 5** menu, click **Control Panel**.
 
 ## The Flamingo nXt Control Panel
 The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
@@ -26,10 +26,10 @@ The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model f
 
 Rendering your finished model comprises four basic steps:
 
- *  [Set up materials](..\materials\materials-tab.html)
- *  [Set up lighting](../lighting/lighting-tab.html)
- *  [Set up an environment](../environment/environment-tab.html)
- *  [Set up rendering conditions](../render/render-tab.html)
+ *  Set up materials
+ *  Set up lighting
+ *  Set up an environment
+ *  Set up rendering conditions
 
 #### To start a rendering
 
@@ -46,5 +46,3 @@ By default, the rendering process will continue refining the image, pass by pass
 Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
 
 &#160;
-
-Revised: 22-Dec-2011 14:45

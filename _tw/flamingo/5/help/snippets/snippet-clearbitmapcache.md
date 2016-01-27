@@ -1,9 +1,9 @@
 
-### Note
+### 附註
 
-#### Refresh the image definition
-When a bitmap file is changed using an image editor such as Photoshop, you must refresh the bitmap definition in Flamingo nXt.
+#### 重新載入材質使用的圖片
+當您修改了材質使用的外部連結圖片後，必需重新載入圖片才可以看到修改後的結果。
 
-#### To refresh the bitmap
+#### 重新載入圖片
 
->On the **Flamingo nXt** menu, click **Utilities** &gt; **Clear bitmap cache**.
+>從 **Flamingo nXt** 功能表選擇**其它工具** > **清除圖片快取**。

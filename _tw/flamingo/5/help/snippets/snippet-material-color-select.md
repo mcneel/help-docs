@@ -1,2 +1,2 @@
-#### Color
-Use the Color Selector to set the main color.  See the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) topic for details.
+#### 顏色
+從**選取顏色**對話框設定主要顏色，詳細說明請參考[顏色方塊](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)主題。

@@ -1,3 +1,3 @@
 
-#### Blend
-Blurs the boundaries between the components.
+#### 混合
+混合花紋與底色。
