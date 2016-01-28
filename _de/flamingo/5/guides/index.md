@@ -3,6 +3,8 @@ layout: fullwidth-page
 title: Anleitungsindex
 ---
 
+<!-- TODO: Links to update: "First Rendering Tutorial" and everything below "Rendering Basics" -->
+
 # Erste Schritte mit Flamingo nXt 5®
 
 ## Einsteigertutorials
@@ -10,7 +12,7 @@ title: Anleitungsindex
 * [Tipps für Studiobeleuchtungen]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
 
 ## Zugriff auf das Flamingo-Bedienfenster
-  * Klicken Sie im Menü **Flamingo nXt 5.0** auf **Bedienfenster anzeigen**.
+  * Klicken Sie im **Flamingo-nXt-5-Menü** auf **Bedienfenster anzeigen**.
 
 ## Das Flamingo-nXt-Bedienfenster
 Im **Bedienfenster** von **Flamingo nXt** finden Sie mehrere Reiter mit den Funktionen zur Einstellung des Renderings:
@@ -24,10 +26,10 @@ Im **Bedienfenster** von **Flamingo nXt** finden Sie mehrere Reiter mit den Funk
 
 Das Rendering eines Modells umfasst vier wesentliche Schritte:
 
- *  [Materialien zuweisen](..\materials\materials-tab.html)
- *  [Beleuchtung einstellen](../lighting/lighting-tab.html)
- *  [Umgebung einrichten](../environment/environment-tab.html)
- *  [Renderbedingungen einstellen](../render/render-tab.html)
+ *  Einrichtung der Materialien
+ *  Einrichtung der Beleuchtung
+ *  Einrichtung einer Umgebung
+ *  Festlegung der Renderbedingungen
 
 #### Ein Rendering starten
 
@@ -44,5 +46,3 @@ Standardmäßig führt der Renderprozess einen Durchgang nach dem anderen durch 
 Verwenden Sie die Einstellung [Anzahl Durchgänge](..\render\render-window.html#number-of-passes) oder [Zeit](..\render\render-window.html#time) im [Renderfenster](..\render\render-window.html) oder unter [Dokumenteigenschaften > Flamingo nXt](..\render\documentproperties-flamingo.html), um das Rendering automatisch nach Erfüllung der entsprechenden Vorgabe anhalten zu lassen.
 
 &#160;
-
-Revision: 22. Dez. 2011, 14:45 Uhr
