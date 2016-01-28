@@ -5,8 +5,8 @@ title: Guida introduttiva a Flamingo
 
 <!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
 
-# ![images/flamingotab.svg](images/flamingotab.svg) Guida introduttiva a Flamingo nXtÂ®
-Flamingo nXt genera immagini ed animazioni fotorealistiche di alta qualità a partire da modelli 3D all'interno di Rhinoceros Â®. Flamingo nXt 5 è un aggiornamento di Flamingo che si integra con le funzionalità di rendering predefinite di Rhino 5. Attualmente è in fase WIP (work in progress).
+# ![images/flamingotab.svg](images/flamingotab.svg) Guida introduttiva a Flamingo nXt®
+Flamingo nXt genera immagini ed animazioni fotorealistiche di alta qualità a partire da modelli 3D all'interno di Rhinoceros®. Flamingo nXt 5 è un aggiornamento di Flamingo che si integra con le funzionalità di rendering predefinite di Rhino 5. Attualmente è in fase WIP (work in progress).
 
 Scaricate ed installate Flamingo da qui: [Download di Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
 
@@ -22,15 +22,15 @@ Qui trovate l'ultima beta di Flamingo: [http://www.rhino3d.com/download/Flamingo
 ## Documentazione di aiuto
 La documentazione di aiuto di Flamingo è disponibile in varie lingue:
 
-* [ä¸æ–‡(ç®€ä½“)]({{baseurl}}/cn/flamingo/5/help)
+* [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
 * [Deutsch]({{baseurl}}/de/flamingo/5/help)
 * [English]({{baseurl}}/en/flamingo/5/help)
-* [EspaÃ±ol]({{baseurl}}/es/flamingo/5/help)
-* [FranÃ§ais]({{baseurl}}/fr/flamingo/5/help)
+* [Español]({{baseurl}}/es/flamingo/5/help)
+* [Français]({{baseurl}}/fr/flamingo/5/help)
 * [Italiano]({{baseurl}}/it/flamingo/5/help)
-* [æ—¥æœ¬èªž]({{baseurl}}/jp/flamingo/5/help)
-* [í•œêµì–´]({{baseurl}}/kr/flamingo/5/help)
-* [ä¸æ–‡(ç¹é«”)]({{baseurl}}/tw/flamingo/5/help)
+* [日本語]({{baseurl}}/jp/flamingo/5/help)
+* [한국어]({{baseurl}}/kr/flamingo/5/help)
+* [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
 
 ## Introduzione
 Dal menu Flamingo nXt, cliccare su Pannello di controllo. Il pannello di controllo di Flamingo nXt fornisce le seguenti schede per impostare un modello per il rendering:
