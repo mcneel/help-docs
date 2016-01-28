@@ -40,7 +40,7 @@ Sullo stesso canale, si può impostare un numero qualsiasi di luci.  La regolazi
 
 ## Regolare i canali
 {: adjusting}
-I canali di illuminazione si possono regolare subido dopo il rendering oppure nell'editor delle immagini di Flamingo se il rendering viene salvato come file .nXtImage.  I canali si possono regolare mentre Flamingo sta renderizzando, tuttavia, consigliamo di arrestare il rendering prima di fare delle modifiche importanti.
+I canali di illuminazione si possono regolare subito dopo il rendering oppure nell'editor delle immagini di Flamingo se il rendering viene salvato come file .nXtImage.  I canali si possono regolare mentre Flamingo sta renderizzando, tuttavia, consigliamo di arrestare il rendering prima di fare delle modifiche importanti.
 
 #### Dove trovo il controllo di illuminazione di Flamingo?
 I controlli dei canali si trovano nella scheda Flamingo nXt, nella [finestra di rendering](render-window.html) sotto Canali.
@@ -48,7 +48,7 @@ I controlli dei canali si trovano nella scheda Flamingo nXt, nella [finestra di 
 Esistono otto controlli per i canali, dallo 0 al 7. Solo i canali che contengono delle luci si attiveranno.
 
 ![images/channel-slider.png](images/channel-slider.png)
-Ciascun canale presenta un valore relativo allo slider ed un valore relativo alla casella di selezione.  Il valore della casella rappresenta il valore massimo dello slider. Se lo slider è completamente a destra, per moltiplicare i valori di illuminazione su quel canale, verrà usato il valore indicato nella casella.  Quindi, se lo slider si trova a metà della barra di scorrimento, per moltiplicare i valori di illuminazione che si trovano su quel canale, verrà usata la metà del valore indicato nella casella.  Se lo slider è completamente a sinistra, tutte le luci che si trovano su quel canale verranno disattivate.
+Ciascun canale presenta un valore relativo allo slider ed un valore relativo alla casella di selezione.  Il valore della casella rappresenta il valore massimo dello slider. Se lo slider è completamente a destra, per moltiplicare i valori di illuminazione su quel canale verrà usato il valore indicato nella casella.  Quindi, se lo slider si trova a metà della barra di scorrimento, per moltiplicare i valori di illuminazione che si trovano su quel canale verrà usata la metà del valore indicato nella casella.  Se lo slider è completamente a sinistra, tutte le luci che si trovano su quel canale verranno disattivate.
 
 Il valore della casella può essere molto importante.  Visto che Sole e Cielo possono essere molto più luminosi delle luci artificiali, per percepire qualche differenza, può essere necessario aumentare a 20 o a 50 il valore della casella corrispondente alle luci artificiali.
 
