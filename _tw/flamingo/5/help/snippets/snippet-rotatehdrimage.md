@@ -6,6 +6,6 @@
 * Click on the plan control to rotate the HDRI correctly.
 * The red dot signifies the center of the HDRI image.
 
-#### Rotation
+#### 旋轉
 {: .clear-img}
-Rotates the image so a different part of the image lights the model.
+旋轉 HDR 圖片，改變 HDR 圖片對場景照明的方向。

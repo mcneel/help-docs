@@ -1,7 +1,7 @@
-Sets the default time and number of passes constraints. The default recommended setting is to set these render constraints off and let the render engine continue until it is closed or manually stopped. These may be changed using the controls in the Render Window. Setting the Number of passes and Time to 0 allows the rendering to continue until you click Stop Rendering.
+設定預設的時間與處理數限制，一般建議不使用這些限制，讓彩現引擎持續運算達到要求的品質再手動停止彩現，時間與處理數限制也可以在彩現視窗修改。
 
-#### Time
-Specifies the amount of time in Hours/Minutes/Seconds the render will continue to process. Note : The rendering stops after the last pass after the time limit has been reached. If you click Resume Rendering, the rendering will continue for one additional pass.
+#### 時間
+設定彩現的持續時間 (小時/分/秒)，當彩現因超過時間限制而停止時，每按一下繼續彩現會再多計算一個處理數。
 
-#### Number of passes
-Specifies the number of rendering passes the render will process. Note : Any time you click Resume Rendering, the counter for the number of passes is reset. For example, if you set the number of passes to 10 and stop the rendering after pass 8, the rendering will continue until it reaches 18 passes. Normally renderings may take 10 - 15 passes to start to converge. Architectural interiors may need up to 30 passes to start to converge.
+#### 處理數
+設定彩現計算的總處理數。附註：每次按下繼續彩現按鈕處理數都會重置。例如：將處理數限制設為 10，在第 8 個處理數按停止彩現，再按繼續彩現，彩現會到第 18 個處理數才停止。當彩現因為超過 10 個處理數而自動停止時，再按繼續彩現會計算到第 20 個處理數。一般彩現可能需要 10~15 個處理數，建築物室內彩現可能要超過 30 個處理數才會有比較好的效果。
