@@ -36,7 +36,7 @@ Il primo passo per impostare un rendering multicanale è impostare ciascuna luce
 >[Canale delle luci artificiali](lights-tab.html#channel)
 >[Canale del bagliore dei materiali](documentproperties-flamingo.html#channel)
 
-Sullo stesso canale, si può impostare un numero qualsiasi di luci.  La regolazione del canale è un moltiplicatore. Le luci che si trovano sullo stesso canale manterranno le loro intensità relative la regolazione.
+Sullo stesso canale, si può impostare un numero qualsiasi di luci.  La regolazione del canale è un moltiplicatore. Le luci che si trovano sullo stesso canale manterranno le loro intensità relative durante la regolazione.
 
 ## Regolare i canali
 {: adjusting}
