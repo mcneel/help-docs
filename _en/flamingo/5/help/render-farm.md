@@ -147,13 +147,12 @@ Delete the specified job from the list.
 
 ## Licensing the Render Farm
 {: #licensing-the-render-farm-}
-The free version of the Render Farm lets two network computers (nodes) work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+The Render Farm  allows network computers (nodes) to work on render jobs simultaneously.  [Download and Install the Render Farm Client](http://nxt.flamingo3d.com/page/nxt-render-farm).
 
-Once you have purchased your license and have acquired a product key, use the following procedures to license your farm.
 
 ##### To authorize the node
 1. Wait for any active farm jobs to complete before beginning your licensing.
-1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
+1. Save the Product Key (XF10-J9G2-H006-T8AJ-GBB9-0027) to a text file on a network location so you can easily cut and paste it into each node.
 1. If the node is currently active, in the Windows system tray (on the taskbar), [right-click](mouse-button-right.html) the Render Farm icon, and then click **Close**.
 1. Click the **Windows Start** button, and then click **All Programs**.
 In the nXt Render Farm folder, click **Authorize Farm**.
