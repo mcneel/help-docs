@@ -1,4 +1,4 @@
-﻿---
+---
 layout: fullwidth-page
 title: Guide Index
 ---
