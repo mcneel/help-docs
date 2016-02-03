@@ -1,4 +1,4 @@
-﻿---
+---
 title: 植物編輯器
 ---
 <!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
