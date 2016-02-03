@@ -1,7 +1,7 @@
 ---
 title: 印花
 ---
-<!-- TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
+<!-- This is an old page, I am not sure it needs to be updated or translated,  The new Flamingo products used Rhino decals documented in Rhino help. -->
 
 # {{page.title}}
 印花是直接在物件上貼圖的方法，這種貼圖方法不需依靠材質，可以在物件上的局部貼圖。
@@ -99,7 +99,7 @@ title: 印花
 {: #dialogbox-editdecal}
 以印花貼圖取代物件上某一部分材質的顏色是印花常用的方法。
 
-## Projection
+## 投影
 {: #projection}
 決定如何將印花貼圖投影至物件上，在放置印花貼圖軸時可以事先建立一些建構線做輔助，再配合物件鎖點精確放置印花貼圖。
 
