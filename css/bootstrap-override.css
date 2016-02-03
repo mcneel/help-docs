@@ -315,10 +315,12 @@ tbody.index_table tr td{
 
 .guide img{
   width:35%;
+  align:left;
 }
 
 .guide .wide-img {
   width:75%;
+  align:left;
 }
 
 
