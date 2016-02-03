@@ -147,13 +147,12 @@ Der Auftrag wird aus der Liste entfernt.
 
 ## Lizenzierung der Renderfarm
 {: #licensing-the-render-farm-}
-Mit der kostenlosen Version der Renderfarm können zwei Netzwerk-Computer (Knoten) an mehreren Aufträgen gleichzeitig arbeiten. Wenn Sie weitere Clients hinzufügen möchten, können Sie eine Lizenz mit unbegrenzter Anzahl Knoten [hier](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) erwerben.
+Mithilfe der Renderfarm können Renderaufträge auf ein Netzwerk verteilt und so auf mehreren Rechnern gleichzeitig bearbeitet werden.  [Download des Renderfarm-Clients](http://nxt.flamingo3d.com/page/nxt-render-farm-de).
 
-Nach dem Kauf der Lizenz und Erhalt des Produktcodes führen Sie das folgende Verfahren aus, um Ihre Farm zu lizenzieren.
 
 ##### Autorisierung eines Knotens
 1. Warten Sie, bis alle aktiven Farm-Aufträge vervollständigt wurden, bevor Sie mit der Lizenzierung beginnen.
-1. Speichern Sie Ihren Produktcode in einer Textdatei an einem Netzwerk-Standort, damit Sie ihn einfach und schnell in jeden Knoten einfügen können.
+1. Speichern Sie den Produktschlüssel (XF10-J9G2-H006-T8AJ-GBB9-0027) in einer Textdatei auf einem Netzwerkrechner, damit Sie ihn einfach und schnell in jeden Knoten einfügen können.
 1. Wenn der Knoten gerade aktiv ist, [klicken Sie mit der rechten Maustaste](mouse-button-right.html) das Symbol der Renderfarm und anschließend auf **Schließen**.
 1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.
 Klicken Sie im Ordner der nXt-Renderfarm auf **Farm autorisieren**.
