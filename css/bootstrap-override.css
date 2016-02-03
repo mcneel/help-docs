@@ -316,11 +316,13 @@ tbody.index_table tr td{
 .guide img{
   width:35%;
   text-align:left;
+  display: block;;
 }
 
 .guide .wide-img {
   width:75%;
   text-align:left;
+  display: block;
 }
 
 
