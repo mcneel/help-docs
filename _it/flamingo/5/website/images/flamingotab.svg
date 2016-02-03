@@ -1,0 +1,722 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.0.0.4-->
+<svg stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="16.502pt" height="16.774pt" viewBox="0 0 16.502 16.774">
+ <defs>
+  <radialGradient id="RadialGradient" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.107" gradientTransform="translate(11.624 9.719) rotate(-60.5844) skewX(-0.389153) scale(1 1.1028)">
+   <stop offset="0" stop-color="#0b0b0b"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.145" gradientTransform="translate(11.689 9.605) rotate(-60.7924) skewX(-0.714533) scale(1 1.10345)">
+   <stop offset="0" stop-color="#101010"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_2" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.162" gradientTransform="translate(11.754 9.49) rotate(-60.6039) skewX(-0.585587) scale(1 1.11111)">
+   <stop offset="0" stop-color="#121212"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_3" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.174" gradientTransform="translate(11.814 9.374) rotate(-65.3392) skewX(-0.572053) scale(1 1.10345)">
+   <stop offset="0" stop-color="#121212"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_4" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.187" gradientTransform="translate(11.87 9.255) rotate(-65.3532) skewX(-0.420693) scale(1 1.09626)">
+   <stop offset="0" stop-color="#151515"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_5" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.195" gradientTransform="translate(11.925 9.136) rotate(-65.2657) skewX(-0.282591) scale(1 1.10256)">
+   <stop offset="0" stop-color="#151515"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_6" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.203" gradientTransform="translate(11.969 9.012) rotate(-70.4976) skewX(-0.546039) scale(1 1.10345)">
+   <stop offset="0" stop-color="#171717"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_7" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.21" gradientTransform="translate(12.014 8.889) rotate(-70.5297) skewX(-0.534002) scale(1 1.09524)">
+   <stop offset="0" stop-color="#171717"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_8" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.216" gradientTransform="translate(12.053 8.764) rotate(-75.2564) skewX(-0.638503) scale(1 1.09722)">
+   <stop offset="0" stop-color="#171717"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_9" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.222" gradientTransform="translate(12.087 8.637) rotate(-75.1515) skewX(-0.386034) scale(1 1.09459)">
+   <stop offset="0" stop-color="#191919"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_10" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.227" gradientTransform="translate(12.12 8.509) rotate(-80.1234) skewX(-0.714927) scale(1 1.10132)">
+   <stop offset="0" stop-color="#191919"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_11" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.233" gradientTransform="translate(12.143 8.38) rotate(-80.1342) skewX(-0.698928) scale(1 1.09871)">
+   <stop offset="0" stop-color="#191919"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_12" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.236" gradientTransform="translate(12.166 8.252) rotate(-80.0201) skewX(-0.463273) scale(1 1.09746)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_13" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.242" gradientTransform="translate(12.181 8.122) rotate(-84.5484) skewX(-0.366057) scale(1 1.09917)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_14" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.245" gradientTransform="translate(12.194 7.991) rotate(-84.3824) skewX(-0.135344) scale(1 1.09796)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_15" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.247" gradientTransform="translate(12.204 7.86) rotate(-89.0722) skewX(-0.541015) scale(1 1.10526)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_16" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.253" gradientTransform="translate(12.207 7.729) rotate(-89.0942) skewX(-0.53144) scale(1 1.10277)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_17" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.256" gradientTransform="translate(12.209 7.598) rotate(-89.1048) skewX(-0.52677) scale(1 1.10156)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_18" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.259" gradientTransform="translate(12.203 7.467) rotate(-93.535) skewX(-0.522228) scale(1 1.10039)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_19" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.262" gradientTransform="translate(12.195 7.336) rotate(-93.7125) skewX(-0.532631) scale(1 1.09924)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_20" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.265" gradientTransform="translate(12.181 7.206) rotate(-98.0081) skewX(-0.32254) scale(1 1.09811)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_21" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.268" gradientTransform="translate(12.163 7.076) rotate(-98.1301) skewX(-0.35621) scale(1 1.10075)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_22" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.271" gradientTransform="translate(12.143 6.947) rotate(-102.346) skewX(-0.358023) scale(1 1.09963)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_23" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.271" gradientTransform="translate(12.116 6.819) rotate(-102.346) skewX(-0.358023) scale(1 1.09963)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_24" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.274" gradientTransform="translate(12.088 6.691) rotate(-102.416) skewX(-0.546495) scale(1 1.09854)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_25" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.276" gradientTransform="translate(12.053 6.563) rotate(-106.401) skewX(-0.404208) scale(1 1.10145)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_26" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.276" gradientTransform="translate(12.016 6.438) rotate(-106.401) skewX(-0.404208) scale(1 1.10145)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_27" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.28" gradientTransform="translate(11.976 6.313) rotate(-110.7) skewX(-0.557575) scale(1 1.09643)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_28" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.28" gradientTransform="translate(11.93 6.19) rotate(-110.7) skewX(-0.557575) scale(1 1.09643)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_29" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.282" gradientTransform="translate(11.882 6.068) rotate(-114.931) skewX(-0.426126) scale(1 1.10284)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_30" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.282" gradientTransform="translate(11.828 5.949) rotate(-114.931) skewX(-0.426126) scale(1 1.10284)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_31" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.285" gradientTransform="translate(11.773 5.83) rotate(-114.859) skewX(-0.4153) scale(1 1.10175)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_32" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.285" gradientTransform="translate(11.712 5.714) rotate(-119.347) skewX(-0.416202) scale(1 1.10175)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_33" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.285" gradientTransform="translate(11.648 5.6) rotate(-119.347) skewX(-0.416202) scale(1 1.10175)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_34" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.287" gradientTransform="translate(11.58 5.487) rotate(-123.524) skewX(-0.485466) scale(1 1.10453)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_35" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.287" gradientTransform="translate(11.508 5.378) rotate(-123.524) skewX(-0.485466) scale(1 1.10453)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_36" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.287" gradientTransform="translate(11.436 5.268) rotate(-123.524) skewX(-0.485466) scale(1 1.10453)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_37" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.289" gradientTransform="translate(11.356 5.165) rotate(-127.979) skewX(-0.38866) scale(1 1.10035)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_38" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.289" gradientTransform="translate(11.276 5.062) rotate(-127.979) skewX(-0.38866) scale(1 1.10035)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_39" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.288" gradientTransform="translate(11.19 4.962) rotate(-132.194) skewX(-0.380527) scale(1 1.10069)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_40" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.288" gradientTransform="translate(11.102 4.865) rotate(-132.194) skewX(-0.380527) scale(1 1.10069)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_41" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.288" gradientTransform="translate(11.012 4.77) rotate(-137.246) skewX(-0.455832) scale(1 1.09722)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_42" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.288" gradientTransform="translate(10.916 4.681) rotate(-137.246) skewX(-0.455832) scale(1 1.09722)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_43" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.288" gradientTransform="translate(10.821 4.591) rotate(-137.246) skewX(-0.455832) scale(1 1.09722)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_44" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.288" gradientTransform="translate(10.717 4.509) rotate(-141.899) skewX(-0.642784) scale(1 1.10069)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_45" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.288" gradientTransform="translate(10.615 4.428) rotate(-141.899) skewX(-0.642784) scale(1 1.10069)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_46" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.289" gradientTransform="translate(10.508 4.353) rotate(-146.694) skewX(-0.384161) scale(1 1.09689)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_47" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.289" gradientTransform="translate(10.399 4.28) rotate(-146.694) skewX(-0.384161) scale(1 1.09689)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_48" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.285" gradientTransform="translate(10.288 4.21) rotate(-151.55) skewX(-0.480344) scale(1 1.10175)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_49" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.285" gradientTransform="translate(10.173 4.147) rotate(-151.55) skewX(-0.480344) scale(1 1.10175)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_50" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.285" gradientTransform="translate(10.058 4.085) rotate(-151.55) skewX(-0.480344) scale(1 1.10175)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_51" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.283" gradientTransform="translate(9.938 4.032) rotate(-156.695) skewX(-0.377197) scale(1 1.09894)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_52" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.283" gradientTransform="translate(9.818 3.979) rotate(-156.695) skewX(-0.377197) scale(1 1.09894)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_53" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.28" gradientTransform="translate(9.696 3.932) rotate(-161.952) skewX(-0.328242) scale(1 1.09643)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_54" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.28" gradientTransform="translate(9.572 3.891) rotate(-161.952) skewX(-0.328242) scale(1 1.09643)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_55" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.277" gradientTransform="translate(9.446 3.851) rotate(-167.067) skewX(-0.329415) scale(1 1.10108)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_56" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.277" gradientTransform="translate(9.319 3.822) rotate(-167.067) skewX(-0.329415) scale(1 1.10108)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_57" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.273" gradientTransform="translate(9.191 3.792) rotate(-167.131) skewX(-0.338754) scale(1 1.10256)">
+   <stop offset="0" stop-color="#212121"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_58" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.271" gradientTransform="translate(9.062 3.769) rotate(-172.377) skewX(-0.670638) scale(1 1.09963)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_59" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.268" gradientTransform="translate(8.933 3.751) rotate(-172.293) skewX(-0.47755) scale(1 1.09701)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_60" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.265" gradientTransform="translate(8.803 3.733) rotate(-172.42) skewX(-0.68846) scale(1 1.10189)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_61" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.265" gradientTransform="translate(8.672 3.728) rotate(-177.623) skewX(-0.368005) scale(1 1.10189)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_62" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.262" gradientTransform="translate(8.541 3.722) rotate(-177.596) skewX(-0.36927) scale(1 1.10305)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_63" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.259" gradientTransform="translate(8.41 3.721) rotate(177.127) skewX(-0.462409) scale(1 1.10039)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_64" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.256" gradientTransform="translate(8.279 3.727) rotate(177.093) skewX(-0.470406) scale(1 1.10156)">
+   <stop offset="0" stop-color="#1e1e1e"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_65" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.25" gradientTransform="translate(8.149 3.733) rotate(177.023) skewX(-0.686089) scale(1 1.1)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_66" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.247" gradientTransform="translate(8.018 3.747) rotate(171.87) skewX(-0.535459) scale(1 1.10121)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_67" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.244" gradientTransform="translate(7.889 3.765) rotate(172.003) skewX(-0.529373) scale(1 1.10246)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_68" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.238" gradientTransform="translate(7.759 3.783) rotate(172.04) skewX(-0.538063) scale(1 1.10504)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_69" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.236" gradientTransform="translate(7.631 3.81) rotate(167.024) skewX(-0.711648) scale(1 1.09322)">
+   <stop offset="0" stop-color="#1c1c1c"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_70" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.23" gradientTransform="translate(7.504 3.839) rotate(167.229) skewX(-0.217876) scale(1 1.1)">
+   <stop offset="0" stop-color="#191919"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_71" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.227" gradientTransform="translate(7.376 3.867) rotate(167.062) skewX(-0.458985) scale(1 1.09692)">
+   <stop offset="0" stop-color="#191919"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_72" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.221" gradientTransform="translate(7.25 3.904) rotate(163.771) skewX(-0.316023) scale(1 1.10407)">
+   <stop offset="0" stop-color="#191919"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_73" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.216" gradientTransform="translate(7.125 3.943) rotate(160.81) skewX(-0.526075) scale(1 1.09722)">
+   <stop offset="0" stop-color="#171717"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_74" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.207" gradientTransform="translate(7.001 3.985) rotate(160.866) skewX(-0.460294) scale(1 1.09662)">
+   <stop offset="0" stop-color="#171717"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_75" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.201" gradientTransform="translate(6.878 4.031) rotate(159.044) skewX(-0.551548) scale(1 1.09453)">
+   <stop offset="0" stop-color="#171717"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_76" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.192" gradientTransform="translate(6.756 4.079) rotate(156.371) skewX(-0.716549) scale(1 1.09375)">
+   <stop offset="0" stop-color="#151515"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_77" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.184" gradientTransform="translate(6.637 4.13) rotate(156.638) skewX(-0.349614) scale(1 1.09783)">
+   <stop offset="0" stop-color="#151515"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_78" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.171" gradientTransform="translate(6.518 4.184) rotate(154.479) skewX(-0.448815) scale(1 1.09942)">
+   <stop offset="0" stop-color="#121212"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_79" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.16" gradientTransform="translate(6.399 4.24) rotate(154.552) skewX(-0.490322) scale(1 1.09375)">
+   <stop offset="0" stop-color="#101010"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_80" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="0.14" gradientTransform="translate(6.284 4.301) rotate(152.337) skewX(-0.267872) scale(1 1.1)">
+   <stop offset="0" stop-color="#0d0d0d"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <linearGradient id="LinearGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-0.047" y2="-14.625" gradientTransform="translate(8.417 15.802)">
+   <stop offset="0" stop-color="#0e151b"/>
+   <stop offset="1" stop-color="#5d86a6"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="3.985" y2="-0.984" gradientTransform="translate(8.335 11.781)">
+   <stop offset="0" stop-color="#ffffff"/>
+   <stop offset="1" stop-color="#000000"/>
+  </linearGradient>
+  <radialGradient id="RadialGradient_81" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="2.022" gradientTransform="translate(10.257 12.32) rotate(-26.8691) scale(1 0.487636)">
+   <stop offset="0" stop-color="#ffffff"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_82" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1.237" gradientTransform="translate(13.327 8.337) rotate(19.8842) scale(1 1.67098)">
+   <stop offset="0" stop-color="#ffffff"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_83" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1.292" gradientTransform="translate(13.397 8.36) rotate(-11.5187) scale(1 1.56115)">
+   <stop offset="0" stop-color="#ffffff"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="RadialGradient_84" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1.425" gradientTransform="translate(11.897 5.523) rotate(-9.48875) scale(1 1.04561)">
+   <stop offset="0" stop-color="#ffffff"/>
+   <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <linearGradient id="LinearGradient_2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="11.259" y2="0" gradientTransform="translate(10.922 -3.515) rotate(92.3008)">
+   <stop offset="0" stop-color="#ffffff"/>
+   <stop offset="1" stop-color="#000000"/>
+  </linearGradient>
+ </defs>
+ <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
+  <g id="Spread" transform="translate(0 -16.774)">
+   <g id="Layer 1">
+    <g id="Group">
+     <mask id="TranspMask">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient)" stroke="none"/>
+     </mask>
+     <path d="M 11.728,9.781 C 11.761,9.723 11.741,9.648 11.682,9.615 C 11.624,9.582 11.549,9.602 11.516,9.661 C 11.483,9.719 11.503,9.794 11.562,9.827 C 11.62,9.86 11.695,9.84 11.728,9.781 Z" fill="#ffffff" stroke-width="0.005" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask)"/>
+     <mask id="TranspMask_1">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_1)" stroke="none"/>
+     </mask>
+     <path d="M 11.829,9.689 C 11.875,9.61 11.847,9.509 11.768,9.464 C 11.689,9.418 11.588,9.446 11.543,9.525 C 11.497,9.604 11.525,9.705 11.604,9.75 C 11.683,9.796 11.784,9.768 11.829,9.689 Z" fill="#ffffff" stroke-width="0.006" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_1)"/>
+     <mask id="TranspMask_2">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_2)" stroke="none"/>
+     </mask>
+     <path d="M 11.912,9.584 C 11.962,9.496 11.931,9.383 11.842,9.332 C 11.754,9.282 11.641,9.313 11.59,9.402 C 11.54,9.49 11.571,9.603 11.66,9.654 C 11.748,9.704 11.861,9.673 11.912,9.584 Z" fill="#ffffff" stroke-width="0.007" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_2)"/>
+     <mask id="TranspMask_3">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_3)" stroke="none"/>
+     </mask>
+     <path d="M 11.991,9.46 C 12.037,9.361 11.993,9.243 11.894,9.197 C 11.795,9.151 11.677,9.195 11.631,9.294 C 11.585,9.393 11.629,9.511 11.728,9.557 C 11.827,9.603 11.945,9.559 11.991,9.46 Z" fill="#ffffff" stroke-width="0.008" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_3)"/>
+     <mask id="TranspMask_4">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_4)" stroke="none"/>
+     </mask>
+     <path d="M 12.059,9.347 C 12.108,9.241 12.062,9.116 11.956,9.066 C 11.85,9.017 11.725,9.063 11.675,9.169 C 11.626,9.275 11.672,9.4 11.778,9.45 C 11.884,9.499 12.009,9.453 12.059,9.347 Z" fill="#ffffff" stroke-width="0.008" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_4)"/>
+     <mask id="TranspMask_5">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_5)" stroke="none"/>
+     </mask>
+     <path d="M 12.123,9.232 C 12.174,9.121 12.126,8.99 12.015,8.938 C 11.904,8.887 11.773,8.935 11.721,9.046 C 11.67,9.157 11.718,9.288 11.829,9.34 C 11.94,9.391 12.071,9.343 12.123,9.232 Z" fill="#ffffff" stroke-width="0.009" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_5)"/>
+     <mask id="TranspMask_6">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_6)" stroke="none"/>
+     </mask>
+     <path d="M 12.183,9.094 C 12.227,8.974 12.164,8.842 12.044,8.799 C 11.924,8.755 11.792,8.818 11.749,8.938 C 11.705,9.058 11.768,9.19 11.888,9.233 C 12.008,9.277 12.14,9.214 12.183,9.094 Z" fill="#ffffff" stroke-width="0.009" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_6)"/>
+     <mask id="TranspMask_7">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_7)" stroke="none"/>
+     </mask>
+     <path d="M 12.235,8.973 C 12.279,8.85 12.215,8.714 12.091,8.669 C 11.968,8.625 11.832,8.689 11.787,8.813 C 11.743,8.936 11.807,9.072 11.931,9.117 C 12.054,9.161 12.19,9.097 12.235,8.973 Z" fill="#ffffff" stroke-width="0.009" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_7)"/>
+     <mask id="TranspMask_8">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_8)" stroke="none"/>
+     </mask>
+     <path d="M 12.286,8.832 C 12.321,8.702 12.244,8.567 12.114,8.532 C 11.984,8.497 11.849,8.574 11.814,8.704 C 11.779,8.834 11.856,8.969 11.986,9.004 C 12.116,9.039 12.251,8.962 12.286,8.832 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_8)"/>
+     <mask id="TranspMask_9">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_9)" stroke="none"/>
+     </mask>
+     <path d="M 12.326,8.706 C 12.362,8.573 12.283,8.435 12.149,8.399 C 12.016,8.363 11.878,8.442 11.842,8.576 C 11.806,8.709 11.885,8.847 12.019,8.883 C 12.152,8.919 12.29,8.84 12.326,8.706 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_9)"/>
+     <mask id="TranspMask_10">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_10)" stroke="none"/>
+     </mask>
+     <path d="M 12.37,8.56 C 12.395,8.42 12.302,8.286 12.163,8.261 C 12.023,8.236 11.889,8.329 11.864,8.468 C 11.839,8.608 11.932,8.742 12.071,8.767 C 12.211,8.792 12.345,8.699 12.37,8.56 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_10)"/>
+     <mask id="TranspMask_11">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_11)" stroke="none"/>
+     </mask>
+     <path d="M 12.4,8.432 C 12.426,8.288 12.33,8.151 12.187,8.125 C 12.043,8.099 11.906,8.195 11.88,8.338 C 11.854,8.482 11.95,8.619 12.093,8.645 C 12.237,8.671 12.374,8.575 12.4,8.432 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_11)"/>
+     <mask id="TranspMask_12">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_12)" stroke="none"/>
+     </mask>
+     <path d="M 12.426,8.304 C 12.452,8.159 12.356,8.02 12.21,7.994 C 12.065,7.968 11.926,8.064 11.9,8.21 C 11.874,8.355 11.97,8.494 12.116,8.52 C 12.261,8.546 12.4,8.45 12.426,8.304 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_12)"/>
+     <mask id="TranspMask_13">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_13)" stroke="none"/>
+     </mask>
+     <path d="M 12.452,8.154 C 12.466,8.004 12.357,7.869 12.206,7.854 C 12.056,7.84 11.921,7.949 11.906,8.1 C 11.892,8.25 12.001,8.385 12.152,8.4 C 12.302,8.414 12.437,8.305 12.452,8.154 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_13)"/>
+     <mask id="TranspMask_14">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_14)" stroke="none"/>
+     </mask>
+     <path d="M 12.468,8.023 C 12.483,7.871 12.372,7.735 12.219,7.72 C 12.067,7.705 11.931,7.816 11.916,7.969 C 11.901,8.121 12.012,8.257 12.165,8.272 C 12.317,8.287 12.453,8.176 12.468,8.023 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_14)"/>
+     <mask id="TranspMask_15">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_15)" stroke="none"/>
+     </mask>
+     <path d="M 12.482,7.871 C 12.485,7.717 12.362,7.589 12.207,7.586 C 12.053,7.583 11.925,7.706 11.922,7.861 C 11.919,8.015 12.042,8.143 12.197,8.146 C 12.351,8.149 12.479,8.026 12.482,7.871 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_15)"/>
+     <mask id="TranspMask_16">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_16)" stroke="none"/>
+     </mask>
+     <path d="M 12.492,7.741 C 12.495,7.582 12.369,7.451 12.211,7.448 C 12.052,7.445 11.921,7.571 11.918,7.729 C 11.915,7.888 12.041,8.019 12.199,8.022 C 12.358,8.025 12.489,7.899 12.492,7.741 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_16)"/>
+     <mask id="TranspMask_17">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_17)" stroke="none"/>
+     </mask>
+     <path d="M 12.497,7.61 C 12.5,7.449 12.373,7.317 12.213,7.314 C 12.052,7.311 11.92,7.438 11.917,7.598 C 11.914,7.759 12.041,7.891 12.201,7.894 C 12.362,7.897 12.494,7.77 12.497,7.61 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_17)"/>
+     <mask id="TranspMask_18">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_18)" stroke="none"/>
+     </mask>
+     <path d="M 12.494,7.456 C 12.485,7.294 12.346,7.17 12.184,7.18 C 12.022,7.189 11.898,7.328 11.908,7.49 C 11.917,7.652 12.056,7.776 12.218,7.766 C 12.38,7.757 12.504,7.618 12.494,7.456 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_18)"/>
+     <mask id="TranspMask_19">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_19)" stroke="none"/>
+     </mask>
+     <path d="M 12.49,7.325 C 12.48,7.161 12.339,7.036 12.176,7.045 C 12.012,7.055 11.887,7.196 11.896,7.359 C 11.906,7.523 12.047,7.648 12.21,7.639 C 12.374,7.629 12.499,7.488 12.49,7.325 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_19)"/>
+     <mask id="TranspMask_20">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_20)" stroke="none"/>
+     </mask>
+     <path d="M 12.477,7.171 C 12.455,7.006 12.303,6.892 12.139,6.915 C 11.974,6.937 11.86,7.089 11.883,7.253 C 11.905,7.418 12.057,7.532 12.221,7.509 C 12.386,7.487 12.5,7.335 12.477,7.171 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_20)"/>
+     <mask id="TranspMask_21">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_21)" stroke="none"/>
+     </mask>
+     <path d="M 12.463,7.04 C 12.44,6.874 12.286,6.758 12.12,6.781 C 11.954,6.804 11.838,6.958 11.861,7.124 C 11.884,7.29 12.038,7.406 12.204,7.383 C 12.37,7.36 12.486,7.206 12.463,7.04 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_21)"/>
+     <mask id="TranspMask_22">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_22)" stroke="none"/>
+     </mask>
+     <path d="M 12.442,6.889 C 12.407,6.723 12.244,6.617 12.078,6.653 C 11.912,6.688 11.806,6.851 11.842,7.017 C 11.877,7.183 12.04,7.289 12.206,7.253 C 12.372,7.218 12.478,7.055 12.442,6.889 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_22)"/>
+     <mask id="TranspMask_23">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_23)" stroke="none"/>
+     </mask>
+     <path d="M 12.415,6.761 C 12.38,6.595 12.217,6.489 12.051,6.525 C 11.885,6.56 11.779,6.723 11.815,6.889 C 11.85,7.055 12.013,7.161 12.179,7.125 C 12.345,7.09 12.451,6.927 12.415,6.761 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_23)"/>
+     <mask id="TranspMask_24">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_24)" stroke="none"/>
+     </mask>
+     <path d="M 12.39,6.632 C 12.355,6.465 12.19,6.358 12.022,6.394 C 11.855,6.429 11.748,6.594 11.784,6.762 C 11.819,6.929 11.984,7.036 12.152,7 C 12.319,6.965 12.426,6.8 12.39,6.632 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_24)"/>
+     <mask id="TranspMask_25">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_25)" stroke="none"/>
+     </mask>
+     <path d="M 12.354,6.482 C 12.305,6.316 12.131,6.22 11.965,6.269 C 11.799,6.318 11.703,6.492 11.752,6.658 C 11.801,6.824 11.975,6.92 12.141,6.871 C 12.307,6.822 12.403,6.648 12.354,6.482 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_25)"/>
+     <mask id="TranspMask_26">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_26)" stroke="none"/>
+     </mask>
+     <path d="M 12.317,6.357 C 12.268,6.191 12.094,6.095 11.928,6.144 C 11.762,6.193 11.666,6.367 11.715,6.533 C 11.764,6.699 11.938,6.795 12.104,6.746 C 12.27,6.697 12.366,6.523 12.317,6.357 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_26)"/>
+     <mask id="TranspMask_27">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_27)" stroke="none"/>
+     </mask>
+     <path d="M 12.273,6.209 C 12.212,6.045 12.029,5.962 11.865,6.023 C 11.701,6.084 11.618,6.267 11.679,6.431 C 11.74,6.595 11.923,6.678 12.087,6.617 C 12.251,6.556 12.334,6.373 12.273,6.209 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_27)"/>
+     <mask id="TranspMask_28">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_28)" stroke="none"/>
+     </mask>
+     <path d="M 12.227,6.086 C 12.166,5.922 11.983,5.839 11.819,5.9 C 11.655,5.961 11.572,6.144 11.633,6.308 C 11.694,6.472 11.877,6.555 12.041,6.494 C 12.205,6.433 12.288,6.25 12.227,6.086 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_28)"/>
+     <mask id="TranspMask_29">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_29)" stroke="none"/>
+     </mask>
+     <path d="M 12.174,5.941 C 12.1,5.78 11.909,5.71 11.749,5.784 C 11.588,5.858 11.518,6.049 11.592,6.209 C 11.666,6.37 11.857,6.44 12.017,6.366 C 12.178,6.292 12.248,6.101 12.174,5.941 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_29)"/>
+     <mask id="TranspMask_30">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_30)" stroke="none"/>
+     </mask>
+     <path d="M 12.12,5.822 C 12.046,5.661 11.855,5.591 11.695,5.665 C 11.534,5.739 11.464,5.93 11.538,6.09 C 11.612,6.251 11.803,6.321 11.963,6.247 C 12.124,6.173 12.194,5.982 12.12,5.822 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_30)"/>
+     <mask id="TranspMask_31">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_31)" stroke="none"/>
+     </mask>
+     <path d="M 12.068,5.702 C 11.993,5.539 11.801,5.468 11.639,5.543 C 11.476,5.618 11.405,5.81 11.48,5.972 C 11.555,6.135 11.747,6.206 11.909,6.131 C 12.072,6.056 12.143,5.864 12.068,5.702 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_31)"/>
+     <mask id="TranspMask_32">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_32)" stroke="none"/>
+     </mask>
+     <path d="M 11.996,5.563 C 11.909,5.407 11.711,5.352 11.555,5.438 C 11.399,5.525 11.344,5.723 11.43,5.879 C 11.517,6.035 11.715,6.09 11.871,6.004 C 12.027,5.917 12.082,5.719 11.996,5.563 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_32)"/>
+     <mask id="TranspMask_33">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_33)" stroke="none"/>
+     </mask>
+     <path d="M 11.932,5.449 C 11.845,5.293 11.647,5.238 11.491,5.324 C 11.335,5.411 11.28,5.609 11.366,5.765 C 11.453,5.921 11.651,5.976 11.807,5.89 C 11.963,5.803 12.018,5.605 11.932,5.449 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_33)"/>
+     <mask id="TranspMask_34">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_34)" stroke="none"/>
+     </mask>
+     <path d="M 11.855,5.314 C 11.756,5.164 11.553,5.122 11.402,5.221 C 11.252,5.32 11.21,5.523 11.309,5.674 C 11.408,5.824 11.611,5.866 11.762,5.767 C 11.912,5.668 11.954,5.465 11.855,5.314 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_34)"/>
+     <mask id="TranspMask_35">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_35)" stroke="none"/>
+     </mask>
+     <path d="M 11.783,5.205 C 11.684,5.055 11.481,5.013 11.33,5.112 C 11.18,5.211 11.138,5.414 11.237,5.565 C 11.336,5.715 11.539,5.757 11.69,5.658 C 11.84,5.559 11.882,5.356 11.783,5.205 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_35)"/>
+     <mask id="TranspMask_36">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_36)" stroke="none"/>
+     </mask>
+     <path d="M 11.711,5.095 C 11.612,4.945 11.409,4.903 11.258,5.002 C 11.108,5.101 11.066,5.304 11.165,5.455 C 11.264,5.605 11.467,5.647 11.618,5.548 C 11.768,5.449 11.81,5.246 11.711,5.095 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_36)"/>
+     <mask id="TranspMask_37">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_37)" stroke="none"/>
+     </mask>
+     <path d="M 11.616,4.971 C 11.506,4.829 11.301,4.802 11.158,4.913 C 11.016,5.023 10.989,5.228 11.1,5.371 C 11.21,5.513 11.415,5.54 11.558,5.429 C 11.7,5.319 11.727,5.114 11.616,4.971 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_37)"/>
+     <mask id="TranspMask_38">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_38)" stroke="none"/>
+     </mask>
+     <path d="M 11.536,4.868 C 11.426,4.726 11.221,4.699 11.078,4.81 C 10.936,4.92 10.909,5.125 11.02,5.268 C 11.13,5.41 11.335,5.437 11.478,5.326 C 11.62,5.216 11.647,5.011 11.536,4.868 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_38)"/>
+     <mask id="TranspMask_39">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_39)" stroke="none"/>
+     </mask>
+     <path d="M 11.435,4.749 C 11.314,4.615 11.108,4.605 10.974,4.726 C 10.84,4.847 10.83,5.053 10.951,5.187 C 11.072,5.321 11.278,5.331 11.412,5.21 C 11.546,5.089 11.556,4.883 11.435,4.749 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_39)"/>
+     <mask id="TranspMask_40">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_40)" stroke="none"/>
+     </mask>
+     <path d="M 11.347,4.652 C 11.226,4.518 11.02,4.508 10.886,4.629 C 10.752,4.75 10.742,4.956 10.863,5.09 C 10.984,5.224 11.19,5.234 11.324,5.113 C 11.458,4.992 11.468,4.786 11.347,4.652 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_40)"/>
+     <mask id="TranspMask_41">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_41)" stroke="none"/>
+     </mask>
+     <path d="M 11.238,4.537 C 11.106,4.414 10.899,4.421 10.776,4.553 C 10.653,4.685 10.66,4.892 10.792,5.015 C 10.924,5.138 11.131,5.131 11.254,4.999 C 11.377,4.867 11.37,4.66 11.238,4.537 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_41)"/>
+     <mask id="TranspMask_42">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_42)" stroke="none"/>
+     </mask>
+     <path d="M 11.142,4.448 C 11.01,4.325 10.803,4.332 10.68,4.464 C 10.557,4.596 10.564,4.803 10.696,4.926 C 10.828,5.049 11.035,5.042 11.158,4.91 C 11.281,4.778 11.274,4.571 11.142,4.448 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_42)"/>
+     <mask id="TranspMask_43">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_43)" stroke="none"/>
+     </mask>
+     <path d="M 11.047,4.358 C 10.915,4.235 10.708,4.242 10.585,4.374 C 10.462,4.506 10.469,4.713 10.601,4.836 C 10.733,4.959 10.94,4.952 11.063,4.82 C 11.186,4.688 11.179,4.481 11.047,4.358 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_43)"/>
+     <mask id="TranspMask_44">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_44)" stroke="none"/>
+     </mask>
+     <path d="M 10.924,4.259 C 10.783,4.147 10.577,4.171 10.465,4.312 C 10.353,4.453 10.377,4.659 10.518,4.771 C 10.659,4.883 10.865,4.859 10.977,4.718 C 11.089,4.577 11.065,4.371 10.924,4.259 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_44)"/>
+     <mask id="TranspMask_45">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_45)" stroke="none"/>
+     </mask>
+     <path d="M 10.822,4.178 C 10.681,4.066 10.475,4.09 10.363,4.231 C 10.251,4.372 10.275,4.578 10.416,4.69 C 10.557,4.802 10.763,4.778 10.875,4.637 C 10.987,4.496 10.963,4.29 10.822,4.178 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_45)"/>
+     <mask id="TranspMask_46">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_46)" stroke="none"/>
+     </mask>
+     <path d="M 10.692,4.086 C 10.542,3.986 10.339,4.027 10.24,4.178 C 10.14,4.328 10.181,4.531 10.332,4.63 C 10.482,4.73 10.685,4.689 10.784,4.538 C 10.884,4.388 10.843,4.185 10.692,4.086 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_46)"/>
+     <mask id="TranspMask_47">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_47)" stroke="none"/>
+     </mask>
+     <path d="M 10.583,4.013 C 10.433,3.913 10.23,3.954 10.131,4.105 C 10.031,4.255 10.072,4.458 10.223,4.557 C 10.373,4.657 10.576,4.616 10.675,4.465 C 10.775,4.315 10.734,4.112 10.583,4.013 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_47)"/>
+     <mask id="TranspMask_48">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_48)" stroke="none"/>
+     </mask>
+     <path d="M 10.448,3.931 C 10.292,3.845 10.095,3.903 10.009,4.06 C 9.923,4.216 9.981,4.413 10.138,4.499 C 10.294,4.585 10.491,4.527 10.577,4.37 C 10.663,4.214 10.605,4.017 10.448,3.931 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_48)"/>
+     <mask id="TranspMask_49">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_49)" stroke="none"/>
+     </mask>
+     <path d="M 10.333,3.868 C 10.177,3.782 9.98,3.84 9.894,3.997 C 9.808,4.153 9.866,4.35 10.023,4.436 C 10.179,4.522 10.376,4.464 10.462,4.307 C 10.548,4.151 10.49,3.954 10.333,3.868 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_49)"/>
+     <mask id="TranspMask_50">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_50)" stroke="none"/>
+     </mask>
+     <path d="M 10.218,3.806 C 10.062,3.72 9.865,3.778 9.779,3.935 C 9.693,4.091 9.751,4.288 9.908,4.374 C 10.064,4.46 10.261,4.402 10.347,4.245 C 10.433,4.089 10.375,3.892 10.218,3.806 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_50)"/>
+     <mask id="TranspMask_51">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_51)" stroke="none"/>
+     </mask>
+     <path d="M 10.07,3.742 C 9.908,3.672 9.72,3.746 9.649,3.909 C 9.579,4.071 9.653,4.259 9.816,4.33 C 9.978,4.4 10.166,4.326 10.237,4.163 C 10.307,4.001 10.233,3.813 10.07,3.742 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_51)"/>
+     <mask id="TranspMask_52">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_52)" stroke="none"/>
+     </mask>
+     <path d="M 9.95,3.689 C 9.788,3.619 9.6,3.693 9.529,3.856 C 9.459,4.018 9.533,4.206 9.696,4.277 C 9.858,4.347 10.046,4.273 10.117,4.11 C 10.187,3.948 10.113,3.76 9.95,3.689 Z" fill="#ffffff" stroke-width="0.013" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_52)"/>
+     <mask id="TranspMask_53">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_53)" stroke="none"/>
+     </mask>
+     <path d="M 9.8,3.635 C 9.634,3.58 9.455,3.671 9.4,3.837 C 9.345,4.003 9.436,4.182 9.602,4.237 C 9.768,4.292 9.947,4.201 10.002,4.035 C 10.057,3.869 9.966,3.69 9.8,3.635 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_53)"/>
+     <mask id="TranspMask_54">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_54)" stroke="none"/>
+     </mask>
+     <path d="M 9.676,3.594 C 9.51,3.539 9.331,3.63 9.276,3.796 C 9.221,3.962 9.312,4.141 9.478,4.196 C 9.644,4.251 9.823,4.16 9.878,3.994 C 9.933,3.828 9.842,3.649 9.676,3.594 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_54)"/>
+     <mask id="TranspMask_55">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_55)" stroke="none"/>
+     </mask>
+     <path d="M 9.523,3.548 C 9.354,3.51 9.185,3.615 9.146,3.783 C 9.108,3.952 9.213,4.121 9.381,4.16 C 9.55,4.198 9.719,4.093 9.758,3.925 C 9.796,3.756 9.691,3.587 9.523,3.548 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_55)"/>
+     <mask id="TranspMask_56">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_56)" stroke="none"/>
+     </mask>
+     <path d="M 9.396,3.519 C 9.227,3.481 9.058,3.586 9.019,3.754 C 8.981,3.923 9.086,4.092 9.254,4.131 C 9.423,4.169 9.592,4.064 9.631,3.896 C 9.669,3.727 9.564,3.558 9.396,3.519 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_56)"/>
+     <mask id="TranspMask_57">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_57)" stroke="none"/>
+     </mask>
+     <path d="M 9.267,3.493 C 9.1,3.454 8.933,3.558 8.895,3.725 C 8.856,3.892 8.96,4.059 9.127,4.097 C 9.294,4.136 9.461,4.032 9.499,3.865 C 9.538,3.698 9.434,3.531 9.267,3.493 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_57)"/>
+     <mask id="TranspMask_58">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_58)" stroke="none"/>
+     </mask>
+     <path d="M 9.11,3.468 C 8.943,3.445 8.787,3.562 8.764,3.73 C 8.741,3.897 8.858,4.053 9.026,4.076 C 9.193,4.099 9.349,3.982 9.372,3.814 C 9.395,3.647 9.278,3.491 9.11,3.468 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_58)"/>
+     <mask id="TranspMask_59">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_59)" stroke="none"/>
+     </mask>
+     <path d="M 8.981,3.453 C 8.815,3.43 8.661,3.546 8.638,3.712 C 8.615,3.878 8.731,4.032 8.897,4.055 C 9.063,4.078 9.217,3.962 9.24,3.796 C 9.263,3.63 9.147,3.476 8.981,3.453 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_59)"/>
+     <mask id="TranspMask_60">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_60)" stroke="none"/>
+     </mask>
+     <path d="M 8.85,3.439 C 8.686,3.416 8.534,3.53 8.512,3.695 C 8.489,3.859 8.603,4.011 8.768,4.033 C 8.932,4.056 9.084,3.942 9.106,3.777 C 9.129,3.613 9.015,3.461 8.85,3.439 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_60)"/>
+     <mask id="TranspMask_61">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_61)" stroke="none"/>
+     </mask>
+     <path d="M 8.691,3.43 C 8.526,3.423 8.385,3.551 8.378,3.717 C 8.371,3.882 8.499,4.023 8.665,4.03 C 8.83,4.037 8.971,3.909 8.978,3.743 C 8.985,3.578 8.857,3.437 8.691,3.43 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_61)"/>
+     <mask id="TranspMask_62">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_62)" stroke="none"/>
+     </mask>
+     <path d="M 8.56,3.427 C 8.396,3.42 8.257,3.547 8.25,3.711 C 8.243,3.875 8.37,4.014 8.534,4.021 C 8.698,4.028 8.837,3.901 8.844,3.737 C 8.851,3.573 8.724,3.434 8.56,3.427 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_62)"/>
+     <mask id="TranspMask_63">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_63)" stroke="none"/>
+     </mask>
+     <path d="M 8.403,3.43 C 8.241,3.437 8.115,3.574 8.123,3.736 C 8.13,3.898 8.267,4.024 8.429,4.016 C 8.591,4.009 8.717,3.872 8.709,3.71 C 8.702,3.548 8.565,3.422 8.403,3.43 Z" fill="#ffffff" stroke-width="0.012" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_63)"/>
+     <mask id="TranspMask_64">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_64)" stroke="none"/>
+     </mask>
+     <path d="M 8.272,3.439 C 8.112,3.446 7.988,3.582 7.995,3.742 C 8.002,3.902 8.138,4.026 8.298,4.019 C 8.458,4.012 8.582,3.876 8.575,3.716 C 8.568,3.556 8.432,3.432 8.272,3.439 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_64)"/>
+     <mask id="TranspMask_65">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_65)" stroke="none"/>
+     </mask>
+     <path d="M 8.142,3.452 C 7.986,3.459 7.864,3.591 7.872,3.748 C 7.879,3.904 8.011,4.026 8.168,4.018 C 8.324,4.011 8.446,3.879 8.438,3.722 C 8.431,3.566 8.299,3.444 8.142,3.452 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_65)"/>
+     <mask id="TranspMask_66">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_66)" stroke="none"/>
+     </mask>
+     <path d="M 7.986,3.47 C 7.832,3.491 7.725,3.633 7.746,3.786 C 7.767,3.94 7.909,4.047 8.062,4.026 C 8.216,4.005 8.323,3.863 8.302,3.71 C 8.281,3.556 8.139,3.449 7.986,3.47 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_66)"/>
+     <mask id="TranspMask_67">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_67)" stroke="none"/>
+     </mask>
+     <path d="M 7.857,3.491 C 7.706,3.512 7.6,3.652 7.62,3.804 C 7.641,3.955 7.781,4.061 7.933,4.041 C 8.084,4.02 8.19,3.88 8.17,3.728 C 8.149,3.577 8.009,3.471 7.857,3.491 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_67)"/>
+     <mask id="TranspMask_68">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_68)" stroke="none"/>
+     </mask>
+     <path d="M 7.728,3.516 C 7.58,3.536 7.477,3.673 7.497,3.821 C 7.517,3.969 7.654,4.072 7.802,4.052 C 7.95,4.032 8.053,3.895 8.033,3.747 C 8.013,3.599 7.876,3.496 7.728,3.516 Z" fill="#ffffff" stroke-width="0.011" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_68)"/>
+     <mask id="TranspMask_69">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_69)" stroke="none"/>
+     </mask>
+     <path d="M 7.579,3.55 C 7.435,3.582 7.344,3.725 7.376,3.869 C 7.408,4.013 7.551,4.104 7.695,4.072 C 7.839,4.04 7.93,3.897 7.898,3.753 C 7.866,3.609 7.723,3.518 7.579,3.55 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_69)"/>
+     <mask id="TranspMask_70">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_70)" stroke="none"/>
+     </mask>
+     <path d="M 7.452,3.586 C 7.312,3.617 7.223,3.756 7.255,3.897 C 7.286,4.037 7.425,4.126 7.566,4.094 C 7.706,4.063 7.795,3.924 7.763,3.783 C 7.732,3.643 7.593,3.554 7.452,3.586 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_70)"/>
+     <mask id="TranspMask_71">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_71)" stroke="none"/>
+     </mask>
+     <path d="M 7.325,3.617 C 7.186,3.648 7.099,3.785 7.13,3.924 C 7.161,4.063 7.298,4.15 7.437,4.119 C 7.576,4.088 7.663,3.951 7.632,3.812 C 7.601,3.673 7.464,3.586 7.325,3.617 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_71)"/>
+     <mask id="TranspMask_72">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_72)" stroke="none"/>
+     </mask>
+     <path d="M 7.186,3.663 C 7.052,3.701 6.976,3.84 7.014,3.973 C 7.052,4.107 7.191,4.183 7.324,4.145 C 7.458,4.107 7.534,3.968 7.496,3.835 C 7.458,3.701 7.319,3.625 7.186,3.663 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_72)"/>
+     <mask id="TranspMask_73">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_73)" stroke="none"/>
+     </mask>
+     <path d="M 7.051,3.712 C 6.923,3.755 6.855,3.894 6.899,4.022 C 6.942,4.15 7.081,4.218 7.209,4.174 C 7.337,4.131 7.405,3.992 7.361,3.864 C 7.318,3.736 7.179,3.668 7.051,3.712 Z" fill="#ffffff" stroke-width="0.01" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_73)"/>
+     <mask id="TranspMask_74">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_74)" stroke="none"/>
+     </mask>
+     <path d="M 6.93,3.763 C 6.808,3.805 6.742,3.938 6.784,4.061 C 6.826,4.183 6.959,4.249 7.082,4.207 C 7.204,4.165 7.27,4.032 7.228,3.909 C 7.186,3.787 7.053,3.721 6.93,3.763 Z" fill="#ffffff" stroke-width="0.009" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_74)"/>
+     <mask id="TranspMask_75">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_75)" stroke="none"/>
+     </mask>
+     <path d="M 6.803,3.818 C 6.685,3.862 6.626,3.994 6.67,4.111 C 6.714,4.229 6.846,4.288 6.963,4.244 C 7.081,4.2 7.14,4.068 7.096,3.951 C 7.052,3.833 6.92,3.774 6.803,3.818 Z" fill="#ffffff" stroke-width="0.009" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_75)"/>
+     <mask id="TranspMask_76">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_76)" stroke="none"/>
+     </mask>
+     <path d="M 6.675,3.879 C 6.565,3.926 6.513,4.054 6.561,4.165 C 6.608,4.275 6.736,4.327 6.847,4.279 C 6.957,4.232 7.009,4.104 6.961,3.993 C 6.914,3.883 6.786,3.831 6.675,3.879 Z" fill="#ffffff" stroke-width="0.009" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_76)"/>
+     <mask id="TranspMask_77">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_77)" stroke="none"/>
+     </mask>
+     <path d="M 6.559,3.939 C 6.454,3.984 6.405,4.107 6.45,4.212 C 6.495,4.317 6.618,4.366 6.723,4.321 C 6.828,4.276 6.877,4.153 6.832,4.048 C 6.787,3.943 6.664,3.894 6.559,3.939 Z" fill="#ffffff" stroke-width="0.008" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_77)"/>
+     <mask id="TranspMask_78">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_78)" stroke="none"/>
+     </mask>
+     <path d="M 6.439,4.008 C 6.342,4.054 6.3,4.17 6.346,4.267 C 6.392,4.364 6.508,4.406 6.605,4.36 C 6.702,4.314 6.744,4.198 6.698,4.101 C 6.652,4.004 6.536,3.962 6.439,4.008 Z" fill="#ffffff" stroke-width="0.008" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_78)"/>
+     <mask id="TranspMask_79">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_79)" stroke="none"/>
+     </mask>
+     <path d="M 6.326,4.076 C 6.235,4.118 6.196,4.227 6.239,4.317 C 6.281,4.408 6.39,4.447 6.48,4.404 C 6.571,4.362 6.61,4.253 6.567,4.163 C 6.525,4.072 6.416,4.033 6.326,4.076 Z" fill="#ffffff" stroke-width="0.007" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_79)"/>
+     <mask id="TranspMask_80">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_80)" stroke="none"/>
+     </mask>
+     <path d="M 6.214,4.16 C 6.136,4.2 6.106,4.296 6.147,4.373 C 6.187,4.451 6.283,4.481 6.36,4.44 C 6.438,4.4 6.468,4.304 6.427,4.227 C 6.387,4.149 6.291,4.119 6.214,4.16 Z" fill="#ffffff" stroke-width="0.006" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_80)"/>
+    </g>
+    <path d="M 1.053,0.2 L 15.448,0.2 C 15.918,0.2 16.301,0.583 16.301,1.053 L 16.301,15.72 C 16.301,16.19 15.918,16.573 15.448,16.573 L 1.053,16.573 C 0.583,16.573 0.2,16.19 0.2,15.72 L 0.2,1.053 C 0.2,0.583 0.583,0.2 1.053,0.2 Z" stroke="#000a24" stroke-width="0.401" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="url(#LinearGradient)"/>
+    <g id="Group_1" stroke-width="0.75" stroke="#000000" stroke-linejoin="miter" fill="#000000" stroke-miterlimit="79.8403193612775">
+     <path d="M 4.506,0.422 C 4.068,1.071 3.482,2.006 3.12,2.696 C 2.808,3.29 2.817,3.333 2.58,3.932 C 2.069,5.225 1.763,8.017 2.532,9.644 C 3.105,10.856 4.059,12.214 5.566,12.838 C 8.68,14.128 11.411,13.022 11.931,12.81 C 13.099,12.334 12.709,11.203 12.636,11.018 C 12.567,10.843 12.381,10.316 12.38,10.317 C 10.835,11.348 9.152,12.195 6.363,11.798 C 5.898,11.732 4.987,11.305 4.248,10.436 C 3.536,9.599 3.086,8.334 2.97,7.19 C 2.786,5.381 3.19,4.334 3.678,3.008 C 3.932,2.316 5.028,0.71 5.184,0.434 C 4.83,0.416 4.782,0.422 4.506,0.422 Z" marker-start="none" marker-end="none"/>
+     <path d="M 12.59,9.879 C 12.927,9.197 12.868,9.073 12.81,8.768 C 12.761,8.511 12.307,8.105 12.102,7.904 C 11.712,7.522 12.111,6.819 12.126,6.392 C 12.155,5.538 11.268,4.682 11.304,4.295 C 11.544,3.68 13.008,4.97 13.572,5.492 C 13.795,5.699 14.699,6.661 14.85,6.908 C 15.266,7.589 14.805,7.938 14.346,8.708 C 14.206,8.944 13.175,9.901 12.752,10.191 C 12.551,10.329 12.268,10.477 12.353,10.371 C 12.353,10.371 12.446,10.17 12.59,9.879 Z" marker-start="none" marker-end="none"/>
+    </g>
+    <path d="M 4.506,0.422 C 4.068,1.071 3.482,2.006 3.12,2.696 C 2.808,3.29 2.817,3.333 2.58,3.932 C 2.069,5.225 1.763,8.017 2.532,9.644 C 3.105,10.856 4.059,12.214 5.566,12.838 C 8.68,14.128 11.411,13.022 11.931,12.81 C 13.099,12.334 12.709,11.203 12.636,11.018 C 12.567,10.843 12.381,10.316 12.38,10.317 C 10.835,11.348 9.152,12.195 6.363,11.798 C 5.898,11.732 4.987,11.305 4.248,10.436 C 3.536,9.599 3.086,8.334 2.97,7.19 C 2.786,5.381 3.19,4.334 3.678,3.008 C 3.932,2.316 5.028,0.71 5.184,0.434 C 4.83,0.416 4.782,0.422 4.506,0.422 Z" fill="#7f7f7f" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+    <path d="M 12.59,9.879 C 12.927,9.197 12.868,9.073 12.81,8.768 C 12.761,8.511 12.307,8.105 12.102,7.904 C 11.712,7.522 12.111,6.819 12.126,6.392 C 12.155,5.538 11.268,4.682 11.304,4.295 C 11.544,3.68 13.008,4.97 13.572,5.492 C 13.795,5.699 14.699,6.661 14.85,6.908 C 15.266,7.589 14.805,7.938 14.346,8.708 C 14.206,8.944 13.175,9.901 12.752,10.191 C 12.551,10.329 12.268,10.477 12.353,10.371 C 12.353,10.371 12.446,10.17 12.59,9.879 Z" fill="#999999" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none"/>
+    <mask id="TranspMask_81">
+     <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#LinearGradient_1)" stroke="none"/>
+    </mask>
+    <path d="M 4.53,0.403 C 4.092,1.052 3.506,1.987 3.144,2.677 C 2.832,3.271 2.841,3.314 2.604,3.913 C 2.093,5.206 1.787,7.998 2.556,9.625 C 3.129,10.837 4.083,12.195 5.59,12.819 C 8.704,14.109 11.435,13.003 11.955,12.791 C 13.123,12.315 12.733,11.184 12.66,10.999 C 12.591,10.824 12.405,10.297 12.404,10.298 C 10.859,11.329 9.176,12.176 6.387,11.779 C 5.922,11.713 5.011,11.286 4.272,10.417 C 3.56,9.58 3.11,8.315 2.994,7.171 C 2.81,5.362 3.214,4.315 3.702,2.989 C 3.956,2.297 5.052,0.691 5.208,0.415 C 4.854,0.397 4.806,0.403 4.53,0.403 Z" fill="#ffffff" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" mask="url(#TranspMask_81)"/>
+    <mask id="TranspMask_82">
+     <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_81)" stroke="none"/>
+    </mask>
+    <path d="M 4.459,0.38 C 4.021,1.029 3.435,1.964 3.073,2.654 C 2.761,3.248 2.77,3.291 2.533,3.89 C 2.022,5.183 1.716,7.975 2.485,9.602 C 3.058,10.814 4.012,12.172 5.519,12.796 C 8.633,14.086 11.364,12.98 11.884,12.768 C 13.052,12.292 12.662,11.161 12.589,10.976 C 12.52,10.801 12.334,10.274 12.333,10.275 C 10.788,11.306 9.105,12.153 6.316,11.756 C 5.851,11.69 4.94,11.263 4.201,10.394 C 3.489,9.557 3.039,8.292 2.923,7.148 C 2.739,5.339 3.143,4.292 3.631,2.966 C 3.885,2.274 4.981,0.668 5.137,0.392 C 4.783,0.374 4.735,0.38 4.459,0.38 Z" fill="#ffffff" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" mask="url(#TranspMask_82)"/>
+    <mask id="TranspMask_83">
+     <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_82)" stroke="none"/>
+    </mask>
+    <path d="M 12.541,9.9 C 12.878,9.218 12.819,9.094 12.761,8.789 C 12.712,8.532 12.258,8.126 12.053,7.925 C 11.663,7.543 12.062,6.84 12.077,6.413 C 12.106,5.559 11.219,4.703 11.255,4.316 C 11.495,3.701 12.959,4.991 13.523,5.513 C 13.746,5.72 14.65,6.682 14.801,6.929 C 15.217,7.61 14.756,7.959 14.297,8.729 C 14.157,8.965 13.126,9.922 12.703,10.212 C 12.502,10.35 12.219,10.498 12.304,10.392 C 12.304,10.392 12.397,10.191 12.541,9.9 Z" fill="#ffffff" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" mask="url(#TranspMask_83)"/>
+    <mask id="TranspMask_84">
+     <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_83)" stroke="none"/>
+    </mask>
+    <path d="M 12.611,9.923 C 12.948,9.241 12.889,9.117 12.831,8.812 C 12.782,8.555 12.328,8.149 12.123,7.948 C 11.733,7.566 12.132,6.863 12.147,6.436 C 12.176,5.582 11.289,4.726 11.325,4.339 C 11.565,3.724 13.029,5.014 13.593,5.536 C 13.816,5.743 14.72,6.705 14.871,6.952 C 15.287,7.633 14.826,7.982 14.367,8.752 C 14.227,8.988 13.196,9.945 12.773,10.235 C 12.572,10.373 12.289,10.521 12.374,10.415 C 12.374,10.415 12.467,10.214 12.611,9.923 Z" fill="#ffffff" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" mask="url(#TranspMask_84)"/>
+    <mask id="TranspMask_85">
+     <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#RadialGradient_84)" stroke="none"/>
+    </mask>
+    <path d="M 12.517,9.851 C 12.854,9.169 12.795,9.045 12.737,8.74 C 12.688,8.483 12.234,8.077 12.029,7.876 C 11.639,7.494 12.038,6.791 12.053,6.364 C 12.082,5.51 11.195,4.654 11.231,4.267 C 11.471,3.652 12.935,4.942 13.499,5.464 C 13.722,5.671 14.626,6.633 14.777,6.88 C 15.193,7.561 14.732,7.91 14.273,8.68 C 14.133,8.916 13.102,9.873 12.679,10.163 C 12.478,10.301 12.195,10.449 12.28,10.343 C 12.28,10.343 12.373,10.142 12.517,9.851 Z" fill="#ffffff" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" mask="url(#TranspMask_85)"/>
+    <mask id="TranspMask_86">
+     <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#LinearGradient_2)" stroke="none"/>
+    </mask>
+    <path d="M 1.307,0.396 L 15.264,0.396 C 15.734,0.396 16.117,0.779 16.117,1.249 L 16.117,15.916 C 16.117,16.386 15.734,16.769 15.264,16.769 L 1.307,16.769 C 0.837,16.769 0.454,16.386 0.454,15.916 L 0.454,1.249 C 0.454,0.779 0.837,0.396 1.307,0.396 Z" stroke="none" fill="#ffffff" stroke-width="0.401" stroke-linejoin="miter" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_86)"/>
+   </g>
+  </g>
+ </g>
+</svg>

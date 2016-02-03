@@ -162,6 +162,7 @@ h2 {
   margin-bottom: 3px;
   margin-top: 10px;
 }
+
 h2 img {
   vertical-align: top;
 }
@@ -295,7 +296,7 @@ tbody.index_table tr td{
 
 /*
 ##############################################################################
-##  guides.md Page
+##  Format for the Guides section of the help.
 ##############################################################################
 */
 
@@ -304,6 +305,68 @@ tbody.index_table tr td{
 	height:36px;
 }
 
+.guide {
+  max-width: 800px;
+}
+
+.guide p,ul,ol{
+  line-height: 1.6;
+}
+
+.guide img{
+  width:35%;
+}
+
+.guide .wide-img {
+  width:75%;
+}
+
+
+@media screen and (max-width: 650px) {
+  .guide img{
+  width: 75%;
+  }
+  .guide .wide-img {
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .guide img{
+  width: 100%;
+  }
+}
+
+
+.guide h2{
+  font-size:24px;
+  border-bottom:none;
+  margin-top: 20px;
+}
+
+.guide ol {
+    counter-reset: item;
+    margin-left: 0px;
+}
+.guide ol li { display: block }
+
+.guide ol>li:before{
+  content: counter(item) ". ";
+  counter-increment: item;
+  font-weight: bold;
+}
+
+.guide li>img{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 18px;
+}
+
+@media screen and (max-width: 450px) {
+  .guide li>img{
+    margin-left: 0px;
+  }
+}
 
 /*
 ##############################################################################

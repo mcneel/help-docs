@@ -1,55 +1,55 @@
 ---
+title: Canali
 ---
 
-# ![images/render.svg](images/render.svg){:height="75px" width="75px"} Channels
+# ![images/render.svg](images/render.svg) {{page.title}}
 {: #channel}
-A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
+Una funzione molto utile di Flamingo nXt 5 è la possibilità di impostare le luci su otto canali diversi. Ciascuna sorgente di luce presente nel disegno, compresi il sole ed il cielo, può essere assegnata ad un canale. In fase di rendering, la luce di ciascun canale viene messa sul suo proprio livello.  Quindi, una volta ultimato il rendering, si può regolare l'intensità di ciascun canale.  La modifica avviene in tempo reale senza il bisogno di effettuare di nuovo il rendering.  
 
-Channels are very effective when:
+I canali sono molto efficaci in queste situazioni:
 
-* Trying to balance an HDRI Environment and the Sunlight.  Not all HDRI environments are calibrated.  It is useful to set the HDRi Sky on one channel and the Sun on another.  Then adjust the relative strength of the Sky light vs the sun after rendering.
-* Studio renderings that use a key, fill, and backlight setup. Set each light on a different channel, then adjust their strength real-time in the rendering using channels.
-* When using different banks of lights in an exterior or interior rendering.  Each bank of lights can be set on a channel and effectively have their own dimmer to control their strength.
-* Rendering with all the lights on, then turning off and on certain lights. No need to render an interior to create a night shot and a daytime rendering.
+* Quando si cerca di bilanciare un ambiente HDRI con la luce del sole.  Non tutti gli ambienti HDRI sono calibrati.  È utile impostare il cielo HDRi su un canale ed il sole su un altro canale.  Quindi, regolare l'intensità relativa della luce del cielo rispetto a quella del sole dopo il rendering.
+* Rendering da studio che usano la configurazione a tre luci: luce principale, luce di riempimento e controluce. Impostare ciascuna luce su un canale diverso e quindi regolarne l'intensità in tempo reale nel rendering usando i canali.
+* Quando si usano varie serie di riflettori in un rendering esterno o interno.  Ciascuna serie di riflettori si può impostare su un canale diverso in modo tale che i corrispondenti regolatori controllino l'intensità luminosa di ognuna di esse.
+* Quando si renderizza con tutte le luci attivate e quindi si attivano e disattivano certe luci. Non è necessario calcolare varie volte il rendering di un interno per generare uno scatto notturno ed uno diurno.
 
-Once this image is rendered, each channel can be individually scaled either in the Render Window before saving or it can be saved to an .nXtImage file for later editing.
+Ciascun canale può essere scalato singolarmente nella finestra di rendering una volta eseguito il rendering dell'immagine e prima del suo salvataggio oppure l'immagine può essere esportata su un file .nXtImage di Flamingo nXt per modificarla successivamente.
 
-Use channels to adjust the strength of lights relative to each other, not to brighten the whole image.  If you need to brighten the whole image at once, use the Adjust Image controls.
+Si usino i canali per regolare le varie intensità delle luci tra di loro, non per illuminare tutta l'immagine.  Per illuminare tutta l'immagine in una volta, si usino i controlli della sezione Regola immagine.
 
-<!-- TODO: Find original video clip.It is probably best to embed it from Vimeo.-->
-Click to play video clip.
-<!-- TODO: Is this supposed to link to a video? -->
+<video id="channelsvideo" src="images/flamingo-lights-onoff.mp4" poster="images/flamingo-lights-onoff.jpg" controls preload></video>
+*Cliccare per riprodurre il videoclip.*
 
-The following conditions are necessary to produce and manipulate a multi-channel image:
+Per generare e manipolare un'immagine multicanale devono essere soddisfatte le seguenti condizioni:
 
- 1. All participating lights must be on.
- 2. Each light source must be assigned to a channel. By default, Sun and Sky are set to channel 0, artificial lights are set to 1.
- 3. Immediately after rendering, use the Channel controls in the render window.
- 3. The only saved format that preserves this channel information is the .nXtImage format. Lighting can be adjusted there and then the image is saved to a bitmap format.
+ 1. Tutte le luci coinvolte devono essere attivate.
+ 2. Ciascuna sorgente di luce va assegnata ad un canale. Di default, Sole e Cielo sono impostati sul canale 0 e le luci artificiali sono impostate sul canale 1.
+ 3. Immediatamente dopo il rendering, si usino i controlli della sezione Canali nella finestra di rendering.
+ 3. L'unico formato salvato che conserva le informazioni sui canali è il formato .nXtImage. In esso, si può regolare l'illuminazione per poi salvare l'immagine in formato bitmap.
 
-## Setting Channels
+## Impostare i canali
 {: setting}
-The first step in setting up a muti-channel rendering is to set each light to channel. The channel number is usually set in each light property.  For information on setting specific lights to a channel see:
+Il primo passo per impostare un rendering multicanale è impostare ciascuna luce su un canale. Il numero del canale di solito si imposta nelle proprietà di ciascuna luce.   Per informazioni sull'impostazione di luci specifiche si veda:
 
->[Sun Channel](sun-and-sky-tabs.html#sun-channel)
->[Sky Channel](sun-and-sky-tabs.html#sky-channel)
->[Artificial Light Channel](lights-tab.html#channel)
->[Material Glow](documentproperties-flamingo.html#channel)
+>[Canale del sole](sun-and-sky-tabs.html#sun-channel)
+>[Canale del cielo](sun-and-sky-tabs.html#sky-channel)
+>[Canale delle luci artificiali](lights-tab.html#channel)
+>[Canale del bagliore dei materiali](documentproperties-flamingo.html#channel)
 
-Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
+Sullo stesso canale, si può impostare un numero qualsiasi di luci.  La regolazione del canale è un moltiplicatore. Le luci che si trovano sullo stesso canale manterranno le loro intensità relative durante la regolazione.
 
-## Adjusting Channels
+## Regolare i canali
 {: adjusting}
-Lighting channels can be adjusted immediately after rendering, or in the Flamingo image editor if the rendering is saved as an nXtImage file.  Channels can be adjusted while Flamingo continues to render, but we recommend that you stop the rendering before making major adjustments.
+I canali di illuminazione si possono regolare subito dopo il rendering oppure nell'editor delle immagini di Flamingo se il rendering viene salvato come file .nXtImage.  I canali si possono regolare mentre Flamingo sta renderizzando, tuttavia, consigliamo di arrestare il rendering prima di fare delle modifiche importanti.
 
-#### Where can I find Flamingo Lighting control?
-The channel controls are found on the Flamingo nXt tab in the [render window](render-window.html) under Channels.
+#### Dove trovo il controllo di illuminazione di Flamingo?
+I controlli dei canali si trovano nella scheda Flamingo nXt, nella [finestra di rendering](render-window.html) sotto Canali.
 
-There are eight channel controls 0-7. Only the channels that have lights on them will activate.
+Esistono otto controlli per i canali, dallo 0 al 7. Solo i canali che contengono delle luci si attiveranno.
 
 ![images/channel-slider.png](images/channel-slider.png)
-Each channel has a slider and a spinner value.  The spinner value represents the maximum value of the slider. If the slider is all the way to right, then the full value of the spinner is used to multiply the lighting amounts on that channel.  It follows that the slider at 50% will multiply all the lighting on that channel layer by half the spinner amount.  A slider slid all the way to the left will turn off all the lighting on that channel.
+Ciascun canale presenta un valore relativo allo slider ed un valore relativo alla casella di selezione.  Il valore della casella rappresenta il valore massimo dello slider. Se lo slider è completamente a destra, per moltiplicare i valori di illuminazione su quel canale verrà usato il valore indicato nella casella.  Quindi, se lo slider si trova a metà della barra di scorrimento, per moltiplicare i valori di illuminazione che si trovano su quel canale verrà usata la metà del valore indicato nella casella.  Se lo slider è completamente a sinistra, tutte le luci che si trovano su quel canale verranno disattivate.
 
-The value of the spinner can be very important.  Because Sun and Sky can be many times brighter then artificial lights, the spinner value on artificial lights  might need to be increased to 20 or 50 to see any difference.
+Il valore della casella può essere molto importante.  Visto che Sole e Cielo possono essere molto più luminosi delle luci artificiali, per percepire qualche differenza, può essere necessario aumentare a 20 o a 50 il valore della casella corrispondente alle luci artificiali.
 
-After adjusting the channels correctly, then save the image as a JPG or PNG file as the final rendering.
+Dopo aver regolato correttamente i canali, si salvi l'immagine come file JPG o PNG per il rendering finale.
