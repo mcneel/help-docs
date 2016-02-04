@@ -3,7 +3,7 @@ title: Options Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 These settings apply to the Flamingo application.  Making changes here changes how Flamingo runs all the time.
 
 {: #default-decal-link-state}
@@ -11,7 +11,7 @@ These settings apply to the Flamingo application.  Making changes here changes h
 
 #### Farm shared folder
 {: #farm-output-folder}
-The shared folder for render farm jobs. This is also the location that the farm will output its results. Use the Folder icon ![images/folderopen32x32.png](images/folderopen32x32.png) to select a new location.
+The shared folder for render farm jobs. This is also the location that the farm will output its results. Use the Folder icon ![images/folderopen32x32.png](images/folderopen32x32.png){: .inline} to select a new location.
 
 #### Display Tagged Lights
 Use this property to Display the direction of a tagged light.  This works on spot and diffuse light distributions.

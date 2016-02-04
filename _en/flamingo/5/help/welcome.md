@@ -1,9 +1,9 @@
 ---
 title: Getting Started with Flamingo
 ---
-
 <!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
-# ![images/flamingotab.svg](images/flamingotab.svg) Getting Started with Flamingo nXt®
+
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} Getting Started with Flamingo nXt®
 Flamingo nXt creates high quality, photorealistic, still, and animation image files from 3-D models inside Rhinoceros ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a work in progress version.
 
 Download and install Flamingo from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/beta).
@@ -19,18 +19,18 @@ After downloading and running the RHI installer, start up Rhino.
 
 For technical support, tutorials, examples, and information about how to get started using **Flamingo nXt**, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
 
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical Support](http://nxt.flamingo3d.com/forum)
+* [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+* [Gallery](http://nxt.flamingo3d.com/photo)
+* [Technical Support](http://nxt.flamingo3d.com/forum)
 
 ## The Flamingo nXt Control Panel
 {: #control-panel}
 This version of Flamingo features an interface integrated with the Rhino 5 rendering tools. The Flamingo nXt Control Panel provides tabs for setting up the model for rendering, including:
 
-> [Materials](materials-tab.html)
-> [Lighting](lighting-tab.html)
-> [Environment](environment-tab.html)
-> [Render](render-tab.html)
+* [Materials](materials-tab.html)
+* [Lighting](lighting-tab.html)
+* [Environment](environment-tab.html)
+* [Render](render-tab.html)
 
 ## To access the Flamingo control panel
 * On the Flamingo nXt 5.0 menu, click Control Panel.
