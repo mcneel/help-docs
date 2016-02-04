@@ -7,9 +7,8 @@ title: 彩現選項
 
 **附註：**嘗試以不同的設定彩現時請用低解析度，所有選項都設定妥當後再用高解析度做最終彩現。
 
-#### 可以在哪找到 Flamingo 的彩現選項設定?
+#### 可以在哪找到 Flamingo 的燈光設定?
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
  1. ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo nXt > 彩現選項。
 
 
@@ -21,7 +20,7 @@ title: 彩現選項
 此為預設值，彩現目前使用中的作業視窗。
 
 #### 可使用的作業視窗清單
-This list includes all the named views in the model.  Select the view name that should always be rendered.
+請從這裡選取要固定彩現的作業視窗。
 
 ## 彩現解析度
 {: #resolution}
