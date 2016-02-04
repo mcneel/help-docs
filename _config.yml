@@ -76,7 +76,7 @@ defaults:
       path: "en/flamingo/5/guides"
     values:
       type: "guides_topic"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "Guides"
       sort: 1
   -

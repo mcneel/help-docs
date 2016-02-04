@@ -1,4 +1,4 @@
 
-### Veneer
-Causes the material to appear as a planar pattern on the surfaces of the object instead of cutting through the object.
+### 飾片
+就像在立方體的每一個面分別貼上紋路飾片，紋路在面的邊界處會中斷。
 

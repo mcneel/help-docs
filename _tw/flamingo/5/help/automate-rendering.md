@@ -69,7 +69,9 @@ title: 自動化彩現
 {: #rendering-constraints}
 設定一個批次工作用來完成彩現的處理數，進一步的說明請參考：[處理數](documentproperties-flamingo.html#number-of-passes)
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 

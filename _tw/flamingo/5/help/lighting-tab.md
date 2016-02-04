@@ -88,7 +88,7 @@ Flamingo nXt 內建的四個照明預設組：
 
 ### 自訂照明
 {: #custom  style="clear:both;"}
-Custom is the tab to mix and match parts of the lighting prelights together.  For instance, if the scene is Exterior daylight, but lit with the addition of an HDRi environment, use the Custom tab to turn off and on parts of the lighting model.  When the values change from the defaults for the presets, the scheme becomes a custom scheme.
+自訂頁面可開啟照明預設組未使用的選項，例如要在**戶外日光**預設組使用 HDRi 圖片做為天空的光源時，可以在**自訂**頁面將**天空**設為 **HDRi**，並選擇一張 HDRi 圖片，此時照明預設組會自動變為**自訂**。
 
 ####  [太陽](sun-and-sky-tabs.html#sun)
 {: #sun}
