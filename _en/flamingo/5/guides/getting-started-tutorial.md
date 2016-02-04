@@ -79,8 +79,12 @@ Often you will need a material that is not pre-made in the Library. For instance
  1. Select a new Flamingo Textured material.
  1. Here you are prompted to pick a texture.
  1. Navigate to the directory that you created when you unzipped the tutorials files and select the Cork.jpg and click Open.
- 1. You can see you have a simple textured material. The tile size of the bitmap is often important. In this case use a tile size of 100 in width.
+ 1. You can see you have a simple textured material. The tile size of the bitmap is often important. To change the tile size, click on the bitmap name.
+![images/getting_started009.png](images/getting_started009.png)
+ 1. Adjust the tile size of 100 in width.
+![images/getting_started010.png](images/getting_started010.png)
  1. In the name field, type "Cork"and press OK.
+![images/getting_started011.png](images/getting_started011.png)
  1. Once created, assign the Cork material the the Cork Handle layer by dragging the material over the layer.
 
 ## Turn on the Groundplane
@@ -90,10 +94,12 @@ Adding a groundplane can help set the object into a scene.
 1. Go to the Groundplane panel.  If it is not visible, right-click on another panel tab and select Ground Plane
 1. Click on the Enable to activate the groundplane.  In this case we will use the default ground plane height.
 1. In this case, a new material for the groundplane needs to be created. Scroll to the bottom of the materials list, click on the plus symbol.
+![images/getting_started011.png](images/getting_started012.png)
 1. Select a new Flamingo Textured material.
 1. Here you are prompted to pick a texture.
 1. Navigate to the directory that you created when you unzipped the tutorials files and select the Deckwood.jpg and click Open.
-1. You can see you have a simple textured material. The tile size of the bitmap is important. In this case we will enter a width of 125.
+1. You can see you have a simple textured material. The tile size of the bitmap is often important. To change the tile size, click on the bitmap name.
+1. Adjust the tile size of 125 in width.
 1. In the name field, type "Floor"and press OK.
 1. The render should look like this:
 ![images/getting_started006.png](images/getting_started006.png)
@@ -107,6 +113,8 @@ Adjusting the rendered image after rendering is very important to getting the mo
 1. Make sure the rendering is Stopped by clicking on the Stop icon.
 1. Under Adjust Image, change Burn to 0.1
 1. Under Adjust Image, change Brightness to 0.1
+![images/getting_started013.png](images/getting_started013.png)
+1. The result should look like this:
 ![images/getting_started007.png](images/getting_started007.png)
 *Notice the brighter whites (Burn) and the overall brightness (brightness) of the image.  The Burn is especially effective in producing a more dynamic image.*
 

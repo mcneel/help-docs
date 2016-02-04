@@ -226,6 +226,7 @@ h6 {
 }
 
 blockquote {
+  display: block;
 	border-color: white;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -316,13 +317,17 @@ tbody.index_table tr td{
 .guide img{
   width:35%;
   text-align:left;
-  display: block;;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .guide .wide-img {
   width:75%;
   text-align:left;
   display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 
