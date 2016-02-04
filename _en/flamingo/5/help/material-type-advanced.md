@@ -33,8 +33,10 @@ As an example, the [Marble](procedural-materials.html#marble) Procedure combines
 
 
 ##### To add a procedure
+
 1. Right-click on Base the Procedures window.
 1. On the menu, click a procedure type.
+
   * [Base](procedural-materials.html#base)
   * [Angular Blend](procedural-materials.html#angular-blend)
   * [Blend](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ As an example, the [Marble](procedural-materials.html#marble) Procedure combines
   * [Wood](procedural-materials.html#wood)
 
 ##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+
+1. In the Procedures window,right-click the procedure name.
+1. On the menu, click Remove.
 
 ## Advanced Material Properties
 {: #advanced-materials-properties}

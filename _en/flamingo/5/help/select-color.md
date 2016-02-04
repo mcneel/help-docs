@@ -2,7 +2,7 @@
 title: Color Selector
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
 
 
@@ -13,7 +13,7 @@ There are two parts of the selector:
 1. [Color Swatch](#swatch) - Click on the color for the main color selector
 1. [Options Menu](#options) - Click on the arrow for additional color utilities
 
-## Color Swatch ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## Color Swatch ![images/callout-1-vertical.svg](images/callout-1-vertical.svg){: .inline}
 {: #swatch}
 Click the color swatch to select a color from the Select Color dialog box.
 
@@ -34,7 +34,7 @@ Click the color swatch to select a color from the Select Color dialog box.
 {: #rgb}
 This method is used by computers to project color onto the monitor. Each pixel is a combination of the three colors in varying intensities. Pure red is entirely red with no green or blue. Pure black has red, green, and blue set to 0, and pure white has red, green, and blue set to 255.
 
-## Menu options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## Menu options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg){: .inline}
 {: #options}
 
 #### Color Picker

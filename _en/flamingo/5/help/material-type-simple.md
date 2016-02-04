@@ -124,8 +124,8 @@ Set the image map and properties of the material. There are many options here. S
 
 ## Texture Set
 {: #texture-set}
-<!-- TODO: The following link doesn't work -->
-[Texture set materials](material-type-texture-set.html) are a coordinated set of texture which defines a material.  These coordinated sets can the created through texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
+
+Texture set materials are a coordinated set of texture which defines a material.  These coordinated sets can the created through texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
 
 ![images/solidcolors.png](images/textureset.png)
 
