@@ -2,7 +2,7 @@
 title: Flamingo Environment
 ---
 
-# ![images/environment.svg](images/environment.svg) {{page.title}}
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
 There are many types of [environments in Rhino](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm). This topic will address the Flamingo Environment type.
 
 The Environment affects the visible part of the background and reflections.  For effects that affect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
@@ -11,10 +11,10 @@ Flamingo comes with a special environment called **Default Flamingo Environment*
 
 The complete set of property groups in the Flamingo Environment are:
 
-> [Name](#name)
-> [Flamingo Environment](#environment)
-> [Background Color](#color-backgrounds)
-> [Advanced Background](#advanced-background-reflected-sky)
+  * [Name](#name)
+  * [Flamingo Environment](#environment)
+  * [Background Color](#color-backgrounds)
+  * [Advanced Background](#advanced-background-reflected-sky)
 
 
 ## Environment Name
@@ -25,9 +25,9 @@ This is the name of the environment in the Rhino model.  Environments are stored
 {: #environment}
 There are three major effects of environment in a rendering:
 
->Visible Background
->[Reflective Background](#advanced-background-reflected-sky)
->[Refractive Background](#advanced-background-refracted-sky)
+  1. Visible Background
+  1. [Reflective Background](#advanced-background-reflected-sky)
+  1. [Refractive Background](#advanced-background-refracted-sky)
 
 The Visible Background is the basic background color of the scene.  The visible background is in the general properties panel. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
 
@@ -39,10 +39,10 @@ Modifies the relative brightness of the background. The Intensity value is used 
 {: #background-type}
 Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be the following types:
 
-> [Sky](#environment-sky)
-> [Solid and gradient color](#color-backgrounds)
-> [Image](#environment-image)
-> [HDR and planar HDR images](#hdr-background)
+* [Sky](#environment-sky)
+* [Solid and gradient color](#color-backgrounds)
+* [Image](#environment-image)
+* [HDR and planar HDR images](#hdr-background)
 
 ## Sky Background
 {: #environment-sky}
@@ -129,9 +129,9 @@ Set the background image by clicking on the large button that reads *(empty - cl
 {: #backgroud-image-projection}
 Select one of three image projections from the drop-down control:
 
->[Planar](#planar)
->[Cylindrical](#cylindrical)
->[Spherical](#spherical)
+* [Planar](#planar)
+* [Cylindrical](#cylindrical)
+* [Spherical](#spherical)
 
 Each projection method has its own set of controls for positioning the image.
 
@@ -163,6 +163,7 @@ Use the placement control to place the image relative the to current view. The v
 *Current viewport area (1), image size and shape (2).*
 
 <!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
+
 #### X Scale / Y Scale
 Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
 

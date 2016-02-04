@@ -27,7 +27,7 @@ title: Flamingo Help Index
 {% endcase %}
 
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{local_categories.name}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{local_categories.name}}
 {% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}
