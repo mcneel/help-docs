@@ -10,7 +10,6 @@ Flamingo nXt 5 的燈光照明可設八個通道是非常有用的功能，每�
 
 * 平衡 HDRI 環境與太陽的照明亮度 - 並非所有的 HDRI 環境圖片的亮度都是正確的，將 HDRi 天空與太陽各設為一個通道，彩現後可用來調整天空與太陽的相對亮度。
 * 平衡攝影棚彩現的燈光亮度 - 攝影棚的照明通常使用主光源、輔助光源、背光源三個燈光，將三個燈光各設為一個通道，彩現後可用來平行三個燈光的照明亮度。
-* *************
 * 白天與夜晚場景 - 彩現後可將光源開啟或關閉，只要彩現一次就可以得到白天與夜晚的彩現影像。
 
 照明通道的亮度可以在彩現視窗裡調整，或是將彩現影像儲存為 .nXtImage 檔案，之後可以在 Flamingo nXt 的彩現影像編輯器開啟做調整。
@@ -34,7 +33,7 @@ Flamingo nXt 5 的燈光照明可設八個通道是非常有用的功能，每�
 >[太陽通道](sun-and-sky-tabs.html#sun-channel)
 >[天空通道](sun-and-sky-tabs.html#sky-channel)
 >[人造光源](lights-tab.html#channel)
->[Material Glow](documentproperties-flamingo.html#channel)
+>[材質光暈](documentproperties-flamingo.html#channel)
 
 照明通道可用來將燈光分組，使用同一個通道的數個燈光可同步調整亮度。
 
