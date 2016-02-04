@@ -6,10 +6,10 @@ title: Getting Started Tutorial
 # {{page.title}}
 This tutorial shows how to render a standard Rhino model using nXt. The Tutorial covers the basic steps of rendering with nXt which include:
 
-  > Opening a model
-  > Creating materials
-  > Editing materials
-  > Adding a ground plane
+1. Opening a model
+1. Creating materials
+1. Editing materials
+1. Adding a ground plane
 
 The first step is to download and unzip the tutorial files. To download the zip file, click on the [Fishing Reel.zip](http:/files.na.mcneel.com//flamingo/nxt/5.0/tutorials/nxt5%20fishing.zip) link. Unzip these files into their own folder somewhere memorable on your computer. Open the Fishing Reel.3dm file in Rhino. Check that Flamingo nXt is the current renderer in the render drop down menu.
 
@@ -21,21 +21,21 @@ Rhino may have multiple render engines installed.  To check that Flamingo nXt 5 
 {: #render_controls}
 ![images/getting_started001.png](images/getting_started001.png){: .float-img-right} For your first rendering of the model, click on the render button. Your image should look like the one on the right. nXt works differently than previous versions of Flamingo. A new model will include a default HDRI light set-up.  New models will use a white default material for all objects. Also, you may notice that shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each render pass.
 
-Some of the effects that improve on each pass are:
+Some of the effects that improve on each pass are
 
-  * Lighting (such as global illumination if enabled)
-  * Soft Shadows
-  * Reflections (blurry)
-  * Refraction
-  * Anti-aliasing
-  * Depth of field
+* Lighting (such as global illumination if enabled)
+* Soft Shadows
+* Reflections (blurry)
+* Refraction
+* Anti-aliasing
+* Depth of field
 
 In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. This allows you to let images that are looking good to continue to improve. But you can also stop an image at any time, if you would like to change or save something. You can stop the rendering in a number of ways:
 {: .clear-img}
 
-  * Click the Stop Raytrace button to stop the rendering at the end of the current pass.
-  * Double-click the Stop Raytrace to stop the rendering immediately.
-  * Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window.
+* Click the Stop Raytrace button to stop the rendering at the end of the current pass.
+* Double-click the Stop Raytrace to stop the rendering immediately.
+* Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window.
 
 ## Assign Materials from the Library
 {: #materials}
