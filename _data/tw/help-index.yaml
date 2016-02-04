@@ -5,30 +5,30 @@
     - name: 材質庫
       anchor: libraries
       topics:
-        - name: "材質庫面板"
+        - name: 材質庫面板
           path: libraries.html
           anchor: test
-        - name: "材質資料庫"
+        - name: 材質資料庫
           path: libraries.html
           anchor: material
-        - name: "環境資料庫"
+        - name: 環境資料庫
           path: libraries.html
           anchor: environment
-        - name: "植物資料庫"
+        - name: 植物資料庫
           path: libraries.html
           anchor: plant
-        - name: "材質庫設定"
+        - name: 材質庫設定
           path: libraries.html
           anchor: settings
 
     - name: 材質
       anchor: materials
       topics:
-        - name: 材質編輯器\n
+        - name: 材質編輯器
           path: material-editor.html
-        - name: 賦予材質\n
+        - name: 賦予材質
           path: material_assignment.html
-        - name: 簡易材質內容\n
+        - name: 簡易材質內容
           path: material-type-simple.html
         - name: 進階材質內容
           path: material-type-advanced.html
