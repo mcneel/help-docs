@@ -2,7 +2,7 @@
 title: Advanced Material Properties
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingo has both [Simple Material](material-type-simple.html) Types and an Adva
 
 The complete set of property groups in the Advanced Material are:
 
-> [Name](#name)
-> [Material Procedure](#procedures)
-> [Advanced Material Properties](#advanced-materials-properties)
-> [Reflective Finish](#reflective-finish-and-highlight)
-> [Transparency Properties](#transparency)
-> [Procedural Textures](#bump-patterns)
-> [Bitmap Textures](#textures)
-> [Notes](#notes)
+* [Name](#name)
+* [Material Procedure](#procedures)
+* [Advanced Material Properties](#advanced-materials-properties)
+* [Reflective Finish](#reflective-finish-and-highlight)
+* [Transparency Properties](#transparency)
+* [Procedural Textures](#bump-patterns)
+* [Bitmap Textures](#textures)
+* [Notes](#notes)
 
 ## Material Name
 {: #name}
@@ -33,8 +33,10 @@ As an example, the [Marble](procedural-materials.html#marble) Procedure combines
 
 
 ##### To add a procedure
+
 1. Right-click on Base the Procedures window.
 1. On the menu, click a procedure type.
+
   * [Base](procedural-materials.html#base)
   * [Angular Blend](procedural-materials.html#angular-blend)
   * [Blend](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ As an example, the [Marble](procedural-materials.html#marble) Procedure combines
   * [Wood](procedural-materials.html#wood)
 
 ##### To remove a procedure
- 1. In the Procedures window,right-click the procedure name.
- 2. On the menu, click Remove.
+
+1. In the Procedures window,right-click the procedure name.
+1. On the menu, click Remove.
 
 ## Advanced Material Properties
 {: #advanced-materials-properties}
@@ -73,7 +76,7 @@ Sets the highlight color to match the base color. Many metal finishes normally u
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Custom
-In some very specialized finishes, the reflection of the object will be a different color than the base color for the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) to select a reflective color.
+In some very specialized finishes, the reflection of the object will be a different color than the base color for the material.  This is normally in materials that are actually made of multiple layers. Use Custom to specify any color for the highlight. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} to select a reflective color.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
@@ -239,11 +242,11 @@ Use up to four bitmap images to add detail to a material. Image maps can be used
 {: #bump-patterns}
 Bump Patterns create the appearance of a specific kind of surface without using displacement maps or requiring additional maps. Bumps use mathematical rules to provide the illusion of surface bumpiness in the material. Patterns include:
 
-> [Sandpaper](#sandpaper)
-> [Rubble](#rubble)
-> [Pyramid](#pyramid)
-> [Wrinkled](#wrinkled)
-> [Marbled](#marbled)
+* [Sandpaper](#sandpaper)
+* [Rubble](#rubble)
+* [Pyramid](#pyramid)
+* [Wrinkled](#wrinkled)
+* [Marbled](#marbled)
 
 Materials like stucco, concrete, and clay have a fine texture. It is probably not worth scanning a piece of the material to make a bitmap for it unless it will be viewed at close range. Using a Sandpaper procedural bump on a [Base Color](advanced-material-properties-main.html#color) emulates this kind of fine pattern. Create a [Base Color](advanced-material-properties-main.html#color) that is the color of the material. Then add a procedural bump to the material. Use Sandpaper for a fine texture and Rubble for a coarse texture.
 

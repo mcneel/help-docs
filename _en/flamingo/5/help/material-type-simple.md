@@ -1,19 +1,19 @@
 ---
 title: Basic Material Properties
 ---
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Flamingo materials are defined by a series of property groups. These are a series of Simple Material Types of commonly used materials.  These materials present a very simple set of controls. This gives easy access to the properties you can change to make a material look different without the complexity of extra controls. For most simple materials, changing the color is all that is needed to get a different look.
 
 #### Simple Material Types:
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Solid Color](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastic](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metal](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[Glass](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Glossy](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Textured](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Texture Set](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png){: .inline} [Solid Color](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png){: .inline} [Plastic](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png){: .inline} [Metal](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png){: .inline} [Glass](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png){: .inline} [Glossy](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png){: .inline} [ClearFinish](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png){: .inline} [Flamingo Textured](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png){: .inline} [Texture Set](#texture-set)
 
 Any material can be converted to an advanced material.  Advanced materials present all the possible controls to edit a material in Flamingo nXt.  For the most extensive control of a material, use Advanced Materials or convert your existing material to an advanced material.
 
@@ -124,8 +124,8 @@ Set the image map and properties of the material. There are many options here. S
 
 ## Texture Set
 {: #texture-set}
-<!-- TODO: The following link doesn't work -->
-[Texture set materials](material-type-texture-set.html) are a coordinated set of texture which defines a material.  These coordinated sets can the created through texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
+
+Texture set materials are a coordinated set of texture which defines a material.  These coordinated sets can the created through texture maps that contain information such as displacement, normal, or bump maps. Displacement maps give the material depth. Combining these texture maps as a set can create very realistic materials. The [PixPlant software](http://www.pixplant.com/) is a product that can take a standard bitmap and create these sets of textures.
 
 ![images/solidcolors.png](images/textureset.png)
 

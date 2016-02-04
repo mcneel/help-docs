@@ -41,6 +41,18 @@ p {
   margin: 0 0 10px;
 }
 
+ul, li {
+  list-style-type: disc;
+}
+
+img{
+  text-align:left;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
 .tab-content .tab-pane {
   display: none;
 }
@@ -226,7 +238,6 @@ h6 {
 }
 
 blockquote {
-  display: block;
 	border-color: white;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -238,13 +249,6 @@ blockquote {
   }
 }
 
-ul {
-	list-style-type: disc;
-}
-
-li{
-  display: block;
-}
 
 /*
 ##############################################################################
@@ -255,6 +259,16 @@ li{
 ## That assures the next block element will stay clear of the image.
 ##############################################################################
 */
+.inline {
+    text-align:left;
+    display: inline;
+    vertical-align: bottom;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
 .float-img-right {
   float: right;
   padding-left: 25px;

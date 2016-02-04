@@ -2,18 +2,18 @@
 title: Procedural Materials
 ---
 
-#  ![images/paint.svg](images/paint.svg) {{page.title}}
+#  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
 
 Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include:
 
-> [Base](#base)
-> [Angular Blend](#angular-blend)
-> [Blend](#blend)
-> [Marble](#marble)
-> [Granite](#granite)
-> [Tile](#tile)
-> [Wood](#wood)
+* [Base](#base)
+* [Angular Blend](#angular-blend)
+* [Blend](#blend)
+* [Marble](#marble)
+* [Granite](#granite)
+* [Tile](#tile)
+* [Wood](#wood)
 
 ##### To add a procedure
 1. Right-click anywhere in the Procedures window.
@@ -47,7 +47,7 @@ The angle from the viewpoint at which the Outer component material starts.
 The angle from the viewpoint at which the Outer component material stops.
 Between the Start Angle and the Stop angle, the Inner and the Outer components blend.
 
-In the illustration below, the Start angle![images/01.png](images/01.png) is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/02.png](images/02.png) is 60 degrees (in the rendering that translates to the red circle).
+In the illustration below, the Start angle![images/01.png](images/01.png){: .inline} is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/02.png](images/02.png){: .inline} is 60 degrees (in the rendering that translates to the red circle).
 
 The image at the right shows the the Inner material as white, and the Outer material as black.
 

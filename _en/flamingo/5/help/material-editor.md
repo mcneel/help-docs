@@ -2,7 +2,7 @@
 title: Materials Editor Panel
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
 
 Materials can be assigned to layers, objects, and blocks. Assignments can be made by dragging and dropping on to objects or various controls. See [Material Assignments](material_assignment.html) for more information.
@@ -16,8 +16,8 @@ Materials, environments, and textures are stored in the model, but rendering con
 ##### Where can I find this command?
 There are several options to find the Materials tab.
 
-* ![images/materialtab.png](images/materialtab.png)Materials tab
-* ![images/icon-render.png](images/icon-render.png)Render Tools toolbar > ![images/materialtab.png](images/materialtab.png) Material Editor
+* ![images/materialtab.png](images/materialtab.png){: .inline} Materials tab
+* ![images/icon-render.png](images/icon-render.png){: .inline} Render Tools toolbar > ![images/materialtab.png](images/materialtab.png){: .inline} Material Editor
 * Menus > Render Pulldown > Materials Editor
 * On the Command line type MaterialEditor
 
@@ -34,38 +34,38 @@ You can drag colors and textures from the color swatch and drop onto any other c
  1. [Name](#name)
  1. [Material Properties Panels](#panels)
 
-## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [Settings Bar](#panel_map) ![images/callout_1.svg](images/callout_1.svg){: .inline}
 {: #settings .clear-img}
 Use this bar to navigate the material during its development.
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
+#### ![images/met_leftarrow.png](images/met-leftarrow.png){: .inline} Back Arrow
 Walks back though the current material or the previously selected materials.  For instance, materials with textures have multiple layers.  Use this arrow to return to the parent material from the texture details.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
+####  ![images/met_rightarrow.png](images/met-rightarrow.png){: .inline} Forward Arrow
 Walks forward though the current material or the previously selected materials.  For instance materials with textures have multiple layers.  Use this arrow to return to the recently used texture from the parent material.
 
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
+#### ![images/material_editor.png](images/material_editor.png){: .inline} ![images/texture-2dchecker.png](images/texture-2dchecker.png){: .inline} Currently selected material name
 Displays the current material name and level.  For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
 
-#### ![images/library_default.png](images/library_default.png) Tools menu
+#### ![images/library_default.png](images/library_default.png){: .inline} Tools menu
 Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to materials.
 
 
-## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [Materials List](#panel_map) ![images/callout_2.svg](images/callout_2.svg){: .inline}
 {: #material_list}
 This lists all the materials contained in the model. From this list:
 
 * Scroll up and down in the list to see all the materials in the model.
 * Drag and drop a material from this list onto a layer in the [Layer Panel](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm) or directly onto an Object to assign it to an Object. See [Material Assignments](material_assignment.html) for more information.
-* Add a new Material using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
+* Add a new Material using the Add New Button ![images/add_material.png](images/add_material.png){: .inline} at the bottom of the list.
 
 
 * Click on each material to select it. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information.
 * Right-click a thumbnail to display the Material context menu.
 * Right-click the blank area to display the New Material Context Menu.
 
-###  ![images/add_material.png](images/add_material.png) Add new material
+###  ![images/add_material.png](images/add_material.png){: .inline} Add new material
 {: #add_material}
 Scroll down to the bottom of the Material list to see the add icon.
 
@@ -80,81 +80,81 @@ This menu is available by right-clicking on a material listing.  See the [Tools 
 {: new_material_context}
 This menu is available by right-clicking on a blank area of the Material List.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Material
+#### ![images/toolbarlus.png](images/toolbarplus.png){: .inline} Create New Material
 Creates a new basic matte white material.
 
 
-#### ![images/paste.png](images/paste.png) Paste
+#### ![images/paste.png](images/paste.png){: .inline} Paste
 Creates a new material based on the Clipboard contents.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} Paste as Instance
 Creates a new material based on the Clipboard contents that is linked to the original through instancing.
 
-#### ![images/grid.png](images/grid.png) Grid
+#### ![images/grid.png](images/grid.png){: .inline} Grid
 Displays the previews as a grid of thumbnails.
 
-#### ![images/list.png](images/list.png) List
+#### ![images/list.png](images/list.png){: .inline} List
 Displays the previews as a list of thumbnails.
 
-#### ![images/tree.png](images/tree.png) Tree
+#### ![images/tree.png](images/tree.png){: .inline} Tree
 Displays the previews as a tree showing nesting.
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
+#### ![images/horizontal.png](images/horizontal.png){: .inline} Horizontal Layout
 Displays the previews to the left of the controls.
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
+#### ![images/showpreview.png](images/showpreview.png){: .inline} Show Preview Pane
 Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
+#### ![images/floatthumbnail.png](images/floatthumbnail.png){: .inline} Float
 Floats the preview image in a resizable window.
 
 #### Thumbnails
 
-##### ![images/small.png](images/small.png) Small
+##### ![images/small.png](images/small.png){: .inline} Small
 Sets the thumbnail size to the smallest size.
 
-##### ![images/medium.png](images/medium.png) Medium
+##### ![images/medium.png](images/medium.png){: .inline} Medium
 Sets the thumbnail size to medium size.
 
-##### ![images/large.png](images/large.png) Large
+##### ![images/large.png](images/large.png){: .inline} Large
 Sets the thumbnail size to large size.
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
+##### ![images/showlabels.png](images/showlabels.png){: .inline} Show Labels
 Displays thumbnail name labels when in Grid mode.
 List mode always displays labels.
 
-##### ![images/showunits.png](images/showunits.png) Show Units
+##### ![images/showunits.png](images/showunits.png){: .inline} Show Units
 Displays size in model units.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png){: .inline} Auto-Update Preview
 Automatically updates all previews as settings change.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
+##### ![images/updateallpreviews.png](images/updateallpreviews.png){: .inline} Update All Previews
 Update previews manually when Auto-Update Preview is off.
 
-## [Window Divider](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [Window Divider](#panel_map) ![images/callout_3.svg](images/callout_3.svg){: .inline}
 {: #divider}
 Drag on this divider to change the length of the Material List. If you lengthen the Material List, the Material Properties Section shortens.
 
-## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [Material Properties Section](#panel_map) ![images/callout_4.svg](images/callout_4.svg){: .inline}
 {: #properties}
 
-#### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+#### [Material Name](#panel_map) ![images/callout_5.svg](images/callout_5.svg){: .inline}
 {: #name}
 This is the name of the material. The material name is also saved as the file name when exporting the material to the library. Note: Materials are stored in the Rhino model. Unique materials can have the same name in different Rhino models.
 
-#### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+#### [Material Panels](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg){: .inline}
 {: #panels}
 The Materials Properties section is filled with several direct Material panels. Clicking on the grey title bar will roll up the material panel, hiding the contents of that panel.  Click on the title bar again to show contents.
 
 Material Panels will vary based on the type of material and the current active material level. For more information on specific material panels see [Flamingo Materials](material-type-simple.html).
 
-## Tools menu ![images/library_default.png](images/library_default.png)
+## Tools menu ![images/library_default.png](images/library_default.png){: .inline}
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 These settings also appear on right-click context menus for the thumbnail previews and the thumbnail backgrounds.
 
-#### ![images/assigntoobjects.png](images/assigntoobjects.png) Assign to Selection
+#### ![images/assigntoobjects.png](images/assigntoobjects.png){: .inline} Assign to Selection
 Assigns the current material to selected objects.
 
 ##### To assign a material to objects
@@ -170,7 +170,7 @@ The target objects can be selected either before or after clicking Assign to Sel
  * Drag the material from the thumbnails or list onto the target objects.
 Drag and drop works for only one object at a time.
 
-#### ![images/assigntolayers.png](images/assigntolayers.png) Assign to Layers
+#### ![images/assigntolayers.png](images/assigntolayers.png){: .inline} Assign to Layers
 Assigns the current material to layers.
 
 ##### To assign a material to layers
@@ -186,54 +186,54 @@ Assigns the current material to layers.
  * Drag the material from the thumbnails or list onto the target layer.
 Drag and drop works for only one layer at a time.
 
-#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) Select Objects
+#### ![images/materials_selectobjects.png](images/materials_selectobjects.png){: .inline} Select Objects
 Select objects in the model for material assignment.
 
-#### ![images/toolbarplus.png](images/toolbarplus.png) Create New Material
+#### ![images/toolbarplus.png](images/toolbarplus.png){: .inline} Create New Material
 Opens the Render Content [library](libraries.html) of materials.
 The materials in the library act as templates for creating materials in the model.
 
-#### ![images/import.png](images/import.png) Import Material from File
+#### ![images/import.png](images/import.png){: .inline} Import Material from File
 Imports materials from a saved Rhino .rmtl file.
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
+#### ![images/savetofile.png](images/savetofile.png){: .inline} Save to File
 Saves a material to a Rhino .rmtl file.
 
-#### ![images/changetype.png](images/changetype.png) Change Type
+#### ![images/changetype.png](images/changetype.png){: .inline} Change Type
 Changes the material to a different type.
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
+#### ![images/changetype.png](images/changetype.png){: .inline} Change Type (Copy Similar Settings)
 Changes the material to a different type.
 The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) &gt;  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)  box. If checked, compatible settings from the old content will be copied to the new one.
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
+#### ![images/reset.png](images/reset.png){: .inline} Reset to Defaults
 Changes all the material settings to the default white, matte, non-reflective, untextured material.
 
-#### ![images/copy.png](images/copy.png) Copy
+#### ![images/copy.png](images/copy.png){: .inline} Copy
 Copies the selected material to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new material or pasted directly into a folder to create a [library](libraries.html) file.
 
-#### ![images/paste.png](images/paste.png) Paste
+#### ![images/paste.png](images/paste.png){: .inline} Paste
 Creates a new material based on the Clipboard contents.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} Paste as Instance
 Creates a new material based on the Clipboard contents that is linked to the original through instancing.
 
-#### ![images/delete.png](images/delete.png) Delete
+#### ![images/delete.png](images/delete.png){: .inline} Delete
 Deletes the selected material.
 
-#### ![images/rename.png](images/rename.png) Rename...
+#### ![images/rename.png](images/rename.png){: .inline} Rename...
 Renames the selected material.
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
+#### ![images/duplicate.png](images/duplicate.png){: .inline} Duplicate
 Copies the selected material to a new material with the same settings.
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
+#### ![images/removeinstancing.png](images/removeinstancing.png){: .inline} Remove Instancing
 Removes the connection between [instanced](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) materials.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 
-#### ![images/contentfilter.png](images/contentfilter.png) Content Filter
+#### ![images/contentfilter.png](images/contentfilter.png){: .inline} Content Filter
 Opens the [Content Filters](content_filters.html) dialog box.
 
-#### ![images/rename.png](images/rename.png) Properties
+#### ![images/rename.png](images/rename.png){: .inline} Properties
 Opens the [Preview Properties](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) dialog box.

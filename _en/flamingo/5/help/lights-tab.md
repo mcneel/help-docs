@@ -2,7 +2,7 @@
 title: Lights
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
+# ![images/lights-tab.png](images/lights-tab.png){: .inline} {{page.title}}
 Artificial light sources use normal Rhino lights with added Flamingo properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
 
 
@@ -17,69 +17,69 @@ The Lights tab must be activated through the [Lighting Preset](lighting-tab.html
 #### Where can I find Flamingo Lighting control?
 If Lights tab is activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun) then find the lights tab here:
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
+ 1. ![images/options.png](images/options.png){: .inline} Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt Toolbar
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
 
 From the Lights tab lights you can insert, turn off/on, and change the strength and channel of each light.
 
 Flamingo supports these light types:
 
-> [Tag objects as lights](#tag-objects-as-lights)
-> [Spotlight](#spotlight)
-> [Point light](#pointlight)
-> [Rectangular light](#rectangularlight)
-> [Linear light](#linearlight)
+* [Tag objects as lights](#tag-objects-as-lights)
+* [Spotlight](#spotlight)
+* [Point light](#pointlight)
+* [Rectangular light](#rectangularlight)
+* [Linear light](#linearlight)
 
-**Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
+**Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png){: .inline} are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
 
 Some light properties are displayed on the Lights tab table for quick editing of common properties.
 
 Properties contained in the table are:
 
- >[On/Off](#on)
- >[Name](#name)
- >[Distribution](#light-distribution)
- >[Aim](#aim-light)
- >[Watts](#watts)
- >[Channel](#channel)
+* [On/Off](#on)
+* [Name](#name)
+* [Distribution](#light-distribution)
+* [Aim](#aim-light)
+* [Watts](#watts)
+* [Channel](#channel)
 
 Right-click on the Lights tab table to open the [Additional Options](#additional-options) menu.
 
-Access [Light Properties](#light-properties) by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
+Access [Light Properties](#light-properties) by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png){: .inline} on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
 
 ## Light Types
 {: #light-types}
 Lights can be inserted from the Rhino toolbars or the Flamingo Lights tab. Objects can be tagged as lights with Flamingo.
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Tag objects as lights
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png){: .inline} Tag objects as lights
 {: #tag-objects-as-lights}
 Any renderable object (surface, solid, etc.) can be tagged as a light source and given light properties. Additional properties such as [distribution](#light-distribution), [direction](#aim-light), and [strength](#watts) can be assigned. Objects tagged as lights may display a preview widget showing direction of the light and its center location.
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *LED driving lights and headlights tagged as light sources*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) Spotlight
+#### ![images/spotlight-01.png](images/spotlight-01.png){: .inline} Spotlight
 {: #spotlight}
 Spotlight is a conical light distribution with a specific direction.  The light properties include a [source radius](#radius), [beam angle](#beam-angle), falloff radius, and direction. The larger the source radius, the softer the shadows will be from the light. By default there is a visible disk at the light location. Information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
 
 ![images/spotlight.png](images/spotlight.png)
 *A Spotlight pointed at the red box*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) Point Light
+#### ![images/pointlight-01.png](images/pointlight-01.png){: .inline} Point Light
 {: #pointlight}
 Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the point light is partially obscured by an object that intersects the light.
 
 ![images/pointlight.png](images/pointlight.png)
 *A small point light close to the right wall*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) RectangularLight
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png){: .inline} RectangularLight
 {: #rectangularlight}
 Provides an approximation of a recessed light with a diffuser or baffles. The light distributes light in a diffuse pattern based on the orientation of the rectangle. A direction arrow is drawn at the center point of the light. Full strength light is directly in front of the rectangle.  Then the light falls off at an angle to the objects from the rectangle. By default a white rectangle will be visible when rendering. A common mistake is to insert these rectangles at exactly the same height as a ceiling plane. For consistent results, make sure the lights are slightly below the ceiling. For information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros RectangularLight](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm) help topic.
 
 ![images/rectangular light.png](images/rectangular light.png)
 *A rectangular light just below the ceiling*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) LinearLight
+#### ![images/linearlight-01.png](images/linearlight-01.png){: .inline} LinearLight
 {: #linearlight}
 Distributes light in a cylindrical pattern that imitates a fluorescent tube. Light properties for this light include [source radius](#radius) and length. The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light cylinder at the light location when rendering. Note that unusual effects can happen if the cylindrical light is partially obscured by an object that intersects the light. Use Rhino Control points to activate the grips on the light to edit on the screen.
 
@@ -93,7 +93,7 @@ When Flamingo is the current rendering application in Rhino, additional properti
 {: #name}
 The name of the light object. This is an easy way to differentiate lights which are the same type in the model.
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) On/Off
+#### ![images/lightbulbon.png](images/lightbulbon.png){: .inline} On/Off
 {: #on}
 Toggles the light on and off. In the Light table,  if the light bulb icon is yellow the light is on. If the light bulb icon is gray the light will be off in the rendering. Double-click on the icon to toggle it On/Off. In the properties dialog, there is an On/Off Checkbox.
 

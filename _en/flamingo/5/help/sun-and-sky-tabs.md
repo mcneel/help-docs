@@ -2,7 +2,7 @@
 title: Sun and Sky
 ---
 
-# ![imagessun.svg](images/sun.svg) {{page.title}}
+# ![imagessun.svg](images/sun.svg){: .inline} {{page.title}}
 The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Automode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
 
 ## Sun
@@ -15,8 +15,8 @@ This help topic reviews the Flamingo Sun control.  The [Rhinoceros Sun](http://d
 
 The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
 
-* ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
+* ![images/options.png](images/options.png){: .inline} Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt Toolbar
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
 
 **Note:** The Sun tab will only be visible if the Sun is activated through a Lighting Preset.
 
@@ -97,18 +97,18 @@ The Sky is a large sphere around the rendering that can be used for lighting. Th
 #### Where can I find Flamingo Sky control?
 The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sky).
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sky
+ 1. ![images/options.png](images/options.png){: .inline} Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt Toolbar
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sky
 
 The lighting preset schemes for [Exterior](lighting-tab.html#exterior-daylight) and [Interior](lighting-tab.html#interior-daylight) daylight use the Automatic sky by default. The [Studio](lighting-tab.html#studio-lighting) lighting preset scheme uses HDR image lighting by default.
 
 Sky can be set five ways:
 
->[Off](lighting-tab.html#off)
->[Automatic Sky](#automatic-sky)
->[High Dynamic Range Image (HDRI)](#high-dynamic-range-image-sky)
->[Color](#color-sky)
->[Image](#image-sky)
+* [Off](lighting-tab.html#off)
+* [Automatic Sky](#automatic-sky)
+* [High Dynamic Range Image (HDRI)](#high-dynamic-range-image-sky)
+* [Color](#color-sky)
+* [Image](#image-sky)
 
 The two best settings for sky lighting types are [HDR image](#high-dynamic-range-image-sky) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
 
@@ -157,7 +157,7 @@ Modifies the brightness of the HDR image light. This setting only matters if the
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *Low and high HDR intensity.*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
+{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *Image rotated so the sun appears on the object.*
 

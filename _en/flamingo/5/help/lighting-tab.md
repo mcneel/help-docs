@@ -2,7 +2,7 @@
 title: Lighting Presets
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -10,7 +10,7 @@ Lighting is the most important and most neglected consideration when creating im
 
 #### Where can I find Flamingo Lighting control?
 
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt.
 * Right-click any tab and check Flamingo nXt.
 
 
@@ -30,10 +30,10 @@ A great starting place for lighting is the included Lighting presets that corres
 
 Lighting in Flamingo nXt uses four preset methods categories:
 
-> [Studio lighting](lighting-tab.html#studio-lighting)
-> [Exterior daylight](lighting-tab.html#exterior-daylight)
-> [Interior daylight](lighting-tab.html#interior-daylight)
-> [Artificial lighting](lighting-tab.html#artificial-lighting)
+* [Studio lighting](lighting-tab.html#studio-lighting)
+* [Exterior daylight](lighting-tab.html#exterior-daylight)
+* [Interior daylight](lighting-tab.html#interior-daylight)
+* [Artificial lighting](lighting-tab.html#artificial-lighting)
 
 ### Studio lighting
 {: #studio-lighting}
@@ -102,10 +102,10 @@ The sun is a very bright directional light source infinitely far from the model.
 {: #sky}
 Set the Sky channel to one of four options:
 
-> Auto
-> HDRI
-> Color
-> Image
+* Auto
+* HDRI
+* Color
+* Image
 
 For details, see the [Sky tab](sun-and-sky-tabs.html#sky) topic.
 Defines a hemispherical light source infinitely far away from the model.
@@ -195,8 +195,8 @@ Optimizes ambient light for studio scenes.
 
 ### Save lighting scheme
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Saves the current lighting scheme.
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} Saves the current lighting scheme.
 
 ### Open lighting scheme
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Opens a saved lighting scheme.
+![images/importfromfile.png](images/importfromfile.png){: .inline} Opens a saved lighting scheme.

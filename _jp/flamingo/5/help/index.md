@@ -27,12 +27,17 @@ title: Flamingo ヘルプの索引
 {% endcase %}
 
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{local_categories.name}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{local_categories.name}}
 {% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}
+<ul>
 {% for topic in category.topics %}
-[{{topic.name}}]{% if topic.path != null %}({{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}){% endif %}{% endfor %}
+<li>
+<a href="{% if topic.path != null %}{{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}{% endif %}">{{topic.name}}</a>
+</li>
+{% endfor %}
+</ul>
 {% endfor %}
 
 
