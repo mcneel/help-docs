@@ -1,74 +1,50 @@
 ---
 layout: fullwidth-page
+title: Table de matières du guide
 ---
 
-# Getting Started with Flamingo nXt 5®
- 
-## Installation
+<!-- TODO: Liens pour la mise à jour : "First Rendering Tutorial" and everything below "Rendering Basics" -->
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
-Startup notes
+# Démarrer avec Flamingo nXt 5Â®
 
-This version of Flamingo features an interface which is integrated with the Rhino 5 rendering tools. This made several necessary changes to the rendering interface. At this time it is important to find the Flamingo interface when first starting up Flamingo:
+## Premiers tutoriels
+* [Premier tutoriel de rendu]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/getting-started-tutorial.html)
+* [Astuces d'éclairage studio]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
 
-The Flamingo control panel can be found under the Render Pulldown > Flamingo nXt 5 > Show Control Panel
-The Flamingo nXt tab contains Flamingo specific controls:
-Sky
-Lighting Manager
-Custom Lighting controls
-Render Options
-Once in the control panel, Right-click in the tab area and select the panels:
-Libraries
-Environment
-Groundplane
-Etc…
- 
-## To access the Flamingo control panel
-  * On the **Flamingo nXt** menu, click **Control Panel**.
+## Accéder au panneau de configuration
+  * Dans le menu **Flamingo nXt**, cliquez sur **Panneau de configuration**.
 
-  ## The Flamingo nXt Control Panel
-The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
+## Panneau de configuration
+Le panneau de configuration de Flamingo nXt présente différents onglets permettant de configurer le modèle pour le rendu :
 
- *  [Materials](..\materials\materials-tab.html) 
- *  [Lighting](../lighting/lighting-tab.html) 
- *  [Environment](../environment/environment-tab.html) 
- *  [Render](../render/render-tab.html) 
+ *  [Matériaux]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
+ *  [Éclairage]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
+ *  [Environnement]({{site.baseurl}}/{{page.language}}/flamingo/5/help/environment-tab.html)
+ *  [Rendu]({{site.baseurl}}/{{page.language}}/flamingo/5/help/render-tab.html)
 
-## Rendering Basics
- 
-Rendering your finished model comprises four basic steps:
+## Bases du rendu
 
- *  [Set up materials](..\materials\materials-tab.html) 
- *  [Set up lighting](../lighting/lighting-tab.html) 
- *  [Set up an environment](../environment/environment-tab.html) 
- *  [Set up rendering conditions](../render/render-tab.html) 
+Le rendu des modèles terminés se fait en quatre étapes principales :
 
-#### To start a rendering
+ *  [Définir les matériaux](..\materials\materials-tab.html)
+ *  [´Définir l'éclairage](../lighting/lighting-tab.html)
+ *  [Définir un environnement](../environment/environment-tab.html)
+ *  [Définir les conditions du rendu](../render/render-tab.html)
 
- * On the **Render** or **Flamingo nXt** menu, click **Render**.
-- Or -
+#### Pour commencer un rendu
 
- * On the **Standard** toolbar, click the **Render** button.
+ * Dans le menu **Rendu**, cliquez sur **Rendu**.
+           - Ou -
+ * Dans la barre d'outils **Standard**, cliquez sur le bouton **Rendu**.
 
-### Stop Rendering
- 
-
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
+### Arrêter le rendu
 
 
-###  <kbd>Resume Rendering</kbd> 
- 
+Par défaut, le processus de rendu continuera à améliorer l'image, passe par passe, jusqu'à ce que vous cliquiez sur le  bouton **Arrêter le rendu** ![images/stop.png](images/stop.png) . Ceci vous permet de gérer le rapport temps/qualité. Plus vous laisserez le rendu continuer pendant longtemps, plus il se rapprochera du rendu entièrement calculé.  Vous pouvez arrêter un rendu à tout moment.
 
-Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
 
-The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
-
-Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
+Utilisez le paramètre [Nombre de passes](..\render\render-window.html#number-of-passes) ou [Temps](..\render\render-window.html#time) dans la [fenêtre de rendu](..\render\render-window.html) ou dans les [Propriétés du document de Flamingo nXt](..\render\documentproperties-flamingo.html) pour définir un point d'arrêt automatique. 
 
 &#160;
 
-Revised: 22-Dec-2011 14:45
-
-
+Révisé: 22-Dec-2011 14:45

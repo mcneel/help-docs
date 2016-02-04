@@ -31,8 +31,13 @@ title: Flamingo Help Index
 {% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}
+<ul>
 {% for topic in category.topics %}
-[{{topic.name}}]{% if topic.path != null %}({{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}){% endif %}{% endfor %}
+<li>
+<a href="{% if topic.path != null %}{{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}{% endif %}">{{topic.name}}</a>
+</li>
+{% endfor %}
+</ul>
 {% endfor %}
 
 

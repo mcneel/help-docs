@@ -1,7 +1,7 @@
 
 #### 평면 제어
 
-![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}
+![images/hdri-spherical-proj.png](images/hdri-spherical-proj.png){: .float-img-left}
 
 * HDRI를 올바르게 회전시키려면 평면 제어를 클릭합니다.
 * HDRI 이미지의 중심에 빨간 점이 표시됩니다.

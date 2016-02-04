@@ -1,7 +1,7 @@
 ---
 title: 彩現內容過濾器
 ---
-<!-- TODO: This is an orphan page, but needs to be linked to from the Material Libraries page -->
+<!-- This is an linked from material-editor.html page -->
 
 # {{page.title}} ![images/contentfilter.png](images/contentfilter.png)
 彩現內容過濾可從**彩現內容過濾器**對話框設定。

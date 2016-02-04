@@ -1,74 +1,48 @@
 ---
 layout: fullwidth-page
+title: Guide Index
 ---
 
-# Getting Started with Flamingo nXt 5®
- 
-## Installation
+<!-- TODO: Links to update: "First Rendering Tutorial" and everything below "Rendering Basics" -->
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
-Startup notes
+# Flamingo nXt 5® 快速入門
 
-This version of Flamingo features an interface which is integrated with the Rhino 5 rendering tools. This made several necessary changes to the rendering interface. At this time it is important to find the Flamingo interface when first starting up Flamingo:
+## 第一個教學
+* [第一個彩現教學]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/getting-started-tutorial.html)
+* [攝影棚照明的技巧]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
 
-The Flamingo control panel can be found under the Render Pulldown > Flamingo nXt 5 > Show Control Panel
-The Flamingo nXt tab contains Flamingo specific controls:
-Sky
-Lighting Manager
-Custom Lighting controls
-Render Options
-Once in the control panel, Right-click in the tab area and select the panels:
-Libraries
-Environment
-Groundplane
-Etc…
- 
-## To access the Flamingo control panel
-  * On the **Flamingo nXt** menu, click **Control Panel**.
+## 開啟 Flamingo 的控制面板
+  * 從 **Flamingo nXt 5** 功能表選擇**控制面板**。
 
-  ## The Flamingo nXt Control Panel
-The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
+## Flamingo nXt 的控制面板
+**Flamingo nXt** 的**控制面板**內有模型彩現需要的設定頁面，包括：
 
- *  [Materials](..\materials\materials-tab.html) 
- *  [Lighting](../lighting/lighting-tab.html) 
- *  [Environment](../environment/environment-tab.html) 
- *  [Render](../render/render-tab.html) 
+ *  [材質]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
+ *  [照明]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
+ *  [環境]({{site.baseurl}}/{{page.language}}/flamingo/5/help/environment-tab.html)
+ *  [彩現]({{site.baseurl}}/{{page.language}}/flamingo/5/help/render-tab.html)
 
-## Rendering Basics
- 
-Rendering your finished model comprises four basic steps:
+## 基本彩現
 
- *  [Set up materials](..\materials\materials-tab.html) 
- *  [Set up lighting](../lighting/lighting-tab.html) 
- *  [Set up an environment](../environment/environment-tab.html) 
- *  [Set up rendering conditions](../render/render-tab.html) 
+彩現模型的四個基本步驟：
 
-#### To start a rendering
+ *  設定材質
+ *  設定照明
+ *  設定環境
+ *  設定彩現條件
 
- * On the **Render** or **Flamingo nXt** menu, click **Render**.
-- Or -
+#### 開始彩現
 
- * On the **Standard** toolbar, click the **Render** button.
+ * 從**彩現**功能表選擇**彩現**。
+           - 或 -
+ * 按**標準**工具列上的**彩現**按鈕。
 
-### Stop Rendering
- 
-
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
+### 停止彩現
 
 
-###  <kbd>Resume Rendering</kbd> 
- 
+Flamingo nXt 預設的彩現方式是會持續計算改善彩現影像的品質，直到您按下**停止彩現** ![images/stop.png](images/stop.png) 按鈕才會停止。這個方式讓您可以在時間與品質兩者之間取捨，彩現計算越久得到的效果越好，但您可以在任何時候停止彩現。
 
-Clicking the **Stop Rendering** button suspends the rendering process after the current pass is completed.
 
-The button then changes to **Resume Rendering**. If you have stopped the rendering before the number of passes or the time constraints have been reached, you can click the **Resume Rendering** button to continue.
-
-Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
+[處理數](..\render\render-window.html#number-of-passes)與[時間](..\render\render-window.html#time)限制可在[彩現視窗](..\render\render-window.html)或[文件內容 &gt; Flamingo nXt 5.0](..\render\documentproperties-flamingo.html) 頁面設定。
 
 &#160;
-
-Revised: 22-Dec-2011 14:45
-
-

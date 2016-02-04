@@ -1,74 +1,77 @@
 ---
+Title: 自动化渲染
 ---
 
-# Automated rendering
+# {{page.title}}
 
 
-## Batch rendering
+## 批量渲染
 {: #batch-rendering}
-Batch jobs let you submit multiple jobs to be rendered automatically. A Batch job can specify a specific view, resolution and number of passes. Batch renderings can be started on a single or sent out the [Render Farm](render-farm.html). Open the Batch list and add jobs to the list. The batch jobs list will be saved in the model.
+批量渲染让您可以一次性提交多个渲染任务按顺序自动进行渲染，批量渲染可以设置视图、分辨率与队列数。批量渲染可以直接通过本机进行，也可以发送到[渲染农场](render-farm.html)进行渲染，打开批量渲染列表，可以添加渲染任务，批量渲染列表是保存在模型中的。
 
-##### Where can I find this command?
+##### 在哪里可以找到这个指令？
 
- * Menus > Flamingo nXt 5.0 > More Tools > Batch Render
+ * 功能表 > Flamingo nXt 5.0 > 更多工具 > 批量渲染
 
-### Batch Render Dialog
+### 批量渲染对话框
 {: #batch-render}
-Start by adding a job, then edit the properties to set up batch jobs.
+先添加渲染任务，然后编辑渲染任务的属性。
 
-#### Add
-Each Batch job is based on a view saved in the model.  Click on the Add item to select from a list of views in the model.  All the other menu items will activate once a job is added and selected.
+#### 新增
+每个渲染任务都基于模型中的视图，点击新增按钮并从视图列表中选取一个视图，只有在列表中添加了任务，并且选中一个任务时，其他功能表选项才可以使用。
 
-#### Delete
-Select and existing batch job.  Then use Delete to remove the job from the batch list.
+#### 删除
+选取一个现有的任务，然后点击删除可以将其从批量渲染列表中删除。
 
-#### Properties
-Select an existing batch job, then use Properties to set the [Batch Render Properties](#batch-render-properties).  Properties include file name, resolution, and number of passes for each job.
+#### 属性
+选取一个现有的任务，然后点击属性可以设置[批量渲染属性](#batch-render-properties)，属性包括文件名、分辨率、每个任务的队列数等。
 
-#### Move Up
-Move the viewport name up in the list.
+#### 上移
+在列表中上移选中的工作视窗。
 
-#### Move Down
-Move the viewport name down in the list.
+#### 下移
+在列表中下移选中的工作视窗。
 
-#### Batch List
+#### 批量渲染列表
 {: #batch-list}
-Displays information about the list of views to be rendered. Double-click on an existing job to edit set the [Batch Render Properties](#batch-render-properties).
+显示出需要批量渲染的视窗列表，双击列表中的项目可以设置该任务的[批量渲染属性](#batch-render-properties)。
 
-#### Rendering Status
-Displays pass, scan line, and elapsed time information about the progress of the batch process.
+#### 渲染状态
+显示批量渲染的队列数、扫描线、耗时等信息。
 
-####  Stop Rendering
-Stops the batch process.
+####  停止渲染
+停止批量渲染。
 
-#### Render Batch Locally
+#### 本地批量渲染
 {: #render-batch-locally}
-Uses only the current computer to render the batch jobs. The rendered images will output to the location specified in the [Batch Render Properties](#batch-render-properties).
+仅使用本机进行批量渲染，渲染后的图片将保存在[批量渲染属性](#batch-render-properties)中设置的文件夹。
 
-####  Send Batch To Farm
-Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be rendered by all available Farm clients. The render images will output to the shared Farm folder.
+####  发送到渲染农场批量渲染
+将批量渲染任务发送到[渲染农场](render-farm.html)，将调用所有可用的渲染农场客户端进行渲染，渲染后的图片将保存到渲染农场共享文件夹。
 
-### Batch Render Properties
+### 批量渲染属性
 {: #batch-render-properties}
 
-#### Viewport to render
-Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
+#### 渲染的工作视窗
+显示此任务要渲染的视图，请参考[渲染选项卡，渲染的工作视窗](render-tab.html#viewtorender)。
 
-#### File name
-Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
+#### 文件名称
+点击保存按钮 ![images/saveimageas.png](images/saveimageas.png) 为渲染图片设置名称。
 
-#### Alpha channel
-Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.
+#### Alpha 通道
+保存图片时保存 Alpha 通道，详情请参考[使用 Alpha 通道背景](environment-tab.html#alpha)。
 
-#### Use document settings
+#### 使用文件设置
 {: #rendering-resolution}
-The default is to use the current document resolution settings to render.  If another resolution is needed, then uncheck this box and specify a resolution. See the [Render tab, Resolution](render-tab.html#resolution) topic for more details.
+默认使用当前文件设置中的分辨率进行渲染，如果需要设置其他分辨率，取消勾选“使用文件设置”，然后设置分辨率的值。详情请参考[渲染选项卡，分辨率](render-tab.html#resolution)主题。
 
-#### Rendering Constraints Passes
+#### 渲染约束队列
 {: #rendering-constraints}
-Set the number of passes needed to finish the batch job.  See the [Passes](documentproperties-flamingo.html#number-of-passes) topic for more details.
+设置此任务渲染多少此后停止。详情请参考[队列](documentproperties-flamingo.html#number-of-passes)主题。
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 
@@ -78,17 +81,17 @@ There are two ways to create animations in Rhino.  Animations can be configured 
 
 ##### To submit an animation job to the render farm
 1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+1. In the Configure Automated Render Command dialog, select **Render to farm**.
 &#160;
-Specify theJob name,and click theOKbutton.
+Specify the Job name,and click the OK button.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Set a type of animation from Rhino's Animation setup toolbar. Select Render Full as the Capture method.
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+Record the animation from the Animation toolbar. The render jobs will be sent to Render Farm.
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+When the jobs are finished in Render Farm, run the FlamingoNXtAutomateRender command again and select all the jobs in the dialog.
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+Click the Copy selected files to specified output folder button and select a folder where all the render images will be copied to.
 
 
 ## FlamingoNXtAutomateRender command

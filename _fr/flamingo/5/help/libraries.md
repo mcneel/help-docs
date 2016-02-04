@@ -1,73 +1,75 @@
 ---
+title: Bibliothèques
 ---
 
-# ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
-The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
+# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+La commande Bibliothèques ouvre le panneau Bibliothèques pour gérer les bibliothèques de matériaux, textures et environnements.
 
-Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
+Il est possible d'enregistrer le contenu de rendu dans des fichiers pour créer des bibliothèques externes afin de les partager entre les modèles. Le contenu peut également être déplacé entre différentes sessions de Rhino ou dans un dossier.
 
-Color swatches can be dragged and dropped in the same way.
+De la même façon, il est possible de déplacer les palettes de couleur.
 
-The Libraries panel displays a view into the content folders you have set up. Use this to drag and drop content into the model or to store document content to a location outside the model.
+Le panneau des bibliothèques affiche les dossiers de contenu que vous avez définis. Utilisez ce panneau pour déplacer du contenu dans le modèle ou pour enregistrer le contenu du document dans un dossier en dehors du modèle.
 
-Materials are simply files on your hard drive.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
+Les matériaux sont simplement des fichiers sur votre disque dur. Les dossiers de bibliothèques sont simplement des dossiers de Windows. Vous pouvez copier, coller et déplacer des dossiers comme vous le feriez avec les fichiers et dossiers de Windows. 
 
-Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
+Utilisez la barre d'adresse en haut de l'onglet des bibliothèques pour rechercher un dossier sur votre ordinateur. 
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+Pour revenir rapidement au dossier des bibliothèques par défaut, utilisez l'icône en forme de clé en haut à droite. ![images/library_default.png](images/library_default.png)
 
-#### Organizing Libraries
+#### Organisation des bibliothèques
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+Les bibliothèques sont simplement des fichiers. Vous pouvez copier, coller et déplacer des dossiers. Utilisez l'explorateur de Windows pour modifier les dossiers et les documents. Pour choisir les dossiers définis par défaut dans l'onglet Bibliothèques, utilisez les [paramètres des bibliothèques](#settings) ![images/library_default.png](images/library_default.png).
 
-## Materials Library
+## Bibliothèque de matériaux
 {: #material}
-Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
+Les matériaux des bibliothèques sont des fichiers sur le disque dur.  Une fois défini dans le modèle, chaque matériau est enregistré dans le modèle. Toute modification réalisée sur le matériau ne modifiera pas le matériau original sur le disque dur. 
 
-Drag and drop materials to assign materials to the model. Materials can be assigned to:
+Vous pouvez faire glisser des matériaux dans le modèle pour les assigner à des objets. Les matériaux peuvent être utilisés de différentes façons :
 
-#### Layer Assignment
-Drag a material directly onto the layer name in the Layers Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
+#### Assignés aux calques
+Faites glisser un matériau directement sur le nom du calque dans le panneau Calques. Cette méthode est recommandée car tous les objets se trouvant sur le calque adopteront par défaut le matériau défini. Le matériau peut être modifié assez rapidement par la suite en déposant un autre matériau sur le calque. 
 
-#### Object Assignment
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
+#### Assignés à un objet
+Faites glisser un matériau directement sur un objet dans n'importe quelle fenêtre. L'assignation par calque sera remplacée par une assignation par objet. 
 
-#### Block Assignment
-Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
+#### Assignés à un bloc
+Faites glisser un matériau sur un bloc afin que tous les objets ayant l'option Par parent définie adoptent ce matériau. Tout objet appartenant au bloc dont la source de matériau est définie par parent utilisera le matériau du bloc. 
 
-## Plant Library
+## Bibliothèque de plantes
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+Dans le dossier par défaut des bibliothèques, se trouve un dossier Plantes.  Utilisez-le pour insérer des plantes dans le modèle.  Une fois définie dans le modèle, chaque plante est enregistrée dans le modèle.  Toute modification réalisée sur la plante ne modifiera pas la plante originale sur le disque dur. Déplacez des plantes dans une fenêtre pour les placer dans le modèle. Pour plus d'informations, voir le sujet [Aide sur les plantes](plants.html).
 
-## Environment Library
+## Bibliothèque d'environnements
 {: #environment}
-Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
+Les environnements peuvent être enregistrés dans la bibliothèque.  Ceci permet de transférer les paramètres d'un environnement d'un modèle à un autre. Pour plus d'informations, consultez la section [Environnements](environment-tab.html).
 
-## Library Settings
+## Paramètres de la bibliothèque
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+Utilisez ![images/options.png](images/options.png)les options des bibliothèques pour changer les valeurs par défaut affichées sous le menu ![images/library_default.png](images/library_default.png).
 
-##### Where can I find this command?
-There are three places to find the Libraries Options command.
+##### Où puis-je trouver cette commande ?
+Les options des bibliothèques sont accessibles de trois façons différentes.
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
- 1. Menus > Tools pulldown > Options > Libraries.
- 
+ 1. Onglet Bibliothèques > ![images/library_default.png](images/library_default.png) en haut à droite du panneau Bibliothèques > Paramètres...
+ 1. Menus > Outils > Options > Bibliothèques.
+ 1. Menus > Panneaux > Bibliothèques. 
 
-### Show render content
-Use this to show or hide the default render content location.
 
-#### Use default library location (My Documents)
-By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
+### Afficher le contenu de rendu
+Utilisez ceci pour montrer ou cacher la position du contenu de rendu par défaut. 
 
-#### Custom
-Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
+#### Utiliser l'emplacement par défaut des bibliothèques (Mes documents)
+Par défaut, les [bibliothèques de contenu](libraries.html) sont dans un sous dossier du répertoire *Mes documents*.
 
-##### Browse button
-Open file browser to specify file.
+#### Personnaliser
+Définit un emplacement personnalisé pour les [bibliothèques](libraries.html).  Modifie l'emplacement par défaut des [bibliothèques de contenu](libraries.html) sur cet ordinateur.
 
-#### Show "Documents" folder
-In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
+##### Bouton Parcourir
+Ouvre le navigateur pour choisir le fichier.
 
-#### Show custom folders
-In the [Libraries panel](libraries.html), designated custom folders will display in the menu.
+#### Afficher le dossier Documents
+Le dossier Documents indiqué sera affiché dans le menu du [panneau Bibliothèques](libraries.html).
+
+#### Afficher les dossiers personnalisés
+Les dossiers personnalisés indiqués seront affichés dans le menu du [panneau Bibliothèques](libraries.html).

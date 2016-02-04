@@ -20,7 +20,7 @@ Flamingo wird mit einer *[Flamingo-Standardumgebung](environment.html)* geliefer
 
 Das Umgebungseditor-Panel ist in mehrere Abschnitte unterteilt.  Je nach Umgebungstyp werden andere erweiterte Optionen angezeigt.
 
-Farben und Texturen können per Drag&Drop aus dem Farbenrad in ein anderes Farbenrad oder eine sonstigen Steuerung im Materialeditor, der [Texturenpalette](texturepalette.html) oder dem [Umgebungseditor](environmenteditor.html) gezogen werden.
+Farben und Texturen können per Drag&Drop aus dem Farbenrad in ein anderes Farbenrad oder eine sonstige Steuerung im Materialeditor, der [Texturenpalette](texturepalette.html) oder dem [Umgebungseditor](environmenteditor.html) gezogen werden.
 Umgebungspanel
 
  1. [Hintergrundtyp](#type)
@@ -89,10 +89,10 @@ Zum Anlegen einer neuen Flamingo-Umgebung.
 Mit diesem Befehl können Sie eine vorher exportierte Umgebung auswählen.
 
 #### ![images/paste.png](images/paste.png) Einfügen
-Erzeugt eine neue Umgebung, gestützt auf den Inhalt der Zwischenablage.
+Zum Anlegen einer neuen Umgebung aus dem Inhalt der Zwischenablage.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Als Instanz einfügen
-Erzeugt eine neue Umgebung, gestützt auf den Inhalt der Zwischenablage, der über Instanzierung mit dem Original verknüpft ist.
+Zum Anlegen einer neuen Umgebung aus dem Inhalt der Zwischenablage, die über Instanziierung mit dem Original verknüpft ist.
 
 #### ![images/grid.png](images/grid.png) Raster
 Zeigt die Vorschau als Raster von Miniaturansichten an.
@@ -115,7 +115,7 @@ Zeigt das Vorschaubild in einem schwebenden Fenster an.
 #### Miniaturansichten
 
 ##### ![images/small.png](images/small.png) Klein
-Miniaturansichten werden sehr klein angezeigt.
+Miniaturansichten werden klein angezeigt.
 
 ##### ![images/medium.png](images/medium.png) Mittel
 Miniaturansichten werden in mittlerer Größe angezeigt.
@@ -134,7 +134,7 @@ Zeigt die Größe in Modelleinheiten an.
 Alle Vorschauansichten werden bei Änderungen der Einstellungen aktualisiert.
 
 ##### ![images/updateallpreviews.png](images/updateallpreviews.png) Alle Vorschauansichten aktualisieren
-Zur manuellen Aktualisierung der Vorschauen, wenn die Option Vorschau mit autom. Aktualisierung deaktiviert ist.
+Zur manuellen Aktualisierung der Vorschau, wenn die Option Vorschau mit autom. Aktualisierung deaktiviert ist.
 
 ## [Fensterteiler](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: #divider}
@@ -163,13 +163,13 @@ Dadurch wird die entsprechende Umgebung als aktuell eingestellt.  Die aktuelle U
 #### ![images/toolbarlus.png](images/toolbarplus.png) Neue Umgebung anlegen
 Zum Anlegen einer neuen Flamingo-Umgebung.
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-Diese Einstellungen erscheinen auch auf Kontextmenüs (Klick mit der rechten Maustaste) für Miniaturansichten und Miniaturansichtshintergründe.
+Diese Einstellungen sind auch in Kontextmenüs (Klick mit der rechten Maustaste) für Miniaturansichten und Miniaturansichtshintergründe verfügbar.
 
 #### ![images/import.png](images/import.png) Umgebung aus Datei importieren
-Importiert Umgebungen aus einer gespeicherten .renv Rhino-Datei.
+Importiert Umgebungen aus einer gespeicherten Rhino-RENV-Datei.
 
 #### ![images/savetofile.png](images/savetofile.png) In Datei speichern
-Speichert eine Umgebung in eine .renv Rhino-Datei.
+Speichert eine Umgebung in eine Rhino-RENV-Datei.
 
 #### ![images/changetype.png](images/changetype.png) Typ ändern
 Wechselt den Umgebungstyp.
@@ -182,13 +182,13 @@ Das Standardverhalten hängt vom aktuellen Status der [Renderoptionen](http://do
 Zum Zurücksetzen aller Umgebungseinstellungen auf einen standardmäßigen schwarzen Hintergrund mit den Einstellungsmerkmalen "Reflektiert > Himmel" und "Gebrochen > Sichtbarer Hintergrund".
 
 #### ![images/copy.png](images/copy.png) Kopieren
-Kopiert die ausgewählte Umgebung in die Windows Zwischenablage. Der Inhalt der Zwischenablage kann dann in den Editor zur Erzeugung einer neuen Umgebung oder direkt in einen Ordner zur Erzeugung einer [Bibliotheksdatei](libraries.html) eingefügt werden.
+Kopiert die ausgewählte Umgebung in die Windows-Zwischenablage. Der Inhalt der Zwischenablage kann dann in den Editor zur Erzeugung einer neuen Umgebung oder direkt in einen Ordner zur Erzeugung einer [Bibliotheksdatei](libraries.html) eingefügt werden.
 
 #### ![images/paste.png](images/paste.png) Einfügen
-Erzeugt eine neue Umgebung, gestützt auf den Inhalt der Zwischenablage.
+Zum Anlegen einer neuen Umgebung aus dem Inhalt der Zwischenablage.
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png) Als Instanz einfügen
-Erzeugt eine neue Umgebung, gestützt auf den Inhalt der Zwischenablage, der über Instanzierung mit dem Original verknüpft ist.
+Zum Anlegen einer neuen Umgebung aus dem Inhalt der Zwischenablage, die über Instanziierung mit dem Original verknüpft ist.
 
 #### ![images/delete.png](images/delete.png) Löschen
 Löscht die ausgewählte Umgebung.

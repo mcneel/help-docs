@@ -1,95 +1,92 @@
 ---
+title: Elenco dei comandi di Flamingo
 ---
 
 
-# Flamingo Command List
+# {{page.title}}
 
-### FlamingoNXtAbout
-{: #flamingonxtabout-command}
-Displays theAbout Flamingodialog box.
+#### FlamingoInfo
+{: #flamingoabout-command}
+Mostra la finestra di dialogo Informazioni su Flamingo.
 
-###  [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)
-{: #flamingonxtautomaterender}
+#### [FlamingoAutomatizzaRendering](automate-rendering.html#flamingoautomaterender)
+{: #flamingoautomaterender}
 
-###  [FlamingoNXtBatchRender](automate-rendering.html#batch-render)
-{: #flamingonxtbatchrender}
+#### [FlamingoBatchRendering](automate-rendering.html#batch-render)
+{: #flamingobatchrender}
 
-###  [FlamingoNXtCheckForUpdates](http://nxt.flamingo3d.com/)
-{: #flamingonxtcheckforupdates}
+#### [FlamingoVerificaAggiornamenti](http://nxt.flamingo3d.com/)
+{: #flamingocheckforupdates}
 
-###  [FlamingoNXtControlPanel](welcome.html#control-panel)
-{: #flamingonxtcontrolpanel}
+#### FlamingoCancellaCacheBitmap
+{: #flamingoclearbitmapcache}
+Aggiorna la definizione della bitmap quando un file bitmap viene modificato usando un editor di immagini come PhotoShop.
 
-### FlamingoNXtClearBitmapCache
-{: #flamingonxtclearbitmapcache}
-Refreshes the bitmap definition when a bitmap file is changed using an image editor such as Photoshop.
+#### [FlamingoModificaPianta](plants.html)
+{: #flamingoeditplant}
 
-### FlamingoNXtConvertLegacyMaterialLibrary
-{: #flamingonxtconvertlegacymateriallibrary}
-Extracts Flamingo 2.x materials from a specified MLIB file as Flamingo nXt ArMaterial files in a specified output folder.
+#### [FlamingoFarmMonitor](render-farm.html#monitor)
+{: #flamingofarmmonitor}
 
-### FlamingoNXtCreateThumbNails
-{: #flamingonxtcreatethumbnails}
-Iterates recursively through a folder and generates a material preview for every ArMaterial file in the folder and sub folders. Specify how many passes it uses when generating the preview.
+#### [FlamingoRT](realtime.html)
+{: #flamingort}
 
-###  [FlamingoNXtDecal](properties-decal.html)
-{: #flamingonxtdecal}
+#### [FlamingoAiuti](http://help.mcneel.com/it/flamingo/5/help/)
+{: #flamingohelp}
+Apre il file della guida in linea.
 
-###  [FlamingoNXtDrawLightsForObjectsTaggedAsLights](lights-tab.html#tag-objects-as-lights)
-{: #flamingonxtdrawlightsforobjectstaggedaslights}
-Turns on a display conduit that decorates objects that are [tagged as lights](lights-tab.html#tag-objects-as-lights) with a preview of how the light is pointed and were its location is.
+#### [FlamingoEditorImmagini](image-editor.html)
+{: #flamingoimageeditor}
 
-###  [FlamingoNXtEditPlant](plants.html)
-{: #flamingonxteditplant}
+#### [FlamingoInserisciPiantaFlamingo2](plants.html)
+{: #flamingoinsertflamingo2plant}
 
-###  [FlamingoNXtExportAllMaterials](materials-tab.html#exportallmaterials)
-{: #flamingonxtexportallmaterials}
-Exports each material in a model to a file.
+#### FlamingoRendiCorrente
+{: #flamingomakecurrent}
+Imposta Flamingo NXt 5 come plug-in di rendering corrente all'interno di Rhino.
 
-### FlamingoNXtFindZeroFaceMeshes
-{: #flamingonxtfindzerofacemeshes}
-A diagnostic utility that finds Flamingo nXt render meshes that have faces with no area.
+#### [FlamingoEditorPiante](plants.html)
+{: #flamingoplanteditor}
+Apre l'[Editor delle piante](plants.html).
 
-### FlamingoNXtHelp
-{: #flamingonxthelp}
-Opens theHelpfile.
+#### [FlamingoRestrizioniRendering](documentproperties-flamingo.html#render-constraints)
+{: #flamingorenderconstraints}
+Imposta le [restrizioni di rendering](documentproperties-flamingo.html#render-constraints)
 
-### FlamingoNxtOldStylePlant
-{: #flamingonxtoldstyleplant}
-Inserts a Flamingo 2-style [plant](plants.html).
+#### [FlamingoRenderFarm](automate-rendering.html#render-farm)
+{: #flamingorenderfarm}
 
-###  [FlamingoNXtPlant](plants.html)
-{: #flamingonxtplant}
+#### FlamingoScaricaFarmClient
+{: #flamingodownloadfarmclient}
+Si usi questo comando per scaricare il client corrente.
 
-###  [FlamingoNXtPlantEditor](plants.html)
-{: #flamingonxtplanteditor}
-Opens the [Tree Editor](plants.html).
+#### [FlamingoRestrizioniRenderingScript](render-window.html#render-constraints)
+{: #flamingorenderscriptconstraints}
+Imposta le [restrizioni di rendering](documentproperties-flamingo.html#render-constraints) quando un rendering viene avviato da uno script.
 
-###  [FlamingoNXtRenderConstraints](documentproperties-flamingo.html#render-constraints)
-{: #flamingonxtrenderconstraints}
-Sets [render constraints](documentproperties-flamingo.html#render-constraints) :
+#### FlamingoRestrizioniRenderingFinestra
+{: #flamingorenderwindowconstraints}
+Imposta le [restrizioni di rendering](documentproperties-flamingo.html#render-constraints) quando si usa **RenderingFinestra** per il rendering.
 
-### FlamingoNXtRenderWindowConstraints
-{: #flamingonxtrenderwindowconstraints}
-Sets [render constraints](documentproperties-flamingo.html#render-constraints) when **RenderWindow** is used for rendering.
+#### [FlamingoMostraPannelloDiControllo](welcome.html#control-panel)
+{: #flamingoshowcontrolpanel}
 
-###  [FlamingoNXtRenderFarm](automate-rendering.html#render-farm)
-{: #flamingonxtrenderfarm}
+#### [FlamingoNascondiPannelloDiControllo](welcome.html#control-panel)
+{: #flamingohidecontrolpanel}
 
-###  [FlamingoNXtSaveRenderWindowAsIncludeAlpha](render-window.html#save-with-alpha-channel)
-{: #flamingonxtsaverenderwindowasincludealpha}
+#### [FlamingoCommutaPannelloDiControllo](welcome.html#control-panel)
+{: #flamingotogglecontrolpanel}
 
-###  [FlamingoNXtTagObjectsAsLights](lights-tab.html#tag-objects-as-lights)
-{: #flamingonxttagobjectsaslights}
+#### [FlamingoTutorial](http://nxt.flamingo3d.com/page/tutorial-e-documentazione)
+{: #flamingotutorials}
 
-###  [FlamingoNXtTutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-{: #flamingonxttutorials}
+#### FlamingoConvalidaLicenza
+{: #flamingovalidatelicense}
+Fa comparire la procedura guidata della convalida di Flamingo.
 
-### FlamingoNXtUpdateLinkedPlants
-{: #flamingonxtupdatelinkedplants}
-Updates plant definitions that have been modified in the current model.
+#### [FlamingoSitoWeb](http://nxt.flamingo3d.com/)
+{: #flamingowebpage}
+Apre il sito web di Flamingo nXt.
 
-###  [FlamingoNXtWebPage](http://nxt.flamingo3d.com/)
-{: #flamingonxtwebpage}
-Opens the Flamingo nXt web page.
-&#160;
+#### [FlamingoPianta](plants.html)
+{: #flamingoplant}

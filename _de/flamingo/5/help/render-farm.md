@@ -35,7 +35,7 @@ Für fortgeschrittene Installationen lässt Sie die nXt Renderfarm-Software mit 
  1. Zum Start eines Renderings mit der Flamingo-nXt-Farm verwenden Sie statt des Befehls *Rendern* die Renderfarm *(Flamingo-nXt-5.0-Menü &gt; Renderfarm)*. Dadurch wird ein Renderauftrag an den [Farm-Ausgabeordner](options-flamingo.html#farm-output-folder) übermittelt. Alle Materialien und Support-Informationen werden automatisch mit dem Auftrag mitgeliefert.
  2. Renderaufträge werden in viele verschiedene Farmaufgaben aufgeteilt. Die Renderfarm-Clients überprüfen den Farm-Ausgabeordner beständig nach neuen Aufgaben. Jeder Client nimmt sich eine Aufgabe und beginnt zu rendern. Mit dem Farm-Monitor  *(Flamingo nXt 5.0 &gt; Renderfarm &gt; Farm-Monitor...)* können Sie den Fortschritt eines Auftrags überprüfen.
  3. Jeder Farm-Client speichert die Resultate im Farmordner unter *Auftragsname\Ausgabe*.
- 3. Während jeder Client einen Auftrag beendet, werden gleichzeitig neue Aufträge, die an die Farm gesendet werden, aufgenommen.
+ 3. Während die Clients ihre Aufträge beenden, werden gleichzeitig neue Aufträge aufgenommen, die an die Farm gesendet werden.
  4. Die Ausgabe einer Farm erfolgt im [nXt-Bildformat (.nXtImage)](image-editor.html). Bilder in diesem Format können mit dem [nXt-Bildeditor](image-editor.html) bearbeitet werden. Die Ergebnisse können im [nXt-Bildeditor](image-editor.html) auch als TGA-, PNG-, TIF- oder JPG-Datei abgespeichert werden.
 
 ## Installation und Konfiguration der Farm
@@ -61,7 +61,7 @@ Die Renderfarm ist nun konfiguriert.
 
 ## Verwendung der Renderfarm
 {: #using-the-render-farm-from-flamingo-nxt}
-Die Farm kann zur Zeit auf drei Arten verwendet werden, um Renderings auf mehreren Computern zu bearbeiten: Einzelne Rendering-Aufträge, Batch-Aufträge und Animationen.
+Die Farm kann zur Zeit auf drei Arten verwendet werden, um Renderings auf mehreren Computern zu bearbeiten: Einzelne Renderaufträge, Stapelaufträge und Animationen.
 
 ##### Überprüfung der Client-Rechner auf korrekte Funktionsweise
 Nach dem Start des Render-Farmers auf allen Client-Computern:
@@ -113,7 +113,7 @@ Der Auftrag wird zu einem bestimmten Zeitpunkt gestartet.
 
 #### Renderbeschränkungen
 {: #rendering-constraints}
-Zur Angabe der Anzahl Durchgänge bis zum Abschluss dieses Stapelauftrags.  Weitere Infos finden Sie im Abschnitt [Durchgänge](documentproperties-flamingo.html#number-of-passes).
+Zur Angabe der Anzahl der Durchgänge bis zum Abschluss dieses Stapelauftrags.  Weitere Infos finden Sie im Abschnitt [Durchgänge](documentproperties-flamingo.html#number-of-passes).
 
 
 ## Farm-Monitor
@@ -128,36 +128,35 @@ Sie finden das Programm auch direkt im Windows-Startmenü unter *Alle Programme 
 Klicken Sie mit der rechten Maustaste auf einen Rechner oder Auftrag, um auf die Optionen zuzugreifen.
 
 #### Aktualisieren
-Auftragsliste aktualisieren.
+Zur Aktualisierung der Auftragsliste.
 
 #### Gerät anhalten
-Arbeitsstation aus der Renderfarm-Teilname ausschließen.
+Der Computer wird angehalten und nimmt vorübergehend nicht am Renderprozess teil.
 
 #### Gerät fortsetzen
-Fortsetzen der Teilnahme der Arbeitsstation an der Renderfarm.
+Der Computer wird wieder in den Renderprozess eingegliedert.
 
 #### Auftrag anhalten
-Pause im Auftrag.
+Der Auftrag wird pausiert.
 
 #### Auftrag fortsetzen
-Den Auftrag fortsetzen.
+Der Auftrag wird fortgesetzt.
 
 #### Auftrag entfernen
-Löschen Sie den definierten Auftrag aus der Liste.
+Der Auftrag wird aus der Liste entfernt.
 
 ## Lizenzierung der Renderfarm
 {: #licensing-the-render-farm-}
-Mit der kostenlosen Version der Renderfarm können zwei Netzwerk-Computer (Knoten) an mehreren Aufträgen gleichzeitig arbeiten. Wenn Sie weitere Clients hinzufügen möchten, können Sie eine Lizenz mit unbegrenzter Anzahl Knoten [hier](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) erwerben.
+Mithilfe der Renderfarm können Renderaufträge auf ein Netzwerk verteilt und so auf mehreren Rechnern gleichzeitig bearbeitet werden.  [Download des Renderfarm-Clients](http://nxt.flamingo3d.com/page/nxt-render-farm-de).
 
-Nach dem Kauf der Lizenz und Erhalt des Produktcodes führen Sie das folgende Verfahren aus, um Ihre Farm zu lizenzieren.
 
 ##### Autorisierung eines Knotens
 1. Warten Sie, bis alle aktiven Farm-Aufträge vervollständigt wurden, bevor Sie mit der Lizenzierung beginnen.
-1. Speichern Sie Ihren Produktcode in einer Textdatei an einem Netzwerk-Standort, damit Sie ihn einfach und schnell in jeden Knoten einfügen können.
+1. Speichern Sie den Produktschlüssel (XF10-J9G2-H006-T8AJ-GBB9-0027) in einer Textdatei auf einem Netzwerkrechner, damit Sie ihn einfach und schnell in jeden Knoten einfügen können.
 1. Wenn der Knoten gerade aktiv ist, [klicken Sie mit der rechten Maustaste](mouse-button-right.html) das Symbol der Renderfarm und anschließend auf **Schließen**.
 1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.
 Klicken Sie im Ordner der nXt-Renderfarm auf **Farm autorisieren**.
-1. Geben Sie im Bearbeitungskästchen den Lizenzschlüssel ein und klicken Sie auf **OK**.
+1. Geben Sie im Eingabefeld den Lizenzschlüssel ein und klicken Sie auf **OK**.
 
 ##### Start eines Knotens
 1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.

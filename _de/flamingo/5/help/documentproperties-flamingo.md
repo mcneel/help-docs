@@ -10,7 +10,7 @@ Diese Einstellungen gelten nur für das aktuelle Modell. Es gibt eine Wechselbez
 <!-- These locations are not correct.  They need to be updated. -->
 
  1. ![images/icon-render.png](images/icon-render.png)Werkzeugleiste Renderwerkzeuge > ![images/environments.png](images/environments.png) Materialeditor
- 1. ![images/menuicon.png](images/menuicon.png)Menü > Render > Umgebungseditor
+ 1. ![images/menuicon.png](images/menuicon.png)Menü > Rendern > Umgebungseditor
  1. Befehl > Umgebungseditor
 
 ## Materialien
@@ -35,7 +35,7 @@ Wenn ein Strahl auf eine Szene trifft, wird er mehrere Male zurückgeworfen, bev
 
 #### Reflexion
 {: #reflective-bounces}
-Definiert, wie viele Reflektionsstufen erlaubt sind; in anderen Worten, wie oft ein Lichtstrahl auf Objekten reflektiert wird. Wenn Sie 0 eingeben, gibt es keine Reflexionen. Bei größeren Werten dauert das Rendering länger. Erhöhen Sie diesen Wert, wenn eine Ansicht auf eine reflektierende Fläche blickt, die eine angrenzende Reflexionsfläche zurückwirft und die Reflexionen komplett schwarz werden.
+Definiert, wie viele Reflexionsstufen erlaubt sind; in anderen Worten, wie oft ein Lichtstrahl auf Objekten reflektiert wird. Wenn Sie 0 eingeben, gibt es keine Reflexionen. Bei größeren Werten dauert das Rendering länger. Erhöhen Sie diesen Wert, wenn eine Ansicht auf eine reflektierende Fläche blickt, die eine angrenzende Reflexionsfläche zurückwirft und die Reflexionen komplett schwarz werden.
 
 #### Gebrochen
 {: #refractive-bounces}
@@ -43,7 +43,7 @@ Bestimmt, wie viele Lichtbrechungsstufen erlaubt sind, d.h., wie oft ein Lichtst
 
 #### Indirekt
 {: #indirect-bounces}
-Definiert, wie viele indirekte Lichtstufen erlaubt sind; in anderen Worten, wie oft ein indirekter Lichtstrahl an Objekten abgeprallt wird. Wenn Sie 0 eingeben, gibt es keine Reflexionen. Bei größeren Werten wird auch die Rendering-Zeit erhöht.
+Bestimmt, wie viele indirekte Lichtstufen erlaubt sind, d.h., wie oft ein indirekter Lichtstrahl an Objekten abprallt. Wenn Sie 0 eingeben, gibt es keine Reflexionen. Bei größeren Werten wird auch die Rendering-Zeit erhöht.
 
 ## Indirekte Beleuchtung
 {: #indirect-settings}

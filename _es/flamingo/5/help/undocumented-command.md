@@ -2,7 +2,6 @@
 ---
 
 
-# Undocumented Feature
-This topic has not been documented.
-Post questions about this feature to ** [//news.flamingo3d.com/flamingo](flamingo) **.
-
+# Función no documentada
+Este tema todavía no se ha documentado.
+Envíe sus preguntas sobre esta función a [//news.flamingo3d.com/flamingo](flamingo) **.

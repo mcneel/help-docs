@@ -1,3 +1,3 @@
 
 #### Mirror
-Reverses the image from left to right.
+將圖片的左右對調。

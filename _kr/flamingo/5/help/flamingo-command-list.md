@@ -4,93 +4,89 @@ title: Flamingo 명령 목록
 
 
 # {{page.title}}
-<!-- TODO: Some of those commands have been renamed to a version without "nXt". Or all of them? -->
-### FlamingoNXtAbout
-{: #flamingonxtabout-command}
+
+#### FlamingoAbout
+{: #flamingoabout-command}
 Flamingo 정보 대화상자를 표시합니다.
 
-###  [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender)
-{: #flamingonxtautomaterender}
+#### [FlamingoAutomateRender](automate-rendering.html#flamingoautomaterender)
+{: #flamingoautomaterender}
 
-###  [FlamingoNXtBatchRender](automate-rendering.html#batch-render)
-{: #flamingonxtbatchrender}
+#### [FlamingoBatchRender](automate-rendering.html#batch-render)
+{: #flamingobatchrender}
 
-###  [FlamingoNXtCheckForUpdates](http://nxt.flamingo3d.com/)
-{: #flamingonxtcheckforupdates}
+#### [FlamingoCheckForUpdates](http://nxt.flamingo3d.com/)
+{: #flamingocheckforupdates}
 
-###  [FlamingoNXtControlPanel](welcome.html#control-panel)
-{: #flamingonxtcontrolpanel}
-
-### FlamingoNXtClearBitmapCache
-{: #flamingonxtclearbitmapcache}
+#### FlamingoClearBitmapCache
+{: #flamingoclearbitmapcache}
 Photoshop과 같은 이미지 편집기에서 비트맵 파일 비트맵 정의가 수정되었을 때 비트맵 정의를 새로 고칩니다.
 
-### FlamingoNXtConvertLegacyMaterialLibrary
-{: #flamingonxtconvertlegacymateriallibrary}
-지정된 MLIB 파일에서 Flamingo 2.x 재질을 추출하여 지정된 출력 폴더의 Flamingo nXt ArMaterial 파일로 변환합니다.
+#### [FlamingoEditPlant](plants.html)
+{: #flamingoeditplant}
 
-### FlamingoNXtCreateThumbNails
-{: #flamingonxtcreatethumbnails}
-폴더를 재귀적으로 반복하여 해당 폴더와 그 하위 폴더에 있는 모든 ArMaterial 파일의 재질 미리보기를 생성합니다. 미리보기를 생성할 때 몇 번의 패스가 사용되는지를 지정합니다.
+#### [FlamingoFarmMonitor](render-farm.html#monitor)
+{: #flamingofarmmonitor}
 
-###  [FlamingoNXtDecal](properties-decal.html)
-{: #flamingonxtdecal}
+#### [FlamingoRT](realtime.html)
+{: #flamingort}
 
-###  [FlamingoNXtDrawLightsForObjectsTaggedAsLights](lights-tab.html#tag-objects-as-lights)
-{: #flamingonxtdrawlightsforobjectstaggedaslights}
-조명의 방향과 위치를 보여주는 미리보기와 함께, [조명으로 태그된 개체](lights-tab.html#tag-objects-as-lights)를 장식하는 디스플레이 도관을 켭니다.
-
-###  [FlamingoNXtEditPlant](plants.html)
-{: #flamingonxteditplant}
-
-###  [FlamingoNXtExportAllMaterials](materials-tab.html#exportallmaterials)
-{: #flamingonxtexportallmaterials}
-모델에 있는 각각의 재질을 파일로 내보냅니다.
-
-### FlamingoNXtFindZeroFaceMeshes
-{: #flamingonxtfindzerofacemeshes}
-Flamingo nXt 렌더링 메쉬에 면적이 없는 면이 있는지 찾아내는 진단 유틸리티입니다.
-
-### FlamingoNXtHelp
-{: #flamingonxthelp}
+#### [FlamingoHelp](http://help.mcneel.com/kr/flamingo/5/help/)
+{: #flamingohelp}
 도움말 파일을 엽니다.
 
-### FlamingoNxtOldStylePlant
-{: #flamingonxtoldstyleplant}
-Flamingo 2 스타일의 [식물](plants.html)을 삽입합니다.
+#### [FlamingoImageEditor](image-editor.html)
+{: #flamingoimageeditor}
 
-###  [FlamingoNXtPlant](plants.html)
-{: #flamingonxtplant}
+#### [FlamingoInsertFlamingo2Plant](plants.html)
+{: #flamingoinsertflamingo2plant}
 
-###  [FlamingoNXtPlantEditor](plants.html)
-{: #flamingonxtplanteditor}
-[나무 편집기](plants.html)를 엽니다.
+#### FlamingoMakeCurrent
+{: #flamingomakecurrent}
+이 명령은 Rhino에서 Flamingo NXt 5를 현재 렌더러로 설정합니다.
 
-###  [FlamingoNXtRenderConstraints](documentproperties-flamingo.html#render-constraints)
-{: #flamingonxtrenderconstraints}
-[렌더링 제한 조건](documentproperties-flamingo.html#render-constraints)을 설정합니다:
+#### [FlamingoPlantEditor](plants.html)
+{: #flamingoplanteditor}
+[식물 편집기](plants.html)를 엽니다.
 
-### FlamingoNXtRenderWindowConstraints
-{: #flamingonxtrenderwindowconstraints}
+#### [FlamingoRenderConstraints](documentproperties-flamingo.html#render-constraints)
+{: #flamingorenderconstraints}
+[렌더링 제한 조건](documentproperties-flamingo.html#render-constraints) 을 설정합니다.
+
+#### [FlamingoRenderFarm](automate-rendering.html#render-farm)
+{: #flamingorenderfarm}
+
+#### FlamingoDownloadFarmClient
+{: #flamingodownloadfarmclient}
+현재 Farm 클라이언트를 다운로드하려면 이 명령을 사용합니다.
+
+#### [FlamingoRenderScriptConstraints](render-window.html#render-constraints)
+{: #flamingorenderscriptconstraints}
+스크립트를 통해 렌더링을 시작할 때 [렌더링 제한 조건](documentproperties-flamingo.html#render-constraints) 을 설정합니다.
+
+#### FlamingoRenderWindowConstraints
+{: #flamingorenderwindowconstraints}
 렌더링에 **렌더링 창**이 사용될 때 [렌더링 제한 조건](documentproperties-flamingo.html#render-constraints)을 설정합니다.
 
-###  [FlamingoNXtRenderFarm](automate-rendering.html#render-farm)
-{: #flamingonxtrenderfarm}
+#### [FlamingoShowControlPanel](welcome.html#control-panel)
+{: #flamingoshowcontrolpanel}
 
-###  [FlamingoNXtSaveRenderWindowAsIncludeAlpha](render-window.html#save-with-alpha-channel)
-{: #flamingonxtsaverenderwindowasincludealpha}
+#### [FlamingoHideControlPanel](welcome.html#control-panel)
+{: #flamingohidecontrolpanel}
 
-###  [FlamingoNXtTagObjectsAsLights](lights-tab.html#tag-objects-as-lights)
-{: #flamingonxttagobjectsaslights}
+#### [FlamingoToggleControlPanel](welcome.html#control-panel)
+{: #flamingotogglecontrolpanel}
 
-###  [FlamingoNXtTutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-{: #flamingonxttutorials}
+#### [FlamingoTutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation-kr)
+{: #flamingotutorials}
 
-### FlamingoNXtUpdateLinkedPlants
-{: #flamingonxtupdatelinkedplants}
-현재 모델에서 수정된 식물 정의를 업데이트합니다.
+#### FlamingoValidateLicense
+{: #flamingovalidatelicense}
+Flamingo 유효성 검사 마법사를 엽니다.
 
-###  [FlamingoNXtWebPage](http://nxt.flamingo3d.com/)
-{: #flamingonxtwebpage}
+#### [FlamingoWebPage](http://nxt.flamingo3d.com/)
+{: #flamingowebpage}
 Flamingo nXt 웹 페이지를 엽니다.
- 
+
+#### [FlamingoPlant](plants.html)
+{: #flamingoplant}

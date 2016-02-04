@@ -1,7 +1,7 @@
-Sets the default time and number of passes constraints. The default recommended setting is to set these render constraints off and let the render engine continue until it is closed or manually stopped. These may be changed using the controls in the Render Window. Setting the Number of passes and Time to 0 allows the rendering to continue until you click Stop Rendering.
+Définit les contraintes sur le nombre de passes et le temps du rendu. Le paramètre recommandé par défaut est de désactiver ces contraintes de rendu et de laisser le moteur de rendu continuer jusqu'à ce qu'il se ferme ou soit arrêté manuellement. Elles peuvent être modifiées en utilisant les contrôles de la fenêtre de rendu. En définissant le Nombre de passes et le Temps sur 0, le rendu continue jusqu'à ce vous cliquiez sur Arrêter le rendu.
 
-#### Time
-Specifies the amount of time in Hours/Minutes/Seconds the render will continue to process. Note : The rendering stops after the last pass after the time limit has been reached. If you click Resume Rendering, the rendering will continue for one additional pass.
+#### Temps
+Indique le temps en Heures/Minutes/Seconds pendant lequel le rendu continuera. Le rendu s'arrête lorsque la dernière passe après le temps limite a été atteinte. Si vous cliquez sur Reprendre le rendu, le rendu continuera pour une passe de plus.
 
-#### Number of passes
-Specifies the number of rendering passes the render will process. Note : Any time you click Resume Rendering, the counter for the number of passes is reset. For example, if you set the number of passes to 10 and stop the rendering after pass 8, the rendering will continue until it reaches 18 passes. Normally renderings may take 10 - 15 passes to start to converge. Architectural interiors may need up to 30 passes to start to converge.
+#### Nombre de passes
+Indique le nombre de passes de rendu traitées par le rendu. Remarque : À chaque fois que vous cliquez sur Reprendre le rendu, le compteur du nombre de passes redémarre. Par exemple, si vous définissez un nombre de passes égal à 10 et si vous arrêtez le rendu après la passe 8, le rendu continuera jusqu'à atteindre 18 passes. Les rendus prennent normalement entre 10 et 15 passes pour commencer à converger. Les intérieurs architecturaux peuvent prendre jusqu'à 30 passes pour commencer à converger. 

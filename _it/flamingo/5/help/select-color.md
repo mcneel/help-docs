@@ -1,48 +1,48 @@
 ---
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
-The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
+# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Selettore dei colori
+Il selettore dei colori è usato per gestire vari gruppi di materiale e proprietà.  Funziona in modo simile in tutti i casi.
 
 
-There are two parts of the selector:
+Il selettore si compone di due parti:
   ![images/colorswatch-002.svg](images/colorswatch-002.svg)
 
-1. [Color Swatch](#swatch) - Click on the color fo the main color selector
-1. [Options Menu](#options) - Click on the arrow for additional color utilities
+1. [Campione colore](#swatch) - Fare clic sul colore per accedere al selettore dei colori principale
+1. [Menu opzioni](#options) - Fare clic sulla freccia per ottenere ulteriori utility di colore
 
-## Color Swatch ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## Campione colore ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
 {: #swatch}
-Click the color swatch to select a color from the Select Color dialog box.
+Fare clic sul campione di colore per selezionare un colore dalla finestra di dialogo Selezione colore.
 
-##### Select from the Named Color List
-* Select a color from the list of names on the left.
+##### Selezionare dall'elenco dei nomi dei colori
+* Selezionare un colore dall'elenco di nomi sulla sinistra.
 
-##### Select from the color wheel selector
-1. Drag the marker around the outer wheel to define the hue.
-1. Drag the marker horizontally in the inner square to define the saturation level.
-1. Drag the marker vertically in the inner square to define the brightness value.
+##### Selezionare dalla ruota cromatica
+1. Trascinare l'indicatore seguendo la ruota esterna per definire la tonalità.
+1. Trascinare l'indicatore orizzontalmente lungo il quadrato interno per definire il livello di saturazione.
+1. Trascinare l'indicatore verticalmente lungo il quadrato interno per definire il valore di luminosità.
 
-##### Set in the Hue, Sat, Val boxes
-1. Hue is a color's hue corresponds to its visible wavelength of light. Hue is measured in degrees from 0 to 359, which correspond roughly with a rainbow's hues in 60 degree increments: red, orange, yellow, green, blue, and violet.
-1. Saturation refers to the color's intensity on a 0 to 100 scale. A saturation of 0 produces a neutral gray color that varies from black to white depending on the color's brightness. The hue has no effect on a color with a saturation component of 0. A saturation of 100 produces that hue's most intense shade.
-1. Value refers to the perceived amount of light value (or white) in the color. The Value component varies between 0 and 100. Value is also sometimes referred to as luminance or brightness.
+##### Impostare le caselle Ton, Sat, Val
+1. La tonalità di un colore dipende fisicamente dalla lunghezza d'onda dominante della radiazione luminosa. La tonalità viene misurata in gradi, in un intervallo che va da 0 a 359, che corrisponde in modo approssimato ai valori dell'arcobaleno a passi di 60 gradi: rosso, arancione, giallo, verde, blu e violetto.
+1. La saturazione si riferisce all'intensità di un colore, su una scala che va da 0 a 100 (dipende fisicamente dalla distribuzione spettrale). Un valore di saturazione pari a 0 produce un colore grigio neutro che varia da nero a bianco a seconda della luminosità del colore. La tonalità non ha effetto sui colori con componente di saturazione pari a 0. Una saturazione pari a 100 crea un effetto di ombreggiatura molto intenso.
+1. Il valore si riferisce alla quantità di luce percepita (o bianco) in un determinato colore. Il componente Valore va dallo 0 al 100. Il valore a volte viene anche denominato luminanza o luminosità.
 
-##### Red, Green, Blue (RGB)
+##### Rosso, Verde, Blu (RGB)
 {: #rgb}
-This method is used by computers to project color onto the monitor. Each pixel is a combination of the three colors in varying intensities. Pure red is entirely red with no green or blue. Pure black has red, green, and blue set to 0, and pure white has red, green, and blue set to 255.
+Questo metodo viene usato dai computer per proiettare il colore sullo schermo. Ciascun pixel è una combinazione di tre colori a varie intensità. Il colore rosso puro, ad esempio, è completamente rosso, con nessun componente verde o blu. Il nero ha invece i valori di rosso, verde e blu impostati sullo 0, mentre per il bianco, essi sono impostati sul 255.
 
-## Menu options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## Opzioni del menu ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
 {: #options}
 
-#### Color Picker
-Opens the [Color Swatch](#swatch) dialog box described above. This is the same as clicking on the color swatch.
+#### Selettore dei colori
+Apre la finestra di dialogo [Campione colore](#swatch) descritta sopra. Equivale a fare clic sul campione di colore.
 
-#### Eye Dropper
-Allows picking the color from anywhere on the screen using a eye dropper tool
+#### Contagocce
+Consente la selezione del colore da un punto qualsiasi dello schermo tramite lo strumento contagocce.
 
-#### Copy
-Copies the color in the color swatch. To be used in another color selector by using the Paste option.
+#### Copia
+Copia il colore del campione di colore. Da usarsi in un altro selettore dei colori usando l'opzione Incolla.
 
-#### Paste
-Pastes the color from one color swatch to another. After using the Copy command above, use this Paste option.
+#### Incolla
+Incolla il colore da un campione di colore all'altro. Si usi questa opzione dopo aver usato l'opzione Copia.

@@ -1,4 +1,5 @@
 ---
+title: Index de l'aide de Flamingo
 ---
 
 <!-- Do not edit the below section. The source for the Help index can be found in the _data folder in the help_index.yaml file -->
@@ -26,7 +27,7 @@
 {% endcase %}
 
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} {{local_categories.name}}
+# ![images/flamingotab.svg](images/flamingotab.svg) {{local_categories.name}}
 {% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}

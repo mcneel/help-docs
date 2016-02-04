@@ -1,7 +1,7 @@
-Sets the default time and number of passes constraints. The default recommended setting is to set these render constraints off and let the render engine continue until it is closed or manually stopped. These may be changed using the controls in the Render Window. Setting the Number of passes and Time to 0 allows the rendering to continue until you click Stop Rendering.
+Imposta le restrizioni predefinite relative al tempo ed al numero di passate. L'impostazione predefinita consigliata è attivare queste restrizioni di rendering e lasciare che il motore di rendering prosegua fino a quando non viene chiuso o interrotto manualmente. Questi valori si possono cambiare usando i controlli della finestra di rendering. Impostando il Numero di passate ed il Tempo sullo 0, il rendering continuerà fino a quando non si clicca sul pulsante Arresta rendering.
 
-#### Time
-Specifies the amount of time in Hours/Minutes/Seconds the render will continue to process. Note : The rendering stops after the last pass after the time limit has been reached. If you click Resume Rendering, the rendering will continue for one additional pass.
+#### Ora
+Specifica la quantità di tempo, in Ore/Minuti/Secondi, durante il quale verrà processato il rendering. Nota : Il rendering si arresta dopo l'ultima passata una volta raggiunto il tempo limite. Cliccando su Riprendi rendering, il rendering continuerà per un'ulteriore passata.
 
-#### Number of passes
-Specifies the number of rendering passes the render will process. Note : Any time you click Resume Rendering, the counter for the number of passes is reset. For example, if you set the number of passes to 10 and stop the rendering after pass 8, the rendering will continue until it reaches 18 passes. Normally renderings may take 10 - 15 passes to start to converge. Architectural interiors may need up to 30 passes to start to converge.
+#### Numero di passate
+Specifica il numero di passate che verranno processate dal rendering. Nota : Ogni volta che si clicca su Riprendi rendering, il contatore del numero di passate viene reimpostato. Per esempio, se si imposta il numero di passate su 10 e si arresta il rendering dopo 8 passate, il rendering continuerà fino a raggiungere le 18 passate. Di norma i rendering possono richiedere 10-15 passate per iniziare a convergere. Gli interni architettonici possono richiedere fino a 30 passate per iniziare a convergere.

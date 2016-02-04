@@ -1,142 +1,145 @@
 ---
+title: Proprietà dei materiali immagine
 ---
 
 
-# ![images/images.svg](images/images.svg){:height="75px" width="75px"} Material Image Properties
+# ![images/images.svg](images/images.svg) {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
 ![images/solidcolors.png](images/textureset.png)
 
-Materials can be created from images. Scan photographs and real materials like wallpaper and carpet, create patterns in a paint program, or use images from other sources of bitmap.
-Imagine that the material stretches infinitely in all directions in space. The material becomes visible only where an object passes through it. Patterns are repeated infinitely (tiled) in four directions at a specified scale.
-Small images that can be seamlessly tiled tend to work best. If the bitmap does not tile well, use the option to mirror the tiles. This guarantees matched edges.
+I materiali si possono creare a partire da immagini. Si possono scansionare fotografie o materiali reali, creare dei pattern mediante programmi di fotoritocco oppure utilizzare immagini provenienti da altre sorgenti bitmap.
 
-Note : To make a bitmap image cover only part on the object (like a label on a wine bottle or a logo on a product), use the [Decal](properties-decal.html) feature instead.
+Immaginiamo che il materiale si estenda all'infinito nello spazio in tutte le direzioni. Il materiale diventa visibile solo quando un oggetto lo attraversa. I pattern vengono applicati al materiale e ripetuti all'infinito (sottoposti a tiling) nelle quattro direzioni secondo la scala impostata.
 
-Image maps can be used many ways. A common method is to use a picture of a real-world material as the materials color.
+I migliori risultati si ottengono con immagini di piccole dimensioni sottoponibili a tiling con bordi continui. Se il tiling di una bitmap non dovesse essere soddisfacente, si usi l'opzione che consente di eseguire delle copie speculari. In questo modo, ci si assicura che i bordi combacino.
 
-## Name
-Image Textures can be named.  This name is used by the Texture library of the RDK and has no real impact on Flamingo.
+**Nota:** Se si desidera che un'immagine bitmap copra solo una parte dell'oggetto (etichette di bottiglie, loghi di prodotti, ecc), si usi la funzione [Decal](properties-decal.html).
 
-## Flamingo Image
+Le mappe immagine si possono usare in vari modi. Normalmente, si usano delle fotografie di materiali reali che fungono da colori per i materiali.
 
-### Image preview
+## Nome
+Alle texture immagine si può assegnare un nome. Questo nome viene usato dalla libreria delle texture dell'RDK e non ha alcun impatto reale su Flamingo.
+
+## Immagine di Flamingo
+
+### Anteprima immagine
 {: #image-preview}
-Displays a preview of the selected image file. Hold the mouse over the image to a see a pop-up of the image file name.  Click on the image to select a different image.
+Mostra un'anteprima del file immagine selezionato. Mantenere il puntatore sull'immagine per visualizzare un pop-up con il nome del file immagine.  Fare clic sull'immagine per selezionare un'immagine diversa.
 
-#### Image resolution
+#### Risoluzione immagine
 {: #image-resolution}
-Displays the resolution in pixels of the current image file.
+Mostra la risoluzione del file immagine corrente in pixel.
 
-### Tiles
+### Mattonelle
 {: #tiles}
-Image maps used in material definitions are always repeated (tiled). These settings specify how large each instance (tile) will be in current model units.
+Le mappe immagine usate nella definizione dei materiali sono ripetute ad effetto mattonella (sottoposte a tiling). Questa impostazione specifica l'ampiezza di ciascuna unità (mattonella) nelle unità di misura correnti del modello.
 
-#### Width/Height
+#### Larghezza/Altezza
 {: #width-height}
-Sets the tile size in model units.
+Imposta le dimensioni della mattonella nelle unità del modello.
 {% include_relative snippets/snippet-lock-widthheight.md %}
 
 {% include_relative snippets/snippet-masking.md %}
 
-### Mapping type
+### Tipo di mappatura
 {: #mapping-type}
-Images normally apply to the color channel. But there are other ways to use images.  Images can be set as:
+Le immagini di solito vengono applicate al canale di colore. Tuttavia, esistono altre modalità di utilizzo delle immagini.  Le immagini si possono impostare come:
 
 > [Standard](#standard)
-> [Normal](#normal)
-> [Displacement](#displacement)
+> [Normale](#normal)
+> [Scostamento](#displacement)
 
 ### Standard
 {: standard}
-The image provides color and visual bump to the material. Use the Strength and Bump values to control how the bitmap will influence the material.
+L'immagine fornisce al materiale un colore ed un effetto rilievo. Si usino i valori di Intensità e Rilievo per controllare il modo in cui la bitmap influirà sul materiale.
 
-#### Color Strength
+#### Intensità del colore
 {: #color}
-Determines how much the image map influences the appearance of the material. In the example below, the underlying material is magenta colored. The color strength increases until the underlying color is completely masked by the black and white texture.
+Specifica i valori di influenza della mappa immagine sull'aspetto del materiale. Nell'esempio qui sotto, il materiale sottostante è di color magenta. L'intensità del colore aumenta fino a quando il colore sottostante viene completamente mascherato dalla texture bianca e nera.
 
 ![images/brik-b14.png](images/brik-b14.png)![images/strength.png](images/strength.png)
-*Color strength 0.2, 0.5, 1.0.*
+*Intensità del colore 0.2, 0.5, 1.0.*
 
-#### Bump Strength
+#### Intensità del rilievo
 {: #bump}
-Simulates bumps and wrinkles on the surface of an object by perturbing the surface normals of the object. The underlying object is not changed. In the illustration, the material on the left uses displacement mapping, while the material on the right uses bump mapping set at its highest value. Using negative bump numbers will reverse the effect. The edge and shadow are smooth for the bump-mapped material. See: [Wikipedia article: Bump mapping](http://en.wikipedia.org/wiki/Bump_mapping).
+Simula rilievi e rugosità sulla superficie di un oggetto alterando le normali alla superficie dell'oggetto. L'oggetto sottostante non viene modificato. Nell'immagine, il materiale sulla sinistra fa uso della mappatura di scostamento, mentre il materiale sulla destra usa la mappatura bump impostata sul valore massimo. Valori di rilievo negativi invertono l'effetto. I bordi e le ombre del materiale con mappatura bump risultano morbidi. Vedi: [Articolo di Wikipedia: Mappatura bump](https://it.wikipedia.org/wiki/Bump_mapping).
 
 ![images/bumpvsdisplacement.png](images/bumpvsdisplacement.png)
-*Bump strength, 0.5 (left) and 1.0 (right).*
+*Intensità del rilievo 0.5 (sinistra) e intensità del rilievo 1.0 (destra).*
 
-### Normal
+### Normale
 {: #normal}
-Fakes the lighting of bumps and dents without using more polygons to the render mesh. See: [Wikipedia article: Normal mapping](http://en.wikipedia.org/wiki/Normal_mapping).
+Simula l'illuminazione di rugosità e solchi senza usare un numero maggiore di poligoni per renderizzare la mesh. Vedi: [Articolo di Wikipedia: Mappatura normale](https://it.wikipedia.org/wiki/Normal_mapping).
 
-Normal maps work very similar to bump maps, in that they modify the normal of the surface. The effect is essentially the same as bump; but normal maps allow more control over the normal than a bump. A bump map uses the grey average of the RGB in a bitmap. The RGB of a normal map corresponds to the modification of the XYZ of the normal. Because the blue channel of the image controls the Z-direction of the normal, normal maps have a considerable blue color to them.
+Le mappe normali funzionano in modo simile alle mappe di rilievo, visto che modificano la normale della superficie. L'effetto è essenzialmente lo stesso, tuttavia, le mappe normali consentono un maggiore controllo sulla normale rispetto alle mappe di rilievo. Una mappa di rilievo usa la media dei grigi dei canali RGB di una bitmap. I canali RGB di una mappa normale corrispondono alla modifica delle coordinate XYZ della normale. Visto che il canale blu dell'immagine controlla la direzione z della normale, le mappe normali hanno una quantità considerevole di blu.
 
-### Displacement
+### Scostamento
 {: #displacement}
-This image map will displaces the surface render mesh based on the color values in the image. The effect is a change in the actual geometric position of the surface. The displacement is often along the local surface normal. See: [Wikipedia article: Displacement mapping](http://en.wikipedia.org/wiki/Displacement_mapping).
+Questa mappa immagine provoca uno spostamento della mesh di rendering della superficie in base ai valori di colore dell'immagine. Interviene direttamente sulla posizione geometrica della superficie, modificandola. Lo scostamento spesso avviene lungo la normale locale della superficie. Vedi: [Articolo di Wikipedia: Mappatura di scostamento](https://it.wikipedia.org/wiki/Displacement_mapping).
 
- Note : Use displacement mapping sparingly for small objects. Displacement increases rendering time considerably.
+ **Note:** La mappatura di scostamento va usata moderatamente con gli oggetti piccoli. Lo scostamento aumenta i tempi di rendering in modo considerevole.
 
 ![images/displacement.png](images/displacement.png)
 
-#### Height
+#### Altezza
 {: #height}
-The height of the highest point of displacement.
+L'altezza del punto di scostamento più alto.
 
 ![images/displacementheight.png](images/displacementheight.png)
 
 #### Offset
 {: #offset}
-Sets the starting point of the displacement with reference to the surface normal. The displacement can take place completely outside, inside or some ratio inside and outside the part.
+Imposta il punto iniziale dello scostamento in base alla normale alla superficie. Lo scostamento può avvenire completamente o parzialmente all'interno o all'esterno della parte.
 
 ![images/displacementz-001.png](images/displacementz-001.png)
-*Z-offset = -1.0*
+*Offset Z = -1.0*
 
 ![images/displacementz-002.png](images/displacementz-002.png)
-*Z-offset = -0.5*
+*Offset Z = -0.5*
 
 ![images/displacementz-003.png](images/displacementz-003.png)
-*Z-offset = 0.0*
+*Offset Z = 0.0*
 
-#### Facet size
+#### Dimensioni facce
 {: #facet-size}
-The size of the facets of the displacement mesh. This will increase the detail in the displacement, but also will increase rendering size and memory usage.
+La dimensione delle facce della mesh di scostamento. Valori maggiori fanno sì che lo scostamento sia più dettagliato, ma fanno aumentare anche le dimensioni del rendering e l'utilizzo di memoria.
 
 ![images/facetsize.png](images/facetsize.png)
 
-## Flamingo Image Advanced
+## Immagine avanzata di Flamingo
 {: #advanced}
-Normally a Flamingo Image will apply to the main color channel of a material. The Flamingo Advanced dialog specifies other channels that the bitmap can effect.  These are used for very special effects.
+Di solito, un'immagine di Flamingo si applica al canale di colore principale di un materiale. La finestra di dialogo Flamingo Avanzato specifica altri canali su cui può avere effetto la bitmap.  Questi vengono usati per degli effetti molto speciali.
 
-####  Base color
-This is the default setting.  An image will effect the [color](advanced-material-properties-main.html#color) of a material.
+####  Colore base
+Si tratta dell'impostazione predefinita.  L'immagine ha effetto sul [colore](advanced-material-properties-main.html#color) del materiale.
 
-####  Specular color
-This will effect the color of [reflection channel](advanced-material-properties-main.html#highlight-color) based on the image color at that point.
+####  Colore speculare
+Ha effetto sul colore del [canale di riflessione](advanced-material-properties-main.html#highlight-color) in base al colore dell'immagine in quel punto.
 
-####  Specular intensity
-This will change the [amount of reflection](advanced-material-properties-main.html#intensity) based on the greyscale of the image at that point.  This is used often in Texture Sets as a Specular Map.
+####  Intensità speculare
+Ha effetto sulla [quantità di riflessione](advanced-material-properties-main.html#intensity) in base alla scala di grigi dell'immagine in quel punto.  Viene usato spesso nei pacchetti di texture come mappa speculare.
 
-####  Highlight sharpness
-This will adjust the sharpness vs blurriness of the [highlight](advanced-material-properties-main.html#intensity) based on the grey scale value of the map at that point.
+####  Nitidezza delle riflessioni speculari
+Regola la nitidezza delle [riflessioni speculari](advanced-material-properties-main.html#intensity) in base al valore di scala di grigi della mappa in quel punto.
 
-#### Highlight shape
+#### Forma delle riflessioni speculari
 {: #advanced-highlight-shape}
-Affects the shape of the highlight.
+Ha effetto sulla forma delle riflessioni speculari.
 
-####  Transparency
-This will effect the amount of [transparency](advanced-material-properties-main.html#intensity) in the material based on the greyscale of the image.
+####  Trasparenza
+Ha effetto sulla quantità di [trasparenza](advanced-material-properties-main.html#intensity) del materiale in base alla scala di grigi dell'immagine.
 
-####  Translucency
-This will effect the amount of [transparency](advanced-material-properties-transparency.html#translucency) in the material based on the greyscale of the image.
+####  Traslucidità
+Ha effetto sulla quantità di [traslucidità](advanced-material-properties-transparency.html#translucency) del materiale in base alla scala di grigi dell'immagine.
 
-####  Attenuation
-This will effect the amount of [attenuation](advanced-material-properties-transparency.html#attenuation) in the material based on the greyscale of the image.
+####  Attenuazione
+Ha effetto sulla quantità di [attenuazione](advanced-material-properties-transparency.html#attenuation) del materiale in base alla scala di grigi dell'immagine.
 
-#### Offsets X/Y
+#### Offset X/Y
 {: #advanced-x-y-offset}
-Offsets the material from the x- and y-axis.
+Esegue un offset del materiale rispetto agli assi x ed y.
 
-####  Rotation
-This will rotate the image map.  Use the rotate the image 90 or 180 degrees if needed to re-orient the image from its default rotation.
+####  Rotazione
+Ruota la mappa immagine.  Se necessario, si usi per ruotare l'immagine di 90 o 180 gradi e riorientarla rispetto alla sua rotazione predefinita.

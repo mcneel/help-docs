@@ -61,10 +61,10 @@ Zur Verwendung von Zentimetern als Einheit für die Größe des Renderbilds. Bei
 Bei Auswahl dieser Option wird das Seitenverhältnis zwischen Höhe und Breite des Renderbilds aus der aktuellen Ansicht abgeleitet.  Dadurch kann sichergestellt werden, dass die gesamte Ansicht gerendert wird.
 
 #### Breite
-Die Breite des Renderbilds in der aktuell ausgewählten Maßeinheit.  Durch Multiplizierung dieses Werts mit der Auflösung pro Maßeinheit erhalten die die Anzahl der Pixel pro Spalte.
+Die Breite des Renderbilds in der aktuell ausgewählten Maßeinheit.  Durch Multiplizierung dieses Werts mit der Auflösung pro Maßeinheit erhalten Sie die Anzahl der Pixel pro Spalte.
 
 #### Höhe
-Die Höhe des Renderbilds in der aktuell ausgewählten Maßeinheit.  Durch Multiplizierung dieses Werts mit der Auflösung pro Maßeinheit erhalten die die Anzahl der Pixel pro Spalte.
+Die Höhe des Renderbilds in der aktuell ausgewählten Maßeinheit.  Durch Multiplizierung dieses Werts mit der Auflösung pro Maßeinheit erhalten Sie die Anzahl der Pixel pro Zeile.
 
 ### Auflösung
 {: #printsizepixelsperunit}
@@ -115,7 +115,7 @@ Flamingo verwendet progressive mehrstufige Rendertechniken zur Erzeugung eines R
 Wählen Sie dazu einfach die unterschiedlichen Render Engines aus und sehen Sie sich die unterschiedlichen Ergebnisse an.
 
 ### Standard
-Der standardmäßige Algorithmus erzeugt qualitativ sehr hochwertige Simulation. Die Standard-Render-Engine ist eine gute Wahl für zahlreiche verschiedene Szenen.  Die anderen beiden Engines haben einerseits größere Stärken und andererseits größere Schwächen.  Die Standardauswahl ist daher ein guter Ausgangspunkt.
+Der standardmäßige Algorithmus erzeugt eine qualitativ sehr hochwertige Simulation. Die Standard-Render-Engine ist eine gute Wahl für zahlreiche verschiedene Szenen.  Die anderen beiden Engines haben einerseits größere Stärken und andererseits größere Schwächen.  Die Standardauswahl ist daher ein guter Ausgangspunkt.
 
 In den ersten Durchgängen erzeugt die Standard-Engine ein bedeutendes Artefakt.  Dieses besteht im harten Überlagern von Schatten.  Je mehr Durchgänge durchgeführt werden, desto weicher werden die Schatten.  Dadurch kann sehr schnell ein Ergebnis erzielt werden, das jedoch eventuell mehr Durchgänge benötigt, bis die Schatten wirklich weich erscheinen.
 
@@ -123,7 +123,7 @@ Der Qualitätsunterschied zwischen der Standardmethode und der Pfadverfolgung ka
 
 ### Pfadverfolgung
 {: #path-tracer}
-Bei der Pfadverfolgung wird zuerst ein sehr körniges Bild erzeugt, das nach und nach feiner und glätter wird. Dieser Prozess ist auch als *Konvergenz* bekannt. Die Pfadverfolgung bietet für viele Modelle mit einfacherer Konfiguration ein qualitativ hochwertigeres Endprodukt auf Kosten einer komplexeren und zeitaufwändigeren Berechnung. **Hinweis:** Die Pfadverfolgung kann helle Flecken oder Fleckenartefakte während eines Renderprozesses verursachen. Diese Artefakte sind normal für die Pfadverfolgung und werden mit der Zeit aufgelöst.
+Bei der Pfadverfolgung wird zuerst ein sehr körniges Bild erzeugt, das nach und nach feiner und glatter wird. Dieser Prozess ist auch als *Konvergenz* bekannt. Die Pfadverfolgung bietet für viele Modelle mit einfacherer Konfiguration ein qualitativ hochwertigeres Endprodukt auf Kosten einer komplexeren und zeitaufwändigeren Berechnung. **Hinweis:** Die Pfadverfolgung kann helle Flecken oder Fleckenartefakte während eines Renderprozesses verursachen. Diese Artefakte sind normal für die Pfadverfolgung und werden mit der Zeit aufgelöst.
 
 Bestimmte fortgeschrittene Effekte wie Kaustiken oder unscharfe Übertragungen können mit der Pfadverfolgung präziser berechnet werden. Bilder mit Instanzen, Pflanzen und Displacement-Maps konvergieren schneller. Die Pfadverfolgung ist normalerweise einfacher einzustellen als die Standardmethode. Weitere Einstellungen wie Tageslichtportale und Umgebungsbeleuchtung werden nicht verwendet, wenn die Pfadverfolgung ausgewählt ist.
 

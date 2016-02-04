@@ -2,84 +2,84 @@
 ---
 <!-- TODO: Make sure to update this page and get working in the guides section of the documentation. -->
 
-# Studio Lighting Basics
+# 攝影棚照明的基本技巧
 {: #studio-lighting-bascis}
-Studio lighting must be set up similar to a photographer's studio. For greater control, use light sources to light the scene.
+模型彩現的攝影棚照明設定與真實的攝影棚類似，使用數盞燈光來照明場景會有比較靈活的控制。
 ![images/lighting-001.png](images/lighting-001.png)
-When lighting a studio setup, dramatic lighting is important. Create dramatic lighting by producing a lot of contrast. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of light sources placed in a way to create very light and very dark areas.
-The most basic studio lighting arrangement uses a key light (1), a fill light (2), and a back light (3). This is the most common lighting arrangement for standalone characters and objects in the studio. A three-point setup will give good results right away and is an excellent starting point for creating special effects. Spotlights are useful because you can control their direction and hot spot to give the scene drama.
+攝影棚照明通常需要較大的明暗對比度，陰暗處與明亮處一樣重要，要達到這個目的需要在場景裡加入額外的燈光，並對燈光做特殊安排，讓場景有明顯的陰暗與明亮區域的分別。
+基本的攝影棚照明使用三點光源 - 主光源 (1)、輔助光源 (2) 及背光源 (3)，這樣的設定常用於人像照或產品攝影，也是攝影入門技巧。三點光源的燈光通常使用聚光燈，聚光燈可以控制照明方向，它的熱點區域可以觀眾的目光聚焦在場景的某一部分。
 ![images/studiolighting-004.png](images/studiolighting-004.png)
 
-## Camera Angle
+## 攝影機的角度
 {: #cameraangle}
-Lighting setups always depend on the angle of the camera to the subject. It is a good idea to start lighting by deciding on the camera angle. Use the **Camera** or **NamedView** commands to set up the position and angle of the camera. This will help determine the position of the lights.
+攝影機的拍攝角度決定場景的照明設定，所以在擺設燈光之前必需先完成攝影機的擺設。使用 **Camera** 或 **NamedView** 指令顯示攝影機，以便調整攝影機的位置與角度，也有助於燈光的擺設。
 
-## Basic Three-Light Setup
+## 基本的三點光源設定
 {: basic-three-light-setup}
-A basic studio lighting setup includes three lights, a key light, a fill light, and a backlight.
+基本的攝影棚照明有三個燈光：主光源、輔助光源、背光源。
 
-### Key Light
+### 主光源
 {: #keylight}
-The key light is the dominant light in the scene. It sets the mood, provides direction, shows dimension and texture, and creates the darkest shadows. A key light is usually set 30 to 45 degrees to the side of and above the object depending on the subject matter.
-The closer the key light is to the camera, the less modeling and texture it produces. A key light is usually higher than the lens, and throws shadows down. As the key light moves to the side, the three-dimensional quality of the object increases. In a classic portraiture setup, the key light is set at about a 45-degree angle between the subject and the camera and high enough to throw shadows down, but not so high that the subject's eyes are in shadow.
-If the key light is a soft light, little or no fill may be required. It is a basic solution for lighting small studio setups as well.
-The shadow cast by the key light will be visible on the subject. In images of faces, this often shows up as a strong shadow cast by the nose.
+主光源是照亮場景最重要的光源，它可以控制彩現的氣氛、突顯物件表面的細節及投射主要陰影。主光源通常擺放在物件的正面側邊 45 度及仰角 45 度的位置，擺放位置可能因彩現的物件不同而異。
+主光源靠近攝影機時，物件表面細節的自體投射陰影較少，細節的深淺度較不明顯；主光源遠離攝影機時，物件表面細節的自體投射陰影較多，細節深淺度會較明顯。主光源的位置通常會高於攝影機鏡頭，並向下投射陰影，但不能過高以致於在人像的眼睛部位出現陰影。
+如果主光源是柔光燈，輔助光源的亮度可以適當調低，甚至不需要輔助光源，這也是小型攝影棚常用的方法。
+主光源會投射陰影在物件本體上，例如人像鼻子下方的陰影。
 ![images/studiolighting-001.png](images/studiolighting-001.png)
 
-### Fill Light
+### 輔助光源
 {: #filllight}
-The fill light is placed just above the lens on the opposite side from the key light. Its purpose is to reduce contrast and bring out detail in the shadows by simulating light reflected off nearby objects. The key light and fill light may be of equal intensity for a low-contrast result, but the key light is usually brighter and harder than the fill light. The fill light is the secondary light in the scene. It should not introduce any more dark shadows into the scene.
-In the illustration, notice that the shadow to the left of the nose and along the left side is lighter and softer than the image with the key light alone.
+如果主光源是放在攝影機的右側，輔助光源就必需放在攝影機的左側，輔助光源的高度通常比攝影機鏡頭高一點。輔助光源的目的是打淡主光源投射的陰影濃度，模擬來自其它物件反射的間接照明。主光源與輔助光源的亮度相當時，可以得到對比度較低的彩現效果，但通常主光源必需較為銳利。輔助光源是場景中的第二光源，它投射的陰影必需比主光源投射的陰影淡。
+請注意這個圖片中人像的鼻子左側的陰影比只有主要光源時為淡，而且較為模糊。
 ![images/studiolighting-002.png](images/studiolighting-002.png)
 
-### Backlight
+### 背光源
 {: #backlight}
-The backlight effect is subtle but can define the edges of objects in the scene and add depth by preventing objects from blending into the background. Backlights are usually placed behind and above the object and are pointed toward the camera.
-The effectiveness of backlights depends in part on the reflectivity of the surfaces they are lighting.
-In the illustration, the light on the top of the shoulders helps separate the subject from the background. The backlight also softens the shadows and brightens the surface the object is sitting on.
+背光源的目的是用來突顯物件的邊緣，讓物件與背景分離，使彩現效果更有層次感。背光源通常擺放攝影機的對面，即物件後上方的位置。
+背光源在物件邊緣產生的效果與物件材質的反射度有關。
+圖片中人像的肩膀上方邊緣因為背光源的關係產生了一些反光，讓人像可以與背景分離，背光源同時可以淡化人像投影在底平面上的陰影。
 ![images/studiolighting-003.png](images/studiolighting-003.png)
 
-## Light Qualities
+## 照明品質
 {: #lightquality}
-Images can be created with accurate shadows, highlights, and reflections, but without proper lighting, the goal of the shot will be missed. When setting up the lighting, consider the goal. Images work well if they are bold, graphic, and simple. Too many highlights in glassware or shadows from objects may add unnecessary complexity to a scene and detract from its essence.
-Some of the qualities to consider include:
+彩現影像即使有正確的陰影、反光與反射，照明設定不良時將無法凸顯彩現的主題。照明的設定必需考慮彩現的目的，且力求簡單，過多的燈光只會造成過多的反光與陰影，徒增彩現影像的複雜度而失去重點。
+照明品質的考慮要點：
 
->The contrast range of the scene
->The depth of the scene (its three-dimensional quality)
->Separation of objects from the background
->Whether the lighting should be hard of soft
->Whether the lighting should be warm or cool in color
+>場景的對比度範圍
+>場景的深度 (立體感)
+>物件與背景的區隔
+>照明銳利或柔和
+>照明色調的冷、暖
 
-### Contrast Range
+### 對比度範圍
 {: #contrastrange}
-Contrast range is the difference between the brightest and the darkest areas with detail in a given scene. The human eye is capable of dealing with a far greater contrast range than film and can locally compensate to see detail in the extreme areas. This effect can be seen in snapshots taken on a sunny day.
-Typically, the highlight side is too bright or the shadow side is too dark, yet you had no trouble seeing detail in both the dark and light areas. The contrast range is just too great for the film to record. This is also true of rendered images, as there is a limit to the colors the computer can display.
+對比度範圍是指場景中最亮的區域至最暗的區域之間的範圍，人類的眼睛可以感受的對比度範圍遠高於底片可以記錄的範圍，且具自動調整功能。
+所以當場景中有極亮與極暗的區域時，人類的眼睛可以看到這兩個區域的細節，該場景的影像記錄到底片上後會流失這兩個區域的細節，這種現像也可以套用到彩現影像上，因為電腦可以顯示的色彩範圍也有同樣的限制。
 ![images/highcontrast-001.png](images/highcontrast-001.png)
-A lower contrast image prevents details from being obscured in the highlight or shadow areas.
+對比度範圍較小的影像中的細節比較不會被極亮與極暗區域掩蓋。
 ![images/lowcontrast-001.png](images/lowcontrast-001.png)
 
-### Three-Dimensional Quality
+### 立體效果的品質
 {: #three-dimensional}
-Representing three dimensions in a two-dimensional space requires an illusion of depth. An opaque object lit from the side implies depth because there is a bright highlight side and a darker shadow side. A box showing three sides will have more dimension if each side is a different value. Often the top plane will be the brightest because light usually comes from above in real life situations.
+以平面影像顯示立體的場景需要有深度感，燈光照射在物件上所產生的明暗區域具有深度感的暗示效果，就像圖中的立方體一樣，因為三個面的明暗度不同，可以讓觀看者產生立體的感受。真實世界的光源通常來自上方，物件朝上的面通常會比較亮，所以燈光擺放的位置會影響彩現影像看起來是否真實。
 ![images/lightbox-001.png](images/lightbox-001.png)
 
-### Separation from the Background
+### 區隔背景
 {: #separation}
-For a product to pop off the page, in addition to a three-dimensional quality and using the full contrast range, there must be good separation. That is, the edges of our subject must be decidedly lighter or darker than the background. Without separation, the subject blends into the background.
-In the illustration, the highlight at the top of the object helps separate it from the background
-The subject's shadow can sometimes aid separation and sometimes cause objects to merge with the background. A backlight can facilitate separation by creating a bright edge around the subject.
+除了立體感與對比度範圍以外，要在彩現影像裡凸顯主題物件還必需讓它與背景有所區隔，讓主題物件的邊緣比背景稍亮或比背景稍暗可以製造這樣的效果，否則主題物件可能會融入背景而得不到觀看者目光的青睞。
+圖片中黑色的蛋因為邊緣有反光，讓它可以與同樣是黑色的背景有所區別，使觀看者有可以看見蛋尖端附近完整輪廓的錯覺。
+物件的陰影也可以有類似的效果，例如物件與底平面的顏色相近時，物件的陰影可以讓物件的底部與底平面之間有明顯的區隔。
 ![images/blackeggs-003.png](images/blackeggs-003.png)
 
-### Hard or Soft Light
+### 照明的銳利度
 {: #hard-soft}
-One way to categorize light is hard (direct) or soft (diffused).
-A hard light casts a clearly defined hard-edged shadow.
+燈光可以使用銳利 (聚光燈) 與柔和 (漫射燈) 做區別。
+聚光燈投射的陰影的邊緣會比較"硬"。
 ![images/hardlight-001.png](images/hardlight-001.png)
-Diffused light casts a soft, sometimes indistinguishable shadow.
-Diffused light often produces a more attractive image than hard light because of its soft shadows. The larger the light and the closer it is to the subject, the softer it is. A large soft light can simulate light from a window.
+漫射燈投射的陰影的邊緣會比較"糊"。
+漫射燈因為陰影邊緣的漸層變化讓它比聚光燈的效果好。燈光的面積與距離也會影響陰影邊緣的銳利度，光源面積越大或越靠近物件所投射的陰影邊緣越模糊。大面積的光源可以用來模擬來自窗戶的天光照明。
 ![images/diffuselight-001.png](images/diffuselight-001.png)
-Diffuse lighting can work well for dark plastic objects, because it produces a broad highlight that helps define the shape of black shiny objects.
+漫射燈因為面積較大，可以在物件上產生較大的反光，也有助於物件形狀的表達。
 ![images/blackeggskeyfillback.png](images/blackeggskeyfillback.png)
-When lighting a studio setup, dramatic, high contrast lighting is important. This means that dark areas are just as important as light areas. Dramatic lighting requires a number of lights placed in a way to create light and dark areas.
-Lighting techniques for photography are generally the same as lighting for rendering, so a good place to start learning is one of the many books on the subject of photographic lighting.
-Flamingo nXt includes pre-set [lighting schemes](lighting-tab.html#lighting-presets) to help you get started lighting your model. The settings on the [Advanced tab](lighting-advanced-tab.html) are optimized for each lighting method.
+攝影棚照明通常需要較大的明暗對比度，陰暗處與明亮處一樣重要，要達到這個目的必需對燈光做特殊安排，讓場景有明顯的陰暗與明亮區域的分別。
+彩現的照明設定基本上與真實的攝影沒有什麼不同，所以您可以將討論攝影技術的書籍做為彩現的參考資料。
+Flamingo nXt 內建幾種預設的[照明設定組](lighting-tab.html#lighting-presets)，讓您可以快速完成模型的照明安排，[進階](lighting-advanced-tab.html)頁面的設定已針對不同的照明組別最佳化。

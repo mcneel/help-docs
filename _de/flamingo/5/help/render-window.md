@@ -68,18 +68,18 @@ Zum Speichern als 32-Bit-PNG-, -TIF- oder -BMP-Bild einschließlich des Alphakan
 
 #### Als native Flamingo-nXt-Datei exportieren (.nXtImage)
 {: #export-to-nxtimage}
-Dieses Format speichert unkomprimierte Luminanz- und Farbinformationen. Ale Renderkanäle und der [Alphakanal](environment-tab.html#alpha) werden ebenfalls gespeichert. nXt-Bilddateien können mit dem [Bildeditor](image-editor.html) geöffnet, ihre [Belichtung](#adjust-image) und [Nachbearbeitungseffekte](#effects) angepasst und anschließend in einem anderen Bitmap-Format gespeichert werden.
+Dieses Format speichert unkomprimierte Luminanz- und Farbinformationen. Alle Renderkanäle und der [Alphakanal](environment-tab.html#alpha) werden ebenfalls gespeichert. nXt-Bilddateien können mit dem [Bildeditor](image-editor.html) geöffnet, ihre [Belichtung](#adjust-image) und [Nachbearbeitungseffekte](#effects) angepasst und anschließend in einem anderen Bitmap-Format gespeichert werden.
 
 Das .nXtImage-Format ist das native Bildformat der nXt-Renderer. Es ist das empfohlene Format zum Speichern Ihrer Renderings, da es die meisten Informationen über das Rendering beibehält. Die in diesem Format gespeicherten Bilder können im [nXt-Bildeditor](image-editor.html) bearbeitet und mit Spezialeffekten versehen werden. In diesem Editor können die Bilder anschließend in vielen bekannten Standardformaten inklusive der in nXt unterstützten Formate gespeichert werden. Außerdem steht das [Piranesi-EPix-Format (.epx)](http://www.piranesi.co.uk/) zur Verfügung.
 
 #### Als HDR-Datei exportieren
 {: #export-to-hdr}
-Speichert nicht komprimierte Luminanz- und Farbinformationen. Das HDR-Format speichert Luminanzdaten direkt in ein Hochkontrastbild (HDRI). Hintergründe ohne Luminanz wie normale Fotos erscheinen schwarz, wenn sie in eines dieser Formate gespeichert werden.
+Speichert unkomprimierte Luminanz- und Farbinformationen. Das HDR-Format speichert Luminanzdaten direkt in ein Hochkontrastbild (HDRI). Hintergründe ohne Luminanz wie normale Fotos erscheinen schwarz, wenn sie in einem dieser Formate gespeichert werden.
 
 #### Als EXR-Datei exportieren
 {: #export-to-exr}
-OpenEXR ist ein HDR-Grafikformat, welches als offener Standard durch Industrial Light and Magic unter einer Open-Source-Lizenz herausgegeben wurde. Dieses Dateiformat unterstützt Gleitkommazahlen mit 16 Bit pro Kanal (halbe Genauigkeit) mit einem Vorzeichenbit, fünf Bit Exponent und 10 Bit Mantisse. Dies erlaubt eine dynamische Reichweite von über dreißig Belichtungsstopps. Weitere Informationen finden Sie im Wikipedia-Artikel zu OpenEXR](https://de.wikipedia.org/wiki/OpenEXR).
-Das exr-Format speichert Luminanzdaten direkt in ein HDR-Format. Hintergründe ohne Luminanz wie normale Fotos erscheinen schwarz, wenn sie in eines dieser Formate gespeichert werden.
+OpenEXR ist ein HDR-Grafikformat, welches als offener Standard durch Industrial Light and Magic unter einer Open-Source-Lizenz herausgegeben wurde. Dieses Dateiformat unterstützt Gleitkommazahlen mit 16 Bit pro Kanal (halbe Genauigkeit) mit einem Vorzeichenbit, fünf Bit Exponent und 10 Bit Mantisse. Dies erlaubt eine dynamische Reichweite von über dreißig Belichtungsstopps. Weitere Informationen finden Sie im [Wikipedia-Artikel zu OpenEXR](https://de.wikipedia.org/wiki/OpenEXR).
+Das exr-Format speichert Luminanzdaten direkt in ein HDR-Format. Hintergründe ohne Luminanz wie normale Fotos erscheinen schwarz, wenn sie in einem dieser Formate gespeichert werden.
 
 #### ![images/close-x.png](images/close-x.png) Schließen
 Schließt das Renderfenster.
@@ -144,7 +144,7 @@ Passt die allgemeine Helligkeit des Bilds an. Wenn z.B. eine weiße Fläche im M
 ### Nachbelichten
 {: #burn}
 Passt den weißen Punkt des Bilds an. Es handelt sich um die hellste weiße Farbe im Bild. Mit ein wenig Nachbelichten kann ein Rendering etwas dramatischer, lebendiger und schärfer aussehen, indem mehr weiße Bereiche hinzugefügt werden, die mit den dunklen Bereichen in Kontrast stehen.
-Weitere Informationen finden Sie im Wikipedia-Artikel zu Weißpunkt](https://de.wikipedia.org/wiki/Weißpunkt).
+Weitere Informationen finden Sie im [Wikipedia-Artikel zu Weißpunkt](https://de.wikipedia.org/wiki/Weißpunkt).
 
 ![images/burn-001.png](images/burn-001.png)
 *Standardbelichtung (links) und erhöhte Belichtung (rechts).*
@@ -158,7 +158,7 @@ Weitere Informationen finden Sie im Wikipedia-Artikel zu Weißpunkt](https://de.
 
 ### Histogramm
 {: #histogram}
-Zeigt die Verteilung von hellen und dunklen Bereichen im Bild grafisch an, nachdem das Bild angepasst wurde. Die linke Kante des Diagramms zeigt dunkel und schwarze Töne an.  Auf der rechten Seite des Graphen werden helle bis weiße Farben angezeigt. Dies ist eine gute Methode zur Bestimmung der wichtigen Teile eines Bilds. Ziel sollte hierbei sein, das Bild so anzupassen, dass der ganze Wertbereich im Bild vorhanden ist.  Wenn das Histogramm beispielsweise aufhört, bevor es das rechte Ende des Diagramms erreicht, können durch Erhöhung der Helligkeit oder Belichtung die helleren Renderanteile mehr in Richtung weiß verschoben werden. Weitere Infos: [Wikipedia-Artikel: Histogramm](https://de.wikipedia.org/wiki/Histogramm). Im Internet sind viele Artikel über die Verwendung von Histogrammen erhältlich, um die Belichtung in digitaler Fotografie auszuwerten. Die Prinzipien sind die gleichen wie für das Rendering.
+Zeigt die Verteilung von hellen und dunklen Bereichen im Bild grafisch an, nachdem das Bild angepasst wurde. Die linke Kante des Diagramms zeigt dunkle und schwarze Töne an.  Auf der rechten Seite des Graphen werden helle bis weiße Farben angezeigt. Dies ist eine gute Methode zur Bestimmung der wichtigen Teile eines Bilds. Ziel sollte hierbei sein, das Bild so anzupassen, dass der ganze Wertbereich im Bild vorhanden ist.  Wenn das Histogramm beispielsweise aufhört, bevor es das rechte Ende des Diagramms erreicht, können durch Erhöhung der Helligkeit oder Belichtung die helleren Renderanteile mehr in Richtung weiß verschoben werden. Weitere Infos: [Wikipedia-Artikel: Histogramm](https://de.wikipedia.org/wiki/Histogramm). Im Internet sind viele Artikel über die Verwendung von Histogrammen erhältlich, um die Belichtung in digitaler Fotografie auszuwerten. Die Prinzipien sind die gleichen wie für das Rendering.
 
 ![images/histogram.png](images/histogram.png)
 *Ein Beispielhistogramm mit Anzeige der Farbverteilung in einem Bild. Der graue Graph hat ein paar dunkle Bereiche (linke Seite) und einen großen Bereich heller Farben (rechte Seite).  Der Graph zeigt außerdem einige komplett weiße Pixel, da er auf der rechten Seite steil abfällt (helle Farben befinden sich auf der rechten Seite).
@@ -190,7 +190,7 @@ Wenn die Belichtungseinstellungen gesperrt werden, wird bei Änderung der Beleuc
 Zeigt die aktuelle [Renderauflösung](render-tab.html#resolution) an.
 
 #### Seiten
-Zeigt die Anzahl Polygonnetzseiten an, die verwendet werden, um das Modell zu rendern.  Dieser Wert dient zum Vergleich mehrerer [Rendernetzeinstellungen](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#documentproperties/mesh.htm) in Rhino.
+Zeigt die Anzahl der Polygonnetzseiten an, die verwendet werden, um das Modell zu rendern.  Dieser Wert dient zum Vergleich mehrerer [Rendernetzeinstellungen](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#documentproperties/mesh.htm) in Rhino.
 
 #### Sichtbare Seiten
 Wenn Blöcke im Modell vorhanden sind, kann Flamingo nXt die Blockdefinition verwenden, um Blockinstanzen zu rendern, ohne jede Instanz neu zu vermaschen. Die Anzeige der sichtbaren Seiten gibt an, wie viele zusätzliche temporäre Seiten erzeugt werden würden, wenn die Blockinstanzen nicht vorhanden wären.

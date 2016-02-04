@@ -1,14 +1,14 @@
 
-#### Linking options
-Specifies how the image file will be linked to materials.
+#### Opciones de vinculación
+Especifica cómo se vinculará el archivo de imagen a los materiales.
 
-#### Linked
-Creates a link to the image file. The file must be present on the local disk.
+#### Vinculado
+Crea un vínculo al archivo de imagen. El archivo debe estar presente en el disco local.
 
-#### Embedded
-Embeds the image information in the current file.
+#### Incrustado
+Incrusta la información de la imagen en el archivo actual.
 
-#### Linked and embedded
-If the bitmap is found on the disk before rendering, the external file is used. If the image cannot be found on the disk, the internal definition will be used.
+#### Vinculado e incrustado
+Si el bitmap se encuentra en el disco antes del renderizado, se utiliza el archivo externo. Si la imagen no se encuentra en el disco, se utilizará la definición interna.
 
-Note: To see changes in linked or linked and embedded files go to the Flamingo nXt menu, click Utilities and then click Clear bitmap cache.
+Nota: Para ver los cambios en los archivos vinculados o vinculados e incrustados, vaya al menú de Flamingo nXt, haga clic en Utilidades y luego en Borrar caché de bitmaps.

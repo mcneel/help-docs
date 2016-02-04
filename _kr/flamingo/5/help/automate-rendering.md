@@ -69,7 +69,9 @@ title: 자동 렌더링
 {: #rendering-constraints}
 일괄 작업을 완료하는 데 필요한 패스의 수를 설정합니다. 자세한 안내는 [패스](documentproperties-flamingo.html#number-of-passes) 항목을 참조하세요.
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 

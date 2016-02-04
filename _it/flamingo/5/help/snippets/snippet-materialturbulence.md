@@ -1,3 +1,3 @@
 
-#### Turbulence
-Produces the swirled appearance by causing the alternating components to bend and twist.
+#### Turbolenza
+Genera un effetto caotico, facendo incurvare e torcere le componenti alternantisi.

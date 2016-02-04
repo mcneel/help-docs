@@ -4,7 +4,7 @@ title: Objekteigenschaften
 
 
 #  ![images/properties.svg](images/properties.svg) {{page.title}}
-Die Flamingo nXt Objekteigenschaften beeinflussen nur die Art und Weise, wie Objekte in Flamingo nXt gerendert werden.
+Die Flamingo-nXt-Objekteigenschaften beeinflussen nur die Art und Weise, wie Objekte in Flamingo nXt gerendert werden.
 
 ### ![images/materialtab.png](images/materialtab.png) Materialquelle
 {: #material-source}
@@ -12,7 +12,7 @@ Ein Material kann einer Ebene, einem Objekt oder Block zugewiesen werden.  Weite
 
 ### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Texturmapping
 {: #texture-mapping}
-Das Mapping bestimmt, wie ein Material auf ein bestimmtes Objekt abgebildet wird. Die Methode zur Zuweisung eines Materials auf eine Ebene oder ein Objekt hat keinen Einfluss auf das Mapping. Für Materialien, die über kein bemerkenswertes Muster verfügen, ist es normalerweise nicht nötig, das Mapping zu steuern. Verwenden Sie Mapping, wo das Material eine Richtung oder ein offensichtliches Muster hat. Sogar in diesen Fällen könnte das Standard-Mapping passend sein. Das Mapping wird im Objekt gespeichert und bleibt auch beim Verschieben, Drehen oder Skalieren erhalten. Weitere Informationen zu den Mappingtypen finden Sie im Rhino-Hilfethema zum [Texturmapping](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#properties/texturemapping.htm).
+Das Mapping bestimmt, wie ein Material auf ein bestimmtes Objekt abgebildet wird. Die Methode zur Zuweisung eines Materials auf eine Ebene oder ein Objekt hat keinen Einfluss auf das Mapping. Für Materialien ohne dezidiertes Muster ist es normalerweise nicht nötig, das Mapping besonders zu kontrollieren. Verwenden Sie Mapping, wenn das Material eine Richtung oder ein bestimmtes Muster hat. Aber auch in diesen Fällen ist das Standardmapping oft das richtige. Das Mapping wird im Objekt gespeichert und bleibt auch beim Verschieben, Drehen oder Skalieren erhalten. Weitere Informationen zu den Mappingtypen finden Sie im Rhino-Hilfethema zum [Texturmapping](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#properties/texturemapping.htm).
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
 *Zwei verschiedene Mapping-Richtungen*

@@ -1,3 +1,3 @@
 
-#### Mirror
-Reverses the image from left to right.
+#### Copia speculare
+Inverte l'immagine da sinistra verso destra.

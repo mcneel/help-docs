@@ -1,43 +1,48 @@
 ---
 layout: fullwidth-page
+title: Guida introduttiva a Flamingo
 ---
 
-# Getting Started with Flamingo nXt®
-Flamingo nXt creates high quality, photorealistic, still, and animation image files from 3-D models inside Rhinoceros ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5. This is currently a work in progress version.
+<!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
 
-Flamingo can be downloaded and installed from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/beta).
+# ![images/flamingotab.svg](images/flamingotab.svg) Guida introduttiva a Flamingo nXt®
+Flamingo nXt genera immagini ed animazioni fotorealistiche di alta qualità a partire da modelli 3D all'interno di Rhinoceros®. Flamingo nXt 5 è un aggiornamento di Flamingo che si integra con le funzionalità di rendering predefinite di Rhino 5. Attualmente è in fase WIP (work in progress).
 
-You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo).
+Scaricate ed installate Flamingo da qui: [Download di Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
 
-## Installation
+Per partecipare alle discussioni tecniche sul programma, aderite al [forum di Discourse su Flamingo](http://discourse.mcneel.com/c/rendering/flamingo).
 
-Flamingo 5 Beta requires a previous version of Flamingo nXt to be installed.
-Rhino 5 Service Release 12 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino.
+## Installazione
 
-For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
+La beta di Flamingo 5 richiede l'installazione di una versione precedente di Flamingo nXt.Per poter eseguire Flamingo nXt 5, è necessaria la Service Release 12 di Rhino 5.
+Dopo aver scaricato ed eseguito il programma di installazione RHI, avviate Rhino per caricare Flamingo nXt 5.0.
 
+Qui trovate l'ultima beta di Flamingo: [http://www.rhino3d.com/download/Flamingo/5.0/beta](http://www.rhino3d.com/download/Flamingo/5.0/beta)
 
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical support](http://nxt.flamingo3d.com/forum)
+## Documentazione di aiuto
+La documentazione di aiuto di Flamingo è disponibile in varie lingue:
 
-## Getting started guides
-The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
+* [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
+* [Deutsch]({{baseurl}}/de/flamingo/5/help)
+* [English]({{baseurl}}/en/flamingo/5/help)
+* [Español]({{baseurl}}/es/flamingo/5/help)
+* [Français]({{baseurl}}/fr/flamingo/5/help)
+* [Italiano]({{baseurl}}/it/flamingo/5/help)
+* [日本語]({{baseurl}}/jp/flamingo/5/help)
+* [한국어]({{baseurl}}/kr/flamingo/5/help)
+* [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
 
-> [Materials](..\materials\materials-tab.html)
-> [Lighting](../lighting/lighting-tab.html)
-> [Environment](../environment/environment-tab.html)
-> [Render](../render/render-tab.html)
+## Introduzione
+Dal menu Flamingo nXt, cliccare su Pannello di controllo. Il pannello di controllo di Flamingo nXt fornisce le seguenti schede per impostare un modello per il rendering:
 
-## Help documentation
- * On the Flamingo nXt menu, click Control Panel.
+* [Materiali](../help/material-editor.html)
+* [Illuminazione](../help/lighting-tab.html)
+* [Ambiente](../help/environment-tab.html)
+* [Rendering](../help/render-tab.html)
 
-## Flamingo information and support
- For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://www.flamingo3d.com/).
+## Informazioni e supporto su Flamingo
+Per ricevere supporto tecnico e visionare tutorial, esempi ed informazioni introduttive su Flamingo nXt, si visiti il [sito web di Flamingo nXt](http://nxt.flamingo3d.com/).
 
-
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Gallery](http://nxt.flamingo3d.com/photo)
-> [Technical Support](http://www.flamingo3d.com/en/support/)
-> [Forum](http://discourse.mcneel.com/c/rendering/flamingo)
+ * [Tutorial](http://nxt.flamingo3d.com/page/tutorial-e-documentazione)
+ * [Galleria](http://nxt.flamingo3d.com/photo)
+ * [Supporto tecnico](http://discourse.mcneel.com/c/rendering/flamingo)

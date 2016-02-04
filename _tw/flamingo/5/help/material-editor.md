@@ -1,4 +1,4 @@
-﻿---
+---
 title: 材質編輯器面板
 ---
 
@@ -21,7 +21,7 @@ title: 材質編輯器面板
 * 功能表 > 彩現 > 材質編輯器
 * 從指令行執行 MaterialEditor 指令。
 
-The Material Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
+材質的簡易編輯器的選項因材質的類型而異，切換到進階編輯器可使用所有的選項。
 
 材質編輯器、[貼圖面板](texturepalette.html)、[環境編輯器](environmenteditor.html)的任何顏色方塊與貼圖都可以相互拖放。
 

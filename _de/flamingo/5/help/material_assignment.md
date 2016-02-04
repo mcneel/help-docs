@@ -3,11 +3,11 @@ title: Materialzuweisung
 ---
 
 # ![images/paint.svg](images/paint.svg) {{page.title}}
-Objekte in der Szene haben eine Materialquelle. Von dort beziehen sie ihr Renderingmaterial.  Materialien können auf verschiedene Arten zugewiesen werden. Die verwendete Methode hat einen großen Einfluss darauf, wie einfach das Modell geändert und gepflegt werden kann.
+Objekte in der Szene haben eine Materialquelle. Von dort beziehen sie ihr Rendermaterial.  Materialien können auf verschiedene Arten zugewiesen werden. Die verwendete Methode hat einen großen Einfluss darauf, wie einfach das Modell geändert und gepflegt werden kann.
 
 Materialien können auf drei verschiedene Arten zugewiesen werden. Die drei Methoden stellen eine Hierarchie dar, so dass eine Zuweisung weiter unten auf der Liste eine Zuweisung weiter oben überschreibt. Folgende Methoden sind verfügbar:
 
- 1. [Nach Ebene](#bylayer) - Allen Objekten einer bestimmten Ebene wird das entsprechende Material zugewiesen, wenn sie sich nicht in einem Block gebunden sind oder ihnen ein spezifisches Material auf Objektebene zugewiesen wurde.
+ 1. [Nach Ebene](#bylayer) - Allen Objekten einer bestimmten Ebene wird das entsprechende Material zugewiesen, wenn sie nicht in einem Block gebunden sind oder ihnen ein spezifisches Material auf Objektebene zugewiesen wurde.
  2. [Nach übergeordnet](#byparent) - Dies wird für Objekte in Blöcken verwendet.  Objekte mit diesem Zuweisungstyp leiten ihr Material aus der entsprechenden Blockdefinition ab.
  3. [Nach Objekt](#byobject) - Materialien können einem Objekt direkt zugewiesen werden, wobei alle anderen Materialzuweisungen überschrieben werden.
 
@@ -32,7 +32,7 @@ Hinweis: Beim Löschen eines Materials aus dem [Materialeditor](material-editor.
 1. Wählen Sie einen oder mehrere Ebenennamen aus und klicken Sie auf die Spalte Material.
 1. Wählen Sie im Dialogfenster *Ebenenmaterial* ein Material aus der Dropdownliste aus.
 
-##### Entfernen eines Material von einer Ebene
+##### Entfernen eines Materials von einer Ebene
 {: #detachmaterialfromlayer}
 1. Öffnen Sie in Rhino das Dialogfeld [Ebenen](http://docs.mcneel.com/rhino/5/help/de-de/commands/layer.htm).
 1. Wählen Sie einen oder mehrere Ebenennamen aus und klicken Sie auf die Spalte Material.

@@ -1,70 +1,71 @@
 ---
+title: Propriétés des objets
 ---
 
 
-#  ![images/properties.svg](images/properties.svg){:height="75px" width="75px"} Object Properties
-Flamingo nXt object properties only affect the way objects are rendered in Flamingo nXt.
+#  ![images/properties.svg](images/properties.svg) {{page.title}}
+Les propriétés Flamingo nXt des objets jouent uniquement sur l'apparence des objets lors du rendu dans Flamingo nXt.
 
-### ![images/materialtab.png](images/materialtab.png) Material Source
+### ![images/materialtab.png](images/materialtab.png) Source du matériau
 {: #material-source}
-A material can be assigned to layers, blocks, and objects.  For details on Assigning material see the [Material Assignments](material_assignment.html) topic. If the material is set to ByObject, then the material properties are also displayed in this dialog.  For more details on editing a material, see [Material Properties](material-type-simple.html).
+Un matériau peut être assigné à des calques, des blocs et des objets. Pour plus d'informations sur l'assignation de matériaux, consultez la rubrique [Assignation des matériaux](material_assignment.html). Si le matériau est défini par objet, les propriétés du matériau sont également affichées dans cette boîte de dialogue. Pour plus d'informations sur l'édition d'un matériau, consultez [Propriétés des matériaux](material-type-simple.html).
 
-### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Texture mapping
+### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Placage de texture
 {: #texture-mapping}
-Mapping controls how a material is located (mapped) on a particular object. The method used to assign a material whether to a layer or object does not effect mapping. For materials that have no noticeable pattern, it is normally not necessary to control the mapping. Use mapping where the material is directional or has an obvious pattern. Even in these cases, the default mapping may be adequate. Mapping remains with the object and follows it if it is moved, rotated, or scaled. For details on the mapping types see the [Texture Mapping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm) topic.
+Le placage contrôle comment le matériau est positionné (plaqué) sur un objet précis. La méthode utilisée pour assigner un matériau, que ce soit par calque ou par objet, ne joue pas sur le placage. Pour les matériaux ne présentant pas de motif perceptible, le placage n'est normalement pas nécessaire. Utilisez le placage lorsque le matériau est directionnel ou lorsqu'il présente un motif évident.  Même dans ces cas, le placage par défaut peut servir. Le placage est lié à l'objet et il le suit s'il est déplacé, tourné ou si son échelle est changée. Pour plus d'informations sur les types de placage, consultez la section [Placage de texture](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#properties/texturemapping.htm).
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
-*Two different mapping directions*
+*Deux directions de placage différentes*
 
-### ![images/decalproperties.png](images/decalproperties.png) Decals
+### ![images/decalproperties.png](images/decalproperties.png) Décalcomanies
 {: #decals}
-Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps. See the [Rhino Decals](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm) for details on creating and placing decals.
+Les décalcomanies sont des placages d'image sans mosaïque appliqués directement sur les objets au lieu d'utiliser un matériau. Utilisez les décalcomanies pour modifier une partie déterminée de la couleur, de la réflectivité ou du reliefs d'un objet. Voir la section [Décalcomanies de Rhino](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm) pour plus d'informations sur la création et le positionnement des décalcomanies. 
 
 ![images/freshmilk.png](images/freshmilk.png) ![images/decal-planar-001.png](images/decal-planar-001.png)
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
-*Four different decal examples*
+*Quatre exemples différents de décalcomanies*
 
-### ![images/apply-edge-softening.png](images/apply-edge-softening.png) Custom Meshes
+### ![images/apply-edge-softening.png](images/apply-edge-softening.png)Maillages personnalisés
 {: #custom-meshes}
-Several custom mesh modifiers can be used in Rhino to detail rendered models. Use these modifiers to round edges, add panel shut lines, and create cables from curves.
+Plusieurs modificateurs de maillage peuvent être utilisés dans Rhino afin de donner plus de détails aux modèles rendus. Utilisez ces modificateurs pour arrondir les bords, ajouter des lignes de fermetures entre des surfaces et créer des câbles à partir de courbes. 
 
-For more details go to the topics below:
+Pour plus d'informations, consultez les sections suivantes :
 
->[Edge softening](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyedgesoftening.htm)
->[Curve piping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applycurvepiping.htm)
->[Shut Lining](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyshutlining.htm)
->[Displacement](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applydisplacement.htm)
+>[Adoucissement des bords](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applyedgesoftening.htm)
+>[Gaine](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applycurvepiping.htm)
+>[Ligne de fermeture](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applyshutlining.htm)
+>[Déplacement](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applydisplacement.htm)
 
-### ![images/object-flamingo.png](images/object-flamingo.png) Flamingo Properties
+### ![images/object-flamingo.PNG](images/object-flamingo.PNG) Propriétés de Flamingo
 {: #flamingo-properties}
 
-#### Alpha channel
+#### Canal Alpha
 {: #alpha-channel}
-Makes the object invisible. Shadows cast by and on the object are rendered. The image can then be overlaid on another image and the shadows will show in the composite image.
+Rend l'objet invisible. Les ombres projetées par l'objet et reçues par celui-ci sont rendues. L'image peut ensuite être superposée sur une autre et les ombres apparaîtront dans l'image composite.
 
 ![images/building.png](images/building.png)
-In the example above, a few simple planar surfaces that match the image were created to catch shadows cast on the building by the trees. The planes were tagged with the Alpha channel property so when they were rendered, they were invisible, but still displayed the shadows. This partially transparent image was then overlaid onto the image.
+Dans l'exemple ci-dessus, quelques surfaces planes simples correspondant à l'image ont été créées afin de recevoir les ombres projetées sur le bâtiment par les arbres. La propriété de canal Alpha a été attribuée aux plans afin qu'ils soient invisibles lors du rendu tout en affichant les ombres. Cette image partiellement transparente a ensuite été déposée sur l'image.
 
-#### Caustics
+#### Caustiques
 {: #caustics}
-The light rays reflected or refracted by a curved object or the projection of those rays on another surface. Caustics should be used in very specific situations. Caustics are only rendered with the [Path Tracer](render-tab.html#path-tracer) engine or the [Hybrid](render-tab.html#hybrid) render engine.  Caustic calculations takes many passes to converge. See [Wikipedia article: Caustic (optics)](http://en.wikipedia.org/wiki/Caustic_(optics)) for more information.
+Les rayons de lumière réfléchis ou réfractés par un objet courbé ou la projection de ces rayons sur une autre surface. Les caustiques s'utilisent dans des situations très spécifiques. Elle ne sont rendues qu'avec le moteur [Path Tracer](render-tab.html#path-tracer) ou [Hybride](render-tab.html#hybrid) Les calculs des caustiques demandent un grand nombre de passes pour donner un résultat. Voir l'[article de Wikipedia : Caustique (optique)](https://fr.wikipedia.org/wiki/Caustique) pour plus d'informations. 
 
 ![images/kaustik.png](images/kaustik.png)
-*Caustics produced by a glass of water.*
+*Les caustiques produites par un verre d'eau.*
 
 ![images/caustics-001.png](images/caustics-001.png)
-*Without caustics (left), and with caustics (right).*
+*Sans caustique (gauche) et avec caustiques (droite).*
 
-#### Thin
+#### Fin
 {: #thin}
-A space-enclosing, transparent object is normally treated as a solid for transparent refraction. Setting the Thin property means that each surface will be treated as a two-sided object for refraction. This is the setting to use if single surfaces as glass are used for architectural models.
+Un objet renfermant un espace et transparent est normalement traité comme un solide pour la réfraction transparente. La propriété Fin permet de traiter chaque surface comme un objet à deux faces pour la réfraction. C'est le paramètre à utiliser si des surfaces simples comme du verre sont utilisées pour les modèles d'architecture. 
 
 ![images/thin.png](images/thin.png) ![images/thinoff.png](images/thinoff.png)
-*Base Rhino model (left), Normal (middle) and Thin (right).*
+*Modèle de base de Rhino (gauche), normal (milieu) et fin (droite).*
 
-#### Daylight portal
+#### Entrée de lumière
 {: #daylight-portal}
-A daylight portal is an opening for [Sun and Sky lighting](lighting-tab.html#interior-daylight) for an interior rendering. A Daylight portal pulls sun, sky, and ground light into an interior space in a natural way. Daylight portals only have an effect when the [Sun](sun-and-sky-tabs.html#sun) is turned on. When the lighting scheme is set to [Interior daylight](lighting-tab.html#interior-daylight), all transparent surfaces act as daylight portals automatically. It is only when the lighting scheme is set to Studio or Exterior daylight and you still want to bring outside sun and sky light into an interior space that you must manually tag the windows as daylight portals.
+Une entrée de lumière naturelle est une ouverture laissant entrer l'[éclairage du soleil et du ciel](lighting-tab.html#interior-daylight) dans un rendu intérieur. Une entrée de lumière envoie la lumière du soleil, du ciel et du sol dans un espace intérieur de façon naturelle. Les entrées de lumière n'ont un effet que lorsque le [soleil](sun-and-sky-tabs.html#sun) est activé. Lorsque le schéma d'éclairage [Lumière du jour intérieure](lighting-tab.html#interior-daylight) est utilisé, toutes les surfaces transparentes agissent automatiquement comme des entrées de lumière. En revanche, si vous voulez apporter la lumière extérieure du soleil et du ciel dans une scène avec un schéma d'éclairage Studio ou Extérieur, vous devez marquer manuellement les fenêtres comme des entrées de lumière.
 
 ![images/daylightportal-001.png](images/daylightportal-001.png)
-*With daylight portal (left), without daylight portal (right).*
+*Avec entrée de lumière (gauche), sans entrée de lumière (droite).*

@@ -1,3 +1,3 @@
 
-#### Blend
-Blurs the boundaries between the components.
+#### Fusione
+Rende non definiti i contorni tra le componenti.

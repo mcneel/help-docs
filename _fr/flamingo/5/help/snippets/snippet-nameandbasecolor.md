@@ -1,24 +1,24 @@
-### Color
-Controls the local color for the material. All materials have a base color. [More about color...](select-color.html) 
+### Couleur
+Contrôle la couleur locale du matériau. Tous les matériaux ont une couleur de base. [Plus d'informations sur la couleur...](select-color.html) 
 
-#### Color swatch selector
-Click the color swatch to select colors from the [Select Color](select-color.html) dialog box.
+#### Palette de couleurs
+Cliquez dans la palette de couleurs pour sélectionner des couleurs dans la boîte de dialogue [Sélectionner une couleur](select-color.html) .
 
-### Preview
-The preview image shows the material as it will appear on objects in the model. The style and size of the preview are part of the material definition.
- **Note** : Set the default size for the preview object in [Options: Flamingo nXt](options-flamingo.html).
+### Aperçu
+L'image d'aperçu montre le matériau comme il apparaîtra sur les objets dans le modèle. Le style et la taille de l'aperçu font partie de la définition du matériau.
+ **Remarque ** : La taille par défaut de l'objet d'aperçu peut être définie dans [Options: Flamingo nXt](options-flamingo.html).
 ![images/previewer.png](images/previewer.png)
 
->Right-click the material preview pane to specify options that control the preview's appearance:
+>Cliquer avec le bouton droit dans le volet d'aperçu du matériau pour définir les options qui contrôlent l'apparence de l'aperçu :
 
-#### Sphere
-Sets the preview object to a sphere.
+#### Sphère
+Utilise une sphère pour l'aperçu.
 
-#### Box
-Sets the preview object to a box with a width equaling the sphere radius.
+#### Boîte
+Utilise une boîte pour l'aperçu. La largeur de la boîte correspond au rayon de la sphère.
 
-#### Plane
-Sets the preview object to a plane with a width equaling the sphere radius.
+#### Plan
+Utilise un plan pour l'aperçu. La largeur du plan correspond au rayon de la sphère.
 
-#### Sphere radius
-Sets the preview sphere radius and box and plane width. Set the size to approximate the size of the objects to which the material will be assigned to help visualize the material.
+#### Rayon de la sphère
+Définit le rayon de la sphère d'aperçu ainsi que la largeur de la boîte et du plan. Utilisez une taille proche de celle des objets sur lesquels vous voulez appliquer le matériau afin d'avoir un bon aperçu.

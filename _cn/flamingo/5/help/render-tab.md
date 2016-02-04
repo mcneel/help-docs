@@ -1,135 +1,137 @@
 ---
+Title: 渲染选项
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Render Options
-The render tab controls the main properties of the final rendering.  Use this tab to control quality and length of time a rendering can take.  Resolution of the final image is one of the biggest influences on overall rendering times.
+# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+渲染选项卡控制最终渲染图像的主要属性。使用此选项卡设置渲染的质量以及控制渲染所耗费的时间，渲染图像的分辨率也是影响渲染时间最大的因素。
 
-Note: A good practice is to leave the rendering resolution low during draft renderings. Use high resolution renderings for final renderings only.
+附注: 测试渲染时最好设置为小分辨率，渲染最终图像时再使用高分辨率。
 
-#### Where can I find Flamingo Lighting control?
+#### 在哪里可以找到 Flamingo 照明控制？
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
+ 1. ![images/options.png](images/options.png)工具列 >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 工具列 > 渲染选项
+ 1. ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 下拉菜单 > 显示控制面板 > Flamingo nXt 选项卡 > 渲染选项
 
 
-## Viewport to render
+## 渲染的工作视窗
 {: #viewtorender}
-Set the view that Flamingo nXt 5 will be rendering.  This is a very useful setting when working on the model and rendering, but there is one specific view that should always render.  For instance, Perspective view is many times the view of interest.  By setting this drop down, then you do not need to make sure the view is current before starting the rendering.
+设置 Flamingo nXt 5 将渲染的视图。例如，有好几个透视视图，通过此项来设置要渲染的视图，就不用再去考虑每次渲染之前都要把要渲染的透视视图设置为当前视图了。
 
-#### Active view
-Use this option to render the current active view.  This is the default setting.
+#### 使用中的视图
+使用此选项将当前使用中的视图设置为要渲染的视图，默认设置是这一项。
 
-#### List of available viewports
-This list includes all the named views in the model.  Select the view name that should always be rendered.
+#### 可用工作视窗的列表
+列出了当前模型中所有已命名视图，选取始终要渲染视图的名称。
 
-## Rendering resolution
+## 渲染分辨率
 {: #resolution}
-The Rendering resolution is one of the most important render settings.  This control sets the image size and resolution to be saved in the Rhino file.  Increasing resolution will exponentially increase rendering time.  So, it is important to handle this setting carefully.
+渲染分辨率是最重要的渲染设置之一。 此选项设置图像的尺寸和分辨率并保存在 Rhino 文件中。 增加分辨率渲染时间将以指数级增加，所以请小心设置此项。
 
-#### Total pixels
+#### 总像素数
 {: #resolutionimagepixels}
-Sets the number of total pixels in the final rendering, using the current view for height and width ratios.  This is a great setting to use while working on renderings.  It is the best setting to match the current view to render. It is simple to increase or decrease the resolution of the image by simply changing the total number of pixels.
+设置渲染像素的总数，最好设置为当前视图高度和宽度乘积的倍数，渲染时用总像素数来设置渲染分辨率是一个很好的选择，用此数值匹配要渲染的视图，只需要更改此值就可以增加或降低分辨率。
 
-### Viewport resolution
-Uses the viewport size in pixels to determine the rendered image size.  This creates a 1 to 1 recreation of the viewport aspect ratio and resolution.  This is a useful mode, but can get slower when rendering a full screen viewport vs a quarter screen viewport in the standard Rhino 4 view configuration.
+### 工作视窗分辨率
+使用工作视窗的像素尺寸作为渲染图像的尺寸，这样渲染图像和工作视窗的比例就是 1:1。此渲染虽然很实用，但如果要渲染的工作视窗是全屏显示的，渲染速度就比显示为四视图时要慢。
 
-### Image size
+### 图片大小
 {: #resolutionprintedsize}
-Image size will set the final resolution based on several different variables.  This is the best way to match an exact size and resolution of a final image. If the height and width of the final rendering does not match the same aspect ratio of the view being rendered, there may be some clipping of the view on the top and bottom or sides of the view. Note: These controls can also lead to very high resolution renderings that may take a very long time to complete.  Use these controls for final high resolution renderings.
+可以通过多种不同的单位来设置图片的大小，这是精确设置图片分辨率最好的方法。如果渲染图片的宽高比设置与要渲染视图的宽高比不同，可能会对渲染图像或视图的顶部和底部或两侧进行一些修剪。附注: 设置为高分辨率会导致渲染非常长的时间，建议最终渲染时再设置为高分辨率。
 
-There are four unit types which can be used:
+有四种可用单位：
 
->Pixels
->Inches
->Millimeters
->Centermeters
+>像素
+>英寸
+>毫米
+>厘米
 
-#### Pixels
-Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.
+#### 像素
+设置渲染图像的单位为像素，使用此选项只需指定渲染图像的长宽像素数即可。
 
-#### Inches
-Sets page units to inches. Inches are used in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiple the number of inches in width and height by the resolution DPI value.
+#### 英寸
+设置图像尺寸单位为英寸，需要通过英寸宽高值结合分辨率设置共同确定渲染图像最终的分辨率。最终分辨率是英寸宽高值和每英寸的像素数的乘积。
 
-#### Millimeters
-Sets the page units to millimeters. Use millimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of millimeters in width and height by the resolution dots per millimeter value.
+#### 毫米
+设置图像尺寸单位为毫米，需要通过毫米宽高值结合分辨率设置共同确定渲染图像最终的分辨率。最终分辨率是毫米宽高值和每单位毫米的像素数的乘积。
 
-#### Centimeters
-Sets the page units to centimeters. Use centimeters in combination with resolution settings to determine the final resolution of the rendered image.  To determine final resolution, multiply the number of centimeters in width and height by the resolution dots per centimeter value.
+#### 厘米
+设置图像尺寸单位为厘米，需要通过厘米宽高值结合分辨率设置共同确定渲染图像最终的分辨率。最终分辨率是厘米宽高值和每单位厘米的像素数的乘积。
 
-#### Apply view aspect ratio
-Use this setting to keep the width and height setting in the same aspect ratio to the current view.  This will assure the complete view is rendered in the final image.
+#### 应用视图长宽比
+使用此设置使渲染图片长宽比和当前视图的长宽比保持一致。
 
-#### Width
-Printed image width in current unit size.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
+#### 宽度
+当前单位的图像的打印宽度。此值乘以分辨率设置的像素数就可以得到图像宽度方向的总像素数。
 
-#### Height
-Printed image height in current size units.  Multiply this setting by the resolution setting to reach the final image size in total number of pixels.
+#### 高度
+当前单位的图像的打印高度。此值乘以分辨率设置的像素数就可以得到图像高度方向的总像素数。
 
-### Resolution
+### 分辨率
 {: #printsizepixelsperunit}
 {: #printsizedpi}
 {: #printsizeresolution}
 
-#### Display
-The image is rendered using the DPI resolution of the viewport. This is the density of pixels on a devise.  Normally it is expressing the [dots pre inch (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)
+#### 显示
+使用每单位像素数渲染图像，表示设备上像素的密度，通常显示器使用[每英寸像素数(DPI)](https://en.wikipedia.org/wiki/Dots_per_inch)来表述分辨率。
 
-#### Custom
-The image is rendered using a custom resolution. Type the custom width and height resolution in **Pixels per: control**.
+#### 自定义
+使用自定义分辨率渲染图像，在**每...像素数:**选项输入每单位的像素数。
 
-#### Printer, draft quality
-Set the resolution to 100 pixels per inch or 4 pixels per mm.
+#### 打印机，草图品质
+分辨率设置为 100 像素每英寸或 4 像素每毫米。
 
-#### Printer, normal quality
-Set the resolution to 150 pixels per inch or 6 pixels per mm.
+#### 打印机，一般品质
+分辨率设置为 150 像素每英寸或 6 像素每毫米。
 
-#### Printer, high quality
-Set the resolution to 300 pixels per inch or 12 pixels per mm. This is quite a high resolution for rendering.  This works well for smaller renderings, but for large poster or wall size renderings, the overall resolution can get very high with this setting. High resolutions can lead to long rendering times.
+#### 打印机，高质量
+分辨率设置为 300 像素每英寸或 12 像素每毫米。对渲染来说这个分辨率很高，对渲染小图像来说效果很好，但渲染大尺寸图像，这个分辨率显得非常高，高分辨率渲染将需要更长的时间。
 
-#### Pixels per
-When Resolution control is set to Custom, use this control to set the resolution per selected unit. When a preset resolution is selected, this control displays the current resolution.
+#### 每...像素数
+当分辨率设置为自定义时，使用此项设置每单位的像素数，单位为图片大小所使用的单位，当选择一个预设的分辨率时，此处显示所选分辨率的具体数值。
 
-## Depth of field
+## 景深
 {: #depthoffieldoption}
-This effect creates a depth of field blur that mimics a photographer's lens. A lens can only focus precisely at exactly one distance, but the decrease in sharpness is gradual around the focal distance.
+模拟摄像机镜头景深的模糊效果，焦距的距离是渲染图片最清晰的点，渲染图片会随着距离的增、减逐渐变模糊。 
 
-#### Enabled
-Turns on the depth-of-field effect.
+#### 启用
+打开景深模糊效果。
 
-#### Strength
-Controls the size of the focus area. Setting Strength to zero makes the entire image is sharp. Increasing the Strength makes the areas outside the focal distance more blurry and makes the area in focus smaller.
+#### 强度
+设置渲染图片在焦距前后随着距离增加变模糊的速率，设置为 0 时等于关闭景深模糊的效果。
 
-#### Focal distance
+#### 焦距
 {: #focaldistance}
-Sets the distance for the depth of field. The distance around the depth of field point at which objects will be in focus. If the Focal distance is set to ten units, objects about seven units behind the depth of field point and about three units in front of the depth of field point will be in focus.
+设置渲染图片焦点的距离，假设焦距位于 10 个单位的距离，那么焦距前 3 个单位与焦距后 7 个单位是渲染图片清晰的范围。
 
-#### Pick >>
-Pick a point in the model for the focal distance.
+#### 指定 >>
+在模型里指定焦点的距离。
 
-## Render Engine
+## 渲染引擎
 {: #render-engine}
-There are three different render engines within Flamingo.  Each render engine will produce slightly different results in normal rendering conditions.
+Flamingo 中有三种不同的渲染引擎，在相同的渲染条件下，每种渲染引擎渲染的结果会有略微的不同。
 
-Flamingo use progressive, multi-step rendering techniques to create renderings.  With progressive steps, as Flamingo does, there can be unfinished artifacts in the rendering at each step. Artifacts are render effects that leave unusual uncompleted effects in a rendering.  Technically all three render engines will result in the the same rendering, given enough time.  But realistically time is always a limiting factor. So, the trick is to select a render engine that will best render the current scene in the least number of steps.
+Flamingo 使用逐行、多步的渲染技术进行渲染。Flamingo 并不是在画面上进行一次逐行扫描就能得到完美渲染结果的，而是每渲染完一个队列画面更加精细一些。从技术角度讲，只要渲染足够的时间，三种渲染引擎都能得到相同的渲染结果，但在实际渲染中，渲染时间是一个非常关键的考虑因素，所以选择适合当前场景的渲染引擎非常重要。
 
-It is very easy to simply select a different render engine and then render to see the results.
+只需要选取不同的渲染引擎然后渲染以查看结果即可。
 
-### Default
-The default algorithm produces a very high-quality simulation. The default engine is a good render engine for a wide variety of scenes.  While the other two engines have greater strengths, they also have greater weaknesses.  The Default engine is a good starting point.
+### 默认值
+默认引擎的算法可做非常高质量的渲染， 默认引擎在各种场景都能够有良好的表现，而其他的两个渲染引擎有很多优点也有很多缺点，对新手来说默认引擎是一个不错的选择。
 
-The default render engine has a very noticeable artifact in the renderings in the early passes.  The artifact is hard overlapping shadows.  As passes progress these shadows will soften up.  This allows the default engine to return a result quickly, but may take more passes to actually soften the shadows out.
+默认渲染引擎在渲染初期得到的效果会比较粗糙，会出现重叠在一起的锐利的阴影，但随着渲染的进行，阴影会逐渐柔和，默认渲染引擎可以比较快的得到渲染结果，但需要多一些队列才能使阴影柔和。
 
-The difference in quality between the default method and the path tracer can be very subtle, particularly if indirect lighting is enabled. The difference in quality may not be worth the extra processing time.
+如果启用间接照明，路径追踪比默认渲染引擎处理的更加细腻，要在这两个渲染引擎之间做出选择，就需要您考虑值不值得耗费更多的时间去得到这样的效果。
 
-### Path Tracer
+### 路径追踪
 {: #path-tracer}
-The path tracer begins by displaying a grainy image that gradually refines and becomes smooth. This process is known as *convergence*. The path tracer can provide a better quality finished product for many models (with a simpler setup), but does so at the expense of a more complex and time-consuming calculation. **Note:** Using the path tracer can cause bright spot or speckle artifacts to occur during the rendering process. These artifacts are normal to the path tracer and will resolve over time.
+以路径追踪渲染时一开始整个渲染图片会布满杂点，品质非常粗糙，杂点随着渲染时间的增加逐渐变细，渲染品质也渐渐变好，这个过程称为"收敛" (*Convergence*)。使用路径追踪引擎在许多模型可以得到较好的品质，设置也较为简单，但因为它的渲染计算较复杂，所以渲染时间也会拉长。 
+**附注**：使用路徑追蹤引擎比较容易产生光斑的问题，光斑的问题会随着算图的时间增加而逐渐消除。
 
-Certain advanced effects, such as caustics or blurry transmission, can be calculated with better accuracy using the path tracer. Images rendered with instancing, plants, and displacement maps can converge faster. The path tracer is usually easier to set up than the default method. Advanced settings such as reflection shaders, daylight portals, and ambient lighting are not used when the path tracer engine is selected.
+您可以使用路径追踪将一些高级效果计算的更为精确，比如焦散或模糊。如果渲染内容有植物和置换贴图，使用路径追踪计算速度更快。路径追踪的设置要比默认引擎简单，因为一些高级设置比如反射着色、日光入口、环境照明等都不可以使用。
 
-Images rendered using the path tracer will generally take longer to converge than images rendered using the default method. Interior daylight simulations, particularly those scenes where the windows are relatively small, may take much longer to finish.
+路径追踪渲染的渲染速度比默认的渲染引擎慢，尤其在窗户较小的室内日光照明场景，渲染时间会大幅度增加。 
 
-### Hybrid
-The Hybrid engine is an attempt to use the best between the Default engine and the Path Tracer engine.  It uses effects from both.  The hybrid engine will always calculate indirect light.  The artifact of the hybrid is an extensive dot pattern that will reduce over multiple passes. in some situations it may take many passes to remove that dot pattern. For many renderings this may be the best engine to use.
+### 混合
+混合引擎结合了默认引擎和路径追踪的优点，混合引擎始终会计算间接照明，在渲染初期会出现大量光斑，随着渲染的进行，光斑会逐渐减少，在有些情况下，需要进行很多次队列计算才能取出光斑，对于很多情况，此渲染引擎是最佳选择。
 
-###  **Advanced**
-Opens the Document Properties dialog box at the [Flamingo nXt](documentproperties-flamingo.html) page. There are several advanced rendering properties that can be set here to further customize the final rendering quality.
+###  **高级**
+打开文件属性对话框中的 [Flamingo nXt](documentproperties-flamingo.html) 页面，有一些高级自定义渲染属性。

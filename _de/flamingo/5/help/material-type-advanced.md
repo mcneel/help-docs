@@ -6,7 +6,7 @@ title: Erweiterte Materialeigenschaften
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
-Flamingo hat sowohl [einfache](material-type-simple.html) als auch erweiterte Materialtypen.  In den erweiterten Materialeinstellungen stehen alle Eigenschaftsgruppen für dieses Material zur Verfügung.  Diese können verwendet werden, um die maximale Flexibilität und Kontrolle über ein Material zu erhalten.
+Flamingo hat sowohl [einfache](material-type-simple.html) als auch erweiterte Materialtypen.  In den erweiterten Materialeinstellungen stehen alle Eigenschaftsgruppen für ein Material zur Verfügung.  Diese können verwendet werden, um die maximale Flexibilität und Kontrolle über ein Material zu erhalten.
 
 Zu den einstellbaren Eigenschaften gehören:
 
@@ -59,7 +59,7 @@ Diese Einstellungen variieren die Art und Weise, wie ein Material Licht und Obje
 
 #### Glanzlichtfarbe
 {: #highlight-color}
-Die Glanzlichtfarbe ist diejenige, die ein Material zu Reflexionen hinzufügt. Für diese Steuerung gibt es drei Einstellungsmöglichkeiten: Weiß, metallisch und benutzerdefiniert.
+Die Glanzlichtfarbe ist diejenige, die ein Material zu Reflexionen hinzufügt. Für diese Steuerung gibt es drei Einstellungsmöglichkeiten: weiß, metallisch und benutzerdefiniert.
 
 #### Weiß
 Materialien mit weißer Glanzlichtfarbe fügen der Reflexion keine Farbe hinzu.  Dadurch können Materialien wie Standardfarbe, Plastik oder Spiegelflächen simuliert werden.
@@ -85,7 +85,7 @@ Zur Anpassung der Intensität des Glanzlichts. Niedrigere Werte haben meist glä
 
 #### Fresnel
 {: #fresnel}
-Aussprache: "Fre-nell". Damit wird as Reflexionsvermögen von undurchsichtigen Materialien gesteuert, einem Phänomen, das als [Fresnel-Reflexion](https://de.wikipedia.org/wiki/Fresnelsche_Formeln) bekannt ist. Mit der Fresnel-Einstellung werden viele Materialien mit zunehmendem Blickwinkel (d.h. je schräger man schaut) reflektierender (spiegelähnlicher) und mit abnehmendem Blickwinkel (d.h., je senkrechter man darauf schaut) matter.
+Aussprache: "Fre-nell". Damit wird das Reflexionsvermögen von undurchsichtigen Materialien gesteuert, einem Phänomen, das als [Fresnel-Reflexion](https://de.wikipedia.org/wiki/Fresnelsche_Formeln) bekannt ist. Mit der Fresnel-Einstellung werden viele Materialien mit zunehmendem Blickwinkel (d.h. je schräger man schaut) reflektierender (spiegelähnlicher) und mit abnehmendem Blickwinkel (d.h., je senkrechter man darauf schaut) matter.
 
 Reduzieren Sie den Wert für sehr dunkle Materialien, um eine zu große Reflexion zu verhindern. Erhöhen Sie den Wert für Materialien wie lackiertes Holz, bei denen die Fresnel-Reflexion deutlicher ist.
 
@@ -158,23 +158,23 @@ Bestimmt den Lichtbrechungswert, wenn Objekte durch das Material hindurch betrac
 
 ![images/transparencyior.png](images/transparencyior.png)
 
-Die folgende Tabelle zeigt einige Brechungsindexbeispiele an:
+In der folgenden Tabelle sind einige reale Brechungsindexwerte aufgelistet:
 
  | Material      |     | IOR         |
  |:--------------|:---:|:------------|
- | Vakuum        |     | 1.0         |
- | Luft           |     | 1.0029      |
- | Eis           |     | 1.309       |
- | Wasser         |     | 1.33        |
- | Glas         |     | 1.52 to 1.8 |
- | Smaragd       |     | 1.57        |
- | Rubin/Saphir |     | 1.77        |
- | Diamant       |     | 2.417       |
+ | Vakuum        |     | 1,0         |
+ | Luft           |     | 1,0029      |
+ | Eis           |     | 1,309       |
+ | Wasser         |     | 1,33        |
+ | Glas         |     | 1,52 bis 1,8 |
+ | Smaragd       |     | 1,57        |
+ | Rubin/Saphir |     | 1,77        |
+ | Diamant       |     | 2,417       |
 {: .grided-table}
 
 #### Transluzenz
 {: #translucency}
-Ein Diffusionsmaß. Eine hohe Lichtdurchlässigkeit erzeugt einen "sandgestrahlten" Effekt, da mehr Licht willkürlich durch das Modell zerstreut wird. Dies ist ein sehr empfindlicher Effekt. Kleine Anpassungen können einen großen Unterschied machen.
+Ein Diffusionsmaß. Eine hohe Transluzenz erzeugt einen "sandgestrahlten" Effekt, da mehr Licht willkürlich durch das Modell zerstreut wird. Dies ist ein sehr empfindlicher Effekt. Kleine Anpassungen können einen großen Unterschied machen.
 
 ![images/transparencytl.png](images/transparencytl.png)
 

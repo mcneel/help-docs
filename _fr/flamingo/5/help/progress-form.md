@@ -2,6 +2,5 @@
 ---
 
 
-# Progress Form
-This process may take some time. Please be patient.
-
+# Indicateur de progression
+Ce procédé peut prendre du temps. Merci d'être patient.

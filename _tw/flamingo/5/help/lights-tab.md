@@ -1,161 +1,166 @@
 ---
+title: 燈光
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png){:height="75px" width="75px"} Lights
-Artificial light sources use normal Rhino lights with added Flamingo properties to control the light distribution. When using light sources, choose the type that most closely represents the real-world lamp being modeled.
+# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
+Flamingo nXt 使用 Rhino 的燈光物件，但在燈光內容加入一些 Flamingo 的燈光設定。在場景加入燈光時必需考慮該燈光在真實世界的特性，選擇適合的燈光物件。
 
 
-## Lights Tab
+## 燈光頁面
 {: #light-tab}
-The Lights tab will list all the artificial lights in the scene. This topic covers the Flamingo specific Lights tab.  There is also a [Rhino Lights Tab](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm).  Flamingo and Rhino will keep the lights settings in sync between the two tabs.  The Flamingo Lights tab is a bit more flexible through additional [Light Properties](#light-properties).
+燈光頁面會列出場景裡的所有人造燈光，此主題說明的是 Flamingo 的燈光頁面。Rhino 另外有一個[燈光面板](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/lights.htm)，兩者的燈光設定會同步，但 Flamingo 的燈光頁面有較多的[燈光內容](#light-properties)可設定。
 
-#### Where can I find Flamingo Lighting control?
-The Lights tab must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+[照明預設組](lighting-tab.html#lighting-presets)中只有**攝影棚照明**、**人工照明**、**自訂**有 Flamingo 的燈光頁面。
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo Tab > Lights
+<!-- #### Is this supposed to be a code? It's showing up as ####. To fix this, there needs to be a new line above the headline for the markdown to work.-->
 
-From the Lights tab lights you can insert, turn off/on, and change the strength and channel of each light.
+#### 可以在哪找到 Flamingo 的燈光設定? 
+使用有燈光的[照明預設組](lighting-tab.html#lighting-presets)，或[自訂照明](lighting-tab.html#sun)有開啟燈光時，可以在這些位置找到燈光頁面：
 
-Flamingo supports these light types:
+ 1. ![images/options.png](images/options.png)工具列 > ![images/flamingo-icon.png](images/flamingo-icon.png) Flamingo nXt 工具列
+ 1. ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo 面板 > 燈光
 
-> [Tag objects as lights](#tag-objects-as-lights)
-> [Spotlight](#spotlight)
-> [Point light](#pointlight)
-> [Rectangular light](#rectangularlight)
-> [Linear light](#linearlight)
+燈光頁面可在模型裡加入燈光、將燈光開啟/關閉、變更燈光的強度與通道。
 
-**Note:** Rhino Directional Lights ![images/directionallightbutton.png](images/directionallightbutton.png) are not supported. They do not appear in the list of lights and cannot carry Flamingo nXt properties.
+Flamingo 支援的燈光類型：
 
-Some light properties are displayed on the Lights tab table for quick editing of common properties.
+> [將物件標記為燈光](#tag-objects-as-lights)
+> [聚光燈](#spotlight)
+> [點光源](#pointlight)
+> [矩形燈光](#rectangularlight)
+> [管狀燈](#linearlight)
 
-Properties contained in the table are:
+**附註：**Flamingo nXt 不支援 Rhino 的平行光 ![images/directionallightbutton.png](images/directionallightbutton.png)，平行光對 Flamingo nXt 彩現的場景沒有照明功能，所以在 Flamingo nXt 控制面板的燈光頁面沒有平行光可選擇。
 
- >[On/Off](#on)
- >[Name](#name)
- >[Distribution](#light-distribution)
- >[Aim](#aim-light)
- >[Watts](#watts)
- >[Channel](#channel)
+燈光物件內容的部分設定可以在燈光頁面找到，方便編輯燈光的常用內容。
 
-Right-clicking on the Lights tab table will open the [Additional Options](#additional-options) menu.
+燈光頁面的燈光內容有：
 
-[Light Properties](#light-properties) can also be accessed by picking on the light and accessing the Light Properties icon ![images/spotlightbutton.png](images/spotlightbutton.png) on the [Object Properties Panel](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
+ >[開啟/關閉](#on)
+ >[名稱](#name)
+ >[照明方式](#light-distribution)
+ >[方向](#aim-light)
+ >[瓦特](#watts)
+ >[通道](#channel)
 
-## Light Types
+在燈光頁面的燈光項目上按滑鼠右鍵有[更多設定](#additional-options)可編輯。
+
+選取燈光物件，按物件[內容面板](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm)的燈光按鈕 ![images/spotlightbutton.png](images/spotlightbutton.png) 可編輯[燈光內容](#light-properties)。
+
+## 燈光類型
 {: #light-types}
-Lights can be inserted from the Rhino toolbars or the Flamingo Lights tab. Objects can be tagged as lights with Flamingo.
+燈光可從 Rhino 的工具列按鈕或 Flamingo 的燈光頁面加入模型，Flamingo 可將物件標記為燈光。
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Tag objects as lights
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) 將物件標記為燈光
 {: #tag-objects-as-lights}
-Any renderable object (surface, solid, etc.) can be tagged as a light source and given light properties. Additional properties such as [distribution](#light-distribution), [direction](#aim-light), and [strength](#watts) can be assigned. Objects tagged as lights may display a preview widget showing direction of the light and its center location.
+可彩現的物件 (曲面、實體...) 可標記為燈光產生照明效果，標記為燈光的物件會有燈光內容可編輯，並可設定照明[方式](#light-distribution)、[方向](#aim-light)與[亮度](#watts)。
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
-*LED driving lights and headlights tagged as light sources*
+*以物件標記為燈光 LED 晝行燈與大燈*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) Spotlight
+#### ![images/spotlight-01.png](images/spotlight-01.png) 聚光燈
 {: #spotlight}
-Spotlight is a conical light distribution with a specific direction.  The light properties include a [source radius](#radius), [beam angle](#beam-angle), falloff radius, and direction. The larger the source radius, the softer the shadows will be from the light. By default there is a visible disk at the light location. Information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+聚光燈是朝著單一方向照射的圓錐狀燈光，它的燈光內容有[光源半徑](#radius)、[投射角度](#beam-angle)、衰減角度與方向。光源半徑越大，投射的陰影邊緣越模糊。聚光燈預設在光源點的位置有一個可見的小圓盤，如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm)說明主題。
 
 ![images/spotlight.png](images/spotlight.png)
-*A Spotlight pointed at the red box*
+*朝向紅色立方體的聚光燈。*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) Point Light
+#### ![images/pointlight-01.png](images/pointlight-01.png) 點光源
 {: #pointlight}
-Point lights are a small sphere that distributes light equally in all directions. Light properties for this light include [source radius](#radius). The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light sphere at the light location when rendering. Note that unusual effects can happen if the point light is partially obscured by an object that intersects the light.
+點光源是往所有方向平均照射的球形燈光，它的燈光內容有[光源半徑](#radius)，光源半徑越大，投射的陰影邊緣越模糊。請注意，當有物件與點光原交集時可能產生奇怪的照明問題。
 
 ![images/pointlight.png](images/pointlight.png)
-*A small point light close to the right wall*
+*牆壁附近的點光源*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) RectangularLight
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) 矩形燈光
 {: #rectangularlight}
-Provides an approximation of a recessed light with a diffuser or baffles. The light distributes light in a diffuse pattern based on the orientation of the rectangle. A direction arrow is drawn at the center point of the light. Full strength light is directly in front of the rectangle.  Then the light falls off at an angle to the objects from the rectangle. By default a white rectangle will be visible when rendering. A common mistake is to insert these rectangles at exactly the same height as a ceiling plane. For consistent results, make sure the lights are slightly below the ceiling. For information on editing the location, direction, and beam angle on the screen using grips can be found in the [Rhinoceros RectangularLight](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm) help topic.
+矩形燈光是一個矩形的燈光面板，矩形燈光上有一個箭頭指示照射的方向，矩形燈光預設是彩現裡可見的燈光物件。將矩形燈光設置在天花板時，請讓矩形燈光低於天花板一個小距離，否則會產生照明的問題。如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的矩形燈光](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm)說明主題。
 
 ![images/rectangular light.png](images/rectangular light.png)
-*A rectangular light just below the ceiling*
+*天花板下的矩形燈光*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) LinearLight
+#### ![images/linearlight-01.png](images/linearlight-01.png) 管狀燈
 {: #linearlight}
-Distributes light in a cylindrical pattern that imitates a fluorescent tube. Light properties for this light include [source radius](#radius) and length. The larger the radius, the softer the shadows it will cast from the light. By default there is a visible light cylinder at the light location when rendering. Note that unusual effects can happen if the cylindrical light is partially obscured by an object that intersects the light. Use Rhino Control points to activate the grips on the light to edit on the screen.
+管狀燈是像日光燈一樣的圓柱形燈光，它的燈光內容有[光源半徑](#radius)與長度，光源半徑越大，投射的陰影邊緣越模糊。管狀燈預設是彩現裡可見的燈光物件，當有物件與管狀燈交集時可能產生奇怪的照明問題。開啟它的控制點可調整長度與方向。
 
 ![images/linearlight.png](images/linearlight.png)
 
-## Light Properties
+## 燈光內容
 {: #light-properties}
-When Flamingo is the current rendering application in Rhino, additional properties can be set for lights. Lights have some but not all properties in common.
+當 Flamingo 是目前的彩現器時，燈光物件會有額外屬於 Flamingo 的內容設定。
 
-#### Name
+#### 名稱
 {: #name}
-The name of the light object. This is an easy way to differentiate lights which are the same type in the model.
+燈光物件的名稱，為燈光命名有助於辨別模型裡的燈光。
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) On/Off
+#### ![images/lightbulbon.png](images/lightbulbon.png) 開啟/關閉
 {: #on}
-Toggles the light on and off. In the Light table,  if the light bulb icon is yellow the light is on. If the light bulb icon is gray the light will be off in the rendering. Double-click on the icon to toggle it On/Off. In the properties dialog, there is an On/Off Checkbox.
+將燈光開啟或關閉，燈光頁面的燈泡圖示為黃色代表燈光開啟，灰色代表關閉，雙擊燈泡圖示可開啟或關閉燈光，在燈光的物件內容裡有一個開啟/關閉的核取方塊具有相同功能。
 
-#### Visible
+#### 可見
 {: #visible}
-By default lights will show themselves as a bright light source in the rendering.  By unchecking the Visible property, the light object itself will be invisible in the rendering.  Still, the light will project its light into the scene.
+設定彩現影像裡是否可看見燈光的形狀，取消勾選時彩現影像裡看燈光為不可見，但對場景仍然有照明作用。
 
-#### Light distribution *([Tagged objects only](#tag-objects-as-lights))*
+#### 照明方式 *([只適用標記為燈光的物件](#tag-objects-as-lights))*
 {: #light-distribution}
-When tagging an object as a light, use Distribution to specify the pattern the light projects into the scene. In the light panel, double-click on the distribution cell to get an options drop-down. Distribution types include: [All Directions](#pointlight), [Spot](#spotlight) and [Diffuse](#rectangularlight). Both Spot and Diffuse require a [direction](#aim-light) to be specified.
+標記為燈光的物件可設定燈光的投影方式，在燈光頁面雙擊**照明方式**欄位，可選擇[所有方向](#pointlight)、[聚光](#spotlight)、[漫射](#rectangularlight)，聚光與漫射可指定[照射方向](#aim-light)。 
 
-#### Aim light *([Tagged objects only](#tag-objects-as-lights))*
+#### 設定方向與投射角度 *([只適用標記為燈光的物件](#tag-objects-as-lights))*
 {: #aim-light}
-For tagged light which have a distribution of Spot or Diffuse, a direction must be specified.  Double-click on the "Aim >>" option and follow the command line prompts.
+標記為燈光的物件的照明方式為**聚光**與**漫射**時，雙擊**設定方向 >>**可指燈光的照射方向。
 
-#### Watts
+#### 瓦特
 {: #watts}
-Specifies the electrical power of the light.  It is recommended to start with realistic values for the scene. In the light table, double-click on the cell to change the value.
+設定燈光的亮度 (消耗的電力)，建議使用真實世界的瓦數，雙擊瓦特欄位可修改數值。
 
-#### Beam angle *([Spotlights only](lights-tab.html#spotlight))*
+#### 投射角度 *([只適用聚光燈](lights-tab.html#spotlight))*
 {: #beam-angle}
-The angle in degrees controlling the width that light emanates from a light source. This also can be changed by using grips on the screen.  Details on grip editing can be found in the [Rhinoceros Spotlight](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm) help topic.
+聚光燈照射的廣度範圍，也可經由調整控制點修改，調整燈光控制點請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm)說明主題。
 
-#### Radius
+#### 半徑
 {: #radius}
-The size of the visible light source. Smaller lights cast sharper shadows.
+設定燈光的大小，越小的燈光投射出的物件的陰影的邊緣越銳利。
 
-#### Color
+#### 顏色
 {: #color}
-The color for the light the source emanates.
+燈光的照明顏色。
 
-#### Use material color *([Tagged objects only](#tag-objects-as-lights))*
-Uses the color of the material assigned to the light object for the light it produces.
+#### 使用材質顏色 *([只適用標記為燈光的物件](#tag-objects-as-lights))*
+以物件材質的顏色做為燈光的顏色。
 
-#### Channel
+#### 通道
 {: #channel}
-Lights can be assigned to one of eight channels. This feature lets you adjust the lighting in your rendered image in real time, after the rendering has been produced. This is a very powerful feature when working to balance multiple light sources in a rendering. For more details see the [Rendering Channels](render-channel.html) topic.
+燈光有八個通道可以使用，可在彩現影像直接調整每個通道燈光的亮度，需要改變燈光亮度時不必重新彩現，詳細說明請參考[彩現通道](render-channel.html)說明主題。
 
-#### IES File
+#### IES 檔案
 {: #iesfile}
-IES (Illuminating Engineering Society) files are photometry files that define the distribution of light from a light source. Light fixture manufacturers often provide these files. By using the IES file to define your distribution, you can more accurately depict your light source. The geometry of the tagged light object has no relationship to the distribution of light. The definition of the light distribution comes from the photometry file alone.
+IES (Illuminating Engineering Society) 是一種"測光"檔案，用來定義燈光散發的光線，燈具製造業者會使用 IES 檔案對光源做精確的描述。燈光如何散發光線由測光檔案定義，與標記為燈光的物件的幾何圖形無關。
 
-Notes:
+附註：
 
-* Flamingo nXt supports Type C goniometry files, which includes the majority of IES files. Type A files, which are occasionally used by the automobile industry to define headlights, and Type B files, which are sometimes used to define floodlighting, are not supported.
-* IES distributions include the effects of light fixture elements such as baffles, reflectors, and diffusers.
-* IES distributions are often asymmetrical, so the process of aiming the source includes not just a target, but a rotation angle as well.
+* Flamingo nXt 支援 Type C 的測光檔案，大部分的 IES 檔案都是屬於 Type C 格式。汽車工業在設計汽車大燈時是使用 Type A 格式，泛光照明燈具的設計是使用 Type B 格式，Flamingo nXt 不支援這兩種格式。
+* IES 可模擬羽板、反射板、柔光燈罩...等等各種燈具的照明效果。
+* IES 的照明效果常常是不對稱的，所以調整照明時除了調整目標點的位置以外，可能也要對燈光做旋轉。
 
-#### Brightness from file
-Use the intensity stored in the IES file. If this is not checked, the  [Watts](lights-tab.html#watts)  setting is used.
+#### 使用檔案的亮度設定
+使用儲存在 IES 檔案裡的亮度設定，未勾選此選項時是使用燈光物件的[瓦特](lights-tab.html#watts)設定。
 
 
-## Additional Options Menu
+## 右鍵功能表
 {: #additional-options}
-Additional options for lights can be accessed by right-clicking on the light in the Light table.
+在燈光頁面的燈光項目上按滑鼠右鍵彈出的功能表有一些選項可使用。
 
-####  On
-Toggles the light [On/Off](#on)
+####  開啟
+[開啟/關閉](#on)燈光的照明功能。
 
-#### Delete
-Deletes the selected light.
+#### 刪除
+刪除選取的燈光。
 
-#### Remove light tag
-Removes the [tag](#tag-objects-as-lights) that makes an object a light.
+#### 移除燈光標記
+移除將物件當做燈光的[標記](#tag-objects-as-lights)。
 
-#### Properties
-Access the [Light Properties](#light-properties) for that light.
+#### 內容
+開啟編輯[燈光內容](#light-properties)的對話框。
 
-#### Select objects and matching items
-Selects the light in the viewport.
+#### 以物件選取清單中的項目
+在作業視窗裡選取燈光物件，用以選取清單中對應的項目。

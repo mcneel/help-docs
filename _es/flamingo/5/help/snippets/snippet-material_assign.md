@@ -1,13 +1,13 @@
-### Assign material by
-Using a plug-in library, rendering properties can be assigned to layers, or to objects that will be used with the basic Rhino renderer.
+### Asignar material por
+Con una librería de plug-ins, las propiedades de renderizado se pueden asignar a capas u objetos que se utilizarán con el renderizador básico de Rhino.
 
-#### Layer
-The object inherits the render material assigned to the layer. To change the material assignment of the layer, use the [ **Layers** ](layer.html) dialog box.
- **Note** : Deleting a material from the ** [Material Editor](materialeditor.html) **, returns all objects that had the deleted material assigned to assignment by layer.
+#### Capa
+El objeto adquiere el material de renderizado asignado a la capa. Para cambiar la asignación de material de la capa, utilice el  cuadro de diálogo ** [Capas](layer.html) **.
+ **Nota** : Si se elimina un material del ** [Editor de materiales](materialeditor.html) **, todos los objetos que tenían asignado el material eliminado pasarán a tener asignación por capa.
 
-#### Parent
-The object inherits the render material from its parent object.
+#### ascendiente
+El objeto adquiere el material de renderizado del objeto principal.
 
-#### Object
-Render materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See ** [MaterialEditor](materialeditor.html) **.
+#### Objeto
+Los materiales de renderizado se asignan a objetos individuales y son utilizados por el renderizador integrado en Rhino.
+Consulte ** [Editor de materiales](materialeditor.html) **.

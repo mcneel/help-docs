@@ -17,7 +17,7 @@ Der gemeinsame Ordner für Render-Farm-Aufträge. In diesen Ordner werden auch d
 Bei Auswahl dieser Option wird die Richtung markierter Lichter angezeigt.  Dies funktioniert für Spotlichter und diffuse Lichtverteilungen.
 
 #### Schnelle Vorschau in OpenGL
-Zum Anzeigen eines OpenGL-Miniaturbilds bevor das gerenderte Material angezeigt wird.  Dadurch kann das Material schneller angezeigt werden, es kann aber vorkommen, dass das OpenGL-Bild dem tatsächlichen Material nicht wirklich entspricht.
+Zum Anzeigen eines OpenGL-Miniaturbilds, bevor das gerenderte Material angezeigt wird.  Dadurch kann das Material schneller angezeigt werden, es kann aber vorkommen, dass das OpenGL-Bild dem tatsächlichen Material nicht wirklich entspricht.
 
 #### Native Historiendateien nach Abschluss des Renderings speichern
 Standardmäßig wird das zuletzt gerenderte Bild für den Fall zwischengespeichert, dass es noch einmal verwendet werden soll.

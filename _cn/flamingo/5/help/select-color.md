@@ -1,48 +1,50 @@
 ---
+title: 颜色选择器 
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Color Selector
-The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
+# ![images/paint.svg](images/paint.svg) {{page.title}}
+在很多材质及属性设置中都会用到颜色选择器，而且选择颜色的操作步骤都非常类似。
 
 
-There are two parts of the selector:
-  ![images/colorswatch-002.svg](images/colorswatch-002.svg)
+颜色选择器由两部分构成:
 
-1. [Color Swatch](#swatch) - Click on the color fo the main color selector
-1. [Options Menu](#options) - Click on the arrow for additional color utilities
+![images/colorswatch-002.svg](images/colorswatch-002.svg)
 
-## Color Swatch ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+1. [色卡](#swatch) - 点击色卡可以打开选取颜色对话框。
+1. [选项功能表](#options) - 点击箭头标记可以打开附加的颜色工具。
+
+## 色卡 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
 {: #swatch}
-Click the color swatch to select a color from the Select Color dialog box.
+点击色卡从“选取颜色”对话框中选取一个颜色。
 
-##### Select from the Named Color List
-* Select a color from the list of names on the left.
+##### 从颜色名称列表中选取
+* 从左侧的颜色名称列表中选取一个颜色。
 
-##### Select from the color wheel selector
-1. Drag the marker around the outer wheel to define the hue.
-1. Drag the marker horizontally in the inner square to define the saturation level.
-1. Drag the marker vertically in the inner square to define the brightness value.
+##### 从调色盘中选取
+1. 拖动周围圆环中的标记可以更改色调。
+1. 水平拖动中间方形区域中的标记可以更改饱和度。
+1. 垂直拖动中间方形区域中的标记可以更改亮度。
 
-##### Set in the Hue, Sat, Val boxes
-1. Hue is a color's hue corresponds to its visible wavelength of light. Hue is measured in degrees from 0 to 359, which correspond roughly with a rainbow's hues in 60 degree increments: red, orange, yellow, green, blue, and violet.
-1. Saturation refers to the color's intensity on a 0 to 100 scale. A saturation of 0 produces a neutral gray color that varies from black to white depending on the color's brightness. The hue has no effect on a color with a saturation component of 0. A saturation of 100 produces that hue's most intense shade.
-1. Value refers to the perceived amount of light value (or white) in the color. The Value component varies between 0 and 100. Value is also sometimes referred to as luminance or brightness.
+##### 直接输入色调、饱和度与亮度
+1. 色调是由 0 到 359 的分度来表示的，调色盘周围的“彩虹圆环”中，每间隔 60 度大约可以区分出红、橙、黄、绿、蓝、紫等几种颜色。选定基色调后，再配合饱和度与亮度值就可以确定最终的颜色了。
+1. 饱和度指颜色的强度，可设置范围从 0 到 255，饱和度越大，含色成分越大。饱和度为 0 意味着颜色为介于黑与白之间非常中性的灰色，偏黑色还是偏白色由亮度决定。饱和度设置为 0 相当于饱和度在此颜色中不起任何作用，饱和度设置为 255，表示此颜色已达到最艳丽的程度。
+1. 亮度表示颜色的明亮（或白）程度，亮度可设置范围从 0 到 255，亮度常常也被称为明度或明亮度。
 
-##### Red, Green, Blue (RGB)
+#### 红，绿，蓝 (RGB)
 {: #rgb}
-This method is used by computers to project color onto the monitor. Each pixel is a combination of the three colors in varying intensities. Pure red is entirely red with no green or blue. Pure black has red, green, and blue set to 0, and pure white has red, green, and blue set to 255.
+这种记录颜色的方式用于计算机将颜色显示在显示器上。每个像素点的颜色都是将三种颜色值进行混合得到。纯粹的红色不含绿色和蓝色。纯黑色中红色、绿色、蓝色值都为 0，纯白色中红色、绿色、蓝色值都为 255。
 
-## Menu options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## 功能表选项 ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
 {: #options}
 
-#### Color Picker
-Opens the [Color Swatch](#swatch) dialog box described above. This is the same as clicking on the color swatch.
+#### 调色盘
+打开[选取颜色](#swatch)对话框，这和直接在色卡上点击是一样的。
 
-#### Eye Dropper
-Allows picking the color from anywhere on the screen using a eye dropper tool
+#### 取色滴管
+使用滴管工具可以在屏幕上任何一个地方取色。
 
-#### Copy
-Copies the color in the color swatch. To be used in another color selector by using the Paste option.
+#### 复制
+复制当前色卡上的颜色，通过粘贴，可以将复制的颜色粘贴到其他色卡中。
 
-#### Paste
-Pastes the color from one color swatch to another. After using the Copy command above, use this Paste option.
+#### 粘贴
+粘贴由另一个色卡上复制而来的颜色。粘贴之前需要先复制颜色。

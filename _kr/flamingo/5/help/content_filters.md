@@ -1,7 +1,7 @@
 ---
 title: 콘텐츠 필터
 ---
-<!-- TODO: This is an orphan page, but needs to be linked to from the Material Libraries page -->
+<!-- This is an linked from material-editor.html page -->
 
 # {{page.title}} ![images/contentfilter.png](images/contentfilter.png)
 콘텐츠 필터는 **콘텐츠 필터** 대화상자를 통해 액세스할 수 있습니다.

@@ -1,82 +1,83 @@
 ---
+title: Assegnazione dei materiali
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Material Assignments
-Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on the how easy the model is to change and maintain in the future.
+# ![images/paint.svg](images/paint.svg) {{page.title}}
+Gli oggetti di una scena hanno un sorgente per i materiali. Si tratta del luogo da cui attingono il loro materiale di rendering.  I materiali si possono assegnare in vari modi. Il metodo usato per l'assegnazione dei materiali ha un grande effetto sul grado di facilità di modifica e mantenimento successivi del modello.
 
-Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:
+I materiali si possono assegnare in tre modi. Tutti e tre i modi sono delle gerarchie, per cui un'assegnazione più in basso nell'elenco sovrascriverà un'assegnazione superiore. I tre modi sono:
 
- 1. [Layers](#bylayer) - All objects on the layer will adopt this material, unless they are in a block or have a specific object assignment.
- 2. [Parent](#byparent) - This is used for objects within blocks.  Objects with a By Parent assignment will look to the block insert for the material.
- 3. [Individual objects](#byobject) - Materials can be assigned directly to an object, overwriting any other material assignments.
+ 1. [Livelli](#bylayer) - Tutti gli oggetti che si trovano nel livello assumeranno il materiale, a meno che non siano in un blocco o abbiano un'assegnazione specifica per oggetto.
+ 2. [Genitore](#byparent) - Questo modo si usa per gli oggetti contenuti in un blocco.  Gli oggetti aventi un'assegnazione Per genitore assumeranno il materiale del blocco in cui si trovano.
+ 3. [Singoli oggetti](#byobject) - I materiali si possono assegnare direttamente ad un oggetto, sovrascrivendo qualsiasi altra assegnazione.
 
-Assigning materials by layer is the recommended method. Using By layer makes it very easy to change the material of all the objects on a layer. Use By object assignment if you have only a few objects that you do not want on separate layers.
+L'assegnazione per livello è il metodo più raccomandabile. Usando l'assegnazione per livello, risulta molto facile cambiare il materiale di tutti gli oggetti che si trovano sullo stesso livello. Si usi l'assegnazione per oggetto se ci sono pochi oggetti e non si desidera che essi giacciano su livelli diversi.
 
-Imported files may have any one of these three assignments. Many imported files will have By Object assignments.  It may take a lot of work to convert the model to By Layer assignments, but it can be beneficial if there is a lot of editing to the render materials planned.
+I file importati possono avere una qualsiasi di queste tre assegnazioni. Molti file importati avranno assegnazioni Per oggetto.  Convertire il modello ad assegnazioni Per livello può risultare laborioso, ma può essere vantaggioso nel caso in cui si prevedano numerose modifiche ai materiali di rendering.
 
-Once materials are assigned, the material will be saved in the current model.  Editing the material will not effect that material in other models.
+Una volta assegnato, il materiale viene salvato nel modello corrente.  Un'eventuale modifica del materiale non avrà alcun effetto su quello stesso materiale usato in altri modelli.
 
-## Assign materials to layers
+## Assegnare i materiali ai livelli
 {: #bylayer}
-Assigning materials by layer assigns a material to all objects on that layer. This is the default method of assignment. To change the material assignment of the layer, use the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-Note: Deleting a material from the [Material Editor](material-editor.html) returns all objects that had the deleted material assigned to assignment by layer.
+L'assegnazione di un materile per livello applica il materiale a tutti gli oggetti contenuti in quel livello. Si tratta del metodo di assegnazione predefinito. Per cambiare l'assegnazione del materiale del livello, si usi la finestra di dialogo dei [Livelli](http://docs.mcneel.com/rhino/5/help/it-it/commands/layer.htm).
+Nota: L'eliminazione di un materiale dall'[Editor dei materiali](material-editor.html) fa sì che tutti gli oggetti prima associati a quel materiale ritornino alla tipologia di assegnazione per livello.
 
-##### Drag a material to a layer
+##### Trascinare un materiale su un livello
 {: #drag-dropmaterialtolayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material on to a layer name in the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog.
+1. In Rhino, aprire la finestra di dialogo dei [Livelli](http://docs.mcneel.com/rhino/5/help/it-it/commands/layer.htm).
+1. Nell'[Elenco dei materiali](material-editor.html#material_list) della scheda Libreria o della scheda Editor dei materiali, trascinare un materiale sul nome di un livello nella finestra di dialogo dei [Livelli](http://docs.mcneel.com/rhino/5/help/it-it/commands/layer.htm).
 
-##### To assign a material to a layer
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select a material from the Material drop-down list.
+##### Per assegnare un materiale ad un livello
+1. In Rhino, aprire la finestra di dialogo dei [Livelli](http://docs.mcneel.com/rhino/5/help/it-it/commands/layer.htm).
+1. Selezionare uno o più livelli e cliccare sulla colonna Materiale.
+1. Nella finestra di dialogo Materiale livello, selezionare un materiale dall'elenco a discesa dei materiali.
 
-##### Remove a material from a layer
+##### Rimuovere un materiale da un livello
 {: #detachmaterialfromlayer}
-1. In Rhino, open the [Layers](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm) dialog box.
-1. Select one or more layer names, and click the Material column.
-1. In the Layer Material dialog box, select the Default Material Material drop-down list.
+1. In Rhino, aprire la finestra di dialogo dei [Livelli](http://docs.mcneel.com/rhino/5/help/it-it/commands/layer.htm).
+1. Selezionare uno o più livelli e cliccare sulla colonna Materiale.
+1. Nella finestra di dialogo Materiale livello, selezionare il materiale predefinito dall'elenco a discesa.
 
-## Assign material to Parent
+## Assegnare un materiale per genitore
 {: #byparent}
-By parent is a seldom used, but useful, assignment. Objects within a Block instance will retain their By Layer or By Object assignments.  Objects that are using By Parent assignment will adopt the material of the block insertion.  This way objects within a block instance can adopt the material of the parent block.
+Anche se l'assegnazione Per genitore viene usata raramente, risulta utile. Gli oggetti contenuti in un'istanza di blocco manterranno le loro assegnazioni Per livello o Per oggetto. Gli oggetti che usano un'assegnazione Per genitore assumeranno il materiale del blocco in cui si trovano.  In questo modo, gli oggetti contenuti in un'istanza di blocco possono assumere il materiale del blocco genitore.
 
-As an example, a car model might have tires on the tires layer and wheels on the wheel layer. But for rendering the body of the car might vary between individual block instances.  Assign By Parent to the car body.  Then a material can be assigned to the block insert and only the body will adopt that material.
+Per esempio, il modello di una macchina può avere i pneumatici sul livello Pneumatici e le ruote sul livello Ruote. Per il rendering, la carrozzeria della macchina può variare tra singole istanze di blocco. Assegnare Per genitore alla carrozzeria.  Assegnando quindi un materiale al blocco inserito, solo la carrozzeria assumerà quel materiale.
 
-##### To assign a material through object properties
-1. Select objects.
-1. On the Edit menu, click Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the [Properties](properties-object.html) dialog box, on the Material page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Parent.
+##### Per assegnare un materiale dalle proprietà oggetto
+1. Selezionare gli oggetti.
+1. Dal menu Modifica, cliccare su Proprietà oggetto ![images/properties.png](images/properties.png) per editare l'oggetto.
+1. Nella finestra di dialogo [Proprietà](properties-object.html), scheda Materiale ![images/materialtab.png](images/materialtab.png), sotto Assegna per, fare clic su Per genitore.
 
-## Assign material to objects
+## Assegnare i materiali agli oggetti
 {: #byobject}
-You can assign materials from the material libraries to a layer or object. Rendering materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See  [Materials Editor](material-editor.html) .
+È possibile assegnare un materiale proveniente dalla libreria dei materiali ad un livello oppure ad un oggetto. I materiali di rendering vengono assegnati a ciascun oggetto singolarmente e sono utilizzati dal motore di rendering incorporato in Rhino.
+Vedi  [Editor dei materiali](material-editor.html).
 
-Assigning materials by layer is the recommended method. Assign materials by object if you have only a few objects that you do not want on separate layers.
+L'assegnazione per livello è il metodo più raccomandabile. Si assegni un materiale per oggetto se ci sono pochi oggetti e non si desidera che essi giacciano su livelli diversi.
 
-##### Assign a material through object properties
-1. Select objects.
-1. On the Edit menu, click the Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Object, and then click the Material from the list.
+##### Assegnare un materiale dalle proprietà oggetto
+1. Selezionare gli oggetti.
+1. Dal menu Modifica, cliccare su Proprietà oggetto ![images/properties.png](images/properties.png) per editare l'oggetto.
+1. Nella finestra di dialogo [Proprietà](properties-object.html), scheda Materiali ![images/materialtab.png](images/materialtab.png), sotto Assegna per, fare clic su Per oggetto e quindi fare clic sul materiale dall'elenco.
 
-##### Drag a material onto a single object
+##### Trascinare un materiale su un singolo oggetto
 {: #drag-dropmaterialtoobject}
 
- * In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, drag a material onto an object. The object will highlight when the cursor is in the correct place to drop.
+ * Nell'[Elenco dei materiali](material-editor.html#material_list) della scheda Libreria o della scheda Editor dei materiali, trascinare un materiale su un oggetto. L'oggetto viene evidenziato quando il cursore si trova sul punto esatto per il rilascio.
 
-##### Assign a material to selected objects
-1. Select objects.
-1. In the [Material List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Assign to Selected Objects.
+##### Assegnare un materiale agli oggetti selezionati
+1. Selezionare gli oggetti.
+1. Nell'[Elenco dei materiali](material-editor.html#material_list) della scheda Libreria o della scheda Editor dei materiali, fare clic con il pulsante destro del mouse su un materiale della tavolozza dei materiali nel modello.
+1. Dal menu, fare clic su Assegna materiale agli oggetti selezionati.
 
-##### Select objects with material assignment
+##### Selezionare gli oggetti per materiale assegnato
 {: #select-objects-with-material-assignment}
-1. In the [Materials List](material-editor.html#material_list), on the Library tab or the Material Editor tab, right-click a material from the Materials in Model palette.
-1. On the menu, click Select Objects with this Material.
+1. Nell'[Elenco dei materiali](material-editor.html#material_list) della scheda Libreria o della scheda Editor dei materiali, fare clic con il pulsante destro del mouse su un materiale della tavolozza dei materiali nel modello.
+1. Dal menu, cliccare su Seleziona oggetti con questo materiale.
 
-##### Remove a by-object material assignment
+##### Rimuovere l'assegnazione di un materiale per oggetto
 {: #removematerialfromobject}
-1. Select objects.
-1. On the Edit menu, click Object Properties.
-1. In the  [Properties](properties-object.html) dialog box, on the Material page, under Assign by, select Layer.
+1. Selezionare gli oggetti.
+1. Dal menu Modifica, cliccare su Proprietà oggetto.
+1. Nella finestra di dialogo [Proprietà](properties-object.html), nella scheda Materiale, alla voce Assegna per, selezionare Livello.

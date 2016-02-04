@@ -2,7 +2,7 @@
 ### Maskierung
 Verdunkelt Teile des Bildes basierend auf einem Farbwert oder einem im Bild gespeicherten Alphakanal. Dadurch können Texturen komplex geformte Begrenzungen haben und komplexe Effekte wie Löcher in einer Fläche aufweisen.
 
-In diesem Beispiel wird ein Bild mit einem Alpha-Kanal-Hintergrund als Decal auf einer rechteckigen Fläche platziert. Maskierung für Materialien funktioniert auf die gleiche Weise.
+In diesem Beispiel wird ein Bild mit einem Alphakanalhintergrund als Decal auf einer rechteckigen Fläche platziert. Maskierung für Materialien funktioniert auf die gleiche Weise.
 
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
 *Ursprüngliches Decal-Bild. Der grau karierte Bereich stellt den Alphakanal des Bildes dar.*
@@ -27,7 +27,7 @@ Verwenden Sie den [Alphakanal](environment-tab.html#alpha) des Bilds (sofern vor
 ![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
 *Links das Original. Der grau karierte Bereich stellt den Alphakanal des Bildes dar. Rechts das Bild über einer Wasseroberfläche.*
 
-Der Alpha-Kanal ist ein Teil der Pixeldaten, der Transparenzinformationen vorbehalten ist. Alpha-Kanäle erzeugen und speichern Masken, mit denen Sie Teile eines Bilds isolieren und schützen können, während Sie Farbänderungen vornehmen, Filter oder andere Effekte am restlichen Bild anbringen. Jeder Pixel in einem Bild wird als Datenkanäle beschrieben, die eine Farbmischung aus Rot, Grün und Blau (RGB) definieren. Der Alpha-Kanal ist eine 8-Bit 256-Grauskala-Darstellung des Bilds und wird verwendet, um die Farbe des darunter liegenden Pixels zu maskieren. Der Wert der Alphamaske bestimmt die Intensität der Pixelfarbe. Wenn der Alphakanal auf 100 % eingestellt ist, sind die Pixel vollständig transparent.  Bei einer niedrigeren Einstellung werden die Bildpixel mit Transparenz überblendet.
+Der Alphakanal ist ein Teil der Pixeldaten, der Transparenzinformationen vorbehalten ist. Alphakanäle erzeugen und speichern Masken, mit denen Sie Teile eines Bilds isolieren und schützen können, während Sie Farbänderungen vornehmen, Filter oder andere Effekte am restlichen Bild anbringen. Jeder Pixel eines Bilds wird in Datenkanälen beschrieben, die eine Farbmischung aus Rot, Grün und Blau (RGB) festlegen. Der Alphakanal ist eine 8-Bit-Graustufen-Darstellung (256 Stufen) des Bilds und wird verwendet, um die Farbe des darunter liegenden Pixels zu maskieren. Der Wert der Alphamaske bestimmt die Intensität der Pixelfarbe. Wenn der Alphakanal auf 100 % eingestellt ist, sind die Pixel vollständig transparent.  Bei einer niedrigeren Einstellung werden die Bildpixel mit Transparenz überblendet.
 
 #### Farbe
 {: #colormask}
@@ -39,13 +39,13 @@ Damit kann die Maskenfarbe aus der Bitmap ausgewählt werden. Klicken Sie zuerst
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### Empfindlichkeit
-Der Wert zeigt die Größe des Bereichs um jene Farben an, die ebenfalls maskiert sind. Damit eine Farbmaskierung stattfinden kann, muss dieser Wert größer als 0.0 sein. Dieses Steuerelement ist nur bei Auswahl der Option *Farbe* aktiviert.
+Der Wert zeigt die Größe des Bereichs um jene Farben an, die ebenfalls maskiert sind. Damit eine Farbmaskierung stattfinden kann, muss dieser Wert größer als 0,0 sein. Dieses Steuerelement ist nur bei Auswahl der Option *Farbe* aktiviert.
 
 #### Weichzeichner
 Maskiert Pixel teilweise. Dieser Wert definiert den Bereich der Teilmaskierung um die maskierte Farbe herum. Dieses Steuerelement ist nur bei Auswahl der Option *Farbe* aktiviert.
 
 #### Umkehren
-Kehrt die Maske um. Alle Pixel, die vorher maskiert waren, sind nun sichtbar und umgekehrt.
+Kehrt die Maske um. Alle Pixel, die vorher maskiert waren, sind nun sichtbar und alle, die vorher unmaskiert waren, unsichtbar.
 
 ![images/masking-007.png](images/masking-007.png)  
 
@@ -57,6 +57,6 @@ Durch transparente Maskierung wird ein natürlicherer Schatten erzielt und Hinte
 ![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
 
 #### Maskierte Farben anzeigen
-Zeigt die Maskierungsauswirkungen grafisch an, während die Parameter geändert werden. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) provided to select the display color of the masked pixels. Wenn diese Farbe oder die Einstellung des Kontrollkästchens geändert wird, hat dies keinen Einfluss auf die maskierte Farbe. Es ist nur ein grafisches Werkzeug zum Bearbeiten der Maske.
+Zeigt die Maskierungsauswirkungen grafisch an, während die Parameter geändert werden. Verwenden Sie den [Farbwähler](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) zur Auswahl der Anzeigefarbe der maskierten Pixel. Wenn diese Farbe oder die Einstellung des Kontrollkästchens geändert wird, hat dies keinen Einfluss auf die maskierte Farbe. Es ist nur ein grafisches Werkzeug zum Bearbeiten der Maske.
 
 ![images/masking-008.png](images/masking-008.png)

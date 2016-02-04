@@ -2,21 +2,21 @@
 ---
 
 
-# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Options: Flamingo nXt
-These settings apply to the Flamingo application.  Making changes here will change how Flamingo runs all the time.
+# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Opciones: Flamingo nXt
+Esta configuración se aplica a la aplicación de Flamingo.  Los cambios realizados aquí repercutirán en el funcionamiento general de Flamingo.
 
 {: #default-decal-link-state}
 {% include_relative snippets/snippet-linking.md %}
 
-#### Farm shared folder
+#### Carpeta compartida de Render Farm
 {: #farm-output-folder}
-The shared folder for render farm jobs. This is also the location that the farm will output its results. Use the Folder icon ![images/folderopen32x32.png](images/folderopen32x32.png) to select a new location
+Carpeta compartida de los trabajos de Render Farm. Esta es la ubicación donde se guardan los resultados del Farm. Utilice el icono de la carpeta ![images/folderopen32x32.png](images/folderopen32x32.png) para seleccionar una nueva ubicación.
 
-#### Display Tagged Lights
-Use this property to Display the direction of a tagged light.  This works on spot and diffuse light distributions.
+#### Mostrar luces etiquetadas
+Utilice esta propiedad para mostrar la dirección de una luz etiquetada.  Esta opción funciona en distribuciones de luz focal y difusa.
 
-#### Quick preview in OpenGL
-This will change the material thumbnails to start with an OpenGL thumbnail before the rendered material is returned.  This can lead to faster responses on material, but the OpenGL image may not be close to the actual material.
+#### Vista previa rápida en OpenGL
+Cambia las miniaturas del material para que aparezca una miniatura OpenGL antes de devolver el material renderizado.  La respuesta de los materiales puede ser más rápida, pero es posible que la imagen OpenGL no se parezca al material.
 
-#### Save native history files when rendering is complete
-By default Flamingo will cache the last image rendered in there is a need to return to it in the future.
+#### Guardar archivos de historial nativos cuando se completa el renderizado
+De manera predeterminada, Flamingo guardará en la caché la última imagen renderizada por si es necesario recurrir a ella en algún momento.

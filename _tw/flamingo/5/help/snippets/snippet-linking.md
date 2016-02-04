@@ -1,14 +1,14 @@
 
-#### Linking options
-Specifies how the image file will be linked to materials.
+#### 連結選項
+設定材質使用的圖片的連結方式。
 
-#### Linked
-Creates a link to the image file. The file must be present on the local disk.
+#### 連結
+將圖片儲存在模型檔案之外，移動模型檔案時必需連同圖片一起移動。
 
-#### Embedded
-Embeds the image information in the current file.
+#### 置入
+將圖片儲存在模型檔案裡。
 
-#### Linked and embedded
-If the bitmap is found on the disk before rendering, the external file is used. If the image cannot be found on the disk, the internal definition will be used.
+#### 連結並置入
+當外部連結的圖片存在時使用外部的圖片，不存在時則改用儲存在模型檔案裡的圖片。
 
-Note: To see changes in linked or linked and embedded files go to the Flamingo nXt menu, click Utilities and then click Clear bitmap cache.
+附註：**連結**與**連結並置入**的外部圖片修改後，必需使用 Flamingo nXt 功能表 > 其它工具 > **清除圖片快取**材質才會更新。

@@ -3,7 +3,7 @@
 Definiert, wie die Bilddatei mit den Materialien verknüpft wird.
 
 #### Verknüpft
-Erzeugt einen Link zur Bilddatei. Die Datei muss auf dem lokalen Datenträger vorhanden sein.
+Erzeugt eine Verknüpfung zur Bilddatei. Die Datei muss auf dem lokalen Datenträger vorhanden sein.
 
 #### Eingebettet
 Bettet die Bildinformationen in die aktuelle Datei ein.

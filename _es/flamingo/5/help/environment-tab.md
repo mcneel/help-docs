@@ -1,211 +1,211 @@
 ---
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Environment Panel
+# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Panel de entorno
 {: #environment-tab}
-Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.
+Los entornos no son solo lo que se ve en el fondo de un renderizado, sino que controlan una esfera infinita que rodea al modelo. Los objetos de la escena reflejarán y refractarán el entorno. La esfera del entorno no es un objeto que pueda seleccionar, sino una superficie de referencia para los efectos del fondo.
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky.html) help topic.
+El entorno repercute en la parte visible del fondo y los reflejos.  Para obtener más información sobre los efectos que afectan a la iluminación de la escena, consulte el tema [Cielo](sun-and-sky.html) de la Ayuda.
 
-Flamingo comes with a special environment called *[Default Flamingo Environment](environment.html)*.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [Lighting presets](lighting-tab.html), both the Lighting and environment will be set to appropriate scene defaults.
+Flamingo viene con un entorno especial denominado *[Entorno predeterminado de Flamingo](environment.html)*.  Este entorno se sincronizará con el actual [Preajuste de iluminación](lighting-tab.html). Al utilizar los [Preajustes de iluminación](lighting-tab.html), tanto la Iluminación como el entorno usarán las opciones predeterminadas de escena apropiadas.
 
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
-##### Where can I find this command?
- 1. ![images/environments.png](images/environments.png)Materials Tab
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
- 1. Command > EnvironmentEditor
+##### Dónde puedo encontrar este comando?
+ 1. ![images/environments.png](images/environments.png)Ficha Materiales
+ 1. ![images/icon-render.png](images/icon-render.png)Barras de herramientas de Herramientas de renderizado > ![images/environments.png](images/environments.png) Editor de materiales
+ 1. ![images/menuicon.png](images/menuicon.png)Menús > Renderizado > Editor de entornos
+ 1. Comando > EditorDeEntorno
 
-The Environment Editor Panel is split into discrete sections.  Based on the material type, the advanced panels may vary.
+El panel Editor de entorno se divide en secciones.  Según el tipo de material, los paneles avanzados pueden variar.
 
-Colors and textures can be dragged from the color swatch and dropped onto any other color swatch or control in the Material Editor, [Texture Palette](texturepalette.html), or [Environment Editor](environmenteditor.html).
-Materials Panel
+Los colores y las texturas pueden arrastrarse desde el selector de color y colocarse en cualquier otro selector de color o control del Editor de materiales, la [Paleta de texturas](texturepalette.html) o el [Editor de entorno](environmenteditor.html).
+Panel de materiales
 
- 1. [Background Type](#type)
- 1. [Settings Bar](#material_list)
- 1. [Environment List](#environment-list)
- 1. [Window Divider](#divider)
- 1. [Environment Properties Section](#properties)
- 1. [Name](#name)
- 1. [Environment Property Panels](#panels)
+ 1. [Tipo de fondo](#type)
+ 1. [Barra de configuración](#material_list)
+ 1. [Lista de entornos](#environment-list)
+ 1. [Divisor de ventanas](#divider)
+ 1. [Sección de propiedades de entorno](#properties)
+ 1. [Nombre](#name)
+ 1. [Paneles de propiedades de entorno](#panels)
 
-## [Background Type](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [Tipo de fondo](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
 {: #type style="clear: both;"}
-Select the type of background for the model.  [Environment](#flamingo-environment) is an all inclusive rendering environment and should be the default setting for Flamingo.  The other three settings present a much more simplified set of settings that reflect older ways of defining backgrounds. For more information see the [Rhinoceros Simple Background](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings) topic
+Seleccione el tipo de fondo para el modelo.  [Entorno](#flamingo-environment) es un entorno de renderizado completo y debería ser la opción predeterminada de Flamingo.  Las otras tres opciones presentan un conjunto mucho más simplificado de opciones que muestran otros modos de definir fondos. Para obtener más información, consulte el tema [Fondo simple de Rhinoceros](http://docs.mcneel.com/rhino/5/help/es-es/commands/environmenteditor.htm#Basic_settings)
 
-The reset of this help topic covers the Environment type.
+Este tema trata del tipo de Entorno.
 
 ## [Settings Bar](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
 {: #settings}
-Use this bar to help navigate the Environment list.
+Utilice esta barra para navegar por la lista de entornos.
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Back Arrow
-Walks back though the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png) Flecha atrás
+Vuelve al entorno actual o a los entornos previamente seleccionados.  Por ejemplo, un entorno con capas reflectantes o refractivas.  Utilice esta flecha para volver al entorno principal desde los detalles de reflexión o refracción.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Forward Arrow
-Walks forward though the previously selected environment environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png) Flecha adelante
+Avanza hacia los entornos previamente seleccionados.  Por ejemplo, un entorno con capas reflectantes o refractivas.  Utilice esta flecha para avanzar al entorno principal desde los detalles de reflexión o refracción.
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Currently selected material name
-Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
+#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Nombre de material actualmente seleccionado
+Muestra el nombre del entorno actual y el nivel de edición.  Por ejemplo, si hay un nivel reflectante o refractivo, se muestra ">". Es un buen lugar para ver si el entorno es actual.
 
-#### ![images/library_default.png](images/library_default.png) Tools Menu
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
+#### ![images/library_default.png](images/library_default.png) Menú Herramientas
+Muestra el [menú Herramientas](#tools-menu).  Este amplio menú contiene los comandos, las opciones y las utilidades relacionadas con los entornos.
 
-#### ![images/help_topics.png](images/help_topics.png) Help
+#### ![images/help_topics.png](images/help_topics.png) Ayuda
 
-## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [Lista de entornos](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
 {: #environment_list}
-This lists all the environments contained in the model. One Environment will be selected as the current environment. The current environment is used in the rendering. Yellow corners will show up surrounding the current Environment.
+Lista todos los entornos que contiene el modelo. Un entorno se seleccionará como entorno actual. El entorno actual se usa en el renderizado. Aparecerán esquinas amarillas alrededor del entorno actual.
 
-From this list:
+De esta lista:
 
-* Click on an Environment to make it current. Once selected the material's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
-* Scroll up and down in the list to see all the environments in the model.
-* Drag and drop an environment from this list onto any viewport to set it current.
-* Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
-* Right-click a thumbnail to display the Environment context menu
-* Right-click the blank area to display the New Environment Context Menu
+* Haga clic en un entorno para hacerlo actual. Una vez seleccionado, las propiedades del material se mostrarán en los paneles. Consulte [Propiedades de materiales de renderizado](#properties) para obtener más información
+* Desplácese hacia arriba y hacia abajo en la lista para ver todos los entornos del modelo.
+* Arrastre y coloque un entorno de esta lista en cualquier vista para definirla como actual.
+* Añada un nuevo entorno utilizando el botón Añadir nuevo ![images/add_material.png](images/add_material.png) que aparece en la parte inferior de la lista.
+* Haga clic con el botón derecho en una miniatura par ver el menú contextual de entorno
+* Haga clic con el botón derecho en el área en blanco para ver el menú contextual de nuevo entorno
 
-###  ![images/add_material.png](images/add_material.png) Add new environment
+###  ![images/add_material.png](images/add_material.png) Añadir nuevo entorno
 {: #add_environment}
-Scroll down to the bottom of the Environment list to see the add icon.
+Desplácese hasta la parte inferior de la lista de entornos para ver el icono de agregar.
 
-Opens the Render Content [library](libraries.html) of environments.
-The environments in the library act as templates for creating environments in the model.
+Abre la [librería](libraries.html) de entornos de Contenido de renderizado.
+Los entornos de la librería pueden utilizarse como plantillas para crear entornos en el modelo.
 
-### Environment Context Menu
+### Menú contextual de Entorno
 {: environment_context}
-This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+Este menú está disponible haciendo clic con el botón derecho en una lista de entornos.  Consulte el [menú Herramientas](#tools_menu) para obtener más información sobre las distintas opciones del menú.
 
-### New Environment Context Menu
+### Menú contextual de Nuevo entorno
 {: new_envrionment_context}
-This menus is available by right-clicking on a blank area of the Environment List.
+Este menú está disponible haciendo clic con el botón derecho en el area en blanco de la lista de entornos.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) Crear nuevo entorno
+Crea un nuevo entorno de Flamingo.
 
-#### ![images/import.png](images/import.png) Import Environment from File...
-Use this command to select a previously exported Environment.
+#### ![images/import.png](images/import.png) Importar entorno desde archivo...
+Utilice este comando para seleccionar un entorno previamente exportado.
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new environment based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) Pegar
+Crea un nuevo entorno basado en el contenido del portapapeles.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Pegar como instancia
+Crea un nuevo entorno basado en el contenido del portapapeles vinculado al original a través de instancias.
 
-#### ![images/grid.png](images/grid.png) Grid
-Displays the previews as a grid of thumbnails.
+#### ![images/grid.png](images/grid.png) Rejilla
+Muestra las vistas previas como rejilla de miniaturas.
 
-#### ![images/list.png](images/list.png) List
-Displays the previews as a list of thumbnails.
+#### ![images/list.png](images/list.png) Lista
+Muestra las vistas previas como lista de miniaturas.
 
-#### ![images/tree.png](images/tree.png) Tree
-Displays the previews as a tree showing nesting.
+#### ![images/tree.png](images/tree.png) Árbol
+Muestra las vistas previas en forma de árbol anidado.
 
-#### ![images/horizontal.png](images/horizontal.png) Horizontal Layout
-Displays the previews to the left of the controls.
+#### ![images/horizontal.png](images/horizontal.png) Disposición horizontal
+Muestra las vistas previas a la izquierda de los controles.
 
-#### ![images/showpreview.png](images/showpreview.png) Show Preview Pane
-Displays the preview properties for the currently-selected thumbnail. Set the preview geometry, size, background, rotation behavior.
+#### ![images/showpreview.png](images/showpreview.png) Panel de vista previa
+Muestra las propiedades de vista previa de la miniatura seleccionada. Define la geometría, el tamaño, el fondo y el comportamiento de rotación de la vista previa.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Float
-Floats the preview image in a re-sizable window.
+#### ![images/floatthumbnail.png](images/floatthumbnail.png) Flotante
+Pone flotante la imagen de vista previa en una ventana de tamaño ajustable.
 
-#### Thumbnails
+#### Miniaturas
 
-##### ![images/small.png](images/small.png) Small
-Sets the thumbnail size to the smallest size.
+##### ![images/small.png](images/small.png) Pequeño
+Define el tamaño de las miniaturas al tamaño más pequeño.
 
-##### ![images/medium.png](images/medium.png) Medium
-Sets the thumbnail size to medium size.
+##### ![images/medium.png](images/medium.png) Mediano
+Define el tamaño de las miniaturas al tamaño mediano.
 
-##### ![images/large.png](images/large.png) Large
-Sets the thumbnail size to large size.
+##### ![images/large.png](images/large.png) Grande
+Define el tamaño de las miniaturas al tamaño grande.
 
-##### ![images/showlabels.png](images/showlabels.png) Show Labels
-Displays thumbnail name labels when in Grid mode.
-List mode always displays labels.
+##### ![images/showlabels.png](images/showlabels.png) Mostrar etiquetas
+Muestra las etiquetas de los nombres de las miniaturas en el modo Rejilla.
+El modo Lista siempre muestra las etiquetas.
 
-##### ![images/showunits.png](images/showunits.png) Show Units
-Displays size in model units.
+##### ![images/showunits.png](images/showunits.png) Mostrar unidades
+Muestra el tamaño en unidades del modelo.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Auto-Update Preview
-Automatically updates all previews as settings change.
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Actualización automática de vista previa
+Actualiza automáticamente todas las vistas previas cuando cambia la configuración.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Update All Previews
-Update previews manually when Auto-Update Preview is off.
+##### ![images/updateallpreviews.png](images/updateallpreviews.png) Actualizar todas las vistas previas
+Actualiza las vistas previas manualmente cuando la Actualización automática de vista previa está desactivada.
 
 ## [Window Divider](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
 {: divider}
-Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
+Arrastre este divisor para cambiar la longitud de la Lista de entornos frente a la longitud de la sección de Propiedades de entorno.
 
 ## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
 {: properties}
 
 ### [Environment Name](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
 {: #name}
-This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. **Note:** Environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
+Nombre del entorno. El nombre de entorno también se guarda como nombre de archivo al exportar el entorno a la biblioteca. **Nota:** Los entornos se guardan en el modelo de Rhino, los entornos únicos pueden tener el mismo nombre en diferentes modelos de Rhino.
 
 ### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
 {: #panels}
-The Environment Properties section is filled with a number of direct Environment panels. Clicking on the grey title bar will rollup the environment panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+La sección Propiedades de entorno contiene varios paneles de Entorno. Al hacer clic en la barra de título gris se repliega el panel de Entorno y se oculta el contenido de ese panel.  Vuelva a hacer clic en el título de la barra para mostrar el contenido.
 
-Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
+Los paneles de entorno varían en función del tipo de entorno y el nivel del entorno actualmente activo. Para objeto más información sobre paneles de entorno específicos, consulte [Entorno de Flamingo](environment.html)
 
-## Tools Menu ![images/library_default.png](images/library_default.png)
+## Menú Herramientas ![images/library_default.png](images/library_default.png)
 {: tools_menu}
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
+Estas opciones también aparecen al hacer clic con el botón derecho en los menús contextuales de las previsualizaciones de miniaturas y el fondo de miniatura.
 
-#### ![images/currentenvironment.png](images/currentenvironment.png) Set as Current Environment
-This sets the target environment current.  The current environment will be used in the next rendering.
+#### ![images/currentenvironment.png](images/currentenvironment.png) Definir como entorno actual
+Define el entorno de destino como actual.  El entorno es actual se utilizará en el siguiente renderizado.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Create New Environment
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png) Crear nuevo entorno
+Crea un nuevo entorno de Flamingo.
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-These settings also appear on right-click context menus for the thumbnail previews and the thumbnail background.
+Estas opciones también aparecen al hacer clic con el botón derecho en los menús contextuales de las previsualizaciones de miniaturas y el fondo de miniatura.
 
-#### ![images/import.png](images/import.png) Import Material from File
-Imports environments from a saved Rhino .renv file.
+#### ![images/import.png](images/import.png) Importar material desde archivo
+Importa entornos desde un archivo .renv de Rhino guardado.
 
-#### ![images/savetofile.png](images/savetofile.png) Save to File
-Saves a environment to a Rhino .renv file.
+#### ![images/savetofile.png](images/savetofile.png) Guardar en archivo
+Guarda una entorno como archivo .renv de Rhino.
 
-#### ![images/changetype.png](images/changetype.png) Change Type
-Changes the environment to a different type.
+#### ![images/changetype.png](images/changetype.png) Cambiar tipo
+Cambia el tipo de entorno.
 
-#### ![images/changetype.png](images/changetype.png) Change Type (Copy Similar Settings)
-Changes the environment to a different type.
-The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
+#### ![images/changetype.png](images/changetype.png) Cambiar tipo (Copiar opciones similares)
+Cambia el tipo de entorno.
+El comportamiento predeterminado depende del estado actual de la casilla [Opciones: Renderizado](http://docs.mcneel.com/rhino/5/help/es-es/options/rendering.htm) >  [Copiar configuración similar cuando se modifica el tipo de contenido](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed). Si esta opción está activada, la configuración compatible del contenido antiguo se copiará a la nueva.
 
-#### ![images/reset.png](images/reset.png) Reset to Defaults
-Changes all the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
+#### ![images/reset.png](images/reset.png) Restaurar valores predeterminados
+Cambia todas las opciones de entorno a los valores predeterminados de Fondo de color sólido (Negro), Fondo reflejado, Cielo y Fondo refractado visible.
 
-#### ![images/copy.png](images/copy.png) Copy
-Copies the selected environment to the Windows Clipboard. The Clipboard can then be pasted into the editor to create a new environment or pasted directly into a folder to create a [library](libraries.html) file.
+#### ![images/copy.png](images/copy.png) Copiar
+Copia el entorno seleccionado al portapapeles de Windows. El contenido del portapapeles puede pegarse en el editor para crear un nuevo entorno o directamente en una carpeta para crear un archivo de [librería] (libraries.html).
 
-#### ![images/paste.png](images/paste.png) Paste
-Creates a new environment based on the contents of the Clipboard.
+#### ![images/paste.png](images/paste.png) Pegar
+Crea un nuevo entorno basado en el contenido del portapapeles.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Paste as Instance
-Creates a new environment based on the contents of the Clipboard that is linked to the original through instancing.
+#### ![images/pasteasinstance.png](images/pasteasinstance.png) Pegar como instancia
+Crea un nuevo entorno basado en el contenido del portapapeles vinculado al original a través de instancias.
 
-#### ![images/delete.png](images/delete.png) Delete
-Deletes the selected environment.
+#### ![images/delete.png](images/delete.png) Eliminar
+Elimina el entorno seleccionado.
 
-#### ![images/rename.png](images/rename.png) Rename...
-Renames the selected environment.
+#### ![images/rename.png](images/rename.png) Cambiar nombre...
+Cambia el nombre del entorno seleccionado.
 
-#### ![images/duplicate.png](images/duplicate.png) Duplicate
-Copies the selected environment to a new environment with the same settings.
+#### ![images/duplicate.png](images/duplicate.png) Duplicar
+Copia el entorno seleccionado a un nuevo entorno con la misma configuración.
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Remove Instancing
-Removes the connection between [instanced](#paste-as-instance) environments.
+#### ![images/removeinstancing.png](images/removeinstancing.png) Quitar referencias
+Quita la conexión entre los entornos [referenciados](#paste-as-instance).
 
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
-#### ![images/contentfilter.png](images/contentfilter.png) Content Filter
-Opens the [Content Filters](content_filters.html) dialog box.
+#### ![images/contentfilter.png](images/contentfilter.png) Filtro de contenido
+Abre el  cuadro de diálogo [Filtros de contenido](content_filters.html).
 
-#### ![images/rename.png](images/rename.png) Properties
-Opens the [Preview Properties](previewproperties.html) dialog box.
+#### ![images/rename.png](images/rename.png) Propiedades
+Abre el cuadro de diálogo [Propiedades de vista previa](previewproperties.html).

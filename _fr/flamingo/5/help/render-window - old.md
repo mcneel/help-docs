@@ -3,371 +3,371 @@
 
 <!-- TODO: This is a combination of the old information here and the Rhino render Windows.  These two still need to be combined. -->
 
-# Render Window
-The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rednering frameowrk.  For details on the rederwindow menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)
+# Rectangle Rendu
+La fenêtre de rendu offre des options pour régler l'exposition et ajouter des effets par post-traitement. Le cadre principal de la fenêtre de rendu fait partie du cadre de rendu de Rhino.  Pour plus d'informations sur les menus et icônes de la fenêtre de rendu, consultez la [rubrique sur la fenêtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm)
 
-### Pulldown Menus
-For details on the rederwindow menus and icons see the [Render Windows topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)
-
-
-### Toolbars
+### Menus déroulants
+Pour plus d'informations sur les menus et icônes de la fenêtre de rendu, consultez la [rubrique sur la fenêtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm)
 
 
-### Save with background alpha channel
+### Barres d'outils
+
+
+### Enregistrer avec le canal alpha de l'arrière-plan
 {: #save-with-alpha-channel}
-Saves image 32-bit PNG, TIF, and BMP including alpha channel background. The Alpha channel versions of the file formats are used for high-quality compositing. Backgrounds will appear black when the rendering is saved with Alpha channel.
+Enregistre une image 32 bits au format PNG, TIF ou BMP avec l'arrière-plan du canal alpha. Les versions canal alpha des formats de fichier sont utilisées pour la composition haute qualité. Les arrière-plans apparaîtront en noir lorsque le rendu sera enregistré avec le canal alpha.
 
-### Export to native Flamingo nXt file (.nXtImage)
+### Exporter vers un fichier natif de Flamingo nXt (.nXtImage)
 {: #export-to-nxtimage}
-Saves uncompressed luminance and color information. Saves all rendered channels including [alpha](environment-tab.html#alpha). The nXtImage files can be opened in the [Image Editor](image-editor.html) where [exposure](#adjust-image) and [post-processing effects](#effects) can be applied and the image re-saved to another bitmap format.
-The .nXtImage format is the native image format of the nXt renderers. It is the recommended format for storing your renderings, since it preserves the most information about your rendering. Images stored in this format can be manipulated in the [nXt Image Editor](image-editor.html) and special effects can be added. From this editor, you can save to many popular standard formats, including all of the formats supported in nXt. You can also save to [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/) format.
+Enregistre les informations de couleur et de luminance non comprimées. Enregistre tous les canaux de rendu, y compris le canal [alpha](environment-tab.html#alpha). Les fichiers nXt Image peuvent être ouverts dans l'[éditeur d'images](image-editor.html). Vous pouvez alors ajuster l'[exposition](#adjust-image) et appliquer des [effets](#effects) avant d'enregistrer l'image dans un autre format.
+Le format .nXtImage est le format d'image natif des moteurs de rendu nXt. Ce format est recommandé pour l'enregistrement de vos rendus car il conserve la plupart des informations sur votre rendu. Les images enregistrées dans ce format peuvent être manipulées dans l'[éditeur d'images nXt](image-editor.html) et des effets spéciaux peuvent être ajoutés. Cet éditeur permet d'enregistrer dans de nombreux formats standards, y compris tous les formats pris en charge dans nXt. Il est également possible d'enregistrer au format [Piranesi EPix file (.epx)](http://www.piranesi.co.uk/).
 
-### Export to HDR file
+### Exporter vers un fichier HDR
 {: #export-to-hdr}
-Saves uncompressed luminance and color information. The .hdr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
+Enregistre les informations de couleur et de luminance non comprimées. Le format .hdr enregistre les données de luminance directement dans un format à grande plage dynamique. Les arrière-plans sans luminance, comme les photographies normales, apparaîtront en noir s'ils sont enregistrés dans un de ces formats.
 
-### Export to EXR file
+### Exporter vers un fichier EXR
 {: #export-to-exr}
-A&#160;high-dynamic-range image file format, released as an&#160;open standard&#160;along with a set of software tools created by&#160;Industrial Light and Magic (ILM), released under a&#160;free software license. This file format supports 16-bits-per-channel&#160;floating-point&#160;values (half precision) with a sign bit, five bits of exponent, and a ten-bit&#160;mantissa. This allows a dynamic range of over thirty&#160;stops&#160;of exposure. See: [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
-The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, will appear black when saved in one of these formats.
+Format de fichier image à grande plage dynamique créé par la société Industrial Light and Magic (ILM) et distribué sous forme de licence libre. Ce format de fichier gère les nombres flottants en 16 bits par canal avec un bit pour le signe, cinq bits pour l'exposant et dix bits pour la mantisse. Ceci permet d'avoir une plage dynamique de plus de trente niveaux d'exposition. Voir : [Article de Wikipedia : OpenEXR](http://fr.wikipedia.org/wiki/OpenEXR).
+Le format EXR enregistre les données de luminance directement dans un format à grande plage dynamique. Les arrière-plans sans luminance, comme les photographies normales, apparaîtront en noir s'ils sont enregistrés dans un de ces formats.
 
-## Exit
-Closes the render window.
+## Quitter
+Ferme la fenêtre de rendu.
 
-##  [Flamingo Tab Render Window](render-window.html#help)
+##  [Fenêtre de rendu, Onglet Flamingo](render-window.html#help)
 
-## Progress
+## Avancement
 {: #progress}
 
 ### Action
 
-### Pass
+### Passe
 
-### Scan line
+### Ligne de balayage
 
-### Elapsed time
+### Temps total écoulé
 
-### Rays / second
+### Rayons / seconde
 
-### Pixels / second
+### Pixels / seconde
 
-## Render Constraints
+## Contraintes de rendu
 {: #number-of-passes}
 {: #time}
 {: #render-constraints}
 {% include_relative snippets/snippet-renderconstraints.md %}
-## Adjust Image
+## Ajuster l'image
 {: #adjust-image}
-The settings that control the screen display also control any image file made from that display. Multiple image files with different exposure settings can be saved from a single rendering. The exposure settings for one rendered image will be applied to the next.
-This adjustment process is called *tone mapping.* Tone mapping is the process of converting the luminance data used by Flamingo nXt into&#160;Red, Green, and Blue (RGB) pixels that can be displayed or printed.
+Les paramètres qui contrôlent l'affichage à l'écran contrôlent aussi tous les fichiers image créé à partir de cet affichage. Plusieurs fichiers image avec des paramètres d'exposition différents peuvent être enregistrés à partir d'une seul rendu. Les paramètres d'exposition définis pour une image rendue seront appliqués à la suivante.
+Ce procédé est appelé *adaptation des tons.* L'adaptation des tons est le procédé de conversion des données de luminance utilisées par nXt en pixels rouges, verts et bleus (RVB) qui peuvent être affichés ou imprimés.
 
-### Brightness
+### Luminosité
 {: #brightness}
-Adjusts the overall brightness of the image. For example, if a white surface in the model is rendering gray, increase the brightness until the surface appears white. Or, if the exterior scene seems overexposed, decrease the brightness until the scene appears more correct.
+Ajuste la luminosité générale de l'image. Par exemple, si une surface blanche est rendue en gris, augmentez la luminosité jusqu'à ce que la surface apparaisse blanche. Ou, si une scène extérieure semble surexposée, diminuez la luminosité jusqu'à ce que les résultats soient plus corrects.
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*Brightness at default (left) and increased.*
+*Luminosité par défaut (gauche) et augmentée.*
 {% include_relative snippets/snippet-brightness.md %}
-### Burn
+### Densité
 {: #burn}
-Adjusts the image white point. This is the brightest white color in the image. Burn can add drama, life,&#160;and sharpness to a rendering by adding more areas of white to contrast with the dark areas.
-See [Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point).
+Ajuste le point blanc de l'image. Il s'agit de la couleur blanche la plus claire de l'image. La densité peuvent apporter un effet de scène, de la vie et de la netteté au rendu en ajoutant plus de zones de blanc afin de contraster avec les zones sombres.
+Voir l'article de Wikipedia : Point blanc](https://fr.wikipedia.org/wiki/Point_blanc).
 ![images/burn-001.png](images/burn-001.png)
-*Burn at the default setting (left) and increased.*
+*Densité par défaut (gauche) et augmentée.*
 
 ### Saturation
 {: #saturation}
-Saturation controls the amount of color in the image. A saturation of 0.00 will result in a grayscale image. Values above 1.00 can make colors richer.
+La saturation contrôle la quantité de couleurs d'une image. Une saturation nulle donnera une image en échelle de gris. Les valeurs supérieures à 1 peuvent donner des couleurs plus  extrêmes.
 ![images/saturationdefault.png](images/saturationdefault.png)
-*Saturation at the default (left) and increased by about 3 (right).*
+*Saturation par défaut (gauche) et multipliée par 3 (droite).*
 
-### Histogram
+### Histogramme
 {: #histogram}
-Graphically displays the distribution of the light and dark areas in the image.
-See: [Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram). The internet has many articles about using histograms to evaluate exposure in digital photography. The principles are the same for rendering.
+Affiche la distribution de la lumière et des zones sombres de l'image.
+Voir : [Article de Wikipedia : Histogramme](https://fr.wikipedia.org/wiki/Histogramme). Internet contient de nombreux articles sur l'utilisation des histogrammes pour évaluer l'exposition en photographie numérique. Les principes sont les mêmes pour le rendu.
 ![images/histogram.png](images/histogram.png)
-*Histogram.*
+*Histogramme.*
 
-#### Histogram options
+#### Options de l'histogramme
 
->Right-click the histogram image for options
+>Cliquez avec le bouton de droite sur l'image de l'histogramme pour voir les options
 
-#### Fit
+#### Ajuster
 
-#### Median
+#### Médiane
 
-#### Mean
+#### Moyenne
 
-#### Show Sorted Graph
+#### Afficher le diagramme trié
 
-#### Show Scale
+#### Afficher l'échelle
 
-#### Graph Color
+#### Couleur du diagramme
 
-#### Show Luminance Values
+#### Afficher les valeurs de luminance
 
-### Lock exposure
+### Verrouiller l'exposition
 {: #lock-exposure}
-When the exposure settings are locked, changing the lighting will not adjust the exposure to compensate.
+Si les paramètres d'exposition sont verrouillés, lorsque vous changez l'éclairage, l'exposition n'est pas modifiée en fonction.
 
-## Information
+## Informations
 {: #information}
 
-### Resolution
-Displays the [render resolution](render-tab.html#resolution).
+### Résolution
+Affiche la [résolution de rendu](render-tab.html#resolution).
 
 ### Faces
-Displays the number of mesh faces used to render the model.
+Affiche le nombre de faces de maillage utilisées pour rendre le modèle.
 
-### Apparent faces
-When there are blocks in the model, Flamingo nXt is able to use the block definition to render block instances without remeshing each instance. The **Apparent faces** display shows how many additional temporary faces are generated.
+### Faces apparentes
+Lorsque le modèle contient des blocs, Flamingo nXt peut utiliser la définition de bloc pour rendre les instances sans mailler chaque instance séparément. L'affichage des faces apparentes montre combien de faces temporaires supplémentaires sont générées.
 
-## Pixel information
-Window point
-Image point
-Image Y-Up
-Pixel color
+## Informations sur le pixel
+Point dans la fenêtre
+Point sur l'image
+Coordonnée Y dans l'image
+Couleur du pixel
 Luminance
 Distance
 
-## Lighting information
+## Informations sur l'éclairage
 
-###  [Presets](lighting-tab.html)
+###  [Préréglages](lighting-tab.html)
 
-###  [Sun](sun-and-sky-tabs.html#sun)
+###  [Soleil](sun-and-sky-tabs.html#sun)
 
-###  [Sky](sun-and-sky-tabs.html#sky)
+###  [Ciel](sun-and-sky-tabs.html#sky)
 
-###  [Lights](lights-tab.html)
+###  [Lumières](lights-tab.html)
 
-###  [Indirect](lighting-advanced-tab.html#indirect)
+###  [Indirecte](lighting-advanced-tab.html#indirect)
 
-###  [Ambient On/Off](lighting-advanced-tab.html#ambient)
+###  [Lumière ambiante Activée/Désactivée](lighting-advanced-tab.html#ambient)
 
-## Channels
+## Canaux
 {: #channels}
-Displays the status of the lighting channels.
+Affiche le statut des canaux d'éclairage.
 
-## Effects
+## Effets
 {: #post-process-effects}
 {: #effects}
-Post-processing effects are applied after the image is rendered. These can be turned on and off and re-ordered in the list. Each effect has its own settings.
+Les effets de post-traitement sont appliqués après le rendu de l'image. Ils peuvent être activés et désactivés et l'ordre de la liste peut être modifié. Chaque effet a ses propres paramètres.
 
-## Effects Options
-These options are also available from a context menu.
+## Options des effets
+Ces options sont également disponibles dans un menu contextuel.
 
->Right-click an effect to display the context menu.
+>Cliquez avec le bouton de droite sur un effet pour afficher le menu contextuel.
 
-![images/toggleeffect.png](images/toggleeffect.png)Toggle the on/off state of the selected effect.
-![images/moveup.png](images/moveup.png)Move the selected effect up in the list.
-![images/movedown.png](images/movedown.png)Move the selected effect down in the list.
-![images/effectproperties.png](images/effectproperties.png)Selected effect properties.
-![images/savelistorderasdefault.png](images/savelistorderasdefault.png)Save the current effects list order and properties as default.
-![images/savecurrenteffectslist.png](images/savecurrenteffectslist.png)Save the current effects list as named list.
-![images/importnamedeffectslist.png](images/importnamedeffectslist.png)Import named effects list.
+![images/toggleeffect.png](images/toggleeffect.png)Activer/désactiver l'effet sélectionné.
+![images/moveup.png](images/moveup.png)Déplacer l'effet sélectionné vers le haut dans la liste.
+![images/movedown.png](images/movedown.png)Déplacer l'effet sélectionné vers le bas dans la liste.
+![images/effectproperties.png](images/effectproperties.png)Propriétés de l'effet sélectionné.
+![images/savelistorderasdefault.png](images/savelistorderasdefault.png)Enregistre comme valeur par défaut l'ordre actuel des effets ainsi que les propriétés.
+![images/savecurrenteffectslist.png](images/savecurrenteffectslist.png)Enregistre et donne un nom à la liste d'effets actuelle.
+![images/importnamedeffectslist.png](images/importnamedeffectslist.png)Importer une liste nommée d'effets.
 
-## Depth of Field
+## Profondeur de champ
 {: #postprocessingdof}
-The Depth of Field effect blurs the image depending on the distance from the camera.
+L'effet de profondeur de champ estompe l'image en fonction de la distance à partir de la caméra.
 ![images/postprocessing-dof.png](images/postprocessing-dof.png)
 
-## Depth of Field Properties
+## Propriétés de la profondeur de champ
 {: #depth-of-field-properties}
 
-### Visual Properties
+### Propriétés visuelles
 {: #dofvisualproperties}
 
-#### Blurring strength
+#### Intensité du flou
 {: #dofblurringstrength}
-Determines the amount of blurring. This is an arbitrary value and different values will work better with different images.
+Détermine la quantité de flou dans l'image. Il s'agit d'une valeur arbitraire et des valeurs très différentes donneront des résultats intéressants dans différentes images.
 
-#### Max blurring
+#### Flou maximum
 {: #dofmaxblurring}
-Determines the maximum blurring radius used. Since extremely blurred areas can cause the effect to be slow, this limits the effect.
+Détermine le rayon maximum de flou utilisé. Étant donné que les zones très floues peuvent rendre l'application de cet effet assez lente, cette option permet de limiter l'effet.
 
-### Area of Effect
+### Zone d'effet
 {: #dofareaofeffect}
 
-#### Focal distance
+#### Distance focale
 {: #dofocaldistance}
-The distance from the camera at which the image is in focus (not blurry).
+Indique la distance à partir de la caméra sur laquelle l'image est nette.
 
-#### Pick
-Pick a location on the image to set the focal distance.
+#### Sélectionner
+Cliquer dans l'image pour définir la distance focale.
 
-#### Blur background
+#### Arrière-plan flou
 {: #dofblurbackground}
-Determines whether the background is blurry. The background will be blurred at the maximum effect.
+Détermine si l'arrière-plan est également flou. L'arrière-plan reçoit le flou maximal.
 
-## Fog
+## Brouillard
 {: #postprocessingfog}
-The fog effect adds depth-dependent coloration in the image. This effect can be used to add a thick fog effect or a subtle depth cue.
+L'effet de brouillard ajoute à l'image une coloration en fonction de la profondeur. Cet effet peut être utilisé pour ajouter un brouillard épais ou un effet subtil de profondeur.
 ![images/postprocessing-nofog.png](images/postprocessing-nofog.png)
-*No post processing effects.*
+*Aucun effet n'est appliqué.*
 
-### Fog as Gradient Background
-Fog can be used to create a gradient background.
-In this case the settings to create the background are as follows:
-Strength = 1Noise = .1Fog Color = BlackEnd distance = approximately 110Start distance = approximately 90Fog Background = OnFeathering = 80
+### Brouillard comme arrière-plan dégradé
+Le brouillard peut être utilisé pour créer un arrière-plan dégradé.
+Dans ce cas, les paramètres de création de l'arrière-plan sont les suivants :
+Intensité = 1 Bruit = .1 Couleur du brouillard = Noire Distance finale = environ 110 Distance de départ = environ 90 Arrière-plan avec brouillard = Activé Tremblement = 80
 ![images/postprocessing-fogasgradient.png](images/postprocessing-fogasgradient.png)
-*Fog as gradient background.*
+*Brouillard comme arrière-plan dégradé.*
 
-## Fog Properties
+## Propriétés de brouillard
 {: #fogsettings}
 
-### Visual properties
+### Propriétés visuelles
 {: #fogvisualproperties}
-Determines the appearance of the fog effect.
+Détermine l'apparence de l'effet de brouillard.
 
-#### Strength
+#### Intensité
 {: #fogstrength}
-Determines the maximum amount of fogginess. Setting Strength to 0.0 turns the effect off; setting Strength to 1.0 represents total fog. Values higher than 1.0 can be used but only make sense when used with the **Noise**.
+Détermine la quantité maximum de brouillard. Si l'intensité est égale à 0, l'effet est désactivé ; si elle est égale à 1, l'effet est à son maximum. Des valeurs supérieures à 1 peuvent être utilisées mais ceci n'a de sens que si le Bruit est activé**.
 
-#### Noise
+#### Bruit
 {: #fognoise}
-Adds a random variation to Fog **Strength**.
+Ajoute un effet aléatoire à l'intensité du brouillard**.
 
-#### Color
+#### Couleur
 {: #fogcolor}
-Specifies the fog color.
+Indique la couleur du brouillard.
 
->Click the color swatch to select a color from the [Select color](select-color.html) dialog box.
->Click the **Pick** button to select the color from the rendered image.
+>Cliquez sur la palette de couleurs pour sélectionner une couleur dans la boîte de dialogue [Sélectionner une couleur](select-color.html).
+>Cliquez sur le bouton Sélectionner pour sélectionner la couleur dans l'image rendue.
 
-### Area of effect
-Determines the area encompassed by the fog effect.
+### Zone d'effet
+Détermine la zone concernée par le brouillard.
 
-#### Start distance
+#### Distance de départ
 {: #fogstartdistance}
-Specifies the distance from the camera at which the fog begins to appear.
+Indique la distance entre la caméra et le point où le brouillard commence à apparaître.
 
->Click the **Pick** button to pick the depth from the rendered image.
+>Cliquez sur le bouton Sélectionner pour indiquer la profondeur dans l'image rendue.
 
-#### End distance
+#### Distance finale
 {: #fogenddistance}
-Specifies the distance from the camera at which the maximum amount of fogginess is achieved.
+Indique la distance entre la caméra et le niveau maximal de brouillard.
 
->Click the **Pick** button to pick the depth from the rendered image.
+>Cliquez sur le bouton Sélectionner pour indiquer la profondeur dans l'image rendue.
 
-### Bounds (Left, Right, Top, Bottom)
+### Limites (gauche, droite, haut, bas)
 {: #fogbounds}
-Specifies the area of the image affected by the fog. This can be used to create a low-lying mist effect.
-Click the **Pick Area** button to pick bounding area from the rendered image.
+Indique la zone de l'image affectée par le brouillard. Cette option peut être utilisée pour représenter de légers nuages bas.
+Cliquez sur le bouton Sélectionner une zone pour indiquer la zone d'application dans l'image rendue.
 
-### Fog
+### Brouillard
 
-#### Fog background
-Determines whether the background image is also made foggy. The background will be fogged at the maximum strength.
+#### Arrière-plan avec brouillard
+Détermine si le brouillard est aussi appliqué à l'image en arrière-plan. Au niveau de l'arrière-plan, l'intensité du brouillard sera à son maximum.
 
-#### Feathering
+#### Tremblement
 {: #fogfeathering}
-Determines the number of pixels outside the bounding area to “fade in” the fogginess.
+Détermine le nombre de pixels en dehors de la zone d'application où le brouillard disparaîtra petit à petit.
 
-### Preview
-Preview the effect on the image as you change the values.
+### Aperçu
+Permet de voir l'effet sur l'image lorsque vous changez les valeurs.
 
-## Glare
+## Éclat
 {: #postprocessingglare}
-Glare and Glow are very similar. Whereas Glow uses a selected color, Glare pushes the color to white. Glare makes extremely bright parts of the image appear to glare. It does this by making the area surrounding the bright area brighter. This very subtle effect is usually used for night scenes where it will make the lights seem much more realistic.
+L'éclat et l'incandescence sont très similaires. L'incandescence utilise une couleur sélectionnée alors que l'éclat pousse la couleur vers le blanc. Avec l'éclat, les zones extrêmement claires de l'image semblent briller. Pour ce faire, la zone entourant la zone claire est éclaircie. Cet effet très subtile est utilisé normalement pour les scènes de nuit car il rend les lumières encore plus réalistes.
 ![images/postprocessing-noglare.png](images/postprocessing-noglare.png)
-*Glare off (left) and on (right).*
+*Éclat désactivé (gauche) et activé (droite).*
 
-## Glare Properties
+## Propriétés de l'éclat
 {: #glaresettings}
 
-### White point bound
+### Limite du point blanc
 {: #glarewhitepointbound}
-Determines where in the tonal range the glare will begin. The value is represented on the histogram and can be adjusted graphically. Pixels lighter than the **White Point Bound** (in either luminance or the grey-scale value) will glare.
+Détermine où commence l'éclat dans la gamme de tons. La valeur est représentée sur l'histogramme et peut aussi être réglée directement sur celui-ci. Les pixels plus clairs que la limite du point blanc (en termes de luminance ou en valeur sur l'échelle des gris) brilleront.
 
-### Glare size
+### Taille de l'éclat
 {: #glaresize}
-The radius of the glare around the bright pixel.
+Le rayon de l'éclat autour du pixel clair.
 
 ### Gain
 {: #glaregain}
-Multiplier for the lightness of the glare. The default value of 1.0 should result in normal glare effects. Use higher values for extremely bright glare.
+Multiplicateur de la luminosité de l'éclat. La valeur par défaut est égale à 1 et elle devrait donner des effets normaux. Utilisez des valeurs supérieures pour un éclat extrêmement clair.
 
-### Use photometric information
+### Utiliser les informations photométriques
 {: #glareusephotometric}
-When using photometric information, the amount of glare is controlled by how &quot;whiter than white&quot; the pixel is. Otherwise, the effect uses the whitest pixels in the image.
+En mode photométrique, la quantité d'éclat est contrôlée en déterminant dans quelle mesure le pixel est "plus blanc que blanc". Sinon, l'effet utilise les pixels les plus blancs de l'image.
 
-### Histogram
+### Histogramme
 {: #glarehistogram}
-Graphically displays the distribution of the light and dark.
+Affiche la distribution des zones sombres et claires.
 
-#### Histogram options
+#### Options de l'histogramme
 
->Right-click the histogram image for options
+>Cliquez avec le bouton de droite sur l'image de l'histogramme pour voir les options
 
-#### Fit
+#### Ajuster
 
-#### Median
+#### Médiane
 
-#### Mean
+#### Moyenne
 
-#### Show Sorted Graph
+#### Afficher le diagramme trié
 
-### Preview
-Preview the effect on the image as you change the values.
+### Aperçu
+Permet de voir l'effet sur l'image lorsque vous changez les valeurs.
 
-## Glow
+## Incandescence
 {: #postprocessingglow}
-The Glow effect produces a bright area around specific colors. It can be used to make colored lights or objects like neon lights appear to glow. Select up to 10 colors to affect in the image.
-In the illustration, a red color from the ruby is used with the gain set so that the color becomes close to white.
+L'effet incandescent produit une zone claire autour de couleurs spécifiques. Il peut être utilisé pour faire briller les lumières colorées et les néons par exemple. Vous pouvez sélectionner jusqu'à 10 couleurs sur lesquelles appliquer cet effet.
+Dans l'illustration ci-contre, l'effet est appliqué sur une des couleurs rouges du rubis et le gain est défini de sorte que la couleur se rapproche du blanc.
 ![images/postprocessing-glowassparkle.png](images/postprocessing-glowassparkle.png)
-*Glow as sparkle.*
+*L'incandescence pour faire scintiller un objet.*
 ![images/postprocessing-glowon.png](images/postprocessing-glowon.png)
-*Glow off (left) and on (right).*
+*Incandescence désactivée (gauche) et activée (droite).*
 
-## Glow Properties
+## Propriétés de l'incandescence
 {: #glowsettings}
 
-### On
-Turns glow for the corresponding color on.
+### Activé
+Active l'incandescence sur la couleur correspondante.
 
-### Color
+### Couleur
 {: #glowcolor}
-Specifies the glow color.
+Indique la couleur de l'incandescence.
 
->Click the color swatch to select a color from the [Select color](select-color.html) dialog box.
->Click the **Pick** button to select the color from the rendered image.
+>Cliquez sur la palette de couleurs pour sélectionner une couleur dans la boîte de dialogue [Sélectionner une couleur](select-color.html).
+>Cliquez sur le bouton Sélectionner pour sélectionner la couleur dans l'image rendue.
 
-### Sensitivity
+### Sensibilité
 {: #glowsensitivity}
-Controls how much variation on the selected color is permitted when calculating glow on pixels close to that color.
+Contrôle la variation permise sur la couleur sélectionnée lors du calcul de l'incandescence sur des pixels proches de cette couleur.
 
-### Glow Size
+### Taille de l'incandescence
 {: #glowsize}
-The radius of the glow around the bright pixel.
+Le rayon de l'incandescence autour du pixel clair.
 
 ### Gain
 {: #glowgain}
-Multiplier for the lightness of the glow. The default value of 1.0 should result in normal glow effects. Use higher values for extremely bright glow.
+Multiplicateur de la luminosité de l'incandescence. La valeur par défaut est égale à 1 et elle devrait donner des effets normaux. Utilisez des valeurs supérieures pour une incandescence extrêmement claire.
 
-### Preview
-Preview the effect on the image as you change the values.
+### Aperçu
+Permet de voir l'effet sur l'image lorsque vous changez les valeurs.
 
-## Wires &amp; Text
+## Fils et texte
 {: #postprocessingwireframe}
-Overlays curves, text, dimensions, isocurves, mesh edges, and point objects over the rendered image.
+Reproduit les courbes, les textes, les cotes, les courbes isoparamétriques, les bords de maillage et les objets ponctuels dans l'image rendue.
 ![images/posteffectwires-001.png](images/posteffectwires-001.png)
-*With (left) and without Wires &amp; Text (right).*
+*Avec (gauche) et sans Fils et texte (droite).*
 
-## Wires and Text Properties
+## Propriétés de l'option Fils et texte
 
-### Curves
-Displays curve objects.
+### Courbes
+Affiche les courbes.
 
-### Dimensions and text
-Displays dimension and text objects.
+### Cotes et texte
+Affiche toutes les cotes et tous les objets de texte.
 
-### Isocurves
-Displays surface isoparametric curves.
+### Courbes isoparamétriques
+Affiche les courbes isoparamétriques des surfaces.
 
-### Mesh edges
-Displays mesh edges.
+### Bords de maillage
+Affiche les bords des maillages.
 
 ### Points
-Displays point objects.
+Affiche les objets ponctuels.
 
-### Preview
-Preview the effect on the image as you change the values.
+### Aperçu
+Permet de voir l'effet sur l'image lorsque vous changez les valeurs.

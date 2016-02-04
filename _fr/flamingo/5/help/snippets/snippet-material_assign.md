@@ -1,13 +1,13 @@
-### Assign material by
-Using a plug-in library, rendering properties can be assigned to layers, or to objects that will be used with the basic Rhino renderer.
+### Assigner un matériau par
+Des propriétés de rendu peuvent être assignées aux calques ou aux objet à l'aide d'une bibliothèque d'un module afin de les utiliser dans le moteur de rendu de base de Rhino.
 
-#### Layer
-The object inherits the render material assigned to the layer. To change the material assignment of the layer, use the [ **Layers** ](layer.html) dialog box.
- **Note** : Deleting a material from the ** [Material Editor](materialeditor.html) **, returns all objects that had the deleted material assigned to assignment by layer.
+#### Calque
+Le matériau de rendu de l'objet est celui assigné au calque. Pour changer le matériau assigné à un calque, utilisez la boîte de dialogue [**Calques** ](layer.html) .
+ **Remarque** : Lorsqu'un matériau est supprimé dans l'**[éditeur de matériaux](materialeditor.html) **, tous les objets qui possédaient ce matériau retrouvent une assignation par calque.
 
 #### Parent
-The object inherits the render material from its parent object.
+Le matériau de rendu de l'objet est défini à partir de l'objet parent.
 
-#### Object
-Render materials are assigned to individual objects and are used by Rhino's built-in renderer.
-See ** [MaterialEditor](materialeditor.html) **.
+#### Objet
+Les matériaux de rendu sont assignés aux objets et sont utilisés par le système de rendu intégré dans Rhino.
+Voir ** [ÉditeurMatériaux](materialeditor.html) **.

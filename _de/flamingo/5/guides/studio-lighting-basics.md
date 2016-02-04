@@ -12,7 +12,7 @@ Für die elementarste Studiobeleuchtung wird ein Haupt- (1), ein Füll- (2) und 
 
 ## Kamerawinkel
 {: #cameraangle}
-Die Lichteinstellungen hängen immer vom Winkel der Kamera zum Objekt ab. Am besten beginnen Sie damit, den Kamerawinkel zu definieren. Verwenden Sie die Befehle **Kamera oder **BenannteAnsicht**, um Position und Winkel der Kamera einzustellen. So können Sie die Position der Lichter bestimmen.
+Die Lichteinstellungen hängen immer vom Winkel der Kamera zum Objekt ab. Am besten beginnen Sie damit, den Kamerawinkel zu definieren. Verwenden Sie die Befehle **Kamera** oder **BenannteAnsicht**, um Position und Winkel der Kamera einzustellen. So können Sie die Position der Lichter bestimmen.
 
 ## Grundeinstellung mit drei Lichtern
 {: basic-three-light-setup}
@@ -34,7 +34,7 @@ Auf dem Bild ist der Schatten links neben der Nase und entlang der linken Seite 
 
 ### Hinterlicht
 {: #backlight}
-Der Hinterlichteffekt ist subtil kann aber die Kanten von Objekten in der Szene definieren und dient zur Steigerung der Tiefe und Hintergrundabhebung der Objekte. Hinterlichter werden meistens hinter und oberhalb des Objekts platziert und sind gegen die Kamera gerichtet.
+Der Hinterlichteffekt ist subtil, kann aber die Kanten von Objekten in der Szene definieren und dient zur Steigerung der Tiefe und Hintergrundabhebung der Objekte. Hinterlichter werden meistens hinter und oberhalb des Objekts platziert und sind gegen die Kamera gerichtet.
 Die Wirksamkeit von Hinterlichtern hängt zum Teil vom Reflexionsvermögen der beleuchteten Flächen ab.
 Im Bild hilft das Licht oberhalb der Schultern dabei, das Sujet vom Hintergrund abzuheben. Das Hinterlicht macht auch die Schatten weicher und erhellt die Fläche, auf der das Objekt liegt.
 ![images/studiolighting-003.png](images/studiolighting-003.png)

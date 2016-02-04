@@ -1,4 +1,4 @@
 
-#### Sun channel
+#### Canale sole
 {: sun-channel}
-Specify the [lighting channel](lights-tab.html#channel) the Sun will render to. It is very useful to place the Sun on a specific channel when trying to balance the sun strength with other light sources. The default channel is 0. Rendering to a channel will allow the strength of the sunlight to be quickly adjusted after a rendering without the need to re-render.
+Specificare il [canale di illuminazione](lights-tab.html#channel) su cui verrà renderizzato il Sole. Sistemare il Cielo su un canale specifico è molto utile quando si cerca di equilibrare l'intensità del sole con altre sorgenti luminose. Il canale predefinito è lo 0. Renderizzare su un canale fa sì che l'intensità della luce solare venga regolata velocemente dopo un rendering senza il bisogno di renderizzare di nuovo.

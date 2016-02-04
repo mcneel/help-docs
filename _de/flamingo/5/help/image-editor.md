@@ -10,10 +10,10 @@ Mit dem nXt-Bildeditor können Sie:
 > die Einstellungen des [Tonreglers](image-editor.html#tone-mapping) anpassen.
 > die Intensität eines beliebigen Beleuchtungskanals ändern.
 > besondere, bildgestützte Effekte hinzufügen: [Dunst](image-editor.html#haze), [Tiefenschärfe](image-editor.html#depth-blur) und [Scheinen](image-editor.html#glare).
-> ein Tone-Mapping-Bild in ein Bitmap-Format wie JPG oder PNG [speichern](image-editor.html#save-tonemapped-image-as).
+> ein Tone-Mapping-Bild in einem Bitmap-Format wie JPG oder PNG [speichern](image-editor.html#save-tonemapped-image-as).
 > die Luminanzinformationen in einem [HDR-Format](image-editor.html#save-hdr-image-as) speichern.
-> zusätzliche Kanäle ( [Alpha](image-editor.html#alpha-channel), [Abstand](image-editor.html#distance-channel), [Material](image-editor.html#material-channel) ) zur Verwendung in fortgeschrittenen Kompositionen anzeigen und speichern.
-> ein [Piranesi©](http://www.piranesi.co.uk/)-Bild (*.epx) speichern, das für fotorealistischen Renderings verwendet werden kann.
+> zusätzliche Kanäle ([Alpha](image-editor.html#alpha-channel), [Abstand](image-editor.html#distance-channel), [Material](image-editor.html#material-channel)) zur Verwendung in fortgeschrittenen Kompositionen anzeigen und speichern.
+> ein [Piranesi©](http://www.piranesi.co.uk/)-Bild (*.epx) speichern, das für fotorealistische Renderings verwendet werden kann.
 > [Bildarithmetik](image-editor.html#arithmetic) für Aufgaben wie das Zusammenfügen eines Bilds verwenden, das mithilfe einer Renderfarm erzeugt wurde.
 > die für das Rendering verwendeten [Beleuchtungseinstellungen](image-editor.html#save-lighting-settings-as) speichern. Diese Beleuchtungseinstellungen können verwendet werden, um weitere Renderings zu erzeugen.
 
@@ -44,7 +44,7 @@ Speichert das bearbeitete Bild als Bitmap-Datei.
  * PNG mit Alphakanal (.png)
  * [Piranesi-EPix-Datei (.epx)](http://www.piranesi.co.uk/)
 
-Piranesi ist ein 3D-Malprogramm, das Bilder erzeugt, die von Hand gezeichnet scheinen.
+Piranesi ist ein 3D-Malprogramm zur Erzeugung von Bildern, die von Hand erstellt scheinen.
 
 ### HDR-Bild speichern unter
 {: #save-hdr-image-as}
@@ -55,12 +55,12 @@ Piranesi ist ein 3D-Malprogramm, das Bilder erzeugt, die von Hand gezeichnet sch
 
 ### Maske speichern
 {: #save-mask}
-nXtImage-Bilder enthalten drei zusätzliche Kanäle, die in den meisten Bitmap-Editoren als Masken für fortgeschrittene Komposition verwendet werden können. Diese Kanäle enthalten Alpha-, Abstands- und Materialinformationen für jedes Pixel, in einem Grauskalabild codiert. Jeder Kanal kann in eine .png Datei gespeichert und visualisiert werden.
+nXtImage-Bilder enthalten drei zusätzliche Kanäle, die in den meisten Bitmap-Editoren als Masken für fortgeschrittene Komposition verwendet werden können. Diese Kanäle enthalten in einem Graustufenbild codierte Alpha-, Abstands- und Materialinformationen für jedes Pixel. Jeder Kanal kann in eine PNG-Datei gespeichert und visualisiert werden.
 
 ##### Hinweise:
 
  1. Der Alpha-Kanal kann mit einem Tonemapping-Bild ausgestattet werden, indem ein Dateiformat mit Alpha ausgewählt wird, wenn ein Tonemapping-Bild gespeichert wird.
- 1. Abstands- und Materialkanäle verfügen über kein Antialiasing und können hartkantige Artefakte aufweisen. Wenn Sie vor ihrer Verwendung einer Maske etwas Gaußsche Unschärfe hinzufügen, könnte dies diese Kanten etwas weicher gestalten.
+ 1. Abstands- und Materialkanäle verfügen über kein Antialiasing und können hartkantige Artefakte aufweisen. Wenn Sie einer Maske vor Verwendung etwas Gaußsche Unschärfe hinzufügen, kann dies beim Aufweichen der Kanten helfen.
  1. Der Materialkanal codiert nur 255 verschiedene Materialien. Wenn Ihr Modell über mehr Materialien verfügt, werden einige Maskenfarben wiederholt.
 
 #### Materialkanal
@@ -103,16 +103,16 @@ Zum Zusammensetzen oder Überlappen von Bildsegmenten, die mit der Renderfarmfun
 **Hinweis:** Wählen Sie das erste Bild (000000.nXtImage) nicht erneut aus, damit es nicht zweimal hinzugefügt wird.
 
 #### Hinzufügen
-Fügt Pixelwerte von einer Ebene in die andere Ebene ein. Bei Werten über 255 (im Falle von RGB) wird weiß angezeigt.
+Fügt Pixelwerte von einer Ebene in die andere Ebene ein. Bei Werten über 255 (im Falle von RGB) wird Weiß angezeigt.
 
 #### Subtrahieren
-Extrahiert Pixelwerte einer Ebene aus einer anderen Ebene. Bei negativen Werten wird schwarz angezeigt.
+Extrahiert Pixelwerte einer Ebene aus einer anderen Ebene. Bei negativen Werten wird Schwarz angezeigt.
 
 #### Differenz
-Subtrahiert die obere Ebene von der unteren Ebene oder umgekehrt, um immer einen positiven Wert zu erhalten. Eine Überblendung mit schwarz ergibt keine Änderung, da alle Farben einen Wert von 0 haben. Eine Überblendung mit weiß kehrt das Bild um.
+Subtrahiert die obere Ebene von der unteren Ebene oder umgekehrt, um immer einen positiven Wert zu erhalten. Eine Überblendung mit Schwarz ergibt keine Änderung, da alle Farben einen Wert von 0 haben. Eine Überblendung mit Weiß kehrt das Bild um.
 
 #### Maske hinzufügen
-Berücksichtigt bei der Überblendung die transparente Alpha-Kanal-Maske.
+Berücksichtigt bei der Überblendung die transparente Alphakanalmaske.
 
 #### Pfadverfolgung kombinieren
 Zur Kombination von Bildern, die mit der Pfadverfolgung gerendert wurden, so dass beispielsweise bei der Kombination von zehn Bildern mit je 20 Durchgängen das Äquivalent eines Bilds mit 200 Durchgängen erzielt wird.
@@ -147,7 +147,7 @@ Zeigt das gerenderte Originalbild an.
 ![images/fx-001.png](images/fx-001.png)
 
 ### Bild und Alphamaske
-Zeigt das Bild und die Alpha-Kanal-Maske zusammen an.
+Zeigt das Bild und die Alphakanalmaske zusammen an.
 
 ![images/imageandalpha.png](images/imageandalpha.png)
 
@@ -165,7 +165,7 @@ Zeigt die [Abstandsmaske](image-editor.html#distance-channel) an.
 
 ##### Bild laden
 
- 1.  [Speichern](render-window.html#export-to-nxtimage) Sie Ihr Renderbild als **.nXtImage**-Bild.
+ 1.  [Speichern](render-window.html#export-to-nxtimage) Sie Ihr Renderbild als **nXtImage**-Bild.
  1. Klicken Sie im Menü **Flamingo nXt** auf **Werkzeuge &gt; Flamingo-nXt-Bildeditor**.
  1. Klicken Sie im **nXt-Bildeditor** im Menü **Datei** auf **Öffnen**, um das Bild in den Editor zu laden.
 
@@ -198,7 +198,7 @@ Die Pixelkoordinate, von der unteren linken Ecke gemessen.
 
 #### Farbe
 {: #color}
-Die ersten drei Felder zeigen die RGB-Farben an, die nach dem Tone-Mapping im Bild angezeigt werden. Das vierte Feld zeigt den Alpha-Kanal (Transparenz) an, der für Komposition verwendet wird.
+Die ersten drei Felder zeigen die RGB-Farben an, die nach dem Tone-Mapping im Bild angezeigt werden. Das vierte Feld zeigt den Alphakanal (Transparenz) an, der für die Komposition verwendet wird.
 
 #### Wert
 {: #value}

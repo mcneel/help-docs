@@ -2,53 +2,53 @@
 ---
 <!-- TODO: This could use an update. -->
 
-# Plant Editor
+# Editor de plantas
 {: #tree-editor}
 
-### File Pulldown
+### Desplegable de Archivo
 
-#### New
-Create a new plant definition based on a template.
+#### Nuevo
+Crea una nueva definición de planta basada en una plantilla.
 
  | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
- | **Standard**                                |   **Conifer**                             | **Broad Crown**                       |
+ | **Estándar**                                |   **Conífera**                             | **Copa ancha**                       |
  | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
- | **Palm**                                    |  **Groundcover**                          | **Complex**                                  
+ | **Palmera**                                    |  **Cubresuelos**                          | **Complejo**                                  
 {: .plant-table}
 
-#### Open
-Opens an existing tree definition.
+#### Abrir
+Abre una definición de árbol existente.
 
-#### Save
-Saves the current tree definition.
+#### Guardar
+Guarda la definición de árbol actual.
 
-#### Save As
-Saves the current tree definition to a different name.
+#### Guardar como
+Guarda la definición de árbol actual con otro nombre.
 
-### Raytrace Pulldown
-Renders the preview image.
+### Desplegable de Trazado de rayos
+Renderiza la imagen de vista previa.
 ![images/shadedvsrendered.png](images/shadedvsrendered.png)
-*Default (left) and raytraced (right) view.*
+*Vista predeterminada (izquierda) y trazado de rayos (derecha).*
 
-#### Start
-Start rendering the preview image.
+#### Iniciar
+Inicia el renderizado de la imagen de vista previa.
 
-#### Stop
-Stop rendering the preview image.
+#### Detener
+Detiene el renderizado de la imagen de vista previa.
 
-### View Pulldown
-Drag with the left mouse button to rotate the view camera around the target.
-Drag with the right mouse button to rotate the target around the camera.
-Scroll with the mouse wheel to zoom in and out.
+### Desplegable de Vista
+Arrastre con el botón izquierdo del ratón para rotar la cámara de la vista alrededor del objetivo.
+Arrastre con el botón derecho del ratón para rotar el objetivo alrededor de la cámara.
+Mueva la rueda del ratón para ampliar y reducir.
 
-#### Restore Default
-Restores the default shaded view.
+#### Restaurar valores predeterminados
+Restaura la vista sombreada predeterminada.
 
-#### Show Leaves
-Shows the tree preview with leaves.
+#### Mostrar hojas
+Muestra la vista previa del árbol con hojas.
 ![images/leaves-001.png](images/leaves-001.png)
-*Without leaves (left) and with leaves (right).*
+*Sin hojas (izquierda) y con hojas (derecha).*
 
-### Settings pulldown
-Set the units in the editor to match the working units.
+### Desplegable de Ajustes
+Define las unidades en el editor para que coincidan con las unidades de trabajo.

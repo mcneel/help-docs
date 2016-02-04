@@ -1,187 +1,186 @@
 ---
+title: 印花
 ---
+<--TODO: This page should be updated. There are at least, 3 points to improve, more likely some more: 1. Compare instructions to add decal with actual process in the program. 2. There is another decal type, "spherical", that's not mentioned in the text. 3. Clicking on "Properties" doesn't open a dialog but returns an error message. -->
 
+# {{page.title}}
+印花是直接在物件上贴图的方法，这种贴图方法不需要依靠材质，可以在物件的局部贴图。使用印花可以修改物件局部的颜色、反射或凹凸。
+一个印花只能使用一张图片，而且该图片不像[材质](materials-tab.html)里的图片可以重复拼贴。
+印花的使用方法：
 
-# Decals
-Decals are non-tiling image maps that apply directly to objects instead of indirectly using a material. Use decals to modify a limited part of an object's color, reflectivity, or bumps.
-Decals consist of a single instance of the image, rather than being tiled as they are when used in a [material definition](materials-tab.html).
-Some uses for decals include:
-
->Hanging artwork on interior walls.
->Placing labels or logos on products.
->Adding signs to the model.
->Creating stained glass windows.
+>墙上的图案。
+>物件上的标签或商标。
+>模型上的标志。
+>彩绘玻璃。
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Note:** Decal previews will only display in wireframe views if OpenGL is enabled for wireframe mode.&#160;The **Pipeline** setting must be **OpenGL** in **Options** &#160;&gt; **Appearance** &#160;&gt; **Advanced Settings** &#160;&gt; **Wireframe** &#160;&gt; **Other Settings** &#160;&gt; **Pipeline and Conduits**.
+ **附注:** 只有在启用 OpenGL 且显示模式为线框模式时才能预览印花。  **选项**  &gt; **视图**  &gt; **显示模式**  &gt; **线框模式**  &gt; **其他设置**  &gt; **使用显示管线**中的**显示管线** 必须设置为 **OpenGL**。
 
-## Decal Placement
+## 放置印花
 {: #decal-list}
 {: #decal-placement}
 
-###  **Add** 
+###  **加入**
 {: #add-decal}
-1. Select one or more objects.
-1. On the **Edit** menu, click **Object Properties**.
-1. On the **Properties** list, click **Flamingo nXt Decals**.
-1. Click the **Add** button.
-1. In the **Open Bitmap** dialog box, select a bitmap name, and click **Open**.
-{% include_relative snippets/snippet-clearbitmapcache.md %}1. In the **Decal Properties** dialog box, select options, and click **Place**.
-1. At the prompts for points, pick points on the model to locate the decal.
-The precise sequence depends on the type of decal selected: [Planar](#decal-planarmapping), [Cylindrical](#decal-cylindricalmapping), or [UVMap](#decal-uvmapping).
+1. 选取一个或以上的物件。
+1. 从**编辑**菜单选择**物件属性**。
+1. 在**属性**对话框切换到 **Flamingo nXt 印花**页面。
+1. 按**新增**按钮。
+1. 在**打开位图**对话框中，选择一张位图，并点击**打开**。
+{% include_relative snippets/snippet-clearbitmapcache.md %}1. 在**印花属性**对话框设置选项，点击**放置**。
+1. 依照指令提示在模型里指定数个点决定印花的位置。
+不同投影方式 ([平面](#decal-planarmapping)、[圆柱体](#decal-cylindricalmapping)、[UV](#decal-uvmapping)) 的印花放置的方式各不相同。
 
-###  **Edit Placement** 
+###  **编辑位置**
 {: #decal-edit-placement}
-1. Click the **Edit Placement** button.
-1. At the **Select control point** prompt, use the graphical editor to change the placement of the decal.
-1. Press **Enter** when finished.
+1. 按**编辑位置**按钮。
+1. 在**选取控制点**提示下， 移动印花贴图轴上的控制点可以改变印花的位置。
+1. 按 **Enter** 完成。
 
-###  **Properties** 
+###  **属性**
 {: #decal-properties}
-1. Click the **Properties** button.
-1. In the **Decal Properties** dialog box, use the controls to change the decal's properties.
+1. 按**属性**按钮。
+1. **印花属性**对话框有許多印花的设置可以修改。
 
-###  **Delete** 
+###  **删除**
 {: #decal-delete}
 
->Click the **Delete** button.
+>点击**删除**按钮。
 
-###  **Move up** / **Move down** 
+###  **上移** / **下移**
 {: #decal-movedown}
 {: #decal-moveup}
-When multiple overlapping decals are applied on a single object, the order in which they are applied may be significant. Decals are applied in the order they appear in the list. The last decal in the list appears to be on top.
+当一个物件上有数个印花重叠时，会需要设置印花显示的前后顺序，清单里最上面的印花在物件上会显示在最前面。
 
->Click **Move Up** or **Move Down** to change a decal's position in the list.
+>按**上移**或**下移**按钮可以将选取的印花在清单中上、下移动。
 
-##### To place a planar decal
-1. At the prompts, pick locations for the decal's **Width**, and **Height direction**.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### 放置平面印花
+1. 依照提示指定印花的位置、**宽度**与**高度**方向。
+1. 在**选取控制点...** 提示下，移动控制点调整印花贴图的位置、大小与旋转角度。
+或按 **Enter** 放置印花。
 
-### Options
+### 选项
 
-#### Move
-Moves the decal. At the Point to move from and the Point to move to prompts, enter any locations as for the Rhino Move command.
+#### 移动
+移动印花的位置，就像 Rhino 的 Move 指令一样指定移动的起点与移动的终点。
 
-#### UseImageAspectRatio
-Restores a stretched decal to the aspect ratio of the original bitmap.
+#### 使用图片的宽高比
+使用图片的宽高比例设置印花，避免贴图变形。
 
-##### To place a cylindrical decal
-1. At the prompt, pick a location for the **Center point** of the cylinder.
-1. At the **Select control point...** prompt, select a control point to adjust the image size, rotation, or location.
-Or press **Enter** to complete the decal placement.
+##### 放置圆柱印花
+1. 依照提示指定圆柱的**中心点**位置。
+1. 在**选取控制点...** 提示下，移动控制点调整印花贴图的位置、大小与旋转角度。
+或按 **Enter** 放置印花。
 
-## Set or edit the decal placement using the control widget
-Note: When using the planar mapping on a curved object, the entire bitmap must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+## 设置或编辑印花的位置
+附注：在有弧度的曲面上使用平面印花贴图时，必需将整个贴图轴置于曲面后方，因为贴图轴突出于曲面前方的部分无法将贴图投影至曲面上。
 
-#### To resize the decal width and height at the same time
+#### 同时调整印花的宽度与高度
 
->Drag the control points at the corners of the control widget.
+>移动印花贴图轴的角控制点。
 
-#### To change the decal height
+#### 调整印花的高度
 
->Drag the center control point on the top and bottom edges of the control widget.
+>移动印花贴图轴上、下边的控制点。
 
-#### To change the decal width
+#### 调整印花的宽度
 
->Drag the center control point on the left and right edges of the control widget.
+>移动印花贴图轴左、右边的控制点。
 
-#### To move the decal
+#### 移动印花
 
->Drag the control point in the center of the control widget.
+>移动印花贴图轴中心的控制点。
 
-#### To rotate the decal
+#### 旋转印花
 
->Drag the x-, y-, or z-axis control point on the widget axis icon.
+>移动印花贴图轴 X、Y、Z 三个轴向箭头尖端的控制点。
 
-## Decal Properties
+## 印花属性
 {: #dialogbox-editdecal}
-The information from the bitmap replaces or blends the object's color with the decal's color. This is the most common use of decals.
+以印花贴图取代物件上某一部分材质的颜色是印花常用的方法。
 
-## Projection
+## 投影方式
 {: #projection}
-The mapping style determines how to project the decal onto the object. It is a good idea to draw construction lines in the scene to help accurately place decals. A rectangle drawn just behind a surface can act as a guide for a standard decal. Use object snaps for accurate placement.
+决定如何将印花贴图投影至物件上，在放置印花贴图轴时可以事先创建一些建构线辅助，再配合物件锁点精确放置印花贴图。
 
-### Cylindrical
+### 圆柱体
 {: #decal-cylindricalmapping}
-
-### &#160;
-The cylindrical mapping type is useful for placing decals onto objects that curve in one direction, such as labels on wine bottles.
-The cylindrical projection maps the bitmap onto the cylinder with the bitmap's vertical axis along the cylinder's axis, and the horizontal axis around the cylinder.
+圆柱体印花贴图轴适用于在瓶罐类似的物件上贴上标签。
+圆柱体印花贴图轴的一个方向是直的，另一个方向环绕物件。
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
-### Planar
+
+### 平面
 {: #decal-planarmapping}
-
-### &#160;
-Planar mapping is the most common mapping style. It is appropriate when mapping to flat or gently curved objects.
-The corners define the bitmap's location and extents. If the rectangle does not have the same proportions as the bitmap, the bitmap will be stretched or compressed to fit.
-When using planar mapping on a curved object, the entire bitmap projection must lie behind the surface of the object. Portions of the bitmap that lie in front of the surface will not be visible.
+平面印花贴图轴是最常用的方式，适用于在平面或是弧度不大的曲面上贴上图案。
+平面印花贴图轴的宽度与高度可以任意改变，但它的宽度与高度的比例与使用的图片不一致时，图片会延展或挤压变形。
+在有弧度的曲面上使用平面印花贴图时，必需将整个贴图轴置于曲面后方，因为贴图轴突出于曲面前方的部分无法将贴图投影至曲面上。
 ![images/decal-planar-001.png](images/decal-planar-001.png)
-### UV Map
-{: #decal-uvmapping}
 
-### &#160;
-Decals using UV mapping are useful for objects like hair and tree bark where the decal flows and stretches to fit the surface.
-The decal covers the entire object; there is no control over the decal placement.
-UV mapping uses the u- and v-parameterization of the surface to bend and stretch the image; therefore, no manual placement is necessary.
+### UV
+{: #decal-uvmapping}
+UV 印花贴图轴适用于类似头发或树干这种沿曲面延伸的贴图。
+它会将贴图布满整个曲面，无法控制贴图位置。
+UV 印花贴图是以曲面 U、V 两个方向的参数坐标做贴图的对应，这种方式的贴图可能会有在曲面上的一部分挤压变形，但在另一部分的延展变形不平均的情形。
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
-### Browse
+
+### 浏览
 {: #file-browse}
-Change the image file.
+变更图片文件。
+
 {% include_relative snippets/snippet-clearbitmapcache.md %}
-## Strength
+
+## 强度
 {: #decalmappingstrength}
 
-### Color
+### 颜色
 {: #decal-color}
-Varies the relative strength of the image color with respect to the underlying material. See also, [Material Texture Properties, Color Strength](texture-properties-main.html#color).
+调整印花贴图的透明度，可以让物件材质的颜色透出印花。请参考[材质贴图属性 > 颜色强度](texture-properties-main.html#color)。
 
-### Bump
+### 凹凸
 {: #decalmappingbump}
-Bump maps create simulated shadows and highlights on the surface. See also, [Material Texture Properties, Bump Strength](texture-properties-main.html#bump).
+以印花贴图像素的灰阶值在物件上产生视觉上的凹凸效果。请参考：[材质贴图属性 > 凹凸强度](texture-properties-main.html#bump)。
 
-## Reflective finish
+## 反射度
 {: #reflective-finish-and-highlight}
-Controls the same properties that are controlled by a material definition. Apply these properties to the specific areas of the object that are affected by the decal. By default, decals have a matte finish.
+控制印花贴图的反射度，可以用来让印花与物件本身的材质有所区别，例如塑料瓶上的铝箔标签，默认值是完全没有反射。
 
-### Intensity
-Adjusts the strength of the highlight. Larger values increase the size and strength of the highlight. See [Advanced Material Properties, Intensity](advanced-material-properties-main.html#intensity).
+### 强度
+调整反光的强度，加大这个数值会加大反光的大小与亮度。请参考：[高级材质属性 > 强度](advanced-material-properties-main.html#intensity)。
 
-### Sharpness
-Sets the size of the highlight. Lower numbers specify a broader highlight; higher numbers focus the highlight in a smaller area. See [Advanced Material Properties, Sharpness](advanced-material-properties-main.html#sharpness).
+### 锐利度
+设置物件表面的反光大小，数字越小，反光越大、越模糊。数值越大，反光越小、越锐利。請參考：[高级材质属性 > 锐利度](advanced-material-properties-main.html#sharpness)。
 
-### Metallic
-Sets the highlight color to match the base color. See [Advanced Material Properties: Metallic](advanced-material-properties-main.html#metallic).
+### 金属
+将材质的反光颜色设置为与材质颜色相同。请参考：[高级材质属性 > 金属](advanced-material-properties-main.html#metallic)。
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
-## Advanced
+## 高级
 {: #advanced}
 
-### Double Sided
+### 双面
 {: #double}
-Causes the decal to appear on the back face of the surface on which it is placed as well as the front face.
+让印花贴图同时出现在曲面的正面与背面。
 
-### Mirror
+### 镜像
 {: #mirror}
-Mirrors the decal image.
+镜像印花贴图。
 
-## Projection direction
+## 投影方向
 {: #projection-direction}
 
-### Backward
-Projects the decal away from the back of the decal image.
-![images/projectionbackward1.png](images/projectionbackward1.png)Front (left), back (right).
+### 向后
+从印花贴图轴的背面投影至物件上。
+![images/projectionbackward1.png](images/projectionbackward1.png)前 (左)、后 (右)。
 
-### Forward
-Projects the decal away from the front of the decal image.
-![images/projectionforward1.png](images/projectionforward1.png)Front (left), back (right).
+### 向前
+从印花贴图轴的正面投影至物件上。
+![images/projectionforward1.png](images/projectionforward1.png)前 (左)、后 (右)。
 
-### Forward &amp; Backward
-Projects the decal away from both the front and the back of the decal image.
-![images/projectionforwardandback.png](images/projectionforwardandback.png)Front (left), back (right).
+### 双向
+从印花贴图轴的正面与背面投影至物件上。
+![images/projectionforwardandback.png](images/projectionforwardandback.png)前 (左)、后 (右)。
 
-### Transparency
-Sets the transparency for the decal. See [Transparency](advanced-material-properties-transparency.html).
-IOR
-Sets the index of refraction for the transparent decal. See [Index of Refraction](advanced-material-properties-transparency.html#index-of-refraction) 
-
+### 透明度
+设置印花贴图的透明度。请参考：[透明度](advanced-material-properties-transparency.html)。
+折射率
+设置透明的印花贴图的折射率。请参考：[折射率](advanced-material-properties-transparency.html#index-of-refraction)。
