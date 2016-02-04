@@ -2,7 +2,7 @@
 title: Material Assignments
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on how easy the model is to change and maintain in the future.
 
 Materials can be assigned in three ways. The three are a hierarchy, so an assignment lower on the list will overwrite an assignment above. The three ways are:
@@ -46,8 +46,8 @@ As an example, a car model might have tires on the tires layer and wheels on the
 
 ##### To assign a material through object properties
 1. Select objects.
-1. On the Edit menu, click Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the [Properties](properties-object.html) dialog box, on the Material page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Parent.
+1. On the Edit menu, click Object Properties ![images/properties.png](images/properties.png){: .inline} command to edit the object.
+1. In the [Properties](properties-object.html) dialog box, on the Material page ![images/materialtab.png](images/materialtab.png){: .inline} under Assign By, click By Parent.
 
 ## Assign material to objects
 {: #byobject}
@@ -58,8 +58,8 @@ Assigning materials by layer is the recommended method. Assign materials by obje
 
 ##### Assign a material through object properties
 1. Select objects.
-1. On the Edit menu, click the Object Properties ![images/properties.png](images/properties.png) command to edit the object.
-1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png) under Assign By, click By Object, and then click the Material from the list.
+1. On the Edit menu, click the Object Properties ![images/properties.png](images/properties.png){: .inline} command to edit the object.
+1. In the  [Properties](properties-object.html)  dialog box, on the Materials page ![images/materialtab.png](images/materialtab.png){: .inline} under Assign By, click By Object, and then click the Material from the list.
 
 ##### Drag a material onto a single object
 {: #drag-dropmaterialtoobject}

@@ -3,7 +3,7 @@ title: Material Image Properties
 ---
 
 
-# ![images/images.svg](images/images.svg) {{page.title}}
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ Sets the tile size in model units.
 {: #mapping-type}
 Images normally apply to the color channel. But there are other ways to use images.  Images can be set as:
 
-> [Standard](#standard)
-> [Normal](#normal)
-> [Displacement](#displacement)
+* [Standard](#standard)
+* [Normal](#normal)
+* [Displacement](#displacement)
 
 ### Standard
 {: standard}

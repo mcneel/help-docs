@@ -4,14 +4,14 @@ Obscures portions of the image based on either a color value or an alpha channel
 
 In this example, an image with an alpha-channel background is placed as a decal on a rectangular surface. Masking for materials works the same.
 
-![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
+![images/airplane.png](images/airplane.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 *Original decal image. The gray checkered area represents the image alpha channel.*
 
 Masking information can come from three sources in the bitmap:
 
-> [None](#nomask)
-> [Alpha Channel](#alphamask)
-> [Color](#colormask)
+* [None](#nomask)
+* [Alpha Channel](#alphamask)
+* [Color](#colormask)
 
 #### None
 {: #nomask}
@@ -24,7 +24,7 @@ With no masking, the image obscures the underlying material. Masking allows the 
 {: #alphamask}
 Uses the image's [alpha channel](environment-tab.html#alpha) to define the masked area if one exists.
 
-![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
+![images/airplane.png](images/airplane.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 *Original on the left. The gray checkered area represents the image alpha channel. On the right is the image over a water surface.*
 
 The alpha channel is a portion of each pixel's data that is reserved for transparency information. Alpha channels create and store masks that let you isolate and protect parts of an image while you apply color changes, filters, or other effects to the rest of the image. Each pixel in an image is described as channels of data that define the mixture of the red, green, and blue (RGB) colors. The alpha channel is an 8-bit (256-level) grayscale representation of the image that masks the color of the underlying pixel. The value of the alpha mask determines the intensity of the pixel color. If the Alpha channel is 100%, the images pixel will be complete transparent.  At other alpha strengths, the image pixels will blend with transparency.
@@ -54,9 +54,9 @@ Makes the masked area of the underlying object transparent so other objects or t
 
 Transparent masking allows a more natural shadow and lets the background objects to show. The underlying material could simply be transparent, but sometimes it is useful to make the surface behind the decal transparent while keeping other areas of the surface opaque.
 
-![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
+![images/masking-003.png](images/masking-003.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 
 #### Show masked colors
-Graphically displays the effects of masking as the parameters change. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.
+Graphically displays the effects of masking as the parameters change. Use the [Color Selector](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} provided to select the display color of the masked pixels. Changing this color or the setting of the checkbox does not change the masked color. This is simply a graphical tool for editing the mask.
 
 ![images/masking-008.png](images/masking-008.png)

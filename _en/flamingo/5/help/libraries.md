@@ -2,7 +2,7 @@
 title: Libraries Panel
 ---
 
-# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+# ![images/libraries.svg](images/libraries.svg){: .inline} {{page.title}}
 The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
 
 Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
@@ -15,11 +15,11 @@ Materials are simply files on your hard drive.  Library folders are simply Windo
 
 Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
 
-To quickly navigate back to the Default Library locations use the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+To quickly navigate back to the Default Library locations use the wrench icon at the upper right. ![images/library_default.png](images/library_default.png){: .inline}
 
 #### Organizing Libraries
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png){: .inline}.
 
 ## Materials Library
 {: #material}
@@ -46,12 +46,12 @@ Environments can be saved in the library.  This lets Environment settings to be 
 
 ## Library Settings
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+Use ![images/options.png](images/options.png){: .inline} Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png){: .inline} menu.
 
 ##### Where can I find this command?
 There are three places to find the Libraries Options command.
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
+ 1. Libraries Tab > ![images/library_default.png](images/library_default.png){: .inline} in the upper right of the Libraries panel > Settings...
  1. Menus > Tools pulldown > Options > Libraries.
  1. Menus > Panels > Libraries.
 
