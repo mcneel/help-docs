@@ -102,7 +102,7 @@ defaults:
       path: "kr/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "가이드"
   -
     scope:
@@ -127,7 +127,7 @@ defaults:
       path: "jp/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "ガイド"
   -
     scope:
@@ -152,7 +152,7 @@ defaults:
       path: "de/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "Anleitungen"
   -
     scope:
@@ -177,7 +177,7 @@ defaults:
       path: "cn/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "Guides"
   -
     scope:
@@ -202,7 +202,7 @@ defaults:
       path: "es/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "Guides"
   -
     scope:
@@ -227,7 +227,7 @@ defaults:
       path: "fr/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "Guides"
   -
     scope:
@@ -252,7 +252,7 @@ defaults:
       path: "it/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "Guide"
   -
     scope:
@@ -277,5 +277,5 @@ defaults:
       path: "tw/flamingo/5/guides"
     values:
       doctype: "Guides"
-      layout: flamingo-toc-page
+      layout: flamingo-guide-page
       collectionname: "Guides"
