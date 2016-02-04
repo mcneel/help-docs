@@ -2,16 +2,16 @@
 title: Render Window
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 The render window provides options for exposure adjustment and adding post-processing effects. The mainframe of the render windows is part of Rhino's rendering framework.  For details on the render window menus and icons see the [Render Window topic](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm).  This topic covers the Flamingo specific additions to the rendering process.
 
 ## Managing an Active Rendering
 Once the rendering starts, the [Render Window](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) starts up and the rendering will proceed.  Flamingo is a multi-pass system that updates the rendered image in stages. Flamingo first looks for any changes to its internal model, then starts an initialization process.  This process can take a few seconds or a few minutes.  This is when the model is imported, material bitmaps are collected from the hard drive, and the render image buffer is created. There are some key steps to the process to managing the rendering:
 
->[Multiple pass rendering](#multi-pass)
->[Stopping a rendering](#stop-render)
->[Adjusting the Image](#adjusting)
->[Saving the Image](#saving)
+1. [Multiple pass rendering](#multi-pass)
+1. [Stopping a rendering](#stop-render)
+1. [Adjusting the Image](#adjusting)
+1. [Saving the Image](#saving)
 
 ### Multiple Pass Rendering
 {: #multi-pass}
@@ -23,22 +23,22 @@ In this way, a nXt rendering is never "finished"; you merely decide when it is g
 
 Some of the effects that improve on each pass are:
 
->Lighting (such as global illumination if enabled)
->Soft Shadows
->Reflections (blurry)
->Refraction
->Anti-aliasing
->Depth of field
+* Lighting (such as global illumination if enabled)
+* Soft Shadows
+* Reflections (blurry)
+* Refraction
+* Anti-aliasing
+* Depth of field
 
 ### Stopping a rendering
 {: #stop-render}
 You can stop the rendering several ways:
 
-![images/close-x.png](images/close-x.png) Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
+![images/close-x.png](images/close-x.png){: .inline} Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window. This is the best method for quickly getting back to the model to make changes.
 
-![images/stop.png](images/stop.png) Click the Stop Raytrace button to stop the rendering at the end of the current pass. This is the best option before saving an image.
+![images/stop.png](images/stop.png){: .inline} Click the Stop Raytrace button to stop the rendering at the end of the current pass. This is the best option before saving an image.
 
-![images/stop.png](images/stop.png) Double-click the Stop Raytrace to stop the rendering immediately and leave the render window open.
+![images/stop.png](images/stop.png){: .inline} Double-click the Stop Raytrace to stop the rendering immediately and leave the render window open.
 
 ### Adjusting a rendering
 {: #adjusting}
@@ -46,16 +46,16 @@ After stopping an image, use the controls in the [Flamingo Tab](#flamingo-tab) t
 
 Controls used for images adjustment include:
 
->[Adjust Image](#adjust-image)
->[Channels](#channels)
->[Post Effects](#post-process-effects)
+* [Adjust Image](#adjust-image)
+* [Channels](#channels)
+* [Post Effects](#post-process-effects)
 
 
 ### Saving Images
 {: #saving}
 There are many ways to save an image depending on the plans for the image.  Normally saving as a JPG or PNG image file is the recommended process for most images.  But there are other options.
 
-#### ![images/saveimageas.png](images/saveimageas.png) Save Image
+#### ![images/saveimageas.png](images/saveimageas.png){: .inline} Save Image
 Saving a JPG or PNG image file is the normal process after adjusting the image.  
 
 A JPG image is a very efficient, small file format.  This is good for images placed on the web or emailed around.  But that efficiency comes at a small price, as some colors are removed from the image.
@@ -81,7 +81,7 @@ Saves uncompressed luminance and color information. The .hdr format stores lumin
 A high-dynamic-range image file format, released as an open standard along with a set of software tools created by Industrial Light and Magic (ILM), released under a free software license. This file format supports 16-bits-per-channel floating-point values (half precision) with a sign bit, five bits of exponent, and a ten-bit mantissa. This allows a dynamic range of over thirty stops of exposure. See [Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR).
 The .exr format stores luminance data directly in a High Dynamic Range format. Non-luminance backgrounds, such as normal photographs, appear black when saved in one of these formats.
 
-#### ![images/close-x.png](images/close-x.png) Exit
+#### ![images/close-x.png](images/close-x.png){: .inline} Exit
 Closes the render window.
 
 #### Pulldown Menus
@@ -128,7 +128,7 @@ The number of pixels resolved in the image per second.
 {: #adjust-image}
 This is one of the most important controls in Flamingo. Just like a camera, you can adjust image exposure.  This is the best way to make renderings brighter, darker, add contrast, or increase color saturation. This adjustment process is called [tone mapping](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo works in luminance space, a much broader range of colors and brightness than can be shown on a screen or printer.  Tone mapping is the process of converting the luminance data into Red, Green, and Blue (RGB) pixels that can be displayed on a screen or printed. The settings also control how images are saved.
 
-![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
+![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png){: .inline} ![images/tonefinals-correction.png](images/tonefinals-correction.png){: .inline}
 *The default image on the left. The corrected image after applying brightness (0.20), burn (0.16) and saturation (1.20).*
 Use this process to quickly adjust the brightness of an image and overall color of an image without needing to re-render.
 
@@ -198,12 +198,12 @@ When there are blocks in the model, Flamingo nXt is able to use the block defini
 #### Lighting information
 This is some information on the current lighting setup of the rendering.  Here is a list of lighting information listed:
 
->[Presets](lighting-tab.html)
->[Sun](sun-and-sky-tabs.html#sun)
->[Sky](sun-and-sky-tabs.html#sky)
->[Lights](lights-tab.html)
->[Indirect](lighting-tab.html#indirect)
->[Ambient On/Off](lighting-tab.html#ambient)
+* [Presets](lighting-tab.html)
+* [Sun](sun-and-sky-tabs.html#sun)
+* [Sky](sun-and-sky-tabs.html#sky)
+* [Lights](lights-tab.html)
+* [Indirect](lighting-tab.html#indirect)
+* [Ambient On/Off](lighting-tab.html#ambient)
 
 ## Channels
 {: #channels}
@@ -213,13 +213,13 @@ Use these controls to change the lights channels in real time. Assign lights to 
 {: #post-process-effects}
 Apply post-processing effects after rendering the image. Turn post-processing effects on and off and reorder in the list. Each effect has its own settings. Effects include:
 
->Fog
->Glow
->Glare
->Depth of Field
->Points
->Curves
->Isocurves
->Annotations
+* Fog
+* Glow
+* Glare
+* Depth of Field
+* Points
+* Curves
+* Isocurves
+* Annotations
 
 For more details on specific filters see the [Post-process images](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm) topic.

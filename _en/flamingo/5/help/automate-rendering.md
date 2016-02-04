@@ -56,7 +56,7 @@ Sends the batch jobs to the [Render Farm](render-farm.html). The jobs will be re
 Shows the view that this job will render. See [Render tab, Viewport to render](render-tab.html#viewtorender).
 
 #### File name
-Click the Save button ![images/saveimageas.png](images/saveimageas.png) and specify a file name for the rendered image.
+Click the Save button ![images/saveimageas.png](images/saveimageas.png){: .inline} and specify a file name for the rendered image.
 
 #### Alpha channel
 Save the image with the Alpha Channel.  See the [Use alpha channel background](environment-tab.html#alpha) for more details.

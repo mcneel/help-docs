@@ -41,8 +41,12 @@ p {
   margin: 0 0 10px;
 }
 
-ul, li {
+ul {
   list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 img{
