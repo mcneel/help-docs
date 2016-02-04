@@ -101,7 +101,7 @@ Adding a groundplane can help set the object into a scene.
 1. You can see you have a simple textured material. The tile size of the bitmap is often important. To change the tile size, click on the bitmap name.
 1. Adjust the tile size of 125 in width.
 1. In the name field, type "Floor"and press OK.
-1. The render should look like this:
+1. The render should look like this
 ![images/getting_started006.png](images/getting_started006.png)
 
 

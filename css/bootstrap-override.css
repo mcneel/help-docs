@@ -242,6 +242,10 @@ ul {
 	list-style-type: disc;
 }
 
+li{
+  display: block;
+}
+
 /*
 ##############################################################################
 ## Image float overrides. Allows to wrap text around images.
