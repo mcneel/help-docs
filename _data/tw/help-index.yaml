@@ -24,11 +24,11 @@
     - name: 材質
       anchor: materials
       topics:
-        - name: 材質編輯器
+        - name: 材質編輯器\n
           path: material-editor.html
-        - name: 賦予材質
+        - name: 賦予材質\n
           path: material_assignment.html
-        - name: 簡易材質內容
+        - name: 簡易材質內容\n
           path: material-type-simple.html
         - name: 進階材質內容
           path: material-type-advanced.html
