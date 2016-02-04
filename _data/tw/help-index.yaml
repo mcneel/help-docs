@@ -1,23 +1,23 @@
-main_index:
+﻿main_index:
   name: Flamingo 說明主題
   anchor: all_topics
   categories:
     - name: 材質庫
       anchor: libraries
       topics:
-        - name: 材質庫面板
+        - name: "材質庫面板"
           path: libraries.html
           anchor: test
-        - name: 材質資料庫
+        - name: "材質資料庫"
           path: libraries.html
           anchor: material
-        - name: 環境資料庫
+        - name: "環境資料庫"
           path: libraries.html
           anchor: environment
-        - name: 植物資料庫
+        - name: "植物資料庫"
           path: libraries.html
           anchor: plant
-        - name: 材質庫設定
+        - name: "材質庫設定"
           path: libraries.html
           anchor: settings
 
