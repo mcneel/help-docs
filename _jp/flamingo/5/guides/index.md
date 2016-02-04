@@ -3,6 +3,8 @@ layout: fullwidth-page
 title: ガイドの索引
 ---
 
+<!-- TODO: Links to update: "First Rendering Tutorial" and everything below "Rendering Basics" -->
+
 # Flamingo nXt®をはじめるにあたって
 
 ## 最初のチュートリアル
@@ -10,7 +12,7 @@ title: ガイドの索引
 * [スタジオ照明のヒント]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
 
 ## Flamingoのコントロールパネルを表示するには
-  * **Flamingo nXt**メニューの**コントロールパネル**をクリックします。
+  * **Flamingo nXt 5**メニューの**コントロールパネル**をクリックします。
 
 ## Flamingo nXtのコントロールパネル
 **Flamingo nXt**の**コントロールパネル**には、レンダリングのためにモデルを設定するためのタブが表示されます。タブには次のものが含まれます。
@@ -24,15 +26,15 @@ title: ガイドの索引
 
 完成したモデルのレンダリングは次の4つの基本手順で行います。
 
- *  [マテリアルの設定](..\materials\materials-tab.html)
- *  [照明の設定](../lighting/lighting-tab.html)
- *  [環境の設定](../environment/environment-tab.html)
- *  [レンダリング条件の設定](../render/render-tab.html)
+ *  マテリアルの設定
+ *  照明の設定
+ *  環境の設定
+ *  レンダリング条件の設定
 
 #### レンダリングを開始するには
 
  * **レンダリング**メニューの**レンダリング**をクリックします。
-             - または -
+           - または -
  * **標準**ツールバーの**レンダリング**ボタンをクリックします。
 
 ### レンダリングを停止
@@ -44,5 +46,3 @@ title: ガイドの索引
 自動停止条件を設定するには、[レンダリングウィンドウ](..\render\render-window.html)または[ドキュメントのプロパティ &gt; Flamingo nXt](..\render\documentproperties-flamingo.html)の[パスの数](..\render\render-window.html#number-of-passes)または[時間](..\render\render-window.html#time)を使用します。
 
 &#160;
-
-改訂: 22-Dec-2011年12月22日 14:45
