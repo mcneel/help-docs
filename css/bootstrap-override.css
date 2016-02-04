@@ -41,6 +41,10 @@ p {
   margin: 0 0 10px;
 }
 
+ul, li {
+  list-style-type: disc;
+}
+
 .tab-content .tab-pane {
   display: none;
 }
@@ -226,7 +230,6 @@ h6 {
 }
 
 blockquote {
-  display: block;
 	border-color: white;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -238,13 +241,6 @@ blockquote {
   }
 }
 
-ul {
-	list-style-type: disc;
-}
-
-li{
-  display: block;
-}
 
 /*
 ##############################################################################
