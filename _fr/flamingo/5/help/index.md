@@ -1,5 +1,5 @@
 ---
-title: Index de l'aide de Flamingo
+title: Table des matières de l'aide de Flamingo
 ---
 
 <!-- Do not edit the below section. The source for the Help index can be found in the _data folder in the help_index.yaml file -->
@@ -31,8 +31,13 @@ title: Index de l'aide de Flamingo
 {% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}
+<ul>
 {% for topic in category.topics %}
-[{{topic.name}}]{% if topic.path != null %}({{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}){% endif %}{% endfor %}
+<li>
+<a href="{% if topic.path != null %}{{topic.path}}{% if topic.anchor != null %}#{{topic.anchor}}{% endif %}{% endif %}">{{topic.name}}</a>
+</li>
+{% endfor %}
+</ul>
 {% endfor %}
 
 
