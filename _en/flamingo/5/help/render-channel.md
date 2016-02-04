@@ -2,7 +2,7 @@
 title: Channels
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  
 
@@ -31,10 +31,10 @@ The following conditions are necessary to produce and manipulate a multi-channel
 {: setting}
 The first step in setting up a muti-channel rendering is to set each light to channel. The channel number is usually set in each light property.  For information on setting specific lights to a channel see:
 
->[Sun Channel](sun-and-sky-tabs.html#sun-channel)
->[Sky Channel](sun-and-sky-tabs.html#sky-channel)
->[Artificial Light Channel](lights-tab.html#channel)
->[Material Glow](documentproperties-flamingo.html#channel)
+* [Sun Channel](sun-and-sky-tabs.html#sun-channel)
+* [Sky Channel](sun-and-sky-tabs.html#sky-channel)
+* [Artificial Light Channel](lights-tab.html#channel)
+* [Material Glow](documentproperties-flamingo.html#channel)
 
 Any number of lights can be grouped onto the same light channel.  The channel adjustment is a multiplier. Lights on the same channel will keep their relative strengths to each other while being adjusted.
 
