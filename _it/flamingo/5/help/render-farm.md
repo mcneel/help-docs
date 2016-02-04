@@ -40,7 +40,7 @@ Nel caso di installazioni avanzate, il software della Render Farm di nXt consent
 
 ## Installare e configurare la Farm
 {: #install}
-Il client di rendering Farmer ed il Farm Monitor vengono installati con Flamingo sulla macchina Rhino master. Sugli altri computer client che non hanno Rhino e Flamingo nXt, occorre installare il client Farmer.
+Il client di rendering Farmer ed il Farm Monitor vengono installati con Flamingo sulla macchina Rhino master.  Sugli altri computer client che non hanno Rhino e Flamingo nXt, occorre installare il client Farmer.
 
 ##### Installare il Render Farmer
 Sulle macchine senza Rhino e Flamingo, installare il client Farmer:
@@ -147,13 +147,12 @@ Elimina il lavoro specificato dall'elenco.
 
 ## Licenze Render Farm
 {: #licensing-the-render-farm-}
-La versione gratuita della Render Farm consente che due computer di rete (nodi) operino contemporaneamente sui lavori. Se si desidera che sia possibile l'esecuzione contemporanea di un numero maggiore di nodi di rete, è necessario acquistare una licenza senza limiti di nodi da [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
+La Render Farm consente ai computer di rete (nodi) di operare contemporaneamente sui lavori di rendering.  [Scarica ed installa il software client della Render Farm](http://nxt.flamingo3d.com/page/nxt-render-farm).
 
-Una volta acquistata la licenza ed ottenuto un codice per il prodotto, si usino le seguenti procedure per ottenere in licenza la farm.
 
 ##### Per autorizzare il nodo
 1. Prima di iniziare il processo di ottenimento della licenza, attendere il completamento di eventuali lavori farm attivi.
-1. Salvare il codice del prodotto su un file di testo su un percorso di rete in modo tale da poter tagliarlo ed incollarlo facilmente su ciascun nodo.
+1. Salvare il codice del prodotto (XF10-J9G2-H006-T8AJ-GBB9-0027) su un file di testo su un percorso di rete in modo tale da poter tagliarlo ed incollarlo facilmente su ciascun nodo.
 1. Se il nodo è attualmente attivo, sulla barra delle applicazioni di Windows, [cliccare con il tasto destro](mouse-button-right.html) sull'icona Render Farm e quindi cliccare su **Chiudi**.
 1. Cliccare sul pulsante **Start di Windows** e quindi su **Tutti i programmi**.
 Nella cartella Render Farm di nXt, cliccare su **Autorizza Farm**.
