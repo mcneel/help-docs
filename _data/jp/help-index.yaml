@@ -36,8 +36,6 @@ main_index:
           path: material-image-properties.html
         - name: プロシージャルマテリアルのタイプ
           path: procedural-materials.html
-        - name: テクスチャセットマテリアル
-          path: texture-set-materials.html
         - name: カラーセレクタ
           path: select-color.html
 
