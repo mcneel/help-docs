@@ -3,7 +3,7 @@ title: Proprietà dei materiali immagine
 ---
 
 
-# ![images/images.svg](images/images.svg) {{page.title}}
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ Imposta le dimensioni della mattonella nelle unità del modello.
 {: #mapping-type}
 Le immagini di solito vengono applicate al canale di colore. Tuttavia, esistono altre modalità di utilizzo delle immagini.  Le immagini si possono impostare come:
 
-> [Standard](#standard)
-> [Normale](#normal)
-> [Scostamento](#displacement)
+* [Standard](#standard)
+* [Normale](#normal)
+* [Scostamento](#displacement)
 
 ### Standard
 {: standard}

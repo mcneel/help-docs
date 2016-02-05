@@ -2,15 +2,15 @@
 title: Opzioni di rendering
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 La scheda di rendering controlla le proprietà principali del rendering finale.  Si usi questa scheda per controllare la qualità ed il tempo che può impiegare un rendering.  La risoluzione dell'immagine finale è uno dei fattori che influisce maggiormente sui tempi di rendering globali.
 
 Nota: Una buona prassi è quella di mantenere bassa la risoluzione di rendering durante i rendering iniziali. Si usino risoluzioni alte solo nei rendering finali.
 
 #### Dove trovo il controllo di illuminazione di Flamingo?
 
- 1. ![images/options.png](images/options.png)Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png)Barra strumenti di Flamingo nXt > Scheda Opzioni di rendering
- 1. ![images/menuicon.png](images/menuicon.png)Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Flamingo nXt > Scheda Opzioni di rendering
+ 1. ![images/options.png](images/options.png){: .inline} Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barra strumenti di Flamingo nXt > Scheda Opzioni di rendering
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Flamingo nXt > Scheda Opzioni di rendering
 
 
 ## Vista da renderizzare
@@ -40,10 +40,10 @@ Imposta la risoluzione finale in base ad una serie di variabili diverse.  Questa
 
 Si possono usare quattro tipi di unità:
 
->Pixel
->Pollici
->Millimetri
->Centimetri
+* Pixel
+* Pollici
+* Millimetri
+* Centimetri
 
 #### Pixel
 Imposta le unità dell'immagine del rendering sui pixel.  Si usi questa impostazione per impostare la larghezza e l'altezza del rendering finale in pixel.
@@ -74,7 +74,7 @@ L'altezza dell'immagine stampata nelle unità correnti.  Moltiplicare questa imp
 #### Schermo
 L'immagine viene renderizzata usando la risoluzione DPI (punti per pollice) della vista. Si tratta della densità di pixel su un dispositivo.  Normalmente esprime i [punti per pollice (DPI)](https://en.wikipedia.org/wiki/Dots_per_inch).
 
-#### Personalizza
+#### Personalizzato
 L'immagine viene renderizzata usando una risoluzione personalizzata. Definire la risoluzione personalizzata specificando l'altezza e la larghezza della vista nel controllo **Pixels per:**.
 
 #### Stampante, qualità bassa

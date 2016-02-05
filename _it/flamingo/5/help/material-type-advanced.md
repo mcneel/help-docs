@@ -2,7 +2,7 @@
 title: Proprietà dei materiali avanzate
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingo presenta sia dei tipi di [materiali semplici](material-type-simple.html
 
 L'insieme completo di gruppi di proprietà del materiale avanzato è costituito da:
 
-> [Nome](#name)
-> [Procedura](#procedures)
-> [Proprietà dei materiali avanzate](#advanced-materials-properties)
-> [Rifinitura riflettente](#reflective-finish-and-highlight)
-> [Trasparenza](#transparency)
-> [Texture procedurali](#bump-patterns)
-> [Texture bitmap](#textures)
-> [Note](#notes)
+* [Nome](#name)
+* [Procedura](#procedures)
+* [Proprietà dei materiali avanzate](#advanced-materials-properties)
+* [Rifinitura riflettente](#reflective-finish-and-highlight)
+* [Trasparenza](#transparency)
+* [Texture procedurali](#bump-patterns)
+* [Texture bitmap](#textures)
+* [Note](#notes)
 
 ## Nome del materiale
 {: #name}
@@ -33,8 +33,10 @@ Per esempio, la procedura [Marmo](procedural-materials.html#marble) combina un m
 
 
 ##### Per aggiungere una procedura
+
 1. Cliccare con il tasto destro nella finestra delle Procedure.
 1. Dal menu, cliccare sul tipo di procedura desiderato.
+
   * [Base](procedural-materials.html#base)
   * [Blend angolare](procedural-materials.html#angular-blend)
   * [Fusione](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ Per esempio, la procedura [Marmo](procedural-materials.html#marble) combina un m
   * [Legno](procedural-materials.html#wood)
 
 ##### Per rimuovere una procedura
- 1. Nella finestra delle Procedure, cliccare con il tasto destro sul nome della procedura.
- 2. Dal menu, cliccare su Rimuovi.
+
+1. Nella finestra delle Procedure, cliccare con il tasto destro sul nome della procedura.
+1. Dal menu, cliccare su Rimuovi.
 
 ## Proprietà dei materiali avanzate
 {: #advanced-materials-properties}
@@ -73,13 +76,13 @@ Imposta il colore delle riflessioni speculari in modo che corrisponda al colore 
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Personalizzato
-In alcune finiture molto particolari, le riflessioni degli oggetti hanno un colore diverso dal colore base del materiale.  Di solito ciò succede nei materiali che sono costituiti da vari livelli. Si usi Personalizzato per specificare un colore qualsiasi per le zone di massima riflessione luminosa. Si usi il [Selettore dei colori](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) per selezionare un colore riflettente.
+In alcune finiture molto particolari, le riflessioni degli oggetti hanno un colore diverso dal colore base del materiale.  Di solito ciò succede nei materiali che sono costituiti da vari livelli. Si usi Personalizzato per specificare un colore qualsiasi per le zone di massima riflessione luminosa. Si usi il [Selettore dei colori](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} per selezionare un colore riflettente.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
 #### Intensità
 {: #intensity}
-Regola l'intensità delle zone di massima riflessione luminosa. Valori inferiori tendono a creare degli oggetti lucidi che riflettono la luce, ma non gli oggetti circostanti. Valori maggiori aumentano le dimensioni e l'intensità delle zone di massima riflessione luminosa e delle riflessioni.  I valori più alti rendono speculare il materiale, facendolo riflettere gli altri oggetti e l'ambiente nella scena.
+Regola l’intensità delle zone di massima riflessione luminosa. Valori inferiori tendono a creare degli oggetti lucidi che riflettono la luce, ma non gli oggetti circostanti. Valori maggiori aumentano le dimensioni e l'intensità delle zone di massima riflessione luminosa e delle riflessioni.  I valori più alti rendono speculare il materiale, facendolo riflettere gli altri oggetti e l'ambiente nella scena.
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
@@ -190,7 +193,7 @@ Affinché si abbia diffusione interna, il materiale deve avere una certa traspar
 
 #### Attenuazione
 {: #attenuation}
-Determina in che quantità viene assorbita la luce quando attraversa un oggetto: quanto maggiori sono i valori, tanto più "torbido" sarà l'aspetto dell'oggetto. Si usi l'Attenuazione per modellare un liquido. I liquidi limpidi presentano un valore basso di Attenuazione, mentre i liquidi torbidi hanno un valore di Attenuazione maggiore.
+Determina in che quantità viene assorbita la luce quando attraversa un oggetto. Quanto maggiori sono i valori, tanto più "torbido" sarà l'aspetto dell'oggetto. Si usi l'Attenuazione per modellare un liquido. I liquidi limpidi presentano un valore basso di attenuazione. I liquidi torbidi presentano un valore alto di attenuazione.
 
 ![images/attenuation.png](images/attenuation.png)
 
@@ -239,13 +242,13 @@ Per aggiungere dei particolari ad un materiale, si possono usare fino a quattro 
 {: #bump-patterns}
 I pattern rilievo ricreano l'aspetto di un tipo specifico di superficie senza dover usare ulteriori mappe o delle mappe di scostamento. I rilievi utilizzano una serie di regole matematiche per fornire l'impressione che la superficie abbia dei rilievi. Come pattern, si includono:
 
-> [Carta vetrata](#sandpaper)
-> [Pietrisco](#rubble)
-> [Piramide](#pyramid)
-> [Rugoso](#wrinkled)
-> [Marmorizzato](#marbled)
+* [Carta vetrata](#sandpaper)
+* [Pietrisco](#rubble)
+* [Piramide](#pyramid)
+* [Rugoso](#wrinkled)
+* [Marmorizzato](#marbled)
 
-Materiali quali lo stucco, il cemento e l'argilla hanno una texture fine. In genere, a meno che il punto di osservazione non sia estremamente vicino, non vale la pena eseguire una scansione di materiali di questo tipo per creare una bitmap. Usando una mappa procedurale Carta vetrata su un [Colore base](advanced-material-properties-main.html#color) si può facilmente riprodurre questo tipo di pattern. Si crei un [Colore base](advanced-material-properties-main.html#color) che rappresenti il colore del materiale. Quindi, si applichi una mappa di rilievo procedurale al materiale. Si usi l'opzione Carta vetrata se si desidera una texture fine oppure l'opzione Pietrisco per una texture più grossolana.
+Materiali quali lo stucco, il cemento e l'argilla hanno una texture fine. In genere, a meno che il punto di osservazione non sia estremamente vicino, non vale la pena eseguire una scansione di materiali di questo tipo per creare una bitmap. Usando una mappa procedurale Carta vetrata su un [Colore base](advanced-material-properties-main.html#color) si può facilmente riprodurre questo tipo di pattern. Si crei un [Colore base](advanced-material-properties-main.html#color) che rappresenti il colore del materiale. Quindi, si applichi una mappa di rilievo procedurale al materiale. Si usi l'opzione Carta vetrata se si desidera una texture fine oppure l'opzione Pietrisco per una texture grossolana.
 
 Spuntando le caselle delle mappe di rilievo, diventano disponibili ulteriori controlli. Su un materiale si possono applicare vari pattern rilievo.
 

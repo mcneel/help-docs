@@ -2,7 +2,7 @@
 title: Assegnazione dei materiali
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Gli oggetti di una scena hanno un sorgente per i materiali. Si tratta del luogo da cui attingono il loro materiale di rendering.  I materiali si possono assegnare in vari modi. Il metodo usato per l'assegnazione dei materiali ha un grande effetto sul grado di facilità di modifica e mantenimento successivi del modello.
 
 I materiali si possono assegnare in tre modi. Tutti e tre i modi sono delle gerarchie, per cui un'assegnazione più in basso nell'elenco sovrascriverà un'assegnazione superiore. I tre modi sono:
@@ -46,8 +46,8 @@ Per esempio, il modello di una macchina può avere i pneumatici sul livello Pneu
 
 ##### Per assegnare un materiale dalle proprietà oggetto
 1. Selezionare gli oggetti.
-1. Dal menu Modifica, cliccare su Proprietà oggetto ![images/properties.png](images/properties.png) per editare l'oggetto.
-1. Nella finestra di dialogo [Proprietà](properties-object.html), scheda Materiale ![images/materialtab.png](images/materialtab.png), sotto Assegna per, fare clic su Per genitore.
+1. Dal menu Modifica, cliccare su Proprietà oggetto ![images/properties.png](images/properties.png){: .inline} per editare l'oggetto.
+1. Nella finestra di dialogo [Proprietà](properties-object.html), scheda Materiale ![images/materialtab.png](images/materialtab.png){: .inline} sotto Assegna per, fare clic su Per genitore.
 
 ## Assegnare i materiali agli oggetti
 {: #byobject}
@@ -58,8 +58,8 @@ L'assegnazione per livello è il metodo più raccomandabile. Si assegni un mater
 
 ##### Assegnare un materiale dalle proprietà oggetto
 1. Selezionare gli oggetti.
-1. Dal menu Modifica, cliccare su Proprietà oggetto ![images/properties.png](images/properties.png) per editare l'oggetto.
-1. Nella finestra di dialogo [Proprietà](properties-object.html), scheda Materiali ![images/materialtab.png](images/materialtab.png), sotto Assegna per, fare clic su Per oggetto e quindi fare clic sul materiale dall'elenco.
+1. Dal menu Modifica, cliccare su Proprietà oggetto ![images/properties.png](images/properties.png){: .inline} per editare l'oggetto.
+1. Nella finestra di dialogo [Proprietà](properties-object.html), scheda Materiali ![images/materialtab.png](images/materialtab.png){: .inline} sotto Assegna per, fare clic su Per oggetto e quindi fare clic sul materiale dall'elenco.
 
 ##### Trascinare un materiale su un singolo oggetto
 {: #drag-dropmaterialtoobject}

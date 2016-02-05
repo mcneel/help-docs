@@ -1,19 +1,19 @@
 ---
-title: Rendering automatizzato
+title: Proprietà dei materiali di base
 ---
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 I materiali di Flamingo sono definiti da una serie di gruppi di proprietà. Si tratta di una serie di tipi di materiali semplici comunemente usati.  Questi materiali presentano un gruppo di controlli molto semplici. Tali controlli offrono un facile accesso alle proprietà più comunemente usate per modificare l'aspetto di un materiale senza la complessità di ulteriori controlli. Per la maggior parte dei materiali semplici, modificarne l'aspetto significa semplicemente modificarne il colore.
 
 #### Tipi di materiali semplici:
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Colore solido](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastica](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Metallo](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[Vetro](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Lucido](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo Con texture](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Set di texture](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png){: .inline} [Colore solido](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png){: .inline} [Plastica](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png){: .inline} [Metallo](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png){: .inline} [Vetro](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png){: .inline} [Lucido](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png){: .inline} [ClearFinish](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png){: .inline} [Flamingo Con texture](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png){: .inline} [Set di texture](#texture-set)
 
 Qualsiasi materiale si può trasformare in un materiale avanzato.  I materiali avanzati presentano tutti i controlli possibili per modificare un materiale in Flamingo nXt.  Per un maggiore controllo dei materiali, si usino i materiali avanzati oppure si converta un materiale esistente in un materiale avanzato.
 
@@ -74,7 +74,7 @@ I materiali Vetro hanno un [Colore](material-type-advanced.html#color) ed un [In
 #### Indice di rifrazione
 Controlla la quantità di deviazione della luce quando attraversa un materiale. Per maggiori informazioni, si veda il punto [Indice di rifrazione](advanced-material-properties-main.html#index-of-refraction) nelle proprietà avanzate.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %}  Si usi l'Editor avanzato per sovrascrivere le impostazioni predefinite di: [Colore delle riflessioni speculari](material-type-advanced.html#highlight-color), [Intensità](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Nitidezza](material-type-advanced.html#sharpness) e [Trasparenza](material-type-advanced.html#transparency)
+{% include_relative snippets/snippet-material-advanced-editor.md %} Si usi l'Editor avanzato per sovrascrivere le impostazioni predefinite di: [Colore delle riflessioni speculari](material-type-advanced.html#highlight-color), [Intensità](material-type-advanced.html#intensity), [Fresnel](material-type-advanced.html#fresnel), [Nitidezza](material-type-advanced.html#sharpness) e [Trasparenza](material-type-advanced.html#transparency).
 
 ## Lucido
 {: #glossy}
@@ -124,8 +124,9 @@ Imposta la mappa immagine e le proprietà del materiale. Presenta molte opzioni.
 
 ## Set di texture
 {: #texture-set}
-I [materiali Set di texture](texture-set-materials.html) supportano mappe texture di terze parti contenenti informazioni quali scostamento, mappe normali e mappe di rilievo. Le mappe di scostamento conferiscono profondità ai materiali. Combinando queste mappe texture in un insieme, si possono creare dei materiali molto realistici. Usando software quali [PixPlant](http://www.pixplant.com/), per esempio, si possono creare dei set di texture a partire da bitmap standard.
-<!-- TODO: This dialog Needs a page.-->
+
+I materiali "Set di texture" sono un insieme coordinato di texture che definisce un materiale.  Questi insiemi coordinati si possono creare tramite mappe texture contenenti informazioni quali scostamento, mappe normali e mappe di rilievo. Le mappe di scostamento conferiscono profondità ai materiali. Combinando queste mappe texture in un insieme, si possono creare dei materiali molto realistici. Usando software quali [PixPlant](http://www.pixplant.com/), per esempio, si possono creare dei set di texture a partire da bitmap standard.
+
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
@@ -141,7 +142,32 @@ Controlla il valore di nitidezza vs quello di sfocatura della riflessione. Per m
 #### Tipi
 Questa opzione controlla il tipo di riflessione sulla superficie. Per maggiori informazioni, si veda il punto [Tipo](material-type-advanced.html#type) nelle proprietà avanzate.
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Si usi l'Editor avanzato per sovrascrivere le impostazioni predefinite di questo materiale. **Nota:** Si tratta di un materiale complesso che usa molte texture sovrapposte con varie impostazioni predefinite.  Usando l'editor avanzato, non si manterranno sincronizzate tutte le proprietà.
+### Mappe texture
+All'interno della scheda Mappa texture, vengono elencate le texture che fanno parte del set di texture.  Fare clic con il pulsante destro sulla scheda per aggiungere, rimuovere o cambiare le texture del set.
 
-## Materiale avanzato
-Il [materiale avanzato di Flamingo](material-type-advanced) contiene un insieme di proprietà completo per un materiale di Flamingo. Se nessuno di questi materiali semplici funziona, si usi il [materiale avanzato di Flamingo](material-type-advanced) per creare un materiale con la massima flessibilità.
+#### Aggiungi mappe...
+Usare questa opzione del menu di scelta rapida per aggiungere nuove texture all'elenco.  Si possono aggiungere varie texture alla volta. Se i nomi delle texture contengono dei suffissi per uno dei tipi di mappatura, il tipo di mappa viene aggiunto automaticamente.  Per esempio, se una mappa contiene *-normal* all'interno del suo nome, essa verrà automaticamente contrassegnata come tipo di mappa normale.
+
+#### Rimuovi mappa
+Questa opzione del menu di scelta rapida elimina una mappa texture dalla scheda.
+
+#### Colore
+Questo tipo di mappatura contribuirà al colore visibile della texture. Per maggiori informazioni si veda il [Tipo di mappatura standard](material-image-properties.html#standard)
+
+#### Rilievo
+La mappa di rilievo userà la scala di grigi della texture per simulare una variazione di altezza o rilievo nel materiale. Per maggiori informazioni si veda [Mappa di rilievo - Avanzato](material-image-properties.html#standard)
+
+#### Normale
+Le mappe normali sono delle mappe di rilievo particolari che usano il canale rosso, verde e blu della bitmap per regolare la direzione del rilievo su ciascun pixel.  Essendo il canale blu la direzione Z del rilievo, le immagini tendono ad assumere una tonalità blu. Per maggiori informazioni si veda [Mappa normale - Avanzato](material-image-properties.html#normal)
+
+#### Speculare
+Una mappa speculare usa i colori della scala di grigi del materiale per controllare la quantità di riflessione nell'immagine in corrispondenza di un dato punto. Per maggiori informazioni si veda [Mappa di trasparenza - Avanzato](material-image-properties.html#transparency)
+
+#### Opacità
+Una mappa opacità controlla la trasparenza di un materiale su ciascun pixel in base alla scala di grigi dell'immagine. Per maggiori informazioni si veda [Mappa normale - Avanzato](material-image-properties.html#normal)
+
+#### Scostamento
+Una mappa di scostamento sposta la mesh di rendering in base al colore della scala di grigi della mappa. Per maggiori informazioni si veda [Mappa di scostamento - Avanzato](material-image-properties.html#displacement)
+
+### Materiale avanzato
+Il [materiale avanzato di Flamingo](material-type-advanced) contiene un insieme di proprietà completo per un materiale di Flamingo.  Se nessuno di questi materiali semplici funziona, si usi il [materiale avanzato di Flamingo](material-type-advanced) per creare un materiale con la massima flessibilità.

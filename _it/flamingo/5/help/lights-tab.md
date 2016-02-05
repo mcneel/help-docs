@@ -2,7 +2,7 @@
 title: Luci
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
+# ![images/lights-tab.png](images/lights-tab.png){: .inline} {{page.title}}
 Le sorgenti di luce artificiale usano le normali sorgenti luminose di Rhino, con l'aggiunta di alcune proprietà di Flamingo per controllare la distribuzione della luce. Quando si usano le sorgenti luminose, occorre scegliere accuratamente il tipo che più si addice al tipo di lampada che si sta modellando.
 
 
@@ -10,74 +10,76 @@ Le sorgenti di luce artificiale usano le normali sorgenti luminose di Rhino, con
 {: #light-tab}
 La scheda Luci elenca tutte le luci artificiali presenti nella scena. Questo argomento si riferisce alla scheda Luci di Flamingo.  Esiste anche una [scheda Luci di Rhino](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#commands/lights.htm).  Flamingo e Rhino mantengono le impostazioni delle luci in sincronizzazione tra le due schede.  La scheda Luci di Flamingo è un po' più flessibile grazie all'aggiunta di alcune [Proprietà delle luci](#light-properties).
 
-<!-- TODO: There should be some mention that the Lights tab only is available for some of the Lighting presets -->
-<!-- TODO: #### Is this supposed to be a code? It's showing up as #### -->
-#### Dove trovo il controllo di illuminazione di Flamingo?
 La scheda Luci va attivata tramite le [Impostazioni di illuminazione predefinite](lighting-tab.html#lighting-presets) oppure le [Impostazioni di illuminazione personalizzate](lighting-tab.html#sun).
 
- 1. ![images/options.png](images/options.png)Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png)Barra strumenti di Flamingo nXt
- 1. ![images/menuicon.png](images/menuicon.png)Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Scheda Flamingo > Luci
+<!-- #### Is this supposed to be a code? It's showing up as ####. To fix this, there needs to be a new line above the headline for the markdown to work.-->
+
+#### Dove trovo il controllo di illuminazione di Flamingo?
+Se la scheda Luci è attivata tramite le [Impostazioni di illuminazione predefinite](lighting-tab.html#lighting-presets) oppure le [Impostazioni di illuminazione personalizzate](lighting-tab.html#sun), essa si trova qui:
+
+ 1. ![images/options.png](images/options.png){: .inline} Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barra strumenti di Flamingo nXt
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Scheda Flamingo > Luci
 
 Dalla scheda Luci è possibile inserire ed attivare/disattivare una luce, così come cambiare l'intensità ed il canale di ciascuna luce.
 
 Flamingo supporta i seguenti tipi di luce:
 
-> [Contrassegna oggetti come luci](#tag-objects-as-lights)
-> [Riflettore](#spotlight)
-> [Luce puntiforme](#pointlight)
-> [Luce rettangolare](#rectangularlight)
-> [Luce lineare](#linearlight)
+* [Contrassegna oggetti come luci](#tag-objects-as-lights)
+* [Riflettore](#spotlight)
+* [Luce puntiforme](#pointlight)
+* [Luce rettangolare](#rectangularlight)
+* [Luce lineare](#linearlight)
 
-**Nota:** Le luci direzionali di Rhino ![images/directionallightbutton.png](images/directionallightbutton.png) non sono supportate. Esse non appaiono nell'elenco delle luci e non gli si possono assegnare le proprietà di Flamingo nXt.
+**Nota:** Le luci direzionali di Rhino ![images/directionallightbutton.png](images/directionallightbutton.png){: .inline} non sono supportate. Esse non appaiono nell'elenco delle luci e non gli si possono assegnare le proprietà di Flamingo nXt.
 
 Alcune proprietà delle luci vengono mostrate nella scheda Luci per modifiche veloci delle proprietà comuni.
 
 Le proprietà contenute nella scheda sono:
 
- >[On/Off](#on)
- >[Nome](#name)
- >[Distribuzione](#light-distribution)
- >[Dirigi verso](#aim-light)
- >[Watts](#watts)
- >[Canale](#channel)
+* [On/Off](#on)
+* [Nome](#name)
+* [Distribuzione](#light-distribution)
+* [Dirigi verso](#aim-light)
+* [Watts](#watts)
+* [Canale](#channel)
 
 Fare clic con il pulsante destro del mouse sulla scheda Luci per aprire il menu delle [opzioni aggiuntive](#additional-options).
 
-Accedere alle [Proprietà delle luci](#light-properties) selezionando la luce ed accedendo all'icona delle proprietà delle luci ![images/spotlightbutton.png](images/spotlightbutton.png) del [Pannello delle proprietà oggetto](http://docs.mcneel.com/rhino/5/help/it-it/commands/properties.htm).
+Accedere alle [Proprietà delle luci](#light-properties) selezionando la luce ed accedendo all'icona delle proprietà delle luci ![images/spotlightbutton.png](images/spotlightbutton.png){: .inline} del [Pannello delle proprietà oggetto](http://docs.mcneel.com/rhino/5/help/it-it/commands/properties.htm).
 
 ## Tipi di luci
 {: #light-types}
 Le luci si possono inserire dalla barra degli strumenti di Rhino oppure dalla scheda Luci di Flamingo. Con Flamingo, gli oggetti si possono contrassegnare come luci.
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Contrassegna oggetti come luci
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png){: .inline} Contrassegna oggetti come luci
 {: #tag-objects-as-lights}
 Qualsiasi oggetto sottoponibile a rendering (superficie, solido, ecc.) può essere contrassegnato come sorgente di luce ed associato a determinate proprietà. Si possono inoltre assegnare altre proprietà quali la [distribuzione](#light-distribution), la [direzione](#aim-light) e l'[intensità](#watts). Gli oggetti contrassegnati come luci possono mostrare un widget di anteprima che mostra la direzione della luce ed il suo punto centrale.
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *Fari a LED contrassegnati come sorgenti di luce*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) Riflettore
+#### ![images/spotlight-01.png](images/spotlight-01.png){: .inline} Riflettore
 {: #spotlight}
 Il riflettore ha una distribuzione della luce conica con una direzione specifica.  Le proprietà di questo tipo di luce includono un [raggio](#radius), un [angolo del fascio di luce](#beam-angle), un raggio di decadimento ed una direzione. Quanto più grande il raggio della sorgente, tanto più morbide saranno le ombre generate dalla luce. Di default, si visualizza un disco nel punto in cui si trova la luce. Ulteriori informazioni su come modificare l'ubicazione, la direzione e l'angolo del fascio di luce servendosi delle maniglie si possono trovare consultando l'argomento della guida in linea [Riflettore di Rhinoceros](http://docs.mcneel.com/rhino/5/help/it-it/commands/lights.htm#Spotlight).
 
 ![images/spotlight.png](images/spotlight.png)
 *Un riflettore diretto verso la scatola rossa*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) Luce puntiforme
+#### ![images/pointlight-01.png](images/pointlight-01.png){: .inline} Luce puntiforme
 {: #pointlight}
 Le luci puntiformi sono delle piccole sfere che distribuiscono la luce uniformemente in tutte le direzioni. Come proprietà per questa luce si ha il [raggio](#radius). Quanto più grande il raggio, tanto più morbide saranno le ombre generate dalla luce. Di default, si visualizza una sfera di luce nel punto in cui si trova la luce quando si esegue il rendering. Se la luce puntiforme viene parzialmente oscurata da un oggetto che la interseca, possono verificarsi degli effetti anomali.
 
 ![images/pointlight.png](images/pointlight.png)
 *Una piccola luce puntiforme vicino alla parete destra*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) Luce rettangolare
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png){: .inline} Luce rettangolare
 {: #rectangularlight}
 Simula una luce da incasso con diffusore o deflettore. Questa sorgente distribuisce la luce con un pattern diffuso in base all'orientamento del rettangolo. Sul punto centrale della luce, viene tracciata una freccia di direzione. Direttamente davanti al rettangolo, si ha l'intensità massima di luce.  Quindi la luce decade a partire dal rettangolo con una certa inclinazione rispetto agli oggetti. Di default, quando si esegue il rendering, si visualizza un rettangolo bianco. Un errore comune è inserire questi rettangoli esattamente alla stessa altezza del piano del soffitto. Per ottenere dei risultati coerenti, assicurarsi che le luci si trovino leggermente al di sotto del soffitto. Ulteriori informazioni su come modificare l'ubicazione, la direzione e l'angolo del fascio di luce servendosi delle maniglie si possono trovare consultando l'argomento della guida in linea [Luce rettangolare di Rhinoceros](http://docs.mcneel.com/rhino/5/help/it-it/commands/lights.htm#RectangularLight).
 
 ![images/rectangular light.png](images/rectangular light.png)
 *Una luce rettangolare giusto sotto al soffitto*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) Luce lineare
+#### ![images/linearlight-01.png](images/linearlight-01.png){: .inline} Luce lineare
 {: #linearlight}
 Distribuisce la luce secondo un modello cilindrico che simula un tubo fluorescente. Come proprietà per questa luce si hanno il [raggio](#radius) e la lunghezza. Quanto più grande il raggio, tanto più morbide saranno le ombre generate dalla luce. Di default, si visualizza un cilindro di luce nel punto in cui si trova la luce quando si esegue il rendering. Se la luce cilindrica viene parzialmente oscurata da un oggetto che la interseca, possono verificarsi degli effetti anomali. Si usino i punti di controllo di Rhino per attivare le maniglie della luce per poter modificarla sullo schermo.
 
@@ -91,7 +93,7 @@ Quando Flamingo viene scelto come applicazione di rendering corrente per Rhino, 
 {: #name}
 Il nome dell'oggetto luce. Un modo facile di differenziare le luci dello stesso tipo all'interno del modello.
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) On/Off
+#### ![images/lightbulbon.png](images/lightbulbon.png){: .inline} On/Off
 {: #on}
 Commuta (attiva/disattiva) lo stato di una luce. Nella tabella delle luci, se l'icona della lampadina è gialla, la luce è attivata. Se l'icona della lampadina è grigia, la luce risulterà disattivata nel rendering. Fare doppio clic sull'icona per attivarla o disattivarla. Nella finestra di dialogo delle proprietà, c'è una casella di selezione On/Off.
 
@@ -105,7 +107,7 @@ Quando si contrassegna un oggetto come luce, si usi l'opzione Distribuzione per 
 
 #### Dirigi luce *([solo oggetti contrassegnati](#tag-objects-as-lights))*
 {: #aim-light}
-Per gli oggetti contrassegnati come luci aventi una distribuzione Riflettore o Diffusa, specificare una direzione.   Fare doppio clic sull'opzione "Dirigi >>" e seguire i prompt della linea di comando.
+Per gli oggetti contrassegnati come luci aventi una distribuzione Riflettore o Diffusa, specificare una direzione.  Fare doppio clic sull'opzione "Dirigi >>" e seguire i prompt della linea di comando.
 
 #### Watt
 {: #watts}

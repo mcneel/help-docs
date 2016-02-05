@@ -1,15 +1,16 @@
 ---
+title: Proprietà del documento: Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Proprietà del documento: Flamingo nXt
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 Queste impostazioni si applicano solo al modello corrente. Vi è un compromesso tra il tempo richiesto a completare il rendering e la qualità dell'immagine desiderata.
 
 #### Dove trovo questo comando?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Barre degli strumenti Strumenti di rendering > ![images/environments.png](images/environments.png) Editor dei materiali
- 1. ![images/menuicon.png](images/menuicon.png)Menu > Rendering > Editor degli ambienti
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} Barre degli strumenti Strumenti di rendering > ![images/environments.png](images/environments.png){: .inline} Editor dei materiali
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menu > Rendering > Editor degli ambienti
  1. Comando > EditorAmbienti
 
 ## Materiali

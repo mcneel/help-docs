@@ -2,7 +2,7 @@
 title: Pannello Librerie
 ---
 
-# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+# ![images/libraries.svg](images/libraries.svg){: .inline} {{page.title}}
 Il comando Librerie apre il pannello Librerie per gestire le librerie dei materiali, delle texture e degli ambienti.
 
 I contenuti di rendering possono essere salvati su dei file per creare delle librerie esterne che possono essere condivise dai modelli. I contenuti si possono anche trascinare da una sessione all'altra di Rhino e su una cartella.
@@ -15,11 +15,11 @@ I materiali sono semplicemente dei file che si trovano sul disco rigido.  Le car
 
 Si usi la barra degli indirizzi della parte superiore della scheda Librerie per accedere a qualsiasi cartella del computer.
 
-Per ritornare velocemente al percorso delle librerie predefinito, si usi l'icona con la chiave inglese in alto a destra. ![images/library_default.png](images/library_default.png)
+Per ritornare velocemente al percorso delle librerie predefinito, si usi l'icona con la chiave inglese in alto a destra. ![images/library_default.png](images/library_default.png){: .inline}
 
 #### Organizzare le librerie
 {: organizing_libraries}
-Le librerie sono semplicemente dei file.  Le cartelle si possono copiare ed incollare, così come spostare. Per modificare le cartelle ed i documenti, si usi Windows Explorer. Per specificare altre cartelle come cartelle predefinite della scheda Librerie, si usino le [Impostazioni librerie](#settings) ![images/library_default.png](images/library_default.png).
+Le librerie sono semplicemente dei file.  Le cartelle si possono copiare ed incollare, così come spostare. Per modificare le cartelle ed i documenti, si usi Windows Explorer. Per specificare altre cartelle come cartelle predefinite della scheda Librerie, si usino le [Impostazioni librerie] ![images/library_default.png](images/library_default.png){: .inline}.
 
 ## Libreria dei materiali
 {: #material}
@@ -46,13 +46,14 @@ Gli ambienti si possono salvare nella libreria.  In questo modo, le impostazioni
 
 ## Impostazioni delle librerie
 {: #settings}
-Si usino le opzioni delle librerie ![images/options.png](images/options.png) per cambiare le impostazioni predefinite mostrate nel menu ![images/library_default.png](images/library_default.png).
+Si usino le ![images/options.png](images/options.png){: .inline} opzioni delle librerie per cambiare le impostazioni predefinite mostrate nel ![images/library_default.png](images/library_default.png){: .inline} menu.
 
 ##### Dove trovo questo comando?
-Le opzioni delle librerie sono accessibili in tre modi diversi. <!-- TODO: Where is the third place? -->
+Le opzioni delle librerie sono accessibili in tre modi diversi. 
 
- 1. Scheda Librerie > ![images/library_default.png](images/library_default.png) nella parte superiore destra del pannello Librerie > Impostazioni...
+ 1. Scheda Librerie > ![images/library_default.png](images/library_default.png){: .inline} nella parte superiore destra del pannello Librerie > Impostazioni...
  1. Menu Strumenti > Opzioni > Librerie.
+ 1. Menu > Pannelli > Librerie.
 
 
 ### Mostra contenuti di rendering

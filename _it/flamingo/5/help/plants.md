@@ -2,17 +2,15 @@
 title: Piante
 ---
 
-<!-- TODO: Is this  about trees or plants? I can see some confusion on the page. Lots of mentions of "trees" where I think we actually want to say "plant". -->
-
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 Flamingo nXt è fornito di un potente generatore di piante che genera in modo efficiente forme di piante complesse durante il rendering. Queste piante hanno un impatto minimo sulle dimensioni del modello, visto che si mantiene solo un segnaposto nel modello.
 
 ![images/plants-001.png](images/plants-001.png)
-*Alberi di Flamingo nXt.*
+*Piante di Flamingo nXt.*
 
 ### Inserire una pianta di nXt
 {: #insert:}
-Le piante di Flamingo vengono inserite come un blocco.  Questi blocchi contengono dei punti che rappresentano la forma complessiva dell'albero.
+Le piante di Flamingo vengono inserite come un blocco.  Questi blocchi contengono dei punti che rappresentano la forma complessiva della pianta.
 
 1. Dal menu Flamingo nXt, cliccare su Piante > Inserisci pianta.
 1. Nella finestra di dialogo Pianta di Flamingo nXt, cliccare sul nome di una pianta e quindi su Apri.
@@ -44,5 +42,5 @@ Note:
 * Le piante di Flamingo 2 sono diverse dalle nuove piante. Attualmente non è possibile modificare le piante di Flamingo 2 o convertirle in piante di Flamingo nXt.
 
 ### Editor delle piante
-{: tree-editor}
-Flamingo include un editor degli alberi per la creazione di alberi personalizzati.  Sono disponibili alcuni modelli template di base per gli alberi, da usare come punto di partenza per un nuovo tipo di pianta.  Per maggiori informazioni, si veda l'argomento [Editor delle piante](tree-editor.html).
+{: plant-editor}
+Flamingo include un editor delle piante per la creazione di piante personalizzate.  Sono disponibili alcuni modelli template di base per le piante, da usare come punto di partenza per un nuovo tipo di pianta.  Per maggiori informazioni, si veda l'argomento [Editor delle piante](plant-editor.html).
