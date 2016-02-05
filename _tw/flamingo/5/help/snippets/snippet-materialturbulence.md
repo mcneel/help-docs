@@ -1,3 +1,3 @@
 
-#### Turbulence
-Produces the swirled appearance by causing the alternating components to bend and twist.
+#### 不規則性
+增加或減少紋路的不規則性。
