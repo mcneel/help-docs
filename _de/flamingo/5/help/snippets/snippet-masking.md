@@ -4,14 +4,14 @@ Verdunkelt Teile des Bildes basierend auf einem Farbwert oder einem im Bild gesp
 
 In diesem Beispiel wird ein Bild mit einem Alphakanalhintergrund als Decal auf einer rechteckigen Fläche platziert. Maskierung für Materialien funktioniert auf die gleiche Weise.
 
-![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
+![images/airplane.png](images/airplane.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 *Ursprüngliches Decal-Bild. Der grau karierte Bereich stellt den Alphakanal des Bildes dar.*
 
 Maskierungsinformationen können in der Bitmap aus drei verschiedenen Quellen stammen:
 
-> [Nichts](#nomask)
-> [Alphakanal](#alphamask)
-> [Farbe](#colormask)
+* [Nichts](#nomask)
+* [Alphakanal](#alphamask)
+* [Farbe](#colormask)
 
 #### Nichts
 {: #nomask}
@@ -24,7 +24,7 @@ Ohne Maskierung wird das darunter liegende Material durch das Bild verdunkelt. M
 {: #alphamask}
 Verwenden Sie den [Alphakanal](environment-tab.html#alpha) des Bilds (sofern vorhanden), um den maskierten Bereich festzulegen.
 
-![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
+![images/airplane.png](images/airplane.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 *Links das Original. Der grau karierte Bereich stellt den Alphakanal des Bildes dar. Rechts das Bild über einer Wasseroberfläche.*
 
 Der Alphakanal ist ein Teil der Pixeldaten, der Transparenzinformationen vorbehalten ist. Alphakanäle erzeugen und speichern Masken, mit denen Sie Teile eines Bilds isolieren und schützen können, während Sie Farbänderungen vornehmen, Filter oder andere Effekte am restlichen Bild anbringen. Jeder Pixel eines Bilds wird in Datenkanälen beschrieben, die eine Farbmischung aus Rot, Grün und Blau (RGB) festlegen. Der Alphakanal ist eine 8-Bit-Graustufen-Darstellung (256 Stufen) des Bilds und wird verwendet, um die Farbe des darunter liegenden Pixels zu maskieren. Der Wert der Alphamaske bestimmt die Intensität der Pixelfarbe. Wenn der Alphakanal auf 100 % eingestellt ist, sind die Pixel vollständig transparent.  Bei einer niedrigeren Einstellung werden die Bildpixel mit Transparenz überblendet.
@@ -54,9 +54,9 @@ Macht die maskierte Fläche des darunter liegenden Objekts transparent, so dass 
 
 Durch transparente Maskierung wird ein natürlicherer Schatten erzielt und Hintergrundobjekte sind sichtbar. Das darunter liegende Material könnte ganz einfach transparent sein, aber manchmal ist es von Vorteil, wenn die Fläche hinter dem Decal transparent ist, während andere Bereiche der Fläche undurchsichtig bleiben.
 
-![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
+![images/masking-003.png](images/masking-003.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 
 #### Maskierte Farben anzeigen
-Zeigt die Maskierungsauswirkungen grafisch an, während die Parameter geändert werden. Verwenden Sie den [Farbwähler](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) zur Auswahl der Anzeigefarbe der maskierten Pixel. Wenn diese Farbe oder die Einstellung des Kontrollkästchens geändert wird, hat dies keinen Einfluss auf die maskierte Farbe. Es ist nur ein grafisches Werkzeug zum Bearbeiten der Maske.
+Zeigt die Maskierungsauswirkungen grafisch an, während die Parameter geändert werden. Verwenden Sie den [Farbwähler](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} zur Auswahl der Anzeigefarbe der maskierten Pixel. Wenn diese Farbe oder die Einstellung des Kontrollkästchens geändert wird, hat dies keinen Einfluss auf die maskierte Farbe. Es ist nur ein grafisches Werkzeug zum Bearbeiten der Maske.
 
 ![images/masking-008.png](images/masking-008.png)

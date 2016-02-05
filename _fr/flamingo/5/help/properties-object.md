@@ -2,22 +2,21 @@
 title: Propriétés des objets
 ---
 
-
-#  ![images/properties.svg](images/properties.svg) {{page.title}}
+#  ![images/properties.svg](images/properties.svg){: .inline} {{page.title}}
 Les propriétés Flamingo nXt des objets jouent uniquement sur l'apparence des objets lors du rendu dans Flamingo nXt.
 
-### ![images/materialtab.png](images/materialtab.png) Source du matériau
+### ![images/materialtab.png](images/materialtab.png){: .inline} Source du matériau
 {: #material-source}
 Un matériau peut être assigné à des calques, des blocs et des objets. Pour plus d'informations sur l'assignation de matériaux, consultez la rubrique [Assignation des matériaux](material_assignment.html). Si le matériau est défini par objet, les propriétés du matériau sont également affichées dans cette boîte de dialogue. Pour plus d'informations sur l'édition d'un matériau, consultez [Propriétés des matériaux](material-type-simple.html).
 
-### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Placage de texture
+### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png){: .inline} Placage de texture
 {: #texture-mapping}
 Le placage contrôle comment le matériau est positionné (plaqué) sur un objet précis. La méthode utilisée pour assigner un matériau, que ce soit par calque ou par objet, ne joue pas sur le placage. Pour les matériaux ne présentant pas de motif perceptible, le placage n'est normalement pas nécessaire. Utilisez le placage lorsque le matériau est directionnel ou lorsqu'il présente un motif évident.  Même dans ces cas, le placage par défaut peut servir. Le placage est lié à l'objet et il le suit s'il est déplacé, tourné ou si son échelle est changée. Pour plus d'informations sur les types de placage, consultez la section [Placage de texture](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#properties/texturemapping.htm).
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
 *Deux directions de placage différentes*
 
-### ![images/decalproperties.png](images/decalproperties.png) Décalcomanies
+### ![images/decalproperties.png](images/decalproperties.png){: .inline} Décalcomanies
 {: #decals}
 Les décalcomanies sont des placages d'image sans mosaïque appliqués directement sur les objets au lieu d'utiliser un matériau. Utilisez les décalcomanies pour modifier une partie déterminée de la couleur, de la réflectivité ou du reliefs d'un objet. Voir la section [Décalcomanies de Rhino](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm) pour plus d'informations sur la création et le positionnement des décalcomanies. 
 
@@ -25,18 +24,18 @@ Les décalcomanies sont des placages d'image sans mosaïque appliqués directeme
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
 *Quatre exemples différents de décalcomanies*
 
-### ![images/apply-edge-softening.png](images/apply-edge-softening.png)Maillages personnalisés
+### ![images/apply-edge-softening.png](images/apply-edge-softening.png){: .inline} Maillages personnalisés
 {: #custom-meshes}
 Plusieurs modificateurs de maillage peuvent être utilisés dans Rhino afin de donner plus de détails aux modèles rendus. Utilisez ces modificateurs pour arrondir les bords, ajouter des lignes de fermetures entre des surfaces et créer des câbles à partir de courbes. 
 
 Pour plus d'informations, consultez les sections suivantes :
 
->[Adoucissement des bords](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applyedgesoftening.htm)
->[Gaine](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applycurvepiping.htm)
->[Ligne de fermeture](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applyshutlining.htm)
->[Déplacement](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applydisplacement.htm)
+* [Adoucissement des bords](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applyedgesoftening.htm)
+* [Gaine](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applycurvepiping.htm)
+* [Ligne de fermeture](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applyshutlining.htm)
+* [Déplacement](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#commands/applydisplacement.htm)
 
-### ![images/object-flamingo.PNG](images/object-flamingo.PNG) Propriétés de Flamingo
+### ![images/object-flamingo.PNG](images/object-flamingo.PNG){: .inline} Propriétés de Flamingo
 {: #flamingo-properties}
 
 #### Canal Alpha

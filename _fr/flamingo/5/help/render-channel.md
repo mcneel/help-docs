@@ -2,7 +2,7 @@
 title: Canaux
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 Flamingo nXt 5 possède une fonction très utile qui permet de définir des lumières sur un des huit canaux disponibles. Chaque source de lumière du dessin, y compris le soleil et le ciel peuvent avoir un canal. Au moment du rendu, la lumière de chaque canal est placée sur son propre calque. Une fois le rendu terminé, l'intensité des canaux peut être ajustée.  Les modifications sont appliquées en temps réel sans avoir besoin de calculer à nouveau le rendu.  
 
@@ -31,12 +31,12 @@ Les conditions suivantes doivent être réunies pour produire et manipuler une i
 {: setting}
 Afin de définir un rendu avec plusieurs canaux, la première étape consiste à placer chaque lumière sur un canal. Le numéro du canal est normalement défini dans les propriétés de chaque lumière.  Pour plus d'informations sur comment définir des lumières spécifiques sur un canal, consultez :
 
->[Canal du soleil](sun-and-sky-tabs.html#sun-channel)
->[Canal du ciel](sun-and-sky-tabs.html#sky-channel)
->[Canal de lumière artificielle](lights-tab.html#channel)
->[Incandescence de matériau](documentproperties-flamingo.html#channel)
+* [Canal du soleil](sun-and-sky-tabs.html#sun-channel)
+* [Canal du ciel](sun-and-sky-tabs.html#sky-channel)
+* [Canal de lumière artificielle](lights-tab.html#channel)
+* [Incandescence de matériau](documentproperties-flamingo.html#channel)
 
-Un canal peut posséder une ou plusieurs lumières. Le réglage du canal est un multiplicateur. Les lumières se trouvant sur un même canal conserveront leurs intensités relatives les unes aux autres lorsqu'elles seront ajustées. 
+Un canal peut posséder une ou plusieurs lumières.  Le réglage du canal est un multiplicateur. Les lumières se trouvant sur un même canal conserveront leurs intensités relatives les unes aux autres lorsqu'elles seront ajustées. 
 
 ## Réglages des canaux 
 {: adjusting}

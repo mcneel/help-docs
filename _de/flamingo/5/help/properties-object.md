@@ -2,22 +2,21 @@
 title: Objekteigenschaften
 ---
 
-
-#  ![images/properties.svg](images/properties.svg) {{page.title}}
+#  ![images/properties.svg](images/properties.svg){: .inline} {{page.title}}
 Die Flamingo-nXt-Objekteigenschaften beeinflussen nur die Art und Weise, wie Objekte in Flamingo nXt gerendert werden.
 
-### ![images/materialtab.png](images/materialtab.png) Materialquelle
+### ![images/materialtab.png](images/materialtab.png){: .inline} Materialquelle
 {: #material-source}
 Ein Material kann einer Ebene, einem Objekt oder Block zugewiesen werden.  Weitere Informationen finden Sie im Hilfethema [Materialzuweisung](material_assignment.html). Wenn das Material auf *Nach Objekt* eingestellt ist, werden die Materialeigenschaften auch in diesem Dialog angezeigt.  Weitere Informationen zum Bearbeiten eines Materials finden Sie unter [Materialeigenschaften](material-type-simple.html).
 
-### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) Texturmapping
+### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png){: .inline} Texturmapping
 {: #texture-mapping}
 Das Mapping bestimmt, wie ein Material auf ein bestimmtes Objekt abgebildet wird. Die Methode zur Zuweisung eines Materials auf eine Ebene oder ein Objekt hat keinen Einfluss auf das Mapping. Für Materialien ohne dezidiertes Muster ist es normalerweise nicht nötig, das Mapping besonders zu kontrollieren. Verwenden Sie Mapping, wenn das Material eine Richtung oder ein bestimmtes Muster hat. Aber auch in diesen Fällen ist das Standardmapping oft das richtige. Das Mapping wird im Objekt gespeichert und bleibt auch beim Verschieben, Drehen oder Skalieren erhalten. Weitere Informationen zu den Mappingtypen finden Sie im Rhino-Hilfethema zum [Texturmapping](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#properties/texturemapping.htm).
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
 *Zwei verschiedene Mapping-Richtungen*
 
-### ![images/decalproperties.png](images/decalproperties.png) Decals
+### ![images/decalproperties.png](images/decalproperties.png){: .inline} Decals
 {: #decals}
 Decals sind nicht-kachelbare Bild-Maps, die direkt auf Objekte angewendet werden, anstatt dass indirekt ein Material verwendet wird. Decals werden verwendet, um einen begrenzten Bereich der Farbe, des Reflexionsvermögens oder des Bumps eines Objekts zu ändern. Weitere Informationen zum Erzeugen und Platzieren eines Decals finden Sie im Rhino-Hilfethema zu [Decals](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#properties/decal.htm).
 
@@ -25,18 +24,18 @@ Decals sind nicht-kachelbare Bild-Maps, die direkt auf Objekte angewendet werden
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
 *Vier Beispiele für Decals*
 
-### ![images/apply-edge-softening.png](images/apply-edge-softening.png) Benutzerdefinierte Polygonnetze
+### ![images/apply-edge-softening.png](images/apply-edge-softening.png){: .inline} Benutzerdefinierte Polygonnetze
 {: #custom-meshes}
 In Rhino können verschiedene benutzerdefinierte Polygonnetzparameter zur Einstellung des gerenderten Modells verwendet werden. Damit können Ecken abgerundet, Schließlinien hinzugefügt oder Kabel aus Kurven erzeugt werden.
 
 Weitere Infos finden Sie in den Hilfethemen unten:
 
->[Kantenrundung](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyedgesoftening.htm)
->[Kurven-Piping](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applycurvepiping.htm)
->[Schließlinien](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyshutlining.htm)
->[Displacement](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applydisplacement.htm)
+* [Kantenrundung](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#commands/applyedgesoftening.htm)
+* [Kurven-Piping](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#commands/applycurvepiping.htm)
+* [Schließlinien](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#commands/applyshutlining.htm)
+* [Displacement](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#commands/applydisplacement.htm)
 
-### ![images/object-flamingo.PNG](images/object-flamingo.PNG) Flamingo-Eigenschaften
+### ![images/object-flamingo.PNG](images/object-flamingo.PNG){: .inline} Flamingo-Eigenschaften
 {: #flamingo-properties}
 
 #### Alphakanal

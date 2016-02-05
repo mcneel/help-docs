@@ -2,18 +2,18 @@
 title: 程序材質
 ---
 
-#  ![images/paint.svg](images/paint.svg) {{page.title}}
+#  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 材質程序可用不同的方式混合數個材質，讓材質有更多變化，您可以在一個材質程序的樹狀分支加入其它材質，標準材質在此通常只有一個**底色**元件。
 
 每一種程序貼圖都有兩個元件 (子材質)，一個元件可以再由另一個程序貼圖的兩個元件組成，Flamingo nXt 的程序貼圖有下列幾種：
 
-> [底色](#base)
-> [角度混合](#angular-blend)
-> [混合](#blend)
-> [大理石](#marble)
-> [花崗岩](#granite)
-> [拼貼](#tile)
-> [木紋](#wood)
+* [底色](#base)
+* [角度混合](#angular-blend)
+* [混合](#blend)
+* [大理石](#marble)
+* [花崗岩](#granite)
+* [拼貼](#tile)
+* [木紋](#wood)
 
 ##### 加入程序
 1. 在程序面板的元件按滑鼠右鍵。
@@ -47,7 +47,7 @@ title: 程序材質
 **內側材質**完全淡出的角度。
 **起始角度**與**終止角度**之間是**內側材質**與**外側材質**漸變的部分。
 
-下圖中的起始角度 ![images/01.png](images/01.png) 是 30 度 (綠色圓圈)，終止角度 ![images/02.png](images/02.png) 是 60 度 (紅色圓圈)。
+下圖中的起始角度 ![images/01.png](images/01.png){: .inline} 是 30 度 (綠色圓圈)，終止角度 ![images/02.png](images/02.png){: .inline} 是 60 度 (紅色圓圈)。
 
 綠色圓圈之內以純內側材質 (白色) 彩現，紅色圓圈之外以純外側材質 (黑色) 彩現。
 

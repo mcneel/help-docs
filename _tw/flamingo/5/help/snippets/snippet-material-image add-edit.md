@@ -3,7 +3,7 @@
  * 或，按**編輯**按鈕 ![images/edit_image.png](images/edit_image.png)，選取一個圖片檔案。
 
 ##### 以圖片改變物件的表面效果：
- * Click on the name of the image in the list. This will present the [Image Properties](material-image-properties.html) Dialog.  To get back to the main material, click on the material name in the [Material Editor](material-editor.html#settings)
+ * 按**圖片名稱**開啟[圖片內容](material-image-properties.html)對話框，要回到材質的最上層請在[材質編輯器](material-editor.html#settings)按材質縮圖。
 
 ##### 替換圖片
   * 按**編輯**按鈕 ![images/edit_image.png](images/edit_image.png)，選取一個圖片檔案。

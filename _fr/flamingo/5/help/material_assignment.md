@@ -2,7 +2,7 @@
 title: Assignations de matériaux
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Les objets de la scène possèdent une source de matériau, c'est-à-dire l'endroit où ils adoptent leur matériau de rendu. Les matériaux peuvent être assignés de différentes façons. La méthode utilisée pour assigner les matériaux a un rôle important sur la facilité de modification ultérieure du modèle.
 
 Les matériaux peuvent être assignés de trois façons. Ces méthodes ont une relation de hiérarchie, ainsi une méthode en bas de liste remplacera une assignation plus haute dans la liste. 
@@ -46,8 +46,8 @@ Par exemple, un modèle de voiture peut avoir des pneus sur le calque Pneus et d
 
 ##### Pour assigner un matériau par les propriétés objet
 1. Sélectionnez des objets.
-1. Dans le menu Édition, cliquez sur Propriétés de l'objet ![images/properties.png](images/properties.png) pour modifier l'objet. 
-1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériau ![images/materialtab.png] (images/materialtab.png) sous Assigner par, cliquez sur Par parent. 
+1. Dans le menu Édition, cliquez sur Propriétés de l'objet ![images/properties.png](images/properties.png){: .inline} pour modifier l'objet.
+1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériau ![images/materialtab.png](images/materialtab.png){: .inline} sous Assigner par, cliquez sur Par parent.
 
 ## Assigner un matériau à des objets
 {: #byobject}
@@ -58,8 +58,8 @@ Nous recommandons d'assigner les matériaux par calque. N'assignez les matériau
 
 ##### Assigner un matériau par les propriétés objet
 1. Sélectionnez des objets.
-1. Dans le menu Édition, cliquez sur Propriétés de l'objet ![images/properties.png](images/properties.png) pour modifier l'objet.
-1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériaux ![images/materialtab.png](images/materialtab.png) sous Assigner par, cliquez sur Par objet puis cliquez sur le matériau dans la liste.
+1. Dans le menu Édition, cliquez sur Propriétés de l'objet ![images/properties.png](images/properties.png){: .inline} pour modifier l'objet.
+1. Dans la boîte de dialogue [Propriétés](properties-object.html), dans la section Matériaux ![images/materialtab.png](images/materialtab.png){: .inline} sous Assigner par, cliquez sur Par objet puis cliquez sur le matériau dans la liste.
 
 ##### Faire glisser un matériau sur un objet
 {: #drag-dropmaterialtoobject}

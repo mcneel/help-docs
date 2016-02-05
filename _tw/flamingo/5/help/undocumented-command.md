@@ -1,8 +1,8 @@
 ---
+title: 沒有說明檔的功能
 ---
 
 
-# Undocumented Feature
-This topic has not been documented.
-Post questions about this feature to ** [//news.flamingo3d.com/flamingo](flamingo) **.
-
+# 沒有說明檔的功能
+此說明主題不存在。
+與此功能相關的問題可以至 [Flamingo Discourse 論壇](http://chinese.discourse.mcneel.com/c/flamingo)提問。

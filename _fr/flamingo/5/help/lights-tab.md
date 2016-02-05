@@ -2,7 +2,7 @@
 title: Lumières
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
+# ![images/lights-tab.png](images/lights-tab.png){: .inline} {{page.title}}
 Les sources de lumière artificielles utilisent les lumières standards de Flamingo en ajoutant des propriétés pour contrôler la distribution de la lumière. Lorsque vous utilisez des sources de lumière, choisissez le type qui représente le mieux la lampe réelle que vous modélisez.
 
 
@@ -17,69 +17,69 @@ L'onglet Lumières doit être activé à travers les [préréglages d'éclairage
 #### Où puis-je trouver les contrôles d'éclairage de Flamingo ?
 Si l'onglet Lumières est activé à travers les [préréglages d'éclairage](lighting-tab.html#lighting-presets) ou les [paramètres d'éclairage personnalisé](lighting-tab.html#sun), l'onglet des lumières se trouve ici :
 
- 1. ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo > Lumières
+ 1. ![images/options.png](images/options.png){: .inline} Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barre d'outils de Flamingo nXt
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo > Lumières
 
-Vous pouvez insérer des lumières, les activer et les désactiver, et changer l'intensité et le canal de chaque lumière dans l'onglet Lumières. 
+Vous pouvez insérer des lumières, les activer et les désactiver, et changer l'intensité et le canal de chaque lumière dans l'onglet Lumières.
 
 Flamingo permet d'insérer différents types de lumières :
 
-> [Marquer des objets en tant que lumières](#tag-objects-as-lights)
-> [Projecteur](#spotlight)
-> [Lumière ponctuelle](#pointlight)
-> [Lumière rectangulaire](#rectangularlight)
-> [Lumière linéaire](#linearlight)
+* [Marquer des objets en tant que lumières](#tag-objects-as-lights)
+* [Projecteur](#spotlight)
+* [Lumière ponctuelle](#pointlight)
+* [Lumière rectangulaire](#rectangularlight)
+* [Lumière linéaire](#linearlight)
 
-**Remarque :** Les lumières directionnelles de Rhino ![images/directionallightbutton.png](images/directionallightbutton.png) ne sont pas prises en charge. Elles n'apparaissent pas dans la liste des lumières et elles ne peuvent pas posséder de propriétés de Flamingo nXt.
+**Remarque :** Les lumières directionnelles de Rhino ![images/directionallightbutton.png](images/directionallightbutton.png){: .inline} ne sont pas prises en charge. Elles n'apparaissent pas dans la liste des lumières et elles ne peuvent pas posséder de propriétés de Flamingo nXt.
 
 Certaines propriétés de lumières sont affichées dans le tableau de l'onglet Lumières afin de pouvoir les modifier rapidement.
 
 Propriétés contenues dans le tableau :
 
- >[Activer/Désactiver](#on)
- >[Nom](#name)
- >[Distribution](#light-distribution)
- >[Objectif](#aim-light)
- >[Watts](#watts)
- >[Canal](#channel)
+* [Activer/Désactiver](#on)
+* [Nom](#name)
+* [Distribution](#light-distribution)
+* [Objectif](#aim-light)
+* [Watts](#watts)
+* [Canal](#channel)
 
 Un clic droit sur l'onglet Lumières permet d'ouvrir le menu des [options supplémentaires](#additional-options).
 
-Accédez aux [propriétés des lumières](#light-properties) en cliquant sur la lumière puis sur l'icône Propriétés de la lumière ![images/spotlightbutton.png](images/spotlightbutton.png) dans le [panneau des propriétés objet](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm).
+Accédez aux [propriétés des lumières](#light-properties) en cliquant sur la lumière puis sur l'icône Propriétés de la lumière ![images/spotlightbutton.png](images/spotlightbutton.png){: .inline} dans le [panneau des propriétés objet](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/properties.htm).
 
 ## Types de lumières
 {: #light-types}
 Les lumières peuvent être insérées à partir de la barres d'outils de Rhino ou de l'onglet Lumières de Flamingo. Les objets peuvent être marqués en tant que lumières avec Flamingo. 
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) Marquer des objets en tant que lumières
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png){: .inline} Marquer des objets en tant que lumières
 {: #tag-objects-as-lights}
 Tout objet pouvant être rendu (surface, solide, etc.) peut être marqué en tant que source de lumière et peut recevoir des propriétés de lumière. D'autres propriétés, telles que la [distribution](#light-distribution), la [direction](#aim-light), et l'[intensité](#watts) peuvent être définies. Les objets marqués en tant lumières affichent une application d'aperçu indiquant la direction et la position du centre de la lumière.
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *Phares LED marqués en tant que sources de lumière*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) Projecteur
+#### ![images/spotlight-01.png](images/spotlight-01.png){: .inline} Projecteur
 {: #spotlight}
 Un projecteur est une lumière avec une distribution conique dans une direction donnée. Les propriétés de la lumière comprennent un [rayon de la source](#radius), un [angle de faisceau](#beam-angle), un rayon d'atténuation et une direction. Plus le rayon de la source est grand, plus les ombres de la lumière seront douces. Un disque est visible par défaut à l'emplacement de la lumière. Vous trouverez des informations sur la modification de la position, de la direction et de l'angle du faisceau à l'écran à l'aide de poignées dans la rubrique [Projecteur](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/lights.htm#Spotlight) de l'aide de Rhino.
 
 ![images/spotlight.png](images/spotlight.png)
 *Un projecteur dirigé sur la boîte rouge*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) Lumière ponctuelle
+#### ![images/pointlight-01.png](images/pointlight-01.png){: .inline} Lumière ponctuelle
 {: #pointlight}
 Les lumières ponctuelles sont de petites sphères qui distribuent une lumière uniforme dans toutes les directions. Il est possible de définir le [rayon de la source](#radius) de ces lumières. Plus le rayon est grand, plus les ombres projetées par la lumière sont douces. Une sphère de lumière est visible par défaut à l'emplacement de la lumière lors du rendu. Des effets insolites peuvent se produire si la lumière ponctuelle est partiellement masquée par un objet qui coupe la lumière. 
 
 ![images/pointlight.png](images/pointlight.png)
 *Une petite lumière ponctuelle près du mur blanc*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) Lumière rectangulaire
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png){: .inline} Lumière rectangulaire
 {: #rectangularlight}
 Imite un spot encastré équipé d'un diffuseur ou de déflecteurs. La lumière est distribuée de façon diffuse en fonction de l'orientation du rectangle. Une flèche de direction est dessinée au centre de la lumière. L'intensité maximale est diffusée en face du rectangle. La lumière diminue ensuite lorsqu'elle s'éloigne du centre du rectangle. Un rectangle blanc est visible par défaut lors du rendu. Ces rectangles ne doivent pas être insérés à la même hauteur que le plan du plafond. Pour des résultats plus réguliers, les lumières doivent être placées légèrement en-dessous du plafond. Vous trouverez des informations sur la modification de la position, de la direction et de l'angle du faisceau à l'écran à l'aide de poignées dans la rubrique [Lumière rectangulaire](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/lights.htm#Spotlight) de l'aide de Rhino.
 
 ![images/rectangular light.png](images/rectangular light.png)
 *Une lumière rectangulaire juste en dessous du plafond*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) Lumière linéaire
+#### ![images/linearlight-01.png](images/linearlight-01.png){: .inline} Lumière linéaire
 {: #linearlight}
 Distribue la lumière sur un modèle cylindrique qui imite un néon. Il est possible de définir le [rayon de la source](#radius) et la longueur de ces lumières. Plus le rayon est grand, plus les ombres projetées par la lumière sont douces. Un cylindre de lumière est visible par défaut à l'emplacement de la lumière lors du rendu. Des effets insolites peuvent se produire si la lumière cylindrique est partiellement masquée par un objet qui coupe la lumière. Utilisez les points de contrôle de Rhino pour activer les poignées des lumières afin de les modifier à l'écran. 
 
@@ -93,7 +93,7 @@ Lorsque Flamingo est le moteur de rendu actif dans Rhino, des propriétés suppl
 {: #name}
 Le nom de l'objet lumineux. Il permet de facilement différencier les lumières de même type dans le modèle. 
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) Activer/Désactiver
+#### ![images/lightbulbon.png](images/lightbulbon.png){: .inline} Activer/Désactiver
 {: #on}
 Active et désactive la lumière. Dans le tableau des lumières, si l'icône de l'ampoule est en jaune, la lumière est allumée. Si l'ampoule est grise, la lumière sera désactivée dans le rendu. Double cliquez sur l'icône pour activer ou désactiver la lumière. La boîte de dialogue des propriétés possède une case Activée/Désactivée. 
 

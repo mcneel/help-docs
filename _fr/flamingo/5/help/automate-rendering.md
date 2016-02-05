@@ -56,7 +56,7 @@ Envoie le travail de rendu par lots vers la [ferme de rendu](render-farm.html). 
 Affiche la vue qui sera rendue lors de ce travail. Voir [Onglet Rendu, Fenêtre à rendre](render-tab.html#viewtorender).
 
 #### Nom du fichier
-Cliquez sur le bouton Enregistrer ![images/saveimageas.png](images/saveimageas.png) et indiquez le nom que vous voulez donner au fichier de l'image rendue.
+Cliquez sur le bouton Enregistrer ![images/saveimageas.png](images/saveimageas.png){: .inline} et indiquez le nom que vous voulez donner au fichier de l'image rendue.
 
 #### Canal Alpha
 Enregistre l’image avec le canal alpha.  Voir la section [Utiliser un arrière-plan avec canal alpha](environment-tab.html#alpha) pour plus d'informations. 

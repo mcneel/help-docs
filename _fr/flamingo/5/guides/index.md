@@ -5,7 +5,7 @@ title: Table de matières du guide
 
 <!-- TODO: Liens pour la mise à jour : "First Rendering Tutorial" and everything below "Rendering Basics" -->
 
-# Démarrer avec Flamingo nXt 5Â®
+# Démarrer avec Flamingo nXt 5®
 
 ## Premiers tutoriels
 * [Premier tutoriel de rendu]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/getting-started-tutorial.html)
@@ -40,9 +40,9 @@ Le rendu des modèles terminés se fait en quatre étapes principales :
 ### Arrêter le rendu
 
 
-Par défaut, le processus de rendu continuera à améliorer l'image, passe par passe, jusqu'à ce que vous cliquiez sur le  bouton **Arrêter le rendu** ![images/stop.png](images/stop.png) . Ceci vous permet de gérer le rapport temps/qualité. Plus vous laisserez le rendu continuer pendant longtemps, plus il se rapprochera du rendu entièrement calculé.  Vous pouvez arrêter un rendu à tout moment.
+Par défaut, le processus de rendu continuera à améliorer l'image, passe par passe, jusqu'à ce que vous cliquiez sur le bouton ![images/stop.png](images/stop.png)**Arrêter le rendu**.  Ceci vous permet de gérer le rapport temps/qualité. Plus vous laisserez le rendu continuer pendant longtemps, plus il se rapprochera du rendu entièrement calculé. Vous pouvez arrêter un rendu à tout moment.
 
 
-Utilisez le paramètre [Nombre de passes](..\render\render-window.html#number-of-passes) ou [Temps](..\render\render-window.html#time) dans la [fenêtre de rendu](..\render\render-window.html) ou dans les [Propriétés du document de Flamingo nXt](..\render\documentproperties-flamingo.html) pour définir un point d'arrêt automatique.
+Utilisez les paramètres [Nombre de passes](..render\render-window.html#number-of-passes) ou [Temps](..render\render-window.html#time) dans la [fenêtre de rendu](..render\render-window.html) ou dans les [Propriétés du document > Flamingo nXt](..render\documentproperties-flamingo.html) pour définir un point d'arrêt automatique.
 
 &#160;

@@ -7,15 +7,15 @@ L'éditeur d'images nXt permet de modifier des fichiers images natifs (.nXtImage
 Avec l'éditeur d'image nXt, vous pouvez :
 
 
-> Ajuster les paramètres du [contrôle de tonalité](image-editor.html#tone-mapping).
-> Changer l'intensité de tous les canaux d'éclairage.
-> Ajouter des effets spéciaux basés sur l'image : [Brume](image-editor.html#haze), [Flou de profondeur](image-editor.html#depth-blur) et [Éclat](image-editor.html#glare).
-> [Enregistrer](image-editor.html#save-tonemapped-image-as) une image dont les tonalités ont été ajustées dans un format bitmap tel que .jpg ou .png.
-> Enregistrer les informations de luminance dans un [format HDR](image-editor.html#save-hdr-image-as).
-> Voir et enregistrer des canaux masqués supplémentaires : ( [alpha](image-editor.html#alpha-channel), [distance](image-editor.html#distance-channel), [matériau](image-editor.html#material-channel) ) afin de les utiliser en composition avancée. 
-> Enregistrer un fichier au format [Piranesi©](http://www.piranesi.co.uk/) (*.epx) qui peut être utilisée pour des rendus non photoréalistes. 
-> Utiliser l'[arithmétique](image-editor.html#arithmetic) d'image pour recoller par exemple une image qui a été générée par plusieurs noeuds de la ferme de rendu.
-> Enregistrer les [paramètres d'éclairage](image-editor.html#save-lighting-settings-as) utilisés pour générer ce rendu. Ces paramètres peuvent ensuite être utilisés pour générer d'autres rendus.
+* Ajuster les paramètres du [contrôle de tonalité](image-editor.html#tone-mapping).
+* Changer l'intensité de tous les canaux d'éclairage.
+* Ajouter des effets spéciaux basés sur l'image : [Brume](image-editor.html#haze), [Flou de profondeur](image-editor.html#depth-blur) et [Éclat](image-editor.html#glare).
+* [Enregistrer](image-editor.html#save-tonemapped-image-as) une image dont les tonalités ont été ajustées dans un format bitmap tel que .jpg ou .png.
+* Enregistrer les informations de luminance dans un [format HDR](image-editor.html#save-hdr-image-as).
+* Voir et enregistrer des canaux masqués supplémentaires : ( [alpha](image-editor.html#alpha-channel), [distance](image-editor.html#distance-channel), [matériau](image-editor.html#material-channel) ) afin de les utiliser en composition avancée.
+* Enregistrer un fichier au format [Piranesi©](http://www.piranesi.co.uk/) (*.epx) qui peut être utilisé pour des rendus non photoréalistes.
+* Utiliser l'[arithmétique](image-editor.html#arithmetic) d'image pour recoller par exemple une image qui a été générée par plusieurs nœuds de la ferme de rendu.
+* Enregistrer les [paramètres d'éclairage](image-editor.html#save-lighting-settings-as) utilisés pour générer ce rendu. Ces paramètres peuvent ensuite être utilisés pour générer d'autres rendus.
 
 Pour lancer l'éditeur
 

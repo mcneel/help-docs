@@ -1,21 +1,21 @@
 ---
 title: Propriétés de base du matériau
 ---
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Les matériaux de Flamingo sont définis par un ensemble de groupes de propriétés. Il s'agit de matériaux simples communément utilisés. Ces matériaux présentent un ensemble très simple de contrôles. Cela permet d'accéder rapidement aux propriétés que vous pouvez modifier pour qu'un matériau paraisse différent sans la complexité des options supplémentaires. Pour la plupart des matériaux simples, seule la couleur a besoin d'être modifiée pour obtenir un aspect différent.
 
 #### Types de matériaux simples :
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[Couleur unie](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[Plastique](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[Métal](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[Verre](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[Brillant](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[ClearFinish](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Texturé de Flamingo](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[Ensemble de textures](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png){: .inline} [Couleur unie](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png){: .inline} [Plastique](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png){: .inline} [Métal](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png){: .inline} [Verre](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png){: .inline} [Brillant](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png){: .inline} [ClearFinish](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png){: .inline} [Texturé de Flamingo](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png){: .inline} [Ensemble de textures](#texture-set)
 
-Tous les matériaux peuvent être convertis en matériaux complexes. Les matériaux complexes présentent tous les contrôles possibles afin de modifier un matériau dans Flamingo nXt. Pour avoir un contrôle maximum sur un matériau, utilisez les matériaux complexes ou convertissez votre matériau en matériau complexe. 
+Tous les matériaux peuvent être convertis en matériaux complexes.  Les matériaux complexes présentent tous les contrôles possibles afin de modifier un matériau dans Flamingo nXt. Pour avoir un contrôle maximum sur un matériau, utilisez les matériaux complexes ou convertissez votre matériau en matériau complexe. 
 
 #### Les matériaux complexes sont divisés en plusieurs groupes de propriétés :
 
@@ -32,38 +32,32 @@ Les matériaux sont enregistrés dans le modèle de Rhino. Des matériaux unique
 
 ## Couleur unie
 {: #solid-color}
-Les matériaux avec couleur unie ont uniquement un [nom](material-type-advanced.html#name) et une [couleur](material-type-advanced.html#color).
+Les matériaux définis par une couleur unie ont uniquement un [nom](material-type-advanced.html#name) et une [couleur](material-type-advanced.html#color).
 
 ![images/solidcolors.png](images/3-solidcolor.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 {% include_relative snippets/snippet-material-color-select.md %}
-
 {% include_relative snippets/snippet-material-advanced-editor.md %}
 
 ## Plastique
 {: #plastic}
-Les matériaux plastiques sont légèrement réfléchissants avec un [reflet](material-type-advanced.html#highlight-color) blanc.
+Les matériaux représentant des plastiques sont légèrement réfléchissants avec un [reflet](material-type-advanced.html#highlight-color) blanc.
 
 ![images/solidcolors.png](images/3-plastic.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 {% include_relative snippets/snippet-material-color-select.md %}
-
 {% include_relative snippets/snippet-material-advanced-editor.md %} Utilisez l'éditeur avancé pour remplacer les réglages de la [couleur du reflet](material-type-advanced.html#highlight-color), de l'[intensité](material-type-advanced.html#intensity), de [Fresnel](material-type-advanced.html#fresnel) et de [netteté](material-type-advanced.html#sharpness).
 
 ## Métal
 {: #metal}
-Pour les matériaux métalliques, la couleur du reflet est la même que la [couleur](material-type-advanced.html#color). Vous pouvez également contrôler la [netteté](material-type-advanced.html#sharpness) de la réflexion. 
+Pour les matériaux représentant des métaux, la couleur du reflet est la même que la [couleur](material-type-advanced.html#color). Vous pouvez également contrôler la [netteté](material-type-advanced.html#sharpness) de la réflexion. 
 
 ![images/solidcolors.png](images/3-metal.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 {% include_relative snippets/snippet-material-color-select.md %}
-
 #### Netteté
 Contrôle la netteté ou le flou de la réflexion. Voir la rubrique sur la [netteté](material-type-advanced.html#sharpness) pour plus d'informations. 
 
@@ -71,14 +65,12 @@ Contrôle la netteté ou le flou de la réflexion. Voir la rubrique sur la [nett
 
 ## Verre
 {: #glass}
-Les matériaux en verre ont une [couleur](material-type-advanced.html#color) et un [indice de réfraction](advanced-material-properties-main.html#index-of-refraction).
+Les matériaux représentant des verres ont une [couleur](material-type-advanced.html#color) et un [indice de réfraction](advanced-material-properties-main.html#index-of-refraction).
 
 ![images/solidcolors.png](images/3-glass.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 {% include_relative snippets/snippet-material-color-select.md %}
-
 #### Indice de réfraction
 Contrôle l'inclinaison de la lumière lorsqu'elle passe à travers le matériau. Voir la rubrique [indice de réfraction](advanced-material-properties-main.html#index-of-refraction) pour plus d'informations.
 
@@ -91,14 +83,12 @@ Les matériaux brillants présentent une [intensité](material-type-advanced.htm
 ![images/solidcolors.png](images/3-glossy.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 {% include_relative snippets/snippet-material-color-select.md %}
-
 #### Intensité
 Contrôle l'intensité du reflet des lumières sur la surface. Voir la rubrique détaillée sur l'[intensté](material-type-advanced.html#intensity) pour plus d'informations. 
 
 #### Netteté du reflet
-Contrôle la netteté (par rapport au flou) du point netteté lumières sur la surface. Voir la rubrique détaillée sur la [netteté du reflet](material-type-advanced.html#sharpness) pour plus d'informations.
+Contrôle la netteté (par rapport au flou) du point de reflet des lumières sur la surface. Voir la rubrique détaillée sur la [netteté du reflet](material-type-advanced.html#sharpness) pour plus d'informations.
 
 {% include_relative snippets/snippet-material-advanced-editor.md %} Utilisez l'éditeur avancé pour remplacer les réglages de [Fresnel](material-type-advanced.html#fresnel) et de [type](material-type-advanced.html#type).
 
@@ -109,9 +99,7 @@ Le matériau ClearFinish simule la peinture des voitures, la porcelaine, la cér
 ![images/solidcolors.png](images/3-clearfinish.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 {% include_relative snippets/snippet-material-color-select.md %}
-
 {% include_relative snippets/snippet-material-advanced-editor.md %} Utilisez l'éditeur avancé pour remplacer les réglages de la [couleur du reflet](material-type-advanced.html#highlight-color), de l'[intensité](material-type-advanced.html#intensity), de [Fresnel](material-type-advanced.html#fresnel) et de [netteté](material-type-advanced.html#sharpness).
 
 ## Texturé de Flamingo 
@@ -121,9 +109,7 @@ Les matériaux texturés utilisent des images pour définir des motifs et des co
 ![images/solidcolors.png](images/3-texture.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 {% include_relative snippets/snippet-material-color-select.md %}
-
 #### Intensité
 Contrôle l'intensité de la réflexion en miroir de la surface. Voir la rubrique détaillée sur l'[intensté](material-type-advanced.html#intensity) pour plus d'informations.
 
@@ -134,17 +120,16 @@ Contrôle la netteté ou le flou de la réflexion. Voir la rubrique sur la [nett
 Définit le placage d'image et les propriétés du matériau. Cette rubrique contient de nombreuses options. Voir la rubrique détaillée sur les [images](material-type-advanced.html#texture) pour plus d'informations. 
 
 {% include_relative snippets/snippet-material-image-add-edit.md %}
-
 {% include_relative snippets/snippet-material-advanced-editor.md %} Utilisez l'éditeur avancé pour remplacer les réglages de ce matériau. 
 
 ## Ensemble de textures
 {: #texture-set}
-Les [matériaux avec ensemble de textures](material-type-texture-set.html) sont un ensemble de coordonnées de textures qui définissent un matériau.  Ces ensembles de coordonnées peuvent être créés à partir de placages de textures externes qui contiennent des informations telles que les placages de déplacement, normaux ou de relief. Les placages de déplacement permettent de donner une profondeur au matériau. En combinant ces placages de texture dans un ensemble, il est possible de créer des matériaux très réalistes. Le [logiciel PixPlant](http://www.pixplant.com/) peut créer des ensembles de textures à partir d'une image standard.
+
+Les matériaux avec ensemble de textures sont un ensemble de coordonnées de textures qui définissent un matériau.  Ces ensembles de coordonnées peuvent être créés à partir de placages de textures externes qui contiennent des informations telles que les placages de déplacement, normaux ou de relief. Les placages de déplacement permettent de donner une profondeur au matériau. En combinant ces placages de texture dans un ensemble, il est possible de créer des matériaux très réalistes. Le [logiciel PixPlant](http://www.pixplant.com/) peut créer des ensembles de textures à partir d'une image standard.
 
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
-
 #### Largeur et Hauteur
 Contrôle la taille de toutes les textures de l'ensemble. Utilisez ce contrôle pour conserver une cohérence au niveau de la taille et de l'alignement de toutes les images.
 
@@ -154,10 +139,10 @@ Contrôle l'intensité de la réflexion en miroir de la surface. Voir la rubriqu
 #### Netteté
 Contrôle la netteté ou le flou de la réflexion. Voir la rubrique sur la [netteté](material-type-advanced.html#sharpness) pour plus d'informations.
 
-#### Types
+#### Type
 Contrôle le type de réflexion sur la surface. Voir la rubrique détaillée sur le [type](material-type-advanced.html#type) pour plus d'informations.
 
-### Placages de texture
+### Textures
 Le tableau des placages de texture affiche la liste des textures faisant partie de l'ensemble. Cliquez avec le bouton droit dans le tableau pour ajouter, supprimer ou modifier les textures de l'ensemble. 
 
 #### Ajouter des placages...
@@ -170,7 +155,7 @@ Cette commande du menu contextuel supprimera un placage de texture dans le table
 Ce type de placage contribue à la couleur visible de la texture. Pour plus d'informations, voir [Type de placage standard](material-image-properties.html#standard)
 
 #### Relief
-Le placage de relief utilisera l'échelle de gris de la texture pour simuler une modification de la hauteur ou u relief sur le matériau. Pour plus d'informations, voir [Placage de relief avancé](material-image-properties.html#bump)
+Le placage de relief utilisera l'échelle de gris de la texture pour simuler une modification de la hauteur ou du relief sur le matériau. Pour plus d'informations, voir [Placage de relief avancé](material-image-properties.html#bump)
 
 #### Normal
 Les placages normaux sont des placages de relief spéciaux qui utilisent le canal rouge, vert et bleu de l'image pour ajuster la direction de relief au niveau de chaque pixel. Le canal bleu représentant la direction Z du relief, les images tendent à prendre une teinte bleue. Pour plus d'informations, voir [Placage normal avancé](material-image-properties.html#normal)
@@ -185,4 +170,4 @@ Un placage d'opacité contrôle la transparence d'un matériau au niveau de chaq
 Un placage de déplacement déplacera le maillage de rendu en fonction de l'échelle de gris du placage. Pour plus d'informations, voir [Placage de déplacement avancé](material-image-properties.html#displacement)
 
 ### Matériau complexe
-Le matériau [avancé de Flamingo](material-type-advanced) contient un ensemble complet de propriétés.  Si aucun de ces matériaux simples ne fonctionne, utilisez le matériau [avancé de Flamingo](material-type-advanced) pour disposer d'une flexibilité maximale.
+Le matériau [complexe de Flamingo](material-type-advanced) contient un ensemble complet de propriétés.  Si aucun de ces matériaux simples ne fonctionne, utilisez le matériau [complexe de Flamingo](material-type-advanced) pour disposer d'une flexibilité maximale.

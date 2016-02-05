@@ -2,7 +2,7 @@
 title: 通道
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 Flamingo nXt 5 的燈光照明可設八個通道是非常有用的功能，每個光源 (包括太陽與天空) 都可設定使用的通道。彩現時每個光源的照明效果可儲存在不同的通道，彩現後可針對每個通道的照明亮度做調整，不用重新彩現模型。  
 
@@ -30,10 +30,10 @@ Flamingo nXt 5 的燈光照明可設八個通道是非常有用的功能，每�
 {: setting}
 多通道彩現的第一個步驟是為每一個燈光設定一個通道，燈光的通道設定通常在燈光的物件內容裡，設定照明通道的說明請參考：
 
->[太陽通道](sun-and-sky-tabs.html#sun-channel)
->[天空通道](sun-and-sky-tabs.html#sky-channel)
->[人造光源](lights-tab.html#channel)
->[材質光暈](documentproperties-flamingo.html#channel)
+* [太陽通道](sun-and-sky-tabs.html#sun-channel)
+* [天空通道](sun-and-sky-tabs.html#sky-channel)
+* [人造光源](lights-tab.html#channel)
+* [材質光暈](documentproperties-flamingo.html#channel)
 
 照明通道可用來將燈光分組，使用同一個通道的數個燈光可同步調整亮度。
 

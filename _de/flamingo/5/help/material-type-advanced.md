@@ -2,7 +2,7 @@
 title: Erweiterte Materialeigenschaften
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingo hat sowohl [einfache](material-type-simple.html) als auch erweiterte Ma
 
 Zu den einstellbaren Eigenschaften gehören:
 
-> [Name](#name)
-> [Materialprozeduren](#procedures)
-> [Erweiterte Materialeigenschaften](#advanced-materials-properties)
-> [Reflektierendes Finish](#reflective-finish-and-highlight)
-> [Transparenzeigenschaften](#transparency)
-> [Prozedurale Texturen](#bump-patterns)
-> [Bitmap-Texturen](#textures)
-> [Bemerkungen](#notes)
+* [Name](#name)
+* [Materialprozeduren](#procedures)
+* [Erweiterte Materialeigenschaften](#advanced-materials-properties)
+* [Reflektierendes Finish](#reflective-finish-and-highlight)
+* [Transparenzeigenschaften](#transparency)
+* [Prozedurale Texturen](#bump-patterns)
+* [Bitmap-Texturen](#textures)
+* [Bemerkungen](#notes)
 
 ## Materialname
 {: #name}
@@ -33,8 +33,10 @@ Eine [Marmor](procedural-materials.html#marble)-Prozedur beispielsweise kombinie
 
 
 ##### Eine Prozedur hinzufügen
+
 1. Klicken Sie im Prozeduren-Fenster mit der rechten Maustaste auf den Eintrag *Basis*.
 1. Klicken Sie im Menü auf einen Prozedurentyp.
+
   * [Basis](procedural-materials.html#base)
   * [Winkelüberblendung](procedural-materials.html#angular-blend)
   * [Überblendung](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ Eine [Marmor](procedural-materials.html#marble)-Prozedur beispielsweise kombinie
   * [Holz](procedural-materials.html#wood)
 
 ##### Eine Prozedur entfernen
- 1. Klicken Sie im Prozeduren-Fenster mit der rechten Maustaste auf den Namen einer Prozedur.
- 2. Klicken Sie im Menü auf **Entfernen**.
+
+1. Klicken Sie im Prozeduren-Fenster mit der rechten Maustaste auf den Namen einer Prozedur.
+1. Klicken Sie im Menü auf **Entfernen**.
 
 ## Erweiterte Materialeigenschaften
 {: #advanced-materials-properties}
@@ -73,7 +76,7 @@ Stellt die Glanzlichtfarbe so ein, dass sie mit der Grundfarbe übereinstimmt. O
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Benutzerdefiniert
-Für einige sehr spezielle Finishs hat die Reflexion des Objekts eine andere Farbe als die Grundfarbe des Materials.  Dies gilt normalerweise für Materialien, die aus mehreren Ebenen bestehen. Mit der Option *Benutzerdefiniert* kann eine beliebige Farbe für das Glanzlicht festgelegt werden. Verwenden Sie den [Farbwähler](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) zur Auswahl einer Reflexionsfarbe.
+Für einige sehr spezielle Finishs hat die Reflexion des Objekts eine andere Farbe als die Grundfarbe des Materials.  Dies gilt normalerweise für Materialien, die aus mehreren Ebenen bestehen. Mit der Option *Benutzerdefiniert* kann eine beliebige Farbe für das Glanzlicht festgelegt werden. Verwenden Sie den [Farbwähler](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} zur Auswahl einer Reflexionsfarbe.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
@@ -239,11 +242,11 @@ Es können bis zu vier Bitmap-Bilder verwendet werden, um das Material detailrei
 {: #bump-patterns}
 Mit Bump-Mustern wird die Darstellung eines speziellen Oberflächentyps ohne Displacement-Maps oder sonstige zusätzliche Maps erzeugt. Bumps verwenden mathematische Regeln, um auf der Fläche des Materials den Eindruck von Unebenheit zu erwecken. Zu den Mustern zählen:
 
-> [Sandpapier](#sandpaper)
-> [Schotter](#rubble)
-> [Pyramide](#pyramid)
-> [Faltig](#wrinkled)
-> [Marmoriert](#marbled)
+* [Sandpapier](#sandpaper)
+* [Schotter](#rubble)
+* [Pyramide](#pyramid)
+* [Faltig](#wrinkled)
+* [Marmoriert](#marbled)
 
 Materialien wie Stuck, Beton und Ton haben eine feine Textur. Es lohnt sich wahrscheinlich nicht, einen Teil des Materials zu scannen, um eine Bitmap zu erzeugen, außer sie wird aus der Nähe betrachtet. Die Verwendung einer prozeduralen Sandpapier-Bump-Map auf einer [Grundfarbe](advanced-material-properties-main.html#color) simuliert diese Art feines Muster. Erzeugen Sie eine [Grundfarbe](advanced-material-properties-main.html#color) für das Material. Fügen Sie dann dem Material eine prozedurale Bump hinzu. Verwenden Sie Sandpapier für eine feine und Schotter für eine grobe Textur.
 

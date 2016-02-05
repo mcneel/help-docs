@@ -1,9 +1,9 @@
 ---
 title: Démarrer avec Flamingo
 ---
+<!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
 
-
-# ![images/flamingotab.svg](images/flamingotab.svg) Démarrer avec Flamingo nXt
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} Démarrer avec Flamingo nXt®
 Flamingo nXt crée des fichiers d'animation et d'image haute qualité et photoréalistes à partir de modèles 3-D dans Rhinoceros®. Flamingo nXt 5 est une mise à jour de Flamingo qui se combine avec les fonctions de rendu intégrées dans Rhino 5. Cette version est en cours de développement.
 
 Téléchargez et installez Flamingo depuis la page de [téléchargement de Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
@@ -19,18 +19,18 @@ Après avoir téléchargé et lancé le fichier RHI, lancez Rhino.
 
 Sur le [site web de Flamingo nXt](http://nxt.flamingo3d.com/) vous trouverez des informations sur l'assistance technique, des tutoriels, des exemples et des informations pour commencer à utiliser **Flamingo nXt**.
 
-> [Tutoriels](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Galerie](http://nxt.flamingo3d.com/photo)
-> [Assistance technique](http://nxt.flamingo3d.com/forum)
+* [Tutoriels](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+* [Galerie](http://nxt.flamingo3d.com/photo)
+* [Assistance technique](http://nxt.flamingo3d.com/forum)
 
 ## Panneau de configuration
 {: #control-panel}
 Cette version de Flamingo présente une interface intégrée dans les outils de rendu de Rhino 5. Le panneau de configuration de Flamingo nXt présente différents onglets permettant de configurer le modèle pour le rendu :
 
-> [Matériaux](materials-tab.html)
-> [Éclairage](lighting-tab.html)
-> [Environnement](environment-tab.html)
-> [Rendu](render-tab.html)
+* [Matériaux](materials-tab.html)
+* [Éclairage](lighting-tab.html)
+* [Environnement](environment-tab.html)
+* [Rendu](render-tab.html)
 
 ## Accéder au panneau de configuration
 * Dans le menu Flamingo nXt 5.0, cliquez sur Montrer le panneau de configuration.

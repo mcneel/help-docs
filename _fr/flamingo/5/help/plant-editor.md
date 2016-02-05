@@ -3,7 +3,7 @@ title: Editeur de plantes
 ---
 <!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 {: #tree-editor}
 
 ### Menu Fichier
@@ -11,10 +11,10 @@ title: Editeur de plantes
 #### Nouveau
 Créer une nouvelle définition de plante en utilisant un fichier modèle.
 
- | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
+ | ![images/standard.png](images/standard.png){: .inline} | ![images/conifer.png](images/conifer.png){: .inline} | ![images/broad.png](images/broad.png){: .inline} |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
  | **Standard**                                |   **Conifère**                             | **Cime large**                       |
- | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
+ | ![images/palm.png](images/palm.png){: .inline}         | ![images/groundcover.png](images/groundcover.png){: .inline} | ![images/complex.png](images/complex.png){: .inline} |
  | **Palmier**                                    |  **Couvre-sol**                          | **Complexe**                                  
 {: .plant-table}
 
@@ -52,4 +52,4 @@ Affiche l'aperçu de l'arbre avec des feuilles.
 *Sans feuilles (gauche) et avec feuilles (droite).*
 
 ### Menu Paramètres
-Définissez les unités de l'éditeur de sorte à ce qu'elle correspondent avec les unités de travail. 
+Définissez les unités de l'éditeur de sorte à ce qu'elles correspondent avec les unités de travail. 

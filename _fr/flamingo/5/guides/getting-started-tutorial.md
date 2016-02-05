@@ -6,12 +6,12 @@ title: Didacticiel de prise en main
 # {{page.title}}
 Ce tutoriel montre comment rendre un modèle standard de Rhino en utilisant nXt. Le tutoriel couvre les étapes de base du rendu avec nXt qui comprennent :
 
-  > Ouverture du modèle
-  > Création de matériaux
-  > Modification de matériaux
-  > Ajout d'un plan au sol
+1. Ouverture du modèle
+1. Création de matériaux
+1. Modification de matériaux
+1. Ajout d'un plan au sol
 
-La première étape est de télécharger et décomprimer les fichiers du tutoriel. Pour télécharger le fichier zip, cliquez sur le lien [Moulinet de pêche.zip](http:/files.na.mcneel.com//flamingo/nxt/5.0/tutorials/nxt5%20fishing.zip). Décomprimez les fichiers dans un dossier facile à retrouver sur votre ordinateur. Ouvrez le fichier Fishing Reel.3dm dans Rhino. Vérifiez que Flamingo nXt est le moteur de rendu actuel dans le menu déroulant Rendu.
+La première étape est de télécharger et décomprimer les fichiers du tutoriel. Pour télécharger le fichier zip, cliquez sur le lien [Moulinet de canne à pêche.zip](files/nxt5%20moulinet.zip). Décomprimez les fichiers dans un dossier facile à retrouver sur votre ordinateur. Ouvrez le fichier Fishing Reel.3dm dans Rhino. Vérifiez que Flamingo nXt est le moteur de rendu actuel dans le menu déroulant Rendu.
 
 ## Vérifiez le moteur de rendu actuel
 {: #check-current}
@@ -21,21 +21,21 @@ Plusieurs moteurs de rendu peuvent être installés dans Rhino. Pour vérifier q
 {: #render_controls}
 ![images/getting_started001.png](images/getting_started001.png){: .float-img-right} Pour le premier rendu du modèle, cliquez sur le bouton de rendu. L'image obtenue devrait ressembler à celle de droite. nXt fonctionne différemment des versions précédentes de Flamingo. Tout nouveau modèle comprend un éclairage HDRI par défaut, et utiliser un matériau blanc par défaut pour tous les objets. Vous remarquerez également que les ombres sont très précises et linéaires au début. Les ombres seront de plus en plus douces à chaque passe et se mélangeront petit à petit. De nombreux autres effets s'amélioreront à chaque passe de rendu.
 
-Parmi les effets qui s'améliorent à chaque passe :
+Parmi les effets qui s'améliorent à chaque passe
 
-  * Éclairage (comme l'illumination globale si elle est activée)
-  * Ombres floues
-  * Réflexions (floues)
-  * Réfraction
-  * Anticrénelage
-  * Profondeur de champ
+* Éclairage (comme l'illumination globale si elle est activée)
+* Ombres floues
+* Réflexions (floues)
+* Réfraction
+* Anticrénelage
+* Profondeur de champ
 
-De cette façon, le rendu de nXt n'est jamais vraiment terminé" ; c'est à vous de décider du moment où il est assez bien pour l'arrêter. Vous pouvez ainsi laisser les images qui semblent correctes continuer à s'améliorer. Mais vous pouvez également arrêter une image à tout moment, si vous voulez modifier ou enregistrer quelque chose. Différentes options permettent d'arrêter le rendu :
+De cette façon, le rendu de nXt n'est jamais vraiment terminé ; c'est à vous de décider du moment où il est assez bien pour l'arrêter. Vous pouvez ainsi laisser les images qui semblent correctes continuer à s'améliorer. Mais vous pouvez également arrêter une image à tout moment, si vous voulez modifier ou enregistrer quelque chose. Différentes options permettent d'arrêter le rendu :
 {: .clear-img}
 
-  * Cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu à la fin de la passe en cours.
-  * Double cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu immédiatement.
-  * Cliquer sur le bouton "X" en haut à droite de la fenêtre de rendu pour arrêter immédiatement le rendu et fermer la fenêtre de rendu.
+* Cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu à la fin de la passe en cours.
+* Double cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu immédiatement.
+* Cliquer sur le bouton "X" en haut à droite de la fenêtre de rendu pour arrêter immédiatement le rendu et fermer la fenêtre de rendu.
 
 ## Assigner des matériaux à partir de la bibliothèque
 {: #materials}
@@ -43,12 +43,12 @@ L'éclairage de base étant déjà intégré dans nXt, la partie la plus importa
 
   1. Ouvrez le panneau de configuration de Flamingo nXt à partir du menu Flamingo nXt dans Rhino.
   1. Pour assigner un matériau. Ouvrez l'onglet Bibliothèque dans le panneau de configuration. 
-  1. Les matériaux sont organisés dans des dossiers. Ouvrez le dossier des matériaux de Flamingo. 
+  1. Les matériaux sont organisés dans des dossiers. Ouvrez le dossier des matériaux de Flamingo.
   ![images/getting_started002.png](images/getting_started002.png)
   1. Ouvrez le dossier Matériaux de Flamingo > Métaux.
   ![images/getting_started003.png](images/getting_started004.png){: .wide-img}
   1. Déposez le matériau Chrome sur le calque Poignée et pièces métalliques. 
-  1. Lancez le rendu. Les pièces se trouvant sur le calque Poignée et pièces métalliques sont maintenant rendues avec une finition chromée. 
+  1. Lancez le rendu. Les pièces se trouvant sur le calque Poignée et pièces métalliques sont maintenant rendues avec une finition chromée.
   ![images/getting_started003.png](images/getting_started003.png)
   1. Assignez maintenant les autres matériaux à ces calques :
 
@@ -79,9 +79,9 @@ Vous aurez souvent besoin d'un matériau autre que ceux prédéfinis dans la bib
  1. Sélectionnez un nouveau matériau texturé de Flamingo.
  1. Ici, vous devez choisir une texture.
  1. Ouvrez le dossier que vous avez créé lorsque vous avec décomprimé les fichiers des tutoriels et sélectionnez Liège.jpg puis cliquez sur Ouvrir.
- 1. Vous obtenez un matériau texturé simple. La taille de la mosaïque est souvent importante. Pour changer la taille de la mosaïque, cliquez sur le nom de l'image. 
+ 1. Vous obtenez un matériau texturé simple. La taille de la mosaïque est souvent importante. Pour changer la taille de la mosaïque, cliquez sur le nom de l'image.
 ![images/getting_started009.png](images/getting_started009.png)
- 1. Ajustez la taille de la mosaïque à 100 sur la largeur. 
+ 1. Ajustez la taille de la mosaïque à 100 sur la largeur.
 ![images/getting_started010.png](images/getting_started010.png)
  1. Dans la case du nom, tapez Liège et cliquez sur Accepter.
 ![images/getting_started011.png](images/getting_started011.png)
@@ -93,7 +93,7 @@ L'ajout d'un plan au sol peut aider à définir les objets dans une scène.
 
 1. Ouvrez le panneau Plan au sol. S'il n'est pas visible, cliquez avec le bouton droit sur un autre onglet du panneau et sélectionnez Plan au sol. 
 1. Cliquez sur le bouton Activer pour activer le plan au sol. Dans ce cas, nous utiliserons la hauteur par défaut. 
-1. Dans ce cas, un nouveau matériau doit être créé pour le plan au sol. Descendez en bas de la liste de matériaux et cliquez sur le symbole plus. 
+1. Dans ce cas, un nouveau matériau doit être créé pour le plan au sol. Descendez en bas de la liste de matériaux et cliquez sur le symbole plus.
 ![images/getting_started011.png](images/getting_started012.png)
 1. Sélectionnez un nouveau matériau texturé de Flamingo.
 1. Ici, vous devez choisir une texture.

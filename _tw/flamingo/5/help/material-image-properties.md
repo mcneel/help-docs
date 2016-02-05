@@ -3,7 +3,7 @@ title: 材質貼圖內容
 ---
 
 
-# ![images/images.svg](images/images.svg) {{page.title}}
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ title: 材質貼圖內容
 {: #mapping-type}
 圖片通常用在顏色通道，但也有其它使用方法，貼圖類型有：
 
-> [標準](#standard)
-> [法線向量](#normal)
-> [置換](#displacement)
+* [標準](#standard)
+* [法線向量](#normal)
+* [置換](#displacement)
 
 ### 標準
 {: standard}

@@ -2,7 +2,7 @@
 title: 環境面板
 ---
 
-# ![images/environment.svg](images/environment.svg) {{page.title}}
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
 {: #environment-tab}
 環境不只是彩現裡可見的背景，它是一個環繞模型，可供反射與折射的極大球體，此球體無法選取，但有設定可以做調整。
 
@@ -13,12 +13,12 @@ Flamingo 內建一種特別的環境 - 預設的 *[Flamingo 環境](environment.
 ![images/environment-editor-panel.svg](images/environment-editor-panel.svg){:  #panel_map height="600px" style="float: right"}
 
 ##### 可以在哪找到這個指令?
- 1. ![images/environments.png](images/environments.png)環境標籤
- 1. ![images/icon-render.png](images/icon-render.png)彩現工具工具列 > ![images/environments.png](images/environments.png) 環境編輯器
- 1. ![images/menuicon.png](images/menuicon.png)功能表 > 彩現 > 環境編輯器
+ 1. ![images/environments.png](images/environments.png){: .inline} 環境標籤
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} 彩現工具工具列 > ![images/environments.png](images/environments.png){: .inline} 環境編輯器
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > 彩現 > 環境編輯器
  1. 指令 > EnvironmentEditor
 
-The Environment Editor Panel is split into discrete sections.  Based on the environment type, the advanced panels may vary.
+環境編輯器的選項因環境的類型而異。
 
 材質編輯器、[貼圖面板](texturepalette.html)、[環境編輯器](environmenteditor.html)的任何顏色方塊都可以相互拖放。
 環境面板
@@ -31,181 +31,181 @@ The Environment Editor Panel is split into discrete sections.  Based on the envi
  1. [名稱](#name)
  1. [環境內容面板](#panels)
 
-## [背景類型](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [背景類型](#panel_map) ![images/callout_1.svg](images/callout_1.svg){: .inline}
 {: #type style="clear: both;"}
-Select the type of background for the model.  [Environment](#flamingo-environment) is an all inclusive rendering environment and should be the default setting for Flamingo.  The other three settings present a much more simplified set of settings that reflect older ways of defining backgrounds. For more information see the [Rhinoceros Simple Background](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings) topic
+選擇[彩現環境](#flamingo-environment)的背景類型，有天空、顏色、圖片、HDR、平面 HDR 可供選擇，詳細說明請參考 [Rhino 環境編輯器](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings)主題。
 
-The reset of this help topic covers the Environment type.
+此主題剩餘的部分將說明環境類型。
 
-## [設定列](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [設定列](#panel_map) ![images/callout_2.svg](images/callout_2.svg){: .inline}
 {: #settings}
-Use this bar to help navigate the Environment list.
+可用來瀏覽環境裡的設定。
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) 向後按鈕
-Walks back through the current environment or the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get back to the parent environment from the reflection or refraction details.
+#### ![images/met_leftarrow.png](images/met-leftarrow.png){: .inline} 向後按鈕
+環境可能有許多層的設定頁面，**向後**按鈕可回到上一個使用的頁面，例如：在環境 A 的反射頁面選取環境 B，按**向後**按鈕可回到環境 A 的反射頁面。
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) 向前按鈕
-Walks forward through the previously selected environments.  For instance an environment with reflective or refractive layers.  Use this arrow to get forward to the parent environment from the reflection or refraction details.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png){: .inline} 向前按鈕
+環境可能有許多層的設定頁面，**向前**按鈕可回到下一個使用的頁面，例如：在環境 A 的反射頁面選取環境 B，按**向後**按鈕回到環境 A 的反射頁面，再按**向前**按鈕可再回到環境 B。
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 目前選取的環境名稱
-Displays the current environment name and edit level.  For instance, if there is a reflective or refractive level a ">" is shown. A good place to see where the environment is current.
+#### ![images/material_editor.png](images/material_editor.png){: .inline} ![images/texture-2dchecker.png](images/texture-2dchecker.png){: .inline} 目前選取的環境名稱
+顯示目前選取的材質的名稱與所在的設定頁面， 例如您目前正在編輯材質 C 的貼圖 D，此欄位會顯示**材質 C > 貼圖 D**。
 
-#### ![images/library_default.png](images/library_default.png) Tools Menu
-Displays the [Tools menu](#tools-menu).  This is an extensive menu of commands, settings and utilities related to environments.
+#### ![images/library_default.png](images/library_default.png){: .inline} 工具功能表
+顯示[工具功能表](#tools-menu)，工具功能表有與環境相關的許多指令與設定。
 
-#### ![images/help_topics.png](images/help_topics.png) Help
+#### ![images/help_topics.png](images/help_topics.png){: .inline} 說明
 
-## [Environment List](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [環境清單](#panel_map) ![images/callout_3.svg](images/callout_3.svg){: .inline}
 {: #environment_list}
-This lists all the environments contained in the model. One Environment will be selected as the current environment. The current environment is used in the rendering. Yellow corners will show up surrounding the current Environment.
+列出儲存在模型裡的所有環境，四個角有黃色三角形的是目前彩現使用的環境。
 
-From this list:
+清單的操作：
 
-* Click on an Environment to make it current. Once selected the environment's properties will show in the panels below. See [Render Materials Properties](#properties) for more information
-* Scroll up and down in the list to see all the environments in the model.
-* Add a new Environment using the Add New Button ![images/add_material.png](images/add_material.png) at the bottom of the list.
-* Right-click a thumbnail to display the Environment context menu
-* Right-click the blank area to display the New Environment Context Menu
+* 選取的環境的內容會顯示在下方的面板，詳細說明請參考[彩現材質內容](#properties)主題。
+* 上下捲動檢視所有的環境。
+* 按環境清單末端的**新增**按鈕 ![images/add_material.png](images/add_material.png){: .inline} 建立新環境。
+* 在縮圖上按右鍵可彈出**環境快顯功能表**。
+* 在空白的位置按右鍵可彈出**新材質功能表**。
 
-###  ![images/add_material.png](images/add_material.png) Add new environment
+###  ![images/add_material.png](images/add_material.png){: .inline} 建立新環境
 {: #add_environment}
-Scroll down to the bottom of the Environment list to see the add icon.
+按環境清單末端的**新增**按鈕。
 
-Opens the Render Content [library](libraries.html) of environments.
-The environments in the library act as templates for creating environments in the model.
+開啟內建的彩現[環境庫](libraries.html)。
+內建的環境可做為目前的模型建立新環境的範本。
 
-### Environment Context Menu
+### 環境功能表
 {: environment_context}
-This menu is available by right click on a environment listing.  See the [Tools Menu](#tools_menu) for details on the many options in this menu.
+在一個環境上按右鍵可彈出此功能表，此功能表提供的功能請參考[工具功能表](#tools_menu)。
 
-### New Environment Context Menu
+### 新環境功能表
 {: new_envrionment_context}
-This menu is available by right-clicking on a blank area of the Environment List.
+在環境清單空白的位置按右鍵可彈出此功能表。
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) 建立新環境
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png){: .inline} 建立新環境
+建立一個新的基本環境。
 
-#### ![images/import.png](images/import.png) Import Environment from File...
-Use this command to select a previously exported Environment.
+#### ![images/import.png](images/import.png){: .inline} 從檔案匯入環境...
+把匯出至檔案的環境匯入到目前的模型。
 
-#### ![images/paste.png](images/paste.png) Paste
+#### ![images/paste.png](images/paste.png){: .inline} 貼上
 將複製到剪貼簿的環境貼上建立另一個環境。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) 貼上為引例
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 貼上為引例
 將複製到剪貼簿的環境貼上建立另一個環境，此環境的設定與來源的環境互相連結。
 
-#### ![images/grid.png](images/grid.png) Grid
+#### ![images/grid.png](images/grid.png){: .inline} 圖示
 以預覽縮圖顯示。
 
-#### ![images/list.png](images/list.png) 清單
+#### ![images/list.png](images/list.png){: .inline} 清單
 以有名稱的預覽縮圖顯示。
 
-#### ![images/tree.png](images/tree.png) 樹狀清單
+#### ![images/tree.png](images/tree.png){: .inline} 樹狀清單
 以樹狀的名稱清單顯示。
 
-#### ![images/horizontal.png](images/horizontal.png) 水平配置
+#### ![images/horizontal.png](images/horizontal.png){: .inline} 水平配置
 將預覽縮圖或清單顯示在編輯器的左邊。
 
-#### ![images/showpreview.png](images/showpreview.png) 顯示預覽面板
+#### ![images/showpreview.png](images/showpreview.png){: .inline} 顯示預覽面板
 顯示目前所在的項目的預覽縮圖。
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) 浮動
+#### ![images/floatthumbnail.png](images/floatthumbnail.png){: .inline} 浮動
 以可以改變大小的浮動小視窗顯示預覽縮圖。
 
 #### 縮圖
 
-##### ![images/small.png](images/small.png) 小
+##### ![images/small.png](images/small.png){: .inline} 小
 將預覽縮圖設為小圖示。
 
-##### ![images/medium.png](images/medium.png) 中
+##### ![images/medium.png](images/medium.png){: .inline} 中
 將預覽縮圖設為中圖示。
 
-##### ![images/large.png](images/large.png) 大
+##### ![images/large.png](images/large.png){: .inline} 大
 將預覽縮圖設為大圖示。
 
-##### ![images/showlabels.png](images/showlabels.png) 顯示標籤
+##### ![images/showlabels.png](images/showlabels.png){: .inline} 顯示標籤
 當編輯器設為以**圖示**模式檢視時顯示名稱標籤。
 以**清單**模式檢視時總是會顯示名稱標籤。
 
-##### ![images/showunits.png](images/showunits.png) 顯示單位
+##### ![images/showunits.png](images/showunits.png){: .inline} 顯示單位
 以模型單位顯示尺寸。
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 自動更新縮圖
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png){: .inline} 自動更新縮圖
 設定變更時自動更新所有的縮圖。
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) 更新所有縮圖
+##### ![images/updateallpreviews.png](images/updateallpreviews.png){: .inline} 更新所有縮圖
 **自動更新縮圖**停用時可手動更新所有縮圖。
 
-## [視窗分隔條](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [視窗分隔條](#panel_map){: .inline} ![images/callout_4.svg](images/callout_4.svg){: .inline}
 {: #divider}
-Drag on this divider to change the length of the Environment List versus the length of the Environment Properties Section.
+移動視窗分隔條可調整環境清單可同時顯示的環境數目。
 
-## [Environment Properties Section](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+## [環境內容區](#panel_map) ![images/callout_5.svg](images/callout_5.svg){: .inline}
 {: #properties}
 
-### [環境名稱](#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+### [環境名稱](#panel_map) ![images/callout_6.svg](images/callout_6.svg){: .inline}
 {: #name}
-This is the name of the environment. The environment name is also saved as the file name when exporting the environment to the library. **Note:** Environments are stored in the Rhino model, unique environments can have the same name in different Rhino models.
+此為環境的名稱，也是環境匯出時的檔案名稱。**附註：**環境是儲存在 Rhino 模型裡，不同模型裡相同名稱的環境不會相互影響。
 
-### [Environment Panels](l#panel_map) ![images/callout_7.svg](images/callout_7.svg)
+### [環境面板](#panel_map) ![images/callout_7.svg](images/callout_7.svg){: .inline}
 {: #panels}
-The Environment Properties section is filled with a number of direct Environment panels. Clicking on the grey title bar will rollup the environment panel, hiding the contents of that panel.  Click on the title bar again to show contents.
+環境內容區有許多個面板，按面板的標題列可將面板收摺或展開。
 
-Environment Panels will vary based on the type of environment and the current active environment level. For more information on specific environment panels see [Flamingo Environment](environment.html)
+環境面板顯示的設定因環境類型而異，詳細說明請參考 [Flamingo 環境](environment.html)主題。
 
-## Tools Menu ![images/library_default.png](images/library_default.png)
+## 工具功能表 ![images/library_default.png](images/library_default.png){: .inline}
 {: tools_menu}
 工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵快顯功能表裡找到。
 
-#### ![images/currentenvironment.png](images/currentenvironment.png) 設定為使用中的彩現環境
-This sets the target environment current.  The current environment will be used in the next rendering.
+#### ![images/currentenvironment.png](images/currentenvironment.png){: .inline} 設定為使用中的彩現環境
+將選取的環境設為使用中，下一次彩現將使用此環境。
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) 建立新環境
-Creates a new Flamingo Environment.
+#### ![images/toolbarlus.png](images/toolbarplus.png){: .inline} 建立新環境
+建立一個新的 Flamingo 環境。
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵快顯功能表裡找到。
 
-#### ![images/import.png](images/import.png) 從檔案匯入環境
+#### ![images/import.png](images/import.png){: .inline} 從檔案匯入環境
 從 Rhino 的 .renv 檔案匯入環境。
 
-#### ![images/savetofile.png](images/savetofile.png) 儲存至檔案
+#### ![images/savetofile.png](images/savetofile.png){: .inline} 儲存至檔案
 將環境儲存為 Rhino 的 .renv 檔案。
 
-#### ![images/changetype.png](images/changetype.png) 變更類型
+#### ![images/changetype.png](images/changetype.png){: .inline} 變更類型
 將環境變更為其它的類型。
 
-#### ![images/changetype.png](images/changetype.png) 變更類型 (複製類似的設定)
+#### ![images/changetype.png](images/changetype.png){: .inline} 變更類型 (複製類似的設定)
 將環境變更為其它的類型。
-The default behavior depends on the current state of the [Rendering Options](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm) >  [Copy similar settings when content type is changed](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)  box. If checked, compatible settings from the old content will be copied to the new one.
+預設的作業方式由 [Rhino 選項  > 彩現](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm)頁面的[當彩現內容類型變更時複製類似的設定設定決定](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
 
-#### ![images/reset.png](images/reset.png) 重設為預設值
-Changes all the environment settings to the default Solid color background (Black), reflected background, Sky and Refracted Background visible.
+#### ![images/reset.png](images/reset.png){: .inline} 重設為預設值
+重設整個環境，背景=單一顏色 (黑色)、反射=天空、折射=可見的背景。
 
-#### ![images/copy.png](images/copy.png) Copy
+#### ![images/copy.png](images/copy.png){: .inline} 複製
 將選取的環境複製到 Windows 剪貼簿，可以在編輯器裡貼上建立另一個環境，或是在 Rhino 外部貼上，將環境匯出為 .renv 檔案。
 
-#### ![images/paste.png](images/paste.png) 貼上
+#### ![images/paste.png](images/paste.png){: .inline} 貼上
 將複製到剪貼簿的環境貼上建立另一個環境。
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) 貼上為引例
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 貼上為引例
 將複製到剪貼簿的環境貼上建立另一個環境，此環境的設定與來源的環境互相連結。
 
-#### ![images/delete.png](images/delete.png) 刪除
+#### ![images/delete.png](images/delete.png){: .inline} 刪除
 刪除選取的環境。
 
-#### ![images/rename.png](images/rename.png) 重新命名...
+#### ![images/rename.png](images/rename.png){: .inline} 重新命名...
 重新命名選取的環境。
 
-#### ![images/duplicate.png](images/duplicate.png) 建立複本
+#### ![images/duplicate.png](images/duplicate.png){: .inline} 建立複本
 以選取的環境建立一個設定相同的複本。
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) 移除引例
+#### ![images/removeinstancing.png](images/removeinstancing.png){: .inline} 移除引例
 解除環境引例與來源環境之間的連結關係。[](#paste-as-instance)
 
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
-#### ![images/contentfilter.png](images/contentfilter.png) 彩現內容過濾器
+#### ![images/contentfilter.png](images/contentfilter.png){: .inline} 彩現內容過濾器
 開啟[彩現內容過濾器](content_filters.html)視窗。
 
-#### ![images/rename.png](images/rename.png) 內容
+#### ![images/rename.png](images/rename.png){: .inline} 內容
 開啟[預覽設定](previewproperties.html)對話框。

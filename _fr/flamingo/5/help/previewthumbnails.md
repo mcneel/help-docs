@@ -32,7 +32,7 @@ Les matériaux peuvent utiliser plusieurs types de géométrie.
 
 #### Environnements
 Les environnements utilisent uniquement le cône et la sphère.
-![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cône et sphère*
+![images/environmentthumbnail.png](images/environmentthumbnail.png) *Cône et sphère* 
 
 #### Textures
 Les textures sont affichées uniquement sous forme de surfaces plates en deux dimensions faces à la caméra.
@@ -71,8 +71,8 @@ Un arrière-plan en damier gris est utilisé.
 Une texture ou un matériau peut être utilisé comme arrière-plan.
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 
-####  **Enregistrer comme défaut**
+####  **Enregistrer comme défaut** 
 Enregistre les propriétés de la miniature comme paramètres par défaut.
 
-####  **Charger les valeurs par défaut**
+####  **Charger les valeurs par défaut** 
 Charge les propriétés de la miniature à partir des paramètres par défaut.

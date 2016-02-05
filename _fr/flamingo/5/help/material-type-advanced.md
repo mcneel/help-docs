@@ -2,7 +2,7 @@
 title: Propriétés avancées du matériau
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingo possède des [matériaux simples](material-type-simple.html) et des mat
 
 Les propriétés des matériaux complexes sont divisées en plusieurs groupes :
 
-> [Nom](#name)
-> [Matériau algorithmique](#procedures)
-> [Propriétés avancées du matériau](#advanced-materials-properties)
-> [Finition réfléchissante ](#reflective-finish-and-highlight)
-> [Propriétés de transparence](#transparency)
-> [Textures algorithmiques](#bump-patterns)
-> [Textures bitmap](#textures)
-> [Notes](#notes)
+* [Nom](#name)
+* [Matériau algorithmique](#procedures)
+* [Propriétés avancées du matériau](#advanced-materials-properties)
+* [Finition réfléchissante ](#reflective-finish-and-highlight)
+* [Propriétés de transparence](#transparency)
+* [Textures algorithmiques](#bump-patterns)
+* [Textures bitmap](#textures)
+* [Notes](#notes)
 
 ## Nom du matériau
 {: #name}
@@ -33,8 +33,10 @@ Par exemple, le [Marbre](procedural-materials.html#marble) combine un matériau 
 
 
 ##### Pour ajouter un algorithme
+
 1. Cliquez avec le bouton de droite sur Base dans la fenêtre Matériau algorithmique.
 1. Dans le menu, cliquez sur un type d'algorithme.
+
   * [Base](procedural-materials.html#base)
   * [Mélange angulaire](procedural-materials.html#angular-blend)
   * [Mélange](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ Par exemple, le [Marbre](procedural-materials.html#marble) combine un matériau 
   * [Bois](procedural-materials.html#wood)
 
 ##### Pour supprimer un algorithme
- 1. Dans la fenêtre Matériau algorithmique, cliquez avec le bouton droit sur le nom de l'algorithme.
- 2. Dans le menu, cliquez sur Supprimer.
+
+1. Dans la fenêtre Matériau algorithmique, cliquez avec le bouton droit sur le nom de l'algorithme.
+1. Dans le menu, cliquez sur Supprimer.
 
 ## Propriétés avancées du matériau
 {: #advanced-materials-properties}
@@ -73,7 +76,7 @@ Définit la même couleur pour le reflet que pour la couleur de base de l'objet.
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Personnalisé
-Pour certaines finitions très spéciales, la réflexion de l'objet sera d'une couleur différente de celle du matériau.  Il s'agit normalement de matériaux composés de plusieurs couches. Utilisez l'option Personnalisé pour définir la couleur du reflet. Utilisez le [sélecteur de couleur](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) pour choisir la couleur de la réflexion. 
+Pour certaines finitions très spéciales, la réflexion de l'objet sera d'une couleur différente de celle du matériau.  Il s'agit normalement de matériaux composés de plusieurs couches. Utilisez l'option Personnalisé pour définir la couleur du reflet. Utilisez le [sélecteur de couleur](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} pour sélectionner une couleur de réflexion.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
@@ -239,11 +242,11 @@ Il est possible d'utiliser jusqu'à quatre images pour ajouter des détails à u
 {: #bump-patterns}
 Les motifs de relief créent l'apparence d'un certain type de surface sans utiliser de placage de déplacement ni de placages supplémentaires. Les reliefs utilisent des règles mathématiques pour donner l'illusion d'aspérités et de creux sur la surface d'un matériau. Motifs disponibles :
 
-> [Papier de verre](#sandpaper)
-> [Crépi](#rubble)
-> [Pyramide](#pyramid)
-> [Plissé](#wrinkled)
-> [Marbré](#marbled)
+* [Papier de verre](#sandpaper)
+* [Crépi](#rubble)
+* [Pyramide](#pyramid)
+* [Plissé](#wrinkled)
+* [Marbré](#marbled)
 
 Les matériaux tels que le stuc, le béton et l'argile ont une texture fine. Il n'est probablement pas nécessaire de scanner une pièce du matériau pour créer une image sauf s'il doit être vu de très près. L'utilisation d'un placage algorithmique de type papier de verre sur une [couleur de base](advanced-material-properties-main.html#color) simule ce type de motif fin. Créez une [couleur de base](advanced-material-properties-main.html#color) qui sera la couleur du matériau. Ajoutez ensuite un relief algorithmique au matériau. Utilisez Papier de verre pour obtenir une texture fine et Crépi pour une texture grossière.
 

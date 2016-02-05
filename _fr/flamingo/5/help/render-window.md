@@ -2,16 +2,16 @@
 title: Fenêtre de rendu
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 La fenêtre de rendu offre des options pour régler l'exposition et ajouter des effets par post-traitement. Le cadre principal de la fenêtre de rendu fait partie du cadre de rendu de Rhino.  Pour plus d'informations sur les menus et icônes de la fenêtre de rendu, consultez la [rubrique sur la fenêtre de rendu de Rhino](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm).  Cette rubrique couvre les options supplémentaires apportées spécifiquement par Flamingo.
 
 ## Gérer un rendu en cours
 Lorsque le rendu est lancé, la [fenêtre de rendu](http://docs.mcneel.com/rhino/5/help/fr-fr/index.htm#information/renderwindowpostprocess.htm) s'ouvre et le calcul du rendu débute.  Le système de Flamingo utilise plusieurs passes qui actualisent l'image rendue par étapes. Flamingo recherche tout d'abord les modifications sur son modèle interne puis lance un processus d'initialisation. Ce processus peut prendre quelques secondes voire plusieurs minutes. Le modèle est importé, les images des matériaux sont copiées à partir du disque dur et la mémoire tampon de l'image rendue est créée. Il est possible de gérer le rendu à plusieurs moments :
 
->[Rendu multi-passes](#multi-pass)
->[Arrêter un rendu](#stop-render)
->[Ajuster une image](#adjusting)
->[Enregistrer une image](#saving)
+1. [Rendu multi-passes](#multi-pass)
+1. [Arrêter un rendu](#stop-render)
+1. [Ajuster une image](#adjusting)
+1. [Enregistrer une image](#saving)
 
 ### Rendu multi-passes
 {: #multi-pass}
@@ -23,22 +23,22 @@ De cette façon, le rendu de nXt n'est jamais vraiment terminé ; c'est à vous
 
 Parmi les effets qui s'améliorent à chaque passe :
 
->Éclairage (comme l'illumination globale si elle est activée)
->Ombres floues
->Réflexions (floues)
->Réfraction
->Anticrénelage
->Profondeur de champ
+* Éclairage (comme l'illumination globale si elle est activée)
+* Ombres floues
+* Réflexions (floues)
+* Réfraction
+* Anticrénelage
+* Profondeur de champ
 
 ### Arrêter un rendu
 {: #stop-render}
 Différentes options permettent d'arrêter le rendu :
 
-![images/close-x.png](images/close-x.png) Cliquer sur le bouton X en haut à droite de la fenêtre de rendu pour arrêter immédiatement le rendu et fermer la fenêtre de rendu. C'est la meilleure option pour revenir rapidement au modèle afin de réaliser des modifications.
+![images/close-x.png](images/close-x.png){: .inline} Cliquer sur le bouton X en haut à droite de la fenêtre de rendu pour arrêter immédiatement le rendu et fermer la fenêtre de rendu. C'est la meilleure option pour revenir rapidement au modèle afin de réaliser des modifications.
 
-![images/stop.png](images/stop.png) Cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu à la fin de la passe en cours. C'est la meilleure option pour enregistrer une image.
+![images/stop.png](images/stop.png){: .inline} Cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu à la fin de la passe en cours. C'est la meilleure option pour enregistrer une image.
 
-![images/stop.png](images/stop.png) Double cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu immédiatement et laisser la fenêtre de rendu ouverte.
+![images/stop.png](images/stop.png){: .inline} Double cliquer sur le bouton Arrêter le lancer de rayons pour arrêter le rendu immédiatement et laisser la fenêtre de rendu ouverte.
 
 ### Ajuster un rendu
 {: #adjusting}
@@ -46,16 +46,16 @@ Après avoir arrêté une image, utilisez les contrôles de l'[onglet Flamingo](
 
 Contrôles permettant d'ajuster les images :
 
->[Ajuster l'image](#adjust-image)
->[Canaux](#channels)
->[Effets postérieurs](#post-process-effects)
+* [Ajuster l'image](#adjust-image)
+* [Canaux](#channels)
+* [Effets postérieurs](#post-process-effects)
 
 
 ### Enregistrer des images
 {: #saving}
 Plusieurs options sont disponibles pour enregistrer une image en fonction de son utilisation postérieure. La plupart des images pourront être enregistrées au format JPG ou PNG. Mais il existe d'autres options.
 
-#### ![images/saveimageas.png](images/saveimageas.png) Enregistrer l'image
+#### ![images/saveimageas.png](images/saveimageas.png){: .inline} Enregistrer l'image
 Après avoir ajusté l'image, le procédé normal consiste à enregistrer le fichier au format JPG ou PNG.  
 
 Une image JPG est un format de fichier très performant et assez petit. Ce format convient très bien aux images publiées sur Internet ou envoyées par mail. Mais cette performance a un prix, en effet certaines couleurs sont supprimées de l'image. 
@@ -81,7 +81,7 @@ Enregistre les informations de couleur et de luminance non comprimées. Le forma
 Format de fichier image à grande plage dynamique créé par la société Industrial Light and Magic (ILM) et distribué sous forme de licence libre. Ce format de fichier gère les nombres flottants en 16 bits par canal avec un bit pour le signe, cinq bits pour l'exposant et dix bits pour la mantisse. Ceci permet d'avoir une plage dynamique de plus de trente niveaux d'exposition. Voir l'[article de Wikipedia : OpenEXR](http://fr.wikipedia.org/wiki/OpenEXR).
 Le format EXR enregistre les données de luminance directement dans un format à grande plage dynamique. Les arrière-plans sans luminance, comme les photographies normales, apparaissent en noir s'ils sont enregistrés dans un de ces formats.
 
-#### ![images/close-x.png](images/close-x.png) Quitter
+#### ![images/close-x.png](images/close-x.png){: .inline} Quitter
 Ferme la fenêtre de rendu.
 
 #### Menus déroulants
@@ -128,7 +128,7 @@ Nombre de pixels calculés dans l'image par seconde.
 {: #adjust-image}
 Cette option est une des plus importantes de Flamingo. Tout comme sur un appareil-photo, vous pouvez ajuster l'exposition de l'image. Cette option est idéale pour rendre des rendus plus clairs, plus foncés, ajouter du contraste ou augmenter la saturation de couleur. Ce réglage est appelé l'[adaptation des tons](https://en.wikipedia.org/wiki/Tone_mapping). Flamingo travaille dans l'espace de luminance, une gamme beaucoup plus importante de couleurs et d'intensités que celle pouvant être affichée sur un écran ou une imprimante. L'adaptation des tons est le procédé de conversion des données de luminance en pixels rouges, verts et bleus (RVB) qui peuvent être affichés sur un écran ou imprimés. Les paramètres contrôlent également comment les images sont enregistrées.
 
-![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
+![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png){: .inline} ![images/tonefinals-correction.png](images/tonefinals-correction.png){: .inline}
 *L'image de gauche est celle produite par défaut. L'image corrigée après avoir appliqué une luminosité de 0.20, une densité de 0.16 et une saturation de 1.20.*
 Utilisez ce procédé pour ajuster rapidement la luminosité d'une image ainsi que sa couleur générale sans relancer le rendu.
 
@@ -198,12 +198,12 @@ Lorsque le modèle contient des blocs, Flamingo nXt peut utiliser la définition
 #### Informations sur l'éclairage
 Informations sur la configuration actuelle de l'éclairage du rendu.  Liste des informations données sur l'éclairage :
 
->[Préréglages](lighting-tab.html)
->[Soleil](sun-and-sky-tabs.html#sun)
->[Ciel](sun-and-sky-tabs.html#sky)
->[Lumières](lights-tab.html)
->[Indirecte](lighting-tab.html#indirect)
->[Lumière ambiante Activée/Désactivée](lighting-tab.html#ambient)
+* [Préréglages](lighting-tab.html)
+* [Soleil](sun-and-sky-tabs.html#sun)
+* [Ciel](sun-and-sky-tabs.html#sky)
+* [Lumières](lights-tab.html)
+* [Indirecte](lighting-tab.html#indirect)
+* [Lumière ambiante Activée/Désactivée](lighting-tab.html#ambient)
 
 ## Canaux
 {: #channels}
@@ -213,13 +213,13 @@ Utilisez ces contrôles pour changer les canaux de lumières en temps réel. Ass
 {: #post-process-effects}
 Applique des effets de traitement postérieur après avoir calculé le rendu de l'image. Les effets peuvent être activés et désactivés et l'ordre de la liste peut être modifié. Chaque effet a ses propres paramètres. Effets disponibles :
 
->Brouillard
->Incandescence
->Éclat
->Profondeur de champ
->Points
->Courbes
->Courbes isoparamétriques
->Annotations
+* Brouillard
+* Incandescence
+* Éclat
+* Profondeur de champ
+* Points
+* Courbes
+* Courbes isoparamétriques
+* Annotations
 
 Pour plus d'informations sur les filtres voir la rubrique [post-traitement des images](docs.mcneel.com/rhino/5/help/fr-fr/commands/render.htm#The_Render_Window).
