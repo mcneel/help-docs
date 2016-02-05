@@ -10,10 +10,10 @@ La Render Farm di Flamingo nXt usa la potenza di vari computer per renderizzare 
 
 ![images/renderfarm-002.png](images/renderfarm-002.png){: style="margin-top:25px;"}
 
->![images/01.png](images/01.png)Un computer con Rhino e Flamingo nXt.
->![images/02.png](images/02.png)Server di rete o cartella farm condivisa.
->![images/03.png](images/03.png)Due client della render farm. (La Render Farm di nXt include due copie gratuite del software client.)
->![images/04.png](images/04.png)Altri client della render farm acquistati a parte.
+1. Un computer con Rhino e Flamingo nXt.
+1. Server di rete o cartella farm condivisa.
+1. Due client della render farm. (La Render Farm di nXt include due copie gratuite del software client.)
+1. Altri client della render farm acquistati a parte.
 
 La Render Farm è gratuita se si hanno al massimo due computer client. Per aggiungere ulteriori computer client, è necessario acquistare la licenza della Render Farm di nXt da [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
@@ -32,11 +32,12 @@ Nel caso di installazioni avanzate, il software della Render Farm di nXt consent
 
 #### Come funziona la Render Farm
 {: #the-farm-process}
- 1. Per avviare un rendering con la Farm di Flamingo nXt, anziché usare il comando Rendering standard, si usi la Render Farm *(Menu Flamingo nXt 5.0 &gt; Render Farm)*. In tal modo, si invierà un lavoro di rendering alla [cartella di output Farm](options-flamingo.html#farm-output-folder). Tutti i materiali e le informazioni di supporto verranno inviati automaticamente insieme al relativo lavoro.
- 2. I lavori di rendering vengono suddivisi in varie attività diverse. I client della Render Farm controllano continuamente la cartella di output di farm per verificare la disponibilità di nuove attività. Ciascun client sceglie un'attività ed inizia a renderizzare. Il Farm Monitor *(Flamingo nXt 5.0 &gt; Render Farm &gt; Farm Monitor...)* è utile per tenere traccia dello stato di avanzamento dei lavori.
- 3. Ciascun client farm deposita i risultati nella cartella farm, sotto *nome lavoro* \Output.
- 3. Una volta ultimato un lavoro, ciascun client continua a selezionare dei nuovi lavori, man mano che questi vengono inviati alla farm.
- 4. I risultati della Farm saranno nel [formato immagine di nXt (.nXtImage)](image-editor.html). Le immagini con questo formato si possono modificare usando l'[Editor delle immagini di nXt](image-editor.html). Dall'[Editor delle immagini di nXt](image-editor.html), i risultati si possono salvare anche come file TGA, PNG, TIF o JPG.
+
+1. Per avviare un rendering con la Farm di Flamingo nXt, anziché usare il comando Rendering standard, si usi la Render Farm *(Menu Flamingo nXt 5.0 &gt; Render Farm)*. In tal modo, si invierà un lavoro di rendering alla [cartella di output Farm](options-flamingo.html#farm-output-folder). Tutti i materiali e le informazioni di supporto verranno inviati automaticamente insieme al relativo lavoro.
+1. I lavori di rendering vengono suddivisi in varie attività diverse. I client della Render Farm controllano continuamente la cartella di output di farm per verificare la disponibilità di nuove attività. Ciascun client sceglie un'attività ed inizia a renderizzare. Il Farm Monitor *(Flamingo nXt 5.0 &gt; Render Farm &gt; Farm Monitor...)* è utile per tenere traccia dello stato di avanzamento dei lavori.
+1. Ciascun client farm deposita i risultati nella cartella farm, sotto *nome lavoro* \Output.
+1. Una volta ultimato un lavoro, ciascun client continua a selezionare dei nuovi lavori, man mano che questi vengono inviati alla farm.
+1. I risultati della Farm saranno nel [formato immagine di nXt (.nXtImage)](image-editor.html). Le immagini con questo formato si possono modificare usando l'[Editor delle immagini di nXt](image-editor.html). Dall'[Editor delle immagini di nXt](image-editor.html), i risultati si possono salvare anche come file TGA, PNG, TIF o JPG.
 
 ## Installare e configurare la Farm
 {: #install}
@@ -45,13 +46,14 @@ Il client di rendering Farmer ed il Farm Monitor vengono installati con Flamingo
 ##### Installare il Render Farmer
 Sulle macchine senza Rhino e Flamingo, installare il client Farmer:
 
- 1. Scaricare il [software Render Farmer](http://www.rhino3d.com/download/The-Farm/1.0/release) corrente.
- 1. Eseguire il programma di installazione scaricato su ciascun computer client.
- 1. Dal menu Start, eseguire il Render Farmer su ciascuna macchina.
- 1. Il Render Farmer apparirà sotto forma di icona sulla barra delle applicazioni.
+1. Scaricare il [software Render Farmer](http://www.rhino3d.com/download/The-Farm/1.0/release) corrente.
+1. Eseguire il programma di installazione scaricato su ciascun computer client.
+1. Dal menu Start, eseguire il Render Farmer su ciascuna macchina.
+1. Il Render Farmer apparirà sotto forma di icona sulla barra delle applicazioni.
 
 ##### Per configurare la Render Farm
 {: #configure-the-render-farm}
+
 1.  [Cliccare con il tasto destro](mouse-button-right.html) sull'icona e selezionare Ripristina.
 1. Nella finestra nXt Farmer, dal menu Opzioni, cliccare su Percorso e selezionare il percorso della cartella Render Farm.
 
@@ -66,14 +68,15 @@ Attualmente la farm può essere usata in tre modi diversi per l'elaborazione dei
 ##### Per verificare che le stazioni di lavoro client rispondano
 Dopo aver avviato il client Render Farmer su tutti i computer client:
 
- 1. In un computer qualsiasi, dal menu Start di Windows, cliccare su [Farm Monitor](#render-farm-monitor).
- 1. Le macchine client dovrebbero apparire nella casella di riepilogo superiore.
- 1. Ciascun client Render Farmer dovrebbe apparire sotto l'elenco Macchina.  Lo Stato dovrebbe essere Attivo.
+1. In un computer qualsiasi, dal menu Start di Windows, cliccare su [Farm Monitor](#render-farm-monitor).
+1. Le macchine client dovrebbero apparire nella casella di riepilogo superiore.
+1. Ciascun client Render Farmer dovrebbe apparire sotto l'elenco Macchina.  Lo Stato dovrebbe essere Attivo.
 
 In caso di problemi, rivedere i punti relativi all'[installazionel](#install) ed alla [configurazione](#configure-the-render-farm).
 
 
 ##### Per inviare un lavoro alla Render Farm
+
 1. In Rhino, configurare il rendering e la vista come lo si farebbe per un rendering normale.
 1. Dal menu Flamingo nXt, cliccare su Avvia Farm Render.
 1. Dovrebbe apparire la finestra di dialogo [Lavoro Farm](#farm-job).
@@ -83,12 +86,12 @@ In caso di problemi, rivedere i punti relativi all'[installazionel](#install) ed
 ##### Monitoraggio della Farm
 Dopo aver inviato un lavoro alla Render Farm, si usi il [Farm Monitor](#render-farm-monitor).
 
- 1. Nel computer master, dal menu Start di Windows, cliccare su [Farm Monitor](#render-farm-monitor).
- 1. Nell'elenco dei Lavori dovrebbe apparire un lavoro recente. Ciò può richiedere alcuni minuti per i lavori grandi.
- 1. Lo stato del lavoro passa ad essere attivo.
- 1. Dopo un certo periodo di tempo, le macchine soprastanti nell'elenco dovrebbero occuparsi delle attività con la stessa data.
- 1. La percentuale di completamento aumenta man mano che le attività vengono completate.
- 1. Quando il lavoro è finito, il suo stato appare come Completato.
+1. Nel computer master, dal menu Start di Windows, cliccare su [Farm Monitor](#render-farm-monitor).
+1. Nell'elenco dei Lavori dovrebbe apparire un lavoro recente. Ciò può richiedere alcuni minuti per i lavori grandi.
+1. Lo stato del lavoro passa ad essere attivo.
+1. Dopo un certo periodo di tempo, le macchine soprastanti nell'elenco dovrebbero occuparsi delle attività con la stessa data.
+1. La percentuale di completamento aumenta man mano che le attività vengono completate.
+1. Quando il lavoro è finito, il suo stato appare come Completato.
 
 
 ## Opzioni del lavoro Farm
@@ -149,19 +152,20 @@ Elimina il lavoro specificato dall'elenco.
 {: #licensing-the-render-farm-}
 La Render Farm consente ai computer di rete (nodi) di operare contemporaneamente sui lavori di rendering.  [Scarica ed installa il software client della Render Farm](http://nxt.flamingo3d.com/page/nxt-render-farm).
 
-
 ##### Per autorizzare il nodo
-1. Prima di iniziare il processo di ottenimento della licenza, attendere il completamento di eventuali lavori farm attivi.
-1. Salvare il codice del prodotto (XF10-J9G2-H006-T8AJ-GBB9-0027) su un file di testo su un percorso di rete in modo tale da poter tagliarlo ed incollarlo facilmente su ciascun nodo.
-1. Se il nodo è attualmente attivo, sulla barra delle applicazioni di Windows, [cliccare con il tasto destro](mouse-button-right.html) sull'icona Render Farm e quindi cliccare su **Chiudi**.
-1. Cliccare sul pulsante **Start di Windows** e quindi su **Tutti i programmi**.
-Nella cartella Render Farm di nXt, cliccare su **Autorizza Farm**.
-1. Nella casella di modifica, incollare oppure digitare il codice del prodotto e quindi cliccare su **OK**.
+
+ 1. Prima di iniziare il processo di ottenimento della licenza, attendere il completamento di eventuali lavori farm attivi.
+ 1. Salvare il codice del prodotto (XF10-J9G2-H006-T8AJ-GBB9-0027) su un file di testo su un percorso di rete in modo tale da poter tagliarlo ed incollarlo facilmente su ciascun nodo.
+ 1. Se il nodo è attualmente attivo, sulla barra delle applicazioni di Windows, [cliccare con il tasto destro](mouse-button-right.html) sull'icona Render Farm e quindi cliccare su **Chiudi**.
+ 1. Cliccare sul pulsante **Start di Windows** e quindi su **Tutti i programmi**.
+ 1. Nella cartella Render Farm di nXt, cliccare su **Autorizza Farm**.
+ 1. Nella casella di modifica, incollare oppure digitare il codice del prodotto e quindi cliccare su **OK**.
 
 ##### Per avviare il nodo
+
 1. Cliccare sul pulsante **Start di Windows** e quindi su **Tutti i programmi**.
-Nella cartella Render Farm di nXt, cliccare su **Render Farmer**.
+1. Nella cartella Render Farm di nXt, cliccare su **Render Farmer**.
 1. [Cliccare con il tasto destro](mouse-button-right.html) sull'icona della barra delle applicazioni e, dal menu, cliccare su **Ripristina**.
 1. Dal menu Aiuti, cliccare su **Informazioni**.
-Se il numero della versione indica una versione di valutazione, significa che la gestione licenze non è riuscita.
+1. Se il numero della versione indica una versione di valutazione, significa che la gestione licenze non è riuscita.
 1. Ridurre a icona la finestra Render Farmer per riportarla sulla barra.

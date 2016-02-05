@@ -1,7 +1,8 @@
 ---
+title: Impostazioni di illuminazione predefinite
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Impostazioni predefinite
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 L'illuminazione è uno degli aspetti più importanti e da non trascurare quando si crea un'immagine. Non si tratta solo di un modo di illuminare il modello. L'illuminazione è fondamentale per creare una determinata atmosfera e rappresenta un ingrediente chiave nella determinazione della composizione di un'immagine.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -9,7 +10,7 @@ L'illuminazione è uno degli aspetti più importanti e da non trascurare quando 
 
 #### Dove trovo il controllo di illuminazione di Flamingo?
 
-* ![images/menuicon.png](images/menuicon.png)Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Flamingo nXt.
 * Fare clic destro su una scheda qualsiasi e spuntare Flamingo nXt.
 
 
@@ -21,7 +22,7 @@ Nella fase di illuminazione di un modello, si consiglia di:
 * Impostare correttamente le unità in funzione del modello. Se non si usano le unità corrette, l'illuminazione non risulterà corretta. Per esempio, se il modello corrente è in millimetri, si impostino i millimetri come unità.
 * Regolare la luminosità globale del rendering usando il controllo [Luminosità](render-window.html#brightness) nella finestra di visualizzazione del rendering. Non si tenti di regolare la luminosità globale della scena cambiando l'intensità di tutte le sorgenti luminose; la regolazione automatica dell'[esposizione](render-window.html#brightness) annullerà l'impostazione.
 
-Per migliorare le tecniche di illuminazione, occorre prestare attenzione alla luce e valutare in che modo essa influisce sulle varie superfici. I materiali possono mascherare gli effetti di ombre e riflessioni, per cui alcuni esperti in rendering preferiscono applicare l'illuminazione ai modelli prima di applicare i materiali.Occorre cercare di osservare la luce in modo obiettivo, così come lo fa una fotocamera.
+Per migliorare le tecniche di illuminazione, occorre prestare attenzione alla luce e valutare in che modo essa influisce sulle varie superfici. I materiali possono mascherare gli effetti di ombre e riflessioni, per cui alcuni esperti in rendering preferiscono applicare l'illuminazione ai modelli prima di applicare i materiali. Occorre cercare di osservare la luce in modo obiettivo, così come lo fa una fotocamera.
 
 ## Impostazioni di illuminazione predefinite
 {: #lighting-presets}
@@ -29,14 +30,14 @@ Un buon punto di partenza per l'illuminazione è rappresentato dalle impostazion
 
 In Flamingo nXt, si usano quattro categorie predefinite per l'illuminazione:
 
-> [Illuminazione da studio](lighting-tab.html#studio-lighting)
-> [Luce diurna esterno](lighting-tab.html#exterior-daylight)
-> [Luce diurna interno](lighting-tab.html#interior-daylight)
-> [Illuminazione artificiale](lighting-tab.html#artificial-lighting)
+* [Illuminazione da studio](lighting-tab.html#studio-lighting)
+* [Luce diurna esterno](lighting-tab.html#exterior-daylight)
+* [Luce diurna interno](lighting-tab.html#interior-daylight)
+* [Illuminazione artificiale](lighting-tab.html#artificial-lighting)
 
 ### Illuminazione da studio
 {: #studio-lighting}
-Questo schema simula le condizioni di illuminazione di uno studio fotografico. Risulta particolarmente utile per i rendering di oggetti isolati di dimensioni medio-piccole.  Si può anche usare nelle scene illuminate tramite ambienti HDRI.
+Questo schema simula le condizioni di illuminazione di uno studio fotografico. Risulta particolarmente utile per i rendering di oggetti isolati di dimensioni medio-piccole.  Si può anche usare nelle scene illuminate tramite ambienti HDRi.
 
 ![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} Un file immagine ad alta gamma dinamica (HDR) fornisce l'illuminazione principale. La luce proveniente dall'immagine HDR simula i livelli di illuminazione interna di uno studio. Le impostazioni dell'HDR si trovano nella [scheda Cielo](sun-and-sky-tabs.html#sky). È anche possibile aggiungere delle luci artificiali alla scena usando la scheda Luci. Nella configurazione da studio, lo sfondo visibile è nero.
 
@@ -62,7 +63,7 @@ Le luci possono simulare anche l'illuminazione di scenari paesaggistici. Si usin
 
 Anche le viste esplose, le sezioni ed i disegni assonometrici dall'alto richiedono una speciale attenzione, non essendo sempre evidente se si tratta di spazi interni od esterni. La decisione da prendere dipende dai risultati desiderati. Se si vuole renderizzare velocemente una scena esterna, si usi la modalità di rendering per esterni. Se questa modalità non produce delle immagini sufficientemente interessanti, si provi ad usare il rendering per interni. In questo modo, la scena diventa più interessante, anche se si impiegherà più tempo per impostare l'illuminazione.
 
-### Luce diurna interno
+### Interior daylight
 {: #interior-daylight .clear-img}
 Questo schema simula un interno illuminato da luce naturale.
 
@@ -101,10 +102,10 @@ Il sole è una sorgente di luce direzionale molto luminosa, infinitamente lontan
 {: #sky}
 Impostare il canale Cielo su una delle quattro opzioni:
 
-> Auto
-> HDRI
-> Colore
-> Immagine
+* Auto
+* HDRI
+* Colore
+* Immagine
 
 Per maggiori informazioni, si veda l'argomento [scheda Cielo](sun-and-sky-tabs.html#sky).
 Definisce una sorgente di luce emisferica infinitamente lontana dal modello.
@@ -175,6 +176,7 @@ Specifica il numero di riflessioni generate dalla luce indiretta.
 ### Ambiente
 {: #ambient}
 La luce d'ambiente è una sorgente di luce costante inserita nel rendering. Queste impostazioni consentono di definire l'intensità della luce ambiente come percentuale del totale di luce ambiente stimato sulla scena.
+
 Quanto più diminuisce la quantità di luce ambiente, tanto maggiore sarà in genere il contrasto delle immagini prodotte. Valori troppo alti di luce ambiente possono generare un'immagine renderizzata piatta e poco interessante; valori troppo bassi possono causare un contrasto eccessivo.
 
 #### Nessuno
@@ -193,8 +195,8 @@ Ottimizza la luce ambiente per scene da studio.
 
 ### Salva schema di illuminazione
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Salva lo schema di illuminazione corrente.
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} Salva lo schema di illuminazione corrente.
 
 ### Apri schema di illuminazione
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Apre uno schema di illuminazione salvato.
+![images/importfromfile.png](images/importfromfile.png){: .inline} Apre uno schema di illuminazione salvato.

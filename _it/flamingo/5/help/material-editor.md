@@ -1,7 +1,8 @@
 ---
+title: Pannello Editor dei materiali
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Pannello dell'editor dei materiali
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 I materiali contengono le specifiche sul colore, sulla riflettività, sulla trasparenza e sulle texture e mappe di rilievo per la rifinitura di una superficie. Tutti i materiali presentano una serie di impostazioni di base. Il materiale predefinito è bianco ed opaco, senza riflettività né trasparenza. Per ottenere i migliori risultati, si usino i materiali specifici di Flamingo.
 
 I materiali si possono assegnare ai livelli, agli oggetti ed ai blocchi. Le assegnazioni si possono effettuare trascinando e rilasciando sugli oggetti o tramite vari controlli. Si veda [Assegnazione dei materiali](material_assignment.html) per ulteriori informazioni.
@@ -15,8 +16,8 @@ Materiali, ambienti e texture vengono memorizzati nel modello; anche i contenuti
 ##### Dove trovo questo comando?
 La scheda Materiali è accessibile in vari modi.
 
-* ![images/materialtab.png](images/materialtab.png)Scheda Materiali
-* ![images/icon-render.png](images/icon-render.png)Barra degli strumenti Strumenti di rendering > ![images/materialtab.png](images/materialtab.png) Editor dei materiali
+* ![images/materialtab.png](images/materialtab.png){: .inline} Scheda Materiali
+* ![images/icon-render.png](images/icon-render.png){: .inline} Barra degli strumenti Strumenti di rendering > ![images/materialtab.png](images/materialtab.png){: .inline} Editor dei materiali
 * Menu > Rendering > Editor dei materiali
 * Nella linea di comando, digitare EditorMateriali
 
@@ -33,38 +34,38 @@ Il pannello dell'editor dei materiali è suddiviso in varie sezioni.  I pannelli
  1. [Nome](#name)
  1. [Pannelli delle proprietà del materiale](#panels)
 
-## [Barra delle impostazioni](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [Barra delle impostazioni](#panel_map) ![images/callout_1.svg](images/callout_1.svg){: .inline}
 {: #settings .clear-img}
 Si usi questa barra per la navigazione all'interno del materiale durante il suo sviluppo.
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) Freccia indietro
+#### ![images/met_leftarrow.png](images/met-leftarrow.png){: .inline} Freccia indietro
 Si sposta a ritroso all'interno del materiale corrente o per passare ai materiali selezionati in precedenza.  Per esempio, i materiali con texture hanno vari livelli.  Si usi questa freccia per ritornare sui materiali genitori dai dettagli delle texture.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) Freccia avanti
-Si sposta a ritroso all'interno del materiale corrente o per passare ai materiali selezionati in precedenza.  Per esempio, i materiali con texture hanno vari livelli.  Si usi questa freccia per ritornare sulla texture usata di recente dal materiale genitore.
+####  ![images/met_rightarrow.png](images/met-rightarrow.png){: .inline} Freccia avanti
+Si sposta in avanti all'interno del materiale corrente o per passare ai materiali selezionati in precedenza.  Per esempio, i materiali con texture hanno vari livelli.  Si usi questa freccia per ritornare sulla texture usata di recente dal materiale genitore.
 
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) Nome del materiale attualmente selezionato
+#### ![images/material_editor.png](images/material_editor.png){: .inline} ![images/texture-2dchecker.png](images/texture-2dchecker.png){: .inline} Nome del materiale attualmente selezionato
 Mostra il nome del materiale corrente ed il livello.  Per esempio, in presenza di una texture o di un materiale procedurale, viene visualizzata una ">". Utile per vedere dove si trova l'editor in un materiale.
 
-#### ![images/library_default.png](images/library_default.png) Menu Strumenti
+#### ![images/library_default.png](images/library_default.png){: .inline} Menu Strumenti
 Mostra il [menu Strumenti](#tools-menu).  Si tratta di un vasto menu di comandi, impostazioni e utility che hanno a che vedere con i materiali.
 
 
-## [Elenco dei materiali](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [Elenco dei materiali](#panel_map) ![images/callout_2.svg](images/callout_2.svg){: .inline}
 {: #material_list}
 Elenca tutti i materiali contenuti nel modello. Da questo elenco:
 
 * Scorrere l'elenco verso l'alto e verso il basso per vedere tutti i materiali presenti nel modello.
-* Trascinare un materiale da questo elenco e rilasciarlo su un livello all'interno del [Pannello Livelli](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#commands/layer.htm) oppure direttamente su un oggetto per assegnarlo ad un oggetto.Si veda [Assegnazione dei materiali](material_assignment.html) per ulteriori informazioni.
-* Aggiungere un nuovo materiale usando il pulsante Aggiungi nuovo ![images/add_material.png](images/add_material.png) che si trova nella parte inferiore dell'elenco.
+* Trascinare un materiale da questo elenco e rilasciarlo su un livello all'interno del [Pannello Livelli](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#commands/layer.htm) oppure direttamente su un oggetto per assegnarlo ad un oggetto. Si veda [Assegnazione dei materiali](material_assignment.html) per ulteriori informazioni.
+* Aggiungere un nuovo materiale usando il pulsante Aggiungi nuovo ![images/add_material.png](images/add_material.png){: .inline} che si trova nella parte inferiore dell'elenco.
 
 
 * Cliccare su ciascun materiale per selezionarlo. Una volta selezionato, nei pannelli sottostanti verranno visualizzate le proprietà del materiale. Si veda [Proprietà dei materiali di rendering](#properties) per maggiori informazioni.
 * Cliccare con il tasto destro su una miniatura per visualizzare il menu di scelta rapida dei materiali.
 * Cliccare con il tasto destro sull'area vuota per visualizzare il menu di scelta rapida nuovo materiale.
 
-###  ![images/add_material.png](images/add_material.png) Aggiungi nuovo materiale
+###  ![images/add_material.png](images/add_material.png){: .inline} Aggiungi nuovo materiale
 {: #add_material}
 Scorrere verso il basso l'elenco dei materiali per visualizzare l'icona Aggiungi.
 
@@ -79,81 +80,81 @@ Questo menu è disponibile se si clicca con il tasto destro su un elenco di mate
 {: new_material_context}
 Questo menu è disponibile se si clicca con il tasto destro su un'area vuota dell'elenco di materiali.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) Crea nuovo materiale
+#### ![images/toolbarlus.png](images/toolbarplus.png){: .inline} Crea nuovo materiale
 Crea un nuovo materiale di base bianco opaco.
 
 
-#### ![images/paste.png](images/paste.png) Incolla
+#### ![images/paste.png](images/paste.png){: .inline} Incolla
 Crea un nuovo materiale in base ai contenuti degli Appunti.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Incolla come istanza
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} Incolla come istanza
 Crea un nuovo materiale in base ai contenuti degli Appunti, collegato all'originale tramite la creazione di istanze.
 
-#### ![images/grid.png](images/grid.png) Griglia
+#### ![images/grid.png](images/grid.png){: .inline} Griglia
 Mostra le anteprime come una griglia di miniature.
 
-#### ![images/list.png](images/list.png) Elenco
+#### ![images/list.png](images/list.png){: .inline} Elenco
 Mostra le anteprime come un elenco di miniature.
 
-#### ![images/tree.png](images/tree.png) Albero
+#### ![images/tree.png](images/tree.png){: .inline} Albero
 Mostra le anteprime come un albero con i livelli di nidificazione.
 
-#### ![images/horizontal.png](images/horizontal.png) Layout orizzontale
+#### ![images/horizontal.png](images/horizontal.png){: .inline} Layout orizzontale
 Mostra le anteprime a sinistra dei controlli.
 
-#### ![images/showpreview.png](images/showpreview.png) Mostra riquadro di anteprima
+#### ![images/showpreview.png](images/showpreview.png){: .inline} Mostra riquadro di anteprima
 Mostra le proprietà anteprima della miniatura attualmente selezionata. Impostare la geometria, le dimensioni, lo sfondo ed il comportamento di rotazione.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) Rendi mobile
+#### ![images/floatthumbnail.png](images/floatthumbnail.png){: .inline} Rendi mobile
 Rende mobile l'immagine di anteprima in una finestra ridimensionabile.
 
 #### Miniature
 
-##### ![images/small.png](images/small.png) Piccolo
+##### ![images/small.png](images/small.png){: .inline} Piccolo
 Imposta le dimensioni delle miniature sulle dimensioni piccole.
 
-##### ![images/medium.png](images/medium.png) Medio
+##### ![images/medium.png](images/medium.png){: .inline} Medio
 Imposta le dimensioni delle miniature sulle dimensioni medie.
 
-##### ![images/large.png](images/large.png) Grande
+##### ![images/large.png](images/large.png){: .inline} Grande
 Imposta le dimensioni delle miniature sulle dimensioni grandi.
 
-##### ![images/showlabels.png](images/showlabels.png) Mostra etichette
+##### ![images/showlabels.png](images/showlabels.png){: .inline} Mostra etichette
 Mostra le etichette dei nomi delle anteprime quando si è nella modalità Griglia.
 La modalità Elenco mostra sempre le etichette.
 
-##### ![images/showunits.png](images/showunits.png) Mostra unità
+##### ![images/showunits.png](images/showunits.png){: .inline} Mostra unità
 Mostra le dimensioni nelle unità del modello.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) Autoaggiornamento anteprima
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png){: .inline} Autoaggiornamento anteprima
 Aggiorna automaticamente tutte le anteprime man mano che cambiano le impostazioni.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) Aggiorna tutte le anteprime
+##### ![images/updateallpreviews.png](images/updateallpreviews.png){: .inline} Aggiorna tutte le anteprime
 Aggiorna le anteprime manualmente quando l'Autoaggiornamento anteprima è disattivato.
 
-## [Divisore della finestra](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [Divisore della finestra](#panel_map) ![images/callout_3.svg](images/callout_3.svg){: .inline}
 {: #divider}
 Trascinare questo divisore per cambiare l'estensione dell'elenco dei materiali. Se si allunga l'elenco dei materiali, si accorcia la sezione delle proprietà dei materiali.
 
-## [Sezione delle proprietà del materiale](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [Sezione delle proprietà del materiale](#panel_map) ![images/callout_4.svg](images/callout_4.svg){: .inline}
 {: #properties}
 
-#### [Nome del materiale](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+#### [Nome del materiale](#panel_map) ![images/callout_5.svg](images/callout_5.svg){: .inline}
 {: #name}
 Il nome del materiale. Il nome del materiale viene anche salvato come nome del file quando il materiale viene esportato nella libreria. Nota: I materiali vengono memorizzati nel modello di Rhino. Materiali unici possono avere lo stesso nome in vari modelli di Rhino.
 
-#### [Pannelli dei materiali](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+#### [Pannelli dei materiali](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg){: .inline}
 {: #panels}
 La sezione delle proprietà dei materiali è costituita da una serie di pannelli. Se si fa clic sulla barra del titolo grigia di un pannello, il pannello si chiude ed i suoi contenuti vengono nascosti.  Per visualizzarne di nuovo i contenuti, fare di nuovo clic sulla barra del titolo.
 
 I pannelli dei materiali variano in base al tipo di materiale ed al livello corrente del materiale attivo. Per ulteriori informazioni sui pannelli specifici dei materiali, si veda [Materiali di Flamingo](material-type-simple.html).
 
-## Menu Strumenti ![images/library_default.png](images/library_default.png)
+## Menu Strumenti ![images/library_default.png](images/library_default.png){: .inline}
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 Queste impostazioni appaiono anche nei menu di scelta rapida tramite clic destro delle anteprime e degli sfondi delle anteprime.
 
-#### ![images/assigntoobjects.png](images/assigntoobjects.png) Assegna a selezione
+#### ![images/assigntoobjects.png](images/assigntoobjects.png){: .inline} Assegna a selezione
 Assegna il materiale corrente agli oggetti selezionati.
 
 ##### Per assegnare un materiale agli oggetti
@@ -169,7 +170,7 @@ Gli oggetti di destinazione si possono selezionare sia prima che dopo aver clicc
  * Trascinare il materiale dalle anteprime in miniatura o dall'elenco, rilasciandolo sugli oggetti di destinazione.
 Il trascinamento della selezione funziona solo con un oggetto per volta.
 
-#### ![images/assigntoobjects.png](images/assigntoobjects.png) Assegna a livelli
+#### ![images/assigntolayers.png](images/assigntolayers.png){: .inline} Assegna a livelli
 Assegna il materiale corrente ai livelli.
 
 ##### Per assegnare un materiale ai livelli
@@ -181,58 +182,58 @@ Assegna il materiale corrente ai livelli.
  1. Nella finestra di dialogo Materiale livello, selezionare il materiale da assegnare.
 
 
-##### Per trascinare i materiali sugli oggetti
+##### Per trascinare un materiale su un livello
  * Trascinare il materiale dalle anteprime in miniatura o dall'elenco, rilasciandolo sul livello di destinazione.
 Il trascinamento della selezione funziona solo con un livello per volta.
 
-#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) Seleziona oggetti
+#### ![images/materials_selectobjects.png](images/materials_selectobjects.png){: .inline} Seleziona oggetti
 Selezionare gli oggetti nel modello per l'assegnazione del materiale.
 
-#### ![images/toolbarplus.png](images/toolbarplus.png) Crea nuovo materiale
+#### ![images/toolbarplus.png](images/toolbarplus.png){: .inline} Crea nuovo materiale
 Apre la [libreria](libraries.html) dei contenuti di rendering dei materiali.
 I materiali della libreria fungono da modelli per la creazione di nuovi materiali nel modello.
 
-#### ![images/import.png](images/import.png) Importa materiale da file
+#### ![images/import.png](images/import.png){: .inline} Importa materiale da file
 Importa i materiali da un file .rmtl di Rhino salvato.
 
-#### ![images/savetofile.png](images/savetofile.png) Salva su file
+#### ![images/savetofile.png](images/savetofile.png){: .inline} Salva su file
 Salva un materiale su un file .rmtl di Rhino.
 
-#### ![images/changetype.png](images/changetype.png) Cambia tipo
+#### ![images/changetype.png](images/changetype.png){: .inline} Cambia tipo
 Imposta il materiale su un tipo diverso.
 
-#### ![images/changetype.png](images/changetype.png) Cambia tipo (copia impostazioni simili)
+#### ![images/changetype.png](images/changetype.png){: .inline} Cambia tipo (copia impostazioni simili)
 Imposta il materiale su un tipo diverso.
 Il comportamento predefinito dipende dallo stato attuale della casella [Opzioni di rendering](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#options/rendering.htm) &gt;  [Copia impostazioni simili quando il tipo di contenuto viene modificato](http://docs.mcneel.com/rhino/5/help/it-it/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed). Se spuntata, le impostazioni compatibili del contenuto precedente verranno copiate in quello nuovo.
 
-#### ![images/reset.png](images/reset.png) Reimposta su predefiniti
+#### ![images/reset.png](images/reset.png){: .inline} Reimposta su predefiniti
 Modifica le impostazioni del materiale, impostandole su quelle predefinite: materiale bianco, opaco, non riflettente e senza texture.
 
-#### ![images/copy.png](images/copy.png) Copia
+#### ![images/copy.png](images/copy.png){: .inline} Copia
 Copia il materiale selezionato negli appunti di Windows. I contenuti degli appunti possono quindi venire incollati nell'editor per creare un nuovo materiale, oppure si possono incollare direttamente in una cartella per creare un file [libreria](libraries.html).
 
-#### ![images/paste.png](images/paste.png) Incolla
+#### ![images/paste.png](images/paste.png){: .inline} Incolla
 Crea un nuovo materiale in base ai contenuti degli Appunti.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) Incolla come istanza
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} Incolla come istanza
 Crea un nuovo materiale in base ai contenuti degli Appunti, collegato all'originale tramite la creazione di istanze.
 
-#### ![images/delete.png](images/delete.png) Elimina
+#### ![images/delete.png](images/delete.png){: .inline} Elimina
 Elimina il materiale selezionato.
 
-#### ![images/rename.png](images/rename.png) Rinomina...
+#### ![images/rename.png](images/rename.png){: .inline} Rinomina...
 Rinomina il materiale selezionato.
 
-#### ![images/duplicate.png](images/duplicate.png) Duplica
+#### ![images/duplicate.png](images/duplicate.png){: .inline} Duplica
 Copia il materiale selezionato su un nuovo materiale con le stesse impostazioni.
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) Rimuovi istanze
+#### ![images/removeinstancing.png](images/removeinstancing.png){: .inline} Rimuovi istanze
 Rimuove il collegamento tra i materiali [istanziati](http://docs.mcneel.com/rhino/5/help/it-it/commands/materialeditor.htm#Paste_as_Instance).
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 
-#### ![images/contentfilter.png](images/contentfilter.png) Filtro dei contenuti
+#### ![images/contentfilter.png](images/contentfilter.png){: .inline} Filtro dei contenuti
 Apre la finestra di dialogo [Filtri dei contenuti](content_filters.html).
 
-#### ![images/rename.png](images/rename.png) Proprietà
+#### ![images/rename.png](images/rename.png){: .inline} Proprietà
 Apre la finestra di dialogo [Proprietà anteprima](http://docs.mcneel.com/rhino/5/help/it-it/index.htm#options/rendering.htm).

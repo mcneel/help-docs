@@ -1,7 +1,8 @@
 ---
+title: Sole e cielo
 ---
 
-# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} Sole e cielo
+# ![imagessun.svg](images/sun.svg){: .inline} {{page.title}}
 Il [Sole](#sun) ed il [Cielo](#sky) sono strettamente connessi tra di loro. Il sole può cambiare la luminosità del cielo in modalita automatica. Se il sole è attivo ed il cielo è un'HDRI, è importante bilanciarne le intensità.
 
 ## Sole
@@ -14,8 +15,8 @@ Questo argomento si incentra sul controllo Sole di Flamingo.  Per sistemare il s
 
 Il Sole va attivato tramite le [Impostazioni di illuminazione predefinite](lighting-tab.html#lighting-presets) oppure le [Impostazioni di illuminazione personalizzate](lighting-tab.html#sun).
 
-* ![images/options.png](images/options.png)Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png)Barra strumenti di Flamingo nXt
-* ![images/menuicon.png](images/menuicon.png)Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Scheda Flamingo nXt > Sole
+* ![images/options.png](images/options.png){: .inline} Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barra strumenti di Flamingo nXt
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Scheda Flamingo nXt > Sole
 
 **Nota:** La scheda Sole sarà visibile solo se il sole viene attivato tramite un'impostazione di illuminazione.
 
@@ -30,7 +31,7 @@ Imposta l'inclinazione solare manualmente specificando azimut ed altitudine. Att
 
 #### Azimuth
 {: #azimuth}
-Imposta la direzione del sole in gradi angolari rispetto al Nord (0) sul piano orizzontale.   La mappa circolare mostra il mondo in una vista piana.
+Imposta la direzione del sole in gradi angolari rispetto al Nord (0) sul piano orizzontale.  La mappa circolare mostra il mondo in una vista piana.
 
 #### Altitudine
 {: #altitude}
@@ -94,22 +95,22 @@ La nitidezza del punto di massima illuminazione del sole.
 Il cielo è una grande sfera che circonda il rendering e che può essere usata per l'illuminazione. Il Cielo è molto diverso dall'ambiente.  Il cielo controlla l'illuminazione. L'ambiente controlla ciò che viene riflesso ed è visibile sullo sfondo. Ci sono molte situazioni in cui Cielo ed Ambiente potrebbero essere impostati in modo diverso.
 
 #### Dove trovo il controllo Cielo di Flamingo?
-Il Cielo va attivato tramite le [Impostazioni di illuminazione predefinite](lighting-tab.html#lighting-presets) oppure le [Impostazioni di illuminazione personalizzate](lighting-tab.html#lighting-presets).
+Il Cielo va attivato tramite le [Impostazioni di illuminazione predefinite](lighting-tab.html#lighting-presets) oppure le [Impostazioni di illuminazione personalizzate](lighting-tab.html#sky).
 
- 1. ![images/options.png](images/options.png)Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png)Barra strumenti di Flamingo nXt
- 1. ![images/menuicon.png](images/menuicon.png)Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Scheda Flamingo nXt > Cielo
+ 1. ![images/options.png](images/options.png){: .inline} Barre degli strumenti >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barra strumenti di Flamingo nXt
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menu > Flamingo nXt 5.0 > Mostra pannello di controllo > Scheda Flamingo nXt > Cielo
 
 Gli schemi di illuminazione predefiniti per la luce diurna [Esterna](lighting-tab.html#exterior-daylight) ed [Interna](lighting-tab.html#interior-daylight) usano il cielo automatico di default. Lo schema predefinito per l'illuminazione da [Studio](lighting-tab.html#studio-lighting) usa l'illuminazione per immagini HDR di default.
 
 Il cielo si può impostare in cinque modi:
 
->[Off](lighting-tab.html#off)
->[Cielo automatico](#automatic-sky)
->[Immagine ad alta gamma dinamica (HDRI)](#high-dynamic-range-image-sky)
->[Colore](#color-sky)
->[Immagine](#image-sky)
+* [Off](lighting-tab.html#off)
+* [Cielo automatico](#automatic-sky)
+* [Immagine ad alta gamma dinamica (HDRI)](#high-dynamic-range-image-sky)
+* [Colore](#color-sky)
+* [Immagine](#image-sky)
 
-Le due impostazioni migliori per l'illuminazione proveniente dal cielo sono il cielo con [Immagine HDR](#high-dynamic-range-image-sky) ed il [Cielo automatico](#automatic-sky).Il cielo in HDR usa un'immagine con i valori di illuminazione memorizzati in ciascun pixel per ricreare l'illuminazione ed i riflessi che questa crea sugli oggetti. Il cielo automatico usa valori reali di posizione del sole e nuvolosità per simulare un cielo.  Queste impostazioni producono i rendering più dinamici.
+Le due impostazioni migliori per l'illuminazione proveniente dal cielo sono il cielo con [Immagine HDR](#high-dynamic-range-image-sky) ed il [Cielo automatico](#automatic-sky). Il cielo in HDR usa un'immagine con i valori di illuminazione memorizzati in ciascun pixel per ricreare l'illuminazione ed i riflessi che questa crea sugli oggetti. Il cielo automatico usa valori reali di posizione del sole e nuvolosità per simulare un cielo.  Queste impostazioni producono i rendering più dinamici.
 
 ### Cielo automatico
 {: #automatic-sky}
@@ -156,7 +157,7 @@ Regola la luminosità della luce dell'immagine HDR. Questa impostazione è impor
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *Bassa intensità HDR ed alta intensità HDR.*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}Nell'illustrazione, l'immagine è stata ruotata in modo tale che la riflessione del sole appaia sull'oggetto. Inserire i gradi di rotazione oppure spostare interattivamente l'indicatore del widget di rotazione.
+{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} Nell'illustrazione, l'immagine è stata ruotata in modo tale che la riflessione del sole appaia sull'oggetto. Inserire i gradi di rotazione oppure spostare interattivamente l'indicatore del widget di rotazione.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *Immagine ruotata affinché il sole sia visibile sull'oggetto.*
 

@@ -2,7 +2,7 @@
 title: Canali
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 Una funzione molto utile di Flamingo nXt 5 è la possibilità di impostare le luci su otto canali diversi. Ciascuna sorgente di luce presente nel disegno, compresi il sole ed il cielo, può essere assegnata ad un canale. In fase di rendering, la luce di ciascun canale viene messa sul suo proprio livello.  Quindi, una volta ultimato il rendering, si può regolare l'intensità di ciascun canale.  La modifica avviene in tempo reale senza il bisogno di effettuare di nuovo il rendering.  
 
@@ -31,10 +31,10 @@ Per generare e manipolare un'immagine multicanale devono essere soddisfatte le s
 {: setting}
 Il primo passo per impostare un rendering multicanale è impostare ciascuna luce su un canale. Il numero del canale di solito si imposta nelle proprietà di ciascuna luce.   Per informazioni sull'impostazione di luci specifiche si veda:
 
->[Canale del sole](sun-and-sky-tabs.html#sun-channel)
->[Canale del cielo](sun-and-sky-tabs.html#sky-channel)
->[Canale delle luci artificiali](lights-tab.html#channel)
->[Canale del bagliore dei materiali](documentproperties-flamingo.html#channel)
+* [Canale del sole](sun-and-sky-tabs.html#sun-channel)
+* [Canale del cielo](sun-and-sky-tabs.html#sky-channel)
+* [Canale delle luci artificiali](lights-tab.html#channel)
+* [Canale del bagliore dei materiali](documentproperties-flamingo.html#channel)
 
 Sullo stesso canale, si può impostare un numero qualsiasi di luci.  La regolazione del canale è un moltiplicatore. Le luci che si trovano sullo stesso canale manterranno le loro intensità relative durante la regolazione.
 
