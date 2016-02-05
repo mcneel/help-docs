@@ -1,123 +1,123 @@
 ---
-title: Getting Started Tutorial
+title: 入門チュートリアル
 ---
 <!-- TODO: Make sure to update this page and get working in the guides section of the documentation. -->
 
 # {{page.title}}
-This tutorial shows how to render a standard Rhino model using nXt. The Tutorial covers the basic steps of rendering with nXt which include:
+このチュートリアルでは、nXtを使って標準的なRhinoのモデルをレンダリングする方法を紹介します。チュートリアルではnXtを使った下のレンダリングの基本ステップをカバーします。
 
-1. Opening a model
-1. Creating materials
-1. Editing materials
-1. Adding a ground plane
+1. モデルを開く
+1. マテリアルを作成する
+1. マテリアルを編集する
+1. 地平面を追加する
 
-The first step is to download and unzip the tutorial files. To download the zip file, click on the [Fishing Reel.zip](http:/files.na.mcneel.com//flamingo/nxt/5.0/tutorials/nxt5%20fishing.zip) link. Unzip these files into their own folder somewhere memorable on your computer. Open the Fishing Reel.3dm file in Rhino. Check that Flamingo nXt is the current renderer in the render drop down menu.
+最初のステップはチュートリアルファイルをダウンロードして解凍することです。zipファイルをダウンロードするには、[Fishing Reel.zip](files/nxt5%20fishing.zip)のリンクをクリックしてください。中のファイルをお使いのコンピュータの覚えやすい場所にある専用のフォルダに解凍してください。RhinoでFishing Reel.3dmファイルを開きます。レンダリングドロップダウンメニューでFlamingo nXtが現在のレンダラであることを確認してください。
 
-## Check the current render engine
+## 現在のレンダリングエンジンを確認する
 {: #check-current}
-Rhino may have multiple render engines installed.  To check that Flamingo nXt 5 is the current render engine, go to the Render Pulldown > Current Renderer > Flamingo nXt 5.  If there is a checkmark next to Flamingo nXt 5, then it is the current render engine.
+Rhinoには複数のレンダリングエンジンがインストールされていることがあります。Flamingo nXt 5が現在のレンダリングエンジンであることを確認するには、レンダリングプルダウン > 現在のレンダラでFlamingo nXt 5が選択されているかを確かめてください。Flamingo nXt 5にチェックマークが付いていれば、それが現在のレンダリングエンジンです。
 
-## Render Process
+## レンダリングエンジン
 {: #render_controls}
-![images/getting_started001.png](images/getting_started001.png){: .float-img-right} For your first rendering of the model, click on the render button. Your image should look like the one on the right. nXt works differently than previous versions of Flamingo. A new model will include a default HDRI light set-up.  New models will use a white default material for all objects. Also, you may notice that shadows start out very sharp and linear. With each pass, the shadows will get softer as they blend together. There are many other effects that will also improve with each render pass.
+![images/getting_started001.png](images/getting_started001.png){: .float-img-right} まずモデルをレンダリングしてみます。レンダリングボタンをクリックしてください。右側のようなイメージが表示されます。nXtの動作はFlamingoの以前のバージョンと異なります。新規モデルにはデフォルトのHDRI光源が設定されています。新規モデルはすべてのオブジェクトにデフォルトの白のマテリアルを使用します。レンダリングを行うと、最初は影が非常にシャープで直線的です。しかし、パスを重ねるにつれ、影はブレンドされて柔らかみを帯びて行きます。同じく各レンダリングパスで向上していく他の多くの効果もあります。
 
-Some of the effects that improve on each pass are
+それぞれのパスで向上される効果には次のものが含まれます。
 
-* Lighting (such as global illumination if enabled)
-* Soft Shadows
-* Reflections (blurry)
-* Refraction
-* Anti-aliasing
-* Depth of field
+* 照明（有効な場合、グローバルイルミネーションなど）
+* ソフトシャドウ
+* 反射（不鮮明な)
+* 屈折
+* アンチエイリアシング
+* 被写界深度
 
-In this way, an nXt rendering is never "finished"; you merely decide when it is good enough to stop. This allows you to let images that are looking good to continue to improve. But you can also stop an image at any time, if you would like to change or save something. You can stop the rendering in a number of ways:
+このように、nXtのレンダリングには「終り」がなく、レンダリングをいつ停止するのかを決定するだけになります。レンダリングを続けてイメージをより良くすることも、変更や保存のために好きな時にいつでも停止することもできます。レンダリングは次のようにいろいろな方法で停止することができます。
 {: .clear-img}
 
-* Click the Stop Raytrace button to stop the rendering at the end of the current pass.
-* Double-click the Stop Raytrace to stop the rendering immediately.
-* Click the “X” button in the upper right of the render window to stop the rendering immediately and close the render window.
+* 現在のパスの最後でレンダリングを停止したい場合は、レイトレースを停止ボタンをクリックします。
+* すぐにレンダリングを停止したい場合は、レイトレースを停止ボタンをダブルクリックします。
+* すぐにレンダリングを停止して、レンダリングウィンドを閉じるには、レンダリングウィンドウの右上にある「X」ボタンをクリックします。
 
-## Assign Materials from the Library
+## ライブラリからマテリアルを割り当てる
 {: #materials}
-Basic lighting is already built into nXt, so making the right materials is normally where most the setup of renderings start. Materials are stored directly in each model. To create a set of materials, we can use material templates that assist you in creating new materials quickly.
+基本的な照明はnXtで設定されているので、適切なマテリアルを作成するのが通常レンダリングをセットアップするのに最初に一番必要なこととなります。マテリアルはそれぞれのモデルに直接格納されます。一式のマテリアルを作成するには、新規マテリアルを簡単に作成できることを補助するマテリアルテンプレートを用いることができます。
 
-  1. Open the Flamingo nXt control panel from the Flamingo nXt drop down menu in Rhino.
-  1. To Assign an existing material. Go to the Library Tab in the Control Panel.
-  1. Materials are organized in folders. Go to the Flamingo Materials folder.
+  1. RhinoのFlamingo nXtドロップダウンメニューからFlamingo nXtのコントロールパネルを開きます。
+  1. 既存のマテリアルを割り当てるために、コントロールパネルのライブラリタブを開きます。
+  1. マテリアルはフォルダで組織化されています。Flamingoマテリアルフォルダを開きます。
   ![images/getting_started002.png](images/getting_started002.png)
-  1. Go to the Flamingo Materials > Metals Folder.
+  1. Flamingoマテリアル > 金属フォルダを開きます。
   ![images/getting_started003.png](images/getting_started004.png){: .wide-img}
-  1. Drag and drop the Chrome material onto the Handle and Metal Parts layer.
-  1. Render the results. The parts that lie on the Handle and Metal Parts layer now render with a Chrome finish.
+  1. クロムマテリアルを「Handle」および「Metal Parts」レイヤにドラッグアンドドロップします。
+  1. 結果をレンダリングします。「Handle」と「Metal Parts」レイヤのパーツがクロム仕上げでレンダリングされます。
   ![images/getting_started003.png](images/getting_started003.png)
-  1. Now assign the rest of these materials to these layers:
+  1. 残りのマテリアルを以下のレイヤに次のように割り当ててください。
 
- | Library | Material | Layer |
+ | ライブラリ | マテリアル | レイヤ |
  |:-------|:------|:------|
- | Marine | Black Rubber | Bushing & Washer |
- | Marine | Black Rubber | Grips |
- | Marine | Black Rubber | Rod Grips |
- | Car Paint | Car Paint Red | External Body |
- | Metals > Gold | Gold Satin-Plain | Internal Body |
- | Metal > Anodized | Aluminum - Anodized Red | Spool |
- | Plastic > Black > Smooth | Plastic Black - Smooth | Rod |
- | Plastic > Black > Smooth | Plastic Black - Smooth | Rod Handle |
- | Plastic > Black > Smooth | Plastic Black - Smooth | Wire Guide |
+ | 船舶 | ブラックラバー | Bushing & Washer |
+ | 船舶 | ブラックラバー | Grips |
+ | 船舶 | ブラックラバー | Rod Grips |
+ | カーペイント | カーペイント レッド | External Body |
+ | 金属 > ゴールド | ゴールド サテン-プレイン | Internal Body |
+ | 金属 > アルミニウム- アルマイト | アルミニウム - アルマイト レッド | Spool |
+ | プラスチック > ブラック & ホワイト > スムーズ | プラスチック ブラック - スムーズ | Rod |
+ | プラスチック > ブラック & ホワイト > スムーズ | プラスチック ブラック - スムーズ | Rod Handle |
+ | プラスチック > ブラック & ホワイト > スムーズ | プラスチック ブラック - スムーズ | Wire Guide |
 {: .grided-table}
 
-##### Render to see these results:
+##### レンダリングして結果を見ます:
  ![images/getting_started005.png](images/getting_started005.png)
 
-## Create new material
+## 新規マテリアルを作成する
 {: #new-material}
-Often you will need a material that is not pre-made in the Library. For instance the handle of the fishing rod should be covered with cork. Creating a new material is the only option. For the cork material we will create a new texture material type.
+ライブラリにないマテリアルが必要になる時もあります。例えば、釣り竿のハンドル部分（グリップ） にコルクのマテリアルを用いたい場合などです。この場合、新規マテリアルを作成する必要があります。コルクマテリアルを作成するために、新規のテクスチャマテリアルタイプを作成します。
 
- 1. Go to the Materials tab.
- 1. Scroll down to the bottom of the material list.
- 1. Select the New Material button (plus symbol)
+ 1. マテリアルタブを表示します。
+ 1. マテリアルリストの一番下までスクロールします。
+ 1. 新規マテリアルボタン（+）を選択します。
   ![images/fishing-reel-new-material.jpg](images/fishing-reel-new-material.jpg)
- 1. Select a new Flamingo Textured material.
- 1. Here you are prompted to pick a texture.
- 1. Navigate to the directory that you created when you unzipped the tutorials files and select the Cork.jpg and click Open.
- 1. You can see you have a simple textured material. The tile size of the bitmap is often important. To change the tile size, click on the bitmap name.
+ 1. 新規Flamingo テクスチャマテリアルを選択します。
+ 1. テクスチャを選択する画面になります。
+ 1. チュートリアルファイルを解凍したディレクトリを開き、Cork.jpgを選択して「開く」をクリックします。
+ 1. これは簡易マテリアルです。ビットマップのサイズが重要になることがよくあります。サイズを変更するには、ビットマップの名前をクリックします。
 ![images/getting_started009.png](images/getting_started009.png)
- 1. Adjust the tile size of 100 in width.
+ 1. タイルサイズの幅を100に調整します。
 ![images/getting_started010.png](images/getting_started010.png)
- 1. In the name field, type "Cork"and press OK.
+ 1. 名前フィールドで、「コルク」とタイプし、「OK」をクリックします。
 ![images/getting_started011.png](images/getting_started011.png)
- 1. Once created, assign the Cork material the the Cork Handle layer by dragging the material over the layer.
+ 1. コルクマテリアルが作成できたら、それを「Cork Handle」レイヤにドラッグして割り当てます。
 
-## Turn on the Groundplane
+## 地平面をオンにする
 {: #groundplane}
-Adding a groundplane can help set the object into a scene.
+地平面を追加すると、オブジェクトをシーンに設置することができます。
 
-1. Go to the Groundplane panel.  If it is not visible, right-click on another panel tab and select Ground Plane
-1. Click on the Enable to activate the groundplane.  In this case we will use the default ground plane height.
-1. In this case, a new material for the groundplane needs to be created. Scroll to the bottom of the materials list, click on the plus symbol.
+1. 地平面パネルを開きます。地平面タブが表示されていない場合、タブが表示されている部分を右クリックして「地平面」を選択します。
+1. 「オン」をクリックして、地平面をアクティブにします。ここでは、デフォルトの地平面高さを使用します。
+1. 地平面に割り当てる新規マテリアルを作成します。マテリアルリストの一番下の+アイコンをクリックします。
 ![images/getting_started011.png](images/getting_started012.png)
-1. Select a new Flamingo Textured material.
-1. Here you are prompted to pick a texture.
-1. Navigate to the directory that you created when you unzipped the tutorials files and select the Deckwood.jpg and click Open.
-1. You can see you have a simple textured material. The tile size of the bitmap is often important. To change the tile size, click on the bitmap name.
-1. Adjust the tile size of 125 in width.
-1. In the name field, type "Floor"and press OK.
-1. The render should look like this
+1. 新規Flamingo テクスチャマテリアルを選択します。
+1. テクスチャを選択する画面になります。
+1. チュートリアルファイルを解凍したディレクトリを開き、Deckwood.jpgを選択して「開く」をクリックします。
+1. これは簡易マテリアルです。ビットマップのサイズが重要になることがよくあります。サイズを変更するには、ビットマップの名前をクリックします。
+1. タイルサイズの幅を125に調整します。
+1. 名前フィールドで、「床」とタイプし、「OK」をクリックします。
+1. レンダリングの結果は次のようになります。
 ![images/getting_started006.png](images/getting_started006.png)
 
 
-## Rendering Image Adjustment
+## レンダリングイメージを調整する
 {: #image-adjust}
-Adjusting the rendered image after rendering is very important to getting the most out of Flamingo. This can be done real-time before saving the image. Many times it is reccomended to add a little burn and perhaps a little brightness.
+レンダリングの後にレンダリングイメージを調整すると、Flamingoを最大限に活用できます。調整はリアルタイムでイメージを保存前に行えます。多くの場合、少しの焼き込みと明るさを追加するとよい結果になります。
 
-1. In the render Window go to the Flamingo tab.
-1. Make sure the rendering is Stopped by clicking on the Stop icon.
-1. Under Adjust Image, change Burn to 0.1
-1. Under Adjust Image, change Brightness to 0.1
+1. レンダリングウィンドウで、Flamingoタブを表示します。
+1. 停止アイコンをクリックして、レンダリングが停止されている状態にしてください。
+1. 「イメージの調整」で、焼き込みを0.1に変更します。
+1. 「イメージの調整」で、明るさを0.1に変更します。
 ![images/getting_started013.png](images/getting_started013.png)
-1. The result should look like this:
+1. 結果は次のようになります。
 ![images/getting_started007.png](images/getting_started007.png)
-*Notice the brighter whites (Burn) and the overall brightness (brightness) of the image.  The Burn is especially effective in producing a more dynamic image.*
+*白がより明るく（焼き込み）、イメージ全体のも明るく（明るさ）なりました。焼き込みは、よりダイナミックなイメージを作るのに特に効果的です。*
 
 
 
-This is the end of the tutorial. I hope you find this helpful.
+これでチュートリアルは終わりです。お役に立てたことを願っています。
