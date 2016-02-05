@@ -1,2 +1,0 @@
-#### Couleur
-Utilisez le sélecteur de couleur pour choisir la couleur principale.  Voir la rubrique sur le [sélecteur de couleur](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} pour plus d'informations.

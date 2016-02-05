@@ -1,1 +1,0 @@
-Note : Dans nXt, la luminosité globale d'une scène ne peut pas être contrôlée en augmentant l'intensité des sources de lumière. Le réglage automatique de l'exposition intégré dans le procédé d'adaptation des tons annulerait cette augmentation. Réglez la luminosité globale de la scène en utilisant le contrôle **Luminosité**.
