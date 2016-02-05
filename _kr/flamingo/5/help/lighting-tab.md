@@ -2,7 +2,7 @@
 title: 조명 기본 설정
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 조명은 이미지를 만들 때 가장 중요하지만 도외시된 부분입니다. 조명은 단순하게 모델을 비추는 한 방법이 아닙니다. 조명 설정은 분위기를 설정하고, 이미지 작업하는 데 가장 중요한 요소입니다.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -10,7 +10,7 @@ title: 조명 기본 설정
 
 #### Flamingo 조명 제어는 어디에 있습니까?
 
-* ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png){: .inline} 메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt.
 * 어느 한 탭을 오른쪽 클릭하고 Flamingo nXt를 선택합니다.
 
 
@@ -30,10 +30,10 @@ title: 조명 기본 설정
 
 Flamingo nXt의 기본 조명에는 네 가지 방식이 있습니다:
 
-> [스튜디오 조명](lighting-tab.html#studio-lighting)
-> [실외 주광](lighting-tab.html#exterior-daylight)
-> [실내 주광](lighting-tab.html#interior-daylight)
-> [인공 조명](lighting-tab.html#artificial-lighting)
+* [스튜디오 조명](lighting-tab.html#studio-lighting)
+* [실외 주광](lighting-tab.html#exterior-daylight)
+* [실내 주광](lighting-tab.html#interior-daylight)
+* [인공 조명](lighting-tab.html#artificial-lighting)
 
 ### 스튜디오 조명
 {: #studio-lighting}
@@ -102,10 +102,10 @@ Flamingo nXt의 기본 조명에는 네 가지 방식이 있습니다:
 {: #sky}
 다음 네 가지 옵션으로 하늘 채널을 설정합니다:
 
-> 자동
-> HDRI
-> 색
-> 이미지
+* 자동
+* HDRI
+* 색
+* 이미지
 
 자세한 정보는 [하늘 탭](sun-and-sky-tabs.html#sky) 항목을 참조하세요.
 모델로부터 끝없이 떨어져 있는 반구형의 광원을 정의합니다.
@@ -195,8 +195,8 @@ HDR 이미지는 반짝거리는 이미지에 반사되는 형상을 제공합�
 
 ### 조명 구성표 저장
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) 현재 조명의 구성표를 저장합니다.
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} 현재 조명의 구성표를 저장합니다.
 
 ### 조명 구성표 열기
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) 저장된 조명 구성표를 엽니다.
+![images/importfromfile.png](images/importfromfile.png){: .inline} 저장된 조명 구성표를 엽니다.

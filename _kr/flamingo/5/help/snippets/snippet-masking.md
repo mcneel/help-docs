@@ -4,14 +4,14 @@
 
 다음 예에서는 알파 채널 배경을 가진 이미지가 직사각형 서피스에 데칼로 배치되었습니다. 재질을 마스크 처리할 때도 동일합니다.
 
-![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
+![images/airplane.png](images/airplane.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 *원래 데칼 이미지. 회색 바둑판 무늬 부분은 이미지의 알파 채널을 나타냅니다.*
 
 마스크 정보는 비트맵의 세 가지 소스에서 올 수 있습니다:
 
-> [없음](#nomask)
-> [알파 채널](#alphamask)
-> [색](#colormask)
+* [없음](#nomask)
+* [알파 채널](#alphamask)
+* [색](#colormask)
 
 #### 없음
 {: #nomask}
@@ -24,7 +24,7 @@
 {: #alphamask}
 이미지의 [알파 채널](environment-tab.html#alpha)이 있는 경우 이를 사용하여 마스크가 적용된 영역을 정의합니다.
 
-![images/airplane.png](images/airplane.png)  ![images/masking-004.png](images/masking-004.png)
+![images/airplane.png](images/airplane.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 *왼쪽이 원본입니다. 회색 바둑판 영역은 이미지 알파 채널을 나타냅니다. 오른쪽에서는, 수면 위에 이미지가 있습니다.*
 
 알파 채널은 각 픽셀의 데이터에서 투명도 정보를 저장하기 위해 준비되어 있는 부분입니다. 알파 채널은 마스크를 만들어 저장하므로 이 마스크로 인해 이미지와 분리/보호되는 부분을 제외하고 이미지의 나머지 부분에 색상 변경, 필터 처리, 또는 기타 다른 효과 처리를 실행할 수 있습니다. 이미지의 각 픽셀은 빨강, 초록, 파랑 (RGB)의 혼합을 정의하는 데이터 채널로 표현됩니다. 알파 채널은 기저에 있는 픽셀의 색을 마스크 처리한 이미지의 8 비트 (256 단계) 회색조 표현입니다. 알파 채널 값은 픽셀의 채도를 결정합니다. 알파 채널이 100%라면, 이미지 픽셀은 완전히 투명해집니다. 다른 알파 세기에서 이미지 픽셀이 투명도와 블렌드됩니다.
@@ -54,9 +54,9 @@
 
 투명 마스크 처리로 그림자가 더욱 자연스러워지고, 배경 개체도 보이게 됩니다. 아래에 있는 재질을 단순히 투명하게 할 수 있으나, 때때로 데칼 뒤에 있는 서피스를 투명하게 하고 서피스의 다른 부분은 불투명하게 유지하는 방법이 때때로 유용합니다.
 
-![images/masking-003.png](images/masking-003.png)    ![images/masking-004.png](images/masking-004.png)
+![images/masking-003.png](images/masking-003.png){: .inline} ![images/masking-004.png](images/masking-004.png)
 
 #### 마스크 색 표시
-매개 변수가 변하면 그에 따라 달라지는 마스크 처리 효과를 그래픽으로 표시합니다. 마스크 처리된 픽셀의 표시색을 제시된 [색 선택기](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)에서 선택합니다. 이 색 또는 설정 확인란을 변경해도 마스크 처리된 색이 바뀌지 않습니다. 이것은 단순히 마스크 편집을 위한 그래픽 표시 기능입니다.
+매개 변수가 변하면 그에 따라 달라지는 마스크 처리 효과를 그래픽으로 표시합니다. 마스크 처리된 픽셀의 표시색을 제시된 [색 선택기](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline}에서 선택합니다. 이 색 또는 설정 확인란을 변경해도 마스크 처리된 색이 바뀌지 않습니다. 이것은 단순히 마스크 편집을 위한 그래픽 표시 기능입니다.
 
 ![images/masking-008.png](images/masking-008.png)

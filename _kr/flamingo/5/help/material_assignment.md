@@ -2,7 +2,7 @@
 title: 재질 적용
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 장면의 개체에는 재질 소스가 있습니다. 이곳이 렌더링 재질을 취하는 곳입니다.  몇 가지 다른 방법으로 재질을 적용할 수 있습니다. 어떤 방법으로 재질을 적용하는가에 따라, 얼마나 쉽게 모델을 변경하고 유지하는지가 나중에 크게 달라질 수 있습니다.
 
 재질은 세 가지 방법으로 적용할 수 있습니다. 이 세 가지 방법은 계층구조로 이루어지며, 목록에서 아래에 적용하면 위의 적용을 덮어쓰기 실행합니다. 세 가지 방법은 다음과 같습니다:
@@ -46,8 +46,8 @@ title: 재질 적용
 
 ##### 개체 속성을 통해 재질을 적용하려면
 1. 개체를 선택합니다.
-1. 편집 메뉴에서 개체 속성 ![images/properties.png](images/properties.png) 을 클릭하여 개체를 편집합니다.
-1. [속성](properties-object.html) 대화상자, 재질 페이지 ![images/materialtab.png](images/materialtab.png) 를 클릭하고 배정 옵션에서 부모를 클릭합니다.
+1. 편집 메뉴에서 개체 속성 ![images/properties.png](images/properties.png){: .inline} 을 클릭하여 개체를 편집합니다.
+1. [속성](properties-object.html) 대화상자, 재질 페이지 ![images/materialtab.png](images/materialtab.png){: .inline} 를 클릭하고 배정 옵션에서 부모를 클릭합니다.
 
 ## 재질을 개체에 적용
 {: #byobject}
@@ -58,8 +58,8 @@ title: 재질 적용
 
 ##### 개체 속성을 통해 재질 적용
 1. 개체를 선택합니다.
-1. 편집 메뉴에서 개체 속성 ![images/properties.png](images/properties.png)을 클릭하여 개체를 편집합니다.
-1. [속성](properties-object.html) 대화상자, 재질 페이지 ![images/materialtab.png](images/materialtab.png 를 클릭하고 배정 옵션에서 개체를 클릭하고, 목록에서 재질을 클릭합니다.
+1. 편집 메뉴에서 개체 속성 ![images/properties.png](images/properties.png){: .inline} 을 클릭하여 개체를 편집합니다.
+1. [속성](properties-object.html) 대화상자, 재질 페이지 ![images/materialtab.png](images/materialtab.png){: .inline} 를 클릭하고 배정 옵션에서 개체를 클릭하고, 목록에서 재질을 클릭합니다.
 
 ##### 재질을 단일 개체로 끌어오기
 {: #drag-dropmaterialtoobject}

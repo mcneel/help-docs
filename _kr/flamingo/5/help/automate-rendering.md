@@ -56,7 +56,7 @@ title: 자동 렌더링
 이 작업에서 렌더링될 뷰를 표시합니다. [렌더링 탭, 렌더링할 뷰포트](render-tab.html#viewtorender)를 참조하세요.
 
 #### 파일 이름
-저장 단추 ![images/saveimageas.png](images/saveimageas.png)를 클릭하고 렌더링된 이미지의 파일 이름을 지정합니다.
+저장 단추 ![images/saveimageas.png](images/saveimageas.png){: .inline} 를 클릭하고 렌더링된 이미지의 파일 이름을 지정합니다.
 
 #### 알파 채널
 알파 채널과 함께 이미지를 저장합니다. 자세한 안내는 [알파 채널 배경 사용](environment-tab.html#alpha)을 참조하세요.

@@ -2,7 +2,7 @@
 title: 재질 편집기 패널
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 재질에는 색, 반사, 투명도, 텍스처, 범프 맵, 서피스 마무리 등의 설정이 포함되어 있습니다. 모든 재질에는 기본 설정이 있습니다. 기본 재질은 흰색 무광이며, 반사 또는 투명도가 지정되지 않았습니다. 가장 좋은 결과를 얻으려면 Flamingo 특정 재질을 사용하세요.
 
 재질은 레이어, 개체, 블록에 적용할 수 있습니다. 재질을 마우스로 끌어 개체에 놓는 방법을 비롯해 다양한 방식으로 적용할 수 있습니다. 자세한 정보는 [재질 적용](material_assignment.html) 항목을 참조하세요.
@@ -16,8 +16,8 @@ title: 재질 편집기 패널
 ##### 이 명령은 어디에서 찾을 수 있습니까?
 재질 탭을 찾는 방법에는 몇 가지가 있습니다.
 
-* ![images/materialtab.png](images/materialtab.png)재질 탭
-* ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/materialtab.png](images/materialtab.png) 재질 편집기
+* ![images/materialtab.png](images/materialtab.png){: .inline} 재질 탭
+* ![images/icon-render.png](images/icon-render.png){: .inline} 렌더링 도구 도구모음 > ![images/materialtab.png](images/materialtab.png){: .inline} 재질 편집기
 * 메뉴 > 렌더링 메뉴 > 재질 편집기
 * 명령행에 MaterialEditor 를 입력합니다.
 
@@ -34,38 +34,38 @@ title: 재질 편집기 패널
  1. [이름](#name)
  1. [재질 속성 패널](#panels)
 
-## [설정 막대](#panel_map) ![images/callout_1.svg](images/callout_1.svg)
+## [설정 막대](#panel_map) ![images/callout_1.svg](images/callout_1.svg){: .inline}
 {: #settings .clear-img}
 재질 탐색에 이 설정 막대를 사용합니다.
 
-#### ![images/met_leftarrow.png](images/met-leftarrow.png) 뒤로 화살표
+#### ![images/met_leftarrow.png](images/met-leftarrow.png){: .inline} 뒤로 화살표
 현재 재질 또는 이전에 선택된 재질로 되돌아갑니다. 예를 들어, 텍스처가 있는 재질에는 여러 개의 레이어가 있습니다. 이 화살표를 사용하여 텍스처 디테일에서 부모 재질로 돌아갑니다.
 
-####  ![images/met_rightarrow.png](images/met-rightarrow.png) 앞으로 화살표
+####  ![images/met_rightarrow.png](images/met-rightarrow.png){: .inline} 앞으로 화살표
 현재 재질 또는 이전에 선택된 재질에서 앞으로 갑니다. 예를 들어, 텍스처가 있는 재질에는 여러 개의 레이어가 있습니다. 이 화살표를 사용하여 부모 재질에서 최근에 사용된 텍스처로 돌아갑니다.
 
 
-#### ![images/material_editor.png](images/material_editor.png)![images/texture-2dchecker.png](images/texture-2dchecker.png) 현재 선택된 재질 이름
+#### ![images/material_editor.png](images/material_editor.png){: .inline} ![images/texture-2dchecker.png](images/texture-2dchecker.png){: .inline} 현재 선택된 재질 이름
 현재 재질 이름과 레벨을 표시합니다. 예를 들어 텍스처 또는 재질 절차 레벨이 있으면 ">" 표시가 나타납니다. 재질에서 편집기를 보기에 좋은 위치입니다.
 
-#### ![images/library_default.png](images/library_default.png) 도구 메뉴
+#### ![images/library_default.png](images/library_default.png){: .inline} 도구 메뉴
 [도구 메뉴](#tools-menu)를 표시합니다. 이것은 재질과 관련된 명령, 설정, 유틸리티의 확장된 메뉴입니다.
 
 
-## [재질 목록](#panel_map) ![images/callout_2.svg](images/callout_2.svg)
+## [재질 목록](#panel_map) ![images/callout_2.svg](images/callout_2.svg){: .inline}
 {: #material_list}
 모델에 포함된 모든 재질 목록입니다. 이 목록으로 다음과 같은 작업이 가능합니다:
 
 * 목록에서 위/아래로 스크롤하여 모델의 모든 재질을 봅니다.
 * 이 목록에서 재질을 마우스로 끌어 [레이어 패널](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#commands/layer.htm)의 레이어에 놓거나 직접 개체에 놓아 재질을 지정합니다. 자세한 정보는 [재질 적용](material_assignment.html)을 참조하세요.
-* 목록의 아래쪽에 있는 새 재질 추가 단추 ![images/add_material.png](images/add_material.png) 를 사용하여 새로운 재질을 추가합니다.
+* 목록의 아래쪽에 있는 새 재질 추가 단추 ![images/add_material.png](images/add_material.png){: .inline} 를 사용하여 새로운 환경을 추가합니다.
 
 
 * 각 재질을 클릭하여 선택합니다. 재질을 선택하면 해당 재질의 속성이 아래 패널에 표시됩니다. 자세한 정보는 [렌더링 재질 속성](#properties)을 참조하세요
 * 썸네일을 오른쪽 클릭하면 재질 관련 메뉴가 표시됩니다.
 * 공백의 공간을 오른쪽 클릭하면 새로운 재질 관련 메뉴가 표시됩니다.
 
-###  ![images/add_material.png](images/add_material.png) 새 재질 추가
+###  ![images/add_material.png](images/add_material.png){: .inline} 새 재질 추가
 {: #add_material}
 추가 아이콘을 보려면 재질 목록의 아래로 스크롤합니다.
 
@@ -80,81 +80,81 @@ title: 재질 편집기 패널
 {: new_material_context}
 이 메뉴는 재질 목록에서 비어 있는 공간을 오른쪽 클릭하여 사용할 수 있습니다.
 
-#### ![images/toolbarlus.png](images/toolbarplus.png) 새 재질 만들기
+#### ![images/toolbarlus.png](images/toolbarplus.png){: .inline} 새 재질 만들기
 새로운 기본 무광택 흰색 재질을 만듭니다.
 
 
-#### ![images/paste.png](images/paste.png) 붙여넣기
+#### ![images/paste.png](images/paste.png){: .inline} 붙여넣기
 클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 인스턴스로 붙여넣기
 인스턴스 작업을 통해 원래 재질과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
-#### ![images/grid.png](images/grid.png) 그리드
+#### ![images/grid.png](images/grid.png){: .inline} 그리드
 미리보기를 썸네일 그리드로 표시합니다.
 
-#### ![images/list.png](images/list.png) 목록
+#### ![images/list.png](images/list.png){: .inline} 목록
 미리보기를 썸네일 목록으로 표시합니다.
 
-#### ![images/tree.png](images/tree.png) 나무
+#### ![images/tree.png](images/tree.png){: .inline} 트리
 미리보기를 중첩된 트리로 표시합니다.
 
-#### ![images/horizontal.png](images/horizontal.png) 가로 레이아웃
+#### ![images/horizontal.png](images/horizontal.png){: .inline} 가로 레이아웃
 제어의 왼쪽으로 미리보기를 표시합니다.
 
-#### ![images/showpreview.png](images/showpreview.png) 미리보기 창 표시
+#### ![images/showpreview.png](images/showpreview.png){: .inline} 미리보기 창 표시
 현재 선택된 썸네일의 미리보기 속성을 표시합니다. 미리보기 지오메트리, 크기. 배경, 회전 동작을 설정합니다.
 
-#### ![images/floatthumbnail.png](images/floatthumbnail.png) 플로팅
+#### ![images/floatthumbnail.png](images/floatthumbnail.png){: .inline} 플로팅
 조정 가능한 창에서 미리보기 이미지를 플로팅(floating)으로 설정합니다.
 
 #### 썸네일
 
-##### ![images/small.png](images/small.png) 작게
+##### ![images/small.png](images/small.png){: .inline} 작게
 썸네일 크기를 가장 작은 크기로 설정합니다.
 
-##### ![images/medium.png](images/medium.png) 중간
+##### ![images/medium.png](images/medium.png){: .inline} 중간
 썸네일 크기를 중간 크기로 설정합니다.
 
-##### ![images/large.png](images/large.png) 크게
+##### ![images/large.png](images/large.png){: .inline} 크게
 썸네일 크기를 큰 크기로 설정합니다.
 
-##### ![images/showlabels.png](images/showlabels.png) 레이블 표시
+##### ![images/showlabels.png](images/showlabels.png){: .inline} 레이블 표시
 썸네일 이름 레이블을 그리드 모드에서 표시합니다.
 목록 모드는 항상 레이블을 표시합니다.
 
-##### ![images/showunits.png](images/showunits.png) 단위 표시
+##### ![images/showunits.png](images/showunits.png){: .inline} 단위 표시
 크기를 모델 단위로 표시합니다.
 
-##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png) 미리보기 자동 업데이트
+##### ![images/autoupdatethumbnail.png](images/autoupdatethumbnail.png){: .inline} 미리보기 자동 업데이트
 설정이 변경되면 그에 따라 자동으로 모든 미리보기를 업데이트합니다.
 
-##### ![images/updateallpreviews.png](images/updateallpreviews.png) 모든 미리보기 업데이트
+##### ![images/updateallpreviews.png](images/updateallpreviews.png){: .inline} 모든 미리보기 업데이트
 미리보기 자동 업데이트가 꺼져 있을 때 수동으로 미리보기를 업데이트합니다.
 
-## [창 구분](#panel_map) ![images/callout_3.svg](images/callout_3.svg)
+## [창 구분](#panel_map) ![images/callout_3.svg](images/callout_3.svg){: .inline}
 {: #divider}
 이 구분선을 마우스로 끌어 재질 목록의 길이를 변경합니다. 재질 목록을 길게 지정하면 재질 속성 섹션이 짧아집니다.
 
-## [재질 속성 섹션](#panel_map) ![images/callout_4.svg](images/callout_4.svg)
+## [재질 속성 섹션](#panel_map) ![images/callout_4.svg](images/callout_4.svg){: .inline}
 {: #properties}
 
-#### [재질 이름](#panel_map) ![images/callout_5.svg](images/callout_5.svg)
+#### [재질 이름](#panel_map) ![images/callout_5.svg](images/callout_5.svg){: .inline}
 {: #name}
 재질의 이름입니다. 재질 이름은 재질을 라이브러리로 내보낼 때 파일 이름으로도 저장됩니다. 안내: 재질은 Rhino 모델에 보관됩니다. 서로 다른 Rhino 모델에서 고유한 재질의 이름은 동일할 수 있습니다.
 
-#### [재질 패널](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg)
+#### [재질 패널](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg){: .inline}
 {: #panels}
 재질 속성 섹션은 몇 가지 직접적인 재질 패널로 구성되어 있습니다. 회색 제목 표시줄을 클릭하면 재질 패널이 접히고 해당 패널의 콘텐츠가 숨김 상태가 됩니다. 제목 표시줄을 다시 클릭하면 콘텐츠가 다시 표시됩니다.
 
 재질 패널은 재질의 유형과 현재 활성인 재질의 레벨에 따라 달라집니다. 특정 재질 패널에 대한 자세한 정보는 [Flamingo 재질](material-type-simple.html)을 참조하세요.
 
-## 도구 메뉴 ![images/library_default.png](images/library_default.png)
+## 도구 메뉴 ![images/library_default.png](images/library_default.png){: .inline}
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 이 설정은 썸네일 미리보기와 썸네일 배경을 오른쪽 클릭하여 표시되는 메뉴에서도 선택할 수 있습니다.
 
-#### ![images/assigntoobjects.png](images/assigntoobjects.png) 선택한 개체에 적용
+#### ![images/assigntoobjects.png](images/assigntoobjects.png){: .inline} 선택한 개체에 적용
 현재 재질을 선택된 개체에 적용합니다.
 
 ##### 재질을 개체에 적용하려면
@@ -170,7 +170,7 @@ title: 재질 편집기 패널
  * 썸네일 또는 목록에서 재질을 대상 개체로 끌어옵니다.
 끌어 놓기(drag and drop)는 한 번에 하나의 개체에만 실행됩니다.
 
-#### ![images/assigntolayers.png](images/assigntolayers.png) 레이어에 적용
+#### ![images/assigntolayers.png](images/assigntolayers.png){: .inline} 레이어에 적용
 현재 재질을 레이어에 적용합니다.
 
 ##### 재질을 레이어에 적용하려면
@@ -186,54 +186,54 @@ title: 재질 편집기 패널
  * 썸네일 또는 목록에서 재질을 대상 레이어로 끌어옵니다.
 끌어 놓기(drag and drop)는 한 번에 하나의 레이어에만 실행됩니다.
 
-#### ![images/materials_selectobjects.png](images/materials_selectobjects.png) 개체 선택
+#### ![images/materials_selectobjects.png](images/materials_selectobjects.png){: .inline} 개체 선택
 재질을 적용할 개체를 모델에서 선택합니다.
 
-#### ![images/toolbarplus.png](images/toolbarplus.png) 새 재질 만들기
+#### ![images/toolbarplus.png](images/toolbarplus.png){: .inline} 새 재질 만들기
 렌더링 콘텐츠 재질 [라이브러리](libraries.html)를 엽니다.
 라이브러리의 재질은 모델에 재질을 만들 때 템플릿처럼 실행됩니다.
 
-#### ![images/import.png](images/import.png) 파일에서 재질 가져오기
+#### ![images/import.png](images/import.png){: .inline} 파일에서 재질 가져오기
 저장된 Rhino .rmtl 파일에서 재질을 가져옵니다.
 
-#### ![images/savetofile.png](images/savetofile.png) 파일에 저장
+#### ![images/savetofile.png](images/savetofile.png){: .inline} 파일에 저장
 재질을 Rhino .rmtl 파일로 저장합니다.
 
-#### ![images/changetype.png](images/changetype.png) 유형 변경
+#### ![images/changetype.png](images/changetype.png){: .inline} 유형 변경
 재질을 다른 유형으로 변경합니다.
 
-#### ![images/changetype.png](images/changetype.png) 유형 변경 (유사한 설정 복사)
+#### ![images/changetype.png](images/changetype.png){: .inline} 유형 변경 (유사한 설정 복사)
 재질을 다른 유형으로 변경합니다.
 기본 동작은 [렌더링 옵션](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) > [콘텐츠 형식이 변경되면 시슷한 설정 복사](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) 상자의 현재 상태에 따라 결정됩니다. 이 확인란을 선택하면 기존 콘텐츠에서 호환되는 설정이 새로운 설정으로 복사됩니다.
 
-#### ![images/reset.png](images/reset.png) 기본값으로 다시 설정
+#### ![images/reset.png](images/reset.png){: .inline} 기본값으로 다시 설정
 모든 재질 설정을 기본 흰색, 무광택, 반사 없음, 텍스처 없는 재질로 변경합니다.
 
-#### ![images/copy.png](images/copy.png) 복사
+#### ![images/copy.png](images/copy.png){: .inline} 복사
 선택된 재질을 Windows 클립보드로 복사합니다. 클립보드는 편집기로 붙여넣기 실행되어 새 재질이 되거나, 폴더로 바로 붙여넣기 되어 [라이브러리](libraries.html) 파일이 됩니다.
 
-#### ![images/paste.png](images/paste.png) 붙여넣기
+#### ![images/paste.png](images/paste.png){: .inline} 붙여넣기
 클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
-#### ![images/pasteasinstance.png](images/pasteasinstance.png) 인스턴스로 붙여넣기
+#### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 인스턴스로 붙여넣기
 인스턴스 작업을 통해 원래 재질과 연결되어 있는 클립보드의 콘텐츠를 기준으로 새로운 재질을 만듭니다.
 
-#### ![images/delete.png](images/delete.png) 삭제
+#### ![images/delete.png](images/delete.png){: .inline} 삭제
 선택된 재질을 삭제합니다.
 
-#### ![images/rename.png](images/rename.png) 이름 바꾸기...
+#### ![images/rename.png](images/rename.png){: .inline} 이름 바꾸기...
 선택된 재질의 이름을 변경합니다.
 
-#### ![images/duplicate.png](images/duplicate.png) 복제
+#### ![images/duplicate.png](images/duplicate.png){: .inline} 복제
 선택된 재질을 동일한 설정으로 새 재질에 복사합니다.
 
-#### ![images/removeinstancing.png](images/removeinstancing.png) 인스턴스 제거
+#### ![images/removeinstancing.png](images/removeinstancing.png){: .inline} 인스턴스 제거
 [인스턴스](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) 실행된 재질 간의 연결을 제거합니다.
 {% include_relative snippets/snippet-contenteditorpreviewoptions.md %}
 
 
-#### ![images/contentfilter.png](images/contentfilter.png) 콘텐츠 필터
+#### ![images/contentfilter.png](images/contentfilter.png){: .inline} 콘텐츠 필터
 [콘텐츠 필터](content_filters.html) 대화상자를 엽니다.
 
-#### ![images/rename.png](images/rename.png) 속성
+#### ![images/rename.png](images/rename.png){: .inline} 속성
 [미리보기 속성](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm) 대화상자를 엽니다.

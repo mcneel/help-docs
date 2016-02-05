@@ -3,7 +3,7 @@ title: 재질 이미지 속성
 ---
 
 
-# ![images/images.svg](images/images.svg) {{page.title}}
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ title: 재질 이미지 속성
 {: #mapping-type}
 색 채널에 적용되는 이미지입니다. 이미지를 사용하는 다른 방법도 있습니다. 이미지는 다음과 같이 설정할 수 있습니다:
 
-> [표준](#standard)
-> [법선](#normal)
-> [변위](#displacement)
+* [표준](#standard)
+* [법선](#normal)
+* [변위](#displacement)
 
 ### 표준
 {: standard}

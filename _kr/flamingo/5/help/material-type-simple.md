@@ -1,19 +1,19 @@
 ---
 title: 기본 재질 속성
 ---
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Flamingo 재질은 속성 그룹 시리즈로 정의됩니다. 자주 사용되는 재질로 구성된 간단한 재질 속성 시리즈가 있습니다. 이들 재질에는 아주 간단한 제어로 변경이 가능하며, 복잡하게 많은 설정을 변경할 필요 없이 간단한 제어만으로도 원하는 대로 설정을 변경하여 재질을 다르게 표현할 수 있습니다. 가장 간단한 재질의 경우, 재질의 색만 바꾸면 다르게 표현이 됩니다.
 
 #### 간단한 재질 속성:
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[단색](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[플라스틱](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[금속](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[유리](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[광택](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[클리어_피니시](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingo 텍스처](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[텍스처 세트](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png){: .inline} [단색](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png){: .inline} [플라스틱](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png){: .inline} [금속](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png){: .inline} [유리](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png){: .inline} [광택](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png){: .inline} [클리어_피니시](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png){: .inline} [Flamingo 텍스처](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png){: .inline} [텍스처 세트](#texture-set)
 
 어떤 재질도 고급 재질로 변환할 수 있습니다. 고급 재질에서는 Flamingo nXt 재질을 편집하는 모든 사용 가능한 제어가 표시됩니다. 재질을 최대한의 설정으로 제어하려면, 고급 재질을 사용하거나, 기존 재질을 고급 재질로 변환합니다.
 
@@ -124,8 +124,8 @@ Flamingo 재질은 속성 그룹 시리즈로 정의됩니다. 자주 사용되�
 
 ## 텍스처 세트
 {: #texture-set}
-<!-- TODO: The following link doesn't work -->
-[텍스처 세트 재질](material-type-texture-set.html)은 재질을 정의하는 텍스처 세트입니다. 변위, 법선, 범프 맵 정보가 있는 텍스처 맵을 통해 이러한 텍스처 세트를 만들 수 있습니다. 변위 맵은 재질의 깊이를 더합니다. 이 텍스처 맵을 하나의 세트로 병합하면 매우 사실적인 재질을 만들 수 있습니다. [PixPlant 소프트웨어](http://www.pixplant.com/)는 일반적인 비트맵을 가지고 이러한 텍스처 세트를 만드는 제품입니다.
+
+텍스처 세트 재질은 재질을 정의하는 텍스처 세트입니다. 변위, 법선, 범프 맵 정보가 있는 텍스처 맵을 통해 이러한 텍스처 세트를 만들 수 있습니다. 변위 맵은 재질의 깊이를 더합니다. 이 텍스처 맵을 하나의 세트로 병합하면 매우 사실적인 재질을 만들 수 있습니다. [PixPlant 소프트웨어](http://www.pixplant.com/)는 일반적인 비트맵을 가지고 이러한 텍스처 세트를 만드는 제품입니다.
 
 ![images/solidcolors.png](images/textureset.png)
 

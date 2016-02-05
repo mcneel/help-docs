@@ -2,7 +2,7 @@
 title: 라이브러리 패널
 ---
 
-# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+# ![images/libraries.svg](images/libraries.svg){: .inline} {{page.title}}
 Libraries 명령은 재질, 텍스처, 환경 라이브러리를 관리하는 라이브러리 패널을 엽니다.
 
 렌더링 콘텐츠는 모델 간에 공유할 수 있는 외부 라이브러리를 만들어 파일에 저장할 수 있습니다. 콘텐츠는 Rhino 세션 사이 또는 폴더로 끌어올 수 있습니다.
@@ -15,11 +15,11 @@ Libraries 명령은 재질, 텍스처, 환경 라이브러리를 관리하는 �
 
 라이브러리 상단의 주소 표시줄을 사용하여 사용자 컴퓨터의 폴더 위치를 찾습니다.
 
-기본 라이브러리 위치로 바로 돌아오려면 오른쪽 상단의 렌치 아이콘 ![images/library_default.png](images/library_default.png) 을 사용하세요.
+기본 라이브러리 위치로 바로 돌아오려면 오른쪽 상단의 렌치 아이콘 ![images/library_default.png](images/library_default.png){: .inline} 을 사용하세요.
 
 #### 라이브러리 관리
 {: organizing_libraries}
-라이브러리는 간단한 파일들입니다. 폴더에서 이 파일들을 복사, 붙여넣기, 이동할 수 있습니다. 폴더와 문서를 편집하려면 Windows 탐색기를 사용합니다. 라이브러리 탭에 지정되어 있는 기본 폴더를 편집하려면 [라이브러리 설정](#settings) ![images/library_default.png](images/library_default.png) 을 사용합니다.
+라이브러리는 간단한 파일들입니다. 폴더에서 이 파일들을 복사, 붙여넣기, 이동할 수 있습니다. 폴더와 문서를 편집하려면 Windows 탐색기를 사용합니다. 라이브러리 탭에 지정되어 있는 기본 폴더를 편집하려면 [라이브러리 설정](#settings) ![images/library_default.png](images/library_default.png){: .inline} 을 사용합니다.
 
 ## 재질 라이브러리
 {: #material}
@@ -46,12 +46,12 @@ Libraries 명령은 재질, 텍스처, 환경 라이브러리를 관리하는 �
 
 ## 라이브러리 설정
 {: #settings}
-![images/library_default.png](images/library_default.png) 메뉴 아래 표시된 라이브러리 기본값을 변경하려면 ![images/options.png](images/options.png)라이브러리 옵션을 사용합니다.
+![images/library_default.png](images/library_default.png) 메뉴 아래 표시된 라이브러리 기본값을 변경하려면 ![images/options.png](images/options.png){: .inline} 라이브러리 옵션을 사용합니다.
 
 ##### 이 명령은 어디에서 찾을 수 있습니까?
 라이브러리 옵션 명령을 찾는 방법에는 세 가지가 있습니다.
 
- 1. 라이브러리 패널의 오른쪽 위의 ![images/library_default.png](images/library_default.png) 라이브러리 탭 > 설정...
+ 1. 라이브러리 패널의 오른쪽 위의 ![images/library_default.png](images/library_default.png){: .inline} 라이브러리 탭 > 설정...
  1. 메뉴 > 도구 메뉴 > 옵션 > 라이브러리.
  1. 메뉴 > 패널 > 라이브러리
 
