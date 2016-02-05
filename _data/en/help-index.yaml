@@ -36,8 +36,6 @@ main_index:
           path: material-image-properties.html
         - name: Procedural Material Types
           path: procedural-materials.html
-        - name: Texture Set Materials
-          path: texture-set-materials.html
         - name: Color Selector
           path: select-color.html
 

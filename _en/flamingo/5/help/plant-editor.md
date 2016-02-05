@@ -3,7 +3,7 @@ title: Plant Editor
 ---
 <!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 {: #tree-editor}
 
 ### File Pulldown
@@ -11,10 +11,10 @@ title: Plant Editor
 #### New
 Create a new plant definition based on a template.
 
- | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
+ | ![images/standard.png](images/standard.png){: .inline} | ![images/conifer.png](images/conifer.png){: .inline} | ![images/broad.png](images/broad.png){: .inline} |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
  | **Standard**                                |   **Conifer**                             | **Broad Crown**                       |
- | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
+ | ![images/palm.png](images/palm.png){: .inline}         | ![images/groundcover.png](images/groundcover.png){: .inline} | ![images/complex.png](images/complex.png){: .inline} |
  | **Palm**                                    |  **Groundcover**                          | **Complex**                                  
 {: .plant-table}
 

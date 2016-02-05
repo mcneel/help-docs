@@ -27,7 +27,7 @@ title: Indice della guida in linea di Flamingo
 {% endcase %}
 
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{local_categories.name}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{local_categories.name}}
 {% for category in local_categories.categories %}
 ## {{category.name}}
 {: #{{category.anchor}}}
@@ -39,6 +39,5 @@ title: Indice della guida in linea di Flamingo
 {% endfor %}
 </ul>
 {% endfor %}
-
 
 <!-- Do not edit this section above. The source for the Help index can be found in the _data folder in the help_index.yaml file-->

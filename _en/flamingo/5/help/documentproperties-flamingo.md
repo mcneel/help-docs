@@ -3,14 +3,14 @@ title: Document Properties Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 These settings apply to the current model only. There is a trade-off between the time required to complete a rendering, and the quality desired.
 
 #### Where can I find this command?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Render Tools Toolbars > ![images/environments.png](images/environments.png) Material Editor
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Render Pulldown > Environments Editor
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} Render Tools Toolbars > ![images/environments.png](images/environments.png){: .inline} Material Editor
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Render Pulldown > Environments Editor
  1. Command > EnvironmentEditor
 
 ## Materials

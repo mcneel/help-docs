@@ -2,15 +2,15 @@
 title: Render Options
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 The render tab controls the main properties of the final rendering.  Use this tab to control quality and length of time a rendering can take.  Resolution of the final image is one of the biggest influences on overall rendering times.
 
 Note: A good practice is to leave the rendering resolution low during draft renderings. Use high resolution renderings for final renderings only.
 
 #### Where can I find Flamingo Lighting control?
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar > Render Options tab
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
+ 1. ![images/options.png](images/options.png){: .inline} Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt Toolbar > Render Options tab
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt > Render Options tab
 
 
 ## Viewport to render
@@ -40,10 +40,10 @@ Image size will set the final resolution based on several different variables.  
 
 There are four unit types which can be used:
 
->Pixels
->Inches
->Millimeters
->Centimeters
+* Pixels
+* Inches
+* Millimeters
+* Centimeters
 
 #### Pixels
 Sets the render image units to pixels.  Use this setting to simply set the final width and height of the final rendering by the number of pixels.
