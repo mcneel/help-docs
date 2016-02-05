@@ -2,7 +2,7 @@
 title: 燈光
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
+# ![images/lights-tab.png](images/lights-tab.png){: .inline} {{page.title}}
 Flamingo nXt 使用 Rhino 的燈光物件，但在燈光內容加入一些 Flamingo 的燈光設定。在場景加入燈光時必需考慮該燈光在真實世界的特性，選擇適合的燈光物件。
 
 
@@ -17,69 +17,69 @@ Flamingo nXt 使用 Rhino 的燈光物件，但在燈光內容加入一些 Flami
 #### 可以在哪找到 Flamingo 的燈光設定? 
 使用有燈光的[照明預設組](lighting-tab.html#lighting-presets)，或[自訂照明](lighting-tab.html#sun)有開啟燈光時，可以在這些位置找到燈光頁面：
 
- 1. ![images/options.png](images/options.png)工具列 > ![images/flamingo-icon.png](images/flamingo-icon.png) Flamingo nXt 工具列
- 1. ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo 面板 > 燈光
+ 1. ![images/options.png](images/options.png){: .inline} 工具列 > ![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 工具列
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo 面板 > 燈光
 
 燈光頁面可在模型裡加入燈光、將燈光開啟/關閉、變更燈光的強度與通道。
 
 Flamingo 支援的燈光類型：
 
-> [將物件標記為燈光](#tag-objects-as-lights)
-> [聚光燈](#spotlight)
-> [點光源](#pointlight)
-> [矩形燈光](#rectangularlight)
-> [管狀燈](#linearlight)
+* [將物件標記為燈光](#tag-objects-as-lights)
+* [聚光燈](#spotlight)
+* [點光源](#pointlight)
+* [矩形燈光](#rectangularlight)
+* [管狀燈](#linearlight)
 
-**附註：**Flamingo nXt 不支援 Rhino 的平行光 ![images/directionallightbutton.png](images/directionallightbutton.png)，平行光對 Flamingo nXt 彩現的場景沒有照明功能，所以在 Flamingo nXt 控制面板的燈光頁面沒有平行光可選擇。
+**附註：**Flamingo nXt 不支援 Rhino 的平行光 ![images/directionallightbutton.png](images/directionallightbutton.png){: .inline}，平行光對 Flamingo nXt 彩現的場景沒有照明功能，所以在 Flamingo nXt 控制面板的燈光頁面沒有平行光可選擇。
 
 燈光物件內容的部分設定可以在燈光頁面找到，方便編輯燈光的常用內容。
 
 燈光頁面的燈光內容有：
 
- >[開啟/關閉](#on)
- >[名稱](#name)
- >[照明方式](#light-distribution)
- >[方向](#aim-light)
- >[瓦特](#watts)
- >[通道](#channel)
+* [開啟/關閉](#on)
+* [名稱](#name)
+* [照明方式](#light-distribution)
+* [方向](#aim-light)
+* [瓦特](#watts)
+* [通道](#channel)
 
 在燈光頁面的燈光項目上按滑鼠右鍵有[更多設定](#additional-options)可編輯。
 
-選取燈光物件，按物件[內容面板](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm)的燈光按鈕 ![images/spotlightbutton.png](images/spotlightbutton.png) 可編輯[燈光內容](#light-properties)。
+選取燈光物件，按物件[內容面板](http://docs.mcneel.com/rhino/5/help/en-us/commands/properties.htm)的燈光按鈕 ![images/spotlightbutton.png](images/spotlightbutton.png){: .inline} 可編輯[燈光內容](#light-properties)。
 
 ## 燈光類型
 {: #light-types}
 燈光可從 Rhino 的工具列按鈕或 Flamingo 的燈光頁面加入模型，Flamingo 可將物件標記為燈光。
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) 將物件標記為燈光
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png){: .inline} 將物件標記為燈光
 {: #tag-objects-as-lights}
 可彩現的物件 (曲面、實體...) 可標記為燈光產生照明效果，標記為燈光的物件會有燈光內容可編輯，並可設定照明[方式](#light-distribution)、[方向](#aim-light)與[亮度](#watts)。
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *以物件標記為燈光 LED 晝行燈與大燈*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) 聚光燈
+#### ![images/spotlight-01.png](images/spotlight-01.png){: .inline} 聚光燈
 {: #spotlight}
 聚光燈是朝著單一方向照射的圓錐狀燈光，它的燈光內容有[光源半徑](#radius)、[投射角度](#beam-angle)、衰減角度與方向。光源半徑越大，投射的陰影邊緣越模糊。聚光燈預設在光源點的位置有一個可見的小圓盤，如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/en-us/commands/spotlight.htm)說明主題。
 
 ![images/spotlight.png](images/spotlight.png)
 *朝向紅色立方體的聚光燈。*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) 點光源
+#### ![images/pointlight-01.png](images/pointlight-01.png){: .inline} 點光源
 {: #pointlight}
 點光源是往所有方向平均照射的球形燈光，它的燈光內容有[光源半徑](#radius)，光源半徑越大，投射的陰影邊緣越模糊。請注意，當有物件與點光原交集時可能產生奇怪的照明問題。
 
 ![images/pointlight.png](images/pointlight.png)
 *牆壁附近的點光源*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) 矩形燈光
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png){: .inline} 矩形燈光
 {: #rectangularlight}
 矩形燈光是一個矩形的燈光面板，矩形燈光上有一個箭頭指示照射的方向，矩形燈光預設是彩現裡可見的燈光物件。將矩形燈光設置在天花板時，請讓矩形燈光低於天花板一個小距離，否則會產生照明的問題。如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的矩形燈光](http://docs.mcneel.com/rhino/5/help/en-us/commands/rectangularlight.htm)說明主題。
 
 ![images/rectangular light.png](images/rectangular light.png)
 *天花板下的矩形燈光*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) 管狀燈
+#### ![images/linearlight-01.png](images/linearlight-01.png){: .inline} 管狀燈
 {: #linearlight}
 管狀燈是像日光燈一樣的圓柱形燈光，它的燈光內容有[光源半徑](#radius)與長度，光源半徑越大，投射的陰影邊緣越模糊。管狀燈預設是彩現裡可見的燈光物件，當有物件與管狀燈交集時可能產生奇怪的照明問題。開啟它的控制點可調整長度與方向。
 
@@ -93,7 +93,7 @@ Flamingo 支援的燈光類型：
 {: #name}
 燈光物件的名稱，為燈光命名有助於辨別模型裡的燈光。
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) 開啟/關閉
+#### ![images/lightbulbon.png](images/lightbulbon.png){: .inline} 開啟/關閉
 {: #on}
 將燈光開啟或關閉，燈光頁面的燈泡圖示為黃色代表燈光開啟，灰色代表關閉，雙擊燈泡圖示可開啟或關閉燈光，在燈光的物件內容裡有一個開啟/關閉的核取方塊具有相同功能。
 
