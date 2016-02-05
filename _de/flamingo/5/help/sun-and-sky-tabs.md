@@ -2,7 +2,7 @@
 title: Sonne und Himmel
 ---
 
-# ![imagessun.svg](images/sun.svg) {{page.title}}
+# ![imagessun.svg](images/sun.svg){: .inline} {{page.title}}
 [Sonne](#sun) und [Himmel](#sky) sind eng miteinander verwandt. Die Sonne kann die Helligkeit des Himmels im automatischen Modus ändern. Wenn die Sonne aktiviert ist und es sich beim Himmel um ein HDR-Bild handelt, ist es wichtig, die Intensität der beiden auszubalancieren.
 
 ## Sonne
@@ -15,8 +15,8 @@ Im folgenden Hilfethema wird die Flamingo-Sonnensteuerung beschrieben.  Zur Eins
 
 Die Sonne kann über die [Beleuchtungsvoreinstellungen](lighting-tab.html#lighting-presets) oder die [benutzerdefinierten Beleuchtungseinstellungen](lighting-tab.html#sun) aktiviert werden.
 
-* ![images/options.png](images/options.png) Werkzeugleisten >![images/flamingo-icon.png](images/flamingo-icon.png) Flamingo nXt
-* ![images/menuicon.png](images/menuicon.png) Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo-nXt-Reiter > Sonne
+* ![images/options.png](images/options.png){: .inline} Werkzeugleisten >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo-nXt-Reiter > Sonne
 
 **Hinweis:** Der Sonnenreiter ist nur dann verfügbar, wenn die Sonne über eine Beleuchtungsvoreinstellung aktiviert wurde.
 
@@ -97,18 +97,18 @@ Der Himmel ist eine große Kugel rund um das Rendering, die zur Beleuchtung verw
 #### Wo befindet sich die Flamingo-Himmelssteuerung?
 Der Himmel kann über die [Beleuchtungsvoreinstellungen](lighting-tab.html#lighting-presets) oder die [benutzerdefinierten Beleuchtungseinstellungen](lighting-tab.html#sun) aktiviert werden.
 
- 1. ![images/options.png](images/options.png) Werkzeugleisten >![images/flamingo-icon.png](images/flamingo-icon.png) Flamingo nXt
- 1. ![images/menuicon.png](images/menuicon.png)Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo-nXt-Reiter > Himmel
+ 1. ![images/options.png](images/options.png){: .inline} Werkzeugleisten >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo-nXt-Reiter > Himmel
 
 Die vordefinierten Beleuchtungsschemen für Tageslicht [außen](lighting-tab.html#exterior-daylight) und [innen](lighting-tab.html#interior-daylight) verwenden standardmäßig den automatischen Himmel. Die Voreinstellung für [Studiobeleuchtung](lighting-tab.html#studio-lighting) verwendet standardmäßig eine HDR-Bildbeleuchtung.
 
 Für den Himmel gibt es fünf verschiedene Einstellungsmöglichkeiten:
 
->[Aus](lighting-tab.html#off)
->[Auto](#automatic-sky)
->[High Dynamic Range Image (HDRi)](#high-dynamic-range-image-sky)
->[Farbe](#color-sky)
->[Bild](#image-sky)
+* [Aus](lighting-tab.html#off)
+* [Auto](#automatic-sky)
+* [High Dynamic Range Image (HDRi)](#high-dynamic-range-image-sky)
+* [Farbe](#color-sky)
+* [Bild](#image-sky)
 
 Die beiden empfohlenen Himmelsbeleuchtungstypen sind [HDRi](#high-dynamic-range-image-sky) und [Auto](#automatic-sky). Himmel aus HDR-Bildern verwenden ein Bild mit Beleuchtungswerten für jeden Pixel, aus denen Licht und Reflexion abgeleitet werden. Der automatische Himmel verwendet einen Sonnenstandort in der realen Welt und Bewölkung, um einen Himmel zu simulieren.  Mit diesen Optionen können die dynamischsten Renderings erzeugt werden.
 
@@ -157,7 +157,7 @@ Für HDR-Bilder gibt es zwei Projektionstypen, die festlegen, wie das Bild um di
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *Niedrige und hohe HDR-Intensität.*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}In der Abbildung wurde das Bild so gedreht, dass die Reflexion der Sonne auf dem Objekt sichtbar ist. Zur Bestimmung der Drehung können Gradwerte eingegeben oder der Drehregler des Widgets interaktiv verschoben werden.
+{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} In der Abbildung wurde das Bild so gedreht, dass die Reflexion der Sonne auf dem Objekt sichtbar ist. Zur Bestimmung der Drehung können Gradwerte eingegeben oder der Drehregler des Widgets interaktiv verschoben werden.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *Gedrehtes Bild. Die Sonne ist auf dem Objekt sichtbar.*
 

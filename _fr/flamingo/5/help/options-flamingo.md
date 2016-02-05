@@ -3,7 +3,7 @@ title: Options de Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 Ces paramètres concernent l'application Flamingo.  Les modifications réalisées ici sont appliquées à Flamingo en général. 
 
 {: #default-decal-link-state}
@@ -11,7 +11,7 @@ Ces paramètres concernent l'application Flamingo.  Les modifications réalisée
 
 #### Dossier partagé de la ferme
 {: #farm-output-folder}
-Le dossier partagé des travaux de la ferme de rendu. Il s'agit également de l'emplacement où la ferme enregistrera les résultats. Utilisez l'icône du dossier ![images/folderopen32x32.png](images/folderopen32x32.png) pour choisir un nouvel emplacement.
+Le dossier partagé des travaux de la ferme de rendu. Il s'agit également de l'emplacement où la ferme enregistrera les résultats. Utilisez l'icône du dossier ![images/folderopen32x32.png](images/folderopen32x32.png){: .inline} pour choisir un nouvel emplacement.
 
 #### Afficher les lumières marquées
 Utilisez cette propriété pour afficher la direction d'une lumière marquée.  Cette option s'applique aux spots et aux distributions de lumière diffuse.

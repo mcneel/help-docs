@@ -3,7 +3,7 @@ title: 식물 편집기
 ---
 <!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 {: #tree-editor}
 
 ### 파일 메뉴
@@ -11,10 +11,10 @@ title: 식물 편집기
 #### 새로 만들기
 템플릿을 기준으로 새로운 식물 정의를 만듭니다.
 
- | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
+ | ![images/standard.png](images/standard.png){: .inline} | ![images/conifer.png](images/conifer.png){: .inline} | ![images/broad.png](images/broad.png){: .inline} |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
  | **표준**                                |   **침엽수**                             | **넓은 수관**                       |
- | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
+ | ![images/palm.png](images/palm.png){: .inline}         | ![images/groundcover.png](images/groundcover.png){: .inline} | ![images/complex.png](images/complex.png){: .inline} |
  | **야자 나무**                                    |  **지피 식물**                          | **합성**                                  
 {: .plant-table}
 

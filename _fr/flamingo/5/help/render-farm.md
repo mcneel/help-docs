@@ -10,10 +10,10 @@ La ferme de rendu de Flamingo nXt utilise la puissance de plusieurs ordinateurs 
 
 ![images/renderfarm-002.png](images/renderfarm-002.png){: style="margin-top:25px;"}
 
->![images/01.png](images/01.png)Un ordinateur avec Rhino et Flamingo nXt.
->![images/02.png](images/02.png)Serveur de réseau ou dossier partagé.
->![images/03.png](images/03.png)Deux clients de la ferme de rendu. (La ferme de rendu de nXt est livrée avec deux copies gratuites du logiciel client.)
->![images/04.png](images/04.png)Clients de la ferme de rendu achetés en supplément.
+1. Un ordinateur avec Rhino et Flamingo nXt.
+1. Serveur de réseau ou dossier partagé.
+1. Deux clients de la ferme de rendu. (La ferme de rendu de nXt est livrée avec deux copies gratuites du logiciel client.)
+1. Clients de la ferme de rendu achetés en supplément.
 
 La ferme de rendu est gratuite jusqu'à deux ordinateurs clients. Pour ajouter d'autres ordinateurs clients, achetez une licence de la Ferme de rendu nXt sur [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
@@ -32,11 +32,12 @@ La ferme de rendu nXt vous permet de travailler avec des gestionnaires de rendu 
 
 #### Mode de fonctionnement de la ferme
 {: #the-farm-process}
- 1. Pour lancer un rendu avec la ferme de Flamingo nXt, au lieu d'utiliser la commande Rendu, utilisez la ferme de rendu *(menu Flamingo nXt 5.0 > Ferme de rendu)*. Un travail de rendu sera envoyé dans le [dossier de destination de la ferme](options-flamingo.html#farm-output-folder). Tous les matériaux et toutes les informations sur les ressources seront automatiquement envoyés avec le travail.
- 2. Les travaux de rendu sont divisés en plusieurs tâches différentes. Les clients de la ferme de rendu vérifient continuellement le dossier de destination de la ferme pour voir s'il y a de nouvelles tâches à réaliser. Chaque client choisira une tâche et commencera le rendu. Le moniteur de la ferme *(Flamingo nXt 5.0 > Ferme de rendu > Moniteur de la ferme)* assure un suivi de l'avancée du travail.
- 3. Chaque client de la ferme dépose les résultats dans le dossier de la ferme sous <<nom du travail>>\\Résultat.
- 3. Au fur et à mesure que les clients finissent le travail, ils choisissent de nouveaux travaux suivant leur ordre d'arrivée dans la ferme.
- 4. Le résultat sera au [format image nXt (.nXtImage)](image-editor.html). Les images dans ce format peuvent être modifiées avec l'[éditeur d'images nXt](image-editor.html). Les résultats peuvent également être enregistrés dans des fichiers TGA, PNG, TIF et JPG à partir de l'[éditeur d'images nXt](image-editor.html). 
+
+1. Pour lancer un rendu avec la ferme de Flamingo nXt, au lieu d'utiliser la commande Rendu, utilisez la ferme de rendu *(menu Flamingo nXt 5.0 > Ferme de rendu)*. Un travail de rendu sera envoyé dans le [dossier de destination de la ferme](options-flamingo.html#farm-output-folder). Tous les matériaux et toutes les informations sur les ressources seront automatiquement envoyés avec le travail.
+1. Les travaux de rendu sont divisés en plusieurs tâches différentes. Les clients de la ferme de rendu vérifient continuellement le dossier de destination de la ferme pour voir s'il y a de nouvelles tâches à réaliser. Chaque client choisira une tâche et commencera le rendu. Le moniteur de la ferme *(Flamingo nXt 5.0 > Ferme de rendu > Moniteur de la ferme)* assure un suivi de l'avancée du travail.
+1. Chaque client de la ferme dépose les résultats dans le dossier de la ferme sous <<nom du travail>>\\Résultat.
+1. Au fur et à mesure que les clients finissent le travail, ils choisissent de nouveaux travaux suivant leur ordre d'arrivée dans la ferme.
+1. Le résultat sera au [format image nXt (.nXtImage)](image-editor.html). Les images dans ce format peuvent être modifiées avec l'[éditeur d'images nXt](image-editor.html). Les résultats peuvent également être enregistrés dans des fichiers TGA, PNG, TIF et JPG à partir de l'[éditeur d'images nXt](image-editor.html). 
 
 ## Installation et configuration de la ferme
 {: #install}
@@ -45,13 +46,14 @@ Le client de rendu de la ferme et le moniteur sont installés avec Flamingo sur 
 ##### Installer la ferme de rendu
 Installez le client de la ferme sur les ordinateurs où Rhino et Flamingo nXt ne sont pas installés:
 
- 1. Téléchargez le [logiciel de la ferme de rendu](http://www.rhino3d.com/download/The-Farm/1.0/release).
- 1. Lancez le programme d'installation sur chaque ordinateur client. 
- 1. Dans le menu Démarrer, exécutez la ferme de rendu sur chaque machine.
- 1. La ferme de rendu apparaîtra sous forme d'icône dans la barre de système.
+1. Téléchargez le [logiciel de la ferme de rendu](http://www.rhino3d.com/download/The-Farm/1.0/release).
+1. Lancez le programme d'installation sur chaque ordinateur client.
+1. Dans le menu Démarrer, exécutez la ferme de rendu sur chaque machine.
+1. La ferme de rendu apparaîtra sous forme d'icône dans la barre de système.
 
 ##### Pour configurer la ferme de rendu
 {: #configure-the-render-farm}
+
 1.  [Cliquez avec le bouton de droite](mouse-button-right.html) sur l'icône et sélectionnez Restaurer.
 1. Dans la fenêtre nXt Farmer, dans le menu Options, cliquez sur Chemin... et sélectionnez le chemin du dossier de la ferme de rendu.
 
@@ -66,14 +68,15 @@ La ferme de rendu est maintenant configuré.
 ##### Pour vérifier que les stations clients répondent
 Après avoir lancé le client de la ferme de rendu sur tous les ordinateurs clients :
 
- 1. Sur un des ordinateurs client, dans le menu Démarrer de Windows, cliquez sur [Moniteur de la ferme](#render-farm-monitor).
- 1. Les ordinateurs clients devraient apparaître dans la liste supérieure.
- 1. Chaque client de la ferme de rendu devrait apparaître dans la liste des ordinateurs. Leur statut devrait indiquer Actif. 
+1. Sur un des ordinateurs client, dans le menu Démarrer de Windows, cliquez sur [Moniteur de la ferme](#render-farm-monitor).
+1. Les ordinateurs clients devraient apparaître dans la liste supérieure.
+1. Chaque client de la ferme de rendu devrait apparaître dans la liste des ordinateurs.  Leur statut devrait indiquer Actif. 
 
 En cas de problème avec cette section, consultez les rubriques [Installation](#install) et [Configuration](#configure-the-render-farm).
 
 
 ##### Pour envoyer un travail de rendu vers la ferme de rendu
+
 1. Dans Rhino, configurez votre rendu et votre vue comme pour un rendu normal.
 1. Dans le menu Flamingo nXt, cliquez sur Lancer la ferme de rendu. 
 1. La boîte de dialogue [Travail de rendu](#farm-job) s'ouvre.
@@ -83,12 +86,12 @@ En cas de problème avec cette section, consultez les rubriques [Installation](#
 ##### Contrôler la ferme
 Après avoir envoyé un travail vers la ferme de rendu, utilisez le [moniteur de la ferme](#render-farm-monitor).
 
- 1. Sur l'ordinateur principal, dans le menu Démarrer de Windows, cliquez sur [Moniteur de la ferme](#render-farm-monitor).
- 1. Les derniers travaux envoyés devraient apparaître dans la liste. Ceci peut prendre quelques minutes pour les travaux de grande taille. 
- 1. Le statut du travail deviendra actif. 
- 1. Les ordinateurs devraient ensuite choisir des tâches avec la même date. 
- 1. La valeur du pourcentage achevé augmente au fur et à mesure que les tâches sont terminées. 
- 1. Recherchez les tâches dont le statut est Terminé lorsque le travail est fini. 
+1. Sur l'ordinateur principal, dans le menu Démarrer de Windows, cliquez sur [Moniteur de la ferme](#render-farm-monitor).
+1. Les derniers travaux envoyés devraient apparaître dans la liste. Ceci peut prendre quelques minutes pour les travaux de grande taille.
+1. Le statut du travail deviendra actif.
+1. Les ordinateurs devraient ensuite choisir des tâches avec la même date.
+1. La valeur du pourcentage achevé augmente au fur et à mesure que les tâches sont terminées.
+1. Recherchez les tâches dont le statut est Terminé lorsque le travail est fini.
 
 
 ## Options de travail de la ferme
@@ -147,22 +150,22 @@ Supprimer de la liste le travail indiqué .
 
 ## Licence de la ferme de rendu
 {: #licensing-the-render-farm-}
-La version gratuite de la ferme de rendu permet à deux ordinateurs en réseau (nœuds) de travailler simultanément sur des travaux. Si vous voulez avoir plus de nœuds de réseau travaillant en même temps, vous pouvez acheter une licence illimitée sur [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
-
-Lorsque vous avez acheté une licence et avez reçu une clé de produit, suivez la procédure suivante pour activer la licence de votre ferme.
+La ferme de rendu permet à des ordinateurs en réseau (noeuds) de travailler simultanément sur des travaux de rendu.  [Télécharger et installer le Client de la ferme de rendu](http://nxt.flamingo3d.com/page/nxt-render-farm).
 
 ##### Pour autoriser le nœud
-1. Attendez la fin de tous les travaux actifs de la ferme avant de commencer l'activation de la licence.
-1. Enregistrez votre clé de produit dans un fichier de texte sur le réseau afin de pouvoir la copier et la coller facilement sur chaque nœud.
-1. Si le nœud est actuellement actif, dans la barre d'état système de Windows, [cliquez avec le bouton droit](mouse-button-right.html) sur l'icône de la Ferme de rendu puis cliquez sur **Fermer**.
-1. Cliquez sur le bouton **Démarrer de Windows** puis sur **Tous les programmes**.
-Dans le dossier nXt Render Farm, cliquez sur **Authorize Farm**.
-1. Collez ou tapez votre Clé de produit dans la case correspondante et cliquez sur OK**.
+
+ 1. Attendez la fin de tous les travaux actifs de la ferme avant de commencer l'activation de la licence.
+ 1. Enregistrez la clé de produit dans un fichier de texte sur le réseau afin de pouvoir la copier et la coller facilement sur chaque nœud.
+ 1. Si le nœud est actuellement actif, dans la barre d'état système de Windows, [cliquez avec le bouton droit](mouse-button-right.html) sur l'icône de la Ferme de rendu puis cliquez sur **Fermer**.
+ 1. Cliquez sur le bouton **Démarrer de Windows** puis sur **Tous les programmes**.
+ 1. Dans le dossier nXt Render Farm, cliquez sur **Authorize Farm**.
+ 1. Collez ou tapez votre Clé de produit dans la case correspondante et cliquez sur OK**.
 
 ##### Pour commencer le nœud
+
 1. Cliquez sur le bouton **Démarrer de Windows** puis sur **Tous les programmes**.
-Dans le dossier nXt Render Farm, cliquez sur **Render Farmer**.
+1. Dans le dossier nXt Render Farm, cliquez sur **Render Farmer**.
 1. [Cliquez avec le bouton de droite](mouse-button-right.html) sur l'icône de la barre de tâche et, dans le menu contextuel, cliquez sur **Restaurer**.
 1. Dans le menu Aide, cliquez sur **À propos**.
-Si le numéro de version indique une version d’évaluation, l'activation de la licence ne s'est pas faite correctement.
+1. Si le numéro de version indique une version d’évaluation, l'activation de la licence ne s'est pas faite correctement.
 1. Minimiser la fenêtre Render Farmer dans la barre de tâches.

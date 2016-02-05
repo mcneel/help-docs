@@ -2,7 +2,7 @@
 title: Bibliotheken-Panel
 ---
 
-# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+# ![images/libraries.svg](images/libraries.svg){: .inline} {{page.title}}
 Mit dem Befehl Bibliotheken kann das Bibliotheken-Panel geöffnet werden, um Material-, Textur- und Umgebungsbibliotheken zu verwalten.
 
 Renderinhalt kann in Dateien gespeichert werden, die dann externe Bibliotheken erzeugen und zwischen Modellen verwendet werden können. Inhalt kann auch in andere Rhino-Sitzungen oder einen Ordner gezogen werden.
@@ -15,11 +15,11 @@ Materialien sind Dateien auf Ihrer Festplatte.  Bibliotheksordner sind normale W
 
 In der Adresszeile im oberen Bereich des Bibliothekenreiters können Sie den Ort eines Ordners auf Ihrem Computer eingeben.
 
-Um wieder schnell zurück zum Standardordner zu gelangen, verwenden Sie die Schaltfläche mit dem Schraubenschlüssel im oberen rechten Bereich. ![images/library_default.png](images/library_default.png)
+Um wieder schnell zurück zum Standardordner zu gelangen, verwenden Sie die Schaltfläche mit dem Schraubenschlüssel im oberen rechten Bereich. ![images/library_default.png](images/library_default.png){: .inline}
 
 #### Organisation der Bibliotheken
 {: organizing_libraries}
-Bibliotheken sind einfache Dateien, die Sie kopieren, einfügen und in Ihren Ordnern verschieben können. Verwenden Sie den Windows Explorer, um die Ordner und Dokumente zu bearbeiten. In den [Bibliothekseinstellungen](#settings) ![images/library_default.png](images/library_default.png) können Sie festlegen, welche Ordner standardmäßig angezeigt werden.
+Bibliotheken sind einfache Dateien, die Sie kopieren, einfügen und in Ihren Ordnern verschieben können. Verwenden Sie den Windows Explorer, um die Ordner und Dokumente zu bearbeiten. In den [Bibliothekseinstellungen](#settings) ![images/library_default.png](images/library_default.png){: .inline} können Sie festlegen, welche Ordner standardmäßig angezeigt werden.
 
 ## Materialbibliothek
 {: #material}
@@ -46,12 +46,12 @@ Umgebungen können in der Bibliothek gespeichert werden.  Dadurch können Umgebu
 
 ## Bibliothekseinstellungen
 {: #settings}
-In den ![images/options.png](images/options.png) Bibliotheksoptionen können die Standardeinstellungen der Bibliothek im Menü ![images/library_default.png](images/library_default.png) eingestellt werden.
+In den ![images/options.png](images/options.png){: .inline} Bibliotheksoptionen können die Standardeinstellungen der Bibliothek im Menü ![images/library_default.png](images/library_default.png){: .inline} eingestellt werden.
 
 ##### Wo befindet sich dieser Befehl?
 Es gibt drei Möglichkeiten zum Öffnen der Bibliotheksoptionen.
 
- 1. Bibliotheken-Reiter > ![images/library_default.png](images/library_default.png) im oberen rechten Bereich des Bibliotheken-Panels > Einstellungen...
+ 1. Bibliotheken-Reiter > ![images/library_default.png](images/library_default.png){: .inline} im oberen rechten Bereich des Bibliotheken-Panels > Einstellungen...
  1. Rhino-Menü > Werkzeuge > Optionen > Bibliotheken
  1. Menü > Panels > Bibliotheken.
 

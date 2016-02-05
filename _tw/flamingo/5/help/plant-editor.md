@@ -3,7 +3,7 @@ title: 植物編輯器
 ---
 <!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 {: #tree-editor}
 
 ### 檔案功能表
@@ -11,10 +11,10 @@ title: 植物編輯器
 #### 新增
 從範本建立一個新植物。
 
- | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
+ | ![images/standard.png](images/standard.png){: .inline} | ![images/conifer.png](images/conifer.png){: .inline} | ![images/broad.png](images/broad.png){: .inline} |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
  | **標準**                                |   **針葉**                             | **闊葉**                       |
- | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
+ | ![images/palm.png](images/palm.png){: .inline}         | ![images/groundcover.png](images/groundcover.png){: .inline} | ![images/complex.png](images/complex.png){: .inline} |
  | **棕櫚**                                    |  **地被**                          | **混合**                                  
 {: .plant-table}
 

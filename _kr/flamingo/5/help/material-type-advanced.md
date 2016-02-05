@@ -2,7 +2,7 @@
 title: 고급 재질 속성
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingo에는 [간단한 재질](material-type-simple.html)과 고급 재질 �
 
 고급 재질의 속성 그룹 전체 세트:
 
-> [이름](#name)
-> [재질 절차](#procedures)
-> [고급 재질 속성](#advanced-materials-properties)
-> [반사 마무리](#reflective-finish-and-highlight)
-> [투명도 속성](#transparency)
-> [절차적 텍스처](#bump-patterns)
-> [비트맵 텍스처](#textures)
-> [노트](#notes)
+* [이름](#name)
+* [재질 절차](#procedures)
+* [고급 재질 속성](#advanced-materials-properties)
+* [반사 마무리](#reflective-finish-and-highlight)
+* [투명도 속성](#transparency)
+* [절차적 텍스처](#bump-patterns)
+* [비트맵 텍스처](#textures)
+* [노트](#notes)
 
 ## 재질 이름
 {: #name}
@@ -33,8 +33,10 @@ Rhino 모델의 재질 이름입니다. 재질은 Rhino 모델에 저장됩니�
 
 
 ##### 절차를 추가하려면
+
 1. 베이스 절차 창에서 오른쪽 클릭합니다.
 1. 메뉴에서 절차 유형을 클릭합니다.
+
   * [베이스](procedural-materials.html#base)
   * [각도 블렌드](procedural-materials.html#angular-blend)
   * [블렌드](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ Rhino 모델의 재질 이름입니다. 재질은 Rhino 모델에 저장됩니�
   * [나무](procedural-materials.html#wood)
 
 ##### 절차를 제거하려면
- 1. 절차 창에서 절차의 이름을 오른쪽 클릭합니다.
- 2. 메뉴에서 제거를 클릭합니다.
+
+1. 절차 창에서 절차의 이름을 오른쪽 클릭합니다.
+1. 메뉴에서 제거를 클릭합니다.
 
 ## 고급 재질 속성
 {: #advanced-materials-properties}
@@ -73,7 +76,7 @@ Rhino 모델의 재질 이름입니다. 재질은 Rhino 모델에 저장됩니�
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### 사용자 지정
-일부 특수한 마무리의 경우, 개체의 반사는 재질의 베이스 색과 다른 색일 수 있습니다. 여러 개의 재질로 만들어진 재질이 일반적으로 여기에 속합니다. 사용자 지정을 사용하여 하이라이트 색을 지정합니다. [색 선택](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)을 사용하여 반사 색을 선택합니다.
+일부 특수한 마무리의 경우, 개체의 반사는 재질의 베이스 색과 다른 색일 수 있습니다. 여러 개의 재질로 만들어진 재질이 일반적으로 여기에 속합니다. 사용자 지정을 사용하여 하이라이트 색을 지정합니다. [색 선택](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} 을 사용하여 반사 색을 선택합니다.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
@@ -239,11 +242,11 @@ Rhino 모델의 재질 이름입니다. 재질은 Rhino 모델에 저장됩니�
 {: #bump-patterns}
 범프 패턴은 변위 맵이나 다른 맵을 사용하지 않아도 표면의 질감을 특정하게 표현합니다. 범프는 수학적인 규칙을 사용하여 마치 표면이 울퉁불퉁한 것처럼 보이게 재질을 표현합니다. 다음과 같은 패턴이 포함됩니다:
 
-> [사포](#sandpaper)
-> [자갈](#rubble)
-> [각뿔](#pyramid)
-> [주름](#wrinkled)
-> [대리석](#marbled)
+* [사포](#sandpaper)
+* [자갈](#rubble)
+* [각뿔](#pyramid)
+* [주름](#wrinkled)
+* [대리석](#marbled)
 
 치장 벽토, 콘크리트, 점토의 텍스처는 아주 곱습니다. 가까운 범위에서 보이는 것이 아니라면 굳이 재질을 스캔하여 비트맵을 만들 필요는 아마도 없을 것입니다. 사포 절차 범프맵을 [기본색](advanced-material-properties-main.html#color)에 사용하면 이와 같은 고운 패턴을 비슷하게 표현합니다. 재질의 색인 [기본색](advanced-material-properties-main.html#color)을 만듭니다. 그 후 재질에 절차적 범프를 추가합니다. 고운 텍스처에 사포를 사용하고, 거친 텍스처에 자갈을 사용합니다.
 

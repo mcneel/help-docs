@@ -2,15 +2,15 @@
 title: Options du rendu
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
-L'onglet Rendu contrôle les principales propriétés du rendu final. Utilisez cet onglet pour contrôler la qualité et la durée d'un rendu. La résolution de l'image finale est un des paramètres qui a le plus d'influence sur le temps de rendu global.
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
+L'onglet Rendu contrôle les principales propriétés du rendu final.  Utilisez cet onglet pour contrôler la qualité et la durée d'un rendu. La résolution de l'image finale est un des paramètres qui a le plus d'influence sur le temps de rendu global.
 
 Note : Nous vous conseillons de garder une résolution de rendu faible pour les rendus d'essai. Utilisez les résolutions élevées uniquement pour les rendus finaux.
 
 #### Où puis-je trouver les contrôles d'éclairage de Flamingo ?
 
- 1. ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt > Onglet Options du rendu
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Flamingo nXt > onglet Options du rendu
+ 1. ![images/options.png](images/options.png){: .inline} Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barre d'outils de Flamingo nXt > Onglet Options du rendu
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Flamingo nXt > onglet Options du rendu
 
 
 ## Fenêtre à rendre
@@ -40,10 +40,10 @@ La taille de l'image définira la résolution finale à partir de plusieurs vari
 
 Quatre types d'unités peuvent être utilisés :
 
->Pixels
->Pouces
->Millimètres
->Centimètres
+* Pixels
+* Pouces
+* Millimètres
+* Centimètres
 
 #### Pixels
 Définit les pixels comme unités de l'image rendue. Utilisez ce paramètre pour définir simplement la largeur et la hauteur du rendu final en utilisant le nombre de pixels. 

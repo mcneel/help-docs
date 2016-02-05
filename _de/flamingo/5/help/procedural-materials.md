@@ -2,18 +2,18 @@
 title: Prozedurale Materialien
 ---
 
-#  ![images/paint.svg](images/paint.svg) {{page.title}}
+#  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Der Prozeduren-Baum kombiniert ein oder mehrere Materialien unter Verwendung einer Reihe von Regeln zur Interaktion der Materialien. Das Verzeichnis zeigt die Komponenten an, die zur Erzeugung dieses Materials verwendet werden, und erlaubt Ihnen, Prozeduren hinzuzufügen. Für einfache Materialien gibt es nur eine Komponente in der Liste: Basis.
 
 Jede Prozedur besteht aus zwei *untergeordneten* Materialien, die nach einer bestimmten Methode kombiniert werden. Jedes dieser untergeordneten Materialien kann selbst aus einer Prozedur bestehen und zwei eigene untergeordnete Materialien besitzen. Auf diese Weise können aus einfacheren Komponenten sehr komplizierte Materialien geformt werden. Prozeduren zur Kombination von Materialien:
 
-> [Basis](#base)
-> [Winkelüberblendung](#angular-blend)
-> [Überblendung](#blend)
-> [Marmor](#marble)
-> [Granit](#granite)
-> [Kachel](#tile)
-> [Holz](#wood)
+* [Basis](#base)
+* [Winkelüberblendung](#angular-blend)
+* [Überblendung](#blend)
+* [Marmor](#marble)
+* [Granit](#granite)
+* [Kachel](#tile)
+* [Holz](#wood)
 
 ##### Eine Prozedur hinzufügen
 1. Klicken Sie mit der rechten Maustaste irgendwo in das Fenster der Prozeduren.
@@ -47,7 +47,7 @@ Der Winkel vom Blickpunkt, an dem das äußere Komponentenmaterial beginnt.
 Der Winkel vom Blickpunkt, an dem das äußere Komponentenmaterial endet.
 Zwischen Startwinkel und Endwinkel werden die innere und äußere Komponente überblendet.
 
-In der Abbildung unten liegt der Startwinkel ![images/01.png](images/01.png) bei 30 Grad (was im Rendering dem grünen Kreis auf der rechten Seite entspricht) und der Endwinkel ![images/02.png](images/02.png) bei 60 Grad (was im Rendering dem roten Kreis entspricht).
+In der Abbildung unten liegt der Startwinkel ![images/01.png](images/01.png){: .inline} bei 30 Grad (was im Rendering dem grünen Kreis auf der rechten Seite entspricht) und der Endwinkel ![images/02.png](images/02.png){: .inline} bei 60 Grad (was im Rendering dem roten Kreis entspricht).
 
 Im Bild rechts ist das innere Material weiß und das äußere Material schwarz.
 

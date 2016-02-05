@@ -2,7 +2,7 @@
 title: Flamingo-Umgebung
 ---
 
-# ![images/environment.svg](images/environment.svg) {{page.title}}
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
 In Rhino gibt es viele verschiedene [Umgebungstypen](http://docs.mcneel.com/rhino/5/help/de-de/commands/environmenteditor.htm). In diesem Abschnitt wird die Flamingo-Umgebung behandelt.
 
 Die Umgebung hat Einfluss auf den sichtbaren Teil des Hintergrunds und auf Reflexionen.  Effekte für die Beleuchtung der Szene sind im Hilfethema [Himmel](sun-and-sky-tabs.html) beschrieben.
@@ -11,10 +11,10 @@ Flamingo verfügt über eine **Flamingo-Standardumgebung**.  Diese Umgebung wird
 
 Die einzustellenden Eigenschaften für eine Flamingo-Umgebung sind:
 
-> [Name](#name)
-> [Flamingo-Umgebung](#environment)
-> [Hintergrundfarbe](#color-backgrounds)
-> [Erweiterter Hintergrund](#advanced-background-reflected-sky)
+  * [Name](#name)
+  * [Flamingo-Umgebung](#environment)
+  * [Hintergrundfarbe](#color-backgrounds)
+  * [Erweiterter Hintergrund](#advanced-background-reflected-sky)
 
 
 ## Name der Umgebung
@@ -25,9 +25,9 @@ Der Name der Umgebung im Rhino-Modell.  Umgebungen werden im Rhino-Modell gespei
 {: #environment}
 Für eine Umgebung gibt es in einem Rendering drei wesentliche Effekte:
 
->Sichtbarer Hintergrund
->[Reflektierter Hintergrund](#advanced-background-reflected-sky)
->[Gebrochener Hintergrund](#advanced-background-refracted-sky)
+  1. Sichtbarer Hintergrund
+  1. [Reflektierter Hintergrund](#advanced-background-reflected-sky)
+  1. [Gebrochener Hintergrund](#advanced-background-refracted-sky)
 
 Der sichtbare Hintergrund ist die grundlegende Hintergrundfarbe der Szene.  Der sichtbare Hintergrund kann im Panel der allgemeinen Eigenschaften eingestellt werden. Der [reflektierte](#advanced-background-reflected-sky) und [gebrochene](#advanced-background-refracted-sky) Hintergrund kann abweichen und ist im Abschnitt des erweiterten Hintergrunds verfügbar.
 
@@ -39,10 +39,10 @@ Der sichtbare Hintergrund ist die grundlegende Hintergrundfarbe der Szene.  Der 
 {: #background-type}
 Definiert das Farbschema, das den Hintergrund des gerenderten Bilds füllt. Für Hintergründe stehen die folgenden Typen zur Verfügung:
 
-> [Himmel](#environment-sky)
-> [Einfarbig oder Farbverläufe](#color-backgrounds)
-> [Bild](#environment-image)
-> [HDR- und planares HDR-Bild](#hdr-background)
+* [Himmel](#environment-sky)
+* [Einfarbig oder Farbverläufe](#color-backgrounds)
+* [Bild](#environment-image)
+* [HDR- und planares HDR-Bild](#hdr-background)
 
 ## Himmel
 {: #environment-sky}
@@ -129,9 +129,9 @@ Wählen Sie das Hintergrundbild durch Klick auf die große Schaltfläche mit dem
 {: #backgroud-image-projection}
 Wählen Sie eine Bildprojektion im Dropdownmenü aus:
 
->[Planar](#planar)
->[Zylindrisch](#cylindrical)
->[Kugelförmig](#spherical)
+* [Planar](#planar)
+* [Zylindrisch](#cylindrical)
+* [Kugelförmig](#spherical)
 
 Jede Projektionsmethode verfügt über eigene Optionen zur Positionierung des Bilds.
 
@@ -162,8 +162,10 @@ Mit dieser Steuerung kann die Position des Bildes relativ zur aktuellen Ansicht 
 ![images/background-image-003.png](images/background-image-003.png)
 *Hintergrundbereich (1), Bildgröße und Form (2).*
 
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
+
 #### x-Skalierung / y-Skalierung
-Damit wird die Größe des Hintergrundbilds skaliert wobei der Wert 1.0 genau der Höhe bzw. Breite der Ansicht entspricht. Bei Eingabe einer x-Skalierung 1.0 beispielsweise nimmt das Hintergrundbild 100 % der Breite der Ansicht ein, während ein Wert von 0.5 bedeutet, dass es auf 50 % der Breite skaliert wird.
+Damit wird die Größe des Hintergrundbilds skaliert, wobei der Wert 1.0 genau der Höhe bzw. Breite der Ansicht entspricht. Bei Eingabe einer x-Skalierung 1.0 beispielsweise nimmt das Hintergrundbild 100 % der Breite der Ansicht ein, während ein Wert von 0.5 bedeutet, dass es auf 50 % der Breite skaliert wird.
 
 #### x-Versatz / y-Versatz
 Damit kann das Hintergrundbild ausgehend von der linken unteren Ecke des Ansichtsfensters mit einem Wert bezüglich der Breite und Höhe des Ansichtsfensters versetzt werden, wobei der Wert 1.0 einem Versatz von 100 % entspricht. So wird das Hintergrundbild bei Eingabe eines x-Versatzes von 0.25 beispielsweise um 25 % der Breite des Ansichtsfensters versetzt, bei 0.5 sind es 50 % usw.
@@ -271,7 +273,7 @@ Die erweiterten Hintergrundeinstellungen steuern Umgebungen, die im Rendering ni
 Eine reflektierte Umgebung ist im gerenderten Bild nicht sichtbar, aber sie wird in glänzenden Objekten reflektiert.
 
 #### Himmel
-Objekte reflektieren den Himmel so, wie es in den Einstellungen für [Beleuchtung: Sonne und Himmel](sun-and-sky-tabs.html) festgelegt wurde.
+Objekte spiegeln den Himmel, wie es in den Einstellungen für [Beleuchtung: Sonne und Himmel](sun-and-sky-tabs.html) festgelegt wurde.
 
 #### Benutzerdefiniert
 Objekte reflektieren einen durch eine [Farbe oder einen Farbverlauf](#color-backgrounds), ein [Bild](#environment-image) oder ein [HDR-Bild](#hdr-background) definierten Hintergrund.

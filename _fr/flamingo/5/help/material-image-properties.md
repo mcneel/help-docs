@@ -3,7 +3,7 @@ title: Propriétés de l'image du matériau
 ---
 
 
-# ![images/images.svg](images/images.svg) {{page.title}}
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ Définit la taille de la mosaïque en unités du modèle.
 {: #mapping-type}
 Les images sont normalement appliquées au canal de couleur. Mais il existe d'autres façons d'utiliser les images. Les images peuvent être définies en tant que placage :
 
-> [Standard](#standard)
-> [Normal](#normal)
-> [Déplacement](#displacement)
+* [Standard](#standard)
+* [Normal](#normal)
+* [Déplacement](#displacement)
 
 ### Standard
 {: standard}

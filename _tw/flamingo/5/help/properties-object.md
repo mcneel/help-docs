@@ -2,22 +2,21 @@
 title: 物件內容
 ---
 
-
-#  ![images/properties.svg](images/properties.svg) {{page.title}}
+#  ![images/properties.svg](images/properties.svg){: .inline} {{page.title}}
 物件內容裡與 Flamingo nXt 相關的設定只有在以 Flamingo nXt 彩現時才有作用。
 
-### ![images/materialtab.png](images/materialtab.png) 材質來源
+### ![images/materialtab.png](images/materialtab.png){: .inline} 材質來源
 {: #material-source}
 材質可賦予給圖層、圖塊或物件，賦予材質的詳細說明請參考[賦予材質](material_assignment.html)主題。當材質是賦予給物件時，物件內容的材質頁面會顯示使用的材質與設定，編輯材質的詳細說明請參考[材質內容](material-type-simple.html)主題。
 
-### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) 貼圖軸
+### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png){: .inline} 貼圖軸
 {: #texture-mapping}
 貼圖軸控制材質的紋理與貼圖如何對應到物件上，賦予給圖層或物件的材質都會受影響。材質沒有可辨識性的紋理時通常不需設定貼圖軸，需要控制貼圖的方向時才需要設定貼圖軸。物件移動、旋轉、縮放時它的貼圖軸也會跟著變動，所以可以維持材質的紋理與貼圖的位置，詳細說明請參考[貼圖軸](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/texturemapping.htm)主題。
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
 *立方體使用不同的貼圖軸。*
 
-### ![images/decalproperties.png](images/decalproperties.png) 印花
+### ![images/decalproperties.png](images/decalproperties.png){: .inline} 印花
 {: #decals}
 印花是直接在物件上貼圖的方法，這種貼圖方法不需依靠材質，可以在物件的局部貼圖，詳細說明請參考 [Rhino 的印花](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#properties/decal.htm)說明。
 
@@ -25,18 +24,18 @@ title: 物件內容
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
 *四種不同投影方式的印花。*
 
-### ![images/apply-edge-softening.png](images/apply-edge-softening.png) 自訂網格
+### ![images/apply-edge-softening.png](images/apply-edge-softening.png){: .inline} 自訂網格
 {: #custom-meshes}
 Rhino 有一些網格修改功能可以增加模型彩現的細節，包括：彩現圓角、彩現圓管、裝飾線、置換。
 
 詳細說明請參考它們的說明主題：
 
->[彩現圓角](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyedgesoftening.htm)
->[彩現圓管](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applycurvepiping.htm)
->[裝飾線](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyshutlining.htm)
->[置換](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applydisplacement.htm)
+* [彩現圓角](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyedgesoftening.htm)
+* [彩現圓管](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applycurvepiping.htm)
+* [裝飾線](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applyshutlining.htm)
+* [置換](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/applydisplacement.htm)
 
-### ![images/object-flamingo.PNG](images/object-flamingo.PNG) Flamingo 內容
+### ![images/object-flamingo.PNG](images/object-flamingo.PNG){: .inline} Flamingo 內容
 {: #flamingo-properties}
 
 #### Alpha 通道

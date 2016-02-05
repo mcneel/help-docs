@@ -2,7 +2,7 @@
 title: 채널
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 8개의 채널 중 하나의 채널에서 조명을 설정할 수 있는 능력은 Flamingo nXt 5의 매우 유용한 기능입니다. 도면에서 태양과 하늘을 비롯한 각각의 광원은 하나의 채널에 지정할 수 있습니다. 렌더링할 때 각 채널의 빛은 그 자체의 레이어에 있게 됩니다. 렌더링을 마친 후에 해당 채널의 세기를 조정할 수 있습니다. 다시 렌더링할 필요 없이, 실시간으로 변경됩니다.  
 
@@ -31,10 +31,10 @@ title: 채널
 {: setting}
 첫 번째 단계는 각각의 조명을 채널에 지정하기 위해 다중 채널 렌더링을 설정하는 것입니다. 채널 번호는 일반적으로 각 조명 속성에 지정됩니다. 특정 조명을 채널에 설정하는 방법에 대한 안내는 다음 링크를 참조하세요:
 
->[태양 채널](sun-and-sky-tabs.html#sun-channel)
->[하늘 채널](sun-and-sky-tabs.html#sky-channel)
->[인공 조명 채널](lights-tab.html#channel)
->[재질 글로우](documentproperties-flamingo.html#channel)
+* [태양 채널](sun-and-sky-tabs.html#sun-channel)
+* [하늘 채널](sun-and-sky-tabs.html#sky-channel)
+* [인공 조명 채널](lights-tab.html#channel)
+* [재질 글로우](documentproperties-flamingo.html#channel)
 
 원하는 수의 조명을 동일한 조명 채널로 그룹화할 수 있습니다. 채널 조정은 체배기입니다. 같은 채널에 있는 조명은 조정되는 동안에도 서로에 대한 상대적 세기를 유지합니다.
 

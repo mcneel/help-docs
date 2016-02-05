@@ -2,7 +2,7 @@
 title: Bibliothèques
 ---
 
-# ![images/libraries.svg](images/libraries.svg) {{page.title}}
+# ![images/libraries.svg](images/libraries.svg){: .inline} {{page.title}}
 La commande Bibliothèques ouvre le panneau Bibliothèques pour gérer les bibliothèques de matériaux, textures et environnements.
 
 Il est possible d'enregistrer le contenu de rendu dans des fichiers pour créer des bibliothèques externes afin de les partager entre les modèles. Le contenu peut également être déplacé entre différentes sessions de Rhino ou dans un dossier.
@@ -15,11 +15,11 @@ Les matériaux sont simplement des fichiers sur votre disque dur. Les dossiers d
 
 Utilisez la barre d'adresse en haut de l'onglet des bibliothèques pour rechercher un dossier sur votre ordinateur. 
 
-Pour revenir rapidement au dossier des bibliothèques par défaut, utilisez l'icône en forme de clé en haut à droite. ![images/library_default.png](images/library_default.png)
+Pour revenir rapidement au dossier des bibliothèques par défaut, utilisez l'icône en forme de clé en haut à droite. ![images/library_default.png](images/library_default.png){: .inline}
 
 #### Organisation des bibliothèques
 {: organizing_libraries}
-Les bibliothèques sont simplement des fichiers. Vous pouvez copier, coller et déplacer des dossiers. Utilisez l'explorateur de Windows pour modifier les dossiers et les documents. Pour choisir les dossiers définis par défaut dans l'onglet Bibliothèques, utilisez les [paramètres des bibliothèques](#settings) ![images/library_default.png](images/library_default.png).
+Les bibliothèques sont simplement des fichiers. Vous pouvez copier, coller et déplacer des dossiers. Utilisez l'explorateur de Windows pour modifier les dossiers et les documents. Pour choisir les dossiers définis par défaut dans l'onglet Bibliothèques, utilisez les [paramètres des bibliothèques](#settings) ![images/library_default.png](images/library_default.png){: .inline}.
 
 ## Bibliothèque de matériaux
 {: #material}
@@ -46,12 +46,12 @@ Les environnements peuvent être enregistrés dans la bibliothèque.  Ceci perme
 
 ## Paramètres de la bibliothèque
 {: #settings}
-Utilisez ![images/options.png](images/options.png)les options des bibliothèques pour changer les valeurs par défaut affichées sous le menu ![images/library_default.png](images/library_default.png).
+Utilisez les options des bibliothèques ![images/options.png](images/options.png){: .inline} pour changer les valeurs par défaut affichées sous le menu ![images/library_default.png](images/library_default.png){: .inline} .
 
 ##### Où puis-je trouver cette commande ?
 Les options des bibliothèques sont accessibles de trois façons différentes.
 
- 1. Onglet Bibliothèques > ![images/library_default.png](images/library_default.png) en haut à droite du panneau Bibliothèques > Paramètres...
+ 1. Onglet Bibliothèques > ![images/library_default.png](images/library_default.png){: .inline} en haut à droite du panneau Bibliothèques > Paramètres...
  1. Menus > Outils > Options > Bibliothèques.
  1. Menus > Panneaux > Bibliothèques. 
 

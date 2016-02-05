@@ -1,24 +1,24 @@
-### Color
-Controls the local color for the material. All materials have a base color. [More about color...](select-color.html) 
+### 顏色
+設定材質的底色，所有的材質都有底色設定。[顏色的詳細說明...](select-color.html) 
 
-#### Color swatch selector
-Click the color swatch to select colors from the [Select Color](select-color.html) dialog box.
+#### 顏色方塊
+按顏色方塊，在[選取顏色](select-color.html)對話框設定顏色。
 
-### Preview
-The preview image shows the material as it will appear on objects in the model. The style and size of the preview are part of the material definition.
- **Note** : Set the default size for the preview object in [Options: Flamingo nXt](options-flamingo.html).
+### 預覽
+每個材質的預覽形狀與大小都可以分別設定，這裡的設定不會影響材質彩現時的樣子。
+ **附註：**您可以在[選項：Flamingo nXt](options-flamingo.html) 設定預設的材質球大小。
 ![images/previewer.png](images/previewer.png)
 
->Right-click the material preview pane to specify options that control the preview's appearance:
+>在材質的預覽縮圖上按滑鼠右鍵可以設定材質球的外觀：
 
-#### Sphere
-Sets the preview object to a sphere.
+#### 球體
+以球體預覽材質。
 
-#### Box
-Sets the preview object to a box with a width equaling the sphere radius.
+#### 立方體
+以立方體預覽材質，球體半徑為立方體邊緣的長度。
 
-#### Plane
-Sets the preview object to a plane with a width equaling the sphere radius.
+#### 平面
+以平面預覽材質，球體半徑為平面邊緣的長度。
 
-#### Sphere radius
-Sets the preview sphere radius and box and plane width. Set the size to approximate the size of the objects to which the material will be assigned to help visualize the material.
+#### 球體半徑
+設定材質球的半徑或立方體、平面邊緣的寬度。您可以將材質球的尺寸設成與使用該材質的物件大小相當，這樣材質預覽會比較正確。

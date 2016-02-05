@@ -2,14 +2,15 @@
 title: 彩現選項
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 彩現選項頁面控制彩現的主要內容，例如：彩現品質、使用時間... 其中彩現解析度是影響使用時間的最大因素。
 
 **附註：**嘗試以不同的設定彩現時請用低解析度，所有選項都設定妥當後再用高解析度做最終彩現。
 
 #### 可以在哪找到 Flamingo 的燈光設定?
 
- 1. ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo nXt > 彩現選項。
+ 1. ![images/options.png](images/options.png){: .inline} 工具列 >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 工具列 > 彩現選項標籤
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo nXt > 彩現選項。
 
 
 ## 彩現的作業視窗
@@ -39,10 +40,10 @@ title: 彩現選項
 
 這裡有四個單位可以使用：
 
->像素
->英吋
->公釐
->公分
+* 像素
+* 英吋
+* 公釐
+* 公分
 
 #### 像素
 以像素設定彩現影像的大小。

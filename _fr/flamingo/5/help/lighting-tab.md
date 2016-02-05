@@ -2,7 +2,7 @@
 title: Préréglages d'éclairage
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 L'éclairage est la partie la plus importante et la plus souvent négligée lors de la création d'images. Ce n'est pas uniquement une façon d'éclairer le modèle. L'éclairage définit l'ambiance et il s'agit d'un composant clé dans la définition de la scène.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -10,7 +10,7 @@ L'éclairage est la partie la plus importante et la plus souvent négligée lors
 
 #### Où puis-je trouver les contrôles d'éclairage de Flamingo ?
 
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration.
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration.
 * Cliquez avec le bouton de droite et cochez Flamingo nXt.
 
 
@@ -30,10 +30,10 @@ Une bonne option pour commencer à définir un éclairage est d'utiliser les pr�
 
 L'éclairage de Flamingo nXt utilise quatre modes prédéfinis :
 
-> [Éclairage de studio](lighting-tab.html#studio-lighting)
-> [Lumière du jour extérieure](lighting-tab.html#exterior-daylight)
-> [Lumière du jour intérieure](lighting-tab.html#interior-daylight)
-> [Éclairage artificiel](lighting-tab.html#artificial-lighting)
+* [Éclairage de studio](lighting-tab.html#studio-lighting)
+* [Lumière du jour extérieure](lighting-tab.html#exterior-daylight)
+* [Lumière du jour intérieure](lighting-tab.html#interior-daylight)
+* [Éclairage artificiel](lighting-tab.html#artificial-lighting)
 
 ### Éclairage de studio
 {: #studio-lighting}
@@ -102,10 +102,10 @@ Le soleil est une source de lumière directionnelle très brillante située infi
 {: #sky}
 Définissez le canal du ciel sur une des quatre options :
 
-> Auto
-> HDRI
-> Couleur
-> Image
+* Auto
+* HDRI
+* Couleur
+* Image
 
 Pour plus d'informations, consultez la rubrique sur l'[onglet Ciel](sun-and-sky-tabs.html#sky).
 Le ciel est une source de lumière hémisphérique située infiniment loin du modèle.
@@ -195,8 +195,8 @@ Optimise la lumière ambiante pour les scènes de studio.
 
 ### Enregistrer le schéma d'éclairage
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Enregistre le schéma d'éclairage actuel.
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} Enregistre le schéma d'éclairage actuel.
 
 ### Ouvrir un schéma d'éclairage
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Ouvre un schéma d'éclairage enregistré.
+![images/importfromfile.png](images/importfromfile.png){: .inline} Ouvre un schéma d'éclairage enregistré.

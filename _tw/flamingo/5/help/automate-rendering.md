@@ -56,7 +56,7 @@ title: 自動化彩現
 顯示批次工作彩現的視圖，進一步的說明請參考：[彩現標籤 > 彩現的作業視窗](render-tab.html#viewtorender)
 
 #### 檔案名稱
-按儲存按鈕 ![images/saveimageas.png](images/saveimageas.png) 指定彩現影像儲存的路徑與名稱。
+按儲存按鈕 ![images/saveimageas.png](images/saveimageas.png){: .inline} 指定彩現影像儲存的路徑與名稱。
 
 #### Alpha 通道
 在彩現影像裡儲存 Alpha 通道，進一步的說明請參考：[使用 Alpha 通道背景](environment-tab.html#alpha)

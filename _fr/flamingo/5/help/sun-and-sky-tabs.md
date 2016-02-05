@@ -2,7 +2,7 @@
 title: Soleil et ciel
 ---
 
-# ![imagessun.svg](images/sun.svg) {{page.title}}
+# ![imagessun.svg](images/sun.svg){: .inline} {{page.title}}
 Le [soleil](#sun) et le [ciel](#sky) sont étroitement liés entre eux. Le soleil peut modifier la luminosité du ciel en mode automatique. Si le soleil est activé et que le ciel est une image HDR, il est important d'équilibrer leurs intensités. 
 
 ## Soleil
@@ -15,10 +15,10 @@ Cette rubrique de l'aide couvre les contrôles de Flamingo pour le soleil. Le co
 
 Le soleil doit être activé à travers les [préréglages d'éclairage](lighting-tab.html#lighting-presets) ou les [paramètres d'éclairage personnalisé](lighting-tab.html#sun).
 
-* ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Soleil
+* ![images/options.png](images/options.png){: .inline} Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barre d'outils de Flamingo nXt
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Soleil
 
-**Remarque :** L'onglet Soleil ne sera visible que si le soleil est activé dans un préréglage d'éclairage. 
+**Remarque :** L'onglet Soleil ne sera visible que si le soleil est activé dans un préréglage d'éclairage.
 
 Les angles solaires devront être indiqués afin de pouvoir calculer la lumière du soleil. Vous pouvez indiquer la direction du soleil de deux façons : avec la date, l'heure et le lieu ou directement avec l'angle. Utilisez le positionnement selon la date, l'heure et le lieu si vous essayez de simuler le soleil réel dans une étude de l'emplacement du modèle. Le positionnement par angle direct permet de contrôler l'angle de la lumière sans faire référence à un soleil réel. Utilisez cette option pour essayer des effets de lumière.
 
@@ -97,18 +97,18 @@ Le ciel est une grande sphère autour du rendu qui peut être utilisée pour l'�
 #### Où puis-je trouver les contrôles du ciel de Flamingo ?
 Le ciel doit être activé à travers les [préréglages d'éclairage](lighting-tab.html#lighting-presets) ou les [paramètres d'éclairage personnalisé](lighting-tab.html#sky).
 
- 1. ![images/options.png](images/options.png)Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png)Barre d'outils de Flamingo nXt
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Ciel
+ 1. ![images/options.png](images/options.png){: .inline} Barres d'outils >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barre d'outils de Flamingo nXt
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menus > Flamingo nXt 5.0 > Montrer le panneau de configuration > Onglet Flamingo nXt > Ciel
 
 Les schémas d'éclairage prédéfinis pour la lumière du jour [Extérieure](lighting-tab.html#exterior-daylight) et [Intérieure](lighting-tab.html#interior-daylight) utilisent le ciel automatique par défaut. Le schéma d'éclairage de [studio](lighting-tab.html#studio-lighting) prédéfini utilise un éclairage par image HDR.
 
 Le ciel peut être défini de cinq façon différentes :
 
->[Désactivé](lighting-tab.html#off)
->[Ciel automatique](#automatic-sky)
->[Image à grande plage dynamique (HDRI)](#high-dynamic-range-image-sky)
->[Couleur](#color-sky)
->[Image](#image-sky)
+* [Désactivé](lighting-tab.html#off)
+* [Ciel automatique](#automatic-sky)
+* [Image à grande plage dynamique (HDRI)](#high-dynamic-range-image-sky)
+* [Couleur](#color-sky)
+* [Image](#image-sky)
 
 Les deux meilleurs paramètres pour les types d'éclairage zénithal sont [Image HDR](#high-dynamic-range-image-sky) et [Ciel automatique](#automatic-sky). Le ciel avec image HDR utilise une image contenant des valeurs d'éclairage enregistrées sur chaque pixel pour définir l'éclairage et les réflexions. Le ciel automatique utilise une nébulosité et une position du soleil dans le monde réel pour simuler le ciel.  Ces paramètres produiront les rendus les plus dynamiques. 
 
@@ -157,7 +157,7 @@ Modifie la luminosité de la lumière émise par l'image HDR. Ce paramètre n'e
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *Intensité HDR faible et élevée.*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}Dans l'illustration, l'image a été tournée afin que le reflet du soleil apparaisse sur l'objet. Indiquez les degrés de rotation ou déplacez l'indicateur de rotation.
+{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} Dans l'illustration, l'image a été tournée afin que le reflet du soleil apparaisse sur l'objet. Indiquez les degrés de rotation ou déplacez l'indicateur de rotation.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *Image tournée de sorte que le soleil apparaisse sur l'objet.*
 

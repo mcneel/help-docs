@@ -2,7 +2,7 @@
 title: 顏色方塊
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 許多材質設定與物件內容都有顏色方塊，它們的功能大同小異。
 
 
@@ -13,7 +13,7 @@ title: 顏色方塊
 1. [顏色方塊](#swatch) - 按此色塊可開啟**選取顏色**對話框。
 1. [選項功能表](#options) - 按此小三角形，彈出的功能表有一些顏色工具。
 
-## 顏色方塊 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## 顏色方塊 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg){: .inline}
 {: #swatch}
 按顏色方塊，在**選取顏色**對話框設定顏色。
 
@@ -26,7 +26,7 @@ title: 顏色方塊
 1. 垂直移動中間矩形區域的標記設定顏色的**亮度**。
 
 ##### 從色調、飽和度、亮度欄位設定
-1. 色調是一個顏色在光裡的可見波長，色調以 0 至 359 度表示，也大約等於彩虹的色調範圍，每個色調相隔 60 度：紅、橙、黃、綠、藍、紫。
+1. 色調以 0 至 359 度表示，也大約等於彩虹的色調範圍，每個色調相隔 60 度：紅、橙、黃、綠、藍、紫。
 1. 飽和度是一個顏色的鮮豔度，以 0 至 255 表示。飽和度為 0 的顏色為灰色，灰色的深、淺以顏色的亮度而定，此時色調數值沒作用。飽和度為 255 時色調可以完全反應在顏色上。
 1. 亮度是一個顏色所含的白色成份的多寡，亮度以 0 至 255 表示。
 
@@ -34,7 +34,7 @@ title: 顏色方塊
 {: #rgb}
 紅、綠、藍是電腦螢幕顯示顏色的三種原色，螢幕上的每一個像素都是由紅、綠、藍三個發光體構成，三個發光體以不同的亮度混合成各種顏色。顏色為純紅色時，綠色與藍色的亮度為 0；純黑色時，三個顏色的亮度都為 0；純白色時，三個顏色的亮度都為 255。
 
-## 功能表選項 ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## 功能表選項 ![images/callout-2-vertical.svg](images/callout-2-vertical.svg){: .inline}
 {: #options}
 
 #### 調色盤

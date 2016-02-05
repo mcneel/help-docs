@@ -2,18 +2,18 @@
 title: Matériaux algorithmiques
 ---
 
-#  ![images/paint.svg](images/paint.svg) {{page.title}}
+#  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 L'arbre des algorithmes combine un ou plusieurs matériaux en utilisant des règles pour définir l'interaction entre eux. L'arbre affiche les composants utilisés pour créer ce matériau et vous permet d'ajouter des composants. Pour des matériaux simples, il n'y aura qu'un seul composant dans la liste : Base.
 
 Chaque algorithme combine deux sous-matériaux en utilisant une méthode déterminée. Chaque sous-matériau peut à son tour être constitué d'un algorithme, en combinant deux sous-matériaux. De cette façon, des matériaux extrêmement élaborés peuvent être créés à partir de composants simples. Algorithmes de combinaison de matériaux :
 
-> [Base](#base)
-> [Mélange angulaire](#angular-blend)
-> [Mélange](#blend)
-> [Marbre](#marble)
-> [Granit](#granite)
-> [Mosaïque](#tile)
-> [Bois](#wood)
+* [Base](#base)
+* [Mélange angulaire](#angular-blend)
+* [Mélange](#blend)
+* [Marbre](#marble)
+* [Granit](#granite)
+* [Mosaïque](#tile)
+* [Bois](#wood)
 
 ##### Pour ajouter un algorithme
 1. Cliquez avec le bouton de droite dans la fenêtre des algorithmes.
@@ -47,7 +47,7 @@ L'angle avec le point de vue à partir duquel le composant extérieur commence.
 L'angle avec le point de vue à partir duquel le composant extérieur s'arrête.
 Entre l'angle de départ et l'angle final, les composants intérieur et extérieur se mélangent.
 
-Dans l'illustration ci-dessous, l'angle de départ![images/01.png](images/01.png) est égal à 30 degrés (ce qui, dans le rendu, se traduit par le cercle vert à droite) et l'angle final![images/02.png](images/02.png) est égal à 60 degrés (ce qui, dans le rendu, se traduit par le cercle rouge).
+Dans l'illustration ci-dessous, l'angle de départ![images/01.png](images/01.png){: .inline} est égal à 30 degrés (ce qui, dans le rendu, se traduit par le cercle vert à droite) et l'angle final![images/02.png](images/02.png){: .inline} est égal à 60 degrés (ce qui, dans le rendu, se traduit par le cercle rouge).
 
 L'image de droite montre un matériau intérieur blanc et un matériau extérieur noir.
 

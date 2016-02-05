@@ -2,7 +2,7 @@
 title: Environnement de Flamingo
 ---
 
-# ![images/environment.svg](images/environment.svg) {{page.title}}
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
 Rhino possède de nombreux [types d'environnements](http://docs.mcneel.com/rhino/5/help/fr-fr/commands/environmenteditor.htm). Cette rubrique traite de l'environnement de Flamingo.
 
 L'environnement agit sur la partie visible de l'arrière-plan et des réflexions.  Pour des effets agissant sur l'éclairage de la scène, consultez la rubrique de l'aide sur le [Ciel](sun-and-sky-tabs.html).
@@ -11,10 +11,10 @@ Flamingo possède un environnement spécial appelé **Environnement par défaut 
 
 Les propriétés de l'environnement de Flamingo sont divisées en plusieurs groupes :
 
-> [Nom](#name)
-> [Environnement de Flamingo](#environment)
-> [Couleur de l'arrière-plan](#color-backgrounds)
-> [Arrière-plan avancé](#advanced-background-reflected-sky)
+  * [Nom](#name)
+  * [Environnement de Flamingo](#environment)
+  * [Couleur de l'arrière-plan](#color-backgrounds)
+  * [Arrière-plan avancé](#advanced-background-reflected-sky)
 
 
 ## Nom de l'environnement
@@ -25,11 +25,11 @@ Cette section indique le nom de l'environnement dans le modèle de Rhino. Les en
 {: #environment}
 L'environnement a trois fonctions dans un rendu :
 
->Arrière-plan visible
->[Arrière-plan réfléchi](#advanced-background-reflected-sky)
->[Arrière-plan réfracté](#advanced-background-reflected-sky)
+  1. Arrière-plan visible
+  1. [Arrière-plan réfléchi](#advanced-background-reflected-sky)
+  1. [Arrière-plan réfracté](#advanced-background-reflected-sky)
 
-L'arrière-plan visible est la couleur de base dans l'arrière-plan de la scène. Il est défini dans le panneaux des propriétés générales. Les arrière-plans [réfléchi](#advanced-background-reflected-sky) et [réfracté](#advanced-background-refracted-sky) peuvent différer et sont disponibles dans la section Arrière-plan avancé.
+L'arrière-plan visible est la couleur de base dans l'arrière-plan de la scène.  Il est défini dans le panneaux des propriétés générales. Les arrière-plans [réfléchi](#advanced-background-reflected-sky) et [réfracté](#advanced-background-refracted-sky) peuvent différer et sont disponibles dans la section Arrière-plan avancé.
 
 #### Intensité
 {: #background-intensity}
@@ -39,10 +39,10 @@ Modifie la clarté relative de l'arrière-plan. La valeur de l'intensité est ut
 {: #background-type}
 Définit le schéma de couleur qui remplira l'arrière-plan de l'image rendue. Il existe différents types d'arrière-plans :
 
-> [Ciel](#environment-sky)
-> [Uni et dégradé de couleurs](#color-backgrounds)
-> [Image](#environment-image)
-> [Images HDR et HDR planes](#hdr-background)
+* [Ciel](#environment-sky)
+* [Uni et dégradé de couleurs](#color-backgrounds)
+* [Image](#environment-image)
+* [Images HDR et HDR planes](#hdr-background)
 
 ## Ciel en arrière-plan
 {: #environment-sky}
@@ -129,9 +129,9 @@ Définissez l'image en arrière-plan en cliquant sur le bouton *(vide - cliquer 
 {: #backgroud-image-projection}
 Sélectionnez une des trois projections d'image dans le menu déroulant :
 
->[Plane](#planar)
->[Cylindrique](#cylindrical)
->[Sphérique](#spherical)
+* [Plane](#planar)
+* [Cylindrique](#cylindrical)
+* [Sphérique](#spherical)
 
 Chaque méthode de projection possède ses propres options pour positionner l'image.
 
@@ -161,6 +161,8 @@ Utilisez le contrôle de positionnement de l'image pour placer l'image par rappo
 
 ![images/background-image-003.png](images/background-image-003.png)
 *Zone de la fenêtre active (1), taille et forme de l'image (2).*
+
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
 
 #### Échelle X / Échelle Y
 Définit la taille de l'image en arrière-plan en appliquant une échelle de 0 à 1 à la largeur et la hauteur de la fenêtre. Par exemple, une valeur de 1.0 représente 100 % de la taille de la vue, une valeur de 0.5 représente 50 % de la largeur de la vue, etc. 

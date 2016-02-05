@@ -2,8 +2,8 @@
 title: Fenêtre de sélection de la couleur
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
-Le sélecteur de couleurs est utilisé dans de nombreux groupes et propriétés. Dans tous les cas il fonctionne de la même façon. 
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
+Le sélecteur de couleurs est utilisé dans de nombreux groupes et propriétés.  Dans tous les cas il fonctionne de la même façon. 
 
 
 Le sélecteur est constitué de deux parties :
@@ -11,9 +11,9 @@ Le sélecteur est constitué de deux parties :
 ![images/colorswatch-002.svg](images/colorswatch-002.svg)
 
 1. [Palette de couleurs](#swatch) - Cliquez sur la couleur de votre choix.
-1. [Menu d'options](#options) - Cliquez sur la flèche pour voir d'autres outils. 
+1. [Menu d'options](#options) - Cliquez sur la flèche pour voir d'autres outils.
 
-## Palette de couleurs ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## Palette de couleurs ![images/callout-1-vertical.svg](images/callout-1-vertical.svg){: .inline}
 {: #swatch}
 Cliquez sur la palette de couleurs pour sélectionner une couleur dans la boîte de dialogue Sélectionner une couleur.
 
@@ -34,7 +34,7 @@ Cliquez sur la palette de couleurs pour sélectionner une couleur dans la boîte
 {: #rgb}
 Cette méthode est utilisée par les ordinateurs pour projeter une couleur à l'écran. Chaque pixel est une combinaison de trois couleurs avec différentes intensités. Le rouge pur est entièrement rouge sans vert ni bleu. Pour le noir pur, les valeurs de rouge, de vert et de bleu sont égales à 0 et pour le blanc pur, ces trois valeurs sont égales à 255.
 
-## Options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## Options ![images/callout-2-vertical.svg](images/callout-2-vertical.svg){: .inline}
 {: #options}
 
 #### Sélecteur de couleur

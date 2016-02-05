@@ -1,8 +1,10 @@
 ---
+layout: fullwidth-page
 title: Flamingo nXt 快速入門
 ---
 
 <!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
+
 # ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt® 快速入門
 Flamingo nXt 可在 Rhinoceros® 裡將模型彩現成為高品質而且真實的靜態影像。Flamingo nXt 5 目前還在開發階段，它將 Flamingo 與 Rhino 5 內建彩現功能整合在一起。
 
@@ -12,47 +14,35 @@ Flamingo nXt 可在 Rhinoceros® 裡將模型彩現成為高品質而且真實�
 
 ## 安裝
 
-* Flamingo nXt 5 Beta 需要安裝 Flamingo nXt 才能使用。
-* Flamingo nXt 5 Beta 需要 Rhino 5 SR12 才能執行。
+Flamingo nXt 5 Beta 需要安裝 Flamingo nXt 才能使用。Flamingo nXt 5 Beta 需要 Rhino 5 SR12 才能執行。
+下載後請執行 RHI 安裝程式，開啟 Rhino，Flamingo nXt 5.0 會自動載入。
 
-下載後請執行 RHI 安裝程式。
+請至 [http://www.rhino3d.com/download/Flamingo/5.0/beta](http://www.rhino3d.com/download/Flamingo/5.0/beta) 下載最新的 Flamingo nXt 5 Beta。
 
-**Flamingo nXt** 的技術支援、教學與範例等資訊請至 [Flamingo nXt 網站](http://nxt.flamingo3d.com/)。
+## 說明文件
+Flamingo nXt 5 的說明文件有這些語言版本：
 
-> [教學](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [作品](http://nxt.flamingo3d.com/photo)
-> [技術支援](http://nxt.flamingo3d.com/forum)
+* [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
+* [Deutsch]({{baseurl}}/de/flamingo/5/help)
+* [English]({{baseurl}}/en/flamingo/5/help)
+* [Español]({{baseurl}}/es/flamingo/5/help)
+* [Français]({{baseurl}}/fr/flamingo/5/help)
+* [Italiano]({{baseurl}}/it/flamingo/5/help)
+* [日本語]({{baseurl}}/jp/flamingo/5/help)
+* [한국어]({{baseurl}}/kr/flamingo/5/help)
+* [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
 
-## Flamingo nXt 的控制面板
-{: #control-panel}
-Flamingo nXt 5 整合了 Rhino 5 的彩現工具，Flamingo nXt 的控制面板內有模型彩現需要的設定頁面，包括：
+## 快速入門
+從 Flamingo nXt 功能表選擇**顯示控制面板**，Flamingo nXt 的控制面板內有模型彩現需要的設定頁面，包括：
 
-> [材質](materials-tab.html)
-> [照明](lighting-tab.html)
-> [環境](environment-tab.html)
-> [彩現](render-tab.html)
+* [材質](../help/material-editor.html)
+* [照明](../help/lighting-tab.html)
+* [環境](../help/environment-tab.html)
+* [彩現](../help/render-tab.html)
 
-## 開啟 Flamingo 的控制面板
-* 從 **Flamingo nXt 5.0** 功能表選擇**控制面板**。
+## Flamingo 的相關資訊與支援
+Flamingo nXt 的技術支援、教學與範例等資訊請至 [Flamingo nXt 網站](http://nxt.flamingo3d.com/)。
 
-## 基本彩現
-{: #rendering-basics}
-彩現模型的四個基本步驟：
-
- 1. [設定材質](material-editor.html)
- 1. [設定照明](lighting-tab.html)
- 1. [設定環境](environment-tab.html)
- 1. [設定彩現條件](render-tab.html)
-
-##### 開始彩現
-* 從**彩現**或功能表選擇**彩現**。
-* 按**標準**工具列上的**彩現**按鈕。
-
-### 停止彩現
-Flamingo nXt 5 預設的彩現方式是會持續計算改善彩現影像的品質，直到您按下**停止彩現**按鈕才會停止。此方式讓您可以在時間與品質兩者之間取捨，彩現計算越久得到的效果越好，但您可以在任何時候停止彩現。
-
-###  繼續彩現
-按下**停止彩現**按鈕，待目前的彩現處理數完成後彩現計算會暫時停止。
-停止彩現後按鈕會變為**繼續彩現**，如果您在處理數或時間限制到達前按下停止彩現，可以按**繼續彩現**繼續彩現計算。
-
-[處理數](render-window.html#number-of-passes)與[時間](render-window.html#time)限制可在[彩現視窗](render-window.html)或[文件內容 > Flamingo nXt 5.0](documentproperties-flamingo.html) 頁面設定。
+ * [教學](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+ * [作品](http://nxt.flamingo3d.com/photo)
+ * [技術支援](http://discourse.mcneel.com/c/rendering/flamingo)

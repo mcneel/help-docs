@@ -6,12 +6,12 @@ title: Erste Schritte
 # {{page.title}}
 In diesem Tutorial wird das Rendern eines Rhino-Modells mit Flamingo nXt behandelt. Das Tutorial deckt die grundlegenden Schritte zum Rendern mit Flamingo nXt ab:
 
-  > Öffnen eines Modells
-  > Anlegen der Materialien
-  > Bearbeiten der Materialien
-  > Hinzufügen einer Grundebene
+1. Öffnen eines Modells
+1. Anlegen der Materialien
+1. Bearbeiten der Materialien
+1. Hinzufügen einer Grundebene
 
-Laden Sie sich als erstes die Tutorial-Dateien herunter und entpacken Sie das Archiv. Alle erforderlichen Dateien sind im ZIP-Ordner [Fishing Reel.zip](http:/files.na.mcneel.com//flamingo/nxt/5.0/tutorials/nxt5%20fishing.zip) enthalten. Entpacken Sie die Dateien in einen Ordner Ihres Computers, den Sie sich gut merken können. Öffnen Sie die Datei *Fishing Reel.3dm* mit Rhino. Stellen Sie sicher, dass Flamingo nXt als die aktuelle Render Engine eingestellt ist.
+Laden Sie sich als erstes die Tutorial-Dateien herunter und entpacken Sie das Archiv. Alle erforderlichen Dateien sind im ZIP-Ordner [Fishing Reel.zip](files/nxt5%20fishing.zip) enthalten. Entpacken Sie die Dateien in einen Ordner Ihres Computers, den Sie sich gut merken können. Öffnen Sie die Datei *Fishing Reel.3dm* mit Rhino. Stellen Sie sicher, dass Flamingo nXt als die aktuelle Render Engine eingestellt ist.
 
 ## Flamingo nXt 5 als aktuelle Render Engine einstellen
 {: #check-current}
@@ -21,21 +21,21 @@ In Rhino können mehrere Render Engines gleichzeitig installiert sein.  Um zu ü
 {: #render_controls}
 ![images/getting_started001.png](images/getting_started001.png){: .float-img-right} Klicken Sie auf die Schaltfläche **Rendern**, um ein erstes Rendering Ihres Modells zu erstellen. Das Bild sollte der Abbildung rechts ähneln. Flamingo nXt funktioniert anders als frühere Versionen von Flamingo. Ein neues Modell verfügt bereits über eine standardmäßige HDRI-Beleuchtungseinstellung.  Neue Modelle verwenden für alle Objekte ein weißes Standardmaterial. Außerdem werden Schatten am Anfang sehr scharf und linear gerendert. Mit jedem Durchgang werden die Schatten durch weitere Überblendungen weicher. Viele weitere Effekte werden ebenfalls mit jedem weiteren Renderdurchgang verbessert.
 
-Zu den Effekten, die bei jedem Durchgang verbessert werden, zählen:
+Zu den Effekten, die bei jedem Durchgang verbessert werden, zählen
 
-  * Beleuchtung (wie beispielsweise die globale Beleuchtung)
-  * Weiche Schatten
-  * Reflexionen (Unschärfe)
-  * Lichtbrechung
-  * Antialiasing
-  * Schärfentiefe
+* Beleuchtung (wie beispielsweise die globale Beleuchtung)
+* Weiche Schatten
+* Reflexionen (Unschärfe)
+* Lichtbrechung
+* Antialiasing
+* Schärfentiefe
 
 Ein Flamingo-nXt-Rendering ist in diesem Sinne niemals "abgeschlossen", sondern Sie können vielmehr entscheiden, wann es gut genug für Sie ist. So kann ein Bild, das bereits gut aussieht, weiter verbessert werden. Auf der anderen Seite können Sie das Rendering auch jederzeit anhalten, wenn Sie etwas ändern oder speichern möchten. Das Rendering kann auf verschiedene Arten angehalten werden:
 {: .clear-img}
 
-  * Klicken Sie auf die Schaltfläche mit dem roten Stoppsymbol, um das Rendering nach Abschluss des aktuellen Durchgangs zu beenden.
-  * Klicken Sie doppelt auf die Schaltfläche **Raytracing anhalten**, um das Rendering sofort anzuhalten.
-  * Klicken Sie auf das **X** in der oberen rechten Ecke des Renderfensters, um das Rendering sofort zu beenden und das Fenster zu schließen.
+* Klicken Sie auf die Schaltfläche mit dem roten Stoppsymbol, um das Rendering nach Abschluss des aktuellen Durchgangs zu beenden.
+* Klicken Sie doppelt auf die Schaltfläche **Raytracing anhalten**, um das Rendering sofort anzuhalten.
+* Klicken Sie auf das **X** in der oberen rechten Ecke des Renderfensters, um das Rendering sofort zu beenden und das Fenster zu schließen.
 
 ## Materialien aus der Bibliothek zuweisen
 {: #materials}

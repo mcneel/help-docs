@@ -7,15 +7,15 @@ nXt 이미지 편집기는 nXt 플랫폼에서 만들어진 원시 이미지 파
 nXt 이미지 편집기를 사용하여 다음과 같은 기능을 실행할 수 있습니다:
 
 
-> [톤 연산자](image-editor.html#tone-mapping) 설정을 조정합니다.
-> 조명 채널의 강도를 변경합니다.
-> 이미지 기반 특수 효과를 추가합니다: [옅은 안개](image-editor.html#haze), [깊이 흐림](image-editor.html#depth-blur), [글레어](image-editor.html#glare).
->톤 매핑된 이미지를 .jpg 또는 .png와 같은 비트맵 형식으로 [저장](image-editor.html#save-tonemapped-image-as)합니다.
-> 휘도 정보를 [HDR 형식](image-editor.html#save-hdr-image-as)으로 저장합니다.
-> 좀 더 높은 수준의 합성에 사용하기 위해 추가적인 마스크 ( [알파](image-editor.html#alpha-channel), [거리](image-editor.html#distance-channel), [재질](image-editor.html#material-channel) )을 보고 저장합니다.
-> 포토리얼리스틱 렌더링이 아닌 렌더링을 만들 때 사용할 수 있는 [Piranesi©](http://www.piranesi.co.uk/) 파일 형식(*.epx)으로 저장합니다.
-> 렌더 팜에서 별도의 노드로 생성된 이미지를 짜집기하는 등의 작업을 할 때는 이미지를 산술로 설정하여 사용하십시오.
-> 이 렌더링을 생성하는 데 사용된 [조명 설정](image-editor.html#save-lighting-settings-as)을 저장합니다. 이 조명 설정을 사용하여 더 많은 렌더링을 만들 수 있습니다.
+* [톤 연산자](image-editor.html#tone-mapping) 설정을 조정합니다.
+* 조명 채널의 강도를 변경합니다.
+* 이미지 기반 특수 효과를 추가합니다: [옅은 안개](image-editor.html#haze), [깊이 흐림](image-editor.html#depth-blur), [글레어](image-editor.html#glare).
+* 톤 매핑된 이미지를 .jpg 또는 .png와 같은 비트맵 형식으로 [저장](image-editor.html#save-tonemapped-image-as)합니다.
+* 휘도 정보를 [HDR 형식](image-editor.html#save-hdr-image-as)으로 저장합니다.
+* 좀 더 높은 수준의 합성에 사용하기 위해 추가적인 마스크 ( [알파](image-editor.html#alpha-channel), [거리](image-editor.html#distance-channel), [재질](image-editor.html#material-channel) )을 보고 저장합니다.
+* 포토리얼리스틱 렌더링이 아닌 렌더링을 만들 때 사용할 수 있는 [Piranesi©](http://www.piranesi.co.uk/) 파일 형식(*.epx)으로 저장합니다.
+* 렌더 팜에서 별도의 노드로 생성된 이미지를 짜집기하는 등의 작업을 할 때는 이미지를 산술로 설정하여 사용하십시오.
+* 이 렌더링을 생성하는 데 사용된 [조명 설정](image-editor.html#save-lighting-settings-as)을 저장합니다. 이 조명 설정을 사용하여 더 많은 렌더링을 만들 수 있습니다.
 
 편집기를 시작하려면
 

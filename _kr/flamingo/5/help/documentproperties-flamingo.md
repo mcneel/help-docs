@@ -3,14 +3,14 @@ title: 문서 속성 Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 이러한 설정은 현재 모델에만 적용됩니다. 렌더링을 완료하는 데 필요한 시간이 길어질수록 원하는 화질로 렌더링이 완성됩니다.
 
 #### 이 명령은 어디에서 찾을 수 있습니까?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)렌더링 도구 도구모음 > ![images/environments.png](images/environments.png) 재질 편집기
- 1. ![images/menuicon.png](images/menuicon.png)메뉴 > 렌더링 메뉴 > 환경 편집기
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} 렌더링 도구 도구모음 > ![images/environments.png](images/environments.png){: .inline} 재질 편집기
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 메뉴 > 렌더링 메뉴 > 환경 편집기
  1. 명령 > EnvironmentEditor
 
 ## 재질

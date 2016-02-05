@@ -6,7 +6,7 @@ Cliquez dans la palette de couleurs pour sélectionner des couleurs dans la boî
 
 ### Aperçu
 L'image d'aperçu montre le matériau comme il apparaîtra sur les objets dans le modèle. Le style et la taille de l'aperçu font partie de la définition du matériau.
- **Remarque ** : La taille par défaut de l'objet d'aperçu peut être définie dans [Options: Flamingo nXt](options-flamingo.html).
+ **Remarque** : La taille par défaut de l'objet d'aperçu peut être définie dans [Options : Flamingo nXt](options-flamingo.html).
 ![images/previewer.png](images/previewer.png)
 
 >Cliquer avec le bouton droit dans le volet d'aperçu du matériau pour définir les options qui contrôlent l'apparence de l'aperçu :

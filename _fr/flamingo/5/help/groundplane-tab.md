@@ -15,7 +15,7 @@ Active le plan au sol
 
 ### Alpha
 {: #groundplane-alpha}
-Cette option applique un canal alpha transparent sur le plan au sol afin que l'image puisse être combinée avec l'ombre projetée dans une autre image. Voir : [article Wikipedia : Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
+Cette option applique un canal alpha transparent sur le plan au sol afin que l'image puisse être combinée avec l'ombre projetée dans une autre image. Voir : [Article de Wikipedia : Alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing).
 ![images/groundplane-004a.png](images/groundplane-004a.png)
  *Le plan au sol affiche une ombre mais sinon, il est transparent dans l'image.*
 
