@@ -3,7 +3,7 @@ title: Pflanzeneditor
 ---
 <!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 {: #tree-editor}
 
 ### Menü Datei
@@ -11,10 +11,10 @@ title: Pflanzeneditor
 #### Neu
 Zum Anlegen einer neuen Pflanzendefinition ausgehend von einer Vorlage.
 
- | ![images/standard.png](images/standard.png) | ![images/conifer.png](images/conifer.png) | ![images/broad.png](images/broad.png) |
+ | ![images/standard.png](images/standard.png){: .inline} | ![images/conifer.png](images/conifer.png){: .inline} | ![images/broad.png](images/broad.png){: .inline} |
  |:-------------------------------------------:|:-----------------------------------------:|:-------------------------------------:|
  | **Standard**                                |   **Nadelbaum**                             | **Breite Krone**                       |
- | ![images/palm.png](images/palm.png)         | ![images/groundcover.png](images/groundcover.png) | ![images/complex.png](images/complex.png) |
+ | ![images/palm.png](images/palm.png){: .inline}         | ![images/groundcover.png](images/groundcover.png){: .inline} | ![images/complex.png](images/complex.png){: .inline} |
  | **Palme**                                    |  **Bodenbewuchs**                          | **Komplex**                                  
 {: .plant-table}
 

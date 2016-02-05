@@ -1,9 +1,9 @@
 ---
 title: Erste Schritte mit Flamingo
 ---
+<!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
 
-
-# ![images/flamingotab.svg](images/flamingotab.svg) Erste Schritte mit Flamingo nXt®
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} Erste Schritte mit Flamingo nXt®
 Flamingo nXt erzeugt erstklassige und fotorealistische Bild- und Animationsdateien aus 3D-Modellen in Rhinoceros®. Flamingo nXt 5 ist ein Update für Flamingo, das mit den eingebauten Renderfunktionen von Rhino 5 zusammenarbeitet. Die aktuelle Version ist eine Work-in-Progress-Version.
 
 Sie können Flamingo nXt [hier](http://www.rhino3d.com/download/flamingo/5/beta) herunterladen.
@@ -19,18 +19,18 @@ Laden Sie das RHI-Installationsprogramm herunter, führen Sie es aus und starten
 
 Technischen Support, Tutorials, Beispiele und Informationen über **Flamingo nXt** finden Sie auf der [Flamingo-nXt-Website](http://nxt.flamingo3d.com/).
 
-> [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [Galerie](http://nxt.flamingo3d.com/photo)
-> [Technischer Support](http://nxt.flamingo3d.com/forum)
+* [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+* [Galerie](http://nxt.flamingo3d.com/photo)
+* [Technischer Support](http://nxt.flamingo3d.com/forum)
 
 ## Das Flamingo-nXt-Bedienfenster
 {: #control-panel}
 Die Benutzeroberfläche dieser Version von Flamingo ist in die Renderwerkzeuge von Rhino 5 integriert. Im Flamingo-nXt-Bedienfenster können Sie in verschiedenen Reitern das Modell für das Rendering konfigurieren:
 
-> [Materialien](materials-tab.html)
-> [Beleuchtung](lighting-tab.html)
-> [Umgebung](environment-tab.html)
-> [Rendern](render-tab.html)
+* [Materialien](materials-tab.html)
+* [Beleuchtung](lighting-tab.html)
+* [Umgebung](environment-tab.html)
+* [Rendern](render-tab.html)
 
 ## Zugriff auf das Flamingo-Bedienfenster
 * Klicken Sie im Flamingo-nXt-Menü auf **Bedienfenster anzeigen**.

@@ -2,7 +2,7 @@
 title: Farbwähler
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Der Farbwähler wird für viele verschiedene Materialgruppen und -eigenschaften verwendet.  Er funktioniert in allen Fällen auf eine ähnliche Art und Weise.
 
 
@@ -13,7 +13,7 @@ Der Farbwähler besteht aus zwei Teilen:
 1. [Farbauswahlbereich](#swatch) - Durch Klick auf diesen Bereich wird der Farbauswahldialog geöffnet.
 1. [Optionsmenü](#options) - Durch Klick auf diesen Pfeil wird ein Kontextmenü mit weiteren Optionen geöffnet.
 
-## Farbauswahlbereich ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## Farbauswahlbereich ![images/callout-1-vertical.svg](images/callout-1-vertical.svg){: .inline}
 {: #swatch}
 Durch Klick auf diesen Bereich wird der Farbauswahldialog mit den folgenden Möglichkeiten zur Auswahl einer Farbe geöffnet.
 
@@ -34,7 +34,7 @@ Durch Klick auf diesen Bereich wird der Farbauswahldialog mit den folgenden Mög
 {: #rgb}
 Diese Methode wird von Computern verwendet, um Farben auf den Bildschirm zu projizieren. Jeder Pixel ist eine Kombination der drei Farben in unterschiedlichen Intensitäten. Reines Rot ist vollkommen rot, ohne Grün oder Blau. Reines Schwarz enthält Rot, Grün und Blau auf 0 eingestellt; reines Weiß enthält Rot, Grün und Blau auf 255 eingestellt.
 
-## Menüoptionen ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## Menüoptionen ![images/callout-2-vertical.svg](images/callout-2-vertical.svg){: .inline}
 {: #options}
 
 #### Farbauswahl

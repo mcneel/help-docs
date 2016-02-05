@@ -3,7 +3,7 @@ title: Materialbildeigenschaften
 ---
 
 
-# ![images/images.svg](images/images.svg) {{page.title}}
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ Zur Einstellung der Größe der Kacheln in Modelleinheiten.
 {: #mapping-type}
 Bilder werden normalerweise auf den Farbkanal angewandt. Aber es gibt auch andere Möglichkeiten zur Verwendung von Bildern.  Bilder können eingestellt werden als:
 
-> [Standard](#standard)
-> [Normal](#normal)
-> [Displacement](#displacement)
+* [Standard](#standard)
+* [Normal](#normal)
+* [Displacement](#displacement)
 
 ### Standard
 {: standard}

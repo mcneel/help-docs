@@ -7,15 +7,15 @@ Der nXt-Bildeditor kann native Bilddateien (.nXtImage), die von einer beliebigen
 Mit dem nXt-Bildeditor können Sie:
 
 
-> die Einstellungen des [Tonreglers](image-editor.html#tone-mapping) anpassen.
-> die Intensität eines beliebigen Beleuchtungskanals ändern.
-> besondere, bildgestützte Effekte hinzufügen: [Dunst](image-editor.html#haze), [Tiefenschärfe](image-editor.html#depth-blur) und [Scheinen](image-editor.html#glare).
-> ein Tone-Mapping-Bild in einem Bitmap-Format wie JPG oder PNG [speichern](image-editor.html#save-tonemapped-image-as).
-> die Luminanzinformationen in einem [HDR-Format](image-editor.html#save-hdr-image-as) speichern.
-> zusätzliche Kanäle ([Alpha](image-editor.html#alpha-channel), [Abstand](image-editor.html#distance-channel), [Material](image-editor.html#material-channel)) zur Verwendung in fortgeschrittenen Kompositionen anzeigen und speichern.
-> ein [Piranesi©](http://www.piranesi.co.uk/)-Bild (*.epx) speichern, das für fotorealistische Renderings verwendet werden kann.
-> [Bildarithmetik](image-editor.html#arithmetic) für Aufgaben wie das Zusammenfügen eines Bilds verwenden, das mithilfe einer Renderfarm erzeugt wurde.
-> die für das Rendering verwendeten [Beleuchtungseinstellungen](image-editor.html#save-lighting-settings-as) speichern. Diese Beleuchtungseinstellungen können verwendet werden, um weitere Renderings zu erzeugen.
+* die Einstellungen des [Tonreglers](image-editor.html#tone-mapping) anpassen.
+* die Intensität eines beliebigen Beleuchtungskanals ändern.
+* besondere, bildgestützte Effekte hinzufügen: [Dunst](image-editor.html#haze), [Tiefenschärfe](image-editor.html#depth-blur) und [Scheinen](image-editor.html#glare).
+* ein Tone-Mapping-Bild in einem Bitmap-Format wie JPG oder PNG [speichern](image-editor.html#save-tonemapped-image-as).
+* die Luminanzinformationen in einem [HDR-Format](image-editor.html#save-hdr-image-as) speichern.
+* zusätzliche Kanäle ([Alpha](image-editor.html#alpha-channel), [Abstand](image-editor.html#distance-channel), [Material](image-editor.html#material-channel)) zur Verwendung in fortgeschrittenen Kompositionen anzeigen und speichern.
+* ein [Piranesi©](http://www.piranesi.co.uk/)-Bild (*.epx) speichern, das für fotorealistische Renderings verwendet werden kann.
+* Bildarithmetik](image-editor.html#arithmetic) für Aufgaben wie das Zusammenfügen eines Bilds verwenden, das mithilfe einer Renderfarm erzeugt wurde.
+* die für das Rendering verwendeten [Beleuchtungseinstellungen](image-editor.html#save-lighting-settings-as) speichern. Diese Beleuchtungseinstellungen können verwendet werden, um weitere Renderings zu erzeugen.
 
 Den Editor starten
 

@@ -3,14 +3,14 @@ title: Dokumenteigenschaften von Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 Diese Einstellungen gelten nur für das aktuelle Modell. Es gibt eine Wechselbeziehung zwischen der Zeit zum Fertigstellen eines Renderings und der Qualität.
 
 #### Wo befindet sich dieser Befehl?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Werkzeugleiste Renderwerkzeuge > ![images/environments.png](images/environments.png) Materialeditor
- 1. ![images/menuicon.png](images/menuicon.png)Menü > Rendern > Umgebungseditor
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} Werkzeugleiste Renderwerkzeuge > ![images/environments.png](images/environments.png){: .inline} Materialeditor
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menü > Rendern > Umgebungseditor
  1. Befehl > Umgebungseditor
 
 ## Materialien

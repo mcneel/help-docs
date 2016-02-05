@@ -2,15 +2,15 @@
 title: Renderoptionen
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 Im Renderreiter sind die wichtigsten Funktionen zur Einstellung des Render-Ergebnisses zu finden.  In diesem Reiter können Sie die Qualität und Maximaldauer eines Renderings einstellen.  Die Gesamtrenderzeit hängt wesentlich von der Auflösung des Renderbilds ab.
 
 Hinweis: Es wird empfohlen, für Probe-Renderings eine niedrige Auflösung zu verwenden. Eine hohe Auflösung sollte erst für das endgültige Renderbild verwendet werden.
 
 #### Wo befindet sich die Flamingo-Beleuchtungssteuerung?
 
- 1. ![images/options.png](images/options.png)Werkzeugleisten >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo-nXt-Werkzeugleiste > Renderoptionen
- 1. ![images/menuicon.png](images/menuicon.png)Rhino-Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo nXt > Renderoptionen
+ 1. ![images/options.png](images/options.png){: .inline} Werkzeugleisten >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo-nXt-Werkzeugleiste > Renderoptionen
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Rhino-Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo nXt > Renderoptionen
 
 
 ## Zu renderndes Ansichtsfenster
@@ -40,10 +40,10 @@ Die Bildgröße bestimmt die Auflösung des Renderbilds anhand verschiedener Var
 
 Dazu können vier Einheiten verwendet werden:
 
->Pixel
->Zoll
->Millimeter
->Zentimeter
+* Pixel
+* Zoll
+* Millimeter
+* Zentimeter
 
 #### Pixel
 Zur Verwendung von Pixel als Einheit für die Größe des Renderbilds.  Mit dieser Einstellung kann die Höhe und Breite des fertigen Renderbilds über die Anzahl Pixel definiert werden.

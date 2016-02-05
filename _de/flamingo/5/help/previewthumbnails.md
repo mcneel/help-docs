@@ -32,7 +32,7 @@ Materialien können verschiedene Geometrietypen verwenden.
 
 #### Umgebungen
 Umgebungen verwenden nur Kegel und Kugel.
-![images/environmentthumbnail.png](images/environmentthumbnail.png) *Kegel und Kugel*
+![images/environmentthumbnail.png](images/environmentthumbnail.png) *Kegel und Kugel* 
 
 #### Texturen
 Texturen werden nur als zweidimensionale, flache Fläche angezeigt, die auf die Kamera gerichtet ist.
@@ -71,8 +71,8 @@ Ein grauer karierter Hintergrund wird verwendet.
 Beliebige Materialien oder Texturen können als benutzerdefinierter Hintergrund verwendet werden.
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 
-####  **Als Standard speichern**
+#### **Als Standard speichern** 
 Speichert die Miniaturansichtseigenschaften als Standardeinstellungen.
 
-####  **Von Standardwerten laden**
+#### **Von Standardwerten laden** 
 Lädt die Miniaturansichtseigenschaften aus den Standardeinstellungen.

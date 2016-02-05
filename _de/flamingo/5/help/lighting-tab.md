@@ -2,7 +2,7 @@
 title: Beleuchtungseinstellungen
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 Die Beleuchtung ist der wichtigste Faktor bei der Erzeugung von Bildern und auch der, der am meisten vernachlässigt wird. Es handelt sich nicht nur um eine Beleuchtungsmethode für das Modell. Die Beleuchtung definiert die Stimmung und ist Hauptbestandteil beim Festlegen der Zusammensetzung.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -10,7 +10,7 @@ Die Beleuchtung ist der wichtigste Faktor bei der Erzeugung von Bildern und auch
 
 #### Wo befindet sich die Flamingo-Beleuchtungssteuerung?
 
-* ![images/menuicon.png](images/menuicon.png) Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo nXt.
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menü > Flamingo nXt 5.0 > Bedienfenster anzeigen > Flamingo nXt.
 * Klicken Sie mit der rechten Maustaste auf einen beliebigen Reiter und wählen Sie im Kontextmenü Flamingo nXt aus.
 
 
@@ -30,10 +30,10 @@ Ein guter Ausgangspunkt für die Beleuchtung sind die Beleuchtungsvoreinstellung
 
 Für die Beleuchtung in Flamingo nXt gibt es vier voreingestellte Kategorien:
 
-> [Studiobeleuchtung](lighting-tab.html#studio-lighting)
-> [Tageslicht außen](lighting-tab.html#exterior-daylight)
-> [Tageslicht innen](lighting-tab.html#interior-daylight)
-> [Künstliche Beleuchtung](lighting-tab.html#artificial-lighting)
+* [Studiobeleuchtung](lighting-tab.html#studio-lighting)
+* [Tageslicht außen](lighting-tab.html#exterior-daylight)
+* [Tageslicht innen](lighting-tab.html#interior-daylight)
+* [Künstliche Beleuchtung](lighting-tab.html#artificial-lighting)
 
 ### Studiobeleuchtung
 {: #studio-lighting}
@@ -102,10 +102,10 @@ Die Sonne ist ein sehr helles Richtungslicht, das unendlich weit vom Modell entf
 {: #sky}
 Für den Himmelskanal kann eine der folgenden Optionen ausgewählt werden:
 
-> Auto
-> HDRI
-> Farbe
-> Bild
+* Auto
+* HDRI
+* Farbe
+* Bild
 
 Weitere Infos finden Sie im Hilfethema zum [Himmelsreiter](sun-and-sky-tabs.html#sky).
 Definiert ein halbkugelförmiges Licht, das unendlich weit vom Modell entfernt ist.
@@ -195,8 +195,8 @@ Optimiert das Umgebungslicht für Studioszenen.
 
 ### Speichern des Beleuchtungsschemas
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Speichert das aktuelle Beleuchtungsschema.
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} Speichert das aktuelle Beleuchtungsschema.
 
 ### Öffnen eines Beleuchtungsschemas
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Öffnet ein gespeichertes Beleuchtungsschema.
+![images/importfromfile.png](images/importfromfile.png){: .inline} Öffnet ein gespeichertes Beleuchtungsschema.

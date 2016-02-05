@@ -2,7 +2,7 @@
 title: Kanäle
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 Ein sehr nützliches Feature von Flamingo nXt 5 ist die Möglichkeit zur Organisation der Lichter in acht Kanälen. Jede Lichtquelle in der Zeichnung einschließlich Sonne und Himmel kann einem Kanal zugeordnet werden. Beim Rendern wird das Licht eines Kanals auf eine eigene Ebene gesetzt.  So kann die Intensität eines Kanals nach Abschluss des Renderings angepasst werden.  Die Änderung wird in Echtzeit und ohne erneutes Rendering vorgenommen.  
 
@@ -31,10 +31,10 @@ Die folgenden Bedingungen sind nötig, um ein Mehrkanalbild zu erzeugen und zu �
 {: setting}
 Der erste Schritt zur Einstellung eines Mehrkanal-Renderings ist die Zuordnung der Lichter zu einem Kanal. Die Kanalnummer wird normalerweise in den Lichteigenschaften eingestellt.  Weitere Informationen zur Einstellung des Kanals für spezifische Lichter:
 
->[Sonnenkanal](sun-and-sky-tabs.html#sun-channel)
->[Himmelskanal](sun-and-sky-tabs.html#sky-channel)
->[Kanal für künstliche Beleuchtung](lights-tab.html#channel)
->[Material-Leuchtkanal](documentproperties-flamingo.html#channel)
+* [Sonnenkanal](sun-and-sky-tabs.html#sun-channel)
+* [Himmelskanal](sun-and-sky-tabs.html#sky-channel)
+* [Kanal für künstliche Beleuchtung](lights-tab.html#channel)
+* [Material-Leuchtkanal](documentproperties-flamingo.html#channel)
 
 Einem Lichtkanal kann eine beliebige Anzahl Lichter zugeordnet werden.  Die Kanalanpassung ist ein Multiplikator. Lichter auf demselben Kanal behalten bei einer Anpassung des Kanals ihre relative Intensität zueinander bei.
 

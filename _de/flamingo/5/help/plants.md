@@ -2,7 +2,7 @@
 title: Pflanzen
 ---
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 Flamingo nXt enthält einen leistungsstarken Pflanzengenerator, der während eines Renderings komplexe Pflanzenformen auf effiziente Weise erzeugt. Diese Pflanzen haben keinen großen Einfluss auf die Modellgröße, da nur ein Platzhalter in das Modell platziert wird.
 
 ![images/plants-001.png](images/plants-001.png)

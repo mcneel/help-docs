@@ -2,7 +2,7 @@
 title: Materialzuweisung
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Objekte in der Szene haben eine Materialquelle. Von dort beziehen sie ihr Rendermaterial.  Materialien können auf verschiedene Arten zugewiesen werden. Die verwendete Methode hat einen großen Einfluss darauf, wie einfach das Modell geändert und gepflegt werden kann.
 
 Materialien können auf drei verschiedene Arten zugewiesen werden. Die drei Methoden stellen eine Hierarchie dar, so dass eine Zuweisung weiter unten auf der Liste eine Zuweisung weiter oben überschreibt. Folgende Methoden sind verfügbar:
@@ -46,8 +46,8 @@ Bei der Modellierung eines Autos beispielsweise befinden sich die Reifen auf der
 
 ##### Zuweisung eines Materials über die Objekteigenschaften
 1. Wählen Sie Objekte aus.
-1. Öffnen Sie die **Objekteigenschaften** ![images/properties.png](images/properties.png).
-1. Wählen Sie in den [Objekteigenschaften](properties-object.html) auf der Seite **Material** ![images/materialtab.png](images/materialtab.png) im Dropdownmenü *Material zuordnen nach* die Option *Nach übergeordnet* aus.
+1. Öffnen Sie die **Objekteigenschaften** ![images/properties.png](images/properties.png){: .inline}.
+1. Wählen Sie in den [Objekteigenschaften](properties-object.html) auf der Seite **Material** ![images/materialtab.png](images/materialtab.png){: .inline} im Dropdownmenü *Material zuordnen nach* die Option *Nach übergeordnet* aus.
 
 ## Materialzuweisung nach Objekt
 {: #byobject}
@@ -58,8 +58,8 @@ Die empfohlene Methode ist die Zuweisung nach Ebene. Ordnen Sie Materialien nach
 
 ##### Zuweisung eines Materials über die Objekteigenschaften
 1. Wählen Sie Objekte aus.
-1. Öffnen Sie die **Objekteigenschaften** ![images/properties.png](images/properties.png).
-1. Wählen Sie in den [Objekteigenschaften](properties-object.html) auf der Seite **Material** ![images/materialtab.png](images/materialtab.png) im Dropdownmenü *Material zuordnen nach* die Option *Nach übergeordnet* aus und klicken Sie anschließend auf das gewünschte Material.
+1. Öffnen Sie die **Objekteigenschaften** ![images/properties.png](images/properties.png){: .inline}.
+1. Wählen Sie in den [Objekteigenschaften](properties-object.html) auf der Seite **Material** ![images/materialtab.png](images/materialtab.png){: .inline} im Dropdownmenü *Material zuordnen nach* die Option *Nach übergeordnet* aus und klicken Sie anschließend auf das gewünschte Material.
 
 ##### Drag & Drop eines Materials auf ein Objekt
 {: #drag-dropmaterialtoobject}

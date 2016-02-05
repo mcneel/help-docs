@@ -56,7 +56,7 @@ Die Stapelaufträge werden an eine [Renderfarm](render-farm.html) geschickt. Die
 Bestimmt die Anzeige, die von diesem Auftrag gerendert wird. Weitere Infos finden Sie im Reiter Renderoptionen im Abschnitt [Zu renderndes Ansichtsfenster](render-tab.html#viewtorender).
 
 #### Dateiname
-Klicken Sie auf die Schaltfläche Speichern ![images/saveimageas.png](images/saveimageas.png) und geben Sie einen Dateinamen für das gerenderte Bild an.
+Klicken Sie auf die Schaltfläche Speichern ![images/saveimageas.png](images/saveimageas.png){: .inline} und geben Sie einen Dateinamen für das gerenderte Bild an.
 
 #### Alphakanal
 Zur Einstellung, ob der Alphakanal ebenfalls im Bild gespeichert werden soll.  Weitere Infos finden Sie im Abschnitt [Alphakanalhintergrund verwenden](environment-tab.html#alpha).

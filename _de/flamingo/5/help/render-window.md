@@ -2,16 +2,16 @@
 title: Renderfenster
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 Im Renderfenster finden Sie Optionen für die Belichtungsanpassung und das Hinzufügen von Nachbearbeitungseffekten. Das Grundgerüst des Renderfensters ist Teil von Rhinos Rendering-Framework.  Weitere Infos zum Renderfenstermenü und den Schaltflächen finden Sie in der Rhino-Hilfe zum Thema [Renderfenster](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#information/renderwindowpostprocess.htm).  Im folgenden Abschnitt werden die Flamingo-spezifischen Elemente des Rendervorgangs beschrieben.
 
 ## Verwaltung eines aktiven Renderings
 Nach dem Start des Rendervorgangs wird das [Renderfenster](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#information/renderwindowpostprocess.htm) geöffnet und der Rendervorgang ausgeführt.  Flamingo ist ein Rendersystem mit mehreren Durchgängen, bei dem das Renderbild nach jedem Durchgang aktualisiert wird. Flamingo sucht zuerst nach Änderungen im internen Modell und beginnt dann mit der Initialisierung.  Dieser Vorgang kann einige Sekunden oder mehrere Minuten dauern.  Dabei wird das Modell importiert, Material-Bitmaps von der Festplatte eingesammelt und der Puffer für das Renderbild erstellt. Die wichtigsten Schritte zur Verwaltung eines Rendervorgangs sind die folgenden:
 
->[Rendering mit mehreren Durchgängen](#multi-pass)
->[Anhalten des Renderings](#stop-render)
->[Bildanpassung](#adjusting)
->[Speichern des Bilds](#saving)
+1. [Rendering mit mehreren Durchgängen](#multi-pass)
+1. [Anhalten des Renderings](#stop-render)
+1. [Bildanpassung](#adjusting)
+1. [Speichern des Bilds](#saving)
 
 ### Rendering mit mehreren Durchgängen
 {: #multi-pass}
@@ -23,22 +23,22 @@ Ein Flamingo-nXt-Rendering ist in diesem Sinne niemals "abgeschlossen", sondern 
 
 Zu den Effekten, die bei jedem Durchgang verbessert werden, zählen:
 
->Beleuchtung (wie beispielsweise die globale Beleuchtung)
->Weiche Schatten
->Reflexionen (Unschärfe)
->Lichtbrechung
->Antialiasing
->Schärfentiefe
+* Beleuchtung (wie beispielsweise die globale Beleuchtung)
+* Weiche Schatten
+* Reflexionen (Unschärfe)
+* Lichtbrechung
+* Antialiasing
+* Schärfentiefe
 
 ### Anhalten eines Renderings
 {: #stop-render}
 Das Rendering kann auf verschiedene Arten angehalten werden:
 
-![images/close-x.png](images/close-x.png) Klicken Sie auf das **X** in der oberen rechten Ecke des Renderfensters, um das Rendering sofort zu beenden und das Fenster zu schließen. Dies ist die einfachste Methode, wenn Sie wieder schnell zu Ihrem Modell zurückkehren möchten.
+![images/close-x.png](images/close-x.png){: .inline} Klicken Sie auf das **X** in der oberen rechten Ecke des Renderfensters, um das Rendering sofort zu beenden und das Fenster zu schließen. Dies ist die einfachste Methode, wenn Sie wieder schnell zu Ihrem Modell zurückkehren möchten.
 
-![images/stop.png](images/stop.png) Klicken Sie auf die Schaltfläche mit dem roten Stoppsymbol, um das Rendering nach Abschluss des aktuellen Durchgangs zu beenden. Diese Methode wird empfohlen, wenn Sie das Bild speichern möchten.
+![images/stop.png](images/stop.png){: .inline} Klicken Sie auf die Schaltfläche mit dem roten Stoppsymbol, um das Rendering nach Abschluss des aktuellen Durchgangs zu beenden. Diese Methode wird empfohlen, wenn Sie das Bild speichern möchten.
 
-![images/stop.png](images/stop.png) Klicken Sie doppelt auf die Schaltfläche mit dem roten Stoppsymbol, um das Rendering sofort abzuschließen und das Renderfenster geöffnet zu lassen.
+![images/stop.png](images/stop.png){: .inline} Klicken Sie doppelt auf die Schaltfläche mit dem roten Stoppsymbol, um das Rendering sofort abzuschließen und das Renderfenster geöffnet zu lassen.
 
 ### Anpassen eines Renderings
 {: #adjusting}
@@ -46,16 +46,16 @@ Verwenden Sie nach Abschluss eines Renderings die Steuerelemente im [Flamingo-Re
 
 Zu den Optionen zur Bildanpassung gehören:
 
->[Bild anpassen](#adjust-image)
->[Kanäle](#channels)
->[Nachbearbeitungseffekte](#post-process-effects)
+* [Bild anpassen](#adjust-image)
+* [Kanäle](#channels)
+* [Nachbearbeitungseffekte](#post-process-effects)
 
 
 ### Speichern des Bilds
 {: #saving}
 Zum Speichern eines Bilds gibt es zahlreiche Möglichkeiten für verschiedene Vorhaben.  Normalerweise wird das JPG- oder PNG-Format für die meisten Bilder empfohlen.  Es gibt allerdings auch andere Möglichkeiten.
 
-#### ![images/saveimageas.png](images/saveimageas.png) Bild speichern
+#### ![images/saveimageas.png](images/saveimageas.png){: .inline} Bild speichern
 Nach der Anpassung des Bilds wird dieses normalerweise als JPG- oder PNG-Datei abgespeichert.  
 
 Ein JPG-Bild ein sehr effizientes, kleines Bildformat, das sich besonders für Bilder anbietet, die ins Internet hochgeladen oder per E-Mail verschickt werden.  Diese Effizienz hat den Haken, dass einige Farben aus dem Bild entfernt werden.
@@ -81,7 +81,7 @@ Speichert unkomprimierte Luminanz- und Farbinformationen. Das HDR-Format speiche
 OpenEXR ist ein HDR-Grafikformat, welches als offener Standard durch Industrial Light and Magic unter einer Open-Source-Lizenz herausgegeben wurde. Dieses Dateiformat unterstützt Gleitkommazahlen mit 16 Bit pro Kanal (halbe Genauigkeit) mit einem Vorzeichenbit, fünf Bit Exponent und 10 Bit Mantisse. Dies erlaubt eine dynamische Reichweite von über dreißig Belichtungsstopps. Weitere Informationen finden Sie im [Wikipedia-Artikel zu OpenEXR](https://de.wikipedia.org/wiki/OpenEXR).
 Das exr-Format speichert Luminanzdaten direkt in ein HDR-Format. Hintergründe ohne Luminanz wie normale Fotos erscheinen schwarz, wenn sie in einem dieser Formate gespeichert werden.
 
-#### ![images/close-x.png](images/close-x.png) Schließen
+#### ![images/close-x.png](images/close-x.png){: .inline} Schließen
 Schließt das Renderfenster.
 
 #### Rendermenü
@@ -128,7 +128,7 @@ Die Anzahl der Pixel, die pro Sekunde in das Bild berechnet werden.
 {: #adjust-image}
 Dies ist eines der wichtigsten Steuerelemente in Flamingo. Die Belichtung des Bilds kann wie bei einer Kamera angepasst werden.  Dies ist die beste Methode, um Renderings heller, dunkler, kontrastreicher oder gesättigter einzustellen. Dieser Anpassungsprozess wird [Tone-Mapping](https://en.wikipedia.org/wiki/Tone_mapping) genannt. Flamingo arbeitet im Luminanzbereich, der einen weitaus größeren Farb- und Helligkeitsbereich umfasst, als auf einem Bildschirm oder Druck angezeigt werden kann.  Tone-Mapping ist der Umwandlungsprozess von Luminanzdaten in rote, grüne und blaue (RGB) Pixel, die auf einem Bildschirm angezeigt bzw. gedruckt werden können. Mit diesen Einstellungen kann auch bestimmt werden, wie Bilder gespeichert werden.
 
-![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
+![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png){: .inline} ![images/tonefinals-correction.png](images/tonefinals-correction.png){: .inline}
 *Links das Standardbild. Rechts das verbesserte Bild nach Anwendung von Helligkeit (0,20), Nachbelichten (0,16) und Sättigung (1,20).*
 Mit diesem Prozess können Sie die Helligkeit und Farbe eines Bilds anpassen, ohne erneut rendern zu müssen.
 
@@ -198,12 +198,12 @@ Wenn Blöcke im Modell vorhanden sind, kann Flamingo nXt die Blockdefinition ver
 #### Beleuchtungsinformation
 Informationen zur aktuellen Beleuchtungseinstellung des Renderings.  Dies sind die dargestellten Informationen:
 
->[Voreinstellungen](lighting-tab.html)
->[Sonne](sun-and-sky-tabs.html#sun)
->[Himmel](sun-and-sky-tabs.html#sky)
->[Lichter](lights-tab.html)
->[Indirekt](lighting-tab.html#indirect)
->[Umgebung ein/aus](lighting-tab.html#ambient)
+* [Voreinstellungen](lighting-tab.html)
+* [Sonne](sun-and-sky-tabs.html#sun)
+* [Himmel](sun-and-sky-tabs.html#sky)
+* [Lichter](lights-tab.html)
+* [Indirekt](lighting-tab.html#indirect)
+* [Umgebung ein/aus](lighting-tab.html#ambient)
 
 ## Kanäle
 {: #channels}
@@ -213,13 +213,13 @@ Mit diesen Steuerelementen können die Lichtkanäle in Echtzeit angepasst werden
 {: #post-process-effects}
 Nachbearbeitungseffekte können nach dem Rendering des Bildes angewandt werden. Diese können ein- und ausgeschaltet und in der Liste neu geordnet werden. Jeder Effekt hat seine eigenen Einstellungen. Zu den Effekten zählen:
 
->Nebel
->Leuchten
->Scheinen
->Schärfentiefe
->Punkte
->Kurven
->Isokurven
->Anmerkungen
+* Nebel
+* Leuchten
+* Scheinen
+* Schärfentiefe
+* Punkte
+* Kurven
+* Isokurven
+* Anmerkungen
 
 Weitere Informationen zu den einzelnen Filtern finden Sie in der Rhino-Hilfe zum Thema [Nachbearbeitung von Bildern](http://docs.mcneel.com/rhino/5/help/de-de/index.htm#information/renderwindowpostprocess.htm).

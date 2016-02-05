@@ -10,10 +10,10 @@ Die Flamingo-nXt-Renderfarm verwendet die Leistung von mehreren Computern, um ei
 
 ![images/renderfarm-002.png](images/renderfarm-002.png){: style="margin-top:25px;"}
 
->![images/01.png](images/01.png)Ein Computer mit Rhino und Flamingo nXt.
->![images/02.png](images/02.png)Ein Netzwerkserver oder freigegebener Farmordner.
->![images/03.png](images/03.png)Zwei Renderfarm-Clients. (Die nXt Renderfarm enthält zwei kostenlose Kopien der Client-Software.)
->![images/04.png](images/04.png)Zusätzliche Renderfarm-Clients.
+1. Ein Computer mit Rhino und Flamingo nXt.
+1. Netzwerkserver oder freigegebener Farmordner.
+1. Zwei Renderfarm-Clients. (Die nXt Renderfarm enthält zwei kostenlose Kopien der Client-Software.)
+1. Zusätzliche Renderfarm-Clients.
 
 Die Renderfarm ist für bis zu zwei Client-Computer kostenlos. Wenn Sie weitere Clients hinzufügen möchten, erwerben Sie die nXt-Renderfarmlizenz [hier](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
 
@@ -32,11 +32,12 @@ Für fortgeschrittene Installationen lässt Sie die nXt Renderfarm-Software mit 
 
 #### Der Farmprozess
 {: #the-farm-process}
- 1. Zum Start eines Renderings mit der Flamingo-nXt-Farm verwenden Sie statt des Befehls *Rendern* die Renderfarm *(Flamingo-nXt-5.0-Menü &gt; Renderfarm)*. Dadurch wird ein Renderauftrag an den [Farm-Ausgabeordner](options-flamingo.html#farm-output-folder) übermittelt. Alle Materialien und Support-Informationen werden automatisch mit dem Auftrag mitgeliefert.
- 2. Renderaufträge werden in viele verschiedene Farmaufgaben aufgeteilt. Die Renderfarm-Clients überprüfen den Farm-Ausgabeordner beständig nach neuen Aufgaben. Jeder Client nimmt sich eine Aufgabe und beginnt zu rendern. Mit dem Farm-Monitor  *(Flamingo nXt 5.0 &gt; Renderfarm &gt; Farm-Monitor...)* können Sie den Fortschritt eines Auftrags überprüfen.
- 3. Jeder Farm-Client speichert die Resultate im Farmordner unter *Auftragsname\Ausgabe*.
- 3. Während die Clients ihre Aufträge beenden, werden gleichzeitig neue Aufträge aufgenommen, die an die Farm gesendet werden.
- 4. Die Ausgabe einer Farm erfolgt im [nXt-Bildformat (.nXtImage)](image-editor.html). Bilder in diesem Format können mit dem [nXt-Bildeditor](image-editor.html) bearbeitet werden. Die Ergebnisse können im [nXt-Bildeditor](image-editor.html) auch als TGA-, PNG-, TIF- oder JPG-Datei abgespeichert werden.
+
+1. Zum Start eines Renderings mit der Flamingo-nXt-Farm verwenden Sie statt des Befehls *Rendern* die Renderfarm *(Flamingo-nXt-5.0-Menü &gt; Renderfarm)*. Dadurch wird ein Renderauftrag an den [Farm-Ausgabeordner](options-flamingo.html#farm-output-folder) übermittelt. Alle Materialien und Support-Informationen werden automatisch mit dem Auftrag mitgeliefert.
+1. Renderaufträge werden in viele verschiedene Farmaufgaben aufgeteilt. Die Renderfarm-Clients überprüfen den Farm-Ausgabeordner beständig nach neuen Aufgaben. Jeder Client nimmt sich eine Aufgabe und beginnt zu rendern. Mit dem Farm-Monitor  *(Flamingo nXt 5.0 &gt; Renderfarm &gt; Farm-Monitor...)* können Sie den Fortschritt eines Auftrags überprüfen.
+1. Jeder Farm-Client speichert die Resultate im Farmordner unter *Auftragsname\Ausgabe*.
+1. Während die Clients ihre Aufträge beenden, werden gleichzeitig neue Aufträge aufgenommen, die an die Farm gesendet werden.
+1. Die Ausgabe einer Farm erfolgt im [nXt-Bildformat (.nXtImage)](image-editor.html). Bilder in diesem Format können mit dem [nXt-Bildeditor](image-editor.html) bearbeitet werden. Die Ergebnisse können im [nXt-Bildeditor](image-editor.html) auch als TGA-, PNG-, TIF- oder JPG-Datei abgespeichert werden.
 
 ## Installation und Konfiguration der Farm
 {: #install}
@@ -45,13 +46,14 @@ Der Farm-Render-Client und der Farm-Monitor werden zusammen mit Flamingo auf dem
 ##### Installation des Render-Farmers
 Client-Computer, auf denen Rhino und Flamingo nicht installiert sind, benötigen den Farmer-Client:
 
- 1. Laden Sie die aktuelle [Render-Farmer-Software](http://www.rhino3d.com/download/The-Farm/1.0/release) herunter.
- 1. Führen Sie das heruntergeladene Installationsprogramm auf jedem der Client-Rechner aus.
- 1. Führen Sie den Render-Farmer auf jedem Client-Computer aus.
- 1. Der Render-Farmer erscheint als Symbol in der Taskleiste.
+1. Laden Sie die aktuelle [Render-Farmer-Software](http://www.rhino3d.com/download/The-Farm/1.0/release) herunter.
+1. Führen Sie das heruntergeladene Installationsprogramm auf jedem der Client-Rechner aus.
+1. Führen Sie den Render-Farmer auf jedem Client-Computer aus.
+1. Der Render-Farmer erscheint als Symbol in der Taskleiste.
 
 ##### Konfiguration der Renderfarm
 {: #configure-the-render-farm}
+
 1.  [Klicken Sie mit der rechten Maustaste](mouse-button-right.html) auf das Symbol und wählen Sie *Wiederherstellen*.
 1. Klicken Sie im nXt-Farmer-Fenster im Menü *Optionen* auf *Pfad* und wählen Sie den Pfad zum Ordner der Renderfarm aus.
 
@@ -66,14 +68,15 @@ Die Farm kann zur Zeit auf drei Arten verwendet werden, um Renderings auf mehrer
 ##### Überprüfung der Client-Rechner auf korrekte Funktionsweise
 Nach dem Start des Render-Farmers auf allen Client-Computern:
 
- 1. Klicken Sie auf einem beliebigen Computer im Windows-Startmenü auf [Farm Monitor](#render-farm-monitor).
- 1. Die Client-Rechner sollten im oberen Listenkästchen erscheinen.
- 1. In der Liste der Rechner sollten alle Render-Farmer-Clients aufgelistet sein.  Ihr Status sollte *Aktiv* sein.
+1. Klicken Sie auf einem beliebigen Computer im Windows-Startmenü auf [Farm Monitor](#render-farm-monitor).
+1. Die Client-Rechner sollten im oberen Listenkästchen erscheinen.
+1. In der Liste der Rechner sollten alle Render-Farmer-Clients aufgelistet sein.  Ihr Status sollte *Aktiv* sein.
 
 Falls ein Problem auftaucht, konsultieren Sie die Hilfethemen zu [Installation](#install) und [Konfiguration](#configure-the-render-farm).
 
 
 ##### Übermittlung eines Auftrags an die Renderfarm
+
 1. Stellen Sie das Rendering und die Ansicht in Rhino ganz normal ein.
 1. Klicken Sie im Flamingo-nXt-Menü auf *Renderfarm* > *Renderfarm starten*.
 1. Das Dialogfenster für einen [Farm-Auftrag](#farm-job) wird geöffnet.
@@ -83,12 +86,12 @@ Falls ein Problem auftaucht, konsultieren Sie die Hilfethemen zu [Installation](
 ##### Überwachung der Farm
 Verwenden Sie zur Überwachung eines Renderauftrags den [Farm Monitor](#render-farm-monitor).
 
- 1. Gehen Sie dazu auf dem Master-Rechner im Windows-Startmenü auf [Farm Monitor](#render-farm-monitor).
- 1. In der Liste der Aufträge sollte ein kürzlich angelegter Auftrag angezeigt werden. Dies kann für große Aufträge eine Weile dauern.
- 1. Der Status des Auftrags wird auf *Aktiv* geändert.
- 1. Nach einiger Zeit nehmen die Rechner der Farm Aufgaben desselben Datums auf.
- 1. Je mehr Aufgaben abgeschlossen werden, desto größer ist der Wert für *Prozent abgeschlossen*.
- 1. Wenn der Auftrag abgeschlossen ist, ändert sich der Status auf *Abgeschlossen*.
+1. Gehen Sie dazu auf dem Master-Rechner im Windows-Startmenü auf [Farm Monitor](#render-farm-monitor).
+1. In der Liste der Aufträge sollte ein kürzlich angelegter Auftrag angezeigt werden. Dies kann für große Aufträge eine Weile dauern.
+1. Der Status des Auftrags wird auf *Aktiv* geändert.
+1. Nach einiger Zeit nehmen die Rechner der Farm Aufgaben desselben Datums auf.
+1. Je mehr Aufgaben abgeschlossen werden, desto größer ist der Wert für *Prozent abgeschlossen*.
+1. Wenn der Auftrag abgeschlossen ist, ändert sich der Status auf *Abgeschlossen*.
 
 
 ## Optionen von Farm-Aufträgen
@@ -149,19 +152,20 @@ Der Auftrag wird aus der Liste entfernt.
 {: #licensing-the-render-farm-}
 Mithilfe der Renderfarm können Renderaufträge auf ein Netzwerk verteilt und so auf mehreren Rechnern gleichzeitig bearbeitet werden.  [Download des Renderfarm-Clients](http://nxt.flamingo3d.com/page/nxt-render-farm-de).
 
-
 ##### Autorisierung eines Knotens
-1. Warten Sie, bis alle aktiven Farm-Aufträge vervollständigt wurden, bevor Sie mit der Lizenzierung beginnen.
-1. Speichern Sie den Produktschlüssel (XF10-J9G2-H006-T8AJ-GBB9-0027) in einer Textdatei auf einem Netzwerkrechner, damit Sie ihn einfach und schnell in jeden Knoten einfügen können.
-1. Wenn der Knoten gerade aktiv ist, [klicken Sie mit der rechten Maustaste](mouse-button-right.html) das Symbol der Renderfarm und anschließend auf **Schließen**.
-1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.
-Klicken Sie im Ordner der nXt-Renderfarm auf **Farm autorisieren**.
-1. Geben Sie im Eingabefeld den Lizenzschlüssel ein und klicken Sie auf **OK**.
+
+ 1. Warten Sie, bis alle aktiven Farm-Aufträge vervollständigt wurden, bevor Sie mit der Lizenzierung beginnen.
+ 1. Speichern Sie den Produktschlüssel (XF10-J9G2-H006-T8AJ-GBB9-0027) in einer Textdatei auf einem Netzwerkrechner, damit Sie ihn einfach und schnell in jeden Knoten einfügen können.
+ 1. Wenn der Knoten gerade aktiv ist, [klicken Sie mit der rechten Maustaste](mouse-button-right.html) das Symbol der Renderfarm und anschließend auf **Schließen**.
+ 1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.
+ 1. Klicken Sie im Ordner der nXt-Renderfarm auf **Farm autorisieren**.
+ 1. Geben Sie im Eingabefeld den Lizenzschlüssel ein und klicken Sie auf **OK**.
 
 ##### Start eines Knotens
+
 1. Gehen Sie im Windows-Startmenü auf **Alle Programme**.
-Klicken Sie im Ordner der Renderfarm auf **Render-Farmer**.
+1. Klicken Sie im Ordner der Renderfarm auf **Render-Farmer**.
 1.  [Klicken Sie mit der rechten Maustaste](mouse-button-right.html) auf das Taskleistensymbol und wählen Sie im Kontextmenü **Wiederherstellen**.
 1. Klicken Sie im Hilfe-Menü auf **Info**.
-Wenn die Versionsnummer auf eine Testversion hinweist, war die Lizenzierung nicht erfolgreich.
+1. Wenn die Versionsnummer auf eine Testversion hinweist, war die Lizenzierung nicht erfolgreich.
 1. Minimieren Sie das Fenster des Render-Farmer.

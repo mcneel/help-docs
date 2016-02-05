@@ -3,7 +3,7 @@ title: Flamingo-nXt-Optionen
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 Diese Optionen dienen der allgemeinen Konfiguration von Flamingo nXt.  Änderungen an diesen Einstellungen beeinflussen die generelle Ausführung von Flamingo.
 
 {: #default-decal-link-state}
@@ -11,7 +11,7 @@ Diese Optionen dienen der allgemeinen Konfiguration von Flamingo nXt.  Änderung
 
 #### Ausgabeordner der Farm
 {: #farm-output-folder}
-Der gemeinsame Ordner für Render-Farm-Aufträge. In diesen Ordner werden auch die Ergebnisse des Farm-Renderings ausgegeben. Zum Einstellen einer neuen Option verwenden Sie die Ordner-Symbolschaltfläche ![images/folderopen32x32.png](images/folderopen32x32.png).
+Der gemeinsame Ordner für Render-Farm-Aufträge. In diesen Ordner werden auch die Ergebnisse des Farm-Renderings ausgegeben. Zum Einstellen einer neuen Option verwenden Sie die Ordner-Symbolschaltfläche ![images/folderopen32x32.png](images/folderopen32x32.png){: .inline}.
 
 #### Markierte Lichter anzeigen
 Bei Auswahl dieser Option wird die Richtung markierter Lichter angezeigt.  Dies funktioniert für Spotlichter und diffuse Lichtverteilungen.
