@@ -6,7 +6,7 @@ title: Flamingoをはじめるにあたって
 # ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt®をはじめるにあたって
 Flamingo nXtは、3Dモデルから高品質でフォトリアリスティックな静止およびアニメーションのイメージファイルをRhinoceros ®の中で作成します。Flamingo nXt 5は、Rhino 5のビルトインレンダリング機能と統合される、Flamingoへのアップデートです。これは現在ワーク・イン・プログレス・バージョンです。
 
-Flamingoは、[Flamingo nXt 5 ダウンロード](http://www.rhino3d.com/download/flamingo/5/beta)からダウンロード、インストールしていただけます。
+Flamingoは、[Flamingo nXt 5 ダウンロード](https://www.rhino3d.com/store/upgrade/flamingo/nxt)からダウンロード、インストールしていただけます。
 
 [Flamingo Discourse Forum（フォーラム）](http://discourse.mcneel.com/c/rendering/flamingo)では、テクニカルディスカッションに参加していただけます。
 
@@ -15,7 +15,7 @@ Flamingoは、[Flamingo nXt 5 ダウンロード](http://www.rhino3d.com/downloa
 Flamingo 5 ベータには、以前のバージョンのFlamingo nXtがインストールされていることが必要です。Flamingo nXt 5を実行するには、Rhino 5 サービスリリース12が必要です。
 RHIインストーラをダウンロード、実行後にRhinoを起動してFlamingo nXt 5.0をロードしてください。
 
-最新のベータはこちらでダウンロードしていただけます: [http://www.rhino3d.com/download/Flamingo/5.0/beta](http://www.rhino3d.com/download/Flamingo/5.0/beta)。
+最新のベータはこちらでダウンロードしていただけます: [https://www.rhino3d.com/store/upgrade/flamingo/nxt](https://www.rhino3d.com/store/upgrade/flamingo/nxt)。
 
 ## ヘルプドキュメンテーション
 Flamingoは次の複数の言語がサポートされています。
