@@ -2,7 +2,7 @@
 title: 進階材質內容
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingo 的材質內容有[簡易編輯器](material-type-simple.html)與進階
 
 材質的進階設定群組有：
 
-> [名稱](#name)
-> [材質程序](#procedures)
-> [進階材質內容](#advanced-materials-properties)
-> [反射度](#reflective-finish-and-highlight)
-> [透明內容](#transparency)
-> [程序貼圖](#bump-patterns)
-> [圖片貼圖](#textures)
-> [附註](#notes)
+* [名稱](#name)
+* [材質程序](#procedures)
+* [進階材質內容](#advanced-materials-properties)
+* [反射度](#reflective-finish-and-highlight)
+* [透明內容](#transparency)
+* [程序貼圖](#bump-patterns)
+* [圖片貼圖](#textures)
+* [附註](#notes)
 
 ## 材質名稱
 {: #name}
@@ -33,8 +33,10 @@ Flamingo 的材質內容有[簡易編輯器](material-type-simple.html)與進階
 
 
 ##### 加入程序
+
 1. 在程序面板的**底色**上按右鍵。
 1. 在彈出的清單選擇一種程序類型。
+
   * [底色](procedural-materials.html#base)
   * [角度混合](procedural-materials.html#angular-blend)
   * [混合](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ Flamingo 的材質內容有[簡易編輯器](material-type-simple.html)與進階
   * [木紋](procedural-materials.html#wood)
 
 ##### 移除程序
- 1. 在程序面板的程序名稱上按滑鼠右鍵。
- 2. 在彈出的功能表選擇移除。
+
+1. 在程序面板的程序名稱上按滑鼠右鍵。
+1. 在彈出的功能表選擇移除。
 
 ## 進階材質內容
 {: #advanced-materials-properties}
@@ -73,7 +76,7 @@ Flamingo 的材質內容有[簡易編輯器](material-type-simple.html)與進階
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### 自訂
-某些特殊材質的反光可能與材質的顏色不同，請從[選取顏色](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) 對話框選擇反光的顏色。
+某些特殊材質的反光可能與材質的顏色不同，請從[選取顏色](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} 對話框選擇反光的顏色。
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
@@ -239,11 +242,11 @@ Fresnel 的發音近似 (fray-NELL)，它是以[菲涅耳原理](http://en.wikip
 {: #bump-patterns}
 凹凸圖案內建了幾種以數學運算產生的特殊凹凸效果，不需使用置換貼圖或其它圖片就可以快速製造材質上的凹凸紋路，凹凸圖案有：
 
-> [砂紙](#sandpaper)
-> [碎石](#rubble)
-> [金字塔](#pyramid)
-> [皺紋](#wrinkled)
-> [大理石紋](#marbled)
+* [砂紙](#sandpaper)
+* [碎石](#rubble)
+* [金字塔](#pyramid)
+* [皺紋](#wrinkled)
+* [大理石紋](#marbled)
 
 像是灰泥、混泥土、泥土表面的紋理非常細微，除非要做非常近距離的彩現以外，通常不值得用掃描或照像的方式製作這類材質的貼圖，只要選用砂紙凹凸圖案即可模擬這類的材質效果。製作這類材質的方法是先將[底色](advanced-material-properties-main.html#color)設為該材質的顏色，凹凸圖案使用砂紙做為細紋理，使用碎石做為粗紋理。
 
