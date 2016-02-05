@@ -1,8 +1,9 @@
 ---
+title: Ambiente di Flamingo
 ---
 
-# ![images/environment.svg](images/environment.svg) Ambiente di Flamingo
-Ci sono vari tipi di ambienti in Rhino. In questa sezione, si esaminerà l'ambiente predefinito di Flamingo.
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
+Ci sono vari tipi di [ambienti in Rhino](http://docs.mcneel.com/rhino/5/help/it-it/commands/environmenteditor.htm). In questa sezione, si esaminerà l'ambiente di Flamingo.
 
 L'ambiente influisce sulla parte visibile dello sfondo e sulle riflessioni.  Per gli effetti che influiscono sull'illuminazione della scena, si veda l'argomento della guida in linea [Cielo](sun-and-sky-tabs.html).
 
@@ -10,10 +11,10 @@ Flamingo presenta un ambiente speciale denominato **Ambiente di Flamingo predefi
 
 L'ambiente di Flamingo presenta i seguenti gruppi di proprietà:
 
-> [Nome](#name)
-> [Ambiente di Flamingo](#environment)
-> [Colore dello sfondo](#color-backgrounds)
-> [Sfondo avanzato](#advanced-background-reflected-sky)
+  * [Nome](#name)
+  * [Ambiente di Flamingo](#environment)
+  * [Colore dello sfondo](#color-backgrounds)
+  * [Sfondo avanzato](#advanced-background-reflected-sky)
 
 
 ## Nome dell'ambiente
@@ -24,25 +25,24 @@ Il nome dell'ambiente nel modello di Rhino.  Gli ambienti vengono memorizzati ne
 {: #environment}
 In un rendering, ci sono tre principali effetti di ambiente:
 
->Sfondo visibile
->[Sfondo riflettente](#advanced-background-reflected-sky)
->[Sfondo rifrangente](#advanced-background-refracted-sky)
+  1. Sfondo visibile
+  1. [Sfondo riflettente](#advanced-background-reflected-sky)
+  1. [Sfondo rifrangente](#advanced-background-refracted-sky)
 
-Lo sfondo visibile è il colore dello sfondo di base della scena.  Lo sfondo visibile si trova nel pannello delle proprietà generali.Gli sfondi [riflettente](#advanced-background-reflected-sky) e [rifrangente](#advanced-background-refracted-sky) possono differire e sono disponibili nella sezione Sfondo avanzato.
+Lo sfondo visibile è il colore dello sfondo di base della scena.  Lo sfondo visibile si trova nel pannello delle proprietà generali. Gli sfondi [riflettente](#advanced-background-reflected-sky) e [rifrangente](#advanced-background-refracted-sky) possono differire e sono disponibili nella sezione Sfondo avanzato.
 
 #### Intensità
 {: #background-intensity}
-Modifica la luminosità relativa dello sfondo. Il valore di intensità viene usato per moltiplicare i colori nello sfondo e dà come risultato un valore di illuminazione.  I colori possono variare da 0 a 256 per canale. L'intensità moltiplica tali valori.  Ciò diventa importante se lo sfondo ha un aspetto molto scuro rispetto al modello renderizzato.
+Modifica la luminosità relativa dello sfondo. Il valore di intensità viene usato per moltiplicare i colori nello sfondo e dà come risultato un valore di illuminazione.  I colori possono variare da 0 a 255 per canale. L'intensità moltiplica tali valori.  Ciò diventa importante se lo sfondo ha un aspetto molto scuro rispetto al modello renderizzato.
 
 #### Tipo di sfondo
 {: #background-type}
 Specifica la combinazione di colori che andrà a riempire lo sfondo dell'immagine renderizzata. Si hanno i seguenti tipi di sfondo:
 
-> [Cielo](#environment-sky)
-> [A colore singolo ed a gradiente di colore](#color-backgrounds)
-> [Immagine](#environment-image)
-> [Immagini HDR ed HDR planari](#hdr-background)
-
+* [Cielo](#environment-sky)
+* [A colore singolo ed a gradiente di colore](#color-backgrounds)
+* [Immagine](#environment-image)
+* [Immagini HDR ed HDR planari](#hdr-background)
 
 ## Sfondo con cielo
 {: #environment-sky}
@@ -85,11 +85,11 @@ Il numero di controlli disponibile può cambiare in base al tipo di sfondo con c
 {% include_relative snippets/snippet-material-color-select.md %}
 
 #### Scambia colori
-Si usi questo pulsante per riordinare il colore del gradiente da sopra a sotto
+Si usi questo pulsante per riordinare il colore del gradiente da sopra a sotto.
 
 #### Controllo di mappatura del gradiente
 {: #gradient-mapping}
-I colori di uno sfondo a gradiente di colore vanno mappati sulla sfera dell'ambiente. Per farlo, si usa il mappatore del gradiente.  I controlli di mappatura del gradiente si attivano solo se risulta selezionato un gradiente a due o tre colori. I gradienti si possono mappare solo sulle viste prospettiche.
+I colori di uno sfondo a gradiente di colore vanno mappati sulla sfera dell'ambiente. Per farlo, si usi il mappatore del gradiente.  I controlli di mappatura del gradiente si attivano solo se risulta selezionato un gradiente a due o tre colori. I gradienti si possono mappare solo sulle viste prospettiche.
 
 #### Angoli da vista
 {: #angle-from-views}
@@ -115,7 +115,8 @@ Si tratta di dati angolari sui colori superiore, centrale ed inferiore dei gradi
 
 ## Immagine di sfondo
 {: #environment-image}
-Sullo sfondo, viene proiettata un'immagine che funge da sfondo. Spesso si usa per sistemare un modello in un determinato contesto oppure per impostare una vista dalle finestre di un interno. Si possono usare fotografie digitali, illustrazioni scansionate oppure immagini create usando programmi di digital painting. Per ottenere i migliori risultati, conviene usare come immagini di sfondo delle immagini ad alta risoluzione. Per simulare una messa a fuoco naturale o una prospettiva aerea, può essere una buona idea sfocare e schiarire un'immagine nitida. L'immagine di sfondo si può mappare sullo sfondo con una proiezione planare, cilindrica o sferica all'interno della scena.
+
+Sullo sfondo, viene proiettata un'immagine che funge da sfondo. Spesso si usa per sistemare un modello in un determinato contesto oppure per impostare una vista dalle finestre di un interno. Si possono usare fotografie, illustrazioni scansionate oppure immagini create usando programmi di digital painting. Per ottenere i migliori risultati, conviene usare come immagini di sfondo delle immagini ad alta risoluzione. Per simulare una messa a fuoco naturale o una prospettiva aerea, può essere una buona idea sfocare e schiarire un'immagine nitida. L'immagine di sfondo si può mappare sullo sfondo con una proiezione planare, cilindrica o sferica all'interno della scena.
 
 ![images/background-image-001.png](images/background-image-001.png)
 *Un'immagine planare impostata come sfondo.*
@@ -128,13 +129,13 @@ Impostare l'immagine di sfondo facendo clic sul pulsante grande con la scritta *
 {: #backgroud-image-projection}
 Selezionare una delle tre proiezioni dal controllo a discesa:
 
->[Planare](#planar)
->[Cilindrica](#cylindrical)
->[Sferica](#spherical)
+* [Planare](#planar)
+* [Cilindrica](#cylindrical)
+* [Sferica](#spherical)
 
 Ciascun metodo di proiezione ha i propri parametri di controllo per il posizionamento dell'immagine.
 
-#### Proiezione planare
+### Proiezione planare
 {: #planar}
 Proietta l'immagine su uno sfondo piatto nella vista corrente. Le coordinate della proiezione planare sono sempre relative alla vista corrente.
 
@@ -161,13 +162,15 @@ Si usi il controllo di posizionamento per sistemare l'immagine rispetto alla vis
 ![images/background-image-003.png](images/background-image-003.png)
 *Area della vista corrente (1), forma della vista (2).*
 
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
+
 #### Scala X / Scala Y
 Specifica le dimensioni dell'immagine di sfondo nella scala 0 - 1.0 della larghezza ed altezza della vista. Per esempio, una valore pari ad 1.0 corrisponde al 100% delle dimensioni dell'immagine, un valore pari a 0.5 al 50% e così via.
 
 #### Offset X / Offset Y
 Specifica lo scostamento dell'immagine di sfondo rispetto al vertice sinistro inferiore della vista, nella scala 0 - 1.0 della larghezza ed altezza della vista. Per esempio, una valore pari ad 0.25 corrisponde ad uno scostamento del 25% rispetto alle dimensioni dell'immagine, un valore pari a 0.5 al 50% e così via.
 
-#### Proiezione cilindrica
+### Proiezione cilindrica
 {: #cylindrical}
 La proiezione cilindrica mappa l'immagine su un cilindro immaginario che circoscrive il modello. Nonostante questa proiezione funzioni al meglio con delle immagini realmente cilindriche, essa dà dei risultati soddisfacenti anche con panorami standard tratti da fotografie.
 
@@ -213,7 +216,7 @@ Specifica gli angoli verticali dell'immagine in base alla direzione del piano d'
 ####  Pulsante Ottieni angoli da vista
 Imposta l'angolo di rotazione per la corrispondenza con la vista prospettica corrente.  Una buona opzione per reimpostare i valori della proiezione.
 
-#### Proiezione sferica
+### Proiezione sferica
 {: #spherical}
 La proiezione sferica mappa l'immagine su una sfera completa. Questo metodo in genere dà dei buoni risultati solo se si usa un'immagine sferica equirettangolare.  Un'immagine equirettangolare ha il rapporto di aspetto di un rettangolo 2:1.
 

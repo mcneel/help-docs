@@ -1,7 +1,8 @@
 ---
+title: Rendering automatizzato
 ---
 
-# Rendering automatizzato
+# {{page.title}}
 
 
 ## Rendering batch
@@ -55,7 +56,7 @@ Invia i lavori batch alla [Render Farm](render-farm.html). I lavori verranno ren
 Mostra la vista che verrà renderizzata dal lavoro corrente. Vedi: [Scheda Rendering, Vista da renderizzare](render-tab.html#viewtorender).
 
 #### Nome del file
-Cliccate sul pulsante Salva ![images/saveimageas.png](images/saveimageas.png) e specificate un nome file per l'immagine renderizzata.
+Cliccate sul pulsante Salva ![images/saveimageas.png](images/saveimageas.png){: .inline} e specificate un nome file per l'immagine renderizzata.
 
 #### Canale alfa
 Salva l'immagine con il canale alfa.  Vedi [Usa lo sfondo con canale alfa](environment-tab.html#alpha) per maggiori informazioni.
@@ -68,7 +69,9 @@ Di default, si usano le impostazioni di risoluzione del documento corrente per i
 {: #rendering-constraints}
 Imposta il numero di passate necessarie per finire il lavoro batch.  Vedi [Passate](documentproperties-flamingo.html#number-of-passes) per maggiori informazioni.
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 
@@ -78,17 +81,17 @@ There are two ways to create animations in Rhino.  Animations can be configured 
 
 ##### To submit an animation job to the render farm
 1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+1. In the Configure Automated Render Command dialog, select **Render to farm**.
 &#160;
-Specify theJob name,and click theOKbutton.
+Specify the Job name,and click the OK button.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. SelectRenderFullas theCapture method.
+Set a type of animation from Rhino's Animation setup toolbar. Select Render Full as the Capture method.
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+Record the animation from the Animation toolbar. The render jobs will be sent to Render Farm.
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+When the jobs are finished in Render Farm, run the FlamingoNXtAutomateRender command again and select all the jobs in the dialog.
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+Click the Copy selected files to specified output folder button and select a folder where all the render images will be copied to.
 
 
 ## FlamingoNXtAutomateRender command

@@ -2,18 +2,18 @@
 title: Materiali procedurali
 ---
 
-#  ![images/paint.svg](images/paint.svg) {{page.title}}
+#  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 L'albero delle Procedure combina uno o più materiali usando un insieme di regole che ne definiscono le modalità di interazione. L'albero mostra i componenti usati per creare il materiale e consente l'aggiunta di ulteriori componenti. I materiali semplici sono costituiti da un solo componente: la "Base".
 
 Ciascuna procedura mette insieme due materiali "figli" usando un determinato metodo. Ciascun materiale "figlio" può a sua volta consistere in una procedura, derivante dalla combinazione dei suoi propri "figli". In questo modo, partendo da dei componenti semplici, si possono generare dei materiali estremamente elaborati. Tra le procedure per combinare tra di loro i materiali si includono:
 
-> [Base](#base)
-> [Blend angolare](#angular-blend)
-> [Fusione](#blend)
-> [Marmo](#marble)
-> [Granito](#granite)
-> [Mattonella](#tile)
-> [Legno](#wood)
+* [Base](#base)
+* [Blend angolare](#angular-blend)
+* [Fusione](#blend)
+* [Marmo](#marble)
+* [Granito](#granite)
+* [Mattonella](#tile)
+* [Legno](#wood)
 
 ##### Per aggiungere una procedura
 1. Cliccare con il tasto destro su un punto qualsiasi della finestra delle Procedure.
@@ -47,7 +47,7 @@ L'angolo a partire dal punto di osservazione in corrispondenza del quale inizia 
 L'angolo a partire dal punto di osservazione in corrispondenza del quale finisce il materiale della componente Esterno.
 Tra l'Angolo iniziale e l'Angolo finale, le componenti Interno ed Esterno si fondono.
 
-Nell'immagine sottostante, l'Angolo iniziale![images/01.png](images/01.png) è pari a 30 gradi (nel rendering, corrisponde al cerchio verde sulla destra) e l'Angolo finale![images/02.png](images/02.png) è pari a 60 gradi (nel rendering, corrisponde al cerchio rosso).
+Nell'immagine sottostante, l'Angolo iniziale![images/01.png](images/01.png){: .inline} è pari a 30 gradi (nel rendering, corrisponde al cerchio verde sulla destra) e l'Angolo finale![images/02.png](images/02.png){: .inline} è pari a 60 gradi (nel rendering, corrisponde al cerchio rosso).
 
 L'immagine sulla destra mostra il materiale Interno in bianco e quello Esterno in nero.
 
