@@ -2,7 +2,7 @@
 title: 植物
 ---
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 Flamingo nXt 內建植物產生功能，可以在彩現時快速產生複雜的植物模型，這些植物在模型裡是以點雲表示，所以不會讓模型檔案變大。
 
 ![images/plants-001.png](images/plants-001.png)

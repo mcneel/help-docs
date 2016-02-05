@@ -2,7 +2,7 @@
 title: 照明預設組
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 照明是彩現時最重要也是最容易被忽視的部分。照明不只是照亮模型這麼簡單，它可以營造出特殊的氛圍，也是彩現成功與否的關鍵。
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -10,7 +10,7 @@ title: 照明預設組
 
 #### 可以在哪找到 Flamingo 的燈光設定?
 
-* ![images/menuicon.png](images/menuicon.png)功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo nXt。
+* ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo nXt。
 * 在標籤面板的標籤上按右鍵，勾選 Flamingo nXt。
 
 
@@ -30,10 +30,10 @@ Flamingo nXt 內建了幾組預設的照明配置，讓您可以快速設定場�
 
 Flamingo nXt 內建的四個照明預設組：
 
-> [攝影棚照明](lighting-tab.html#studio-lighting)
-> [戶外日光](lighting-tab.html#exterior-daylight)
-> [室內日光](lighting-tab.html#interior-daylight)
-> [人工照明](lighting-tab.html#artificial-lighting)
+* [攝影棚照明](lighting-tab.html#studio-lighting)
+* [戶外日光](lighting-tab.html#exterior-daylight)
+* [室內日光](lighting-tab.html#interior-daylight)
+* [人工照明](lighting-tab.html#artificial-lighting)
 
 ### 攝影棚照明
 {: #studio-lighting}
@@ -102,10 +102,10 @@ Flamingo nXt 內建的四個照明預設組：
 {: #sky}
 天空有以下四種設定可以選擇：
 
-> 自動
-> HDRi
-> 顏色
-> 圖片
+* 自動
+* HDRi
+* 顏色
+* 圖片
 
 詳細說明請參考[天空頁面](sun-and-sky-tabs.html#sky)說明主題。
 一個位於無限遠、環繞模型的半球體光源。
@@ -195,8 +195,8 @@ HDR 圖片可以做為表面具反射性質的物件的反射影像。
 
 ### 儲存照明配置
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) 儲存目前的照明配置。
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} 儲存目前的照明配置。
 
 ### 開啟照明配置
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) 開啟已儲存的照明配置。
+![images/importfromfile.png](images/importfromfile.png){: .inline} 開啟已儲存的照明配置。

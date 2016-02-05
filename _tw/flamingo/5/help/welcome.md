@@ -1,9 +1,9 @@
 ---
 title: Flamingo nXt 快速入門
 ---
-
 <!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
-# ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt® 快速入門
+
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} Flamingo nXt® 快速入門
 Flamingo nXt 可在 Rhinoceros® 裡將模型彩現成為高品質而且真實的靜態影像。Flamingo nXt 5 目前還在開發階段，它將 Flamingo 與 Rhino 5 內建彩現功能整合在一起。
 
 請至[這裡](http://www.rhino3d.com/download/flamingo/5/beta)下載、安裝 Flamingo nXt 5。
@@ -19,18 +19,18 @@ Flamingo nXt 可在 Rhinoceros® 裡將模型彩現成為高品質而且真實�
 
 **Flamingo nXt** 的技術支援、教學與範例等資訊請至 [Flamingo nXt 網站](http://nxt.flamingo3d.com/)。
 
-> [教學](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [作品](http://nxt.flamingo3d.com/photo)
-> [技術支援](http://nxt.flamingo3d.com/forum)
+* [教學](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+* [作品](http://nxt.flamingo3d.com/photo)
+* [技術支援](http://nxt.flamingo3d.com/forum)
 
 ## Flamingo nXt 的控制面板
 {: #control-panel}
 Flamingo nXt 5 整合了 Rhino 5 的彩現工具，Flamingo nXt 的控制面板內有模型彩現需要的設定頁面，包括：
 
-> [材質](materials-tab.html)
-> [照明](lighting-tab.html)
-> [環境](environment-tab.html)
-> [彩現](render-tab.html)
+* [材質](materials-tab.html)
+* [照明](lighting-tab.html)
+* [環境](environment-tab.html)
+* [彩現](render-tab.html)
 
 ## 開啟 Flamingo 的控制面板
 * 從 **Flamingo nXt 5.0** 功能表選擇**控制面板**。
