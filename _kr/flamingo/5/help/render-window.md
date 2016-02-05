@@ -2,16 +2,16 @@
 title: 렌더링 창
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 렌더링 창에는 노출을 조정하고 후처리 효과를 더하는 옵션이 있습니다. 렌더링 창의 메인프레임은 Rhino 렌더링 프레임워크의 일부입니다. 렌더링 창 메뉴와 아이콘에 대한 정보는 [렌더링 창 항목](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm) 을 참조하세요. 이 항목은 렌더링 과정에서의 Flamingo 설정을 다룹니다.
 
 ## 활성 렌더링의 관리
 일단 렌더링이 시작되면 [렌더링 창](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm)이 시작하고, 렌더링이 진행됩니다. Flamingo는 렌더링된 이미지를 단계별로 업데이트하는 다중 패스 시스템입니다. Flamingo는 우선 내부 모델에 어떤 변화가 있는지 확인하고, 초기화 프로세스를 시작합니다. 이 프로세스는 몇 초에서 몇 분까지 소요될 수 있습니다. 이 시간 동안 모델을 가져오고, 하드 드라이브에서 재질 비트맵을 수집하며, 렌더링 이미지 버퍼가 생성됩니다. 이 프로세스에는 몇 가지 중요 단계가 있습니다.
 
->[다중 패스 렌더링](#multi-pass)
->[렌더링 중지](#stop-render)
->[이미지 조정](#adjusting)
->[이미지 저장](#saving)
+1. [다중 패스 렌더링](#multi-pass)
+1. [렌더링 중지](#stop-render)
+1. [이미지 조정](#adjusting)
+1. [이미지 저장](#saving)
 
 ### 다중 패스 렌더링
 {: #multi-pass}
@@ -23,22 +23,22 @@ Flamingo nXt는 완전히 새로운 렌더링 엔진입니다. 다중 패스 구
 
 패스를 향상시키는 효과 중 일부는 다음과 같습니다:
 
->조명 (전역 발광을 사용할 때)
->부드러운 그림자
->반사 (흐림)
->굴절
->앤티앨리어싱
->피사계 심도(DOF)
+* 조명 (전역 발광을 사용할 때)
+* 부드러운 그림자
+* 반사 (흐림)
+* 굴절
+* 앤티앨리어싱
+* 피사계 심도 (DOF)
 
 ### 렌더링을 중단할 때
 {: #stop-render}
 렌더링을 중단하는 방법에는 몇 가지가 있습니다:
 
-![images/close-x.png](images/close-x.png) 렌더링 창의 오른쪽 위에 있는 “X” 단추를 클릭하여 곧바로 렌더링을 중지하고 렌더링 창을 닫습니다. 모델을 변경하기 위해 편집 모드로 금방 돌아오기에 가장 좋은 방법입니다.
+![images/close-x.png](images/close-x.png){: .inline} 렌더링 창의 오른쪽 위에 있는 “X” 단추를 클릭하여 곧바로 렌더링을 중지하고 렌더링 창을 닫습니다. 모델을 변경하기 위해 편집 모드로 금방 돌아오기에 가장 좋은 방법입니다.
 
-![images/stop.png](images/stop.png) 광선 추적 중지 단추를 클릭하여 현재 패스의 끝에 렌더링을 중지합니다. 이미지 저장 전에 사용하기 가장 좋은 방법입니다.
+![images/stop.png](images/stop.png){: .inline}  광선 추적 중지 단추를 클릭하여 현재 패스의 끝에 렌더링을 중지합니다. 이미지 저장 전에 사용하기 가장 좋은 방법입니다.
 
-![images/stop.png](images/stop.png) 광선 추적 중지를 두 번 클릭하여 즉시 렌더링을 중지하고 렌더링 창을 열린 상태로 둡니다.
+![images/stop.png](images/stop.png){: .inline}  광선 추적 중지를 두 번 클릭하여 즉시 렌더링을 중지하고 렌더링 창을 열린 상태로 둡니다.
 
 ### 렌더링 조정
 {: #adjusting}
@@ -46,16 +46,16 @@ Flamingo nXt는 완전히 새로운 렌더링 엔진입니다. 다중 패스 구
 
 이미지 조정에 사용되는 제어:
 
->[이미지 조정](#adjust-image)
->[채널](#channels)
->[후처리 효과](#post-process-effects)
+* [이미지 조정](#adjust-image)
+* [채널](#channels)
+* [후처리 효과](#post-process-effects)
 
 
 ### 이미지 저장
 {: #saving}
 이미지에 대한 계획에 따라 이미지를 저장하는 방법에는 몇 가지가 있습니다. 일반적으로 대부분의 이미지는 JPG 또는 PNG 이미지 파일 형식으로 저장하는 것을 권장합니다. 그 외에 다른 옵션이 있습니다.
 
-#### ![images/saveimageas.png](images/saveimageas.png) 이미지 저장
+#### ![images/saveimageas.png](images/saveimageas.png){: .inline} 이미지 저장
 이미지를 조정한 후 JPG 또는 PNG 이미지 파일로 저장하는 것이 보통의 작업 과정입니다.  
 
 JPG 이미지는 매우 효율적이면서 크기가 작은 파일 형식입니다. 웹 또는 이메일에 사용하기 좋은 이미지입니다. 하지만 이미지에서 일부 색이 제거되는 단점이 있습니다.
@@ -81,7 +81,7 @@ PNG은 색 정보를 100% 담고 있는 압축 형식입니다. 고화질 이미
 HDR (high-dynamic-range) 이미지 형식은 Industrial Light and Magic (ILM)에서 무료 소프트웨어 라이선스로 개발한 소프트웨어 툴과 함께 오픈 스탠다드로 릴리스되었습니다. 이 파일 형식은 1 비트 부호, 5 비트 지수(指數), 10 비트 가수(假數)로 채널당 16비트 부동 소수점 값 (절반의 정밀도: half precision)을 지원합니다.  30 스톱 노출의 동적 범위(dynamic range)가 허용됩니다. [Wikipedia 항목: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)을 참조하세요.
 exr 형식은 High Dynamic Range 형식에 있는 휘도 데이터를 직접 저장합니다. 일반 사진처럼 휘도가 없는 배경을 이러한 형식으로 저장하면 검정색으로 나타납니다.
 
-#### ![images/close-x.png](images/close-x.png) 끝내기
+#### ![images/close-x.png](images/close-x.png){: .inline} 끝내기
 렌더링 창을 닫습니다.
 
 #### 메뉴
@@ -128,7 +128,7 @@ Flamingo가 렌더링 중인 현재 패스입니다. Flamingo는 다중 패스 �
 {: #adjust-image}
 Flamingo에서 가장 중요한 제어 중 하나입니다. 카메라처럼, 이미지 노출을 조정할 수 있습니다. 렌더링을 더 밝게, 더 어둡게 하거나, 대비를 추가하고 색의 채도를 올리기에 가장 좋은 방법입니다. 이러한 조정 과정을 [톤 매핑](https://en.wikipedia.org/wiki/Tone_mapping)이라고 합니다. Flamingo는 화면과 프린터에서 표시되는 것보다 더 넓은 범위에서 색과 밝기를 다루는 휘도 공간에서 렌더링을 처리합니다. 톤 매핑은 휘도 데이터를 화면에 표시 또는 인쇄하는 빨강, 녹색, 파랑 (RGB) 픽셀로 변환하는 처리입니다. 이러한 설정은 이미지 저장 방법도 제어합니다.
 
-![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png)  ![images/tonefinals-correction.png](images/tonefinals-correction.png)
+![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png){: .inline} ![images/tonefinals-correction.png](images/tonefinals-correction.png){: .inline}
 *기본 이미지 (왼쪽). 밝기 (0.20), 번 (0.16), 채도 (1.20)로 보정한 이미지.*
 이 설정을 사용하여 다시 렌더링할 필요 없이 이미지의 밝기와 전체적인 색을 금방 조정합니다.
 
@@ -198,12 +198,12 @@ Flamingo에서 가장 중요한 제어 중 하나입니다. 카메라처럼, 이
 #### 조명 정보
 렌더링의 현재 조명 설정에 대한 정보입니다. 다음은 조명 정보 목록입니다:
 
->[기본 설정](lighting-tab.html)
->[태양](sun-and-sky-tabs.html#sun)
->[하늘](sun-and-sky-tabs.html#sky)
->[조명](lights-tab.html)
->[간접](lighting-tab.html#indirect)
->[주변광 켜기/끄기](lighting-tab.html#ambient)
+* [기본 설정](lighting-tab.html)
+* [태양](sun-and-sky-tabs.html#sun)
+* [하늘](sun-and-sky-tabs.html#sky)
+* [조명](lights-tab.html)
+* [간접](lighting-tab.html#indirect)
+* [주변광 켜기/끄기](lighting-tab.html#ambient)
 
 ## 채널
 {: #channels}
@@ -213,13 +213,13 @@ Flamingo에서 가장 중요한 제어 중 하나입니다. 카메라처럼, 이
 {: #post-process-effects}
 이미지를 렌더링한 후에 후처리 효과를 적용합니다. 후처리 효과를 켜거나 끄고, 목록에서 순서를 바꿉니다. 각 효과에는 자체적인 설정이 있습니다. 후처리 효과는 다음과 같습니다:
 
->안개
->글로우
->글레어
->피사계 심도(DOF)
->점
->커브
->아이소커브
->주석
+* 안개
+* 글로우
+* 글레어
+* 피사계 심도(DOF)
+* 점
+* 커브
+* 아이소커브
+* 주석
 
 특정 필터에 대한 자세한 정보는 [이미지 후처리](http://docs.mcneel.com/rhino/5/help/ko-kr/index.htm#information/renderwindowpostprocess.htm) 항목을 참조하세요.

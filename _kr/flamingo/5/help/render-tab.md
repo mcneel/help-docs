@@ -2,15 +2,15 @@
 title: 렌더링 옵션
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 렌더링 탭은 최종 렌더링의 주요 속성을 제어합니다. 이 탭을 사용하여 렌더링에 소요되는 시간과 화질을 제어합니다. 최종 이미지의 해상도는 전반적인 렌더링 시간에 가장 큰 영향을 미치는 요인 중 하나입니다.
 
 안내: 초안 렌더링 단계에서 렌더링 해상도를 낮게 설정하는 것이 좋습니다. 최종 렌더링일 때만 고해상도 렌더링을 사용하세요.
 
 #### Flamingo 조명 제어는 어디에 있습니까?
 
- 1. ![images/options.png](images/options.png)도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음 > 렌더링 옵션 탭
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt > 렌더링 옵션 탭
+ 1. ![images/options.png](images/options.png){: .inline} 도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 도구모음 > 렌더링 옵션 탭
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt > 렌더링 옵션 탭
 
 
 ## 렌더링할 뷰포트
@@ -40,10 +40,10 @@ Flamingo nXt 5가 렌더링하는 뷰를 설정합니다. 모델을 작업하며
 
 다음과 같은 4개의 단위 유형을 사용할 수 있습니다:
 
->픽셀
->인치
->밀리미터
->센티미터
+* 픽셀
+* 인치
+* 밀리미터
+* 센티미터
 
 #### 픽셀
 렌더링 이미지 단위를 픽셀로 설정합니다. 이 설정을 사용하여 픽셀의 수를 지정하여 최종 렌더링의 너비와 높이를 설정합니다.
@@ -89,7 +89,7 @@ Flamingo nXt 5가 렌더링하는 뷰를 설정합니다. 모델을 작업하며
 #### 단위당 픽셀
 사용자 지정 해상도를 사용할 때 이 설정을 사용하여 선택된 단위당 해상도를 제어합니다. 기본 설정된 해상도를 선택할 때 이 제어에서 현재 해상도를 표시합니다.
 
-## 피사계 심도(DOF)
+## 피사계 심도 (DOF)
 {: #depthoffieldoption}
 이 효과는 포토그래퍼의 렌즈를 흉내내는, 피사계 심도(Depth of Field) 흐림 효과를 만듭니다. 렌즈는 정확하게 하나의 거리에서만 정확하게 초점을 맞출 수 있으나, 초점 거리 주변의 선명도는 점차 떨어집니다.
 

@@ -2,7 +2,7 @@
 title: 태양과 하늘
 ---
 
-# ![imagessun.svg](images/sun.svg) {{page.title}}
+# ![imagessun.svg](images/sun.svg){: .inline} {{page.title}}
 [태양](#sun)과 [하늘](#sky)은 서로 밀접하게 연관되어 있습니다. 자동 모드에서 태양은 하늘의 밝기를 변경시킬 수 있습니다. 태양이 켜져 있고 하늘이 HDRI 일 때, 그 강도의 균형을 맞추는 것이 중요합니다.
 
 ## 태양
@@ -15,8 +15,8 @@ title: 태양과 하늘
 
 태양은 [조명 기본 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sun)에서 활성화해야 합니다.
 
-* ![images/options.png](images/options.png)도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
-* ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 태양
+* ![images/options.png](images/options.png){: .inline} 도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 도구모음
+* ![images/menuicon.png](images/menuicon.png){: .inline} 메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 태양
 
 **안내:** 조명 기본 설정에서 태양이 활성화된 경우에만 태양 탭이 표시됩니다.
 
@@ -97,18 +97,18 @@ title: 태양과 하늘
 #### Flamingo 하늘 제어는 어디에 있습니까?
 하늘은 [조명 기본 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sky)에서 활성화해야 합니다.
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
- 1. ![images/menuicon.png](images/menuicon.png)메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 하늘
+ 1. ![images/options.png](images/options.png){: .inline} 도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 도구모음
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo nXt 탭 > 하늘
 
 [실외](lighting-tab.html#exterior-daylight)와 [실내](lighting-tab.html#interior-daylight) 주광의 기본 설정에서는 기본적으로 자동 하늘을 사용합니다. [스튜디오](lighting-tab.html#studio-lighting) 조명 기본 설정에서는 HDR 이미지 조명을 기본적으로 사용합니다.
 
 하늘은 다음의 5가지 방법으로 설정할 수 있습니다:
 
->[끄기](lighting-tab.html#off)
->[자동 하늘](#automatic-sky)
->[하이 다이내믹 레인지 (HDRI)](#high-dynamic-range-image-sky)
->[색](#color-sky)
->[이미지](#image-sky)
+* [끄기](lighting-tab.html#off)
+* [자동 하늘](#automatic-sky)
+* [하이 다이내믹 레인지 (HDRI)](#high-dynamic-range-image-sky)
+* [색](#color-sky)
+* [이미지](#image-sky)
 
 천공광(天空光)에 사용하는 가장 좋은 두 가지 설정은 [HDR 이미지](#high-dynamic-range-image-sky) 하늘과 [자동 하늘](#automatic-sky)입니다. HDR 이미지 하늘은 빛과 반사를 나타내도록 각 픽셀에 저장된 라이트밸류(Light Value)가 있는 이미지를 사용합니다. 자동 하늘은 실제 태양 위치와 운량을 사용하여 하늘을 시뮬레이션합니다. 이 설정은 가장 생생한 렌더링을 만들어냅니다.
 
@@ -157,7 +157,7 @@ HDR 이미지 조명의 밝기를 수정합니다. 장면에 보정되어야 하
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 * 낮고 높은 HDR 강도*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}그림의 경우, 이미지가 회전되었으므로 개체에 태양이 반사되어 보입니다. 회전 각도를 입력하거나 회전 위젯 표시기에서 직접 회전을 지정합니다.
+{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} 그림의 경우, 이미지가 회전되었으므로 개체에 태양이 반사되어 보입니다. 회전 각도를 입력하거나 회전 위젯 표시기에서 직접 회전을 지정합니다.
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 * 태양이 개체에 나타나도록 이미지가 회전되었습니다.*
 

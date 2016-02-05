@@ -2,7 +2,7 @@
 title: 조명
 ---
 
-# ![images/lights-tab.png](images/lights-tab.png) {{page.title}}
+# ![images/lights-tab.png](images/lights-tab.png){: .inline} {{page.title}}
 인공 광원은 몇 가지 Flamingo 속성이 추가된 일반적인 Rhino 조명을 사용하여 배광을 제어합니다. 광원을 사용할 때 실제 램프와 가장 유사한 유형을 선택하십시오.
 
 
@@ -17,69 +17,69 @@ title: 조명
 #### Flamingo 조명 제어는 어디에 있습니까?
 [조명 미리 설정](lighting-tab.html#lighting-presets) 또는 [사용자 지정 조명 설정](lighting-tab.html#sun)에서 조명 탭이 활성화된 경우, 조명 탭을 다음 위치에서 찾을 수 있습니다:
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt 도구모음
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo 탭 > 조명
+ 1. ![images/options.png](images/options.png){: .inline} 도구모음 >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 도구모음
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 메뉴 > Flamingo nXt 5.0 메뉴 > 제어 패널 표시 > Flamingo 탭 > 조명
 
 조명 탭에서 조명을 삽입, 켜기/끄기, 각 조명의 채널과 강도를 변경할 수 있습니다.
 
 Flamingo는 다음과 같은 조명 유형을 지원합니다:
 
-> [개체를 조명으로 태그](#tag-objects-as-lights)
-> [집중 조명](#spotlight)
-> [점 조명](#pointlight)
-> [직사각형 조명](#rectangularlight)
-> [선형 조명](#linearlight)
+* [개체를 조명으로 태그](#tag-objects-as-lights)
+* [집중 조명](#spotlight)
+* [점 조명](#pointlight)
+* [직사각형 조명](#rectangularlight)
+* [선형 조명](#linearlight)
 
-**안내:** Rhino 방향 조명 ![images/directionallightbutton.png](images/directionallightbutton.png) 은 지원되지 않습니다. 방향 조명은 조명 목록에 표시되지 않으며, Flamingo nXt 속성을 지정할 수 없습니다.
+**안내:** Rhino 방향 조명 ![images/directionallightbutton.png](images/directionallightbutton.png){: .inline} 은 지원되지 않습니다. 방향 조명은 조명 목록에 표시되지 않으며, Flamingo nXt 속성을 지정할 수 없습니다.
 
 일부 조명 속성은 조명 탭 테이블에 표시되므로 간단하게 공통 속성을 편집할 수 있습니다.
 
 테이블에 포함된 속성:
 
- >[켜기/끄기](#on)
- >[이름](#name)
- >[배광](#light-distribution)
- >[조준](#aim-light)
- >[와트](#watts)
- >[채널](#channel)
+* [켜기/끄기](#on)
+* [이름](#name)
+* [배광](#light-distribution)
+* [조준](#aim-light)
+* [와트](#watts)
+* [채널](#channel)
 
 조명 탭 테이블을 오른쪽 클릭하여 [추가 옵션](#additional-options) 메뉴를 엽니다.
 
-조명을 클릭하거나 [개체 속성 패널](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/properties.htm)의 조명 속성 아이콘 ![images/spotlightbutton.png](images/spotlightbutton.png) 을 클릭하여 [조명 속성](#light-properties)에 액세스합니다.
+조명을 클릭하거나 [개체 속성 패널](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/properties.htm)의 조명 속성 아이콘 ![images/spotlightbutton.png](images/spotlightbutton.png){: .inline} 을 클릭하여 [조명 속성](#light-properties)에 액세스합니다.
 
 ## 조명 유형
 {: #light-types}
 Rhino 도구모음 또는 Flamingo 조명 탭을 통해 조명을 삽입할 수 있습니다. 개체는 Flamingo에서 조명으로 태그할 수 있습니다.
 
-#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png) 개체를 조명으로 태그
+#### ![images/tagobjectsaslights.png](images/tagobjectsaslights.png){: .inline} 개체를 조명으로 태그
 {: #tag-objects-as-lights}
 서피스, 솔리드를 비롯해 렌더링 가능한 개체는 광원으로 태그하여 조명의 속성을 부여할 수 있습니다. [배광](#light-distribution), [방향](#aim-light), [세기](#watts)도 적용할 수 있습니다. 조명으로 태그된 개체는 조명의 방향과 중심 위치를 나타내는 미리보기 위젯을 표시할 수 있습니다.
 
 ![images/tag-object-as-light-r85.png](images/tag-object-as-light-r85.png)
 *광원으로 태그된 LED 라이트와 헤드라이트*
 
-#### ![images/spotlight-01.png](images/spotlight-01.png) 집중 조명
+#### ![images/spotlight-01.png](images/spotlight-01.png){: .inline} 집중 조명
 {: #spotlight}
 집중 조명은 특정 방향을 향해 원뿔 형태도 배광됩니다. 조명 속성에는 [소스 반지름](#radius), [빔 각도](#beam-angle), 폴오프 반지름, 방향이 포함됩니다. 소스 반지름이 클수록 빛으로 인한 그림자는 더 부드러워집니다. 기본적으로, 조명 위치에 디스크가 보입니다. 그립을 사용하여 위치, 방향, 화면에서의 빔 각도를 편집하는 방법에 대한 정보는 [Rhinoceros 집중 조명](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/spotlight.htm) 도움말 항목을 참조하세요.
 
 ![images/spotlight.png](images/spotlight.png)
 * 빨간 상자를 향하는 집중 조명*
 
-#### ![images/pointlight-01.png](images/pointlight-01.png) 점 조명
+#### ![images/pointlight-01.png](images/pointlight-01.png){: .inline} 점 조명
 {: #pointlight}
 점 조명은 조명을 모든 방향으로 균일하게 배광하는 작은 구입니다. 이 조명의 조명 속성에는 [소스 반지름](#radius)이 포함됩니다. 반지름이 클수록 빛으로 인한 그림자가 부드러워집니다. 기본적으로 렌더링할 때 조명 위치에 조명 구가 보입니다. 조명과 교차하는 개체가 점 조명을 일부 가리는 경우, 흔치 않은 효과가 발생할 수 있습니다.
 
 ![images/pointlight.png](images/pointlight.png)
 * 오른쪽 벽에 가까운 작은 점 조명*
 
-#### ![images/rectangularlight-01.png](images/rectangularlight-01.png) 직사각형 조명
+#### ![images/rectangularlight-01.png](images/rectangularlight-01.png){: .inline} 직사각형 조명
 {: #rectangularlight}
 산광기(디퓨저) 또는 칸막이(배플)를 사용한 매입등과 유사하게 표현됩니다. 직사각형 방향을 기준으로, 조명을 산광 패턴으로 배광합니다. 조명의 중심점에 방향을 나타내는 화살표가 표시됩니다. 빛의 강도는 직사각형의 정면에서 최대치를 나타내고, 직사각형에서 개체로의 각도에 따라 빛이 감소합니다. 기본적으로 렌더링할 때 하얀 직사각형이 보입니다. 이러한 직사각형을 천장 평면과 완전히 동일한 높이로 삽입하는 실수가 일반적입니다. 일정한 결과를 얻기 위해, 조명을 천장보다 약간 아래에 배치해야 합니다. 그립을 사용하여 화면에서 위치, 방향, 빔 각도를 편집하는 방법은 [Rhinoceros 직사각형 조명](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/rectangularlight.htm) 도움말을 참조하세요.
 
 ![images/rectangular light.png](images/rectangular light.png)
 *천장 바로 아래의 직사각형 조명*
 
-#### ![images/linearlight-01.png](images/linearlight-01.png) 선형 조명
+#### ![images/linearlight-01.png](images/linearlight-01.png){: .inline} 선형 조명
 {: #linearlight}
 형광등과 같은 원통형 패턴으로 조명을 배광합니다. 이 조명의 속성에는 [소스 반지름](#radius)과 길이가 포함됩니다. 반지름이 클수록 빛으로 인한 그림자가 부드러워집니다. 기본적으로 렌더링할 때 조명 위치에 조명 원통이 보입니다. 조명과 교차하는 개체가 원통 조명을 일부 가리는 경우, 흔치 않은 효과가 발생할 수 있습니다. 화면에서 편집하려면 Rhino 제어점을 사용하여 조명의 그립을 활성화합니다.
 
@@ -93,7 +93,7 @@ Flamingo가 Rhino의 현재 렌더링 응용 프로그램일 때, 조명에 추�
 {: #name}
 조명 개체의 이름입니다. 모델에 동일한 유형의 조명이 있을 때 이름을 지정하면 구분하기 쉽니다.
 
-#### ![images/lightbulbon.png](images/lightbulbon.png) 켜기/끄기
+#### ![images/lightbulbon.png](images/lightbulbon.png){: .inline} 켜기/끄기
 {: #on}
 조명을 켜거나 끕니다. 조명 테이블에서 전구 아이콘이 노란색이면 해당 조명이 켜져 있음을 뜻합니다. 전구가 회색이면 해당 조명을 렌더링에서 꺼져 있습니다. 아이콘을 두 번 클릭하여 켜기/끄기 상태를 전환합니다. 속성 대화상자에 켜기/끄기 확인란이 있습니다.
 

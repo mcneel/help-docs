@@ -3,7 +3,7 @@ title: 옵션 Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 이 설정은 Flamingo 응용 프로그램에 적용됩니다. 이 설정을 변경하면 Flamingo를 실행할 때마다 항상 적용됩니다.
 
 {: #default-decal-link-state}
@@ -11,7 +11,7 @@ title: 옵션 Flamingo nXt
 
 #### 팜 공유 폴더
 {: #farm-output-folder}
-렌더 팜 작업에서 공유하는 폴더입니다. 팜에서 결과물을 출력하는 위치이기도 합니다. 폴더 아이콘 ![images/folderopen32x32.png](images/folderopen32x32.png)을 사용하여 새 위치를 선택합니다.
+렌더 팜 작업에서 공유하는 폴더입니다. 팜에서 결과물을 출력하는 위치이기도 합니다. 폴더 아이콘 ![images/folderopen32x32.png](images/folderopen32x32.png){: .inline} 을 사용하여 새 위치를 선택합니다.
 
 #### 태그된 조명 표시
 이 속성을 사용하여 태그된 조명의 방향을 표시합니다. 집중 및 확산 배광에서 실행됩니다.

@@ -2,7 +2,7 @@
 title: 색 선택기
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 색 선택기는 많은 재질 그룹과 속성에 사용됩니다. 모든 경우에 유사한 방법으로 실행됩니다.
 
 
@@ -13,7 +13,7 @@ title: 색 선택기
 1. [색 견본](#swatch) - 메인 색 선택기의 색을 클릭합니다.
 1. [옵션 메뉴](#options) - 추가 색 유틸리티의 화살표를 클릭합니다.
 
-## 색 견본 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## 색 견본 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg){: .inline}
 {: #swatch}
 색 견본을 클릭하여 색 선택 대화상자에서 색을 선택합니다.
 
@@ -34,7 +34,7 @@ title: 색 선택기
 {: #rgb}
 이 방법은 컴퓨터에서 화면상에 색상을 투영하기 위해 사용됩니다. 세 가지 색상의 각 픽셀의 강도는 서로 다릅니다. 순수한 빨강은 초록색이나 파란색이 섞이지 않고 완전히 빨간색으로만 이루어져 있습니다. 순수한 검정색은 빨강, 초록, 파랑이 모두 0으로 설정되어 있으며, 순수한 흰색은 빨강, 초록, 파랑의 값이 255로 설정되어 있습니다.
 
-## 메뉴 옵션 ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## 메뉴 옵션 ![images/callout-2-vertical.svg](images/callout-2-vertical.svg){: .inline} 
 {: #options}
 
 #### 색 선택

@@ -2,7 +2,7 @@
 title: Flamingo 환경
 ---
 
-# ![images/environment.svg](images/environment.svg) {{page.title}}
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
 [Rhino에는 다양한 유형의 환경](http://docs.mcneel.com/rhino/5/help/ko-kr/commands/environmenteditor.htm)이 있습니다. 이 항목에서는 Flamingo 환경 유형에 대해 설명합니다.
 
 환경은 배경에서 보이는 부분과 반사에 영향을 미칩니다. 장면의 조명에 영향을 미치는 효과에 대한 자세한 정보는 [하늘](sun-and-sky-tabs.html) 도움말 항목을 참조하세요.
@@ -11,10 +11,10 @@ Flamingo에는 특별한 환경인 **기본 Flamingo 환경**이 있습니다. �
 
 Flamingo 환경의 속성 그룹은 다음과 같습니다
 
-> [이름](#name)
-> [Flamingo 환경](#environment)
-> [배경색](#color-backgrounds)
-> [고급 배경](#advanced-background-reflected-sky)
+  * [이름](#name)
+  * [Flamingo 환경](#environment)
+  * [배경색](#color-backgrounds)
+  * [고급 배경](#advanced-background-reflected-sky)
 
 
 ## 환경 이름
@@ -25,9 +25,9 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 {: #environment}
 렌더링에서 환경은 세 가지 측면에서 크게 영향을 미칩니다:
 
->보이는 배경
->[반사된 배경](#advanced-background-reflected-sky)
->[굴절된 배경](#advanced-background-refracted-sky)
+  1. 보이는 배경
+  1. [반사된 배경](#advanced-background-reflected-sky)
+  1. [굴절된 배경](#advanced-background-refracted-sky)
 
 보이는 배경이 장면의 기본 배경입니다. 보이는 배경은 일반 속성 패널에 있습니다. [반사](#advanced-background-reflected-sky)와 [굴절](#advanced-background-refracted-sky) 배경은 서로 다를 수 있으며, 고급 배경 섹션에서 사용할 수 있습니다.
 
@@ -39,10 +39,10 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 {: #background-type}
 렌더링 이미지에서 배경을 채울 색 구성표를 지정합니다. 배경의 유형은 다음과 같습니다:
 
-> [하늘](#environment-sky)
-> [단색과 그라데이션](#color-backgrounds)
-> [이미지](#environment-image)
-> [HDR과 평면형 HDR 이미지](#hdr-background)
+* [하늘](#environment-sky)
+* [단색과 그라데이션 색](#color-backgrounds)
+* [이미지](#environment-image)
+* [HDR과 평면형 HDR 이미지](#hdr-background)
 
 ## 하늘 배경
 {: #environment-sky}
@@ -129,9 +129,9 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 {: #backgroud-image-projection}
 드롭 다운 제어에서 세 개의 이미지 투영 중 하나를 선택합니다:
 
->[평면형](#planar)
->[원통형](#cylindrical)
->[구형태](#spherical)
+* [평면형](#planar)
+* [원통형](#cylindrical)
+* [구형태](#spherical)
 
 각 투영 방식에는 이미지의 위치를 제어하는 설정이 각각 있습니다.
 
@@ -163,6 +163,7 @@ Rhino 모델의 환경 이름입니다. 환경은 Rhino 모델에 저장됩니�
 *현재 뷰포트 영역 (1), 이미지 크기와 형태 (2).*
 
 <!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
+
 #### X 방향 크기 / Y 방향 크기
 뷰 너비와 높이의 0 ~1.0 비율로 배경 이미지의 크기를 지정합니다. 예를 들어, 1.0 값은 뷰 크기의 100%이고, 0.5 값은 뷰 너비의 50%를 나타냅니다.
 
