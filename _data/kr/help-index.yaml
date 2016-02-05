@@ -35,9 +35,7 @@ main_index:
         - name: 재질 이미지 속성
           path: material-image-properties.html
         - name: 절차적 재질 유형
-          path: procedural-materials.html
-        - name: 텍스처 세트 재질
-          path: texture-set-materials.html
+          path: procedural-materials.htmll
         - name: 색 선택기
           path: select-color.html
 
