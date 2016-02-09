@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di illuminazione predefinite
+title: Impostazioni predefinite
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
@@ -24,7 +24,7 @@ Nella fase di illuminazione di un modello, si consiglia di:
 
 Per migliorare le tecniche di illuminazione, occorre prestare attenzione alla luce e valutare in che modo essa influisce sulle varie superfici. I materiali possono mascherare gli effetti di ombre e riflessioni, per cui alcuni esperti in rendering preferiscono applicare l'illuminazione ai modelli prima di applicare i materiali. Occorre cercare di osservare la luce in modo obiettivo, così come lo fa una fotocamera.
 
-## Impostazioni di illuminazione predefinite
+## Impostazioni predefinite
 {: #lighting-presets}
 Un buon punto di partenza per l'illuminazione è rappresentato dalle impostazioni di illuminazione predefinite, le quali corrispondono a situazioni di illuminazione reali. Flamingo nXt fornisce alcune impostazioni di illuminazione predefinite che vi possono aiutare a prendere dimestichezza nell'applicazione dell'illuminazione. Anche se sono disponibili molte altre opzioni di illuminazione, le impostazioni predefinite risultano spesso sufficienti per molti rendering. Si selezioni di volta in volta lo schema predefinito che più si avvicina al tipo di scena che si desidera modellare.
 
