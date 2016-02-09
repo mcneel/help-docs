@@ -36,8 +36,6 @@ main_index:
           path: material-image-properties.html
         - name: Tipi di materiali procedurali
           path: procedural-materials.html
-        - name: Materiali "Set di texture"
-          path: texture-set-materials.html
         - name: Selettore dei colori
           path: select-color.html
 
@@ -102,7 +100,7 @@ main_index:
         - name: Piante
           path: plants.html
         - name: Editor delle piante
-          path: tree-editor.html
+          path: plant-editor.html
 
     - name: Rendering in rete (Farm)
       anchor: farm
@@ -124,6 +122,8 @@ main_index:
           path: documentproperties-flamingo.html
         - name: Opzioni di Flamingo nXt
           path: options-flamingo.html
+        - name: Editor delle immagini
+          path: image-editor.html
         - name: Finestra RealTime
           path: realtime.html
         - name: Elenco dei comandi di Flamingo
