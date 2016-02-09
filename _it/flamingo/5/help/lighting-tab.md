@@ -63,7 +63,7 @@ Le luci possono simulare anche l'illuminazione di scenari paesaggistici. Si usin
 
 Anche le viste esplose, le sezioni ed i disegni assonometrici dall'alto richiedono una speciale attenzione, non essendo sempre evidente se si tratta di spazi interni od esterni. La decisione da prendere dipende dai risultati desiderati. Se si vuole renderizzare velocemente una scena esterna, si usi la modalità di rendering per esterni. Se questa modalità non produce delle immagini sufficientemente interessanti, si provi ad usare il rendering per interni. In questo modo, la scena diventa più interessante, anche se si impiegherà più tempo per impostare l'illuminazione.
 
-### Interior daylight
+### Luce diurna interno
 {: #interior-daylight .clear-img}
 Questo schema simula un interno illuminato da luce naturale.
 
