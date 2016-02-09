@@ -11,7 +11,7 @@ This tutorial shows how to render a standard Rhino model using nXt. The Tutorial
 1. Editing materials
 1. Adding a ground plane
 
-The first step is to download and unzip the tutorial files. To download the zip file, click on the [Fishing Reel.zip](files/nxt5%20fishing.zip) link. Unzip these files into their own folder somewhere memorable on your computer. Open the Fishing Reel.3dm file in Rhino. Check that Flamingo nXt is the current renderer in the render drop down menu.
+The first step is to download and unzip the tutorial files. To download the zip file, click on the [Fishing Reel.zip](files/Mulinello.zip) link. Unzip these files into their own folder somewhere memorable on your computer. Open the Fishing Reel.3dm file in Rhino. Check that Flamingo nXt is the current renderer in the render drop down menu.
 
 ## Check the current render engine
 {: #check-current}
