@@ -3,7 +3,7 @@ title: Guida introduttiva a Flamingo
 ---
 <!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
 
-# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} Guida introduttiva a Flamingo nXtÂ®
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} Guida introduttiva a Flamingo nXt®
 Flamingo nXt genera immagini ed animazioni fotorealistiche di alta qualità a partire da modelli 3D all'interno di Rhinoceros Â®. Flamingo nXt 5 è un aggiornamento di Flamingo che si integra con le funzionalità di rendering predefinite di Rhino 5. Attualmente è in fase WIP (work in progress).
 
 Scaricate ed installate Flamingo da qui: [Download di Flamingo nXt 5](http://www.rhino3d.com/download/flamingo/5/beta).
