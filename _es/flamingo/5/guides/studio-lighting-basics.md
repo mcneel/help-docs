@@ -3,7 +3,7 @@
 <!-- TODO: Make sure to update this page and get working in the guides section of the documentation. -->
 
 # Conceptos básicos sobre iluminación de estudio
-{: #studio-lighting-bascis}
+{: #studio-lighting-basics}
 La iluminación de estudio debe ser definida de manera similar a la que se da en un estudio de fotografía. Para obtener mayor control, utilice fuentes de luz para iluminar la escena.
 ![images/lighting-001.png](images/lighting-001.png)
 Al iluminar una configuración de estudio, es importante una iluminación portentosa. Se puede crear una iluminación portentosa agregando mucho contraste. Las áreas oscuras son tan importantes como las áreas claras. Este tipo de iluminación requiere un número de fuentes de luz ubicadas de una manera que produzcan unas áreas muy claras y otras muy oscuras.
