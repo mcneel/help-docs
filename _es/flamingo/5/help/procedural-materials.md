@@ -1,19 +1,19 @@
 ---
+title: Materiales algorítmicos
 ---
 
-#  ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Materiales algorítmicos
-El árbol de Materiales algorítmicos combina uno o más materiales utilizando un conjunto de reglas para definir la interacción de los materiales. El árbol muestra los componentes que se usan para crear el material y permite añadir otros componentes. Para materiales simples, en la lista sólo habrá un componente: Base.
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
+#  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
+El árbol de Materiales algorítmicos combina uno o más materiales utilizando un conjunto de reglas para definir la interacción de los materiales. El árbol muestra los componentes que se usan para crear el material y permite añadir otros componentes. Para materiales simples, en la lista solo habrá un componente: Base.
 
 Cada componente combina dos materiales "secundarios" utilizando un método específico. Cada uno de los materiales secundarios puede, a su vez, estar formado por un componente, combinando dos materiales secundarios propios. De este modo, se pueden crear materiales sumamente elaborados a partir de elementos más simples. Los materiales algorítmico para combinar son:
 
-> [Base](#base)
-> [Mezcla angular](#angular-blend)
-> [Mezcla ](#blend)
-> [Mármol](#marble)
-> [Granito](#granite)
-> [Loseta](#tile)
-> [Madera](#wood)
+* [Base](#base)
+* [Mezcla angular](#angular-blend)
+* [Mezcla ](#blend)
+* [Mármol](#marble)
+* [Granito](#granite)
+* [Loseta](#tile)
+* [Madera](#wood)
 
 ##### Para agregar un material algorítmico
 1. Haga clic con el botón derecho en cualquier parte de la ventana Material algorítmico.
@@ -47,8 +47,9 @@ Desde el Ángulo final hasta 90 grados de la vista, el componente Exterior será
 Ángulo desde el punto de vista donde termina el material del componente Exterior.
 Entre el Ángulo inicial y el Ángulo final, los componentes Interior y Exterior se mezclan.
 
-En la siguiente ilustración, el Ángulo inicial![images/01.png](images/01.png) es de 30 grados (que en el renderizado se traduce al círculo verde de la derecha) y el Ángulo final![images/01.png](images/01.png) es de 60 grados (que en el renderizado se traduce al círculo rojo).
-La imagen de la izquierda muestra el material interior en blanco y el material exterior en negro.
+En la siguiente ilustración, el Ángulo inicial![images/01.png](images/01.png){: .inline} es de 30 grados (que en el renderizado se traduce al círculo verde de la derecha) y el Ángulo final![images/02.png](images/02.png){: .inline} es de 60 grados (que en el renderizado se traduce al círculo rojo).
+
+La imagen de la derecha muestra el material interior en blanco y el material exterior en negro.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
@@ -63,12 +64,11 @@ El componente de Mezcla combina dos componentes base y controla las proporciones
 Las mezclas son adecuadas para cambiar toda la definición de un material añadiendo un color a un material base estampado.
 
 #### Mezclar
-Varía la porcentaje de cada material del componente usado en el material final.  Por ejemplo, el material siguiente muestra una mezcla entre el material rayado y el color verde sólido. La imagen de la izquierda muestra el control deslizante hacia la izquierda, con un material rayado y un verde suave.  La imagen central muestra el control deslizante en el medio, con un 50% de rayado intenso y un 50% de color verde mezclado.  La imagen de la derecha muestra un material rayado suave con un material verde intenso, por lo que el control deslizante está a la derecha del control deslizante de Mezcla.
+Varía la porcentaje de cada material del componente usado en el material final. Por ejemplo, el material siguiente muestra una mezcla entre el material rayado y el color verde sólido. La imagen de la izquierda muestra el control deslizante hacia la izquierda, con un material rayado y un verde suave.  La imagen central muestra el control deslizante en el medio, con un 50% de rayado intenso y un 50% de color verde mezclados.  La imagen de la izquierda muestra el control deslizante hacia la derecha, con un material rayado suave y un material verde intenso.
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### Usar imagen
-Las imágenes bitmap formadas normalmente por patrones en escala de grises definen el lugar en que se mostrarán dos materiales de componentes. Los materiales se mezclan por el valor de los píxeles grises de la imagen. Utilice un mapa de imagen con escala de grises para mediar entre los componentes primero y segundo. El componente Primero se colocará donde haya negro en el patrón bitmap y el componente Segundo se colocará donde haya blanco.
-<!--TODO: The first sentence needs work. -->
+Una imagen se puede utilizar para controlar cómo interactúan dos materiales. Cuando se utiliza una imagen bitmap, los valores de escala de grises de los píxeles definen dónde se mezclarán los dos materiales. Utilice un mapa de imagen con escala de grises para mediar entre los componentes primero y segundo. El componente Primero se colocará donde haya negro en el patrón bitmap y el componente Segundo se colocará donde haya blanco.
 
 En la imagen, se utilizan los mismos materiales para los componentes primero y segundo, pero la mezcla se controla mediante tres bitmaps diferentes.
 ![images/blendmask.png](images/blendmask.png)
@@ -81,7 +81,7 @@ Si la imagen tiene un canal alfa, puede utilizarse en lugar de la escala de gris
 El material Primero se colocará donde haya blanco en el patrón bitmap, y el material Segundo se colocará donde haya negro.
 
 #### Mosaico
-La escala del material es independiente de la resolución del bitmap usado para definirla. Para escalar el material correctamente, decida el tamaño de área en unidades reales que representa una copia del bitmap. Si el bitmap representa la altura de seis losetas de 4 unidades y la longitud representa doce losetas de 4 unidades, la escala sería de 48 unidades en la dirección X, y de 24 unidades en la dirección Y. De este modo se expande el bitmap al tamaño correcto del patrón.
+La escala del material es independiente de la resolución del bitmap usado para definirla. Para escalar el material correctamente, decida el tamaño de área en unidades reales que representa una copia del bitmap. Si el bitmap representa la altura de seis losetas de 4 unidades y la longitud representa doce losetas de 4 unidades, la escala es de 48 unidades en la dirección X, y de 24 unidades en la dirección Y. De este modo se expande el bitmap al tamaño correcto del patrón.
 
 #### Anchura
 Anchura en píxeles de una instancia de la imagen.
@@ -113,7 +113,7 @@ Crea trozos alternos de componentes Base y Veta. El material algorítmico de má
 
 El [mapeado](properties-object.html#mapping) de textura  de los objetos controla la orientación del material en el objeto.
 ![images/materialunmapped.png](images/materialunmapped.png)
-Sin mapeado de textura (izquierda). Con mapeado de textura (derecha).
+*Sin mapeado de textura (izquierda). Con mapeado de textura (derecha).*
 
 #### Base/Veta
 Los componentes Base y Veta son dos materiales. Sus propiedades se especifican del mismo modo que cualquier otro material.
@@ -125,11 +125,11 @@ Modifica el tamaño relativo de las losas. La Anchura de veta es una fracción d
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-Revestimiento (izquierda); normal (derecha).
+*Revestimiento (izquierda); normal (derecha).*
 
 ## Mosaico
 {: #tile}
-El mosaico es un material 2D. El [mapeado de textura](properties-object.html#mapping) de los objetos controla la orientación del material en el objeto. El material Mosaico combina el componente Base y el componente Junta. Cada uno de estos materiales puede incluir también otros materiales.
+El mosaico es un material 2D. El [mapeado](properties-object.html#mapping) de textura  de los objetos controla la orientación del material en el objeto. El material Mosaico combina el componente Base y el componente Junta. Cada uno de estos materiales puede incluir también otros materiales.
 ![images/tile materials.png](images/tile materials.png)
 Es posible escalar el mosaico de manera diferente en cada dirección para obtener efectos especiales. Por ejemplo, utilice un material de mosaico que sea muy largo en una dirección para crear materiales tipo listones.
 

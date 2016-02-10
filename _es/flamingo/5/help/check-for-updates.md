@@ -1,7 +1,8 @@
 ---
+title: Buscar actualizaciones
 ---
 
-# Buscar actualizaciones
+# {{page.title}}
 Se trata de una comprobación automatizada de la versión actual de Flamingo nXt 5.0.
 
 #### Estado de actualización actual

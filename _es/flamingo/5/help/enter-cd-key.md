@@ -1,7 +1,8 @@
 ---
+title: Introducir el código del CD
 ---
 
-<!-- TODO: Do we need and install page with CD key stuff?  Currently this is not listed on the index page. -->
+<!-- This page is not used at this time.  We will see if we need it in the future. -->
 
-# Introducir el código del CD
+# {{page.title}}
 Flamingo se puede instalar como nodo de red (licencia obtenida del [Zoo](http://www.rhino3d.com/zoo.htm) ) o como nodo independiente (licencia guardada localmente).

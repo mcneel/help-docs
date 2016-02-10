@@ -1,15 +1,16 @@
 ---
+title: Propiedades de documento de Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg){:height="75px" width="75px"} Propiedades de documento: Flamingo nXt
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 Esta configuración se aplica únicamente al modelo actual. Existe una interrelación entre el tiempo necesario para completar el renderizado y la calidad deseada.
 
 #### ¿Dónde puedo encontrar este comando?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)Barras de herramientas de Herramientas de renderizado > ![images/environments.png](images/environments.png) Editor de materiales
- 1. ![images/menuicon.png](images/menuicon.png)Menús > Renderizado > Editor de entornos
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} Barras de herramientas de Herramientas de renderizado > ![images/environments.png](images/environments.png) Editor de materiales
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menús > Renderizado > Editor de entornos
  1. Comando > EditorDeEntorno
 
 ## Materiales
@@ -30,7 +31,7 @@ Los materiales que tengan cualquier nivel de brillo se iluminarán, pero no los 
 
 ## Rebotes
 {: #bounces}
-Cuando un rayo entra en una escena, rebotará varias veces antes de ser eliminado.  Si se limita el número de rebotes, el renderizado es mucho más rápido. Pero si los límites son demasiado bajos, los efectos pueden desaparecer o verse de color negro. Estos valores predeterminados sirven para la mayoría de renderizados, pero en ciertos casos puede ser necesario modificarlos. 
+Cuando un rayo entra en una escena, rebotará varias veces antes de ser eliminado.  Si se limita el número de rebotes, el renderizado es mucho más rápido. Pero si los límites son demasiado bajos, los efectos pueden desaparecer o verse de color negro.  Estos valores predeterminados sirven para la mayoría de renderizados, pero en ciertos casos puede ser necesario modificarlos.
 
 #### Reflectante
 {: #reflective-bounces}
