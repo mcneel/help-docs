@@ -1,5 +1,5 @@
 ---
-title: レンダリングの自動化
+title: レンダリングの自動化test
 ---
 
 # {{page.title}}
