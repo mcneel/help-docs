@@ -11,7 +11,7 @@ Questo tutorial mostra come renderizzare un modello standard di Rhino usando nXt
 1. Modifica dei materiali
 1. Aggiunta di un piano d'appoggio
 
-Prima di tutto, occorre scaricare e decomprimere i file del tutorial. Per scaricare il file zip, cliccare sul link [Mulinello.zip](files/nxt5%20fishing.zip). Decomprimere i file nella loro cartella. Aprire il file Mulinello.3dm con Rhino. Verificare che Flamingo nXt sia impostato come modulo di rendering corrente nella relativa opzione del menu di rendering.
+Prima di tutto, occorre scaricare e decomprimere i file del tutorial. Per scaricare il file zip, cliccare sul link [Mulinello.zip](files/Mulinello.zip). Decomprimere i file nella loro cartella. Aprire il file Mulinello.3dm con Rhino. Verificare che Flamingo nXt sia impostato come modulo di rendering corrente nella relativa opzione del menu di rendering.
 
 ## Verificare il motore di rendering corrente
 {: #check-current}
