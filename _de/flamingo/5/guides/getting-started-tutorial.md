@@ -11,7 +11,7 @@ In diesem Tutorial wird das Rendern eines Rhino-Modells mit Flamingo nXt behande
 1. Bearbeiten der Materialien
 1. Hinzufügen einer Grundebene
 
-Laden Sie sich als erstes die Tutorial-Dateien herunter und entpacken Sie das Archiv. Alle erforderlichen Dateien sind im ZIP-Ordner [Fishing Reel.zip](files/nxt5%20fishing.zip) enthalten. Entpacken Sie die Dateien in einen Ordner Ihres Computers, den Sie sich gut merken können. Öffnen Sie die Datei *Fishing Reel.3dm* mit Rhino. Stellen Sie sicher, dass Flamingo nXt als die aktuelle Render Engine eingestellt ist.
+Laden Sie sich als erstes die Tutorial-Dateien herunter und entpacken Sie das Archiv. Alle erforderlichen Dateien sind im ZIP-Ordner [Angelrolle.zip](files/Angelrolle.zip) enthalten. Entpacken Sie die Dateien in einen Ordner Ihres Computers, den Sie sich gut merken können. Öffnen Sie die Datei *Angelrolle.3dm* mit Rhino. Stellen Sie sicher, dass Flamingo nXt als die aktuelle Render Engine eingestellt ist.
 
 ## Flamingo nXt 5 als aktuelle Render Engine einstellen
 {: #check-current}
@@ -47,22 +47,22 @@ Eine Grundbeleuchtung ist bereits in Flamingo nXt integriert, sodass die Einrich
   ![images/getting_started002.png](images/getting_started002.png)
   1. Wechseln Sie in den Ordner Flamingo-Materialien > Metalle.
   ![images/getting_started003.png](images/getting_started004.png){: .wide-img}
-  1. Ziehen Sie ein Chrommaterial mittels Drag&Drop auf die Ebenen *Handle* und *Metal Parts*.
-  1. Rendern Sie das Modell. Die Teile auf den Ebenen *Handle* und *Metal Parts* werden nun mit einem Chromfinish gerendert.
+  1. Ziehen Sie ein Chrommaterial mittels Drag&Drop auf die Ebenen *Kurbel* und *Metallteile*.
+  1. Rendern Sie das Modell. Die Teile auf den Ebenen *Kurbel* und *Metallteile* werden nun mit einem Chromfinish gerendert.
   ![images/getting_started003.png](images/getting_started003.png)
   1. Weisen Sie nun die restlichen Materialien wie folgt zu:
 
  | Bibliothek | Material | Ebene |
  |:-------|:------|:------|
- | Schiffsmaterial | Schwarzer Gummi | Bushing & Washer |
- | Schiffsmaterial | Schwarzer Gummi | Grips |
- | Schiffsmaterial | Schwarzer Gummi | Rod Grips |
- | Autofarben | Autofarbe Rot | External Body |
- | Metalle > Gold | Gold Satin, Eben | Internal Body |
- | Metalle > Aluminium, Eloxiert | Aluminum, Eloxiert Rot | Spool |
- | Plastik > Schwarz > Glatt | Plastik Schwarz, Glatt | Rod |
- | Plastik > Schwarz > Glatt | Plastik Schwarz, Glatt | Rod Handle |
- | Plastik > Schwarz > Glatt | Plastik Schwarz, Glatt | Wire Guide |
+ | Schiffsmaterial | Schwarzer Gummi | Buchse und Unterlegscheibe|
+ | Schiffsmaterial | Schwarzer Gummi | Griffe |
+ | Schiffsmaterial | Schwarzer Gummi | Griffabschluss |
+ | Autofarben | Autofarbe Rot | Gehäuse außen |
+ | Metalle > Gold | Gold Satin, Eben | Gehäuse innen |
+ | Metalle > Aluminium, Eloxiert | Aluminum, Eloxiert Rot | Spule |
+ | Plastik > Schwarz > Glatt | Plastik Schwarz, Glatt | Rute |
+ | Plastik > Schwarz > Glatt | Plastik Schwarz, Glatt | Rutengriff |
+ | Plastik > Schwarz > Glatt | Plastik Schwarz, Glatt | Schnurführung |
 {: .grided-table}
 
 ##### Nach einem erneuten Rendern sollte das Bild ungefähr so aussehen:
@@ -78,14 +78,14 @@ Oftmals werden Materialien benötigt, die noch nicht in der Bibliothek vorhanden
   ![images/fishing-reel-new-material.jpg](images/fishing-reel-new-material.jpg)
  1. Wählen Sie ein neues Flamingo-Texturmaterial.
  1. Sie werden aufgefordert, eine Textur auszuwählen.
- 1. Wechseln Sie in das Verzeichnis, in das Sie die Tutorial-Dateien entpackt haben und wählen Sie die Datei *Cork.jp*.
+ 1. Wechseln Sie in das Verzeichnis, in das Sie die Tutorial-Dateien entpackt haben und wählen Sie die Datei *Kork.jpg*.
  1. Nun verfügen Sie über ein einfaches Texturmaterial. Die Größe der Kacheln der Bitmap ist dabei oft von Bedeutung. Klicken Sie zu Ändern der Kachelgröße auf den Namen der Bitmap.
 ![images/getting_started009.png](images/getting_started009.png)
  1. Setzen Sie die Kachelbreite auf 100.
 ![images/getting_started010.png](images/getting_started010.png)
  1. Geben Sie im Feld für den Namen *Kork* ein und klicken Sie auf OK.
 ![images/getting_started011.png](images/getting_started011.png)
- 1. Nachdem das Korkmaterial angelegt wurde, weisen Sie es der Ebene *Cork Handle* zu, indem Sie es per Drag&Drop auf die Ebene ziehen.
+ 1. Nachdem das Korkmaterial angelegt wurde, weisen Sie es der Ebene *Korkgriff* zu, indem Sie es per Drag&Drop auf die Ebene ziehen.
 
 ## Aktivieren der Grundebene
 {: #groundplane}
@@ -97,7 +97,7 @@ Eine Grundebene ist hilfreich bei der Platzierung des Objekts in einer Szene.
 ![images/getting_started011.png](images/getting_started012.png)
 1. Wählen Sie ein neues Flamingo-Texturmaterial.
 1. Sie werden aufgefordert, eine Textur auszuwählen.
-1. Wechseln Sie in das Verzeichnis, in das Sie die Tutorial-Dateien entpackt haben und wählen Sie die Datei *Deckwood.jpg*.
+1. Wechseln Sie in das Verzeichnis, in das Sie die Tutorial-Dateien entpackt haben und wählen Sie die Datei *Holzdielen.jpg*.
 1. Nun verfügen Sie über ein einfaches Texturmaterial. Die Größe der Kacheln der Bitmap ist dabei oft von Bedeutung. Klicken Sie zu Ändern der Kachelgröße auf den Namen der Bitmap.
 1. Setzen Sie die Kachelbreite auf 125.
 1. Geben Sie im Feld für den Namen *Boden* ein und klicken Sie auf OK.

@@ -1,7 +1,7 @@
 
 #### Control de plano
 
-![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}
+![images/hdri-spherical-proj.png](images/hdri-spherical-proj.png){: .float-img-left}
 
 * Haga clic en el control del plano para rotar el HDRI correctamente.
 * El punto rojo indica el centro del imagen HDRI.

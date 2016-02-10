@@ -1,7 +1,8 @@
 ---
+title: Asignaciones de materiales
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Asignaciones de material
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Los objetos de la escena tienen una fuente de material. Aquí es donde adoptan su material de renderizado.  Los materiales se pueden asignar de varias maneras. El método utilizado para asignar materiales tiene un gran efecto en la facilidad que tendrá para modificarse y mantenerse en el futuro.
 
 Los materiales se pueden asignar de tres maneras. Los tres forman una jerarquía, de modo que una asignación inferior en la lista sobrescribirá una asignación superior. Los tres modos son:
@@ -35,18 +36,18 @@ Nota: Si se elimina un material del [Editor de materiales](material-editor.html)
 {: #detachmaterialfromlayer}
 1. En Rhino 5, abra el cuadro de diálogo [Capas](http://docs.mcneel.com/rhino/5/help/es-es/commands/layer.htm).
 1. Seleccione uno o más nombres de capa y haga clic en la columna Material.
-1. En el cuadro de diálogo Material de capa, seleccione el material predeterminado de la lista desplegable de materiales.
+1. En el cuadro de diálogo Material de capa, seleccione el material predeterminado de la lista desplegable.
 
 ## Asignar material por objeto principal
 {: #byparent}
 La opción Por objeto principal se utiliza poco, pero es una asignación muy útil. Los objetos de una referencia de bloque mantienen las asignaciones Por capa o Por objeto.  Los objetos que utilizan la asignación Por objeto principal adoptarán el material de la inserción de bloque.  De este modo, los objetos que están dentro de una instancia de bloque pueden adoptar el material del bloque principal.
 
-Como ejemplo, un modelo de coche puede tener llantas en la capa llantas y ruedas en la capa ruedas. Pero para el renderizado, la carrocería del coche puede variar entre las referencias de bloque individuales. Asigne por objeto principal en la carrocería del coche.  A continuación, se puede asignar un material a la inserción de bloque y solo adoptará ese material la carrocería.
+Como ejemplo, un modelo de coche puede tener llantas en la capa llantas y ruedas en la capa ruedas. Pero para el renderizado, la carrocería del coche puede variar entre las referencias de bloque individuales.  Asigne por objeto principal en la carrocería del coche.  A continuación, se puede asignar un material a la inserción de bloque y solo adoptará ese material la carrocería.
 
 ##### Para asignar un material a través de las propiedades del objeto
 1. Seleccione objetos.
-1. En el menú Edición, haga clic en Propiedades de objeto ![images/properties.png](images/properties.png) para editar el objeto.
-1. En el cuadro de diálogo [Propiedades](properties-object.html), en la página Material ![images/materialtab.png](images/materialtab.png), debajo de Asignar por, seleccione Por objeto principal.
+1. En el menú Edición, haga clic en Propiedades de objeto ![images/properties.png](images/properties.png){: .inline} para editar el objeto.
+1. En el cuadro de diálogo [Propiedades](properties-object.html), en la página Material ![images/materialtab.png](images/materialtab.png){: .inline}, debajo de Asignar por, seleccione Por objeto principal.
 
 ## Asignar materiales a objetos
 {: #byobject}
@@ -57,8 +58,8 @@ La asignación de materiales por capa es el método recomendado. Asigne material
 
 ##### Asignar un material a través de las propiedades del objeto
 1. Seleccione objetos.
-1. En el menú Edición, haga clic en [Propiedades de objeto ![images/properties.png](images/properties.png) para editar el objeto.
-1. En el cuadro de diálogo [Propiedades](properties-object.html), en la página Materiales ![images/materialtab.png](images/materialtab.png), debajo de Asignar por, seleccione Por objeto principal y luego haga clic en el material de la lista.
+1. En el menú Edición, haga clic en [Propiedades de objeto ![images/properties.png](images/properties.png){: .inline} para editar el objeto.
+1. En el cuadro de diálogo [Propiedades](properties-object.html), en la página Materiales ![images/materialtab.png](images/materialtab.png){: .inline}, debajo de Asignar por, seleccione Por objeto principal y luego haga clic en el material de la lista.
 
 ##### Arrastrar un material sobre un objeto
 {: #drag-dropmaterialtoobject}

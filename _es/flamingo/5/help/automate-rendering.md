@@ -1,7 +1,8 @@
 ---
+Renderizado automatizado
 ---
 
-# Renderizado automatizado
+# {{page.title}}
 
 
 ## Renderizado por lotes
@@ -23,7 +24,7 @@ Cada trabajo por lotes se basa en una vista guardada en el modelo.  Haga clic en
 Seleccione un trabajo por lotes existente.  A continuación, haga clic en Eliminar para quitar el trabajo de la lista por lotes.
 
 #### Propiedades
-Seleccione un trabajo por lotes existente y, a continuación, utilice las Propiedades para definir las [Propiedades del renderizado por lotes](#batch-render-properties). Las Propiedades incluyen el nombre de archivo, la resolución y el número de pases para cada trabajo.
+Seleccione un trabajo por lotes existente y, a continuación, utilice las Propiedades para definir las [Propiedades del renderizado por lotes](#batch-render-properties).  Las Propiedades incluyen el nombre de archivo, la resolución y el número de pases para cada trabajo.
 
 #### Subir
 Sube el nombre de la vista un nivel en la lista.
@@ -55,40 +56,42 @@ Envía los trabajos por lotes al [Render Farm](render-farm.html). Los trabajos s
 Muestra la ventana que se renderizará. Consulte [Ficha Renderizao, Ventana a renderizar](render-tab.html#viewtorender).
 
 #### Nombre de archivo
-Haga clic en el botón Guardar ![images/saveimageas.png](images/saveimageas.png) y especifique un nombre de archivo para la imagen renderizada.
+Haga clic en el botón Guardar ![images/saveimageas.png](images/saveimageas.png){: .inline} y especifique un nombre de archivo para la imagen renderizada.
 
 #### Canal alfa
 Guarda la imagen con el canal alfa.  Consulte la opción [Usar fondo de canal alfa](environment-tab.html#alpha) para obtener más información.
 
 #### Usar configuración de documento
 {: #rendering-resolution}
-La opción predeterminada es utilizar la configuración de resolución del documento actual para renderizar. Si necesita indicar otra resolución, desactive esta casilla y especifique una resolución. Consulte el tema [ficha Renderizado, Resolución](render-tab.html#resolution) para obtener más información.
+La opción predeterminada es utilizar la configuración de resolución del documento actual para renderizar.  Si necesita indicar otra resolución, desactive esta casilla y especifique una resolución. Consulte el tema [ficha Renderizado, Resolución](render-tab.html#resolution) para obtener más información.
 
-#### Pases de restricciones de renderizado
+#### Renderizado de pases de restricciones
 {: #rendering-constraints}
 Define el número de pases necesarios para terminar el trabajo de procesamiento por lotes.  Consulte el tema [Pases](documentproperties-flamingo.html#number-of-passes) para obtener más información.
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 
-## Animations
+## Animaciones 
 {: #animation}
-There are two ways to create animations in Rhino.  Animations can be configured using [Rhino's Animation toolbar](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/animation.htm) or using the [Bongo](http://bongo.rhino3d.com/) animation plugin.
+Hay dos maneras de crear animaciones en Rhino.   Las animaciones se pueden configurar utilizando la [barra de herramientas Animación de Rhino](http://docs.mcneel.com/rhino/5/help/es-es/index.htm#commands/animation.htm) o el plug-in de animación de [Bongo](http://bongo.rhino3d.com/). 
 
-##### To submit an animation job to the render farm
-1. Run the [FlamingoNXtAutomateRender](automate-rendering.html#flamingonxtautomaterender) command.
-1. In theConfigure Automated Render Commanddialog, select **Render to farm**.
+##### Para enviar un trabajo de animación al Render Farm 
+1. Ejecute el comando [FlamingoNXtAutomatizarRenderizado](automate-rendering.html#flamingonxtautomaterender). 
+1. En el cuadro de diálogo Configurar comando de renderizado automatizado, seleccione **Renderizar en el Farm**.
 &#160;
-Specify theJob name,and click theOKbutton.
+Especifique el Nombre de trabajo y haga clic en el botón Aceptar.
 &#160;
-Set a type of animation from Rhino'sAnimation setuptoolbar. Select RenderFull as the Capture method.
+Defina un tipo de animación desde la barra de herramientas Configurar animación de Rhino. Seleccione RenderizadoCompleto renderizado completo como Método de captura. 
 &#160;
-Record the animation from theAnimationtoolbar. The render jobs will be sent to Render Farm.
+Grabe la animación desde la barra de herramientas Animación. Los trabajos de renderizado se enviarán al Render Farm. 
 &#160;
-When the jobs are finished in Render Farm, run theFlamingoNXtAutomateRendercommand again and select all the jobs in the dialog.
+Cuando los trabajos finalicen en el Render Farm, vuelva a ejecutar el comando FlamingoNXtAutomatizarRenderizado y seleccione todos los trabajos del cuadro de diálogo.
 &#160;
-Click theCopy selected files to specified output folderbutton and select a folder where all the render images will be copied to.
+Haga clic en el botón Copiar archivos seleccionados a la carpeta de salida especificada y seleccione una carpeta a la que se copiarán todas las imágenes de renderizado.
 
 
 ## FlamingoNXtAutomateRender command

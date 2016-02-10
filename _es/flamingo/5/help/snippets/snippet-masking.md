@@ -45,8 +45,7 @@ Este valor indica que el tamaño de la zona alrededor del color también tiene m
 Enmascara los píxeles parcialmente. Este valor determina la magnitud de la máscara parcial alrededor del color enmascarado. Este control solo está disponible cuando está seleccionada la opción Color.
 
 #### Invertir
-Invierte la máscara. Los que píxeles tendrían que tener máscara ahora se incluyen, y viceversa. 
-<!-- TODO: Does this make sense? -->
+Invierte la máscara. Los píxeles que deberían haberse enmascarado ahora se incluyen, y viceversa.
 
 ![images/masking-007.png](images/masking-007.png)  
 

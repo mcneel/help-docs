@@ -1,7 +1,8 @@
 ---
+title: Propiedades de material avanzadas
 ---
 
-# ![images/paint.svg](images/paint.svg){:height="75px" width="75px"} Propiedades de material avanzadas
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -9,32 +10,33 @@ Flamingo tiene el tipo de [Material simple](material-type-simple.html) y el tipo
 
 El conjunto completo de grupos de propiedades del Material avanzado son:
 
-> [Nombre](#name)
-> [Composiciones de material](#procedures)
-> [Propiedades de material avanzadas](#advanced-materials-properties)
-> [Acabado reflectante](#reflective-finish-and-highlight)
-> [Propiedades de transparencia](#transparency)
-> [Texturas algorítmicas](#bump-patterns)
-> [Texturas de bitmap](#textures)
-> [Notas](#notes)
+* [Nombre](#name)
+* [Composiciones de material](#procedures)
+* [Propiedades de material avanzadas](#advanced-materials-properties)
+* [Acabado reflectante](#reflective-finish-and-highlight)
+* [Propiedades de transparencia](#transparency)
+* [Texturas algorítmicas](#bump-patterns)
+* [Texturas de bitmap](#textures)
+* [Notas](#notes)
 
 ## Nombre de material
 {: #name}
-Es el nombre del material en el modelo de Rhino.  Las materiales se guardan en el modelo de Rhino. Eso significa que si hay un modelo tiene el mismo nombre en la librería no se verá afectado por los cambios en el material en el modelo actual. Para utilizar cualquier material en otro modelo, debe exportarse a la [Librería](libraries.html) primero. El nombre del material también servirá como nombre de archivo exportado.
+Es el nombre del material en el modelo de Rhino.  Las materiales se guardan en el modelo de Rhino. Eso significa que si un material tiene el mismo nombre en la librería no se verá afectado por los cambios en el material en el modelo actual. Para utilizar cualquier material en otro modelo, debe exportarse a la [Librería](libraries.html) primero. El nombre del material también servirá como nombre de archivo exportado.
 
 ## Composiciones de material
 {: #procedures}
-El árbol Procedimientos combina uno o más materiales utilizando un conjunto de reglas para definir la interacción de los materiales. El árbol muestra los componentes que se usan para crear el material y permite añadir otros componentes. Para materiales estándar, solo habrá un componente en la lista: Base.
+El árbol de Materiales algorítmicos combina uno o más materiales utilizando un conjunto de reglas para definir la interacción de los materiales. El árbol muestra los componentes que se usan para crear el material y permite añadir otros componentes. Para materiales estándar, solo habrá un componente en la lista: Base.
 
 Cada componente combina dos materiales "secundarios" utilizando un método específico. Cada uno de los materiales secundarios puede, a su vez, estar formado por un componente, combinando dos materiales secundarios propios. De este modo, se pueden crear materiales sumamente elaborados a partir de elementos más simples. Los procedimientos para combinar materiales son [Mezcla angular](procedural-materials.html#angular-blend), [Mezcla](procedural-materials.html#blend), [Mármol](procedural-materials.html#marble), [Granito](procedural-materials.html#granite), [Loseta](procedural-materials.html#tile) y [Madera](procedural-materials.html#wood).
 
 A modo de ejemplo, la composición de [Mármol](procedural-materials.html#marble) combina un material Base y un material Veta en un patrón en espiral.
 
-<!-- TODO: We need an diagram describing the Proceedure Hirarchyarchy. -->
 
 ##### Para agregar un material algorítmico
+
 1. Haga clic con el botón derecho en Base en la ventana Material algorítmico.
-1. En el menú, haga clic en un tipo de procedimiento.
+1. En el menú, haga clic en un tipo de material algorítmico.
+
   * [Base](procedural-materials.html#base)
   * [Mezcla angular](procedural-materials.html#angular-blend)
   * [Mezcla](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ A modo de ejemplo, la composición de [Mármol](procedural-materials.html#marble
   * [Madera](procedural-materials.html#wood)
 
 ##### Para quitar un material algorítmico
- 1. En la ventana Procedimientos, haga clic con el botón derecho en el nombre del procedimiento.
- 2. En el menú, haga clic en Quitar.
+
+1. En la ventana Procedimientos, haga clic con el botón derecho en el nombre del procedimiento.
+1. En el menú, haga clic en Quitar.
 
 ## Propiedades de material avanzadas
 {: #advanced-materials-properties}
@@ -55,7 +58,7 @@ A modo de ejemplo, la composición de [Mármol](procedural-materials.html#marble
 #### Acabado reflectante y brillo
 {: #reflective-finish-and-highlight}
 Estas opciones cambian el modo en que el material refleja la luz y los objetos. El efecto de brillo se asocia normamente a las áreas de luz de los materiales relucientes donde la luz da con el objeto. El efecto reflectante utiliza normalmente reflejos de tipo espejo y refleja los objetos en el resto de la escena. Es importante destacar que el cromo y otros materiales reflectantes no son atractivos a menos que tengan algo que reflejar. Cuando trabaje con materiales reflectantes, tenga en cuenta también la creación de un entorno interesante y otros objetos para que se puedan reflejar en los materiales reflectantes.
- Nota : Para activar estas opciones, el valor Intensidad debe ser superior a cero.
+ Nota: Para activar estas opciones, el valor Intensidad debe ser superior a cero.
 
 #### Color de brillo
 {: #highlight-color}
@@ -73,19 +76,20 @@ Define el color del brillo igual que el color base. Muchos acabados metálicos s
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### Personalizado
-En algunos acabados muy especializados, el reflejo del objeto será un color diferente al color base del material.  Sucede normalmente en materiales que están formados por múltiples capas. Utilice la opción Personalizado para especificar un color para el brillo. Utilice el [Selector de color](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png) para seleccionar un color reflectante.
+En algunos acabados muy especializados, el reflejo del objeto será un color diferente al color base del material.  Sucede normalmente en materiales que están formados por múltiples capas. Utilice la opción Personalizado para especificar un color para el brillo. Utilice el [Selector de color](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline} para seleccionar un color reflectante.
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
 #### Intensidad
 {: #intensity}
-Ajusta la intensidad del brillo. Los valores más bajos suelen crear objetos brillantes que reflejan la luz, pero no que no envuelve los objetos. Los valores más altos aumentan el tamaño y la intensidad del brillo y los reflejos.  Los valores más altos harán que el material sea como un espejo y refleje otros objetos y el entorno en la escena.
+Ajusta intensidad del brillo. Los valores más bajos suelen crear objetos brillantes que reflejan la luz, pero no que no envuelve los objetos. Los valores más altos aumentan el tamaño y la intensidad del brillo y los reflejos.  Los valores más altos harán que el material sea como un espejo y refleje otros objetos y el entorno en la escena.
 
 ![images/highlightintensity.png](images/highlightintensity.png)
 
 #### Fresnel
 {: #fresnel}
-El Fresnel controla la reflectividad de los materiales opacos, un fenómeno conocido como [Reflexión Fresnel de conductores](https://es.wikipedia.org/wiki/Ecuaciones_de_Fresnel). La opción Fresnel modela la tendencia que tienen muchos materiales de volverse más especulares en ángulos de incidencia, mientras que retienen más propiedades mates en ángulos de visión perpendiculares.
+El Fresnel controla la reflectividad de los materiales opacos, un fenómeno conocido como [Reflexión Fresnel de conductores] (https://es.wikipedia.org/wiki/Ecuaciones_de_Fresnel). La opción Fresnel modela la tendencia que tienen muchos materiales de volverse más especulares en ángulos de incidencia, mientras que retienen más propiedades mates en ángulos de visión perpendiculares.
+
 Reduzca el valor en materiales muy oscuros para evitar demasiada reflexión. Aumente el valor en materiales como la madera barnizada, donde la reflectividad Fresnel es más pronunciada.
 
 ![images/highlightfresnel.png](images/highlightfresnel.png)
@@ -112,7 +116,7 @@ Equilibra automáticamente la proyección de rayos y el brillo basándose en el 
 
 #### Brillante
 {: #glossy}
-Aumenta el desenfoque del brillo y evita la proyección de rayos. No se calculan reflejos en los objetos ni en las luces y, por tanto, el rendimiento aumenta y se evitan artefactos en los materiales con reflejos muy borrosos. Se puede perder alguna sutileza en cuanto a los reflejos.
+Aumenta el desenfoque del brillo y evita la proyección de rayos. No se calculan reflejos en los objetos ni en las luces. Por tanto, el rendimiento aumenta y se evitan artefactos en los materiales con reflejos muy borrosos. Se puede perder alguna sutileza en cuanto a los reflejos.
 
 ![images/highlightglossy.png](images/highlightglossy.png)
 
@@ -136,12 +140,12 @@ Excluye todos los reflejos de fuentes de luz artificial y el efecto de brillo ar
 
 #### Sin reflejos de fuente de luz
 {: #no-light-source-reflection}
-Excluye los reflejos de fuentes de luz de proyección de rayos; solo se usa el brillo. A veces es útil para evitar artefactos de motas si el material se ve borroso y la escena contiene pequeñas fuentes de luz brillante.
+Excluye los reflejos de fuentes de luz de proyección de rayos. Solo se usa el brillo. A veces es útil para evitar artefactos de motas si el material se ve borroso y la escena contiene pequeñas fuentes de luz brillante.
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
 ## Transparencia
-{: transparncy}
+{: #transparencia}
 Las opciones de Transparencia controlan las propiedades asociadas con el paso de luz a través de un material.
 
 ![images/transparentmaterials.png](images/transparentmaterials.png)
@@ -173,14 +177,16 @@ La siguiente tabla muestra algunos ejemplos del índice de refracción:
 
 #### Translucidez
 {: #translucency}
-Medida de difusión. Una elevada translucidez produce un efecto de "pulido con chorro de arena", ya que se dispersa más luz aleatoriamente a través del material. Este efecto es muy sensible, los pequeños ajustes pueden marcar una gran diferencia.
+Medida de difusión. Una elevada translucidez produce un efecto de "pulido con chorro de arena", ya que se dispersa más luz aleatoriamente a través del material. Este efecto es muy sensible. Los pequeños ajustes pueden marcar una gran diferencia.
 
 ![images/transparencytl.png](images/transparencytl.png)
 
 #### Dispersión
 {: #scattering}
 Controla la probabilidad de que la luz encuentre una partícula por longitud de unidad. Para obtener este efecto se requiere el [Path Tracer](render-tab.html#path-tracer).
+
 La dispersión de subsuperficies permite que la luz penetre en la superficie del objeto y se disperse en cualquier dirección. Con este efecto pueden modelarse muchos materiales translúcidos. Algunas superficies, como la piedra o la piel, pueden "suavizarse" permitiendo que la luz penetre una distancia corta.
+
 El material debe tener un poco de transparencia para que tenga lugar la dispersión de subsuperficies. Este efecto es volumétrico. Los objetos con este material deben ser sólidos o "encerrar un espacio" para que funcione correctamente.
 
 ![images/scattering.png](images/scattering.png)
@@ -226,7 +232,7 @@ Se pueden añadir dos tipos de texturas a un material: Texturas de imagen y patr
 
 ### Imágenes
 {: #images}
-Se pueden usar hasta cuatro imágenes bitmap para añadir detalles a un material. Los mapas de imagen pueden usarse de distintas formas, incluidos el color y la propiedad de superficie tridimensional. Los mapas de imagen son patrones bidimensionales creados mediante programas de dibujo ráster (en trama) escaneando fotografías u otros materiales. Un método frecuente es usar un dibujo de un material real como color del material. Las imágenes pueden estar formadas por un máximo de cuatro imágenes. A veces una imagen controla el color y otras pueden controlar las propiedades de relieve de la textura. Para controlar el efecto de una imagen sobre un material, vaya al diálogo [Propiedades de imagen](material-image-properties.html).
+Se pueden usar hasta cuatro imágenes bitmap para añadir detalles a un material. Los mapas de imagen pueden usarse de distintas formas, incluidos el color y la propiedad de superficie tridimensional. Los mapas de imagen son patrones bidimensionales creados mediante programas de dibujo ráster (en trama) escaneando fotografías u otros materiales. Un método frecuente es usar un dibujo de un material real como color del material. Las imágenes pueden estar formadas por un máximo de cuatro imágenes. A veces una imagen controla el color y otra puede controlar las propiedades de relieve de la textura. Para controlar el efecto de una imagen sobre un material, vaya al diálogo [Propiedades de imagen](material-image-properties.html.
 
 ![images/solidcolors.png](images/3-texture.png)
 
@@ -236,15 +242,15 @@ Se pueden usar hasta cuatro imágenes bitmap para añadir detalles a un material
 {: #bump-patterns}
 Los patrones de relieve crean el aspecto de un tipo específico de superficie sin utilizar mapas de desplazamiento y sin la necesidad de mapas adicionales. Los relieves utilizan reglas matemáticas para proporcionar el efecto de relieve en la superficie del material. Los patrones son:
 
-> [Papel de lija](#sandpaper)
-> [Grava](#rubble)
-> [Pirámide](#pyramid)
-> [Rugoso](#wrinkled)
-> [Marmolado](#marbled)
+* [Papel de lija](#sandpaper)
+* [Grava](#rubble)
+* [Pirámide](#pyramid)
+* [Rugoso](#wrinkled)
+* [Marmolado](#marbled)
 
-A modo de ejemplo, los materiales como el estucado, el hormigón y la arcilla tienen una textura fina. Probablemente no vale la pena escanear una pieza del material para hacerle un bitmap, a menos que se vaya a visualizar de cerca. El uso de un relieve algorítmico de Papel de lija sobre un [Color base](advanced-material-properties-main.html#color) emula este tipo de patrón fino. Cree un [Color base](advanced-material-properties-main.html#color) que sea el color del material. A continuación, añada un relieve algorítmico al material. Usar papel de lija para una textura delicada y rugosidad basta para una textura gruesa.
+Los materiales como el estucado, el hormigón y la arcilla tienen una textura fina. Probablemente no vale la pena escanear una pieza del material para hacerle un bitmap, a menos que se vaya a visualizar de cerca. El uso de un relieve algorítmico de Papel de lija sobre un [Color base](advanced-material-properties-main.html#color) emula este tipo de patrón fino. Cree un [Color base](advanced-material-properties-main.html#color) que sea el color del material. A continuación, añada un relieve algorítmico al material. Utilice Papel de lija para una textura fina y Rugosidad para una textura gruesa.
 
-Cuando se selecciona uno de los mapas de relieve, se activan controles adicionales. Se puede añadir más de un patrón de relieve a un material.
+Cuando se selecciona uno de los mapas de relieve, se activan más controles. Se puede añadir más de un patrón de relieve a un material.
 
 #### Papel de lija
 {: #sandpaper}
@@ -262,7 +268,7 @@ Tiene el aspecto de una superficie grumosa y agujereada. Se puede aumentar la es
 
 #### Pirámide
 {: #pyramid}
-Produce pequeñas protrusiones piramidales como en un patrón dentado.   La [Escala](#scale) controla solo el tamaño base X e Y de la pirámide. La [Intensidad](#strength) repercute en la "altura" de la pirámide.
+Produce pequeñas protrusiones piramidales como en un patrón dentado.  La [Escala](#scale) controla solo el tamaño base X e Y de la pirámide. La [Intensidad](#strength) repercute en la "altura" de la pirámide.
 
 ![images/pyramid.png](images/pyramid.png)
 *Patrón de Pirámide con una [Escala](#scale) cada vez mayor.*
@@ -276,7 +282,7 @@ Ofrece un aspecto rugoso. Cambie la [Escala](#scale), la [Intensidad](#strength)
 
 #### Marmolado
 {: #marbled}
-Ofrece un aspecto marmolado.   Se trata de un patrón en espiral. Cambie la [Escala](#scale), la [Intensidad](#strength) y la [Rotación](#rotation) para editar la rugosidad.
+Ofrece un aspecto marmolado.  Se trata de un patrón en espiral. Cambie la [Escala](#scale), la [Intensidad](#strength) y la [Rotación](#rotation) para editar el marmolado.
 
 ![images/marbled.png](images/marbled.png)
 *Patrón Marmolado con una [Escala](#scale) cada vez mayor. La [Intensidad](#strength) se mantiene constante.*
@@ -299,6 +305,5 @@ Controla la apariencia de la profundidad.
 
 ### Rotación
 {: #rotation}
-Define el ángulo de rotación del patrón.
-Normalmente se producen cambios en la orientación sólo si el mapa algorítmico tiene un patrón liso o si se ha escalado el mapa de relieve con diferentes componentes X, Y, Z para producir un patrón direccional.
+Define el ángulo de rotación del patrón. Normalmente se producen cambios en la orientación sólo si el mapa algorítmico tiene un patrón liso o si se ha escalado el mapa de relieve con diferentes componentes X, Y, Z para producir un patrón direccional.
 ![images/texturerotated.png](images/texturerotated.png)

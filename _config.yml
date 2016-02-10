@@ -196,14 +196,14 @@ defaults:
     values:
       doctype: "Help"
       layout: flamingo-toc-page
-      collectionname: "Help"
+      collectionname: "Ayuda"
   -
     scope:
       path: "es/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
-      collectionname: "Guides"
+      collectionname: "Guías"
   -
     scope:
       path: ""
@@ -221,7 +221,7 @@ defaults:
     values:
       doctype: "Help"
       layout: flamingo-toc-page
-      collectionname: "Help"
+      collectionname: "Aide"
   -
     scope:
       path: "fr/flamingo/5/guides"

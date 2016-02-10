@@ -1,6 +1,9 @@
 ---
+title: Filtros de contenido
 ---
-# Filtros de contenido ![images/contentfilter.png](images/contentfilter.png) 
+<!-- This is an linked from material-editor.html page -->
+
+# {{page.title}} ![images/contentfilter.png](images/contentfilter.png)
 Al filtro de contenido se puede acceder a través del cuadro de diálogo **Filtros de contenido**.
 
 #### Filtrar nombre

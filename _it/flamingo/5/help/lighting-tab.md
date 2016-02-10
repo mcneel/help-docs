@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di illuminazione predefinite
+title: Impostazioni predefinite
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
@@ -24,7 +24,7 @@ Nella fase di illuminazione di un modello, si consiglia di:
 
 Per migliorare le tecniche di illuminazione, occorre prestare attenzione alla luce e valutare in che modo essa influisce sulle varie superfici. I materiali possono mascherare gli effetti di ombre e riflessioni, per cui alcuni esperti in rendering preferiscono applicare l'illuminazione ai modelli prima di applicare i materiali. Occorre cercare di osservare la luce in modo obiettivo, così come lo fa una fotocamera.
 
-## Impostazioni di illuminazione predefinite
+## Impostazioni predefinite
 {: #lighting-presets}
 Un buon punto di partenza per l'illuminazione è rappresentato dalle impostazioni di illuminazione predefinite, le quali corrispondono a situazioni di illuminazione reali. Flamingo nXt fornisce alcune impostazioni di illuminazione predefinite che vi possono aiutare a prendere dimestichezza nell'applicazione dell'illuminazione. Anche se sono disponibili molte altre opzioni di illuminazione, le impostazioni predefinite risultano spesso sufficienti per molti rendering. Si selezioni di volta in volta lo schema predefinito che più si avvicina al tipo di scena che si desidera modellare.
 
@@ -63,7 +63,7 @@ Le luci possono simulare anche l'illuminazione di scenari paesaggistici. Si usin
 
 Anche le viste esplose, le sezioni ed i disegni assonometrici dall'alto richiedono una speciale attenzione, non essendo sempre evidente se si tratta di spazi interni od esterni. La decisione da prendere dipende dai risultati desiderati. Se si vuole renderizzare velocemente una scena esterna, si usi la modalità di rendering per esterni. Se questa modalità non produce delle immagini sufficientemente interessanti, si provi ad usare il rendering per interni. In questo modo, la scena diventa più interessante, anche se si impiegherà più tempo per impostare l'illuminazione.
 
-### Interior daylight
+### Luce diurna interno
 {: #interior-daylight .clear-img}
 Questo schema simula un interno illuminato da luce naturale.
 

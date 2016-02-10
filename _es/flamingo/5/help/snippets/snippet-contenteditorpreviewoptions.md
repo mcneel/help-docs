@@ -26,7 +26,7 @@ Muestra las vistas previas a la izquierda de los controles.
 #### ![images/showlabels.png](images/showlabels.png) Mostrar etiquetas
 Muestra las etiquetas de los nombres de las miniaturas en el modo Rejilla.
 ![images/thumbnaillabel-001.png](images/thumbnaillabel-001.png)
-El modo **Lista** siempre muestra las etiquetas.
+ El modo **Lista** siempre muestra las etiquetas.
 
 #### ![images/showunits.png](images/showunits.png) Mostrar unidades
 Muestra el tamaño en unidades del modelo.

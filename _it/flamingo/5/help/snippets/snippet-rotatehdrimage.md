@@ -1,7 +1,7 @@
 
 #### Controllo Piana
 
-![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}
+![images/hdri-spherical-proj.png](images/hdri-spherical-proj.png){: .float-img-left}
 
 * Fare clic sul controllo Piana per ruotare correttamente l'immagine HDRI.
 * Il punto rosso indica il centro dell'immagine HDRI.
