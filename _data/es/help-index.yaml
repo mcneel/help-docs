@@ -102,7 +102,7 @@ main_index:
         - name: Plantas
           path: plants.html
         - name: Editor de plantas
-          path: tree-editor.html
+          path: plant-editor.html
 
     - name: Renderizado en red (Farm)
       anchor: farm
@@ -124,6 +124,8 @@ main_index:
           path: documentproperties-flamingo.html
         - name: Opciones de Flamingo nXt
           path: options-flamingo.html
+        - name: Editor de imágenes
+          path: image-editor.html
         - name: Vista en tiempo real
           path: realtime.html
         - name: Lista de comandos de Flamingo
