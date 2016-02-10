@@ -1,7 +1,8 @@
 ---
+title: Propiedades de vista previa
 ---
 
-# Propiedades de vista previa
+# {{page.title}}
 Tanto las imágenes de miniatura de vista previa como el área de fondo entre las imágenes de miniatura tienen menús contextuales.
 
 #### Acciones de vista previa de miniaturas
@@ -13,7 +14,7 @@ Esto no tiene mucho efecto si el objeto de vista previa es una esfera, pero si e
 >![images/number-onestep.gif](images/number-onestep.gif)Haga clic con el botón derecho para ver el menú contextual.
 >![images/number-onestep.gif](images/number-onestep.gif)Haga doble clic para mostrar una ventana de vista previa más grande debajo de las miniaturas.
 >![images/number-onestep.gif](images/number-onestep.gif)Haga clic con el botón derecho y arrastre para cambiar la vista.
->![images/number-onestep.gif](images/number-onestep.gif)Pulse la tecla [onmouseover="if (parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; typeof(BSPSPopupOnMouseOver) == 'function') BSPSPopupOnMouseOver(event)" onclick="javascript:BSSCPopup('../Popup_Actions/Ctrl_Key.htm');;return false" id="a16" style="position: relative; font-weight: normal;">Ctrl]() y arrastre para duplicar un material.
+>![images/number-onestep.gif](images/number-onestep.gif)Pulse la tecla Ctrl y arrastre para duplicar un material.
 >![images/number-onestep.gif](images/number-onestep.gif)Haga doble clic en la vista previa más grande para abrir una ventana flotante que pueda redimensionarse para obtener una vista previa de mayor resolución.
 
 Esta ventana tiene las mismas funciones que la imagen de vista previa original, incluidos el menú contextual y la posibilidad de arrastrar y colocar en otros materiales u objetos del modelo.
@@ -66,7 +67,7 @@ Se utiliza el entorno gris predeterminado.
 Se utiliza un fondo gris a cuadros.
 ![images/thumbnailbackground-002.png](images/thumbnailbackground-002.png)
 
-#### Personalizada
+#### Personalizado
 Se puede utilizar cualquier material o textura como fondo personalizado.
 ![images/thumbnailbackground-003.png](images/thumbnailbackground-003.png)
 

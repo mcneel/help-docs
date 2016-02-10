@@ -1,8 +1,9 @@
 ---
+title: Entorno de Flamingo
 ---
 
-# ![images/environment.svg](images/environment.svg) Entorno de Flamingo
-Rhino dispone de muchos tipos de entornos. Este tema se basa en el Entorno predeterminado de Flamingo.
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
+Hay muchos tipos de [entornos en Rhino](http://docs.mcneel.com/rhino/5/help/es-es/commands/environmenteditor.htm). Este tema describe el tipo de Entorno de Flamingo.
 
 El entorno repercute en la parte visible del fondo y los reflejos.  Para obtener más información sobre los efectos que afectan a la iluminación de la escena, consulte el tema [Cielo](sun-and-sky-tabs.html) de la Ayuda.
 
@@ -10,10 +11,10 @@ Flamingo viene con un entorno especial denominado **Entorno predeterminado de Fl
 
 El conjunto completo de grupos de propiedades del Entorno de Flamingo son:
 
-> [Nombre](#name)
-> [Entorno de Flamingo](#environment)
-> [Color de fondo](#color-backgrounds)
-> [Fondo avanzado](#advanced-background-reflected-sky)
+  * [Nombre](#name)
+  * [Entorno de Flamingo](#environment)
+  * [Color de fondo](#color-backgrounds)
+  * [Fondo avanzado](#advanced-background-reflected-sky)
 
 
 ## Nombre de entorno
@@ -24,25 +25,24 @@ Es el nombre del entorno del modelo de Rhino.  Los entornos se guardan en el mod
 {: #environment}
 Hay tres efectos principales de entorno en un renderizado:
 
->Fondo visible
->[Fondo reflectante](#advanced-background-reflected-sky)
->[Fondo refractivo](#advanced-background-refracted-sky)
+  1. Fondo visible
+  1. [Fondo reflectante](#advanced-background-reflected-sky)
+  1. [Fondo refractivo](#advanced-background-refracted-sky)
 
-El Fondo es visible se encuentra en los paneles de las propiedades generales básicas y es el entorno visible. Los fondos [Reflectante](#advanced-background-reflected-sky) y [Refractivo](#advanced-background-refracted-sky) pueden ser diferentes y se encuentran en la sección Fondo avanzado.
+El Fondo es visible es el color de fondo básico de la escena.  El Fondo visible se encuentra en el panel de propiedades generales. Los fondos [Reflectante](#advanced-background-reflected-sky) y [Refractivo](#advanced-background-refracted-sky) pueden ser diferentes y se encuentran en la sección Fondo avanzado.
 
 #### Intensidad
 {: #background-intensity}
-Modifica la luminosidad relativa del fondo. El valor de Intensidad se usa para multiplicar los colores del fondo y dan como resultado un valor de iluminación.  El rango de colores oscila entre el 0 y el 256 por canal. La intensidad multiplicará esos valores.  Esto es importante si el fondo se ve muy oscuro en comparación con el modelo renderizado.
+Modifica la luminosidad relativa del fondo. El valor de Intensidad se usa para multiplicar los colores del fondo y dan como resultado un valor de iluminación.  El rango de colores oscila entre el 0 y el 255 por canal. La intensidad multiplicará esos valores.  Esto es importante si el fondo se ve muy oscuro en comparación con el modelo renderizado.
 
 #### Tipo de fondo
 {: #background-type}
 Especifica el esquema de color que rellenará el fondo de la imagen renderizada. Los fondos pueden ser de los siguientes tipos:
 
-> [Cielo](#environment-sky)
-> [Color sólido y gradiente](#color-backgrounds)
-> [Imagen](#environment-image)
-> [Imágenes HDR y HDR plano](#hdr-background)
-
+* [Cielo](#environment-sky)
+* [Color sólido y gradiente](#color-backgrounds)
+* [Imagen](#environment-image)
+* [Imágenes HDR y HDR plano](#hdr-background)
 
 ## Fondo del cielo
 {: #environment-sky}
@@ -75,7 +75,7 @@ Consulte los [Controles de color](#enviroment-sky-color-controls) para obtener m
 {: #three-color-gradient}
 Las opciones de fondo gradiente de tres colores interpolan el color de fondo entre tres colores seleccionados.
 ![images/background-color-003.png](images/background-color-003.png)
-*Fondo con gradiente de tres colores: azul, blanco, amarillo.*
+*Fondo con gradiente de tres colores: azul, blanco y amarillo.*
 Consulte los [Controles de color](#enviroment-sky-color-controls) para obtener más información sobre cómo editar un gradiente de tres colores.
 
 ### Controles de color
@@ -89,11 +89,11 @@ Utilice este botón para reorganizar el color en el gradiente desde la parte sup
 
 #### Control de mapeado gradiente
 {: #gradient-mapping}
-Los colores de un fondo de color gradiente tienen que estar mapeados en la esfera del entorno. Para ello se usa el mapeador de gradientes. Los controles de mapeado gradiente se activarán solo cuando se seleccione un gradiente de dos o tres colores. Los gradientes solo se mapean en las vistas perspectivas.
+Los colores de un fondo de color gradiente tienen que estar mapeados en la esfera del entorno. Para ello, utilice el mapeador de gradientes.  Los controles de mapeado gradiente se activarán solo cuando se seleccione un gradiente de dos o tres colores. Los gradientes solo se mapean en las vistas perspectivas.
 
-#### Ángulos desde vistas
+#### Ángulos desde vista
 {: #angle-from-views}
-Si se activa la opción Ángulos de vista, el gradiente de color actual se sincronizará con la vista en perspectiva renderizada actual.  El color superior se mapeará en la parte superior de la vista y el color inferior se mapeará en la parte inferior de la vista.  Todos los demás colores se distribuirán uniformemente entre esos extremos.
+Si se activa la opción Ángulos de vista, el gradiente de color actual se sincroniza con la vista en perspectiva renderizada actual.  El color superior se mapeará en la parte superior de la vista y el color inferior se mapeará en la parte inferior de la vista.  Todos los demás colores se distribuirán uniformemente entre esos extremos.
 
 #### Mapeador de altitud de vista
 {: #colorrange}
@@ -110,12 +110,13 @@ Si la vista actual es una proyección en perspectiva, se pueden controlar los co
 ####  Obtener ángulos desde vista
 Utilice este botón para restablecer el control de mapeado gradiente a las coordenadas de la vista perspectiva actual.
 
-#### Ángulos superior/medio/inferior 
+#### Ángulos superior/medio/inferior
 Son los ángulos de los colores Superior, Medio e Inferior de los gradientes actuales.  Se corresponden con la ubicación de las flechas Rojo, Verde y Azul del Mapeador de altitud de vista.
 
 ## Imagen de fondo
 {: #environment-image}
-Una imagen de fondo puede proyectarse sobre el fondo. Muchas veces se utiliza para colocar un modelo en un contexto existente o para definir una vista en algunas ventanas. Para la imagen se pueden utilizar fotografías digitales, obras de arte escaneadas o imágenes creadas con software de dibujo. Para obtener mejores resultados, utilice imágenes de alta resolución para imágenes de fondo. También es una buena idea difuminar y reducir la definición de las imágenes para simular un enfoque natural y una perspectiva aérea. La imagen de fondo se puede mapear al fondo en una proyección plana, cilíndrica o esférica en la escena.
+
+Una imagen de fondo puede proyectarse sobre el fondo. Muchas veces se utiliza para colocar un modelo en un contexto existente o para definir una vista en algunas ventanas. Para la imagen se pueden utilizar fotografías, obras de arte escaneadas o imágenes creadas con software de dibujo. Para obtener mejores resultados, utilice imágenes de alta resolución para imágenes de fondo. También es una buena idea difuminar y reducir la definición de las imágenes para simular un enfoque natural y una perspectiva aérea. La imagen de fondo se puede mapear al fondo en una proyección plana, cilíndrica o esférica en la escena.
 
 ![images/background-image-001.png](images/background-image-001.png)
 *Imagen plana establecida como fondo.*
@@ -128,13 +129,13 @@ Defina la imagen de fondo haciendo clic en el botón *(vacío - haga clic aquí 
 {: #backgroud-image-projection}
 Seleccione una de las tres proyecciones de imagen desde el control desplegable:
 
->[Plana](#planar)
->[Cilíndrica](#cylindrical)
->[Esférica](#spherical)
+* [Plana](#planar)
+* [Cilíndrica](#cylindrical)
+* [Esférica](#spherical)
 
 Cada método de proyección tiene sus propias opciones de configuración para posicionar la imagen.
 
-#### Proyección plana
+### Proyección plana
 {: #planar}
 Proyecta la imagen en un fondo plano en la vista activa. Las coordenadas de proyección plana siempre son relativas a la vista actual.
 
@@ -144,7 +145,7 @@ Proyecta la imagen en un fondo plano en la vista activa. Las coordenadas de proy
 La casilla Ángulo desde vista mantiene la imagen sincronizada con la vista activa.  La imagen se estirará para ajustarla a la vista activa.
 
 #### Control de colocación de imagen
- Utilice el control de colocación para colocar la imagen relativa a la vista activa.  La forma de la vista se muestra como un rectángulo gris oscuro. Arrastre el rectángulo rosa o utilice los controles numéricos para mover o escalar la imagen de fondo relativa a la vista.
+Utilice el control de colocación para colocar la imagen relativa a la vista activa. La forma de la vista se muestra como un rectángulo gris oscuro. Arrastre el rectángulo rosa o utilice los controles numéricos para mover o escalar la imagen de fondo relativa a la vista.
 
 ![images/background-image-003.png](images/background-image-003.png)
 *Área de vista activa (1), tamaño de imagen y forma (2).*
@@ -161,13 +162,15 @@ Utilice el control de colocación para colocar la imagen en relación con la vis
 ![images/background-image-003.png](images/background-image-003.png)
 *Área de vista activa (1), tamaño de imagen y forma (2).*
 
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
+
 #### Escala X / Escala Y
 Especifica el tamaño de la imagen de fondo en la escala de 0-1.0 de la anchura y la altura de la vista. Por ejemplo, un valor 1.0 es el 100% del tamaño de la vista, un valor 0.5 es el 50% de la anchura de la vista, etc...
 
 #### Desfase X / Desfase Y
 Especifica el desfase de la imagen de fondo desde la esquina inferior izquierda de la vista en una escala de 0-1.0 de la anchura y la altura de la vista. Por ejemplo, un valor 0.25 es un 25% de desfase del tamaño de la vista, un valor 0.5 es un 50% de desfase de la anchura de la vista, etc...
 
-#### Proyección cilíndrica
+### Proyección cilíndrica
 {: #cylindrical}
 La proyección cilíndrica mapea la imagen en un cilindro imaginario que delimita el modelo. Aunque esta proyección funciona mejor en imágenes cilíndricas verdaderas, también se puede usar eficazmente con panoramas estándar creados a partir de fotografías.
 
@@ -213,9 +216,9 @@ Especifica los ángulos verticales de la imagen en base a la dirección horizont
 ####  Obtener ángulos desde vista
 Define el ángulo de rotación para que coincida con la vista perspectiva actual.  Sirve para restablecer los valores de la proyección.
 
-#### Proyección esférica
+### Proyección esférica
 {: #spherical}
-La proyección esférica mapea la imagen en una esfera completa. Normalmente este método produce buenos resultados solo si se usa con una imagen esférica equirectangular. Una imagen equirectangular tiene una relación de aspecto de un rectángulo 2:1.
+La proyección esférica mapea la imagen en una esfera completa. Normalmente este método produce buenos resultados solo si se usa con una imagen esférica equirectangular.  Una imagen equirectangular tiene una relación de aspecto de un rectángulo 2:1.
 
 #### Ángulo desde vista
 La casilla Ángulo desde vista mantiene la imagen sincronizada con la vista activa.  La imagen se estirará para ajustarla a la vista activa.
@@ -254,7 +257,7 @@ Las imágenes de alto rango dinámico planas se utilizan muy poco, pero pueden s
 
 #### Archivo de imagen
 {: #hdri-planar-image}
-Defina la imagen de fondo HDRI haciendo clic en el botón *(vacío - haga clic aquí para asignar)* y, a continuación, seleccione un bitmap. Para asignar una imagen diferente, haga clic en el botón de la imagen en miniatura.
+Defina la imagen de fondo HDRI haciendo clic en el botón *(vacío - haga clic aquí para asignar)* y, a continuación, seleccione un bitmap.  Para asignar una imagen diferente, haga clic en el botón de la imagen en miniatura.
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
@@ -270,9 +273,9 @@ Las opciones de Fondo avanzado controlan los entornos que no están visibles en 
 Un entorno reflejado no es visible en la imagen renderizada, pero se refleja en objetos con brillo.
 
 #### Cielo
-Los objetos reflejan el cielo, como se especifica en las opciones de [Iluminación: sol y cielo](sun-and-sky-tabs.html) 
+Los objetos reflejan el cielo, como se especifica en las opciones de [Iluminación: sol y cielo](sun-and-sky-tabs.html)
 
-#### Personalizada
+#### Personalizado
 Los objetos reflejan un fondo de [Color o gradiente](#color-backgrounds), [Imagen](#environment-image) o [HDR](#hdr-background).
 
 #### Fondo visible
@@ -282,9 +285,9 @@ Los objetos reflejan el fondo visible, como se especifica en las opciones de [En
 {: #advanced-background-refracted-sky}
 
 #### Cielo
-Los objetos refractan el cielo, como se especifica en las opciones de [Iluminación: sol y cielo](sun-and-sky-tabs.html). 
+Los objetos refractan el cielo, como se especifica en las opciones de [Iluminación: sol y cielo](sun-and-sky-tabs.html).
 
-#### Personalizada
+#### Personalizado
 Los objetos refractan un fondo de [Color o gradiente](#color-and-gradient-backgrounds), [Imagen](#image) o [HDRI](#hdr-background).
 
 #### Fondo visible

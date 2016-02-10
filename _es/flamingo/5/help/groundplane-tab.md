@@ -1,12 +1,13 @@
 ---
+title: Plano de suelo
 ---
 
-# Plano de suelo
+# {{page.title}}
 {: #ground-plane}
 
 El plano de suelo crea una plataforma horizontal infinita en la imagen que estira el horizonte en todas las direcciones y se posiciona en una elevación definida. El plano de suelo se renderiza más rápidamente que utilizando una superficie plana grande como base.
 
-### Activado
+### Activado 
 {: #groundplane-enabled}
 Activa el plano de suelo.
 ![images/groundplane-002a.png](images/groundplane-002a.png)
@@ -14,7 +15,7 @@ Activa el plano de suelo.
 
 ### Alfa
 {: #groundplane-alpha}
-Aplica un canal alfa transparente al plano de suelo para que la imagen pueda componerse con la sombra proyectada en otra imagen. Véase: [Artículo de Wikipedia: Composición alfa](http://es.wikipedia.org/wiki/Composición_alfa).
+Aplica un canal alfa transparente al plano de suelo para que la imagen pueda componerse con la sombra proyectada en otra imagen. Véase el [artículo de Wikipedia: Composición alfa](http://es.wikipedia.org/wiki/Composición_alfa).
 ![images/groundplane-004a.png](images/groundplane-004a.png)
  *El plano de suelo muestra una sombra, pero es transparente en la imagen.*
 

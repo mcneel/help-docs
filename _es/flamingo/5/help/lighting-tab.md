@@ -1,7 +1,8 @@
 ---
+title: Preajustes de iluminación
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Lighting Presets
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 La iluminación es el factor más importante y más descuidado en la creación de imágenes. No se trata solamente de un modo de iluminar el modelo. La iluminación determina el ambiente y es un factor clave para definir la composición.
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -9,7 +10,7 @@ La iluminación es el factor más importante y más descuidado en la creación d
 
 #### ¿Dónde se encuentra el control de iluminación de Flamingo?
 
-* ![images/menuicon.png](images/menuicon.png)Menús > Flamingo nXt 5.0 > Mostrar panel de control > Editor de entornos.
+* ![images/menuicon.png](images/menuicon.png){: .inline} Menús > Flamingo nXt 5.0 > Mostrar panel de control > Editor de entornos.
 * Haga clic con el botón derecho en cualquier ficha y seleccione Flamingo nXt.
 
 
@@ -29,10 +30,10 @@ Un buen punto de partida para la iluminación son los preajustes de iluminación
 
 La iluminación en Flamingo nXt utiliza cuatro categorías de métodos predefinidos:
 
-> [Iluminación de estudio](lighting-tab.html#studio-lighting)
-> [Luz diurna exterior](lighting-tab.html#exterior-daylight)
-> [Luz diurna interior](lighting-tab.html#interior-daylight)
-> [Iluminación artificial](lighting-tab.html#artificial-lighting)
+* [Iluminación de estudio](lighting-tab.html#studio-lighting)
+* [Luz diurna exterior](lighting-tab.html#exterior-daylight)
+* [Luz diurna interior](lighting-tab.html#interior-daylight)
+* [Iluminación artificial](lighting-tab.html#artificial-lighting)
 
 ### Iluminación de estudio
 {: #studio-lighting}
@@ -44,7 +45,7 @@ La iluminación de estudio está optimizada para la exposición de artículos pe
 
 Para obtener mayor control, utilice fuentes de luz para iluminar la escena. Al iluminar una configuración de estudio, es importante una iluminación portentosa. Se puede crear una iluminación portentosa agregando mucho contraste. Las áreas oscuras son tan importantes como las áreas claras. Este tipo de iluminación requiere varias fuentes de luz ubicadas de una manera que produzcan unas áreas muy claras y otras muy oscuras.
 
-Las técnicas de iluminación para fotografía generalmente son las mismas que para renderizado. Una buena manera de aprender es con uno de los muchos libros que tratan el tema de iluminación fotográfica. Para obtener más información sobre la configuración de iluminación de estudio, consulte [Información básica sobre iluminación de estudio](../guides/studio-lighting-basics.html).
+Las técnicas de iluminación para fotografía generalmente son las mismas que para renderizado. Una buena manera de aprender es con uno de los muchos libros que tratan el tema de iluminación fotográfica. Para obtener más información sobre la configuración de iluminación de estudio, consulte: [Conceptos básicos sobre iluminación de estudio](../guides/studio-lighting-basics.html).
 
 ### Luz diurna exterior
 {: #exterior-daylight .clear-img}
@@ -101,10 +102,10 @@ El sol es una fuente de luz direccional muy luminosa que está infinitamente lej
 {: #sky}
 Para el canal de Cielo, seleccione una de estas cuatro opciones:
 
-> Auto
-> HDRI
-> Color
-> Imagen
+* Auto
+* HDRI
+* Color
+* Imagen
 
 Las opciones de HDR se encuentran en la ficha [Cielo](sun-and-sky-tabs.html#sky).
 Define una fuente de luz hemisférica que está infinitamente lejos del modelo.
@@ -175,6 +176,7 @@ Especifica el número de reflejos causados por una luz indirecta.
 ### Ambiente
 {: #ambient}
 La luz ambiental es una luz constante que se añade al renderizado. Estas opciones controlan intensidad de la luz ambiental como porcentaje de la luz ambiental total estimada de la escena.
+
 La disminución de la cantidad de luz ambiental produce generalmente imágenes con más contraste. Demasiada luz ambiental puede hacer que una imagen renderizada parezca poco interesante; demasiada poca luz puede causar un contraste excesivo.
 
 #### Ninguna
@@ -193,8 +195,8 @@ Optimiza la luz ambiental en escenas de estudio.
 
 ### Guardar esquema de iluminación
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) Guarda el esquema de iluminación actual.
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} Guarda el esquema de iluminación actual.
 
 ### Abrir esquema de iluminación
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) Abre un esquema de iluminación guardado.
+![images/importfromfile.png](images/importfromfile.png){: .inline} Abre un esquema de iluminación guardado.

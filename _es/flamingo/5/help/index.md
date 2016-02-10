@@ -1,4 +1,5 @@
 ---
+title: Índice de la Ayuda de Flamingo
 ---
 
 <!-- Do not edit the below section. The source for the Help index can be found in the _data folder in the help_index.yaml file -->
@@ -38,5 +39,6 @@
 {% endfor %}
 </ul>
 {% endfor %}
+
 
 <!-- Do not edit this section above. The source for the Help index can be found in the _data folder in the help_index.yaml file-->

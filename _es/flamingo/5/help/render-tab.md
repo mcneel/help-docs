@@ -1,26 +1,27 @@
 ---
+title: Opciones de renderizado
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg){:height="75px" width="75px"} Opciones de renderizado
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 La ficha renderizado controla las propiedades principales del renderizado final.  Utilice esta ficha para controlar la calidad y la duración que puede tardar un renderizado.  La resolución de la imagen final es lo que más influye en el tiempo de renderizado total.
 
 Nota: Una buena práctica es usar una resolución de renderizado baja durante los renderizados de prueba. Utilice renderizados de alta resolución solo en los renderizados finales.
 
 #### ¿Dónde se encuentra el control de iluminación de Flamingo?
 
- 1. ![images/options.png](images/options.png)Barras de herramientas >![images/flamingo-icon.png](images/flamingo-icon.png)Barra de herramientas de Flamingo nXt > Ficha Opciones de renderizado
- 1. ![images/menuicon.png](images/menuicon.png)Menús > Flamingo  5.0 > Mostrar panel de control > Flamingo nXt > Ficha Opciones de renderizado
+ 1. ![images/options.png](images/options.png){: .inline} Barras de herramientas >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Barra de herramientas de Flamingo nXt > Ficha Opciones de renderizado
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} Menús > Flamingo  5.0 > Mostrar panel de control > Flamingo nXt > Ficha Opciones de renderizado
 
 
 ## Ventana a renderizar
 {: #viewtorender}
-  Defina la vista que renderizará Flamingo nXt 5.  Se trata de una opción muy útil cuando se trabaja en el modelo y el renderizado, pero hay una vista específica que siempre se renderiza.  Por ejemplo, la vista Perspectiva es muchas veces la vista de interés.  Al definir esta opción en la lista desplegable, no es necesario asegurarse que la vista es activa antes de empezar el renderizado.
+Defina la vista que renderizará Flamingo nXt 5.  Se trata de una opción útil cuando se trabaja en el modelo y el renderizado, pero hay una vista específica que siempre se renderiza.  Por ejemplo, la vista Perspectiva es muchas veces la vista de interés.  Al definir esta opción en la lista desplegable, no es necesario asegurarse que la vista es activa antes de empezar el renderizado.
 
 #### Vista activa
 Utilice esta opción para renderizar la vista activa actual.  Es la opción predeterminada.
 
 #### Lista de vistas disponibles
-  Esta lista incluye todas las vistas guardadas en el modelo.  Seleccione el nombre de la vista que siempre debe renderizarse.
+Esta lista incluye todas las vistas guardadas en el modelo.  Seleccione el nombre de la vista que siempre debe renderizarse.
 
 ## Resolución de renderizado
 {: #resolution}
@@ -39,10 +40,10 @@ El tamaño de la imagen definirá la resolución final en función de diferentes
 
 Hay cuatro tipos de unidades que pueden utilizarse:
 
->Píxeles
->Pulgadas
->Milímetros
->Centímetros
+* Píxeles
+* Pulgadas
+* Milímetros
+* Centímetros
 
 #### Píxeles
 Define la imagen de renderizado en píxeles.  Utilice este ajuste para definir la anchura y altura final del renderizado final mediante el número de píxeles.
@@ -51,7 +52,7 @@ Define la imagen de renderizado en píxeles.  Utilice este ajuste para definir l
 Define las unidades de página en pulgadas. Las pulgadas se utilizan en combinación con los ajustes de resolución para determinar la resolución final de la imagen renderizada.  Para determinar la resolución final, multiplique el número de pulgadas en anchura y altura por el valor PPP de la resolución.
 
 #### Milímetros
-Define las unidades de página en milímetros. Utilice milímetros en combinación con los ajustes de resolución para determinar la resolución final de la imagen renderizada. Para determinar la resolución final, multiplique el número de milímetros en anchura y altura por el valor de puntos de resolución por milímetro.
+Define las unidades de página en milímetros. Utilice milímetros en combinación con los ajustes de resolución para determinar la resolución final de la imagen renderizada.  Para determinar la resolución final, multiplique el número de milímetros en anchura y altura por el valor de puntos de resolución por milímetro.
 
 #### Centímetros
 Define las unidades de página en centímetros. Utilice centímetros en combinación con los ajustes de resolución para determinar la resolución final de la imagen renderizada.  Para determinar la resolución final, multiplique el número de centímetros en anchura y altura por el valor de puntos de resolución por centímetro.
@@ -71,9 +72,9 @@ Altura de la imagen impresa en unidades del tamaño actual.  Multiplique este va
 {: #printsizeresolution}
 
 #### Visualización
-La imagen se renderiza utilizando la resolución en PPP de la vista. Se trata de la densidad de píxeles en un dispositivo. Normalmente expresa los [puntos por pulgada (PPP)](https://es.wikipedia.org/wiki/Puntos_por_pulgada)
+La imagen se renderiza utilizando la resolución en PPP de la vista. Se trata de la densidad de píxeles en un dispositivo.  Normalmente expresa los [puntos por pulgada (PPP)](https://es.wikipedia.org/wiki/Puntos_por_pulgada).
 
-#### Personalizada
+#### Personalizado
 La imagen se renderiza utilizando la resolución personalizada. Introduzca la resolución de anchura y altura personalizadas en **Píxeles por: control**.
 
 #### Impresora, calidad de borrador

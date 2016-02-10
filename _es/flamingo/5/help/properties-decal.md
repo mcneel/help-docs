@@ -1,8 +1,9 @@
 ---
+title: Calcomanías
 ---
+<!-- This is an old page, I am not sure it needs to be updated or translated,  The new Flamingo products used Rhino decals documented in Rhino help. -->
 
-
-# Calcomanías
+# {{page.title}}
 Las calcomanías son mapas de imagen sin mosaico que se aplican directamente a los objetos en lugar de indirectamente utilizando un material. Utilice calcomanías para modificar una parte limitada del color de un objeto, reflectividad o relieves.
 Las calcomanías están formadas por una sola imagen, en lugar de repetirse en varias direcciones como cuando se usan en una [definición de material](materials-tab.html).
 Las calcomanías se usan principalmente para:
@@ -13,13 +14,13 @@ Las calcomanías se usan principalmente para:
 >Crear ventanas de vidrio de colores.
 
 ![images/freshmilk.png](images/freshmilk.png)
- **Nota:** Las previsualizaciones de las calcomanías sólo se mostrarán en las vistas alámbricas si el OpenGL está activado para el modo alámbrico.&#160;La configuración del **Canal de visualización** debe ser **OpenGL** en **Opciones** &#160;&gt; **Apariencia** &#160;&gt; **Configuración avanzada** &#160;&gt; **Estructura alámbrica** &#160;&gt; **Otras opciones** &#160;&gt; **Canal de visualización y conductos**.
+ **Nota:** Las previsualizaciones de las calcomanías sólo se mostrarán en las vistas alámbricas si el OpenGL está activado para el modo alámbrico. La opción de **Canal de visualización** debe ser **OpenGL** en **Opciones** > **Vista**  > **Modos de visualización** > **Estructura alámbrica** > **Otras opciones**  > **Asignación de canal de visualización**.
 
 ## Colocación de calcomanías
 {: #decal-list}
 {: #decal-placement}
 
-###  **Añadir** 
+###  **Añadir**
 {: #add-decal}
 1. Seleccione uno o más objetos.
 1. En el menú **Edición**, haga clic en **Propiedades de objeto**.
@@ -30,23 +31,23 @@ Las calcomanías se usan principalmente para:
 1. Cuando le solicite puntos, designe puntos en el modelo para localizar la calcomanía.
 La secuencia precisa depende del tipo de calcomanía seleccionado: [Plana](#decal-planarmapping), [Cilíndrica](#decal-cylindricalmapping) o [MapaUV](#decal-uvmapping).
 
-###  **Editar colocación** 
+###  **Editar colocación**
 {: #decal-edit-placement}
 1. Haga clic en el botón **Editar colocación**.
 1. Cuando le solicite **Seleccione un punto de control**, utilice el editor gráfico para cambiar la posición de la calcomanía.
 1. Pulse **Intro** cuando termine.
 
-###  **Propiedades** 
+###  **Propiedades**
 {: #decal-properties}
 1. Haga clic en el botón Propiedades.
 1. En el cuadro de diálogo **Propiedades de calcomanía**, utilice las opciones para cambiar las características de la calcomanía.
 
-###  **Eliminar** 
+###  **Eliminar**
 {: #decal-delete}
 
 >Haga clic en el botón **Eliminar**.
 
-###  **Subir** / **Bajar** 
+###  **Subir** / **Bajar**
 {: #decal-movedown}
 {: #decal-moveup}
 Cuando se aplican muchas calcomanías superpuestas a un solo objeto, es importante el orden en que se aplican. Las calcomanías se aplican en el orden en que aparecen en la lista. La última calcomanía de la lista aparece en la parte superior.
@@ -104,31 +105,30 @@ El estilo de mapeado determina cómo proyectar la calcomanía sobre el objeto. E
 
 ### Cilíndrico
 {: #decal-cylindricalmapping}
-
-### &#160;
 El mapeado cilíndrico es útil para colocar calcomanías en objetos que se curvan hacia una dirección, como las etiquetas en botellas de vino.
 La proyección cilíndrica mapea el bitmap sobre el cilindro con el eje vertical del bitmap a lo largo del eje del cilindro, y el eje horizontal se curva alrededor del cilindro, como en una etiqueta de vino.
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png)
+
 ### Plana
 {: #decal-planarmapping}
-
-### &#160;
 El mapeado plano es el estilo de mapeado más común. Es apropiado al mapear objetos planos o suavemente curvados.
 Las esquinas definen la ubicación del bitmap y la extensión. Si el rectángulo no tiene las mismas proporciones que su bitmap, el bitmap se estirará o comprimirá para ajustarse al rectángulo.
 Si está utilizando el mapeado plano en un objeto curvado, toda la proyección bitmap debe estar situada detrás de la superficie del objeto. Las partes del bitmap que estén delante de la superficie no serán visibles.
 ![images/decal-planar-001.png](images/decal-planar-001.png)
+
 ### Mapa UV
 {: #decal-uvmapping}
-
-### &#160;
 Las calcomanías que usan el mapeado UV sirven para objetos como el cabello y la corteza de un árbol, por ejemplo, donde es necesario que la calcomanía se mueva y se estire para ajustarse a la superficie.
 La calcomanía cubre todo el objeto, no hay control sobre la colocación de la calcomanía.
 El mapeado UV utiliza la parametrización U y V de la superficie para curvar y estirar la imagen.
 ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
+
 ### Examinar
 {: #file-browse}
 Cambia el archivo de imagen.
+
 {% include_relative snippets/snippet-clearbitmapcache.md %}
+
 ## Intensidad
 {: #decalmappingstrength}
 
@@ -151,7 +151,7 @@ Ajusta la intensidad del brillo. Los valores más altos aumentan el tamaño y la
 Determina el tamaño del brillo. Los valores más bajos especifican una iluminación más amplia; los valores más altos focalizan la iluminación en una área más reducida. Consulte [Propiedades de material avanzadas, Definición](advanced-material-properties-main.html#sharpness).
 
 ### Metálico
-Define el color del brillo igual que el color base. Propiedades de material avanzadas: Metálico](advanced-material-properties-main.html#metallic).
+Define el color del brillo igual que el color base. Consulte [Propiedades de material avanzadas: Metálico](advanced-material-properties-main.html#metallic).
 {% include_relative snippets/snippet-linking.md %}
 {% include_relative snippets/snippet-masking.md %}
 ## Avanzada
@@ -183,4 +183,4 @@ Proyecta la calcomanía en la parte frontal y posterior de la imagen de calcoman
 ### Transparencia
 Define el nivel de transparencia para el área con máscara. Consulte [Transparencia](advanced-material-properties-transparency.html).
 IOR
-Define el índice de refracción de la calcomanía transparente. Consulte [Índice de refracción](advanced-material-properties-transparency.html#index-of-refraction) 
+Define el índice de refracción de la calcomanía transparente. Consulte [Índice de refracción](advanced-material-properties-transparency.html#index-of-refraction)

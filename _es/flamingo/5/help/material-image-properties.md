@@ -1,15 +1,18 @@
 ---
+title: Propiedades de imagen de material
 ---
 
 
-# ![images/images.svg](images/images.svg){:height="75px" width="75px"} Propiedades de imagen de material
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
 ![images/solidcolors.png](images/textureset.png)
 
 Los materiales pueden crearse a partir de imágenes. Puede escanear fotografías y objetos reales como papel tapiz y alfombra, crear plantillas en un programa de dibujo y utilizar imágenes de otras fuentes de bitmap.
+
 Imagínese que el material se estira infinitamente hacia todas las direcciones en el espacio. El material se hace visible solo cuando un objeto le atraviesa. Los patrones se repiten infinitamente (mosaico) en cuatro direcciones en una escala especificada.
+
 Las imágenes pequeñas que pueden ser repetidas en cuatro direcciones sin divisiones suelen funcionar mejor. Si el bitmap no se repite bien, utilice la opción de copiar losetas. De este modo, se garantiza que los bordes coincidan.
 
 **Nota:**Para que una imagen bitmap cubra solamente una parte del objeto (como una etiqueta en una botella de vino o un logo en un producto), utilice la función [Calcomanía](properties-decal.html).
@@ -17,7 +20,7 @@ Las imágenes pequeñas que pueden ser repetidas en cuatro direcciones sin divis
 Los mapas de imagen pueden usarse de distintas formas. Un método frecuente es usar un dibujo de un material real como color del material.
 
 ## Nombre
-Se puede asignar un nombre a las texturas de imagen. Este nombre lo utiliza la Librería de texturas del RDK y no tiene un impacto real en Flamingo.
+Se puede asignar un nombre a las texturas de imagen.  Este nombre lo utiliza la Librería de texturas del RDK y no tiene un impacto real en Flamingo.
 
 ## Imagen de Flamingo
 
@@ -44,9 +47,9 @@ Define el tamaño de loseta en unidades del modelo.
 {: #mapping-type}
 Las imágenes normalmente se aplican al canal de color. Pero existen otras maneras de usar las imágenes.  Las imágenes se pueden definir como:
 
-> [Estándar](#standard)
-> [Normal](#normal)
-> [Desplazamiento](#displacement)
+* [Estándar](#standard)
+* [Normal](#normal)
+* [Desplazamiento](#displacement)
 
 ### Estándar
 {: standard}
@@ -61,20 +64,20 @@ Determina cuánto influencia el mapa de imagen en la apariencia del material. En
 
 #### Intensidad de relieve
 {: #bump}
-Simula relieves y arrugas en la superficie de un objeto alterando las normales de superficie de un objeto. El objeto subyacente no se modifica. En la imagen, el material de la izquierda utiliza el mapeado de desplazamiento, mientras que el material de la derecha utiliza el mapeado de relieve definido en su valor más alto. El uso de números de relieve negativo invertirán el efecto. El borde y la sombra son suaves en el material con mapeado de relieve. Véase: [Artículo de Wikipedia: Mapeado topológico](https://es.wikipedia.org/wiki/Mapeado_topol%C3%B3gico).
+Simula relieves y arrugas en la superficie de un objeto alterando las normales de superficie de un objeto. El objeto subyacente no se modifica. En la imagen, el material de la izquierda utiliza el mapeado de desplazamiento, mientras que el material de la derecha utiliza el mapeado de relieve definido en su valor más alto. El uso de números de relieve negativo invertirán el efecto. El borde y la sombra son suaves en el material con mapeado de relieve. Véase el [artículo de Wikipedia: Mapeado topológico](https://es.wikipedia.org/wiki/Mapeado_topol%C3%B3gico).
 
 ![images/bumpvsdisplacement.png](images/bumpvsdisplacement.png)
 *Intensidad de relieve, 0.5 (izquierda) y 1.0 (derecha).*
 
 ### Normal
 {: #normal}
-Simula la iluminación de relieves y mellas sin utilizar más polígonos en la malla de renderizado. Véase: [Artículo de Wikipedia: Mapeado normal](https://es.wikipedia.org/wiki/Mapeado_normal).
+Simula la iluminación de relieves y mellas sin utilizar más polígonos en la malla de renderizado. Véase el [artículo de Wikipedia: Mapeado normal](https://es.wikipedia.org/wiki/Mapeado_normal).
 
-Los mapas de normales funcionan de modo muy similar a los mapas de relieve, en el sentido que modifican la normal de la superficie. El efecto es esencialmente el mismo que el relieve, pero los mapas de normales permiten más control sobre la normal que un relieve. Un mapa de relieve utiliza el promedio en gris del RGB de un bitmap. El RGB de un mapa de normal corresponde a la modificación del XYZ de la normal. Porque el canal azul de la imagen controla la dirección Z de la normal. Los mapas de normales tienen un color azul considerable.
+Los mapas de normales funcionan de modo muy similar a los mapas de relieve, en el sentido que modifican la normal de la superficie. El efecto es esencialmente el mismo que el relieve, pero los mapas de normales permiten más control sobre la normal que un relieve. Un mapa de relieve utiliza el promedio en gris del RGB de un bitmap. El RGB de un mapa de normal corresponde a la modificación del XYZ de la normal. Debido a que el canal azul de la imagen controla la dirección Z de la normal, los mapas de normales tienen un color azul considerable.
 
 ### Desplazamiento
 {: #displacement}
-Este mapa de imagen desplaza la malla de renderizado de la superficie según los valores de color de la imagen. El efecto es un cambio en la posición geométrica actual de la superficie. El desplazamiento se realiza normalmente a lo largo de la normal de la superficie local. Véase: [Artículo de Wikipedia: Mapeado de desplazamiento](http://en.wikipedia.org/wiki/Displacement_mapping).
+Este mapa de imagen desplaza la malla de renderizado de la superficie según los valores de color de la imagen. El efecto es un cambio en la posición geométrica actual de la superficie. El desplazamiento se realiza normalmente a lo largo de la normal de la superficie local. Véase el [artículo de Wikipedia: Mapeado por desplazamiento](https://es.wikipedia.org/wiki/Mapeado_por_desplazamiento).
 
  **Nota:**Utilice el mapeado de desplazamiento con moderación en objetos pequeños. El desplazamiento aumenta el tiempo de renderizado considerablemente.
 
@@ -119,7 +122,7 @@ Afecta al color del [canal de reflexión](advanced-material-properties-main.html
 Cambia el [nivel de reflexión](advanced-material-properties-main.html#intensity) según la escala de grises de la imagen en ese punto.  Esta opción se usa a menudo en Conjunto de texturas como Mapa especular.
 
 ####  Definición del brillo
-Ajusta la definición vs. desenfoque del [brillo](advanced-material-properties-main.html#intensity) según el valor de la escala de grises del mapa en ese punto. 
+Ajusta la definición vs. desenfoque del [brillo](advanced-material-properties-main.html#intensity) según el valor de la escala de grises del mapa en ese punto.
 
 #### Forma de brillo
 {: #advanced-highlight-shape}
