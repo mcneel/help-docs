@@ -221,7 +221,7 @@ defaults:
     values:
       doctype: "Help"
       layout: flamingo-toc-page
-      collectionname: "Help"
+      collectionname: "Aide"
   -
     scope:
       path: "fr/flamingo/5/guides"
