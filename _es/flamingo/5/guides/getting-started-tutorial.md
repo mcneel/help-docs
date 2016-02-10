@@ -120,4 +120,4 @@ El ajuste de la imagen renderizada después del renderizado es muy importante pa
 
 
 
-Aquí termina el tutorial. Esperemos que les sea útil.
+Aquí termina el tutorial. Esperamos que le sea útil.
