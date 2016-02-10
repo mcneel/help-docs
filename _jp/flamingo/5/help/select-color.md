@@ -2,7 +2,7 @@
 title: カラーセレクタ
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 カラーセレクタは、多くのマテリアルのグループやプロパティに使用されます。すべての場合で、操作は同じ方法で行います。
 
 
@@ -13,7 +13,7 @@ title: カラーセレクタ
 1. [色見本](#swatch) - 色をクリックすると、メインカラーセレクタが表示されます。
 1. [オプションメニュー](#options) - 矢印をクリックすると、その他のカラーユーティリティが表示されます。
 
-## 色見本 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg)
+## 色見本 ![images/callout-1-vertical.svg](images/callout-1-vertical.svg){: .inline}
 {: #swatch}
 色見本をクリックし、色の選択ダイアログボックスから色を選択します。
 
@@ -34,7 +34,7 @@ title: カラーセレクタ
 {: #rgb}
 この方法は、コンピュータが画面に色を投影する際に使用されます。それぞれのピクセルは、濃度の異なる3つの色の組み合わせからなっています。純色の赤は、緑や青の混じっていない完全な赤です。純色の黒は、赤、緑、青が0に、また、純白は、赤、緑、青が255に設定されています。
 
-## メニューオプション ![images/callout-2-vertical.svg](images/callout-2-vertical.svg)
+## メニューオプション ![images/callout-2-vertical.svg](images/callout-2-vertical.svg){: .inline}
 {: #options}
 
 #### カラーピッカー

@@ -3,7 +3,7 @@ title: Flamingo nXtのオプション
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 これらの設定はFlamingoのアプリケーションに適用されます。設定を変更すると、Flamingoの常に実行される方法が変更されます。
 
 {: #default-decal-link-state}
@@ -11,7 +11,7 @@ title: Flamingo nXtのオプション
 
 #### ファーム共有フォルダ
 {: #farm-output-folder}
-レンダーファームのジョブの共有フォルダです。これはまた、ファームが結果を出力する場所です。別の場所を選択するには、フォルダアイコン ![images/folderopen32x32.png](images/folderopen32x32.png)を使用します。
+レンダーファームのジョブの共有フォルダです。これはまた、ファームが結果を出力する場所です。別の場所を選択するには、フォルダアイコン ![images/folderopen32x32.png](images/folderopen32x32.png){: .inline}を使用します。
 
 #### タグ付けされた光源を表示
 タグ付けされた光源の方向を表示するのに、このプロパティを使用します。スポットおよび拡散の配光に使用できます。

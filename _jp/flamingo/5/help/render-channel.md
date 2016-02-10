@@ -2,7 +2,7 @@
 title: チャンネル
 ---
 
-# ![images/render.svg](images/render.svg) {{page.title}}
+# ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 Flamingo nXt 5の非常に便利な機能に、8つのチャンネルの1つに光源を設定できることがあります。シーンの太陽や空を含むそれぞれの光源は、チャンネルに割り当てることができます。レンダリング時に、それぞれのチャンネルからの光源はそれ自体のレイヤ（層）に配置されます。レンダリングが終了すると、チャンネルの強度を変更することができます。チャンネルは再レンダリングする必要がなく、リアルタイムで変更されます。  
 
@@ -31,10 +31,10 @@ Flamingo nXt 5の非常に便利な機能に、8つのチャンネルの1つに�
 {: setting}
 マルチチャンネルレンダリングをセットアップするための最初のステップは、それぞれの光源をチャンネルに設定することです。チャンネル番号は通常、それぞれの光源のプロパティに設定されます。特定の光源をチャンネルに設定する方法については、次を参照してください。
 
->[太陽チャンネル](sun-and-sky-tabs.html#sun-channel)
->[空チャンネル](sun-and-sky-tabs.html#sky-channel)
->[人工光源チャンネル](lights-tab.html#channel)
->[マテリアルのグロー](documentproperties-flamingo.html#channel)
+* [太陽チャンネル](sun-and-sky-tabs.html#sun-channel)
+* [空チャンネル](sun-and-sky-tabs.html#sky-channel)
+* [人工光源チャンネル](lights-tab.html#channel)
+* [マテリアルのグロー](documentproperties-flamingo.html#channel)
 
 複数の光源を同じ光源チャンネルに割り当てることもできます。チャンネルの調整は乗算で行われます。同じチャンネルの複数の光源は調整中、それぞれに対する相対的な強さを維持します。
 

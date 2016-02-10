@@ -2,7 +2,7 @@
 title: 照明プリセット
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 イメージを作成するに当たって、一番大切でありながら、重要視されていないのが照明です。照明は単にモデルに光を当てる手段というだけではありません。 照明はムードを決め、全体の構成を左右する重要な鍵です。
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
@@ -10,7 +10,7 @@ title: 照明プリセット
 
 #### Flamingo照明コントロールの位置
 
-* ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXt
+* ![images/menuicon.png](images/menuicon.png){: .inline} メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXt.
 * 任意のタブを右クリックしてFlamingo nXtにチェックマークを付ける
 
 
@@ -30,10 +30,10 @@ title: 照明プリセット
 
 Flamingo nXtの照明は、4つのプリセットの方法のカテゴリを使用します。
 
-> [スタジオ照明](lighting-tab.html#studio-lighting)
-> [屋外昼光](lighting-tab.html#exterior-daylight)
-> [屋内昼光](lighting-tab.html#interior-daylight)
-> [人工照明](lighting-tab.html#artificial-lighting)
+* [スタジオ照明](lighting-tab.html#studio-lighting)
+* [屋外昼光](lighting-tab.html#exterior-daylight)
+* [屋内昼光](lighting-tab.html#interior-daylight)
+* [人工照明](lighting-tab.html#artificial-lighting)
 
 ### スタジオ照明
 {: #studio-lighting}
@@ -102,10 +102,10 @@ Flamingo nXtの照明は、4つのプリセットの方法のカテゴリを使�
 {: #sky}
 空のチャンネルは、下の4つのオプションの1つに設定します。
 
-> 自動
-> HDRI
-> 色
-> 画像
+* 自動
+* HDRI
+* 色
+* 画像
 
 詳細については、[空タブ](sun-and-sky-tabs.html#sky)のトピックを参照してください。
 モデルから無限に離れた半球の光源を定義します。
@@ -195,8 +195,8 @@ HDR画像を用いると、光るオブジェクトにイメージを映すこ�
 
 ### 照明スキームを保存
 {: #save-lighting-scheme}
-![images/saveschemeicon.png](images/saveschemeicon.png) 現在の照明スキームを保存します。
+![images/saveschemeicon.png](images/saveschemeicon.png){: .inline} 現在の照明スキームを保存します。
 
 ### 照明スキームを開く
 {: #open-lighting-scheme}
-![images/importfromfile.png](images/importfromfile.png) 保存されているスキームを開きます。
+![images/importfromfile.png](images/importfromfile.png){: .inline} 保存されているスキームを開きます。
