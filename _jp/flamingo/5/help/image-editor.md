@@ -7,15 +7,15 @@ nXtのイメージエディタは、どのようなnXtのプラットフォー�
 nXtのイメージエディタを使うと、次のことが行えます。
 
 
-> [トーンマッピング](image-editor.html#tone-mapping)設定の調整。
-> 光源チャンネルの強度の変更。
-> イメージベースのエフェクト（[ヘイズ](image-editor.html#haze)、[深度ブラー](image-editor.html#depth-blur)、[グレア](image-editor.html#glare)の追加。
-> トーンマッピングされたイメージを.jpgや.pngなどのビットマップ形式で[保存](image-editor.html#save-tonemapped-image-as)。
-> 輝度情報を[HDR形式](image-editor.html#save-hdr-image-as)に保存。
-> 高度な合成に用いるためのその他のマスクチャンネル（[アルファ](image-editor.html#alpha-channel)、[距離](image-editor.html#distance-channel)、[マテリアル](image-editor.html#material-channel)）の表示と保存。
-> ノンフォトリアリスティックなレンダリングの作成に用いることができる[PiranesiAc](http://www.piranesi.co.uk/)ファイル形式（*.epx）を保存。
-> レンダーファームの異なるノードによって生成されたイメージを組み合わせるなどの作業にイメージの[演算](image-editor.html#arithmetic)を使用。
-> レンダリングを生成するのに使用された[照明スキーム](image-editor.html#save-lighting-settings-as)を保存。これらの照明設定をより多くのレンダリングを生成するのに用いることができます。
+* [トーンマッピング](image-editor.html#tone-mapping)設定の調整。
+* 光源チャンネルの強度の変更。
+* イメージベースのエフェクト（[ヘイズ](image-editor.html#haze)、[深度ブラー](image-editor.html#depth-blur)、[グレア](image-editor.html#glare)）の追加。
+* トーンマッピングされたイメージを.jpgや.pngなどのビットマップ形式で[保存](image-editor.html#save-tonemapped-image-as)。
+* 輝度情報を[HDR形式](image-editor.html#save-hdr-image-as)に保存。
+* 高度な合成に用いるためのその他のマスクチャンネル（[アルファ](image-editor.html#alpha-channel)、[距離](image-editor.html#distance-channel)、[マテリアル](image-editor.html#material-channel)）の表示と保存。
+* ノンフォトリアリスティックなレンダリングの作成に用いることができる[Piranesi&#169;](http://www.piranesi.co.uk/)ファイル形式（*.epx）を保存。
+* レンダーファームの異なるノードによって生成されたイメージを組み合わせるなどの作業にイメージの[演算](image-editor.html#arithmetic)を使用。
+* レンダリングを生成するのに使用された[照明スキーム](image-editor.html#save-lighting-settings-as)を保存。これらの照明設定をより多くのレンダリングを生成するのに用いることができます。
 
 イメージエディタを起動するには
 

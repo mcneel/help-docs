@@ -2,7 +2,7 @@
 title: 詳細マテリアルプロパティ
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)
 
@@ -10,14 +10,14 @@ Flamingoには、[シンプルなマテリアル](material-type-simple.html)の�
 
 詳細マテリアルのすべてのプロパティグループは次のとおりです。
 
-> [名前](#name)
-> [マテリアルプロシージャ](#procedures)
-> [詳細マテリアルプロパティ](#advanced-materials-properties)
-> [反射仕上げ](#reflective-finish-and-highlight)
-> [透明度のプロパティ](#transparency)
-> [プロシージャルテクスチャ](#bump-patterns)
-> [ビットマップテクスチャ](#textures)
-> [注記](#notes)
+* [名前](#name)
+* [マテリアルプロシージャ](#procedures)
+* [詳細マテリアルプロパティ](#advanced-materials-properties)
+* [反射仕上げ](#reflective-finish-and-highlight)
+* [透明度のプロパティ](#transparency)
+* [プロシージャルテクスチャ](#bump-patterns)
+* [ビットマップテクスチャ](#textures)
+* [注記](#notes)
 
 ## マテリアルの名前
 {: #name}
@@ -33,8 +33,10 @@ Rhinoのモデルにあるマテリアルの名前です。マテリアルはRhi
 
 
 ##### プロシージャを追加するには
+
 1. プロシージャウィンドウのベースで右クリックします。
 1. メニューでプロシージャのタイプをクリックします。
+
   * [ベース](procedural-materials.html#base)
   * [角度ブレンド](procedural-materials.html#angular-blend)
   * [ブレンド](procedural-materials.html#blend)
@@ -44,8 +46,9 @@ Rhinoのモデルにあるマテリアルの名前です。マテリアルはRhi
   * [木目](procedural-materials.html#wood)
 
 ##### プロシージャを削除するには
- 1. プロシージャウィンドウで、プロシージャ名を右クリックします。
- 2. メニューで削除をクリックします。
+
+1. プロシージャウィンドウで、プロシージャ名を右クリックします。
+1. メニューで削除をクリックします。
 
 ## 詳細マテリアルプロパティ
 {: #advanced-materials-properties}
@@ -73,7 +76,7 @@ Rhinoのモデルにあるマテリアルの名前です。マテリアルはRhi
 ![images/highlightcolormetallic.png](images/highlightcolormetallic.png)
 
 #### カスタム
-非常に特殊な仕上げでは、オブジェクトの反射色がマテリアルのベース色と異なります。これは、通常複数の層で作成されたマテリアルで見られます。この設定は、ハイライト色を任意の色に設定するのに使用してください。[カラーセレクタ](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png)を使用して、反射色を選択します。
+非常に特殊な仕上げでは、オブジェクトの反射色がマテリアルのベース色と異なります。これは、通常複数の層で作成されたマテリアルで見られます。この設定は、ハイライト色を任意の色に設定するのに使用してください。[カラーセレクタ](select-color.html) ![images/colorswatch-001.png](images/colorswatch-001.png){: .inline}を使用して、反射色を選択します。
 
 ![images/highlightcolorcustom.png](images/highlightcolorcustom.png)
 
@@ -239,11 +242,11 @@ Rhinoのモデルにあるマテリアルの名前です。マテリアルはRhi
 {: #bump-patterns}
 バンプパターンは、ディスプレイスメントマップを用いたり、他のマップを用いたりする必要なしに、特定の種類のサーフェスの外観を表現します。バンプは、マテリアルのサーフェスの凹凸を、数式を使って表現します。 パターンには次のものがあります:
 
-> [サンドペーパー](#sandpaper)
-> [砕石](#rubble)
-> [ピラミッド](#pyramid)
-> [しわ](#wrinkled)
-> [大理石](#marbled)
+* [サンドペーパー](#sandpaper)
+* [砕石](#rubble)
+* [ピラミッド](#pyramid)
+* [しわ](#wrinkled)
+* [大理石](#marbled)
 
 例えば、漆喰、コンクリート、そして粘土のようなマテリアルは、きめが細かいマテリアルです。このようなマテリアルは、クローズアップして見ることがない限り、マテリアルをスキャンしてそのビットマップを作成する意味はあまりないでしょう。このようなきめの細かいパターンは、サンドペーパープロシージャルバンプを[ベース色](advanced-material-properties-main.html#color)上で使うことで模倣することができます。マテリアルの色の[ベース色](advanced-material-properties-main.html#color)を作成してください。そして、マテリアルにプロシージャルバンプを追加します。きめを細かくするにはサンドペーパーを、きめを粗くするには砕石を使用します。
 

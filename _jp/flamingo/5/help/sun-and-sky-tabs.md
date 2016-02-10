@@ -2,7 +2,7 @@
 title: 太陽と空
 ---
 
-# ![imagessun.svg](images/sun.svg) {{page.title}}
+# ![imagessun.svg](images/sun.svg){: .inline} {{page.title}}
 [太陽](#sun)と[空](#sky)は、お互いに密接な関係があります。太陽は自動モードで空の明るさを変更することができます。太陽がオンで、空がHDRIの場合、この2つの強弱の釣り合いを取るのが重要です。
 
 ## 太陽
@@ -15,8 +15,8 @@ title: 太陽と空
 
 太陽は、[照明プリセット](lighting-tab.html#lighting-presets)または[カスタム照明設定](lighting-tab.html#sun)を通してアクティブにします。
 
-* ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXtツールバー
-* ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXtタブ > 太陽
+* ![images/options.png](images/options.png){: .inline} ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXtツールバー
+* ![images/menuicon.png](images/menuicon.png){: .inline} メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXtタブ > 太陽
 
 **メモ:** 照明プリセットで太陽がオンになっている場合のみ、太陽タブが表示されます。
 
@@ -97,18 +97,18 @@ title: 太陽と空
 #### Flamingo空コントロールの位置
 空は、[照明プリセット](lighting-tab.html#lighting-presets)または[カスタム照明設定](lighting-tab.html#sky)を通してアクティブにします。
 
- 1. ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXtツールバー
- 1. ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXtタブ > 空
+ 1. ![images/options.png](images/options.png){: .inline} ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXtツールバー
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXtタブ > 空
 
 [屋外](lighting-tab.html#exterior-daylight)と[屋内](lighting-tab.html#interior-daylight)昼光の照明プリセットスキームは、デフォルトで自動設定の空を使用します。[スタジオ](lighting-tab.html#studio-lighting)照明プリセットスキームは、HDR画像照明をデフォルトで使用します。
 
 空は5つの方法で設定できます。
 
->[オフ](lighting-tab.html#off)
->[自動設定](#automatic-sky)
->[ハイ・ダイナミック・レンジ・イメージ（HDRI）](#high-dynamic-range-image-sky)
->[色](#color-sky)
->[画像](#image-sky)
+* [オフ](lighting-tab.html#off)
+* [自動設定](#automatic-sky)
+* [ハイ・ダイナミック・レンジ・イメージ（HDRI）](#high-dynamic-range-image-sky)
+* [色](#color-sky)
+* [画像](#image-sky)
 
 2つの最良の空照明のタイプの設定は、[HDR画像](#high-dynamic-range-image-sky)の空と[自動設定の空](#automatic-sky)です。HDR画像の空は、光と反射を表現する、それぞれのピクセルに照明値を格納する画像を使用します。自動設定の空は、実世界の太陽の位置と雲量を用いて空を模倣します。これらの設定は、最もダイナミックなレンダリングを作り出します。
 
@@ -157,7 +157,7 @@ HDR画像光源の明るさを変更します。この設定は、シーンに�
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 *HDR強度を低く設定（左）、HDR強度を高く設定（右）*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}下のイメージでは、画像は太陽がオブジェクトに映るように回転されています。回転角度を入力するか、回転ウィジェットインジケータをインタラクティブに移動してください。
+{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} 下のイメージでは、画像は太陽がオブジェクトに映るように回転されています。回転角度を入力するか、回転ウィジェットインジケータをインタラクティブに移動してください。
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 *オブジェクトに太陽が映るように画像を回転。*
 

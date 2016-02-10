@@ -2,8 +2,8 @@
 title: Flamingoの環境
 ---
 
-# ![images/environment.svg](images/environment.svg) {{page.title}}
-[Rhinoには多くのタイプの環境](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm)があります。このトピックでは、Flamingo環境タイプについて説明します。
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
+[Rhinoには多くのタイプの環境](http://docs.mcneel.com/rhino/5/help/ja-jp/commands/environmenteditor.htm)があります。このトピックでは、Flamingo環境タイプについて説明します。
 
 環境は、背景や反射の目に見える部分に影響します。シーンの照明に影響する効果については、[空](sun-and-sky-tabs.html)のヘルプトピックを参照してください。
 
@@ -11,10 +11,10 @@ Flamingoには、**デフォルトFlamingo環境**と呼ばれる特別な環境
 
 Flamingoの環境のすべてのプロパティグループは次のとおりです。
 
-> [名前](#name)
-> [Flamingo環境](#environment)
-> [背景色](#color-backgrounds)
-> [高度な背景設定](#advanced-background-reflected-sky)
+  * [名前](#name)
+  * [Flamingo環境](#environment)
+  * [背景色](#color-backgrounds)
+  * [高度な背景設定](#advanced-background-reflected-sky)
 
 
 ## 環境名
@@ -25,9 +25,9 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 {: #environment}
 レンダリングには、3つの主な環境効果があります。
 
->表示背景
->[反射背景](#advanced-background-reflected-sky)
->[屈折背景](#advanced-background-refracted-sky)
+  1. 表示背景
+  1. [反射背景](#advanced-background-reflected-sky)
+  1. [屈折背景](#advanced-background-refracted-sky)
 
 表示背景は、シーンの基本背景色です。表示背景は、一般のプロパティパネルで設定します。[反射](#advanced-background-reflected-sky)および[屈折](#advanced-background-refracted-sky)背景は、異なる設定ができ、高度な背景設定のセクションに表示されます。
 
@@ -39,10 +39,10 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 {: #background-type}
 レンダリングイメージの背景を埋める色のスキームを指定します。背景は次のタイプから選択することができます。
 
-> [空](#environment-sky)
-> [色（単色）またはグラデーション色](#color-backgrounds)
-> [画像](#environment-image)
-> [HDRまたは平面HDR画像](#hdr-background)
+* [空](#environment-sky)
+* [色（単色）またはグラデーション色](#color-backgrounds)
+* [画像](#environment-image)
+* [HDRまたは平面HDR画像](#hdr-background)
 
 ## 空背景
 {: #environment-sky}
@@ -129,9 +129,9 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 {: #backgroud-image-projection}
 ドロップダウンコントロールを使用して、3つの画像投影方法から1つを選択します。
 
->[平面](#planar)
->[円柱](#cylindrical)
->[球](#spherical)
+* [平面](#planar)
+* [円柱](#cylindrical)
+* [球](#spherical)
 
 それぞれの投影方法には、異なる画像配置コントロールが表示されます。
 
@@ -161,6 +161,8 @@ Rhinoのモデルにある環境の名前です。環境はRhinoのモデルに�
 
 ![images/background-image-003.png](images/background-image-003.png)
 *現在のビューポート領域 (1)、画像サイズと形状 (2)*
+
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
 
 #### Xスケール / Yスケール
 背景画像のサイズをビューの幅と高さの0 - 1.0のスケールで指定します。例えば、1.0はビューサイズの100%、0.5はビューの幅の50%などです。

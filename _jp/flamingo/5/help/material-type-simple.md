@@ -1,19 +1,19 @@
 ---
 title: マテリアルの基本プロパティ
 ---
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Flamingoのマテリアルは、一連のプロパティのグループで定義されます。これらは一般的に使用されるシンプルなマテリアルのタイプの数々です。これらのマテリアルは、非常にシンプルなコントロールセットを提供します。それによって、多数の複雑なコントロールを設定することなく、プロパティを簡単に編集して、マテリアルの外見を変えることができます。ほとんどのシンプルなマテリアルは、単に色を変更するだけで希望する効果が得られます。
 
 #### シンプルなマテリアルのタイプ
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[単色](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[プラスチック](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[金属](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[ガラス](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[光沢](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[クリアフィニッシュ](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[Flamingoテクスチャ](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[テクスチャセット](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png){: .inline} [単色](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png){: .inline} [プラスチック](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png){: .inline} [金属](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png){: .inline} [ガラス](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png){: .inline} [光沢](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png){: .inline} [クリアフィニッシュ](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png){: .inline} [Flamingoテクスチャ](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png){: .inline} [テクスチャセット](#texture-set)
 
 マテリアルはすべて詳細マテリアルに変換することができます。詳細マテリアルは、Flamingo nXtでマテリアルの編集を行うためのすべての可能なコントロールを提供します。マテリアルの幅広いコントロールを利用するには、詳細マテリアルを使うか、既存のマテリアルを詳細マテリアルに変換してください。
 
@@ -124,7 +124,8 @@ Flamingoのマテリアルは、一連のプロパティのグループで定義
 
 ## テクスチャセット
 {: #texture-set}
-[テクスチャセットマテリアル](material-type-texture-set.html)は、マテリアルを連係して定義する一連のセットのテクスチャです。これらのセットは、ディスプレイスメント、法線、バンプマップなどの情報を含むテクスチャマップから作成できます。ディスプレイスメントマップは、マテリアルに深さを与えます。これらのテクスチャマップをセットとして組み合わせると、非常にリアルなマテリアルを作成することができます。[PixPlant software](http://www.pixplant.com/)は、標準ビットマップを使って、これらのテクスチャのセットを作成できる製品です。
+
+テクスチャセットマテリアルは、マテリアルを連係して定義する一連のセットのテクスチャです。これらのセットは、ディスプレイスメント、法線、バンプマップなどの情報を含むテクスチャマップから作成できます。ディスプレイスメントマップは、マテリアルに深さを与えます。これらのテクスチャマップをセットとして組み合わせると、非常にリアルなマテリアルを作成することができます。[PixPlantソフトウェア](http://www.pixplant.com/)は、標準ビットマップを使って、これらのテクスチャのセットを作成できる製品です。
 
 ![images/solidcolors.png](images/textureset.png)
 

@@ -24,7 +24,7 @@ title: レンダリングの自動化
 既存のバッチジョブを選択し、「削除」を使用すると、バッチリストからジョブが削除されます。
 
 #### プロパティ
-既存のバッチジョブを選択し、「プロパティ」を使用すると[バッチレンダリングのプロパティ](#batch-render-properties)を設定できるようになります。プロパティには、それぞれのジョブのファイル名、解像度、そしてパスの数などを設定できます。
+既存のバッチジョブを選択し、「プロパティ」を使用すると[バッチレンダリングのプロパティ](#batch-render-properties)を設定できるようになります。プロパティでは、それぞれのジョブのファイル名、解像度、そしてパスの数などを設定できます。
 
 #### 上へ移動
 リストでビューポート名を1つ上に移動します。
@@ -57,7 +57,7 @@ title: レンダリングの自動化
 指定のジョブがレンダリングするビューを表示します。[レンダリングタブ、レンダリングするビューポート](render-tab.html#viewtorender)を参照してください。
 
 #### ファイル名
-保存ボタン ![images/saveimageas.png](images/saveimageas.png) をクリックし、レンダリングイメージのファイル名を指定します。
+保存ボタン ![images/saveimageas.png](images/saveimageas.png){: .inline} をクリックし、レンダリングイメージのファイル名を指定します。
 
 #### アルファチャンネル
 イメージをアルファチャンネルと一緒に保存します。詳細については、[アルファチャンネル背景を使用する](environment-tab.html#alpha)を参照してください。
@@ -70,7 +70,9 @@ title: レンダリングの自動化
 {: #rendering-constraints}
 バッチジョブを終了するのに必要なパスの数を設定します。詳細については、[パス](documentproperties-flamingo.html#number-of-passes)のトピックを参照してください。
 
-<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now? Alpha channel This needs to be investigated. The rest of this section is commented out.-->
+<!-- TODO: Flamingo nXt 5 runs from the RDK.  The need to Flamingo Automate render is not clear.  What is needed to run animations with nxt right now?
+The number of passes and the ability to send a render to the farm are required still.  So the dialog should be smaller.
+Alpha channel This needs to be investigated. The rest of this section is commented out.-->
 
 <!-- Commented out until automated render can be determined
 

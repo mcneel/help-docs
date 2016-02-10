@@ -2,7 +2,7 @@
 title: マテリアルの割り当て
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 シーンのオブジェクトは、レンダリングマテリアルを指定の場所から取得します。マテリアルは異なる方法で割り当てることができます。マテリアルを割り当てるのに使用する方法によって、モデルの将来の変更、維持が簡単かどうかが決まります。
 
 マテリアルは3つの方法で割り当てることができます。この3つは、階層です。リストの下の方にある割り当て方法は、その上の割り当て方法に優先されます。3つの方法は次のとおりです。
@@ -46,8 +46,8 @@ title: マテリアルの割り当て
 
 ##### オブジェクトのプロパティを使ってマテリアルを割り当てるには
 1. オブジェクトを選択します。
-1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png) をオブジェクトの編集のためにクリックします。
-1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、「親の設定」をクリックします。
+1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png){: .inline}をオブジェクトの編集のためにクリックします。
+1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png){: .inline}のマテリアルの割り当て方法で、「親の設定」をクリックします。
 
 ## マテリアルをオブジェクトに割り当てる
 {: #byobject}
@@ -58,8 +58,8 @@ title: マテリアルの割り当て
 
 ##### オブジェクトのプロパティを使ってマテリアルを割り当てる
 1. オブジェクトを選択します。
-1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png) をオブジェクトの編集のためにクリックします。
-1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png) のマテリアルの割り当て方法で、「オブジェクト」をクリックし、リストでマテリアルをクリックします。
+1. 編集メニューのオブジェクトのプロパティ ![images/properties.png](images/properties.png){: .inline}をオブジェクトの編集のためにクリックします。
+1. [プロパティ](properties-object.html)ダイアログボックスのマテリアルページ ![images/materialtab.png](images/materialtab.png){: .inline}のマテリアルの割り当て方法で、「オブジェクト」をクリックし、リストでマテリアルをクリックします。
 
 ##### マテリアルを1つのオブジェクトにドラッグする
 {: #drag-dropmaterialtoobject}

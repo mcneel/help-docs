@@ -3,7 +3,7 @@ title: マテリアル画像のプロパティ
 ---
 
 
-# ![images/images.svg](images/images.svg) {{page.title}}
+# ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
 ![images/textures.png](images/textures.png)
@@ -47,9 +47,9 @@ title: マテリアル画像のプロパティ
 {: #mapping-type}
 画像は通常、色チャンネルに適用されますが、他の使用方法もあります。画像は次の形式で設定できます。
 
-> [標準](#standard)
-> [法線](#normal)
-> [ディスプレイスメント](#displacement)
+* [標準](#standard)
+* [法線](#normal)
+* [ディスプレイスメント](#displacement)
 
 ### 標準
 {: standard}

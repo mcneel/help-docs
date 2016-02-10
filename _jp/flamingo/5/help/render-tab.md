@@ -2,15 +2,15 @@
 title: レンダリングオプション
 ---
 
-# ![images/flamingotab.svg](images/flamingotab.svg) {{page.title}}
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 レンダリングタブは、最終のレンダリングの主なプロパティをコントロールします。レンダリングの質や所要時間をコントロールするのにこのタブを使用します。最終イメージの解像度が、所要時間を左右する一番大きな要素です。
 
 ドラフトレンダリング中にレンダリングの解像度を低くしておく習慣をつけるとよいでしょう。最終レンダリングにのみ高解像度のレンダリングを使用してください。
 
 #### Flamingo照明コントロールの位置
 
- 1. ![images/options.png](images/options.png)ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt ツールバー > レンダリングオプションタブ
- 1. ![images/menuicon.png](images/menuicon.png)メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXt > レンダリングオプションタブ
+ 1. ![images/options.png](images/options.png){: .inline} ツールバー >![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXtツールバー > レンダリングオプションタブ
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} メニュー > Flamingo nXt 5.0プルダウン > コントロールパネルを表示 > Flamingo nXt > レンダリングオプションタブ
 
 
 ## レンダリングするビューポート
@@ -40,10 +40,10 @@ Flamingo nXt 5がレンダリングするビューを設定します。これは
 
 使用できるのは次の4つの単位です。
 
->ピクセル
->インチ
->ミリメートル
->センチメートル
+* ピクセル
+* インチ
+* ミリメートル
+* センチメートル
 
 #### ピクセル
 レンダリングイメージの単位をピクセルに設定します。ピクセル数で簡単に最終レンダリングの幅と高さを設定するのにこの設定を用いてください。
