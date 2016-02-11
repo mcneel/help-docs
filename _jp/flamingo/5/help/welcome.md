@@ -1,9 +1,9 @@
 ---
 title: Flamingoをはじめるにあたって
 ---
+<!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
 
-
-# ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt&#174;をはじめるにあたって
+# ![images/flamingotab.svg](images/flamingotab.svg){: .inline} Flamingo nXt&#174;をはじめるにあたって
 Flamingo nXtは、3Dモデルから高品質でフォトリアリスティックな静止およびアニメーションの画像ファイルをRhinoceros &#174;の中で作成します。Flamingo nXt 5は、Flamingoへのアップデートで、Rhino 5にビルトインレンダリング機能を統合します。これは現在ワーク・イン・プログレス・バージョンです。
 
 Flamingoは、[Flamingo nXt 5 ダウンロード](http://www.rhino3d.com/download/flamingo/5/beta)からダウンロード、インストールしていただけます。
@@ -19,18 +19,18 @@ RHIインストーラをダウンロード、実行後にRhinoを起動してく
 
 テクニカルサポート、チュートリアル、例、**Flamingo nXt**をはじめるにあたっての情報については、[Flamingo nXtのウェブサイト](http://nxt.flamingo3d.com/)（英語、一部日本語）をご覧ください。
 
-> [チュートリアル](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
-> [ギャラリー](http://nxt.flamingo3d.com/photo)
-> [テクニカルサポート](http://nxt.flamingo3d.com/forum)
+* [チュートリアル](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+* [ギャラリー](http://nxt.flamingo3d.com/photo)
+* [テクニカルサポート](http://nxt.flamingo3d.com/forum)
 
 ## Flamingo nXtのコントロールパネル
 {: #control-panel}
 このバージョンのFlamingoはインターフェイスがRhino 5のレンダリングツールと統合されます。Flamingo nXtのコントロールパネルには、レンダリングのためにモデルを設定するためのタブが表示されます:
 
-> [マテリアル](materials-tab.html)
-> [照明](lighting-tab.html)
-> [環境](environment-tab.html)
-> [レンダリング](render-tab.html)
+* [マテリアル](materials-tab.html)
+* [照明](lighting-tab.html)
+* [環境](environment-tab.html)
+* [レンダリング](render-tab.html)
 
 ## Flamingoのコントロールパネルを表示するには
 * Flamingo nXt 5.0メニューのコントロールパネルをクリックします。

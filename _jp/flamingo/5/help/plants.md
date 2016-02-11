@@ -2,7 +2,7 @@
 title: 植物
 ---
 
-# ![images/plants.svg](images/plants.svg) {{page.title}}
+# ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 Flamingo nXtには、レンダリングの際に複雑な植物形状を効率的に生成する、簡単でパワフルな植物ジェネレータが含まれています。モデルにはプレースホルダーのみが置かれるので、植物はモデルのサイズにはあまり影響は与えません。
 
 ![images/plants-001.png](images/plants-001.png)

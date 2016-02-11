@@ -2,22 +2,21 @@
 title: オブジェクトのプロパティ
 ---
 
-
-#  ![images/properties.svg](images/properties.svg) {{page.title}}
+#  ![images/properties.svg](images/properties.svg){: .inline} {{page.title}}
 Flamingo nXtのオブジェクトのプロパティは、Flamingo nXtでのオブジェクトのレンダリング方法のみに影響します。
 
-### ![images/materialtab.png](images/materialtab.png) マテリアル
+### ![images/materialtab.png](images/materialtab.png){: .inline} マテリアル
 {: #material-source}
 マテリアルは、レイヤ、オブジェクト、そしてブロックに割り当てることができます。マテリアルの割り当てについての詳細は、[マテリアルの割り当て](material_assignment.html)のトピックを参照してください。マテリアルがオブジェクトの設定になっている場合、マテリアルのプロパティもこのダイアログに表示されます。マテリアルの編集についての詳細は、[マテリアルのプロパティ](material-type-simple.html)を参照してください。
 
-### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png) テクスチャマッピング
+### ![images/apply-cylindrical-mapping.png](images/apply-cylindrical-mapping.png){: .inline} テクスチャマッピング
 {: #texture-mapping}
 マッピングは、特定のオブジェクトにどのようにマテリアルが配置（マップ）されるのかをコントロールします。マテリアルを割り当てる方法（レイヤに、またはオブジェクトに）は、マッピングには影響しません。目立ったパターンがないマテリアルの場合、マッピングをコントロールする必要は通常ありません。マテリアルに方向がある場合、またはマテリアルにはっきりとしたパターンがある場合はマッピングを使用してください。このような場合でも、デフォルトのマッピングで十分なこともあります。マッピングはオブジェクトに付随し、オブジェクトを移動、回転、サイズ変更すると、それに従います。マッピングタイプの詳細については、[テクスチャマッピング](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#properties/texturemapping.htm)のトピックを参照してください。
 
 ![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png)
 *2つの異なるマッピング方向*
 
-### ![images/decalproperties.png](images/decalproperties.png) デカール
+### ![images/decalproperties.png](images/decalproperties.png){: .inline} デカール
 {: #decals}
 デカールは、マテリアルを用いて間接的にではなく直接オブジェクトに適用できる、タイリングされない画像マップです。デカールは、オブジェクトの色、反射、またはバンプの一部に変更を加えるのに用います。デカールの作成、配置についての詳細は、[Rhinoのデカール](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#properties/decal.htm)を参照してください。
 
@@ -25,18 +24,18 @@ Flamingo nXtのオブジェクトのプロパティは、Flamingo nXtでのオ�
 ![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
 *4つの異なるデカールの例*
 
-### ![images/apply-edge-softening.png](images/apply-edge-softening.png) カスタムメッシュ
+### ![images/apply-edge-softening.png](images/apply-edge-softening.png){: .inline} カスタムメッシュ
 {: #custom-meshes}
 いくつかのカスタムメッシュのモディファイアーをRhinoでレンダリングモデルの詳細化に使用できます。これらのモディファイアーを用いると、エッジを丸めたり、パネルのシャットラインを加えたり、曲線からケーブル線を作成することができます。
 
 詳細については、次のトピックを参照してください。
 
->[ソフトエッジ](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applyedgesoftening.htm)
->[曲線パイプ](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applycurvepiping.htm)
->[シャットライン](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applyshutlining.htm)
->[ディスプレイスメント](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applydisplacement.htm)
+* [ソフトエッジ](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applyedgesoftening.htm)
+* [曲線パイプ](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applycurvepiping.htm)
+* [シャットライン](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applyshutlining.htm)
+* [ディスプレイスメント](http://docs.mcneel.com/rhino/5/help/ja-jp/index.htm#commands/applydisplacement.htm)
 
-### ![images/object-flamingo.PNG](images/object-flamingo.PNG) Flamingoのプロパティ
+### ![images/object-flamingo.PNG](images/object-flamingo.PNG){: .inline} Flamingoのプロパティ
 {: #flamingo-properties}
 
 #### アルファチャンネル

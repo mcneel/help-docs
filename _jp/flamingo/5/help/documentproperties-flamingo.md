@@ -3,14 +3,14 @@ title: ドキュメントのプロパティ - Flamingo nXt
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 これらの設定は、現在のモデルのみに適用されます。レンダリングの質を上げようとすると時間がかかり、速くレンダリングしたければ質が低くなることを考慮することが大切です。
 
 #### コマンドの位置
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)レンダリングツールツールバー > ![images/environments.png](images/environments.png) マテリアルエディタ
- 1. ![images/menuicon.png](images/menuicon.png)メニュー > レンダリングプルダウン > 環境エディタ
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} レンダリングツールツールバー > ![images/environments.png](images/environments.png){: .inline} マテリアルエディタ
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} メニュー > レンダリングプルダウン > 環境エディタ
  1. コマンド > EnvironmentEditor
 
 ## マテリアル
