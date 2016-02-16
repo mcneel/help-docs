@@ -129,7 +129,7 @@ title: 재질 이미지 속성
 하이라이트 형태에 영향을 줍니다.
 
 ####  투명도
-이미지의 회색조를 기준으로, 재질에서의 [투명도](material-type-advanced.html#intensity) 정도에 영향을 줍니다.
+이미지의 회색조를 기준으로, 재질에서의 [투명도](material-type-advanced.html#transparency) 정도에 영향을 줍니다.
 
 ####  반투명도
 이미지의 회색조를 기준으로, 재질에서의 [반투명도](material-type-advanced.html#translucency) 정도에 영향을 줍니다.
