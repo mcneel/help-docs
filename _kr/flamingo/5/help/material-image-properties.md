@@ -113,29 +113,29 @@ title: 재질 이미지 속성
 일반적으로 Flamingo 이미지는 재질의 주요 색 채널에 적용됩니다. Flamingo 고급 대화상자에서 해당 비트맵이 영향을 미치는 다른 채널을 지정합니다. 이 기능은 매우 특수한 효과를 내기 위해 사용합니다.
 
 ####  기본색
-기본색이 기본 설정입니다. 이미지가 재질의 [색](advanced-material-properties-main.html#color)에 영향을 미칩니다.
+기본색이 기본 설정입니다. 이미지가 재질의 [색](material-type-advanced.html#color)에 영향을 미칩니다.
 
 ####  정반사 색
-정반사 색은 해당 시점에서의 이미지 색을 기준으로 [반사 채널](advanced-material-properties-main.html#highlight-color) 의 색에 영향을 미칩니다.
+정반사 색은 해당 시점에서의 이미지 색을 기준으로 [반사 채널](material-type-advanced.html#highlight-color) 의 색에 영향을 미칩니다.
 
 ####  정반사 강도
-정반사 강도는 해당 시점에서의 이미지 회색조를 기준으로 [반사의 정도](advanced-material-properties-main.html#intensity)를 변경시킵니다. 이는 텍스처 세트에서 정반사 맵으로 자주 사용됩니다.
+정반사 강도는 해당 시점에서의 이미지 회색조를 기준으로 [반사의 정도](material-type-advanced.html#intensity)를 변경시킵니다. 이는 텍스처 세트에서 정반사 맵으로 자주 사용됩니다.
 
 ####  하이라이트 선명도
-해당 시점에서 맵의 회색조 값을 기준으로 [하이라이트](advanced-material-properties-main.html#intensity) 의 선명도와 흐린 정도를 조정합니다.
+해당 시점에서 맵의 회색조 값을 기준으로 [하이라이트](material-type-advanced.html#intensity) 의 선명도와 흐린 정도를 조정합니다.
 
 #### 하이라이트 형태
 {: #advanced-highlight-shape}
 하이라이트 형태에 영향을 줍니다.
 
 ####  투명도
-이미지의 회색조를 기준으로, 재질에서의 [투명도](advanced-material-properties-main.html#intensity) 정도에 영향을 줍니다.
+이미지의 회색조를 기준으로, 재질에서의 [투명도](material-type-advanced.html#transparency) 정도에 영향을 줍니다.
 
 ####  반투명도
-이미지의 회색조를 기준으로, 재질에서의 [반투명도](advanced-material-properties-transparency.html#translucency) 정도에 영향을 줍니다.
+이미지의 회색조를 기준으로, 재질에서의 [반투명도](material-type-advanced.html#translucency) 정도에 영향을 줍니다.
 
 ####  감쇠
-이미지의 회색조를 기준으로, 재질에서의 [감쇠](advanced-material-properties-transparency.html#attenuation) 정도에 영향을 줍니다.
+이미지의 회색조를 기준으로, 재질에서의 [감쇠](material-type-advanced.html#attenuation) 정도에 영향을 줍니다.
 
 #### X/Y 간격띄우기
 {: #advanced-x-y-offset}
