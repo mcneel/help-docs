@@ -22,15 +22,15 @@ Descargue la última beta de Flamingo desde aquí: [http://www.rhino3d.com/downl
 ## Documentación de ayuda
 La documentación de ayuda de Flamingo está disponible en varios idiomas:
 
-* [ä¸æ–‡(ç®€ä½“)]({{baseurl}}/cn/flamingo/5/help)
+* [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
 * [Deutsch]({{baseurl}}/de/flamingo/5/help)
 * [English]({{baseurl}}/en/flamingo/5/help)
 * [Español]({{baseurl}}/es/flamingo/5/help)
 * [Français]({{baseurl}}/fr/flamingo/5/help)
 * [Italiano]({{baseurl}}/it/flamingo/5/help)
-* [æ—¥æœ¬èªž]({{baseurl}}/jp/flamingo/5/help)
-* [í•œêµì–´]({{baseurl}}/kr/flamingo/5/help)
-* [ä¸æ–‡(ç¹é«”)]({{baseurl}}/tw/flamingo/5/help)
+* [日本語]({{baseurl}}/jp/flamingo/5/help)
+* [한국어]({{baseurl}}/kr/flamingo/5/help)
+* [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
 
 ## Tutorial de iniciación
 En el menú Flamingo nXt, haga clic en Panel de control. El panel de control de Flamingo nXt contiene fichas para configurar el modelo para el renderizado:
