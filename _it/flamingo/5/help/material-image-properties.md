@@ -113,29 +113,29 @@ La dimensione delle facce della mesh di scostamento. Valori maggiori fanno sì c
 Di solito, un'immagine di Flamingo si applica al canale di colore principale di un materiale. La finestra di dialogo Flamingo Avanzato specifica altri canali su cui può avere effetto la bitmap.  Questi vengono usati per degli effetti molto speciali.
 
 ####  Colore base
-Si tratta dell'impostazione predefinita.  L'immagine ha effetto sul [colore](advanced-material-properties-main.html#color) del materiale.
+Si tratta dell'impostazione predefinita.  Un'immagine ha effetto sul [colore](material-type-advanced.html#color) di un materiale.
 
 ####  Colore speculare
-Ha effetto sul colore del [canale di riflessione](advanced-material-properties-main.html#highlight-color) in base al colore dell'immagine in quel punto.
+Ha effetto sul colore del [canale di riflessione](material-type-advanced.html#highlight-color) in base al colore dell'immagine in quel punto.
 
 ####  Intensità speculare
-Ha effetto sulla [quantità di riflessione](advanced-material-properties-main.html#intensity) in base alla scala di grigi dell'immagine in quel punto.  Viene usato spesso nei pacchetti di texture come mappa speculare.
+Ha effetto sulla [quantità di riflessione](material-type-advanced.html#intensity) in base alla scala di grigi dell'immagine in quel punto.  Viene usato spesso nei pacchetti di texture come mappa speculare.
 
 ####  Nitidezza delle riflessioni speculari
-Regola la nitidezza delle [riflessioni speculari](advanced-material-properties-main.html#intensity) in base al valore di scala di grigi della mappa in quel punto.
+Regola la nitidezza delle [riflessioni speculari](material-type-advanced.html#intensity) in base al valore di scala di grigi della mappa in quel punto.
 
 #### Forma delle riflessioni speculari
 {: #advanced-highlight-shape}
 Ha effetto sulla forma delle riflessioni speculari.
 
 ####  Trasparenza
-Ha effetto sulla quantità di [trasparenza](advanced-material-properties-main.html#intensity) del materiale in base alla scala di grigi dell'immagine.
+Ha effetto sulla quantità di [trasparenza](material-type-advanced.html#intensity) del materiale in base alla scala di grigi dell'immagine.
 
 ####  Traslucidità
-Ha effetto sulla quantità di [traslucidità](advanced-material-properties-transparency.html#translucency) del materiale in base alla scala di grigi dell'immagine.
+Ha effetto sulla quantità di [traslucidità](material-type-advanced.html#translucency) del materiale in base alla scala di grigi dell'immagine.
 
 ####  Attenuazione
-Ha effetto sulla quantità di [attenuazione](advanced-material-properties-transparency.html#attenuation) del materiale in base alla scala di grigi dell'immagine.
+Ha effetto sulla quantità di [attenuazione](material-type-advanced.html#attenuation) del materiale in base alla scala di grigi dell'immagine.
 
 #### Offset X/Y
 {: #advanced-x-y-offset}
