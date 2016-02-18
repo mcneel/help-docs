@@ -8,16 +8,16 @@ title: Flamingo nXt 快速入門
 # ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt® 快速入門
 Flamingo nXt 可在 Rhinoceros® 裡將模型彩現成為高品質而且真實的靜態影像。Flamingo nXt 5 目前還在開發階段，它將 Flamingo 與 Rhino 5 內建彩現功能整合在一起。
 
-請至[這裡](http://www.rhino3d.com/download/flamingo/5/beta)下載、安裝 Flamingo nXt 5。
+請至[這裡](https://www.rhino3d.com/store/upgrade/flamingo/nxt)下載、安裝 Flamingo nXt 5。
 
-加入 [Flamingo Discourse 論壇](http://discourse.mcneel.com/c/rendering/flamingo)參與討論。
+加入 [Flamingo Discourse 論壇](http://chinese.discourse.mcneel.com/c/flamingo)參與討論。
 
 ## 安裝
 
 Flamingo nXt 5 Beta 需要安裝 Flamingo nXt 才能使用。Flamingo nXt 5 Beta 需要 Rhino 5 SR12 才能執行。
 下載後請執行 RHI 安裝程式，開啟 Rhino，Flamingo nXt 5.0 會自動載入。
 
-請至 [http://www.rhino3d.com/download/Flamingo/5.0/beta](http://www.rhino3d.com/download/Flamingo/5.0/beta) 下載最新的 Flamingo nXt 5 Beta。
+請至 [https://www.rhino3d.com/store/upgrade/flamingo/nxt](https://www.rhino3d.com/store/upgrade/flamingo/nxt) 下載最新的 Flamingo。
 
 ## 說明文件
 Flamingo nXt 5 的說明文件有這些語言版本：
@@ -33,7 +33,7 @@ Flamingo nXt 5 的說明文件有這些語言版本：
 * [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
 
 ## 快速入門
-On the Flamingo nXt menu, click Control Panel. The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
+從 Flamingo nXt 功能表選擇**顯示控制面板**，Flamingo nXt 的控制面板內有模型彩現需要的設定頁面，包括：
 
 * [材質](../help/material-editor.html)
 * [照明](../help/lighting-tab.html)
