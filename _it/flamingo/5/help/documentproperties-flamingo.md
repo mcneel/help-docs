@@ -1,7 +1,6 @@
 ---
-title: Proprietà del documento: Flamingo nXt
+title: Proprietà del documento Flamingo nXt
 ---
-
 
 # ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 Queste impostazioni si applicano solo al modello corrente. Vi è un compromesso tra il tempo richiesto a completare il rendering e la qualità dell'immagine desiderata.

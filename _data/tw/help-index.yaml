@@ -36,8 +36,6 @@
           path: material-image-properties.html
         - name: 程序材質類型
           path: procedural-materials.html
-        - name: 貼圖組材質
-          path: texture-set-materials.html
         - name: 顏色方塊
           path: select-color.html
 

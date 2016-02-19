@@ -3,19 +3,19 @@ title: Flamingo nXt 文件內容
 ---
 
 
-# ![images/options.svg](images/options.svg) {{page.title}}
+# ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 這裡的設定只會影響目前的模型，可以讓您在彩現品質與速度之間取捨。
 
 #### 可以在哪找到這個指令?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png)彩現工具工具列 > ![images/environments.png](images/environments.png) 材質編輯器
- 1. ![images/menuicon.png](images/menuicon.png)功能表 > 彩現 > 環境編輯器
+ 1. ![images/icon-render.png](images/icon-render.png){: .inline} 彩現工具工具列 > ![images/environments.png](images/environments.png){: .inline} 材質編輯器
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > 彩現 > 環境編輯器
  1. 指令 > EnvironmentEditor
 
 ## 材質
 {: #materials}
-Use these controls to quickly change how Flamingo renders the surfaces in a rendering.  These settings will not change the material assignments on the objects and layers, but will change how Flamingo produces the color of each surface.
+切換物件彩現時使用材質或物件顏色，這裡的設定不會改變賦予給物件或圖層的材質。
 
 #### 使用材質
 {: #use-materials}
@@ -29,7 +29,7 @@ Use these controls to quickly change how Flamingo renders the surfaces in a rend
 {: #channel}
 光暈可使材質在彩現影像裡產生發亮的效果，但無法照亮其它物件，標記為燈光的物件才能照亮其它物件)。光暈通道可在彩現完成後調整光暈的亮度，無需重新彩現整個場景。
 
-## Bounces
+## 反彈數
 {: #bounces}
 當一條射線進入場景後經過某個次數的反彈後即停止，限制反彈次數可減少完成彩現需要的時間，但反彈次數設定過低時彩現影像的某些部分可能會出現黑色。預設的反彈次數適用於大部分的場景，少數的場景可能需要適度調高反彈次數。
 
@@ -47,7 +47,7 @@ Use these controls to quickly change how Flamingo renders the surfaces in a rend
 
 ## 間接照明
 {: #indirect-settings}
-The indirect lighting settings only affect the rays that bounce off one surface and carry light to another surface.
+間接照明設定只會影響從物件反射的光線。
 
 #### 溢色
 {: #color-bleed}
@@ -55,7 +55,7 @@ The indirect lighting settings only affect the rays that bounce off one surface 
 
 #### 蒙地卡羅反射
 {: #monte-carlo}
-Monte Carlo in indirect lighting controls how Flamingo samples indirect light. When activated, the indirect light will become very noisy in the early passes.  But over all, as the passes progress, the overall effect of Monte Carlo indirect will be a more subtle and potentially more detail indirect effect. Scenes that rely heavily on indirect light may benefit from Mote Carlo indirection reflections.
+間接照明的蒙地卡羅反射控制 Flamingo 對間接光源的取樣方式。啟用蒙地卡羅反射時，彩現初期的處理數會有非常多的雜點，但隨著處理數的增加，可逐漸呈現較多間接照明的細節。依賴間接光源較多的場景使用蒙地卡羅反射會有較好的效果。
 
 ## 其它
 

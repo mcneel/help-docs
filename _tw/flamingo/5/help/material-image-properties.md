@@ -113,29 +113,29 @@ title: 材質貼圖內容
 Flamingo 通常是將貼圖做為材質的顏色，這裡可將貼圖用於其它表面效果。
 
 ####  主要顏色
-此為預設值，以貼圖做為材質的[顏色](advanced-material-properties-main.html#color)。
+此為預設值，以貼圖做為材質的[顏色](material-type-advanced.html#color)。
 
 ####  反光顏色
-此選項會影響[反射通道](advanced-material-properties-main.html#highlight-color)的顏色，以貼圖的顏色控制反光的顏色。
+此選項會影響[反射通道](material-type-advanced.html#highlight-color)的顏色，以貼圖的顏色控制反光的顏色。
 
 ####  反光強度
-以貼圖像素的灰階值控制[反光強度](advanced-material-properties-main.html#intensity)，常用於貼圖組材質**反光**貼圖。
+以貼圖像素的灰階值控制[反光強度](material-type-advanced.html#intensity)，常用於貼圖組材質**反光**貼圖。
 
 ####  反光銳利度
-以貼圖的灰階值控制[反光](advanced-material-properties-main.html#intensity)的銳例與模糊。
+以貼圖的灰階值控制[反光](material-type-advanced.html#intensity)的銳例與模糊。
 
 #### 反光形狀
 {: #advanced-highlight-shape}
 影響反光的形狀。
 
 ####  透明
-以貼圖的灰階值控制材質的[透明度](advanced-material-properties-main.html#intensity)。
+以貼圖的灰階值控制材質的[透明度](material-type-advanced.html#intensity)。
 
 ####  混濁
-以貼圖的灰階值控制材質的[混濁度](advanced-material-properties-transparency.html#translucency)。
+以貼圖的灰階值控制材質的[混濁度](material-type-advanced.html#translucency)。
 
 ####  衰減
-以貼圖的灰階值控制材質[衰減](advanced-material-properties-transparency.html#attenuation)的量。
+以貼圖的灰階值控制材質[衰減](material-type-advanced.html#attenuation)的量。
 
 #### 偏移 X/Y
 {: #advanced-x-y-offset}

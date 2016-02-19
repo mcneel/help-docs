@@ -1,5 +1,5 @@
 ---
-Renderizado automatizado
+title: Renderizado automatizado
 ---
 
 # {{page.title}}
@@ -75,19 +75,19 @@ Alpha channel This needs to be investigated. The rest of this section is comment
 
 <!-- Commented out until automated render can be determined
 
-## Animaciones 
+## Animaciones
 {: #animation}
-Hay dos maneras de crear animaciones en Rhino.   Las animaciones se pueden configurar utilizando la [barra de herramientas Animación de Rhino](http://docs.mcneel.com/rhino/5/help/es-es/index.htm#commands/animation.htm) o el plug-in de animación de [Bongo](http://bongo.rhino3d.com/). 
+Hay dos maneras de crear animaciones en Rhino.   Las animaciones se pueden configurar utilizando la [barra de herramientas Animación de Rhino](http://docs.mcneel.com/rhino/5/help/es-es/index.htm#commands/animation.htm) o el plug-in de animación de [Bongo](http://bongo.rhino3d.com/).
 
-##### Para enviar un trabajo de animación al Render Farm 
-1. Ejecute el comando [FlamingoNXtAutomatizarRenderizado](automate-rendering.html#flamingonxtautomaterender). 
+##### Para enviar un trabajo de animación al Render Farm
+1. Ejecute el comando [FlamingoNXtAutomatizarRenderizado](automate-rendering.html#flamingonxtautomaterender).
 1. En el cuadro de diálogo Configurar comando de renderizado automatizado, seleccione **Renderizar en el Farm**.
 &#160;
 Especifique el Nombre de trabajo y haga clic en el botón Aceptar.
 &#160;
-Defina un tipo de animación desde la barra de herramientas Configurar animación de Rhino. Seleccione RenderizadoCompleto renderizado completo como Método de captura. 
+Defina un tipo de animación desde la barra de herramientas Configurar animación de Rhino. Seleccione RenderizadoCompleto renderizado completo como Método de captura.
 &#160;
-Grabe la animación desde la barra de herramientas Animación. Los trabajos de renderizado se enviarán al Render Farm. 
+Grabe la animación desde la barra de herramientas Animación. Los trabajos de renderizado se enviarán al Render Farm.
 &#160;
 Cuando los trabajos finalicen en el Render Farm, vuelva a ejecutar el comando FlamingoNXtAutomatizarRenderizado y seleccione todos los trabajos del cuadro de diálogo.
 &#160;
