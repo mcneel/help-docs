@@ -36,6 +36,22 @@ safe: false
 collections:
   en:
     output: true
+  kr:
+     output: true
+  jp:
+    output: true
+  cn:
+    output: true
+  de:
+    output: true
+  es:
+    output: true
+  fr:
+    output: true
+  it:
+    output: true
+  tw:
+    output: true
 
 defaults:
   -
@@ -63,3 +79,203 @@ defaults:
       layout: flamingo-guide-page
       collectionname: "Guides"
       sort: 1
+  -
+    scope:
+      path: ""
+      type: kr
+    values:
+      language: kr
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "kr/flamingo/5/help"
+      type: kr
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "도움말"
+  -
+    scope:
+      path: "kr/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "가이드"
+  -
+    scope:
+      path: ""
+      type: jp
+    values:
+      language: jp
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "jp/flamingo/5/help"
+      type: jp
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "ヘルプ"
+  -
+    scope:
+      path: "jp/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "ガイド"
+  -
+    scope:
+      path: ""
+      type: de
+    values:
+      language: de
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "de/flamingo/5/help"
+      type: de
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Hilfe"
+  -
+    scope:
+      path: "de/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "Anleitungen"
+  -
+    scope:
+      path: ""
+      type: cn
+    values:
+      language: cn
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "cn/flamingo/5/help"
+      type: cn
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Help"
+  -
+    scope:
+      path: "cn/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "Guides"
+  -
+    scope:
+      path: ""
+      type: es
+    values:
+      language: es
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "es/flamingo/5/help"
+      type: es
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Ayuda"
+  -
+    scope:
+      path: "es/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "Guías"
+  -
+    scope:
+      path: ""
+      type: fr
+    values:
+      language: fr
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "fr/flamingo/5/help"
+      type: fr
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Aide"
+  -
+    scope:
+      path: "fr/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "Guides"
+  -
+    scope:
+      path: ""
+      type: it
+    values:
+      language: it
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "it/flamingo/5/help"
+      type: it
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Aiuti"
+  -
+    scope:
+      path: "it/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "Guide"
+  -
+    scope:
+      path: ""
+      type: tw
+    values:
+      language: tw
+      productname: "Flamingo nXt"
+      productpath: flamingo
+      productversionpath: "5"
+      layout: flamingo-toc-page
+  -
+    scope:
+      path: "tw/flamingo/5/help"
+      type: tw
+    values:
+      doctype: "Help"
+      layout: flamingo-toc-page
+      collectionname: "Help"
+  -
+    scope:
+      path: "tw/flamingo/5/guides"
+    values:
+      doctype: "Guides"
+      layout: flamingo-guide-page
+      collectionname: "Guides"
