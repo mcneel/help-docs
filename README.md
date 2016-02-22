@@ -73,7 +73,7 @@ Please install  Ruby, Ruby Devkit, Jekyll, Github pages, wdm.  The instructiosn 
 
 #### Install Ruby and Ruby DevKit
 
-Go to http://rubyinstaller.org/downloads/ and download the installer for Ruby 2.1.X that matches your system architecture (x86/x64).
+Go to http://rubyinstaller.org/downloads/ and download the installer for Ruby 2.2.X that matches your system architecture (x86/x64).
 
 At the "Installation Destination and Optional Tasks" dialog, make sure to check the **"Add Ruby executable to your PATH"** box.
 
