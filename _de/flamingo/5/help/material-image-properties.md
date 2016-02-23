@@ -113,29 +113,29 @@ Die Größe der Facetten des Displacement-Polygonnetzes. Je größer dieser Wert
 Ein Flamingo-Bild wird normalerweise auf den Hauptfarbkanal eines Materials angewandt. In den erweiterten Einstellungen für das Flamingo-Bild können weitere Kanäle ausgewählt werden, auf die das Bild angewandt werden soll.  Diese werden für besondere Effekte verwendet.
 
 ####  Grundfarbe
-Dies ist die Standardeinstellung.  Das Bild hat Einfluss auf die [Farbe](material-type-advanced.html#color) eines Materials.
+Dies ist die Standardeinstellung.  Das Bild hat Einfluss auf die [Farbe](advanced-material-properties-main.html#color) eines Materials.
 
 ####  Spiegelfarbe
-Diese beeinflusst die Farbe des [Reflexionskanals](material-type-advanced.html#highlight-color) basierend auf der Farbe des Bilds an diesem Punkt.
+Diese beeinflusst die Farbe des [Reflexionskanals](advanced-material-properties-main.html#highlight-color) basierend auf der Farbe des Bilds an diesem Punkt.
 
 ####  Spiegelintensität
-Dadurch wird der [Reflexionsbetrag](material-type-advanced.html#intensity) basierend auf dem Graustufenwert des Bilds an diesem Punkt bestimmt.  Dies wird in Texturensätzen oft als Spiegel-Map verwendet.
+Dadurch wird der [Reflexionsbetrag](advanced-material-properties-main.html#intensity) basierend auf dem Graustufenwert des Bilds an diesem Punkt bestimmt.  Dies wird in Texturensätzen oft als Spiegel-Map verwendet.
 
 ####  Glanzlichtschärfe
-Dadurch wird die Schärfe und Unschärfe des [Glanzlichts](material-type-advanced.html#intensity) basierend auf dem Graustufenwert des Bilds an diesem Punkt angepasst.
+Dadurch wird die Schärfe und Unschärfe des [Glanzlichts](advanced-material-properties-main.html#intensity) basierend auf dem Graustufenwert des Bilds an diesem Punkt angepasst.
 
 #### Glanzlichtform
 {: #advanced-highlight-shape}
 Beeinflusst die Form des Glanzlichts.
 
 ####  Transparenz
-Dies beeinflusst den Umfang der [Transparenz](material-type-advanced.html#intensity) des Materials basierend auf dem Graustufenwert des Bilds.
+Dies beeinflusst den Umfang der [Transparenz](advanced-material-properties-main.html#intensity) des Materials basierend auf dem Graustufenwert des Bilds.
 
 ####  Transluzenz
-Dies beeinflusst den Betrag der [Transluzenz](material-type-advanced.html#translucency) des Materials basierend auf dem Graustufenwert des Bilds.
+Dies beeinflusst den Betrag der [Transluzenz](advanced-material-properties-transparency.html#translucency) des Materials basierend auf dem Graustufenwert des Bilds.
 
 ####  Lichtabnahme
-Dadurch wird die [Lichtabnahme](material-type-advanced.html#attenuation) des Materials basierend auf dem Graustufenwert des Bilds beeinflusst.
+Dadurch wird die [Lichtabnahme](advanced-material-properties-transparency.html#attenuation) des Materials basierend auf dem Graustufenwert des Bilds beeinflusst.
 
 #### x-/y-Versatz
 {: #advanced-x-y-offset}
