@@ -1,73 +1,75 @@
 ---
+title: 材質庫面板
 ---
 
-# ![images/libraries.svg](images/libraries.svg){:height="75px" width="75px"} Libraries Panel
-The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
+# ![images/libraries.svg](images/libraries.svg){: .inline} {{page.title}}
+**Libraries** 指令可開啟材質庫面板，管理材質、貼圖、環境資料庫。
 
-Rendering content can be saved to files to create external libraries that can be shared between models. Content can also be dragged between Rhino sessions and into a folder.
+彩現內容可匯出至檔案再匯入其它模型、從 Rhino 裡拖放至外部的資料夾，或是在兩個 Rhino 視窗之間拖放。
 
-Color swatches can be dragged and dropped in the same way.
+顏色方塊的顏色也可以如此操作。
 
-The Libraries panel displays a view into the content folders you have set up. Use this to drag and drop content into the model or to store document content to a location outside the model.
+材質庫面板可顯示您設定的資料夾，材質庫面板裡的項目也可以使用拖放操作。
 
-Materials are simply files on your hard drive.  Library folders are simply Windows folders.  You can copy and paste and move folders around just as you would any Windows file or folder.
+材質是儲存在硬碟上的檔案，材質庫資料夾也只是一般的 Windows 資料夾。
 
-Use the address bar at the top of the Libraries tab to navigate to any folder on your computer.
+材質庫面板上方的位址列可瀏覽至電腦上的任何資料夾。
 
-Quickly navigate back to the Default Library locations using the wrench icon at the upper right. ![images/library_default.png](images/library_default.png)
+按右上方的板手圖示可快速回到預設的材質庫資料夾。 ![images/library_default.png](images/library_default.png){: .inline}
 
-#### Organizing Libraries
+#### 管理材質庫
 {: organizing_libraries}
-Libraries are simply files.  You can copy and paste and move around folders. Use Windows Explorer to edit the folders and documents. To edit which folders are the default in the Libraries Tab, use the [Library Settings](#settings) ![images/library_default.png](images/library_default.png).
+材質與材質庫資料夾可像在檔案總管裡一樣複製、剪下、貼上，也可以直接在 Windows 檔案總管裡操作，[材質庫設定](#settings)可編輯預設的材質庫資料夾 ![images/library_default.png](images/library_default.png){: .inline}。
 
-## Materials Library
+## 材質庫
 {: #material}
-Materials in libraries are files on the hard drive.  Once assigned to the model, the material is then stored and saved in the model.  Any changes to the assigned material will not change the original material on the hard drive.
+當您將一個材質加入模型後，該材質的複本會儲存在模型檔案裡，編輯儲存在模型檔案裡的材質複本不會影響原來在材質庫資料夾裡的材質。
 
-Drag and drop materials to assign materials to the model. Materials can be assigned to:
+材質可使用拖放的方式加入模型，材質可：
 
-#### Layer Assignment
-Drag a material directly onto the layer name in the Layers Panel. This is the recommended method as by default any object on the layer will adopt the material assignment. Later changes to the material can be quite quick by simply dropping another material on the layer.
+#### 賦予給圖層
+將材質拖放至圖層面板的圖層名稱，物件預設使用它所屬的圖層的材質，要更換圖層的材質時只要將另一個材質再拖放至該圖層即可替換材質。
 
-#### Object Assignment
-Drag a material directly onto an object in any viewport. This will override the By Layer material to a By Object assignment.
+#### 賦予給物件
+將材質拖放至作業視窗裡的物件，物件的材質賦予方式會從**圖層**變為**物件**，物件將使用自己的材質，忽略圖層的材質。
 
-#### Block Assignment
-Drag onto a block and any By Parent objects in the block will adopt that material.  Any object within the block that has a By Parent material source will pick up the blocks material.
+#### 賦予給圖塊
+將材質拖放至圖塊引例時，圖塊引例裡**材質賦予方式**設為**父物件**的物件將使用圖塊的材質。
 
-## Plant Library
+## 植物庫
 {: #plant}
-In the default library folder is a Plants folder.  Go here to place plants in the model.  Once placed in the model, the plant is then stored and saved in the model.  Any changes to the assigned material will not change to original material on the hard drive. Drag and drop plants into a viewport to place plants into the model. For more information see the [Plants Help](plants.html) topic.
+材質庫資料夾裡有植物庫資料夾的捷徑，您可以將植物從植物庫拖放至作業視窗建立植物的複本。植物的複本會儲存在模型檔案裡，編輯儲存在模型檔案裡的植物複本不會影響原來在植物庫裡的植物。詳細的說明請參考[植物](plants.html)。
 
-## Environment Library
+## 環境庫
 {: #environment}
-Environments can be saved in the library.  This lets Environment settings to be passed from one model to another.  For more details, go to [Environments](environment-tab.html).
+環境可以儲存在環境庫裡，以便在其它模型使用，詳細說明請參考[環境](environment-tab.html)。
 
-## Library Settings
+## 材質庫設定
 {: #settings}
-Use ![images/options.png](images/options.png)Libraries Options to change the library defaults shown under the ![images/library_default.png](images/library_default.png) menu.
+從 ![images/options.png](images/options.png){: .inline}材質資料庫選項可變更 ![images/library_default.png](images/library_default.png){: .inline} 功能表顯示的資料夾。
 
-##### Where can I find this command?
-There are three places to find the Libraries Options command.
+##### 可以在哪找到這個指令?
+材質資料庫選項可從三個地方開啟。
 
- 1. Libraries Tab > ![images/library_default.png](images/library_default.png) in the upper right of the Libraries panel > Settings...
- 1. Menus > Tools pulldown > Options > Libraries.
- 
+ 1. 材質庫標籤 > ![images/library_default.png](images/library_default.png){: .inline} 材質庫面板右上角 > 設定...
+ 1. 功能表 > 工具 > 選項 > 材質庫
+ 1. 功能表 > 面板 > 材質庫
 
-### Show render content
-Use this to show or hide the default render content location.
 
-#### Use default library location (My Documents)
-By default, the [content libraries](libraries.html) are a subfolder of the *My Documents* folder.
+### 顯示彩現內容
+開啟預設的材質庫資料夾。
 
-#### Custom
-Sets a custom [library](libraries.html) location.  Changes the default location of [content libraries](libraries.html) for this computer.
+#### 使用預設的資料夾
+預設的[材質庫](libraries.html)資料夾是 **%APPDATA%\McNeel\Rhinoceros\5.0\Localization\zh-TW\Render Content** 資料夾。
 
-##### Browse button
-Open file browser to specify file.
+#### 自訂
+自訂預設的[材質庫](libraries.html)資料夾的位置。
 
-#### Show "Documents" folder
-In the [Libraries panel](libraries.html), the designated Documents folder will display in the menu.
+##### 瀏覽按鈕
+選擇要使用的資料夾。
 
-#### Show custom folders
-In the [Libraries panel](libraries.html), designated custom folders will display in the menu.
+#### 顯示"文件"資料夾
+在[材質庫面板](libraries.html)的功能表顯示"文件"資料夾。
+
+#### 顯示自訂的資料夾
+在[材質庫](libraries.html)面板的功能表顯示其它資料夾。
