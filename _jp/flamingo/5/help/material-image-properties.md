@@ -113,29 +113,29 @@ title: マテリアル画像のプロパティ
 通常、Flamingoの画像はマテリアルの主色チャンネルに適用されます。Flamingoの詳細ダイアログは、ビットマップが影響できる他のチャンネルを指定します。それらは、非常に特殊な効果に使用されます。
 
 ####  ベース色
-これはデフォルトの設定です。画像はマテリアルの[色](advanced-material-properties-main.html#color)に影響します。
+これはデフォルトの設定です。画像はマテリアルの[色](material-type-advanced.html#color)に影響します。
 
 ####  鏡面反射色
-これは、その時点での画像の色に基づいて[反射チャンネル](advanced-material-properties-main.html#highlight-color)の色に影響します。
+これは、その時点での画像の色に基づいて[反射チャンネル](material-type-advanced.html#highlight-color)の色に影響します。
 
 ####  鏡面反射強度
-これは、その時点での画像のグレースケールに基づいて[反射の量](advanced-material-properties-main.html#intensity)を変更します。これは鏡面反射マップとしてテクスチャセットでよく用いられます。
+これは、その時点での画像のグレースケールに基づいて[反射の量](material-type-advanced.html#intensity)を変更します。これは鏡面反射マップとしてテクスチャセットでよく用いられます。
 
 ####  ハイライトシャープネス
-これは、その時点でのマップのグレースケール値に基づいて[ハイライト](advanced-material-properties-main.html#intensity)のシャープネス対ブラーの度合を調整します。
+これは、その時点でのマップのグレースケール値に基づいて[ハイライト](material-type-advanced.html#intensity)のシャープネス対ブラーの度合を調整します。
 
 #### ハイライト形状
 {: #advanced-highlight-shape}
 ハイライトの形状に影響します。
 
 ####  透明度
-これは、画像のグレースケールに基づいてマテリアルの[透明度](advanced-material-properties-main.html#intensity)の量に影響します。
+これは、画像のグレースケールに基づいてマテリアルの[透明度](material-type-advanced.html#intensity)の量に影響します。
 
 ####  半透明度
-これは、画像のグレースケールに基づいてマテリアルの[半透明度](advanced-material-properties-transparency.html#translucency)の量に影響します。
+これは、画像のグレースケールに基づいてマテリアルの[半透明度](material-type-advanced.html#translucency)の量に影響します。
 
 ####  減衰
-これは、画像のグレースケールに基づいてマテリアルの[減衰](advanced-material-properties-transparency.html#attenuation)の量に影響します。
+これは、画像のグレースケールに基づいてマテリアルの[減衰](material-type-advanced.html#attenuation)の量に影響します。
 
 #### オフセット X/Y
 {: #advanced-x-y-offset}
