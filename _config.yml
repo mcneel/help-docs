@@ -54,6 +54,7 @@ collections:
     output: true
 
 defaults:
+
   -
     scope:
       path: ""
@@ -74,6 +75,15 @@ defaults:
   -
     scope:
       path: "en/flamingo/5/guides"
+    values:
+      type: "guides_topic"
+      layout: flamingo-guide-page
+      collectionname: "Guides"
+      sort: 1
+  -
+    scope:
+      path: "en/rhino"
+      type: en
     values:
       type: "guides_topic"
       layout: flamingo-guide-page
