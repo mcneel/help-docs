@@ -1,48 +1,29 @@
 ---
 layout: fullwidth-page
-title: Guide Index
+title: Level 1 Index
 ---
 
 <!-- TODO: Links to update: "First Rendering Tutorial" and everything below "Rendering Basics" -->
 
-# Getting Started with Rhino
+# Rhino Level 1 Index
 
-## First tutorials
-* [First Rendering Tutorial]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/getting-started-tutorial.html)
-* [Studio Lighting Tips]({{site.baseurl}}/{{page.language}}/flamingo/5/guides/studio-lighting-basics.html)
-
-## To access the Flamingo control panel
-  * On the **Flamingo nXt 5** menu, click **Control Panel**.
-
-## The Flamingo nXt Control Panel
-The **Flamingo nXt**  **Control Panel** provides tabs for setting up the model for rendering, including:
-
- *  [Materials]({{site.baseurl}}/{{page.language}}/flamingo/5/help/libraries.html#material)
- *  [Lighting]({{site.baseurl}}/{{page.language}}/flamingo/5/help/lighting-tab.html)
- *  [Environment]({{site.baseurl}}/{{page.language}}/flamingo/5/help/environment-tab.html)
- *  [Render]({{site.baseurl}}/{{page.language}}/flamingo/5/help/render-tab.html)
-
-## Rendering Basics
-
-Rendering your finished model comprises four basic steps:
-
- *  Set up materials
- *  Set up lighting
- *  Set up an environment
- *  Set up rendering conditions
-
-#### To start a rendering
-
- * On the **Render** menu, click **Render**.
-           - Or -
- * On the **Standard** toolbar, click the **Render** button.
-
-### Stop Rendering
-
-
-By default, the rendering process will continue refining the image, pass by pass, until you click the **Stop Rendering** ![images/stop.png](images/stop.png) button. This allows you to manage the trade-off between time and quality. The longer you allow the rendering to continue, the more closely it will resemble its fully converged &quot;correct&quot; result. You can stop a rendering at any time.
-
-
-Use the [Number of passes](..\render\render-window.html#number-of-passes) or [Time](..\render\render-window.html#time) settings on the [Render Window](..\render\render-window.html) or in [Document Properties &gt; Flamingo nXt](..\render\documentproperties-flamingo.html) to set an automatic stopping point.
-
-&#160;
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/0-1-getting-started.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/0-1-getting-started.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/0-2-creating-and-editing-geometry.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/0-2-creating-and-editing-geometry.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/0-3-3-d-modeling-and-editing.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/0-3-3-d-modeling-and-editing.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/0-4-extras.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/0-4-extras.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/0-copyright-page.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/0-copyright-page.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/0-title-page.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/0-title-page.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/01-introduction.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/01-introduction.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/02-the-rhino-for-windows-interface.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/02-the-rhino-for-windows-interface.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/03-creating-geometry.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/03-creating-geometry.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/04-precision-modeling.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/04-precision-modeling.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/05-editing-geometry.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/05-editing-geometry.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/06-point-editing.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/06-point-editing.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/07-creating-deformable-shapes.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/07-creating-deformable-shapes.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/08-modeling-with-solids.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/08-modeling-with-solids.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/09-creating-surfaces.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/09-creating-surfaces.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/10-importing-and-exporting.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/10-importing-and-exporting.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/11-rendering.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/11-rendering.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/12-annotating-your-model.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/12-annotating-your-model.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/13-printing-and-layouts.htmll]({{site.baseurl}}/{{page.language}}/rhino/5/guides/13-printing-and-layouts.html)
+* [{{site.baseurl}}/{{page.language}}/rhino/5/guides/14-transforming-solids.html]({{site.baseurl}}/{{page.language}}/rhino/5/guides/14-transforming-solids.html)

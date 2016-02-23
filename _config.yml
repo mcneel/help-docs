@@ -85,6 +85,9 @@ defaults:
       path: "en/rhino"
       type: en
     values:
+      language: en
+      productname: "Rhino"
+      productversionpath: "5"
       type: "guides_topic"
       layout: flamingo-guide-page
       collectionname: "Guides"
