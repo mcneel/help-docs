@@ -2,8 +2,8 @@
 title: 賦予材質
 ---
 
-# ![images/paint.svg](images/paint.svg) {{page.title}}
-Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on how easy the model is to change and maintain in the future.
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
+場景裡的物件可擁有彩現使用的材質，材質有不同的賦予方式，每種方式都有其優缺點，必需考量後續修改材質的方便性來選擇適當的賦予方式。
 
 材質有三種賦予方式：圖層、父物件、物件，這三者有層級關係，後者可覆蓋前者。
 
@@ -13,7 +13,7 @@ Objects in the scene have a material source. This is the place where they adopt 
 
 將物件的材質賦予方式設為**圖層**是建議使用的方法，可方便改變一個圖層上所有物件的材質。如果一個圖層上只有少數幾個物件使用不同的材質，可將這些物件的材質賦予方式設為**物件**。
 
-匯入的檔案裡的物件可能使用不同的材質賦予方式，Imported files may have any one of these three assignments. Many imported files will have By Object assignments.  It may take a lot of work to convert the model to By Layer assignments, but it can be beneficial if there is a lot of editing to the render materials planned.
+匯入的物件可能帶有材質，大部分匯入的物件的材質賦予方式是設為**物件**，要全部改成**圖層**可能要花不少時間，但如果後續需要經常對材質做修改，花點時間將材質賦予方式全部改為**圖層**是值得的。 
 
 材質賦予後會儲存在模型檔案裡，編輯一個模型的材質不會影響其它模型裡的材質。
 
@@ -46,8 +46,8 @@ Objects in the scene have a material source. This is the place where they adopt 
 
 ##### 從物件內容賦予材質
 1. 選取物件。
-1. 從**編輯**功能表選擇 ![images/properties.png](images/properties.png) **物件內容**。
-1. 將[內容](properties-object.html)面板**材質**頁面 ![images/materialtab.png](images/materialtab.png) 的**材質賦予方式**設為**父物件**。
+1. 從**編輯**功能表選擇 ![images/properties.png](images/properties.png){: .inline} **物件內容**。
+1. 將[內容](properties-object.html)面板**材質**頁面 ![images/materialtab.png](images/materialtab.png){: .inline} 的**材質賦予方式**設為**父物件**。
 
 ## 將材質賦予給物件
 {: #byobject}
@@ -58,8 +58,8 @@ Objects in the scene have a material source. This is the place where they adopt 
 
 ##### 從物件內容賦予材質
 1. 選取物件。
-1. 從**編輯**功能表選擇 ![images/properties.png](images/properties.png) **物件內容**。
-1. 將[內容](properties-object.html)面板**材質** 頁面 ![images/materialtab.png](images/materialtab.png) 的**材質賦予方式**設為**物件**，從材質清單選擇一個材質。
+1. 從**編輯**功能表選擇 ![images/properties.png](images/properties.png){: .inline} **物件內容**。
+1. 將[內容](properties-object.html)面板**材質** 頁面 ![images/materialtab.png](images/materialtab.png){: .inline} 的**材質賦予方式**設為**物件**，從材質清單選擇一個材質。
 
 ##### 將材質拖放至物件
 {: #drag-dropmaterialtoobject}
@@ -74,7 +74,7 @@ Objects in the scene have a material source. This is the place where they adopt 
 ##### 以材質選取物件
 {: #select-objects-with-material-assignment}
 1. 在**材質編輯器**面板的[材質清單](material-editor.html#material_list)的一個材質上按滑鼠右鍵。
-1. 在彈出的功能表選擇**選取物件**。
+1. 在彈出的功能表選擇**選取使用這個材質的物件**。
 
 ##### 移除物件的材質
 {: #removematerialfromobject}
