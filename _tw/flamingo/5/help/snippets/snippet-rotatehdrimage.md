@@ -1,10 +1,10 @@
 
-#### Plan control
+#### 平面控制
 
-![images/hdri-spherical.png](images/hdri-spherical.png){: .float-img-left}
+![images/hdri-spherical-proj.png](images/hdri-spherical-proj.png){: .float-img-left}
 
-* Click on the plan control to rotate the HDRI correctly.
-* The red dot signifies the center of the HDRI image.
+* 將 HDR 圖片旋轉到正確的方向。
+* 紅點代表 HDR 圖片的中心。
 
 #### 旋轉
 {: .clear-img}

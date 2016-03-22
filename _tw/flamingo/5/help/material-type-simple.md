@@ -1,19 +1,19 @@
 ---
 title: 簡易材質內容
 ---
-# ![images/paint.svg](images/paint.svg) {{page.title}}
+# ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Flamingo 的材質有許多類型，不同類型的材質有不同的簡易設定，讓您可以輕易編輯一個材質類型常用的選項，通常您只要變更材質的顏色即可。
 
 #### 簡易材質類型：
 
-> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png)[純顏色](#solid-color)
-> ![images/newplasticmaterial.png](images/newplasticmaterial.png)[塑膠](#plastic)
-> ![images/newmetalmaterial.png](images/newmetalmaterial.png)[金屬](#metal)
-> ![images/newglassmaterial.png](images/newglassmaterial.png)[玻璃](#glass)
-> ![images/newglossymaterial.png](images/newglossymaterial.png)[模糊](#glossy)
-> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png)[亮光漆面](#clearfinish)
-> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png)[貼圖](#flamingo-textured)
-> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png)[貼圖組](#texture-set)
+> ![images/newsolidcolormaterial.png](images/newsolidcolormaterial.png){: .inline} [純顏色](#solid-color)
+> ![images/newplasticmaterial.png](images/newplasticmaterial.png){: .inline} [塑膠](#plastic)
+> ![images/newmetalmaterial.png](images/newmetalmaterial.png){: .inline} [金屬](#metal)
+> ![images/newglassmaterial.png](images/newglassmaterial.png){: .inline} [玻璃](#glass)
+> ![images/newglossymaterial.png](images/newglossymaterial.png){: .inline} [模糊](#glossy)
+> ![images/newclearfinishmaterial.png](images/newclearfinishmaterial.png){: .inline} [亮光漆面](#clearfinish)
+> ![images/newtexturedmaterial.png](images/newtexturedmaterial.png){: .inline} [貼圖](#flamingo-textured)
+> ![images/newtexturesetmaterial.png](images/newtexturesetmaterial.png){: .inline} [貼圖組](#texture-set)
 
 每種貼圖類型都有相同的進階材質設定，需要使用進階材質設定可以選擇建立 **Flamingo 進階**材質，或是在其它類型的材質裡切換到**進階編輯器**。
 
@@ -85,12 +85,12 @@ Flamingo 的材質有許多類型，不同類型的材質有不同的簡易設�
 {% include_relative snippets/snippet-material-name.md %}
 {% include_relative snippets/snippet-material-color-select.md %}
 #### 強度
-控制反射與反光的銳利與模糊，請參考[銳利度](material-type-advanced.html#intensity)的說明。
+控制反射與反光的強度，請參考[強度](material-type-advanced.html#intensity)的說明。
 
 #### 反光銳利度
-Controls sharpness vs blurriness of the highlight spot from lights on the surface. See Advanced [Highlight sharpness](material-type-advanced.html#sharpness) topic for more details.
+控制反射與反光的銳利與模糊，請參考[銳利度](material-type-advanced.html#sharpness)的說明。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} Use the Advanced Editor to overwrite the presets of [Fresnel](material-type-advanced.html#fresnel) and [Type](material-type-advanced.html#type).
+{% include_relative snippets/snippet-material-advanced-editor.md %}進階編輯器裡可修改預設的 [Fresnel](material-type-advanced.html#fresnel) 與[型式](material-type-advanced.html#type)。
 
 ## 亮光漆面
 {: #clearfinish}
@@ -124,8 +124,9 @@ Controls sharpness vs blurriness of the highlight spot from lights on the surfac
 
 ## 貼圖組
 {: #texture-set}
-[貼圖組材質](texture-set-materials.html)可用不同的貼圖控制材質的顏色、置換、法線向量、凹凸，建立效果逼真的材質，[PixPlant](http://www.pixplant.com/) 可將一般的圖片轉換為置換、法線向量、凹凸需要的圖片。
-<!-- TODO: This dialog Needs a page.-->
+
+貼圖組材質可含有許多張貼圖，以不同的貼圖分別控制材質的顏色、置換、法線向量、凹凸，建立效果逼真的材質，[PixPlant](http://www.pixplant.com/) 可將一般的圖片轉換為置換、法線向量、凹凸需要的圖片。
+
 ![images/solidcolors.png](images/textureset.png)
 
 {% include_relative snippets/snippet-material-name.md %}
@@ -141,7 +142,32 @@ Controls sharpness vs blurriness of the highlight spot from lights on the surfac
 #### 型式
 控制反射與反光的型式，請參考[型式](material-type-advanced.html#type)的說明。
 
-{% include_relative snippets/snippet-material-advanced-editor.md %} 進階編輯器裡可修改材質的許多預設值。**附註：** This is a complex material that uses many overlaid textures set with various defaults.  Using the advanced editor will not keep all the properties in sync.
+### 貼圖
+貼圖表可列出貼圖組使用的所有貼圖，在此按右鍵可新增貼圖、移除貼圖或改變貼圖的類型。
 
-## 進階材質
+#### 新增貼圖...
+新增圖片至貼圖表，允許一次選取數個圖片，最多可使用四個貼圖，
+
+#### 移除貼圖
+從貼圖表刪除貼圖。
+
+#### 顏色
+以圖片做為材質的顏色，詳細說明請見：[標準貼圖](material-image-properties.html#standard)。
+
+#### 凹凸
+以圖片像素的灰階值在模型表面模擬凹凸深淺的光影變化，詳細說明請參考：[凹凸貼圖](material-image-properties.html#bump)。
+
+#### 法線向量
+利用圖片像素的 RGB (紅、綠、藍) 值代表法線向量，藍色代表 Z 向量，因此法線向量貼圖的色調通常偏藍色, 詳細說明請參考：[法線向量貼圖](material-image-properties.html#normal)。
+
+#### 反光
+以圖片像素的灰階值控制材質反射的強度，詳細說明請參考：[反光貼圖](material-image-properties.html#transparency)。
+
+#### 透明
+以圖片像素的灰階值控制材質的透明度，詳細說明請參考：[透明貼圖](material-image-properties.html#normal)。
+
+#### 置換
+以圖片像素的灰階值控制彩現網格置換的高度，詳細說明請參考：[置換貼圖](material-image-properties.html#displacement)。
+
+### 進階材質
 Flamingo 材質的[進階編輯器](material-type-advanced)有材質的所有設定，如果內建的材質類型無法符合您的需要，可以選擇建立 [Flamingo 進階](material-type-advanced)材質，以便直接使用所有的設定。
