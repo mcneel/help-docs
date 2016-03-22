@@ -1,6 +1,6 @@
 
-#### X/Y/Z Scale
-Changes the absolute size of the pattern in the x-, y-, and z-directions.
+#### X/Y/Z 比例
+變更花紋在 X、Y、Z 方向的大小。
 
-#### Lock
-Maintains the ratio between the X Scale, Y Scale, and Z scale.
+#### 鎖定
+維持 X 軸、Y 軸、Z 軸之間的比例。
