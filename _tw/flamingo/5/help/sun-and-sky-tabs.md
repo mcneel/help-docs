@@ -1,191 +1,192 @@
 ---
+title: 太陽與天空
 ---
 
-# ![imagessun.svg](images/sun.svg){:height="75px" width="75px"} Sun and Sky
-The [Sun](#sun) and [Sky](#sky) are closely related to each other. The Sun can change the brightness of the Sky in Auto mode. If the Sun is on and the Sky is an HDRI balancing their strengths is important.
+# ![imagessun.svg](images/sun.svg){: .inline} {{page.title}}
+[太陽](#sun)與[天空](#sky)有很大的關聯性，天空設為**自動**時，它的強度受到太陽強度的影響。當太陽開啟時將天空設為 HDRi，平衡兩者的強度非常重要。
 
-## Sun
+## 太陽
 {: #sun}
-The Sun is a powerful invisible parallel light. Factors simulating real-world conditions such as latitude and longitude, time of day, and season control the Sun's direction and brightness.
+太陽是一個亮度極高的平行光源，它的設定模擬真實世界的情形，以經緯度、時間、季節等設定控制太陽的方位與照明的亮度。
 
-This help topic reviews the Flamingo Sun control.  The [Rhinoceros Sun](http://docs.mcneel.com/rhino/5/help/en-us/commands/sun.htm) control may also be used to place the sun.  Flamingo will keep the two sun controls in sync.
+此主題說明的是 Flamingo 太陽，它與[Rhino 太陽](http://docs.mcneel.com/rhino/5/help/en-us/commands/sun.htm)有許多共用的設定。
 
-##### Where can I find Flamingo Sun control?
+##### 可以在哪找到 Flamingo 的太陽設定?
 
-The Sun must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sun).
+[照明預設組](lighting-tab.html#lighting-presets)中只有**戶外日光**、**室內日光**、**自訂**有 Flamingo 的太陽頁面。
 
-* ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
-* ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sun
+* ![images/options.png](images/options.png){: .inline} 工具列 > ![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 工具列
+* ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo 面板 > 太陽
 
-Note: The Sun tab will only be visible if the Sun is activated through a Lighting Pre-set.
+**附註：**開啟太陽才會有太陽頁面。
 
-Solar angles are required to perform sunlight calculations. There are two ways to specify the sun direction: by date, time, and place; and by direct angle. Use date, time, and place positioning to simulate the real sun in a study of your model's site. Direct sun angle controls the light angle without reference to a real sun. Use the direct sun angle to try lighting effects.
+太陽的角度是計算太陽照明的必要因素，有兩種方法可以設定太陽的角度：一是以日期、時間與地點間接設定，可以用來分析模型在地球上某個位置受陽光照明的情形；一是以方位與高度直接設定，這個方式較為直觀，不考慮日期、時間與地點的因素。
 
 ![images/sydneymorning.png](images/sydneymorning.png)  ![images/stockholmmorning.png](images/stockholmmorning.png)
-*Sydney, Australia, 21-June, 09:30 (on the left). Stockholm, Sweden, 21-June, 09:30 (on the right).*
+*澳洲雪梨 6月21日 09:30 (左)、瑞典斯德哥爾摩 6月21日 09:30 (右)。*
 
-### Set azimuth and altitude
+### 設定方位與高度
 {: #set-azimuth-and-altitude}
-Use solar angles to manually set the sun's direction. Enables [Azimuth](#azimuth) and [Altitude](#altitude) controls.
+啟用[方位](#azimuth)與[高度](#altitude)設定，以手動設定太陽的角度。
 
-#### Azimuth
+#### 方位
 {: #azimuth}
-Sets the sun's direction in angle degrees from North (0) in the horizontal plane.  The circular map shows the world in a plan view.
+設定太陽的方向，從北方 (0度) 順時針方向計算的角度。
 
-#### Altitude
+#### 高度
 {: #altitude}
-Sets the sun's height in the sky in angle degrees from the Equator (0).  The half circle map simulates a section through the vertical direction of the world coordinates.
+以從赤道 (0度) 算起的角度設定太陽的高度。
 
-### Set location on Earth
+### 設定地球上的位置
 {: #set-location-on-earth}
-Use the sun angle calculator to place the sun based on Date, Time, Location.  Note: As with all Sun calculators, the Sun position accuracy may vary. If absolute accuracy is required it is recommended to verify the sun location.  
+以日期、時間與地點自動設定太陽的方位與高度。**附註：**不同的太陽計算器計算得到的太陽位置不一定完全相同，需要絕對精確時請務必加以確認。  
 
-#### Date
+#### 日期
 {: #date}
-Specifies the date.
+設定日期。
 
-#### Time
+#### 時間
 {: #time}
-Specifies the local time of day.
+設定當地的時間。
 
-#### Daylight savings time
+#### 日光節約時間
 {: #daylight-savings-time}
-Sets the time forward by one hour.
+將時間提前一小時。
 
-#### Latitude/Longitude
+#### 經度/緯度
 {: #latitude-longitude}
-Enter a latitude and longitude or pick a location on the map.
-The numbers will also update to display the latitude and longitude of a location picked on the map with the mouse cursor.
+在這兩個欄位輸入經度與緯度，或直接在地圖上指定位置。
+以滑鼠游標在地圖上指定位置時經度與緯度欄位的數值也會更新。
 
-#### Time zone
+#### 時區
 {: #time-zone}
-Displays the time zone based on Latitude and Longitude for the current location.
+顯示目前位置的時區。
 
-#### City list
+#### 城市清單
 {: #city-list}
-Use this to select a major city to set the location.
+以選擇城市的方式設定時區。
 
-#### Map
+#### 地圖
 {: #map}
-Click the map to specify a location. Drag with the left mouse button to pan the map.
+在地圖上按住滑鼠左鍵可平移地圖。
 
-### Sun intensity
+### 太陽強度
 {: #sun-intensity}
-Modifies the brightness of the sun (direct) daylight component. The intensity of sun is automatically calculated based on solar angles and sky conditions, but can be modified to balance with other lights.
+調整太陽的直接照明亮度，太陽對場景的照明是從太陽的角度與天空的狀況計算而來，但可以做調整，與其它光源做調和。
 
-### Sun highlight
+### 太陽反光
 {: #sun-highlight}
-The sharpness of the sun highlight.
+反射材質上太陽的銳利度。
 
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
-*Sun highlight=0 (left) and 1 (right).*
+*太陽反光為 0  (左) 與 1 (右)。*
 
-Note : Solar highlight artifacts can sometimes be seen on exterior renderings when the Sun highlight setting is used. To mitigate or eliminate this artifact, set the Sun highlight to a smaller value.
+**附註：**在戶外場景中如果您不想讓物件上的太陽反光太明顯，可以降低太陽反光的數值。
 {: #speckle-artifacts}
 
 {% include_relative snippets/snippet-sunchannel.md %}
 
-#### North Direction
+#### 北方
 {: #north}
-Note : North is the World Y direction.
+**附註：**北方是世界座標 Y 軸的方向。
 
-## Sky
+## 天空
 {: #sky}
-The Sky is a large sphere around the rendering that can be used for lighting. The Sky is very different from environment.  Sky controls lighting. Environment controls what is reflected and visible in the background. There are many situations where the Sky and Environment might be set differently.
+天空是一個環繞場景、具有照明功能的巨型球體，天空與環境非常不同，天空控制照明亮度、環境控制可見的背景，有些情形需要對天空與環境做不同的設定。
 
-#### Where can I find Flamingo Sky control?
-The Sky must be activated through the [Lighting Preset](lighting-tab.html#lighting-presets) or the [Custom Lighting settings](lighting-tab.html#sky).
+#### 可以在哪找到 Flamingo 的天空設定?
+[照明預設組](lighting-tab.html#lighting-presets)中只有**戶外日光**、**室內日光**、**自訂**有 Flamingo 的太陽頁面。
 
- 1. ![images/options.png](images/options.png)Toolbars >![images/flamingo-icon.png](images/flamingo-icon.png)Flamingo nXt Toolbar
- 1. ![images/menuicon.png](images/menuicon.png)Menus > Flamingo nXt 5.0 Pulldown > Show Control Panel > Flamingo nXt Tab > Sky
+ 1. ![images/options.png](images/options.png){: .inline} 工具列 > ![images/flamingo-icon.png](images/flamingo-icon.png){: .inline} Flamingo nXt 工具列
+ 1. ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > Flamingo nXt 5.0 > 顯示控制面板 > Flamingo 面板 > 天空
 
-The lighting preset schemes for [Exterior](lighting-tab.html#exterior-daylight) and [Interior](lighting-tab.html#interior-daylight) daylight use the Automatic sky by default. The [Studio](lighting-tab.html#studio-lighting) lighting preset scheme uses HDR image lighting by default.
+照明預設組的[戶外日光](lighting-tab.html#exterior-daylight)與[室內日光](lighting-tab.html#interior-daylight)以自動天空為預設值，[攝影棚照明](lighting-tab.html#studio-lighting)以 HDRi 為預設值。
 
-Sky can be set five ways:
+天空有五種設定：
 
->[Off](lighting-tab.html#off)
->[Automatic Sky](#automatic-sky)
->[High Dynamic Range Image (HDRI)](#high-dynamic-range-image-sky)
->[Color](#color-sky)
->[Image](#image-sky)
+* [關閉](lighting-tab.html#off)
+* [天空 (自動)](#automatic-sky)
+* [高動態範圍圖片 (HDRI)](#high-dynamic-range-image-sky)
+* [顏色](#color-sky)
+* [圖片](#image-sky)
 
-The two best settings for sky lighting types are [HDR image](#high-dynamic-range-image-sky) sky and [Automatic sky](#automatic-sky). HDR image sky uses an image with lighting values stored on each pixel to provide light and reflection. Automatic sky uses a real-world sun location and cloudiness to simulate a sky.  These settings will produce the most dynamic renderings.
+Flamingo nXt 內建兩種天空照明：[HDR 圖片](#high-dynamic-range-image-sky)天空與[自動天空](#automatic-sky)。HDR 圖片的每個像素都含有亮度數值，可以照亮場景也可以做為材質的環境反射，自動天空可以用來模擬真實世界的太陽與雲量。
 
-### Automatic Sky
+### 天空 (自動)
 {: #automatic-sky}
-Automatic sky uses settings from the [Sun tab](sun-and-sky-tabs.html) to specify the color range and intensity of the skylight.  For instance, when the sun is high in the sky, the lighting and colors of the sky are very different than when the sun is low in the sky.
+自動天空使用[太陽頁面](sun-and-sky-tabs.html)設定天光的顏色範圍與強度，例如：中午與傍晚時陽光的強度與顏色有非常大的差別。
 
 ![images/sky-002.png](images/sky-002.png)
-*Automatic sky: sun high (left) and low (right) in the sky.*
+*自動天空：太陽高角度 (左) 與低角度 (右)。*
 
-#### Cloudiness
+#### 雲量
 {: #sky-cloudiness}
-When Cloudiness is turned off, the sky is considered clear and strong shadows are created. The greater the cloudiness, the less contrast there will be between the light and shadows. Greater cloudiness will create lighter shadows and a more even lighting effect. The Cloudiness setting affects many aspects of the daylight calculation, including the relative amounts of direct vs. indirect lighting, the way indirect lighting is calculated, and the background color if Automatic Sky mode has been selected. The Cloudiness setting varies from 0 (clear) to 1 (completely overcast). The cloudiness settings around 0.35 - 0.50 is a very sensitive and dynamic range.
+當雲量為 0 時，模型會有比較銳利的陰影，雲量設定值越大，陰影就越模糊。雲量的設定會影響日光計算的許多面相，包括：直接照明與間接照明的相對量、間接照明的計算方式與使用自動天空時天空的顏色。雲量的設定值 0 為晴朗無雲，1 為多雲。雲量設定在 0.35 - 0.50 左右有較廣的動態範圍。
 
 ![images/cloudiness0.png](images/cloudiness0.png)
-*Cloudiness 0 (left) and 1 (right).*
+*雲量 0 (左) 與 1 (右)。*
 
-#### Sky intensity
+#### 天空亮度
 {: #sky-intensity}
-Modifies the brightness of the sky (indirect) daylight component. The intensity of skylight is automatically calculated based on solar angles and sky conditions, but can be modified. Note: This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+調整天空的間接照明亮度，天空對場景的照明是從太陽的角度與天空的狀況計算而來，但可以做調整。**附註：**這個設定只有在場景中有需要補償的人造光源時才有作用。場景中沒有人造光源時，彩現影像不會因為這個設定自動調亮或調暗。
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### High-Dynamic-Range Image Sky
+### 高動態範圍圖片天空
 {: #high-dynamic-range-image-sky}
-A [high-dynamic-range (HDR or HDRI)](https://en.wikipedia.org/wiki/High-dynamic-range_imaging) image is a special 2-D image file. These images contain a much broader range of values at each pixel then standard image files, such as a .jpg or .png. This extra data can be used to light models. If the values contained in the HDR are accurate, then the lighting will be accurate. This can produce very dynamic lighting in a scene. The preset Studio Lighting scheme uses HDR images for the sky. If you are thinking of studio lighting as an indoor activity, think of the HDR image as a ceiling that emits light based on the colors in the image.
+高動態範圍 (HDR) 圖片是一種 2D 圖檔，常見的圖片格式 (JPG、 PNG...) 的像素可以儲存最亮的顏色為白色，這也是電腦螢幕能顯示最亮的顏色，但自然界的光源的亮度遠超過白色可以描述的範圍，HDR 格式的像素可以描述比白色更高的亮度值，所以稱為高動態範圖片，可以用來照明場景。如果 HDR 圖片所含的亮度資訊是精確的，照明效果也會是精確的。攝影棚照明預設組使用 HDR 圖片做為天空，您可以將 HDR 圖片視為室內場景來自牆或天花板的間接照明，HDR 圖片上的色彩會影響照明的色調。
 
 ![images/lighting-001.png](images/lighting-001.png)
-*HDRi lighting.*
+*HDRi 照明。*
 
-It is assumed that HDR images contain radiance values expressed in watts units. If this is not the case, the intensity of these HDR images may need to be adjusted in order to achieve proper illumination levels.
+HDR 圖片裡的亮度值會被當做以瓦特為單位，如果不是，您必需對 HDR 圖片的亮度做調整，以達到適當的照明效果。
 
-In addition to the Sky, a different HDR image can be used for each of the three visible backgrounds: [Visible](environment-tab.html#advanced-background), [Reflected](environment-tab.html#advanced-background), and [Refracted](environment-tab.html#advanced-background) background.
+HDR 圖片除了可用在天空的設定以外，也可用在[環境背景](environment-tab.html#advanced-background)、[反射背景](environment-tab.html#advanced-background)與[折射背景](environment-tab.html#advanced-background)。
 
-#### HDRI Image
-Specifies the HDR (HDR and HDRI are the same file type) image file. Click on the image to select a different HDRI.
+#### HDRI 圖片
+選擇 HDR 圖片檔案 (HDR 與 HDRI 是相同的檔案類型)，按圖片縮圖選擇不同的 HDR 圖片。
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*Equarectangular projection.*
+*球面矩形投影。*
 
-HDR images come in two projection types which allow the image to properly wrap around the sky sphere. The most popular is equirectangular.  These images are rectangular with an aspect ratio of 2:1. Equirectangular images will have similar resolution over the whole image. The second projection is spherical. Spherical HDRI images are square in aspect ratio and the image will show great curvature. Spherical projections have less resolution at the seam.
+HDR 圖片有兩種投影方式將圖片投影至天空球體。最常用的是球面矩形投影，此種投影方式的 HDR 圖片的寬高比為 2:1，圖片的不同部分的解析度大致相同。第二種是球體投影，球體投影的 HDR 圖片為正方形，圖片在接縫處的解析度較低。
 
-#### Intensity
-Modifies the brightness of the HDR image light. This setting only matters if there are other lights in the scene that have to be compensated for. If there are no other lights, the tone operator will compensate the exposure and the rendered image will not be brighter or dimmer based on this setting.
+#### 強度
+設定 HDR 圖片的照明亮度，此設定只有在場景中有需要補償的人造光源時才有作用。場景中沒有人造光源時，彩現影像不會因為此設定自動調亮或調暗。
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
-*Low and high HDR intensity.*
+*低與高 HDR 強度。*
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}In the illustration, the image has been rotated so the reflection of the sun appears on the object. Enter rotation degrees or interactively move the rotation widget indicator.
+{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} 旋轉 HDR 圖片，讓圖片的某一部分出現在物件的反射裡，您可以使用圖形化界面調整，或直接輸入角度數值。
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
-*Image rotated so the sun appears on the object.*
+*旋轉圖片的位置，使太陽可以出現在物件上的反射裡。*
 
-#### Saturation
-The color saturation for the light. Since the light from an HDR image is the color of the pixels in the image, this sometimes produces unwanted color effects. Set the saturation low if you want the light from the image, but not the color.
+#### 飽和度
+以 HDR 圖片照明場景時，圖片的顏色即光源的顏色，在某些情形下可能產生非預期的效果。如果您不想讓 HDR 圖片的顏色影響照明，可以將飽和度設為 0。
 
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)
-*Low (left) and high (right) saturation.*
+*低 (左) 與高 (右) 飽合度。*
 
 {% include_relative snippets/snippet-mirrorimage.md %}
 
 {% include_relative snippets/snippet-skychannel.md %}
 
-### Color
+### 顏色
 {: #color-sky}
-It is possible to use a color or gradient of color to light the scene. The colors in the sky are multiplied by the intensity value to give the colors a lighting value.
+單一顏色或顏色漸層都可用來照亮場景，天空顏色的照明亮度可用強度數值調整。
 
-#### Intensity
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+#### 強度
+每個顏色通道的數值可以是 0 - 256，天空的照明亮度是顏色數值乘以強度數值。
 
-#### Color type
-There are three ways to control the color of the sky.  These are similar to the Color Environment controls.  See [Color Background](environment-tab.html#environment-color-and-gradient-backgrounds) controls for more information.
+#### 顏色類型
+天空的顏色有三種控制方式，與環境顏色的控制方式類似，詳細說明請參考：[顏色背景](environment-tab.html#environment-color-and-gradient-backgrounds)。
 
-### Image
+### 圖片
 {: #image-sky}
-It is possible to use an image to light the scene. The colors in the image are multiplied by the intensity value to give the colors a lighting value.
+圖片也可用來照亮場景，圖片顏色的照明亮度可用強度數值調整。
 
-#### Intensity
-The Intensity value is used to multiply the colors in the Sky and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.
+#### 強度
+每個顏色通道的數值可以是 0 - 256，天空的照明亮度是顏色數值乘以強度數值。
 
-#### Image Projection
-There are many ways to control how an image is mapped to the sky.  These are similar to the Image Background controls.  See [Image Background](environment-tab.html#environment-image) controls for more information.
+#### 圖片投影
+將圖片投影到天空球體有許多方式，與環境背景圖片類似，詳細說明請參考：[圖片背景](environment-tab.html#environment-image)。
