@@ -1,296 +1,299 @@
 ---
+title: Flamingo 環境
 ---
 
-# ![images/environment.svg](images/environment.svg){:height="75px" width="75px"} Flamingo Environment
-There are many types of environments in Rhino. This topic will address the Flamingo Default Environment.
+# ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
+Rhino 有幾種[環境類型](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm)，此主題將說明 Flamingo 的環境類型。
 
-The Environment effects the visible part of the background and reflections.  For effects that effect lighting the scene, see the [Sky](sun-and-sky-tabs.html) help topic.
+環境是場景背後未被物件擋住的部分，或是出現在反射材質的環境反射影像。要讓環境對場景產生照明效果請參考[天光](sun-and-sky-tabs.html)的說明。
 
-Flamingo comes with a special environment called **Default Flamingo Environment**.  This environment will sync to the current [Lighting Preset](lighting-tab.html). By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
+Flamingo 內建一種特別的環境 - 預設的 **Flamingo 環境**，此環境與目前的[照明預設組](lighting-tab.html)同步。By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
 
-The complete set of property groups in the Flamingo Environment are:
+Flamingo 環境的內容群組有：
 
-> [Name](#name)
-> [Flamingo Environment](#environment)
-> [Background Color](#color-backgrounds)
-> [Advanced Background](#advanced-background-reflected-sky)
+  * [名稱](#name)
+  * [Flamingo 環境](#environment)
+  * [背景顏色](#color-backgrounds)
+  * [進階背景](#advanced-background-reflected-sky)
 
 
-## Environment Name
+## 環境名稱
 {: #name}
-This is the name of the environment in the Rhino model.  Environments are stored in the Rhino model. That means that the same name in the library or a different model will not be affected by edits to the environment in the current model. To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
+此為 Rhino 模型裡的環境名稱，環境可儲存在 Rhino 模型檔案裡。編輯目前模型的環境不會影響材質庫與其它模型裡的環境。To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
 
-## Flamingo Environment
+## Flamingo 環境
 {: #environment}
-There are three major effects of environment in a rendering:
+環境在彩現模型時有三個重要角色：
 
->Visible Background
->[Reflective Background](#advanced-background-reflected-sky)
->[Refractive Background](#advanced-background-refracted-sky)
+  1. 可見的背景
+  1. [反射背景](#advanced-background-reflected-sky)
+  1. [折射背景](#advanced-background-refracted-sky)
 
-The Visible Background is the basic general properties panels and is the visible environment. The [Reflective](#advanced-background-reflected-sky) and [Refractive](#advanced-background-refracted-sky) backgrounds can differ and are available in the Advanced Background section.
+可見的背景是彩現的模型後方直接可見的背景，用於[反射](#advanced-background-reflected-sky)與[折射](#advanced-background-refracted-sky)的背景可與可見的背景不同。
 
-#### Intensity
+#### 強度
 {: #background-intensity}
-Modifies the relative brightness of the background. The Intensity value is used to multiply the colors in the background and result in a lighting value.  Colors can range from 0 - 256 per channel. Intensity will multiply those values.  This becomes important if the background looks very dark compared to the rendered model.
+修改背景的相對亮度，每個顏色通道的數值可以是 0 - 255，背景的照明亮度是顏色數值乘以強度數值，當背景偏暗時強度數值更顯重要。
 
-#### Background type
+#### 背景類型
 {: #background-type}
-Specifies the color scheme that will fill the background of the rendered image. Backgrounds can be the following types:
+設定各種不同的彩現背景，背景有以下幾種類型：
 
-> [Sky](#environment-sky)
-> [Solid and gradient color](#color-backgrounds)
-> [Image](#environment-image)
-> [HDR and planar HDR images](#hdr-background)
+* [天空](#environment-sky)
+* [單一顏色與漸層色](#color-backgrounds)
+* [圖片](#environment-image)
+* [HDR 與平面 HDR 圖片](#hdr-background)
 
-
-## Sky Background
+## 天空背景
 {: #environment-sky}
-The Sky environment uses the sun and sky settings from the [Lighting](lighting-tab.html) tabs for settings.  It is the default setting for the renderings that see the sky in the renderings.
+環境的背景類型中的天空是使用[照明](lighting-tab.html)標籤下的太陽與天空的設定。It is the default setting for the renderings that see the sky in the renderings.
 
 ![images/background-sky-001.png](images/background-sky-001.png)
-*Automatic (left) and HDR image and sun (right).*
+*自動 (左)、HDR 圖片與太陽 (右)。*
 
-## Color Background
+## 顏色背景
 {: #color-backgrounds}
-Background color controls are always present. There is always a color background even if the color is completely obscured by an image, HDRI, or Sky background.
+即使將背景類型設為圖片、HDR 或天空時遮蔽了背景顏色，背景顏色的選項仍然可用。
 
-#### Solid Color
+#### 單一顏色
 {: #solid-color}
-A solid color background consists of a single color that fills the background.
+以一種顏色填滿整個背景。
 
 ![images/background-color-001.png](images/background-color-001.png)
-*Solid color background.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Solid Color.
+*單一顏色背景。*
+單一顏色的詳細說明請參考下方的[顏色控制](#enviroment-sky-color-controls)。
 
-#### Two-Color Gradient
+#### 雙色漸層
 {: #two-color-gradient}
-Two- and three-color gradient backgrounds only apply to perspective views. Two-color gradient backgrounds interpolate the background color between two selected colors.
+雙色與三色漸層的背景只有在透視圖作業視窗才有作用，雙色漸層背景由選取的一個顏色變化至另一個顏色。
 
 ![images/background-color-002.png](images/background-color-002.png)
-*Two-color gradient background: blue and yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing a two-color gradient.
+*雙色漸層背景：藍、黃。*
+雙色漸層的詳細說明請參考下方的[顏色控制](#enviroment-sky-color-controls)。
 
-#### Three-Color Gradient
+#### 三色漸層
 {: #three-color-gradient}
-Three-color gradient backgrounds interpolate the background color between three selected colors.
+三色漸層背景由選取的一個顏色變化至另一個顏色，再變化至第三種顏色。
 ![images/background-color-003.png](images/background-color-003.png)
-*Three-color gradient background: blue, white, yellow.*
-See [Color Controls](#enviroment-sky-color-controls) below for more details on editing the Three-color Gradient.
+*三色漸層背景：藍、白、黃。*
+三色漸層的詳細說明請參考下方的[顏色控制](#enviroment-sky-color-controls)。
 
-### Color controls
+### 顏色控制
 {: #enviroment-sky-color-controls}
-The number of controls available  may change based on the Color Background type that is currently selected. Gradient backgrounds will have up to three color selectors that may include a top, middle, and bottom color.
+可用的顏色選項因為顏色的型式不同而異，三色漸層可設定上、中、下三種顏色。
 
 {% include_relative snippets/snippet-material-color-select.md %}
 
-#### Swap Colors
-Use this button to rearrange the color in the gradient from top to bottom
+#### 對調顏色
+將漸層色的上、下兩個顏色對調。
 
-#### Gradient mapping control
+#### 漸層色的對應
 {: #gradient-mapping}
-The colors in a gradient color background need to be mapped to the environment sphere. The Gradient mapper is used to do this.  The Gradient mapping controls will activate only when a two- or three-color gradient is selected. Gradients can only be mapped to perspective views.
+漸層色背景的顏色必需對應到環境球體上，當顏色型式設為雙色漸層或三色漸層時才會有漸層色對應的圖形控制界面，漸層色只有在透視圖作業視窗有作用。
 
-#### Angles from views
+#### 從視圖擷取角度
 {: #angle-from-views}
-If Angles from View are checked, the current color gradient will sync with the current rendered perspective view.  The top color will map to the top of the view and the bottom color will map to the bottom of the view.  All other colors will evenly distribute between those extremes.
+**從視圖擷取角度**啟用時，漸層色的上、下顏色會重新對應至視圖的上、下邊緣，顏色從一種顏色漸變為另一種顏色。
 
-#### View Altitude Mapper
+#### 視角指示器
 {: #colorrange}
-If the current viewport is a perspective projection, the top and bottom colors and the extents of the gradient relative to the view can be controlled.
+如果目前作業視窗是使用透視投影，可以將漸層分布至視圖的整個範圍。
 
 ![images/background-color-004.png](images/background-color-004.png){: style="float: left; padding-right: 25px;padding-bottom: 15px;padding-top:15px;"}
 
-* The control shows the environment in section view.  The 90 degree marker is the Z-up coordinate. The 0 coordinate represents the horizontal ground plane. The -90 degree marker is the Z-down coordinate.
-* The grey cone of vision shows the last coordinates of the current perspective view.
-* The Red arrow represents the location of the top color. At this angle and above will be the top color.
-* The Green double-arrow represents the middle of the gradient blend between the top and bottom colors.  If it is a three color gradient this is also the location of the middle color.
-* The Blue arrow represents the location of the bottom color.  Below this angle there will only be bottom color.
+* 視角指示器的 90 度代表 +Z 軸的方向，0 度代表水平面，-90 度代表 -Z 軸的方向。
+* 灰色的扇形區域代表透視圖的視野範圍。
+* 紅色標記代表"上"顏色的起始角度，此角度之上都以"上"顏色顯示。
+* 綠色標記代表純"中"顏色的角度，只有三色漸層才會有此綠色標記，"中"顏色向上漸變至"上"顏色，向下漸變至"下"顏色。
+* 藍色標記代表"下"顏色的起始角度，此角度之下都以"下"顏色顯示。
 
-####  Get angles from View Button
-Use this button to reset the Gradient mapping control to the current perspective view coordinates.
+####  從視圖擷取角度按鈕
+按此按鈕可自動調整漸層色標記的位置符合使用中的透視視圖。
 
-#### Top/Middle/Bottom Angles
-These are angle readouts of the Top, Middle, and Bottom colors in the current gradients.  They correspond to the location of the Red, Green, and Blue arrows in the View altitude mapper.
+#### 上/中/下 角度
+漸層色對應的紅、綠、藍標記目前的角度數值。
 
-## Image Background
+## 圖片背景
 {: #environment-image}
-A background image is projected onto the background. Many times this is used to place a model in an existing context or set a view out some windows. A digital photograph, a scanned artwork, or an image created with an electronic paint program may be used as the image. For best results, use high-resolution images for background images. It is also a good idea to blur and lighten sharp images to simulate natural focus and aerial perspective. The background image can be mapped to the background in a planar, cylindrical, or spherical projection into the scene.
+
+以圖片投影做為背景，可讓模型處於適當的情境，或是做為窗外的景色。數位相片、掃描的圖畫作品或是以繪圖軟體製作的圖片都可做為背景圖片。做為環境背景的圖片最好選用高解析度的圖片，將圖片稍微做點模糊處理並提高亮度可以模擬真實世界的深度感與瞭闊的場景。背景圖片可使用平面、圓柱體或球體投影。
 
 ![images/background-image-001.png](images/background-image-001.png)
-*A planar images set as a background.*
+*適用平面投影的背景圖片。*
 
-### Image File
+### 圖檔
 {: #image-properties}
-Set the background image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+按 *(空白 - 按這裡開始設定)* 大型按鈕可選擇要使用的背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
 
-### Projection
+### 投影
 {: #backgroud-image-projection}
-Select one of three image projections from the drop-down control:
+從下拉清單選擇三種投影方式之一。
 
->[Planar](#planar)
->[Cylindrical](#cylindrical)
->[Spherical](#spherical)
+* [平面](#planar)
+* [圓柱體](#cylindrical)
+* [球體](#spherical)
 
-Each projection method has its own set of controls for positioning the image.
+每一種投影方式都有不同的設定可以調整圖片的位置。
 
-#### Planar Projection
+### 平面投影
 {: #planar}
-Projects the image to a flat background in the current view. The planar projection coordinates are always relative to the current view.
+將圖片投影到目前視圖的平面背景，背景圖片永遠正對視圖。
 
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### 從視圖擷取角度
+此選項可自動調整背景圖片的角度，使背景圖片自動符合視圖的角度。
 
-#### Image Placement Control
-Use the placement control to place the image relative to the current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
-
-![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
-
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
-
-#### Image Placement Control
-Use the placement control to place the image relative the to current view. The viewport shape shows up as a dark grey rectangle. Drag the pink rectangle or use the numerical controls to move or scale the background image relative the view.
+#### 圖片位置控制
+灰色矩形代表目前的視圖的背景區域，粉紅色矩形代表背景圖片，移動粉紅色矩形或修改下方的數值可調整背景圖片的縮放比例與位置。
 
 ![images/background-image-003.png](images/background-image-003.png)
-*Current viewport area (1), image size and shape (2).*
+*背景區域 (1) 與圖片的大小與形狀 (2)。*
 
-#### X Scale / Y Scale
-Specifies the size of the background image in the 0 - 1.0 scale of the view width and height. For instance a value of 1.0 is 100% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### X 縮放 / Y 縮放
+設定背景圖片寬度與高度的縮放比例。例如：1.0 (100%) 代表圖片的尺寸符合背景區域的尺寸，0.5 (50%) 代表圖片的尺寸為背景區域的一半。
 
-#### X Offset / Y Offset
-Specifies the offset of the background image from the lower left corner of the viewport in a 0 - 1.0 scale of the view width and height. For instance a value of 0.25 is offset 25% of the view size, a value of 0.5 is 50 % of the view width, etc...
+#### X 偏移 / Y 偏移
+設定背景圖片水平與垂直的偏移距離，背景區域的左下角為原點。例如：0.5 代表圖片往右 (或往上) 偏移，偏移距離為背景區域寬度 (或高度) 的一半。
 
-#### Cylindrical Projection
+#### 圖片位置控制
+灰色矩形代表目前的視圖的背景區域，粉紅色矩形代表背景圖片，移動粉紅色矩形或修改下方的數值可調整背景圖片的縮放比例與位置。
+
+![images/background-image-003.png](images/background-image-003.png)
+*背景區域 (1) 與圖片的大小與形狀 (2)。*
+
+<!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
+
+#### X 縮放 / Y 縮放
+設定背景圖片寬度與高度的縮放比例。例如：1.0 (100%) 代表圖片的尺寸符合背景區域的尺寸，0.5 (50%) 代表圖片的尺寸為背景區域的一半。
+
+#### X 偏移 / Y 偏移
+設定背景圖片水平與垂直的偏移距離，背景區域的左下角為原點。例如：0.5 代表圖片往右 (或往上) 偏移，偏移距離為背景區域寬度 (或高度) 的一半。
+
+### 圓柱體投影
 {: #cylindrical}
-Cylindrical projection maps the image to an imaginary cylinder that surrounds the model. While this projection works best with true cylindrical images, it can also be used effectively with standard panoramas built from photographs.
+將背景圖片投影至環繞模型的圓柱曲面，這個投影方式適合使用 360 度環繞拍攝的照片。
 
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
-Specify the size and position of the image map in height and width angles. Use the graphical tools and the mouse to position and size the image. The current cone of vision is displayed in the graphic as a light gray shaded region.
+以角度值設定圖片出現在彩現裡的大小、位置、寬度與高度，右邊的示意圖形上的角度標記可以使用滑鼠移動， 灰色扇形區域代表目前作業視窗的橫向與縱向視野範圍。
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### 從視圖擷取角度
+此選項可自動調整背景圖片的角度，使背景圖片自動符合視圖的角度。
 
-#### Plan control
-Specifies the angular width of the image map. Enter an angle or drag the flags in the control widget to set the width. The blue area indicates the extents of the angular width.
+#### 平面控制
+以角度值設定圖片出現在彩現影像裡的寬度，您可以輸入角度值或移動示意圖形上的角度標記，藍色的扇形區域代表圖片的橫向分布範圍。
 
 ![images/cylindricalcontrol-001.png](images/cylindricalcontrol-001.png){: .float-img-left}
 
-* The control shows the environment in plan view.
-* The dark grey cone of vision shows the last coordinates in the current perspective view.
-* The blue cone shows the range of angles the image will be visible.
-* The blue arrow represents the left coordinate of the image map.
-* The red dot represents the middle of the background image.
-* The purple arrow represents the right coordinate of the image map.
+* 示意圖形以俯視圖顯示。
+* 暗灰色的扇形區域代表透視圖的視野範圍。
+* 藍色的扇形區域代表背景圖片可見的角度範圍。
+* 藍色角度標記代表背景圖片的左側邊緣。
+* 紅色圓點代表背景圖片的中心。
+* 紅色角度標記代表圖片的右側邊緣。
 
-#### Vertical control
+#### 垂直控制
 {: .clear-img}
-Specifies the vertical extents of the cylindrical projection. Enter an angle or drag the flags in the control widget to set the top and bottom angles. The cylindrical projection is limited to 45 degrees above or below the horizon.
+以角度值設定圓柱體投影的圖片在彩現影像裡的高度範圍，可輸入角度值或移動示意圖形上的角度標記，上/下角度有正、負 45 度的限制。
 
 ![images/background-cylinder-001.png](images/background-cylinder-001.png){: .float-img-left}
 
-* The control shows the cylinder in section view.
-* The grey cone of vision shows the last coordinates in the current perspective view.
-* The blue arrow represents the bottom border of the image map.
-* The red arrow represents the top border of the image map.
+* 示意圖形以剖視圖顯示。
+* 灰色的扇形區域代表透視圖的視野範圍。
+* 藍色角度標記代表背景圖片的下方邊緣。
+* 紅色角度標記代表背景圖片的上方邊緣。
 
-#### Rotation
+#### 旋轉
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+設定圖片出現在彩現裡的部分，紅色圓點是圖片的橫向中心點。
 
-#### Width
-Specifies the width of the image in degrees relative the the plan view.
+#### 寬度
+設定背景圖片的水平環繞角度範圍。
 
-#### Top/Bottom
-Specifies the vertical angles of the image based on horizontal groundplane direction in the model
+#### 上/下
+設定背景圖片的垂直角度範圍，底平面為 0 度。
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  從視圖擷取角度按鈕
+從透視圖作業視窗取得各項角度值來設定背景圖片的顯示範圍。
 
-#### Spherical Projection
+### 球體投影
 {: #spherical}
-Spherical projection maps the image to a complete sphere. This method generally produces good results only if with an equirectangular spherical image is used.  An equirectangular image has an aspect ratio of a 2:1 rectangle.
+以球體投影將圖片分布至整個球體，此投影方式適用全景的環境貼圖，全景環境貼圖的寬高比為 2 : 1。
 
-#### Angle from view
-The angle from view checkbox will keep the image in sync with the current view.  This will stretch the image to fit the current view.
+#### 從視圖擷取角度
+此選項可自動調整背景圖片的角度，使背景圖片自動符合視圖的角度。
 
-#### Spherical control
-Specifies the direction of the image map. Enter an angle or drag the flag in the control widget to set the width. The red dot represents the middle of the background image.
+#### 球體控制
+設定背景貼圖顯示的方向，可輸入角度或移動示意圖形上的紅色圓點，紅色圓點代表視圖的中心。
 
-#### Rotation
+#### 旋轉
 {: .clear-img}
-Specifies the image rotation. The red dot indicates the center of the image.
+設定圖片出現在彩現裡的部分，紅色圓點是圖片的橫向中心點。
 
-####  Get Angles From View button
-Sets the rotation angle to match the current perspective viewport.  Good for resetting the values of the projection.
+####  從視圖擷取角度按鈕
+從透視圖作業視窗取得各項角度值來設定背景圖片的顯示範圍。
 
-## HDRI Background
+## HDR 背景
 {: #hdr-background}
-Using an HDR image as an environment allows more control over the relationship between the light in the background and other light in the image. This is especially useful for depicting an interior space with a bright exterior space showing through a window. An HDR environment image has more range of light than a normal bitmap image and can be assigned a channel so the contrast can be managed in a [multi-channel](lights-tab.html#channel) rendering.
+使用 HDR 圖片做為場景的照明光源可提供更真實、自然的照明效果，尤其是明亮的戶外光源透過窗戶照亮室內場景的情形特別有用。HDR 圖片可以記錄的亮度範圍遠大於一般圖片，您可以賦予 HDR 圖片一個獨立的[照明通道](lights-tab.html#channel)，以便在彩現完成後可以再對 HDR 圖片的亮度做調整。
 
-#### Image File
+#### 圖檔
 {: #hdri-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+按 *(空白 - 按這裡開始設定)* 大型按鈕可選擇要使用的 HDR 背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Planar HDRI options
+## 平面 HDR 選項
 {: #planar-hdr-options}
 
-Planar high-dynamic-range images are seldom used, but can be very useful.  And HDRI provides a wider range of color possibilities. A good use of planar HDRI files is used outside windows in architectural renderings where the background may be too light or too dark.  Planer HDRI files are always mapped planar.
+平面的 HDR 圖片較不常用，可做為室內場景窗戶外的景色貼圖。
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
-*Background image (left) and Planar HDR (right) shows subtle lighting difference in background.*
+*使用一般圖片 (左) 與平面 HDR (右) 做為窗外景觀貼圖彩現時場景照明的細微差異。*
 
-#### Image File
+#### 圖檔
 {: #hdri-planar-image}
-Set the background HDRI image by clicking on the large button that reads *(empty - click here to assign)*, then select a bitmap.  To assign a different image, click on the button thumbnail image.
+按 *(空白 - 按這裡開始設定)* 大型按鈕可選擇要使用的 HDR 背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
-## Advanced Background
+## 進階背景
 {: #advanced-background}
-The Advanced Background settings control environments that are not visible in the rendering, but show in reflections and refractions for the objects. This lets the visible environment look one way, while reflections and refractions might be reacting to a different environment.  For instance, in the illustration below the background is black, but the reflected environment is an HDR image of a building interior.
+進階背景設定控制透明物件折射的環境背景與亮面物件反射的環境背景，可讓折射與反射的環境背景不同於可見的環境背景。以下圖為例，可見的環境背景是黑色，但金屬球反射的是一張 HDR 圖片。
 
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*Normal environment (left) and reflected HDR sky environment (right).*
+*可見的背景 (左) 與使用 HDR 圖片 (右) 做為物件反射的環境背景。*
 
-### Reflected
+### 反射
 {: #advanced-background-reflected-sky}
-A reflected environment is not visible in the rendered image, but it reflects in shiny objects.
+給物件反射的環境背景可以與彩現影像裡看到的環境背景不同。
 
-#### Sky
-Objects reflect the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### 天空
+以[照明 > 天空與太陽](sun-and-sky-tabs.html)做為物件反射的環境背景。
 
-#### Custom
-Objects reflect a [Color or gradient](#color-backgrounds), [Image](#environment-image), or [HDR](#hdr-background) background.
+#### 自訂
+使用[單一顏色或漸層色](#color-backgrounds)、[一般圖片](#environment-image)或 [HDR 圖片](#hdr-background)做為物件反射的環境背景。
 
-#### Visible Background
-Objects reflect the visible background as specified in the [Environment](environment-tab.html) settings.
+#### 可見的背景
+以[環境](environment-tab.html)頁面的背景設定做為物件反射的環境背景。
 
-### Refracted
+### 折射
 {: #advanced-background-refracted-sky}
 
-#### Sky
-Objects refract the sky as specified in the [Lighting: Sun and Sky](sun-and-sky-tabs.html) settings.
+#### 天空
+以[照明 > 天空與太陽](sun-and-sky-tabs.html)做為透明物件折射的環境背景。
 
-#### Custom
-Objects refract a [Color or gradient](#color-and-gradient-backgrounds), [Image](#image), or [HDR](#hdr-background) background.
+#### 自訂
+使用[單一顏色或漸層色](#color-and-gradient-backgrounds)、[一般圖片](#image)或 [HDR 圖片](#hdr-background)做為透明物件折射的環境背景。
 
-#### Visible Background
-Objects refract the visible background as specified in the [Environment](environment-tab.html) settings.
+#### 可見的背景
+以[環境](environment-tab.html)頁面的背景設定做為透明物件折射的環境背景。
 
-#### No Transparent Object Alpha
+#### Alpha 通道忽略材質的透明度
 {: #no-transparent-alpha-objects}
-Prevents seeing alpha channel through transparent objects and will prevent alpha channel compositing through transparent objects.
-If images will be pasted into the alpha channel, turn this setting off.
+開啟這個選項時，使用透明材質的物件會被當做不透明的物件處理建立 Alpha 通道。
+如果您想在影像合成時保留透明物件裡看到的環境背景，請開啟這個選項。
