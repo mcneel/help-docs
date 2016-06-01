@@ -10,10 +10,10 @@ Flamingo nXt 的**彩現農場**可聯合數部電腦的運算能力，合力彩
 
 ![images/renderfarm-002.png](images/renderfarm-002.png){: style="margin-top:25px;"}
 
->![images/01.png](images/01.png)一部安裝 Rhino 與 Flamingo nXt 的電腦。
->![images/02.png](images/02.png)網路主機或共享的農場資料夾。
->![images/03.png](images/03.png)兩部彩現農場客戶端 (nXt 彩現農場包含兩個免費的客戶端)。
->![images/04.png](images/04.png)加購的彩現農場客戶端。
+1. 一部安裝 Rhino 與 Flamingo nXt 的電腦。
+1. 網路主機或共享的農場資料夾。
+1. 兩部彩現農場客戶端 (nXt 彩現農場包含兩個免費的客戶端)。
+1. 加購的彩現農場客戶端。
 
 彩現農場的免費版本可以使用兩個客戶端，要使用更多的客戶端請至 [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) 購買 nXt 彩現農場的授權。
 
@@ -28,15 +28,15 @@ Flamingo nXt 的**彩現農場**可聯合數部電腦的運算能力，合力彩
 
 ##### 農場監視器 (nXtFarmMonitor64.exe)
 可以用來查看彩現工作的進度，含有一些簡單的管理功能。
-For advanced installations, the nXt Render Farm software lets you work with third-party render managers. The following procedures apply to the Render Farm included with Flamingo nXt. If you are planning to use third-party render farm software, some of these procedures will be different.
 
 #### 彩現農場的使用方法
 {: #the-farm-process}
- 1. 以 Flamingo nXt 農場彩現時不使用 Render 指令，請改用 **Flamingo nXt 5.0 功能表 > 彩現農場 > 啟動彩現農場**，這樣彩現工作會送出至[共用的農場資料夾](options-flamingo.html#farm-output-folder)，所有使用的材質與資訊會與這個彩現工作一起送出。
- 2. 彩現工作會被分割為許多部分，彩現農場的客戶端會持續檢查共用的農場資料夾裡是否有新的工作，每一個客戶端會取回一個工作的一部分進行彩現。農場監視器 **(Flamingo nXt 5.0 &gt; 彩現農場 &gt; 農場監視圖...)** 可監看彩現工作的進度。
- 3. 每一個彩現農場客戶端會將彩現的結果儲存至農場輸出資料夾\<工作名稱>\Output。
- 3. 彩現農場客戶端在完成一個彩現工作後會繼續搜尋、執行其它待完成的工作。
- 4. 彩現農場儲存的格式為 [nXt 影像格式 (.nXtImage)](image-editor.html)，這個格式可以在 [nXt 彩現影像編輯器](image-editor.html)開啟做調整，之後可以再另存為 TGA、PNG、TIF 與 JPG 各種圖片格式。
+
+1. 以 Flamingo nXt 農場彩現時不使用 Render 指令，請改用 **Flamingo nXt 5.0 功能表 > 彩現農場 > 啟動彩現農場**，這樣彩現工作會送出至[共用的農場資料夾](options-flamingo.html#farm-output-folder)，所有使用的材質與資訊會與這個彩現工作一起送出。
+1. 彩現工作會被分割為許多部分，彩現農場的客戶端會持續檢查共用的農場資料夾裡是否有新的工作，每一個客戶端會取回一個工作的一部分進行彩現。農場監視器 **(Flamingo nXt 5.0 &gt; 彩現農場 &gt; 農場監視圖...)** 可監看彩現工作的進度。
+1. 每一個彩現農場客戶端會將彩現的結果儲存至農場輸出資料夾\<工作名稱>\Output。
+1. 彩現農場客戶端在完成一個彩現工作後會繼續搜尋、執行其它待完成的工作。
+1. 彩現農場儲存的格式為 [nXt 影像格式 (.nXtImage)](image-editor.html)，這個格式可以在 [nXt 彩現影像編輯器](image-editor.html)開啟做調整，之後可以再另存為 TGA、PNG、TIF 與 JPG 各種圖片格式。
 
 ## 安裝與設定彩現農場
 {: #install}
@@ -45,17 +45,18 @@ For advanced installations, the nXt Render Farm software lets you work with thir
 ##### 安裝彩現農場客戶端
 在協助彩現的電腦安裝彩現農場客戶端：
 
- 1. 下載最新的 [Render Farmer](http://www.rhino3d.com/download/The-Farm/1.0/release) 軟體。
- 1. 在客戶端電腦上執行下載的安裝程式。
- 1. From the Start menu, run the Render Farmer on each machine.
- 1. The Render Farmer will appear as an icon in the system tray.
+1. 下載最新的 [Render Farmer](http://www.rhino3d.com/download/The-Farm/1.0/release) 軟體。
+1. 在客戶端電腦上執行下載的安裝程式。
+1. 在每一部電腦上，從開始功能表執行 **Render Farmer** (彩現農夫)。
+1. 系統列會出現一個彩現農夫的圖示。
 
 ##### 設定彩現農場
 {: #configure-the-render-farm}
-1.  [Right-click](mouse-button-right.html) on the icon and select Restore.
-1. In the nXt Farmer window, on the Options menu, click Path and select the path to the Render Farm folder.
 
-On the computer with Rhino and Flamingo nXt set the Zoo folder in Rhino. From the Tools menu, click Options, set the common farm location to the [Farm output folder](options-flamingo.html#farm-output-folder).
+1.  在該圖示上按[滑鼠右鍵](mouse-button-right.html)，選擇復原。
+1. 在 nXt 農夫視窗，從選項功能表選擇路徑，將路徑設為彩現農場的共用資料夾。
+
+在安裝 Rhino 與 Flamingo nXt 的電腦上，從工具 > 選項 > Rhino 選項 > Flamingo nXt 5.0 設定[共用的農場資料夾](options-flamingo.html#farm-output-folder)。
 
 這樣彩現農場的設定就完成了。
 
@@ -64,31 +65,32 @@ On the computer with Rhino and Flamingo nXt set the Zoo folder in Rhino. From th
 目前彩現農場可以處理三種彩現工作：單一影像彩現、批次彩現與動畫彩現。
 
 ##### 確認彩現農場客戶端有回應
-After starting the Render Farmer client on all the client computers:
+在所有的電腦上執行彩現農夫客戶端以後：
 
- 1. On any of the computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
- 1. 客戶端電腦會出現在農場監視器的機器清單裡。
- 1. Each Render Farmer client should be listed under the Machine list.  The Status should read Active.
+1. 在任一部彩現農場客戶端電腦上，從開始功能表執行 [Farm Monitor](#render-farm-monitor)。
+1. 客戶端電腦會出現在農場監視器的機器清單裡。
+1. 每部彩現農夫客戶端必需出現在機器清單裡，且狀態為 **Active**。
 
 如果這裡有問題，請參考[安裝](#install)與[設定](#configure-the-render-farm)主題。
 
 
 ##### 送出彩現工作至農場
+
 1. 在 Rhino 以一般的方法設定各種彩現設定與調整視圖角度。
-1. On the Flamingo nXt menu, click Start Farm Render.
-1. The [Farm Job](#farm-job) dialog should appear.
-1. Verify the correct option and hit OK.
+1. 從 **Flamingo nXt 5.0** 功能表選擇 **彩現農場** > **啟動農場彩現**。
+1. 彈出[農場工作](#farm-job)對話框。
+1. 選項設定完成後按**確定**。
 
 
-##### Monitoring the Farm
-After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-monitor).
+##### 監視農場
+彩現工作送出至彩現農場後可使用[農場監視器](#render-farm-monitor)監看。
 
- 1. On the master computer, in the Windows Start menu, click [Farm Monitor](#render-farm-monitor).
- 1. A recent job should show up in the Jobs list. This can take a few minutes for large jobs.
- 1. The status of the job will change to active.
- 1. After a period of time, the machines above should pick up tasks with the same date.
- 1. The Percent complete increases as tasks are completed.
- 1. Watch for the job status Completed when the job is finished.
+1. 在主電腦上，從開始功能表執行 [Farm Monitor](#render-farm-monitor)。
+1. 剛才送出的彩現工作會出現在工作清單上，模型檔案較大的工作可能需要幾分鐘才會出現。
+1. 工作的狀態將變為 Active。
+1. 稍待一會，上方的機器就會取得工作進行彩現。
+1. 彩現工作進行時可顯示完成的百分比。
+1. 當彩現工作完成時，工作的狀態會顯示為 Completed。
 
 
 ## 農場工作選項
@@ -96,20 +98,20 @@ After submitting a job to the Render Farm, use the [Farm Monitor](#render-farm-m
 
 #### 名稱
 {: #job-name}
-The date and time is automatically pre-pended to the name you choose. A sub-folder for the job is created in the Render Farm shared folder. An output folder is also created in the new job folder.
+送出的工作會在彩現農場共用資料夾裡建立一個子資料夾，並在工作名稱之前加上工作送出的日期與時間。
 一個工作的彩現結果會儲存至該工作資料夾裡的 Output 子資料夾。
 
 #### 工作開始時機
-Job may be started immediately after submission, at a later time, or manually through the Farm monitor.
+送出的工作可選擇可立即開始、在預約的時間開始或從農場監視器手動開始。
 
-#### Now
+#### 立即
 立刻開始彩現。
 
 #### 以後 (手動)
-Start the job later using the nXt [Farm Monitor](#render-farm-monitor).
+稍後在 nXt [農場監視器](#render-farm-monitor)以手動開始彩現。
 
 #### 預約
-Start the job at a specified date and time.
+設定工作開始的日期與時間。
 
 #### 彩現限制處理數
 {: #rendering-constraints}
@@ -118,14 +120,14 @@ Start the job at a specified date and time.
 
 ## 彩現農場監視器
 {: #render-farm-monitor}
-The Render Farm Monitor is a stand-alone program that reports the status of the client workstations and the jobs currently in the Farm. Jobs can be suspended and restarted from the monitor and a client workstation can be excluded from participating in the render farm.
+彩現農場監視器是一個獨立的小程式，可用來查看農場客戶端電腦的狀態與目前農場裡的工作，農場監視器可暫停或繼續農場裡的客戶端或工作。
 
-To access the Farm Monitor from Rhino go to the Flamingo nXt 5.0 menu > Render Farm > Farm Monitor.
+從 Rhino 的 Flamingo nXt 5.0 功能表選擇**彩現農場 > 農場監視器**可開啟**彩現農場監視器**。
 
-To access the Farm Monitor from Windows, on the Start menu click **All Programs > nXt Render Farm > Farm Monitor**.
+**彩現農場監視器**也可以從 **Windows 開始功能表 > 所有程式  > nXt Render Farm > Farm Monitor** 開啟。 
 
-#### Options
-Right-click a Machine or a Job to access options.
+#### 選項
+在**機器**或**工作**清單裡的項目上按滑鼠右鍵有一些選項可以使用。
 
 #### 重新整理
 重新整理工作清單。
@@ -147,22 +149,22 @@ Right-click a Machine or a Job to access options.
 
 ## 彩現農場的授權
 {: #licensing-the-render-farm-}
-The free version of the Render Farm lets two network computers (nodes) work on jobs simultaneously. If you wish to have more network nodes running simultaneously, you can purchase an unlimited node license from [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp).
-
-當您取得彩現農場的授權碼後，請使用下列方法加入授權碼。
+彩現農場可讓網路中的許多電腦分工彩現一個模型。[下載、安裝彩現農場的客戶端](http://nxt.flamingo3d.com/page/nxt-render-farm)。
 
 ##### 授權客戶端
-1. 請先等待所有進行中的工作完成後再加入授權碼。
-1. Save your Product Key to a text file on a network location so you can easily cut and paste it into each node.
-1. If the node is currently active, in the Windows system tray (on the taskbar), [right-click](mouse-button-right.html) the Render Farm icon, and then click **Close**.
-1. 從 Windows 的**開始**功能表選擇**所有程式**。
-In the nXt Render Farm folder, click **Authorize Farm**.
-1. In the edit box, paste or type your Product Key and click **OK**.
+
+ 1. 請先等待所有進行中的工作完成後再加入授權碼。
+ 1. 請將授權碼 XF10-J9G2-H006-T8AJ-GBB9-0027 放在一個文字檔裡，將該文字檔儲存在網路共用的資料夾裡，以便使用複製、貼上的方式將授權碼輸入至每一部客戶端電腦。
+ 1. 如果農場客戶端正在執行中，請在 Windows 系統列的彩現農夫圖示上按[滑鼠右鍵](mouse-button-right.html)，選擇**關閉**。
+ 1. 從 Windows 的**開始**功能表選擇**所有程式**。
+ 1. 在 **nXt Render Farm** 資料夾下選擇 **Authorize Farm**。
+ 1. 在開啟的對話框貼上授權碼，按**確定**。
 
 ##### 執行客戶端
+
 1. 從 Windows 的**開始**功能表選擇**所有程式**。
-In the nXt Render Farm folder, click **Render Farmer**.
+1. 在 **nXt Render Farm** 資料夾下選擇 **Render Farmer**。
 1. 在系統列的[彩現農夫](mouse-button-right.html)圖示上按滑鼠右鍵，選擇**復原**。
-1. On the Help menu, click **About**.
-如果版本號碼顯示試用版，代表授權未成功。
-1. Minimize the Render Farmer window to return it to the tray.
+1. 從**說明**功能表選擇**關於**。
+1. 如果版本號碼顯示試用版，代表授權未成功。
+1. 將**彩現農夫**視窗縮回系統列。
