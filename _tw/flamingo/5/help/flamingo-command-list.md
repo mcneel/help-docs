@@ -31,7 +31,7 @@ title: Flamingo 指令清單
 #### [FlamingoRT](realtime.html)
 {: #flamingort}
 
-#### [FlamingoHelp](http://help.mcneel.com/en/flamingo/5/help/)
+#### [FlamingoHelp](http://help.mcneel.com/tw/flamingo/5/help/)
 {: #flamingohelp}
 開啟說明檔案。
 
