@@ -5,7 +5,7 @@ title: 材質編輯器面板
 # ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 材質有顏色、反射、透明、貼圖、凹凸... 許多設定，預設的材質顏色是白色，光澤度、反射度、透明度皆為 0。以 Flamingo 彩現搭配 Flamingo 材質可得到最好的效果。
 
-材質可賦予給圖層、物件、圖塊，材質可用拖放至物件或圖層的方式賦予，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
+材質可賦予給圖層、物件、圖塊引例，材質可用拖放至物件或圖層的方式賦予，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
 
 [彩現選項](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm)的**將支援的檔案儲存在 3dm 檔案裡**起用時，材質賦予給物件或圖層後，材質與它使用的圖片會儲存在模型檔案裡。
 
