@@ -19,22 +19,22 @@ title: 賦予材質
 
 ## 將材質賦予給圖層
 {: #bylayer}
-物件預設使用賦予給圖層的材質，按[圖層面板](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)圖層後方的**材質欄**可改變圖使用的材質。
+物件預設使用賦予給圖層的材質，按[圖層面板](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/layer.htm)圖層後方的**材質欄**可改變圖使用的材質。
 附註：從[材質編輯器](material-editor.html)刪除物件本身使用的材質會使物件的材質賦予方式變更為**圖層**。
 
 ##### 將材質拖放至圖層
 {: #drag-dropmaterialtolayer}
-1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)面板。
-1. 從**材質庫**或**材質編輯器**面板的[材質清單](material-editor.html#material_list)，將材質拖放至[圖層面板](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)的圖層上。
+1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/layer.htm)面板。
+1. 從**材質庫**或**材質編輯器**面板的[材質清單](material-editor.html#material_list)，將材質拖放至[圖層面板](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/layer.htm)的圖層上。
 
 ##### 賦予材質給圖層
-1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)面板。
+1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/layer.htm)面板。
 1. 選取一個或數個圖層，按圖層的**材質**欄。
 1. 在**圖層材質**對話框選擇一個材質。
 
 ##### 移除圖層的材質
 {: #detachmaterialfromlayer}
-1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm)面板。
+1. 開啟 Rhino 的[圖層](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/layer.htm)面板。
 1. 選取一個或數個圖層，按圖層的**材質**欄。
 1. 在**圖層材質**對話框選擇**預設材質**。
 

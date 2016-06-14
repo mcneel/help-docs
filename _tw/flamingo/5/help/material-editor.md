@@ -7,7 +7,7 @@ title: 材質編輯器面板
 
 材質可賦予給圖層、物件、圖塊引例，材質可用拖放至物件或圖層的方式賦予，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
 
-[彩現選項](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#options/rendering.htm)的**將支援的檔案儲存在 3dm 檔案裡**起用時，材質賦予給物件或圖層後，材質與它使用的圖片會儲存在模型檔案裡。
+[彩現選項](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#options/rendering.htm)的**將支援的檔案儲存在 3dm 檔案裡**啟用時，材質賦予給物件或圖層後，材質與它使用的圖片會儲存在模型檔案裡。
 
 材質、環境、貼圖的設定都儲存在模型檔案裡，也可以匯出至檔案再匯入其它模型、從 Rhino 裡拖放至外部的資料夾，或是在兩個 Rhino 視窗之間拖放，顏色方塊的顏色也可以如此操作。[材質庫面板](libraries.html)顯示的是預設的材質庫資料夾，這裡的檔案可以拖放到作業視窗裡的物件，材質、環境、貼圖也可以拖放至這裡。
 
@@ -57,7 +57,7 @@ title: 材質編輯器面板
 列出模型使用的所有材質，這裡可以：
 
 * 上下捲動檢視所有的材質。
-* 將材質拖放至[圖層面板](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)裡的圖層，或直接拖放至物件賦予材質，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
+* 將材質拖放至[圖層面板](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#commands/layer.htm)裡的圖層，或直接拖放至物件賦予材質，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
 * 按材質清單末端的**新增**按鈕 ![images/add_material.png](images/add_material.png){: .inline} 建立新材質。
 
 
@@ -151,7 +151,7 @@ title: 材質編輯器面板
 
 ## 工具功能表 ![images/library_default.png](images/library_default.png){: .inline}
 {: #tools-menu}
-<!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
+<!-- This comes from the page http://docs.mcneel.com/rhino/5/help/zh-tw/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵功能表裡找到。
 
 #### ![images/assigntoobjects.png](images/assigntoobjects.png){: .inline} 賦予給選取的物件
@@ -178,7 +178,7 @@ title: 材質編輯器面板
  1. 在**選擇圖層**對話框勾選要賦予材質的圖層。
 
 ##### 從圖層面板賦予材質
- 1. 在[圖層](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#commands/layer.htm)面板選取一個或數個圖層，按[材質](http://docs.mcneel.com/rhino/5/help/en-us/commands/layer.htm#Material)欄。
+ 1. 在[圖層](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#commands/layer.htm)面板選取一個或數個圖層，按[材質](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/layer.htm#Material)欄。
  1. 在**圖層材質**對話框選擇一個材質。
 
 
@@ -204,7 +204,7 @@ title: 材質編輯器面板
 
 #### ![images/changetype.png](images/changetype.png){: .inline} 變更類型 (複製類似的設定)
 將材質變更為其它的類型。
-預設的作業方式由 [Rhino 選項 &gt; 彩現](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)頁面的[當彩現內容類型變更時複製類似的設定](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)設定決定。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
+預設的作業方式由 [Rhino 選項 &gt; 彩現](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)頁面的[當彩現內容類型變更時複製類似的設定](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)設定決定。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
 
 #### ![images/reset.png](images/reset.png){: .inline} 重設為預設值
 將所有設定回復為預設值。
@@ -236,4 +236,4 @@ title: 材質編輯器面板
 開啟[彩現內容過濾器](content_filters.html)視窗。
 
 #### ![images/rename.png](images/rename.png){: .inline} 內容
-開啟[預覽設定](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)對話框。
+開啟[預覽設定](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)對話框。

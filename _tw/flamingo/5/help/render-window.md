@@ -3,10 +3,10 @@ title: 彩現視窗
 ---
 
 # ![images/render.svg](images/render.svg){: .inline} {{page.title}}
-彩現視窗有可以調整曝光度與後處理效果的設定，彩現視窗的大部分功能來自 Rhino，關於功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)說明主題，本說明主題只涉及 Flamingo 提供的功能。
+彩現視窗有可以調整曝光度與後處理效果的設定，彩現視窗的大部分功能來自 Rhino，關於功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#information/renderwindowpostprocess.htm)說明主題，本說明主題只涉及 Flamingo 提供的功能。
 
 ## 管理進行中的彩現
-彩現開始後會開啟[彩現視窗](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)，Flamingo 使用多層次彩現，彩現影像會持續更新。Flamingo 彩現一開始的初始化階段可能需要幾秒鐘或幾分鐘，此階段的工作是匯入模型與收集材質貼圖使用的圖片，並建立彩現影像緩衝區。彩現模型一般有幾個步驟：
+彩現開始後會開啟[彩現視窗](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#information/renderwindowpostprocess.htm)，Flamingo 使用多層次彩現，彩現影像會持續更新。Flamingo 彩現一開始的初始化階段可能需要幾秒鐘或幾分鐘，此階段的工作是匯入模型與收集材質貼圖使用的圖片，並建立彩現影像緩衝區。彩現模型一般有幾個步驟：
 
 1. [多層次彩現](#multi-pass)
 1. [停止彩現](#stop-render)
@@ -83,7 +83,7 @@ EXR 是可儲存高動態範圍 (High Dynamic Range) 亮度資訊的圖片格式
 關閉彩現視窗。
 
 #### 功能表
-功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)說明主題
+功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#information/renderwindowpostprocess.htm)說明主題
 
 ## Flamingo 標籤頁面
 {: #flamingo-tab}
@@ -187,7 +187,7 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 顯示目前的[彩現解析度](render-tab.html#resolution)。
 
 #### 網格面
-顯示模型彩現時使用的網格面數，可做為設定 Rhino 的[彩現網格轉換](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#documentproperties/mesh.htm)設定。
+顯示模型彩現時使用的網格面數，可做為設定 Rhino 的[彩現網格轉換](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#documentproperties/mesh.htm)設定。
 
 #### 網格面 (含圖塊引例)
 當彩現的模型含有圖塊引例時，Flamingo nXt 可以使用單一圖塊定義的網格面彩現它的所有引例，因為參與彩現計算的網格面減少，可以縮短彩現時間，此數值顯示的是包含圖塊引例在內的網格面數。
@@ -219,4 +219,4 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 * 結構線
 * 註解
 
-每一種效果的詳細說明請參考[彩現影像後處理](http://docs.mcneel.com/rhino/5/help/en-us/index.htm#information/renderwindowpostprocess.htm)主題。
+每一種效果的詳細說明請參考[彩現影像後處理](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#information/renderwindowpostprocess.htm)主題。

@@ -9,7 +9,7 @@ title: 太陽與天空
 {: #sun}
 太陽是一個亮度極高的平行光源，它的設定模擬真實世界的情形，以經緯度、時間、季節等設定控制太陽的方位與照明的亮度。
 
-此主題說明的是 Flamingo 太陽，它與[Rhino 太陽](http://docs.mcneel.com/rhino/5/help/en-us/commands/sun.htm)有許多共用的設定。
+此主題說明的是 Flamingo 太陽，它與[Rhino 太陽](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/sun.htm)有許多共用的設定。
 
 ##### 可以在哪找到 Flamingo 的太陽設定?
 

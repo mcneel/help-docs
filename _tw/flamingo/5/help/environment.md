@@ -3,7 +3,7 @@ title: Flamingo 環境
 ---
 
 # ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
-Rhino 有幾種[環境類型](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm)，此主題將說明 Flamingo 的環境類型。
+Rhino 有幾種[環境類型](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/environmenteditor.htm)，此主題將說明 Flamingo 的環境類型。
 
 環境是場景背後未被物件擋住的部分，或是出現在反射材質的環境反射影像。要讓環境對場景產生照明效果請參考[天光](sun-and-sky-tabs.html)的說明。
 

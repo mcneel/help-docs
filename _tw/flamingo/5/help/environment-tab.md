@@ -33,7 +33,7 @@ Flamingo 內建一種特別的環境 - 預設的 *[Flamingo 環境](environment.
 
 ## [背景類型](#panel_map) ![images/callout_1.svg](images/callout_1.svg){: .inline}
 {: #type style="clear: both;"}
-選擇[彩現環境](#flamingo-environment)的背景類型，有天空、顏色、圖片、HDR、平面 HDR 可供選擇，詳細說明請參考 [Rhino 環境編輯器](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm#Basic_settings)主題。
+選擇[彩現環境](#flamingo-environment)的背景類型，有天空、顏色、圖片、HDR、平面 HDR 可供選擇，詳細說明請參考 [Rhino 環境編輯器](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/environmenteditor.htm#Basic_settings)主題。
 
 此主題剩餘的部分將說明環境類型。
 
@@ -162,7 +162,7 @@ Flamingo 內建一種特別的環境 - 預設的 *[Flamingo 環境](environment.
 
 #### ![images/toolbarlus.png](images/toolbarplus.png){: .inline} 建立新環境
 建立一個新的 Flamingo 環境。
-<!-- This comes from the page http://docs.mcneel.com/rhino/5/help/en-us/popup_moreinformation/materialthumbnail_contextmenu.htm -->
+<!-- This comes from the page http://docs.mcneel.com/rhino/5/help/zh-tw/popup_moreinformation/materialthumbnail_contextmenu.htm -->
 工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵快顯功能表裡找到。
 
 #### ![images/import.png](images/import.png){: .inline} 從檔案匯入環境
@@ -176,7 +176,7 @@ Flamingo 內建一種特別的環境 - 預設的 *[Flamingo 環境](environment.
 
 #### ![images/changetype.png](images/changetype.png){: .inline} 變更類型 (複製類似的設定)
 將環境變更為其它的類型。
-預設的作業方式由 [Rhino 選項  > 彩現](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm)頁面的[當彩現內容類型變更時複製類似的設定設定決定](http://docs.mcneel.com/rhino/5/help/en-us/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
+預設的作業方式由 [Rhino 選項  > 彩現](http://docs.mcneel.com/rhino/5/help/zh-tw/options/rendering.htm)頁面的[當彩現內容類型變更時複製類似的設定設定決定](http://docs.mcneel.com/rhino/5/help/zh-tw/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
 
 #### ![images/reset.png](images/reset.png){: .inline} 重設為預設值
 重設整個環境，背景=單一顏色 (黑色)、反射=天空、折射=可見的背景。
