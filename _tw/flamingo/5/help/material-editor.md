@@ -30,7 +30,7 @@ title: 材質編輯器面板
  1. [設定列](#settings)
  1. [材質清單](#material_list)
  1. [視窗分隔條](#divider)
- 1. [材質內容區](#properties)
+ 1. [材質內容](#properties)
  1. [名稱](#name)
  1. [材質內容面板](#panels)
 
@@ -58,10 +58,10 @@ title: 材質編輯器面板
 
 * 上下捲動檢視所有的材質。
 * 將材質拖放至[圖層面板](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#commands/layer.htm)裡的圖層，或直接拖放至物件賦予材質，詳細說明請參考[賦予材質](material_assignment.html)說明主題。
-* 按材質清單末端的**新增**按鈕 ![images/add_material.png](images/add_material.png){: .inline} 建立新材質。
+* 按材質清單末端的**新增**按鈕 ![images/add_material.png](images/add_material.png){: .inline} 可建立新材質。
 
 
-* 選取的材質的內容會顯示在下方的面板，詳細說明請參考[Render 材質內容](#properties)主題。
+* 選取的材質的內容會顯示在下方的面板，詳細說明請參考[材質內容](#properties)主題。
 * 在材質縮圖上按右鍵可彈出**材質功能表**。
 * 在空白的位置按右鍵可彈出**新材質功能表**。
 
@@ -136,7 +136,7 @@ title: 材質編輯器面板
 {: #divider}
 移動視窗分隔條可調整材質清單可同時顯示的材質數目。
 
-## [材質內容區](#panel_map) ![images/callout_4.svg](images/callout_4.svg){: .inline}
+## [材質內容](#panel_map) ![images/callout_4.svg](images/callout_4.svg){: .inline}
 {: #properties}
 
 #### [材質名稱](#panel_map) ![images/callout_5.svg](images/callout_5.svg){: .inline}
@@ -145,9 +145,9 @@ title: 材質編輯器面板
 
 #### [材質面板](material-editor.html#panel_map) ![images/callout_6.svg](images/callout_6.svg){: .inline}
 {: #panels}
-材質內容區有許多個面板，按面板的標題列可將面板收摺或展開。
+材質內容有許多個面板，按面板的標題列可將面板收摺或展開。
 
-材質面板顯示的設定因材質類型而異，詳細說明請參考 [Flamingo Materials](material-type-simple.html) 主題。
+材質面板顯示的設定因材質類型而異，詳細說明請參考 [Flamingo 材質](material-type-simple.html)主題。
 
 ## 工具功能表 ![images/library_default.png](images/library_default.png){: .inline}
 {: #tools-menu}
