@@ -60,7 +60,7 @@ title: 材質庫面板
 開啟預設的材質庫資料夾。
 
 #### 使用預設的資料夾
-預設的[材質庫](libraries.html)資料夾是 **%APPDATA%\McNeel\Rhinoceros\5.0\Localization\zh-TW\Render Content** 資料夾。
+預設的[材質庫](libraries.html)資料夾是 **%APPDATA%\McNeel\Rhinoceros\5.0\Localization\zh-TW\Render Content**。
 
 #### 自訂
 自訂預設的[材質庫](libraries.html)資料夾的位置。
@@ -68,8 +68,8 @@ title: 材質庫面板
 ##### 瀏覽按鈕
 選擇要使用的資料夾。
 
-#### 顯示"文件"資料夾
-在[材質庫面板](libraries.html)的功能表顯示"文件"資料夾。
+#### 顯示"我的文件"資料夾
+在[材質庫面板](libraries.html)的功能表顯示"我的文件"。
 
 #### 顯示自訂的資料夾
 在[材質庫](libraries.html)面板的功能表顯示其它資料夾。
