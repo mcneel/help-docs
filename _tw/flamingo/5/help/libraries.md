@@ -51,7 +51,7 @@ title: 材質庫面板
 ##### 可以在哪找到這個指令?
 材質資料庫選項可從三個地方開啟。
 
- 1. 材質庫標籤 > ![images/library_default.png](images/library_default.png){: .inline} 材質庫面板右上角 > 設定...
+ 1. 材質庫標籤 > 材質庫面板右上角的 ![images/library_default.png](images/library_default.png){: .inline} > 設定...
  1. 功能表 > 工具 > 選項 > 材質庫
  1. 功能表 > 面板 > 材質庫
 
