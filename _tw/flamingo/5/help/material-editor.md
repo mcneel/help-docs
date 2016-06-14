@@ -19,7 +19,7 @@ title: 材質編輯器面板
 * ![images/materialtab.png](images/materialtab.png){: .inline} 材質面板
 * ![images/icon-render.png](images/icon-render.png){: .inline} 彩現工具工具列 > ![images/materialtab.png](images/materialtab.png){: .inline} 材質編輯器
 * 功能表 > 彩現 > 材質編輯器
-* 從指令行執行 MaterialEditor 指令。
+* 從指令行執行 MaterialEditor 指令
 
 材質的簡易編輯器的選項因材質的類型而異，切換到進階編輯器可使用所有的選項。
 
@@ -46,7 +46,7 @@ title: 材質編輯器面板
 
 
 #### ![images/material_editor.png](images/material_editor.png){: .inline} ![images/texture-2dchecker.png](images/texture-2dchecker.png){: .inline} 目前選取的材質的名稱
-顯示目前選取的材質的名稱與所在的設定頁面， For instance, if there is a texture or a material procedural level the ">" will show. A good place to see where the editor is in a material.
+顯示目前選取的材質的名稱與所在的設定頁面。
 
 #### ![images/library_default.png](images/library_default.png){: .inline} 工具功能表
 顯示[工具功能表](#tools-menu)，工具功能表有與材質相關的許多指令與設定。
