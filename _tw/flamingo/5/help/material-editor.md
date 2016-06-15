@@ -152,7 +152,7 @@ title: 材質編輯器面板
 ## 工具功能表 ![images/library_default.png](images/library_default.png){: .inline}
 {: #tools-menu}
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/zh-tw/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵功能表裡找到。
+工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白處的右鍵功能表裡找到。
 
 #### ![images/assigntoobjects.png](images/assigntoobjects.png){: .inline} 賦予給選取的物件
 將選取的材質賦予給選取的物件。
@@ -190,14 +190,14 @@ title: 材質編輯器面板
 選取模型中使用選取的材質的物件。
 
 #### ![images/toolbarplus.png](images/toolbarplus.png){: .inline} 建立新材質
-開啟內建的彩現[材質庫](libraries.html)。
-內建的材質可做為目前的模型建立新材質的範本。
+從材質類型範本或模型裡已存在的材質建立新材質。
+內建的材質類型範本可做為目前的模型建立新材質的範本。
 
 #### ![images/import.png](images/import.png){: .inline} 從檔案匯入材質
-從 Rhino 的 .rmtl 檔案匯入材質。
+從 Flamingo 的材質檔案 .ArMaterial 匯入材質。
 
 #### ![images/savetofile.png](images/savetofile.png){: .inline} 儲存至檔案
-將材質儲存為 Rhino 的 .rmtl 檔案。
+將材質儲存為 Flamingo 的材質檔案 .ArMaterial。
 
 #### ![images/changetype.png](images/changetype.png){: .inline} 變更類型
 將材質變更為其它的類型。
