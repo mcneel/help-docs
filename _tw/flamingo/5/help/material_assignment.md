@@ -64,7 +64,7 @@ title: 賦予材質
 ##### 將材質拖放至物件
 {: #drag-dropmaterialtoobject}
 
- * 從材質庫或材質編輯器面板的[材質清單](material-editor.html#material_list)將材質拖放至物件，當滑鼠游標停留在物件上時，物件會以醒目顏色提示將被賦予材質的物件。
+ * 從材質庫或材質編輯器面板的[材質清單](material-editor.html#material_list)將材質拖放至物件，當滑鼠游標停留在物件上時，物件會以醒目顏色提示將被賦予材質。
 
 ##### 將材質賦予給選取的物件
 1. 選取物件。
@@ -74,7 +74,7 @@ title: 賦予材質
 ##### 以材質選取物件
 {: #select-objects-with-material-assignment}
 1. 在**材質編輯器**面板的[材質清單](material-editor.html#material_list)的一個材質上按滑鼠右鍵。
-1. 在彈出的功能表選擇**選取使用這個材質的物件**。
+1. 在彈出的功能表選擇**選取物件**。
 
 ##### 移除物件的材質
 {: #removematerialfromobject}
