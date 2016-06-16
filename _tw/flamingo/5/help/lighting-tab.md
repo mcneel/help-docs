@@ -147,7 +147,7 @@ HDR 圖片可做為表面具反射性質的物件的反射影像。
 開啟或關閉人工照明。
 
 ![images/lightsonandoff.png](images/lightsonandoff.png)
-*燈光開啟 (左) 與關閉 (右)。*
+燈光開啟 (左) 與關閉 (右)。
 
 ### 間接照明
 {: #indirect}
