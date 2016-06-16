@@ -88,7 +88,7 @@ title: 材質編輯器面板
 將複製到剪貼簿的材質貼上建立另一個材質。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 貼上為引例
-將複製到剪貼簿的材質貼上建立另一個材質，此材質的設定與來源的材質互相連結。
+將複製到剪貼簿的材質貼上建立另一個材質，此材質的設定與來源材質互相連結。
 
 #### ![images/grid.png](images/grid.png){: .inline} 圖示
 以預覽縮圖顯示。
@@ -106,7 +106,7 @@ title: 材質編輯器面板
 顯示目前所在的項目的預覽縮圖。
 
 #### ![images/floatthumbnail.png](images/floatthumbnail.png){: .inline} 浮動
-以可以改變大小的浮動小視窗顯示預覽縮圖。
+以可改變大小的浮動小視窗顯示預覽縮圖。
 
 #### 縮圖
 
@@ -119,7 +119,7 @@ title: 材質編輯器面板
 ##### ![images/large.png](images/large.png){: .inline} 大
 將預覽縮圖設為大圖示。
 
-##### ![images/showlabels.png](images/showlabels.png){: .inline} 顯示標籤
+##### ![images/showlabels.png](images/showlabels.png){: .inline} 顯示名稱
 當編輯器設為以**圖示**模式檢視時顯示名稱標籤。
 以**清單**模式檢視時總是會顯示名稱標籤。
 
@@ -216,7 +216,7 @@ title: 材質編輯器面板
 將複製到剪貼簿的材質貼上建立另一個材質。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 貼上為引例
-將複製到剪貼簿的材質貼上建立另一個材質，此材質的設定與來源的材質互相連結。
+將複製到剪貼簿的材質貼上建立另一個材質，此材質的設定與來源材質互相連結。
 
 #### ![images/delete.png](images/delete.png){: .inline} 刪除
 刪除選取的材質。

@@ -92,7 +92,7 @@ Flamingo 內建一種特別的環境 - 預設的 *[Flamingo 環境](environment.
 將複製到剪貼簿的環境貼上建立另一個環境。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 貼上為引例
-將複製到剪貼簿的環境貼上建立另一個環境，此環境的設定與來源的環境互相連結。
+將複製到剪貼簿的環境貼上建立另一個環境，此環境的設定與來源環境互相連結。
 
 #### ![images/grid.png](images/grid.png){: .inline} 圖示
 以預覽縮圖顯示。
@@ -188,7 +188,7 @@ Flamingo 內建一種特別的環境 - 預設的 *[Flamingo 環境](environment.
 將複製到剪貼簿的環境貼上建立另一個環境。
 
 #### ![images/pasteasinstance.png](images/pasteasinstance.png){: .inline} 貼上為引例
-將複製到剪貼簿的環境貼上建立另一個環境，此環境的設定與來源的環境互相連結。
+將複製到剪貼簿的環境貼上建立另一個環境，此環境的設定與來源環境互相連結。
 
 #### ![images/delete.png](images/delete.png){: .inline} 刪除
 刪除選取的環境。
