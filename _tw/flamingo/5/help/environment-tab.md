@@ -110,7 +110,7 @@ Flamingo 內建一種特別的環境 - 預設的 *[Flamingo 環境](environment.
 顯示目前所在的項目的預覽縮圖。
 
 #### ![images/floatthumbnail.png](images/floatthumbnail.png){: .inline} 浮動
-以可以改變大小的浮動小視窗顯示預覽縮圖。
+以可改變大小的浮動小視窗顯示預覽縮圖。
 
 #### 縮圖
 

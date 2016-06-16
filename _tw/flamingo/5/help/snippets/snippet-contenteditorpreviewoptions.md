@@ -1,6 +1,6 @@
 
 #### ![images/floatingpreview.png](images/floatingpreview.png) 浮動預覽縮圖
-以可以改變大小的浮動小視窗顯示預覽縮圖。
+以可改變大小的浮動小視窗顯示預覽縮圖。
 
 #### ![images/grid.png](images/grid.png) 圖示
 以預覽縮圖顯示，預設為**清單**。
