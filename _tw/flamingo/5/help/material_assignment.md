@@ -51,7 +51,7 @@ title: 賦予材質
 
 ## 將材質賦予給物件
 {: #byobject}
-您可將材質庫裡的材質賦予給圖層或物件， Rendering materials are assigned to individual objects and are used by Rhino's built-in renderer.
+您可將材質庫裡的材質賦予給圖層或物件。
 請參考：[材質編輯器](material-editor.html)
 
 將物件的材質賦予方式設為"圖層"是建議使用的方法，如果一個圖層上只有少數幾個物件使用不同的材質，您又不想為了這些物件建立另一個圖層，這種情形可以將這些物件的材質賦予方式設為"物件"。
