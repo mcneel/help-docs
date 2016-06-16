@@ -76,8 +76,8 @@ Flamingo nXt 內建的四個照明預設組：
 {: .clear-img}
 
 * 設定[燈光](lights-tab.html)、[天空](sun-and-sky-tabs.html#sky)與窗戶的玻璃材質時請盡可能使用正確的數值。
-* 太陽與天空的亮度遠超過燈光的亮度，所以在陽太與天空開啟時燈光對場景的照明不會有明顯的影響，這是與真實世界相仿的正常情形，請忽因此大幅提高燈光的亮度。
-* 您可以將[太陽](sun-and-sky-tabs.html#sun-intensity)或[天空](sun-and-sky-tabs.html#sky-intensity)的亮度調低，模擬多雲或陰天的狀況。
+* 太陽與天空的亮度遠超過燈光的亮度，所以在陽太與天空開啟時燈光對場景的照明不會有明顯的影響，這是與真實世界相仿的正常情形，請勿因此大幅提高燈光的亮度。
+* 您可以將[太陽](sun-and-sky-tabs.html#sun-intensity)或[天空](sun-and-sky-tabs.html#sky-intensity)的亮度調低，模擬多雲或陰天的情況。
 * 使用[多通道](lights-tab.html#channel)彩現可以保留各種照明的精確資訊，彩現完成後可以再調整每一個光源的強弱。
 
 ### 人工照明
