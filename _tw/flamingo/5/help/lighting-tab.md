@@ -84,18 +84,18 @@ Flamingo nXt 內建的四個照明預設組：
 {: #artificial-lighting}
 ![images/artificiallight-001.png](images/artificiallight-001.png){: style="float: right; padding-left: 25px;"} 模擬夜間室內以人造燈光照明的場景，您可以使用[燈光頁面](lights-tab.html)或 [Rhino 的燈光指令](lights-tab.html#rhino-light-commands)在模型裡加入燈光物件。
 
-室內日光與人工照明的間接照明 (物件表面反射的光源) 預設是開啟的，攝影棚照明與戶外日光的間接照明預設則是關閉的。間接照明對室內場景彩現有很顯著的影響，但對於戶外與攝影棚場景的影響較細微，所以預設是關閉的。
+室內日光與人工照明的間接照明 (物件表面反射的光源) 預設是開啟的，攝影棚照明與戶外日光的間接照明預設則是關閉的。間接照明對室內場景彩現有很顯著的影響，但對於戶外與攝影棚場景的影響不明顯，所以預設是關閉的。
 
 ### 自訂照明
 {: #custom  style="clear:both;"}
-自訂頁面可開啟照明預設組未使用的選項，例如要在**戶外日光**預設組使用 HDRi 圖片做為天空的光源時，可以在**自訂**頁面將**天空**設為 **HDRi**，並選擇一張 HDRi 圖片，此時照明預設組會自動變為**自訂**。
+自訂頁面可開啟照明預設組未使用的選項，例如要在**戶外日光**預設組使用 HDRi 圖片做為天空光源時，可以在**自訂**頁面將**天空**設為 **HDRi**，並選擇一張 HDRi 圖片，此時照明預設組會自動變為**自訂**。
 
 ####  [太陽](sun-and-sky-tabs.html#sun)
 {: #sun}
 開啟/關閉太陽頁面，[太陽頁面](sun-and-sky-tabs.html#sun)有控制太陽位置的設定。
 
 ![images/lightsunon.png](images/lightsunon.png)
-*太陽開啟與關閉。*
+太陽開啟與關閉。
 太陽是一個位在無限遠而且極亮的平行光源，太陽的位置可以使用經緯度設定，請參考[太陽頁面](sun-and-sky-tabs.html#sun)說明主題。
 
 ####  [天空](sun-and-sky-tabs.html#sky)
