@@ -23,7 +23,7 @@
 #### ![images/horizontal.png](images/horizontal.png) 水平配置
 將預覽縮圖或清單顯示在編輯器的左邊。
 
-#### ![images/showlabels.png](images/showlabels.png) 顯示標籤
+#### ![images/showlabels.png](images/showlabels.png) 顯示名稱
 當編輯器設為以**圖示**模式檢視時顯示名稱標籤。
 ![images/thumbnaillabel-001.png](images/thumbnaillabel-001.png)
  以**清單**模式檢視時總是會顯示名稱標籤。
