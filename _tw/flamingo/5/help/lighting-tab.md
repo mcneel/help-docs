@@ -95,7 +95,7 @@ Flamingo nXt 內建的四個照明預設組：
 開啟/關閉太陽頁面，[太陽頁面](sun-and-sky-tabs.html#sun)有控制太陽位置的設定。
 
 ![images/lightsunon.png](images/lightsunon.png)
-太陽開啟與關閉。
+太陽開啟 (左) 與關閉 (右)。
 太陽是一個位在無限遠而且極亮的平行光源，太陽的位置可以使用經緯度設定，請參考[太陽頁面](sun-and-sky-tabs.html#sun)說明主題。
 
 ####  [天空](sun-and-sky-tabs.html#sky)
