@@ -117,12 +117,12 @@ Flamingo nXt 內建的四個照明預設組：
 
 #### 自動
 {: #auto}
-以真實天空的分析模型計算天空的光源，[太陽](sun-and-sky-tabs.html)頁面的設定可以控制天空的樣子與照明的品質。
+以真實天空的分析模型計算天空的光源，[太陽](sun-and-sky-tabs.html)頁面的設定可控制天空的樣子與照明的品質。
 ![images/chromeautosky.png](images/chromeautosky.png)
 
 #### HDRi
 {: #hdri}
-HDR 圖片可以做為表面具反射性質的物件的反射影像。
+HDR 圖片可做為表面具反射性質的物件的反射影像。
 ![images/chromehdrbackground.png](images/chromehdrbackground.png)
 
 #### 顏色
@@ -132,7 +132,7 @@ HDR 圖片可以做為表面具反射性質的物件的反射影像。
 
 #### 圖片
 {: #image}
-以圖片做為背景，圖片的投影方式可以有：平面、圓柱體、球體，設定與[環境背景類型：圖片](environment-tab.html#image)類似。
+以圖片做為背景，圖片的投影方式有：平面、圓柱體、球體，設定與[環境背景類型：圖片](environment-tab.html#image)類似。
 ![images/chromeimagesky.png](images/chromeimagesky.png)
 
 
@@ -140,7 +140,7 @@ HDR 圖片可以做為表面具反射性質的物件的反射影像。
 {: #studio-brightness}
 降低[太陽](sun-and-sky-tabs.html)與天空的亮度，模擬攝影棚的室內照明效果。
 ![images/studiobrightnessoffandon.png](images/studiobrightnessoffandon.png)
-*攝影棚亮度關閉 (左) 與開啟 (右)。*
+攝影棚亮度關閉 (左) 與開啟 (右)。
 
 ### 燈光
 {: #lights}
