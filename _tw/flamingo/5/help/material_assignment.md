@@ -59,7 +59,7 @@ title: 賦予材質
 ##### 從物件內容賦予材質
 1. 選取物件。
 1. 從**編輯**功能表選擇 ![images/properties.png](images/properties.png){: .inline} **物件內容**。
-1. 將[內容](properties-object.html)面板**材質** 頁面 ![images/materialtab.png](images/materialtab.png){: .inline} 的**材質賦予方式**設為**物件**，從材質清單選擇一個材質。
+1. 將[內容](properties-object.html)面板**材質**頁面 ![images/materialtab.png](images/materialtab.png){: .inline} 的**材質賦予方式**設為**物件**，從材質清單選擇一個材質。
 
 ##### 將材質拖放至物件
 {: #drag-dropmaterialtoobject}
