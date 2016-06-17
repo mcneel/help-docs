@@ -21,9 +21,9 @@ Flamingo 的材質有許多類型，不同類型的材質有不同的簡易設�
 
 > [名稱](material-type-advanced.html#name)
 > [材質程序](material-type-advanced.html#procedures)
-> [進階材質內容](material-type-advanced.html#advanced-materials-properties)
+> [進階材質](material-type-advanced.html#advanced-materials-properties)
 > [反射度](material-type-advanced.html#reflective-finish-and-highlight)
-> [透明內容](material-type-advanced.html#transparency)
+> [透明度](material-type-advanced.html#transparency)
 > [程序貼圖](material-type-advanced.html#bump-patterns)
 > [圖片貼圖](material-type-advanced.html#textures)
 > [附註](material-type-advanced.html#notes)
