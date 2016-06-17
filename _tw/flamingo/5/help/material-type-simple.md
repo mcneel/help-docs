@@ -158,7 +158,7 @@ Flamingo 的材質有許多類型，不同類型的材質有不同的簡易設�
 以圖片像素的灰階值在模型表面模擬凹凸深淺的光影變化，詳細說明請參考：[凹凸貼圖](material-image-properties.html#bump)。
 
 #### 法線向量
-利用圖片像素的 RGB (紅、綠、藍) 值代表法線向量，藍色代表 Z 向量，因此法線向量貼圖的色調通常偏藍色, 詳細說明請參考：[法線向量貼圖](material-image-properties.html#normal)。
+利用圖片像素的 RGB (紅、綠、藍) 值代表法線向量，藍色代表 Z 向量，因此法線向量貼圖的色調通常偏藍色，詳細說明請參考：[法線向量貼圖](material-image-properties.html#normal)。
 
 #### 反光
 以圖片像素的灰階值控制材質反射的強度，詳細說明請參考：[反光貼圖](material-image-properties.html#transparency)。
