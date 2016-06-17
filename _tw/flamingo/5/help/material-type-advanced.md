@@ -12,9 +12,9 @@ Flamingo 的材質內容有[簡易編輯器](material-type-simple.html)與進階
 
 * [名稱](#name)
 * [材質程序](#procedures)
-* [進階材質內容](#advanced-materials-properties)
+* [進階材質](#advanced-materials-properties)
 * [反射度](#reflective-finish-and-highlight)
-* [透明內容](#transparency)
+* [透明度](#transparency)
 * [程序貼圖](#bump-patterns)
 * [圖片貼圖](#textures)
 * [附註](#notes)
