@@ -152,7 +152,7 @@ Flamingo 的材質有許多類型，不同類型的材質有不同的簡易設�
 從貼圖表刪除貼圖。
 
 #### 顏色
-以圖片做為材質的顏色，詳細說明請見：[標準貼圖](material-image-properties.html#standard)。
+以圖片做為材質的顏色，詳細說明請見：[顏色貼圖](material-image-properties.html#standard)。
 
 #### 凹凸
 以圖片像素的灰階值在模型表面模擬凹凸深淺的光影變化，詳細說明請參考：[凹凸貼圖](material-image-properties.html#bump)。
