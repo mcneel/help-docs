@@ -193,7 +193,7 @@ Fresnel 的發音近似 (fray-NELL)，它是以[菲涅耳原理](http://en.wikip
 
 #### 衰減
 {: #attenuation}
-設定當光線穿過透明物件時光線被物件吸收的量，設定液體材質時，清徹的液體的衰減量比較低，濃稠的液體的衰減量比較高。
+設定光線穿過透明物件時被物件吸收的量，清徹的液體衰減量比較低，濃稠的液體衰減量比較高。
 
 ![images/attenuation.png](images/attenuation.png)
 
