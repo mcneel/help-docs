@@ -140,13 +140,13 @@ Fresnel 的發音近似 (fray-NELL)，它是以[菲涅耳原理](http://en.wikip
 
 #### 沒有光源反射
 {: #no-light-source-reflection}
-不以光線投射法計算光源的反射，只計算反光，這個方法可以用來避免場景有模糊材質與高亮度小光源時可能產生光斑的問題。
+不以光線投射法計算光源的反射，只計算反光，此設定可避免場景有模糊材質與高亮度小光源時可能產生光斑的問題。
 
 ![images/highlightnoreflection.png](images/highlightnoreflection.png)
 
 ## 透明度
 {: #transparency}
-這些設定可以用來控制光線穿過透明材質的特性。
+這些設定可控制光線穿過透明材質的特性。
 
 ![images/transparentmaterials.png](images/transparentmaterials.png)
 
