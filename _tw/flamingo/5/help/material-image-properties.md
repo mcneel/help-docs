@@ -119,7 +119,7 @@ Flamingo 通常是將貼圖做為材質的顏色，這裡可將貼圖用於其�
 此選項會影響[反射通道](material-type-advanced.html#highlight-color)的顏色，以貼圖的顏色控制反光的顏色。
 
 ####  反光強度
-以貼圖像素的灰階值控制[反光強度](material-type-advanced.html#intensity)，常用於貼圖組材質**反光**貼圖。
+以貼圖像素的灰階值控制[反光強度](material-type-advanced.html#intensity)，常用於貼圖組材質的**反光**貼圖。
 
 ####  反光銳利度
 以貼圖的灰階值控制[反光](material-type-advanced.html#intensity)的銳例與模糊。
