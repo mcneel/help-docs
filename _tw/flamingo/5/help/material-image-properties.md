@@ -57,17 +57,17 @@ title: 材質貼圖內容
 
 #### 顏色強度
 {: #color}
-設定貼圖的透明度，以這個例子而言，材質的底色是洋紅色，顏色的數值越高，材質的底色透出貼圖的量就越少，數值為 1.0 時，底色完全被貼圖遮住。
+設定貼圖的透明度，以這個例子而言，材質的底色是洋紅色，顏色的數值越高，材質的底色透出貼圖的量就越少，數值為 1.0 時，底色完全被貼圖遮蓋。
 
 ![images/brik-b14.png](images/brik-b14.png)![images/strength.png](images/strength.png)
-*顏色強度 0.2、0.5、1.0。*
+顏色強度 0.2、0.5、1.0。
 
 #### 凹凸強度
 {: #bump}
 以貼圖的顏色在物件上產生視覺上的凹凸效果，使用負值可以將凹與凸對調。下圖左邊的球體是使用置換貼圖，因為物件表面真的變形，所以它的陰影邊緣也變的不平滑。右邊的球體是使用凹凸效果，物件並未被真的變形，所以它的陰影邊緣並沒有改變，還是非常平滑。請參考：[Wikipedia article: Bump mapping](http://en.wikipedia.org/wiki/Bump_mapping)。
 
 ![images/bumpvsdisplacement.png](images/bumpvsdisplacement.png)
-*置換貼圖 (左) 與凹凸貼圖 (右)。*
+置換貼圖 (左) 與凹凸貼圖 (右)。
 
 ### 法線向量
 {: #normal}
