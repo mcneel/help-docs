@@ -34,7 +34,7 @@
           path: material-type-advanced.html
         - name: 材質貼圖內容
           path: material-image-properties.html
-        - name: 程序材質類型
+        - name: 材質程序類型
           path: procedural-materials.html
         - name: 顏色方塊
           path: select-color.html
