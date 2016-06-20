@@ -64,7 +64,7 @@ title: 材質貼圖內容
 
 #### 凹凸強度
 {: #bump}
-以貼圖的顏色在物件上產生視覺上的凹凸效果，使用負值可以將凹與凸對調。下圖左邊的球體是使用置換貼圖，因為物件表面真的變形，所以它的陰影邊緣也變的不平滑。右邊的球體是使用凹凸效果，物件並未被真的變形，所以它的陰影邊緣並沒有改變，還是非常平滑。請參考：[Wikipedia article: Bump mapping](http://en.wikipedia.org/wiki/Bump_mapping)。
+以貼圖顏色的灰階值在物件上產生視覺上的凹凸效果，使用負值可將凹與凸對調。下圖左邊的球體是使用置換貼圖，因為物件表面真的變形，所以它的陰影邊緣也變的不平滑。右邊的球體是使用凹凸效果，物件並未真的變形，所以它的陰影邊緣並沒有改變，還是非常平滑。請參考：[Wikipedia article: Bump mapping](http://en.wikipedia.org/wiki/Bump_mapping)。
 
 ![images/bumpvsdisplacement.png](images/bumpvsdisplacement.png)
 置換貼圖 (左) 與凹凸貼圖 (右)。
