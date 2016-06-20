@@ -94,13 +94,13 @@ title: 材質貼圖內容
 設定置換網格的偏移的百分比，讓置換網格可以完全在原來的曲面之外、之內，或部分在內、部分在外。
 
 ![images/displacementz-001.png](images/displacementz-001.png)
-*Z 偏移 = -1.0*
+Z 偏移 = -1.0
 
 ![images/displacementz-002.png](images/displacementz-002.png)
-*Z 偏移 = -0.5*
+Z 偏移 = -0.5
 
 ![images/displacementz-003.png](images/displacementz-003.png)
-*Z 偏移 = 0.0*
+Z 偏移 = 0.0
 
 #### 細分面大小
 {: #facet-size}
