@@ -257,21 +257,21 @@ Fresnel 的發音近似 (fray-NELL)，它是以[菲涅耳原理](http://en.wikip
 產生不規則的細小顆粒紋理，它的設定有[縮放比](#scale)、[強度](#strength)、[旋轉](#rotation)角度。
 
 ![images/sandpaper.png](images/sandpaper.png)
-*[縮放比](#scale)與[強度](#strength)由小至大的效果。*
+[縮放比](#scale)與[強度](#strength)由小至大的效果。
 
 #### 碎石
 {: #rubble}
 產生坑坑洞洞的凹凸紋理，將比例放大可以產生類似海面、沙洲波浪起伏的效果，[碎石](#scale)與[砂紙](#strength)相較是屬於比較大型的凹凸紋理。
 
 ![images/rubble.png](images/rubble.png)
-*[縮放比](#scale)與[強度](#strength)由小至大的效果。*
+[縮放比](#scale)與[強度](#strength)由小至大的效果。
 
 #### 金字塔
 {: #pyramid}
 產生菱形的滾花凹凸紋理，[縮放比](#scale)只有 X 與 Y，可用來控制金字塔的大小，金字塔的高度由[強度](#strength)控制。
 
 ![images/pyramid.png](images/pyramid.png)
-*[縮放比](#scale)由小至大的效果。*
+[縮放比](#scale)由小至大的效果。
 
 #### 皺紋
 {: #wrinkled}
