@@ -37,7 +37,7 @@ Flamingo nXt 內建的四個照明預設組：
 
 ### 攝影棚照明
 {: #studio-lighting}
-這個照明預設組模擬攝影棚的照明配置，常用於中小型物件單獨攝影的情形，也可用於 HDRi 環境能充分照明的場景。
+此照明預設組模擬攝影棚的照明配置，常用於中小型物件單獨攝影的情形，也可用於 HDR 環境能充分照明的場景。
 
 ![images/studiolighting-001.png](images/studiolighting-001.png){: .float-img-left} 它的主要光源來自一張 HDR (高動態範圍) 圖片，HDR 圖片的照明亮度已適當降低，以符合真實攝影棚內的照明亮度。HDR 的設定位於[天空頁面](sun-and-sky-tabs.html#sky)，您也可以在燈光頁面加入其它燈光物件。此外，攝影棚照明的預設背景為黑色。
 
