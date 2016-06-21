@@ -128,7 +128,7 @@ Flamingo nXt 內建兩種天空照明：[HDR 圖片](#high-dynamic-range-image-s
 
 #### 天空亮度
 {: #sky-intensity}
-調整天空的間接照明亮度，天空對場景的照明是從太陽的角度與天空的狀況計算而來，但可以做調整。**附註：**這個設定只有在場景中有需要補償的人造光源時才有作用。場景中沒有人造光源時，彩現影像不會因為這個設定自動調亮或調暗。
+調整天空的間接照明亮度，天空對場景的照明是從太陽的角度與天空的狀況計算而來，但可以做調整。**附註：**此設定只有在場景有需要補償的人造光源時才有作用。場景沒有人造光源時，彩現影像不會因為這個設定自動調亮或調暗。
 
 {% include_relative snippets/snippet-skychannel.md %}
 
@@ -152,12 +152,12 @@ HDR 圖片除了可用在天空的設定以外，也可用在[環境背景](envi
 HDR 圖片有兩種投影方式將圖片投影至天空球體。最常用的是球面矩形投影，此種投影方式的 HDR 圖片的寬高比為 2:1，圖片的不同部分的解析度大致相同。第二種是球體投影，球體投影的 HDR 圖片為正方形，圖片在接縫處的解析度較低。
 
 #### 強度
-設定 HDR 圖片的照明亮度，此設定只有在場景中有需要補償的人造光源時才有作用。場景中沒有人造光源時，彩現影像不會因為此設定自動調亮或調暗。
+設定 HDR 圖片的照明亮度，此設定只有在場景有需要補償的人造光源時才有作用。場景沒有人造光源時，彩現影像不會因為此設定自動調亮或調暗。
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
 低與高 HDR 強度。
 
-{% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} 旋轉 HDR 圖片，讓圖片的某一部分出現在物件的反射裡，您可以使用圖形化界面調整，或直接輸入角度數值。
+{% include_relative snippets/snippet-rotatehdrimage.md %} 旋轉 HDR 圖片，讓圖片的某一部分出現在物件的反射裡，您可以使用圖形化界面調整，或直接輸入角度數值。
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
 旋轉圖片的位置，使太陽可以出現在物件上的反射裡。
 
