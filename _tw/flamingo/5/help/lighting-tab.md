@@ -3,10 +3,10 @@ title: 照明預設組
 ---
 
 # ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
-照明是彩現時最重要也是最容易被忽視的部分。照明不只是照亮模型這麼簡單，它可以營造出特殊的氛圍，也是彩現成功與否的關鍵。
+照明是彩現時最重要也是最容易被忽視的部分。照明不只是照亮模型這麼簡單，它可以營造特殊的氛圍，也是彩現成功與否的關鍵。
 
 ![images/christophersotogutierrez.png](images/christophersotogutierrez.png)
-*由 Christopher Soto Gutiérrez 提供的圖片。*
+由 Christopher Soto Gutiérrez 提供的圖片。
 
 #### 可以在哪找到 Flamingo 的燈光設定?
 
