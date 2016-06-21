@@ -79,7 +79,7 @@ title: 太陽與天空
 反射材質上太陽的銳利度。
 
 ![images/sunhighlight-0.png](images/sunhighlight-0.png)
-*太陽反光為 0  (左) 與 1 (右)。*
+太陽反光為 0  (左) 與 1 (右)。
 
 **附註：**在戶外場景中如果您不想讓物件上的太陽反光太明顯，可以降低太陽反光的數值。
 {: #speckle-artifacts}
@@ -117,14 +117,14 @@ Flamingo nXt 內建兩種天空照明：[HDR 圖片](#high-dynamic-range-image-s
 自動天空使用[太陽頁面](sun-and-sky-tabs.html)設定天光的顏色範圍與強度，例如：中午與傍晚時陽光的強度與顏色有非常大的差別。
 
 ![images/sky-002.png](images/sky-002.png)
-*自動天空：太陽高角度 (左) 與低角度 (右)。*
+自動天空：太陽高角度 (左) 與低角度 (右)。
 
 #### 雲量
 {: #sky-cloudiness}
 當雲量為 0 時，模型會有比較銳利的陰影，雲量設定值越大，陰影就越模糊。雲量的設定會影響日光計算的許多面相，包括：直接照明與間接照明的相對量、間接照明的計算方式與使用自動天空時天空的顏色。雲量的設定值 0 為晴朗無雲，1 為多雲。雲量設定在 0.35 - 0.50 左右有較廣的動態範圍。
 
 ![images/cloudiness0.png](images/cloudiness0.png)
-*雲量 0 (左) 與 1 (右)。*
+雲量 0 (左) 與 1 (右)。
 
 #### 天空亮度
 {: #sky-intensity}
@@ -137,7 +137,7 @@ Flamingo nXt 內建兩種天空照明：[HDR 圖片](#high-dynamic-range-image-s
 高動態範圍 (HDR) 圖片是一種 2D 圖檔，常見的圖片格式 (JPG、 PNG...) 的像素可以儲存最亮的顏色為白色，這也是電腦螢幕能顯示最亮的顏色，但自然界的光源的亮度遠超過白色可以描述的範圍，HDR 格式的像素可以描述比白色更高的亮度值，所以稱為高動態範圖片，可以用來照明場景。如果 HDR 圖片所含的亮度資訊是精確的，照明效果也會是精確的。攝影棚照明預設組使用 HDR 圖片做為天空，您可以將 HDR 圖片視為室內場景來自牆或天花板的間接照明，HDR 圖片上的色彩會影響照明的色調。
 
 ![images/lighting-001.png](images/lighting-001.png)
-*HDRi 照明。*
+HDRi 照明。
 
 HDR 圖片裡的亮度值會被當做以瓦特為單位，如果不是，您必需對 HDR 圖片的亮度做調整，以達到適當的照明效果。
 
@@ -147,7 +147,7 @@ HDR 圖片除了可用在天空的設定以外，也可用在[環境背景](envi
 選擇 HDR 圖片檔案 (HDR 與 HDRI 是相同的檔案類型)，按圖片縮圖選擇不同的 HDR 圖片。
 
 ![images/hdrimage-001.png](images/hdrimage-001.png)
-*球面矩形投影。*
+球面矩形投影。
 
 HDR 圖片有兩種投影方式將圖片投影至天空球體。最常用的是球面矩形投影，此種投影方式的 HDR 圖片的寬高比為 2:1，圖片的不同部分的解析度大致相同。第二種是球體投影，球體投影的 HDR 圖片為正方形，圖片在接縫處的解析度較低。
 
@@ -155,17 +155,17 @@ HDR 圖片有兩種投影方式將圖片投影至天空球體。最常用的是�
 設定 HDR 圖片的照明亮度，此設定只有在場景中有需要補償的人造光源時才有作用。場景中沒有人造光源時，彩現影像不會因為此設定自動調亮或調暗。
 
 ![images/hdrlightintensitylow.png](images/hdrlightintensitylow.png)
-*低與高 HDR 強度。*
+低與高 HDR 強度。
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}{: .inline} 旋轉 HDR 圖片，讓圖片的某一部分出現在物件的反射裡，您可以使用圖形化界面調整，或直接輸入角度數值。
 ![images/hdrlightrotation2.png](images/hdrlightrotation2.png)
-*旋轉圖片的位置，使太陽可以出現在物件上的反射裡。*
+旋轉圖片的位置，使太陽可以出現在物件上的反射裡。
 
 #### 飽和度
 以 HDR 圖片照明場景時，圖片的顏色即光源的顏色，在某些情形下可能產生非預期的效果。如果您不想讓 HDR 圖片的顏色影響照明，可以將飽和度設為 0。
 
 ![images/hdrlightsaturation0.png](images/hdrlightsaturation0.png)
-*低 (左) 與高 (右) 飽合度。*
+低 (左) 與高 (右) 飽和度。
 
 {% include_relative snippets/snippet-mirrorimage.md %}
 
