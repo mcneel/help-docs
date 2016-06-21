@@ -68,14 +68,14 @@ title: 材質程序
 ![images/blendpercent.png](images/blendpercent.png)
 
 #### 使用圖片
-以一張圖片來控制兩個材質的混合量，圖片像素的灰階值決定兩個材質的混合比例，黑色的像素顯示**材質一**，白色的像素顯示**材質二**，灰色的像素混合兩個材質。
+以一張圖片來控制兩個材質的混合量，圖片像素的灰階值決定兩個材質的混合比例，黑色像素顯示**材質一**，白色像素顯示**材質二**，灰色像素混合兩個材質。
 
 下圖中的物件使用的混合程序的兩個材質完全一樣，但兩個材質的混合以三張不同的圖片控制。
 ![images/blendmask.png](images/blendmask.png)
 控制材質混合的圖片 (遮罩) 的解析度會影響材質的品質，使用高解析度的圖片會有比較好的效果，但也會使用較多的記憶體。
 
 #### 使用 Alpha 通道
-如果使用的圖片內含 Alpha 通道，可以使用 Alpha 通道來混合兩種材質，不使用圖片的灰階值。
+如果使用的圖片內含 Alpha 通道，可使用 Alpha 通道來混合兩種材質，不使用圖片的灰階值。
 
 #### 反轉
 對調兩種材質在物件上顯示的部分。
@@ -113,19 +113,19 @@ title: 材質程序
 
 材質如何對應到物件上由物件的[貼圖軸](properties-object.html#mapping)控制。
 ![images/materialunmapped.png](images/materialunmapped.png)
-*沒有貼圖軸 (左) 與有貼圖軸 (右)。*
+沒有貼圖軸 (左) 與有貼圖軸 (右)。
 
 #### 底色/脈絡
 **底色**與**脈絡**兩個材質的設定與一般材質完全一樣。
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
 #### 脈絡寬度
-這個設定是**底色**與**脈絡**的寬度比例，例如將**脈絡寬度**設為 0.9 時，**底色**的寬度為 0.1。將脈絡寬度設為 1 時完全沒有底色，設為 0 時完全沒有脈絡。
+此設定是**底色**與**脈絡**的寬度比例，例如將**脈絡寬度**設為 0.9 時，**底色**的寬度為 0.1。將脈絡寬度設為 1 時完全沒有底色，設為 0 時完全沒有脈絡。
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-*使用 (左) 與未使用 (右) 飾片選項。*
+使用 (左) 與未使用 (右) 飾片選項。
 
 ## 拼貼
 {: #tile}
@@ -178,7 +178,7 @@ title: 材質程序
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
 
 #### 環狀紋寬度
-這個設定是**底色**與**環狀紋**的寬度比例，將環狀紋寬度設為 1 時完全沒有底色，設為 0 時完全沒有環狀紋。
+此設定是**底色**與**環狀紋**的寬度比例，將環狀紋寬度設為 1 時完全沒有底色，設為 0 時完全沒有環狀紋。
 ![images/woodringwidth.png](images/woodringwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
