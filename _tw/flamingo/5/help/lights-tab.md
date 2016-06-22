@@ -3,7 +3,7 @@ title: 燈光
 ---
 
 # ![images/lights-tab.png](images/lights-tab.png){: .inline} {{page.title}}
-Flamingo nXt 使用 Rhino 的燈光物件，但在燈光內容加入一些 Flamingo 的燈光設定。在場景加入燈光時必需考慮該燈光在真實世界的特性，選擇適合的燈光物件。
+Flamingo nXt 使用 Rhino 的燈光物件，但燈光內容會多出一些 Flamingo 的燈光設定。在場景加入燈光必需考慮該燈光在真實世界的特性，選擇適合的燈光類型。
 
 
 ## 燈光頁面
