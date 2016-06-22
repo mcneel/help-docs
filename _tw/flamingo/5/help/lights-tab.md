@@ -101,11 +101,11 @@ Flamingo 支援的燈光類型：
 {: #visible}
 設定彩現影像裡是否可看見燈光的形狀，取消勾選時彩現影像裡看燈光為不可見，但對場景仍然有照明作用。
 
-#### 照明方式 *([只適用標記為燈光的物件](#tag-objects-as-lights))*
+#### 照明方式 ([只適用標記為燈光的物件](#tag-objects-as-lights))
 {: #light-distribution}
 標記為燈光的物件可設定燈光的投影方式，在燈光頁面雙擊**照明方式**欄位，可選擇[所有方向](#pointlight)、[聚光](#spotlight)、[漫射](#rectangularlight)，聚光與漫射可指定[照射方向](#aim-light)。 
 
-#### 設定方向與投射角度 *([只適用標記為燈光的物件](#tag-objects-as-lights))*
+#### 設定方向與投射角度 ([只適用標記為燈光的物件](#tag-objects-as-lights))
 {: #aim-light}
 標記為燈光的物件的照明方式為**聚光**與**漫射**時，雙擊**設定方向 >>**可指燈光的照射方向。
 
@@ -113,7 +113,7 @@ Flamingo 支援的燈光類型：
 {: #watts}
 設定燈光的亮度 (消耗的電力)，建議使用真實世界的瓦數，雙擊瓦特欄位可修改數值。
 
-#### 投射角度 *([只適用聚光燈](lights-tab.html#spotlight))*
+#### 投射角度 ([只適用聚光燈](lights-tab.html#spotlight))
 {: #beam-angle}
 聚光燈照射的廣度範圍，也可經由調整控制點修改，調整燈光控制點請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/lights.htm#spotlight)說明主題。
 
@@ -125,7 +125,7 @@ Flamingo 支援的燈光類型：
 {: #color}
 燈光的照明顏色。
 
-#### 使用材質顏色 *([只適用標記為燈光的物件](#tag-objects-as-lights))*
+#### 使用材質顏色 ([只適用標記為燈光的物件](#tag-objects-as-lights))
 以物件材質的顏色做為燈光的顏色。
 
 #### 通道
