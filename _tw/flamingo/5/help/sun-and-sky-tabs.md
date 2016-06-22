@@ -179,7 +179,7 @@ HDR 圖片有兩種投影方式將圖片投影至天空球體。最常用的是�
 每個顏色通道的數值可以是 0 - 255，天空的照明亮度是顏色數值乘以強度數值。
 
 #### 顏色類型
-天空的顏色有三種控制方式，與環境顏色的控制方式類似，詳細說明請參考：[顏色背景](environment-tab.html#environment-color-and-gradient-backgrounds)。
+天空的顏色有三種控制方式，與環境背景顏色的控制方式相同，詳細說明請參考：[顏色背景](environment-tab.html#environment-color-and-gradient-backgrounds)。
 
 ### 圖片
 {: #image-sky}
