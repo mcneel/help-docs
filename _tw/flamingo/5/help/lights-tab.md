@@ -60,7 +60,7 @@ Flamingo 支援的燈光類型：
 
 #### ![images/spotlight-01.png](images/spotlight-01.png){: .inline} 聚光燈
 {: #spotlight}
-聚光燈是朝著單一方向照射的圓錐狀燈光，它的燈光內容有[光源半徑](#radius)、[投射角度](#beam-angle)、衰減角度與方向。光源半徑越大，投射的陰影邊緣越模糊。聚光燈預設在光源點的位置有一個可見的小圓盤，如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/spotlight.htm)說明主題。
+聚光燈是朝著單一方向照射的圓錐狀燈光，它的燈光內容有[光源半徑](#radius)、[投射角度](#beam-angle)、衰減角度與方向。光源半徑越大，投射的陰影邊緣越模糊。聚光燈預設在光源點的位置有一個可見的小圓盤，如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/lights.htm#spotlight)說明主題。
 
 ![images/spotlight.png](images/spotlight.png)
 朝向紅色立方體的聚光燈。
@@ -74,7 +74,7 @@ Flamingo 支援的燈光類型：
 
 #### ![images/rectangularlight-01.png](images/rectangularlight-01.png){: .inline} 矩形燈光
 {: #rectangularlight}
-矩形燈光是一個矩形的燈光面板，矩形燈光上有一個箭頭指示照射的方向，矩形燈光預設是彩現裡可見的燈光物件。將矩形燈光設置在天花板時，請讓矩形燈光低於天花板一個小距離，否則會產生照明的問題。如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的矩形燈光](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/rectangularlight.htm)說明主題。
+矩形燈光是一個矩形的燈光面板，矩形燈光上有一個箭頭指示照射的方向，矩形燈光預設是彩現裡可見的燈光物件。將矩形燈光設置在天花板時，請讓矩形燈光低於天花板一個小距離，否則會產生照明問題。如何以燈光的點調整燈光的位置、方向、投射角度請參考 [Rhino 的矩形燈光](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/lights.htm#RectangularLight)說明主題。
 
 ![images/rectangular light.png](images/rectangular light.png)
 天花板下的矩形燈光
@@ -115,7 +115,7 @@ Flamingo 支援的燈光類型：
 
 #### 投射角度 *([只適用聚光燈](lights-tab.html#spotlight))*
 {: #beam-angle}
-聚光燈照射的廣度範圍，也可經由調整控制點修改，調整燈光控制點請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/spotlight.htm)說明主題。
+聚光燈照射的廣度範圍，也可經由調整控制點修改，調整燈光控制點請參考 [Rhino 的聚光燈](http://docs.mcneel.com/rhino/5/help/zh-tw/commands/lights.htm#spotlight)說明主題。
 
 #### 半徑
 {: #radius}
