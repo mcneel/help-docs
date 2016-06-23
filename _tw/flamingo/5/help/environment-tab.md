@@ -164,7 +164,7 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
 #### ![images/toolbarlus.png](images/toolbarplus.png){: .inline} 建立新環境
 建立一個新的 Flamingo 環境。
 <!-- This comes from the page http://docs.mcneel.com/rhino/5/help/zh-tw/popup_moreinformation/materialthumbnail_contextmenu.htm -->
-工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵快顯功能表裡找到。
+工具功能表的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵功能表找到。
 
 #### ![images/import.png](images/import.png){: .inline} 從檔案匯入環境
 從 Rhino 的 .renv 檔案匯入環境。
@@ -173,10 +173,10 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
 將環境儲存為 Rhino 的 .renv 檔案。
 
 #### ![images/changetype.png](images/changetype.png){: .inline} 變更類型
-將環境變更為其它的類型。
+將環境變更為其它類型。
 
 #### ![images/changetype.png](images/changetype.png){: .inline} 變更類型 (複製類似的設定)
-將環境變更為其它的類型。
+將環境變更為其它類型。
 預設的作業方式由 [Rhino 選項  > 彩現](http://docs.mcneel.com/rhino/5/help/zh-tw/options/rendering.htm)頁面的[當彩現內容類型變更時複製類似的設定設定決定](http://docs.mcneel.com/rhino/5/help/zh-tw/options/rendering.htm#Copy_similar_settings_when_content_type_is_changed)。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
 
 #### ![images/reset.png](images/reset.png){: .inline} 重設為預設值
