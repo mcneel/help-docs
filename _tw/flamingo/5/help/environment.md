@@ -7,7 +7,7 @@ Rhino 有幾種[環境類型](http://docs.mcneel.com/rhino/5/help/zh-tw/commands
 
 環境是彩現裡未被物件擋住的背景、反射材質上的非物件反射影像或透明材質的非物件折射影像。要讓環境對場景產生照明效果請參考[天光](sun-and-sky-tabs.html)的說明。
 
-Flamingo 內建一種特別的環境 - 預設的 **Flamingo 環境**，此環境與目前的[照明預設組](lighting-tab.html)同步。By using [lighting presets](lighting-tab.html), both the Lighting and Environment will be set to appropriate scene defaults.
+Flamingo 內建一種特別的環境 - 預設的 **Flamingo 環境**，此環境與目前的[照明預設組](lighting-tab.html)同步。每個[照明預設組](lighting-tab.html)都有預設適當的照明與環境。
 
 Flamingo 環境的內容群組有：
 
