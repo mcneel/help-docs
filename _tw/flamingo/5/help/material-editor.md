@@ -200,10 +200,10 @@ title: 材質編輯器面板
 將材質儲存為 Flamingo 的材質檔案 .ArMaterial。
 
 #### ![images/changetype.png](images/changetype.png){: .inline} 變更類型
-將材質變更為其它的類型。
+將材質變更為其它類型。
 
 #### ![images/changetype.png](images/changetype.png){: .inline} 變更類型 (複製類似的設定)
-將材質變更為其它的類型。
+將材質變更為其它類型。
 預設的作業方式由 [Rhino 選項 &gt; 彩現](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)頁面的[當彩現內容類型變更時複製類似的設定](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#popup_moreinformation/materialpanel_toolsmenu.htm)選項決定。當這個選項開啟時，從一種類型變更至另一種類型時會套用相容的設定。
 
 #### ![images/reset.png](images/reset.png){: .inline} 重設為預設值
