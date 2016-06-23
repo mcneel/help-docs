@@ -141,7 +141,7 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
 {: #divider}
 移動視窗分隔條可調整環境清單可同時顯示的環境數目。
 
-## [環境內容區](#panel_map) ![images/callout_5.svg](images/callout_5.svg){: .inline}
+## [環境內容](#panel_map) ![images/callout_5.svg](images/callout_5.svg){: .inline}
 {: #properties}
 
 ### [環境名稱](#panel_map) ![images/callout_6.svg](images/callout_6.svg){: .inline}
@@ -150,13 +150,13 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
 
 ### [環境面板](#panel_map) ![images/callout_7.svg](images/callout_7.svg){: .inline}
 {: #panels}
-環境內容區有許多個面板，按面板的標題列可將面板收摺或展開。
+環境內容有許多面板，按面板的標題列可將面板收摺或展開。
 
-環境面板顯示的設定因環境類型而異，詳細說明請參考 [Flamingo 環境](environment.html)主題。
+環境面板的設定因環境類型而異，詳細說明請參考 [Flamingo 環境](environment.html)主題。
 
 ## 工具功能表 ![images/library_default.png](images/library_default.png){: .inline}
 {: tools_menu}
-工具功能表裡的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵快顯功能表裡找到。
+工具功能表的項目也可以在預覽縮圖與縮圖面板空白部分的右鍵功能表裡找到。
 
 #### ![images/currentenvironment.png](images/currentenvironment.png){: .inline} 設定為使用中的彩現環境
 將選取的環境設為使用中，下一次彩現將使用此環境。
