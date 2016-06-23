@@ -64,9 +64,9 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
 
 * 選取的環境的內容會顯示在下方的面板，詳細說明請參考[彩現材質內容](#properties)主題。
 * 上下捲動檢視所有的環境。
-* 按環境清單末端的**新增**按鈕 ![images/add_material.png](images/add_material.png){: .inline} 建立新環境。
-* 在縮圖上按右鍵可彈出**環境快顯功能表**。
-* 在空白的位置按右鍵可彈出**新材質功能表**。
+* 按環境清單末端的**新增**按鈕 ![images/add_material.png](images/add_material.png){: .inline} 可建立新環境。
+* 在縮圖上按右鍵可彈出**環境功能表**。
+* 在空白的位置按右鍵可彈出**新環境功能表**。
 
 ###  ![images/add_material.png](images/add_material.png){: .inline} 建立新環境
 {: #add_environment}
