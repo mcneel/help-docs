@@ -28,7 +28,7 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
  1. [設定列](#settings)
  1. [環境清單](#environment_list)
  1. [視窗分隔條](#divider)
- 1. [環境內容區](#properties)
+ 1. [環境內容](#properties)
  1. [名稱](#name)
  1. [環境內容面板](#panels)
 
