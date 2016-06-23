@@ -22,7 +22,7 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
 
 材質編輯器、[貼圖面板](texturepalette.html)、[環境編輯器](environmenteditor.html)的任何顏色方塊都可以相互拖放。
 
-環境面板
+**環境面板**
 
  1. [背景類型](#type)
  1. [設定列](#settings)
