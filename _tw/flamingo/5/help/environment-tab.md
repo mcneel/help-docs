@@ -48,8 +48,8 @@ Flamingo 內建一種特別的環境 - 預設的 [Flamingo 環境](environment.h
 ####  ![images/met_rightarrow.png](images/met-rightarrow.png){: .inline} 向前按鈕
 環境可能有許多層的設定頁面，**向前**按鈕可回到下一個使用的頁面，例如：在環境 A 的反射頁面選取環境 B，按**向後**按鈕回到環境 A 的反射頁面，再按**向前**按鈕可再回到環境 B。
 
-#### ![images/material_editor.png](images/material_editor.png){: .inline} ![images/texture-2dchecker.png](images/texture-2dchecker.png){: .inline} 目前選取的環境名稱
-顯示目前選取的材質的名稱與所在的設定頁面， 例如您目前正在編輯材質 C 的貼圖 D，此欄位會顯示**材質 C > 貼圖 D**。
+#### ![images/environments.png](images/environments.png){: .inline} 目前選取的環境名稱
+顯示目前選取的環境的名稱與所在的設定頁面。
 
 #### ![images/library_default.png](images/library_default.png){: .inline} 工具功能表
 顯示[工具功能表](#tools-menu)，工具功能表有與環境相關的許多指令與設定。
