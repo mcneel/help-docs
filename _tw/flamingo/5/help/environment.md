@@ -49,7 +49,7 @@ Flamingo 環境的內容群組有：
 環境的背景類型中的天空是使用[照明](lighting-tab.html)標籤下的太陽與天空的設定。It is the default setting for the renderings that see the sky in the renderings.
 
 ![images/background-sky-001.png](images/background-sky-001.png)
-*自動 (左)、HDR 圖片與太陽 (右)。*
+自動 (左)、HDR 圖片與太陽 (右)。
 
 ## 顏色背景
 {: #color-backgrounds}
@@ -60,7 +60,7 @@ Flamingo 環境的內容群組有：
 以一種顏色填滿整個背景。
 
 ![images/background-color-001.png](images/background-color-001.png)
-*單一顏色背景。*
+單一顏色背景。
 單一顏色的詳細說明請參考下方的[顏色控制](#enviroment-sky-color-controls)。
 
 #### 雙色漸層
@@ -68,14 +68,14 @@ Flamingo 環境的內容群組有：
 雙色與三色漸層的背景只有在透視圖作業視窗才有作用，雙色漸層背景由選取的一個顏色變化至另一個顏色。
 
 ![images/background-color-002.png](images/background-color-002.png)
-*雙色漸層背景：藍、黃。*
+雙色漸層背景：藍、黃。
 雙色漸層的詳細說明請參考下方的[顏色控制](#enviroment-sky-color-controls)。
 
 #### 三色漸層
 {: #three-color-gradient}
 三色漸層背景由選取的一個顏色變化至另一個顏色，再變化至第三種顏色。
 ![images/background-color-003.png](images/background-color-003.png)
-*三色漸層背景：藍、白、黃。*
+三色漸層背景：藍、白、黃。
 三色漸層的詳細說明請參考下方的[顏色控制](#enviroment-sky-color-controls)。
 
 ### 顏色控制
@@ -119,7 +119,7 @@ Flamingo 環境的內容群組有：
 以圖片投影做為背景，可讓模型處於適當的情境，或是做為窗外的景色。數位相片、掃描的圖畫作品或是以繪圖軟體製作的圖片都可做為背景圖片。做為環境背景的圖片最好選用高解析度的圖片，將圖片稍微做點模糊處理並提高亮度可以模擬真實世界的深度感與瞭闊的場景。背景圖片可使用平面、圓柱體或球體投影。
 
 ![images/background-image-001.png](images/background-image-001.png)
-*適用平面投影的背景圖片。*
+適用平面投影的背景圖片。
 
 ### 圖檔
 {: #image-properties}
@@ -148,7 +148,7 @@ Flamingo 環境的內容群組有：
 灰色矩形代表目前的視圖的背景區域，粉紅色矩形代表背景圖片，移動粉紅色矩形或修改下方的數值可調整背景圖片的縮放比例與位置。
 
 ![images/background-image-003.png](images/background-image-003.png)
-*背景區域 (1) 與圖片的大小與形狀 (2)。*
+背景區域 (1) 與圖片的大小與形狀 (2)。
 
 #### X 縮放 / Y 縮放
 設定背景圖片寬度與高度的縮放比例。例如：1.0 (100%) 代表圖片的尺寸符合背景區域的尺寸，0.5 (50%) 代表圖片的尺寸為背景區域的一半。
@@ -160,7 +160,7 @@ Flamingo 環境的內容群組有：
 灰色矩形代表目前的視圖的背景區域，粉紅色矩形代表背景圖片，移動粉紅色矩形或修改下方的數值可調整背景圖片的縮放比例與位置。
 
 ![images/background-image-003.png](images/background-image-003.png)
-*背景區域 (1) 與圖片的大小與形狀 (2)。*
+背景區域 (1) 與圖片的大小與形狀 (2)。
 
 <!-- TODO: The next two sections are repeated. Maybe they belong to the "Cylindrical Projection" below? -->
 
@@ -253,7 +253,7 @@ Flamingo 環境的內容群組有：
 
 
 ![images/planarimagebeach.png](images/planarimagebeach.png)
-*使用一般圖片 (左) 與平面 HDR (右) 做為窗外景觀貼圖彩現時場景照明的細微差異。*
+使用一般圖片 (左) 與平面 HDR (右) 做為窗外景觀貼圖彩現時場景照明的細微差異。
 
 #### 圖檔
 {: #hdri-planar-image}
