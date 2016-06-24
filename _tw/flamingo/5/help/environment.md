@@ -46,7 +46,7 @@ Flamingo 環境的內容群組有：
 
 ## 天空背景
 {: #environment-sky}
-環境的背景類型中的天空是使用[照明](lighting-tab.html)標籤下的太陽與天空的設定。It is the default setting for the renderings that see the sky in the renderings.
+環境的背景類型中的天空是使用[照明預設組](lighting-tab.html)的太陽與天空的設定，彩現裡可見天空的場景可用天空做為背景。
 
 ![images/background-sky-001.png](images/background-sky-001.png)
 自動 (左)、HDR 圖片與太陽 (右)。
