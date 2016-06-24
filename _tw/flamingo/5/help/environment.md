@@ -252,7 +252,7 @@ Flamingo 環境的內容群組有：
 進階背景設定控制透明物件折射的環境背景與亮面物件反射的環境背景，可讓折射與反射的環境背景不同於可見的環境背景。以下圖為例，可見的環境背景是黑色，但金屬球反射的是一張 HDR 圖片。
 
 ![images/reflectedbackground-002.png](images/reflectedbackground-002.png)
-*可見的背景 (左) 與使用 HDR 圖片 (右) 做為物件反射的環境背景。*
+可見的背景 (左) 與使用 HDR 圖片 (右) 做為物件反射的環境背景。
 
 ### 反射
 {: #advanced-background-reflected-sky}
