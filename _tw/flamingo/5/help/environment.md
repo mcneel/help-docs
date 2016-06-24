@@ -121,7 +121,7 @@ Flamingo 環境的內容群組有：
 ![images/background-image-001.png](images/background-image-001.png)
 適用平面投影的背景圖片。
 
-### 圖檔
+### 圖片
 {: #image-properties}
 按 **(空白 - 按這裡開始設定)** 大型按鈕可選擇要使用的背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
 
@@ -133,7 +133,7 @@ Flamingo 環境的內容群組有：
 * [圓柱體](#cylindrical)
 * [球體](#spherical)
 
-每一種投影方式都有不同的設定可以調整圖片的位置。
+每一種投影方式都有不同的設定可調整圖片的位置。
 
 ### 平面投影
 {: #planar}
@@ -142,10 +142,10 @@ Flamingo 環境的內容群組有：
 ![images/projectiontypesplanar.png](images/projectiontypesplanar.png)
 
 #### 從視圖擷取角度
-此選項可自動調整背景圖片的角度，使背景圖片自動符合視圖的角度。
+此選項可自動調整背景圖片的角度，使背景圖片自動符合視圖角度。
 
 #### 圖片位置控制
-灰色矩形代表目前的視圖的背景區域，粉紅色矩形代表背景圖片，移動粉紅色矩形或修改下方的數值可調整背景圖片的縮放比例與位置。
+灰色矩形代表目前視圖的背景區域，粉紅色矩形代表背景圖片，移動粉紅色矩形或修改下方的數值可調整背景圖片的縮放比例與位置。
 
 ![images/background-image-003.png](images/background-image-003.png)
 背景區域 (1) 與圖片的大小與形狀 (2)。
