@@ -256,7 +256,7 @@ Flamingo 環境的內容群組有：
 
 ### 反射
 {: #advanced-background-reflected-sky}
-給物件反射的環境背景可以與彩現影像裡看到的環境背景不同。
+給物件反射的環境背景可與彩現影像裡看到的環境背景不同。
 
 #### 天空
 以[照明 > 天空與太陽](sun-and-sky-tabs.html)做為物件反射的環境背景。
@@ -265,7 +265,7 @@ Flamingo 環境的內容群組有：
 使用[單一顏色或漸層色](#color-backgrounds)、[一般圖片](#environment-image)或 [HDR 圖片](#hdr-background)做為物件反射的環境背景。
 
 #### 可見的背景
-以[環境](environment-tab.html)頁面的背景設定做為物件反射的環境背景。
+以[環境](environment-tab.html)的背景設定做為物件反射的環境背景。
 
 ### 折射
 {: #advanced-background-refracted-sky}
@@ -277,7 +277,7 @@ Flamingo 環境的內容群組有：
 使用[單一顏色或漸層色](#color-and-gradient-backgrounds)、[一般圖片](#image)或 [HDR 圖片](#hdr-background)做為透明物件折射的環境背景。
 
 #### 可見的背景
-以[環境](environment-tab.html)頁面的背景設定做為透明物件折射的環境背景。
+以[環境](environment-tab.html)的背景設定做為透明物件折射的環境背景。
 
 #### Alpha 通道忽略材質的透明度
 {: #no-transparent-alpha-objects}
