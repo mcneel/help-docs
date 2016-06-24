@@ -158,7 +158,7 @@ Flamingo 環境的內容群組有：
 
 ### 圓柱體投影
 {: #cylindrical}
-將背景圖片投影至環繞模型的圓柱曲面，這個投影方式適合使用 360 度環繞拍攝的照片。
+將背景圖片投影至環繞模型的圓柱曲面，此投影方式適合使用 360 度環繞拍攝的照片。
 
 ![images/projectiontypescylindrical.png](images/projectiontypescylindrical.png)
 以角度值設定圖片出現在彩現裡的大小、位置、寬度與高度，右邊的示意圖形上的角度標記可以使用滑鼠移動， 灰色扇形區域代表目前作業視窗的橫向與縱向視野範圍。
