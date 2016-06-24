@@ -64,7 +64,7 @@
     - name: 彩現
       anchor: rendering
       topics:
-        - name: 彩現標籤面板
+        - name: 彩現選項
           path: render-tab.html
         - name: 彩現視窗
           path: render-window.html
