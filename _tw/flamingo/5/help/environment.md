@@ -19,7 +19,7 @@ Flamingo 環境的內容群組有：
 
 ## 環境名稱
 {: #name}
-此為 Rhino 模型裡的環境名稱，環境可儲存在 Rhino 模型檔案裡。編輯目前模型的環境不會影響材質庫與其它模型裡的環境。To use any environment in another model it must be exported to the [Library](libraries.html) first. The Name of the environment will also serve as its exported file name.
+此為 Rhino 模型裡的環境名稱，環境可儲存在 Rhino 模型檔案裡。編輯目前模型的環境不會影響材質庫與其它模型裡的環境。要在其它模型使用目前模型的環境時，必需先將環境儲存至[材質庫](libraries.html)，環境的名稱即儲存的環境檔案的名稱。
 
 ## Flamingo 環境
 {: #environment}
