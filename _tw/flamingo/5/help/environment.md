@@ -121,7 +121,7 @@ Flamingo 環境的內容群組有：
 ![images/background-image-001.png](images/background-image-001.png)
 適用平面投影的背景圖片。
 
-### 圖片
+### 圖片檔案
 {: #image-properties}
 按 **(空白 - 按這裡開始設定)** 大型按鈕可選擇要使用的背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
 
@@ -221,11 +221,11 @@ Flamingo 環境的內容群組有：
 
 ## HDR 背景
 {: #hdr-background}
-使用 HDR 圖片做為場景的照明光源可提供更真實、自然的照明效果，尤其是明亮的戶外光源透過窗戶照亮室內場景的情形特別有用。HDR 圖片可以記錄的亮度範圍遠大於一般圖片，您可以賦予 HDR 圖片一個獨立的[照明通道](lights-tab.html#channel)，以便在彩現完成後可以再對 HDR 圖片的亮度做調整。
+使用 HDR 圖片做為場景的照明光源可提供更真實、自然的照明效果，尤其是明亮的戶外光源透過窗戶照亮室內場景的情形特別有用。HDR 圖片可記錄的亮度範圍遠大於一般圖片，您可以賦予 HDR 圖片一個獨立的[照明通道](lights-tab.html#channel)，以便在彩現完成後可以再對 HDR 圖片的亮度做調整。
 
-#### 圖檔
+#### 圖片檔案
 {: #hdri-image}
-按 *(空白 - 按這裡開始設定)* 大型按鈕可選擇要使用的 HDR 背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
+按 **(空白 - 按這裡開始設定)** 大型按鈕可選擇要使用的 HDR 背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
 
 {% include_relative snippets/snippet-rotatehdrimage.md %}
 {% include_relative snippets/snippet-mirrorimage.md %}
@@ -241,9 +241,9 @@ Flamingo 環境的內容群組有：
 ![images/planarimagebeach.png](images/planarimagebeach.png)
 使用一般圖片 (左) 與平面 HDR (右) 做為窗外景觀貼圖彩現時場景照明的細微差異。
 
-#### 圖檔
+#### 圖片檔案
 {: #hdri-planar-image}
-按 *(空白 - 按這裡開始設定)* 大型按鈕可選擇要使用的 HDR 背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
+按 **(空白 - 按這裡開始設定)** 大型按鈕可選擇要使用的 HDR 背景圖片，要重新選擇其它圖片請按相同位置的圖片縮圖。
 {% include_relative snippets/snippet-sunchannel.md %}
 {% include_relative snippets/snippet-skychannel.md %}
 
