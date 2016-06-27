@@ -141,7 +141,7 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 
 ### 加亮
 {: #burn}
-調整高亮度區域的範圍，這個數值對高亮度區域的影響大於低亮度區域，可以用來製造過度曝光的效果。
+調整高亮度區域的範圍，此數值對高亮度區域的影響大於低亮度區域，可用來製造過度曝光的效果。
 請參考：[Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point)。
 
 ![images/burn-001.png](images/burn-001.png)
@@ -149,7 +149,7 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 
 ### 飽和度
 {: #saturation}
-用來控制彩現影像色彩的鮮豔度，飽和度為 0 時會變為灰階影像，飽和度在 1 以上時，數值越大色彩越鮮豔，飽和度數值的最大限制為 2。
+用來控制彩現影像的色彩鮮豔度，飽和度為 0 時會變為灰階影像，數值越大色彩越鮮豔，飽和度數值的最大限制為 2。
 
 ![images/saturationdefault.png](images/saturationdefault.png)
 飽和度調高前 (左) 後 (右) 的差別。
