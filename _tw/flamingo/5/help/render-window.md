@@ -125,8 +125,8 @@ EXR 是可儲存高動態範圍 (High Dynamic Range) 亮度資訊的圖片格式
 {: #adjust-image}
 Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整影像的曝光度。如果您想將彩現影像變亮、變暗、修改對比或色彩飽和度，都可以在這裡調整，這此功能稱為[色調對應](https://en.wikipedia.org/wiki/Tone_mapping)。Flamingo 可計算的亮度範圍遠大於電腦螢幕可顯示的範圍，色調對應是 Flamingo 將亮度資訊轉換為螢幕色彩顯示範圍 (RGB) 的方法。
 
-![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png){: .inline} ![images/tonefinals-correction.png](images/tonefinals-correction.png){: .inline}
-*原來的彩現影像 (左)、套用亮度 (0.20)、加亮 (0.16)、飽和度 (1.2) 後的結果(右)。*
+![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png) ![images/tonefinals-correction.png](images/tonefinals-correction.png){: .inline}
+原來的彩現影像 (左)、套用亮度 (0.20)、加亮 (0.16)、飽和度 (1.2) 後的結果(右)。
 彩現影像的亮度或顏色不理想時可用這裡的功能快速調整，不必重新彩現。
 
 ### 亮度
@@ -134,7 +134,7 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 調整中間色 (Gamma 值)，可以用來平衡彩現影像明暗區域的比例，當彩現影像裡應該是白色的部分顯示為灰色時可以適度調高這個數值。
 
 ![images/brightnessdefault.png](images/brightnessdefault.png)
-*亮度值調高前 (左) 後 (右) 的差別。*
+亮度值調高前 (左) 後 (右) 的差別。
 
 {% include_relative snippets/snippet-brightness.md %}
 
@@ -144,21 +144,21 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 請參考：[Wikipedia article: White point](http://en.wikipedia.org/wiki/White_point)。
 
 ![images/burn-001.png](images/burn-001.png)
-*加亮值調高前 (左) 後 (右) 的差別。*
+加亮值調高前 (左) 後 (右) 的差別。
 
 ### 飽和度
 {: #saturation}
 用來控制彩現影像色彩的鮮豔度，飽和度為 0 時會變為灰階影像，飽和度在 1 以上時，數值越大色彩越鮮豔，飽和度數值的最大限制為 2。
 
 ![images/saturationdefault.png](images/saturationdefault.png)
-*飽和度調高前 (左) 後 (右) 的差別。*
+飽和度調高前 (左) 後 (右) 的差別。
 
 ### 色階分布圖
 {: #histogram}
 以圖形顯示彩現影像所有像素的明暗度分布，中央到左側邊緣代表偏暗到黑色，中央到右側邊緣代表偏亮到白色。通常我們必需調整彩現影像，使像素分布在左至右的整個範圍。例如：當彩現影像的像素分布未達右側邊緣時，請調高**亮度**或**加亮**數值，使像素分布延展到右側邊緣，請參考：[Wikipedia article: Histogram](http://en.wikipedia.org/wiki/Histogram)。網路上也有許多關於數位影像如何利用色階分布圖的文章可參考。
 
 ![images/histogram.png](images/histogram.png)
-*此為色階分布圖的實例，此彩現影像沒有較暗至極暗的黑色 (左端) 像素，是一個偏亮的彩現影像，但也無極亮的白色 (右端) 像素。*
+此為色階分布圖的實例，此彩現影像沒有較暗至極暗的黑色 (左端) 像素，是一個偏亮的彩現影像，但也無極亮的白色 (右端) 像素。
 
 #### 色階分布圖選項
 在色階分布圖上按滑鼠右鍵有一些選項可設定色階分布的特性，修改這些選項不會影響彩現影像。
