@@ -62,7 +62,7 @@ PNG 圖片使用非破壞性壓縮，可完整保留彩現影像的所有像素�
 
 #### 儲存 (含背景 Alpha 通道)
 {: #save-with-alpha-channel}
-將彩現影像儲存為含有 Alpha 通道的 32 位元 PNG、TIF、BMP 圖片格式，方便應用於影像合成，彩現影像中背景的部分在 Alpha 通道裡為黑色。此核取方塊與[另存新檔](#flamingo-tab)對話框的**儲存 Alpha 通道**都勾選時才能將 Alpha 通道儲存到圖片裡。
+將彩現影像儲存為含有 Alpha 通道的 32 位元 PNG、TIF、BMP 圖片格式，方便應用於影像合成，彩現影像背景的部分在 Alpha 通道裡為黑色。此核取方塊與[另存新檔](#flamingo-tab)對話框的**儲存 Alpha 通道**都勾選時才能將 Alpha 通道儲存到圖片裡。
 
 #### 輸出 Flamingo nXt 的原生檔案 (.nXtImage)
 {: #export-to-nxtimage}
@@ -76,7 +76,7 @@ PNG 圖片使用非破壞性壓縮，可完整保留彩現影像的所有像素�
 
 #### 輸出 EXR 檔案
 {: #export-to-exr}
-EXR 是由 Industrial Light and Magic (ILM) 制定的一種開放的高動態範圍圖片格式標準，這種格式支援每個通道 16 位元的浮點數值 (半精度)，以一個位元表示正負號，五個位元表示指數，十個位元表示尾數，共可以表示三十階的高動態範圍曝光度，進一步的資訊請參考：[Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)。
+EXR 是由 Industrial Light and Magic (ILM) 制定的一種開放的高動態範圍圖片格式標準，此格式支援每個通道 16 位元的浮點數值 (半精度)，以一個位元表示正負號，五個位元表示指數，十個位元表示尾數，可以表示三十階的高動態範圍曝光度，進一步的資訊請參考：[Wikipedia article: OpenEXR](http://en.wikipedia.org/wiki/OpenEXR)。
 EXR 是可儲存高動態範圍 (High Dynamic Range) 亮度資訊的圖片格式，以無亮度資訊背景 (例如：一般照片) 彩現的影像儲存為這類格式時背景會變為黑色。
 
 #### ![images/close-x.png](images/close-x.png){: .inline} 結束
@@ -87,7 +87,7 @@ EXR 是可儲存高動態範圍 (High Dynamic Range) 亮度資訊的圖片格式
 
 ## Flamingo 標籤頁面
 {: #flamingo-tab}
-Render 視窗的 **Flamingo 標籤頁面**有許多 Flamingo 彩現引擎特有的設定，了解這些設定對建立高品質彩現影像有很大的幫助。
+彩現視窗的 **Flamingo 標籤頁面**有許多 Flamingo 彩現引擎特有的設定，了解這些設定對建立高品質彩現影像有很大的幫助。
 
 #### 儲存 (含 Alpha 通道)
 儲存含有 Alpha 通道的 32 位元 PNG、TIF、BMP 圖片格式，方便應用於影像合成，彩現影像中背景的部分在 Alpha 通道裡為黑色。此核取方塊與[另存新檔](#saving)對話框的**儲存 Alpha 通道**都勾選時才能將 Alpha 通道儲存到圖片裡。
