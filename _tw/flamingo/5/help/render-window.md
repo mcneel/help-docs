@@ -125,7 +125,7 @@ EXR 是可儲存高動態範圍 (High Dynamic Range) 亮度資訊的圖片格式
 {: #adjust-image}
 Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整影像的曝光度。如果您想將彩現影像變亮、變暗、修改對比或色彩飽和度，都可以在這裡調整，這此功能稱為[色調對應](https://en.wikipedia.org/wiki/Tone_mapping)。Flamingo 可計算的亮度範圍遠大於電腦螢幕可顯示的範圍，色調對應是 Flamingo 將亮度資訊轉換為螢幕色彩顯示範圍 (RGB) 的方法。
 
-![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png) ![images/tonefinals-correction.png](images/tonefinals-correction.png){: .inline}
+![images/tonefinals-nocorrection.png](images/tonefinals-nocorrection.png){: .inline} ![images/tonefinals-correction.png](images/tonefinals-correction.png)
 原來的彩現影像 (左)、套用亮度 (0.20)、加亮 (0.16)、飽和度 (1.2) 後的結果(右)。
 彩現影像的亮度或顏色不理想時可用這裡的功能快速調整，不必重新彩現。
 
