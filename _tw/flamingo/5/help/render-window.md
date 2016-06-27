@@ -188,10 +188,10 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 顯示目前的[彩現解析度](render-tab.html#resolution)。
 
 #### 網格面
-顯示模型彩現時使用的網格面數，可做為設定 Rhino 的[彩現網格轉換](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#documentproperties/mesh.htm)設定。
+顯示模型彩現時的網格面數，可用來比較不同的[彩現網格轉換](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#documentproperties/mesh.htm)設定。
 
 #### 網格面 (含圖塊引例)
-當彩現的模型含有圖塊引例時，Flamingo nXt 可以使用單一圖塊定義的網格面彩現它的所有引例，因為參與彩現計算的網格面減少，可以縮短彩現時間，此數值顯示的是包含圖塊引例在內的網格面數。
+當彩現的模型含有圖塊引例時，Flamingo nXt 可使用單一圖塊定義的網格面彩現它的所有引例，因為參與彩現計算的網格面減少，可縮短彩現時間，此數值顯示的是包含圖塊引例在內的網格面數。
 
 #### 照明資訊
 目前彩現的場景的照明資訊，包括：
@@ -201,7 +201,7 @@ Flamingo 非常重要的功能之一，這裡就像照相機一樣可以調整�
 * [天空](sun-and-sky-tabs.html#sky)
 * [燈光](lights-tab.html)
 * [間接照明](lighting-tab.html#indirect)
-* [環境光開啟/關閉](lighting-tab.html#ambient)
+* [環境光](lighting-tab.html#ambient)
 
 ## 通道
 {: #channels}
