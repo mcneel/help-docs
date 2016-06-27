@@ -3,7 +3,7 @@ title: 彩現視窗
 ---
 
 # ![images/render.svg](images/render.svg){: .inline} {{page.title}}
-彩現視窗有可以調整曝光度與後處理效果的設定，彩現視窗的大部分功能來自 Rhino，關於功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#information/renderwindowpostprocess.htm)說明主題，本說明主題只涉及 Flamingo 提供的功能。
+彩現視窗有調整曝光度與後處理效果的設定，彩現視窗的大部分功能來自 Rhino，關於功能表與工具列按鈕的詳細說明請參考 [Rhino 彩現視窗](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#information/renderwindowpostprocess.htm)說明主題，本說明主題只涉及 Flamingo 提供的功能。
 
 ## 管理進行中的彩現
 彩現開始後會開啟[彩現視窗](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#information/renderwindowpostprocess.htm)，Flamingo 使用多層次彩現，彩現影像會持續更新。Flamingo 彩現一開始的初始化階段可能需要幾秒鐘或幾分鐘，此階段的工作是匯入模型與收集材質貼圖使用的圖片，並建立彩現影像緩衝區。彩現模型一般有幾個步驟：
