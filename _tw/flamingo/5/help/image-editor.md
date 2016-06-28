@@ -177,6 +177,7 @@ nXtImage 檔案內含三種通道資訊，可在大部分的平面繪圖軟體�
 #### 亮度
 {: #brightness}
 請參考：[彩現視窗的亮度設定](render-window.html#brightness)。
+
 {% include_relative snippets/snippet-brightness.md %}
 
 #### 加亮
