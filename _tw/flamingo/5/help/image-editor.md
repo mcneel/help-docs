@@ -3,7 +3,7 @@ title: 彩現影像編輯器
 ---
 
 # {{page.title}}
-Flamingo nXt 的彩現影像編輯器可以編輯所有 nXt 平台建立的原生影像檔案 (.nXtImage)，這種檔案格式保留了彩現過程收集的資訊。
+Flamingo nXt 的彩現影像編輯器可編輯所有 nXt 平台建立的原生影像檔案 (.nXtImage)，此檔案格式可保留彩現過程收集的資訊。
 Flamingo nXt 彩現影像編輯器的功能：
 
 
@@ -13,8 +13,8 @@ Flamingo nXt 彩現影像編輯器的功能：
 * [儲存](image-editor.html#save-tonemapped-image-as)色調對應處理後的圖片格式：JPG、PNG、TIF...。
 * 儲存含亮度資訊的 [HDR](image-editor.html#save-hdr-image-as) 圖片。
 * 檢視與儲存 [Alpha](image-editor.html#alpha-channel)、[距離](image-editor.html#distance-channel)、[材質](image-editor.html#material-channel)通道資訊，以便進行後續的影像合成處理。
-* 可儲存 [Piranesi©](http://www.piranesi.co.uk/) 檔案格式 (*.epx)，用來建立手繪風格的影像。
-* 使用影像[運算](image-editor.html#arithmetic)功能將彩現農場分配給客戶端計算得到的彩現切片組合為完整的影像。
+* 可儲存 [Piranesi©](http://www.piranesi.co.uk/) 檔案格式 (*.epx)，用來建立手繪風格影像。
+* 使用影像[運算](image-editor.html#arithmetic)功能將彩現農場分配給客戶端計算得到的彩現切片組合成為完整的影像。
 * 修改光源的[照明](image-editor.html#save-lighting-settings-as)亮度，儲存不同版本的彩現影像。
 
 執行彩現影像編輯器
@@ -44,7 +44,7 @@ Flamingo nXt 彩現影像編輯器的功能：
  * PNG 含 Alpha 通道 (.tif)
  * [Piranesi EPix 檔案 (.epx)](http://www.piranesi.co.uk/)
 
-Piranesi 是一種 3D 繪圖程式，可以建立手繪風格的影像。
+Piranesi 是一種 3D 繪圖程式，可建立手繪風格影像。
 
 ### 另存 HDR 影像
 {: #save-hdr-image-as}
