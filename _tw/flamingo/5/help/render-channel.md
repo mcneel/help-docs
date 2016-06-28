@@ -41,7 +41,7 @@ Flamingo nXt 5 的燈光照明可設八個通道是非常有用的功能，每�
 {: adjusting}
 照明通道可以在彩現視窗或 Flamingo nXt 的彩現影像編輯器裡調整，雖然彩現開始後可立即調整照明通道，但我們建議彩現完成後再做調整。
 
-#### 可以在哪找到 Flamingo 的燈光設定?
+#### 可以在哪找到 Flamingo 的通道設定?
 Flamingo 的照明通道設定在[彩現視窗](render-window.html)的 Flamingo 標籤頁面。
 
 照明通道有編號 0 至 7 共八個，只有有燈光使用的通道才可調整。
