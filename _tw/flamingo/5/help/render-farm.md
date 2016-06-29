@@ -15,7 +15,7 @@ Flamingo nXt 的**彩現農場**可聯合數部電腦的運算能力，合力彩
 1. 兩部彩現農場客戶端 (nXt 彩現農場包含兩個免費的客戶端)。
 1. 加購的彩現農場客戶端。
 
-彩現農場的免費版本可以使用兩個客戶端，要使用更多的客戶端請至 [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) 購買 nXt 彩現農場的授權。
+彩現農場的免費版本可使用兩個客戶端，要使用更多的客戶端請至 [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) 購買 nXt 彩現農場的授權。
 
 #### 共用的農場資料夾
 {: farm-folder}
@@ -24,7 +24,7 @@ Flamingo nXt 的**彩現農場**可聯合數部電腦的運算能力，合力彩
 #### nXt 彩現農場包含兩個應用程式：
 
 ##### 農場彩現客戶端 (nXtFarmer64.exe)
-安裝在每一部網路彩現客戶端電腦上等待彩現工作的小程式，這個小程式在彩現工作進行時不會顯示任何訊息。網路彩現可以結合多部電腦的運算能力，縮短彩現所需的時間，客戶端程式無法對進行中的彩現工作做變更。
+安裝在每一部網路彩現客戶端電腦上等待彩現工作的小程式，此程式在彩現工作進行時不會顯示任何訊息。網路彩現可結合多部電腦的運算能力，縮短彩現所需的時間，客戶端程式無法對進行中的彩現工作做變更。
 
 ##### 農場監視器 (nXtFarmMonitor64.exe)
 可以用來查看彩現工作的進度，含有一些簡單的管理功能。
@@ -40,7 +40,7 @@ Flamingo nXt 的**彩現農場**可聯合數部電腦的運算能力，合力彩
 
 ## 安裝與設定彩現農場
 {: #install}
-主 Rhino 電腦上必需安裝彩現農場客戶端與監視器，其它電腦只要安裝彩現農場客戶端，不必安裝 Rhino 與 Flamingo nXt。
+Rhino 電腦必需安裝彩現農場客戶端與監視器，其它電腦只要安裝彩現農場客戶端，不必安裝 Rhino 與 Flamingo nXt。
 
 ##### 安裝彩現農場客戶端
 在協助彩現的電腦安裝彩現農場客戶端：
