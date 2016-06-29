@@ -13,7 +13,8 @@ title: 物件內容
 {: #texture-mapping}
 貼圖軸控制材質的紋理與貼圖如何對應至物件上，賦予給圖層或物件的材質都會受影響。材質沒有可辨識性的紋理時通常不需設定貼圖軸，需要控制貼圖的方向時才需要設定貼圖軸。物件移動、旋轉、縮放時它的貼圖軸也會跟著變動，可維持材質的紋理與貼圖的位置，詳細說明請參考[貼圖軸](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#properties/texturemapping.htm)主題。
 
-![images/mapping-cube.png](images/mapping-cube.png) ![images/mapping-planar.png](images/mapping-planar.png){: .inline}
+![images/mapping-cube.png](images/mapping-cube.png){: .inline} ![images/mapping-planar.png](images/mapping-planar.png){: .inline}
+
 立方體使用不同的貼圖軸。
 
 ### ![images/decalproperties.png](images/decalproperties.png){: .inline} 印花
