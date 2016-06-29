@@ -28,7 +28,7 @@ title: 物件內容
 
 ### ![images/apply-edge-softening.png](images/apply-edge-softening.png){: .inline} 自訂網格
 {: #custom-meshes}
-Rhino 有一些網格修改功能可以增加模型彩現的細節，包括：彩現圓角、彩現圓管、裝飾線、置換。
+Rhino 有一些網格修改功能可增加模型彩現的細節，包括：彩現圓角、彩現圓管、裝飾線、置換。
 
 詳細說明請參考它們的說明主題：
 
@@ -42,14 +42,14 @@ Rhino 有一些網格修改功能可以增加模型彩現的細節，包括：�
 
 #### Alpha 通道
 {: #alpha-channel}
-使物件在彩現中不可見，但該物件仍然可以投射陰影與接受陰影投射，這樣彩現影像可以用來將陰影合成至其它圖片上。
+使物件在彩現中不可見，但該物件仍然可以投射陰影與接受陰影投射，這樣彩現影像可用來將陰影與其它圖片合成。
 
 ![images/building.png](images/building.png)
-這個例子是在模型中建立一些樹的模型與用來代替真實照片裡建築物的幾個平面，這些平面可以接受樹模型的陰影投射。在這些平面的物件內容開啟 Alpha 通道，讓他們不會出現在彩現影像裡，經過一些 Alpha 通道的應用處理後可以將樹與樹的陰影加到原來的照片上。
+這個例子是在模型中建立一些樹的模型與用來代替真實照片裡建築物的幾個平面，這些平面可接受樹模型的陰影投射。在這些平面的物件內容開啟 **Alpha 通道**，讓他們不會出現在彩現影像裡，經過一些 Alpha 通道的應用處理後可將樹與樹的陰影加到原來的照片上。
 
 #### 焦散
 {: #caustics}
-光線經過有弧度的物件的反射或折射後，可能會聚焦在其它物件的表面，這種情形稱為焦散。只有[路徑追蹤](render-tab.html#path-tracer)與[混合式](render-tab.html#hybrid)兩種彩現引擎可以彩現焦散的效果，進一步的資訊請參考：[Wikipedia article: Caustic (optics)](http://en.wikipedia.org/wiki/Caustic_(optics)
+光線經過有弧度的物件的反射或折射後，可能會聚焦在其它物件的表面，此種情形稱為**焦散**。只有[路徑追蹤](render-tab.html#path-tracer)與[混合式](render-tab.html#hybrid)兩種彩現引擎可以彩現焦散的效果，進一步的資訊請參考：[Wikipedia article: Caustic \(optics)](http://en.wikipedia.org/wiki/Caustic_(optics)
 
 ![images/kaustik.png](images/kaustik.png)
 杯子與水產生的焦散效果。
