@@ -19,10 +19,11 @@ title: 物件內容
 
 ### ![images/decalproperties.png](images/decalproperties.png){: .inline} 印花
 {: #decals}
-印花是直接在物件上貼圖的方法，這種貼圖方法不需依靠材質，可以在物件的局部貼圖，詳細說明請參考 [Rhino 的印花](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#properties/decal.htm)說明。
+印花是直接在物件上貼圖的方法，此種貼圖方法不需依靠材質，可在物件的局部貼圖，詳細說明請參考 [Rhino 的印花](http://docs.mcneel.com/rhino/5/help/zh-tw/index.htm#properties/decal.htm)說明。
 
-![images/freshmilk.png](images/freshmilk.png) ![images/decal-planar-001.png](images/decal-planar-001.png)
-![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png) ![images/uvmapdecal-00.png](images/uvmapdecal-00.png)
+![images/freshmilk.png](images/freshmilk.png){: .inline} ![images/decal-planar-001.png](images/decal-planar-001.png){: .inline}
+![images/cylindricaldecal-002.png](images/cylindricaldecal-002.png){: .inline} ![images/uvmapdecal-00.png](images/uvmapdecal-00.png){: .inline}
+
 四種不同投影方式的印花。
 
 ### ![images/apply-edge-softening.png](images/apply-edge-softening.png){: .inline} 自訂網格
