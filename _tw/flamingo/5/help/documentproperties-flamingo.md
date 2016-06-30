@@ -9,10 +9,6 @@ title: Flamingo nXt 文件內容
 #### 可以在哪找到這個指令?
 <!-- These locations are not correct.  They need to be updated. -->
 
- 1. ![images/icon-render.png](images/icon-render.png){: .inline} 彩現工具工具列 > ![images/environments.png](images/environments.png){: .inline} 材質編輯器
- 1. ![images/menuicon.png](images/menuicon.png){: .inline} 功能表 > 彩現 > 環境編輯器
- 1. 指令 > EnvironmentEditor
-
 ## 材質
 {: #materials}
 切換物件彩現時使用材質或物件顏色，這裡的設定不會改變賦予給物件或圖層的材質。
