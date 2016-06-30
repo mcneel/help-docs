@@ -8,7 +8,7 @@ title: Flamingo nXt 快速入門
 # ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt® 快速入門
 Flamingo nXt 可在 Rhinoceros® 裡將模型彩現成為高品質而且真實的靜態影像，Flamingo nXt 5 整合了 Rhino 5 內建彩現功能。
 
-請至[這裡](http://www.rhino3d.com/download/flamingo/5/beta)下載、安裝 Flamingo nXt 5。
+請至[這裡](http://www.rhino3d.com/download/flamingo/5/evaluation)下載、安裝 Flamingo nXt 5。
 
 加入 [Flamingo Discourse 論壇](http://chinese.discourse.mcneel.com/c/flamingo)參與討論。
 
