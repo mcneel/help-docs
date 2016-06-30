@@ -20,7 +20,7 @@ title: Flamingo 指令清單
 
 #### FlamingoClearBitmapCache
 {: #flamingoclearbitmapcache}
-當外部連結的圖片以其它程式修改後可以使用這個指令重新載入。
+當外部連結的圖片以其它程式修改後可用此指令重新載入。
 
 #### [FlamingoEditPlant](plants.html)
 {: #flamingoeditplant}
