@@ -122,8 +122,6 @@
           path: documentproperties-flamingo.html
         - name: Flamingo nXt 選項
           path: options-flamingo.html
-        - name: 彩現影像編輯器
-          path: image-editor.html
         - name: 即時預覽視窗
           path: realtime.html
         - name: Flamingo 指令清單
