@@ -6,9 +6,6 @@ title: Flamingo nXt 文件內容
 # ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 這裡的設定只會影響目前的模型，可以讓您在彩現品質與速度之間取捨。
 
-#### 可以在哪找到這個指令?
-<!-- These locations are not correct.  They need to be updated. -->
-
 ## 材質
 {: #materials}
 切換物件彩現時使用材質或物件顏色，這裡的設定不會改變賦予給物件或圖層的材質。
