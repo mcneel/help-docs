@@ -43,7 +43,7 @@ title: Flamingo 指令清單
 
 #### FlamingoMakeCurrent
 {: #flamingomakecurrent}
-將 Flamingo NXt 5 設為 Rhino 目前的彩現器。
+將 Flamingo nXt 5 設為 Rhino 目前的彩現器。
 
 #### [FlamingoPlantEditor](plants.html)
 {: #flamingoplanteditor}
