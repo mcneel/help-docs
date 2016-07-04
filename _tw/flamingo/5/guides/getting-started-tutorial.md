@@ -19,7 +19,7 @@ Rhino 可能載入了一個以上的彩現器，請至**彩現功能表 > 目前
 
 ## 彩現
 {: #render_controls}
-![images/getting_started001.png](images/getting_started001.png){: .float-img-right} 按**彩現**按鈕彩現此模型，得到像右圖一樣的彩現影像，Flamingo nXt 5 與舊版的 Flamingo 操作方式不同。Flamingo nXt 5 在新建立的模型檔案會使用預設的 HDRI 照明設定，所有物件使用預設的白色材質。彩現一開始會有邊緣銳利相互重疊的許多陰影，這些陰影隨著處理數增加逐漸混合變細緻，有許多其它彩現效果也會隨著處理數增加而改善。
+![images/getting_started001.png](images/getting_started001.png){: .float-img-right} 按**彩現**按鈕彩現此模型，得到像右圖一樣的彩現影像，Flamingo nXt 5 與舊版的 Flamingo 1.0/2.0 操作方式不同。Flamingo nXt 5 在新建立的模型檔案會使用預設的 HDRI 照明設定，所有物件使用預設的白色材質。彩現一開始會有邊緣銳利相互重疊的許多陰影，這些陰影隨著處理數增加逐漸混合變細緻，有許多其它彩現效果也會隨著處理數增加而改善。
 
 每個處理數改善的項目：
 
