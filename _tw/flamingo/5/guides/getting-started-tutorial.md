@@ -115,7 +115,7 @@ Flamingo nXt 5.0 已內建基本照明，如何設定材質通常是彩現模型
 ![images/getting_started013.png](images/getting_started013.png)
 1. 最終彩現的結果：
 ![images/getting_started007.png](images/getting_started007.png)
-*注意，彩現影像亮部的亮度會提高 (加亮)，整體亮度 (亮度) 也會增加。*
+注意，彩現影像亮部的亮度會提高 (加亮)，整體亮度 (亮度) 也會增加。
 
 
 
