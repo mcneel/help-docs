@@ -12,10 +12,7 @@ Flamingo nXt 的**彩現農場**可聯合數部電腦的運算能力，合力彩
 
 1. 一部安裝 Rhino 與 Flamingo nXt 的電腦。
 1. 網路主機或共享的農場資料夾。
-1. 兩部彩現農場客戶端 (nXt 彩現農場包含兩個免費的客戶端)。
-1. 加購的彩現農場客戶端。
-
-彩現農場的免費版本可使用兩個客戶端，要使用更多的客戶端請至 [https://www2.mcneel.com/commerce/accurender/buy-farm.asp](https://www2.mcneel.com/commerce/accurender/buy-farm.asp) 購買 nXt 彩現農場的授權。
+1. 數部彩現農場客戶端。
 
 #### 共用的農場資料夾
 {: farm-folder}
