@@ -43,6 +43,6 @@ title: Guide Index
 Flamingo nXt 預設的彩現方式是會持續計算改善彩現影像的品質，直到您按下**停止彩現** ![images/stop.png](images/stop.png){: .inline} 按鈕才會停止。這個方式讓您可以在時間與品質兩者之間取捨，彩現計算越久得到的效果越好，但您可以在任何時候停止彩現。
 
 
-[處理數](..\render\render-window.html#number-of-passes)與[時間](..\render\render-window.html#time)限制可在[彩現視窗](..\render\render-window.html)或[文件內容 &gt; Flamingo nXt 5.0](..\help\documentproperties-flamingo.html) 頁面設定。
+[處理數](..\help\render-window.html#number-of-passes)與[時間](..\help\render-window.html#time)限制可在[彩現視窗](..\help\render-window.html)或[文件內容 &gt; Flamingo nXt 5.0](..\help\documentproperties-flamingo.html) 頁面設定。
 
 &#160;
