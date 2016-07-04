@@ -30,7 +30,7 @@ Rhino 可能載入了一個以上的彩現器，請至**彩現功能表 > 目前
 * 反鋸齒
 * 景深
 
-除非您設定時間、處理數限制或是在彩現品質達到要求時手動停止，否則 Flamingo nXt 會持續細化彩現影像永不停止，停止彩現的方法有：
+除非您設定時間、處理數限制或是在彩現品質達到要求時手動停止，否則 Flamingo nXt 會持續細化彩現影像永不停止，手動停止彩現的方法有：
 {: .clear-img}
 
 * 按**停止彩現**按鈕，在目前的處理數完成後停止彩現。
@@ -46,8 +46,8 @@ Flamingo nXt 5.0 已內建基本照明，如何設定材質通常是彩現模型
   ![images/getting_started002.png](images/getting_started002.png)
   1. 請開啟 **Flamingo 材質 > 金屬**資料夾。
   ![images/getting_started003.png](images/getting_started004.png){: .wide-img}
-  1. 將**鉻**材質拖放至 Handle (握柄) 與 Metal Parts (金屬零件) 圖層。
-  1. 彩現模型，現在握柄與金屬零件以高反射度的鉻材質彩現。
+  1. 將**鉻**材質拖放至 Handle (搖臂) 與 Metal Parts (金屬零件) 圖層。
+  1. 彩現模型，現在搖臂與其它金屬零件以高反射度的鉻材質彩現。
   ![images/getting_started003.png](images/getting_started003.png)
   1. 參考以下列表將材質賦予給圖層：
 
