@@ -80,6 +80,6 @@
 ![images/diffuselight-001.png](images/diffuselight-001.png)
 漫射燈因為面積較大，可在物件上產生較大的反光，也有助於物件形狀的表達。
 ![images/blackeggskeyfillback.png](images/blackeggskeyfillback.png)
-攝影棚照明通常需要較大的明暗對比度，陰暗處與明亮處一樣重要，要達到這個目的必需對燈光做特殊安排，讓場景有明顯的陰暗與明亮區域的分別。
+攝影棚照明通常需要較大的明暗對比度，陰暗處與明亮處一樣重要，要達到此目的必需對燈光做特殊安排，讓場景有明顯的陰暗與明亮區域的分別。
 彩現的照明設定基本上與真實的攝影沒有什麼不同，所以您可以將討論攝影技術的書籍做為彩現的參考資料。
 Flamingo nXt 內建幾種預設的[照明設定組](lighting-tab.html#lighting-presets)，讓您可以快速完成模型的照明安排，[進階](lighting-advanced-tab.html)頁面的設定已針對不同的照明組別最佳化。
