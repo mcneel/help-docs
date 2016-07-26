@@ -14,7 +14,7 @@ Flamingo nXt 可在 Rhinoceros® 裡將模型彩現成為高品質而且真實�
 
 ## 安裝
 
-Flamingo nXt 5 需要 Rhino 5 SR13 才能執行。
+Flamingo nXt 5 需要 Rhino 5 64-bit SR13 才能執行。
 下載後請執行 RHI 安裝程式，開啟 Rhino，Flamingo nXt 5.0 會自動載入。
 
 請至 [https://www.rhino3d.com/store/upgrade/flamingo/nxt](https://www.rhino3d.com/store/upgrade/flamingo/nxt) 下載最新的 Flamingo。
