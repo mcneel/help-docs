@@ -10,7 +10,7 @@ Flamingo nXt creates high quality, photorealistic, still, and animation image fi
 
 Download and install Flamingo from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/evaluation).
 
-If you own a Flamingo nXt 3.0 license, you can upgrade to nXt 5 for free [here](https://www.rhino3d.com/store/upgrade/flamingo/nxt). 
+If you own a Flamingo nXt 3.0 license, please visit [here](https://www.rhino3d.com/store/upgrade/flamingo/nxt) to get a free upgrade. 
 
 You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo).
 
