@@ -24,12 +24,12 @@ Obtenez la dernière version de Flamingo ici : [https://www.rhino3d.com/store/u
 ## Documentation d'aide
 La documentation d'aide pour Flamingo est disponible en plusieurs langues :
 
-* [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
-* [Deutsch]({{baseurl}}/de/flamingo/5/help)
+* [Français]({{baseurl}}/fr/flamingo/5/help)
 * [English]({{baseurl}}/en/flamingo/5/help)
 * [Español]({{baseurl}}/es/flamingo/5/help)
-* [Français]({{baseurl}}/fr/flamingo/5/help)
+* [Deutsch]({{baseurl}}/de/flamingo/5/help)
 * [Italiano]({{baseurl}}/it/flamingo/5/help)
+* [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
 * [日本語]({{baseurl}}/jp/flamingo/5/help)
 * [한국어]({{baseurl}}/kr/flamingo/5/help)
 * [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
