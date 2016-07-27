@@ -113,29 +113,29 @@ Tamaño de las facetas de la malla de desplazamiento. El tamaño aumentará el d
 Normalmente una imagen de Flamingo se aplicará al canal del color principal de un material. El diálogo de opciones avanzadas de Flamingo especifica otros canales en los que puede repercutir el bitmap.  Estos canales se usan para efectos muy especiales.
 
 ####  Color base
-Es la opción predeterminada.  Afecta al [color](advanced-material-properties-main.html#color) de un material.
+Es la opción predeterminada.  Una imagen afectará en el [color](material-type-advanced.html#color) de un material.
 
 ####  Color especular
-Afecta al color del [canal de reflexión](advanced-material-properties-main.html#highlight-color) basado en el color de la imagen en ese punto.
+Afecta al color del [canal de reflexión](material-type-advanced.html#highlight-color) basado en el color de la imagen en ese punto.
 
 ####  Intensidad especular
-Cambia el [nivel de reflexión](advanced-material-properties-main.html#intensity) según la escala de grises de la imagen en ese punto.  Esta opción se usa a menudo en Conjunto de texturas como Mapa especular.
+Cambia el [nivel de reflexión](material-type-advanced.html#intensity) según la escala de grises de la imagen en ese punto.  Esta opción se usa a menudo en Conjunto de texturas como Mapa especular.
 
 ####  Definición del brillo
-Ajusta la definición vs. desenfoque del [brillo](advanced-material-properties-main.html#intensity) según el valor de la escala de grises del mapa en ese punto.
+Ajusta la definición vs. desenfoque del [brillo](material-type-advanced.html#intensity) según el valor de la escala de grises del mapa en ese punto.
 
 #### Forma de brillo
 {: #advanced-highlight-shape}
 Afecta a la forma del brillo.
 
 ####  Transparencia
-Repercute en la cantidad de [transparencia](advanced-material-properties-main.html#intensity) del material según la escala de grises de la imagen.
+Repercute en la cantidad de [transparencia](material-type-advanced.html#intensity) del material según la escala de grises de la imagen.
 
 ####  Translucidez
-Repercute en la cantidad de [translucidez](advanced-material-properties-transparency.html#translucency) del material según la escala de grises de la imagen.
+Repercute en la cantidad de [translucidez](material-type-advanced.html#translucency) del material según la escala de grises de la imagen.
 
 ####  Atenuación
-Repercute en la cantidad de [atenuación](advanced-material-properties-transparency.html#attenuation) del material según la escala de grises de la imagen.
+Repercute en la cantidad de [atenuación](material-type-advanced.html#attenuation) del material según la escala de grises de la imagen.
 
 #### Desfases X/Y
 {: #advanced-x-y-offset}
