@@ -100,7 +100,7 @@ title: 절차적 재질
 {% include_relative snippets/snippet-materialscaleandlock.md %}
 
 #### 밀도
-전체 패턴의 일부. 이 설정값을 높이면 반점의 상대적 크기도 커집니다.
+전체 패턴의 비율. 이 설정값을 높이면 반점의 상대적 크기도 커집니다.
 ![images/granitedensity.png](images/granitedensity.png)
 {% include_relative snippets/snippet-materialblend.md %}
 ![images/graniteblend.png](images/graniteblend.png)
@@ -120,7 +120,7 @@ title: 절차적 재질
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
 #### 결 너비
-베이스와 결이 서로에 대해, 석판에서의 상대적인 크기를 바꿉니다. 결 너비는 하나의 베이스 줄과 다음 줄까지 거리의 일부입니다. 값의 범위는 0 (영)부터 1까지이며, 0 은 결 구성 요소가 없는 상태이고, 1은 베이스 구성 요소가 없는 상태입니다.
+베이스와 결이 서로에 대해, 석판에서의 상대적인 크기를 바꿉니다. 결 너비는 하나의 베이스 줄과 다음 줄까지 거리의 비율입니다. 값의 범위는 0 (영)부터 1까지이며, 0 은 결 구성 요소가 없는 상태이고, 1은 베이스 구성 요소가 없는 상태입니다.
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
@@ -178,7 +178,7 @@ title: 절차적 재질
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
 
 #### 링 너비
-하나의 베이스 줄과 다음 줄 사이의 거리 일부입니다. 값의 범위는 0 (영)부터 1까지이며, 0 은 링 구성 요소가 없는 상태이고, 1은 베이스 구성 요소가 없는 상태입니다.
+하나의 베이스 줄과 다음 줄 사이의 거리 비율입니다. 값의 범위는 0 (영)부터 1까지이며, 0 은 링 구성 요소가 없는 상태이고, 1은 베이스 구성 요소가 없는 상태입니다.
 ![images/woodringwidth.png](images/woodringwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
