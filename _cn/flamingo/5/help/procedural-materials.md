@@ -2,18 +2,18 @@
 title: 程序材质
 ---
 
-#  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
+#  ![images/paint.svg](images/paint.svg) {{page.title}}
 程序材质由一种或多种材质复合而成，程序材质中的层级设置通过一组规则决定了要合并的材质之间是如何互相影响并合并在一起的。层级中显示出了材质的构成元素，您可以在层级列表中添加材质元素。对于标准材质，列表中只有一个元素：底色。
 
 每一种程序材质都有两个元素（子材质），一个元素可以由有另一个程序材质的两个元素组成，因此，复杂的材质可以由简单的材质组合而成，Flamingo nXt 的程序材质有下列几种：
 
-* [底色](#base)
-* [角度混合](#angular-blend)
-* [混合](#blend)
-* [大理石](#marble)
-* [花岗岩](#granite)
-* [拼贴](#tile)
-* [木纹](#wood)
+> [底色](#base)
+> [角度混合](#angular-blend)
+> [混合](#blend)
+> [大理石](#marble)
+> [花岗岩](#granite)
+> [拼贴](#tile)
+> [木纹](#wood)
 
 ##### 添加程序材质
 1. 在程序材质窗口中的基础材质上点击鼠标右键。
@@ -47,7 +47,7 @@ title: 程序材质
 内侧材质完全淡出的角度。
 起始角度与终止角度之间是内侧材质与外侧材质渐变的部分。
 
-下图中的起始角度![images/01.png](images/01.png){: .inline} 是 30 度（绿色圆圈），终止角度![images/02.png](images/02.png){: .inline} 是 60 度（红色圆圈）。
+下图中的起始角度![images/01.png](images/01.png) 是 30 度 (绿色圆圈)，终止角度![images/02.png](images/02.png) 是 60 度 (红色圆圈)。
 
 右图中内侧材质用白色表示，外侧材质用黑色表示。
 
