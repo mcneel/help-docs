@@ -1,28 +1,28 @@
 ---
 layout: fullwidth-page
-title: Getting Started with Flamingo
+title: Flamingo 入门
 ---
 
 <!-- TODO: This page mentions "Work in Progress" and "Flamingo Beta" and has to be updated once Flamingo has been released -->
 
-# ![images/flamingotab.svg](images/flamingotab.svg) Getting Started with Flamingo nXt®
-Flamingo nXt creates high quality, photorealistic, still, and animation image files from 3-D models inside Rhinoceros ®. Flamingo nXt 5 is an update to Flamingo which integrates with the built-in rendering features in Rhino 5.
+# ![images/flamingotab.svg](images/flamingotab.svg) Flamingo nXt® 入门
+Flamingo nXt 可以在 Rhinoceros ® 内部将模型渲染为高质量、照片级的静态与动画图片文件，Flamingo nXt 5 是 Flamingo 的升级版，并集合了 Rhino 5 内置渲染的功能。
 
-Download and install Flamingo from the [Flamingo nXt 5 Download](http://www.rhino3d.com/download/flamingo/5/evaluation).
+您可以在 [Flamingo nXt 5 下载](http://www.rhino3d.com/download/flamingo/5/evaluation)页面下载并安装 Flamingo。
 
-If you own a Flamingo nXt 3.0 license, please visit [here](https://www.rhino3d.com/store/upgrade/flamingo/nxt) to get a free upgrade license. 
+如果您拥有 Flamingo nXt 3.0 的授权，请访问[这里](https://www.rhino3d.com/store/upgrade/flamingo/nxt)获得免费更新。 
 
-You can join the technical discussion on the [Flamingo Discourse Forum](http://discourse.mcneel.com/c/rendering/flamingo).
+参与技术讨论，请访问 [Flamingo Discourse 论坛](http://discourse.mcneel.com/c/rendering/flamingo)。
 
-## Installation
+## 安装
 
-Rhino 5 64-bit Service Release 13 is required to run Flamingo nXt 5.
-After downloading and running the RHI installer, start up Rhino to load Flamingo nXt 5.0.
+运行 Flamingo nXt 5 需要 64 位的 Rhino 5 SR13。
+下载后通过 RHI 安装器安装完成以后，启动 Rhino 就可以载入 Flamingo nXt 5.0 了。
 
-Get the latest Flamingo here: [https://www.rhino3d.com/store/upgrade/flamingo/nxt](https://www.rhino3d.com/store/upgrade/flamingo/nxt)
+获取最新版 Flamingo 请访问这里: [https://www.rhino3d.com/store/upgrade/flamingo/nxt](https://www.rhino3d.com/store/upgrade/flamingo/nxt)
 
-## Help Documentation
-Help documentation for Flamingo comes in a few languages:
+## 帮助文档
+有以下几种语言的帮助文档供您查阅:
 
 * [中文(简体)]({{baseurl}}/cn/flamingo/5/help)
 * [Deutsch]({{baseurl}}/de/flamingo/5/help)
@@ -34,17 +34,17 @@ Help documentation for Flamingo comes in a few languages:
 * [한국어]({{baseurl}}/kr/flamingo/5/help)
 * [中文(繁體)]({{baseurl}}/tw/flamingo/5/help)
 
-## Getting Started
-On the Flamingo nXt menu, click Control Panel. The Flamingo nXt  Control Panel provides tabs for setting up the model for rendering, including:
+## 入门
+在 Flamingo nXt 功能表中，点击控制面板，Flamingo nXt  控制面板中用于设置渲染模型的选项卡包括:
 
-* [Materials](../help/material-editor.html)
-* [Lighting](../help/lighting-tab.html)
-* [Environment](../help/environment-tab.html)
-* [Render](../help/render-tab.html)
+* [材质](../help/material-editor.html)
+* [照明](../help/lighting-tab.html)
+* [环境](../help/environment-tab.html)
+* [渲染](../help/render-tab.html)
 
-## Flamingo information and support
-For technical support, tutorials, examples, and information about how to get started using Flamingo nXt, go to the [Flamingo nXt web site](http://nxt.flamingo3d.com/).
+## Flamingo 相关信息与支持
+获得技术支持、教学、案例以及入门 Flamingo nXt 的相关信息，请访问 [Flamingo nXt web site](http://nxt.flamingo3d.com/)。
 
- * [Tutorials](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
- * [Gallery](http://nxt.flamingo3d.com/photo)
- * [Technical support](http://discourse.mcneel.com/c/rendering/flamingo)
+ * [教学](http://nxt.flamingo3d.com/page/tutorials-and-documentation)
+ * [作品](http://nxt.flamingo3d.com/photo)
+ * [技术支持](http://discourse.mcneel.com/c/rendering/flamingo)
