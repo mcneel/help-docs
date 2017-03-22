@@ -1,186 +1,186 @@
 ---
-title: 程序材质
+title: Procedural Materials
 ---
 
 #  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
-程序材质由一种或多种材质复合而成，程序材质中的层级设置通过一组规则决定了要合并的材质之间是如何互相影响并合并在一起的。层级中显示出了材质的构成元素，您可以在层级列表中添加材质元素。对于标准材质，列表中只有一个元素：底色。
+The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
 
-每一种程序材质都有两个元素（子材质），一个元素可以由有另一个程序材质的两个元素组成，因此，复杂的材质可以由简单的材质组合而成，Flamingo nXt 的程序材质有下列几种：
+Each procedure combines two &quot;child&quot; materials using a specific method. Each of these child materials can in turn consist of a procedure, combining two children of its own. In this way, extremely elaborate materials can be built from simpler constituents. Procedures for combining materials include:
 
-* [底色](#base)
-* [角度混合](#angular-blend)
-* [混合](#blend)
-* [大理石](#marble)
-* [花岗岩](#granite)
-* [拼贴](#tile)
-* [木纹](#wood)
+* [Base](#base)
+* [Angular Blend](#angular-blend)
+* [Blend](#blend)
+* [Marble](#marble)
+* [Granite](#granite)
+* [Tile](#tile)
+* [Wood](#wood)
 
-##### 添加程序材质
-1. 在程序材质窗口中的基础材质上点击鼠标右键。
-1. 在功能表中，点击程序材质类型。
+##### To add a procedure
+1. Right-click anywhere in the Procedures window.
+1. On the menu, click a procedure type.
 
-##### 移除程序材质
- 1. 在程序材质窗口中，右键点击程序材质的名称。
- 2. 在功能表中，点击移除。
+##### To remove a procedure
+ 1. In the Procedures window, right-click the procedure name.
+ 2. On the menu, click Remove.
 
-## 底色
+## Base
 {: #base}
-基础材质是程序材质的默认材质，只有基本颜色，不包含其他材质。
+This is the basic simple material with no layers. This is the default procedure.
 
-## 角度混合
+## Angular Blend
 {: #angular-blend}
-有很多材质从不同角度观察，颜色、反射、透明度也不同，角度混合程序将两种材质混合后，观察角度的不同也将观察到不同效果。
+Many materials change color, reflection, or transparency based on the angle the material is viewed. The Angular Blend procedure blends between two materials based on the angle of view to the surface of the object.
 
 ![images/angularblendmaterials.png](images/angularblendmaterials.png)
-角度混合材质将两种材质进行混合从而产生特殊的效果， 需要分别设置内侧材质与外侧材质。
+The Angular Blend procedure blends between two different materials to create special effects. The two layers in the procedure are the Inner and the Outer Layer.
 
-#### 内侧材质
-物件正对视图的部分（０度）至起始角度之间是以纯内侧材质显示，可以将它视为物件的底色材质。
+#### Inner
+From 0 degrees from the viewpoint to the Start angle, the Inner component will show completely. Think of this as a base material.
 
-#### 外侧材质
-终止角度至偏离视图 90 度之间的部分是以纯外侧材质显示，可以将它视为类似亮光漆的涂层。
+#### Outer
+From the Stop angle to 90 degrees from the view, the Outer component will be the only material showing. Think of this as a coating.
 
-#### 起始角度
-外侧材质开始淡入的角度。
+#### Start angle
+The angle from the viewpoint at which the Outer component material starts.
 
-#### 终止角度
-内侧材质完全淡出的角度。
-起始角度与终止角度之间是内侧材质与外侧材质渐变的部分。
+#### Stop angle
+The angle from the viewpoint at which the Outer component material stops.
+Between the Start Angle and the Stop angle, the Inner and the Outer components blend.
 
-下图中的起始角度![images/01.png](images/01.png){: .inline} 是 30 度（绿色圆圈），终止角度![images/02.png](images/02.png){: .inline} 是 60 度（红色圆圈）。
+In the illustration below, the Start angle![images/01.png](images/01.png){: .inline} is 30 degrees (which in rendering translates to the the green circle on the right) and the Stop angle![images/02.png](images/02.png){: .inline} is 60 degrees (in the rendering that translates to the red circle).
 
-右图中内侧材质用白色表示，外侧材质用黑色表示。
+The image at the right shows the the Inner material as white, and the Outer material as black.
 
 ![images/angularblend-003.png](images/angularblend-003.png) ![images/angularblend-001.png](images/angularblend-001.png)
 
-* 0 至 30 度之间完全是白色。
-* 30 至 60 度之间是白色渐变至黑色的渐层范围。
-* 60 至 90 度之间完全是黑色。
+* Between 0 and 30 degrees from the viewpoint, you see white.
+* Between 30 and 60 degrees from the viewpoint, you see a gradient from white to black.
+* Between 60 and 90 degrees from the viewpoint, you see black.
 
-## 混合
+## Blend
 {: #blend}
-混合程序贴图由两个基本材质组成，可以控制两个材质的混合比例。Flamingo nXt 内建的材质库里的木纹材质有许多都是从混合程序贴图创建的，以混合数值控制木纹材质的反射度( 材质二具反射性质)。
+The Blend procedure combines two base components and controls the proportions of each. All of the standard library wood materials use a Blend procedure to change the finish of the wood from clear matte to dark shiny.
 ![images/blend-001.png](images/blend-001.png)
-混合程序贴图可以用混合值做整体的混合控制，或以一张图片来控制混合度。
+Blends work well changing an entire material definition by adding an overall color to a base patterned material.
 
-#### 混合
-调整整个材质中两个材质混合量。例如， 下图中的材质是由一个条纹材质与一个单一的绿色材质混合而成，左侧图片中条纹材质占有很大的比例，绿色只占很小很小的比例，中间图片中两种材质各占 50%，右边的图片条纹材质占很小的比例，绿色材质占很大比例。
+#### Blend
+Varies the percentage of each component material used in the final material. For instance, the material below shows a blend between the striped material and solid green color. The left image shows the slider to the left, showing a strong stripe material and weak green.  The middle image show the slider in the middle and a blended 50% striped and 50% green color.  The right image shows the slider to the right, showing a weak striped material with a strong green material.
 ![images/blendpercent.png](images/blendpercent.png)
 
-#### 使用图片
-使用图片像素的灰度值决定两个材质的显示比例，图片黑色的部分是显示材质一的部分，白色的部分是显示材质二的部分，灰色的部分是两个材质混合的部分。
+#### Use image
+An image can be used to control how two materials will interact. When using a Bitmap image the grayscale values of the pixels define where two component materials will blend. Use a grayscale image map to mediate between the first and second components. The First component will be placed where there is black in the bitmap pattern, and the Second component will be placed where there is white in the bitmap pattern.
 
-图例中的物件使用的混合程序贴图的两个材质完全一样，但两个材质的混合以三张不同的图片控制。
+In the image, the same materials are used for the first and second components, but the blend is controlled by three different bitmaps.
 ![images/blendmask.png](images/blendmask.png)
-控制材质混合的图片（遮罩）的分辨率会影响到材质的品质，使用高分辨率的图片会有较好的效果，但也会使用较多的内存。
+The resolution of the mask bitmap affects the material quality. Higher resolution bitmaps allow a viewpoint closer to the material with fewer quality issues, but they also use more memory.
 
-#### 使用 Alpha 通道
-如果使用的图片含有 Alpha 通道，可以使用 Alpha 通道来混合两种材质，不使用图片的灰阶值。
+#### Use Alpha channel
+If the image has an alpha channel, this can be used instead of the bitmap grayscale to determine where the colors blend.
 
-#### 反转
-对调两种材质在物体上的显示部分。
+#### Reverse
+The First component will be placed where there is white in the bitmap pattern, and the Second component will be placed where there is black in the bitmap pattern.
 
-#### 拼贴
-图片显示在物件上的大小是以模型单位计算，与图片的像素多少无关，例如您想让一张图片在一个 100X100 模型单位的平面上显示 5X10 的拼贴数，可以将拼贴的宽度设为 20，高度设为 10。
+#### Tiles
+The scale of the material is independent of the resolution of the bitmap used to define it. To scale the material correctly, decide how large an area in real units one copy of the bitmap represents. If the bitmap represents the height of six 4-unit tiles and the length represents twelve 4-unit tiles, the scale is 48 units in the x-direction and 24 units in the y-direction. This stretches the bitmap to the proper size for the pattern.
 
-#### 宽度
-图片在物件上显示的模型单位宽度。
+#### Width
+The width in pixels of a single instance of the image.
 
-#### 高度
-图片在物件上显示的模型单位高度。
+#### Height
+The height in pixels of a single instance of the image.
 
-## 花岗岩
+## Granite
 {: #granite}
-创建模拟花岗岩纹理的 3D 程序贴图，它是由底色与杂点两个材质组成，噪点是以随机值分布在底色上，有不规则纹理的材质都以使用这个程序贴图。
+Creates a 3-D material with solid pockets of a second material embedded in the Base component. The Granite procedure combines a randomly distributed Spot component in a Base component. The Granite procedure defines how the Base and Spot components combine. Granite procedures can be used for a variety of different materials including rust, sparkly plastic, and other randomly spotted materials.
 ![images/granitematerials.png](images/granitematerials.png)
 
-#### 底色/杂点
-底色与杂点两个材质的设置与一般材质完全一样。
+#### Base/Spot
+The Base and Spot components are two materials. Their properties are specified in the same way as any material.
 ![images/granitescale.png](images/granitescale.png)
 {% include_relative snippets/snippet-materialscaleandlock.md %}
 
-#### 密度
-设置杂点占材质面积的比例，数值越大杂点就越大。
+#### Density
+A fraction of the whole pattern. Increasing this setting increases the relative size of the spots.
 ![images/granitedensity.png](images/granitedensity.png)
 {% include_relative snippets/snippet-materialblend.md %}
 ![images/graniteblend.png](images/graniteblend.png)
 
-## 大理石
+## Marble
 {: #marble}
-创建模拟大理石纹理的 3D 程序贴图，它是由底色与脉络两个材质组成。
+Creates alternating slabs of Base and Vein components. The Marble procedure defines how the Base and Vein components combine. The slabs are infinitely large, and the orientation of the object affects the way the slabs are oriented with respect to the object.
 
 ![images/marbled.png](images/marbled.png)
 
-大理石程序贴图可以控制底色与脉络如何结合，物件未设置[贴图轴](properties-object.html#mapping)时，物件上的大理石纹理会因为物件的定位而改变。
+Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object.
 ![images/materialunmapped.png](images/materialunmapped.png)
-*没有贴图轴（左）与有贴图轴（右）。*
+*No texture mapping (left). With texture mapping (right).*
 
-#### 底色/脉络
-底色与脉络两个材质的设置与一般材质完全一样。
+#### Base/Vein
+The Base and Vein components are two materials. Their properties are specified in the same way as any material.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/marblescale.png](images/marblescale.png)
 
-#### 脉络宽度
-这个设置是底色与脉络的宽度比例，例如将脉络宽度设为 0.9 时，底色的宽度为 0.1。将脉络宽度设置为 1 时完全没有底色，设为 0 时完全没有脉络。
+#### Vein Width
+Alters the relative size of the slabs to each other. Vein Width is a fraction of the distance from one Base stripe to the next. Values range from 0 (zero) for no Vein component to 1 for no Base component.
 ![images/marbleveinwidth.png](images/marbleveinwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/marbleblending.png](images/marbleblending.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/marbleturbulence.png](images/marbleturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/marbleveneer.png](images/marbleveneer.png)
-*使用（左）与未使用（右）饰片选项。*
+*Veneer (left), normal (right).*
 
-## 拼贴
+## Tile
 {: #tile}
-拼贴是一种 2D 程序贴图，使用[贴图轴](properties-object.html#mapping)可以控制拼贴方格的走向，它由底色与贴缝两个元件组成，这两个元件可以是材质或程序贴图。
+Tile is a 2-D material. Texture [mapping](properties-object.html#mapping) for the objects controls the orientation of the material on the object. The Tile material combines a Base component and a Joint component. Each of these materials can also include any other material.
 ![images/tile materials.png](images/tile materials.png)
-宽度与高度使用不同的比例可以做出一些特殊的效果，例如细长的拼贴可以用来做为房子外墙的材质使用。
+Scale tile differently in each direction for special effects. For example, use a tile material that is extremely long in one direction to create siding materials.
 
-#### 拼贴
-设置拼贴方格的大小，宽度与高度可以分开设置。
+#### Tile
+Sets the overall tile size. The width and height sizes can be set independently.
 ![images/tilescale.png](images/tilescale.png)
 
-#### 宽度/高度
-设置拼贴中的一格的宽度与高度。
+#### Width/Height
+Specifies the width and height of the tiles.
 {% include_relative snippets/snippet-lock-widthheight.md %}
 
-#### 贴缝
-拼贴的贴缝设置。
+#### Joint
+Specifies the size of the joint material.
 ![images/tilejointsize.png](images/tilejointsize.png)
 
-#### 水平/垂直贴缝的宽度
-设置水平贴缝与垂直贴缝的宽度。
+#### Horizontal joint/Vertical joint
+Specifies the width and height of the joint material.
 
-#### 锁定
-维持水平贴缝与垂直贴缝宽度的比例。
+#### Lock
+Maintains the ratio between the Horizontal and Vertical joint sizes.
 
-#### 偏移
-将相邻的拼贴方格错开，设置 0.5 可以产生类似砖墙上砖块排列的方式。将大理石程序贴图代入元件可以产生大理石地砖的材质。
+#### Offset
+Provides a relative horizontal offset per vertical tile. For example, use a setting of .5 to produce a standard running bond. This allows modeling of material such as marble tile, without the effect of having the entire floor hewn from the same block of marble.
 ![images/tileoffset.png](images/tileoffset.png)
 
-#### 拼贴变化
-拼贴的每一格的花样不规则变化，产生类似马赛克瓷砖的效果。
+#### Vary Tiles
+Add randomness to the material color for each tile. This makes it possible to model material such as non-uniform bricks.
 
 #### R/G/B
-使拼贴的每一格的颜色随机变化。
+Modifies the red, green, and blue color components.  This will slightly vary the base material of each tile randomly.
 ![images/tilevarycolor.png](images/tilevarycolor.png)
 
 #### X/Y/Z
-使拼贴的每一格的图片随机偏移。
+Offsets the material from the world origin for each tile randomly. Do this if a seam that marks the beginning of the material appears in an inappropriate place.
 ![images/tilevaryxyz.png](images/tilevaryxyz.png)
 
-## 木纹
+## Wood
 {: #wood}
-底色是木头的原色，环状纹是木头的年轮，您可以控制环状纹的宽度与变化度及两個材质如何混合。
+Wood consists of concentric cylinders of alternating Base and Ring components. The Wood settings define how the Base and Ring components combine.
 
-如果不是近距离观察物件，就可以使用这种方法创建木纹，如果需要渲染木纹的细节，请使用[贴图材质](material-type-simple.html#textured)创建木纹。木纹程序贴图的渲染与物件的距离远近有关，物件很远时，木纹会以单一颜色取代，这样可以在不牺牲渲染品质的情况下加快渲染速度。这个木纹程序贴图的优点是可以做出木纹横剖面纹理（年轮）与纵剖面纹理（平行纹）对齐的效果。
+Use this method to create wood materials if objects are not closely viewed. If detailed wood is needed, use a [Texture material](material-type-simple.html#textured) to do wood.  If the viewpoint is not close to the wood, a solid color can be used to take the place of wood without sacrificing image quality. This allows faster rendering. An additional advantage of using a wood material is that when rendering different sides of an object, the wood grain will look correct. End grain will show on the ends and parallel grain will show on the sides of an object.
 ![images/woodmaterials.png](images/woodmaterials.png)
 
-#### 底色/环状纹
-底色与环状纹两个材质的设置与一般材质完全一样。
+#### Base/Ring
+The Base and Ring components are two materials. Their properties are specified in the same way as any material.
 {% include_relative snippets/snippet-materialscaleandlock.md %}![images/woodscale.png](images/woodscale.png)
 
-#### 环状纹宽度
-这个设置是底色与环状纹的宽度比例，将环状纹宽度设置为 1 时完全没有底色，设置为 0 时完全没有环状纹。
+#### Ring Width
+A fraction of the distance between one Base stripe and the next. Values range from 0 (zero) for no Ring component to 1 for no Base component.
 ![images/woodringwidth.png](images/woodringwidth.png)
 {% include_relative snippets/snippet-materialblend.md %}![images/woodblend.png](images/woodblend.png)
 {% include_relative snippets/snippet-materialturbulence.md %}![images/woodturbulence.png](images/woodturbulence.png)
 {% include_relative snippets/snippet-materialveneer.md %}![images/woodveneer.png](images/woodveneer.png)
-使用（左）与未使用（右）饰片选项。
+Veneer (left), normal (right).
