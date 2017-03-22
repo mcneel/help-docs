@@ -103,7 +103,7 @@ Controla el tamaño del área focal. Si la Intensidad se ajusta a cero, toda la 
 {: #focaldistance}
 Define la distancia para la profundidad de campo. Es la distancia alrededor del punto de profundidad de campo en el que los objetos estarán enfocados. Si la Distancia focal es de diez unidades, los objetos alrededor de siete unidades detrás del punto de profundidad de campo y tres unidades delante del punto de profundidad de campo estarán enfocados.
 
-#### Designar >>
+#### Designar
 Designa un punto en el modelo para la distancia focal.
 
 ## Motor de renderizado

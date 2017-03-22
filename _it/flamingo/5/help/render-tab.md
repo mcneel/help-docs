@@ -103,7 +103,7 @@ Controlla le dimensioni della zona a fuoco. Impostando l'Intensità sullo zero, 
 {: #focaldistance}
 Imposta la distanza per la profondità di campo. La distanza, rispetto al punto della profondità di campo, entro la quale gli oggetti sono a fuoco. Se la Distanza focale è impostata su 10 unità, gli oggetti che si trovano a circa 7 unità dietro al punto della profondità di campo e a circa 3 unità davanti al punto della profondità di campo saranno a fuoco.
 
-#### Selezione >>
+#### Selezione
 Specificare un punto nel modello per la distanza focale.
 
 ## Motore di rendering

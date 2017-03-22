@@ -103,7 +103,7 @@ Contrôle la taille de la zone de mise au point. Une intensité nulle permet d'a
 {: #focaldistance}
 Définit la distance pour la profondeur de champ. La distance autour du point du champ de profondeur à laquelle les objets seront nets. Si la Distance focale est définie à 10 unités, les objets se trouvant à 7 unités derrière le point du champ de profondeur et à 3 unités devant seront nets.
 
-#### Sélectionner >>
+#### Sélectionner
 Choisissez un point dans le modèle pour la distance focale.
 
 ## Moteur de rendu

@@ -103,7 +103,7 @@ Kontrolliert die Größe des Fokusbereichs. Wenn die Intensität auf Null einges
 {: #focaldistance}
 Definiert den Abstand für die Tiefenschärfe. Der Abstand um den Tiefenschärfepunkt, an dem Objekte scharf sind. Wenn die Hyperfokale Distanz auf zehn Einheiten eingestellt ist, sind Objekte sieben Einheiten hinter dem Schärfentiefenpunkt und drei Einheiten davor scharf.
 
-#### Wählen >>
+#### Wählen
 Einen Punkt im Modell für die Brennweite auswählen.
 
 ## Render Engine
