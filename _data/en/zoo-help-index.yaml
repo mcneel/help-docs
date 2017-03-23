@@ -8,7 +8,7 @@ main_index:
         - name: Features
           path: overview.html
           anchor: features
-        - name: What's New?
+        - name: What
           path: overview.html
           anchor: whats_new
 
@@ -17,15 +17,19 @@ main_index:
       topics:
         - name: Adding Licenses
           path: install.html
-        - name: Assign Materials
-          path: material_assignment.html
-        - name: Basic Material Properties
-          path: material-type-simple.html
-        - name: Advanced Material Properties
-          path: material-type-advanced.html
-        - name: Material Image Properties
-          path: material-image-properties.html
-        - name: Procedural Material Types
-          path: procedural-materials.html
-        - name: Color Selector
-          path: select-color.html
+        - name: Adding Rhino Licenses
+          path: install.html
+        - name: Manage Licenses
+          path: install.html
+        - name: Options
+          path: install.html
+        - name: Advanced Topics
+          path: install.html
+
+    - name: Troubleshooting
+      anchor: troubleshoot
+      topics:
+        - name: Viewing Events
+          path: toubleshoot.html
+        - name: Technical Support
+          path: troubleshoot.html
