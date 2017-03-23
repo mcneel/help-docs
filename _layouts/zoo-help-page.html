@@ -1,0 +1,123 @@
+---
+layout: zoobootstrap
+title: Zoo License Manager Help Index
+description: The Zoo keeps your Rhino licenses in one place and lets you share them with Rhino users on your network.
+---
+{% case page.language %}
+  {% when 'cn' %}
+    {%assign local_categories = site.data.cn.zoo-help-index.main_index %}
+  {% when 'de' %}
+    {%assign local_categories = site.data.de.zoo-help-index.main_index %}
+  {% when 'en' %}
+    {%assign local_categories = site.data.en.zoo-help-index.main_index %}
+  {% when 'es' %}
+    {%assign local_categories = site.data.es.zoo-help-index.main_index %}
+  {% when 'fr' %}
+    {%assign local_categories = site.data.fr.zoo-help-index.main_index%}
+  {% when 'it' %}
+    {%assign local_categories = site.data.it.zoo-help-index.main_index %}
+  {% when 'jp' %}
+    {%assign local_categories = site.data.jp.zoo-help-index.main_index %}
+  {% when 'kr' %}
+    {%assign local_categories = site.data.kr.zoo-help-index.main_index %}
+  {% when 'tw' %}
+    {%assign local_categories = site.data.tw.zoo-help-index.main_index %}
+  {% else %}
+    {%assign local_categories = site.data.en.zoo-help-index.main_index %}
+{% endcase %}
+
+<div class="container-fluid">
+
+<div class="row-fluid">
+    <!--Nav Bar -->
+    <nav class="col-xs-0 col-md-3 bs-docs-sidebar">
+        <ul id="sidebar" class="nav nav-stacked sitenav fixed">
+          {% assign first_toc = true %}
+          <li><a href="{{site.baseurl}}/{{page.language}}/zoo/6/help/{% if local_categories.anchor != null %}#{{local_categories.anchor}}{% endif %}">{{local_categories.name}}</a></li>
+          {% for category in local_categories.categories %}
+		    <li><a href="{{site.baseurl}}/{{page.language}}/zoo/6/help/{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
+              {% for topic in category.topics %}
+                {% if page.url contains topic.path and first_toc %}
+                {% assign first_toc = false %}
+                  <!-- Find the h1 handle and title -->
+                  {% if content contains '<h1 id="' %}
+                  {% assign splitAtFirstHeader = content | split:'<h1 id="' %}
+                  {% assign firstSideOfFirstHeader = splitAtFirstHeader[1] %}
+                  {% assign dividedMainTitle = firstSideOfFirstHeader | split:'<' %}
+                  {% assign firstSideOfDividedMainTitle = dividedMainTitle[0] %}
+                  {% assign titleToProcess = firstSideOfDividedMainTitle | split:'">' %}
+                  {% assign mainTitleHandle = titleToProcess[0] %}
+                  <!-- If there is an img in the h1, strip it -->
+                  {% if dividedMainTitle[1] contains "img " %}
+                    {% assign titleToProcess = dividedMainTitle[1] | split:'/>' %}
+                  {% endif %}
+                  {% assign mainTitleTitle = titleToProcess[1] %}
+                  <li>
+                    <a href="#{{ mainTitleHandle }}">{{ mainTitleTitle }}</a>
+
+                    <ul class="nav nav-stacked">
+                      <!-- Find the h2 group and any h3 subgroups -->
+                      {% assign groups = content | split:'<h2 id="' %}
+
+                      {% for group in groups offset:1 %}
+                        {% assign dividedGroup = group | split:'<' %}
+                        {% assign groupToProcess = dividedGroup[0] %}
+                        {% assign groupHeading = groupToProcess | split:'">' %}
+                        {% assign groupHandle = groupHeading[0] %}
+                        <!-- If there is a heading that is a link, strip it -->
+                        {% if dividedGroup[1] contains "a href" %}
+                          {% assign groupHeading = dividedGroup[1] | split:'">' %}
+                        {% endif %}
+                        {% assign groupTitle = groupHeading[1] | truncate: 40 %}
+                        <li>
+                          <a href="#{{groupHandle}}">{{ groupTitle }}</a>
+
+                          {% if group contains '<h3 id="' %}
+                            <ul class="nav nav-stacked">
+                              {% assign subgroups = group | split:'<h3 id="' %}
+
+                              {% for subgroup in subgroups offset:1 %}
+                                {% assign dividedSubgroup = subgroup | split:'<' %}
+                                {% assign subgroupToProcess = dividedSubgroup[0] %}
+                                {% assign subgroupHeading = subgroupToProcess | split:'">' %}
+                                {% assign subgroupHandle = subgroupHeading[0] %}
+                                <!-- Strip a leading img if it is in the header-->
+                                {% if dividedSubgroup[1] contains "img " %}
+                                  {% assign subgroupHeading = dividedSubgroup[1] | split:'/>' %}
+                                {% elsif dividedSubgroup[1] contains "a href" %}
+                                  {% assign subgroupHeading = dividedSubgroup[1] | split:'">' %}
+                                {% endif %}
+                                {% assign subgroupTitle = subgroupHeading[1] | truncate: 32 %}
+                                <li>
+                                    <a href="#{{subgroupHandle}}">{{ subgroupTitle }}</a>
+                                </li>
+                              {% endfor %}
+
+                            </ul>
+                          {% endif %}
+
+                        </li>
+                      {% endfor %}
+                    {% endif %}
+
+                    </ul>
+
+                  </li>
+                {% endif %}
+              {% endfor %}
+          {% endfor %}
+        </ul>
+    </nav>
+    <!--Main Content -->
+    <div class="col-xs-12 col-md-9">
+      <!--<div class="post">-->
+
+        <article class="post-content">
+          {{ content }}
+        </article>
+
+      <!--</div>-->
+
+    </div>
+</div>
+</div>

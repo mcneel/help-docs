@@ -57,19 +57,24 @@ defaults:
 
   -
     scope:
-      path: ""
-      type: en
+      path: "en"
     values:
-      language: en
+      language: "en"
+      lang: "en"
+  -
+    scope:
+      path: "en/flamingo"
+    values:
       productname: "Flamingo nXt"
       productpath: flamingo
-      productversionpath: "5"
       layout: flamingo-toc-page
   -
     scope:
       path: "en/flamingo/5/help"
       type: en
     values:
+      productversionpath: "5"
+      type: "help"
       layout: flamingo-toc-page
       collectionname: "Help"
   -
@@ -82,15 +87,11 @@ defaults:
       sort: 1
   -
     scope:
-      path: "en/rhino"
-      type: en
+      path: "en/zoo/"
     values:
-      language: en
-      productname: "Rhino"
-      productversionpath: "5"
-      type: "guides_topic"
-      layout: flamingo-guide-page
-      collectionname: "Guides"
+      productname: "Zoo License Manager"
+      productpath: zoo
+      layout: zoo-guide-page
       sort: 1
   -
     scope:

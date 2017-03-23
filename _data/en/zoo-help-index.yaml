@@ -1,0 +1,31 @@
+main_index:
+  name: Zoo Help Topics
+  anchor: all_topics
+  categories:
+    - name: Overview
+      anchor: overview
+      topics:
+        - name: Features
+          path: overview.html
+          anchor: features
+        - name: What's New?
+          path: overview.html
+          anchor: whats_new
+
+    - name: Installation
+      anchor: install
+      topics:
+        - name: Adding Licenses
+          path: install.html
+        - name: Assign Materials
+          path: material_assignment.html
+        - name: Basic Material Properties
+          path: material-type-simple.html
+        - name: Advanced Material Properties
+          path: material-type-advanced.html
+        - name: Material Image Properties
+          path: material-image-properties.html
+        - name: Procedural Material Types
+          path: procedural-materials.html
+        - name: Color Selector
+          path: select-color.html
