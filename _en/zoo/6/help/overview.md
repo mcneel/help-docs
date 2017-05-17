@@ -1,14 +1,6 @@
 ---
 title: Zoo License Manager Help
 description: The Zoo keeps your Rhino licenses in one place and lets you share them with Rhino users on your network.
-productname: Zoo License Manager
-language: en
-productpath: zoo
-productversionpath: 6
-type: help
-collectionname: Help
-keywords: ['zoo', 'rhinoceros', 'license', 'manager']
-layout: zoo-help-page
 ---
 
 # Overview

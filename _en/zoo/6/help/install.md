@@ -1,100 +1,48 @@
 ---
 title: Zoo License Manager Help
 description: The Zoo keeps your Rhino licenses in one place and lets you share them with Rhino users on your network.
-productname: Zoo License Manager
-language: en
-productpath: zoo
-productversionpath: 6
-type: help
-collectionname: Help
-keywords: ['zoo', 'rhinoceros', 'license', 'manager']
-layout: zoo-help-page
 ---
 
-# Installation
+## Installation
 
 To begin using the Zoo:
 
 - The Zoo requires the Microsoft .NET Framework 4.
 - [Download](http://wiki.mcneel.com/zoo/home) and install the Zoo on a Windows-based server or workstation.
 - Make sure **TCP Port 80 (HTTP)** is open on any firewall software that is running on the server or workstation.
-- Run the **Zoo Administrator **(ZooAdmin.exe)** **and add the license keys for Rhino or your Rhino-based products.
+- Run the **Zoo Administrator (ZooAdmin.exe)** and add the license keys for Rhino or your Rhino-based products.
 - Install Rhino or your Rhino-based products. During the installation, select **Network Node** as your license type and specify either the host name or IP address of your Zoo server.
-- If you already have Rhino installed, then launch Rhino and click **Tools → Options → Licenses**. Select your Rhino license and click **Convert**. Then, close Rhino and restart. At startup, select **Network Node** as your license type and specify either the host name or IP address of your Zoo server.
 
-# Adding Licenses
+If you already have Rhino installed, then launch Rhino and click **Tools → Options → Licenses**. Select your Rhino license and click **Convert**. Then, close Rhino and restart. At startup, select **Network Node** as your license type and specify either the host name or IP address of your Zoo server.
 
-To add licenses to the Zoo, run the **Zoo Administrator **(ZooAdmin.exe), and then click **Edit → Add**.
+## Adding Licenses
 
-![zoo_add_license.png](http://docs.mcneel.com/zoo/5/en/images/zoo_add_license.png)
+When you add a Rhino 5 license to the Zoo, you will be asked to validate the license online. Rhino 5 licenses must be validated before they can be used.
 
-To add licenses to the Zoo:
+> Critical: if you are upgrading to Rhino 5, you need to keep track of which previous version CD-Key you used to upgrade. You can only use each previous version CD-Key once.
 
-- Select your product type from the drop down list.
+The only piece of information used during license verification is your CD-Key, which is included when you buy Rhino.
 
-- Enter the registered owner and organization of the product.
+Registration is not required, nor is any personal information. No computer-specific information, or information derived from your computer is sent to Robert McNeel & Associates.
+  
+To add licenses to the Zoo, run the **Zoo Administrator (ZooAdmin.exe)**, and then click **Edit → Add**.
 
-- Enter your licence code or CD key.
+![images/rhinoemail0.png](images/rhinoemail0.png){:width="300px"}
 
-- Click **OK**.
+1. Select your product type from the drop down list.
+1. Enter the registered owner and organization of the product.
+1. Enter your licence code or CD key.
+1. Click **OK** begin license validation.
+1. Enter your E-mail Address  ![images/rhinovalidate1.png](images/rhinovalidate1.png){:width="300px"}
+1. Enter Previous Version CD-Key (Upgrade Only) ![images/rhinovalidate2.png](images/rhinovalidate2.png){:width="300px"}
+1. Enter Registration Information (Optional) ![images/rhinovalidate2.png](images/rhinovalidate2.png){:width="300px"}  ![images/rhinovalidate3.png](images/rhinovalidate3.png){:width="300px"}
+1. Validation Complete ![rhinovalidate4.png] ![images/rhinovalidate4.png](images/rhinovalidate4.png){:width="300px"}
 
-  [Home](http://docs.mcneel.com/zoo/5/en/zoo.htm) > [Installation & Configuration](http://docs.mcneel.com/zoo/5/en/installation/installation.htm) > Adding Rhino licenses
+## Managing Licenses
 
-  # Adding Rhino Licenses
+Licenses can be managed by running the **Zoo Administrator (ZooAdmin.exe)**.
 
-  When you add a Rhino 5 license to the Zoo, you will be asked to validate the license online. Rhino 5 licenses must be validated before they can be used.
-
-  Critical: if you are upgrading to Rhino 5, you need to keep track of which previous version CD-Key you used to upgrade. You can only use each previous version CD-Key once.
-
-  The only piece of information used during license verification is your CD-Key, which is included when you buy Rhino.
-
-  Registration is not required, nor is any personal information. No computer-specific information, or information derived from your computer is sent to Robert McNeel & Associates.
-
-  ## Add a Rhino license
-
-  To add licenses to the Zoo, run the **Zoo Administrator **(ZooAdmin.exe), and then click **Edit → Add**.
-
-  ![zoo_add_license.png](http://docs.mcneel.com/zoo/5/en/images/zoo_add_license.png)
-
-  To add licenses to the Zoo:
-
-  - Select **Rhinoceros 5.0** from the drop down list.
-  - Enter the registered owner and organization of the product.
-  - Enter your licence code or CD key.
-  - Click **OK **begin license validation.
-
-  ![rhinovalidate1.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate1.png)
-
-   Enter your E-mail Address
-
-  ![rhinovalidate2.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate2.png)
-
-   Enter Previous Version CD-Key (Upgrade Only)
-
-  ![rhinovalidate3.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate3.png)
-
-   Enter Registration Information (Optional)
-
-  ![rhinovalidate4.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate4.png)
-
-  ![rhinovalidate5.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate5.png)
-
-  ![rhinovalidate6.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate6.png)
-
-   Ready to Validate
-
-  ![rhinovalidate7.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate7.png)
-
-  Validation Complete
-
-  ![rhinovalidate8.png](http://docs.mcneel.com/zoo/5/en/images/rhinovalidate8.png)
-
-
-# Managing Licenses
-
-Licenses can be managed by running the **Zoo Administrator **(ZooAdmin.exe).
-
-![zoo_manage_licenses.png](http://docs.mcneel.com/zoo/5/en/images/zoo_manage_licenses.png)
+![images/zoo_manage_licenses_blurred.png](images/zoo_manage_licenses_blurred.png){:width="600px"}
 
 Zoo licenses have three states, check can be viewed in the Zoo Administrator:
 
@@ -122,11 +70,15 @@ Note, checking in licenses that are still checked out can lead to license confli
 
 The Zoo allows administrators and users to monitor license usage from the convenience of their web browser. Just visit the "status" page provide by your Zoo server by entering:
 
+```
 http://<zoo_server_host_name>/status
+```
 
 into your favorite web browser. For example, if your Zoo server's host name is **zooserver.mycorp.com**, then you'd enter:
 
+```
 http://zooserver.mycorp.com/status
+```
 
 #### Exporting Serial Numbers
 
@@ -136,7 +88,9 @@ The Zoo can export a comma-separated-value (.CSV) file that contains the serial 
 
 The Zoo stores licenses in the following folder:
 
+```
 %PROGRAMDATA%\McNeel\Zoo\5.0\Licenses
+```
 
 Note, Zoo license files cannot be moved from Zoo server to another Zoo server.
 
@@ -146,13 +100,15 @@ Also note, it is not possible to recover lost product license codes or CD keys f
 
 The Zoo stores usage tracking files in the following folder:
 
+```
 %PROGRAMDATA%\McNeel\Zoo\5.0\Usage
+```
 
-## Options
+## Zoo Options
 
-To configure Zoo options, run the Zoo Administrator (ZooAdmin.exe), and then click Tools → Options.
+To configure Zoo options, run the **Zoo Administrator (ZooAdmin.exe)**, and then click Tools → Options.
 
-zoo_options.png
+![images/zoo_options.png](images/zoo_options.png){:width="600px"}
 
 #### License Recovery
 

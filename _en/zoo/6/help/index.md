@@ -1,14 +1,6 @@
 ---
 title: Zoo License Manager Help Index
 description: The Zoo keeps your Rhino licenses in one place and lets you share them with Rhino users on your network.
-productname: Zoo License Manager
-language: en
-productpath: zoo
-productversionpath: 6
-type: help
-collectionname: Help
-keywords: ['zoo', 'rhinoceros', 'license', 'manager']
-layout: zoo-help-page
 ---
 
 <!-- Do not edit the below section. The source for the Help index can be found in the _data folder in the help_index.yaml file -->

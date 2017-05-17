@@ -11,9 +11,13 @@ main_index:
         - name: What
           path: overview.html
           anchor: whats_new
-
+        - name: System Requirements
+          path: overview.html
+          anchor: system_requirements
     - name: Installation
       anchor: install
+    - name: Managing Licenses
+      anchor: licenses
       topics:
         - name: Adding Licenses
           path: install.html
@@ -21,11 +25,17 @@ main_index:
           path: install.html
         - name: Manage Licenses
           path: install.html
+        - name: Remote License Monitoring
+          path: install.html
         - name: Options
           path: install.html
-        - name: Advanced Topics
+    - name: Advanced Topics
+      anchor: advanced
+      topics:
+        - name: Finding the Zoo
           path: install.html
-
+        - name: Moving the Zoo
+          path: install.html
     - name: Troubleshooting
       anchor: troubleshoot
       topics:
