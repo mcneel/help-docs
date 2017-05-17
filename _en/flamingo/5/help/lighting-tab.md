@@ -1,7 +1,6 @@
 ---
 title: Lighting Presets
 ---
-
 # ![images/flamingotab.svg](images/flamingotab.svg){: .inline} {{page.title}}
 Lighting is the most important and most neglected consideration when creating images. It is not just a way to illuminate the model. Lighting sets the mood and is a key ingredient in determining the composition.
 

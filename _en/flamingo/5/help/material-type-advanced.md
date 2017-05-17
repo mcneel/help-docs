@@ -1,7 +1,6 @@
 ---
 title: Advanced Material Properties
 ---
-
 # ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 
 ![images/bunchofmaterials.png](images/bunchofmaterials.png)

@@ -1,7 +1,6 @@
 ---
 title: Ground plane
 ---
-
 # {{page.title}}
 {: #ground-plane}
 

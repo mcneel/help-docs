@@ -1,7 +1,6 @@
 ---
 title: Material Assignments
 ---
-
 # ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Objects in the scene have a material source. This is the place where they adopt their rendering material.  Materials can be assigned in different ways. The method used to assign materials has a great effect on how easy the model is to change and maintain in the future.
 

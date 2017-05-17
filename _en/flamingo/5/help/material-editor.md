@@ -1,7 +1,6 @@
 ---
 title: Materials Editor Panel
 ---
-
 # ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 Materials contain the specification for color, reflectivity, transparency, textures, and bump-maps of a surface finish. All materials have basic settings. The default material is white and matte, with no reflectivity or transparency. For the best results use Flamingo specific materials.
 

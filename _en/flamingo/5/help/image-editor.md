@@ -1,7 +1,6 @@
 ---
 title: Image Editor
 ---
-
 # {{page.title}}
 The nXt Image Editor can edit native image files (.nXtImage) produced by any of the nXt platforms. These native files retain all of the information gathered during rendering.
 By using the nXt Image Editor, you can:

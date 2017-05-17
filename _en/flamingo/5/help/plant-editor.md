@@ -1,8 +1,6 @@
 ---
 title: Plant Editor
 ---
-<!-- TODO: This could use an update. But the material is a start.  Let's localize what is here.  We can fill in the details later.-->
-
 # ![images/plants.svg](images/plants.svg){: .inline} {{page.title}}
 {: #tree-editor}
 

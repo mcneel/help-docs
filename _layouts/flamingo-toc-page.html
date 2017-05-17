@@ -35,7 +35,7 @@ layout: flbootstrap
           {% for category in local_categories.categories %}
 		    <li><a href="{{site.baseurl}}/{{page.language}}/flamingo/5/help/{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
               {% for topic in category.topics %}
-                {% if page.url contains topic.path and first_toc %}
+               {% if page.url contains topic.path and first_toc %}
                 {% assign first_toc = false %}
                   <!-- Find the h1 handle and title -->
                   {% if content contains '<h1 id="' %}

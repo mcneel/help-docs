@@ -1,7 +1,6 @@
 ---
 title: Color Selector
 ---
-
 # ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 The color selector is used for many material groups and properties.  In all cases, it works in a similar way.
 

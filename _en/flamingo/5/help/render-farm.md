@@ -1,7 +1,6 @@
 ---
 title: Farm Rendering
 ---
-
 # {{page.title}}
 The Flamingo nXt Render Farm uses the power of several computers to render single images, batch jobs of multiple images or view-based animations. Neither Rhino nor Flamingo nXt is required on the computers used only as render farm clients.
 

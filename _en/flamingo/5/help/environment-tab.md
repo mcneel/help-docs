@@ -1,7 +1,6 @@
 ---
 title: Environment Panel
 ---
-
 # ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
 {: #environment-tab}
 Environments are not only what can be seen in the background of a rendering, but control an infinite sphere surrounding the model. Objects within the scene will reflect and refract the environment. The environment sphere is not an object that you can select, but a reference surface for background effects.

@@ -1,7 +1,6 @@
 ---
 title: Channels
 ---
-
 # ![images/render.svg](images/render.svg){: .inline} {{page.title}}
 {: #channel}
 A very useful feature in Flamingo nXt 5 is the ability to set lights on one of eight channels. Each light source in the drawing, including the sun and sky, can be assigned to a channel. At render time, the light from each channel is put on its own layer.  Then after the rendering is finished, the channels can be adjusted in strength.  The change is real time without the need to re-render.  

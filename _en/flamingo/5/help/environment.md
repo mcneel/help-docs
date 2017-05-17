@@ -1,7 +1,6 @@
 ---
 title: Flamingo Environment
 ---
-
 # ![images/environment.svg](images/environment.svg){: .inline} {{page.title}}
 There are many types of [environments in Rhino](http://docs.mcneel.com/rhino/5/help/en-us/commands/environmenteditor.htm). This topic will address the Flamingo Environment type.
 

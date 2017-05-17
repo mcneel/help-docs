@@ -1,7 +1,6 @@
 ---
 title: Automated rendering
 ---
-
 # {{page.title}}
 
 

@@ -1,8 +1,6 @@
 ---
 title: Options Flamingo nXt
 ---
-
-
 # ![images/options.svg](images/options.svg){: .inline} {{page.title}}
 These settings apply to the Flamingo application.  Making changes here changes how Flamingo runs all the time.
 

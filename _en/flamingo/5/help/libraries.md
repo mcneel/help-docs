@@ -1,7 +1,6 @@
 ---
 title: Libraries Panel
 ---
-
 # ![images/libraries.svg](images/libraries.svg){: .inline} {{page.title}}
 The Libraries command opens the Libraries panel to manage libraries of materials, textures, and environments.
 

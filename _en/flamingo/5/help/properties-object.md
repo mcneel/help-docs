@@ -1,7 +1,6 @@
 ---
 title: Object Properties
 ---
-
 #  ![images/properties.svg](images/properties.svg){: .inline} {{page.title}}
 Flamingo nXt object properties only affect the way objects are rendered in Flamingo nXt.
 

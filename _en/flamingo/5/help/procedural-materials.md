@@ -1,7 +1,6 @@
 ---
 title: Procedural Materials
 ---
-
 #  ![images/paint.svg](images/paint.svg){: .inline} {{page.title}}
 The Procedures tree combines one or more materials using a set of rules for how the materials interact. The tree displays the components used to create the material and lets you add components. For simple materials, there will be only one component in the list: Base.
 

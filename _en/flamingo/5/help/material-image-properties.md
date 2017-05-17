@@ -1,8 +1,6 @@
 ---
 title: Material Image Properties
 ---
-
-
 # ![images/images.svg](images/images.svg){: .inline} {{page.title}}
 
 ![images/3-texture.png](images/3-texture.png)
