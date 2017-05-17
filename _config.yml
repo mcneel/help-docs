@@ -34,92 +34,136 @@ kramdown:
 safe: false
 
 collections:
+ - en
+ - kr
+ - jp
+ - cn
+ - de
+ - es
+ - fr
+ - it
+ - tw
+
+collections:
   en:
     output: true
+    permalink: /en/:path
   kr:
-     output: true
+    output: true
+    permalink: /kr/:path
   jp:
     output: true
+    permalink: /jp/:path
   cn:
     output: true
+    permalink: /cn/:path
   de:
     output: true
+    permalink: /de/:path
   es:
     output: true
+    permalink: /es/:path
   fr:
     output: true
+    permalink: /fr/:path
   it:
     output: true
+    permalink: /it/:path
   tw:
     output: true
+    permalink: /tw/:path
 
 defaults:
-
-  -
-    scope:
+  - scope:
+      path: ""
+      type: en
+    values:
+      language: en
+  - scope:
       path: "en"
     values:
       language: "en"
       lang: "en"
-  -
-    scope:
+  - scope:
       path: "en/flamingo"
     values:
       productname: "Flamingo nXt"
       productpath: flamingo
       layout: flamingo-toc-page
-  -
-    scope:
-      path: "en/flamingo/5/help"
-      type: en
+  - scope:
+      path: "_en/flamingo"
+    values:
+      productname: Flamingo nXt
+      productpath: flamingo
+      productversionpath: 5
+  - scope:
+      path: "_en/flamingo/5/help"
     values:
       productversionpath: "5"
       type: "help"
       layout: flamingo-toc-page
-      collectionname: "Help"
-  -
-    scope:
-      path: "en/flamingo/5/guides"
+      collectionname: Help
+  - scope:
+      path: "_en/flamingo/5/guides"
     values:
-      type: "guides_topic"
       layout: flamingo-guide-page
-      collectionname: "Guides"
-      sort: 1
-  -
-    scope:
-      path: "en/zoo/"
+      collectionname: Guides
+  - scope:
+      path: "_en/rhino"
+      type: en
     values:
-      productname: "Zoo License Manager"
+      collectionname: Guides
+  - scope:
+      path: "_en/zoo"
+    values:
+      productname: Zoo License Manager
       productpath: zoo
       layout: zoo-guide-page
       sort: 1
-  -
-    scope:
+  - scope:
+      path: "_en/zoo"
+    values:
+      productname: Zoo
+      productpath: zoo
+      productversionpath: 6
+      type: guides_topic
+      productname: Zoo License Manager
+      keywords: ['zoo', 'rhinoceros', 'license', 'manager']
+      layout: zoo-toc-page
+  - scope:
+      path: "_en/zoo/6/help"
+    values:
+      layout: zoo-toc-page
+      collectionname: Help
+      type: help
+  - scope:
+      path: "_en/zoo/6/guides"
+    values:
+      layout: zoo-guide-page
+      collectionname: Guides
+  - scope:
       path: ""
       type: kr
     values:
       language: kr
-      productname: "Flamingo nXt"
+      layout: flamingo-toc-page
+  - scope:
+      path: "_kr/flamingo"
+    values:
+      productname: Flamingo nXt
       productpath: flamingo
-      productversionpath: "5"
-      layout: flamingo-toc-page
-  -
-    scope:
-      path: "kr/flamingo/5/help"
-      type: kr
+      productversionpath: 5
+  - scope:
+      path: "_kr/flamingo/5/help"
     values:
-      doctype: "Help"
       layout: flamingo-toc-page
-      collectionname: "도움말"
-  -
-    scope:
-      path: "kr/flamingo/5/guides"
+      collectionname: 도움말
+  - scope:
+      path: "_kr/flamingo/5/guides"
     values:
-      doctype: "Guides"
       layout: flamingo-guide-page
-      collectionname: "가이드"
-  -
-    scope:
+      collectionname: 가이드
+  - scope:
       path: ""
       type: jp
     values:
@@ -128,23 +172,20 @@ defaults:
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
-  -
-    scope:
+  - scope:
       path: "jp/flamingo/5/help"
       type: jp
     values:
       doctype: "Help"
       layout: flamingo-toc-page
       collectionname: "ヘルプ"
-  -
-    scope:
+  - scope:
       path: "jp/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
       collectionname: "ガイド"
-  -
-    scope:
+  - scope:
       path: ""
       type: de
     values:
@@ -153,23 +194,20 @@ defaults:
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
-  -
-    scope:
+  - scope:
       path: "de/flamingo/5/help"
       type: de
     values:
       doctype: "Help"
       layout: flamingo-toc-page
       collectionname: "Hilfe"
-  -
-    scope:
+  - scope:
       path: "de/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
       collectionname: "Anleitungen"
-  -
-    scope:
+  - scope:
       path: ""
       type: cn
     values:
@@ -178,23 +216,20 @@ defaults:
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
-  -
-    scope:
+  - scope:
       path: "cn/flamingo/5/help"
       type: cn
     values:
       doctype: "Help"
       layout: flamingo-toc-page
       collectionname: "Help"
-  -
-    scope:
+  - scope:
       path: "cn/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
       collectionname: "Guides"
-  -
-    scope:
+  - scope:
       path: ""
       type: es
     values:
@@ -203,23 +238,20 @@ defaults:
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
-  -
-    scope:
+  - scope:
       path: "es/flamingo/5/help"
       type: es
     values:
       doctype: "Help"
       layout: flamingo-toc-page
       collectionname: "Ayuda"
-  -
-    scope:
+  - scope:
       path: "es/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
       collectionname: "Guías"
-  -
-    scope:
+  - scope:
       path: ""
       type: fr
     values:
@@ -228,23 +260,20 @@ defaults:
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
-  -
-    scope:
+  - scope:
       path: "fr/flamingo/5/help"
       type: fr
     values:
       doctype: "Help"
       layout: flamingo-toc-page
       collectionname: "Aide"
-  -
-    scope:
+  - scope:
       path: "fr/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
       collectionname: "Guides"
-  -
-    scope:
+  - scope:
       path: ""
       type: it
     values:
@@ -253,23 +282,20 @@ defaults:
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
-  -
-    scope:
+  - scope:
       path: "it/flamingo/5/help"
       type: it
     values:
       doctype: "Help"
       layout: flamingo-toc-page
       collectionname: "Aiuti"
-  -
-    scope:
+  - scope:
       path: "it/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
       collectionname: "Guide"
-  -
-    scope:
+  - scope:
       path: ""
       type: tw
     values:
@@ -278,18 +304,17 @@ defaults:
       productpath: flamingo
       productversionpath: "5"
       layout: flamingo-toc-page
-  -
-    scope:
+  - scope:
       path: "tw/flamingo/5/help"
       type: tw
     values:
       doctype: "Help"
       layout: flamingo-toc-page
       collectionname: "Help"
-  -
-    scope:
+  - scope:
       path: "tw/flamingo/5/guides"
     values:
       doctype: "Guides"
       layout: flamingo-guide-page
       collectionname: "Guides"
+
