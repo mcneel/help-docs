@@ -9,13 +9,6 @@ The Zoo support wiki contains the latest information and troubleshooting tips re
 
 [Zoo Support Wiki](http://wiki.mcneel.com/zoo/home)
 
-# Viewing Events
-
-The Zoo logs all activities in the Windows Event Log. To view the Windows Event Log, run the **Zoo Administrator **(ZooAdmin.exe), and then click **View → Event Viewer**.
-
-![zoo_event_log.png](http://docs.mcneel.com/zoo/5/en/images/zoo_event_log.png)
-
-All Zoo event log entries can be fond in the **McNeel** folder inside of the **Applications and Services Logs** folder. When troubleshooting Zoo issues, it is a good idea to check the Windows Event Log to see if there is any indication of trouble.
 
 # Technical Support
 

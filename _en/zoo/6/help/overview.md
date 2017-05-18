@@ -1,5 +1,5 @@
 ---
-title: Zoo License Manager Help
+1.0title: Zoo License Manager Help
 description: The Zoo keeps your Rhino licenses in one place and lets you share them with Rhino users on your network.
 ---
 
@@ -11,7 +11,17 @@ The Zoo lets you share, or float, the licenses of Rhino and Rhino-based products
 - An unused license is assigned to the Network Node.
 - When a Network Node shuts down, the license is returned to the Zoo's license pool.
 
-# Features
+### Is the Zoo right for you?
+
+
+The Zoo is right for you only if:
+
+- You are using [compatible products](https://wiki.mcneel.com/zoo/products). **\*Note:** If you have Rhino 4, you need [Zoo 4](https://wiki.mcneel.com/zoo4/home).*
+- You have more users than licenses.
+- You want to manage many licenses in one place.
+- You are **not** an individual with multiple computers. *[See the license agreement...](http://files.na.mcneel.com/rhino/5.0/docs/rh50_eula.pdf)*
+
+### Features
 
 The Zoo had a number of unique features:
 
@@ -35,7 +45,7 @@ The Zoo had a number of unique features:
 
 - **Runs as a service** - The Zoo is a Windows Service. If you reboot the system with the Zoo, you do not have to log onto the computer to start the Zoo.
 
-  # What's New?
+### What's New?
 
   Zoo 5 is a brand new version of the Zoo. Completely rewritten, Zoo 5 provides a number of new features not found in prior Zoo versions, including:
 
@@ -44,3 +54,60 @@ The Zoo had a number of unique features:
   - **Limited License Check Out** - Prior Zoo version allows for license check out to support laptop users or for business travel. But there was no limit to the check out duration. Zoo 5 allows the administrator to specify the license check out duration.
   - **Remote License Monitoring** - Zoo 5 allows users and administrators to monitor license usage from the convenience of their web browser.
   - **3rd Party Plug-in Support** - Prior Zoo version only maintained licenses for McNeel product (e.g. Rhino. Flamingo, Bongo, Brazil, and Penguin). Zoo 5 allows 3rd party plug-in developers to add support for their products to the Zoo.
+
+## System Requirements
+
+- A Windows-based system that supports .NET Framework 4.5:
+  - Windows 7 SP1 or newer
+  - Supported operating systems
+  - (Windows XP not supported.)
+- Microsoft .NET Framework 4.5
+- A network connection configured for TCP/IP.
+
+> Note, the Zoo communicates using TCP Port 80. So, the Windows-based system you choose to install Zoo 5 on should not already have other software running that uses TCP Port 80, including:
+
+- Internet Information Services (IIS) for Windows® Services
+- Apache HTTP Server
+- Skype
+
+## Supported Products
+
+The following McNeel products are supported by Zoo 6:
+
+| Product             | Commercial | |Educational | | Educational Lab |
+| :------------------ | :--------: | - | :---------: | - | :---------: |
+| Rhino 5 for Windows |    Yes     | |    No      | |       Yes       |
+| Rhino 5 for Mac     |    Yes     | |    No      | |     Yes       |
+| Bongo 2.0           |    Yes     | |    No      | |     Yes       |
+| Brazil 2.0          |  Yes<sup>1</sup> | |  No  | |  Yes<sup>1</sup> |
+| Flamingo nXt 3.0    |  Yes<sup>1</sup> | |  No  | |  Yes<sup>1</sup> |
+| Flamingo nXt 5.0    |    Yes     | |    No      | |     Yes       |
+| Penguin 2.0         |  Yes<sup>1</sup> | |  No  | |  Yes<sup>1</sup> |
+
+1. *Requires Rhino 5 SR6 or greater, and Zoo 5 SR6 or greater.*
+
+Products supported by the legacy Zoo 4:
+
+| Product          | Commercial || Educational | | Educational Lab |
+| :--------------- | :--------: |-| :---------: |-| :-------------: |
+| Rhino 2.0        |    Yes     | |   Yes     | |      No        |
+| Rhino 3.0        |    Yes     | |    Yes     | |      No        |
+| Rhino 4.0        |    Yes     | |    Yes     | |      Yes       |
+| Bongo 1.0        |    Yes     | |    Yes     | |      No        |
+| Brazil 2.0       |    Yes     | |    Yes     | |      Yes       |
+| Flamingo 1.0     |    Yes     | |    Yes     | |      No        |
+| Flamingo 1.1     |    Yes     | |    Yes     | |      No        |
+| Flamingo 2.0     |    Yes     | |    Yes     | |      Yes       |
+| Flamingo nXt 3.0 |    Yes     | |    Yes     | |      Yes       |
+| Penguin 1.0      |    Yes     | |    Yes     | |      No        |
+| Penguin 2.0      |    Yes     | |    Yes     | |      Yes       |
+
+## Technical support
+
+Please contact us with any support questions:
+
+- Help http://docs.mcneel.com/zoo/5/en/index.html
+- Wiki http://wiki.mcneel.com/zoo/zoo5
+- 24/7 Forum Support http://discourse.mcneel.com/category/zoo
+- Email tech@mcneel.com
+- Development http://wiki.mcneel.com/developer/zoo
