@@ -7,7 +7,7 @@ description: The Zoo keeps your Rhino licenses in one place and lets you share t
 
 The Zoo support wiki contains the latest information and troubleshooting tips related to the Zoo license manager.
 
-[Zoo Support Wiki](http://wiki.mcneel.com/zoo/home)
+[Zoo Support Wiki](https://wiki.mcneel.com/zoo/home#knowledge_base)
 
 
 # Technical Support
