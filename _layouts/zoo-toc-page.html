@@ -33,10 +33,10 @@ layout: zoobootstrap
           {% assign first_toc = true %}
           <li><a href="{{site.baseurl}}/{{page.language}}/zoo/6/help/{% if local_categories.anchor != null %}#{{local_categories.anchor}}{% endif %}">{{local_categories.name}}</a></li>
           {% for category in local_categories.categories %}
-		    <li><a href="{{site.baseurl}}/{{page.language}}/zoo/6/help/{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
+		    <li><a href="{{site.baseurl}}/{{page.language}}/zoo/6/help/{% if category.path != null %}{{category.path}}{% endif %}{% if category.anchor != null %}#{{category.anchor}}{% endif %}">{{category.name}}</a></li>
               {% for topic in category.topics %}
                 {% if page.url contains topic.path and first_toc %}
-                {% assign first_toc = false %}
+                 {% assign first_toc = false %}
                   <!-- Find the h1 handle and title -->
                   {% if content contains '<h1 id="' %}
                   {% assign splitAtFirstHeader = content | split:'<h1 id="' %}

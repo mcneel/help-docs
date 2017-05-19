@@ -4,15 +4,7 @@ description: The Zoo keeps your Rhino licenses in one place and lets you share t
 ---
 # Advanced Zoo Topics
 
-To begin using the Zoo:
-
-- The Zoo requires the Microsoft .NET Framework 4.
-- [Download](http://wiki.mcneel.com/zoo/home) and install the Zoo on a Windows-based server or workstation.
-- Make sure **TCP Port 80 (HTTP)** is open on any firewall software that is running on the server or workstation.
-- Run the **Zoo Administrator (ZooAdmin.exe)** and add the license keys for Rhino or your Rhino-based products.
-- Install Rhino or your Rhino-based products. During the installation, select **Network Node** as your license type and specify either the host name or IP address of your Zoo server.
-
-If you already have Rhino installed, then launch Rhino and click **Tools → Options → Licenses**. Select your Rhino license and click **Convert**. Then, close Rhino and restart. At startup, select **Network Node** as your license type and specify either the host name or IP address of your Zoo server.
+Use this section to understand some of the ways the Zoo works with Rhino.
 
 ## How does Rhino find the Zoo?
 
@@ -68,7 +60,7 @@ For example, of your organization's second-level domain name is **mycorp.com**, 
 
 To make it easier to deploy Rhino and Rhino-based products on your network, you might consider adding a **CNAME**, or Canonical Name, record to your organization's DNS server. A CNAME record specifies that the domain name is an alias of another, canonical domain name.
 
-# Viewing Events
+## Viewing Events
 
 The Zoo logs all activities in the Windows Event Log. To view the Windows Event Log, run the **Zoo Administrator **(ZooAdmin.exe), and then click **View → Event Viewer**.
 

@@ -11,8 +11,8 @@ The Zoo lets you share, or float, the licenses of Rhino and Rhino-based products
 - An unused license is assigned to the Network Node.
 - When a Network Node shuts down, the license is returned to the Zoo's license pool.
 
-### Is the Zoo right for you?
 
+### Is the Zoo right for you?
 
 The Zoo is right for you only if:
 
@@ -20,6 +20,17 @@ The Zoo is right for you only if:
 - You have more users than licenses.
 - You want to manage many licenses in one place.
 - You are **not** an individual with multiple computers. *[See the license agreement...](http://files.na.mcneel.com/rhino/5.0/docs/rh50_eula.pdf)*
+
+### Zoo network architecture
+
+![images/zooserver2.png](images/zooserver2.png){:width="600px"}
+
+1. Chose one Windows computer on your network to host the Zoo utility.  This is normally a computer that is on all the time.
+2. Install Rhino on all the computers that might run Rhino.  During installation use the Network Node option
+3. Everytime Rhino starts, it will request a license from the Zoo.  If a license is available, the Zoo will grant a license to Rhino.
+4. If there are no licenses available for Rhino, Rhino will display a message that no license are available.
+
+For more details, see the [Zoo overview video](https://vimeo.com/89968285)
 
 ### Features
 
@@ -74,33 +85,33 @@ The Zoo had a number of unique features:
 
 The following McNeel products are supported by Zoo 6:
 
-| Product             | Commercial | |Educational | | Educational Lab |
-| :------------------ | :--------: | - | :---------: | - | :---------: |
-| Rhino 5 for Windows |    Yes     | |    No      | |       Yes       |
-| Rhino 5 for Mac     |    Yes     | |    No      | |     Yes       |
-| Bongo 2.0           |    Yes     | |    No      | |     Yes       |
-| Brazil 2.0          |  Yes<sup>1</sup> | |  No  | |  Yes<sup>1</sup> |
-| Flamingo nXt 3.0    |  Yes<sup>1</sup> | |  No  | |  Yes<sup>1</sup> |
-| Flamingo nXt 5.0    |    Yes     | |    No      | |     Yes       |
-| Penguin 2.0         |  Yes<sup>1</sup> | |  No  | |  Yes<sup>1</sup> |
+| Product             |   Commercial    |      | Educational |      | Educational Lab |
+| :------------------ | :-------------: | ---- | :---------: | ---- | :-------------: |
+| Rhino 5 for Windows |       Yes       |      |     No      |      |       Yes       |
+| Rhino 5 for Mac     |       Yes       |      |     No      |      |       Yes       |
+| Bongo 2.0           |       Yes       |      |     No      |      |       Yes       |
+| Brazil 2.0          | Yes<sup>1</sup> |      |     No      |      | Yes<sup>1</sup> |
+| Flamingo nXt 3.0    | Yes<sup>1</sup> |      |     No      |      | Yes<sup>1</sup> |
+| Flamingo nXt 5.0    |       Yes       |      |     No      |      |       Yes       |
+| Penguin 2.0         | Yes<sup>1</sup> |      |     No      |      | Yes<sup>1</sup> |
 
 1. *Requires Rhino 5 SR6 or greater, and Zoo 5 SR6 or greater.*
 
 Products supported by the legacy Zoo 4:
 
-| Product          | Commercial || Educational | | Educational Lab |
-| :--------------- | :--------: |-| :---------: |-| :-------------: |
-| Rhino 2.0        |    Yes     | |   Yes     | |      No        |
-| Rhino 3.0        |    Yes     | |    Yes     | |      No        |
-| Rhino 4.0        |    Yes     | |    Yes     | |      Yes       |
-| Bongo 1.0        |    Yes     | |    Yes     | |      No        |
-| Brazil 2.0       |    Yes     | |    Yes     | |      Yes       |
-| Flamingo 1.0     |    Yes     | |    Yes     | |      No        |
-| Flamingo 1.1     |    Yes     | |    Yes     | |      No        |
-| Flamingo 2.0     |    Yes     | |    Yes     | |      Yes       |
-| Flamingo nXt 3.0 |    Yes     | |    Yes     | |      Yes       |
-| Penguin 1.0      |    Yes     | |    Yes     | |      No        |
-| Penguin 2.0      |    Yes     | |    Yes     | |      Yes       |
+| Product          | Commercial |      | Educational |      | Educational Lab |
+| :--------------- | :--------: | ---- | :---------: | ---- | :-------------: |
+| Rhino 2.0        |    Yes     |      |     Yes     |      |       No        |
+| Rhino 3.0        |    Yes     |      |     Yes     |      |       No        |
+| Rhino 4.0        |    Yes     |      |     Yes     |      |       Yes       |
+| Bongo 1.0        |    Yes     |      |     Yes     |      |       No        |
+| Brazil 2.0       |    Yes     |      |     Yes     |      |       Yes       |
+| Flamingo 1.0     |    Yes     |      |     Yes     |      |       No        |
+| Flamingo 1.1     |    Yes     |      |     Yes     |      |       No        |
+| Flamingo 2.0     |    Yes     |      |     Yes     |      |       Yes       |
+| Flamingo nXt 3.0 |    Yes     |      |     Yes     |      |       Yes       |
+| Penguin 1.0      |    Yes     |      |     Yes     |      |       No        |
+| Penguin 2.0      |    Yes     |      |     Yes     |      |       Yes       |
 
 ## Technical support
 

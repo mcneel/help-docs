@@ -4,6 +4,16 @@ description: The Zoo keeps your Rhino licenses in one place and lets you share t
 ---
 # Managing Zoo Licenses
 
+Licenses can be managed by running the **Zoo Administrator (ZooAdmin.exe)**.
+
+![images/zoo_manage_licenses_blurred.png](images/zoo_manage_licenses_blurred.png){:width="600px"}
+
+Zoo licenses have three states, check can be viewed in the Zoo Administrator:
+
+1. **Available** - the license is not in use.
+2. **In use** - the license is loaned out, or in use.
+3. **Checked out** - the license has been checked out on a semi-permanent basis.
+
 ## Adding Licenses
 
 When you add a Rhino 5 license to the Zoo, you will be asked to validate the license online. Rhino 5 licenses must be validated before they can be used.
@@ -27,19 +37,7 @@ To add licenses to the Zoo, run the **Zoo Administrator (ZooAdmin.exe)**, and th
 7. Enter Registration Information (Optional) ![images/rhinovalidate2.png](images/rhinovalidate2.png){:width="300px"}  ![images/rhinovalidate3.png](images/rhinovalidate3.png){:width="300px"}
 8. Validation Complete ![rhinovalidate4.png] ![images/rhinovalidate4.png](images/rhinovalidate4.png){:width="300px"}
 
-## Managing Licenses
-
-Licenses can be managed by running the **Zoo Administrator (ZooAdmin.exe)**.
-
-![images/zoo_manage_licenses_blurred.png](images/zoo_manage_licenses_blurred.png){:width="600px"}
-
-Zoo licenses have three states, check can be viewed in the Zoo Administrator:
-
-1. **Available** - the license is not in use.
-2. **In use** - the license is loaned out, or in use.
-3. **Checked out** - the license has been checked out on a semi-permanent basis.
-
-#### Recovering Licenses
+## Recovering Licenses
 
 The Zoo will automatically recover loaned licenses due to either network interruption or abnormal product shut down.
 
@@ -47,7 +45,7 @@ There may be an occasion where you will be required to do this manually. To reco
 
 Note, recovering licenses that are still in use can lead to license conflicts.
 
-#### Checking In Licenses
+## Checking In Licenses
 
 The Zoo can allow licenses be checked out, on a semi-permanent basis, so laptop users can disconnect from the network. The licenses can be checked in again when the laptop is reconnected to the network.
 
@@ -55,7 +53,7 @@ There may be an occasion where you will be required to do this manually. To chec
 
 Note, checking in licenses that are still checked out can lead to license conflicts.
 
-#### Remote License Monitoring
+## Remote License Monitoring
 
 The Zoo allows administrators and users to monitor license usage from the convenience of their web browser. Just visit the "status" page provide by your Zoo server by entering:
 
@@ -69,11 +67,11 @@ into your favorite web browser. For example, if your Zoo server's host name is *
 http://zooserver.mycorp.com/status
 ```
 
-#### Exporting Serial Numbers
+## Exporting Serial Numbers
 
 The Zoo can export a comma-separated-value (.CSV) file that contains the serial numbers (not CD keys) of all licenses maintained by the Zoo. This can be useful if you have difficulties in locating all of your product CD keys. You can export the serial number and then e-mail them to McNeel, who in turn can look up your misplaced license information. To export serial numbers, click **File → Export**.
 
-#### Zoo License Files
+## Zoo License Location
 
 The Zoo stores licenses in the following folder:
 
@@ -132,7 +130,7 @@ The default value is to have limited license check out disabled (unchecked).
 This parameter specifies how long the Zoo will wait before automatically checking in checked out licenses.
 The default value is 30 days.
 
-#### Usage Tracking
+## Usage Tracking
 
 The Zoo is capable of recording licensing activities for the purpose of tracking product usage. These records can then be used to generate statistics for accounting or billing purposes.
 
