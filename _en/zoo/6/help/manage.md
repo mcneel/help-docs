@@ -4,7 +4,7 @@ description: The Zoo keeps your Rhino licenses in one place and lets you share t
 ---
 # Managing Zoo Licenses
 
-Licenses can be managed by running the **Zoo Administrator (ZooAdmin.exe)**.
+Licenses can be managed by running the **Zoo Administrator (ZooAdmin.Wpf.exe)**.
 
 ![images/zoo_manage_licenses_blurred.png](images/zoo_manage_licenses_blurred.png){:width="600px"}
 
@@ -16,26 +16,24 @@ Zoo licenses have three states, check can be viewed in the Zoo Administrator:
 
 ## Adding Licenses
 
-When you add a Rhino 5 license to the Zoo, you will be asked to validate the license online. Rhino 5 licenses must be validated before they can be used.
+When you add a Rhino license to the Zoo, you will be asked to validate the license online. Rhino licenses must be validated before they can be used.
 
-> Critical: if you are upgrading to Rhino 5, you need to keep track of which previous version CD-Key you used to upgrade. You can only use each previous version CD-Key once.
+> Critical: if you are upgrading from Rhino 5 to Rhino 6, or from Rhino 4.0 to Rhino 5, you need to keep track of which previous version CD-Key you used to upgrade. You can only use each previous version CD-Key once.
 
 The only piece of information used during license verification is your CD-Key, which is included when you buy Rhino.
 
 Registration is not required, nor is any personal information. No computer-specific information, or information derived from your computer is sent to Robert McNeel & Associates.
 
-To add licenses to the Zoo, run the **Zoo Administrator (ZooAdmin.exe)**, and then click **Edit → Add**.
-
-![images/rhinoemail0.png](images/rhinoemail0.png){:width="300px"}
+To add licenses to the Zoo, run the **Zoo Administrator (ZooAdmin.Wpf.exe)**, and then click **Edit → Add**.
 
 1. Select your product type from the drop down list.
 2. Enter the registered owner and organization of the product.
 3. Enter your licence code or CD key.
 4. Click **OK** begin license validation.
-5. Enter your E-mail Address  ![images/rhinovalidate1.png](images/rhinovalidate1.png){:width="300px"}
-6. Enter Previous Version CD-Key (Upgrade Only) ![images/rhinovalidate2.png](images/rhinovalidate2.png){:width="300px"}
-7. Enter Registration Information (Optional) ![images/rhinovalidate2.png](images/rhinovalidate2.png){:width="300px"}  ![images/rhinovalidate3.png](images/rhinovalidate3.png){:width="300px"}
-8. Validation Complete ![rhinovalidate4.png] ![images/rhinovalidate4.png](images/rhinovalidate4.png){:width="300px"}
+5. Enter your E-mail Address
+6. Enter Previous Version CD-Key (Upgrade Only) 
+7. Enter Registration Information (Optional) 
+8. Validation Complete
 
 ## Recovering Licenses
 
@@ -71,24 +69,26 @@ http://zooserver.mycorp.com/status
 
 The Zoo can export a comma-separated-value (.CSV) file that contains the serial numbers (not CD keys) of all licenses maintained by the Zoo. This can be useful if you have difficulties in locating all of your product CD keys. You can export the serial number and then e-mail them to McNeel, who in turn can look up your misplaced license information. To export serial numbers, click **File → Export**.
 
-## Zoo License Location
+## File Locations
+
+### Zoo License Location
 
 The Zoo stores licenses in the following folder:
 
 ```
-%PROGRAMDATA%\McNeel\Zoo\5.0\Licenses
+%PROGRAMDATA%\McNeel\Zoo\6.0\Licenses
 ```
 
 Note, Zoo license files cannot be moved from Zoo server to another Zoo server.
 
 Also note, it is not possible to recover lost product license codes or CD keys from the Zoo. So, make sure to store your product license codes and CD keys in a safe location.
 
-#### Zoo Usage Tracking Files
+### Zoo Usage Tracking Files
 
 The Zoo stores usage tracking files in the following folder:
 
 ```
-%PROGRAMDATA%\McNeel\Zoo\5.0\Usage
+%PROGRAMDATA%\McNeel\Zoo\6.0\Usage
 ```
 
 ## Zoo Options
@@ -97,40 +97,16 @@ To configure Zoo options, run the **Zoo Administrator (ZooAdmin.exe)**, and then
 
 ![images/zoo_options.png](images/zoo_options.png){:width="600px"}
 
-#### License Recovery
+### General
 
 Rhino and Rhino-based products update their license status, with the Zoo, every 5 minutes. If a license fails to be updated for the specified duration, because of either network interruption or abnormal product shut down, then the license will be considered orphaned and automatically recovered so other users can access it.
 
-#### Recover orphaned licenses after <minutes> minutes.
+#### Recover orphaned licenses after <minutes> minutes
 
 This parameter specifies how long the Zoo will wait before recovering orphaned licenses.
 The default value is 15 minutes.
 
-#### License Check Out
-
-The license check out feature allows licenses can be checked out, on a semi-permanent basis, so laptop users can disconnect from the network. The licenses can be checked in again when the laptop is reconnected to the network.
-
-If a license is checked out, it cannot be used by another system until it is checked back in.
-
-To check out a license, launch Rhino, click Tools → Options → Licenses.
-
-#### Enable License Check Out
-
-Enables or disabled license check out.
-
-The default value is to have license check out disabled (unchecked).
-
-#### Enable Limited License Check Out
-
-When a license is checked out, it is done so on an unlimited basis unless limited license check out is enabled. The advantage of limited license check out is that checked out licenses will automatically checked in after the specified duration has elapsed.
-The default value is to have limited license check out disabled (unchecked).
-
-#### Limit license check out to <days> days.
-
-This parameter specifies how long the Zoo will wait before automatically checking in checked out licenses.
-The default value is 30 days.
-
-## Usage Tracking
+#### Enable license usage tracking
 
 The Zoo is capable of recording licensing activities for the purpose of tracking product usage. These records can then be used to generate statistics for accounting or billing purposes.
 
@@ -161,17 +137,33 @@ Zoo usage tracking files contain the following information:
 
 To view the usage tracking files, from the Zoo Administrator, click Tools → View Tracking.
 
-#### Enable license usage tracking
-
-Enables or disabled license usage tracking.
-
-The default value is to have usage tracking disabled (unchecked).
-
-#### Usage Tracking File Rotation
+#### Usage tracking file rotation
 
 Allows you to specify the period of the usage tracking. That is, how often you want the usage tracking files rotated; either on a daily, weekly, or monthly basis.
 
 Note, usage tracking files are named by the date in which the tracking file was created in a <YEAR><MONTH><DAY>.CSV format.
 
 The default value is to track usage on a weekly basis.
+
+#### Bind to IP Address
+
+By default, the Zoo users all IP addresses on server system. If your server is using more than one IP address, and if you have other applications that require the user of TCP Port 80, then you can configure the Zoo to bind to only a single IP address.
+
+### Enable license check out
+
+Licenses can be checked out, on a semi-permanent basis, so laptop users can disconnect from the network.
+
+The licenses can be checked in again when the laptop is reconnected to the network.
+
+If a license is checked out, it cannot be used by another system until it is checked back in.
+
+To check out a license, launch Rhino, click Tools → Options → Licenses.
+
+The default value is to have license check out disabled (unchecked).
+
+#### Limited checkout duration
+
+When a license is checked out, it is done so for an unlimited duration. With limited checkout enabled, checked out licenses will automatically checked in after the specified duration has elapsed.
+
+The default value is to have limited license check out disabled (unchecked).
 
