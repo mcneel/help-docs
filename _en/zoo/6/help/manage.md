@@ -147,7 +147,7 @@ The default value is to track usage on a weekly basis.
 
 #### Bind to IP Address
 
-By default, the Zoo users all IP addresses on server system. If your server is using more than one IP address, and if you have other applications that require the user of TCP Port 80, then you can configure the Zoo to bind to only a single IP address.
+By default, the Zoo uses all IP addresses on server system. If your server is using more than one IP address, and if you have other applications that require the use of TCP Port 80, then you can configure the Zoo to bind to only a single IP address.
 
 ### Enable license check out
 
