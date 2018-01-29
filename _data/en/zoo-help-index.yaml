@@ -28,7 +28,7 @@ main_index:
       path: install
       anchor: installation
       topics:
-        - name: Instalation Overview
+        - name: Installation Overview
           path: install
           anchor: installation
         - name: Installing on the Server
