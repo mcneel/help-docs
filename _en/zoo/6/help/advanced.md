@@ -44,7 +44,7 @@ When searching in the ```HKEY_LOCAL_MACHINE``` hive of the Windows Registry for 
 
 ```
 Hive:  HKEY_LOCAL_MACHINE
-Key:   Software\McNeel\Rhinoceros\6.0\License Manager
+Key:   SOFTWARE\Wow6432Node\McNeel\Rhinoceros\6.0\License Manager
 Name:  Server
 Type:  REG_SZ
 Value: <host name or IP address>
