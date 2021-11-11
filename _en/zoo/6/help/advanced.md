@@ -18,7 +18,7 @@ When Rhino needs a license from a Zoo server, it determines the name of the Zoo 
 
 When searching in the ```HKEY_CURRENT_USER``` hive of the Windows Registry for the host name or IP address of your Zoo server, Rhino will look in these locations:
 
-#### Rhino 6
+#### Rhino 6 or 7
 
 ```
 Hive:  HKEY_CURRENT_USER
@@ -40,7 +40,7 @@ Value: <host name or IP address>
 
 When searching in the ```HKEY_LOCAL_MACHINE``` hive of the Windows Registry for the host name or IP address of your Zoo server, Rhino will look in these locations:
 
-#### Rhino 6
+#### Rhino 6 or 7
 
 ```
 Hive:  HKEY_LOCAL_MACHINE
